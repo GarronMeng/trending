@@ -129,6 +129,55 @@ rss:
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
 
+        feeds:
+    - id: "yahoo-finance"
+      name: "雅虎财经"
+      url: "https://finance.yahoo.com/news/rssindex"
+      
+    - id: "BBC_News"
+      name: "BBC News"
+      url: "http://feeds.bbci.co.uk/news/rss.xml"
+
+    - id: "The_Guardian"
+      name: "The Guardian"
+      url: "https://www.theguardian.com/world/rss"
+
+    - id: "NYT"
+      name: "The New York Times"
+      url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+
+    - id: "Washington_Post"
+      name: "Washington Post"
+      url: "http://feeds.washingtonpost.com/rss/world"
+
+    - id: "WSJ_World"
+      name: "WSJ World News"
+      url: "https://feeds.a.dj.com/rss/RSSWorldNews.xml"
+
+    - id: "France24"
+      name: "France24"
+      url: "https://www.france24.com/en/rss"
+
+    - id: "Deutsche_Welle"
+      name: "Deutsche Welle"
+      url: "https://rss.dw.com/rdf/rss-en-all"
+
+    - id: "Japan_Times"
+      name: "Japan Times"
+      url: "https://www.japantimes.co.jp/feed/topstories/"
+
+    - id: "SCMP"
+      name: "South China Morning Post"
+      url: "https://www.scmp.com/rss/91/feed"
+
+    - id: "The_Hindu"
+      name: "The Hindu"
+      url: "https://www.thehindu.com/feeder/default.rss"
+
+    - id: "CNBC"
+      name: "CNBC"
+      url: "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+
     # 自定义源示例
     # - id: "custom-feed"
     #   name: "自定义源"
@@ -440,7 +489,7 @@ ai:
   temperature: 1.0                  # 采样温度 (0.0-2.0)
                                     # 注意：部分模型(如 gpt-5)可能要求必须为 1.0，否则会报错
   
-  max_tokens: 5000                  # 最大生成 token 数
+  max_tokens: 20000                  # 最大生成 token 数
                                     # 注意：如果 API 不支持此参数(报 HTTP 400)，请设为 0 以禁用发送
   # 高级选项
   num_retries: 1                    # 失败重试次数
@@ -497,7 +546,7 @@ ai_analysis:
   mode: "follow_report"
 
   # 分析内容配置
-  max_news_for_analysis: 150        # 热榜+RSS 合计参与分析的新闻数量上限（控制成本关键项）
+  max_news_for_analysis: 250        # 热榜+RSS 合计参与分析的新闻数量上限（控制成本关键项）
                                     # 热榜优先占用配额，RSS 使用剩余配额；独立展示区不受此限制
                                     # 推送消息顶部会显示实际的 AI 分析数供参考
 
@@ -509,7 +558,7 @@ ai_analysis:
                                       # GitHub Action 部署默认推送约 20 次（每小时推送一次）， 约 0.1 元/天
                                       # Docker 部署默认推送 48 次(每半小时推送一次)， 约 0.2 元/天
 
-  include_rss: false                # 是否包含 RSS 内容进行分析
+  include_rss: ture                # 是否包含 RSS 内容进行分析
   
   include_standalone: true          # 是否将独立展示区数据纳入 AI 分析
                                     # 数据源列表来自 display.standalone.platforms / display.standalone.rss_feeds
