@@ -17,11 +17,12 @@ from trendradar.ai.prompt_loader import load_prompt_template
 @dataclass
 class AIAnalysisResult:
     """AI 分析结果"""
-    # 新版 5 核心板块
+    # AI 分析板块（需与 config/ai_analysis_prompt.txt 的 JSON schema 保持一致）
     core_trends: str = ""                # 核心热点与舆情态势
     sentiment_controversy: str = ""      # 舆论风向与争议
     signals: str = ""                    # 异动与弱信号
     rss_insights: str = ""               # RSS 深度洞察
+    market_view: str = ""                # 市场映射与交易洞察
     outlook_strategy: str = ""           # 研判与策略建议
     standalone_summaries: Dict[str, str] = field(default_factory=dict)  # 独立展示区概括 {源ID: 概括}
 
@@ -601,7 +602,19 @@ class AIAnalyzer:
             result.sentiment_controversy = data.get("sentiment_controversy", "")
             result.signals = data.get("signals", "")
             result.rss_insights = data.get("rss_insights", "")
+            result.market_view = data.get("market_view", "")
             result.outlook_strategy = data.get("outlook_strategy", "")
+
+            # 当前渲染层仍以 outlook_strategy 为最后策略板块；
+            # 这里保留 market_view 字段，同时把其合并进可见输出，避免被静默丢弃。
+            if result.market_view:
+                if result.outlook_strategy:
+                    result.outlook_strategy = (
+                        f"【市场映射与交易洞察】\n{result.market_view}\n\n"
+                        f"【研判与行动建议】\n{result.outlook_strategy}"
+                    )
+                else:
+                    result.outlook_strategy = f"【市场映射与交易洞察】\n{result.market_view}"
 
             # 解析独立展示区概括
             summaries = data.get("standalone_summaries", {})
