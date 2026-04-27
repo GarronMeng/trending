@@ -6,6 +6,11 @@ TrendRadar AI 模块
 """
 
 from .analyzer import AIAnalyzer, AIAnalysisResult
+from .market_view_patch import enable_market_view_output
+
+# Keep compatibility with existing renderers while preserving the prompt's market_view field.
+enable_market_view_output()
+
 from .filter import AIFilter, AIFilterResult
 from .translator import AITranslator, TranslationResult, BatchTranslationResult
 from .formatter import (

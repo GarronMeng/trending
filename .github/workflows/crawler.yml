@@ -28,14 +28,15 @@ on:
     #
     # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     #
-    # 📝 修改运行时间：只改第一个数字（0-59），表示每小时第几分钟运行
-    # 📝 Change time: Only modify the first number (0-59) = minute of each hour
+    # 📝 GitHub Actions cron 使用 UTC 时间。
+    # 📝 当前配置对应北京时间/港深时间：08:00、11:45、14:30、16:30、22:00。
+    # 📝 GitHub Actions cron uses UTC. These entries map to Asia/Shanghai times above.
     #
-    # 示例 / Examples:
-    #   "15 * * * *"     → 每小时第15分钟 / minute 15 every hour
-    #   "30 0-14 * * *"  → 北京时间 8:00-22:00 每小时第30分钟 / Beijing 8am-10pm
-    #
-    - cron: "33 * * * *"
+    - cron: "0 0 * * *"      # 08:00 Asia/Shanghai
+    - cron: "45 3 * * *"     # 11:45 Asia/Shanghai
+    - cron: "30 6 * * *"     # 14:30 Asia/Shanghai
+    - cron: "30 8 * * *"     # 16:30 Asia/Shanghai
+    - cron: "0 14 * * *"     # 22:00 Asia/Shanghai
 
   workflow_dispatch:
 
@@ -166,5 +167,6 @@ jobs:
           S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
           S3_ENDPOINT_URL: ${{ secrets.S3_ENDPOINT_URL }}
           S3_REGION: ${{ secrets.S3_REGION }}
+          R2_PUBLIC_BASE_URL: ${{ secrets.R2_PUBLIC_BASE_URL }}
           GITHUB_ACTIONS: true
         run: uv run python -m trendradar

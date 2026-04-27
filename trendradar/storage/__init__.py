@@ -23,6 +23,9 @@ from trendradar.storage.manager import StorageManager, get_storage_manager
 # 远程后端可选导入（需要 boto3）
 try:
     from trendradar.storage.remote import RemoteStorageBackend
+    from trendradar.storage.remote_html import enable_remote_html_upload
+
+    enable_remote_html_upload()
     HAS_REMOTE = True
 except ImportError:
     RemoteStorageBackend = None
