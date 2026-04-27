@@ -9,7 +9,17 @@ from typing import Optional
 
 
 def install_remote_html_upload_patch() -> None:
-    """Patch RemoteStorageBackend.save_html_report to also upload HTML to R2/S3."""
+    """Patch remote storage HTML report upload and preserve manager compatibility."""
+    try:
+        from trendradar.storage.manager import StorageManager
+
+        def record_period_execution(self, date_str: str, period_key: str, action: str) -> bool:
+            return self.get_backend().record_period_execution(date_str, period_key, action)
+
+        StorageManager.record_period_execution = record_period_execution
+    except Exception:
+        pass
+
     try:
         from trendradar.storage.remote import RemoteStorageBackend
     except Exception:
