@@ -76,7 +76,7 @@ class StorageManager:
 
     @staticmethod
     def is_docker() -> bool:
-        """检测是否在 Docker 容器中运行"""
+        """检测是否运行在 Docker 容器中"""
         # 方法1: 检查 /.dockerenv 文件
         if os.path.exists("/.dockerenv"):
             return True
@@ -127,6 +127,8 @@ class StorageManager:
     def _create_remote_backend(self) -> Optional[StorageBackend]:
         """创建远程存储后端"""
         try:
+            from trendradar.storage.remote_html_upload import install_remote_html_upload_patch
+            install_remote_html_upload_patch()
             from trendradar.storage.remote import RemoteStorageBackend
 
             return RemoteStorageBackend(
@@ -337,7 +339,7 @@ class StorageManager:
 
     def update_ai_filter_tag_descriptions(self, tag_updates, date=None, interests_file="ai_interests.txt"):
         """按 tag 名匹配，更新 active 标签的 description"""
-        return self.get_backend().update_ai_filter_tag_descriptions(tag_updates, date, interests_file)
+        return self.get_backend().update_tag_descriptions(tag_updates, date, interests_file)
 
     def update_ai_filter_tag_priorities(self, tag_priorities, date=None, interests_file="ai_interests.txt"):
         """按 tag 名匹配，更新 active 标签的 priority"""
