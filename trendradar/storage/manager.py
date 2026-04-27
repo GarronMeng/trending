@@ -289,7 +289,7 @@ class StorageManager:
 
     def record_period_execution(self, date_str: str, period_key: str, action: str) -> bool:
         """记录时间段的 action 执行"""
-        return self.get_backend().record_period_execution(date_str, period_key, action)
+        return self.get_backend().record_execution(date_str, period_key, action)
 
     # === AI 智能筛选存储操作 ===
 
@@ -339,7 +339,7 @@ class StorageManager:
 
     def update_ai_filter_tag_descriptions(self, tag_updates, date=None, interests_file="ai_interests.txt"):
         """按 tag 名匹配，更新 active 标签的 description"""
-        return self.get_backend().update_tag_descriptions(tag_updates, date, interests_file)
+        return self.get_backend().update_ai_filter_tag_descriptions(tag_updates, date, interests_file)
 
     def update_ai_filter_tag_priorities(self, tag_priorities, date=None, interests_file="ai_interests.txt"):
         """按 tag 名匹配，更新 active 标签的 priority"""
