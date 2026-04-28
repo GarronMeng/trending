@@ -45,6 +45,10 @@ from trendradar.notification.senders import (
     send_to_slack,
     SMTP_CONFIGS,
 )
+from trendradar.notification.email_summary import install_email_summary_patch
+
+install_email_summary_patch()
+
 from trendradar.notification.dispatcher import NotificationDispatcher
 
 __all__ = [
