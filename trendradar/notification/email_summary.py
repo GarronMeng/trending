@@ -5,15 +5,144 @@ The default email sender attaches the full interactive browser HTML report as
 `text/html`. Gmail accepts it as HTML, but strips scripts and much of the complex
 browser-oriented UI, which makes the message look like plain text. This module
 keeps the existing SMTP implementation and replaces the email body with a simple,
-email-safe HTML summary plus a button linking to the full R2 report.
+email-safe HTML digest plus a button linking to the full R2 report.
 """
 
 from __future__ import annotations
 
+import html
 import os
+import re
 import tempfile
 from pathlib import Path
-from typing import Callable, Optional
+from typing import Callable, List, Optional, Tuple
+
+
+def _strip_tags(value: str) -> str:
+    text = re.sub(r"<script[\s\S]*?</script>", " ", value or "", flags=re.I)
+    text = re.sub(r"<style[\s\S]*?</style>", " ", text, flags=re.I)
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = html.unescape(text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def _clip(text: str, limit: int) -> str:
+    text = re.sub(r"\s+", " ", str(text or "")).strip()
+    if len(text) <= limit:
+        return text
+    return text[: limit - 1].rstrip() + "…"
+
+
+def _extract_ai_digest(full_html: str, max_items: int = 3) -> List[str]:
+    """Extract a few readable AI-analysis sentences from the generated report."""
+    blocks = re.findall(r'<div class="ai-block-content">([\s\S]*?)</div>', full_html or "", flags=re.I)
+    digest: List[str] = []
+    for block in blocks:
+        text = _strip_tags(block)
+        if not text:
+            continue
+        # Prefer sentence-like chunks, but fall back to clipped block text.
+        parts = re.split(r"(?<=[。！？!?])\s*|\n+|；|;", text)
+        for part in parts:
+            part = part.strip(" -•·\t\n")
+            if len(part) < 18:
+                continue
+            digest.append(_clip(part, 96))
+            if len(digest) >= max_items:
+                return digest
+        if text:
+            digest.append(_clip(text, 96))
+            if len(digest) >= max_items:
+                return digest
+    return digest[:max_items]
+
+
+def _extract_top_news(full_html: str, max_items: int = 5) -> List[Tuple[str, str]]:
+    """Extract top titles from the HTML report for a compact email digest."""
+    items: List[Tuple[str, str]] = []
+
+    # Capture source + title from rendered news items where possible.
+    pattern = re.compile(
+        r'<div class="news-item[^"]*"[\s\S]*?'
+        r'<span class="source-name">([\s\S]*?)</span>[\s\S]*?'
+        r'<[^>]*class="news-link"[^>]*>([\s\S]*?)</a>',
+        flags=re.I,
+    )
+    for source_html, title_html in pattern.findall(full_html or ""):
+        source = _clip(_strip_tags(source_html), 18)
+        title = _clip(_strip_tags(title_html), 72)
+        if title and (source, title) not in items:
+            items.append((source or "热榜", title))
+        if len(items) >= max_items:
+            return items
+
+    # Fallback: any news links.
+    for title_html in re.findall(r'<[^>]*class="news-link"[^>]*>([\s\S]*?)</a>', full_html or "", flags=re.I):
+        title = _clip(_strip_tags(title_html), 72)
+        if title and ("热榜", title) not in items:
+            items.append(("热榜", title))
+        if len(items) >= max_items:
+            break
+    return items
+
+
+def _read_digest_from_report(html_file_path: str) -> Tuple[List[str], List[Tuple[str, str]]]:
+    try:
+        full_html = Path(html_file_path).read_text(encoding="utf-8")
+    except Exception:
+        return [], []
+    return _extract_ai_digest(full_html), _extract_top_news(full_html)
+
+
+def _render_ai_digest_rows(ai_digest: List[str]) -> str:
+    if not ai_digest:
+        return """
+        <tr>
+          <td style="padding:14px 16px;background:#f9fafb;border:1px solid #edf0f5;border-radius:10px;color:#6b7280;font-size:14px;line-height:1.6;">
+            本轮未抽取到 AI 快读内容，请点击完整报告查看详细分析。
+          </td>
+        </tr>
+        """
+    rows = []
+    for item in ai_digest:
+        rows.append(f"""
+        <tr>
+          <td style="padding:7px 0;font-size:14px;line-height:1.6;color:#374151;">
+            <span style="color:#4f46e5;font-weight:700;">•</span> {html.escape(item)}
+          </td>
+        </tr>
+        """)
+    return "".join(rows)
+
+
+def _render_top_news_rows(top_news: List[Tuple[str, str]]) -> str:
+    if not top_news:
+        return """
+        <tr>
+          <td style="padding:14px 16px;background:#f9fafb;border:1px solid #edf0f5;border-radius:10px;color:#6b7280;font-size:14px;line-height:1.6;">
+            本轮未抽取到 Top 新闻标题，请点击完整报告查看。
+          </td>
+        </tr>
+        """
+    rows = []
+    for idx, (source, title) in enumerate(top_news, 1):
+        rows.append(f"""
+        <tr>
+          <td style="padding:10px 0;border-bottom:1px solid #f3f4f6;">
+            <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td width="28" valign="top" style="font-size:13px;color:#4f46e5;font-weight:800;padding-top:1px;">{idx}</td>
+                <td valign="top">
+                  <div style="font-size:12px;color:#6b7280;margin-bottom:3px;">{html.escape(source)}</div>
+                  <div style="font-size:14px;color:#111827;line-height:1.45;font-weight:600;">{html.escape(title)}</div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        """)
+    return "".join(rows)
 
 
 def _build_email_safe_html(report_type: str, html_file_path: str, get_time_func: Optional[Callable]) -> str:
@@ -24,6 +153,7 @@ def _build_email_safe_html(report_type: str, html_file_path: str, get_time_func:
     report_url = f"{public_base_url}/reports/latest.html" if public_base_url else ""
 
     file_name = Path(html_file_path).name if html_file_path else ""
+    ai_digest, top_news = _read_digest_from_report(html_file_path)
 
     button_html = ""
     if report_url:
@@ -65,7 +195,7 @@ def _build_email_safe_html(report_type: str, html_file_path: str, get_time_func:
             <tr>
               <td style="background:linear-gradient(135deg,#4f46e5,#7c3aed);padding:28px 24px;text-align:center;color:#ffffff;">
                 <div style="font-size:22px;font-weight:800;letter-spacing:.02em;">TrendRadar 热点分析报告</div>
-                <div style="font-size:13px;opacity:.9;margin-top:8px;">邮件摘要版 · 完整交互 UI 请在浏览器打开</div>
+                <div style="font-size:13px;opacity:.9;margin-top:8px;">30 秒快读 · 完整交互 UI 请在浏览器打开</div>
               </td>
             </tr>
             <tr>
@@ -74,27 +204,30 @@ def _build_email_safe_html(report_type: str, html_file_path: str, get_time_func:
                   <tr>
                     <td style="padding:14px 16px;background:#f9fafb;border:1px solid #edf0f5;border-radius:10px;">
                       <div style="font-size:13px;color:#6b7280;margin-bottom:6px;">报告类型</div>
-                      <div style="font-size:16px;font-weight:700;color:#111827;">{report_type}</div>
+                      <div style="font-size:16px;font-weight:700;color:#111827;">{html.escape(report_type)}</div>
                     </td>
                   </tr>
                   <tr><td style="height:12px;"></td></tr>
                   <tr>
                     <td style="padding:14px 16px;background:#f9fafb;border:1px solid #edf0f5;border-radius:10px;">
                       <div style="font-size:13px;color:#6b7280;margin-bottom:6px;">生成时间</div>
-                      <div style="font-size:16px;font-weight:700;color:#111827;">{generated_at}</div>
+                      <div style="font-size:16px;font-weight:700;color:#111827;">{html.escape(generated_at)}</div>
                     </td>
                   </tr>
-                  <tr><td style="height:12px;"></td></tr>
+                  <tr><td style="height:18px;"></td></tr>
                   <tr>
-                    <td style="padding:14px 16px;background:#f9fafb;border:1px solid #edf0f5;border-radius:10px;">
-                      <div style="font-size:13px;color:#6b7280;margin-bottom:6px;">本地报告文件</div>
-                      <div style="font-size:14px;color:#374151;">{file_name}</div>
-                    </td>
+                    <td style="font-size:16px;font-weight:800;color:#111827;padding-bottom:8px;">AI 快读</td>
                   </tr>
+                  {_render_ai_digest_rows(ai_digest)}
+                  <tr><td style="height:18px;"></td></tr>
+                  <tr>
+                    <td style="font-size:16px;font-weight:800;color:#111827;padding-bottom:8px;">Top 5 关注点</td>
+                  </tr>
+                  {_render_top_news_rows(top_news)}
                   {button_html}
                   <tr>
-                    <td style="padding-top:22px;font-size:13px;line-height:1.7;color:#6b7280;">
-                      Gmail 会清理完整网页报告中的脚本和复杂样式，因此邮件内只保留摘要入口。完整 UI、搜索、Tab、宽屏、暗色模式和截图导出，请点击上方按钮在浏览器中查看。
+                    <td style="padding-top:22px;font-size:12px;line-height:1.7;color:#6b7280;">
+                      邮件内仅保留快读摘要，完整 UI、搜索、Tab、主题聚合、宽屏和截图导出，请点击上方按钮在浏览器中查看。源文件：{html.escape(file_name)}
                     </td>
                   </tr>
                 </table>
