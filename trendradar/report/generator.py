@@ -211,6 +211,13 @@ def generate_html_report(
         # 默认简单 HTML
         html_content = f"<html><body><h1>Report</h1><pre>{report_data}</pre></body></html>"
 
+    # 主题聚合只作用于 HTML 展示层；失败时不影响原始报告。
+    try:
+        from trendradar.report.theme_grouping import inject_theme_groups
+        html_content = inject_theme_groups(html_content, report_data)
+    except Exception as e:
+        print(f"[主题聚合] 注入失败，已跳过: {e}")
+
     # 1. 保存时间戳快照（历史记录）
     with open(snapshot_file, "w", encoding="utf-8") as f:
         f.write(html_content)
