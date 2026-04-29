@@ -220,6 +220,18 @@ def _build_theme_brief(items: List[Dict], limit: int = 3) -> List[str]:
     return bullets
 
 
+def _build_why_selected(items: List[Dict], source_count: int, evidence_count: int, highest_rank: Optional[int]) -> str:
+    reasons = []
+    if evidence_count > 0:
+        reasons.append(f"{evidence_count}条正文证据")
+    reasons.append(f"{source_count}个来源交叉")
+    if highest_rank:
+        reasons.append(f"最高热榜#{highest_rank}")
+    if not evidence_count:
+        reasons.append("低可信：仅标题扩散信号")
+    return " · ".join(reasons[:3])
+
+
 def build_unified_groups(report_data: Dict, rss_items: Optional[List[Dict]], threshold: float = 0.58, max_groups: int = 24) -> List[Dict]:
     all_items = _flatten_hotlist(report_data) + _flatten_rss(rss_items)
     if not all_items:
@@ -264,9 +276,13 @@ def build_unified_groups(report_data: Dict, rss_items: Optional[List[Dict]], thr
         if len(items) < 2 and not (has_rss and evidence_count > 0):
             continue
 
-        score = len(sources) * 9 + len(items) * 3 + evidence_count * 12 + (35 - min(highest_rank or 35, 35))
+        value_score = len(sources) * 12 + evidence_count * 24 + len(items) * 2
+        if highest_rank:
+            value_score += 30 - min(highest_rank, 30)
         if has_hotlist and has_rss:
-            score += 20
+            value_score += 10
+        risk_penalty = title_only_count * 8 + title_risk_count * 15
+        final_score = value_score - risk_penalty
         result.append({
             "theme": _choose_representative(items).get("title", ""),
             "items": _pick_items(items),
@@ -280,11 +296,19 @@ def build_unified_groups(report_data: Dict, rss_items: Optional[List[Dict]], thr
             "title_only_count": title_only_count,
             "title_risk_count": title_risk_count,
             "brief": brief,
-            "score": score,
+            "value_score": value_score,
+            "risk_penalty": risk_penalty,
+            "score": final_score,
+            "why_selected": _build_why_selected(items, len(sources), evidence_count, highest_rank),
         })
 
     result.sort(key=lambda g: g.get("score", 0), reverse=True)
-    return result[:max_groups]
+    evidence_groups = [g for g in result if g.get("evidence_count", 0) > 0]
+    fallback_groups = [g for g in result if g.get("evidence_count", 0) == 0]
+    # 优先满足“Top5 证据优先”目标：若证据组足够，完全不混入无证据组。
+    if len(evidence_groups) >= 5:
+        return evidence_groups[:max_groups]
+    return (evidence_groups + fallback_groups)[:max_groups]
 
 
 def _render_theme_brief(group: Dict) -> str:
@@ -358,6 +382,7 @@ def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) ->
             <div class="unified-main">
               <div class="unified-title">{_esc(group.get('theme'))}</div>
               <div class="unified-meta">{group.get('count')} 条信号 · {group.get('source_count')} 个来源 · {rank_text}</div>
+              <div class="unified-why">入选理由：{_esc(group.get('why_selected', '综合评分靠前'))}</div>
               <div class="unified-badges">{''.join(badges)}</div>
             </div>
           </div>
@@ -379,6 +404,7 @@ def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) ->
       .unified-main {{ flex:1; min-width:0; }}
       .unified-title {{ font-size:15px; font-weight:700; color:#111827; line-height:1.45; }}
       .unified-meta, .unified-sources, .unified-row-meta {{ color:#64748b; font-size:12px; line-height:1.5; }}
+      .unified-why {{ color:#1d4ed8; font-size:12px; line-height:1.5; margin-top:4px; }}
       .unified-badges {{ margin-top:8px; display:flex; gap:6px; flex-wrap:wrap; }}
       .unified-badge {{ font-size:11px; font-weight:700; border-radius:999px; padding:2px 7px; }}
       .unified-badge.hotlist {{ background:#fef3c7; color:#92400e; }}
