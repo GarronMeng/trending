@@ -99,8 +99,16 @@ def _summary(item: Dict) -> str:
     for key in ("summary", "description", "content", "abstract", "snippet"):
         value = item.get(key)
         if value:
-            return _clip(_strip_html(str(value)), 190)
+            return _clip(_strip_html(str(value)), 220)
     return ""
+
+
+def _split_sentences(text: str) -> List[str]:
+    text = re.sub(r"\s+", " ", text or "").strip()
+    if not text:
+        return []
+    parts = re.split(r"(?<=[。！？!?])\s*|(?<=[.!?])\s+|；|;", text)
+    return [p.strip(" -•·\t\n") for p in parts if len(p.strip()) >= 18]
 
 
 def _flatten_hotlist(report_data: Dict) -> List[Dict]:
@@ -181,6 +189,37 @@ def _pick_items(items: List[Dict], limit: int = 6) -> List[Dict]:
     return picked
 
 
+def _build_theme_brief(items: List[Dict], limit: int = 3) -> List[str]:
+    """Build factual bullets from RSS summaries within a theme.
+
+    We intentionally avoid inventing content from title-only hotlist signals. If a
+    theme has no summary-bearing source, the UI will say so at card level instead
+    of pretending to know the article content.
+    """
+    bullets: List[str] = []
+    seen_norm = set()
+    summary_items = sorted(
+        [item for item in items if _summary(item)],
+        key=lambda item: (0 if item.get("kind") == "rss" else 1, _source(item)),
+    )
+
+    for item in summary_items:
+        summary = _summary(item)
+        source = _source(item)
+        sentence_candidates = _split_sentences(summary) or [summary]
+        for sentence in sentence_candidates:
+            bullet = _clip(sentence, 105)
+            norm = _normalize(bullet)
+            if not norm or norm in seen_norm:
+                continue
+            seen_norm.add(norm)
+            bullets.append(f"{source}：{bullet}")
+            break
+        if len(bullets) >= limit:
+            break
+    return bullets
+
+
 def build_unified_groups(report_data: Dict, rss_items: Optional[List[Dict]], threshold: float = 0.58, max_groups: int = 24) -> List[Dict]:
     all_items = _flatten_hotlist(report_data) + _flatten_rss(rss_items)
     if not all_items:
@@ -219,12 +258,13 @@ def build_unified_groups(report_data: Dict, rss_items: Optional[List[Dict]], thr
         evidence_count = sum(1 for i in items if _summary(i))
         title_only_count = len(items) - evidence_count
         title_risk_count = sum(1 for i in items if _SENSATIONAL_PATTERNS.search(str(i.get("title", ""))) and not _summary(i))
+        brief = _build_theme_brief(items)
 
         # Keep singleton RSS entries with summaries because they have substance; drop single title-only items.
         if len(items) < 2 and not (has_rss and evidence_count > 0):
             continue
 
-        score = len(sources) * 9 + len(items) * 3 + evidence_count * 9 + (35 - min(highest_rank or 35, 35))
+        score = len(sources) * 9 + len(items) * 3 + evidence_count * 12 + (35 - min(highest_rank or 35, 35))
         if has_hotlist and has_rss:
             score += 20
         result.append({
@@ -239,11 +279,30 @@ def build_unified_groups(report_data: Dict, rss_items: Optional[List[Dict]], thr
             "evidence_count": evidence_count,
             "title_only_count": title_only_count,
             "title_risk_count": title_risk_count,
+            "brief": brief,
             "score": score,
         })
 
     result.sort(key=lambda g: g.get("score", 0), reverse=True)
     return result[:max_groups]
+
+
+def _render_theme_brief(group: Dict) -> str:
+    bullets = group.get("brief") or []
+    if bullets:
+        rows = "".join(f'<li>{_esc(bullet)}</li>' for bullet in bullets[:3])
+        return f"""
+        <div class="unified-brief">
+          <div class="unified-brief-label">内容要点</div>
+          <ul>{rows}</ul>
+        </div>
+        """
+    return """
+    <div class="unified-brief unified-brief-empty">
+      <div class="unified-brief-label">内容要点</div>
+      <div>当前主题暂无可用正文摘要，只能视为热榜扩散信号；需要点击原文确认细节。</div>
+    </div>
+    """
 
 
 def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) -> str:
@@ -258,6 +317,8 @@ def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) ->
             badges.append('<span class="unified-badge hotlist">热榜信号</span>')
         if group.get("has_rss"):
             badges.append('<span class="unified-badge rss">RSS 摘要支撑</span>')
+        if group.get("evidence_count"):
+            badges.append(f'<span class="unified-badge evidence">{group.get("evidence_count")} 条摘要</span>')
         if group.get("title_only_count"):
             badges.append(f'<span class="unified-badge neutral">{group.get("title_only_count")} 条仅标题</span>')
         if group.get("title_risk_count"):
@@ -300,6 +361,7 @@ def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) ->
               <div class="unified-badges">{''.join(badges)}</div>
             </div>
           </div>
+          {_render_theme_brief(group)}
           <div class="unified-sources">覆盖来源：{_esc(sources)}</div>
           <div class="unified-list">{''.join(rows)}</div>
         </div>
@@ -321,8 +383,14 @@ def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) ->
       .unified-badge {{ font-size:11px; font-weight:700; border-radius:999px; padding:2px 7px; }}
       .unified-badge.hotlist {{ background:#fef3c7; color:#92400e; }}
       .unified-badge.rss {{ background:#dcfce7; color:#166534; }}
+      .unified-badge.evidence {{ background:#e0f2fe; color:#075985; }}
       .unified-badge.neutral {{ background:#e5e7eb; color:#4b5563; }}
       .unified-badge.risk {{ background:#fee2e2; color:#991b1b; }}
+      .unified-brief {{ margin-top:12px; padding:11px 12px; background:#f8fafc; border:1px solid #e5e7eb; border-radius:10px; color:#334155; font-size:13px; line-height:1.6; }}
+      .unified-brief-label {{ color:#1e40af; font-size:12px; font-weight:800; margin-bottom:5px; }}
+      .unified-brief ul {{ margin:0; padding-left:18px; }}
+      .unified-brief li {{ margin:3px 0; }}
+      .unified-brief-empty {{ color:#64748b; background:#f9fafb; }}
       .unified-sources {{ margin-top:9px; }}
       .unified-list {{ margin-top:12px; border-top:1px solid #f1f5f9; }}
       .unified-row {{ padding:10px 0; border-bottom:1px solid #f8fafc; }}
@@ -341,12 +409,14 @@ def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) ->
       body.dark-mode .unified-section-title {{ color:#bfdbfe; }}
       body.dark-mode .unified-card {{ background:#1f1f1f; border-color:#333; }}
       body.dark-mode .unified-title, body.dark-mode .unified-row-title {{ color:#f3f4f6; }}
+      body.dark-mode .unified-brief {{ background:#111827; border-color:#333; color:#cbd5e1; }}
+      body.dark-mode .unified-brief-label {{ color:#bfdbfe; }}
       body.dark-mode .unified-summary {{ color:#cbd5e1; }}
       body.dark-mode .unified-list, body.dark-mode .unified-row {{ border-color:#333; }}
     </style>
     <section class="unified-section" id="unified-digest">
       <div class="unified-section-title">统一新闻视图 · 热榜 + RSS</div>
-      <div class="unified-section-subtitle">这里是主阅读入口：热榜负责发现扩散信号，RSS 摘要负责补充事实背景。后面的原始热榜/RSS分区已从主阅读流隐藏，避免重复和割裂。</div>
+      <div class="unified-section-subtitle">这里是主阅读入口：先看“内容要点”了解主题到底讲了什么，再看标题、来源和摘要证据。无摘要主题会明确降级为热榜扩散信号。</div>
       {''.join(cards)}
     </section>
     """
