@@ -217,7 +217,35 @@ def _build_theme_brief(items: List[Dict], limit: int = 3) -> List[str]:
             break
         if len(bullets) >= limit:
             break
+    # 回退策略：若没有正文摘要，至少给出“可验证标题线索”，避免整卡只有空提示
+    if not bullets:
+        seen_title = set()
+        ranked_items = sorted(items, key=lambda item: (_rank(item) or 999, _source(item)))
+        for item in ranked_items:
+            title = _clip(str(item.get("title", "")).strip(), 48)
+            src = _source(item)
+            if not title:
+                continue
+            key = f"{src}|{title}"
+            if key in seen_title:
+                continue
+            seen_title.add(key)
+            bullets.append(f"{src}：{title}（标题信号，待正文核实）")
+            if len(bullets) >= min(limit, 2):
+                break
     return bullets
+
+
+def _build_why_selected(items: List[Dict], source_count: int, evidence_count: int, highest_rank: Optional[int]) -> str:
+    reasons = []
+    if evidence_count > 0:
+        reasons.append(f"{evidence_count}条正文证据")
+    reasons.append(f"{source_count}个来源交叉")
+    if highest_rank:
+        reasons.append(f"最高热榜#{highest_rank}")
+    if not evidence_count:
+        reasons.append("低可信：仅标题扩散信号")
+    return " · ".join(reasons[:3])
 
 
 def build_unified_groups(report_data: Dict, rss_items: Optional[List[Dict]], threshold: float = 0.58, max_groups: int = 24) -> List[Dict]:
@@ -242,6 +270,32 @@ def build_unified_groups(report_data: Dict, rss_items: Optional[List[Dict]], thr
         else:
             groups.append({"representative": item, "items": [item]})
 
+    # 第二阶段补证据：对“仅热榜无摘要”主题，尝试低阈值对齐 RSS 正文条目
+    rss_evidence_pool = [i for i in all_items if i.get("kind") == "rss" and _summary(i)]
+    backfill_hits = 0
+    if rss_evidence_pool:
+        for group in groups:
+            group_items = group.get("items", [])
+            if not group_items:
+                continue
+            has_evidence = any(_summary(i) for i in group_items)
+            has_hotlist = any(i.get("kind") == "hotlist" for i in group_items)
+            if has_evidence or not has_hotlist:
+                continue
+
+            rep_title = str(group.get("representative", {}).get("title", ""))
+            best_match = None
+            best_score = 0.0
+            for rss_item in rss_evidence_pool:
+                score = _similarity(rep_title, str(rss_item.get("title", "")))
+                if score > best_score:
+                    best_score = score
+                    best_match = rss_item
+            if best_match and best_score >= 0.42:
+                group_items.append(best_match)
+                group["representative"] = _choose_representative(group_items)
+                backfill_hits += 1
+
     result = []
     for group in groups:
         items = group["items"]
@@ -264,9 +318,13 @@ def build_unified_groups(report_data: Dict, rss_items: Optional[List[Dict]], thr
         if len(items) < 2 and not (has_rss and evidence_count > 0):
             continue
 
-        score = len(sources) * 9 + len(items) * 3 + evidence_count * 12 + (35 - min(highest_rank or 35, 35))
+        value_score = len(sources) * 12 + evidence_count * 24 + len(items) * 2
+        if highest_rank:
+            value_score += 30 - min(highest_rank, 30)
         if has_hotlist and has_rss:
-            score += 20
+            value_score += 10
+        risk_penalty = title_only_count * 8 + title_risk_count * 15
+        final_score = value_score - risk_penalty
         result.append({
             "theme": _choose_representative(items).get("title", ""),
             "items": _pick_items(items),
@@ -280,11 +338,21 @@ def build_unified_groups(report_data: Dict, rss_items: Optional[List[Dict]], thr
             "title_only_count": title_only_count,
             "title_risk_count": title_risk_count,
             "brief": brief,
-            "score": score,
+            "value_score": value_score,
+            "risk_penalty": risk_penalty,
+            "score": final_score,
+            "why_selected": _build_why_selected(items, len(sources), evidence_count, highest_rank),
         })
 
     result.sort(key=lambda g: g.get("score", 0), reverse=True)
-    return result[:max_groups]
+    evidence_groups = [g for g in result if g.get("evidence_count", 0) > 0]
+    fallback_groups = [g for g in result if g.get("evidence_count", 0) == 0]
+    coverage = round((len(evidence_groups) / len(result) * 100), 1) if result else 0.0
+    print(f"[统一新闻视图] 主题总数={len(result)} 证据主题={len(evidence_groups)} 覆盖率={coverage}% RSS补证据={backfill_hits}")
+    # 优先满足“Top5 证据优先”目标：若证据组足够，完全不混入无证据组。
+    if evidence_groups:
+        return evidence_groups[:max_groups]
+    return fallback_groups[:max_groups]
 
 
 def _render_theme_brief(group: Dict) -> str:
@@ -309,6 +377,12 @@ def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) ->
     groups = build_unified_groups(report_data, rss_items)
     if not groups:
         return ""
+    evidence_coverage = sum(1 for g in groups if g.get("evidence_count", 0) > 0) / max(1, len(groups))
+    quality_hint = ""
+    if evidence_coverage < 0.6:
+        quality_hint = (
+            '<div class="unified-quality-warning">⚠️ 本轮证据覆盖率较低，部分主题仅为标题信号，请谨慎解读并优先查看证据链接。</div>'
+        )
 
     cards = []
     for index, group in enumerate(groups, 1):
@@ -358,6 +432,7 @@ def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) ->
             <div class="unified-main">
               <div class="unified-title">{_esc(group.get('theme'))}</div>
               <div class="unified-meta">{group.get('count')} 条信号 · {group.get('source_count')} 个来源 · {rank_text}</div>
+              <div class="unified-why">入选理由：{_esc(group.get('why_selected', '综合评分靠前'))}</div>
               <div class="unified-badges">{''.join(badges)}</div>
             </div>
           </div>
@@ -372,6 +447,7 @@ def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) ->
       .unified-section {{ margin-bottom: 32px; padding: 20px; border: 1px solid #dbeafe; border-radius: 14px; background: linear-gradient(180deg,#eff6ff 0%,#ffffff 100%); }}
       .unified-section-title {{ font-size: 19px; font-weight: 800; color:#1e3a8a; margin-bottom: 6px; }}
       .unified-section-subtitle {{ color:#64748b; font-size:13px; line-height:1.6; margin-bottom:16px; }}
+      .unified-quality-warning {{ margin:0 0 12px 0; padding:10px 12px; border:1px solid #fcd34d; background:#fffbeb; color:#92400e; border-radius:10px; font-size:12px; line-height:1.6; }}
       .unified-card {{ background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:16px; margin-bottom:14px; box-shadow:0 1px 3px rgba(0,0,0,.04); }}
       .unified-card:last-child {{ margin-bottom:0; }}
       .unified-card-top {{ display:flex; gap:12px; align-items:flex-start; }}
@@ -379,6 +455,7 @@ def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) ->
       .unified-main {{ flex:1; min-width:0; }}
       .unified-title {{ font-size:15px; font-weight:700; color:#111827; line-height:1.45; }}
       .unified-meta, .unified-sources, .unified-row-meta {{ color:#64748b; font-size:12px; line-height:1.5; }}
+      .unified-why {{ color:#1d4ed8; font-size:12px; line-height:1.5; margin-top:4px; }}
       .unified-badges {{ margin-top:8px; display:flex; gap:6px; flex-wrap:wrap; }}
       .unified-badge {{ font-size:11px; font-weight:700; border-radius:999px; padding:2px 7px; }}
       .unified-badge.hotlist {{ background:#fef3c7; color:#92400e; }}
@@ -417,6 +494,7 @@ def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) ->
     <section class="unified-section" id="unified-digest">
       <div class="unified-section-title">统一新闻视图 · 热榜 + RSS</div>
       <div class="unified-section-subtitle">这里是主阅读入口：先看“内容要点”了解主题到底讲了什么，再看标题、来源和摘要证据。无摘要主题会明确降级为热榜扩散信号。</div>
+      {quality_hint}
       {''.join(cards)}
     </section>
     """

@@ -49,14 +49,14 @@ def _extract_ai_digest(full_html: str, max_items: int = 3) -> List[str]:
     return digest[:max_items]
 
 
-def _extract_unified_theme_digest(full_html: str, max_items: int = 5) -> List[Tuple[str, str]]:
+def _extract_unified_theme_digest(full_html: str, max_items: int = 5) -> List[Tuple[str, str, str]]:
     """Extract Top themes from the unified digest cards.
 
     The report no longer renders legacy `.news-item/.news-link` lists as the main
     view. Email should therefore summarize the unified theme cards, especially
     their `内容要点`, instead of trying to scrape old news links.
     """
-    items: List[Tuple[str, str]] = []
+    items: List[Tuple[str, str, str]] = []
     cards = re.findall(r'<div class="unified-card">([\s\S]*?)(?=<div class="unified-card">|</section>)', full_html or "", flags=re.I)
     for card in cards:
         title_match = re.search(r'<div class="unified-title">([\s\S]*?)</div>', card, flags=re.I)
@@ -69,22 +69,50 @@ def _extract_unified_theme_digest(full_html: str, max_items: int = 5) -> List[Tu
             bullets = re.findall(r'<li>([\s\S]*?)</li>', card, flags=re.I)
         brief = "；".join(_strip_tags(b) for b in bullets[:2] if _strip_tags(b))
 
+        why_match = re.search(r'<div class="unified-why">([\s\S]*?)</div>', card, flags=re.I)
+        why = _clip(_strip_tags(why_match.group(1)) if why_match else "", 90)
+        why = re.sub(r"^入选理由[:：]\s*", "", why).strip()
+        link_match = re.search(r'<a href="([^"]+)"', card, flags=re.I)
+        evidence_url = link_match.group(1).strip() if link_match else ""
+
         if not brief:
             empty_match = re.search(r'<div class="unified-brief unified-brief-empty">([\s\S]*?)</div>\s*</div>', card, flags=re.I)
             brief = _strip_tags(empty_match.group(1)) if empty_match else "暂无可用正文摘要，需打开完整报告查看证据。"
+        if why:
+            brief = f"{brief}（{why}）"
 
-        items.append((title, _clip(brief, 110)))
+        items.append((title, _clip(brief, 110), evidence_url))
         if len(items) >= max_items:
             return items
     return items
 
 
-def _extract_top_news(full_html: str, max_items: int = 5) -> List[Tuple[str, str]]:
+def _extract_rss_highlights(full_html: str, max_items: int = 3) -> List[Tuple[str, str]]:
+    items: List[Tuple[str, str]] = []
+    cards = re.findall(r'<div class="unified-card">([\s\S]*?)(?=<div class="unified-card">|</section>)', full_html or "", flags=re.I)
+    seen = set()
+    for card in cards:
+        if "RSS 摘要支撑" not in card:
+            continue
+        title_match = re.search(r'<div class="unified-title">([\s\S]*?)</div>', card, flags=re.I)
+        title = _clip(_strip_tags(title_match.group(1)) if title_match else "", 36)
+        summary_match = re.search(r'<div class="unified-summary">([\s\S]*?)</div>', card, flags=re.I)
+        summary = _clip(_strip_tags(summary_match.group(1)) if summary_match else "", 60)
+        key = f"{title}|{summary}"
+        if title and summary and key not in seen:
+            seen.add(key)
+            items.append((title, summary))
+        if len(items) >= max_items:
+            break
+    return items
+
+
+def _extract_top_news(full_html: str, max_items: int = 5) -> List[Tuple[str, str, str]]:
     unified = _extract_unified_theme_digest(full_html, max_items=max_items)
     if unified:
         return unified
 
-    items: List[Tuple[str, str]] = []
+    items: List[Tuple[str, str, str]] = []
     pattern = re.compile(
         r'<div class="news-item[^"]*"[\s\S]*?'
         r'<span class="source-name">([\s\S]*?)</span>[\s\S]*?'
@@ -95,18 +123,18 @@ def _extract_top_news(full_html: str, max_items: int = 5) -> List[Tuple[str, str
         source = _clip(_strip_tags(source_html), 18)
         title = _clip(_strip_tags(title_html), 72)
         if title and (source, title) not in items:
-            items.append((source or "热榜", title))
+            items.append((source or "热榜", title, ""))
         if len(items) >= max_items:
             return items
     return items
 
 
-def _read_digest_from_report(html_file_path: str) -> Tuple[List[str], List[Tuple[str, str]]]:
+def _read_digest_from_report(html_file_path: str) -> Tuple[List[str], List[Tuple[str, str, str]], List[Tuple[str, str]]]:
     try:
         full_html = Path(html_file_path).read_text(encoding="utf-8")
     except Exception:
-        return [], []
-    return _extract_ai_digest(full_html), _extract_top_news(full_html)
+        return [], [], []
+    return _extract_ai_digest(full_html), _extract_top_news(full_html), _extract_rss_highlights(full_html)
 
 
 def _render_ai_digest_rows(ai_digest: List[str]) -> str:
@@ -119,13 +147,14 @@ def _render_ai_digest_rows(ai_digest: List[str]) -> str:
         """ for item in ai_digest)
 
 
-def _render_top_news_rows(top_news: List[Tuple[str, str]]) -> str:
+def _render_top_news_rows(top_news: List[Tuple[str, str, str]]) -> str:
     if not top_news:
         return """
         <tr><td style="padding:14px 16px;background:#f9fafb;border:1px solid #edf0f5;border-radius:10px;color:#6b7280;font-size:14px;line-height:1.6;">本轮未抽取到主题卡片，请点击完整报告查看。</td></tr>
         """
     rows = []
-    for idx, (theme, brief) in enumerate(top_news, 1):
+    for idx, (theme, brief, evidence_url) in enumerate(top_news, 1):
+        evidence_line = f'<div style="font-size:12px;color:#2563eb;line-height:1.5;margin-top:5px;">证据链接：<a href="{html.escape(evidence_url)}" target="_blank" style="color:#2563eb;text-decoration:none;">查看来源</a></div>' if evidence_url else ""
         rows.append(f"""
         <tr>
           <td style="padding:10px 0;border-bottom:1px solid #f3f4f6;">
@@ -135,6 +164,7 @@ def _render_top_news_rows(top_news: List[Tuple[str, str]]) -> str:
                 <td valign="top">
                   <div style="font-size:14px;color:#111827;line-height:1.45;font-weight:700;margin-bottom:4px;">{html.escape(theme)}</div>
                   <div style="font-size:13px;color:#4b5563;line-height:1.55;">{html.escape(brief)}</div>
+                  {evidence_line}
                 </td>
               </tr>
             </table>
@@ -144,13 +174,22 @@ def _render_top_news_rows(top_news: List[Tuple[str, str]]) -> str:
     return "".join(rows)
 
 
+def _render_rss_rows(rss_rows: List[Tuple[str, str]]) -> str:
+    if not rss_rows:
+        return ""
+    rows = []
+    for theme, brief in rss_rows:
+        rows.append(f"""<tr><td style="padding:6px 0;font-size:13px;line-height:1.55;color:#374151;"><span style="color:#0ea5e9;font-weight:700;">RSS</span> <b>{html.escape(theme)}</b>：{html.escape(brief)}</td></tr>""")
+    return "".join(rows)
+
+
 def _build_email_safe_html(report_type: str, html_file_path: str, get_time_func: Optional[Callable]) -> str:
     now = get_time_func() if get_time_func else None
     generated_at = now.strftime("%Y-%m-%d %H:%M:%S") if now else ""
     public_base_url = os.environ.get("R2_PUBLIC_BASE_URL", "").strip().rstrip("/")
     report_url = f"{public_base_url}/reports/latest.html" if public_base_url else ""
     file_name = Path(html_file_path).name if html_file_path else ""
-    ai_digest, top_news = _read_digest_from_report(html_file_path)
+    ai_digest, top_news, rss_highlights = _read_digest_from_report(html_file_path)
 
     button_html = f"""
         <tr><td align="center" style="padding: 22px 0 8px 0;"><a href="{report_url}" target="_blank" style="display:inline-block;background:#4f46e5;color:#ffffff;text-decoration:none;font-size:15px;font-weight:700;padding:13px 22px;border-radius:8px;">打开完整交互版报告</a></td></tr>
@@ -175,6 +214,9 @@ def _build_email_safe_html(report_type: str, html_file_path: str, get_time_func:
 <tr><td style="height:18px;"></td></tr>
 <tr><td style="font-size:16px;font-weight:800;color:#111827;padding-bottom:8px;">Top 5 主题要点</td></tr>
 {_render_top_news_rows(top_news)}
+<tr><td style="height:14px;"></td></tr>
+<tr><td style="font-size:16px;font-weight:800;color:#111827;padding-bottom:8px;">RSS 重点速览</td></tr>
+{_render_rss_rows(rss_highlights)}
 {button_html}
 <tr><td style="padding-top:22px;font-size:12px;line-height:1.7;color:#6b7280;">邮件内仅保留快读摘要和主题要点，完整分析、证据来源和交互功能请点击上方按钮在浏览器中查看。源文件：{html.escape(file_name)}</td></tr>
 </table></td></tr></table></td></tr></table></body></html>"""
