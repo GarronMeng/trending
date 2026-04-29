@@ -1,9 +1,11 @@
 # coding=utf-8
 """Unified hotlist + RSS digest for the browser report.
 
-The goal is to reduce title-only noise by mixing hotlist signals with RSS
-summaries in a single theme-oriented view. This is presentation-layer only; raw
-hotlist/RSS sections remain available below as source-of-truth backup.
+This module makes the browser report read as one integrated news product instead
+of two separate sections. It mixes hotlist signals with RSS summaries in a single
+view and hides duplicated legacy hotlist/RSS/theme sections from the main reading
+flow. Raw data remains in the generated HTML source, but the primary UI is the
+unified digest.
 """
 
 from __future__ import annotations
@@ -82,9 +84,8 @@ def _url(item: Dict) -> str:
 
 
 def _rank(item: Dict) -> Optional[int]:
-    ranks = item.get("ranks") or []
     values = []
-    for rank in ranks:
+    for rank in item.get("ranks") or []:
         try:
             value = int(rank)
             if value > 0:
@@ -98,7 +99,7 @@ def _summary(item: Dict) -> str:
     for key in ("summary", "description", "content", "abstract", "snippet"):
         value = item.get(key)
         if value:
-            return _clip(_strip_html(str(value)), 180)
+            return _clip(_strip_html(str(value)), 190)
     return ""
 
 
@@ -115,10 +116,9 @@ def _flatten_hotlist(report_data: Dict) -> List[Dict]:
             item["keyword"] = keyword
             item["kind"] = "hotlist"
             key = (_normalize(title), _source(item), _url(item))
-            if key in seen:
-                continue
-            seen.add(key)
-            items.append(item)
+            if key not in seen:
+                seen.add(key)
+                items.append(item)
     return items
 
 
@@ -126,8 +126,9 @@ def _flatten_rss(rss_items: Optional[List[Dict]]) -> List[Dict]:
     items: List[Dict] = []
     seen = set()
     for group in rss_items or []:
-        # Common shape: {word/feed_name, titles: [{...}]}
-        title_rows = group.get("titles") if isinstance(group, dict) else None
+        if not isinstance(group, dict):
+            continue
+        title_rows = group.get("titles")
         if isinstance(title_rows, list):
             group_name = group.get("word") or group.get("feed_name") or group.get("source_name") or "RSS"
             for raw in title_rows:
@@ -139,11 +140,10 @@ def _flatten_rss(rss_items: Optional[List[Dict]]) -> List[Dict]:
                 item["keyword"] = group_name
                 item["kind"] = "rss"
                 key = (_normalize(title), _source(item), _url(item))
-                if key in seen:
-                    continue
-                seen.add(key)
-                items.append(item)
-        elif isinstance(group, dict) and group.get("title"):
+                if key not in seen:
+                    seen.add(key)
+                    items.append(item)
+        elif group.get("title"):
             item = dict(group)
             item.setdefault("source_name", group.get("source_name") or group.get("feed_name") or "RSS")
             item["kind"] = "rss"
@@ -156,17 +156,14 @@ def _flatten_rss(rss_items: Optional[List[Dict]]) -> List[Dict]:
 
 def _choose_representative(items: List[Dict]) -> Dict:
     def score(item: Dict):
-        # Prefer RSS with summary, then high rank, then shorter/cleaner title.
-        summary_bonus = 0 if _summary(item) else 1
-        kind_bonus = 0 if item.get("kind") == "rss" else 1
-        return (summary_bonus, kind_bonus, _rank(item) or 999, len(str(item.get("title", ""))))
+        # Prefer RSS with factual summary, then hotlist rank, then concise titles.
+        return (0 if _summary(item) else 1, 0 if item.get("kind") == "rss" else 1, _rank(item) or 999, len(str(item.get("title", ""))))
     return sorted(items, key=score)[0]
 
 
 def _pick_items(items: List[Dict], limit: int = 6) -> List[Dict]:
     picked: List[Dict] = []
     used_sources = set()
-    # Prioritize RSS summaries and source diversity.
     ordered = sorted(items, key=lambda i: (0 if _summary(i) else 1, _rank(i) or 999, _source(i)))
     for item in ordered:
         source = _source(item)
@@ -184,7 +181,7 @@ def _pick_items(items: List[Dict], limit: int = 6) -> List[Dict]:
     return picked
 
 
-def build_unified_groups(report_data: Dict, rss_items: Optional[List[Dict]], threshold: float = 0.58, max_groups: int = 18) -> List[Dict]:
+def build_unified_groups(report_data: Dict, rss_items: Optional[List[Dict]], threshold: float = 0.58, max_groups: int = 24) -> List[Dict]:
     all_items = _flatten_hotlist(report_data) + _flatten_rss(rss_items)
     if not all_items:
         return []
@@ -220,15 +217,16 @@ def build_unified_groups(report_data: Dict, rss_items: Optional[List[Dict]], thr
         ranks = [r for r in ranks if r is not None]
         highest_rank = min(ranks) if ranks else None
         evidence_count = sum(1 for i in items if _summary(i))
+        title_only_count = len(items) - evidence_count
         title_risk_count = sum(1 for i in items if _SENSATIONAL_PATTERNS.search(str(i.get("title", ""))) and not _summary(i))
 
-        # Include singleton RSS summaries because they add actual content, not just title noise.
+        # Keep singleton RSS entries with summaries because they have substance; drop single title-only items.
         if len(items) < 2 and not (has_rss and evidence_count > 0):
             continue
 
-        score = len(sources) * 9 + len(items) * 3 + evidence_count * 8 + (35 - min(highest_rank or 35, 35))
+        score = len(sources) * 9 + len(items) * 3 + evidence_count * 9 + (35 - min(highest_rank or 35, 35))
         if has_hotlist and has_rss:
-            score += 18
+            score += 20
         result.append({
             "theme": _choose_representative(items).get("title", ""),
             "items": _pick_items(items),
@@ -239,6 +237,7 @@ def build_unified_groups(report_data: Dict, rss_items: Optional[List[Dict]], thr
             "has_hotlist": has_hotlist,
             "has_rss": has_rss,
             "evidence_count": evidence_count,
+            "title_only_count": title_only_count,
             "title_risk_count": title_risk_count,
             "score": score,
         })
@@ -256,9 +255,11 @@ def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) ->
     for index, group in enumerate(groups, 1):
         badges = []
         if group.get("has_hotlist"):
-            badges.append('<span class="unified-badge hotlist">热榜</span>')
+            badges.append('<span class="unified-badge hotlist">热榜信号</span>')
         if group.get("has_rss"):
-            badges.append('<span class="unified-badge rss">RSS 有摘要</span>')
+            badges.append('<span class="unified-badge rss">RSS 摘要支撑</span>')
+        if group.get("title_only_count"):
+            badges.append(f'<span class="unified-badge neutral">{group.get("title_only_count")} 条仅标题</span>')
         if group.get("title_risk_count"):
             badges.append('<span class="unified-badge risk">标题党风险</span>')
         rank = group.get("highest_rank")
@@ -280,7 +281,7 @@ def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) ->
             summary = _summary(item)
             risk = _SENSATIONAL_PATTERNS.search(str(item.get("title", ""))) and not summary
             risk_html = '<span class="unified-mini-risk">标题待核实</span>' if risk else ""
-            summary_html = f'<div class="unified-summary">{_esc(summary)}</div>' if summary else '<div class="unified-no-summary">仅标题信号，建议点开原文核实。</div>'
+            summary_html = f'<div class="unified-summary">{_esc(summary)}</div>' if summary else ""
             rows.append(f"""
             <div class="unified-row">
               <div class="unified-row-meta">{meta} {risk_html}</div>
@@ -320,6 +321,7 @@ def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) ->
       .unified-badge {{ font-size:11px; font-weight:700; border-radius:999px; padding:2px 7px; }}
       .unified-badge.hotlist {{ background:#fef3c7; color:#92400e; }}
       .unified-badge.rss {{ background:#dcfce7; color:#166534; }}
+      .unified-badge.neutral {{ background:#e5e7eb; color:#4b5563; }}
       .unified-badge.risk {{ background:#fee2e2; color:#991b1b; }}
       .unified-sources {{ margin-top:9px; }}
       .unified-list {{ margin-top:12px; border-top:1px solid #f1f5f9; }}
@@ -328,8 +330,13 @@ def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) ->
       .unified-row-title {{ font-size:13px; line-height:1.45; font-weight:600; color:#1f2937; }}
       .unified-row-title a {{ color:#2563eb; text-decoration:none; }}
       .unified-summary {{ margin-top:5px; color:#475569; font-size:12px; line-height:1.55; }}
-      .unified-no-summary {{ margin-top:5px; color:#9ca3af; font-size:12px; line-height:1.55; font-style:italic; }}
       .unified-mini-risk {{ color:#991b1b; background:#fee2e2; border-radius:4px; padding:1px 5px; margin-left:6px; }}
+
+      /* Make unified digest the primary reading flow. Hide duplicated legacy sections below. */
+      .unified-section ~ .hotlist-section,
+      .unified-section ~ .rss-section,
+      .unified-section ~ .theme-section {{ display:none !important; }}
+
       body.dark-mode .unified-section {{ background:#111827; border-color:#1e3a8a; }}
       body.dark-mode .unified-section-title {{ color:#bfdbfe; }}
       body.dark-mode .unified-card {{ background:#1f1f1f; border-color:#333; }}
@@ -339,7 +346,7 @@ def render_unified_digest(report_data: Dict, rss_items: Optional[List[Dict]]) ->
     </style>
     <section class="unified-section" id="unified-digest">
       <div class="unified-section-title">统一新闻视图 · 热榜 + RSS</div>
-      <div class="unified-section-subtitle">优先展示有多源共振或有正文摘要支撑的主题；只有标题、且带煽动性措辞的信号会被标注为“标题待核实”。原始热榜与 RSS 分区仍保留在下方备查。</div>
+      <div class="unified-section-subtitle">这里是主阅读入口：热榜负责发现扩散信号，RSS 摘要负责补充事实背景。后面的原始热榜/RSS分区已从主阅读流隐藏，避免重复和割裂。</div>
       {''.join(cards)}
     </section>
     """
