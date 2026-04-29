@@ -192,6 +192,29 @@ class RSSFetcher:
             print(f"[RSS] {feed.name}: {error}")
             return [], error
 
+    def _merge_optional_market_mcp_source(
+        self,
+        all_items: Dict[str, List[RSSItem]],
+        id_to_name: Dict[str, str],
+        crawl_time: str,
+    ) -> None:
+        """将可选市场 MCP 数据源合并进 RSS 数据流。失败不影响原 RSS。"""
+        try:
+            from trendradar.crawler.market_mcp_source import fetch_market_mcp_rss_items
+
+            extra_items, extra_names = fetch_market_mcp_rss_items(crawl_time)
+            if not extra_items:
+                return
+            for feed_id, items in extra_items.items():
+                if feed_id in all_items:
+                    all_items[feed_id].extend(items)
+                else:
+                    all_items[feed_id] = items
+            id_to_name.update(extra_names)
+            print(f"[RSS] 已合并市场 MCP 数据源: {sum(len(v) for v in extra_items.values())} 条")
+        except Exception as e:
+            print(f"[RSS] 市场 MCP 数据源合并失败，已跳过: {e}")
+
     def fetch_all(self) -> RSSData:
         """
         抓取所有 RSS 源
@@ -225,6 +248,8 @@ class RSSFetcher:
                 failed_ids.append(feed.id)
             else:
                 all_items[feed.id] = items
+
+        self._merge_optional_market_mcp_source(all_items, id_to_name, crawl_time)
 
         total_items = sum(len(items) for items in all_items.values())
         print(f"[RSS] 抓取完成: {len(all_items)} 个源成功, {len(failed_ids)} 个失败, 共 {total_items} 条")
