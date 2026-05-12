@@ -1,6 +1,14 @@
 name: AI News Radar
 
 on:
+  push:
+    branches:
+      - refactor/ai-news-radar-architecture
+    paths:
+      - ".github/workflows/ai-news-radar.yml"
+      - "scripts/ai_news_radar.py"
+      - "config/source_strategy.yaml"
+      - "feeds/follow.example.opml"
   schedule:
     # Garron's preferred Asia/Shanghai/Singapore reading windows.
     - cron: "0 0 * * *"      # 08:00 Asia/Shanghai
