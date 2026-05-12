@@ -7,6 +7,7 @@ on:
     paths:
       - ".github/workflows/ai-news-radar.yml"
       - "scripts/ai_news_radar.py"
+      - "scripts/ai_news_radar_smoke_test.py"
       - "config/source_strategy.yaml"
       - "feeds/follow.example.opml"
   push:
@@ -15,6 +16,7 @@ on:
     paths:
       - ".github/workflows/ai-news-radar.yml"
       - "scripts/ai_news_radar.py"
+      - "scripts/ai_news_radar_smoke_test.py"
       - "config/source_strategy.yaml"
       - "feeds/follow.example.opml"
   schedule:
@@ -66,6 +68,9 @@ jobs:
 
       - name: Install dependencies
         run: uv sync --frozen --no-dev
+
+      - name: Run offline smoke test
+        run: uv run python scripts/ai_news_radar_smoke_test.py
 
       - name: Run AI News Radar pipeline
         env:
