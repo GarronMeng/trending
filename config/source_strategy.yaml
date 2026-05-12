@@ -1,0 +1,178 @@
+# AI News Radar style source strategy
+# 目标：先判断信源价值，再接入抓取，避免把噪音源塞进主流程。
+
+radar:
+  name: "Garron AI News Radar"
+  window_hours: 24
+  timezone: "Asia/Shanghai"
+  output_dir: "data"
+  report_dir: "reports"
+  min_relevance_score: 2
+
+relevance:
+  strong_keywords:
+    - openai
+    - anthropic
+    - claude
+    - chatgpt
+    - codex
+    - gemini
+    - deepmind
+    - hugging face
+    - agent
+    - agents
+    - mcp
+    - model context protocol
+    - llm
+    - large language model
+    - generative ai
+    - multimodal
+    - reasoning model
+    - ai coding
+    - developer tool
+    - workflow automation
+    - 人工智能
+    - 大模型
+    - 智能体
+    - 开源模型
+    - 多模态
+    - 推理模型
+    - 代码助手
+  weak_keywords:
+    - github
+    - product update
+    - changelog
+    - benchmark
+    - eval
+    - inference
+    - api
+    - tool
+    - developer
+    - automation
+    - workflow
+    - 开发者
+    - 自动化
+    - 工作流
+    - API
+    - 评测
+
+source_types:
+  official_rss:
+    description: "官方博客、官方 changelog、官方 GitHub Atom；优先级最高。"
+    default_weight: 5
+  opml_rss:
+    description: "个人 OPML/RSS 订阅；先单独观察，再合入主榜。"
+    default_weight: 3
+  public_feed:
+    description: "公开聚合 feed 或 JSON；用于补盲，但必须做去重与来源标识。"
+    default_weight: 2
+  static_page:
+    description: "没有 RSS 的公开页面；必要时再用 Jina/Reader 兜底。"
+    default_weight: 1
+  private_mail:
+    description: "Newsletter 邮箱摘要；默认不提交原文，只输出脱敏摘要。"
+    default_weight: 4
+  skip:
+    description: "登录态、token、cookie、高噪音或版权/成本风险源。"
+    default_weight: 0
+
+sources:
+  - id: openai-news
+    name: OpenAI News
+    type: official_rss
+    url: https://openai.com/news/rss.xml
+    homepage: https://openai.com/news
+    enabled: true
+    group: official
+    weight: 5
+
+  - id: openai-skills
+    name: OpenAI Skills Commits
+    type: official_rss
+    url: https://github.com/openai/skills/commits/main.atom
+    homepage: https://github.com/openai/skills
+    enabled: true
+    group: official
+    weight: 5
+    include_keywords:
+      - skill
+      - codex
+      - openai
+
+  - id: anthropic-news
+    name: Anthropic News
+    type: official_rss
+    url: https://www.anthropic.com/news/rss.xml
+    homepage: https://www.anthropic.com/news
+    enabled: true
+    group: official
+    weight: 5
+
+  - id: google-deepmind
+    name: Google DeepMind
+    type: official_rss
+    url: https://deepmind.google/blog/rss.xml
+    homepage: https://deepmind.google/blog
+    enabled: true
+    group: official
+    weight: 5
+
+  - id: google-ai
+    name: Google AI Blog
+    type: official_rss
+    url: https://blog.google/innovation-and-ai/technology/ai/rss/
+    homepage: https://blog.google/innovation-and-ai/technology/ai/
+    enabled: true
+    group: official
+    weight: 5
+
+  - id: huggingface-blog
+    name: Hugging Face Blog
+    type: official_rss
+    url: https://huggingface.co/blog/feed.xml
+    homepage: https://huggingface.co/blog
+    enabled: true
+    group: official
+    weight: 5
+
+  - id: github-ai-ml
+    name: GitHub AI & ML
+    type: official_rss
+    url: https://github.blog/ai-and-ml/feed/
+    homepage: https://github.blog/ai-and-ml/
+    enabled: true
+    group: official
+    weight: 4
+
+  - id: github-changelog
+    name: GitHub Changelog
+    type: official_rss
+    url: https://github.blog/changelog/feed/
+    homepage: https://github.blog/changelog/
+    enabled: true
+    group: official
+    weight: 3
+    include_keywords:
+      - copilot
+      - models
+      - ai
+      - coding agent
+      - actions
+
+  - id: aihot
+    name: AI Hot
+    type: public_feed
+    url: https://aihot.virxact.com/feed.xml
+    homepage: https://aihot.virxact.com/
+    enabled: true
+    group: aggregate
+    weight: 2
+
+  - id: follow-opml
+    name: Private Follow OPML
+    type: opml_rss
+    url: feeds/follow.opml
+    enabled: false
+    group: private
+    weight: 3
+    note: "本地/Actions 通过私有 OPML 启用，不提交个人订阅源。"
