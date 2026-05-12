@@ -1,0 +1,79 @@
+name: AI News Radar
+
+on:
+  schedule:
+    # Garron's preferred Asia/Shanghai/Singapore reading windows.
+    - cron: "0 0 * * *"      # 08:00 Asia/Shanghai
+    - cron: "45 3 * * *"     # 11:45 Asia/Shanghai
+    - cron: "30 6 * * *"     # 14:30 Asia/Shanghai
+    - cron: "30 8 * * *"     # 16:30 Asia/Shanghai
+    - cron: "0 14 * * *"     # 22:00 Asia/Shanghai
+  workflow_dispatch:
+    inputs:
+      window_hours:
+        description: "News window in hours"
+        required: false
+        default: "24"
+      min_relevance_score:
+        description: "Minimum AI relevance score"
+        required: false
+        default: "2"
+
+concurrency:
+  group: ai-news-radar-${{ github.ref_name }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+env:
+  PYTHON_VERSION: "3.12"
+
+jobs:
+  update-ai-news-radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+
+      - name: Install dependencies
+        run: uv sync --frozen --no-dev
+
+      - name: Run AI News Radar pipeline
+        env:
+          # Optional: set this secret to base64-encoded OPML content.
+          # The script decodes it into feeds/follow.opml at runtime and never commits it.
+          FOLLOW_OPML_B64: ${{ secrets.FOLLOW_OPML_B64 }}
+        run: |
+          WINDOW_HOURS="${{ github.event.inputs.window_hours || '24' }}"
+          MIN_SCORE="${{ github.event.inputs.min_relevance_score || '2' }}"
+          uv run python scripts/ai_news_radar.py \
+            --config config/source_strategy.yaml \
+            --output-dir data \
+            --report-dir reports \
+            --window-hours "$WINDOW_HOURS" \
+            --min-relevance-score "$MIN_SCORE"
+
+      - name: Commit generated radar artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ai-news-radar.json data/latest-ai-news-radar.json reports/ai-news-radar.html reports/latest.html
+          if git diff --cached --quiet; then
+            echo "No AI News Radar changes to commit."
+          else
+            git commit -m "Update AI news radar artifacts"
+            git push
+          fi
