@@ -39,7 +39,6 @@ relevance:
     - 推理模型
     - 代码助手
   weak_keywords:
-    - github
     - product update
     - changelog
     - benchmark
@@ -50,6 +49,8 @@ relevance:
     - developer
     - automation
     - workflow
+    - copilot
+    - github models
     - 开发者
     - 自动化
     - 工作流
@@ -58,7 +59,7 @@ relevance:
 
 source_types:
   official_rss:
-    description: "官方博客、官方 changelog、官方 GitHub Atom；优先级最高。"
+    description: "官方博客、官方 AI 专区 RSS、官方 GitHub Atom；优先级最高。"
     default_weight: 5
   opml_rss:
     description: "个人 OPML/RSS 订阅；先单独观察，再合入主榜。"
@@ -100,13 +101,28 @@ sources:
       - openai
 
   - id: anthropic-news
-    name: Anthropic News
-    type: official_rss
-    url: https://www.anthropic.com/news/rss.xml
+    name: Anthropic Newsroom
+    type: static_page
+    url: https://www.anthropic.com/news
     homepage: https://www.anthropic.com/news
-    enabled: true
+    enabled: false
     group: official
     weight: 5
+    note: "Anthropic 当前没有稳定官方 RSS；保留为待接入静态页，不进入抓取主流程。"
+
+  - id: anthropic-news-unofficial
+    name: Anthropic News via Olshansk RSS
+    type: public_feed
+    url: https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml
+    homepage: https://www.anthropic.com/news
+    enabled: true
+    group: aggregate
+    weight: 3
+    include_keywords:
+      - anthropic
+      - claude
+      - claude code
+    note: "非官方 scraper feed，用于补足 Anthropic 覆盖；如官方 RSS 恢复，应优先替换。"
 
   - id: google-deepmind
     name: Google DeepMind
@@ -150,14 +166,14 @@ sources:
     url: https://github.blog/changelog/feed/
     homepage: https://github.blog/changelog/
     enabled: true
-    group: official
+    group: developer
     weight: 3
     include_keywords:
       - copilot
-      - models
-      - ai
+      - github models
       - coding agent
       - actions
+    note: "泛 GitHub changelog 噪音较高，不给 official_ai 先验；只保留 Copilot/Models/Agent 相关。"
 
   - id: aihot
     name: AI Hot
