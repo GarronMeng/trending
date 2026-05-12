@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Garron AI News Radar</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #f6f7fb; --panel: #ffffff; --text: #172033; --muted: #667085; --line: #e5e7eb; --accent: #2454ff; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #0b1020; --panel: #131a2a; --text: #eef2ff; --muted: #98a2b3; --line: #263044; --accent: #8ea2ff; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); }
+    header { padding: 42px 20px 26px; background: radial-gradient(circle at top left, rgba(36,84,255,.18), transparent 36%), var(--panel); border-bottom: 1px solid var(--line); }
+    .wrap { max-width: 1120px; margin: 0 auto; }
+    h1 { margin: 0 0 10px; font-size: clamp(30px, 6vw, 56px); letter-spacing: -0.04em; }
+    .subtitle { color: var(--muted); max-width: 760px; line-height: 1.7; }
+    .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
+    .stat { background: var(--bg); border: 1px solid var(--line); border-radius: 18px; padding: 16px; }
+    .stat b { display: block; font-size: 28px; margin-bottom: 4px; }
+    main { padding: 24px 20px 56px; }
+    .section-title { display: flex; justify-content: space-between; align-items: end; gap: 12px; margin: 28px 0 14px; }
+    .section-title h2 { margin: 0; font-size: 22px; }
+    .section-title p { margin: 0; color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 20px; padding: 18px; box-shadow: 0 10px 30px rgba(15,23,42,.04); }
+    .card h3 { margin: 10px 0 8px; font-size: 18px; line-height: 1.45; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px; color: var(--muted); font-size: 12px; }
+    .meta span, .meta strong, .tags span { border: 1px solid var(--line); border-radius: 999px; padding: 4px 8px; }
+    .summary { color: var(--muted); line-height: 1.65; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; color: var(--muted); font-size: 12px; }
+    table { width: 100%; border-collapse: collapse; background: var(--panel); border-radius: 18px; overflow: hidden; border: 1px solid var(--line); }
+    th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; font-size: 13px; vertical-align: top; }
+    th { color: var(--muted); font-weight: 600; }
+    .ok { color: #059669; font-weight: 700; } .err { color: #dc2626; font-weight: 700; }
+    footer { color: var(--muted); font-size: 13px; padding: 26px 20px 42px; }
+    @media (max-width: 760px) { .stats, .grid { grid-template-columns: 1fr; } table { display: block; overflow-x: auto; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Garron AI News Radar</h1>
+      <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
+      <div class="stats">
+        <div class="stat"><b>5</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>5</b><span>官方源条目</span></div>
+        <div class="stat"><b>0</b><span>聚合源条目</span></div>
+        <div class="stat"><b>8/9</b><span>健康信源</span></div>
+      </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <section>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-12T06:22:22.255502Z</p></div>
+      <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-05-11T10:00:00Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://openai.com/index/openai-campus-network-student-club-interest-form" target="_blank" rel="noreferrer">OpenAI Campus Network: Student club interest form</a></h3>
+      <p class='summary'>Join the OpenAI Campus Network—connect student clubs worldwide, access AI tools, host events, and build an AI-powered campus community.</p>
+      <div class="tags"><span>strong:openai</span><span>weak:tool</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-05-11T15:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://openai.com/signals/research/2026q1-update" target="_blank" rel="noreferrer">How ChatGPT adoption broadened in early 2026</a></h3>
+      <p class='summary'>ChatGPT adoption surged in Q1 2026, with fastest growth among users over 35 and more balanced gender usage, signaling broader mainstream AI adoption.</p>
+      <div class="tags"><span>strong:chatgpt</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>Hugging Face Blog</span>
+        <span>official_rss</span>
+        <span>2026-05-11T23:18:26Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://huggingface.co/blog/amazon/foundation-model-building-blocks" target="_blank" rel="noreferrer">Building Blocks for Foundation Model Training and Inference on AWS</a></h3>
+      
+      <div class="tags"><span>weak:inference</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-05-11T10:00:00Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai" target="_blank" rel="noreferrer">How enterprises are scaling AI</a></h3>
+      <p class='summary'>How enterprises scale AI: from early experiments to compounding impact through trust, governance, workflow design, and quality at scale.</p>
+      <div class="tags"><span>weak:workflow</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-05-11T09:26:45Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-05-11-create-repositories-on-the-go-with-github-mobile" target="_blank" rel="noreferrer">Create repositories on the go with GitHub Mobile</a></h3>
+      <p class='summary'>You can now create new repositories directly from the GitHub Mobile app. On iOS, start from either Home or your Profile, tap the + button, and choose Create repository. On… The post Create repositories on the go with GitHub Mobile appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:github</span><span>source_prior:official_ai</span></div>
+    </article>
+    </div>
+    </section>
+    <section>
+      <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
+      <table>
+        <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>951</td><td>3</td><td>610ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>379ms</td><td></td></tr>
+<tr><td>Anthropic News</td><td>official_rss</td><td class='err'>ERR</td><td>0</td><td>0</td><td>5017ms</td><td>404 Client Error: Not Found for url: https://www.anthropic.com/news/rss.xml</td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>349ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>364ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>777</td><td>1</td><td>256ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>120ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>24ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>0</td><td>0</td><td>970ms</td><td></td></tr></tbody>
+      </table>
+    </section>
+  </main>
+  <footer class="wrap">Generated by scripts/ai_news_radar.py · data/ai-news-radar.json</footer>
+</body>
+</html>
