@@ -12,6 +12,7 @@ on:
       - "feeds/follow.example.opml"
   push:
     branches:
+      - master
       - refactor/ai-news-radar-architecture
     paths:
       - ".github/workflows/ai-news-radar.yml"
@@ -19,6 +20,8 @@ on:
       - "scripts/ai_news_radar_smoke_test.py"
       - "config/source_strategy.yaml"
       - "feeds/follow.example.opml"
+      - "docs/AI_NEWS_RADAR_REFACTOR.md"
+      - "skills/ai-news-radar/**"
   schedule:
     # Garron's preferred Asia/Shanghai/Singapore reading windows.
     - cron: "0 0 * * *"      # 08:00 Asia/Shanghai
