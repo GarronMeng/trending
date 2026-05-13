@@ -23,12 +23,11 @@ on:
       - "docs/AI_NEWS_RADAR_REFACTOR.md"
       - "skills/ai-news-radar/**"
   schedule:
-    # Garron's preferred Asia/Shanghai/Singapore reading windows.
-    - cron: "0 0 * * *"      # 08:00 Asia/Shanghai
-    - cron: "45 3 * * *"     # 11:45 Asia/Shanghai
-    - cron: "30 6 * * *"     # 14:30 Asia/Shanghai
-    - cron: "30 8 * * *"     # 16:30 Asia/Shanghai
-    - cron: "0 14 * * *"     # 22:00 Asia/Shanghai
+    - cron: "0 0 * * *"
+    - cron: "45 3 * * *"
+    - cron: "30 6 * * *"
+    - cron: "30 8 * * *"
+    - cron: "0 14 * * *"
   workflow_dispatch:
     inputs:
       window_hours:
@@ -54,31 +53,23 @@ jobs:
   update-ai-news-radar:
     runs-on: ubuntu-latest
     timeout-minutes: 12
-
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
         with:
           fetch-depth: 1
-
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
-
       - name: Install uv
-        uses: astral-sh/setup-uv@v7
-
+        uses: astral-sh/setup-uv@v5
       - name: Install dependencies
         run: uv sync --frozen --no-dev
-
       - name: Run offline smoke test
         run: uv run python scripts/ai_news_radar_smoke_test.py
-
       - name: Run AI News Radar pipeline
         env:
-          # Optional: set this secret to base64-encoded OPML content.
-          # The script decodes it into feeds/follow.opml at runtime and never commits it.
           FOLLOW_OPML_B64: ${{ secrets.FOLLOW_OPML_B64 }}
         run: |
           WINDOW_HOURS="${{ github.event.inputs.window_hours || '24' }}"
@@ -89,7 +80,6 @@ jobs:
             --report-dir reports \
             --window-hours "$WINDOW_HOURS" \
             --min-relevance-score "$MIN_SCORE"
-
       - name: Commit generated radar artifacts
         if: github.event_name != 'pull_request'
         run: |
