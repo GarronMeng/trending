@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>24</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>3</b><span>官方源条目</span></div>
-        <div class="stat"><b>18</b><span>聚合源条目</span></div>
+        <div class="stat"><b>17</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>1</b><span>官方源条目</span></div>
+        <div class="stat"><b>14</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-13T11:04:29.821479Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-13T16:18:21.380152Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -95,27 +95,14 @@
 
     <article class="card">
       <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-05-12T15:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://openai.com/academy/how-finance-teams-use-codex" target="_blank" rel="noreferrer">How finance teams use Codex</a></h3>
-      <p class='summary'>See how finance teams can use Codex to build MBRs, reporting packs, variance bridges, model checks, and planning scenarios from real work inputs.</p>
-      <div class="tags"><span>strong:codex</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-05-12T15:15:31Z</span>
+        <span>2026-05-13T16:13:20Z</span>
         <strong>Score 5</strong>
       </div>
-      <h3><a href="https://x.com/vista8/status/2054218925005816077" target="_blank" rel="noreferrer">在Claude Code中安装官方插件调用Codex</a></h3>
-      <p class='summary'>本文介绍了在Claude Code中通过插件市场安装OpenAI官方Codex插件的具体步骤：添加库、安装插件、重新加载及配置。其核心实践动机源于HeavySkill论文提出的&quot;重思考&quot;方法，即让多个AI模型并行独立推理，再由一个模型（如Codex）作为主持人综合思路以提升回答质量。作者正依此构建由Claude Code推理、Codex主持的Skill。</p>
-      <div class="tags"><span>strong:openai</span><span>strong:claude</span><span>strong:codex</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://app.runwayml.com/agent" target="_blank" rel="noreferrer">Runway Agent</a></h3>
+      <p class='summary'>Runway Agent 是一个集成化创意工具平台，旨在为用户提供实现任何创意所需的全套资源与功能。该平台整合了视频编辑、图像生成、3D建模等多种人工智能驱动工具，允许用户在一个工作流中无缝完成从概念到成品的创作过程。其核心特点是降低了专业内容制作的技术门槛，通过自动化与智能辅助功能，让用户能够更自由地将想法转化为视觉作品。</p>
+      <div class="tags"><span>strong:agent</span><span>strong:人工智能</span><span>weak:自动化</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -142,45 +129,6 @@
       <h3><a href="https://github.blog/changelog/2026-05-12-april-reports-are-now-available-to-prepare-for-usage-based-billing" target="_blank" rel="noreferrer">April reports are now available to prepare for usage-based billing</a></h3>
       <p class='summary'>Starting today, you can download your usage report to see how April’s GitHub Copilot activity translates into AI credits. The new billing unit of AI credits is going live on… The post April reports are now available to prepare for usage-based billing appeared first on The GitHub Blog .</p>
       <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-12T17:05:45Z</span>
-        <strong>Score 4</strong>
-      </div>
-      <h3><a href="https://developers.googleblog.com/build-long-running-ai-agents-that-pause-resume-and-never-lose-context-with-adk" target="_blank" rel="noreferrer">使用ADK构建可暂停、恢复且永不丢失上下文的长时运行AI智能体</a></h3>
-      <p class='summary'>本文探讨了如何从无状态聊天机器人升级为生产级AI智能体，以管理长达数天或数周的企业工作流程（如HR入职）。通过引入Agent Development Kit（ADK），其架构核心采用持久状态机和持久化会话存储，确保智能体在&quot;空闲时间&quot;或服务器重启时永不丢失上下文。系统利用事件驱动的Webhook和多智能体委托机制，实现在暂停期间&quot;休眠&quot;，并在唤醒后以高推理准确性恢复复杂任务，从而构建出具备韧性和可靠性的长时运行智能体系统。</p>
-      <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>GitHub AI &amp; ML</span>
-        <span>official_rss</span>
-        <span>2026-05-12T15:00:00Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://github.blog/ai-and-ml/github-copilot/dungeons-desktops-building-a-procedurally-generated-roguelike-with-github-copilot-cli" target="_blank" rel="noreferrer">Dungeons &amp; Desktops: Building a procedurally generated roguelike with GitHub Copilot CLI</a></h3>
-      <p class='summary'>Learn how one Hubber used GitHub Copilot CLI to build an extension that turns any codebase into a unique, roguelike dungeon. The post Dungeons &amp; Desktops: Building a procedurally generated roguelike with GitHub Copilot CLI appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:copilot</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-12T14:24:55Z</span>
-        <strong>Score 4</strong>
-      </div>
-      <h3><a href="https://github.com/statewright/statewright" target="_blank" rel="noreferrer">展示 HN：Statewright--通过可视化状态机提升AI智能体可靠性</a></h3>
-      <p class='summary'>Statewright 是一个通过状态机为AI智能体提供约束的系统，能控制其在各阶段可使用的工具，从而聚焦推理并提升可靠性。它将工作流定义为规划、实施、测试等多个阶段，自动执行工具限制与状态转换。在本地模型测试中，两个模型在5项SWE-bench子任务上应用约束后，正确率从2/10显著提升至10/10。该系统已集成到Claude Code等平台，一个修复测试失败的典型工作流可在46秒内完成。</p>
-      <div class="tags"><span>strong:claude</span><span>strong:智能体</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -290,32 +238,6 @@
 
     <article class="card">
       <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-05-12T16:00:53Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-05-12-synchronous-sbom-api-deprecated" target="_blank" rel="noreferrer">Synchronous SBOM API deprecated</a></h3>
-      <p class='summary'>Following the recent release of the new Asynchronous SBOM REST API, the older, synchronous API is deprecated and slated for removal in six months, on November 13, 2026. If your… The post Synchronous SBOM API deprecated appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:api</span><span>weak:API</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-12T12:26:08Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/berryxia/status/2054176298579468338" target="_blank" rel="noreferrer">导出消费数据赋能AI Agent个性化服务</a></h3>
-      <p class='summary'>AI Agent需要用户消费上下文才能充当个人管家，作者调研了主流消费平台的订单导出方法。淘宝提供导出功能；京东无官方支持，但通过Codex定制Chrome插件实现一键导出，并开源在Github；闪购（饿了么）可申请导出Excel；美团外卖暂无方法；大众点评通过定制插件导出收藏列表。作者开源了京东和大众点评的导出工具，鼓励用户利用这些数据让AI Agent进行个性化分析，以提升服务实用性。</p>
-      <div class="tags"><span>strong:codex</span><span>strong:agent</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
         <span>2026-05-13T04:35:04Z</span>
@@ -351,34 +273,21 @@
       <p class='summary'>GOOGLE 🔥： 在Android Show 2026上推出了全新的Android Intelligence！ - 全新的时尚设计！ - 跨安卓应用的自动化多步骤任务 - Chrome中的Gemini获得浏览器使用功能 - 自动表单填写 - &quot;Rambler&quot;可将语音笔记转为文本 - 自定义Gen UI小组件 我现在就需要一台Pixel 👀</p>
       <div class="tags"><span>strong:gemini</span><span>weak:自动化</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-12T15:54:47Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://www.interconnects.ai/p/how-open-model-ecosystems-compound" target="_blank" rel="noreferrer">开放模型生态的复合增长</a></h3>
-      <p class='summary'>中国AI生态呈现高参与度与开放优先特征，开源模型社区形成自我强化循环。开发者基于主流架构二次创新，国产开源模型下载量季度环比激增超200%。开放协作降低了技术门槛，推动应用层涌现大量行业解决方案，模型微调工具使用量同比大幅增长。生态参与者通过贡献代码、数据及优化方案，持续反哺核心模型迭代，构建了技术红利共享的复合增长网络。</p>
-      <div class="tags"><span>strong:开源模型</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>955</td><td>1</td><td>813ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>212ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>208</td><td>0</td><td>99ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>358ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>137ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>777</td><td>0</td><td>233ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>132ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>3</td><td>25ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>19</td><td>1752ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>955</td><td>0</td><td>619ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>394ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>208</td><td>0</td><td>100ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>454ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>267ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>777</td><td>0</td><td>303ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>136ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>31ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>14</td><td>1464ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
