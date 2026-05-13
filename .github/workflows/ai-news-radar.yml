@@ -80,6 +80,44 @@ jobs:
             --report-dir reports \
             --window-hours "$WINDOW_HOURS" \
             --min-relevance-score "$MIN_SCORE"
+      - name: Write run summary
+        run: |
+          uv run python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          payload = json.loads(Path('data/ai-news-radar.json').read_text(encoding='utf-8'))
+          items = payload.get('items', [])
+          groups = payload.get('groups', {})
+          lines = []
+          lines.append('# AI News Radar result')
+          lines.append('')
+          lines.append(f"- Generated at: `{payload.get('generated_at')}`")
+          lines.append(f"- Window hours: `{payload.get('window_hours')}`")
+          lines.append(f"- Items: `{payload.get('item_count')}`")
+          lines.append(f"- Healthy sources: `{payload.get('healthy_source_count')}/{payload.get('source_count')}`")
+          lines.append('')
+          lines.append('## Output files')
+          lines.append('')
+          lines.append('- `data/ai-news-radar.json`')
+          lines.append('- `reports/latest.html`')
+          lines.append('')
+          lines.append('## Groups')
+          lines.append('')
+          for name, group in groups.items():
+              lines.append(f"- `{name}`: {group.get('count', 0)}")
+          lines.append('')
+          lines.append('## Top items')
+          lines.append('')
+          for item in items[:10]:
+              title = item.get('title', '')
+              source = item.get('source_name', '')
+              score = item.get('relevance_score', '')
+              url = item.get('url', '')
+              lines.append(f"- [{title}]({url}) — {source}, score {score}")
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('\n'.join(lines), encoding='utf-8')
+          PY
       - name: Commit generated radar artifacts
         if: github.event_name != 'pull_request'
         run: |
