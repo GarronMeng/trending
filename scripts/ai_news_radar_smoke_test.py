@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import sys
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -26,6 +27,9 @@ def load_module() -> Any:
     if spec is None or spec.loader is None:
         raise RuntimeError(f"Cannot load module from {MODULE_PATH}")
     module = importlib.util.module_from_spec(spec)
+    # dataclasses + postponed annotations need the module to exist in sys.modules
+    # while class decorators execute.
+    sys.modules[spec.name] = module
     spec.loader.exec_module(module)
     return module
 
