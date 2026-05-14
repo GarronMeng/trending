@@ -24,6 +24,7 @@ on:
       - "feeds/follow.example.opml"
       - "docs/AI_NEWS_RADAR_REFACTOR.md"
       - "skills/ai-news-radar/**"
+      - "index.html"
   schedule:
     - cron: "0 0 * * *"
     - cron: "45 3 * * *"
@@ -82,6 +83,17 @@ jobs:
             --report-dir reports \
             --window-hours "$WINDOW_HOURS" \
             --min-relevance-score "$MIN_SCORE"
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-news-radar-report
+          path: |
+            reports/latest.html
+            reports/ai-news-radar.html
+            data/ai-news-radar.json
+            data/latest-ai-news-radar.json
+          if-no-files-found: error
+          retention-days: 14
       - name: Send email digest
         if: github.event_name != 'pull_request'
         env:
@@ -113,6 +125,7 @@ jobs:
           lines.append('')
           lines.append('- `data/ai-news-radar.json`')
           lines.append('- `reports/latest.html`')
+          lines.append('- Artifact: `ai-news-radar-report`')
           lines.append('')
           lines.append('## Groups')
           lines.append('')
@@ -134,7 +147,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ai-news-radar.json data/latest-ai-news-radar.json reports/ai-news-radar.html reports/latest.html
+          git add data/ai-news-radar.json data/latest-ai-news-radar.json reports/ai-news-radar.html reports/latest.html index.html
           if git diff --cached --quiet; then
             echo "No AI News Radar changes to commit."
           else
