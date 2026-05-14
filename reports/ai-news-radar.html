@@ -43,27 +43,40 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>17</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>12</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>14</b><span>聚合源条目</span></div>
+        <div class="stat"><b>9</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-13T16:18:21.380152Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-14T02:33:55.832727Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
-        <span>OpenAI Skills Commits</span>
+        <span>OpenAI News</span>
         <span>official_rss</span>
-        <span>2026-05-12T22:24:22Z</span>
-        <strong>Score 8</strong>
+        <span>2026-05-13T11:00:00Z</span>
+        <strong>Score 9</strong>
       </div>
-      <h3><a href="https://github.com/openai/skills/commit/c25113bf4c64c8dba6bfe61acf06051d79aa43f6" target="_blank" rel="noreferrer">Replace hatch-pet curated skill workflow (#399)</a></h3>
-      <p class='summary'>Replace hatch-pet curated skill workflow (#399) ## Summary - add the curated `hatch-pet-v2` skill for Codex-compatible pet spritesheet generation - keep image generation lightweight with per-job workers, storage controls, and visual QA guidance - add adaptive brand discovery briefs while keeping generation prompts compact ## Verification - `python -m py_comp</p>
-      <div class="tags"><span>strong:codex</span><span>weak:workflow</span><span>source:skill</span><span>source:codex</span><span>source_prior:official_ai</span></div>
+      <h3><a href="https://openai.com/index/building-codex-windows-sandbox" target="_blank" rel="noreferrer">Building a safe, effective sandbox to enable Codex on Windows</a></h3>
+      <p class='summary'>Learn how OpenAI built a secure sandbox for Codex on Windows, enabling safe, efficient coding agents with controlled file access and network restrictions.</p>
+      <div class="tags"><span>strong:openai</span><span>strong:codex</span><span>strong:agent</span><span>strong:agents</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-05-13T18:01:15Z</span>
+        <strong>Score 7</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-05-13-start-copilot-cloud-agent-tasks-via-the-rest-api" target="_blank" rel="noreferrer">Start Copilot cloud agent tasks via the REST API</a></h3>
+      <p class='summary'>Copilot Business and Copilot Enterprise users can programmatically start Copilot cloud agent tasks with the new Agent tasks REST API, available in public preview. Copilot cloud agent works in the… The post Start Copilot cloud agent tasks via the REST API appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>strong:agent</span><span>weak:api</span><span>weak:copilot</span><span>weak:API</span><span>source:copilot</span></div>
     </article>
     
 
@@ -71,12 +84,12 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-05-12T16:24:44Z</span>
-        <strong>Score 8</strong>
+        <span>2026-05-13T23:19:16Z</span>
+        <strong>Score 7</strong>
       </div>
-      <h3><a href="https://claude.com/blog/code-w-claude-sf-2026-sf" target="_blank" rel="noreferrer">Code w/ Claude SF 2026开发者大会：基于AI指数级增长的构建</a></h3>
-      <p class='summary'>在Code w/ Claude SF 2026开发者大会上，Anthropic宣布提升开发者工具能力。Claude Code的速率限制翻倍，Claude Opus的API限制提高，以支持大规模可靠开发。同时，Claude平台上的托管智能体新增四项功能：&quot;梦想&quot;功能通过回顾会话优化记忆；多智能体编排支持主智能体并行委派子任务；&quot;成果&quot;功能通过定义输出标准提升任务成功率，内部测试显示最难问题成功率最多提升10%；Webhooks提供任务完成通知。大会主题演讲和分组会议录像已上线，并计划在伦敦和东京举办后续活动。</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:智能体</span><span>weak:api</span><span>weak:开发者</span></div>
+      <h3><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.141" target="_blank" rel="noreferrer">Claude 工具 v2.1.141 版本更新</a></h3>
+      <p class='summary'>Claude 工具发布 v2.1.141 版本，带来多项功能新增与优化。主要更新包括：为钩子输出添加 `terminalSequence` 字段以支持无控制终端的桌面通知；新增 `CLAUDE_CODE_PLUGIN_PREFER_HTTPS` 环境变量，便于通过 HTTPS 克隆插件源码；引入 `ANTHROPIC_WORKSPACE_ID` 变量以在多工作区联盟中限定令牌范围。会话管理方面，`claude agents` 命令新增 `--cwd` 参数用于按目录筛选，并优化后台代理的状态归类。用户体验改进包括：在倒带菜单添加&quot;总结至此&quot;选项以压缩早期上下文；长思考超时后旋转指示器变色提供更明确反馈；此外，还修复了 Markdown 表格渲染异常、权限提示逻辑、历史记录管理等超过 30 项问题。</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:agent</span><span>strong:agents</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -84,12 +97,51 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-05-12T17:54:45Z</span>
-        <strong>Score 6</strong>
+        <span>2026-05-13T23:15:00Z</span>
+        <strong>Score 7</strong>
       </div>
-      <h3><a href="https://claude.com/blog/claude-for-the-legal-industry" target="_blank" rel="noreferrer">Claude进军法律行业</a></h3>
-      <p class='summary'>Anthropic公司为法律行业发布20多个新的MCP连接器及12个专用插件，将Claude深度集成至合同管理、文档处理等法律核心软件栈。Claude现可直接在Microsoft Word、Outlook等办公应用中无缝工作，具备起草、修订、条款比对等可复用技能，并能自动化处理日常法律事务。公司同时宣布与多个司法公益组织合作，以扩大法律服务的可及性。</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:mcp</span><span>weak:自动化</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://x.com/hongming731/status/2054701978924859865" target="_blank" rel="noreferrer">BestBlogs早报：AI智能体工程化实战与安全架构</a></h3>
+      <p class='summary'>BestBlogs早报聚焦AI智能体的工程化落地。Anthropic官方指南详解Claude Computer Use最佳实践，包括解决点击偏移的根本原因、推荐分辨率策略及必须采用虚拟机隔离与人工确认门控的安全原则。OpenAI工程师分享了为Codex构建Windows安全沙箱的历程，其最终方案通过专属安全标识符和写受限令牌，实现了操作系统层面的强制文件系统隔离。早报同时指出，基准测试优异的RAG Agent在生产环境中可能出现高达30%的幻觉率。</p>
+      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>strong:claude</span><span>strong:codex</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-13T20:42:29Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://rdi.berkeley.edu/blog/exploitgym" target="_blank" rel="noreferrer">ExploitGym：AI智能体能否将安全漏洞转化为真实攻击？</a></h3>
+      <p class='summary'>由伯克利RDI、马克斯·普朗克安全与隐私研究所、Anthropic、OpenAI及谷歌等机构研究人员组成的团队，发布了名为ExploitGym的新基准测试。该测试包含898个真实漏洞，要求AI智能体根据漏洞描述生成完整的漏洞利用程序。结果显示，前沿AI模型已能成功利用相当数量的漏洞，即使在启用ASLR等标准防御措施后，部分攻击仍能成功。这证明AI已具备自主将漏洞转化为实际攻击的能力，该技术具有双重用途：既可帮助防御者评估漏洞严重性，也可能降低攻击者的技术门槛。</p>
+      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-13T19:29:14Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude" target="_blank" rel="noreferrer">Claude 电脑与浏览器使用的最佳实践</a></h3>
+      <p class='summary'>Claude 最新模型在电脑与浏览器使用能力上显著提升，支持构建复杂智能体系统。本文针对Claude 4.6系列和Opus 4.7提供实践指南，重点优化截图分辨率：Claude 4.6系列API限制最大长边1568像素、总像素115万；Opus 4.7提升至最大长边2576像素、总像素375万。发送前将截图缩放到限制内是提升点击准确性的最有效方法。推荐起始分辨率为1280x720，Opus 4.7用户可优先使用1080p，并避免发送未经缩放的原始截图或过低分辨率图像。</p>
+      <div class="tags"><span>strong:claude</span><span>strong:智能体</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-13T16:28:39Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://www.anthropic.com/news/claude-for-small-business" target="_blank" rel="noreferrer">Anthropic推出面向小型企业的Claude服务包</a></h3>
+      <p class='summary'>Anthropic推出&quot;Claude for Small Business&quot;服务包，旨在帮助小型企业弥补在AI应用资源上与大型公司的差距。该产品包含一系列连接器和15个开箱即用的自动化工作流，能将Claude深度集成到QuickBooks、PayPal、HubSpot等企业日常工具中。其核心功能是自动化处理财务、运营、销售等领域的重复性任务，如规划薪资、月末结算、追踪发票和分析营销活动等。用户通过Claude Cowork界面操作并手动批准关键步骤，所有任务均由用户发起和控制，Anthropic承诺保障数据安全。</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>weak:自动化</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -110,25 +162,12 @@
       <div class="meta">
         <span>GitHub Changelog</span>
         <span>official_rss</span>
-        <span>2026-05-12T19:14:26Z</span>
+        <span>2026-05-13T19:27:52Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://github.blog/changelog/2026-05-12-copilot-code-review-comment-experience-improvements" target="_blank" rel="noreferrer">Copilot code review: Comment experience improvements</a></h3>
-      <p class='summary'>Copilot code review comments are now easier to scan and act on. Available to all users opted into the new pull requests experience, grouped suggestions, severity levels, and an updated… The post Copilot code review: Comment experience improvements appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-05-12T19:01:57Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-05-12-april-reports-are-now-available-to-prepare-for-usage-based-billing" target="_blank" rel="noreferrer">April reports are now available to prepare for usage-based billing</a></h3>
-      <p class='summary'>Starting today, you can download your usage report to see how April’s GitHub Copilot activity translates into AI credits. The new billing unit of AI credits is going live on… The post April reports are now available to prepare for usage-based billing appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
+      <h3><a href="https://github.blog/changelog/2026-05-13-new-enterprise-installation-api-now-in-public-preview" target="_blank" rel="noreferrer">New enterprise installation API now in public preview</a></h3>
+      <p class='summary'>We’re filling an API gap for GitHub App developers based on community feedback. Enterprise Installation API We’ve added a new API that lets a GitHub App find out if it’s… The post New enterprise installation API now in public preview appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:api</span><span>weak:developer</span><span>weak:API</span></div>
     </article>
     
 
@@ -136,12 +175,12 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-05-13T01:26:42Z</span>
+        <span>2026-05-13T18:23:15Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://x.com/alibaba_cloud/status/2054372732234797342" target="_blank" rel="noreferrer">AI未来原生智能体 Qwen 3.6 Plus限免</a></h3>
-      <p class='summary'>AI的未来是智能体原生的。 很高兴能与Hermes Agent及@NousResearch社区共同开启这段旅程。 Qwen 3.6 Plus现于Nous Portal限时免费--快来尝试吧。⚡</p>
-      <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://the-decoder.com/anthropic-overtakes-openai-in-b2b-adoption-for-the-first-time-according-to-ramp-spending-data" target="_blank" rel="noreferrer">Anthropic 首次在 B2B 采用率上超越 OpenAI，Ramp 支出数据显示</a></h3>
+      <p class='summary'>根据 Ramp AI 指数数据，Anthropic 在美国企业客户中的采用率达到 34.4%，首次超越 OpenAI 的 32.3%。其业务覆盖范围在一年内增长了四倍。但文章指出，三个因素可能使其领先优势迅速减弱。</p>
+      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -149,90 +188,12 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-05-13T00:29:05Z</span>
+        <span>2026-05-13T17:10:07Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://x.com/berryxia/status/2054358231791923392" target="_blank" rel="noreferrer">无需注册付费，Telegram内一键启动AI智能体</a></h3>
-      <p class='summary'>牛逼！Browser Use 今天把&quot;AI agent 即用即走&quot;做到了极致。 BuxFather：Telegram 里直接 Spin up agent，无需任何注册付费，24/7 自主运行 + 自改进，还带 stealth browser。 几下点击就有完整电脑 + 浏览器环境。 这波对重度 Telegram 用户来说真的爽了！ https：//x.com/browser_use/status/2054330495249564094/video/1</p>
-      <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-12T22:22:46Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/demishassabis/status/2054326444189253655" target="_blank" rel="noreferrer">谷歌AI重塑智能鼠标指针交互</a></h3>
-      <p class='summary'>团队正在用AI重新构想鼠标指针，成果非常酷！在@GoogleAIStudio尝试原型版本，体验相当神奇。 【引用 @GoogleDeepMind】：我们正用AI重新构想这个存在50年的界面--鼠标指针。🖱️ 这些实验演示展示了人们如何通过动作、语音和自然简写，在屏幕上直观操控Gemini完成任务🧵</p>
-      <div class="tags"><span>strong:gemini</span><span>strong:deepmind</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-12T20:38:29Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/LumaLabsAI/status/2054300200517456185" target="_blank" rel="noreferrer">优化广告效果，定义更佳表现</a></h3>
-      <p class='summary'>你的广告正在投放。但它有效吗？ 定义更好的样子。设定方向。Luma Agents 会构建一个更精准、表现更出色的版本，并提供创意和消息支持。 超越它 → http：//lumalabs.ai/app</p>
-      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-12T18:54:46Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://claude.com/blog/how-anthropic-uses-claude-cybersecurity" target="_blank" rel="noreferrer">Anthropic 网络安全团队如何利用 Claude Code 构建威胁检测平台</a></h3>
-      <p class='summary'>Anthropic 检测平台工程团队技术负责人 Jackie Bow 运用 Claude Code 开发了 CLUE 威胁检测与响应平台。该平台通过自然语言界面连接内部系统，包含 CLUE Triage 自动初筛警报，整合上下文信息分配处置建议；以及 CLUE Investigate 支持分析师用自然语言查询日志，由 Claude 自动生成并执行查询，将数小时的人工分析缩短至几分钟。团队在一天内完成概念验证，一周内交付实现，显著提升了安全运营效率。</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-12T18:23:53Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/ClaudeDevs/status/2054266327771275435" target="_blank" rel="noreferrer">Claude Opus 4.7快速模式开放研究预览</a></h3>
-      <p class='summary'>Claude Opus 4.7的快速模式现已在API和Claude Code中开放研究预览。</p>
-      <div class="tags"><span>strong:claude</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-12T17:44:26Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/cb_doge/status/2054256398834569440" target="_blank" rel="noreferrer">青少年按ChatGPT建议混用药物致死，父母起诉OpenAI</a></h3>
-      <p class='summary'>一名19岁青少年因过量服用药物死亡，其父母起诉OpenAI，指控ChatGPT的错误建议导致了悲剧。该青少年曾长期向ChatGPT咨询关于卡痛、阿普唑仑、酒精和止咳糖浆等物质的混合使用，而ChatGPT提供了具体的剂量建议，并认可混合使用的安全性，甚至指导如何增强药物体验。在他死亡当天，ChatGPT仍在提供后续用药建议。OpenAI回应称，相关对话发生于已下线的旧版本模型。</p>
-      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-12T17:27:50Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/OpenAIDevs/status/2054252221941121035" target="_blank" rel="noreferrer">Symphony为每个任务启动运行Codex智能体</a></h3>
-      <p class='summary'>Symphony：每个开放任务都有一个正在运行的Codex智能体</p>
-      <div class="tags"><span>strong:codex</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://x.com/ClaudeDevs/status/2054610152817619388" target="_blank" rel="noreferrer">Claude付费计划将提供月度编程使用额度</a></h3>
+      <p class='summary'>自6月15日起，付费Claude计划可申领专用的月度编程使用额度。 该额度涵盖以下用途： - Claude Agent SDK - claude -p - Claude Code GitHub Actions - 基于Agent SDK构建的第三方应用</p>
+      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -247,47 +208,21 @@
       <p class='summary'>oMLX项目更新至0.3.9.dev2版本，集成了Gemma 4的MTP视觉路径、DFlash引擎和ParoQuant技术，显著提升了图文处理速度。新增一键启动copilot功能，可便捷接入Claude等工具，并通过oQ自动代理解决显存瓶颈。这些改进大幅增强了本地AI在速度、集成与易用性上的表现，正推动AI能力从云端向个人电脑回归。</p>
       <div class="tags"><span>strong:claude</span><span>weak:copilot</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-12T23:13:43Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://x.com/berryxia/status/2054339265103065156" target="_blank" rel="noreferrer">90%的人在白白浪费&quot;Token&quot;！</a></h3>
-      <p class='summary'>Andrej Karpathy指出，AI编程账单的90%浪费在发送不必要的上下文上。常见浪费行为包括：过度加载文件、使用高价模型处理简单任务、Agent重复发送整个代码库、默认选用高价模型而非性价比更高的替代品。优化策略强调严格管理上下文、启用提示词缓存、采用多模型路由（如主力用Kimi 2.6，关键任务用Opus）、创建SKILL.md文件避免知识重建、先分析工具调用再优化提示。未来，开发者月花费的巨大差距将取决于其上下文和模型路由的管理能力，而非纯粹的技术水平。</p>
-      <div class="tags"><span>strong:agent</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-12T17:34:19Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://x.com/testingcatalog/status/2054253853026185609" target="_blank" rel="noreferrer">谷歌发布全新安卓智能助理</a></h3>
-      <p class='summary'>GOOGLE 🔥： 在Android Show 2026上推出了全新的Android Intelligence！ - 全新的时尚设计！ - 跨安卓应用的自动化多步骤任务 - Chrome中的Gemini获得浏览器使用功能 - 自动表单填写 - &quot;Rambler&quot;可将语音笔记转为文本 - 自定义Gen UI小组件 我现在就需要一台Pixel 👀</p>
-      <div class="tags"><span>strong:gemini</span><span>weak:自动化</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>955</td><td>0</td><td>619ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>394ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>208</td><td>0</td><td>100ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>454ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>267ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>777</td><td>0</td><td>303ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>136ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>31ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>14</td><td>1464ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>956</td><td>1</td><td>582ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>166ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>209</td><td>0</td><td>102ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>311ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>147ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>777</td><td>0</td><td>252ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>111ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>25ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>10</td><td>1982ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
