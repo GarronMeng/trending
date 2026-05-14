@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-14T06:39:14.958801Z",
+  "generated_at": "2026-05-14T09:14:59.408379Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 14,
   "groups": {
     "official": {
       "group": "official",
@@ -72,17 +72,21 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 11,
       "top_sources": [
         [
           "AI Hot",
-          9
+          11
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
+          11
+        ],
+        [
+          "agent",
+          6
         ],
         [
           "anthropic",
@@ -93,7 +97,7 @@
           5
         ],
         [
-          "agent",
+          "智能体",
           4
         ],
         [
@@ -101,8 +105,12 @@
           3
         ],
         [
-          "智能体",
-          3
+          "agents",
+          2
+        ],
+        [
+          "codex",
+          2
         ],
         [
           "自动化",
@@ -111,14 +119,6 @@
         [
           "工作流",
           2
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "codex",
-          1
         ],
         [
           "api",
@@ -212,6 +212,26 @@
         "strong:anthropic",
         "strong:claude",
         "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2f15f97f3112144e89a890793ab68e2505bee7fc",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "百度推进智能体布局，以日活为关键指标",
+      "url": "https://x.com/Baidu_Inc/status/2054815977477738549",
+      "published_at": "2026-05-14T06:48:00Z",
+      "summary": "百度推进智能体组合以拥抱智能体时代，主张将日活跃智能体作为关键指标 https：//www.prnewswire.com/news-releases/baidu-advances-agent-portfolio-to-embrace-the-agent-era-champions-daily-active-agents-as-key-metric-302771383.html",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -339,6 +359,25 @@
       "is_ai_related": true
     },
     {
+      "id": "09b06dbe8850c8630c3163869ffdf1b523ca2502",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "编写循环运行Codex审查的代码技能",
+      "url": "https://x.com/steipete/status/2054850632067019173",
+      "published_at": "2026-05-14T09:05:42Z",
+      "summary": "编写了一个技能，可以循环运行codex /review直到没有错误为止。 注意事项：它不会为你修复系统架构，所以你仍然需要将BRAIN作为主模型。https：//github.com/steipete/agent-scripts/blob/main/skills/codex-review/SKILL.md",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:codex",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "aa88f206bf82f0b98f26ae513856511f588aadd7",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -387,8 +426,8 @@
       "fetched_count": 957,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 688,
-      "checked_at": "2026-05-14T06:39:10.757573Z"
+      "latency_ms": 686,
+      "checked_at": "2026-05-14T09:14:56.489693Z"
     },
     {
       "source_id": "openai-skills",
@@ -399,8 +438,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 208,
-      "checked_at": "2026-05-14T06:39:10.965957Z"
+      "latency_ms": 249,
+      "checked_at": "2026-05-14T09:14:56.739225Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -411,8 +450,8 @@
       "fetched_count": 209,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 96,
-      "checked_at": "2026-05-14T06:39:11.065516Z"
+      "latency_ms": 90,
+      "checked_at": "2026-05-14T09:14:56.832260Z"
     },
     {
       "source_id": "google-deepmind",
@@ -423,8 +462,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 260,
-      "checked_at": "2026-05-14T06:39:11.327752Z"
+      "latency_ms": 298,
+      "checked_at": "2026-05-14T09:14:57.132198Z"
     },
     {
       "source_id": "google-ai",
@@ -435,8 +474,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 167,
-      "checked_at": "2026-05-14T06:39:11.495705Z"
+      "latency_ms": 138,
+      "checked_at": "2026-05-14T09:14:57.271310Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -447,8 +486,8 @@
       "fetched_count": 777,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 1668,
-      "checked_at": "2026-05-14T06:39:13.174777Z"
+      "latency_ms": 230,
+      "checked_at": "2026-05-14T09:14:57.511956Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -459,8 +498,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 116,
-      "checked_at": "2026-05-14T06:39:13.290987Z"
+      "latency_ms": 278,
+      "checked_at": "2026-05-14T09:14:57.790153Z"
     },
     {
       "source_id": "github-changelog",
@@ -471,8 +510,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-05-14T06:39:13.317238Z"
+      "latency_ms": 21,
+      "checked_at": "2026-05-14T09:14:57.811816Z"
     },
     {
       "source_id": "aihot",
@@ -481,10 +520,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 10,
+      "kept_count": 12,
       "error": null,
-      "latency_ms": 1631,
-      "checked_at": "2026-05-14T06:39:14.949835Z"
+      "latency_ms": 1587,
+      "checked_at": "2026-05-14T09:14:59.400644Z"
     }
   ],
   "control_notes": {
