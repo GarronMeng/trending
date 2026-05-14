@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>14</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>15</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>11</b><span>聚合源条目</span></div>
+        <div class="stat"><b>12</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-14T09:14:59.409818Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-14T10:41:52.952836Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -201,6 +201,19 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
+        <span>2026-05-14T09:29:05Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://x.com/AYi_AInotes/status/2054856518185439662" target="_blank" rel="noreferrer">OpenAI遭集体诉讼，被指通过追踪代码向Meta等泄露用户查询隐私</a></h3>
+      <p class='summary'>南加州联邦法院已受理针对OpenAI的集体诉讼，指控其在ChatGPT网站中嵌入Facebook Pixel等代码，侵犯用户隐私。当用户提交查询时，查询主题会作为浏览器标题与含Facebook唯一ID的cookies一并实时发送给Meta。OpenAI虽称仅分享&quot;有限标识符&quot;用于广告，但原告认为查询主题本身即高度敏感的个人信息。此案揭示免费AI服务的潜在代价：用户每一次查询及数字身份可能成为被交易的产品，与许多用户为逃避追踪而选择ChatGPT的初衷形成讽刺对比。</p>
+      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
         <span>2026-05-14T09:05:42Z</span>
         <strong>Score 3</strong>
       </div>
@@ -240,15 +253,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>957</td><td>1</td><td>686ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>249ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>209</td><td>0</td><td>90ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>298ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>138ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>777</td><td>0</td><td>230ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>278ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>21ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>12</td><td>1587ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>957</td><td>1</td><td>684ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>349ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>209</td><td>0</td><td>210ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>333ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>256ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>777</td><td>0</td><td>313ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>163ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>39ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>13</td><td>1403ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
