@@ -25,6 +25,7 @@ on:
       - "docs/AI_NEWS_RADAR_REFACTOR.md"
       - "skills/ai-news-radar/**"
       - "index.html"
+      - ".nojekyll"
   schedule:
     - cron: "0 0 * * *"
     - cron: "45 3 * * *"
@@ -96,6 +97,7 @@ jobs:
           retention-days: 14
       - name: Send email digest
         if: github.event_name != 'pull_request'
+        continue-on-error: true
         env:
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
@@ -147,7 +149,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ai-news-radar.json data/latest-ai-news-radar.json reports/ai-news-radar.html reports/latest.html index.html
+          git add data/ai-news-radar.json data/latest-ai-news-radar.json reports/ai-news-radar.html reports/latest.html index.html .nojekyll
           if git diff --cached --quiet; then
             echo "No AI News Radar changes to commit."
           else
