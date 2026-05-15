@@ -1,96 +1,120 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-14T16:09:41.284855Z",
+  "generated_at": "2026-05-15T02:33:39.502175Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 19,
+  "item_count": 27,
   "groups": {
-    "developer": {
-      "group": "developer",
-      "count": 3,
+    "official": {
+      "group": "official",
+      "count": 2,
       "top_sources": [
         [
-          "GitHub Changelog",
-          3
+          "OpenAI News",
+          1
+        ],
+        [
+          "Hugging Face Blog",
+          1
         ]
       ],
       "top_keywords": [
         [
-          "copilot",
-          4
-        ],
-        [
-          "agent",
+          "official_ai",
           2
         ],
         [
-          "api",
-          2
+          "chatgpt",
+          1
         ],
         [
-          "API",
-          2
+          "codex",
+          1
         ],
         [
-          "developer",
+          "eval",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 16,
+      "count": 20,
       "top_sources": [
         [
           "AI Hot",
-          15
-        ],
-        [
-          "Anthropic News via Olshansk RSS",
-          1
+          20
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          16
-        ],
-        [
-          "anthropic",
-          7
+          20
         ],
         [
           "claude",
-          7
+          10
+        ],
+        [
+          "智能体",
+          8
         ],
         [
           "agent",
           7
         ],
         [
-          "openai",
-          5
-        ],
-        [
           "codex",
-          5
+          6
         ],
         [
-          "智能体",
-          5
+          "开发者",
+          4
+        ],
+        [
+          "自动化",
+          3
+        ],
+        [
+          "anthropic",
+          3
+        ],
+        [
+          "mcp",
+          2
         ],
         [
           "agents",
           2
         ],
         [
-          "自动化",
+          "chatgpt",
           2
         ],
         [
           "工作流",
           2
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 5,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          5
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          8
+        ],
+        [
+          "agent",
+          3
         ],
         [
           "api",
@@ -98,6 +122,10 @@
         ],
         [
           "API",
+          1
+        ],
+        [
+          "actions",
           1
         ]
       ]
@@ -105,19 +133,79 @@
   },
   "items": [
     {
-      "id": "a8e719c8b24c560598e2a8e59d9497dcb0890b3e",
+      "id": "96ea7fd74da85ce2af402bbfba7af7ed888c190e",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Work with Codex from anywhere",
+      "url": "https://openai.com/index/work-with-codex-from-anywhere",
+      "published_at": "2026-05-14T13:00:00Z",
+      "summary": "Use Codex anywhere with the ChatGPT mobile app. Monitor, steer, and approve coding tasks in real time across devices and remote environments.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fbde8f478651956b1d7aa6452afafdcac769fa0f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "牛津大学博士后开源视频翻译工具Violin，支持多语言翻译与视频对话",
+      "url": "https://x.com/berryxia/status/2055093068085547507",
+      "published_at": "2026-05-15T01:09:03Z",
+      "summary": "牛津大学博士后Kevin Lin开源视频翻译工具Violin，旨在打破高质量视频内容的语言壁垒。该工具将语音识别、大语言模型翻译与语音合成整合为自动化流水线，支持多语言互译与个性化翻译风格调整，例如将学术报告转化为儿童易懂版本。用户还能直接与视频内容进行对话并获取相关答案。Violin提供Web应用、命令行界面和Agent Skill三种使用方式，所有功能基于MIT协议开源，由Together Compute提供技术支持，适用于内容创作、教育及多模态智能体开发等领域。",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "strong:多模态",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9cc73389aab5fba460d1f07099a92dd1f9824b96",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "AI自主研究实现突破：智能体在nanoGPT优化赛道上超越人类基准",
+      "url": "https://x.com/berryxia/status/2055074608261578949",
+      "published_at": "2026-05-14T23:55:42Z",
+      "summary": "Prime Intellect 近期在AI研究自动化领域取得重要进展。他们让Claude Code与Codex智能体完全自主运行于nanoGPT速度挑战的优化器赛道，利用闲置算力完成了近万次实验，消耗约1.4万H200小时。最终，Claude Code将记录提升至2930步，超越了2990步的人类基准。实验显示，智能体在系统整合社区主流优化方法、进行超参数扫描和策略组合方面效率极高，但在要求真正创新的\"新颖性检查\"环节未能突破基线。该项目将所有实验记录、日志和代码开源，使得AI自主研究从概念转化为可复现的现实。",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "strong:智能体",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "887c115190eab5c43cd486409359a0070738303d",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Start Copilot cloud agent tasks via the REST API",
-      "url": "https://github.blog/changelog/2026-05-13-start-copilot-cloud-agent-tasks-via-the-rest-api",
-      "published_at": "2026-05-13T18:01:15Z",
-      "summary": "Copilot Business and Copilot Enterprise users can programmatically start Copilot cloud agent tasks with the new Agent tasks REST API, available in public preview. Copilot cloud agent works in the… The post Start Copilot cloud agent tasks via the REST API appeared first on The GitHub Blog .",
-      "relevance_score": 7,
+      "title": "Team-level Copilot usage metrics now available via API",
+      "url": "https://github.blog/changelog/2026-05-14-team-level-copilot-usage-metrics-now-available-via-api",
+      "published_at": "2026-05-14T23:06:25Z",
+      "summary": "The Copilot usage metrics API now exposes a new user-teams report that maps each Copilot-licensed user to the teams they belong to. By joining the user-teams report with the existing… The post Team-level Copilot usage metrics now available via API appeared first on The GitHub Blog .",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:agent",
         "weak:api",
         "weak:copilot",
         "weak:API",
@@ -126,44 +214,42 @@
       "is_ai_related": true
     },
     {
-      "id": "324424d95d4d7fe68dfa294fa423a61e2ac1a64b",
+      "id": "5af07933e00eab1fa563a2f6a7d0a119c184a48c",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Claude 工具 v2.1.141 版本更新",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
-      "published_at": "2026-05-13T23:19:16Z",
-      "summary": "Claude 工具发布 v2.1.141 版本，带来多项功能新增与优化。主要更新包括：为钩子输出添加 `terminalSequence` 字段以支持无控制终端的桌面通知；新增 `CLAUDE_CODE_PLUGIN_PREFER_HTTPS` 环境变量，便于通过 HTTPS 克隆插件源码；引入 `ANTHROPIC_WORKSPACE_ID` 变量以在多工作区联盟中限定令牌范围。会话管理方面，`claude agents` 命令新增 `--cwd` 参数用于按目录筛选，并优化后台代理的状态归类。用户体验改进包括：在倒带菜单添加\"总结至此\"选项以压缩早期上下文；长思考超时后旋转指示器变色提供更明确反馈；此外，还修复了 Markdown 表格渲染异常、权限提示逻辑、历史记录管理等超过 30 项问题。",
-      "relevance_score": 7,
+      "title": "在大型代码库中高效运用Claude Code：最佳实践与入门指南",
+      "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+      "published_at": "2026-05-14T18:00:00Z",
+      "summary": "Claude Code已成功部署于数百万行的单体仓库、遗留系统及分布式架构中。其核心在于围绕模型构建的\"工具套件\"，而非仅依赖模型本身。该套件包含五个关键扩展点：提供代码库概览的CLAUDE.md文件、实现持续改进的钩子、按需加载专业知识的技能、插件以及MCP服务器。它采用智能体搜索模式，直接在开发者本地实时代码库上操作，无需构建和维护集中式索引，从而避免了传统RAG系统在活跃大型代码库中索引过时的问题。团队对代码库设置的投入程度直接决定了其导航效果。",
+      "relevance_score": 6,
       "relevance_reasons": [
-        "strong:anthropic",
         "strong:claude",
-        "strong:agent",
-        "strong:agents",
+        "strong:mcp",
+        "strong:智能体",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "30a38f0e2dbdf9a02bdfd5c653e40ee02afe5749",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "BestBlogs早报：AI智能体工程化实战与安全架构",
-      "url": "https://x.com/hongming731/status/2054701978924859865",
-      "published_at": "2026-05-13T23:15:00Z",
-      "summary": "BestBlogs早报聚焦AI智能体的工程化落地。Anthropic官方指南详解Claude Computer Use最佳实践，包括解决点击偏移的根本原因、推荐分辨率策略及必须采用虚拟机隔离与人工确认门控的安全原则。OpenAI工程师分享了为Codex构建Windows安全沙箱的历程，其最终方案通过专属安全标识符和写受限令牌，实现了操作系统层面的强制文件系统隔离。早报同时指出，基准测试优异的RAG Agent在生产环境中可能出现高达30%的幻觉率。",
-      "relevance_score": 7,
+      "id": "baaf0cd4df182e6366a5ca84f407d24b48354996",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot app is now available in technical preview",
+      "url": "https://github.blog/changelog/2026-05-14-github-copilot-app-is-now-available-in-technical-preview",
+      "published_at": "2026-05-14T16:10:33Z",
+      "summary": "The GitHub Copilot app is now in technical preview. It’s a GitHub-native desktop experience to start agentic development from the work in front of you, keep it isolated, steer it… The post GitHub Copilot app is now available in technical preview appeared first on The GitHub Blog .",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:claude",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -183,6 +269,63 @@
         "strong:agent",
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "39ba7c320fba3c9aeef0ff0f9ef9c24dce94a3d7",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Introducing Copilot CLI agent and unified sessions view in GitHub Copilot for JetBrains IDEs",
+      "url": "https://github.blog/changelog/2026-05-13-introducing-copilot-cli-agent-and-unified-sessions-view-in-github-copilot-for-jetbrains-ides",
+      "published_at": "2026-05-14T02:38:40Z",
+      "summary": "This update brings the Copilot CLI agent into JetBrains IDEs, along with a unified sessions view that shows live status for running and queued sessions. It also adds the ask… The post Introducing Copilot CLI agent and unified sessions view in GitHub Copilot for JetBrains IDEs appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "abe41461fe6eb172960c7d8a84baff74515aee29",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "普华永道全球部署Claude，助力客户构建技术、执行交易并重塑企业职能",
+      "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
+      "published_at": "2026-05-15T01:30:09Z",
+      "summary": "普华永道与Anthropic宣布扩大战略联盟，将在全球数十万员工中部署Claude AI工具。双方将联合建立卓越中心，并培训认证3万名专业人员。合作聚焦三大高杠杆领域：智能体技术构建、AI原生交易执行以及企业职能重塑。普华永道已率先成立基于Claude的财务业务组。实际应用显示，Claude在保险承保、网络安全等多个领域能将交付时间缩短最高达70%，例如将保险承保周期从十周压缩至十天。",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0e321e5f024363c747dec918cef0661ca15c69f5",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+      "published_at": "2026-05-14T18:55:01Z",
+      "summary": null,
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:eval",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -247,83 +390,40 @@
       "is_ai_related": true
     },
     {
-      "id": "9b14dd1a053aae120c7df878104a67ff34d7b59a",
+      "id": "de95a0ba7d5a101195eb1b33eef611c0587bd001",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "ExploitGym：AI智能体能否将安全漏洞转化为真实攻击？",
-      "url": "https://rdi.berkeley.edu/blog/exploitgym",
-      "published_at": "2026-05-13T20:42:29Z",
-      "summary": "由伯克利RDI、马克斯·普朗克安全与隐私研究所、Anthropic、OpenAI及谷歌等机构研究人员组成的团队，发布了名为ExploitGym的新基准测试。该测试包含898个真实漏洞，要求AI智能体根据漏洞描述生成完整的漏洞利用程序。结果显示，前沿AI模型已能成功利用相当数量的漏洞，即使在启用ASLR等标准防御措施后，部分攻击仍能成功。这证明AI已具备自主将漏洞转化为实际攻击的能力，该技术具有双重用途：既可帮助防御者评估漏洞严重性，也可能降低攻击者的技术门槛。",
-      "relevance_score": 5,
+      "title": "Codex推出自动化钩子与程序化令牌",
+      "url": "https://x.com/OpenAIDevs/status/2055032115964870838",
+      "published_at": "2026-05-14T21:06:51Z",
+      "summary": "Codex正变得更易于围绕用户代码实现自动化与定制。其核心更新包括\"钩子\"功能，允许在任务关键节点运行脚本，以进行工作验证、扫描密钥、记录对话或按仓库定制行为。同时，面向商业和企业团队推出\"程序化访问令牌\"，提供范围化凭证，可从ChatGPT工作区设置创建，用于CI/CD、发布流程和内部自动化，支持设置过期或撤销，并将使用情况关联回工作区。",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:智能体",
+        "strong:chatgpt",
+        "strong:codex",
+        "weak:自动化",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "47b8aaebf5fd7a1376434ba4f63f671533396496",
+      "id": "177d324093281da138f0b75c305740a84993dd94",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Claude 电脑与浏览器使用的最佳实践",
-      "url": "https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude",
-      "published_at": "2026-05-13T19:29:14Z",
-      "summary": "Claude 最新模型在电脑与浏览器使用能力上显著提升，支持构建复杂智能体系统。本文针对Claude 4.6系列和Opus 4.7提供实践指南，重点优化截图分辨率：Claude 4.6系列API限制最大长边1568像素、总像素115万；Opus 4.7提升至最大长边2576像素、总像素375万。发送前将截图缩放到限制内是提升点击准确性的最有效方法。推荐起始分辨率为1280x720，Opus 4.7用户可优先使用1080p，并避免发送未经缩放的原始截图或过低分辨率图像。",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7fd67b5d5f957d22635d7b29986c0acb15e00d32",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic推出面向小型企业的Claude服务包",
-      "url": "https://www.anthropic.com/news/claude-for-small-business",
-      "published_at": "2026-05-13T16:28:39Z",
-      "summary": "Anthropic推出\"Claude for Small Business\"服务包，旨在帮助小型企业弥补在AI应用资源上与大型公司的差距。该产品包含一系列连接器和15个开箱即用的自动化工作流，能将Claude深度集成到QuickBooks、PayPal、HubSpot等企业日常工具中。其核心功能是自动化处理财务、运营、销售等领域的重复性任务，如规划薪资、月末结算、追踪发票和分析营销活动等。用户通过Claude Cowork界面操作并手动批准关键步骤，所有任务均由用户发起和控制，Anthropic承诺保障数据安全。",
-      "relevance_score": 5,
+      "title": "创始人手册：构建AI原生初创公司",
+      "url": "https://claude.com/blog/the-founders-playbook",
+      "published_at": "2026-05-14T18:00:00Z",
+      "summary": "Anthropic公司发布了一份面向AI原生初创企业的实用指南，旨在重塑2026年创业生命周期的构思、最小可行产品、发布和规模化四个核心阶段。该手册为每个阶段提供了具体目标、退出标准、常见失败模式及AI驱动练习，涵盖如何利用Claude进行问题验证与客户发现、避免AI生成代码的技术债务、区分真实产品市场契合度与早期炒作，并引入智能工作流替代创始人手动操作。指南还整合了多家初创企业的实践案例，为从零开始围绕AI构建公司的创始人提供架构、范围与安全方面的最佳实践。",
+      "relevance_score": 4,
       "relevance_reasons": [
         "strong:anthropic",
         "strong:claude",
-        "weak:自动化",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "6af669da62b8334be43ffe604d3a4e610c904788",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Runway Agent",
-      "url": "https://app.runwayml.com/agent",
-      "published_at": "2026-05-13T16:13:20Z",
-      "summary": "Runway Agent 是一个集成化创意工具平台，旨在为用户提供实现任何创意所需的全套资源与功能。该平台整合了视频编辑、图像生成、3D建模等多种人工智能驱动工具，允许用户在一个工作流中无缝完成从概念到成品的创作过程。其核心特点是降低了专业内容制作的技术门槛，通过自动化与智能辅助功能，让用户能够更自由地将想法转化为视觉作品。",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:人工智能",
-        "weak:自动化",
         "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
@@ -350,40 +450,22 @@
       "is_ai_related": true
     },
     {
-      "id": "4c4bcda9e868967fd92b681f911c89ba36eb9c0d",
-      "source_id": "anthropic-news-unofficial",
-      "source_name": "Anthropic News via Olshansk RSS",
+      "id": "2760d3b9b9daec6587dd9ac6efc024685041e67e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
-      "source_weight": 3,
-      "title": "Anthropic forms $200 million partnership with the Gates Foundation",
-      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
-      "published_at": "2026-05-14T00:00:00Z",
-      "summary": "Anthropic forms $200 million partnership with the Gates Foundation",
+      "source_weight": 2,
+      "title": "开源3D生成工具包：单张图片快速构建可交互3D世界",
+      "url": "https://x.com/berryxia/status/2055086814009180316",
+      "published_at": "2026-05-15T00:44:12Z",
+      "summary": "开发者@neilsonks开源了一套专为Claude Code设计的完整3D生成工具包。该工具能将输入的单张图片自动拆解，生成包含环境、网格、物理、灯光和音频的全套可交互3D场景。其流程首先利用图像与3D生成技术提取物体并生成高质量网格，随后移除物体以得到静态背景，最后为整个场景添加物理模拟、实时灯光和环境音效。配套查看器支持对生成物体的点击编辑与一键导出。此工具将以往需数天的2D转3D工作流程缩短至几分钟，适用于游戏开发、世界构建和产品可视化等项目。项目已在GitHub开源。",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
-        "source:anthropic",
+        "strong:claude",
+        "weak:开发者",
+        "weak:工作流",
         "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "66fee2407ff9e4351b70ae2c1313f435b6d72577",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "New enterprise installation API now in public preview",
-      "url": "https://github.blog/changelog/2026-05-13-new-enterprise-installation-api-now-in-public-preview",
-      "published_at": "2026-05-13T19:27:52Z",
-      "summary": "We’re filling an API gap for GitHub App developers based on community feedback. Enterprise Installation API We’ve added a new API that lets a GitHub App find out if it’s… The post New enterprise installation API now in public preview appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:developer",
-        "weak:API"
       ],
       "is_ai_related": true
     },
@@ -402,6 +484,100 @@
       "relevance_reasons": [
         "strong:openai",
         "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9d1870b407bb2445f47ccef0547152dd43f3b9be",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "API提示预缓存加速首令牌生成",
+      "url": "https://x.com/ClaudeDevs/status/2055069548672631218",
+      "published_at": "2026-05-14T23:35:36Z",
+      "summary": "减少API长提示首令牌生成时间的实用技巧：预热提示缓存。 在用户提示前发送系统提示。Claude会将其写入缓存，但跳过生成任何输出。 当真实用户请求到达时，将直接命中预热缓存。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "53db6e700f4055693cc47a83850bf47902e85d9e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude 代理工具 v2.1.142 版本更新",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.142",
+      "published_at": "2026-05-14T22:55:10Z",
+      "summary": "Claude 代理工具发布 v2.1.142 版本。本次更新新增了 `--add-dir`、`--settings`、`--model` 等 8 个用于配置后台会话的命令行标志，并将 Fast 模式的默认模型升级为 Opus 4.7。插件功能得到增强，拥有根目录 `SKILL.md` 的插件现可被识别为技能，插件详情面板会显示其提供的 LSP 服务器。此外，版本修复了超过 15 项问题，包括 MCP 工具超时设置失效、后台会话在系统休眠后异常断开、守护进程升级后无法正常退出、Windows 网络驱动器工作目录下死锁等关键错误，并改进了响应式压缩和钩子配置错误提示。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:mcp",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "20110486464801dfb1ac03c8020c23c9bdd85d50",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Luma Agents高效生成电商素材全流程",
+      "url": "https://x.com/LumaLabsAI/status/2055046873740984429",
+      "published_at": "2026-05-14T22:05:30Z",
+      "summary": "更多产品。更多市场。更多格式。再无瓶颈。 定义需求。设定风格。Luma Agents 从此处理所有电商活动素材。 立即扩展 → http：//lumalabs.ai/app",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b42b882da5699f844b70e609e5e626d5f2c218ab",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Actions: Upcoming image migrations",
+      "url": "https://github.blog/changelog/2026-05-14-github-actions-upcoming-image-migrations",
+      "published_at": "2026-05-14T18:31:34Z",
+      "summary": "There are two upcoming image migrations customers should be aware of, and GitHub is transitioning to owning the Arm64 images for hosted runners. Arm64 runner images now maintained by GitHub… The post GitHub Actions: Upcoming image migrations appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "source:actions"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "495c087ebc35b8e411051f9829be55ac165b38bc",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic与盖茨基金会达成2亿美元合作，聚焦全球健康与教育",
+      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "published_at": "2026-05-14T15:29:57Z",
+      "summary": "Anthropic与盖茨基金会建立为期四年、总额2亿美元的合作，通过资金、Claude使用额度及技术支持，共同推进全球健康、生命科学、教育及经济流动项目。合作重点包括改善中低收入国家约46亿人口的基本医疗，利用AI加速疫苗与疗法研发，并开发公共卫生数据集等公共产品。在教育领域，双方将为美国、撒哈拉以南非洲和印度的K-12学生开发AI教学工具。经济流动方面则关注提升小农户生产力及美国职业技能认证。首批成果预计今年晚些时候发布。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -445,39 +621,39 @@
       "is_ai_related": true
     },
     {
-      "id": "aa88f206bf82f0b98f26ae513856511f588aadd7",
+      "id": "fefea03884f1d2ed3ce3dca92a0f21a93c8c4c48",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 首次在 B2B 采用率上超越 OpenAI，Ramp 支出数据显示",
-      "url": "https://the-decoder.com/anthropic-overtakes-openai-in-b2b-adoption-for-the-first-time-according-to-ramp-spending-data",
-      "published_at": "2026-05-13T18:23:15Z",
-      "summary": "根据 Ramp AI 指数数据，Anthropic 在美国企业客户中的采用率达到 34.4%，首次超越 OpenAI 的 32.3%。其业务覆盖范围在一年内增长了四倍。但文章指出，三个因素可能使其领先优势迅速减弱。",
-      "relevance_score": 3,
+      "title": "Yetone发布Native Feel桌面应用开发Agent Skill",
+      "url": "https://x.com/berryxia/status/2055074211715301830",
+      "published_at": "2026-05-14T23:54:08Z",
+      "summary": "开发者Yetone将一篇关于桌面应用开发\"最佳实践\"的文章转化为一个名为\"native-feel-skill\"的Agent Skill。该Skill旨在帮助开发者利用Coding Agent，轻松地重构或开发跨平台桌面应用，并使其获得极其接近Native原生应用的性能体验。项目代码已开源在GitHub上。",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
+        "strong:agent",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "e37a91221ba9ddd95f257c63c90ff98de309f3af",
+      "id": "80749b7e6b56fa8f59135df978c3442006ccc160",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Claude付费计划将提供月度编程使用额度",
-      "url": "https://x.com/ClaudeDevs/status/2054610152817619388",
-      "published_at": "2026-05-13T17:10:07Z",
-      "summary": "自6月15日起，付费Claude计划可申领专用的月度编程使用额度。 该额度涵盖以下用途： - Claude Agent SDK - claude -p - Claude Code GitHub Actions - 基于Agent SDK构建的第三方应用",
-      "relevance_score": 3,
+      "title": "Genkit 推出中间件系统：增强智能体AI应用的可控性与可靠性",
+      "url": "https://developers.googleblog.com/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps",
+      "published_at": "2026-05-14T17:09:17Z",
+      "summary": "Google开源框架Genkit近日推出其核心中间件系统，旨在提升智能体AI应用的可靠性与可控性。该系统允许开发者在生成调用、模型及工具层进行拦截，以注入自定义行为，如重试机制、模型回退以及人工介入的工具审批流程。通过创建并堆叠自定义中间件，开发者能够实现对模型输出的确定性控制。所有中间件的执行流程均可通过专用的开发者界面进行实时查看与调试，有效支持使用TypeScript、Go、Dart和Python构建生产就绪的智能体应用。",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
+        "strong:智能体",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -490,11 +666,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 957,
-      "kept_count": 0,
+      "fetched_count": 959,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 813,
-      "checked_at": "2026-05-14T16:09:37.371481Z"
+      "latency_ms": 585,
+      "checked_at": "2026-05-15T02:33:36.380999Z"
     },
     {
       "source_id": "openai-skills",
@@ -505,8 +681,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 463,
-      "checked_at": "2026-05-14T16:09:37.835215Z"
+      "latency_ms": 432,
+      "checked_at": "2026-05-15T02:33:36.813552Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -514,11 +690,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 210,
-      "kept_count": 1,
+      "fetched_count": 211,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 204,
-      "checked_at": "2026-05-14T16:09:38.042361Z"
+      "latency_ms": 123,
+      "checked_at": "2026-05-15T02:33:36.940379Z"
     },
     {
       "source_id": "google-deepmind",
@@ -529,8 +705,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 491,
-      "checked_at": "2026-05-14T16:09:38.535558Z"
+      "latency_ms": 341,
+      "checked_at": "2026-05-15T02:33:37.283868Z"
     },
     {
       "source_id": "google-ai",
@@ -541,8 +717,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 241,
-      "checked_at": "2026-05-14T16:09:38.777769Z"
+      "latency_ms": 233,
+      "checked_at": "2026-05-15T02:33:37.517557Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -550,11 +726,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 778,
-      "kept_count": 0,
+      "fetched_count": 779,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 332,
-      "checked_at": "2026-05-14T16:09:39.120178Z"
+      "latency_ms": 341,
+      "checked_at": "2026-05-15T02:33:37.871135Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -565,8 +741,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 320,
-      "checked_at": "2026-05-14T16:09:39.441144Z"
+      "latency_ms": 177,
+      "checked_at": "2026-05-15T02:33:38.048997Z"
     },
     {
       "source_id": "github-changelog",
@@ -575,10 +751,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-05-14T16:09:39.468452Z"
+      "latency_ms": 36,
+      "checked_at": "2026-05-15T02:33:38.085758Z"
     },
     {
       "source_id": "aihot",
@@ -587,10 +763,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 16,
+      "kept_count": 22,
       "error": null,
-      "latency_ms": 1809,
-      "checked_at": "2026-05-14T16:09:41.279714Z"
+      "latency_ms": 1408,
+      "checked_at": "2026-05-15T02:33:39.496034Z"
     }
   ],
   "control_notes": {
