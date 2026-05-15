@@ -1,13 +1,6 @@
-name: Get Hot News
+name: Get Hot News Legacy
 
 on:
-  schedule:
-    - cron: "0 0 * * *"      # 08:00 Asia/Shanghai
-    - cron: "45 3 * * *"     # 11:45 Asia/Shanghai
-    - cron: "30 6 * * *"     # 14:30 Asia/Shanghai
-    - cron: "30 8 * * *"     # 16:30 Asia/Shanghai
-    - cron: "0 14 * * *"     # 22:00 Asia/Shanghai
-
   workflow_dispatch:
 
 concurrency:
@@ -24,61 +17,37 @@ jobs:
     timeout-minutes: 15
 
     steps:
+      - name: Legacy workflow notice
+        run: |
+          echo "This is the legacy TrendRadar workflow."
+          echo "It is intentionally no longer scheduled."
+          echo "Use the AI News Radar workflow for the new product."
+
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
         with:
           fetch-depth: 1
           clean: true
 
-      - name: Check Expiration
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          WORKFLOW_FILE="crawler.yml"
-          API_URL="repos/${{ github.repository }}/actions/workflows/$WORKFLOW_FILE/runs"
-          TOTAL=$(gh api "$API_URL" --jq '.total_count')
-          if [ -z "$TOTAL" ] || [ "$TOTAL" -eq 0 ]; then
-            echo "No previous runs found, skipping expiration check"
-            exit 0
-          fi
-          LAST_PAGE=$(( (TOTAL + 99) / 100 ))
-          FIRST_RUN_DATE=$(gh api "$API_URL?per_page=100&page=$LAST_PAGE" --jq '.workflow_runs[-1].created_at')
-          if [ -n "$FIRST_RUN_DATE" ]; then
-            CURRENT_TIMESTAMP=$(date +%s)
-            FIRST_RUN_TIMESTAMP=$(date -d "$FIRST_RUN_DATE" +%s)
-            DIFF_SECONDS=$((CURRENT_TIMESTAMP - FIRST_RUN_TIMESTAMP))
-            LIMIT_SECONDS=604800
-            if [ $DIFF_SECONDS -gt $LIMIT_SECONDS ]; then
-              echo "⚠️ Trial expired. Run 'Check In' to renew."
-              gh workflow disable "$WORKFLOW_FILE"
-              exit 1
-            fi
-          fi
-
       - name: Set up Python
-        if: success()
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Install uv
-        if: success()
-        uses: astral-sh/setup-uv@v7
+        uses: astral-sh/setup-uv@v5
 
       - name: Install dependencies
-        if: success()
         run: uv sync --frozen --no-dev
 
       - name: Verify required files
-        if: success()
         run: |
           if [ ! -f config/config.yaml ]; then
             echo "Error: Config missing"
             exit 1
           fi
 
-      - name: Run crawler
-        if: success()
+      - name: Run legacy crawler
         env:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
