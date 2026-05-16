@@ -1,11 +1,71 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-16T06:13:41.011308Z",
+  "generated_at": "2026-05-16T08:23:18.005743Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 15,
+  "item_count": 17,
   "groups": {
+    "aggregate": {
+      "group": "aggregate",
+      "count": 14,
+      "top_sources": [
+        [
+          "AI Hot",
+          14
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          14
+        ],
+        [
+          "openai",
+          5
+        ],
+        [
+          "anthropic",
+          5
+        ],
+        [
+          "agent",
+          4
+        ],
+        [
+          "claude",
+          4
+        ],
+        [
+          "api",
+          3
+        ],
+        [
+          "API",
+          3
+        ],
+        [
+          "开发者",
+          3
+        ],
+        [
+          "自动化",
+          3
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "工作流",
+          2
+        ],
+        [
+          "智能体",
+          2
+        ]
+      ]
+    },
     "developer": {
       "group": "developer",
       "count": 2,
@@ -22,66 +82,6 @@
         ],
         [
           "agent",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 12,
-      "top_sources": [
-        [
-          "AI Hot",
-          12
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          12
-        ],
-        [
-          "claude",
-          4
-        ],
-        [
-          "openai",
-          4
-        ],
-        [
-          "anthropic",
-          4
-        ],
-        [
-          "agent",
-          3
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "开发者",
-          2
-        ],
-        [
-          "自动化",
-          2
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "llm",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "工作流",
           1
         ]
       ]
@@ -108,6 +108,52 @@
     }
   },
   "items": [
+    {
+      "id": "a8e3eb31619900677c0272294f4a36f6e0734193",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "突发！OpenAI 大规模重组，总裁 Brockman 夺权挂帅",
+      "url": "https://www.ithome.com/0/951/258.htm",
+      "published_at": "2026-05-16T06:55:45Z",
+      "summary": "OpenAI宣布进行史上最大规模重组，将ChatGPT、Codex和API三大核心产品线合并为统一组织。联合创始人兼总裁Greg Brockman正式全面接管产品战略，成为实际掌权者，而ChatGPT原负责人Nick Turley被调离核心岗位。此次重组旨在整合资源，聚焦\"智能体时代\"，并秘密开发集成多项功能的\"超级应用\"桌面端产品。与此同时，竞争对手Anthropic估值飙升至9000亿美元，使OpenAI面临严峻挑战。",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:chatgpt",
+        "strong:codex",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "93fcfaf01e405a7262b8f7ac9a09ccb0769ac0ed",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Notion推出开发者平台及CLI工具",
+      "url": "https://x.com/oran_ge/status/2055539910212460878",
+      "published_at": "2026-05-16T06:44:39Z",
+      "summary": "Notion正式推出开发者平台，核心组件包括Notion CLI终端工具、Workers计算服务、数据库同步功能以及多种Agent工具与API。平台旨在让开发者更便捷地在Notion基础设施上运行代码、连接外部数据源并构建自动化工作流。未来，即使非开发者也能通过AI Agent在Notion上构建应用。",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:api",
+        "weak:开发者",
+        "weak:自动化",
+        "weak:工作流",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "fa29f050da921f5d0c343f40dc78fd70c20c91ee",
       "source_id": "github-changelog",
@@ -406,11 +452,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 962,
+      "fetched_count": 965,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 728,
-      "checked_at": "2026-05-16T06:13:37.417838Z"
+      "latency_ms": 705,
+      "checked_at": "2026-05-16T08:23:11.353566Z"
     },
     {
       "source_id": "openai-skills",
@@ -421,8 +467,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 297,
-      "checked_at": "2026-05-16T06:13:37.715832Z"
+      "latency_ms": 170,
+      "checked_at": "2026-05-16T08:23:11.524402Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -433,8 +479,8 @@
       "fetched_count": 211,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 199,
-      "checked_at": "2026-05-16T06:13:37.918813Z"
+      "latency_ms": 87,
+      "checked_at": "2026-05-16T08:23:11.615111Z"
     },
     {
       "source_id": "google-deepmind",
@@ -445,8 +491,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 373,
-      "checked_at": "2026-05-16T06:13:38.293724Z"
+      "latency_ms": 255,
+      "checked_at": "2026-05-16T08:23:11.871958Z"
     },
     {
       "source_id": "google-ai",
@@ -457,8 +503,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 259,
-      "checked_at": "2026-05-16T06:13:38.553970Z"
+      "latency_ms": 113,
+      "checked_at": "2026-05-16T08:23:11.985327Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -469,8 +515,8 @@
       "fetched_count": 779,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 305,
-      "checked_at": "2026-05-16T06:13:38.871401Z"
+      "latency_ms": 200,
+      "checked_at": "2026-05-16T08:23:12.196952Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -481,8 +527,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 154,
-      "checked_at": "2026-05-16T06:13:39.026612Z"
+      "latency_ms": 120,
+      "checked_at": "2026-05-16T08:23:12.318150Z"
     },
     {
       "source_id": "github-changelog",
@@ -493,8 +539,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 37,
-      "checked_at": "2026-05-16T06:13:39.064788Z"
+      "latency_ms": 26,
+      "checked_at": "2026-05-16T08:23:12.345271Z"
     },
     {
       "source_id": "aihot",
@@ -503,10 +549,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 12,
+      "kept_count": 14,
       "error": null,
-      "latency_ms": 1939,
-      "checked_at": "2026-05-16T06:13:41.005238Z"
+      "latency_ms": 5652,
+      "checked_at": "2026-05-16T08:23:17.998528Z"
     }
   ],
   "control_notes": {

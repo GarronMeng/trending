@@ -43,17 +43,43 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>15</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>17</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>12</b><span>聚合源条目</span></div>
+        <div class="stat"><b>14</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-16T06:13:41.014475Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-16T08:23:18.009084Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-16T06:55:45Z</span>
+        <strong>Score 9</strong>
+      </div>
+      <h3><a href="https://www.ithome.com/0/951/258.htm" target="_blank" rel="noreferrer">突发！OpenAI 大规模重组，总裁 Brockman 夺权挂帅</a></h3>
+      <p class='summary'>OpenAI宣布进行史上最大规模重组，将ChatGPT、Codex和API三大核心产品线合并为统一组织。联合创始人兼总裁Greg Brockman正式全面接管产品战略，成为实际掌权者，而ChatGPT原负责人Nick Turley被调离核心岗位。此次重组旨在整合资源，聚焦&quot;智能体时代&quot;，并秘密开发集成多项功能的&quot;超级应用&quot;桌面端产品。与此同时，竞争对手Anthropic估值飙升至9000亿美元，使OpenAI面临严峻挑战。</p>
+      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>strong:chatgpt</span><span>strong:codex</span><span>weak:api</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-16T06:44:39Z</span>
+        <strong>Score 6</strong>
+      </div>
+      <h3><a href="https://x.com/oran_ge/status/2055539910212460878" target="_blank" rel="noreferrer">Notion推出开发者平台及CLI工具</a></h3>
+      <p class='summary'>Notion正式推出开发者平台，核心组件包括Notion CLI终端工具、Workers计算服务、数据库同步功能以及多种Agent工具与API。平台旨在让开发者更便捷地在Notion基础设施上运行代码、连接外部数据源并构建自动化工作流。未来，即使非开发者也能通过AI Agent在Notion上构建应用。</p>
+      <div class="tags"><span>strong:agent</span><span>weak:api</span><span>weak:开发者</span><span>weak:自动化</span><span>weak:工作流</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>GitHub Changelog</span>
@@ -253,15 +279,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>962</td><td>0</td><td>728ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>297ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>211</td><td>0</td><td>199ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>373ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>259ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>779</td><td>0</td><td>305ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>154ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>37ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>12</td><td>1939ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>965</td><td>0</td><td>705ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>170ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>211</td><td>0</td><td>87ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>255ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>113ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>779</td><td>0</td><td>200ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>120ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>26ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>14</td><td>5652ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
