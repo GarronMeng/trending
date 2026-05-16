@@ -1,24 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-16T08:23:18.005743Z",
+  "generated_at": "2026-05-16T09:54:51.614347Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 17,
+  "item_count": 18,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 14,
+      "count": 15,
       "top_sources": [
         [
           "AI Hot",
-          14
+          15
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          14
+          15
         ],
         [
           "openai",
@@ -37,6 +37,10 @@
           4
         ],
         [
+          "codex",
+          3
+        ],
+        [
           "api",
           3
         ],
@@ -53,15 +57,11 @@
           3
         ],
         [
-          "codex",
+          "chatgpt",
           2
         ],
         [
           "工作流",
-          2
-        ],
-        [
-          "智能体",
           2
         ]
       ]
@@ -310,6 +310,25 @@
       "is_ai_related": true
     },
     {
+      "id": "c53c972b918fb225021ebae076aff1f2f8bbb8c5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Codex实现多设备远程控制与上下文共享",
+      "url": "https://x.com/op7418/status/2055561525633642762",
+      "published_at": "2026-05-16T08:10:32Z",
+      "summary": "Codex除了通过ChatGPT连接和远程控制外，还能控制另一台电脑，实现在ChatGPT上直接管理多台设备而无需切换，只需切换项目即可访问不同设备的上下文和文件。引用推文补充，此功能还支持通过远程SSH设置其他VMs等，增强了多设备协作的灵活性和实用性。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "bbb0d9059535e26c55eac30756e4582178b8bc9e",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -455,8 +474,8 @@
       "fetched_count": 965,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 705,
-      "checked_at": "2026-05-16T08:23:11.353566Z"
+      "latency_ms": 621,
+      "checked_at": "2026-05-16T09:54:48.090643Z"
     },
     {
       "source_id": "openai-skills",
@@ -467,8 +486,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 170,
-      "checked_at": "2026-05-16T08:23:11.524402Z"
+      "latency_ms": 480,
+      "checked_at": "2026-05-16T09:54:48.571465Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -479,8 +498,8 @@
       "fetched_count": 211,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 87,
-      "checked_at": "2026-05-16T08:23:11.615111Z"
+      "latency_ms": 210,
+      "checked_at": "2026-05-16T09:54:48.784359Z"
     },
     {
       "source_id": "google-deepmind",
@@ -491,8 +510,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 255,
-      "checked_at": "2026-05-16T08:23:11.871958Z"
+      "latency_ms": 388,
+      "checked_at": "2026-05-16T09:54:49.173976Z"
     },
     {
       "source_id": "google-ai",
@@ -503,8 +522,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 113,
-      "checked_at": "2026-05-16T08:23:11.985327Z"
+      "latency_ms": 246,
+      "checked_at": "2026-05-16T09:54:49.420704Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -515,8 +534,8 @@
       "fetched_count": 779,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 200,
-      "checked_at": "2026-05-16T08:23:12.196952Z"
+      "latency_ms": 315,
+      "checked_at": "2026-05-16T09:54:49.749438Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -527,8 +546,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 120,
-      "checked_at": "2026-05-16T08:23:12.318150Z"
+      "latency_ms": 230,
+      "checked_at": "2026-05-16T09:54:49.980504Z"
     },
     {
       "source_id": "github-changelog",
@@ -539,8 +558,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-05-16T08:23:12.345271Z"
+      "latency_ms": 33,
+      "checked_at": "2026-05-16T09:54:50.014278Z"
     },
     {
       "source_id": "aihot",
@@ -549,10 +568,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 14,
+      "kept_count": 15,
       "error": null,
-      "latency_ms": 5652,
-      "checked_at": "2026-05-16T08:23:17.998528Z"
+      "latency_ms": 1593,
+      "checked_at": "2026-05-16T09:54:51.609278Z"
     }
   ],
   "control_notes": {
