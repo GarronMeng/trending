@@ -1,39 +1,35 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-16T09:54:51.614347Z",
+  "generated_at": "2026-05-16T14:55:19.536978Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 18,
+  "item_count": 17,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 15,
+      "count": 13,
       "top_sources": [
         [
           "AI Hot",
-          15
+          13
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          15
-        ],
-        [
-          "openai",
-          5
+          13
         ],
         [
           "anthropic",
           5
         ],
         [
-          "agent",
+          "openai",
           4
         ],
         [
-          "claude",
+          "agent",
           4
         ],
         [
@@ -49,11 +45,11 @@
           3
         ],
         [
-          "开发者",
+          "自动化",
           3
         ],
         [
-          "自动化",
+          "claude",
           3
         ],
         [
@@ -61,8 +57,44 @@
           2
         ],
         [
+          "开发者",
+          2
+        ],
+        [
           "工作流",
           2
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ],
+        [
+          "GitHub AI & ML",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "agent",
+          1
         ]
       ]
     },
@@ -82,26 +114,6 @@
         ],
         [
           "agent",
-          1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub AI & ML",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "agent",
-          1
-        ],
-        [
-          "official_ai",
           1
         ]
       ]
@@ -128,6 +140,25 @@
         "weak:api",
         "weak:API",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a058c5a02c8808eb48d4753e8f7d820317312cf7",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "OpenAI and Malta partner to bring ChatGPT Plus to all citizens",
+      "url": "https://openai.com/index/malta-chatgpt-plus-partnership",
+      "published_at": "2026-05-16T00:00:00Z",
+      "summary": "OpenAI and Malta partner to expand AI access, offering ChatGPT Plus and training to help citizens build practical AI skills and use AI responsibly.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -170,6 +201,26 @@
         "strong:agent",
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2f360b64565c5e7f0d5c58e13b5530070e0f7b5c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic《Founder's Playbook》：AI提高创业失败率的警示",
+      "url": "https://x.com/berryxia/status/2055635826462130227",
+      "published_at": "2026-05-16T13:05:47Z",
+      "summary": "Anthropic发布内部手册《Founder's Playbook》，核心观点是AI（如Claude Code）将提高创业失败率，而非降低。手册指出，AI能快速生成原型，易使创始人混淆\"能运行\"与\"有市场需求\"，并通过确认偏误和研究引擎强化错误想法。它将创业分为Idea、MVP、Launch、Scale四阶段，剖析AI放大的风险：如原型不等于验证、Agentic技术债、创始人成为决策瓶颈等。最终结论是，AI极大降低执行成本，使得判断力成为最稀缺资源，真正护城河在于将垂直领域知识结构化沉淀为专属Skills。",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -232,26 +283,6 @@
       "is_ai_related": true
     },
     {
-      "id": "028643d71e32330bf8b5bdc0df7a3a8cd987a152",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "开源项目OpenSquilla：智能路由降低AI成本近十倍，兼容多平台与模型",
-      "url": "https://x.com/xiaohu/status/2055299820215300380",
-      "published_at": "2026-05-15T14:50:37Z",
-      "summary": "开源项目OpenSquilla通过智能路由架构，在保持与OpenClaw相近性能（0.9251分）的同时，将复杂AI任务处理成本从6美元大幅降至0.68美元。其核心是将简单任务分配给廉价模型，仅复杂任务调用Opus等顶级模型。系统具备四层记忆结构模拟人脑认知，支持按需加载16种工具，并设有三档代码沙箱安全防护。项目提供统一后端，支持网页、命令行及Slack、飞书等平台接入，兼容OpenAI、Claude、Gemini、DeepSeek等20余家主流模型。",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:claude",
-        "strong:gemini",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "49af39a6f0057493dbf4207be65566290bf5039a",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -285,26 +316,6 @@
         "strong:agent",
         "strong:智能体",
         "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "2767da937925b2e3a323609863f023d4b964e7c4",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "飞书开源CLI工具45天获万星，AI操作可见可控引关注",
-      "url": "https://x.com/AYi_AInotes/status/2055263164145504501",
-      "published_at": "2026-05-15T12:24:57Z",
-      "summary": "飞书开源命令行工具lark-cli在45天内获得超过1万GitHub star，成为国内首个破万星的办公套件开源项目。该工具允许AI通过命令行直接操作飞书，执行建群、建文档等任务，且每一步操作都可预览、可审查，与云端不可见的MCP模式形成对比。其主干代码已合并10位外部开发者的贡献，而同类产品钉钉和企业微信则为零。这种可见、可控的特性被视为开发者放心将任务交给AI Agent的前提，预示着一句话指令驱动完整项目流程成为可能。",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:mcp",
-        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -407,25 +418,6 @@
       "is_ai_related": true
     },
     {
-      "id": "8cee0739fb1a26625247791fe295227b296922ab",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "克劳德（法律事务）",
-      "url": "https://github.com/anthropics/claude-for-legal",
-      "published_at": "2026-05-15T11:12:14Z",
-      "summary": "Anthropic公司在GitHub上开源了专为法律领域优化的AI模型\"Claude for Legal\"。该模型能更准确地处理法律文本、合同及案例摘要，旨在提升法律从业者效率。此消息在Hacker News上获得105个投票点数，显示出技术社区对其在法律科技领域应用潜力的关注。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "f334e0349f0ac47fd354f469d0df7416a2777704",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -471,11 +463,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 965,
-      "kept_count": 0,
+      "fetched_count": 966,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 621,
-      "checked_at": "2026-05-16T09:54:48.090643Z"
+      "latency_ms": 662,
+      "checked_at": "2026-05-16T14:55:16.299926Z"
     },
     {
       "source_id": "openai-skills",
@@ -486,8 +478,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 480,
-      "checked_at": "2026-05-16T09:54:48.571465Z"
+      "latency_ms": 166,
+      "checked_at": "2026-05-16T14:55:16.467057Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -498,8 +490,8 @@
       "fetched_count": 211,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 210,
-      "checked_at": "2026-05-16T09:54:48.784359Z"
+      "latency_ms": 101,
+      "checked_at": "2026-05-16T14:55:16.571283Z"
     },
     {
       "source_id": "google-deepmind",
@@ -510,8 +502,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 388,
-      "checked_at": "2026-05-16T09:54:49.173976Z"
+      "latency_ms": 292,
+      "checked_at": "2026-05-16T14:55:16.864805Z"
     },
     {
       "source_id": "google-ai",
@@ -522,8 +514,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 246,
-      "checked_at": "2026-05-16T09:54:49.420704Z"
+      "latency_ms": 190,
+      "checked_at": "2026-05-16T14:55:17.055482Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -534,8 +526,8 @@
       "fetched_count": 779,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 315,
-      "checked_at": "2026-05-16T09:54:49.749438Z"
+      "latency_ms": 250,
+      "checked_at": "2026-05-16T14:55:17.316584Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -546,8 +538,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 230,
-      "checked_at": "2026-05-16T09:54:49.980504Z"
+      "latency_ms": 127,
+      "checked_at": "2026-05-16T14:55:17.443940Z"
     },
     {
       "source_id": "github-changelog",
@@ -559,7 +551,7 @@
       "kept_count": 2,
       "error": null,
       "latency_ms": 33,
-      "checked_at": "2026-05-16T09:54:50.014278Z"
+      "checked_at": "2026-05-16T14:55:17.477430Z"
     },
     {
       "source_id": "aihot",
@@ -568,10 +560,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 15,
+      "kept_count": 14,
       "error": null,
-      "latency_ms": 1593,
-      "checked_at": "2026-05-16T09:54:51.609278Z"
+      "latency_ms": 2049,
+      "checked_at": "2026-05-16T14:55:19.527969Z"
     }
   ],
   "control_notes": {
