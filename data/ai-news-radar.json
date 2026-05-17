@@ -1,119 +1,73 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-17T06:37:53.906382Z",
+  "generated_at": "2026-05-17T08:36:50.238603Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 7,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          9
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
+          7
         ],
         [
           "codex",
-          5
-        ],
-        [
-          "chatgpt",
           3
-        ],
-        [
-          "api",
-          3
-        ],
-        [
-          "API",
-          3
-        ],
-        [
-          "工作流",
-          3
-        ],
-        [
-          "anthropic",
-          2
-        ],
-        [
-          "agent",
-          2
         ],
         [
           "claude",
           2
         ],
         [
-          "openai",
+          "智能体",
+          2
+        ],
+        [
+          "工作流",
+          2
+        ],
+        [
+          "api",
           1
         ],
         [
-          "开发者",
+          "API",
           1
         ],
         [
-          "自动化",
+          "anthropic",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "推理模型",
+          1
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "chatgpt",
           1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "a8e3eb31619900677c0272294f4a36f6e0734193",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "突发！OpenAI 大规模重组，总裁 Brockman 夺权挂帅",
-      "url": "https://www.ithome.com/0/951/258.htm",
-      "published_at": "2026-05-16T06:55:45Z",
-      "summary": "OpenAI宣布进行史上最大规模重组，将ChatGPT、Codex和API三大核心产品线合并为统一组织。联合创始人兼总裁Greg Brockman正式全面接管产品战略，成为实际掌权者，而ChatGPT原负责人Nick Turley被调离核心岗位。此次重组旨在整合资源，聚焦\"智能体时代\"，并秘密开发集成多项功能的\"超级应用\"桌面端产品。与此同时，竞争对手Anthropic估值飙升至9000亿美元，使OpenAI面临严峻挑战。",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:chatgpt",
-        "strong:codex",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "93fcfaf01e405a7262b8f7ac9a09ccb0769ac0ed",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Notion推出开发者平台及CLI工具",
-      "url": "https://x.com/oran_ge/status/2055539910212460878",
-      "published_at": "2026-05-16T06:44:39Z",
-      "summary": "Notion正式推出开发者平台，核心组件包括Notion CLI终端工具、Workers计算服务、数据库同步功能以及多种Agent工具与API。平台旨在让开发者更便捷地在Notion基础设施上运行代码、连接外部数据源并构建自动化工作流。未来，即使非开发者也能通过AI Agent在Notion上构建应用。",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:api",
-        "weak:开发者",
-        "weak:自动化",
-        "weak:工作流",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "39a094d8a4566b482bd6ddd5f9dcf4aed9e26a06",
       "source_id": "aihot",
@@ -176,6 +130,25 @@
       "is_ai_related": true
     },
     {
+      "id": "945eba98335874035c6ce63f450939798c7a43d7",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "研究揭示LLM智能体记忆重写机制损害可靠性",
+      "url": "https://x.com/rohanpaul_ai/status/2055919204591902771",
+      "published_at": "2026-05-17T07:51:50Z",
+      "summary": "伊利诺伊大学与清华大学等机构的研究发现，LLM智能体虽能从经验中学习，但其通过LLM将原始经历压缩成书面教训的记忆重写机制会损害记忆可靠性。在网页购物、模拟世界及ARC风格谜题等任务测试中，反复重写记忆会导致错误分组、规则过度泛化或过拟合，使智能体遗忘细节或混淆任务类型。例如，GPT-4在无记忆时可100%解决小型ARC-AGI问题集，而建立记忆并流式更新后，性能降至约54%。研究主张智能体记忆系统应重视原始经历作为关键证据，而非自动将所有经验重写为摘要，保留原始证据并选择性摘要效果更佳。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:llm",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "462010dd3ca41087e793a4f3babb37d6245778ce",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -186,25 +159,6 @@
       "url": "https://x.com/gdb/status/2055882172884763012",
       "published_at": "2026-05-17T05:24:41Z",
       "summary": "你可以在手机端通过ChatGPT应用中的Codex直接构建项目",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c53c972b918fb225021ebae076aff1f2f8bbb8c5",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Codex实现多设备远程控制与上下文共享",
-      "url": "https://x.com/op7418/status/2055561525633642762",
-      "published_at": "2026-05-16T08:10:32Z",
-      "summary": "Codex除了通过ChatGPT连接和远程控制外，还能控制另一台电脑，实现在ChatGPT上直接管理多台设备而无需切换，只需切换项目即可访问不同设备的上下文和文件。引用推文补充，此功能还支持通过远程SSH设置其他VMs等，增强了多设备协作的灵活性和实用性。",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:chatgpt",
@@ -262,8 +216,8 @@
       "fetched_count": 966,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 858,
-      "checked_at": "2026-05-17T06:37:47.554787Z"
+      "latency_ms": 612,
+      "checked_at": "2026-05-17T08:36:46.840070Z"
     },
     {
       "source_id": "openai-skills",
@@ -274,8 +228,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 211,
-      "checked_at": "2026-05-17T06:37:47.766750Z"
+      "latency_ms": 250,
+      "checked_at": "2026-05-17T08:36:47.090946Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -286,8 +240,8 @@
       "fetched_count": 211,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 102,
-      "checked_at": "2026-05-17T06:37:47.872917Z"
+      "latency_ms": 123,
+      "checked_at": "2026-05-17T08:36:47.217280Z"
     },
     {
       "source_id": "google-deepmind",
@@ -298,8 +252,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 300,
-      "checked_at": "2026-05-17T06:37:48.174966Z"
+      "latency_ms": 295,
+      "checked_at": "2026-05-17T08:36:47.514001Z"
     },
     {
       "source_id": "google-ai",
@@ -310,8 +264,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 245,
-      "checked_at": "2026-05-17T06:37:48.420397Z"
+      "latency_ms": 175,
+      "checked_at": "2026-05-17T08:36:47.689911Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -322,8 +276,8 @@
       "fetched_count": 779,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 296,
-      "checked_at": "2026-05-17T06:37:48.728956Z"
+      "latency_ms": 292,
+      "checked_at": "2026-05-17T08:36:47.994067Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -334,8 +288,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 130,
-      "checked_at": "2026-05-17T06:37:48.859507Z"
+      "latency_ms": 143,
+      "checked_at": "2026-05-17T08:36:48.137451Z"
     },
     {
       "source_id": "github-changelog",
@@ -347,7 +301,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 31,
-      "checked_at": "2026-05-17T06:37:48.890836Z"
+      "checked_at": "2026-05-17T08:36:48.168717Z"
     },
     {
       "source_id": "aihot",
@@ -356,10 +310,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 9,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 5008,
-      "checked_at": "2026-05-17T06:37:53.900077Z"
+      "latency_ms": 2062,
+      "checked_at": "2026-05-17T08:36:50.232322Z"
     }
   ],
   "control_notes": {
