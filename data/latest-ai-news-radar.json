@@ -1,87 +1,51 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-16T14:55:19.536978Z",
+  "generated_at": "2026-05-17T02:30:48.175313Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 17,
+  "item_count": 7,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 13,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          13
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          13
-        ],
-        [
-          "anthropic",
-          5
-        ],
-        [
-          "openai",
-          4
-        ],
-        [
-          "agent",
-          4
+          7
         ],
         [
           "codex",
           3
         ],
         [
-          "api",
+          "工作流",
           3
         ],
         [
-          "API",
-          3
-        ],
-        [
-          "自动化",
-          3
-        ],
-        [
-          "claude",
-          3
+          "anthropic",
+          2
         ],
         [
           "chatgpt",
           2
         ],
         [
-          "开发者",
+          "api",
           2
         ],
         [
-          "工作流",
+          "API",
           2
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
         ],
         [
-          "GitHub AI & ML",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
+          "agent",
           2
         ],
         [
@@ -89,31 +53,15 @@
           1
         ],
         [
-          "chatgpt",
+          "开发者",
           1
         ],
         [
-          "agent",
+          "自动化",
           1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
         ],
         [
-          "agent",
+          "claude",
           1
         ]
       ]
@@ -144,25 +92,6 @@
       "is_ai_related": true
     },
     {
-      "id": "a058c5a02c8808eb48d4753e8f7d820317312cf7",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "OpenAI and Malta partner to bring ChatGPT Plus to all citizens",
-      "url": "https://openai.com/index/malta-chatgpt-plus-partnership",
-      "published_at": "2026-05-16T00:00:00Z",
-      "summary": "OpenAI and Malta partner to expand AI access, offering ChatGPT Plus and training to help citizens build practical AI skills and use AI responsibly.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "93fcfaf01e405a7262b8f7ac9a09ccb0769ac0ed",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -182,25 +111,6 @@
         "weak:工作流",
         "weak:API",
         "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "fa29f050da921f5d0c343f40dc78fd70c20c91ee",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Grok Code Fast 1 deprecated",
-      "url": "https://github.blog/changelog/2026-05-15-grok-code-fast-1-deprecated",
-      "published_at": "2026-05-15T17:58:15Z",
-      "summary": "We have deprecated Grok Code Fast 1 across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) today, May 15, 2026. Model Deprecation… The post Grok Code Fast 1 deprecated appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -225,96 +135,20 @@
       "is_ai_related": true
     },
     {
-      "id": "ec31a16eb9b8acc81096293bbda432136454957d",
+      "id": "ab945e8a76617642fc1388e3d6a4ca3d780af686",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Claude Code v2.1.143 版本更新：插件管理与用户体验增强",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.143",
-      "published_at": "2026-05-15T22:28:22Z",
-      "summary": "Claude Code 发布 v2.1.143 版本，重点增强了插件管理功能，包括强制执行插件依赖关系，并新增了插件市场的预估上下文成本显示。为方便直接编辑工作副本，增加了 `worktree.bgIsolation： \"none\"` 设置。多项体验得到改进：后台会话唤醒后保留模型与努力级别设置；Windows PowerShell 工具默认绕过执行策略；`claude agents` 命令新增多个参数以配置默认会话。此外，本次更新修复了大量错误，包括修复损坏的 `.credentials.json` 文件导致 CLI 启动卡住、Windows Terminal 中的右键粘贴问题、后台会话错误捕获 IDE 文件引用，以及 macOS 上后台作业读取特定目录文件的权限错误等。",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "strong:agents",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "9d16a594e78ebe9465c4796cf01c3256bda7bda8",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "杨立昆访谈：剖析LLM局限，畅谈AI未来与创业新途",
-      "url": "https://x.com/ylecun/status/2055346714039464373",
-      "published_at": "2026-05-15T17:56:57Z",
-      "summary": "在Unsupervised Learning播客中，AI先驱杨立昆阐述了其对大型语言模型局限性的反主流观点，并探讨了机器人技术的发展路径。他解释了离开Meta的原因，以及与Geoff Hinton、Yoshua Bengio在图灵奖观点上的重大分歧。访谈还涵盖了他对2027年的预测、新公司AMI对世界模型的押注，并将OpenAI和Anthropic比作Sun Microsystems。此外，他建议博士生停止研究LLM，并分享了对AI安全、突破性研究发生机制以及Meta FAIR得失的尖锐见解。",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:llm",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "051e2def9b882c5db75f78108b70bbd93a661f1f",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "Building a general-purpose accessibility agent—and what we learned in the process",
-      "url": "https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process",
-      "published_at": "2026-05-15T16:00:00Z",
-      "summary": "Learn about the experimental general-purpose accessibility agent that GitHub is piloting. The post Building a general-purpose accessibility agent—and what we learned in the process appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "49af39a6f0057493dbf4207be65566290bf5039a",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot Memory supports user preferences for Pro, Pro+ users",
-      "url": "https://github.blog/changelog/2026-05-15-copilot-memory-supports-user-preferences-for-pro-pro-users",
-      "published_at": "2026-05-15T17:14:17Z",
-      "summary": "Copilot Memory now supports user-level preferences in early access for Copilot Pro and Copilot Pro+ users. Copilot can now store stated or inferred personal preferences about how you like to… The post Copilot Memory supports user preferences for Pro, Pro+ users appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "2951f89243af6e63ce790097d4d2fb97fae16275",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "微软研究院发布AI新工具与模型",
-      "url": "https://x.com/MSFTResearch/status/2055303919497089337",
-      "published_at": "2026-05-15T15:06:54Z",
-      "summary": "微软研究院的新工具、模型、代码库和论文现已发布。 使用AI和智能体？值得关注： • MSR AI Frontiers的MagenticLite • 智能体化GitHub工作流 • 验证优先智能体 • 意义匹配微调 • AI转型与经济发展",
+      "title": "Ring-2.6-1T开源并上线OpenRouter，专为智能体工作流设计",
+      "url": "https://x.com/AntLingAGI/status/2055681163033997815",
+      "published_at": "2026-05-16T16:05:56Z",
+      "summary": "Ring-2.6-1T模型现已开源，并上线OpenRouter平台，5月底前享有75%折扣。该模型由AntLingAGI开发，是一个为现实世界智能体构建的万亿级推理模型，其核心设计目标不仅是回答问题，更是执行任务。它专注于规划步骤、使用工具、维持上下文和完成复杂工作流，具备强大的智能体执行能力和高推理模式，并采用了Async RL与IcePop训练方法。",
       "relevance_score": 4,
       "relevance_reasons": [
-        "strong:agent",
         "strong:智能体",
+        "strong:推理模型",
         "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
@@ -340,117 +174,39 @@
       "is_ai_related": true
     },
     {
-      "id": "bbb0d9059535e26c55eac30756e4582178b8bc9e",
+      "id": "55388a6f20a4bc8f529360de5fd1753ddfd03ac5",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "在法律行业全面部署Claude：产品指南与实施路线图",
-      "url": "https://claude.com/blog/deploying-claude-across-the-legal-industry",
-      "published_at": "2026-05-15T17:01:02Z",
-      "summary": "2026年报告显示，法律团队生成式AI使用率已从44%跃升至87%。为应对日益复杂的工作，法律行业正将Claude应用于合同审阅、并购尽调及诉讼准备等核心流程，并通过多款产品组合提升效率：Chat用于即时研究，Claude Cowork处理跨文件协作，Microsoft 365插件集成办公套件，Platform支持定制应用开发。Anthropic同步发布法律行业部署指南，涵盖产品矩阵、12个预设业务领域插件及三阶段实施路线图，并解答数据托管与权限保护等关键问题。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b1733c8f79769bbc57197d0b3752117f5e759bdf",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "MiniMax M2.7模型上线OrcaRouter平台",
-      "url": "https://x.com/MiniMax_AI/status/2055331545402245246",
-      "published_at": "2026-05-15T16:56:41Z",
-      "summary": "M2.7已在@OrcaRouter上线--可通过单一OpenAI兼容API访问。 今天就来试试吧！🐋",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d85545a38a8224908ad70eaec024bb0f17feebc3",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "SenseNova发布增强版信息图表生成模型SenseNova-U1-8B-MoT-Infographic",
-      "url": "https://x.com/SenseTime_AI/status/2055315819165597702",
-      "published_at": "2026-05-15T15:54:11Z",
-      "summary": "SenseNova近日推出专为信息图表生成设计的增强模型SenseNova-U1-8B-MoT-Infographic。该模型能够根据指令生成多种视觉格式内容，包括海报、图表、食谱卡、明信片以及学术风格的arXiv页面等。在性能方面，模型在BizGenEval（困难版）和IGenBench（Q-ACC）两项基准测试上表现突出，相比其基础U1模型分别提升了6.8分和18.2分。目前，该模型已在Hugging Face平台开源，并提供了超过100个多样化的生成示例，供开发者和研究者参考与试用。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "weak:eval",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5002a0b7c506d762487c36e519ce11540edf93db",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Forward Deployed Engineer：AI 时代的新宠岗位，到底干什么？",
-      "url": "https://x.com/dotey/status/2055307775417139447",
-      "published_at": "2026-05-15T15:22:14Z",
-      "summary": "Forward Deployed Engineer（FDE）是AI落地应用的关键角色，负责在客户现场部署和集成AI系统。近期，OpenAI成立独立部署公司，Anthropic与华尔街巨头合作，Google也简化流程大力招聘，显示行业重心正从模型竞赛转向商业落地。FDE工作介于工程师与顾问之间，需写代码、调试并深度理解业务。此岗位为毕业生提供了接触企业级项目的机会，也帮助资深工程师贴近业务需求，成为推动AI创造实际价值的重要力量。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "f334e0349f0ac47fd354f469d0df7416a2777704",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "智能体驱动系统Articraft实现3D资产生成自动化，开源万件数据集降低门槛",
-      "url": "https://x.com/berryxia/status/2055444087684407505",
-      "published_at": "2026-05-16T00:23:53Z",
-      "summary": "剑桥大学团队推出Articraft，这是一个由智能体驱动的编码系统，能全自动生成带关节、可运动的交互式3D资产。系统通过AI智能体自主编写代码、执行并接收物理反馈迭代优化，将以往需数日甚至数周的创作过程极大简化。团队同时开源了Articraft-10K数据集，包含超1万个物体，覆盖250个类别，所有资产均仿真就绪。此举显著降低了机器人训练和物理AI领域对高质量3D资产的数据门槛，为解决\"数据饥渴\"问题提供了高效的自动化方案。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5a1b29e9893f3684b17f8ddfac2317026e535552",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "无视令牌成本，用百个AI实例自动化驱动开源项目",
-      "url": "https://x.com/steipete/status/2055405041843052792",
-      "published_at": "2026-05-15T21:48:44Z",
-      "summary": "作者在OpenClaw项目中大规模运用AI，探索在\"令牌成本无关紧要\"的未来如何构建软件。团队持续运行约100个Codex实例，自动化处理多项核心工作：审查代码与安全问题、去重归类议题、自动重现复杂测试环境并录制验证视频、从会议讨论中主动创建任务、过滤垃圾评论以及监控性能回归。通过clawpatch.ai等工具将项目拆分为功能单元进行审查，并整合Vercel DeepSec等进行安全分析。整套自动化体系使得项目能够以极精简的团队高效运作。",
+      "title": "按需定制快捷键，优化工作流效率",
+      "url": "https://x.com/OpenAIDevs/status/2055717793841221796",
+      "published_at": "2026-05-16T18:31:30Z",
+      "summary": "处理大家的反馈让我们感到太有趣了。 （请继续反馈。） 键盘快捷键现已支持自定义。 围绕你的实际工作方式设置 Codex，然后通过设置调整快捷键，无需再适应我们的默认配置。",
       "relevance_score": 2,
       "relevance_reasons": [
         "strong:codex",
-        "weak:自动化",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "89fc5f98157a8a4efb3d81cc18e7268c1e15d4a3",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "最新开源成果（#21）：开源模型盛宴！Gemma 4、DeepSeek V4、Kimi K2.6、MiMo 2.5、GLM-5.1 等。基于CAISI的V4评估。",
+      "url": "https://www.interconnects.ai/p/latest-open-artifacts-21-open-model",
+      "published_at": "2026-05-16T17:00:11Z",
+      "summary": "本月开源AI模型领域迎来密集发布，包括Gemma 4、DeepSeek V4、Kimi K2.6、MiMo 2.5和GLM-5.1等一系列重要新版本。这些模型均在CAISI的V4评估框架下进行了性能评测。多个团队几乎同期推出旗舰级更新，反映出开源社区当前高速迭代的竞争态势。",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:开源模型",
+        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -464,10 +220,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 966,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 662,
-      "checked_at": "2026-05-16T14:55:16.299926Z"
+      "latency_ms": 586,
+      "checked_at": "2026-05-17T02:30:43.780646Z"
     },
     {
       "source_id": "openai-skills",
@@ -478,8 +234,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 166,
-      "checked_at": "2026-05-16T14:55:16.467057Z"
+      "latency_ms": 176,
+      "checked_at": "2026-05-17T02:30:43.957427Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -490,8 +246,8 @@
       "fetched_count": 211,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 101,
-      "checked_at": "2026-05-16T14:55:16.571283Z"
+      "latency_ms": 97,
+      "checked_at": "2026-05-17T02:30:44.058019Z"
     },
     {
       "source_id": "google-deepmind",
@@ -502,8 +258,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 292,
-      "checked_at": "2026-05-16T14:55:16.864805Z"
+      "latency_ms": 395,
+      "checked_at": "2026-05-17T02:30:44.455008Z"
     },
     {
       "source_id": "google-ai",
@@ -514,8 +270,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 190,
-      "checked_at": "2026-05-16T14:55:17.055482Z"
+      "latency_ms": 274,
+      "checked_at": "2026-05-17T02:30:44.730177Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -526,8 +282,8 @@
       "fetched_count": 779,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 250,
-      "checked_at": "2026-05-16T14:55:17.316584Z"
+      "latency_ms": 207,
+      "checked_at": "2026-05-17T02:30:44.948810Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -536,10 +292,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 127,
-      "checked_at": "2026-05-16T14:55:17.443940Z"
+      "latency_ms": 317,
+      "checked_at": "2026-05-17T02:30:45.266899Z"
     },
     {
       "source_id": "github-changelog",
@@ -548,10 +304,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 33,
-      "checked_at": "2026-05-16T14:55:17.477430Z"
+      "latency_ms": 31,
+      "checked_at": "2026-05-17T02:30:45.298113Z"
     },
     {
       "source_id": "aihot",
@@ -560,10 +316,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 14,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 2049,
-      "checked_at": "2026-05-16T14:55:19.527969Z"
+      "latency_ms": 2869,
+      "checked_at": "2026-05-17T02:30:48.168170Z"
     }
   ],
   "control_notes": {
