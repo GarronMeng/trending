@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>7</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>9</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>0</b><span>官方源条目</span></div>
-        <div class="stat"><b>7</b><span>聚合源条目</span></div>
+        <div class="stat"><b>9</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-17T02:30:48.178124Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-17T06:37:53.909570Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -84,6 +84,19 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
+        <span>2026-05-17T04:16:28Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://x.com/berryxia/status/2055865005271314528" target="_blank" rel="noreferrer">微信读书Skill安装与使用指南</a></h3>
+      <p class='summary'>❤️ 【引用 @vista8】：微信读书Cli安装和配置教程。 1. 官方指令，复制发给Codex或Claude Code 下载 https：//cdn.weread.qq.com/skills/weread-skills.zip 安装 skill 2. 或者用 X 上网友 @eviljer 做的优化版Skill npx skills add jerlinn/jerlin-weread 3. 如果需要API key，访问微信官方这个页面获取 https：//weread.qq.com/r/weread-skills 4. 使用案例 直接跟AI说：&quot;调用微信读书skill 查看被讨厌勇气的高亮划线&quot;</p>
+      <div class="tags"><span>strong:claude</span><span>strong:codex</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
         <span>2026-05-16T13:05:47Z</span>
         <strong>Score 5</strong>
       </div>
@@ -103,6 +116,19 @@
       <h3><a href="https://x.com/AntLingAGI/status/2055681163033997815" target="_blank" rel="noreferrer">Ring-2.6-1T开源并上线OpenRouter，专为智能体工作流设计</a></h3>
       <p class='summary'>Ring-2.6-1T模型现已开源，并上线OpenRouter平台，5月底前享有75%折扣。该模型由AntLingAGI开发，是一个为现实世界智能体构建的万亿级推理模型，其核心设计目标不仅是回答问题，更是执行任务。它专注于规划步骤、使用工具、维持上下文和完成复杂工作流，具备强大的智能体执行能力和高推理模式，并采用了Async RL与IcePop训练方法。</p>
       <div class="tags"><span>strong:智能体</span><span>strong:推理模型</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-17T05:24:41Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://x.com/gdb/status/2055882172884763012" target="_blank" rel="noreferrer">手机端ChatGPT应用集成Codex构建功能</a></h3>
+      <p class='summary'>你可以在手机端通过ChatGPT应用中的Codex直接构建项目</p>
+      <div class="tags"><span>strong:chatgpt</span><span>strong:codex</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -149,15 +175,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>966</td><td>0</td><td>586ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>176ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>211</td><td>0</td><td>97ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>395ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>274ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>779</td><td>0</td><td>207ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>317ms</td><td></td></tr>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>966</td><td>0</td><td>858ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>211ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>211</td><td>0</td><td>102ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>300ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>245ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>779</td><td>0</td><td>296ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>130ms</td><td></td></tr>
 <tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>31ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>7</td><td>2869ms</td><td></td></tr></tbody>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>9</td><td>5008ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

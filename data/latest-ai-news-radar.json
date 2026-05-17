@@ -1,27 +1,39 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-17T02:30:48.175313Z",
+  "generated_at": "2026-05-17T06:37:53.906382Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 9,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          7
+          9
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          9
         ],
         [
           "codex",
+          5
+        ],
+        [
+          "chatgpt",
+          3
+        ],
+        [
+          "api",
+          3
+        ],
+        [
+          "API",
           3
         ],
         [
@@ -33,19 +45,11 @@
           2
         ],
         [
-          "chatgpt",
-          2
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
           "agent",
+          2
+        ],
+        [
+          "claude",
           2
         ],
         [
@@ -58,10 +62,6 @@
         ],
         [
           "自动化",
-          1
-        ],
-        [
-          "claude",
           1
         ]
       ]
@@ -115,6 +115,27 @@
       "is_ai_related": true
     },
     {
+      "id": "39a094d8a4566b482bd6ddd5f9dcf4aed9e26a06",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "微信读书Skill安装与使用指南",
+      "url": "https://x.com/berryxia/status/2055865005271314528",
+      "published_at": "2026-05-17T04:16:28Z",
+      "summary": "❤️ 【引用 @vista8】：微信读书Cli安装和配置教程。 1. 官方指令，复制发给Codex或Claude Code 下载 https：//cdn.weread.qq.com/skills/weread-skills.zip 安装 skill 2. 或者用 X 上网友 @eviljer 做的优化版Skill npx skills add jerlinn/jerlin-weread 3. 如果需要API key，访问微信官方这个页面获取 https：//weread.qq.com/r/weread-skills 4. 使用案例 直接跟AI说：\"调用微信读书skill 查看被讨厌勇气的高亮划线\"",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "2f360b64565c5e7f0d5c58e13b5530070e0f7b5c",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -150,6 +171,25 @@
         "strong:智能体",
         "strong:推理模型",
         "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "462010dd3ca41087e793a4f3babb37d6245778ce",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "手机端ChatGPT应用集成Codex构建功能",
+      "url": "https://x.com/gdb/status/2055882172884763012",
+      "published_at": "2026-05-17T05:24:41Z",
+      "summary": "你可以在手机端通过ChatGPT应用中的Codex直接构建项目",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -222,8 +262,8 @@
       "fetched_count": 966,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 586,
-      "checked_at": "2026-05-17T02:30:43.780646Z"
+      "latency_ms": 858,
+      "checked_at": "2026-05-17T06:37:47.554787Z"
     },
     {
       "source_id": "openai-skills",
@@ -234,8 +274,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 176,
-      "checked_at": "2026-05-17T02:30:43.957427Z"
+      "latency_ms": 211,
+      "checked_at": "2026-05-17T06:37:47.766750Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -246,8 +286,8 @@
       "fetched_count": 211,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 97,
-      "checked_at": "2026-05-17T02:30:44.058019Z"
+      "latency_ms": 102,
+      "checked_at": "2026-05-17T06:37:47.872917Z"
     },
     {
       "source_id": "google-deepmind",
@@ -258,8 +298,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 395,
-      "checked_at": "2026-05-17T02:30:44.455008Z"
+      "latency_ms": 300,
+      "checked_at": "2026-05-17T06:37:48.174966Z"
     },
     {
       "source_id": "google-ai",
@@ -270,8 +310,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 274,
-      "checked_at": "2026-05-17T02:30:44.730177Z"
+      "latency_ms": 245,
+      "checked_at": "2026-05-17T06:37:48.420397Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -282,8 +322,8 @@
       "fetched_count": 779,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 207,
-      "checked_at": "2026-05-17T02:30:44.948810Z"
+      "latency_ms": 296,
+      "checked_at": "2026-05-17T06:37:48.728956Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -294,8 +334,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 317,
-      "checked_at": "2026-05-17T02:30:45.266899Z"
+      "latency_ms": 130,
+      "checked_at": "2026-05-17T06:37:48.859507Z"
     },
     {
       "source_id": "github-changelog",
@@ -307,7 +347,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 31,
-      "checked_at": "2026-05-17T02:30:45.298113Z"
+      "checked_at": "2026-05-17T06:37:48.890836Z"
     },
     {
       "source_id": "aihot",
@@ -316,10 +356,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 2869,
-      "checked_at": "2026-05-17T02:30:48.168170Z"
+      "latency_ms": 5008,
+      "checked_at": "2026-05-17T06:37:53.900077Z"
     }
   ],
   "control_notes": {
