@@ -1,25 +1,53 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-18T11:58:03.003291Z",
+  "generated_at": "2026-05-18T16:47:04.079897Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 3,
+  "item_count": 5,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
-      "count": 2,
+    "developer": {
+      "group": "developer",
+      "count": 3,
       "top_sources": [
         [
-          "AI Hot",
-          2
+          "GitHub Changelog",
+          3
         ]
       ],
       "top_keywords": [
         [
-          "aggregate_noise",
+          "copilot",
+          6
+        ],
+        [
+          "api",
           2
         ],
+        [
+          "API",
+          2
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "codex",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 1,
+      "top_sources": [
+        [
+          "AI Hot",
+          1
+        ]
+      ],
+      "top_keywords": [
         [
           "openai",
           1
@@ -41,37 +69,54 @@
           1
         ],
         [
-          "anthropic",
-          1
-        ],
-        [
-          "claude",
+          "aggregate_noise",
           1
         ]
       ]
     },
-    "developer": {
-      "group": "developer",
+    "official": {
+      "group": "official",
       "count": 1,
       "top_sources": [
         [
-          "GitHub Changelog",
+          "Hugging Face Blog",
           1
         ]
       ],
       "top_keywords": [
         [
-          "copilot",
-          2
+          "agent",
+          1
         ],
         [
-          "codex",
+          "official_ai",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "8bed7554b31d423476d1dcf668ee3d8dc744a1cd",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Audit repository Copilot cloud agent configuration via the REST API",
+      "url": "https://github.blog/changelog/2026-05-18-audit-repository-copilot-cloud-agent-configuration-via-the-rest-api",
+      "published_at": "2026-05-18T16:43:19Z",
+      "summary": "You can now programmatically audit a repository’s Copilot cloud agent configuration with the new Get Copilot cloud agent configuration for a repository REST API, available in public preview. The new… The post Audit repository Copilot cloud agent configuration via the REST API appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:api",
+        "weak:copilot",
+        "weak:API",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "1f6f197ed2672190a4c745cb68ecf26ed840c75a",
       "source_id": "aihot",
@@ -95,6 +140,44 @@
       "is_ai_related": true
     },
     {
+      "id": "36e594633ee6bac9257c84009331c6bd1cc9c28d",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot Spaces API now generally available",
+      "url": "https://github.blog/changelog/2026-05-18-copilot-spaces-api-now-generally-available",
+      "published_at": "2026-05-18T16:07:12Z",
+      "summary": "Copilot Spaces API is now generally available The GitHub Copilot Spaces API is now generally available. You can programmatically create, read, update, and delete Spaces directly from your own applications,… The post Copilot Spaces API now generally available appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:copilot",
+        "weak:API",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7c23ff6ddc683282991e1af7a118405caae9b9a3",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "The Open Agent Leaderboard",
+      "url": "https://huggingface.co/blog/ibm-research/open-agent-leaderboard",
+      "published_at": "2026-05-18T14:12:58Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "28ff766b23e2e3007b37806e1eee4e8634ce18fa",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -112,25 +195,6 @@
         "source:copilot"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "a44ccb83cf2c47fb7a54540ac51c9dde0a8f1448",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic Claude 5天攻破Apple M5 macOS内核漏洞：5年数十亿防线，被AI一举击穿",
-      "url": "https://x.com/berryxia/status/2056043674446995887",
-      "published_at": "2026-05-17T16:06:26Z",
-      "summary": "Anthropic的Claude Mythos Preview在5天内，协助安全团队Calif成功构建并演示了首个公开的、针对Apple M5芯片macOS内核的内存破坏提权利用链。该攻击绕过了苹果耗时5年、投入数十亿美元打造的MIE硬件级内存完整性防护，从普通用户权限通过纯数据操作即可获得root权限。苹果已在后续更新中修复漏洞并致谢。此事件标志着AI驱动的安全研究能力已能极速突破顶尖硬件防护，显著改变了攻防的速度与平衡。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -143,8 +207,8 @@
       "fetched_count": 966,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 682,
-      "checked_at": "2026-05-18T11:57:59.563606Z"
+      "latency_ms": 734,
+      "checked_at": "2026-05-18T16:46:58.847073Z"
     },
     {
       "source_id": "openai-skills",
@@ -155,8 +219,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 242,
-      "checked_at": "2026-05-18T11:57:59.806655Z"
+      "latency_ms": 197,
+      "checked_at": "2026-05-18T16:46:59.044969Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -167,8 +231,8 @@
       "fetched_count": 211,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 109,
-      "checked_at": "2026-05-18T11:57:59.919849Z"
+      "latency_ms": 87,
+      "checked_at": "2026-05-18T16:46:59.135025Z"
     },
     {
       "source_id": "google-deepmind",
@@ -179,8 +243,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 306,
-      "checked_at": "2026-05-18T11:58:00.227928Z"
+      "latency_ms": 328,
+      "checked_at": "2026-05-18T16:46:59.464710Z"
     },
     {
       "source_id": "google-ai",
@@ -191,8 +255,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 161,
-      "checked_at": "2026-05-18T11:58:00.389357Z"
+      "latency_ms": 208,
+      "checked_at": "2026-05-18T16:46:59.673945Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -200,11 +264,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 779,
-      "kept_count": 0,
+      "fetched_count": 782,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 252,
-      "checked_at": "2026-05-18T11:58:00.653984Z"
+      "latency_ms": 204,
+      "checked_at": "2026-05-18T16:46:59.889327Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -215,8 +279,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 116,
-      "checked_at": "2026-05-18T11:58:00.770229Z"
+      "latency_ms": 127,
+      "checked_at": "2026-05-18T16:47:00.017110Z"
     },
     {
       "source_id": "github-changelog",
@@ -225,10 +289,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-05-18T11:58:00.800814Z"
+      "latency_ms": 25,
+      "checked_at": "2026-05-18T16:47:00.042674Z"
     },
     {
       "source_id": "aihot",
@@ -237,10 +301,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 2195,
-      "checked_at": "2026-05-18T11:58:02.996855Z"
+      "latency_ms": 4029,
+      "checked_at": "2026-05-18T16:47:04.072863Z"
     }
   ],
   "control_notes": {
