@@ -1,43 +1,31 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-18T02:40:55.615347Z",
+  "generated_at": "2026-05-18T07:48:50.666624Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 4,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          5
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
-        ],
-        [
-          "codex",
           3
         ],
         [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
           "openai",
+          1
+        ],
+        [
+          "codex",
           1
         ],
         [
@@ -45,7 +33,19 @@
           1
         ],
         [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
           "anthropic",
+          1
+        ],
+        [
+          "claude",
           1
         ],
         [
@@ -55,9 +55,25 @@
         [
           "智能体",
           1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
         ],
         [
-          "chatgpt",
+          "codex",
           1
         ]
       ]
@@ -87,23 +103,21 @@
       "is_ai_related": true
     },
     {
-      "id": "39a094d8a4566b482bd6ddd5f9dcf4aed9e26a06",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "微信读书Skill安装与使用指南",
-      "url": "https://x.com/berryxia/status/2055865005271314528",
-      "published_at": "2026-05-17T04:16:28Z",
-      "summary": "❤️ 【引用 @vista8】：微信读书Cli安装和配置教程。 1. 官方指令，复制发给Codex或Claude Code 下载 https：//cdn.weread.qq.com/skills/weread-skills.zip 安装 skill 2. 或者用 X 上网友 @eviljer 做的优化版Skill npx skills add jerlinn/jerlin-weread 3. 如果需要API key，访问微信官方这个页面获取 https：//weread.qq.com/r/weread-skills 4. 使用案例 直接跟AI说：\"调用微信读书skill 查看被讨厌勇气的高亮划线\"",
+      "id": "28ff766b23e2e3007b37806e1eee4e8634ce18fa",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GPT-5.3-Codex is now the base model for Copilot Business and Enterprise",
+      "url": "https://github.blog/changelog/2026-05-17-gpt-5-3-codex-is-now-the-base-model-for-copilot-business-and-enterprise",
+      "published_at": "2026-05-18T04:01:11Z",
+      "summary": "As announced on March 18, 2026, GPT-5.3-Codex is now the base model for all Copilot Business and Copilot Enterprise organizations, replacing GPT-4.1. The base model is used when your organization… The post GPT-5.3-Codex is now the base model for Copilot Business and Enterprise appeared first on The GitHub Blog .",
       "relevance_score": 5,
       "relevance_reasons": [
-        "strong:claude",
         "strong:codex",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -144,25 +158,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "462010dd3ca41087e793a4f3babb37d6245778ce",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "手机端ChatGPT应用集成Codex构建功能",
-      "url": "https://x.com/gdb/status/2055882172884763012",
-      "published_at": "2026-05-17T05:24:41Z",
-      "summary": "你可以在手机端通过ChatGPT应用中的Codex直接构建项目",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -175,8 +170,8 @@
       "fetched_count": 966,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 589,
-      "checked_at": "2026-05-18T02:40:52.067926Z"
+      "latency_ms": 794,
+      "checked_at": "2026-05-18T07:48:47.333929Z"
     },
     {
       "source_id": "openai-skills",
@@ -187,8 +182,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 257,
-      "checked_at": "2026-05-18T02:40:52.325855Z"
+      "latency_ms": 260,
+      "checked_at": "2026-05-18T07:48:47.595085Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -199,8 +194,8 @@
       "fetched_count": 211,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 164,
-      "checked_at": "2026-05-18T02:40:52.493528Z"
+      "latency_ms": 104,
+      "checked_at": "2026-05-18T07:48:47.702661Z"
     },
     {
       "source_id": "google-deepmind",
@@ -211,8 +206,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 385,
-      "checked_at": "2026-05-18T02:40:52.880183Z"
+      "latency_ms": 312,
+      "checked_at": "2026-05-18T07:48:48.017062Z"
     },
     {
       "source_id": "google-ai",
@@ -223,8 +218,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 114,
-      "checked_at": "2026-05-18T02:40:52.995131Z"
+      "latency_ms": 188,
+      "checked_at": "2026-05-18T07:48:48.205554Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -235,8 +230,8 @@
       "fetched_count": 779,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 257,
-      "checked_at": "2026-05-18T02:40:53.264573Z"
+      "latency_ms": 320,
+      "checked_at": "2026-05-18T07:48:48.538585Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -247,8 +242,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 145,
-      "checked_at": "2026-05-18T02:40:53.410466Z"
+      "latency_ms": 138,
+      "checked_at": "2026-05-18T07:48:48.677804Z"
     },
     {
       "source_id": "github-changelog",
@@ -257,10 +252,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-05-18T02:40:53.441113Z"
+      "latency_ms": 32,
+      "checked_at": "2026-05-18T07:48:48.710634Z"
     },
     {
       "source_id": "aihot",
@@ -269,10 +264,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 2166,
-      "checked_at": "2026-05-18T02:40:55.608977Z"
+      "latency_ms": 1948,
+      "checked_at": "2026-05-18T07:48:50.660056Z"
     }
   ],
   "control_notes": {
