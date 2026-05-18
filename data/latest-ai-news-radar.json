@@ -1,51 +1,51 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-17T14:55:17.050072Z",
+  "generated_at": "2026-05-18T02:40:55.615347Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 5,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          6
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          5
         ],
         [
           "codex",
           3
         ],
         [
-          "智能体",
+          "api",
           2
         ],
         [
-          "工作流",
+          "API",
           2
         ],
         [
           "claude",
+          2
+        ],
+        [
+          "openai",
           1
         ],
         [
-          "api",
+          "gemini",
           1
         ],
         [
-          "API",
-          1
-        ],
-        [
-          "推理模型",
+          "anthropic",
           1
         ],
         [
@@ -53,21 +53,39 @@
           1
         ],
         [
+          "智能体",
+          1
+        ],
+        [
           "chatgpt",
-          1
-        ],
-        [
-          "开源模型",
-          1
-        ],
-        [
-          "评测",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "1f6f197ed2672190a4c745cb68ecf26ed840c75a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Hermes 可配置的国内外 AI 模型及使用方法",
+      "url": "https://x.com/vista8/status/2056170241147977741",
+      "published_at": "2026-05-18T00:29:21Z",
+      "summary": "Hermes 支持配置多种国内外主流 AI 模型，包括 OpenAI GPT-5.5、xAI Grok-4.3、谷歌 Gemini 系列、DeepSeek V4 系列、智谱 GLM-5 系列、Kimi K2.6 以及小米 Mimo V2.5-pro。用户需通过相应服务的订阅或 API 进行配置，完成后可使用 /model 指令指定模型及提供者来切换对话模型，例如输入\"/model gpt-5.5 --provider openai-codex\"即可切换至对应模型。该功能方便用户根据需求灵活调用不同模型的优势。",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "strong:gemini",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "39a094d8a4566b482bd6ddd5f9dcf4aed9e26a06",
       "source_id": "aihot",
@@ -90,21 +108,20 @@
       "is_ai_related": true
     },
     {
-      "id": "ab945e8a76617642fc1388e3d6a4ca3d780af686",
+      "id": "a44ccb83cf2c47fb7a54540ac51c9dde0a8f1448",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Ring-2.6-1T开源并上线OpenRouter，专为智能体工作流设计",
-      "url": "https://x.com/AntLingAGI/status/2055681163033997815",
-      "published_at": "2026-05-16T16:05:56Z",
-      "summary": "Ring-2.6-1T模型现已开源，并上线OpenRouter平台，5月底前享有75%折扣。该模型由AntLingAGI开发，是一个为现实世界智能体构建的万亿级推理模型，其核心设计目标不仅是回答问题，更是执行任务。它专注于规划步骤、使用工具、维持上下文和完成复杂工作流，具备强大的智能体执行能力和高推理模式，并采用了Async RL与IcePop训练方法。",
-      "relevance_score": 4,
+      "title": "Anthropic Claude 5天攻破Apple M5 macOS内核漏洞：5年数十亿防线，被AI一举击穿",
+      "url": "https://x.com/berryxia/status/2056043674446995887",
+      "published_at": "2026-05-17T16:06:26Z",
+      "summary": "Anthropic的Claude Mythos Preview在5天内，协助安全团队Calif成功构建并演示了首个公开的、针对Apple M5芯片macOS内核的内存破坏提权利用链。该攻击绕过了苹果耗时5年、投入数十亿美元打造的MIE硬件级内存完整性防护，从普通用户权限通过纯数据操作即可获得root权限。苹果已在后续更新中修复漏洞并致谢。此事件标志着AI驱动的安全研究能力已能极速突破顶尖硬件防护，显著改变了攻防的速度与平衡。",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:智能体",
-        "strong:推理模型",
-        "weak:工作流",
+        "strong:anthropic",
+        "strong:claude",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -146,44 +163,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "55388a6f20a4bc8f529360de5fd1753ddfd03ac5",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "按需定制快捷键，优化工作流效率",
-      "url": "https://x.com/OpenAIDevs/status/2055717793841221796",
-      "published_at": "2026-05-16T18:31:30Z",
-      "summary": "处理大家的反馈让我们感到太有趣了。 （请继续反馈。） 键盘快捷键现已支持自定义。 围绕你的实际工作方式设置 Codex，然后通过设置调整快捷键，无需再适应我们的默认配置。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:codex",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "89fc5f98157a8a4efb3d81cc18e7268c1e15d4a3",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "最新开源成果（#21）：开源模型盛宴！Gemma 4、DeepSeek V4、Kimi K2.6、MiMo 2.5、GLM-5.1 等。基于CAISI的V4评估。",
-      "url": "https://www.interconnects.ai/p/latest-open-artifacts-21-open-model",
-      "published_at": "2026-05-16T17:00:11Z",
-      "summary": "本月开源AI模型领域迎来密集发布，包括Gemma 4、DeepSeek V4、Kimi K2.6、MiMo 2.5和GLM-5.1等一系列重要新版本。这些模型均在CAISI的V4评估框架下进行了性能评测。多个团队几乎同期推出旗舰级更新，反映出开源社区当前高速迭代的竞争态势。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:开源模型",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -196,8 +175,8 @@
       "fetched_count": 966,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 768,
-      "checked_at": "2026-05-17T14:55:11.494316Z"
+      "latency_ms": 589,
+      "checked_at": "2026-05-18T02:40:52.067926Z"
     },
     {
       "source_id": "openai-skills",
@@ -208,8 +187,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 307,
-      "checked_at": "2026-05-17T14:55:11.801769Z"
+      "latency_ms": 257,
+      "checked_at": "2026-05-18T02:40:52.325855Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -220,8 +199,8 @@
       "fetched_count": 211,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 206,
-      "checked_at": "2026-05-17T14:55:12.011235Z"
+      "latency_ms": 164,
+      "checked_at": "2026-05-18T02:40:52.493528Z"
     },
     {
       "source_id": "google-deepmind",
@@ -232,8 +211,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 370,
-      "checked_at": "2026-05-17T14:55:12.383181Z"
+      "latency_ms": 385,
+      "checked_at": "2026-05-18T02:40:52.880183Z"
     },
     {
       "source_id": "google-ai",
@@ -244,8 +223,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 235,
-      "checked_at": "2026-05-17T14:55:12.618880Z"
+      "latency_ms": 114,
+      "checked_at": "2026-05-18T02:40:52.995131Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -256,8 +235,8 @@
       "fetched_count": 779,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 323,
-      "checked_at": "2026-05-17T14:55:12.954468Z"
+      "latency_ms": 257,
+      "checked_at": "2026-05-18T02:40:53.264573Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -268,8 +247,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 410,
-      "checked_at": "2026-05-17T14:55:13.365612Z"
+      "latency_ms": 145,
+      "checked_at": "2026-05-18T02:40:53.410466Z"
     },
     {
       "source_id": "github-changelog",
@@ -280,8 +259,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 37,
-      "checked_at": "2026-05-17T14:55:13.402769Z"
+      "latency_ms": 30,
+      "checked_at": "2026-05-18T02:40:53.441113Z"
     },
     {
       "source_id": "aihot",
@@ -290,10 +269,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 3640,
-      "checked_at": "2026-05-17T14:55:17.043821Z"
+      "latency_ms": 2166,
+      "checked_at": "2026-05-18T02:40:55.608977Z"
     }
   ],
   "control_notes": {
