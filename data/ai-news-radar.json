@@ -1,101 +1,168 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-18T16:47:04.079897Z",
+  "generated_at": "2026-05-19T02:38:49.256696Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 11,
   "groups": {
-    "developer": {
-      "group": "developer",
-      "count": 3,
+    "official": {
+      "group": "official",
+      "count": 4,
       "top_sources": [
         [
-          "GitHub Changelog",
-          3
+          "OpenAI News",
+          1
+        ],
+        [
+          "OpenAI Skills Commits",
+          1
+        ],
+        [
+          "Hugging Face Blog",
+          1
+        ],
+        [
+          "GitHub AI & ML",
+          1
         ]
       ],
       "top_keywords": [
         [
-          "copilot",
-          6
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "agent",
-          1
+          "official_ai",
+          4
         ],
         [
           "codex",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 1,
-      "top_sources": [
+          3
+        ],
         [
-          "AI Hot",
-          1
-        ]
-      ],
-      "top_keywords": [
+          "agent",
+          2
+        ],
+        [
+          "workflow",
+          2
+        ],
         [
           "openai",
           1
         ],
         [
-          "codex",
+          "agents",
           1
         ],
         [
-          "gemini",
+          "skill",
           1
         ],
         [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "aggregate_noise",
+          "copilot",
           1
         ]
       ]
     },
-    "official": {
-      "group": "official",
-      "count": 1,
+    "developer": {
+      "group": "developer",
+      "count": 7,
       "top_sources": [
         [
-          "Hugging Face Blog",
-          1
+          "GitHub Changelog",
+          7
         ]
       ],
       "top_keywords": [
         [
+          "copilot",
+          14
+        ],
+        [
           "agent",
+          3
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "actions",
           1
         ],
         [
-          "official_ai",
+          "codex",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "46f1ded4a7c28bc629bfe2eb86447ae3573d8cf5",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
+      "url": "https://openai.com/index/dell-codex-enterprise-partnership",
+      "published_at": "2026-05-18T10:00:00Z",
+      "summary": "OpenAI and Dell partner to bring Codex to hybrid and on-premise environments, helping enterprises deploy AI coding agents securely across data and workflows.",
+      "relevance_score": 10,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "strong:agent",
+        "strong:agents",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "dbecf06c47d9cd1a192c673c559a272b40f9cc7d",
+      "source_id": "openai-skills",
+      "source_name": "OpenAI Skills Commits",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "[codex] make yeet template-aware (#412)",
+      "url": "https://github.com/openai/skills/commit/590b49edc158611a2b2ed715ae73f27eb70d251a",
+      "published_at": "2026-05-18T23:16:36Z",
+      "summary": "[codex] make yeet template-aware (#412) ## Why The curated `yeet` skill was missing guidance for common publish-flow cases: repositories with PR templates, branches that already have a PR, and PR bodies that need to preserve reviewer-relevant context instead of generic boilerplate. ## What Changed Updated `skills/.curated/yeet/SKILL.md` to make the publish w",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:codex",
+        "weak:workflow",
+        "source:skill",
+        "source:codex",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4dfa84c1e727fb0c1333988a7cd27f5b73009dd6",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "One-click fixes for failing Actions with Copilot cloud agent",
+      "url": "https://github.blog/changelog/2026-05-18-one-click-fixes-for-failing-actions-with-copilot-cloud-agent",
+      "published_at": "2026-05-18T22:29:27Z",
+      "summary": "When a GitHub Actions job fails, Copilot Business and Copilot Enterprise subscribers can now ask Copilot cloud agent to fix it in one click. Click the Fix with Copilot button… The post One-click fixes for failing Actions with Copilot cloud agent appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot",
+        "source:actions"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "8bed7554b31d423476d1dcf668ee3d8dc744a1cd",
       "source_id": "github-changelog",
@@ -118,24 +185,21 @@
       "is_ai_related": true
     },
     {
-      "id": "1f6f197ed2672190a4c745cb68ecf26ed840c75a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Hermes 可配置的国内外 AI 模型及使用方法",
-      "url": "https://x.com/vista8/status/2056170241147977741",
-      "published_at": "2026-05-18T00:29:21Z",
-      "summary": "Hermes 支持配置多种国内外主流 AI 模型，包括 OpenAI GPT-5.5、xAI Grok-4.3、谷歌 Gemini 系列、DeepSeek V4 系列、智谱 GLM-5 系列、Kimi K2.6 以及小米 Mimo V2.5-pro。用户需通过相应服务的订阅或 API 进行配置，完成后可使用 /model 指令指定模型及提供者来切换对话模型，例如输入\"/model gpt-5.5 --provider openai-codex\"即可切换至对应模型。该功能方便用户根据需求灵活调用不同模型的优势。",
-      "relevance_score": 7,
+      "id": "13589bceb5305a2e2d6c2168dc799b5adf2de17e",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot cloud agent: Fast, cost-efficient models for simple tasks",
+      "url": "https://github.blog/changelog/2026-05-18-copilot-cloud-agent-fast-cost-efficient-models-for-simple-tasks",
+      "published_at": "2026-05-18T21:15:35Z",
+      "summary": "When you delegate a task to Copilot cloud agent, you can pick the model it uses to do its work. Today, we’re expanding the list of supported models to include… The post Copilot cloud agent: Fast, cost-efficient models for simple tasks appeared first on The GitHub Blog .",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "strong:gemini",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -195,6 +259,60 @@
         "source:copilot"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "e63a5367b88e2bfc5220202692fef7337345857c",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Ask questions in context with Copilot on web",
+      "url": "https://github.blog/changelog/2026-05-18-ask-questions-in-context-with-copilot-on-web",
+      "published_at": "2026-05-18T21:11:24Z",
+      "summary": "Copilot chat on the web now opens on the page you are viewing. This helps you get fast answers to your questions with reduced context switching. What’s changed When you… The post Ask questions in context with Copilot on web appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "eb8ea79f599ed62a250a9274b5b9347a59a2018f",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "Take your local GitHub sessions anywhere",
+      "url": "https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere",
+      "published_at": "2026-05-18T16:54:53Z",
+      "summary": "Kick off work in VS Code or the CLI, finish it from your phone. Remote control for GitHub Copilot sessions is now generally available on github.com and GitHub Mobile. The post Take your local GitHub sessions anywhere appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "447d895bc4955e0843062fd3d2e481b61d7ec7b0",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Remote control for Copilot CLI sessions now generally available on mobile, web, and VS Code",
+      "url": "https://github.blog/changelog/2026-05-18-remote-control-for-copilot-cli-sessions-now-generally-available-on-mobile-web-and-vs-code",
+      "published_at": "2026-05-18T13:00:16Z",
+      "summary": "Remote control for Copilot CLI sessions is now generally available on GitHub Mobile and github.com, so you can start work in your terminal and keep it moving from anywhere. With… The post Remote control for Copilot CLI sessions now generally available on mobile, web, and VS Code appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -204,11 +322,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 966,
-      "kept_count": 0,
+      "fetched_count": 965,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 734,
-      "checked_at": "2026-05-18T16:46:58.847073Z"
+      "latency_ms": 761,
+      "checked_at": "2026-05-19T02:38:46.294165Z"
     },
     {
       "source_id": "openai-skills",
@@ -217,10 +335,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 197,
-      "checked_at": "2026-05-18T16:46:59.044969Z"
+      "latency_ms": 168,
+      "checked_at": "2026-05-19T02:38:46.463487Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -228,11 +346,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 211,
+      "fetched_count": 212,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 87,
-      "checked_at": "2026-05-18T16:46:59.135025Z"
+      "latency_ms": 102,
+      "checked_at": "2026-05-19T02:38:46.569408Z"
     },
     {
       "source_id": "google-deepmind",
@@ -243,8 +361,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 328,
-      "checked_at": "2026-05-18T16:46:59.464710Z"
+      "latency_ms": 242,
+      "checked_at": "2026-05-19T02:38:46.813419Z"
     },
     {
       "source_id": "google-ai",
@@ -255,8 +373,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 208,
-      "checked_at": "2026-05-18T16:46:59.673945Z"
+      "latency_ms": 193,
+      "checked_at": "2026-05-19T02:38:47.007322Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -267,8 +385,8 @@
       "fetched_count": 782,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 204,
-      "checked_at": "2026-05-18T16:46:59.889327Z"
+      "latency_ms": 264,
+      "checked_at": "2026-05-19T02:38:47.284388Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -277,10 +395,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 127,
-      "checked_at": "2026-05-18T16:47:00.017110Z"
+      "latency_ms": 101,
+      "checked_at": "2026-05-19T02:38:47.386658Z"
     },
     {
       "source_id": "github-changelog",
@@ -289,10 +407,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-05-18T16:47:00.042674Z"
+      "latency_ms": 26,
+      "checked_at": "2026-05-19T02:38:47.413376Z"
     },
     {
       "source_id": "aihot",
@@ -301,10 +419,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 4029,
-      "checked_at": "2026-05-18T16:47:04.072863Z"
+      "latency_ms": 1836,
+      "checked_at": "2026-05-19T02:38:49.250177Z"
     }
   ],
   "control_notes": {

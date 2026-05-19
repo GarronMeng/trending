@@ -43,17 +43,56 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>5</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>1</b><span>聚合源条目</span></div>
+        <div class="stat"><b>11</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>4</b><span>官方源条目</span></div>
+        <div class="stat"><b>0</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-18T16:47:04.082783Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-19T02:38:49.259648Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-05-18T10:00:00Z</span>
+        <strong>Score 10</strong>
+      </div>
+      <h3><a href="https://openai.com/index/dell-codex-enterprise-partnership" target="_blank" rel="noreferrer">OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments</a></h3>
+      <p class='summary'>OpenAI and Dell partner to bring Codex to hybrid and on-premise environments, helping enterprises deploy AI coding agents securely across data and workflows.</p>
+      <div class="tags"><span>strong:openai</span><span>strong:codex</span><span>strong:agent</span><span>strong:agents</span><span>weak:workflow</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI Skills Commits</span>
+        <span>official_rss</span>
+        <span>2026-05-18T23:16:36Z</span>
+        <strong>Score 8</strong>
+      </div>
+      <h3><a href="https://github.com/openai/skills/commit/590b49edc158611a2b2ed715ae73f27eb70d251a" target="_blank" rel="noreferrer">[codex] make yeet template-aware (#412)</a></h3>
+      <p class='summary'>[codex] make yeet template-aware (#412) ## Why The curated `yeet` skill was missing guidance for common publish-flow cases: repositories with PR templates, branches that already have a PR, and PR bodies that need to preserve reviewer-relevant context instead of generic boilerplate. ## What Changed Updated `skills/.curated/yeet/SKILL.md` to make the publish w</p>
+      <div class="tags"><span>strong:codex</span><span>weak:workflow</span><span>source:skill</span><span>source:codex</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-05-18T22:29:27Z</span>
+        <strong>Score 7</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-05-18-one-click-fixes-for-failing-actions-with-copilot-cloud-agent" target="_blank" rel="noreferrer">One-click fixes for failing Actions with Copilot cloud agent</a></h3>
+      <p class='summary'>When a GitHub Actions job fails, Copilot Business and Copilot Enterprise subscribers can now ask Copilot cloud agent to fix it in one click. Click the Fix with Copilot button… The post One-click fixes for failing Actions with Copilot cloud agent appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>strong:agent</span><span>weak:copilot</span><span>source:copilot</span><span>source:actions</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>GitHub Changelog</span>
@@ -69,14 +108,14 @@
 
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-18T00:29:21Z</span>
-        <strong>Score 7</strong>
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-05-18T21:15:35Z</span>
+        <strong>Score 5</strong>
       </div>
-      <h3><a href="https://x.com/vista8/status/2056170241147977741" target="_blank" rel="noreferrer">Hermes 可配置的国内外 AI 模型及使用方法</a></h3>
-      <p class='summary'>Hermes 支持配置多种国内外主流 AI 模型，包括 OpenAI GPT-5.5、xAI Grok-4.3、谷歌 Gemini 系列、DeepSeek V4 系列、智谱 GLM-5 系列、Kimi K2.6 以及小米 Mimo V2.5-pro。用户需通过相应服务的订阅或 API 进行配置，完成后可使用 /model 指令指定模型及提供者来切换对话模型，例如输入&quot;/model gpt-5.5 --provider openai-codex&quot;即可切换至对应模型。该功能方便用户根据需求灵活调用不同模型的优势。</p>
-      <div class="tags"><span>strong:openai</span><span>strong:codex</span><span>strong:gemini</span><span>weak:api</span><span>weak:API</span></div>
+      <h3><a href="https://github.blog/changelog/2026-05-18-copilot-cloud-agent-fast-cost-efficient-models-for-simple-tasks" target="_blank" rel="noreferrer">Copilot cloud agent: Fast, cost-efficient models for simple tasks</a></h3>
+      <p class='summary'>When you delegate a task to Copilot cloud agent, you can pick the model it uses to do its work. Today, we’re expanding the list of supported models to include… The post Copilot cloud agent: Fast, cost-efficient models for simple tasks appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>strong:agent</span><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
     
 
@@ -117,21 +156,60 @@
       <p class='summary'>As announced on March 18, 2026, GPT-5.3-Codex is now the base model for all Copilot Business and Copilot Enterprise organizations, replacing GPT-4.1. The base model is used when your organization… The post GPT-5.3-Codex is now the base model for Copilot Business and Enterprise appeared first on The GitHub Blog .</p>
       <div class="tags"><span>strong:codex</span><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-05-18T21:11:24Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-05-18-ask-questions-in-context-with-copilot-on-web" target="_blank" rel="noreferrer">Ask questions in context with Copilot on web</a></h3>
+      <p class='summary'>Copilot chat on the web now opens on the page you are viewing. This helps you get fast answers to your questions with reduced context switching. What’s changed When you… The post Ask questions in context with Copilot on web appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub AI &amp; ML</span>
+        <span>official_rss</span>
+        <span>2026-05-18T16:54:53Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere" target="_blank" rel="noreferrer">Take your local GitHub sessions anywhere</a></h3>
+      <p class='summary'>Kick off work in VS Code or the CLI, finish it from your phone. Remote control for GitHub Copilot sessions is now generally available on github.com and GitHub Mobile. The post Take your local GitHub sessions anywhere appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:copilot</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-05-18T13:00:16Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-05-18-remote-control-for-copilot-cli-sessions-now-generally-available-on-mobile-web-and-vs-code" target="_blank" rel="noreferrer">Remote control for Copilot CLI sessions now generally available on mobile, web, and VS Code</a></h3>
+      <p class='summary'>Remote control for Copilot CLI sessions is now generally available on GitHub Mobile and github.com, so you can start work in your terminal and keep it moving from anywhere. With… The post Remote control for Copilot CLI sessions now generally available on mobile, web, and VS Code appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
+    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>966</td><td>0</td><td>734ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>197ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>211</td><td>0</td><td>87ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>328ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>208ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>782</td><td>1</td><td>204ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>127ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>3</td><td>25ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>1</td><td>4029ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>965</td><td>1</td><td>761ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>168ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>212</td><td>0</td><td>102ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>242ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>193ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>782</td><td>1</td><td>264ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>101ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>7</td><td>26ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>0</td><td>1836ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
