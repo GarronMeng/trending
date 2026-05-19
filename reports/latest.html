@@ -43,30 +43,17 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>10</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>4</b><span>官方源条目</span></div>
-        <div class="stat"><b>0</b><span>聚合源条目</span></div>
-        <div class="stat"><b>8/9</b><span>健康信源</span></div>
+        <div class="stat"><b>20</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>3</b><span>官方源条目</span></div>
+        <div class="stat"><b>11</b><span>聚合源条目</span></div>
+        <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-19T07:03:56.183964Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-19T10:13:48.815994Z</p></div>
       <div class="grid">
-    <article class="card">
-      <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-05-18T10:00:00Z</span>
-        <strong>Score 10</strong>
-      </div>
-      <h3><a href="https://openai.com/index/dell-codex-enterprise-partnership" target="_blank" rel="noreferrer">OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments</a></h3>
-      <p class='summary'>OpenAI and Dell partner to bring Codex to hybrid and on-premise environments, helping enterprises deploy AI coding agents securely across data and workflows.</p>
-      <div class="tags"><span>strong:openai</span><span>strong:codex</span><span>strong:agent</span><span>strong:agents</span><span>weak:workflow</span></div>
-    </article>
-    
-
     <article class="card">
       <div class="meta">
         <span>OpenAI Skills Commits</span>
@@ -77,6 +64,19 @@
       <h3><a href="https://github.com/openai/skills/commit/590b49edc158611a2b2ed715ae73f27eb70d251a" target="_blank" rel="noreferrer">[codex] make yeet template-aware (#412)</a></h3>
       <p class='summary'>[codex] make yeet template-aware (#412) ## Why The curated `yeet` skill was missing guidance for common publish-flow cases: repositories with PR templates, branches that already have a PR, and PR bodies that need to preserve reviewer-relevant context instead of generic boilerplate. ## What Changed Updated `skills/.curated/yeet/SKILL.md` to make the publish w</p>
       <div class="tags"><span>strong:codex</span><span>weak:workflow</span><span>source:skill</span><span>source:codex</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-19T09:09:26Z</span>
+        <strong>Score 9</strong>
+      </div>
+      <h3><a href="https://claude.com/blog/claude-managed-agents-updates" target="_blank" rel="noreferrer">Claude智能体托管平台新增自托管沙箱与MCP隧道功能</a></h3>
+      <p class='summary'>Anthropic为其Claude智能体托管平台推出两项更新：自托管沙箱允许用户在自有基础设施或合作云平台上运行工具，确保敏感数据与服务保留在用户控制范围内；MCP隧道则通过轻量网关，使智能体能安全连接企业私有网络内的数据库与API，无需暴露于公网。目前沙箱功能已进入公测，隧道处于研究预览阶段。这两项更新进一步增强了企业用户对智能体执行环境与内部资源访问的安全管控能力。</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:mcp</span><span>strong:智能体</span><span>weak:api</span></div>
     </article>
     
 
@@ -95,6 +95,19 @@
 
     <article class="card">
       <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-18T17:06:04Z</span>
+        <strong>Score 8</strong>
+      </div>
+      <h3><a href="https://www.anthropic.com/news/anthropic-acquires-stainless" target="_blank" rel="noreferrer">Anthropic收购SDK与MCP服务器工具开发商Stainless</a></h3>
+      <p class='summary'>Anthropic宣布收购SDK与MCP服务器工具开发商Stainless。Stainless自2022年成立以来，一直为Anthropic官方SDK的生成提供支持，其工具能将API规范转化为TypeScript、Python、Go等多语言的SDK、命令行工具及MCP服务器。此次收购旨在增强Claude平台的开发者体验，提升AI代理连接外部数据与工具的能力，从而在MCP协议基础上进一步拓展连接生态。</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:mcp</span><span>weak:api</span><span>weak:开发者</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
         <span>GitHub Changelog</span>
         <span>official_rss</span>
         <span>2026-05-18T16:43:19Z</span>
@@ -103,6 +116,32 @@
       <h3><a href="https://github.blog/changelog/2026-05-18-audit-repository-copilot-cloud-agent-configuration-via-the-rest-api" target="_blank" rel="noreferrer">Audit repository Copilot cloud agent configuration via the REST API</a></h3>
       <p class='summary'>You can now programmatically audit a repository’s Copilot cloud agent configuration with the new Get Copilot cloud agent configuration for a repository REST API, available in public preview. The new… The post Audit repository Copilot cloud agent configuration via the REST API appeared first on The GitHub Blog .</p>
       <div class="tags"><span>strong:agent</span><span>weak:api</span><span>weak:copilot</span><span>weak:API</span><span>source:copilot</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-19T07:57:49Z</span>
+        <strong>Score 7</strong>
+      </div>
+      <h3><a href="https://x.com/claudeai/status/2056645485696315581" target="_blank" rel="noreferrer">Claude推出自托管沙箱与MCP隧道功能</a></h3>
+      <p class='summary'>来自Code with Claude伦敦现场：我们正在Claude Managed Agents中推出自托管沙箱（公测版）和MCP隧道（研究预览版）。 在您自己的安全边界内运行代理，默认应用您的安全控制。</p>
+      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>strong:agents</span><span>strong:mcp</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-19T00:00:17Z</span>
+        <strong>Score 6</strong>
+      </div>
+      <h3><a href="https://x.com/berryxia/status/2056525311635026398" target="_blank" rel="noreferrer">Claude Design大升级：Token限制翻倍</a></h3>
+      <p class='summary'>Anthropic宣布Claude Design所有计划的Token限制翻倍。这解决了以往在处理完整UI设计、多页设计稿或复杂Agent工作流时频繁出现的token不足问题。翻倍后的空间显著提升了连续创作的体验，让该工具在vibe coding、原型制作等任务中实用性大增，从&quot;能用&quot;跃升至&quot;真香&quot;。这体现了Anthropic为提升竞争力而对创作工具的持续优化。</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:agent</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -147,6 +186,19 @@
 
     <article class="card">
       <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-18T17:00:18Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://x.com/AnthropicAI/status/2056419620643541012" target="_blank" rel="noreferrer">Anthropic收购SDK平台Stainless</a></h3>
+      <p class='summary'>Anthropic正在收购@stainlessapi，这是一个SDK和MCP服务器平台，自我们API早期以来就为所有Anthropic SDK提供支持。 阅读更多：https：//www.anthropic.com/news/anthropic-acquires-stainless</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:mcp</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
         <span>GitHub Changelog</span>
         <span>official_rss</span>
         <span>2026-05-18T21:11:24Z</span>
@@ -182,21 +234,99 @@
       <p class='summary'>Remote control for Copilot CLI sessions is now generally available on GitHub Mobile and github.com, so you can start work in your terminal and keep it moving from anywhere. With… The post Remote control for Copilot CLI sessions now generally available on mobile, web, and VS Code appeared first on The GitHub Blog .</p>
       <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-19T07:39:15Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://www.ithome.com/0/952/336.htm" target="_blank" rel="noreferrer">Kimi最新融资获国资与央企加注，估值半年翻四倍</a></h3>
+      <p class='summary'>月之暗面旗下AI助手Kimi正在进行20亿美元新融资，国智投、中国移动等国资机构及央企已加入股东名单，该轮融资已进入收尾阶段。今年1月和2月，Kimi已密集完成3轮融资，累计融资超39亿美元（约376亿元人民币），最新估值相比去年11月已翻4倍有余，成为大模型创业公司中融资最多的企业。产品层面，基于Kimi K2.5模型的Composer 2.5已集成至编程应用Cursor，公司近期也发布了开源模型Kimi K2.6。</p>
+      <div class="tags"><span>strong:大模型</span><span>strong:开源模型</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-19T02:13:08Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html" target="_blank" rel="noreferrer">Anthropic联合创始人将与教皇利奥十四世共同发布人工智能通谕</a></h3>
+      <p class='summary'>Anthropic联合创始人将于2026年5月与教皇利奥十四世共同发布首个人工智能通谕&quot;magnifica humanitas&quot;。这是教皇利奥十四世的首次通谕，聚焦人工智能技术与伦理，标志着科技企业与宗教领袖在AI议题上的合作。通谕由梵蒂冈新闻发布，具体探讨人工智能对人类社会的影响，在Hacker News平台获得104点关注，反映了话题的广泛热度。</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:人工智能</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-19T00:48:51Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.144" target="_blank" rel="noreferrer">Claude AI助手v2.1.144版本更新</a></h3>
+      <p class='summary'>Claude AI助手发布了v2.1.144版本。此次更新主要新增了对后台会话的`/resume`支持，并将&quot;extra usage&quot;更名为&quot;usage credits&quot;。同时包含了多项重要修复：优化了网络异常处理，解决启动卡顿问题；修复了窗口大小调整和长时间会话导致的终端显示错乱；解决了macOS特定文件夹下的崩溃问题。此外，还改进了模型选择持久化、文件读取、工具调用以及MCP服务器分页工具列表的处理，并减少了在VS Code中的渲染故障。本次更新显著提升了工具的稳定性和用户体验。</p>
+      <div class="tags"><span>strong:claude</span><span>strong:mcp</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-18T18:31:03Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://x.com/OpenAIDevs/status/2056442456800141424" target="_blank" rel="noreferrer">Mac远程运行Codex，手机办公两不误</a></h3>
+      <p class='summary'>你的Mac可以在你用手机工作时坚守岗位。 在Codex桌面应用中启用远程连接，然后开启&quot;保持Mac唤醒&quot;。 当Mac开机并接通电源时，Codex可以持续运行，而你则通过ChatGPT移动应用工作。</p>
+      <div class="tags"><span>strong:chatgpt</span><span>strong:codex</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-18T18:14:08Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai" target="_blank" rel="noreferrer">埃隆·马斯克对山姆·阿尔特曼和OpenAI提起的诉讼败诉</a></h3>
+      <p class='summary'>埃隆·马斯克对山姆·阿尔特曼及OpenAI提起的诉讼以败诉告终。这场广受关注的案件主要涉及人工智能公司OpenAI的创立初衷、公司治理结构以及未来发展方向等核心争议。法院的裁决标志着这一涉及商业、技术伦理与公司控制权的重大法律纠纷阶段性落幕。</p>
+      <div class="tags"><span>strong:openai</span><span>strong:人工智能</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-18T15:12:46Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers" target="_blank" rel="noreferrer">PaddleOCR 3.5：使用Transformers后端运行OCR和文档解析任务</a></h3>
+      <p class='summary'>PaddleOCR 发布 3.5 版本，正式将 Transformers 确立为运行 PP-OCRv5 及 PaddleOCR-VL 1.5 模型的可选推理后端之一。此次更新引入了更灵活的 `engine` 与 `engine_config` 参数，允许开发者自主选择后端并配置数据类型、设备等选项。其核心价值在于，显著降低了将文档处理能力集成至以 Transformers 为中心的主流开发栈（如 RAG、智能体、文档AI）的门槛，使开发者能更便捷地利用现有生态，减少集成阻力，从而专注于下游应用构建。</p>
+      <div class="tags"><span>strong:智能体</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>965</td><td>1</td><td>640ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>276ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>212</td><td>0</td><td>97ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>391ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>241ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>782</td><td>1</td><td>282ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>137ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>6</td><td>27ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='err'>ERR</td><td>0</td><td>0</td><td>25283ms</td><td>HTTPSConnectionPool(host=&#x27;aihot.virxact.com&#x27;, port=443): Max retries exceeded with url: /feed.xml (Caused by ConnectTimeoutError(&lt;urllib3.connection.HTTPSConnection object at 0x7f3d289d2fc0&gt;, &#x27;Connection to aihot.virxact.com timed out. (connect timeout=25)&#x27;))</td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>965</td><td>0</td><td>1084ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>363ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>212</td><td>0</td><td>130ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>347ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>211ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>782</td><td>1</td><td>266ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>197ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>6</td><td>33ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>13</td><td>1366ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

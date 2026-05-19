@@ -1,19 +1,15 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-19T07:03:56.182507Z",
+  "generated_at": "2026-05-19T10:13:48.811686Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 8,
-  "item_count": 10,
+  "healthy_source_count": 9,
+  "item_count": 20,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 3,
       "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ],
         [
           "OpenAI Skills Commits",
           1
@@ -30,26 +26,14 @@
       "top_keywords": [
         [
           "official_ai",
-          4
-        ],
-        [
-          "codex",
           3
         ],
         [
-          "agent",
+          "codex",
           2
         ],
         [
           "workflow",
-          2
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "agents",
           1
         ],
         [
@@ -57,7 +41,71 @@
           1
         ],
         [
+          "agent",
+          1
+        ],
+        [
           "copilot",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 11,
+      "top_sources": [
+        [
+          "AI Hot",
+          11
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          11
+        ],
+        [
+          "anthropic",
+          5
+        ],
+        [
+          "claude",
+          5
+        ],
+        [
+          "mcp",
+          5
+        ],
+        [
+          "api",
+          3
+        ],
+        [
+          "API",
+          3
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "开发者",
+          2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "人工智能",
+          2
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "工作流",
           1
         ]
       ]
@@ -97,28 +145,6 @@
   },
   "items": [
     {
-      "id": "46f1ded4a7c28bc629bfe2eb86447ae3573d8cf5",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
-      "url": "https://openai.com/index/dell-codex-enterprise-partnership",
-      "published_at": "2026-05-18T10:00:00Z",
-      "summary": "OpenAI and Dell partner to bring Codex to hybrid and on-premise environments, helping enterprises deploy AI coding agents securely across data and workflows.",
-      "relevance_score": 10,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "strong:agent",
-        "strong:agents",
-        "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "dbecf06c47d9cd1a192c673c559a272b40f9cc7d",
       "source_id": "openai-skills",
       "source_name": "OpenAI Skills Commits",
@@ -136,6 +162,29 @@
         "source:skill",
         "source:codex",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ab898dcf0a1e4d250a536ef4ad20ad8c8f6d2ae2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude智能体托管平台新增自托管沙箱与MCP隧道功能",
+      "url": "https://claude.com/blog/claude-managed-agents-updates",
+      "published_at": "2026-05-19T09:09:26Z",
+      "summary": "Anthropic为其Claude智能体托管平台推出两项更新：自托管沙箱允许用户在自有基础设施或合作云平台上运行工具，确保敏感数据与服务保留在用户控制范围内；MCP隧道则通过轻量网关，使智能体能安全连接企业私有网络内的数据库与API，无需暴露于公网。目前沙箱功能已进入公测，隧道处于研究预览阶段。这两项更新进一步增强了企业用户对智能体执行环境与内部资源访问的安全管控能力。",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:mcp",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -160,6 +209,29 @@
       "is_ai_related": true
     },
     {
+      "id": "1fa687cbee947a4d4a9e7beb4273d2cff47d4ebb",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic收购SDK与MCP服务器工具开发商Stainless",
+      "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+      "published_at": "2026-05-18T17:06:04Z",
+      "summary": "Anthropic宣布收购SDK与MCP服务器工具开发商Stainless。Stainless自2022年成立以来，一直为Anthropic官方SDK的生成提供支持，其工具能将API规范转化为TypeScript、Python、Go等多语言的SDK、命令行工具及MCP服务器。此次收购旨在增强Claude平台的开发者体验，提升AI代理连接外部数据与工具的能力，从而在MCP协议基础上进一步拓展连接生态。",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:mcp",
+        "weak:api",
+        "weak:开发者",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "8bed7554b31d423476d1dcf668ee3d8dc744a1cd",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -177,6 +249,48 @@
         "weak:copilot",
         "weak:API",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "22d9f69d9381b51648dd4bfecb2c06e228528a99",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude推出自托管沙箱与MCP隧道功能",
+      "url": "https://x.com/claudeai/status/2056645485696315581",
+      "published_at": "2026-05-19T07:57:49Z",
+      "summary": "来自Code with Claude伦敦现场：我们正在Claude Managed Agents中推出自托管沙箱（公测版）和MCP隧道（研究预览版）。 在您自己的安全边界内运行代理，默认应用您的安全控制。",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "strong:agents",
+        "strong:mcp",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a07bac27257c034b2549ddd182516f2a87c68f9f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Design大升级：Token限制翻倍",
+      "url": "https://x.com/berryxia/status/2056525311635026398",
+      "published_at": "2026-05-19T00:00:17Z",
+      "summary": "Anthropic宣布Claude Design所有计划的Token限制翻倍。这解决了以往在处理完整UI设计、多页设计稿或复杂Agent工作流时频繁出现的token不足问题。翻倍后的空间显著提升了连续创作的体验，让该工具在vibe coding、原型制作等任务中实用性大增，从\"能用\"跃升至\"真香\"。这体现了Anthropic为提升竞争力而对创作工具的持续优化。",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:agent",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -238,6 +352,27 @@
       "is_ai_related": true
     },
     {
+      "id": "9839d16834f0b5745678e4cfa912a5b8a3882b27",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic收购SDK平台Stainless",
+      "url": "https://x.com/AnthropicAI/status/2056419620643541012",
+      "published_at": "2026-05-18T17:00:18Z",
+      "summary": "Anthropic正在收购@stainlessapi，这是一个SDK和MCP服务器平台，自我们API早期以来就为所有Anthropic SDK提供支持。 阅读更多：https：//www.anthropic.com/news/anthropic-acquires-stainless",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:mcp",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "e63a5367b88e2bfc5220202692fef7337345857c",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -290,6 +425,120 @@
         "source:copilot"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "7e996a5243554543ebc5531eba21453a56e6857e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Kimi最新融资获国资与央企加注，估值半年翻四倍",
+      "url": "https://www.ithome.com/0/952/336.htm",
+      "published_at": "2026-05-19T07:39:15Z",
+      "summary": "月之暗面旗下AI助手Kimi正在进行20亿美元新融资，国智投、中国移动等国资机构及央企已加入股东名单，该轮融资已进入收尾阶段。今年1月和2月，Kimi已密集完成3轮融资，累计融资超39亿美元（约376亿元人民币），最新估值相比去年11月已翻4倍有余，成为大模型创业公司中融资最多的企业。产品层面，基于Kimi K2.5模型的Composer 2.5已集成至编程应用Cursor，公司近期也发布了开源模型Kimi K2.6。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:大模型",
+        "strong:开源模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7b4abed69f5c436503a2ca18b8a1723b9d7aee06",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic联合创始人将与教皇利奥十四世共同发布人工智能通谕",
+      "url": "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html",
+      "published_at": "2026-05-19T02:13:08Z",
+      "summary": "Anthropic联合创始人将于2026年5月与教皇利奥十四世共同发布首个人工智能通谕\"magnifica humanitas\"。这是教皇利奥十四世的首次通谕，聚焦人工智能技术与伦理，标志着科技企业与宗教领袖在AI议题上的合作。通谕由梵蒂冈新闻发布，具体探讨人工智能对人类社会的影响，在Hacker News平台获得104点关注，反映了话题的广泛热度。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:人工智能",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d22b6a6956c30aae504c01d4247c9b011e081de8",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude AI助手v2.1.144版本更新",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.144",
+      "published_at": "2026-05-19T00:48:51Z",
+      "summary": "Claude AI助手发布了v2.1.144版本。此次更新主要新增了对后台会话的`/resume`支持，并将\"extra usage\"更名为\"usage credits\"。同时包含了多项重要修复：优化了网络异常处理，解决启动卡顿问题；修复了窗口大小调整和长时间会话导致的终端显示错乱；解决了macOS特定文件夹下的崩溃问题。此外，还改进了模型选择持久化、文件读取、工具调用以及MCP服务器分页工具列表的处理，并减少了在VS Code中的渲染故障。本次更新显著提升了工具的稳定性和用户体验。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:mcp",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ed0a3872a8bf52e45ef33d775fd6c06726972835",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Mac远程运行Codex，手机办公两不误",
+      "url": "https://x.com/OpenAIDevs/status/2056442456800141424",
+      "published_at": "2026-05-18T18:31:03Z",
+      "summary": "你的Mac可以在你用手机工作时坚守岗位。 在Codex桌面应用中启用远程连接，然后开启\"保持Mac唤醒\"。 当Mac开机并接通电源时，Codex可以持续运行，而你则通过ChatGPT移动应用工作。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ec2537b1a549f7c6e470dfe9719a09fc1e6b5b41",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "埃隆·马斯克对山姆·阿尔特曼和OpenAI提起的诉讼败诉",
+      "url": "https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai",
+      "published_at": "2026-05-18T18:14:08Z",
+      "summary": "埃隆·马斯克对山姆·阿尔特曼及OpenAI提起的诉讼以败诉告终。这场广受关注的案件主要涉及人工智能公司OpenAI的创立初衷、公司治理结构以及未来发展方向等核心争议。法院的裁决标志着这一涉及商业、技术伦理与公司控制权的重大法律纠纷阶段性落幕。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:人工智能",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b22b9e6847c09888b830406049a52dcc4bd6f190",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "PaddleOCR 3.5：使用Transformers后端运行OCR和文档解析任务",
+      "url": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers",
+      "published_at": "2026-05-18T15:12:46Z",
+      "summary": "PaddleOCR 发布 3.5 版本，正式将 Transformers 确立为运行 PP-OCRv5 及 PaddleOCR-VL 1.5 模型的可选推理后端之一。此次更新引入了更灵活的 `engine` 与 `engine_config` 参数，允许开发者自主选择后端并配置数据类型、设备等选项。其核心价值在于，显著降低了将文档处理能力集成至以 Transformers 为中心的主流开发栈（如 RAG、智能体、文档AI）的门槛，使开发者能更便捷地利用现有生态，减少集成阻力，从而专注于下游应用构建。",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -300,10 +549,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 965,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 640,
-      "checked_at": "2026-05-19T07:03:29.427334Z"
+      "latency_ms": 1084,
+      "checked_at": "2026-05-19T10:13:45.871570Z"
     },
     {
       "source_id": "openai-skills",
@@ -314,8 +563,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 276,
-      "checked_at": "2026-05-19T07:03:29.704000Z"
+      "latency_ms": 363,
+      "checked_at": "2026-05-19T10:13:46.235713Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -326,8 +575,8 @@
       "fetched_count": 212,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 97,
-      "checked_at": "2026-05-19T07:03:29.804371Z"
+      "latency_ms": 130,
+      "checked_at": "2026-05-19T10:13:46.368624Z"
     },
     {
       "source_id": "google-deepmind",
@@ -338,8 +587,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 391,
-      "checked_at": "2026-05-19T07:03:30.197222Z"
+      "latency_ms": 347,
+      "checked_at": "2026-05-19T10:13:46.717814Z"
     },
     {
       "source_id": "google-ai",
@@ -350,8 +599,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 241,
-      "checked_at": "2026-05-19T07:03:30.439143Z"
+      "latency_ms": 211,
+      "checked_at": "2026-05-19T10:13:46.929785Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -362,8 +611,8 @@
       "fetched_count": 782,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 282,
-      "checked_at": "2026-05-19T07:03:30.732328Z"
+      "latency_ms": 266,
+      "checked_at": "2026-05-19T10:13:47.206716Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -374,8 +623,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 137,
-      "checked_at": "2026-05-19T07:03:30.870165Z"
+      "latency_ms": 197,
+      "checked_at": "2026-05-19T10:13:47.404912Z"
     },
     {
       "source_id": "github-changelog",
@@ -386,20 +635,20 @@
       "fetched_count": 10,
       "kept_count": 6,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-05-19T07:03:30.898266Z"
+      "latency_ms": 33,
+      "checked_at": "2026-05-19T10:13:47.438454Z"
     },
     {
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "enabled": true,
-      "ok": false,
-      "fetched_count": 0,
-      "kept_count": 0,
-      "error": "HTTPSConnectionPool(host='aihot.virxact.com', port=443): Max retries exceeded with url: /feed.xml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3d289d2fc0>, 'Connection to aihot.virxact.com timed out. (connect timeout=25)'))",
-      "latency_ms": 25283,
-      "checked_at": "2026-05-19T07:03:56.182245Z"
+      "ok": true,
+      "fetched_count": 50,
+      "kept_count": 13,
+      "error": null,
+      "latency_ms": 1366,
+      "checked_at": "2026-05-19T10:13:48.806643Z"
     }
   ],
   "control_notes": {
