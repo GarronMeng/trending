@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>21</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>3</b><span>官方源条目</span></div>
-        <div class="stat"><b>11</b><span>聚合源条目</span></div>
+        <div class="stat"><b>26</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>2</b><span>官方源条目</span></div>
+        <div class="stat"><b>20</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-19T11:38:09.350776Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-19T16:49:56.690084Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -64,6 +64,19 @@
       <h3><a href="https://github.com/openai/skills/commit/590b49edc158611a2b2ed715ae73f27eb70d251a" target="_blank" rel="noreferrer">[codex] make yeet template-aware (#412)</a></h3>
       <p class='summary'>[codex] make yeet template-aware (#412) ## Why The curated `yeet` skill was missing guidance for common publish-flow cases: repositories with PR templates, branches that already have a PR, and PR bodies that need to preserve reviewer-relevant context instead of generic boilerplate. ## What Changed Updated `skills/.curated/yeet/SKILL.md` to make the publish w</p>
       <div class="tags"><span>strong:codex</span><span>weak:workflow</span><span>source:skill</span><span>source:codex</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-19T13:00:00Z</span>
+        <strong>Score 9</strong>
+      </div>
+      <h3><a href="https://blog.cloudflare.com/claude-managed-agents" target="_blank" rel="noreferrer">宣布Claude Managed Agents登陆Cloudflare</a></h3>
+      <p class='summary'>Cloudflare宣布与Anthropic的Claude Managed Agents深度整合，提供快速、隔离的自主代码交付执行环境。该集成使开发者能够在全球范围内扩展代理工作流，同时严格控制私有后端访问权限，并支持灵活自定义代理工具及运行时配置。</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:agent</span><span>strong:agents</span><span>weak:开发者</span></div>
     </article>
     
 
@@ -97,25 +110,12 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-05-18T17:06:04Z</span>
-        <strong>Score 8</strong>
-      </div>
-      <h3><a href="https://www.anthropic.com/news/anthropic-acquires-stainless" target="_blank" rel="noreferrer">Anthropic收购SDK与MCP服务器工具开发商Stainless</a></h3>
-      <p class='summary'>Anthropic宣布收购SDK与MCP服务器工具开发商Stainless。Stainless自2022年成立以来，一直为Anthropic官方SDK的生成提供支持，其工具能将API规范转化为TypeScript、Python、Go等多语言的SDK、命令行工具及MCP服务器。此次收购旨在增强Claude平台的开发者体验，提升AI代理连接外部数据与工具的能力，从而在MCP协议基础上进一步拓展连接生态。</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:mcp</span><span>weak:api</span><span>weak:开发者</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-05-18T16:43:19Z</span>
+        <span>2026-05-19T14:14:45Z</span>
         <strong>Score 7</strong>
       </div>
-      <h3><a href="https://github.blog/changelog/2026-05-18-audit-repository-copilot-cloud-agent-configuration-via-the-rest-api" target="_blank" rel="noreferrer">Audit repository Copilot cloud agent configuration via the REST API</a></h3>
-      <p class='summary'>You can now programmatically audit a repository’s Copilot cloud agent configuration with the new Get Copilot cloud agent configuration for a repository REST API, available in public preview. The new… The post Audit repository Copilot cloud agent configuration via the REST API appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>strong:agent</span><span>weak:api</span><span>weak:copilot</span><span>weak:API</span><span>source:copilot</span></div>
+      <h3><a href="https://x.com/ClaudeDevs/status/2056740346529468717" target="_blank" rel="noreferrer">Claude托管代理新增两项安全功能</a></h3>
+      <p class='summary'>我们为Claude Managed Agents增加了两项安全改进。 自托管沙箱将代理的执行环境保留在您的基础设施或托管沙箱提供商处。 MCP隧道让代理能够连接到您安全边界内的服务。</p>
+      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>strong:agents</span><span>strong:mcp</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -160,27 +160,53 @@
 
     <article class="card">
       <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-05-18T16:07:12Z</span>
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-19T15:33:04Z</span>
         <strong>Score 5</strong>
       </div>
-      <h3><a href="https://github.blog/changelog/2026-05-18-copilot-spaces-api-now-generally-available" target="_blank" rel="noreferrer">Copilot Spaces API now generally available</a></h3>
-      <p class='summary'>Copilot Spaces API is now generally available The GitHub Copilot Spaces API is now generally available. You can programmatically create, read, update, and delete Spaces directly from your own applications,… The post Copilot Spaces API now generally available appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:api</span><span>weak:copilot</span><span>weak:API</span><span>source:copilot</span></div>
+      <h3><a href="https://twitter.com/karpathy/status/2056753169888334312" target="_blank" rel="noreferrer">安德烈·卡帕西加入Anthropic</a></h3>
+      <p class='summary'>AI领域知名专家安德烈·卡帕西于2026年5月19日宣布加入人工智能安全公司Anthropic。卡帕西此前曾是特斯拉自动驾驶AI负责人及OpenAI联合创始人，此次加盟标志着顶尖人才向AI安全与对齐研究领域的新一轮流动，进一步提升了Anthropic在行业内的研发实力与关注度。该消息发布后迅速引发广泛讨论，在技术社区获得高关注度。</p>
+      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>strong:人工智能</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
     <article class="card">
       <div class="meta">
-        <span>Hugging Face Blog</span>
-        <span>official_rss</span>
-        <span>2026-05-18T14:12:58Z</span>
-        <strong>Score 3</strong>
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-19T15:29:27Z</span>
+        <strong>Score 5</strong>
       </div>
-      <h3><a href="https://huggingface.co/blog/ibm-research/open-agent-leaderboard" target="_blank" rel="noreferrer">The Open Agent Leaderboard</a></h3>
-      
-      <div class="tags"><span>strong:agent</span><span>source_prior:official_ai</span></div>
+      <h3><a href="https://the-decoder.com/prominent-ai-researcher-andrej-karpathy-picks-anthropic-over-former-home-openai-to-get-back-into-frontier-llm-research" target="_blank" rel="noreferrer">前OpenAI核心成员Andrej Karpathy选择Anthropic重返前沿LLM研究</a></h3>
+      <p class='summary'>著名AI研究人员Andrej Karpathy已加入Anthropic。这位前OpenAI核心团队成员兼特斯拉Autopilot架构师表示，他希望重返研发一线，称未来几年在大语言模型（LLM）前沿的研究&quot;尤其具有塑造性&quot;。他选择Anthropic而非回归前东家OpenAI，这对后者而言是一个明显的损失。</p>
+      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>strong:llm</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-19T14:00:02Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://x.com/Baidu_Inc/status/2056736643781165127" target="_blank" rel="noreferrer">DAA：智能体时代的核心指标</a></h3>
+      <p class='summary'>这里快速补充一个指标新词：DAA。 全称 Daily Active Agents（每日活跃智能体），相当于智能体时代的 DAU。 如果说代币经济学追踪成本，那么 DAA 追踪产出--智能体实际完成了多少工作。 完整对比见下文 ↓</p>
+      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-19T13:27:57Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://x.com/rohanpaul_ai/status/2056728566780547168" target="_blank" rel="noreferrer">AI代理集成新方案：Membrane推出单一技能连接万种API</a></h3>
+      <p class='summary'>AI代理在实际应用中需为每个外部服务重复构建集成逻辑，成为其发展的主要瓶颈。针对此问题，Membrane推出了一种通用&quot;技能&quot;解决方案。通过该单一技能，Claude Code、ChatGPT、Cursor等主流AI代理能够用一条指令调用超过10万个不同的API，涵盖从Stripe支付服务到NASA火星车数据等各类服务。这极大简化了开发流程，将定制化集成转变为通用的连接能力，降低了使用门槛。同时，Membrane正发起社区挑战，鼓励用户提交小众API以获得演示和免费额度激励，旨在持续扩展其连接生态。</p>
+      <div class="tags"><span>strong:claude</span><span>strong:chatgpt</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -194,6 +220,32 @@
       <h3><a href="https://x.com/AnthropicAI/status/2056419620643541012" target="_blank" rel="noreferrer">Anthropic收购SDK平台Stainless</a></h3>
       <p class='summary'>Anthropic正在收购@stainlessapi，这是一个SDK和MCP服务器平台，自我们API早期以来就为所有Anthropic SDK提供支持。 阅读更多：https：//www.anthropic.com/news/anthropic-acquires-stainless</p>
       <div class="tags"><span>strong:anthropic</span><span>strong:mcp</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-19T16:00:01Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://x.com/LumaLabsAI/status/2056766837430600099" target="_blank" rel="noreferrer">Luma Agents现已支持Seedance 2.0生成</a></h3>
+      <p class='summary'>Luma Agents现在可以使用Seedance 2.0进行生成了。 将你的下一个项目指向它，看看它能产出什么，然后继续前进。同样的工作流程，但有了更多可用内容。 打开Luma Agents → http：//lumalabs.ai/app</p>
+      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>Anthropic News via Olshansk RSS</span>
+        <span>public_feed</span>
+        <span>2026-05-19T00:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://www.anthropic.com/news/anthropic-kpmg" target="_blank" rel="noreferrer">KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance</a></h3>
+      <p class='summary'>KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance</p>
+      <div class="tags"><span>strong:claude</span><span>source:claude</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -220,19 +272,6 @@
       <h3><a href="https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere" target="_blank" rel="noreferrer">Take your local GitHub sessions anywhere</a></h3>
       <p class='summary'>Kick off work in VS Code or the CLI, finish it from your phone. Remote control for GitHub Copilot sessions is now generally available on github.com and GitHub Mobile. The post Take your local GitHub sessions anywhere appeared first on The GitHub Blog .</p>
       <div class="tags"><span>weak:copilot</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-05-18T13:00:16Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-05-18-remote-control-for-copilot-cli-sessions-now-generally-available-on-mobile-web-and-vs-code" target="_blank" rel="noreferrer">Remote control for Copilot CLI sessions now generally available on mobile, web, and VS Code</a></h3>
-      <p class='summary'>Remote control for Copilot CLI sessions is now generally available on GitHub Mobile and github.com, so you can start work in your terminal and keep it moving from anywhere. With… The post Remote control for Copilot CLI sessions now generally available on mobile, web, and VS Code appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
     
 
@@ -318,12 +357,38 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-05-18T15:12:46Z</span>
+        <span>2026-05-19T16:02:18Z</span>
         <strong>Score 2</strong>
       </div>
-      <h3><a href="https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers" target="_blank" rel="noreferrer">PaddleOCR 3.5：使用Transformers后端运行OCR和文档解析任务</a></h3>
-      <p class='summary'>PaddleOCR 发布 3.5 版本，正式将 Transformers 确立为运行 PP-OCRv5 及 PaddleOCR-VL 1.5 模型的可选推理后端之一。此次更新引入了更灵活的 `engine` 与 `engine_config` 参数，允许开发者自主选择后端并配置数据类型、设备等选项。其核心价值在于，显著降低了将文档处理能力集成至以 Transformers 为中心的主流开发栈（如 RAG、智能体、文档AI）的门槛，使开发者能更便捷地利用现有生态，减少集成阻力，从而专注于下游应用构建。</p>
-      <div class="tags"><span>strong:智能体</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://x.com/googleaidevs/status/2056767412255805521" target="_blank" rel="noreferrer">Google I/O 开发者大会日程公布</a></h3>
+      <p class='summary'>Google I/O 开发者大会即将开始！ ✧ 上午10：00 - 主题演讲 ✧ 下午1：30 - 开发者主题演讲 ✧ 下午3：30 - Google AI 新动态 ✧ 下午4：30 - 与 @GoogleDeepMind 和 @Antigravity 共同扩展开发者生态系统 时间为太平洋时间。 https：//x.com/i/events/2053241348807864323</p>
+      <div class="tags"><span>strong:deepmind</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-19T15:27:41Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://x.com/OpenRouter/status/2056758698400452705" target="_blank" rel="noreferrer">OpenRouter工具调用模型现可自主进行网络搜索</a></h3>
+      <p class='summary'>OpenRouter上的任何工具调用模型现在都可以自主调用网络搜索和网页抓取功能。 模型可以自行决定何时搜索、搜索什么以及搜索次数。 我们新增了@p0作为新的网络搜索提供商。了解更多：https：//openrouter.ai/announcements/agentic-web-tools</p>
+      <div class="tags"><span>strong:agent</span><span>weak:tool</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-19T11:35:50Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://www.ithome.com/0/952/463.htm" target="_blank" rel="noreferrer">前高管称微软 AI 布局失利，Copilot 付费使用率不足 3%</a></h3>
+      <p class='summary'>微软前高管马特·韦洛索批评称，尽管微软与OpenAI合作在2023至2025年间获得约300亿美元营收，但相关成本高达1000亿美元，盈利前景不明。他指出，微软在AI布局上存在多项失误，包括押注必应搜索AI转型未增市场份额、Copilot付费用户实际使用率不足3%、人才任用不当等。虽然微软称Copilot企业付费用户已超2000万家，但市场对其AI巨额投入的盈利路径存在担忧。微软仍计划2026年在AI基础设施投入最高1460亿美元。</p>
+      <div class="tags"><span>strong:openai</span><span>weak:copilot</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     </div>
     </section>
@@ -331,15 +396,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>965</td><td>0</td><td>587ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>296ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>212</td><td>0</td><td>110ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>347ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>267ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>782</td><td>1</td><td>393ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>269ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>7</td><td>54ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>13</td><td>1148ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>965</td><td>0</td><td>514ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>303ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>213</td><td>1</td><td>111ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>397ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>265ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>783</td><td>0</td><td>388ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>511ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>4</td><td>54ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>21</td><td>1514ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
