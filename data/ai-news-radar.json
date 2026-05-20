@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-20T07:03:49.718430Z",
+  "generated_at": "2026-05-20T09:59:43.023957Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,53 +8,53 @@
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
-          "Google AI Blog",
-          2
+          "OpenAI News",
+          3
         ],
         [
-          "OpenAI News",
+          "Google AI Blog",
           2
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          4
+          5
+        ],
+        [
+          "openai",
+          3
         ],
         [
           "gemini",
           2
         ],
         [
-          "openai",
+          "tool",
           2
         ],
         [
           "agent",
-          1
-        ],
-        [
-          "tool",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 21,
+      "count": 20,
       "top_sources": [
         [
           "AI Hot",
-          21
+          20
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          21
+          20
         ],
         [
           "gemini",
@@ -62,7 +62,7 @@
         ],
         [
           "开发者",
-          8
+          7
         ],
         [
           "多模态",
@@ -151,6 +151,25 @@
       "relevance_reasons": [
         "strong:gemini",
         "strong:agent",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "71382b06a9298f1f82d754804026c78530ed465d",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "The next phase of OpenAI’s Education for Countries",
+      "url": "https://openai.com/index/the-next-phase-of-education-for-countries",
+      "published_at": "2026-05-20T00:00:00Z",
+      "summary": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes.",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:tool",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -658,25 +677,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "2e0205884182aea27a05945d0162aba9b009f651",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google I/O 开发者大会日程公布",
-      "url": "https://x.com/googleaidevs/status/2056767412255805521",
-      "published_at": "2026-05-19T16:02:18Z",
-      "summary": "Google I/O 开发者大会即将开始！ ✧ 上午10：00 - 主题演讲 ✧ 下午1：30 - 开发者主题演讲 ✧ 下午3：30 - Google AI 新动态 ✧ 下午4：30 - 与 @GoogleDeepMind 和 @Antigravity 共同扩展开发者生态系统 时间为太平洋时间。 https：//x.com/i/events/2053241348807864323",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:deepmind",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -686,11 +686,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 967,
-      "kept_count": 2,
+      "fetched_count": 968,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 776,
-      "checked_at": "2026-05-20T07:03:47.018992Z"
+      "latency_ms": 630,
+      "checked_at": "2026-05-20T09:59:39.446468Z"
     },
     {
       "source_id": "openai-skills",
@@ -701,8 +701,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 316,
-      "checked_at": "2026-05-20T07:03:47.335878Z"
+      "latency_ms": 315,
+      "checked_at": "2026-05-20T09:59:39.762047Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -713,8 +713,8 @@
       "fetched_count": 214,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 101,
-      "checked_at": "2026-05-20T07:03:47.440987Z"
+      "latency_ms": 206,
+      "checked_at": "2026-05-20T09:59:39.971742Z"
     },
     {
       "source_id": "google-deepmind",
@@ -725,8 +725,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 388,
-      "checked_at": "2026-05-20T07:03:47.830997Z"
+      "latency_ms": 416,
+      "checked_at": "2026-05-20T09:59:40.389663Z"
     },
     {
       "source_id": "google-ai",
@@ -737,8 +737,8 @@
       "fetched_count": 20,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 211,
-      "checked_at": "2026-05-20T07:03:48.042728Z"
+      "latency_ms": 154,
+      "checked_at": "2026-05-20T09:59:40.544385Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -749,8 +749,8 @@
       "fetched_count": 783,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 414,
-      "checked_at": "2026-05-20T07:03:48.468714Z"
+      "latency_ms": 335,
+      "checked_at": "2026-05-20T09:59:40.891398Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -761,8 +761,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 141,
-      "checked_at": "2026-05-20T07:03:48.610198Z"
+      "latency_ms": 432,
+      "checked_at": "2026-05-20T09:59:41.324363Z"
     },
     {
       "source_id": "github-changelog",
@@ -773,8 +773,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-05-20T07:03:48.638732Z"
+      "latency_ms": 29,
+      "checked_at": "2026-05-20T09:59:41.354454Z"
     },
     {
       "source_id": "aihot",
@@ -783,10 +783,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 22,
+      "kept_count": 21,
       "error": null,
-      "latency_ms": 1069,
-      "checked_at": "2026-05-20T07:03:49.710114Z"
+      "latency_ms": 1658,
+      "checked_at": "2026-05-20T09:59:43.014507Z"
     }
   ],
   "control_notes": {
