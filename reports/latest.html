@@ -43,66 +43,66 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>24</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>4</b><span>官方源条目</span></div>
-        <div class="stat"><b>17</b><span>聚合源条目</span></div>
+        <div class="stat"><b>12</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>1</b><span>官方源条目</span></div>
+        <div class="stat"><b>7</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-20T16:52:32.409028Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-21T02:41:17.844340Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
         <span>Google AI Blog</span>
         <span>official_rss</span>
-        <span>2026-05-19T17:45:00Z</span>
-        <strong>Score 5</strong>
+        <span>2026-05-20T19:30:00Z</span>
+        <strong>Score 3</strong>
       </div>
-      <h3><a href="https://blog.google/innovation-and-ai/sundar-pichai-io-2026" target="_blank" rel="noreferrer">I/O 2026: Welcome to the agentic Gemini era</a></h3>
-      <p class='summary'>a series of colorful icons representing Google I/O against a black background</p>
-      <div class="tags"><span>strong:gemini</span><span>strong:agent</span><span>source_prior:official_ai</span></div>
+      <h3><a href="https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements" target="_blank" rel="noreferrer">100 things we announced at I/O 2026</a></h3>
+      <p class='summary'>Image with the words &quot;Ready, Set, I/O&quot; and a colorful Gemini logo</p>
+      <div class="tags"><span>strong:gemini</span><span>source_prior:official_ai</span></div>
     </article>
     
 
     <article class="card">
       <div class="meta">
-        <span>OpenAI News</span>
+        <span>GitHub Changelog</span>
         <span>official_rss</span>
-        <span>2026-05-20T00:00:00Z</span>
+        <span>2026-05-20T23:58:35Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-05-20-copilot-usage-metrics-reports-now-use-github-owned-download-urls" target="_blank" rel="noreferrer">Copilot usage metrics reports now use GitHub-owned download URLs</a></h3>
+      <p class='summary'>As previously announced, the download URLs for Copilot usage metrics reports have migrated from Azure Front Door domains to a stable, GitHub-owned custom domain. This change improves URL stability and… The post Copilot usage metrics reports now use GitHub-owned download URLs appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-05-20T17:11:42Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-05-20-updates-to-available-models-in-copilot-on-web" target="_blank" rel="noreferrer">Updates to available models in Copilot on web</a></h3>
+      <p class='summary'>We have updated our available model selection for Copilot Chat on the web to deliver more consistent, high-quality responses. What’s changed While model choice is valuable, we are limiting the… The post Updates to available models in Copilot on web appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-20T16:48:36Z</span>
         <strong>Score 4</strong>
       </div>
-      <h3><a href="https://openai.com/index/the-next-phase-of-education-for-countries" target="_blank" rel="noreferrer">The next phase of OpenAI’s Education for Countries</a></h3>
-      <p class='summary'>OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes.</p>
-      <div class="tags"><span>strong:openai</span><span>weak:tool</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-19T21:31:07Z</span>
-        <strong>Score 7</strong>
-      </div>
-      <h3><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.145" target="_blank" rel="noreferrer">Claude Code v2.1.145版本更新</a></h3>
-      <p class='summary'>本次更新为Claude Code工具带来了多项功能增强与问题修复。新功能包括：新增JSON格式的会话列表命令以便脚本化操作，并在OTEL追踪中完善了Agent父子关系。插件浏览界面现可预览详细信息。在稳定性方面，修复了权限提示被绕过的安全问题、MCP参数校验错误、终端窗口调整后的显示冻结，以及非ASCII名称导致的API调用失败等问题。同时改进了Read工具的文件超限处理，并优化了任务列表排序和状态栏信息显示等交互细节，整体提升了工具的易用性与可靠性。</p>
-      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>strong:mcp</span><span>weak:api</span><span>weak:API</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-20T02:39:19Z</span>
-        <strong>Score 6</strong>
-      </div>
-      <h3><a href="https://www.ithome.com/0/952/645.htm" target="_blank" rel="noreferrer">消息称微软内部示警：GitHub 面临生存级风险，AI 编程工具削弱托管必要性</a></h3>
-      <p class='summary'>微软内部发出警告，称其代码托管平台GitHub正面临&quot;生存级风险&quot;。主要原因是Cursor、Claude Code等AI编程助手兴起，改变了开发者工作流，削弱了持续将代码上传至GitHub的必要性。为统一工具链并控制成本，微软已要求部分团队在2026年6月底前停止试用Claude Code，转而使用自有工具GitHub Copilot CLI。同时，OpenAI曾考虑自建替代平台，也加剧了对GitHub地位的潜在威胁。</p>
-      <div class="tags"><span>strong:openai</span><span>strong:claude</span><span>weak:copilot</span><span>weak:开发者</span><span>weak:工作流</span></div>
+      <h3><a href="https://claude.com/blog/how-an-anthropic-sales-leader-uses-claude-cowork-to-run-a-4-000-account-book" target="_blank" rel="noreferrer">Anthropic销售负责人如何利用Claude Cowork管理4000个客户账户</a></h3>
+      <p class='summary'>Anthropic美国中端市场业务负责人Travis Bryant利用Claude Cowork自动化销售管理工作。该工具帮助他高效完成客户倾向性评分、每日客户简报准备及每周销售预测报告生成，每晚自动处理4000个账户数据，替代了以往跨部门团队需数百小时完成的工作。通过自动化日常任务调度，他每天节省约90分钟，并将数据整合为可交互的销售仪表板，使其能更专注于客户沟通与战略决策。</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>weak:自动化</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -110,51 +110,12 @@
       <div class="meta">
         <span>GitHub Changelog</span>
         <span>official_rss</span>
-        <span>2026-05-19T22:28:17Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-05-19-easily-apply-copilot-code-review-feedback-with-copilot-cloud-agent" target="_blank" rel="noreferrer">Easily apply Copilot code review feedback with Copilot cloud agent</a></h3>
-      <p class='summary'>Copilot code review’s previous Implement suggestion button has now been renamed to Fix with Copilot and updated to support a UI dialog for more control over how suggestions are applied.… The post Easily apply Copilot code review feedback with Copilot cloud agent appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>strong:agent</span><span>weak:copilot</span><span>source:copilot</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-05-19T20:30:00Z</span>
+        <span>2026-05-20T15:24:40Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://openai.com/index/introducing-openai-for-singapore" target="_blank" rel="noreferrer">Introducing OpenAI for Singapore</a></h3>
-      <p class='summary'>OpenAI for Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI.</p>
-      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-05-19T17:56:38Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-05-19-gemini-3-5-flash-is-generally-available-for-github-copilot" target="_blank" rel="noreferrer">Gemini 3.5 Flash is generally available for GitHub Copilot</a></h3>
-      <p class='summary'>Gemini 3.5 Flash, Google’s latest Flash-tier model, is now rolling out on GitHub Copilot. In our early testing, Gemini 3.5 Flash delivers near-Pro coding quality at Flash-tier speed and cost… The post Gemini 3.5 Flash is generally available for GitHub Copilot appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>strong:gemini</span><span>weak:copilot</span><span>source:copilot</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>Google AI Blog</span>
-        <span>official_rss</span>
-        <span>2026-05-19T17:45:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5" target="_blank" rel="noreferrer">Gemini 3.5: frontier intelligence with action</a></h3>
-      <p class='summary'>Gemini 3.5 text and multi-colored star icon on an abstract blue background.</p>
-      <div class="tags"><span>strong:gemini</span><span>source_prior:official_ai</span></div>
+      <h3><a href="https://github.blog/changelog/2026-05-20-auto-model-selection-now-routes-based-on-your-task-in-vs-code" target="_blank" rel="noreferrer">Auto model selection now routes based on your task in VS Code</a></h3>
+      <p class='summary'>GitHub Copilot auto model selection now routes to the best model for your task, using utilization and model health metrics for a high quality, reliable, and token-efficient experience. How it… The post Auto model selection now routes based on your task in VS Code appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
     
 
@@ -175,12 +136,25 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-05-19T17:26:55Z</span>
-        <strong>Score 4</strong>
+        <span>2026-05-20T18:28:20Z</span>
+        <strong>Score 3</strong>
       </div>
-      <h3><a href="https://www.ithome.com/0/952/519.htm" target="_blank" rel="noreferrer">谷歌 Gemini Omni 全能模型发布：可从任意输入生成任意输出，一句话让 AI 修改视频</a></h3>
-      <p class='summary'>在2026年谷歌I/O开发者大会上，谷歌正式推出Gemini Omni模型。该模型代表了Gemini家族迄今最全面的能力，&quot;Omni&quot;意为全能，能够无缝处理文本、图像、音频和视频等多种信息模态，实现&quot;从任何输入生成任何输出&quot;。其核心亮点在于支持对话式编辑，用户可通过自然语言指令轻松修改视频元素。同时，谷歌发布了首款衍生模型Gemini Omni Flash，现已在Gemini App、Google Flow和YouTube Shorts中可用，后续将提供API服务。</p>
-      <div class="tags"><span>strong:gemini</span><span>weak:api</span><span>weak:开发者</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://x.com/googleaidevs/status/2057166550243872920" target="_blank" rel="noreferrer">Gemini与XPRIZE联合举办全球黑客松</a></h3>
+      <p class='summary'>用Gemini构建，改变世界🌍 我们正与@xprize合作，发起一场全球黑客松，旨在利用我们全新的智能体工具解决现实世界的挑战。 点击加入：https：//www.geminixprize.com/</p>
+      <div class="tags"><span>strong:gemini</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-20T16:54:01Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://x.com/OpenAIDevs/status/2057142816497906045" target="_blank" rel="noreferrer">ChatGPT移动端支持Codex，实现跨设备协作</a></h3>
+      <p class='summary'>你的笔记本电脑可以留在家里。 通过ChatGPT移动应用使用Codex，随时随地回答问题，之后还能在电脑上继续同一对话。</p>
+      <div class="tags"><span>strong:chatgpt</span><span>strong:codex</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -234,151 +208,21 @@
       <p class='summary'>OpenAI宣布向Y Combinator当前批次的每家创业公司提供价值200万美元的API信用额度投资，以换取股权。此举旨在为初创公司提供AI算力资源，支持下一代创新。这让人联想到Sam Altman在YC合伙人时期，Yuri Milner向每家创业公司提供投资的先例。OpenAI希望通过此举释放创业者潜力，推动AI应用创新。</p>
       <div class="tags"><span>strong:openai</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-20T02:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://qwen.ai/blog?id=qwen3.7" target="_blank" rel="noreferrer">Qwen3.7：智能体前沿</a></h3>
-      <p class='summary'>Qwen Studio推出Qwen3.7模型，提供覆盖聊天机器人、图像与视频理解、图像生成、文档处理、网页搜索集成、工具调用及工件生成等功能。该模型整合了当前AI智能体的关键能力，旨在推动多模态交互与实际任务执行向更综合、自主的方向发展。</p>
-      <div class="tags"><span>strong:智能体</span><span>strong:多模态</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-19T23:05:53Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/googleaidevs/status/2056874010265485341" target="_blank" rel="noreferrer">Ramp利用Gemini API构建高级财务代理</a></h3>
-      <p class='summary'>通过使用Gemini API中的新托管代理功能，@Ramp在无需接触后端基础设施的情况下构建了其高级财务代理。 了解更多 ↓</p>
-      <div class="tags"><span>strong:gemini</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-19T21:12:37Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/GoogleAI/status/2056845506601718271" target="_blank" rel="noreferrer">谷歌推出全新AI智能搜索框，支持多模态交互</a></h3>
-      <p class='summary'>谷歌宣布推出基于Gemini 3.5模型的全新智能搜索框。该更新将AI Overviews与AI Mode整合为统一的AI搜索体验，支持对文本、图像、文件及视频进行跨模态推理查询。用户可进行多轮对话，搜索将结合上下文提供更个性化、定制化的回答。该新功能已在全球桌面和移动设备端同步上线。</p>
-      <div class="tags"><span>strong:gemini</span><span>strong:多模态</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-19T20:32:13Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/ClaudeDevs/status/2056835339193561170" target="_blank" rel="noreferrer">Claude实现真实界面操作的生产实践指南</a></h3>
-      <p class='summary'>计算机使用功能使Claude成为能够操作真实用户界面的智能体。 新博客文章探讨如何在生产环境中确保其可靠性：包括提高点击准确性、选择思考努力级别、在长会话中保持上下文，以及记录Claude可重放的演示操作： https：//claude.com/blog/best-practices-for-computer-and-browser-use-with-claude</p>
-      <div class="tags"><span>strong:claude</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-19T19:19:01Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/sundarpichai/status/2056816915717443862" target="_blank" rel="noreferrer">Gemini Omni发布：物理推理与多模态生成新突破</a></h3>
-      <p class='summary'>Gemini Omni不仅能构建逼真的场景，还能推理接下来应该发生什么。它结合了对物理的直观理解与Gemini在历史、科学和文化背景方面的知识。 今日起，通过@Geminiapp + Google Flow和@YouTube Shorts，向全球Google AI Plus、Pro和Ultra订阅用户推出视频生成功能。</p>
-      <div class="tags"><span>strong:gemini</span><span>strong:多模态</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-19T19:07:38Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/GeminiApp/status/2056814052039356806" target="_blank" rel="noreferrer">谷歌发布Gemini Omni多模态生成模型</a></h3>
-      <p class='summary'>介绍Gemini Omni，我们的新模型，可以从任何输入创建任何内容，首先从视频开始。 借助Gemini Omni，您可以将图像、视频和文本作为输入组合，并生成基于Gemini现实世界知识的高质量视频。#GoogleIO</p>
-      <div class="tags"><span>strong:gemini</span><span>strong:多模态</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-19T18:38:09Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://huggingface.co/blog/allenai/olmoearth-v1-1" target="_blank" rel="noreferrer">OlmoEarth v1.1： 更高效的模型家族</a></h3>
-      <p class='summary'>Ai2（Allen Institute for AI）在Hugging Face平台发布了OlmoEarth模型家族的1.1版本。此次更新重点提升了模型的计算效率与运行性能，通过优化的模型架构与训练策略，使OlmoEarth v1.1在保持或增强任务表现的同时，显著降低了推理所需的计算资源与时间成本。这一改进旨在让该开源模型更适用于资源受限的部署场景，推动大规模语言模型的普惠应用。</p>
-      <div class="tags"><span>strong:hugging face</span><span>strong:开源模型</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-19T18:31:46Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/GeminiApp/status/2056805027394859137" target="_blank" rel="noreferrer">GoogleIO发布多项Gemini更新</a></h3>
-      <p class='summary'>我们在#GoogleIO上宣布了多项Gemini更新，包括： - 采用神经表达技术的全新Gemini体验设计 - 即将推出的Gemini智能体功能，含每日简报与Gemini Spark - Gemini Omni与3.5 Flash模型 - 以及更多内容！ 详情请见此线程🧵</p>
-      <div class="tags"><span>strong:gemini</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-19T19:35:21Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://x.com/googleaidevs/status/2056821026038964360" target="_blank" rel="noreferrer">Antigravity生态：面向智能体的开发平台</a></h3>
-      <p class='summary'>全新的 @Antigravity 生态系统是您终极的智能体优先开发平台。 对于任何构建或编排智能体的开发者，以下是 Google I/O 上发布的内容 🚀↓</p>
-      <div class="tags"><span>strong:智能体</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-19T17:45:00Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection" target="_blank" rel="noreferrer">Google I/O 2026</a></h3>
-      <p class='summary'>在Google I/O 2026大会上，Google宣布了多项旨在让AI更普惠、更实用的更新。这些发布聚焦于提升人工智能的辅助能力，使其能够服务更广泛的用户群体。大会涵盖了AI在开发者工具、用户应用以及日常生活场景中的具体改进，强调通过技术优化实现更自然、更便捷的人机交互体验。</p>
-      <div class="tags"><span>strong:人工智能</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>968</td><td>2</td><td>611ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>658ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>214</td><td>0</td><td>120ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>417ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>2</td><td>152ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>783</td><td>0</td><td>346ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>313ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>3</td><td>28ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>18</td><td>1389ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>970</td><td>0</td><td>588ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>781ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>214</td><td>0</td><td>104ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>400ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>223ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>783</td><td>0</td><td>355ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>397ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>4</td><td>50ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>7</td><td>1336ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

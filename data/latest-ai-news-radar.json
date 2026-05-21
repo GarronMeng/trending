@@ -1,127 +1,103 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-20T16:52:32.407017Z",
+  "generated_at": "2026-05-21T02:41:17.843109Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 24,
+  "item_count": 12,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 1,
       "top_sources": [
         [
           "Google AI Blog",
-          2
-        ],
-        [
-          "OpenAI News",
-          2
+          1
         ]
       ],
       "top_keywords": [
+        [
+          "gemini",
+          1
+        ],
         [
           "official_ai",
-          4
-        ],
-        [
-          "gemini",
-          2
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "tool",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 17,
-      "top_sources": [
-        [
-          "AI Hot",
-          17
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          17
-        ],
-        [
-          "gemini",
-          6
-        ],
-        [
-          "api",
-          5
-        ],
-        [
-          "API",
-          5
-        ],
-        [
-          "多模态",
-          5
-        ],
-        [
-          "开发者",
-          4
-        ],
-        [
-          "智能体",
-          4
-        ],
-        [
-          "claude",
-          3
-        ],
-        [
-          "openai",
-          3
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "copilot",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "GitHub Changelog",
-          3
+          4
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          6
+          8
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 7,
+      "top_sources": [
+        [
+          "AI Hot",
+          7
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          7
         ],
         [
-          "agent",
+          "anthropic",
+          2
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "自动化",
           1
         ],
         [
           "gemini",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "agent",
           1
         ]
       ]
@@ -129,158 +105,94 @@
   },
   "items": [
     {
-      "id": "612b0dace84f30a3b2747c7211b1ae28e07222d8",
+      "id": "232b4cec97018875032f0c601b183700edeb0767",
       "source_id": "google-ai",
       "source_name": "Google AI Blog",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "I/O 2026: Welcome to the agentic Gemini era",
-      "url": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026",
-      "published_at": "2026-05-19T17:45:00Z",
-      "summary": "a series of colorful icons representing Google I/O against a black background",
-      "relevance_score": 5,
+      "title": "100 things we announced at I/O 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements",
+      "published_at": "2026-05-20T19:30:00Z",
+      "summary": "Image with the words \"Ready, Set, I/O\" and a colorful Gemini logo",
+      "relevance_score": 3,
       "relevance_reasons": [
         "strong:gemini",
-        "strong:agent",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "71382b06a9298f1f82d754804026c78530ed465d",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
+      "id": "bdfc8d1eea08b40edf62754f597be32287070fd5",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "The next phase of OpenAI’s Education for Countries",
-      "url": "https://openai.com/index/the-next-phase-of-education-for-countries",
-      "published_at": "2026-05-20T00:00:00Z",
-      "summary": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes.",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot usage metrics reports now use GitHub-owned download URLs",
+      "url": "https://github.blog/changelog/2026-05-20-copilot-usage-metrics-reports-now-use-github-owned-download-urls",
+      "published_at": "2026-05-20T23:58:35Z",
+      "summary": "As previously announced, the download URLs for Copilot usage metrics reports have migrated from Azure Front Door domains to a stable, GitHub-owned custom domain. This change improves URL stability and… The post Copilot usage metrics reports now use GitHub-owned download URLs appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e40d6a4fef6d1404db3d72dd26ac84ca046ac2d6",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Updates to available models in Copilot on web",
+      "url": "https://github.blog/changelog/2026-05-20-updates-to-available-models-in-copilot-on-web",
+      "published_at": "2026-05-20T17:11:42Z",
+      "summary": "We have updated our available model selection for Copilot Chat on the web to deliver more consistent, high-quality responses. What’s changed While model choice is valuable, we are limiting the… The post Updates to available models in Copilot on web appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "59bec88bb0f0b7434ac6ec57345917dd9eaedf7e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic销售负责人如何利用Claude Cowork管理4000个客户账户",
+      "url": "https://claude.com/blog/how-an-anthropic-sales-leader-uses-claude-cowork-to-run-a-4-000-account-book",
+      "published_at": "2026-05-20T16:48:36Z",
+      "summary": "Anthropic美国中端市场业务负责人Travis Bryant利用Claude Cowork自动化销售管理工作。该工具帮助他高效完成客户倾向性评分、每日客户简报准备及每周销售预测报告生成，每晚自动处理4000个账户数据，替代了以往跨部门团队需数百小时完成的工作。通过自动化日常任务调度，他每天节省约90分钟，并将数据整合为可交互的销售仪表板，使其能更专注于客户沟通与战略决策。",
       "relevance_score": 4,
       "relevance_reasons": [
-        "strong:openai",
-        "weak:tool",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "755da0a26a9b206f7ef4ce7f2ea1ccb9f0c9b974",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Code v2.1.145版本更新",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.145",
-      "published_at": "2026-05-19T21:31:07Z",
-      "summary": "本次更新为Claude Code工具带来了多项功能增强与问题修复。新功能包括：新增JSON格式的会话列表命令以便脚本化操作，并在OTEL追踪中完善了Agent父子关系。插件浏览界面现可预览详细信息。在稳定性方面，修复了权限提示被绕过的安全问题、MCP参数校验错误、终端窗口调整后的显示冻结，以及非ASCII名称导致的API调用失败等问题。同时改进了Read工具的文件超限处理，并优化了任务列表排序和状态栏信息显示等交互细节，整体提升了工具的易用性与可靠性。",
-      "relevance_score": 7,
-      "relevance_reasons": [
+        "strong:anthropic",
         "strong:claude",
-        "strong:agent",
-        "strong:mcp",
-        "weak:api",
-        "weak:API",
+        "weak:自动化",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "fdc6d0a4037075f5f98e106a22a38bf5f95624ff",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "消息称微软内部示警：GitHub 面临生存级风险，AI 编程工具削弱托管必要性",
-      "url": "https://www.ithome.com/0/952/645.htm",
-      "published_at": "2026-05-20T02:39:19Z",
-      "summary": "微软内部发出警告，称其代码托管平台GitHub正面临\"生存级风险\"。主要原因是Cursor、Claude Code等AI编程助手兴起，改变了开发者工作流，削弱了持续将代码上传至GitHub的必要性。为统一工具链并控制成本，微软已要求部分团队在2026年6月底前停止试用Claude Code，转而使用自有工具GitHub Copilot CLI。同时，OpenAI曾考虑自建替代平台，也加剧了对GitHub地位的潜在威胁。",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:claude",
-        "weak:copilot",
-        "weak:开发者",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8623938240c16dad8e8a52dded86616a26a82815",
+      "id": "65e41ddf54299b40b9480a2846d62a45c2baf4e9",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Easily apply Copilot code review feedback with Copilot cloud agent",
-      "url": "https://github.blog/changelog/2026-05-19-easily-apply-copilot-code-review-feedback-with-copilot-cloud-agent",
-      "published_at": "2026-05-19T22:28:17Z",
-      "summary": "Copilot code review’s previous Implement suggestion button has now been renamed to Fix with Copilot and updated to support a UI dialog for more control over how suggestions are applied.… The post Easily apply Copilot code review feedback with Copilot cloud agent appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1af5e1c31c1d0128dd47f0fb4644fe599076e19f",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Introducing OpenAI for Singapore",
-      "url": "https://openai.com/index/introducing-openai-for-singapore",
-      "published_at": "2026-05-19T20:30:00Z",
-      "summary": "OpenAI for Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI.",
+      "title": "Auto model selection now routes based on your task in VS Code",
+      "url": "https://github.blog/changelog/2026-05-20-auto-model-selection-now-routes-based-on-your-task-in-vs-code",
+      "published_at": "2026-05-20T15:24:40Z",
+      "summary": "GitHub Copilot auto model selection now routes to the best model for your task, using utilization and model health metrics for a high quality, reliable, and token-efficient experience. How it… The post Auto model selection now routes based on your task in VS Code appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a5056b6264eda0cb45403e67bb09c2c36cbc881e",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Gemini 3.5 Flash is generally available for GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-05-19-gemini-3-5-flash-is-generally-available-for-github-copilot",
-      "published_at": "2026-05-19T17:56:38Z",
-      "summary": "Gemini 3.5 Flash, Google’s latest Flash-tier model, is now rolling out on GitHub Copilot. In our early testing, Gemini 3.5 Flash delivers near-Pro coding quality at Flash-tier speed and cost… The post Gemini 3.5 Flash is generally available for GitHub Copilot appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:gemini",
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0dc650254e23ac67deffca1d0552138c92e24af6",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Gemini 3.5: frontier intelligence with action",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5",
-      "published_at": "2026-05-19T17:45:00Z",
-      "summary": "Gemini 3.5 text and multi-colored star icon on an abstract blue background.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -303,22 +215,39 @@
       "is_ai_related": true
     },
     {
-      "id": "cf279868c8e6b5ba91757c69cefe13e16eb39298",
+      "id": "08683a8e383dab87ca71ce39e01610dfe8745db8",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "谷歌 Gemini Omni 全能模型发布：可从任意输入生成任意输出，一句话让 AI 修改视频",
-      "url": "https://www.ithome.com/0/952/519.htm",
-      "published_at": "2026-05-19T17:26:55Z",
-      "summary": "在2026年谷歌I/O开发者大会上，谷歌正式推出Gemini Omni模型。该模型代表了Gemini家族迄今最全面的能力，\"Omni\"意为全能，能够无缝处理文本、图像、音频和视频等多种信息模态，实现\"从任何输入生成任何输出\"。其核心亮点在于支持对话式编辑，用户可通过自然语言指令轻松修改视频元素。同时，谷歌发布了首款衍生模型Gemini Omni Flash，现已在Gemini App、Google Flow和YouTube Shorts中可用，后续将提供API服务。",
-      "relevance_score": 4,
+      "title": "Gemini与XPRIZE联合举办全球黑客松",
+      "url": "https://x.com/googleaidevs/status/2057166550243872920",
+      "published_at": "2026-05-20T18:28:20Z",
+      "summary": "用Gemini构建，改变世界🌍 我们正与@xprize合作，发起一场全球黑客松，旨在利用我们全新的智能体工具解决现实世界的挑战。 点击加入：https：//www.geminixprize.com/",
+      "relevance_score": 3,
       "relevance_reasons": [
         "strong:gemini",
-        "weak:api",
-        "weak:开发者",
-        "weak:API",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "541da51a1706aa24f2ac97ef2e76f60991318d23",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "ChatGPT移动端支持Codex，实现跨设备协作",
+      "url": "https://x.com/OpenAIDevs/status/2057142816497906045",
+      "published_at": "2026-05-20T16:54:01Z",
+      "summary": "你的笔记本电脑可以留在家里。 通过ChatGPT移动应用使用Codex，随时随地回答问题，之后还能在电脑上继续同一对话。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -400,197 +329,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "44acaf6927d8da92d4de7578e434e30ce86a1d8a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Qwen3.7：智能体前沿",
-      "url": "https://qwen.ai/blog?id=qwen3.7",
-      "published_at": "2026-05-20T02:00:00Z",
-      "summary": "Qwen Studio推出Qwen3.7模型，提供覆盖聊天机器人、图像与视频理解、图像生成、文档处理、网页搜索集成、工具调用及工件生成等功能。该模型整合了当前AI智能体的关键能力，旨在推动多模态交互与实际任务执行向更综合、自主的方向发展。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "2e018b2dfd630713589b6f6b5b3cd5251c563e51",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Ramp利用Gemini API构建高级财务代理",
-      "url": "https://x.com/googleaidevs/status/2056874010265485341",
-      "published_at": "2026-05-19T23:05:53Z",
-      "summary": "通过使用Gemini API中的新托管代理功能，@Ramp在无需接触后端基础设施的情况下构建了其高级财务代理。 了解更多 ↓",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0fe451dde4e55ad82dd2d1a8813ce35e93f3cba8",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "谷歌推出全新AI智能搜索框，支持多模态交互",
-      "url": "https://x.com/GoogleAI/status/2056845506601718271",
-      "published_at": "2026-05-19T21:12:37Z",
-      "summary": "谷歌宣布推出基于Gemini 3.5模型的全新智能搜索框。该更新将AI Overviews与AI Mode整合为统一的AI搜索体验，支持对文本、图像、文件及视频进行跨模态推理查询。用户可进行多轮对话，搜索将结合上下文提供更个性化、定制化的回答。该新功能已在全球桌面和移动设备端同步上线。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "68197c896f723f739245168e14156e2e04b040f5",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude实现真实界面操作的生产实践指南",
-      "url": "https://x.com/ClaudeDevs/status/2056835339193561170",
-      "published_at": "2026-05-19T20:32:13Z",
-      "summary": "计算机使用功能使Claude成为能够操作真实用户界面的智能体。 新博客文章探讨如何在生产环境中确保其可靠性：包括提高点击准确性、选择思考努力级别、在长会话中保持上下文，以及记录Claude可重放的演示操作： https：//claude.com/blog/best-practices-for-computer-and-browser-use-with-claude",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c4e928e935ae1dc59dfd6bbc11df0f92480aba75",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Gemini Omni发布：物理推理与多模态生成新突破",
-      "url": "https://x.com/sundarpichai/status/2056816915717443862",
-      "published_at": "2026-05-19T19:19:01Z",
-      "summary": "Gemini Omni不仅能构建逼真的场景，还能推理接下来应该发生什么。它结合了对物理的直观理解与Gemini在历史、科学和文化背景方面的知识。 今日起，通过@Geminiapp + Google Flow和@YouTube Shorts，向全球Google AI Plus、Pro和Ultra订阅用户推出视频生成功能。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a0f1444edcb144c7905b32c1a679e79590aaad74",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "谷歌发布Gemini Omni多模态生成模型",
-      "url": "https://x.com/GeminiApp/status/2056814052039356806",
-      "published_at": "2026-05-19T19:07:38Z",
-      "summary": "介绍Gemini Omni，我们的新模型，可以从任何输入创建任何内容，首先从视频开始。 借助Gemini Omni，您可以将图像、视频和文本作为输入组合，并生成基于Gemini现实世界知识的高质量视频。#GoogleIO",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5bb145e578749ce918fe50d3582dbc675e6be896",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OlmoEarth v1.1： 更高效的模型家族",
-      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
-      "published_at": "2026-05-19T18:38:09Z",
-      "summary": "Ai2（Allen Institute for AI）在Hugging Face平台发布了OlmoEarth模型家族的1.1版本。此次更新重点提升了模型的计算效率与运行性能，通过优化的模型架构与训练策略，使OlmoEarth v1.1在保持或增强任务表现的同时，显著降低了推理所需的计算资源与时间成本。这一改进旨在让该开源模型更适用于资源受限的部署场景，推动大规模语言模型的普惠应用。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "strong:开源模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d6be54f9f788182ef623e86b5928015d75fd3b8c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "GoogleIO发布多项Gemini更新",
-      "url": "https://x.com/GeminiApp/status/2056805027394859137",
-      "published_at": "2026-05-19T18:31:46Z",
-      "summary": "我们在#GoogleIO上宣布了多项Gemini更新，包括： - 采用神经表达技术的全新Gemini体验设计 - 即将推出的Gemini智能体功能，含每日简报与Gemini Spark - Gemini Omni与3.5 Flash模型 - 以及更多内容！ 详情请见此线程🧵",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5739caf698a11a1e776f75b8d553d2cdabe7c703",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Antigravity生态：面向智能体的开发平台",
-      "url": "https://x.com/googleaidevs/status/2056821026038964360",
-      "published_at": "2026-05-19T19:35:21Z",
-      "summary": "全新的 @Antigravity 生态系统是您终极的智能体优先开发平台。 对于任何构建或编排智能体的开发者，以下是 Google I/O 上发布的内容 🚀↓",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e664585c24962bfa94605dd5e43bb7765a6f20cd",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google I/O 2026",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection",
-      "published_at": "2026-05-19T17:45:00Z",
-      "summary": "在Google I/O 2026大会上，Google宣布了多项旨在让AI更普惠、更实用的更新。这些发布聚焦于提升人工智能的辅助能力，使其能够服务更广泛的用户群体。大会涵盖了AI在开发者工具、用户应用以及日常生活场景中的具体改进，强调通过技术优化实现更自然、更便捷的人机交互体验。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:人工智能",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -600,11 +338,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 968,
-      "kept_count": 2,
+      "fetched_count": 970,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 611,
-      "checked_at": "2026-05-20T16:52:28.953041Z"
+      "latency_ms": 588,
+      "checked_at": "2026-05-21T02:41:14.168680Z"
     },
     {
       "source_id": "openai-skills",
@@ -615,8 +353,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 658,
-      "checked_at": "2026-05-20T16:52:29.611884Z"
+      "latency_ms": 781,
+      "checked_at": "2026-05-21T02:41:14.950230Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -627,8 +365,8 @@
       "fetched_count": 214,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 120,
-      "checked_at": "2026-05-20T16:52:29.735449Z"
+      "latency_ms": 104,
+      "checked_at": "2026-05-21T02:41:15.057695Z"
     },
     {
       "source_id": "google-deepmind",
@@ -639,8 +377,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 417,
-      "checked_at": "2026-05-20T16:52:30.154437Z"
+      "latency_ms": 400,
+      "checked_at": "2026-05-21T02:41:15.459727Z"
     },
     {
       "source_id": "google-ai",
@@ -649,10 +387,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 152,
-      "checked_at": "2026-05-20T16:52:30.307038Z"
+      "latency_ms": 223,
+      "checked_at": "2026-05-21T02:41:15.684166Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -663,8 +401,8 @@
       "fetched_count": 783,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 346,
-      "checked_at": "2026-05-20T16:52:30.664886Z"
+      "latency_ms": 355,
+      "checked_at": "2026-05-21T02:41:16.050225Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -675,8 +413,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 313,
-      "checked_at": "2026-05-20T16:52:30.978407Z"
+      "latency_ms": 397,
+      "checked_at": "2026-05-21T02:41:16.447434Z"
     },
     {
       "source_id": "github-changelog",
@@ -685,10 +423,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-05-20T16:52:31.007533Z"
+      "latency_ms": 50,
+      "checked_at": "2026-05-21T02:41:16.498359Z"
     },
     {
       "source_id": "aihot",
@@ -697,10 +435,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 18,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 1389,
-      "checked_at": "2026-05-20T16:52:32.399202Z"
+      "latency_ms": 1336,
+      "checked_at": "2026-05-21T02:41:17.835791Z"
     }
   ],
   "control_notes": {
