@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-21T11:43:53.487144Z",
+  "generated_at": "2026-05-21T16:38:27.244307Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 9,
   "groups": {
     "official": {
       "group": "official",
@@ -28,33 +28,37 @@
     },
     "developer": {
       "group": "developer",
-      "count": 4,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          4
+          2
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          8
+          4
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          5
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          6
+        ],
+        [
+          "gemini",
+          2
         ],
         [
           "api",
@@ -65,8 +69,16 @@
           2
         ],
         [
-          "codex",
-          2
+          "agent",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ],
+        [
+          "工作流",
+          1
         ],
         [
           "anthropic",
@@ -77,15 +89,7 @@
           1
         ],
         [
-          "自动化",
-          1
-        ],
-        [
           "开源模型",
-          1
-        ],
-        [
-          "gemini",
           1
         ],
         [
@@ -155,58 +159,61 @@
       "is_ai_related": true
     },
     {
-      "id": "59bec88bb0f0b7434ac6ec57345917dd9eaedf7e",
+      "id": "7a9e1526809a921c067e41ca5afa901a8abb3ad9",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic销售负责人如何利用Claude Cowork管理4000个客户账户",
-      "url": "https://claude.com/blog/how-an-anthropic-sales-leader-uses-claude-cowork-to-run-a-4-000-account-book",
-      "published_at": "2026-05-20T16:48:36Z",
-      "summary": "Anthropic美国中端市场业务负责人Travis Bryant利用Claude Cowork自动化销售管理工作。该工具帮助他高效完成客户倾向性评分、每日客户简报准备及每周销售预测报告生成，每晚自动处理4000个账户数据，替代了以往跨部门团队需数百小时完成的工作。通过自动化日常任务调度，他每天节省约90分钟，并将数据整合为可交互的销售仪表板，使其能更专注于客户沟通与战略决策。",
-      "relevance_score": 4,
+      "title": "推出 Gemini for Home 赋能服务提供商与硬件合作伙伴",
+      "url": "https://developers.googleblog.com/empowering-service-providers-and-hardware-partners-with-gemini-for-home",
+      "published_at": "2026-05-21T16:33:06Z",
+      "summary": "Google 通过推出全栈 Gemini AI 解决方案扩展其智能家居生态系统。该方案集成了先进的摄像头智能、自然语言查询功能和日常活动摘要能力。它为服务提供商和硬件制造商提供了现成的参考设计与API，使其无需大量研发投入即可构建主动式、品牌化的智能家居服务。该计划旨在超越基础设备控制，迈向能够理解情境并实时响应用户需求的AI原生智能家居。",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:自动化",
+        "strong:gemini",
+        "weak:api",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "65e41ddf54299b40b9480a2846d62a45c2baf4e9",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Auto model selection now routes based on your task in VS Code",
-      "url": "https://github.blog/changelog/2026-05-20-auto-model-selection-now-routes-based-on-your-task-in-vs-code",
-      "published_at": "2026-05-20T15:24:40Z",
-      "summary": "GitHub Copilot auto model selection now routes to the best model for your task, using utilization and model health metrics for a high quality, reliable, and token-efficient experience. How it… The post Auto model selection now routes based on your task in VS Code appeared first on The GitHub Blog .",
+      "id": "56eb01d9c5b0cb7761c2f8fa7e5b6e5d8997a35c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "发布 Kotlin版ADK与Android版ADK 0.1.0：在Android及其他平台构建AI Agent",
+      "url": "https://developers.googleblog.com/adk-kotlin-android-building-ai-agents",
+      "published_at": "2026-05-21T16:33:06Z",
+      "summary": "Google发布了面向开发者的新工具包：Kotlin版ADK与Android版ADK 0.1.0。这两个工具包旨在帮助开发者构建AI Agent。其中，Kotlin版ADK将代理工作流引入后端项目开发；Android版ADK则专注于移动端应用，提供了构建AI代理所需的特定功能。此次发布为开发者提供了在Android生态及更广泛平台创建AI应用的官方工具基础。",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:agent",
+        "weak:开发者",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "c6c172ff35f9dda1ea9fb7227406455b34e6e2a1",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Semantic issue search in Copilot Chat",
-      "url": "https://github.blog/changelog/2026-05-20-semantic-issue-search-in-copilot-chat",
-      "published_at": "2026-05-20T14:07:27Z",
-      "summary": "You can use natural language in GitHub Copilot Chat on web to quickly find, group, and analyze issues, with context-aware results powered by a new semantic issues index. What’s new… The post Semantic issue search in Copilot Chat appeared first on The GitHub Blog .",
+      "id": "86e59f4ca1bd748e12cb54ad65db23ebfea80955",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic即将成为首个盈利的AI实验室",
+      "url": "https://the-decoder.com/anthropic-is-about-to-become-the-first-profitable-ai-lab",
+      "published_at": "2026-05-21T15:15:30Z",
+      "summary": "根据《华尔街日报》报道，Anthropic正接近实现其首个盈利季度，预计第二季度营收达109亿美元，运营利润为5.59亿美元。该公司在去年夏季时还预计最早在2028年才能盈利。主要增长动力来自编程工具和Claude的代理功能使用，其需求一度超过了可用的算力容量。这一转变标志着Anthropic可能成为业界首个实现盈利的领先AI研发机构。",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -267,26 +274,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "f15f089c753fd24caee2817394c061e5f6b7ae05",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "开源插件为Codex App增添高级功能",
-      "url": "https://x.com/vista8/status/2057124658927812758",
-      "published_at": "2026-05-20T15:41:52Z",
-      "summary": "一个开源项目允许用户增强Codex App的功能。即使通过API登录，也能通过安装插件的方式启用Computer Use特性并添加Goal指令。项目还支持界面自定义，例如调整为类似Chrome浏览器的顶部Tab样式，并可设置任务开始和完成的提醒音效。相关开源项目地址已在评论区提供。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:codex",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -299,8 +286,8 @@
       "fetched_count": 970,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 730,
-      "checked_at": "2026-05-21T11:43:50.632732Z"
+      "latency_ms": 946,
+      "checked_at": "2026-05-21T16:38:23.966647Z"
     },
     {
       "source_id": "openai-skills",
@@ -311,8 +298,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 238,
-      "checked_at": "2026-05-21T11:43:50.871226Z"
+      "latency_ms": 215,
+      "checked_at": "2026-05-21T16:38:24.182358Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -323,8 +310,8 @@
       "fetched_count": 214,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 105,
-      "checked_at": "2026-05-21T11:43:50.979901Z"
+      "latency_ms": 87,
+      "checked_at": "2026-05-21T16:38:24.273303Z"
     },
     {
       "source_id": "google-deepmind",
@@ -335,8 +322,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 210,
-      "checked_at": "2026-05-21T11:43:51.192417Z"
+      "latency_ms": 233,
+      "checked_at": "2026-05-21T16:38:24.507823Z"
     },
     {
       "source_id": "google-ai",
@@ -347,8 +334,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 194,
-      "checked_at": "2026-05-21T11:43:51.387437Z"
+      "latency_ms": 235,
+      "checked_at": "2026-05-21T16:38:24.743979Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -359,8 +346,8 @@
       "fetched_count": 783,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 287,
-      "checked_at": "2026-05-21T11:43:51.686075Z"
+      "latency_ms": 224,
+      "checked_at": "2026-05-21T16:38:24.979071Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -371,8 +358,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 101,
-      "checked_at": "2026-05-21T11:43:51.787586Z"
+      "latency_ms": 113,
+      "checked_at": "2026-05-21T16:38:25.092970Z"
     },
     {
       "source_id": "github-changelog",
@@ -381,10 +368,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-05-21T11:43:51.812708Z"
+      "latency_ms": 21,
+      "checked_at": "2026-05-21T16:38:25.115246Z"
     },
     {
       "source_id": "aihot",
@@ -393,10 +380,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 1665,
-      "checked_at": "2026-05-21T11:43:53.479200Z"
+      "latency_ms": 2119,
+      "checked_at": "2026-05-21T16:38:27.235647Z"
     }
   ],
   "control_notes": {
