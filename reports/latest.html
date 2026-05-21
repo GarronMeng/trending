@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>12</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>10</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>7</b><span>聚合源条目</span></div>
+        <div class="stat"><b>5</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-21T10:09:42.246033Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-21T11:43:53.488368Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -182,47 +182,21 @@
       <p class='summary'>一个开源项目允许用户增强Codex App的功能。即使通过API登录，也能通过安装插件的方式启用Computer Use特性并添加Goal指令。项目还支持界面自定义，例如调整为类似Chrome浏览器的顶部Tab样式，并可设置任务开始和完成的提醒音效。相关开源项目地址已在评论区提供。</p>
       <div class="tags"><span>strong:codex</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-20T10:32:36Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/alibaba_cloud/status/2057046828692934749" target="_blank" rel="noreferrer">Qwen 2026大会：AI原生云架构蓝图发布</a></h3>
-      <p class='summary'>Qwen Conference 2026：主题演讲议程 AI原生云、Agent原生云架构、推理的未来，以及多模态视觉技术发布。没有冗余内容，只有面向全球规模的工程蓝图。 注册：https：//click.qwencloud.com/m/20000000190/</p>
-      <div class="tags"><span>strong:agent</span><span>strong:多模态</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-20T10:15:47Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://www.ithome.com/0/953/021.htm" target="_blank" rel="noreferrer">投资超 600 亿美元，孙正义豪赌 OpenAI 引发内部质疑&quot;迷信奥尔特曼如追星&quot;</a></h3>
-      <p class='summary'>软银对OpenAI的投资承诺已超600亿美元，引发内部对孙正义过度信任其创始人奥尔特曼的担忧。部分高管质疑将巨额资本集中于单一公司存在风险，且软银虽持股超10%却无董事会席位，缺乏决策影响力。同时，Anthropic等竞争对手的崛起加剧了对OpenAI领先地位的挑战。尽管软银表示对OpenAI抱有&quot;高度信心&quot;，并已从中获得账面收益，但其股价下跌及信用展望被下调反映出市场对其豪赌的顾虑。</p>
-      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>970</td><td>0</td><td>585ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>454ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>214</td><td>0</td><td>221ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>357ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>238ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>783</td><td>0</td><td>315ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>336ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>4</td><td>31ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>7</td><td>1401ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>970</td><td>0</td><td>730ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>238ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>214</td><td>0</td><td>105ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>210ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>194ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>783</td><td>0</td><td>287ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>101ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>4</td><td>24ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>5</td><td>1665ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
