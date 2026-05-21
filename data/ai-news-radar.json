@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-21T07:38:10.434141Z",
+  "generated_at": "2026-05-21T10:09:42.242846Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 12,
   "groups": {
     "official": {
       "group": "official",
@@ -39,6 +39,66 @@
         [
           "copilot",
           8
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 7,
+      "top_sources": [
+        [
+          "AI Hot",
+          7
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          7
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "自动化",
+          1
+        ],
+        [
+          "开源模型",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "agent",
+          1
         ]
       ]
     }
@@ -99,6 +159,26 @@
       "is_ai_related": true
     },
     {
+      "id": "59bec88bb0f0b7434ac6ec57345917dd9eaedf7e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic销售负责人如何利用Claude Cowork管理4000个客户账户",
+      "url": "https://claude.com/blog/how-an-anthropic-sales-leader-uses-claude-cowork-to-run-a-4-000-account-book",
+      "published_at": "2026-05-20T16:48:36Z",
+      "summary": "Anthropic美国中端市场业务负责人Travis Bryant利用Claude Cowork自动化销售管理工作。该工具帮助他高效完成客户倾向性评分、每日客户简报准备及每周销售预测报告生成，每晚自动处理4000个账户数据，替代了以往跨部门团队需数百小时完成的工作。通过自动化日常任务调度，他每天节省约90分钟，并将数据整合为可交互的销售仪表板，使其能更专注于客户沟通与战略决策。",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "65e41ddf54299b40b9480a2846d62a45c2baf4e9",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -133,6 +213,122 @@
         "source:copilot"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "ea24b007044132289e3de55dfaf1b8d1b777af84",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "腾讯开源Hy-MT2多语言翻译模型",
+      "url": "https://x.com/TencentHunyuan/status/2057384034544804136",
+      "published_at": "2026-05-21T08:52:32Z",
+      "summary": "腾讯正式开源Hy-MT2多语言翻译模型，支持33种语言间的无缝互译。其7B与30B-A3B版本在开源模型中达到最先进的翻译性能，超越了许多参数规模大数十倍的模型。更具突破性的是，1.8B轻量级版本性能超越微软等主流商业API，并凭借腾讯AngelSlim 1.25-bit极量化技术，仅需440MB存储空间，即可在主流手机芯片上本地运行，推理速度较前代提升1.5倍，显著降低了高质量AI翻译的部署门槛。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:开源模型",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "08683a8e383dab87ca71ce39e01610dfe8745db8",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gemini与XPRIZE联合举办全球黑客松",
+      "url": "https://x.com/googleaidevs/status/2057166550243872920",
+      "published_at": "2026-05-20T18:28:20Z",
+      "summary": "用Gemini构建，改变世界🌍 我们正与@xprize合作，发起一场全球黑客松，旨在利用我们全新的智能体工具解决现实世界的挑战。 点击加入：https：//www.geminixprize.com/",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "541da51a1706aa24f2ac97ef2e76f60991318d23",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "ChatGPT移动端支持Codex，实现跨设备协作",
+      "url": "https://x.com/OpenAIDevs/status/2057142816497906045",
+      "published_at": "2026-05-20T16:54:01Z",
+      "summary": "你的笔记本电脑可以留在家里。 通过ChatGPT移动应用使用Codex，随时随地回答问题，之后还能在电脑上继续同一对话。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f15f089c753fd24caee2817394c061e5f6b7ae05",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "开源插件为Codex App增添高级功能",
+      "url": "https://x.com/vista8/status/2057124658927812758",
+      "published_at": "2026-05-20T15:41:52Z",
+      "summary": "一个开源项目允许用户增强Codex App的功能。即使通过API登录，也能通过安装插件的方式启用Computer Use特性并添加Goal指令。项目还支持界面自定义，例如调整为类似Chrome浏览器的顶部Tab样式，并可设置任务开始和完成的提醒音效。相关开源项目地址已在评论区提供。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:codex",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "cbcf8294e99f19be242842a22a2dd218de8317fe",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Qwen 2026大会：AI原生云架构蓝图发布",
+      "url": "https://x.com/alibaba_cloud/status/2057046828692934749",
+      "published_at": "2026-05-20T10:32:36Z",
+      "summary": "Qwen Conference 2026：主题演讲议程 AI原生云、Agent原生云架构、推理的未来，以及多模态视觉技术发布。没有冗余内容，只有面向全球规模的工程蓝图。 注册：https：//click.qwencloud.com/m/20000000190/",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2b172e046bff7faadbd2e8cff62eb86e4c62f752",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "投资超 600 亿美元，孙正义豪赌 OpenAI 引发内部质疑\"迷信奥尔特曼如追星\"",
+      "url": "https://www.ithome.com/0/953/021.htm",
+      "published_at": "2026-05-20T10:15:47Z",
+      "summary": "软银对OpenAI的投资承诺已超600亿美元，引发内部对孙正义过度信任其创始人奥尔特曼的担忧。部分高管质疑将巨额资本集中于单一公司存在风险，且软银虽持股超10%却无董事会席位，缺乏决策影响力。同时，Anthropic等竞争对手的崛起加剧了对OpenAI领先地位的挑战。尽管软银表示对OpenAI抱有\"高度信心\"，并已从中获得账面收益，但其股价下跌及信用展望被下调反映出市场对其豪赌的顾虑。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -145,8 +341,8 @@
       "fetched_count": 970,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 708,
-      "checked_at": "2026-05-21T07:38:07.703210Z"
+      "latency_ms": 585,
+      "checked_at": "2026-05-21T10:09:38.860712Z"
     },
     {
       "source_id": "openai-skills",
@@ -157,8 +353,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 318,
-      "checked_at": "2026-05-21T07:38:08.022149Z"
+      "latency_ms": 454,
+      "checked_at": "2026-05-21T10:09:39.315109Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -169,8 +365,8 @@
       "fetched_count": 214,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 129,
-      "checked_at": "2026-05-21T07:38:08.154506Z"
+      "latency_ms": 221,
+      "checked_at": "2026-05-21T10:09:39.539720Z"
     },
     {
       "source_id": "google-deepmind",
@@ -181,8 +377,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 343,
-      "checked_at": "2026-05-21T07:38:08.498887Z"
+      "latency_ms": 357,
+      "checked_at": "2026-05-21T10:09:39.898883Z"
     },
     {
       "source_id": "google-ai",
@@ -193,8 +389,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 306,
-      "checked_at": "2026-05-21T07:38:08.805927Z"
+      "latency_ms": 238,
+      "checked_at": "2026-05-21T10:09:40.138278Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -205,8 +401,8 @@
       "fetched_count": 783,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 285,
-      "checked_at": "2026-05-21T07:38:09.101599Z"
+      "latency_ms": 315,
+      "checked_at": "2026-05-21T10:09:40.465403Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -217,8 +413,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 211,
-      "checked_at": "2026-05-21T07:38:09.313689Z"
+      "latency_ms": 336,
+      "checked_at": "2026-05-21T10:09:40.801662Z"
     },
     {
       "source_id": "github-changelog",
@@ -229,8 +425,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 35,
-      "checked_at": "2026-05-21T07:38:09.349226Z"
+      "latency_ms": 31,
+      "checked_at": "2026-05-21T10:09:40.833290Z"
     },
     {
       "source_id": "aihot",
@@ -238,11 +434,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 0,
-      "kept_count": 0,
+      "fetched_count": 50,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 1077,
-      "checked_at": "2026-05-21T07:38:10.427017Z"
+      "latency_ms": 1401,
+      "checked_at": "2026-05-21T10:09:42.236536Z"
     }
   ],
   "control_notes": {
