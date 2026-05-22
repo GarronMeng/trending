@@ -1,14 +1,14 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-22T11:23:17.246992Z",
+  "generated_at": "2026-05-22T16:24:58.025486Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 19,
+  "item_count": 18,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI Skills Commits",
@@ -19,6 +19,10 @@
           1
         ],
         [
+          "GitHub AI & ML",
+          1
+        ],
+        [
           "Google DeepMind",
           1
         ]
@@ -26,15 +30,19 @@
       "top_keywords": [
         [
           "official_ai",
-          3
+          4
         ],
         [
           "codex",
-          2
+          3
         ],
         [
           "agent",
-          1
+          3
+        ],
+        [
+          "agents",
+          2
         ],
         [
           "api",
@@ -53,11 +61,11 @@
           1
         ],
         [
-          "chatgpt",
+          "ai coding",
           1
         ],
         [
-          "workflow",
+          "developer",
           1
         ],
         [
@@ -68,40 +76,36 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 15,
+      "count": 13,
       "top_sources": [
         [
           "AI Hot",
-          15
+          13
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          15
-        ],
-        [
-          "api",
-          5
-        ],
-        [
-          "API",
-          5
-        ],
-        [
-          "agent",
-          4
+          13
         ],
         [
           "openai",
           4
         ],
         [
-          "claude",
+          "开发者",
           4
         ],
         [
-          "anthropic",
+          "agent",
+          3
+        ],
+        [
+          "api",
+          3
+        ],
+        [
+          "API",
           3
         ],
         [
@@ -109,11 +113,11 @@
           3
         ],
         [
-          "开发者",
-          3
+          "gemini",
+          2
         ],
         [
-          "gemini",
+          "claude",
           2
         ],
         [
@@ -122,6 +126,10 @@
         ],
         [
           "llm",
+          1
+        ],
+        [
+          "开源模型",
           1
         ]
       ]
@@ -168,21 +176,43 @@
       "is_ai_related": true
     },
     {
-      "id": "639c7e870f0139282c29915366a7b3c9c69512fa",
+      "id": "f24f9580520d5f809b1dcd29736c77966cb31b48",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "AdventHealth advances whole-person care with OpenAI",
-      "url": "https://openai.com/index/adventhealth",
-      "published_at": "2026-05-21T12:00:00Z",
-      "summary": "AdventHealth is using ChatGPT for Healthcare to streamline workflows, reduce administrative burden, and return more time to patient care.",
-      "relevance_score": 6,
+      "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
+      "url": "https://openai.com/index/gartner-2026-agentic-coding-leader",
+      "published_at": "2026-05-22T00:00:00Z",
+      "summary": "OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment.",
+      "relevance_score": 9,
       "relevance_reasons": [
         "strong:openai",
-        "strong:chatgpt",
-        "weak:workflow",
+        "strong:codex",
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d8f538bd6adf5511809cb6eeb5a4cf53733c6159",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "GitHub recognized as a Leader in the Gartner® Magic Quadrant™ for Enterprise AI Coding Agents for the third year in a row",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterprise-ai-coding-agents-for-the-third-year-in-a-row",
+      "published_at": "2026-05-22T16:10:21Z",
+      "summary": "We are committed to empowering every developer by building an open, secure, and AI-powered platform that defines the future of software development. The post GitHub recognized as a Leader in the Gartner® Magic Quadrant™ for Enterprise AI Coding Agents for the third year in a row appeared first on The GitHub Blog .",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "strong:ai coding",
+        "weak:developer",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -245,48 +275,6 @@
       "relevance_reasons": [
         "strong:deepmind",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "af6fb37daba22c9ed7c830101126d069236b24b7",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "合作伙伴如何运用Opus强化网络安全",
-      "url": "https://claude.com/blog/how-our-partners-are-putting-opus-to-work-for-cybersecurity",
-      "published_at": "2026-05-21T17:43:01Z",
-      "summary": "多家企业正利用Claude Opus模型强化网络安全防御。Wiz通过其Red Agent，每周对超过15万个生产资产进行持续渗透测试，发现数千个高风险漏洞且误报率为零。Palo Alto Networks在不到三周内完成了相当于一年的渗透测试工作量。埃森哲将安全测试覆盖率从约10%提升至80%以上，涉及1600个应用和50万+个API，扫描周期从3-5天缩短至1小时内。应用主要围绕三个方向：开展大规模攻击性测试、缩短漏洞发现与修复的间隔，以及将受控AI系统部署到生产环境。",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "546926f845439752dec4ae19d9a856b4f147a98c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude现已支持更多安全合规工具",
-      "url": "https://claude.com/blog/compliance-api-security-partners",
-      "published_at": "2026-05-21T17:43:01Z",
-      "summary": "Anthropic宣布为Claude企业版及平台新增28项安全与合规工具集成。这些集成均通过Claude Compliance API实现，允许企业安全团队统一获取Claude的对话内容与活动事件，从而将其纳入现有的DLP、SIEM等监控与合规流程。新增合作伙伴包括Cloudflare、CrowdStrike、Microsoft Purview等28家供应商，覆盖数据安全、身份验证等多个关键领域，帮助企业快速将Claude接入现有安全平台，实现跨组织工具的统一治理与可视化监控。",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -466,20 +454,20 @@
       "is_ai_related": true
     },
     {
-      "id": "86e59f4ca1bd748e12cb54ad65db23ebfea80955",
+      "id": "2053e9130356e0c7a2ed715baf450cca52a46ef3",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic即将成为首个盈利的AI实验室",
-      "url": "https://the-decoder.com/anthropic-is-about-to-become-the-first-profitable-ai-lab",
-      "published_at": "2026-05-21T15:15:30Z",
-      "summary": "根据《华尔街日报》报道，Anthropic正接近实现其首个盈利季度，预计第二季度营收达109亿美元，运营利润为5.59亿美元。该公司在去年夏季时还预计最早在2028年才能盈利。主要增长动力来自编程工具和Claude的代理功能使用，其需求一度超过了可用的算力容量。这一转变标志着Anthropic可能成为业界首个实现盈利的领先AI研发机构。",
-      "relevance_score": 3,
+      "title": "Karpathy的CLAUDE.md四条规则让AI编程准确率飙升至94%",
+      "url": "https://x.com/AYi_AInotes/status/2057791192738283669",
+      "published_at": "2026-05-22T11:50:26Z",
+      "summary": "Karpathy发布的CLAUDE.md文件以其简洁高效的AI编程指导原则引爆GitHub，获得超22万星标并登顶趋势榜。该文件仅含65行、4条核心规则，却能将AI编程的准确率从65%显著提升至94%。其核心在于强制开发者\"慢下来\"，将深度思考、追求简洁、精准修改和目标驱动等原则变为硬性编码准则，旨在对抗开发者习惯性\"先写再说\"的本能。目前大多数开发者尚未深入研读这一备受关注的效率指南。",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:anthropic",
         "strong:claude",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -530,11 +518,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 971,
+      "fetched_count": 972,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 1059,
-      "checked_at": "2026-05-22T11:23:13.126203Z"
+      "latency_ms": 812,
+      "checked_at": "2026-05-22T16:24:54.403132Z"
     },
     {
       "source_id": "openai-skills",
@@ -545,8 +533,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 239,
-      "checked_at": "2026-05-22T11:23:13.365564Z"
+      "latency_ms": 195,
+      "checked_at": "2026-05-22T16:24:54.598933Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -557,8 +545,8 @@
       "fetched_count": 214,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 85,
-      "checked_at": "2026-05-22T11:23:13.454007Z"
+      "latency_ms": 107,
+      "checked_at": "2026-05-22T16:24:54.710270Z"
     },
     {
       "source_id": "google-deepmind",
@@ -569,8 +557,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 386,
-      "checked_at": "2026-05-22T11:23:13.841790Z"
+      "latency_ms": 297,
+      "checked_at": "2026-05-22T16:24:55.009643Z"
     },
     {
       "source_id": "google-ai",
@@ -581,8 +569,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 226,
-      "checked_at": "2026-05-22T11:23:14.068303Z"
+      "latency_ms": 134,
+      "checked_at": "2026-05-22T16:24:55.144126Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -590,11 +578,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 783,
+      "fetched_count": 784,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 207,
-      "checked_at": "2026-05-22T11:23:14.286052Z"
+      "latency_ms": 244,
+      "checked_at": "2026-05-22T16:24:55.400299Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -603,10 +591,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 122,
-      "checked_at": "2026-05-22T11:23:14.408759Z"
+      "latency_ms": 101,
+      "checked_at": "2026-05-22T16:24:55.502396Z"
     },
     {
       "source_id": "github-changelog",
@@ -617,8 +605,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-05-22T11:23:14.432663Z"
+      "latency_ms": 27,
+      "checked_at": "2026-05-22T16:24:55.530075Z"
     },
     {
       "source_id": "aihot",
@@ -627,10 +615,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 16,
+      "kept_count": 15,
       "error": null,
-      "latency_ms": 2805,
-      "checked_at": "2026-05-22T11:23:17.239730Z"
+      "latency_ms": 2487,
+      "checked_at": "2026-05-22T16:24:58.018902Z"
     }
   ],
   "control_notes": {
