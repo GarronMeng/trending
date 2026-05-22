@@ -1,71 +1,35 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-21T16:38:27.244307Z",
+  "generated_at": "2026-05-22T02:42:34.388705Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 16,
   "groups": {
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 3,
       "top_sources": [
         [
-          "Google AI Blog",
+          "OpenAI Skills Commits",
+          1
+        ],
+        [
+          "OpenAI News",
+          1
+        ],
+        [
+          "Google DeepMind",
           1
         ]
       ],
       "top_keywords": [
-        [
-          "gemini",
-          1
-        ],
         [
           "official_ai",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 6,
-      "top_sources": [
-        [
-          "AI Hot",
-          6
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          6
+          3
         ],
         [
-          "gemini",
-          2
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
+          "codex",
           2
         ],
         [
@@ -73,66 +37,270 @@
           1
         ],
         [
-          "开发者",
+          "api",
           1
         ],
         [
-          "工作流",
+          "API",
           1
         ],
         [
-          "anthropic",
+          "skill",
           1
         ],
         [
-          "claude",
-          1
-        ],
-        [
-          "开源模型",
-          1
-        ],
-        [
-          "智能体",
+          "openai",
           1
         ],
         [
           "chatgpt",
           1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "deepmind",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 12,
+      "top_sources": [
+        [
+          "AI Hot",
+          12
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          12
+        ],
+        [
+          "api",
+          6
+        ],
+        [
+          "API",
+          6
+        ],
+        [
+          "agent",
+          4
+        ],
+        [
+          "claude",
+          4
+        ],
+        [
+          "anthropic",
+          3
+        ],
+        [
+          "gemini",
+          2
+        ],
+        [
+          "开源模型",
+          2
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "developer",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
         ]
       ]
     }
   },
   "items": [
     {
-      "id": "232b4cec97018875032f0c601b183700edeb0767",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
+      "id": "8438ef80e2e29e287004fde40c0beae620719e7e",
+      "source_id": "openai-skills",
+      "source_name": "OpenAI Skills Commits",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "100 things we announced at I/O 2026",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements",
-      "published_at": "2026-05-20T19:30:00Z",
-      "summary": "Image with the words \"Ready, Set, I/O\" and a colorful Gemini logo",
-      "relevance_score": 3,
+      "title": "[codex] Add define-goal skill (#417)",
+      "url": "https://github.com/openai/skills/commit/b0401f07213a66414d84a65cb50c1d226f99485a",
+      "published_at": "2026-05-21T18:13:37Z",
+      "summary": "[codex] Add define-goal skill (#417) ## Summary - Add the `define-goal` curated skill for shaping user intent into concrete, measurable goals. - Include agent UI metadata so the skill can be invoked as `$define-goal`. - Add the standard Apache 2.0 license file for the new skill package. ## Validation - `quick_validate.py /Users/richardlee/code/skills/skills/",
+      "relevance_score": 11,
       "relevance_reasons": [
-        "strong:gemini",
+        "strong:codex",
+        "strong:agent",
+        "weak:api",
+        "weak:API",
+        "source:skill",
+        "source:codex",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "bdfc8d1eea08b40edf62754f597be32287070fd5",
+      "id": "639c7e870f0139282c29915366a7b3c9c69512fa",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "AdventHealth advances whole-person care with OpenAI",
+      "url": "https://openai.com/index/adventhealth",
+      "published_at": "2026-05-21T12:00:00Z",
+      "summary": "AdventHealth is using ChatGPT for Healthcare to streamline workflows, reduce administrative burden, and return more time to patient care.",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "19e5d5ece9e30a34d4b085ce971e46ad7c837ee5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Datasette Agent",
+      "url": "https://simonwillison.net/2026/May/21/datasette-agent",
+      "published_at": "2026-05-21T19:52:19Z",
+      "summary": "Datasette Agent是Datasette推出的首个可扩展AI助手，为用户提供对话式界面以查询数据，并支持通过插件生成图表。该工具基于其LLM Python库构建，是LLM与Datasette整合的重要成果。目前提供图表生成、AI图像创建和沙箱代码执行等官方插件。它既可运行于Gemini 3.1 Flash-Lite等云端模型，也支持通过LM Studio连接本地开源模型，具备可靠的工具调用与查询能力。",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "strong:llm",
+        "strong:开源模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "79032803a2a905a804911bcf6944d8423d17c7e8",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "核算OpenAI和Anthropic最新动态背后的数学",
+      "url": "https://garymarcus.substack.com/p/checking-the-math-behind-openai-and",
+      "published_at": "2026-05-21T17:32:11Z",
+      "summary": "OpenAI与Anthropic近期相继发布重要产品更新。Claude 3.5 Sonnet在多项基准测试中超越GPT-4o，同时宣布API价格下调50%。Anthropic披露其模型训练成本年均增长约3.2倍，而OpenAI被曝已通过企业服务实现单季度超10亿美元营收。两家公司在技术突破与商业化竞赛中，正通过精密的成本核算与性能权衡重塑行业格局。",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:claude",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d5c196bf772fe74d2ae054cb5e45951d1f6f8ba8",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks",
+      "url": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks",
+      "published_at": "2026-05-21T19:46:42Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:deepmind",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "af6fb37daba22c9ed7c830101126d069236b24b7",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "合作伙伴如何运用Opus强化网络安全",
+      "url": "https://claude.com/blog/how-our-partners-are-putting-opus-to-work-for-cybersecurity",
+      "published_at": "2026-05-21T17:43:01Z",
+      "summary": "多家企业正利用Claude Opus模型强化网络安全防御。Wiz通过其Red Agent，每周对超过15万个生产资产进行持续渗透测试，发现数千个高风险漏洞且误报率为零。Palo Alto Networks在不到三周内完成了相当于一年的渗透测试工作量。埃森哲将安全测试覆盖率从约10%提升至80%以上，涉及1600个应用和50万+个API，扫描周期从3-5天缩短至1小时内。应用主要围绕三个方向：开展大规模攻击性测试、缩短漏洞发现与修复的间隔，以及将受控AI系统部署到生产环境。",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "546926f845439752dec4ae19d9a856b4f147a98c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude现已支持更多安全合规工具",
+      "url": "https://claude.com/blog/compliance-api-security-partners",
+      "published_at": "2026-05-21T17:43:01Z",
+      "summary": "Anthropic宣布为Claude企业版及平台新增28项安全与合规工具集成。这些集成均通过Claude Compliance API实现，允许企业安全团队统一获取Claude的对话内容与活动事件，从而将其纳入现有的DLP、SIEM等监控与合规流程。新增合作伙伴包括Cloudflare、CrowdStrike、Microsoft Purview等28家供应商，覆盖数据安全、身份验证等多个关键领域，帮助企业快速将Claude接入现有安全平台，实现跨组织工具的统一治理与可视化监控。",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "cd3193f8ccf7d9f836d563080137dae98568a786",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Copilot usage metrics reports now use GitHub-owned download URLs",
-      "url": "https://github.blog/changelog/2026-05-20-copilot-usage-metrics-reports-now-use-github-owned-download-urls",
-      "published_at": "2026-05-20T23:58:35Z",
-      "summary": "As previously announced, the download URLs for Copilot usage metrics reports have migrated from Azure Front Door domains to a stable, GitHub-owned custom domain. This change improves URL stability and… The post Copilot usage metrics reports now use GitHub-owned download URLs appeared first on The GitHub Blog .",
+      "title": "GitHub Copilot for Eclipse is open source",
+      "url": "https://github.blog/changelog/2026-05-21-github-copilot-for-eclipse-is-open-source",
+      "published_at": "2026-05-21T23:50:38Z",
+      "summary": "Following our previous updates, GitHub Copilot for Eclipse is open source, with the code available on GitHub under the MIT license. This marks an important milestone for GitHub Copilot in… The post GitHub Copilot for Eclipse is open source appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
         "weak:copilot",
@@ -141,20 +309,61 @@
       "is_ai_related": true
     },
     {
-      "id": "e40d6a4fef6d1404db3d72dd26ac84ca046ac2d6",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Updates to available models in Copilot on web",
-      "url": "https://github.blog/changelog/2026-05-20-updates-to-available-models-in-copilot-on-web",
-      "published_at": "2026-05-20T17:11:42Z",
-      "summary": "We have updated our available model selection for Copilot Chat on the web to deliver more consistent, high-quality responses. What’s changed While model choice is valuable, we are limiting the… The post Updates to available models in Copilot on web appeared first on The GitHub Blog .",
+      "id": "3533dde493f876143bf66d480a9a6d69ba9e147f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Codex实现全天候跨设备安全操控Mac",
+      "url": "https://x.com/OpenAIDevs/status/2057536706778378692",
+      "published_at": "2026-05-21T18:59:12Z",
+      "summary": "Codex随时随地，无处不在。 现在您的Mac无需解锁，Codex即可使用您的电脑。 通过手机，Codex可以安全地使用您Mac上的应用程序，即使屏幕关闭且处于锁定状态。 https：//developers.openai.com/codex/app/computer-use#locked-use",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "weak:developer",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "645f0fbe72bd50299f79d372d4813c0ed9da3b11",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "智谱GLM-5.1高速版发布：刷新全球大模型API速度纪录",
+      "url": "https://www.ithome.com/0/953/717.htm",
+      "published_at": "2026-05-22T02:02:46Z",
+      "summary": "5月22日，智谱向部分企业客户推出了旗舰大模型GLM-5.1的高速版API\"GLM-5.1-highspeed\"。该版本输出速度达400 tokens/s，刷新了全球大模型API速度上限。关键突破在于，它首次在国产大模型中实现了旗舰级能力与低延迟的结合，打破了\"高速模型即轻量模型\"的传统。该版本由智谱GLM团队与TileRT团队合作，通过系统级优化确保了速度的生产级稳定性，适用于AI编程、实时语音交互等场景。",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:大模型",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e031fad91355824078983b6c0a9e2d3a2869f783",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "用户好评即最佳文案，视觉呈现由AI完成",
+      "url": "https://x.com/LumaLabsAI/status/2057628006353670163",
+      "published_at": "2026-05-22T01:02:00Z",
+      "summary": "你的客户写出了你永远无法超越的文案。现在，为它匹配视觉呈现吧。 只需粘贴评价，设定风格，Luma Agents 将处理所有推荐语图形。 让它被听见 → http：//lumalabs.ai/app",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -238,39 +447,20 @@
       "is_ai_related": true
     },
     {
-      "id": "08683a8e383dab87ca71ce39e01610dfe8745db8",
+      "id": "3bfb30b74136b1e0a0e62de13c5e41b817ec4cf6",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Gemini与XPRIZE联合举办全球黑客松",
-      "url": "https://x.com/googleaidevs/status/2057166550243872920",
-      "published_at": "2026-05-20T18:28:20Z",
-      "summary": "用Gemini构建，改变世界🌍 我们正与@xprize合作，发起一场全球黑客松，旨在利用我们全新的智能体工具解决现实世界的挑战。 点击加入：https：//www.geminixprize.com/",
-      "relevance_score": 3,
+      "title": "v2.1.147版本更新",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.147",
+      "published_at": "2026-05-21T20:39:22Z",
+      "summary": "本次更新引入了`Workflow`工具，支持确定性多智能体编排（默认关闭）。将`/simplify`命令重命名为`/code-review`，现可报告代码正确性问题并支持生成GitHub PR内联评论。改进了自动更新器（增加重试与错误报告）、大文件diff渲染性能，并优化了提示历史记录以避免重复条目。修复了多个关键问题，包括企业登录限制未生效、Windows下的PowerShell工具与终端闪烁问题、插件系统及shell快照的bug，并增强了沙箱安全性与终端兼容性。",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:gemini",
         "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "541da51a1706aa24f2ac97ef2e76f60991318d23",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "ChatGPT移动端支持Codex，实现跨设备协作",
-      "url": "https://x.com/OpenAIDevs/status/2057142816497906045",
-      "published_at": "2026-05-20T16:54:01Z",
-      "summary": "你的笔记本电脑可以留在家里。 通过ChatGPT移动应用使用Codex，随时随地回答问题，之后还能在电脑上继续同一对话。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:codex",
+        "weak:workflow",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -283,11 +473,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 970,
-      "kept_count": 0,
+      "fetched_count": 971,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 946,
-      "checked_at": "2026-05-21T16:38:23.966647Z"
+      "latency_ms": 606,
+      "checked_at": "2026-05-22T02:42:30.184154Z"
     },
     {
       "source_id": "openai-skills",
@@ -296,10 +486,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 215,
-      "checked_at": "2026-05-21T16:38:24.182358Z"
+      "latency_ms": 271,
+      "checked_at": "2026-05-22T02:42:30.456471Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -310,8 +500,8 @@
       "fetched_count": 214,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 87,
-      "checked_at": "2026-05-21T16:38:24.273303Z"
+      "latency_ms": 123,
+      "checked_at": "2026-05-22T02:42:30.582759Z"
     },
     {
       "source_id": "google-deepmind",
@@ -320,10 +510,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 233,
-      "checked_at": "2026-05-21T16:38:24.507823Z"
+      "latency_ms": 281,
+      "checked_at": "2026-05-22T02:42:30.865683Z"
     },
     {
       "source_id": "google-ai",
@@ -332,10 +522,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 235,
-      "checked_at": "2026-05-21T16:38:24.743979Z"
+      "latency_ms": 244,
+      "checked_at": "2026-05-22T02:42:31.110792Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -346,8 +536,8 @@
       "fetched_count": 783,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 224,
-      "checked_at": "2026-05-21T16:38:24.979071Z"
+      "latency_ms": 260,
+      "checked_at": "2026-05-22T02:42:31.382901Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -358,8 +548,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 113,
-      "checked_at": "2026-05-21T16:38:25.092970Z"
+      "latency_ms": 119,
+      "checked_at": "2026-05-22T02:42:31.502904Z"
     },
     {
       "source_id": "github-changelog",
@@ -368,10 +558,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 21,
-      "checked_at": "2026-05-21T16:38:25.115246Z"
+      "latency_ms": 26,
+      "checked_at": "2026-05-22T02:42:31.529800Z"
     },
     {
       "source_id": "aihot",
@@ -380,10 +570,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 13,
       "error": null,
-      "latency_ms": 2119,
-      "checked_at": "2026-05-21T16:38:27.235647Z"
+      "latency_ms": 2851,
+      "checked_at": "2026-05-22T02:42:34.382744Z"
     }
   ],
   "control_notes": {
