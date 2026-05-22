@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-22T07:03:48.592762Z",
+  "generated_at": "2026-05-22T09:55:59.645180Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 4,
+  "item_count": 18,
   "groups": {
     "official": {
       "group": "official",
@@ -62,6 +62,66 @@
         ],
         [
           "deepmind",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 14,
+      "top_sources": [
+        [
+          "AI Hot",
+          14
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          14
+        ],
+        [
+          "api",
+          5
+        ],
+        [
+          "API",
+          5
+        ],
+        [
+          "agent",
+          4
+        ],
+        [
+          "openai",
+          4
+        ],
+        [
+          "claude",
+          4
+        ],
+        [
+          "anthropic",
+          3
+        ],
+        [
+          "codex",
+          3
+        ],
+        [
+          "开发者",
+          3
+        ],
+        [
+          "gemini",
+          2
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "开源模型",
           1
         ]
       ]
@@ -128,6 +188,49 @@
       "is_ai_related": true
     },
     {
+      "id": "19e5d5ece9e30a34d4b085ce971e46ad7c837ee5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Datasette Agent",
+      "url": "https://simonwillison.net/2026/May/21/datasette-agent",
+      "published_at": "2026-05-21T19:52:19Z",
+      "summary": "Datasette Agent是Datasette推出的首个可扩展AI助手，为用户提供对话式界面以查询数据，并支持通过插件生成图表。该工具基于其LLM Python库构建，是LLM与Datasette整合的重要成果。目前提供图表生成、AI图像创建和沙箱代码执行等官方插件。它既可运行于Gemini 3.1 Flash-Lite等云端模型，也支持通过LM Studio连接本地开源模型，具备可靠的工具调用与查询能力。",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "strong:llm",
+        "strong:开源模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "79032803a2a905a804911bcf6944d8423d17c7e8",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "核算OpenAI和Anthropic最新动态背后的数学",
+      "url": "https://garymarcus.substack.com/p/checking-the-math-behind-openai-and",
+      "published_at": "2026-05-21T17:32:11Z",
+      "summary": "OpenAI与Anthropic近期相继发布重要产品更新。Claude 3.5 Sonnet在多项基准测试中超越GPT-4o，同时宣布API价格下调50%。Anthropic披露其模型训练成本年均增长约3.2倍，而OpenAI被曝已通过企业服务实现单季度超10亿美元营收。两家公司在技术突破与商业化竞赛中，正通过精密的成本核算与性能权衡重塑行业格局。",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:claude",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "d5c196bf772fe74d2ae054cb5e45951d1f6f8ba8",
       "source_id": "google-deepmind",
       "source_name": "Google DeepMind",
@@ -142,6 +245,68 @@
       "relevance_reasons": [
         "strong:deepmind",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "af6fb37daba22c9ed7c830101126d069236b24b7",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "合作伙伴如何运用Opus强化网络安全",
+      "url": "https://claude.com/blog/how-our-partners-are-putting-opus-to-work-for-cybersecurity",
+      "published_at": "2026-05-21T17:43:01Z",
+      "summary": "多家企业正利用Claude Opus模型强化网络安全防御。Wiz通过其Red Agent，每周对超过15万个生产资产进行持续渗透测试，发现数千个高风险漏洞且误报率为零。Palo Alto Networks在不到三周内完成了相当于一年的渗透测试工作量。埃森哲将安全测试覆盖率从约10%提升至80%以上，涉及1600个应用和50万+个API，扫描周期从3-5天缩短至1小时内。应用主要围绕三个方向：开展大规模攻击性测试、缩短漏洞发现与修复的间隔，以及将受控AI系统部署到生产环境。",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "546926f845439752dec4ae19d9a856b4f147a98c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude现已支持更多安全合规工具",
+      "url": "https://claude.com/blog/compliance-api-security-partners",
+      "published_at": "2026-05-21T17:43:01Z",
+      "summary": "Anthropic宣布为Claude企业版及平台新增28项安全与合规工具集成。这些集成均通过Claude Compliance API实现，允许企业安全团队统一获取Claude的对话内容与活动事件，从而将其纳入现有的DLP、SIEM等监控与合规流程。新增合作伙伴包括Cloudflare、CrowdStrike、Microsoft Purview等28家供应商，覆盖数据安全、身份验证等多个关键领域，帮助企业快速将Claude接入现有安全平台，实现跨组织工具的统一治理与可视化监控。",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2c855b9267019c4b59438cedc824b458fa182155",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "X平台发布体验差，ChatGPT插件助发布",
+      "url": "https://x.com/vista8/status/2057726749723840918",
+      "published_at": "2026-05-22T07:34:22Z",
+      "summary": "推文批评X平台产品经理能力不足，发布文章体验糟糕。引用推文显示，开发者利用ChatGPT（通过codex/goal）开发了Markdown转换插件，允许用户拖拽文件快速生成X文章格式，以改善发布流程。该插件开源并提供谷歌插件版本，旨在解决原生体验的痛点。",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -162,6 +327,181 @@
         "source:copilot"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "3533dde493f876143bf66d480a9a6d69ba9e147f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Codex实现全天候跨设备安全操控Mac",
+      "url": "https://x.com/OpenAIDevs/status/2057536706778378692",
+      "published_at": "2026-05-21T18:59:12Z",
+      "summary": "Codex随时随地，无处不在。 现在您的Mac无需解锁，Codex即可使用您的电脑。 通过手机，Codex可以安全地使用您Mac上的应用程序，即使屏幕关闭且处于锁定状态。 https：//developers.openai.com/codex/app/computer-use#locked-use",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "weak:developer",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "eb62da82e3cdd157fc283eb6b094fc70f5ac801d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI Codex /goal功能正式发布及使用指南",
+      "url": "https://x.com/dotey/status/2057672416071987378",
+      "published_at": "2026-05-22T03:58:28Z",
+      "summary": "OpenAI宣布Codex的/goal模式已结束实验，成为稳定功能。用户可在Codex应用、IDE扩展或CLI中使用，通过设定具体里程碑，让AI持续工作直至完成，任务可运行数小时甚至数天。过程中支持随时检查、调整方向及暂停。使用前需升级应用并启用该功能（可通过命令行指令或手动修改配置文件实现）。开启后，可在输入框管理任务，并利用侧边对话查看进度而不中断主任务。该功能旨在高效处理各类复杂任务。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "645f0fbe72bd50299f79d372d4813c0ed9da3b11",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "智谱GLM-5.1高速版发布：刷新全球大模型API速度纪录",
+      "url": "https://www.ithome.com/0/953/717.htm",
+      "published_at": "2026-05-22T02:02:46Z",
+      "summary": "5月22日，智谱向部分企业客户推出了旗舰大模型GLM-5.1的高速版API\"GLM-5.1-highspeed\"。该版本输出速度达400 tokens/s，刷新了全球大模型API速度上限。关键突破在于，它首次在国产大模型中实现了旗舰级能力与低延迟的结合，打破了\"高速模型即轻量模型\"的传统。该版本由智谱GLM团队与TileRT团队合作，通过系统级优化确保了速度的生产级稳定性，适用于AI编程、实时语音交互等场景。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:大模型",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e031fad91355824078983b6c0a9e2d3a2869f783",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "用户好评即最佳文案，视觉呈现由AI完成",
+      "url": "https://x.com/LumaLabsAI/status/2057628006353670163",
+      "published_at": "2026-05-22T01:02:00Z",
+      "summary": "你的客户写出了你永远无法超越的文案。现在，为它匹配视觉呈现吧。 只需粘贴评价，设定风格，Luma Agents 将处理所有推荐语图形。 让它被听见 → http：//lumalabs.ai/app",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7a9e1526809a921c067e41ca5afa901a8abb3ad9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "推出 Gemini for Home 赋能服务提供商与硬件合作伙伴",
+      "url": "https://developers.googleblog.com/empowering-service-providers-and-hardware-partners-with-gemini-for-home",
+      "published_at": "2026-05-21T16:33:06Z",
+      "summary": "Google 通过推出全栈 Gemini AI 解决方案扩展其智能家居生态系统。该方案集成了先进的摄像头智能、自然语言查询功能和日常活动摘要能力。它为服务提供商和硬件制造商提供了现成的参考设计与API，使其无需大量研发投入即可构建主动式、品牌化的智能家居服务。该计划旨在超越基础设备控制，迈向能够理解情境并实时响应用户需求的AI原生智能家居。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "56eb01d9c5b0cb7761c2f8fa7e5b6e5d8997a35c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "发布 Kotlin版ADK与Android版ADK 0.1.0：在Android及其他平台构建AI Agent",
+      "url": "https://developers.googleblog.com/adk-kotlin-android-building-ai-agents",
+      "published_at": "2026-05-21T16:33:06Z",
+      "summary": "Google发布了面向开发者的新工具包：Kotlin版ADK与Android版ADK 0.1.0。这两个工具包旨在帮助开发者构建AI Agent。其中，Kotlin版ADK将代理工作流引入后端项目开发；Android版ADK则专注于移动端应用，提供了构建AI代理所需的特定功能。此次发布为开发者提供了在Android生态及更广泛平台创建AI应用的官方工具基础。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:开发者",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "86e59f4ca1bd748e12cb54ad65db23ebfea80955",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic即将成为首个盈利的AI实验室",
+      "url": "https://the-decoder.com/anthropic-is-about-to-become-the-first-profitable-ai-lab",
+      "published_at": "2026-05-21T15:15:30Z",
+      "summary": "根据《华尔街日报》报道，Anthropic正接近实现其首个盈利季度，预计第二季度营收达109亿美元，运营利润为5.59亿美元。该公司在去年夏季时还预计最早在2028年才能盈利。主要增长动力来自编程工具和Claude的代理功能使用，其需求一度超过了可用的算力容量。这一转变标志着Anthropic可能成为业界首个实现盈利的领先AI研发机构。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fe6f97210f4856698489c8e632426e8f49f15c21",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "18 年老粉与微软 GitHub 决裂：我希望它更好，但我更想编程",
+      "url": "https://www.ithome.com/0/953/977.htm",
+      "published_at": "2026-05-22T08:10:33Z",
+      "summary": "全球最大的代码托管平台GitHub正面临严重危机。资深开发者Mitchell Hashimoto公开与平台决裂，因频繁崩溃影响编程。近几个月，花旗银行、英特尔等巨头因持续故障表达不满，OpenAI探索自建方案。更严重的是，3800多个内部仓库遭黑客入侵，源代码被公开叫卖。同时，微软取消GitHub CEO职位，将其并入CoreAI团队，导致大量技术骨干流失。这个承载1.5亿开发者的平台，正以惨烈方式站在生死存亡的十字路口。",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "3bfb30b74136b1e0a0e62de13c5e41b817ec4cf6",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "v2.1.147版本更新",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.147",
+      "published_at": "2026-05-21T20:39:22Z",
+      "summary": "本次更新引入了`Workflow`工具，支持确定性多智能体编排（默认关闭）。将`/simplify`命令重命名为`/code-review`，现可报告代码正确性问题并支持生成GitHub PR内联评论。改进了自动更新器（增加重试与错误报告）、大文件diff渲染性能，并优化了提示历史记录以避免重复条目。修复了多个关键问题，包括企业登录限制未生效、Windows下的PowerShell工具与终端闪烁问题、插件系统及shell快照的bug，并增强了沙箱安全性与终端兼容性。",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:workflow",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -174,8 +514,8 @@
       "fetched_count": 971,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 669,
-      "checked_at": "2026-05-22T07:03:46.094145Z"
+      "latency_ms": 797,
+      "checked_at": "2026-05-22T09:55:56.300546Z"
     },
     {
       "source_id": "openai-skills",
@@ -186,8 +526,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 209,
-      "checked_at": "2026-05-22T07:03:46.303719Z"
+      "latency_ms": 270,
+      "checked_at": "2026-05-22T09:55:56.571359Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -198,8 +538,8 @@
       "fetched_count": 214,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 104,
-      "checked_at": "2026-05-22T07:03:46.411719Z"
+      "latency_ms": 101,
+      "checked_at": "2026-05-22T09:55:56.676573Z"
     },
     {
       "source_id": "google-deepmind",
@@ -210,8 +550,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 315,
-      "checked_at": "2026-05-22T07:03:46.728520Z"
+      "latency_ms": 522,
+      "checked_at": "2026-05-22T09:55:57.200469Z"
     },
     {
       "source_id": "google-ai",
@@ -222,8 +562,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 199,
-      "checked_at": "2026-05-22T07:03:46.928271Z"
+      "latency_ms": 236,
+      "checked_at": "2026-05-22T09:55:57.437615Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -234,8 +574,8 @@
       "fetched_count": 783,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 298,
-      "checked_at": "2026-05-22T07:03:47.238984Z"
+      "latency_ms": 281,
+      "checked_at": "2026-05-22T09:55:57.731170Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -246,8 +586,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 129,
-      "checked_at": "2026-05-22T07:03:47.368731Z"
+      "latency_ms": 148,
+      "checked_at": "2026-05-22T09:55:57.880018Z"
     },
     {
       "source_id": "github-changelog",
@@ -258,8 +598,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 48,
-      "checked_at": "2026-05-22T07:03:47.417049Z"
+      "latency_ms": 26,
+      "checked_at": "2026-05-22T09:55:57.906634Z"
     },
     {
       "source_id": "aihot",
@@ -267,11 +607,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 0,
-      "kept_count": 0,
+      "fetched_count": 50,
+      "kept_count": 15,
       "error": null,
-      "latency_ms": 1166,
-      "checked_at": "2026-05-22T07:03:48.584005Z"
+      "latency_ms": 1728,
+      "checked_at": "2026-05-22T09:55:59.636750Z"
     }
   ],
   "control_notes": {
