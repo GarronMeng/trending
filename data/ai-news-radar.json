@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-23T06:26:30.241604Z",
+  "generated_at": "2026-05-23T08:34:52.050866Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 11,
   "groups": {
     "official": {
       "group": "official",
@@ -40,21 +40,17 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 11,
+      "count": 10,
       "top_sources": [
         [
           "AI Hot",
-          11
+          10
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          11
-        ],
-        [
-          "开发者",
-          5
+          10
         ],
         [
           "agent",
@@ -65,15 +61,19 @@
           3
         ],
         [
+          "claude",
+          3
+        ],
+        [
+          "开发者",
+          3
+        ],
+        [
           "deepmind",
           2
         ],
         [
           "mcp",
-          2
-        ],
-        [
-          "claude",
           2
         ],
         [
@@ -166,21 +166,20 @@
       "is_ai_related": true
     },
     {
-      "id": "2c855b9267019c4b59438cedc824b458fa182155",
+      "id": "fca4ae410ad8c8286b949a00725c416e527df055",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "X平台发布体验差，ChatGPT插件助发布",
-      "url": "https://x.com/vista8/status/2057726749723840918",
-      "published_at": "2026-05-22T07:34:22Z",
-      "summary": "推文批评X平台产品经理能力不足，发布文章体验糟糕。引用推文显示，开发者利用ChatGPT（通过codex/goal）开发了Markdown转换插件，允许用户拖拽文件快速生成X文章格式，以改善发布流程。该插件开源并提供谷歌插件版本，旨在解决原生体验的痛点。",
-      "relevance_score": 4,
+      "title": "飞书-Claude Code桥接开源项目",
+      "url": "https://x.com/dotey/status/2058084478459826432",
+      "published_at": "2026-05-23T07:15:51Z",
+      "summary": "feishu-claude-code-bridge是一个开源项目，可实现飞书与本机Claude Code CLI的双向连接。用户能从飞书消息中直接指挥Claude Code执行任务，Claude也能读取飞书中的工作上下文并创建、编辑飞书文档。其工作原理是将飞书消息转为Prompt通过命令行调用Claude CLI，并将流式输出实时同步回飞书。该模式可扩展连接Codex等其他本地工具。需注意，2026年6月15日起，Claude订阅计划对`claude -p`模式将独立计费。",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:chatgpt",
+        "strong:claude",
         "strong:codex",
-        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -317,25 +316,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "fe6f97210f4856698489c8e632426e8f49f15c21",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "18 年老粉与微软 GitHub 决裂：我希望它更好，但我更想编程",
-      "url": "https://www.ithome.com/0/953/977.htm",
-      "published_at": "2026-05-22T08:10:33Z",
-      "summary": "全球最大的代码托管平台GitHub正面临严重危机。资深开发者Mitchell Hashimoto公开与平台决裂，因频繁崩溃影响编程。近几个月，花旗银行、英特尔等巨头因持续故障表达不满，OpenAI探索自建方案。更严重的是，3800多个内部仓库遭黑客入侵，源代码被公开叫卖。同时，微软取消GitHub CEO职位，将其并入CoreAI团队，导致大量技术骨干流失。这个承载1.5亿开发者的平台，正以惨烈方式站在生死存亡的十字路口。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -348,8 +328,8 @@
       "fetched_count": 967,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 800,
-      "checked_at": "2026-05-23T06:26:26.775264Z"
+      "latency_ms": 601,
+      "checked_at": "2026-05-23T08:34:49.035293Z"
     },
     {
       "source_id": "openai-skills",
@@ -360,8 +340,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 362,
-      "checked_at": "2026-05-23T06:26:27.137681Z"
+      "latency_ms": 240,
+      "checked_at": "2026-05-23T08:34:49.275760Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -372,8 +352,8 @@
       "fetched_count": 214,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 151,
-      "checked_at": "2026-05-23T06:26:27.292326Z"
+      "latency_ms": 85,
+      "checked_at": "2026-05-23T08:34:49.364176Z"
     },
     {
       "source_id": "google-deepmind",
@@ -384,8 +364,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 414,
-      "checked_at": "2026-05-23T06:26:27.708384Z"
+      "latency_ms": 361,
+      "checked_at": "2026-05-23T08:34:49.727072Z"
     },
     {
       "source_id": "google-ai",
@@ -396,8 +376,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 260,
-      "checked_at": "2026-05-23T06:26:27.969032Z"
+      "latency_ms": 165,
+      "checked_at": "2026-05-23T08:34:49.893020Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -408,8 +388,8 @@
       "fetched_count": 784,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 346,
-      "checked_at": "2026-05-23T06:26:28.327670Z"
+      "latency_ms": 238,
+      "checked_at": "2026-05-23T08:34:50.142386Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -420,8 +400,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 380,
-      "checked_at": "2026-05-23T06:26:28.708251Z"
+      "latency_ms": 243,
+      "checked_at": "2026-05-23T08:34:50.386368Z"
     },
     {
       "source_id": "github-changelog",
@@ -432,8 +412,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 47,
-      "checked_at": "2026-05-23T06:26:28.755596Z"
+      "latency_ms": 25,
+      "checked_at": "2026-05-23T08:34:50.411996Z"
     },
     {
       "source_id": "aihot",
@@ -442,10 +422,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 11,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 1475,
-      "checked_at": "2026-05-23T06:26:30.232177Z"
+      "latency_ms": 1628,
+      "checked_at": "2026-05-23T08:34:52.041726Z"
     }
   ],
   "control_notes": {

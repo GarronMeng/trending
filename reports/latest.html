@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>12</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>11</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>11</b><span>聚合源条目</span></div>
+        <div class="stat"><b>10</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-23T06:26:30.243008Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-23T08:34:52.052255Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -97,12 +97,12 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-05-22T07:34:22Z</span>
-        <strong>Score 4</strong>
+        <span>2026-05-23T07:15:51Z</span>
+        <strong>Score 3</strong>
       </div>
-      <h3><a href="https://x.com/vista8/status/2057726749723840918" target="_blank" rel="noreferrer">X平台发布体验差，ChatGPT插件助发布</a></h3>
-      <p class='summary'>推文批评X平台产品经理能力不足，发布文章体验糟糕。引用推文显示，开发者利用ChatGPT（通过codex/goal）开发了Markdown转换插件，允许用户拖拽文件快速生成X文章格式，以改善发布流程。该插件开源并提供谷歌插件版本，旨在解决原生体验的痛点。</p>
-      <div class="tags"><span>strong:chatgpt</span><span>strong:codex</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://x.com/dotey/status/2058084478459826432" target="_blank" rel="noreferrer">飞书-Claude Code桥接开源项目</a></h3>
+      <p class='summary'>feishu-claude-code-bridge是一个开源项目，可实现飞书与本机Claude Code CLI的双向连接。用户能从飞书消息中直接指挥Claude Code执行任务，Claude也能读取飞书中的工作上下文并创建、编辑飞书文档。其工作原理是将飞书消息转为Prompt通过命令行调用Claude CLI，并将流式输出实时同步回飞书。该模式可扩展连接Codex等其他本地工具。需注意，2026年6月15日起，Claude订阅计划对`claude -p`模式将独立计费。</p>
+      <div class="tags"><span>strong:claude</span><span>strong:codex</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -195,34 +195,21 @@
       <p class='summary'>Karpathy发布的CLAUDE.md文件以其简洁高效的AI编程指导原则引爆GitHub，获得超22万星标并登顶趋势榜。该文件仅含65行、4条核心规则，却能将AI编程的准确率从65%显著提升至94%。其核心在于强制开发者&quot;慢下来&quot;，将深度思考、追求简洁、精准修改和目标驱动等原则变为硬性编码准则，旨在对抗开发者习惯性&quot;先写再说&quot;的本能。目前大多数开发者尚未深入研读这一备受关注的效率指南。</p>
       <div class="tags"><span>strong:claude</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-22T08:10:33Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://www.ithome.com/0/953/977.htm" target="_blank" rel="noreferrer">18 年老粉与微软 GitHub 决裂：我希望它更好，但我更想编程</a></h3>
-      <p class='summary'>全球最大的代码托管平台GitHub正面临严重危机。资深开发者Mitchell Hashimoto公开与平台决裂，因频繁崩溃影响编程。近几个月，花旗银行、英特尔等巨头因持续故障表达不满，OpenAI探索自建方案。更严重的是，3800多个内部仓库遭黑客入侵，源代码被公开叫卖。同时，微软取消GitHub CEO职位，将其并入CoreAI团队，导致大量技术骨干流失。这个承载1.5亿开发者的平台，正以惨烈方式站在生死存亡的十字路口。</p>
-      <div class="tags"><span>strong:openai</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>967</td><td>0</td><td>800ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>362ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>214</td><td>0</td><td>151ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>414ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>260ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>784</td><td>0</td><td>346ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>380ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>47ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>11</td><td>1475ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>967</td><td>0</td><td>601ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>240ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>214</td><td>0</td><td>85ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>361ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>165ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>784</td><td>0</td><td>238ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>243ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>25ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>10</td><td>1628ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
