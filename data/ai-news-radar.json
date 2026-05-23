@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-23T02:28:07.422418Z",
+  "generated_at": "2026-05-23T06:26:30.241604Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -57,11 +57,15 @@
           5
         ],
         [
-          "deepmind",
-          2
+          "agent",
+          3
         ],
         [
-          "agent",
+          "人工智能",
+          3
+        ],
+        [
+          "deepmind",
           2
         ],
         [
@@ -69,19 +73,7 @@
           2
         ],
         [
-          "codex",
-          2
-        ],
-        [
           "claude",
-          2
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "人工智能",
           2
         ],
         [
@@ -94,6 +86,14 @@
         ],
         [
           "tool",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "智能体",
           1
         ]
       ]
@@ -140,6 +140,27 @@
         "strong:mcp",
         "weak:api",
         "weak:tool",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "bcdf9ec91fedab3197e1272c707a437a2a73e0ad",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "微软称，使用人工智能的成本高于支付人工工资",
+      "url": "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents",
+      "published_at": "2026-05-23T05:23:21Z",
+      "summary": "微软发布报告指出，在特定工作场景中，部署和使用人工智能（AI）的成本目前已高于支付相应的人工工资。报告分析了基于\"tokens\"（令牌）和\"agents\"（智能体）的AI使用模式，发现其综合开销超过了雇佣人类员工完成同类任务的费用。这一发现揭示了当前企业应用AI技术面临的现实经济挑战。",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "strong:人工智能",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -217,25 +238,6 @@
       "relevance_reasons": [
         "strong:大模型",
         "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "eb62da82e3cdd157fc283eb6b094fc70f5ac801d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI Codex /goal功能正式发布及使用指南",
-      "url": "https://x.com/dotey/status/2057672416071987378",
-      "published_at": "2026-05-22T03:58:28Z",
-      "summary": "OpenAI宣布Codex的/goal模式已结束实验，成为稳定功能。用户可在Codex应用、IDE扩展或CLI中使用，通过设定具体里程碑，让AI持续工作直至完成，任务可运行数小时甚至数天。过程中支持随时检查、调整方向及暂停。使用前需升级应用并启用该功能（可通过命令行指令或手动修改配置文件实现）。开启后，可在输入框管理任务，并利用侧边对话查看进度而不中断主任务。该功能旨在高效处理各类复杂任务。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -346,8 +348,8 @@
       "fetched_count": 967,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 696,
-      "checked_at": "2026-05-23T02:28:04.336743Z"
+      "latency_ms": 800,
+      "checked_at": "2026-05-23T06:26:26.775264Z"
     },
     {
       "source_id": "openai-skills",
@@ -358,8 +360,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 179,
-      "checked_at": "2026-05-23T02:28:04.516774Z"
+      "latency_ms": 362,
+      "checked_at": "2026-05-23T06:26:27.137681Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -370,8 +372,8 @@
       "fetched_count": 214,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 93,
-      "checked_at": "2026-05-23T02:28:04.612909Z"
+      "latency_ms": 151,
+      "checked_at": "2026-05-23T06:26:27.292326Z"
     },
     {
       "source_id": "google-deepmind",
@@ -382,8 +384,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 247,
-      "checked_at": "2026-05-23T02:28:04.861488Z"
+      "latency_ms": 414,
+      "checked_at": "2026-05-23T06:26:27.708384Z"
     },
     {
       "source_id": "google-ai",
@@ -394,8 +396,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 196,
-      "checked_at": "2026-05-23T02:28:05.058365Z"
+      "latency_ms": 260,
+      "checked_at": "2026-05-23T06:26:27.969032Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -406,8 +408,8 @@
       "fetched_count": 784,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 211,
-      "checked_at": "2026-05-23T02:28:05.281257Z"
+      "latency_ms": 346,
+      "checked_at": "2026-05-23T06:26:28.327670Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -418,8 +420,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 335,
-      "checked_at": "2026-05-23T02:28:05.616893Z"
+      "latency_ms": 380,
+      "checked_at": "2026-05-23T06:26:28.708251Z"
     },
     {
       "source_id": "github-changelog",
@@ -430,8 +432,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-05-23T02:28:05.641953Z"
+      "latency_ms": 47,
+      "checked_at": "2026-05-23T06:26:28.755596Z"
     },
     {
       "source_id": "aihot",
@@ -442,8 +444,8 @@
       "fetched_count": 50,
       "kept_count": 11,
       "error": null,
-      "latency_ms": 1771,
-      "checked_at": "2026-05-23T02:28:07.414851Z"
+      "latency_ms": 1475,
+      "checked_at": "2026-05-23T06:26:30.232177Z"
     }
   ],
   "control_notes": {
