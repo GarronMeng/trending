@@ -1,63 +1,27 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-22T16:24:58.025486Z",
+  "generated_at": "2026-05-23T02:28:07.422418Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 18,
+  "item_count": 12,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 1,
       "top_sources": [
         [
-          "OpenAI Skills Commits",
-          1
-        ],
-        [
-          "OpenAI News",
-          1
-        ],
-        [
           "GitHub AI & ML",
-          1
-        ],
-        [
-          "Google DeepMind",
           1
         ]
       ],
       "top_keywords": [
         [
-          "official_ai",
-          4
-        ],
-        [
-          "codex",
-          3
-        ],
-        [
           "agent",
-          3
+          1
         ],
         [
           "agents",
-          2
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "skill",
-          1
-        ],
-        [
-          "openai",
           1
         ],
         [
@@ -69,51 +33,43 @@
           1
         ],
         [
-          "deepmind",
+          "official_ai",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 13,
+      "count": 11,
       "top_sources": [
         [
           "AI Hot",
-          13
+          11
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          13
-        ],
-        [
-          "openai",
-          4
+          11
         ],
         [
           "开发者",
-          4
+          5
+        ],
+        [
+          "deepmind",
+          2
         ],
         [
           "agent",
-          3
+          2
         ],
         [
-          "api",
-          3
-        ],
-        [
-          "API",
-          3
+          "mcp",
+          2
         ],
         [
           "codex",
-          3
-        ],
-        [
-          "gemini",
           2
         ],
         [
@@ -121,81 +77,29 @@
           2
         ],
         [
-          "大模型",
+          "openai",
           2
         ],
         [
-          "llm",
+          "人工智能",
+          2
+        ],
+        [
+          "gemini",
           1
         ],
         [
-          "开源模型",
+          "api",
           1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
+        ],
         [
-          "GitHub Changelog",
+          "tool",
           1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "8438ef80e2e29e287004fde40c0beae620719e7e",
-      "source_id": "openai-skills",
-      "source_name": "OpenAI Skills Commits",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "[codex] Add define-goal skill (#417)",
-      "url": "https://github.com/openai/skills/commit/b0401f07213a66414d84a65cb50c1d226f99485a",
-      "published_at": "2026-05-21T18:13:37Z",
-      "summary": "[codex] Add define-goal skill (#417) ## Summary - Add the `define-goal` curated skill for shaping user intent into concrete, measurable goals. - Include agent UI metadata so the skill can be invoked as `$define-goal`. - Add the standard Apache 2.0 license file for the new skill package. ## Validation - `quick_validate.py /Users/richardlee/code/skills/skills/",
-      "relevance_score": 11,
-      "relevance_reasons": [
-        "strong:codex",
-        "strong:agent",
-        "weak:api",
-        "weak:API",
-        "source:skill",
-        "source:codex",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "f24f9580520d5f809b1dcd29736c77966cb31b48",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
-      "url": "https://openai.com/index/gartner-2026-agentic-coding-leader",
-      "published_at": "2026-05-22T00:00:00Z",
-      "summary": "OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment.",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "strong:agent",
-        "strong:agents",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "d8f538bd6adf5511809cb6eeb5a4cf53733c6159",
       "source_id": "github-ai-ml",
@@ -218,63 +122,25 @@
       "is_ai_related": true
     },
     {
-      "id": "19e5d5ece9e30a34d4b085ce971e46ad7c837ee5",
+      "id": "8a00bc427de5cf5604b9df6a379b48117c507956",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Datasette Agent",
-      "url": "https://simonwillison.net/2026/May/21/datasette-agent",
-      "published_at": "2026-05-21T19:52:19Z",
-      "summary": "Datasette Agent是Datasette推出的首个可扩展AI助手，为用户提供对话式界面以查询数据，并支持通过插件生成图表。该工具基于其LLM Python库构建，是LLM与Datasette整合的重要成果。目前提供图表生成、AI图像创建和沙箱代码执行等官方插件。它既可运行于Gemini 3.1 Flash-Lite等云端模型，也支持通过LM Studio连接本地开源模型，具备可靠的工具调用与查询能力。",
-      "relevance_score": 7,
+      "title": "谷歌I/O大会发布AI代理全套开发工具链",
+      "url": "https://x.com/GoogleAI/status/2057871583843135978",
+      "published_at": "2026-05-22T17:09:53Z",
+      "summary": "谷歌在I/O开发者大会宣布，系统性构建面向AI代理（Agent）的开发与部署工具链。核心更新包括：独立桌面应用Antigravity 2.0及其命令行工具、SDK面世；Google AI Studio新增Kotlin支持，可一键开发安卓应用并发布，同时推出移动端App。此外，Gemini API推出托管代理服务，实现一键部署；WebMCP作为开放标准在Chrome 149中推出，允许网页向代理暴露工具；Chrome DevTools也开放给AI代理以自动化调试。企业级客户可直接连接Google Cloud项目，而DeepMind的科学技能包则加速特定领域研究。此举标志着谷歌正全面打造从开发、接口到部署的完整AI代理生态系统。",
+      "relevance_score": 9,
       "relevance_reasons": [
         "strong:gemini",
-        "strong:agent",
-        "strong:llm",
-        "strong:开源模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "79032803a2a905a804911bcf6944d8423d17c7e8",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "核算OpenAI和Anthropic最新动态背后的数学",
-      "url": "https://garymarcus.substack.com/p/checking-the-math-behind-openai-and",
-      "published_at": "2026-05-21T17:32:11Z",
-      "summary": "OpenAI与Anthropic近期相继发布重要产品更新。Claude 3.5 Sonnet在多项基准测试中超越GPT-4o，同时宣布API价格下调50%。Anthropic披露其模型训练成本年均增长约3.2倍，而OpenAI被曝已通过企业服务实现单季度超10亿美元营收。两家公司在技术突破与商业化竞赛中，正通过精密的成本核算与性能权衡重塑行业格局。",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:claude",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d5c196bf772fe74d2ae054cb5e45951d1f6f8ba8",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks",
-      "url": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks",
-      "published_at": "2026-05-21T19:46:42Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
         "strong:deepmind",
-        "source_prior:official_ai"
+        "strong:agent",
+        "strong:mcp",
+        "weak:api",
+        "weak:tool",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -299,39 +165,39 @@
       "is_ai_related": true
     },
     {
-      "id": "cd3193f8ccf7d9f836d563080137dae98568a786",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Copilot for Eclipse is open source",
-      "url": "https://github.blog/changelog/2026-05-21-github-copilot-for-eclipse-is-open-source",
-      "published_at": "2026-05-21T23:50:38Z",
-      "summary": "Following our previous updates, GitHub Copilot for Eclipse is open source, with the code available on GitHub under the MIT license. This marks an important milestone for GitHub Copilot in… The post GitHub Copilot for Eclipse is open source appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "3533dde493f876143bf66d480a9a6d69ba9e147f",
+      "id": "c034b2ddfd191db2d199554c8afebcd96d704a79",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Codex实现全天候跨设备安全操控Mac",
-      "url": "https://x.com/OpenAIDevs/status/2057536706778378692",
-      "published_at": "2026-05-21T18:59:12Z",
-      "summary": "Codex随时随地，无处不在。 现在您的Mac无需解锁，Codex即可使用您的电脑。 通过手机，Codex可以安全地使用您Mac上的应用程序，即使屏幕关闭且处于锁定状态。 https：//developers.openai.com/codex/app/computer-use#locked-use",
-      "relevance_score": 4,
+      "title": "AlphaProof Nexus：用形式化验证驱动AI数学证明搜索",
+      "url": "https://x.com/rohanpaul_ai/status/2057954067146781151",
+      "published_at": "2026-05-22T22:37:39Z",
+      "summary": "Google DeepMind提出了AlphaProof Nexus系统，它将大型语言模型与Lean形式化验证工具相结合。该系统允许LLM在生成证明的过程中，不断读取Lean的编译错误并进行修正，还可调用更强的工具辅助解决子问题。这一机制迫使模型将每一步逻辑都转化为可编译、可验证的代码，从而将其角色从\"令人信服的叙述者\"转变为\"候选方案生成器\"。在针对353个Erdős问题和492个开放猜想的测试中，系统成功解决了9个Erdős问题并证明了44个序列猜想。该研究展示了形式化验证在暴露AI逻辑错误、建立\"人类提问-模型探索-验证器把关\"新分工中的关键作用。",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "weak:developer",
+        "strong:deepmind",
+        "strong:llm",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4cb68b3f02f1dcace8603c5f40b9a6caf550ffaa",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "v2.1.149 更新摘要",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.149",
+      "published_at": "2026-05-22T22:09:29Z",
+      "summary": "本次 v2.1.149 更新包含功能增强、企业设置和多项修复。新增 `/usage` 命令的使用量分类显示功能，可区分技能、子代理、插件及每个 MCP 服务器的消耗；`/diff` 详情视图支持键盘滚动；Markdown 输出兼容 GFM 任务列表。企业版新增 `allowAllClaudeAiMcps` 设置以加载云 MCP 连接器。修复了 PowerShell 权限绕过、Git 工作树沙盒写入白名单越界、脚本路径含空格时 `otelHeadersHelper` 静默失败等安全问题。改进了 `/feedback` 报告，包含上下文压缩前的对话内容，便于排查长会话中的早期问题。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:mcp",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -375,80 +241,58 @@
       "is_ai_related": true
     },
     {
-      "id": "645f0fbe72bd50299f79d372d4813c0ed9da3b11",
+      "id": "b6c6458350100771d9e95c43d6a49c4158201f2b",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "智谱GLM-5.1高速版发布：刷新全球大模型API速度纪录",
-      "url": "https://www.ithome.com/0/953/717.htm",
-      "published_at": "2026-05-22T02:02:46Z",
-      "summary": "5月22日，智谱向部分企业客户推出了旗舰大模型GLM-5.1的高速版API\"GLM-5.1-highspeed\"。该版本输出速度达400 tokens/s，刷新了全球大模型API速度上限。关键突破在于，它首次在国产大模型中实现了旗舰级能力与低延迟的结合，打破了\"高速模型即轻量模型\"的传统。该版本由智谱GLM团队与TileRT团队合作，通过系统级优化确保了速度的生产级稳定性，适用于AI编程、实时语音交互等场景。",
-      "relevance_score": 3,
+      "title": "Models.dev：一个关于人工智能模型规格、定价和功能的开源数据库",
+      "url": "https://github.com/anomalyco/models.dev",
+      "published_at": "2026-05-23T01:39:14Z",
+      "summary": "近期发布了开源数据库Models.dev，专门收录人工智能模型的各项规格、定价及功能信息。该项目在GitHub公开，便于开发者查询和比较不同AI模型。其在Hacker News社区获得101点关注度，显示出技术社区对这类集中化、透明化的模型信息资源的较大兴趣。",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:大模型",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e031fad91355824078983b6c0a9e2d3a2869f783",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "用户好评即最佳文案，视觉呈现由AI完成",
-      "url": "https://x.com/LumaLabsAI/status/2057628006353670163",
-      "published_at": "2026-05-22T01:02:00Z",
-      "summary": "你的客户写出了你永远无法超越的文案。现在，为它匹配视觉呈现吧。 只需粘贴评价，设定风格，Luma Agents 将处理所有推荐语图形。 让它被听见 → http：//lumalabs.ai/app",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7a9e1526809a921c067e41ca5afa901a8abb3ad9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "推出 Gemini for Home 赋能服务提供商与硬件合作伙伴",
-      "url": "https://developers.googleblog.com/empowering-service-providers-and-hardware-partners-with-gemini-for-home",
-      "published_at": "2026-05-21T16:33:06Z",
-      "summary": "Google 通过推出全栈 Gemini AI 解决方案扩展其智能家居生态系统。该方案集成了先进的摄像头智能、自然语言查询功能和日常活动摘要能力。它为服务提供商和硬件制造商提供了现成的参考设计与API，使其无需大量研发投入即可构建主动式、品牌化的智能家居服务。该计划旨在超越基础设备控制，迈向能够理解情境并实时响应用户需求的AI原生智能家居。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "56eb01d9c5b0cb7761c2f8fa7e5b6e5d8997a35c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "发布 Kotlin版ADK与Android版ADK 0.1.0：在Android及其他平台构建AI Agent",
-      "url": "https://developers.googleblog.com/adk-kotlin-android-building-ai-agents",
-      "published_at": "2026-05-21T16:33:06Z",
-      "summary": "Google发布了面向开发者的新工具包：Kotlin版ADK与Android版ADK 0.1.0。这两个工具包旨在帮助开发者构建AI Agent。其中，Kotlin版ADK将代理工作流引入后端项目开发；Android版ADK则专注于移动端应用，提供了构建AI代理所需的特定功能。此次发布为开发者提供了在Android生态及更广泛平台创建AI应用的官方工具基础。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
+        "strong:人工智能",
         "weak:开发者",
-        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "67514e69951b62eedb4123114c64e15ab733b76c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "回顾Google I/O 2026对话环节",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap",
+      "published_at": "2026-05-22T18:00:00Z",
+      "summary": "在2026年Google I/O开发者大会上，对话环节聚焦于未来科技趋势。行业领导者围绕人工智能、量子计算、机器人学以及创造力等核心议题展开了深入探讨，旨在勾勒这些前沿领域的技术演进路径与发展蓝图。",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:人工智能",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c0234e1ccf050e9200624fd8eb0c3b0728091ab7",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Warp现已支持OpenRouter接入",
+      "url": "https://x.com/OpenRouter/status/2057875517391667492",
+      "published_at": "2026-05-22T17:25:31Z",
+      "summary": "OpenRouter现已在@warpdotdev中得到支持！❤️ 工程师Dagm Assefa展示了如何连接DeepSeek和OpenRouter。 文档：https：//docs.warp.dev/agent-platform/inference/custom-inference-endpoint/ 🔖",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:inference",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -490,25 +334,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "3bfb30b74136b1e0a0e62de13c5e41b817ec4cf6",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "v2.1.147版本更新",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.147",
-      "published_at": "2026-05-21T20:39:22Z",
-      "summary": "本次更新引入了`Workflow`工具，支持确定性多智能体编排（默认关闭）。将`/simplify`命令重命名为`/code-review`，现可报告代码正确性问题并支持生成GitHub PR内联评论。改进了自动更新器（增加重试与错误报告）、大文件diff渲染性能，并优化了提示历史记录以避免重复条目。修复了多个关键问题，包括企业登录限制未生效、Windows下的PowerShell工具与终端闪烁问题、插件系统及shell快照的bug，并增强了沙箱安全性与终端兼容性。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:workflow",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -518,11 +343,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 972,
-      "kept_count": 1,
+      "fetched_count": 967,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 812,
-      "checked_at": "2026-05-22T16:24:54.403132Z"
+      "latency_ms": 696,
+      "checked_at": "2026-05-23T02:28:04.336743Z"
     },
     {
       "source_id": "openai-skills",
@@ -531,10 +356,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 195,
-      "checked_at": "2026-05-22T16:24:54.598933Z"
+      "latency_ms": 179,
+      "checked_at": "2026-05-23T02:28:04.516774Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -545,8 +370,8 @@
       "fetched_count": 214,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 107,
-      "checked_at": "2026-05-22T16:24:54.710270Z"
+      "latency_ms": 93,
+      "checked_at": "2026-05-23T02:28:04.612909Z"
     },
     {
       "source_id": "google-deepmind",
@@ -555,10 +380,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 297,
-      "checked_at": "2026-05-22T16:24:55.009643Z"
+      "latency_ms": 247,
+      "checked_at": "2026-05-23T02:28:04.861488Z"
     },
     {
       "source_id": "google-ai",
@@ -569,8 +394,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 134,
-      "checked_at": "2026-05-22T16:24:55.144126Z"
+      "latency_ms": 196,
+      "checked_at": "2026-05-23T02:28:05.058365Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -581,8 +406,8 @@
       "fetched_count": 784,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 244,
-      "checked_at": "2026-05-22T16:24:55.400299Z"
+      "latency_ms": 211,
+      "checked_at": "2026-05-23T02:28:05.281257Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -593,8 +418,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 101,
-      "checked_at": "2026-05-22T16:24:55.502396Z"
+      "latency_ms": 335,
+      "checked_at": "2026-05-23T02:28:05.616893Z"
     },
     {
       "source_id": "github-changelog",
@@ -603,10 +428,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-05-22T16:24:55.530075Z"
+      "latency_ms": 24,
+      "checked_at": "2026-05-23T02:28:05.641953Z"
     },
     {
       "source_id": "aihot",
@@ -615,10 +440,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 15,
+      "kept_count": 11,
       "error": null,
-      "latency_ms": 2487,
-      "checked_at": "2026-05-22T16:24:58.018902Z"
+      "latency_ms": 1771,
+      "checked_at": "2026-05-23T02:28:07.414851Z"
     }
   ],
   "control_notes": {
