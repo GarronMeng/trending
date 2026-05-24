@@ -1,149 +1,69 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-23T14:59:34.304752Z",
+  "generated_at": "2026-05-24T02:38:06.916985Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 4,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub AI & ML",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "ai coding",
-          1
-        ],
-        [
-          "developer",
-          1
-        ],
-        [
-          "official_ai",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          8
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          4
         ],
         [
           "agent",
-          3
-        ],
-        [
-          "人工智能",
-          3
-        ],
-        [
-          "deepmind",
           2
-        ],
-        [
-          "mcp",
-          2
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
-          "开发者",
-          2
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "tool",
-          1
         ],
         [
           "agents",
           1
         ],
         [
+          "人工智能",
+          1
+        ],
+        [
           "智能体",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "自动化",
+          1
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "codex",
           1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "d8f538bd6adf5511809cb6eeb5a4cf53733c6159",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "GitHub recognized as a Leader in the Gartner® Magic Quadrant™ for Enterprise AI Coding Agents for the third year in a row",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterprise-ai-coding-agents-for-the-third-year-in-a-row",
-      "published_at": "2026-05-22T16:10:21Z",
-      "summary": "We are committed to empowering every developer by building an open, secure, and AI-powered platform that defines the future of software development. The post GitHub recognized as a Leader in the Gartner® Magic Quadrant™ for Enterprise AI Coding Agents for the third year in a row appeared first on The GitHub Blog .",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "strong:ai coding",
-        "weak:developer",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8a00bc427de5cf5604b9df6a379b48117c507956",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "谷歌I/O大会发布AI代理全套开发工具链",
-      "url": "https://x.com/GoogleAI/status/2057871583843135978",
-      "published_at": "2026-05-22T17:09:53Z",
-      "summary": "谷歌在I/O开发者大会宣布，系统性构建面向AI代理（Agent）的开发与部署工具链。核心更新包括：独立桌面应用Antigravity 2.0及其命令行工具、SDK面世；Google AI Studio新增Kotlin支持，可一键开发安卓应用并发布，同时推出移动端App。此外，Gemini API推出托管代理服务，实现一键部署；WebMCP作为开放标准在Chrome 149中推出，允许网页向代理暴露工具；Chrome DevTools也开放给AI代理以自动化调试。企业级客户可直接连接Google Cloud项目，而DeepMind的科学技能包则加速特定领域研究。此举标志着谷歌正全面打造从开发、接口到部署的完整AI代理生态系统。",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:deepmind",
-        "strong:agent",
-        "strong:mcp",
-        "weak:api",
-        "weak:tool",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "bcdf9ec91fedab3197e1272c707a437a2a73e0ad",
       "source_id": "aihot",
@@ -166,6 +86,45 @@
       "is_ai_related": true
     },
     {
+      "id": "1449475437c2f341c674dd786cfaba3576d9e5fd",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Replit Agent与Squidler集成，实现全自动化AI质量保障",
+      "url": "https://x.com/Replit/status/2058261705998602548",
+      "published_at": "2026-05-23T19:00:06Z",
+      "summary": "Replit Agent与Squidler已完成集成，形成一套完整的AI驱动质量保障闭环。用户可通过自然语言描述应用功能，由Replit Agent负责构建。构建完成后，Squidler会像真实用户一样对线上应用进行自动化测试，无需编写任何测试脚本。测试中发现的问题会自动反馈给Replit Agent进行修复。该流程已通过Squidler加入Replit的MCP库正式上线，实现了从构建、测试到修复的全自动化，显著降低了应用测试与维护的门槛。",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:mcp",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ae6f86318c55c9614981704c89962a82eed56774",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "消息称 Anthropic 最快下周完成逾 300 亿美元融资，有望推动估值反超 OpenAI",
+      "url": "https://www.ithome.com/0/954/452.htm",
+      "published_at": "2026-05-23T15:12:40Z",
+      "summary": "据彭博社报道，Anthropic即将完成一轮超300亿美元的融资，最快可能于下周敲定。此轮融资将使其估值突破9000亿美元，正式超越OpenAI，成为全球估值最高的AI初创企业。融资的迅速推进反映了市场的强烈追捧。同时，公司营收高速增长，预计第二季度营收将达109亿美元，环比增长超一倍，有望迎来首个盈利季度。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "fca4ae410ad8c8286b949a00725c416e527df055",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -183,101 +142,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "c034b2ddfd191db2d199554c8afebcd96d704a79",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "AlphaProof Nexus：用形式化验证驱动AI数学证明搜索",
-      "url": "https://x.com/rohanpaul_ai/status/2057954067146781151",
-      "published_at": "2026-05-22T22:37:39Z",
-      "summary": "Google DeepMind提出了AlphaProof Nexus系统，它将大型语言模型与Lean形式化验证工具相结合。该系统允许LLM在生成证明的过程中，不断读取Lean的编译错误并进行修正，还可调用更强的工具辅助解决子问题。这一机制迫使模型将每一步逻辑都转化为可编译、可验证的代码，从而将其角色从\"令人信服的叙述者\"转变为\"候选方案生成器\"。在针对353个Erdős问题和492个开放猜想的测试中，系统成功解决了9个Erdős问题并证明了44个序列猜想。该研究展示了形式化验证在暴露AI逻辑错误、建立\"人类提问-模型探索-验证器把关\"新分工中的关键作用。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:deepmind",
-        "strong:llm",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "4cb68b3f02f1dcace8603c5f40b9a6caf550ffaa",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "v2.1.149 更新摘要",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.149",
-      "published_at": "2026-05-22T22:09:29Z",
-      "summary": "本次 v2.1.149 更新包含功能增强、企业设置和多项修复。新增 `/usage` 命令的使用量分类显示功能，可区分技能、子代理、插件及每个 MCP 服务器的消耗；`/diff` 详情视图支持键盘滚动；Markdown 输出兼容 GFM 任务列表。企业版新增 `allowAllClaudeAiMcps` 设置以加载云 MCP 连接器。修复了 PowerShell 权限绕过、Git 工作树沙盒写入白名单越界、脚本路径含空格时 `otelHeadersHelper` 静默失败等安全问题。改进了 `/feedback` 报告，包含上下文压缩前的对话内容，便于排查长会话中的早期问题。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:mcp",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b6c6458350100771d9e95c43d6a49c4158201f2b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Models.dev：一个关于人工智能模型规格、定价和功能的开源数据库",
-      "url": "https://github.com/anomalyco/models.dev",
-      "published_at": "2026-05-23T01:39:14Z",
-      "summary": "近期发布了开源数据库Models.dev，专门收录人工智能模型的各项规格、定价及功能信息。该项目在GitHub公开，便于开发者查询和比较不同AI模型。其在Hacker News社区获得101点关注度，显示出技术社区对这类集中化、透明化的模型信息资源的较大兴趣。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:人工智能",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "67514e69951b62eedb4123114c64e15ab733b76c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "回顾Google I/O 2026对话环节",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap",
-      "published_at": "2026-05-22T18:00:00Z",
-      "summary": "在2026年Google I/O开发者大会上，对话环节聚焦于未来科技趋势。行业领导者围绕人工智能、量子计算、机器人学以及创造力等核心议题展开了深入探讨，旨在勾勒这些前沿领域的技术演进路径与发展蓝图。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:人工智能",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c0234e1ccf050e9200624fd8eb0c3b0728091ab7",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Warp现已支持OpenRouter接入",
-      "url": "https://x.com/OpenRouter/status/2057875517391667492",
-      "published_at": "2026-05-22T17:25:31Z",
-      "summary": "OpenRouter现已在@warpdotdev中得到支持！❤️ 工程师Dagm Assefa展示了如何连接DeepSeek和OpenRouter。 文档：https：//docs.warp.dev/agent-platform/inference/custom-inference-endpoint/ 🔖",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:inference",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -290,8 +154,8 @@
       "fetched_count": 967,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 551,
-      "checked_at": "2026-05-23T14:59:26.154676Z"
+      "latency_ms": 695,
+      "checked_at": "2026-05-24T02:38:03.741267Z"
     },
     {
       "source_id": "openai-skills",
@@ -302,8 +166,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 350,
-      "checked_at": "2026-05-23T14:59:26.505424Z"
+      "latency_ms": 371,
+      "checked_at": "2026-05-24T02:38:04.113136Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -314,8 +178,8 @@
       "fetched_count": 214,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 193,
-      "checked_at": "2026-05-23T14:59:26.702700Z"
+      "latency_ms": 327,
+      "checked_at": "2026-05-24T02:38:04.443403Z"
     },
     {
       "source_id": "google-deepmind",
@@ -326,8 +190,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 428,
-      "checked_at": "2026-05-23T14:59:27.132573Z"
+      "latency_ms": 339,
+      "checked_at": "2026-05-24T02:38:04.784614Z"
     },
     {
       "source_id": "google-ai",
@@ -338,8 +202,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 189,
-      "checked_at": "2026-05-23T14:59:27.322377Z"
+      "latency_ms": 245,
+      "checked_at": "2026-05-24T02:38:05.030159Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -350,8 +214,8 @@
       "fetched_count": 784,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 305,
-      "checked_at": "2026-05-23T14:59:27.640506Z"
+      "latency_ms": 321,
+      "checked_at": "2026-05-24T02:38:05.361832Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -360,10 +224,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 156,
-      "checked_at": "2026-05-23T14:59:27.797304Z"
+      "latency_ms": 141,
+      "checked_at": "2026-05-24T02:38:05.503239Z"
     },
     {
       "source_id": "github-changelog",
@@ -374,8 +238,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 35,
-      "checked_at": "2026-05-23T14:59:27.832688Z"
+      "latency_ms": 31,
+      "checked_at": "2026-05-24T02:38:05.534383Z"
     },
     {
       "source_id": "aihot",
@@ -384,10 +248,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 6462,
-      "checked_at": "2026-05-23T14:59:34.296124Z"
+      "latency_ms": 1374,
+      "checked_at": "2026-05-24T02:38:06.909712Z"
     }
   ],
   "control_notes": {
