@@ -1,31 +1,31 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-24T15:02:46.514987Z",
+  "generated_at": "2026-05-25T02:46:55.862937Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 2,
+  "item_count": 3,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          2
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
+          3
+        ],
+        [
+          "智能体",
           2
         ],
         [
-          "agent",
-          1
-        ],
-        [
-          "mcp",
+          "codex",
           1
         ],
         [
@@ -33,11 +33,23 @@
           1
         ],
         [
-          "openai",
+          "工作流",
           1
         ],
         [
-          "anthropic",
+          "claude",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
           1
         ]
       ]
@@ -45,40 +57,61 @@
   },
   "items": [
     {
-      "id": "1449475437c2f341c674dd786cfaba3576d9e5fd",
+      "id": "d8b0f0e78d38cd43bd706caf3a43985be9c18728",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Replit Agent与Squidler集成，实现全自动化AI质量保障",
-      "url": "https://x.com/Replit/status/2058261705998602548",
-      "published_at": "2026-05-23T19:00:06Z",
-      "summary": "Replit Agent与Squidler已完成集成，形成一套完整的AI驱动质量保障闭环。用户可通过自然语言描述应用功能，由Replit Agent负责构建。构建完成后，Squidler会像真实用户一样对线上应用进行自动化测试，无需编写任何测试脚本。测试中发现的问题会自动反馈给Replit Agent进行修复。该流程已通过Squidler加入Replit的MCP库正式上线，实现了从构建、测试到修复的全自动化，显著降低了应用测试与维护的门槛。",
-      "relevance_score": 4,
+      "title": "面向 Codex 的自我优化提示词框架",
+      "url": "https://x.com/gdb/status/2058598608224858442",
+      "published_at": "2026-05-24T17:18:49Z",
+      "summary": "这是一个结构化的提示词，用于指导 Codex 自动分析其历史记录以识别并固化重复工作流。该框架要求 Codex 回顾会话、Memories 等数据，找出重复、耗时且有明确复用价值的任务。筛选标准包括至少出现两次、输入稳定、可提升效率等。最终，Codex 应以\"技能\"、子智能体或自动化工具等最小实用形式创建或扩展现有资产，避免冗余。流程包括生成候选清单、执行创建，并汇报结果与待验证项。",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:mcp",
+        "strong:codex",
+        "strong:智能体",
         "weak:自动化",
+        "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "ae6f86318c55c9614981704c89962a82eed56774",
+      "id": "aff7f60dc2bb24f3b53f58fb3d7bf9c60f18b7de",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "消息称 Anthropic 最快下周完成逾 300 亿美元融资，有望推动估值反超 OpenAI",
-      "url": "https://www.ithome.com/0/954/452.htm",
-      "published_at": "2026-05-23T15:12:40Z",
-      "summary": "据彭博社报道，Anthropic即将完成一轮超300亿美元的融资，最快可能于下周敲定。此轮融资将使其估值突破9000亿美元，正式超越OpenAI，成为全球估值最高的AI初创企业。融资的迅速推进反映了市场的强烈追捧。同时，公司营收高速增长，预计第二季度营收将达109亿美元，环比增长超一倍，有望迎来首个盈利季度。",
+      "title": "TrapDoor供应链攻击：AI助手成新型攻击面",
+      "url": "https://x.com/kimmonismus/status/2058584943052161488",
+      "published_at": "2026-05-24T16:24:31Z",
+      "summary": "一场名为\"TrapDoor\"的协调供应链攻击同时袭击了npm、PyPI和Crates.io，涉及34个恶意包，旨在窃取加密货币、AI和安全开发者的钱包、SSH密钥和云凭证。攻击的新手段是向流行开源项目提交Pull Request，注入被操纵的`CLAUDE.md`和`.cursorrules`配置文件。当开发者克隆仓库并使用Claude Code或Cursor等AI助手时，AI智能体会将这些文件当作可信指令执行，可能在开发者不知情下运行恶意命令。这是首次将AI助手作为攻击面。",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:智能体",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9ba935188a2573603c7f5b3242a292078982d04a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Luma Agents 实现规模化真实 UGC 广告生成",
+      "url": "https://x.com/LumaLabsAI/status/2058672731705503959",
+      "published_at": "2026-05-24T22:13:22Z",
+      "summary": "规模化的真实性曾是矛盾，如今已成现实。 定义简报，设定风格，Luma Agents 从这里构建每一条 UGC 风格广告。 让它真实 → http：//lumalabs.ai/app",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
+        "strong:agent",
+        "strong:agents",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -94,8 +127,8 @@
       "fetched_count": 967,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 603,
-      "checked_at": "2026-05-24T15:02:42.497833Z"
+      "latency_ms": 547,
+      "checked_at": "2026-05-25T02:46:51.814914Z"
     },
     {
       "source_id": "openai-skills",
@@ -106,8 +139,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 197,
-      "checked_at": "2026-05-24T15:02:42.695135Z"
+      "latency_ms": 164,
+      "checked_at": "2026-05-25T02:46:51.979408Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -118,8 +151,8 @@
       "fetched_count": 214,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 106,
-      "checked_at": "2026-05-24T15:02:42.804584Z"
+      "latency_ms": 107,
+      "checked_at": "2026-05-25T02:46:52.089982Z"
     },
     {
       "source_id": "google-deepmind",
@@ -130,8 +163,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 335,
-      "checked_at": "2026-05-24T15:02:43.141703Z"
+      "latency_ms": 219,
+      "checked_at": "2026-05-25T02:46:52.310695Z"
     },
     {
       "source_id": "google-ai",
@@ -142,8 +175,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 124,
-      "checked_at": "2026-05-24T15:02:43.266863Z"
+      "latency_ms": 193,
+      "checked_at": "2026-05-25T02:46:52.504421Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -154,8 +187,8 @@
       "fetched_count": 784,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 230,
-      "checked_at": "2026-05-24T15:02:43.507991Z"
+      "latency_ms": 224,
+      "checked_at": "2026-05-25T02:46:52.740188Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -166,8 +199,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 160,
-      "checked_at": "2026-05-24T15:02:43.668926Z"
+      "latency_ms": 110,
+      "checked_at": "2026-05-25T02:46:52.850517Z"
     },
     {
       "source_id": "github-changelog",
@@ -178,8 +211,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-05-24T15:02:43.698343Z"
+      "latency_ms": 24,
+      "checked_at": "2026-05-25T02:46:52.875477Z"
     },
     {
       "source_id": "aihot",
@@ -188,10 +221,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 2808,
-      "checked_at": "2026-05-24T15:02:46.507853Z"
+      "latency_ms": 2979,
+      "checked_at": "2026-05-25T02:46:55.856049Z"
     }
   ],
   "control_notes": {
