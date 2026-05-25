@@ -1,11 +1,31 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-25T12:03:02.714029Z",
+  "generated_at": "2026-05-25T16:21:55.801391Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 3,
+  "item_count": 4,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "Hugging Face Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "agent",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
       "count": 3,
@@ -56,6 +76,24 @@
     }
   },
   "items": [
+    {
+      "id": "64d9234e74ff589aaf88b22a912731abfcf5ff3d",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+      "url": "https://huggingface.co/blog/agent-glossary",
+      "published_at": "2026-05-25T00:00:00Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "d8b0f0e78d38cd43bd706caf3a43985be9c18728",
       "source_id": "aihot",
@@ -127,8 +165,8 @@
       "fetched_count": 967,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 689,
-      "checked_at": "2026-05-25T12:02:57.733614Z"
+      "latency_ms": 545,
+      "checked_at": "2026-05-25T16:21:52.817273Z"
     },
     {
       "source_id": "openai-skills",
@@ -139,8 +177,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 346,
-      "checked_at": "2026-05-25T12:02:58.080701Z"
+      "latency_ms": 320,
+      "checked_at": "2026-05-25T16:21:53.137633Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -151,8 +189,8 @@
       "fetched_count": 214,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 187,
-      "checked_at": "2026-05-25T12:02:58.271780Z"
+      "latency_ms": 190,
+      "checked_at": "2026-05-25T16:21:53.331711Z"
     },
     {
       "source_id": "google-deepmind",
@@ -163,8 +201,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 394,
-      "checked_at": "2026-05-25T12:02:58.667474Z"
+      "latency_ms": 415,
+      "checked_at": "2026-05-25T16:21:53.748580Z"
     },
     {
       "source_id": "google-ai",
@@ -175,8 +213,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 285,
-      "checked_at": "2026-05-25T12:02:58.953063Z"
+      "latency_ms": 242,
+      "checked_at": "2026-05-25T16:21:53.991422Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -184,11 +222,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 784,
-      "kept_count": 0,
+      "fetched_count": 785,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 308,
-      "checked_at": "2026-05-25T12:02:59.273513Z"
+      "latency_ms": 315,
+      "checked_at": "2026-05-25T16:21:54.318886Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -199,8 +237,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 155,
-      "checked_at": "2026-05-25T12:02:59.429744Z"
+      "latency_ms": 154,
+      "checked_at": "2026-05-25T16:21:54.473337Z"
     },
     {
       "source_id": "github-changelog",
@@ -212,7 +250,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 35,
-      "checked_at": "2026-05-25T12:02:59.465537Z"
+      "checked_at": "2026-05-25T16:21:54.509102Z"
     },
     {
       "source_id": "aihot",
@@ -221,10 +259,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 3241,
-      "checked_at": "2026-05-25T12:03:02.707316Z"
+      "latency_ms": 1283,
+      "checked_at": "2026-05-25T16:21:55.792968Z"
     }
   ],
   "control_notes": {
