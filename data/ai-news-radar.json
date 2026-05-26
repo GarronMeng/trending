@@ -1,59 +1,31 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-25T16:21:55.801391Z",
+  "generated_at": "2026-05-26T02:35:43.937056Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 4,
+  "item_count": 2,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "Hugging Face Blog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "agent",
-          1
-        ],
-        [
-          "official_ai",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "AI Hot",
-          3
+          2
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          3
-        ],
-        [
-          "智能体",
           2
         ],
         [
-          "codex",
+          "openai",
           1
         ],
         [
-          "自动化",
-          1
-        ],
-        [
-          "工作流",
+          "anthropic",
           1
         ],
         [
@@ -61,15 +33,19 @@
           1
         ],
         [
+          "codex",
+          1
+        ],
+        [
           "开发者",
           1
         ],
         [
-          "agent",
+          "gemini",
           1
         ],
         [
-          "agents",
+          "大模型",
           1
         ]
       ]
@@ -77,79 +53,42 @@
   },
   "items": [
     {
-      "id": "64d9234e74ff589aaf88b22a912731abfcf5ff3d",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
-      "url": "https://huggingface.co/blog/agent-glossary",
-      "published_at": "2026-05-25T00:00:00Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d8b0f0e78d38cd43bd706caf3a43985be9c18728",
+      "id": "f578b5ce63677b7d57ea1725478dd746b2ae8b72",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "面向 Codex 的自我优化提示词框架",
-      "url": "https://x.com/gdb/status/2058598608224858442",
-      "published_at": "2026-05-24T17:18:49Z",
-      "summary": "这是一个结构化的提示词，用于指导 Codex 自动分析其历史记录以识别并固化重复工作流。该框架要求 Codex 回顾会话、Memories 等数据，找出重复、耗时且有明确复用价值的任务。筛选标准包括至少出现两次、输入稳定、可提升效率等。最终，Codex 应以\"技能\"、子智能体或自动化工具等最小实用形式创建或扩展现有资产，避免冗余。流程包括生成候选清单、执行创建，并汇报结果与待验证项。",
-      "relevance_score": 5,
+      "title": "OpenAI GPT-5.6 模型曝下月发布：AI 上下文 150 万 tokens",
+      "url": "https://www.ithome.com/0/955/078.htm",
+      "published_at": "2026-05-25T22:59:12Z",
+      "summary": "多名开发者在 OpenAI Codex 后端日志中发现未官宣的 GPT-5.6 模型，内部代号 iris-alpha。该模型将支持 150 万 token 的上下文窗口，较当前 GPT-5.5 的 105 万 token 提升约 43%，有望于今年 6 月发布。测试显示，在输入达到 90 万 token 时仍能流畅响应。同系列还发现了 ember-alpha 与 beacon-alpha 版本。此外，GPT-5.6 在前端界面生成能力上也有所提升。基于爆料信息，Anthropic Claude、Google Gemini 及 xAI Grok 也可能瞄准同期发布新模型。",
+      "relevance_score": 8,
       "relevance_reasons": [
-        "strong:codex",
-        "strong:智能体",
-        "weak:自动化",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "aff7f60dc2bb24f3b53f58fb3d7bf9c60f18b7de",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "TrapDoor供应链攻击：AI助手成新型攻击面",
-      "url": "https://x.com/kimmonismus/status/2058584943052161488",
-      "published_at": "2026-05-24T16:24:31Z",
-      "summary": "一场名为\"TrapDoor\"的协调供应链攻击同时袭击了npm、PyPI和Crates.io，涉及34个恶意包，旨在窃取加密货币、AI和安全开发者的钱包、SSH密钥和云凭证。攻击的新手段是向流行开源项目提交Pull Request，注入被操纵的`CLAUDE.md`和`.cursorrules`配置文件。当开发者克隆仓库并使用Claude Code或Cursor等AI助手时，AI智能体会将这些文件当作可信指令执行，可能在开发者不知情下运行恶意命令。这是首次将AI助手作为攻击面。",
-      "relevance_score": 4,
-      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
         "strong:claude",
-        "strong:智能体",
+        "strong:codex",
         "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "9ba935188a2573603c7f5b3242a292078982d04a",
+      "id": "639b0ebeed61da9a9fa22a90a886fd27ffbfed37",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Luma Agents 实现规模化真实 UGC 广告生成",
-      "url": "https://x.com/LumaLabsAI/status/2058672731705503959",
-      "published_at": "2026-05-24T22:13:22Z",
-      "summary": "规模化的真实性曾是矛盾，如今已成现实。 定义简报，设定风格，Luma Agents 从这里构建每一条 UGC 风格广告。 让它真实 → http：//lumalabs.ai/app",
+      "title": "苹果据称正使用定制版1.2T参数Google模型重塑下一代Siri",
+      "url": "https://x.com/kimmonismus/status/2058997271803674991",
+      "published_at": "2026-05-25T19:42:58Z",
+      "summary": "据报道，苹果为改造下一代Siri，正使用一个定制版、参数规模达1.2T的Google大模型作为其核心，这显著大于预估约300B参数的Gemini 3.5 Flash。该模型将驱动Siri的部分功能，其中简单查询预期会在本地设备运行。苹果面临的关键挑战是确保该大模型能够足够快速地响应日常问题。此外，下个月AI领域预计将有多项重要发布，包括WWDC上的Apple Intelligence与Gemini整合、GPT-5.6、可能的Sonnet 4.8/Opus 4.8，以及已确认的Gemini 3.5 Pro。",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
+        "strong:gemini",
+        "strong:大模型",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -162,11 +101,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 967,
+      "fetched_count": 968,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 545,
-      "checked_at": "2026-05-25T16:21:52.817273Z"
+      "latency_ms": 869,
+      "checked_at": "2026-05-26T02:35:40.833868Z"
     },
     {
       "source_id": "openai-skills",
@@ -177,8 +116,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 320,
-      "checked_at": "2026-05-25T16:21:53.137633Z"
+      "latency_ms": 279,
+      "checked_at": "2026-05-26T02:35:41.113525Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -186,11 +125,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 214,
+      "fetched_count": 215,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 190,
-      "checked_at": "2026-05-25T16:21:53.331711Z"
+      "latency_ms": 146,
+      "checked_at": "2026-05-26T02:35:41.263565Z"
     },
     {
       "source_id": "google-deepmind",
@@ -201,8 +140,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 415,
-      "checked_at": "2026-05-25T16:21:53.748580Z"
+      "latency_ms": 332,
+      "checked_at": "2026-05-26T02:35:41.597482Z"
     },
     {
       "source_id": "google-ai",
@@ -213,8 +152,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 242,
-      "checked_at": "2026-05-25T16:21:53.991422Z"
+      "latency_ms": 212,
+      "checked_at": "2026-05-26T02:35:41.809851Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -223,10 +162,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 785,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 315,
-      "checked_at": "2026-05-25T16:21:54.318886Z"
+      "latency_ms": 302,
+      "checked_at": "2026-05-26T02:35:42.124585Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -237,8 +176,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 154,
-      "checked_at": "2026-05-25T16:21:54.473337Z"
+      "latency_ms": 205,
+      "checked_at": "2026-05-26T02:35:42.329848Z"
     },
     {
       "source_id": "github-changelog",
@@ -249,8 +188,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 35,
-      "checked_at": "2026-05-25T16:21:54.509102Z"
+      "latency_ms": 41,
+      "checked_at": "2026-05-26T02:35:42.371971Z"
     },
     {
       "source_id": "aihot",
@@ -259,10 +198,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 1283,
-      "checked_at": "2026-05-25T16:21:55.792968Z"
+      "latency_ms": 1557,
+      "checked_at": "2026-05-26T02:35:43.929918Z"
     }
   ],
   "control_notes": {

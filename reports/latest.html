@@ -43,66 +43,40 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>4</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>3</b><span>聚合源条目</span></div>
+        <div class="stat"><b>2</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>0</b><span>官方源条目</span></div>
+        <div class="stat"><b>2</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-25T16:21:55.802450Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-26T02:35:43.937893Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
-        <span>Hugging Face Blog</span>
-        <span>official_rss</span>
-        <span>2026-05-25T00:00:00Z</span>
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-25T22:59:12Z</span>
+        <strong>Score 8</strong>
+      </div>
+      <h3><a href="https://www.ithome.com/0/955/078.htm" target="_blank" rel="noreferrer">OpenAI GPT-5.6 模型曝下月发布：AI 上下文 150 万 tokens</a></h3>
+      <p class='summary'>多名开发者在 OpenAI Codex 后端日志中发现未官宣的 GPT-5.6 模型，内部代号 iris-alpha。该模型将支持 150 万 token 的上下文窗口，较当前 GPT-5.5 的 105 万 token 提升约 43%，有望于今年 6 月发布。测试显示，在输入达到 90 万 token 时仍能流畅响应。同系列还发现了 ember-alpha 与 beacon-alpha 版本。此外，GPT-5.6 在前端界面生成能力上也有所提升。基于爆料信息，Anthropic Claude、Google Gemini 及 xAI Grok 也可能瞄准同期发布新模型。</p>
+      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>strong:claude</span><span>strong:codex</span><span>weak:开发者</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-25T19:42:58Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://huggingface.co/blog/agent-glossary" target="_blank" rel="noreferrer">Harness, Scaffold, and the AI Agent Terms Worth Getting Right</a></h3>
-      
-      <div class="tags"><span>strong:agent</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-24T17:18:49Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://x.com/gdb/status/2058598608224858442" target="_blank" rel="noreferrer">面向 Codex 的自我优化提示词框架</a></h3>
-      <p class='summary'>这是一个结构化的提示词，用于指导 Codex 自动分析其历史记录以识别并固化重复工作流。该框架要求 Codex 回顾会话、Memories 等数据，找出重复、耗时且有明确复用价值的任务。筛选标准包括至少出现两次、输入稳定、可提升效率等。最终，Codex 应以&quot;技能&quot;、子智能体或自动化工具等最小实用形式创建或扩展现有资产，避免冗余。流程包括生成候选清单、执行创建，并汇报结果与待验证项。</p>
-      <div class="tags"><span>strong:codex</span><span>strong:智能体</span><span>weak:自动化</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-24T16:24:31Z</span>
-        <strong>Score 4</strong>
-      </div>
-      <h3><a href="https://x.com/kimmonismus/status/2058584943052161488" target="_blank" rel="noreferrer">TrapDoor供应链攻击：AI助手成新型攻击面</a></h3>
-      <p class='summary'>一场名为&quot;TrapDoor&quot;的协调供应链攻击同时袭击了npm、PyPI和Crates.io，涉及34个恶意包，旨在窃取加密货币、AI和安全开发者的钱包、SSH密钥和云凭证。攻击的新手段是向流行开源项目提交Pull Request，注入被操纵的`CLAUDE.md`和`.cursorrules`配置文件。当开发者克隆仓库并使用Claude Code或Cursor等AI助手时，AI智能体会将这些文件当作可信指令执行，可能在开发者不知情下运行恶意命令。这是首次将AI助手作为攻击面。</p>
-      <div class="tags"><span>strong:claude</span><span>strong:智能体</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-24T22:13:22Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/LumaLabsAI/status/2058672731705503959" target="_blank" rel="noreferrer">Luma Agents 实现规模化真实 UGC 广告生成</a></h3>
-      <p class='summary'>规模化的真实性曾是矛盾，如今已成现实。 定义简报，设定风格，Luma Agents 从这里构建每一条 UGC 风格广告。 让它真实 → http：//lumalabs.ai/app</p>
-      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://x.com/kimmonismus/status/2058997271803674991" target="_blank" rel="noreferrer">苹果据称正使用定制版1.2T参数Google模型重塑下一代Siri</a></h3>
+      <p class='summary'>据报道，苹果为改造下一代Siri，正使用一个定制版、参数规模达1.2T的Google大模型作为其核心，这显著大于预估约300B参数的Gemini 3.5 Flash。该模型将驱动Siri的部分功能，其中简单查询预期会在本地设备运行。苹果面临的关键挑战是确保该大模型能够足够快速地响应日常问题。此外，下个月AI领域预计将有多项重要发布，包括WWDC上的Apple Intelligence与Gemini整合、GPT-5.6、可能的Sonnet 4.8/Opus 4.8，以及已确认的Gemini 3.5 Pro。</p>
+      <div class="tags"><span>strong:gemini</span><span>strong:大模型</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     </div>
     </section>
@@ -110,15 +84,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>967</td><td>0</td><td>545ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>320ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>214</td><td>0</td><td>190ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>415ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>242ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>785</td><td>1</td><td>315ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>154ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>35ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>4</td><td>1283ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>968</td><td>0</td><td>869ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>279ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>215</td><td>0</td><td>146ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>332ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>212ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>785</td><td>0</td><td>302ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>205ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>41ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>2</td><td>1557ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
