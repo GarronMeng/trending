@@ -1,11 +1,107 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-27T11:53:07.513059Z",
+  "generated_at": "2026-05-27T17:18:33.035817Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 8,
-  "item_count": 3,
+  "healthy_source_count": 9,
+  "item_count": 13,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "openai",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 9,
+      "top_sources": [
+        [
+          "AI Hot",
+          9
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          9
+        ],
+        [
+          "claude",
+          6
+        ],
+        [
+          "anthropic",
+          4
+        ],
+        [
+          "mcp",
+          3
+        ],
+        [
+          "人工智能",
+          3
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "model context protocol",
+          1
+        ],
+        [
+          "工作流",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "API",
+          1
+        ]
+      ]
+    },
     "developer": {
       "group": "developer",
       "count": 3,
@@ -32,6 +128,135 @@
     }
   },
   "items": [
+    {
+      "id": "60b5faab1416d13023728096e4ecc4c192604ae5",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Building self-improving tax agents with Codex",
+      "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
+      "published_at": "2026-05-27T07:00:00Z",
+      "summary": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.",
+      "relevance_score": 10,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "strong:agent",
+        "strong:agents",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c9947a37806ff432f4cbbd38ed251e542d716055",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Runway 推出 Model Context Protocol 服务器",
+      "url": "https://runwayml.com/news/mcp",
+      "published_at": "2026-05-27T14:09:52Z",
+      "summary": "Runway 正式推出 Runway MCP 服务器，允许任何兼容 MCP 的 AI 智能体（如 Claude、ChatGPT、Cursor）在对话界面中直接生成图像与视频，无需切换工作流。该服务器接入了 Runway 最新的多款 SOTA 模型，包括 Gen-4.5、Seedance 2.0、GPT Image 2、Kling 3.0 及 Nano Banana Pro。其应用场景涵盖为产品制作营销视频、批量生成网站视觉素材、创作角色广告以及在应用开发中集成视觉内容。用户设置简便，通过 runwayml.com/mcp 添加服务器并登录现有 Runway 账户即可使用，无需单独申请 API 密钥。",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:chatgpt",
+        "strong:mcp",
+        "strong:model context protocol",
+        "weak:api",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a1e3c22b295374c71bd440c32b748da816703d8c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Krea 2 API发布，支持多平台与智能体",
+      "url": "https://x.com/krea_ai/status/2059650622203515143",
+      "published_at": "2026-05-27T14:59:09Z",
+      "summary": "今天，我们发布了 Krea 2 的 API。 现已在 @fal 或 @ComfyUI 等平台可用，通过 @NousResearch 的 Hermes 等智能体使用，并全面支持 Claude、Codex 或 OpenClaw。 了解如何设置 👇",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7372b23666cd396fb7c139e7358155f29c7d9646",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "据报道Claude Mythos以\"巧妙简洁的证明\"解决了OpenAI里程碑式的Erdős问题",
+      "url": "https://the-decoder.com/claude-mythos-reportedly-solves-openais-landmark-erdos-problem-with-a-cute-simple-proof",
+      "published_at": "2026-05-26T18:31:07Z",
+      "summary": "Anthropic工程师Sholto Douglas表示，Claude Mythos在周末期间解决了OpenAI提出的Erdős单位距离猜想问题，并给出了一个\"巧妙简洁的证明\"。这一成果被描述为人工智能在数学发现领域存在\"严重超前\"迹象。",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:claude",
+        "strong:人工智能",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5ffa4255cdaf846b1c618d39703874096fb2bfb2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "我们如何对不同产品中的Claude进行隔离控制",
+      "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+      "published_at": "2026-05-26T18:11:06Z",
+      "summary": "Anthropic通过三重机制控制Claude智能体的部署风险，包括用户误用、模型异常行为和外部攻击。其防护策略聚焦于三个层面：通过沙箱、虚拟机和网络出口控制限制智能体运行环境；利用系统提示词和模型训练引导其行为；以及对MCP服务器、第三方插件等外部内容实施细粒度权限管理。文章以Claude Code、claude.ai和Claude Cowork为例，阐述了不同产品如何设计对应的隔离架构。",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:mcp",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "eac369576b42c80d8a7e03b1c9e30990f1758291",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Code v2.1.152 更新发布",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
+      "published_at": "2026-05-27T01:30:59Z",
+      "summary": "Claude Code 发布 v2.1.152 版本更新。核心改进包括：`/code-review --fix` 现在会将审查建议直接应用于工作目录；技能与斜杠命令支持通过 frontmatter 的 `disallowed-tools` 移除模型工具；新增 `/reload-skills` 命令可不重启会话重新扫描技能目录；`SessionStart` 钩子现可返回 `reloadSkills： true` 重新扫描技能，并可通过 `hookSpecificOutput.sessionTitle` 设置会话标题；新增 `MessageDisplay` 钩子事件以变换或隐藏助手消息。其他更新涉及插件市场管理、主模型不可用时自动切换至 `--fallback-model`、会话用量统计优化等。同时修复了终端样式退",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:mcp",
+        "weak:tool",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "2013e229000f18c10a25750476fc57012395ad4a",
       "source_id": "github-changelog",
@@ -69,6 +294,82 @@
       "is_ai_related": true
     },
     {
+      "id": "0d7b5d433cb10203a637162cf295f9802b306957",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Marketplace 新增五家合作伙伴",
+      "url": "https://x.com/claudeai/status/2059662933924123044",
+      "published_at": "2026-05-27T15:48:04Z",
+      "summary": "Claude Marketplace 新增成员：@augmentcode、@boltdotnew、@coderabbitai、@hebbia 和 @WeAreLegora。 您现有的 Anthropic 消费承诺可用于购买其 Claude 驱动的产品。 了解更多：http：//claude.com/platform/marketplace",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "be10809c66a0836b9dab6402c6371e7d3c607b88",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "教皇没对AGI上头",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/937933/pope-ai-encyclical-tech-industry-reactions",
+      "published_at": "2026-05-27T12:00:00Z",
+      "summary": "教皇 Leo XIV 发布题为《Magnifica Humanitas》的通谕，警告人工智能的使用绝非纯粹技术问题，当其进入影响人类生活的过程时，便触及权利、机会、地位与自由。通谕发布时，Anthropic 联合创始人 Christopher Olah 出席。文件引发了科技界内外的广泛反应。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:人工智能",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9a4a04711fdd39110c8fdde089bbb0086584ab34",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "通过万亿参数与 Hub Bucket 实现增量权重同步：TRL 中的增量权重同步",
+      "url": "https://huggingface.co/blog/delta-weight-sync",
+      "published_at": "2026-05-27T00:00:00Z",
+      "summary": "本文标题涉及 Hugging Face TRL 框架中一项具体的增量权重同步技术。正文重申了 Hugging Face 的核心使命，即致力于通过开源和开放科学，来推动人工智能的进步与普及。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:人工智能",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8c276ed0d3ef0a326eff2fabf81110a705c89035",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gemini Omni 视频提示词使用指南",
+      "url": "https://x.com/GoogleAI/status/2059381218660270435",
+      "published_at": "2026-05-26T21:08:38Z",
+      "summary": "Google 发布了其多模态模型 Gemini Omni 的视频生成功能使用指南。该模型可通过 Gemini 应用、Google Flow 等平台体验。指南包含五项提示词技巧：利用模型已有的现实世界知识进行简洁描述；精确控制文本在视频中的渲染与排版；使用专业镜头指令（如推拉摇移）像电影摄影师一样调度画面；通过迭代编辑高效修改视频；以及在生成中直接调整角色的动作节奏或情绪。其核心在于通过精准的提示词引导模型生成复杂且可控的视频内容。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "3012624fd324c155ee0e92a4bc46782467fd57bd",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -94,11 +395,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 968,
-      "kept_count": 0,
+      "fetched_count": 969,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 715,
-      "checked_at": "2026-05-27T11:52:40.849819Z"
+      "latency_ms": 576,
+      "checked_at": "2026-05-27T17:18:30.227237Z"
     },
     {
       "source_id": "openai-skills",
@@ -109,8 +410,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 287,
-      "checked_at": "2026-05-27T11:52:41.137700Z"
+      "latency_ms": 289,
+      "checked_at": "2026-05-27T17:18:30.517310Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -122,7 +423,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 99,
-      "checked_at": "2026-05-27T11:52:41.240564Z"
+      "checked_at": "2026-05-27T17:18:30.619863Z"
     },
     {
       "source_id": "google-deepmind",
@@ -133,8 +434,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 315,
-      "checked_at": "2026-05-27T11:52:41.557764Z"
+      "latency_ms": 293,
+      "checked_at": "2026-05-27T17:18:30.914422Z"
     },
     {
       "source_id": "google-ai",
@@ -145,8 +446,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 184,
-      "checked_at": "2026-05-27T11:52:41.743029Z"
+      "latency_ms": 260,
+      "checked_at": "2026-05-27T17:18:31.175383Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -154,11 +455,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 785,
+      "fetched_count": 787,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 255,
-      "checked_at": "2026-05-27T11:52:42.009776Z"
+      "latency_ms": 226,
+      "checked_at": "2026-05-27T17:18:31.412739Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -169,8 +470,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 120,
-      "checked_at": "2026-05-27T11:52:42.130090Z"
+      "latency_ms": 153,
+      "checked_at": "2026-05-27T17:18:31.566779Z"
     },
     {
       "source_id": "github-changelog",
@@ -181,20 +482,20 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-05-27T11:52:42.159274Z"
+      "latency_ms": 29,
+      "checked_at": "2026-05-27T17:18:31.596378Z"
     },
     {
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "enabled": true,
-      "ok": false,
-      "fetched_count": 0,
-      "kept_count": 0,
-      "error": "HTTPSConnectionPool(host='aihot.virxact.com', port=443): Max retries exceeded with url: /feed.xml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fc6b990d820>, 'Connection to aihot.virxact.com timed out. (connect timeout=25)'))",
-      "latency_ms": 25353,
-      "checked_at": "2026-05-27T11:53:07.512879Z"
+      "ok": true,
+      "fetched_count": 50,
+      "kept_count": 10,
+      "error": null,
+      "latency_ms": 1428,
+      "checked_at": "2026-05-27T17:18:33.025997Z"
     }
   ],
   "control_notes": {
