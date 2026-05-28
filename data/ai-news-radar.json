@@ -1,51 +1,47 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-28T11:56:09.005229Z",
+  "generated_at": "2026-05-28T17:34:21.997876Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 15,
+  "item_count": 13,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 14,
+      "count": 12,
       "top_sources": [
         [
           "AI Hot",
-          14
+          12
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          14
+          12
         ],
         [
           "智能体",
-          9
-        ],
-        [
-          "codex",
-          6
-        ],
-        [
-          "api",
-          6
+          8
         ],
         [
           "claude",
-          6
-        ],
-        [
-          "API",
           5
         ],
         [
-          "anthropic",
+          "工作流",
+          5
+        ],
+        [
+          "api",
           4
         ],
         [
-          "mcp",
+          "API",
+          4
+        ],
+        [
+          "codex",
           3
         ],
         [
@@ -54,15 +50,19 @@
         ],
         [
           "openai",
-          2
+          1
         ],
         [
           "chatgpt",
-          2
+          1
         ],
         [
-          "工作流",
-          2
+          "mcp",
+          1
+        ],
+        [
+          "anthropic",
+          1
         ]
       ]
     },
@@ -71,17 +71,13 @@
       "count": 1,
       "top_sources": [
         [
-          "Hugging Face Blog",
+          "OpenAI News",
           1
         ]
       ],
       "top_keywords": [
         [
-          "agent",
-          1
-        ],
-        [
-          "benchmark",
+          "openai",
           1
         ],
         [
@@ -111,52 +107,6 @@
         "strong:mcp",
         "weak:api",
         "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5ec7589f776981e1a5db1af76dd7f13777bc30ea",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "我认为 Anthropic 和 OpenAI 找到了产品市场契合点",
-      "url": "https://simonwillison.net/2026/May/27/product-market-fit",
-      "published_at": "2026-05-27T16:38:35Z",
-      "summary": "Anthropic 与 OpenAI 通过编程智能体找到了产品市场契合点，这导致企业客户成本显著上升。两家公司已于 2026 年 4 月前后调整了企业套餐定价，从原先的高额折扣改为与 API 用量挂钩。Anthropic Enterprise 套餐变为每席位 20 美元/月外加 API 费用，OpenAI Codex 则按 API token 用量计费。同期发布的新模型 GPT-5.5（4月23日）和 Opus 4.7（4月16日）的 API 定价也显著高于前代版本。",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:codex",
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c9947a37806ff432f4cbbd38ed251e542d716055",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Runway 推出 Model Context Protocol 服务器",
-      "url": "https://runwayml.com/news/mcp",
-      "published_at": "2026-05-27T14:09:52Z",
-      "summary": "Runway 正式推出 Runway MCP 服务器，允许任何兼容 MCP 的 AI 智能体（如 Claude、ChatGPT、Cursor）在对话界面中直接生成图像与视频，无需切换工作流。该服务器接入了 Runway 最新的多款 SOTA 模型，包括 Gen-4.5、Seedance 2.0、GPT Image 2、Kling 3.0 及 Nano Banana Pro。其应用场景涵盖为产品制作营销视频、批量生成网站视觉素材、创作角色广告以及在应用开发中集成视觉内容。用户设置简便，通过 runwayml.com/mcp 添加服务器并登录现有 Runway 账户即可使用，无需单独申请 API 密钥。",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:chatgpt",
-        "strong:mcp",
-        "strong:model context protocol",
-        "weak:api",
-        "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -205,62 +155,83 @@
       "is_ai_related": true
     },
     {
-      "id": "17e633a41768149649f9d669be672dc6a481a82a",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
-      "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
-      "published_at": "2026-05-27T17:20:29Z",
-      "summary": null,
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:benchmark",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a1e3c22b295374c71bd440c32b748da816703d8c",
+      "id": "f7ec3d7ca670599e04629a01e5f9081e29b6db47",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Krea 2 API发布，支持多平台与智能体",
-      "url": "https://x.com/krea_ai/status/2059650622203515143",
-      "published_at": "2026-05-27T14:59:09Z",
-      "summary": "今天，我们发布了 Krea 2 的 API。 现已在 @fal 或 @ComfyUI 等平台可用，通过 @NousResearch 的 Hermes 等智能体使用，并全面支持 Claude、Codex 或 OpenClaw。 了解如何设置 👇",
-      "relevance_score": 7,
+      "title": "在Claude Code中引入动态工作流",
+      "url": "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code",
+      "published_at": "2026-05-28T17:21:01Z",
+      "summary": "Claude Code 推出\"动态工作流\"功能，使 Claude 能端到端处理复杂任务。该功能通过动态编写脚本，在单个会话中并行运行数十到数百个子智能体来完成工作，并会在结果呈现前进行验证。它适用于跨代码库的 bug 查找、大规模迁移（如将 Bun 从 Zig 移植到 Rust）等需要多角度分析的任务。该功能现已在研究预览阶段可用，支持 Claude Code CLI、桌面端、VS Code 扩展以及 API、Amazon Bedrock、Vertex AI 等平台，面向 Max、Team 及已启用的 Enterprise 计划用户。",
+      "relevance_score": 6,
       "relevance_reasons": [
         "strong:claude",
-        "strong:codex",
         "strong:智能体",
         "weak:api",
+        "weak:工作流",
         "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "00826c7f0b906b8d1ae4416a40dea2f88d302f51",
+      "id": "4f51a1c46516d9652207d80aecedeedde86a1698",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "社会科学中的编码智能体",
-      "url": "https://www.anthropic.com/research/coding-agents-social-sciences",
-      "published_at": "2026-05-27T23:07:32Z",
-      "summary": "一项针对1260名定量社会科学家的调查显示，虽然81%的受访者用过AI聊天机器人，但仅有20%将Claude Code、Codex等编码智能体常规应用于工作。采用率存在显著差异：以男性名字命名的研究者使用率是女性研究者的两倍；顶尖大学研究者可能性高出40%。用户产出更多工作论文和基金申请，但这可能反映早期采用者自身差异。研究者对AI助力撰写可发表论文更乐观，但对重塑整个社会科学领域持保留态度。这是一项初步调查，更深入研究仍在进行中。",
+      "title": "Claude Opus 4.8 发布：在编码、智能体技能与推理方面实现全面升级",
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "published_at": "2026-05-28T17:05:39Z",
+      "summary": "Anthropic 发布了新一代模型 Claude Opus 4.8，作为 Opus 4.7 的升级版本，其在编码、智能体技能、推理和实用知识工作等各项基准测试中均取得进步。Claude Opus 4.8 现已可用，价格与前代相同。同步推出的新功能包括：用户可控制任务投入程度、Claude Code 新增\"动态工作流\"特性，以及 Opus 4.8 的 2.5 倍速模式价格降低为以往的三分之一。早期测试者反馈其在智能体任务中的判断力更可靠、工具调用更高效。该模型在 Online-Mind2Web 测评中得分 84%，超越了 Opus 4.7 和 GPT-5.5。此外，其诚实度与对齐表现也得到提升，代码错误漏检率降低了约 75%。",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:智能体",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "cb0b89a0218ee7f16bee894340d4f6cd8d4d6d98",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "OpenAI’s Frontier Governance Framework",
+      "url": "https://openai.com/index/openai-frontier-governance-framework",
+      "published_at": "2026-05-28T00:00:00Z",
+      "summary": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "11768037d78c101fd8a377e168179f085421e5e2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Code 新增动态工作流功能",
+      "url": "https://x.com/ClaudeDevs/status/2060044853279617150",
+      "published_at": "2026-05-28T17:05:41Z",
+      "summary": "Claude Code 新功能（研究预览）：动态工作流。 Claude 会即时编写一个编排脚本，然后并行启动大量协调的子智能体来处理你最复杂的任务。 在提示词中使用\"workflow\"一词即可开始使用。",
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:claude",
-        "strong:codex",
         "strong:智能体",
+        "weak:workflow",
+        "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -281,6 +252,25 @@
         "strong:agent",
         "strong:智能体",
         "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "59a4dac1ac5fc8af1722e3e4ede6c9dc4668dd3f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "SGLang 团队与 AMD 合作，使 AMD InstinctTM MI355X GPU 的大规模 DeepSeek-R1 分离式推理在总拥有成本上具备竞争力",
+      "url": "https://www.lmsys.org/blog/2026-05-28-mori",
+      "published_at": "2026-05-28T16:34:57Z",
+      "summary": "SGLang 与 AMD 团队合作，通过一系列全栈优化，使 AMD InstinctTM MI355X GPU 在运行 DeepSeek-R1 大模型推理时实现了极具竞争力的总拥有成本。在 129 tok/s/user 的交互延迟下，其成本为每百万 token $0.169，比 NVIDIA B200（Dynamo TRT-LLM）方案低 5%，比 B200（SGLang）方案低 40%。吞吐量方面，24 块 AMD GPU 达到 2，436 tok/s/GPU，比使用 48 块 GPU 的 B200 SGLang 方案每 GPU 吞吐量高 1.25 倍。核心优化包括：MoRI 混合 FP4/FP8 量化全到全通信、MoRI-IO KV Cache 后端、两批重叠与 SDMA、ROCm 上的 Specv2 MT",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:llm",
+        "strong:大模型",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -325,77 +315,39 @@
       "is_ai_related": true
     },
     {
-      "id": "f0925125660c47f34b41ebae7aa98d812943e3b6",
+      "id": "d6e731607f7b16dbcaa7df538bd643cca9512f0d",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "AI智能体的零信任安全框架",
-      "url": "https://claude.com/blog/zero-trust-for-ai-agents",
-      "published_at": "2026-05-27T18:06:27Z",
-      "summary": "Anthropic 发布了针对企业部署自主 AI 智能体的安全框架，指出前沿大语言模型正将漏洞利用周期从数月压缩至数小时。部署智能体面临双重风险：基础设施易受 AI 加速攻击，且智能体自身具备自主决策与执行能力。文章提出一个三层零信任架构（基础、高级、优化级）及八阶段实施流程，并概述了提示注入、工具投毒、记忆投毒等特有威胁。",
-      "relevance_score": 3,
+      "title": "Data Formulator 推出企业数据 AI 分析工具",
+      "url": "https://x.com/MSFTResearch/status/2060028999229735199",
+      "published_at": "2026-05-28T16:02:41Z",
+      "summary": "Data Formulator 为企业数据工作流引入了 AI 驱动的分析功能。数据团队可以轻松将企业数据带入一个 AI 就绪的工作空间，用户可以使用 AI 智能体来探索、分析和可视化数据，将原始数据转化为可操作的洞察：https：//msft.it/6013vZzUl",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:anthropic",
         "strong:智能体",
+        "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "fe39e4850ef1a5cc82bcd9f0bd291c44a1afb0fb",
+      "id": "ee6bbbd2144a459ba0bbce6ab3a573a75857e90e",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Google Pay 最新更新",
-      "url": "https://developers.googleblog.com/the-latest-updates-to-google-pay",
-      "published_at": "2026-05-27T17:39:01Z",
-      "summary": "Google Pay 正向\"智能体商务\"演进，推出了通用商务协议和新的 MCP 服务器，允许 AI 智能体管理集成与分析趋势。Android 平台更新引入了动态回调以支持快速结账，并通过 WebView 将支付功能扩展至社交媒体应用。此外，平台还推出了跨设备生物认证和新的交易信号，旨在帮助商家减少流程摩擦。",
-      "relevance_score": 3,
+      "title": "社区如何利用Tunix和TPU训练Gemma学会\"思考\"",
+      "url": "https://developers.googleblog.com/how-the-community-trained-gemma-to-think-with-tunix-and-tpus",
+      "published_at": "2026-05-28T15:41:17Z",
+      "summary": "Google在Kaggle举办的Tunix黑客马拉松，挑战开发者利用TPU和有限算力，将小型基础模型转变为通用推理引擎。获胜团队通过多阶段后训练流程实现了这一目标，该流程结合了监督微调（SFT）与GRPO、SimPO等先进对齐技术。比赛结果表明，社区能够借助开源资源成功训练出高能力的结构化推理模型。",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:mcp",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0d7b5d433cb10203a637162cf295f9802b306957",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Marketplace 新增五家合作伙伴",
-      "url": "https://x.com/claudeai/status/2059662933924123044",
-      "published_at": "2026-05-27T15:48:04Z",
-      "summary": "Claude Marketplace 新增成员：@augmentcode、@boltdotnew、@coderabbitai、@hebbia 和 @WeAreLegora。 您现有的 Anthropic 消费承诺可用于购买其 Claude 驱动的产品。 了解更多：http：//claude.com/platform/marketplace",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "be10809c66a0836b9dab6402c6371e7d3c607b88",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "教皇没对AGI上头",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/937933/pope-ai-encyclical-tech-industry-reactions",
-      "published_at": "2026-05-27T12:00:00Z",
-      "summary": "教皇 Leo XIV 发布题为《Magnifica Humanitas》的通谕，警告人工智能的使用绝非纯粹技术问题，当其进入影响人类生活的过程时，便触及权利、机会、地位与自由。通谕发布时，Anthropic 联合创始人 Christopher Olah 出席。文件引发了科技界内外的广泛反应。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:人工智能",
+        "strong:推理模型",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -408,11 +360,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 971,
-      "kept_count": 0,
+      "fetched_count": 972,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 819,
-      "checked_at": "2026-05-28T11:56:05.574981Z"
+      "latency_ms": 735,
+      "checked_at": "2026-05-28T17:34:19.448647Z"
     },
     {
       "source_id": "openai-skills",
@@ -423,8 +375,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 381,
-      "checked_at": "2026-05-28T11:56:05.956604Z"
+      "latency_ms": 194,
+      "checked_at": "2026-05-28T17:34:19.643425Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -432,11 +384,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 216,
+      "fetched_count": 217,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 362,
-      "checked_at": "2026-05-28T11:56:06.321943Z"
+      "latency_ms": 87,
+      "checked_at": "2026-05-28T17:34:19.734241Z"
     },
     {
       "source_id": "google-deepmind",
@@ -447,8 +399,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 333,
-      "checked_at": "2026-05-28T11:56:06.657037Z"
+      "latency_ms": 238,
+      "checked_at": "2026-05-28T17:34:19.974072Z"
     },
     {
       "source_id": "google-ai",
@@ -459,8 +411,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 209,
-      "checked_at": "2026-05-28T11:56:06.866446Z"
+      "latency_ms": 122,
+      "checked_at": "2026-05-28T17:34:20.097341Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -469,10 +421,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 787,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 266,
-      "checked_at": "2026-05-28T11:56:07.143922Z"
+      "latency_ms": 279,
+      "checked_at": "2026-05-28T17:34:20.388326Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -483,8 +435,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 194,
-      "checked_at": "2026-05-28T11:56:07.338701Z"
+      "latency_ms": 102,
+      "checked_at": "2026-05-28T17:34:20.490713Z"
     },
     {
       "source_id": "github-changelog",
@@ -495,8 +447,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 38,
-      "checked_at": "2026-05-28T11:56:07.376973Z"
+      "latency_ms": 25,
+      "checked_at": "2026-05-28T17:34:20.516416Z"
     },
     {
       "source_id": "aihot",
@@ -505,10 +457,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 15,
+      "kept_count": 12,
       "error": null,
-      "latency_ms": 1619,
-      "checked_at": "2026-05-28T11:56:08.998264Z"
+      "latency_ms": 1472,
+      "checked_at": "2026-05-28T17:34:21.990595Z"
     }
   ],
   "control_notes": {
