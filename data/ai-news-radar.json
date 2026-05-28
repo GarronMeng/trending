@@ -1,88 +1,44 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-28T02:32:47.502366Z",
+  "generated_at": "2026-05-28T07:44:09.313930Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 14,
+  "item_count": 16,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 3,
-      "top_sources": [
-        [
-          "OpenAI News",
-          2
-        ],
-        [
-          "Hugging Face Blog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          3
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "codex",
-          2
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "benchmark",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 11,
+      "count": 14,
       "top_sources": [
         [
           "AI Hot",
-          11
+          14
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          11
+          14
         ],
         [
           "智能体",
-          7
+          9
         ],
         [
           "codex",
-          5
+          6
         ],
         [
           "api",
-          5
+          6
         ],
         [
           "claude",
-          5
+          6
         ],
         [
           "API",
-          4
+          5
         ],
         [
           "anthropic",
@@ -90,6 +46,10 @@
         ],
         [
           "mcp",
+          3
+        ],
+        [
+          "agent",
           3
         ],
         [
@@ -101,39 +61,49 @@
           2
         ],
         [
-          "model context protocol",
+          "工作流",
+          2
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "OpenAI News",
           1
         ],
         [
-          "工作流",
+          "Hugging Face Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "benchmark",
           1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "60b5faab1416d13023728096e4ecc4c192604ae5",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Building self-improving tax agents with Codex",
-      "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
-      "published_at": "2026-05-27T07:00:00Z",
-      "summary": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.",
-      "relevance_score": 10,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "strong:agent",
-        "strong:agents",
-        "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "fe08303cc2e058af0f9180d95cf667ae1e6fc659",
       "source_id": "aihot",
@@ -223,6 +193,28 @@
       "is_ai_related": true
     },
     {
+      "id": "fdaf45b779e304428277b32562b8aeda3db7536e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "英伟达推出 AI 框架 Polar，让 Codex 跑分暴涨 594.74%",
+      "url": "https://www.ithome.com/0/956/293.htm",
+      "published_at": "2026-05-28T02:14:52Z",
+      "summary": "英伟达研究团队开源了智能体强化学习框架 Polar。该框架无需重写现有智能体执行框架（如 Codex CLI、Claude Code、Qwen Code、Pi），通过在模型 API 边界放置智能体来接入 GRPO 训练。实验显示，基于 Qwen3.5-4B 模型，Polar 将 Codex 在 SWE-Bench Verified 上的 pass@1 分数从 3.8% 提升至 26.4%（增涨 594.74%）。效率上，其 prefix_merging 技术将训练步骤从 1185 次降至 218 次，速度提升约 5.39 倍，GPU 平均利用率从 20.4% 升至 87.7%。",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "62598262808e611f5b1f1defac7506070fdea0d7",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -300,6 +292,45 @@
         "strong:claude",
         "strong:codex",
         "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e4f9dad7a73da956217aecb5a160488d50d0137b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "阿里云DataWorks推出AI数据智能体",
+      "url": "https://x.com/alibaba_cloud/status/2059840407618396391",
+      "published_at": "2026-05-28T03:33:17Z",
+      "summary": "🚀 认识 DataWorks Data Agent--阿里云的AI数据智能体！ 借助AI简化数据工作流，加速洞察，让数据管理更智能。 了解更多：https：//int.alibabacloud.com/m/1000413560/ #AlibabaCloud #DataWorks #AI #DataAgent #BigData #DataAnalytics",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8602aa58ebba8836f95c1954c1cfcf680cb33ad4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "MuleRun登陆阿里云市场，提供全天候AI劳动力",
+      "url": "https://x.com/alibaba_cloud/status/2059821825140367565",
+      "published_at": "2026-05-28T02:19:27Z",
+      "summary": "在阿里云市场遇见 MuleRun--一个全天候的AI劳动力，用于研究、报告、代码、设计等。功能强大，适合个人使用；企业就绪，适合团队协作--支持SSO、RBAC、私有网络、团队知识管理和无缝集成。 想得更大。让 MuleRun 处理其余事务。 方案起价 $20/月 → https：//int.alibabacloud.com/m/1000413520/ #AlibabaCloud #AIAgents #AIWorkforce #FutureOfWork #EnterpriseAI",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -409,10 +440,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 971,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 677,
-      "checked_at": "2026-05-28T02:32:44.832057Z"
+      "latency_ms": 646,
+      "checked_at": "2026-05-28T07:44:06.014017Z"
     },
     {
       "source_id": "openai-skills",
@@ -423,8 +454,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 302,
-      "checked_at": "2026-05-28T02:32:45.134917Z"
+      "latency_ms": 325,
+      "checked_at": "2026-05-28T07:44:06.339921Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -435,8 +466,8 @@
       "fetched_count": 216,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 108,
-      "checked_at": "2026-05-28T02:32:45.246645Z"
+      "latency_ms": 190,
+      "checked_at": "2026-05-28T07:44:06.533514Z"
     },
     {
       "source_id": "google-deepmind",
@@ -447,8 +478,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 356,
-      "checked_at": "2026-05-28T02:32:45.605082Z"
+      "latency_ms": 385,
+      "checked_at": "2026-05-28T07:44:06.920633Z"
     },
     {
       "source_id": "google-ai",
@@ -459,8 +490,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 234,
-      "checked_at": "2026-05-28T02:32:45.839508Z"
+      "latency_ms": 267,
+      "checked_at": "2026-05-28T07:44:07.188717Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -471,8 +502,8 @@
       "fetched_count": 787,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 342,
-      "checked_at": "2026-05-28T02:32:46.193809Z"
+      "latency_ms": 315,
+      "checked_at": "2026-05-28T07:44:07.515800Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -483,8 +514,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 144,
-      "checked_at": "2026-05-28T02:32:46.338677Z"
+      "latency_ms": 368,
+      "checked_at": "2026-05-28T07:44:07.884493Z"
     },
     {
       "source_id": "github-changelog",
@@ -495,8 +526,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 36,
-      "checked_at": "2026-05-28T02:32:46.375600Z"
+      "latency_ms": 34,
+      "checked_at": "2026-05-28T07:44:07.919216Z"
     },
     {
       "source_id": "aihot",
@@ -505,10 +536,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 14,
+      "kept_count": 16,
       "error": null,
-      "latency_ms": 1113,
-      "checked_at": "2026-05-28T02:32:47.491143Z"
+      "latency_ms": 1387,
+      "checked_at": "2026-05-28T07:44:09.307811Z"
     }
   ],
   "control_notes": {
