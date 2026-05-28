@@ -1,32 +1,40 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-27T17:18:33.035817Z",
+  "generated_at": "2026-05-28T02:32:47.502366Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 13,
+  "item_count": 14,
   "groups": {
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 3,
       "top_sources": [
         [
           "OpenAI News",
+          2
+        ],
+        [
+          "Hugging Face Blog",
           1
         ]
       ],
       "top_keywords": [
         [
+          "official_ai",
+          3
+        ],
+        [
           "openai",
-          1
+          2
         ],
         [
           "codex",
-          1
+          2
         ],
         [
           "agent",
-          1
+          2
         ],
         [
           "agents",
@@ -37,28 +45,44 @@
           1
         ],
         [
-          "official_ai",
+          "benchmark",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 11,
       "top_sources": [
         [
           "AI Hot",
-          9
+          11
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
+          11
+        ],
+        [
+          "智能体",
+          7
+        ],
+        [
+          "codex",
+          5
+        ],
+        [
+          "api",
+          5
         ],
         [
           "claude",
-          6
+          5
+        ],
+        [
+          "API",
+          4
         ],
         [
           "anthropic",
@@ -69,20 +93,12 @@
           3
         ],
         [
-          "人工智能",
-          3
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "智能体",
+          "openai",
           2
         ],
         [
           "chatgpt",
-          1
+          2
         ],
         [
           "model context protocol",
@@ -90,38 +106,6 @@
         ],
         [
           "工作流",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "API",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 3,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          3
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
           1
         ]
       ]
@@ -151,6 +135,52 @@
       "is_ai_related": true
     },
     {
+      "id": "fe08303cc2e058af0f9180d95cf667ae1e6fc659",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI产品支持私有MCP服务器安全连接",
+      "url": "https://x.com/OpenAIDevs/status/2059703536825565499",
+      "published_at": "2026-05-27T18:29:25Z",
+      "summary": "您的团队可以在内部网络中保留MCP服务器，同时ChatGPT、Codex和Responses API通过仅出站HTTPS进行连接。",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "strong:mcp",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5ec7589f776981e1a5db1af76dd7f13777bc30ea",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "我认为 Anthropic 和 OpenAI 找到了产品市场契合点",
+      "url": "https://simonwillison.net/2026/May/27/product-market-fit",
+      "published_at": "2026-05-27T16:38:35Z",
+      "summary": "Anthropic 与 OpenAI 通过编程智能体找到了产品市场契合点，这导致企业客户成本显著上升。两家公司已于 2026 年 4 月前后调整了企业套餐定价，从原先的高额折扣改为与 API 用量挂钩。Anthropic Enterprise 套餐变为每席位 20 美元/月外加 API 费用，OpenAI Codex 则按 API token 用量计费。同期发布的新模型 GPT-5.5（4月23日）和 Opus 4.7（4月16日）的 API 定价也显著高于前代版本。",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:codex",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "c9947a37806ff432f4cbbd38ed251e542d716055",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -170,6 +200,65 @@
         "weak:api",
         "weak:工作流",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0e77e146b099f8174f4513f2395ef40d8b21a171",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+      "url": "https://openai.com/index/cisco",
+      "published_at": "2026-05-27T11:00:00Z",
+      "summary": "Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "62598262808e611f5b1f1defac7506070fdea0d7",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "用好 Coding Agent，重点是两头，尤其是开头的部分，如果一开始就走偏了后面怎么改都改不好。",
+      "url": "https://x.com/dotey/status/2059773942500298934",
+      "published_at": "2026-05-27T23:09:11Z",
+      "summary": "用好 Coding Agent 的关键在于初始规划。方法是先将需求整理后，用最强模型（如 GPT-5.5、Claude Opus 4.7）分别在 Codex、Claude Code、Cursor 的 Plan 模式下生成设计方案，选择最优方案并借鉴其他版本。对于复杂计划，可将其拆分为多个 Phases 并明确要求与验证标准，形成 Markdown 文档。执行时按 Phases 进行，并辅以人工审核纠偏。最后的代码审核（Code Review）用 GPT-5.5 审核代码质量与设计符合度即可。应避免让多个智能体交叉 Review，否则可能导致代码越改越多。",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "strong:agent",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "17e633a41768149649f9d669be672dc6a481a82a",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+      "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+      "published_at": "2026-05-27T17:20:29Z",
+      "summary": null,
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:benchmark",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -196,100 +285,80 @@
       "is_ai_related": true
     },
     {
-      "id": "7372b23666cd396fb7c139e7358155f29c7d9646",
+      "id": "00826c7f0b906b8d1ae4416a40dea2f88d302f51",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "据报道Claude Mythos以\"巧妙简洁的证明\"解决了OpenAI里程碑式的Erdős问题",
-      "url": "https://the-decoder.com/claude-mythos-reportedly-solves-openais-landmark-erdos-problem-with-a-cute-simple-proof",
-      "published_at": "2026-05-26T18:31:07Z",
-      "summary": "Anthropic工程师Sholto Douglas表示，Claude Mythos在周末期间解决了OpenAI提出的Erdős单位距离猜想问题，并给出了一个\"巧妙简洁的证明\"。这一成果被描述为人工智能在数学发现领域存在\"严重超前\"迹象。",
-      "relevance_score": 7,
+      "title": "社会科学中的编码智能体",
+      "url": "https://www.anthropic.com/research/coding-agents-social-sciences",
+      "published_at": "2026-05-27T23:07:32Z",
+      "summary": "一项针对1260名定量社会科学家的调查显示，虽然81%的受访者用过AI聊天机器人，但仅有20%将Claude Code、Codex等编码智能体常规应用于工作。采用率存在显著差异：以男性名字命名的研究者使用率是女性研究者的两倍；顶尖大学研究者可能性高出40%。用户产出更多工作论文和基金申请，但这可能反映早期采用者自身差异。研究者对AI助力撰写可发表论文更乐观，但对重塑整个社会科学领域持保留态度。这是一项初步调查，更深入研究仍在进行中。",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
         "strong:claude",
-        "strong:人工智能",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5ffa4255cdaf846b1c618d39703874096fb2bfb2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "我们如何对不同产品中的Claude进行隔离控制",
-      "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
-      "published_at": "2026-05-26T18:11:06Z",
-      "summary": "Anthropic通过三重机制控制Claude智能体的部署风险，包括用户误用、模型异常行为和外部攻击。其防护策略聚焦于三个层面：通过沙箱、虚拟机和网络出口控制限制智能体运行环境；利用系统提示词和模型训练引导其行为；以及对MCP服务器、第三方插件等外部内容实施细粒度权限管理。文章以Claude Code、claude.ai和Claude Cowork为例，阐述了不同产品如何设计对应的隔离架构。",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:mcp",
+        "strong:codex",
         "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "eac369576b42c80d8a7e03b1c9e30990f1758291",
+      "id": "68f71b14a304d687d957f67b449150e940367d08",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Claude Code v2.1.152 更新发布",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
-      "published_at": "2026-05-27T01:30:59Z",
-      "summary": "Claude Code 发布 v2.1.152 版本更新。核心改进包括：`/code-review --fix` 现在会将审查建议直接应用于工作目录；技能与斜杠命令支持通过 frontmatter 的 `disallowed-tools` 移除模型工具；新增 `/reload-skills` 命令可不重启会话重新扫描技能目录；`SessionStart` 钩子现可返回 `reloadSkills： true` 重新扫描技能，并可通过 `hookSpecificOutput.sessionTitle` 设置会话标题；新增 `MessageDisplay` 钩子事件以变换或隐藏助手消息。其他更新涉及插件市场管理、主模型不可用时自动切换至 `--fallback-model`、会话用量统计优化等。同时修复了终端样式退",
-      "relevance_score": 4,
+      "title": "Cognition成为全球最大独立智能体实验室",
+      "url": "https://x.com/swyx/status/2059717021944926238",
+      "published_at": "2026-05-27T19:23:00Z",
+      "summary": "Cognition宣布已成为全球最大的独立智能体实验室。公司完成超10亿美元融资，估值达260亿美元，由Lux Capital、General Catalyst等领投。其企业使用量自年初增长超10倍，年化收入增至4.92亿美元。Cognition于两年前推出Devin，定位为首个AI软件工程师。公司强调其拥有多项领先优势，包括首个编码智能体、顶级代码审查能力等，并得到了Peter Thiel的重大投资。",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:claude",
-        "strong:mcp",
-        "weak:tool",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "2013e229000f18c10a25750476fc57012395ad4a",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot Memory has more controls for deletion, scope, and the Copilot CLI",
-      "url": "https://github.blog/changelog/2026-05-26-copilot-memory-has-more-controls-for-deletion-scope-and-the-copilot-cli",
-      "published_at": "2026-05-26T21:05:28Z",
-      "summary": "Copilot Memory now includes improved memory deletion, adds a repository-level off switch, and brings further memory controls into the Copilot CLI. Copilot Memory is in public preview and available to… The post Copilot Memory has more controls for deletion, scope, and the Copilot CLI appeared first on The GitHub Blog .",
+      "id": "f0925125660c47f34b41ebae7aa98d812943e3b6",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "AI智能体的零信任安全框架",
+      "url": "https://claude.com/blog/zero-trust-for-ai-agents",
+      "published_at": "2026-05-27T18:06:27Z",
+      "summary": "Anthropic 发布了针对企业部署自主 AI 智能体的安全框架，指出前沿大语言模型正将漏洞利用周期从数月压缩至数小时。部署智能体面临双重风险：基础设施易受 AI 加速攻击，且智能体自身具备自主决策与执行能力。文章提出一个三层零信任架构（基础、高级、优化级）及八阶段实施流程，并概述了提示注入、工具投毒、记忆投毒等特有威胁。",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:anthropic",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "08046b27bcc3fa997e9d3dad3d334b5e46c43585",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Target Copilot models to organizations with model rules",
-      "url": "https://github.blog/changelog/2026-05-26-target-copilot-models-to-organizations-with-model-rules",
-      "published_at": "2026-05-26T19:47:22Z",
-      "summary": "Enterprise owners now have granular control over which GitHub Copilot models are available to each organization. With targeted model rules, you can allow specific models for specific organizations instead of… The post Target Copilot models to organizations with model rules appeared first on The GitHub Blog .",
+      "id": "fe39e4850ef1a5cc82bcd9f0bd291c44a1afb0fb",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google Pay 最新更新",
+      "url": "https://developers.googleblog.com/the-latest-updates-to-google-pay",
+      "published_at": "2026-05-27T17:39:01Z",
+      "summary": "Google Pay 正向\"智能体商务\"演进，推出了通用商务协议和新的 MCP 服务器，允许 AI 智能体管理集成与分析趋势。Android 平台更新引入了动态回调以支持快速结账，并通过 WebView 将支付功能扩展至社交媒体应用。此外，平台还推出了跨设备生物认证和新的交易信号，旨在帮助商家减少流程摩擦。",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:mcp",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -330,62 +399,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "9a4a04711fdd39110c8fdde089bbb0086584ab34",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "通过万亿参数与 Hub Bucket 实现增量权重同步：TRL 中的增量权重同步",
-      "url": "https://huggingface.co/blog/delta-weight-sync",
-      "published_at": "2026-05-27T00:00:00Z",
-      "summary": "本文标题涉及 Hugging Face TRL 框架中一项具体的增量权重同步技术。正文重申了 Hugging Face 的核心使命，即致力于通过开源和开放科学，来推动人工智能的进步与普及。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "strong:人工智能",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8c276ed0d3ef0a326eff2fabf81110a705c89035",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Gemini Omni 视频提示词使用指南",
-      "url": "https://x.com/GoogleAI/status/2059381218660270435",
-      "published_at": "2026-05-26T21:08:38Z",
-      "summary": "Google 发布了其多模态模型 Gemini Omni 的视频生成功能使用指南。该模型可通过 Gemini 应用、Google Flow 等平台体验。指南包含五项提示词技巧：利用模型已有的现实世界知识进行简洁描述；精确控制文本在视频中的渲染与排版；使用专业镜头指令（如推拉摇移）像电影摄影师一样调度画面；通过迭代编辑高效修改视频；以及在生成中直接调整角色的动作节奏或情绪。其核心在于通过精准的提示词引导模型生成复杂且可控的视频内容。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "3012624fd324c155ee0e92a4bc46782467fd57bd",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Code Quality: Repository Enablement API",
-      "url": "https://github.blog/changelog/2026-05-26-github-code-quality-repository-enablement-api",
-      "published_at": "2026-05-26T20:35:06Z",
-      "summary": "You can now programmatically enable and configure GitHub Code Quality on individual repositories using the new Repository Enablement API, available today in public preview. Two new endpoints are now available:… The post GitHub Code Quality: Repository Enablement API appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:API"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -395,11 +408,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 969,
-      "kept_count": 1,
+      "fetched_count": 971,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 576,
-      "checked_at": "2026-05-27T17:18:30.227237Z"
+      "latency_ms": 677,
+      "checked_at": "2026-05-28T02:32:44.832057Z"
     },
     {
       "source_id": "openai-skills",
@@ -410,8 +423,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 289,
-      "checked_at": "2026-05-27T17:18:30.517310Z"
+      "latency_ms": 302,
+      "checked_at": "2026-05-28T02:32:45.134917Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -422,8 +435,8 @@
       "fetched_count": 216,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 99,
-      "checked_at": "2026-05-27T17:18:30.619863Z"
+      "latency_ms": 108,
+      "checked_at": "2026-05-28T02:32:45.246645Z"
     },
     {
       "source_id": "google-deepmind",
@@ -434,8 +447,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 293,
-      "checked_at": "2026-05-27T17:18:30.914422Z"
+      "latency_ms": 356,
+      "checked_at": "2026-05-28T02:32:45.605082Z"
     },
     {
       "source_id": "google-ai",
@@ -446,8 +459,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 260,
-      "checked_at": "2026-05-27T17:18:31.175383Z"
+      "latency_ms": 234,
+      "checked_at": "2026-05-28T02:32:45.839508Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -456,10 +469,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 787,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 226,
-      "checked_at": "2026-05-27T17:18:31.412739Z"
+      "latency_ms": 342,
+      "checked_at": "2026-05-28T02:32:46.193809Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -470,8 +483,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 153,
-      "checked_at": "2026-05-27T17:18:31.566779Z"
+      "latency_ms": 144,
+      "checked_at": "2026-05-28T02:32:46.338677Z"
     },
     {
       "source_id": "github-changelog",
@@ -480,10 +493,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-05-27T17:18:31.596378Z"
+      "latency_ms": 36,
+      "checked_at": "2026-05-28T02:32:46.375600Z"
     },
     {
       "source_id": "aihot",
@@ -492,10 +505,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 10,
+      "kept_count": 14,
       "error": null,
-      "latency_ms": 1428,
-      "checked_at": "2026-05-27T17:18:33.025997Z"
+      "latency_ms": 1113,
+      "checked_at": "2026-05-28T02:32:47.491143Z"
     }
   ],
   "control_notes": {
