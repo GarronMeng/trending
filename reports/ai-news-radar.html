@@ -43,17 +43,30 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>3</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>18</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>0</b><span>聚合源条目</span></div>
+        <div class="stat"><b>15</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-29T02:37:04.698237Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-29T07:42:21.459285Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-29T00:00:01Z</span>
+        <strong>Score 9</strong>
+      </div>
+      <h3><a href="https://x.com/StepFun_ai/status/2060149124117475791" target="_blank" rel="noreferrer">阶跃星辰 Step 3.7 Flash 发布，聚焦智能体效率</a></h3>
+      <p class='summary'>阶跃星辰（Step）发布了开源大模型 Step 3.7 Flash，主打智能体（Agent）工作流的效率。该模型在 ClawEval-1.1（67.1分）和 SimpleVQA Search（79.2分）评测中排名第一。其架构为 198B 参数的 MoE，约 11B 为活跃参数，支持 256K 上下文。模型具备多模态理解能力，能处理图像、文档并生成代码或调用工具执行任务。在工具使用方面，它致力于高可靠性，τ2-bench 得分超过 98%。Step 3.7 Flash 兼容 Claude Code、MCP 协议等工具链，并支持在 Mac Studio M4 Max 等设备上本地运行。模型权重以 Apache 2.0 许可开源。</p>
+      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>strong:mcp</span><span>strong:大模型</span><span>weak:eval</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>GitHub Changelog</span>
@@ -82,6 +95,110 @@
 
     <article class="card">
       <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-28T18:41:20Z</span>
+        <strong>Score 6</strong>
+      </div>
+      <h3><a href="https://developers.googleblog.com/supercharge-your-integration-workflow-with-the-google-pay-wallet-developer-mcp-server" target="_blank" rel="noreferrer">使用 Google Pay &amp; Wallet Developer MCP server 加速你的集成工作流</a></h3>
+      <p class='summary'>Google 推出 Google Pay &amp; Wallet Developer MCP server，这是一款开放标准工具，旨在将 AI 开发助手和 IDE 安全连接到实时的 API 与账户上下文。开发者无需离开开发环境，即可搜索官方文档、验证 Wallet pass 定义、检查集成状态以及管理商户账户。该集成旨在通过减少上下文切换并提供实时、可靠的 AI 支持来减少开发摩擦，从而加速开发工作流。</p>
+      <div class="tags"><span>strong:mcp</span><span>weak:api</span><span>weak:developer</span><span>weak:开发者</span><span>weak:工作流</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-28T17:21:01Z</span>
+        <strong>Score 6</strong>
+      </div>
+      <h3><a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code" target="_blank" rel="noreferrer">在Claude Code中引入动态工作流</a></h3>
+      <p class='summary'>Claude Code 推出&quot;动态工作流&quot;功能，使 Claude 能端到端处理复杂任务。该功能通过动态编写脚本，在单个会话中并行运行数十到数百个子智能体来完成工作，并会在结果呈现前进行验证。它适用于跨代码库的 bug 查找、大规模迁移（如将 Bun 从 Zig 移植到 Rust）等需要多角度分析的任务。该功能现已在研究预览阶段可用，支持 Claude Code CLI、桌面端、VS Code 扩展以及 API、Amazon Bedrock、Vertex AI 等平台，面向 Max、Team 及已启用的 Enterprise 计划用户。</p>
+      <div class="tags"><span>strong:claude</span><span>strong:智能体</span><span>weak:api</span><span>weak:工作流</span><span>weak:API</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-28T17:05:39Z</span>
+        <strong>Score 6</strong>
+      </div>
+      <h3><a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank" rel="noreferrer">Claude Opus 4.8 发布：在编码、智能体技能与推理方面实现全面升级</a></h3>
+      <p class='summary'>Anthropic 发布了新一代模型 Claude Opus 4.8，作为 Opus 4.7 的升级版本，其在编码、智能体技能、推理和实用知识工作等各项基准测试中均取得进步。Claude Opus 4.8 现已可用，价格与前代相同。同步推出的新功能包括：用户可控制任务投入程度、Claude Code 新增&quot;动态工作流&quot;特性，以及 Opus 4.8 的 2.5 倍速模式价格降低为以往的三分之一。早期测试者反馈其在智能体任务中的判断力更可靠、工具调用更高效。该模型在 Online-Mind2Web 测评中得分 84%，超越了 Opus 4.7 和 GPT-5.5。此外，其诚实度与对齐表现也得到提升，代码错误漏检率降低了约 75%。</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:智能体</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-29T07:18:53Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://www.ithome.com/0/957/154.htm" target="_blank" rel="noreferrer">谷歌 DeepMind CEO 哈萨比斯：AGI 最快三年内到来，研发速度远超预期</a></h3>
+      <p class='summary'>谷歌 DeepMind 首席执行官德米斯·哈萨比斯预测，AGI 研发速度远超预期，最快可能在 2029 年至 2030 年前后出现。作为 AlphaGo、AlphaFold 的主导者，他认为当前 AI 智能体是未来更强智能的预演，随着多模态和自主决策能力成熟，三年内迎来 AGI 关键突破已非科幻。但他同时警示，全球社会对 AGI 到来的准备严重不足，必须提前建立规则与防护机制。</p>
+      <div class="tags"><span>strong:deepmind</span><span>strong:智能体</span><span>strong:多模态</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-28T23:54:56Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://simonwillison.net/2026/May/28/llm-anthropic" target="_blank" rel="noreferrer">llm-anthropic 0.25.1</a></h3>
+      <p class='summary'>llm-anthropic 发布 0.25.1 版本。主要更新包括：新增 Claude Opus 4.8 （`claude-opus-4.8`） 模型；为账户启用了该功能的组织新增了 `-o fast 1` 选项以使用快速模式；调整了各模型的默认 `max_tokens` 值，使其直接使用模型的最大输出长度，而非固定的 8，192。</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:llm</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-28T23:33:21Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://x.com/OpenRouter/status/2060142412408717518" target="_blank" rel="noreferrer">别只看基准测试，要看全面表现</a></h3>
+      <p class='summary'>不要只依赖基准测试；要看全面情况！ 试试我们的新比较页面，它还能让你可视化模型性能：https：//openrouter.ai/compare/openai/gpt-5.5/anthropic/claude-opus-4.7/anthropic/claude-opus-4.8</p>
+      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>strong:claude</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-28T18:35:40Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://www.anthropic.com/news/series-h" target="_blank" rel="noreferrer">Anthropic 完成 650 亿美元 H 轮融资，估值达 9650 亿美元</a></h3>
+      <p class='summary'>Anthropic 宣布完成由 Altimeter Capital 等领投的 650 亿美元 H 轮融资，投后估值达 9650 亿美元。公司表示其旗舰模型 Claude 的企业部署持续增长，年化收入已突破 470 亿美元。此轮融资将用于推进 AI 安全与可解释性研究、扩展算力以满足 Claude 的需求，并规模化产品与合作伙伴关系。Anthropic 近期已显著扩大计算容量，并宣布 Claude 已登陆 AWS、Google Cloud 和 Microsoft Azure 三大云平台。</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-29T01:11:47Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://x.com/shao__meng/status/2060167182777249886" target="_blank" rel="noreferrer">Cursor 团队发布《开发者习惯报告》</a></h3>
+      <p class='summary'>报告显示，AI正深刻改变开发工作形态。开发者周均代码产出从约3.6K行增至8.6K行，更大规模的PR（千行以上）占比上升。AI智能体在单次会话中的工具调用数增加约30%，正在处理更复杂的任务。同时，被接受的AI代码在60分钟后的留存率从约76%提升至约81%，表明更多AI生成内容进入了实际代码库。这些趋势共同指向AI已从个人辅助工具，演进为推动开发向更大规模任务与自动化基础设施发展的核心力量。</p>
+      <div class="tags"><span>strong:智能体</span><span>weak:开发者</span><span>weak:自动化</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
         <span>GitHub Changelog</span>
         <span>official_rss</span>
         <span>2026-05-28T21:09:44Z</span>
@@ -91,21 +208,99 @@
       <p class='summary'>CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.25.5, which includes accuracy improvements across C/C++,… The post CodeQL 2.25.5 improves query accuracy for GitHub Actions appeared first on The GitHub Blog .</p>
       <div class="tags"><span>source:actions</span></div>
     </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-28T17:25:59Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://x.com/googleaidevs/status/2060049962356916377" target="_blank" rel="noreferrer">Nano Banana Pro与Nano Banana 2正式发布</a></h3>
+      <p class='summary'>🍌 Nano Banana Pro 【gemini-3-pro-image】 和 Nano Banana 2 【gemini-3.1-flash-image】 现已正式发布，可通过 Gemini API 投入生产使用。查看这些优秀的社区示例，了解两个模型的实际能力 🧵↓</p>
+      <div class="tags"><span>strong:gemini</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-28T16:34:57Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://www.lmsys.org/blog/2026-05-28-mori" target="_blank" rel="noreferrer">SGLang 团队与 AMD 合作，使 AMD InstinctTM MI355X GPU 的大规模 DeepSeek-R1 分离式推理在总拥有成本上具备竞争力</a></h3>
+      <p class='summary'>SGLang 与 AMD 团队合作，通过一系列全栈优化，使 AMD InstinctTM MI355X GPU 在运行 DeepSeek-R1 大模型推理时实现了极具竞争力的总拥有成本。在 129 tok/s/user 的交互延迟下，其成本为每百万 token $0.169，比 NVIDIA B200（Dynamo TRT-LLM）方案低 5%，比 B200（SGLang）方案低 40%。吞吐量方面，24 块 AMD GPU 达到 2，436 tok/s/GPU，比使用 48 块 GPU 的 B200 SGLang 方案每 GPU 吞吐量高 1.25 倍。核心优化包括：MoRI 混合 FP4/FP8 量化全到全通信、MoRI-IO KV Cache 后端、两批重叠与 SDMA、ROCm 上的 Specv2 MT</p>
+      <div class="tags"><span>strong:llm</span><span>strong:大模型</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-28T20:55:06Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://x.com/xai/status/2060102590122385460" target="_blank" rel="noreferrer">Grok Build 0.2.7 发布，新增多项功能</a></h3>
+      <p class='summary'>Grok Build 0.2.7 现已发布，包含 /usage、/login、跨子智能体共享终端，以及改进的图像理解功能。 所有更新请查看 https：//x.ai/build/changelog</p>
+      <div class="tags"><span>strong:智能体</span><span>weak:changelog</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-28T18:20:09Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://x.com/rohanpaul_ai/status/2060063592448446778" target="_blank" rel="noreferrer">hexoai开源SIA框架：AI智能体实现递归自我改进</a></h3>
+      <p class='summary'>hexoai开源了SIA（自我改进AI）框架。该框架展示了AI智能体不仅能优化其外部工作流（harness），还能通过任务反馈直接更新自身的模型权重，从而在领域知识和能力上实现自主提升，而非仅依赖人类提供的提示或工具改进。论文报告显示，SIA在LawBench基准上性能提升56.6%，在GPU kernels运行上耗时减少91.9%，在单细胞RNA去噪任务中相比基线提升502%。</p>
+      <div class="tags"><span>strong:智能体</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-28T16:02:41Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://x.com/MSFTResearch/status/2060028999229735199" target="_blank" rel="noreferrer">Data Formulator 推出企业数据 AI 分析工具</a></h3>
+      <p class='summary'>Data Formulator 为企业数据工作流引入了 AI 驱动的分析功能。数据团队可以轻松将企业数据带入一个 AI 就绪的工作空间，用户可以使用 AI 智能体来探索、分析和可视化数据，将原始数据转化为可操作的洞察：https：//msft.it/6013vZzUl</p>
+      <div class="tags"><span>strong:智能体</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-05-28T15:41:17Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://developers.googleblog.com/how-the-community-trained-gemma-to-think-with-tunix-and-tpus" target="_blank" rel="noreferrer">社区如何利用Tunix和TPU训练Gemma学会&quot;思考&quot;</a></h3>
+      <p class='summary'>Google在Kaggle举办的Tunix黑客马拉松，挑战开发者利用TPU和有限算力，将小型基础模型转变为通用推理引擎。获胜团队通过多阶段后训练流程实现了这一目标，该流程结合了监督微调（SFT）与GRPO、SimPO等先进对齐技术。比赛结果表明，社区能够借助开源资源成功训练出高能力的结构化推理模型。</p>
+      <div class="tags"><span>strong:推理模型</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>973</td><td>1</td><td>766ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>362ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>219</td><td>0</td><td>104ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>442ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>241ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>787</td><td>0</td><td>306ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>139ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>32ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>0</td><td>0</td><td>882ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>974</td><td>1</td><td>2432ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>211ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>219</td><td>0</td><td>103ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>273ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>191ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>787</td><td>0</td><td>247ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>100ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>26ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>15</td><td>1776ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
