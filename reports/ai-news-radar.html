@@ -43,79 +43,27 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>13</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>3</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>12</b><span>聚合源条目</span></div>
+        <div class="stat"><b>0</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-28T17:34:22.001366Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-05-29T02:37:04.698237Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-27T18:29:25Z</span>
-        <strong>Score 9</strong>
-      </div>
-      <h3><a href="https://x.com/OpenAIDevs/status/2059703536825565499" target="_blank" rel="noreferrer">OpenAI产品支持私有MCP服务器安全连接</a></h3>
-      <p class='summary'>您的团队可以在内部网络中保留MCP服务器，同时ChatGPT、Codex和Responses API通过仅出站HTTPS进行连接。</p>
-      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>strong:codex</span><span>strong:mcp</span><span>weak:api</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-28T02:14:52Z</span>
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-05-28T16:56:24Z</span>
         <strong>Score 7</strong>
       </div>
-      <h3><a href="https://www.ithome.com/0/956/293.htm" target="_blank" rel="noreferrer">英伟达推出 AI 框架 Polar，让 Codex 跑分暴涨 594.74%</a></h3>
-      <p class='summary'>英伟达研究团队开源了智能体强化学习框架 Polar。该框架无需重写现有智能体执行框架（如 Codex CLI、Claude Code、Qwen Code、Pi），通过在模型 API 边界放置智能体来接入 GRPO 训练。实验显示，基于 Qwen3.5-4B 模型，Polar 将 Codex 在 SWE-Bench Verified 上的 pass@1 分数从 3.8% 提升至 26.4%（增涨 594.74%）。效率上，其 prefix_merging 技术将训练步骤从 1185 次降至 218 次，速度提升约 5.39 倍，GPU 平均利用率从 20.4% 升至 87.7%。</p>
-      <div class="tags"><span>strong:claude</span><span>strong:codex</span><span>strong:智能体</span><span>weak:api</span><span>weak:API</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-27T23:09:11Z</span>
-        <strong>Score 7</strong>
-      </div>
-      <h3><a href="https://x.com/dotey/status/2059773942500298934" target="_blank" rel="noreferrer">用好 Coding Agent，重点是两头，尤其是开头的部分，如果一开始就走偏了后面怎么改都改不好。</a></h3>
-      <p class='summary'>用好 Coding Agent 的关键在于初始规划。方法是先将需求整理后，用最强模型（如 GPT-5.5、Claude Opus 4.7）分别在 Codex、Claude Code、Cursor 的 Plan 模式下生成设计方案，选择最优方案并借鉴其他版本。对于复杂计划，可将其拆分为多个 Phases 并明确要求与验证标准，形成 Markdown 文档。执行时按 Phases 进行，并辅以人工审核纠偏。最后的代码审核（Code Review）用 GPT-5.5 审核代码质量与设计符合度即可。应避免让多个智能体交叉 Review，否则可能导致代码越改越多。</p>
-      <div class="tags"><span>strong:claude</span><span>strong:codex</span><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-28T17:21:01Z</span>
-        <strong>Score 6</strong>
-      </div>
-      <h3><a href="https://claude.com/blog/introducing-dynamic-workflows-in-claude-code" target="_blank" rel="noreferrer">在Claude Code中引入动态工作流</a></h3>
-      <p class='summary'>Claude Code 推出&quot;动态工作流&quot;功能，使 Claude 能端到端处理复杂任务。该功能通过动态编写脚本，在单个会话中并行运行数十到数百个子智能体来完成工作，并会在结果呈现前进行验证。它适用于跨代码库的 bug 查找、大规模迁移（如将 Bun 从 Zig 移植到 Rust）等需要多角度分析的任务。该功能现已在研究预览阶段可用，支持 Claude Code CLI、桌面端、VS Code 扩展以及 API、Amazon Bedrock、Vertex AI 等平台，面向 Max、Team 及已启用的 Enterprise 计划用户。</p>
-      <div class="tags"><span>strong:claude</span><span>strong:智能体</span><span>weak:api</span><span>weak:工作流</span><span>weak:API</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-28T17:05:39Z</span>
-        <strong>Score 6</strong>
-      </div>
-      <h3><a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank" rel="noreferrer">Claude Opus 4.8 发布：在编码、智能体技能与推理方面实现全面升级</a></h3>
-      <p class='summary'>Anthropic 发布了新一代模型 Claude Opus 4.8，作为 Opus 4.7 的升级版本，其在编码、智能体技能、推理和实用知识工作等各项基准测试中均取得进步。Claude Opus 4.8 现已可用，价格与前代相同。同步推出的新功能包括：用户可控制任务投入程度、Claude Code 新增&quot;动态工作流&quot;特性，以及 Opus 4.8 的 2.5 倍速模式价格降低为以往的三分之一。早期测试者反馈其在智能体任务中的判断力更可靠、工具调用更高效。该模型在 Online-Mind2Web 测评中得分 84%，超越了 Opus 4.7 和 GPT-5.5。此外，其诚实度与对齐表现也得到提升，代码错误漏检率降低了约 75%。</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:智能体</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://github.blog/changelog/2026-05-28-claude-opus-4-8-is-generally-available-for-github-copilot" target="_blank" rel="noreferrer">Claude Opus 4.8 is generally available for GitHub Copilot</a></h3>
+      <p class='summary'>Claude Opus 4.8, Anthropic’s latest Opus model, is now available in GitHub Copilot. In our early testing, Opus 4.8 demonstrates a clear step forward in code understanding and generation across… The post Claude Opus 4.8 is generally available for GitHub Copilot appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
     
 
@@ -123,103 +71,25 @@
       <div class="meta">
         <span>OpenAI News</span>
         <span>official_rss</span>
-        <span>2026-05-28T00:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://openai.com/index/openai-frontier-governance-framework" target="_blank" rel="noreferrer">OpenAI’s Frontier Governance Framework</a></h3>
-      <p class='summary'>Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations.</p>
-      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-28T17:05:41Z</span>
+        <span>2026-05-28T12:00:00Z</span>
         <strong>Score 5</strong>
       </div>
-      <h3><a href="https://x.com/ClaudeDevs/status/2060044853279617150" target="_blank" rel="noreferrer">Claude Code 新增动态工作流功能</a></h3>
-      <p class='summary'>Claude Code 新功能（研究预览）：动态工作流。 Claude 会即时编写一个编排脚本，然后并行启动大量协调的子智能体来处理你最复杂的任务。 在提示词中使用&quot;workflow&quot;一词即可开始使用。</p>
-      <div class="tags"><span>strong:claude</span><span>strong:智能体</span><span>weak:workflow</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://openai.com/index/endava" target="_blank" rel="noreferrer">How Endava builds an agentic organization with Codex</a></h3>
+      <p class='summary'>Learn how Endava uses Codex to build an agentic organization, accelerating software delivery and reducing requirements analysis from weeks to hours.</p>
+      <div class="tags"><span>strong:codex</span><span>strong:agent</span><span>source_prior:official_ai</span></div>
     </article>
     
 
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-28T03:33:17Z</span>
-        <strong>Score 4</strong>
-      </div>
-      <h3><a href="https://x.com/alibaba_cloud/status/2059840407618396391" target="_blank" rel="noreferrer">阿里云DataWorks推出AI数据智能体</a></h3>
-      <p class='summary'>🚀 认识 DataWorks Data Agent--阿里云的AI数据智能体！ 借助AI简化数据工作流，加速洞察，让数据管理更智能。 了解更多：https：//int.alibabacloud.com/m/1000413560/ #AlibabaCloud #DataWorks #AI #DataAgent #BigData #DataAnalytics</p>
-      <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-28T16:34:57Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://www.lmsys.org/blog/2026-05-28-mori" target="_blank" rel="noreferrer">SGLang 团队与 AMD 合作，使 AMD InstinctTM MI355X GPU 的大规模 DeepSeek-R1 分离式推理在总拥有成本上具备竞争力</a></h3>
-      <p class='summary'>SGLang 与 AMD 团队合作，通过一系列全栈优化，使 AMD InstinctTM MI355X GPU 在运行 DeepSeek-R1 大模型推理时实现了极具竞争力的总拥有成本。在 129 tok/s/user 的交互延迟下，其成本为每百万 token $0.169，比 NVIDIA B200（Dynamo TRT-LLM）方案低 5%，比 B200（SGLang）方案低 40%。吞吐量方面，24 块 AMD GPU 达到 2，436 tok/s/GPU，比使用 48 块 GPU 的 B200 SGLang 方案每 GPU 吞吐量高 1.25 倍。核心优化包括：MoRI 混合 FP4/FP8 量化全到全通信、MoRI-IO KV Cache 后端、两批重叠与 SDMA、ROCm 上的 Specv2 MT</p>
-      <div class="tags"><span>strong:llm</span><span>strong:大模型</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-28T02:19:27Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/alibaba_cloud/status/2059821825140367565" target="_blank" rel="noreferrer">MuleRun登陆阿里云市场，提供全天候AI劳动力</a></h3>
-      <p class='summary'>在阿里云市场遇见 MuleRun--一个全天候的AI劳动力，用于研究、报告、代码、设计等。功能强大，适合个人使用；企业就绪，适合团队协作--支持SSO、RBAC、私有网络、团队知识管理和无缝集成。 想得更大。让 MuleRun 处理其余事务。 方案起价 $20/月 → https：//int.alibabacloud.com/m/1000413520/ #AlibabaCloud #AIAgents #AIWorkforce #FutureOfWork #EnterpriseAI</p>
-      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-27T19:23:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/swyx/status/2059717021944926238" target="_blank" rel="noreferrer">Cognition成为全球最大独立智能体实验室</a></h3>
-      <p class='summary'>Cognition宣布已成为全球最大的独立智能体实验室。公司完成超10亿美元融资，估值达260亿美元，由Lux Capital、General Catalyst等领投。其企业使用量自年初增长超10倍，年化收入增至4.92亿美元。Cognition于两年前推出Devin，定位为首个AI软件工程师。公司强调其拥有多项领先优势，包括首个编码智能体、顶级代码审查能力等，并得到了Peter Thiel的重大投资。</p>
-      <div class="tags"><span>strong:智能体</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-28T16:02:41Z</span>
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-05-28T21:09:44Z</span>
         <strong>Score 2</strong>
       </div>
-      <h3><a href="https://x.com/MSFTResearch/status/2060028999229735199" target="_blank" rel="noreferrer">Data Formulator 推出企业数据 AI 分析工具</a></h3>
-      <p class='summary'>Data Formulator 为企业数据工作流引入了 AI 驱动的分析功能。数据团队可以轻松将企业数据带入一个 AI 就绪的工作空间，用户可以使用 AI 智能体来探索、分析和可视化数据，将原始数据转化为可操作的洞察：https：//msft.it/6013vZzUl</p>
-      <div class="tags"><span>strong:智能体</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-05-28T15:41:17Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://developers.googleblog.com/how-the-community-trained-gemma-to-think-with-tunix-and-tpus" target="_blank" rel="noreferrer">社区如何利用Tunix和TPU训练Gemma学会&quot;思考&quot;</a></h3>
-      <p class='summary'>Google在Kaggle举办的Tunix黑客马拉松，挑战开发者利用TPU和有限算力，将小型基础模型转变为通用推理引擎。获胜团队通过多阶段后训练流程实现了这一目标，该流程结合了监督微调（SFT）与GRPO、SimPO等先进对齐技术。比赛结果表明，社区能够借助开源资源成功训练出高能力的结构化推理模型。</p>
-      <div class="tags"><span>strong:推理模型</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://github.blog/changelog/2026-05-28-codeql-2-25-5-improves-query-accuracy-for-github-actions" target="_blank" rel="noreferrer">CodeQL 2.25.5 improves query accuracy for GitHub Actions</a></h3>
+      <p class='summary'>CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.25.5, which includes accuracy improvements across C/C++,… The post CodeQL 2.25.5 improves query accuracy for GitHub Actions appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>source:actions</span></div>
     </article>
     </div>
     </section>
@@ -227,15 +97,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>972</td><td>1</td><td>735ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>194ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>217</td><td>0</td><td>87ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>238ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>122ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>787</td><td>0</td><td>279ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>102ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>25ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>12</td><td>1472ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>973</td><td>1</td><td>766ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>362ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>219</td><td>0</td><td>104ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>442ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>241ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>787</td><td>0</td><td>306ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>139ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>32ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>0</td><td>0</td><td>882ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
