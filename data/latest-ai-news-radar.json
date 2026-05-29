@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-29T10:28:56.568536Z",
+  "generated_at": "2026-05-29T11:44:47.621551Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 19,
+  "item_count": 20,
   "groups": {
     "aggregate": {
       "group": "aggregate",
@@ -96,14 +96,18 @@
     },
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI News",
-          1
+          2
         ]
       ],
       "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
         [
           "codex",
           1
@@ -113,7 +117,11 @@
           1
         ],
         [
-          "official_ai",
+          "openai",
+          1
+        ],
+        [
+          "developer",
           1
         ]
       ]
@@ -178,6 +186,25 @@
       "relevance_reasons": [
         "strong:codex",
         "strong:agent",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "157f2a8c6f61b1f52348884dd4f275df5d7f744d",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Strengthening societal resilience with Rosalind Biodefense",
+      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
+      "published_at": "2026-05-29T03:00:00Z",
+      "summary": "OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI.",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:developer",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -508,11 +535,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 974,
-      "kept_count": 1,
+      "fetched_count": 975,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 729,
-      "checked_at": "2026-05-29T10:28:52.780755Z"
+      "latency_ms": 819,
+      "checked_at": "2026-05-29T11:44:44.202365Z"
     },
     {
       "source_id": "openai-skills",
@@ -523,8 +550,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 225,
-      "checked_at": "2026-05-29T10:28:53.006635Z"
+      "latency_ms": 383,
+      "checked_at": "2026-05-29T11:44:44.585916Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -535,8 +562,8 @@
       "fetched_count": 219,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 101,
-      "checked_at": "2026-05-29T10:28:53.111303Z"
+      "latency_ms": 148,
+      "checked_at": "2026-05-29T11:44:44.737921Z"
     },
     {
       "source_id": "google-deepmind",
@@ -547,8 +574,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 314,
-      "checked_at": "2026-05-29T10:28:53.426993Z"
+      "latency_ms": 400,
+      "checked_at": "2026-05-29T11:44:45.140139Z"
     },
     {
       "source_id": "google-ai",
@@ -559,8 +586,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 216,
-      "checked_at": "2026-05-29T10:28:53.643536Z"
+      "latency_ms": 236,
+      "checked_at": "2026-05-29T11:44:45.377483Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -568,11 +595,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 787,
+      "fetched_count": 788,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 260,
-      "checked_at": "2026-05-29T10:28:53.916261Z"
+      "latency_ms": 348,
+      "checked_at": "2026-05-29T11:44:45.737878Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -583,8 +610,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 102,
-      "checked_at": "2026-05-29T10:28:54.018798Z"
+      "latency_ms": 356,
+      "checked_at": "2026-05-29T11:44:46.094142Z"
     },
     {
       "source_id": "github-changelog",
@@ -595,8 +622,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-05-29T10:28:54.044834Z"
+      "latency_ms": 43,
+      "checked_at": "2026-05-29T11:44:46.137663Z"
     },
     {
       "source_id": "aihot",
@@ -605,10 +632,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 16,
+      "kept_count": 17,
       "error": null,
-      "latency_ms": 2515,
-      "checked_at": "2026-05-29T10:28:56.562008Z"
+      "latency_ms": 1474,
+      "checked_at": "2026-05-29T11:44:47.613680Z"
     }
   ],
   "control_notes": {
