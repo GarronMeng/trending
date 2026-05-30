@@ -1,14 +1,14 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-29T17:33:09.208165Z",
+  "generated_at": "2026-05-30T02:31:08.260414Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 15,
+  "item_count": 6,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "OpenAI News",
@@ -17,20 +17,24 @@
         [
           "OpenAI Skills Commits",
           1
+        ],
+        [
+          "Google AI Blog",
+          1
         ]
       ],
       "top_keywords": [
         [
-          "openai",
+          "official_ai",
           5
         ],
         [
-          "official_ai",
+          "openai",
           4
         ],
         [
           "codex",
-          2
+          3
         ],
         [
           "developer",
@@ -49,67 +53,7 @@
           1
         ],
         [
-          "eval",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 10,
-      "top_sources": [
-        [
-          "AI Hot",
-          10
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          10
-        ],
-        [
-          "智能体",
-          5
-        ],
-        [
-          "claude",
-          3
-        ],
-        [
-          "大模型",
-          3
-        ],
-        [
-          "工作流",
-          2
-        ],
-        [
-          "anthropic",
-          2
-        ],
-        [
           "gemini",
-          2
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "eval",
-          1
-        ],
-        [
-          "deepmind",
-          1
-        ],
-        [
-          "多模态",
           1
         ]
       ]
@@ -125,7 +69,15 @@
       ],
       "top_keywords": [
         [
-          "actions",
+          "copilot",
+          2
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
           1
         ]
       ]
@@ -158,29 +110,6 @@
       "is_ai_related": true
     },
     {
-      "id": "3bea936b7a16866baed076d8d53e93e60f35bfac",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "阶跃星辰 Step 3.7 Flash 发布，聚焦智能体效率",
-      "url": "https://x.com/StepFun_ai/status/2060149124117475791",
-      "published_at": "2026-05-29T00:00:01Z",
-      "summary": "阶跃星辰（Step）发布了开源大模型 Step 3.7 Flash，主打智能体（Agent）工作流的效率。该模型在 ClawEval-1.1（67.1分）和 SimpleVQA Search（79.2分）评测中排名第一。其架构为 198B 参数的 MoE，约 11B 为活跃参数，支持 256K 上下文。模型具备多模态理解能力，能处理图像、文档并生成代码或调用工具执行任务。在工具使用方面，它致力于高可靠性，τ2-bench 得分超过 98%。Step 3.7 Flash 兼容 Claude Code、MCP 协议等工具链，并支持在 Mac Studio M4 Max 等设备上本地运行。模型权重以 Apache 2.0 许可开源。",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "strong:mcp",
-        "strong:大模型",
-        "weak:eval",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "157f2a8c6f61b1f52348884dd4f275df5d7f744d",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -200,20 +129,57 @@
       "is_ai_related": true
     },
     {
-      "id": "c0062bc477ff0819faaee3f0f59d1b779d0a29d4",
+      "id": "0bc440d85d13c8c9e69aa1d8a2cf56bff5bb432f",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot usage metrics API adds cohorts for AI adoption",
+      "url": "https://github.blog/changelog/2026-05-29-copilot-usage-metrics-api-adds-cohorts-for-ai-adoption",
+      "published_at": "2026-05-29T21:03:00Z",
+      "summary": "To help you tell a deeper Copilot adoption story—not just who is active, but how they’re using Copilot—the Copilot usage metrics API now classifies each engaged user into an AI… The post Copilot usage metrics API adds cohorts for AI adoption appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:copilot",
+        "weak:API",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7babac39da61285cb1c9dc4fbccf0f5be0e5e369",
+      "source_id": "google-ai",
+      "source_name": "Google AI Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos",
+      "published_at": "2026-05-29T17:30:00Z",
+      "summary": "Gemini Omni & Gemini 3.5 hero",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "cb6044e8a796b3ac6a555c3db27a980027292c5e",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "A shared playbook for trustworthy third party evaluations",
-      "url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations",
-      "published_at": "2026-05-29T00:00:00Z",
-      "summary": "OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier systems.",
-      "relevance_score": 4,
+      "title": "How Braintrust turns customer requests into code with Codex",
+      "url": "https://openai.com/index/braintrust",
+      "published_at": "2026-05-29T12:00:00Z",
+      "summary": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster.",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "weak:eval",
+        "strong:codex",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -235,198 +201,6 @@
         "source_prior:official_ai"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "5232fbb9b512fd685fb87dc7ba06ba39e5584282",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "谷歌 DeepMind CEO 哈萨比斯：AGI 最快三年内到来，研发速度远超预期",
-      "url": "https://www.ithome.com/0/957/154.htm",
-      "published_at": "2026-05-29T07:18:53Z",
-      "summary": "谷歌 DeepMind 首席执行官德米斯·哈萨比斯预测，AGI 研发速度远超预期，最快可能在 2029 年至 2030 年前后出现。作为 AlphaGo、AlphaFold 的主导者，他认为当前 AI 智能体是未来更强智能的预演，随着多模态和自主决策能力成熟，三年内迎来 AGI 关键突破已非科幻。但他同时警示，全球社会对 AGI 到来的准备严重不足，必须提前建立规则与防护机制。",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:deepmind",
-        "strong:智能体",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7359bb09d0571edd66c87f28527da005dc91080d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "llm-anthropic 0.25.1",
-      "url": "https://simonwillison.net/2026/May/28/llm-anthropic",
-      "published_at": "2026-05-28T23:54:56Z",
-      "summary": "llm-anthropic 发布 0.25.1 版本。主要更新包括：新增 Claude Opus 4.8 （`claude-opus-4.8`） 模型；为账户启用了该功能的组织新增了 `-o fast 1` 选项以使用快速模式；调整了各模型的默认 `max_tokens` 值，使其直接使用模型的最大输出长度，而非固定的 8，192。",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:llm",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "6bb7e2ae447d5dcae513e46f7de36e6718829132",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "别只看基准测试，要看全面表现",
-      "url": "https://x.com/OpenRouter/status/2060142412408717518",
-      "published_at": "2026-05-28T23:33:21Z",
-      "summary": "不要只依赖基准测试；要看全面情况！ 试试我们的新比较页面，它还能让你可视化模型性能：https：//openrouter.ai/compare/openai/gpt-5.5/anthropic/claude-opus-4.7/anthropic/claude-opus-4.8",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c195ef9d4595f14986d0c36bd932270607c2d845",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Gemini 本月更新：全新界面与智能体助手",
-      "url": "https://x.com/GeminiApp/status/2060389565052096911",
-      "published_at": "2026-05-29T15:55:27Z",
-      "summary": "从全新设计的 Gemini 界面，到 Gemini Spark 提供的全天候智能体辅助，以下是本月 Gemini 更新概览。🧵",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8b06c8df7a09356c439e760f9b244b13b66df00b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Cursor 团队发布《开发者习惯报告》",
-      "url": "https://x.com/shao__meng/status/2060167182777249886",
-      "published_at": "2026-05-29T01:11:47Z",
-      "summary": "报告显示，AI正深刻改变开发工作形态。开发者周均代码产出从约3.6K行增至8.6K行，更大规模的PR（千行以上）占比上升。AI智能体在单次会话中的工具调用数增加约30%，正在处理更复杂的任务。同时，被接受的AI代码在60分钟后的留存率从约76%提升至约81%，表明更多AI生成内容进入了实际代码库。这些趋势共同指向AI已从个人辅助工具，演进为推动开发向更大规模任务与自动化基础设施发展的核心力量。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:开发者",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "838b2c272e647d236d1d55ea699f58a1b5412815",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "技能提炼",
-      "url": "https://www.tomtunguz.com/the-pi-agent-skill-distillation",
-      "published_at": "2026-05-29T00:00:00Z",
-      "summary": "\"技能提炼\"是一种知识转移方法，由前沿大模型（如 Opus 4.7、GPT-5.1、Gemini 3 Pro）负责撰写并优化标准化的 SKILL.md 流程文件。然后，本地运行的小模型（如 Qwen 35B、Gemma 26B）直接执行这些文件。此过程不同于压缩模型权重的知识蒸馏、训练权重的指令微调或检索事实的 RAG，其核心是提取并转移操作流程，让小模型按步骤执行，从而形成前沿模型作教师、小模型作执行者的循环。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:大模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ecc235a4c31a9dc4a4f6b43d1365852f043efbfa",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "CodeQL 2.25.5 improves query accuracy for GitHub Actions",
-      "url": "https://github.blog/changelog/2026-05-28-codeql-2-25-5-improves-query-accuracy-for-github-actions",
-      "published_at": "2026-05-28T21:09:44Z",
-      "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.25.5, which includes accuracy improvements across C/C++,… The post CodeQL 2.25.5 improves query accuracy for GitHub Actions appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "source:actions"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "3e2d97cf296a96c2fe19f57a5a6b712c0d5dfb32",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "小米开源可控视频音效生成模型 ControlFoley，让声音\"按你想要的来\"",
-      "url": "https://www.ithome.com/0/957/282.htm",
-      "published_at": "2026-05-29T09:13:13Z",
-      "summary": "小米大模型应用团队发布开源可控视频音效生成模型 ControlFoley，旨在解决创作中的可控性难题。该模型统一支持文本引导视频配音、文本控制视频配音和参考音频控制视频配音三类任务。ControlFoley 在 VGGSound-Test 等多个 benchmark 上取得开源 SOTA 表现，其代码、模型权重和在线 Demo 均已开放。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:大模型",
-        "weak:benchmark",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1f513e53dbe90f43e1c0468184c8ef9763898e1e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Grok Build 0.2.7 发布，新增多项功能",
-      "url": "https://x.com/xai/status/2060102590122385460",
-      "published_at": "2026-05-28T20:55:06Z",
-      "summary": "Grok Build 0.2.7 现已发布，包含 /usage、/login、跨子智能体共享终端，以及改进的图像理解功能。 所有更新请查看 https：//x.ai/build/changelog",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:changelog",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a7c1a787de0f532b8bc936f2564a693df85c6ab6",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "hexoai开源SIA框架：AI智能体实现递归自我改进",
-      "url": "https://x.com/rohanpaul_ai/status/2060063592448446778",
-      "published_at": "2026-05-28T18:20:09Z",
-      "summary": "hexoai开源了SIA（自我改进AI）框架。该框架展示了AI智能体不仅能优化其外部工作流（harness），还能通过任务反馈直接更新自身的模型权重，从而在领域知识和能力上实现自主提升，而非仅依赖人类提供的提示或工具改进。论文报告显示，SIA在LawBench基准上性能提升56.6%，在GPU kernels运行上耗时减少91.9%，在单细胞RNA去噪任务中相比基线提升502%。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -436,11 +210,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 977,
+      "fetched_count": 978,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 870,
-      "checked_at": "2026-05-29T17:33:06.322458Z"
+      "latency_ms": 695,
+      "checked_at": "2026-05-30T02:31:05.304332Z"
     },
     {
       "source_id": "openai-skills",
@@ -451,8 +225,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 478,
-      "checked_at": "2026-05-29T17:33:06.800867Z"
+      "latency_ms": 176,
+      "checked_at": "2026-05-30T02:31:05.481125Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -463,8 +237,8 @@
       "fetched_count": 219,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 102,
-      "checked_at": "2026-05-29T17:33:06.906729Z"
+      "latency_ms": 107,
+      "checked_at": "2026-05-30T02:31:05.591847Z"
     },
     {
       "source_id": "google-deepmind",
@@ -475,8 +249,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 426,
-      "checked_at": "2026-05-29T17:33:07.334703Z"
+      "latency_ms": 268,
+      "checked_at": "2026-05-30T02:31:05.861353Z"
     },
     {
       "source_id": "google-ai",
@@ -485,10 +259,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 243,
-      "checked_at": "2026-05-29T17:33:07.578557Z"
+      "latency_ms": 338,
+      "checked_at": "2026-05-30T02:31:06.199827Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -499,8 +273,8 @@
       "fetched_count": 788,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 319,
-      "checked_at": "2026-05-29T17:33:07.909916Z"
+      "latency_ms": 243,
+      "checked_at": "2026-05-30T02:31:06.454918Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -511,8 +285,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 132,
-      "checked_at": "2026-05-29T17:33:08.042393Z"
+      "latency_ms": 175,
+      "checked_at": "2026-05-30T02:31:06.630740Z"
     },
     {
       "source_id": "github-changelog",
@@ -523,8 +297,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-05-29T17:33:08.075542Z"
+      "latency_ms": 28,
+      "checked_at": "2026-05-30T02:31:06.659492Z"
     },
     {
       "source_id": "aihot",
@@ -532,11 +306,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 50,
-      "kept_count": 11,
+      "fetched_count": 0,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 1121,
-      "checked_at": "2026-05-29T17:33:09.198889Z"
+      "latency_ms": 1591,
+      "checked_at": "2026-05-30T02:31:08.250759Z"
     }
   ],
   "control_notes": {
