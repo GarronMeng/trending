@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-30T09:00:12.602863Z",
+  "generated_at": "2026-05-30T10:22:21.347435Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 11,
   "groups": {
     "official": {
       "group": "official",
@@ -58,6 +58,66 @@
         ]
       ]
     },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 6,
+      "top_sources": [
+        [
+          "AI Hot",
+          6
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          6
+        ],
+        [
+          "agent",
+          3
+        ],
+        [
+          "agents",
+          3
+        ],
+        [
+          "智能体",
+          3
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "工作流",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "自动化",
+          1
+        ]
+      ]
+    },
     "developer": {
       "group": "developer",
       "count": 1,
@@ -106,6 +166,29 @@
         "source:codex",
         "source:openai",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "25ad24c431d13e65eb6719cc1ee9ce8090091f94",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "LlamaIndex 团队基于 Google Agents API 构建 LlamaParse/LiteParse 智能体模板",
+      "url": "https://x.com/googleaidevs/status/2060439904929382700",
+      "published_at": "2026-05-29T19:15:29Z",
+      "summary": "LlamaIndex 团队基于 Google 新发布的 Agents API 构建了一个模板，使智能体能够访问 LlamaParse 和 LiteParse，从而自动处理非结构化文档。其工作流程为：配置数据与输出的 Git 仓库，将仓库克隆至智能体沙箱，安装 LiteParse CLI 与 LlamaParse SDK 及相关技能，最后通过提示词驱动智能体自主执行任务。该模板最终形成一个可直接使用 LlamaParse 和 LiteParse 处理真实世界文档的智能体。",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "strong:智能体",
+        "weak:api",
+        "weak:工作流",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -182,6 +265,102 @@
         "source_prior:official_ai"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "5b0280b39a51feb6c0b0c8ff3085342b9aa5bcfe",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Guardrails：保护你的智能体、数据与成本",
+      "url": "https://openrouter.ai/announcements/guardrails",
+      "published_at": "2026-05-29T12:00:00Z",
+      "summary": "Guardrails 是一套可配置的安全与治理工具，提供预算执行、零数据保留、模型与提供商限制、提示词注入防御及数据丢失预防等功能，旨在保护智能体（Agents）、数据与控制成本。",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6903b961f0889e5e898e5e29b060c8998b20e339",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Luma Agents 自动生成宣传图，输入内容即可",
+      "url": "https://x.com/LumaLabsAI/status/2060461313713909783",
+      "published_at": "2026-05-29T20:40:33Z",
+      "summary": "博客文章完成了思考。现在让宣传来发挥作用。 输入内容。定义钩子。Luma Agents 从那里构建每一张宣传图。 投入使用 → http：//lumalabs.ai/app",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "917408f3189b7fc66e7366d86a3ee5348ee61dde",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Codex现已支持Windows端计算机使用功能",
+      "url": "https://x.com/OpenAI/status/2060428604727771421",
+      "published_at": "2026-05-29T18:30:34Z",
+      "summary": "Windows用户，这条消息是给你的。 计算机使用功能现已在Windows上可用，因此Codex可以在你的Windows电脑上执行操作。 通过ChatGPT移动应用中Codex的Windows支持，你可以在工作继续在Windows电脑上进行时，随时随地启动、审查和引导任务。 这是一项早期体验，但我们正在努力提供更多方式，让你的工作无论身在何处都能持续进行。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c195ef9d4595f14986d0c36bd932270607c2d845",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gemini 本月更新：全新界面与智能体助手",
+      "url": "https://x.com/GeminiApp/status/2060389565052096911",
+      "published_at": "2026-05-29T15:55:27Z",
+      "summary": "从全新设计的 Gemini 界面，到 Gemini Spark 提供的全天候智能体辅助，以下是本月 Gemini 更新概览。🧵",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4089f864a0ac70a8c97279e0ec29c8c81d47273f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "这个 skill 看着不错，可将文字、URL 或文章直接生成公众号首图、小红书图文卡、教程步骤卡等视觉物料，支持 28 种布局和 10 种主题。",
+      "url": "https://x.com/hongming731/status/2060487110906527820",
+      "published_at": "2026-05-29T22:23:03Z",
+      "summary": "claude-design-card 是一款专为中文内容创作者设计的 Skill。它能将文字、URL 或文章直接转化为可发布的视觉卡片，如公众号首图、小红书图文卡、教程步骤卡等，支持 28 种布局与 10 种主题。其核心价值在于自动化了\"写完文章\"后最繁琐的流程：自动提炼重点、选择版式、生成 HTML 并截图成 PNG，替代了以往手动使用 Figma 或 Canva 等工具的步骤。该工具开源，适合经常撰写相关内容的创作者尝试。",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:claude",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -194,8 +373,8 @@
       "fetched_count": 978,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 7236,
-      "checked_at": "2026-05-30T09:00:10.155276Z"
+      "latency_ms": 699,
+      "checked_at": "2026-05-30T10:22:17.331198Z"
     },
     {
       "source_id": "openai-skills",
@@ -206,8 +385,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 221,
-      "checked_at": "2026-05-30T09:00:10.376777Z"
+      "latency_ms": 203,
+      "checked_at": "2026-05-30T10:22:17.535463Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -218,8 +397,8 @@
       "fetched_count": 219,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 97,
-      "checked_at": "2026-05-30T09:00:10.477342Z"
+      "latency_ms": 87,
+      "checked_at": "2026-05-30T10:22:17.626244Z"
     },
     {
       "source_id": "google-deepmind",
@@ -230,8 +409,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 280,
-      "checked_at": "2026-05-30T09:00:10.758889Z"
+      "latency_ms": 249,
+      "checked_at": "2026-05-30T10:22:17.877637Z"
     },
     {
       "source_id": "google-ai",
@@ -242,8 +421,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 251,
-      "checked_at": "2026-05-30T09:00:11.010545Z"
+      "latency_ms": 176,
+      "checked_at": "2026-05-30T10:22:18.054467Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -254,8 +433,8 @@
       "fetched_count": 788,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 244,
-      "checked_at": "2026-05-30T09:00:11.266379Z"
+      "latency_ms": 236,
+      "checked_at": "2026-05-30T10:22:18.301480Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -266,8 +445,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 140,
-      "checked_at": "2026-05-30T09:00:11.406593Z"
+      "latency_ms": 120,
+      "checked_at": "2026-05-30T10:22:18.422247Z"
     },
     {
       "source_id": "github-changelog",
@@ -278,8 +457,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-05-30T09:00:11.434629Z"
+      "latency_ms": 24,
+      "checked_at": "2026-05-30T10:22:18.446678Z"
     },
     {
       "source_id": "aihot",
@@ -287,11 +466,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 0,
-      "kept_count": 0,
+      "fetched_count": 50,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 1157,
-      "checked_at": "2026-05-30T09:00:12.592570Z"
+      "latency_ms": 2889,
+      "checked_at": "2026-05-30T10:22:21.337483Z"
     }
   ],
   "control_notes": {
