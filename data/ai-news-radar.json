@@ -1,99 +1,31 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-30T15:05:19.179070Z",
+  "generated_at": "2026-05-31T02:47:42.499030Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 2,
   "groups": {
-    "official": {
-      "group": "official",
+    "aggregate": {
+      "group": "aggregate",
       "count": 2,
       "top_sources": [
         [
-          "OpenAI Skills Commits",
-          1
-        ],
-        [
-          "Google AI Blog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "openai",
-          2
-        ],
-        [
-          "codex",
-          2
-        ],
-        [
-          "official_ai",
-          2
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "developer",
-          1
-        ],
-        [
-          "skill",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 7,
-      "top_sources": [
-        [
           "AI Hot",
-          7
+          2
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
-        ],
-        [
-          "agent",
           2
         ],
         [
-          "agents",
-          2
+          "openai",
+          1
         ],
         [
-          "智能体",
-          2
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "gemini",
-          2
-        ],
-        [
-          "工作流",
+          "claude",
           1
         ],
         [
@@ -105,28 +37,8 @@
           1
         ],
         [
-          "openai",
+          "gemini",
           1
-        ],
-        [
-          "anthropic",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
         ],
         [
           "api",
@@ -141,88 +53,23 @@
   },
   "items": [
     {
-      "id": "95c5264d6962ef2a510d8021679df701195a59c0",
-      "source_id": "openai-skills",
-      "source_name": "OpenAI Skills Commits",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "[codex] Mirror Codex self-knowledge updates in OpenAI docs (#454)",
-      "url": "https://github.com/openai/skills/commit/a8924c2a35cfa290458852c4fad17c9133054c2e",
-      "published_at": "2026-05-29T16:20:38Z",
-      "summary": "[codex] Mirror Codex self-knowledge updates in OpenAI docs (#454) ## Summary - mirror the OpenAI docs skill changes from [openai/codex#24914](https://github.com/openai/codex/pull/24914) into both the system and curated `openai-docs` copies - add Codex self-knowledge routing, manual-first lookup guidance, and updated skill metadata - add the cached Codex manu",
-      "relevance_score": 16,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "strong:agent",
-        "strong:mcp",
-        "weak:developer",
-        "source:skill",
-        "source:codex",
-        "source:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "25ad24c431d13e65eb6719cc1ee9ce8090091f94",
+      "id": "0289ee13f2534919f504b7d65abfb1f539a0b7c5",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "LlamaIndex 团队基于 Google Agents API 构建 LlamaParse/LiteParse 智能体模板",
-      "url": "https://x.com/googleaidevs/status/2060439904929382700",
-      "published_at": "2026-05-29T19:15:29Z",
-      "summary": "LlamaIndex 团队基于 Google 新发布的 Agents API 构建了一个模板，使智能体能够访问 LlamaParse 和 LiteParse，从而自动处理非结构化文档。其工作流程为：配置数据与输出的 Git 仓库，将仓库克隆至智能体沙箱，安装 LiteParse CLI 与 LlamaParse SDK 及相关技能，最后通过提示词驱动智能体自主执行任务。该模板最终形成一个可直接使用 LlamaParse 和 LiteParse 处理真实世界文档的智能体。",
-      "relevance_score": 8,
+      "title": "免费领取6个月ChatGPT Pro及AI工具思考",
+      "url": "https://x.com/AYi_AInotes/status/2060740414273941874",
+      "published_at": "2026-05-30T15:09:36Z",
+      "summary": "OpenAI为开源项目维护者提供福利，可免费领取6个月ChatGPT Pro（价值$1200），申请无硬性Star数要求，有项目链接即可。同时，文章引用讨论了AI工具的分类：一类是\"agent型\"（如Claude Code、Codex），可自主运行；另一类是\"实习生型\"（如Cursor），需人工决策，有助于使用者以术入道、培养判断力，但受限于需人在场。作者推荐了网易的UU远程工具，称其免费两年，支持4K 144帧无延迟连接Mac并可使用原生终端，解决了\"实习生型\"工具的地点限制问题。",
+      "relevance_score": 7,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "strong:智能体",
-        "weak:api",
-        "weak:工作流",
-        "weak:API",
+        "strong:openai",
+        "strong:claude",
+        "strong:chatgpt",
+        "strong:codex",
         "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0bc440d85d13c8c9e69aa1d8a2cf56bff5bb432f",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot usage metrics API adds cohorts for AI adoption",
-      "url": "https://github.blog/changelog/2026-05-29-copilot-usage-metrics-api-adds-cohorts-for-ai-adoption",
-      "published_at": "2026-05-29T21:03:00Z",
-      "summary": "To help you tell a deeper Copilot adoption story—not just who is active, but how they’re using Copilot—the Copilot usage metrics API now classifies each engaged user into an AI… The post Copilot usage metrics API adds cohorts for AI adoption appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:copilot",
-        "weak:API",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7babac39da61285cb1c9dc4fbccf0f5be0e5e369",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos",
-      "published_at": "2026-05-29T17:30:00Z",
-      "summary": "Gemini Omni & Gemini 3.5 hero",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -245,101 +92,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "6903b961f0889e5e898e5e29b060c8998b20e339",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Luma Agents 自动生成宣传图，输入内容即可",
-      "url": "https://x.com/LumaLabsAI/status/2060461313713909783",
-      "published_at": "2026-05-29T20:40:33Z",
-      "summary": "博客文章完成了思考。现在让宣传来发挥作用。 输入内容。定义钩子。Luma Agents 从那里构建每一张宣传图。 投入使用 → http：//lumalabs.ai/app",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "917408f3189b7fc66e7366d86a3ee5348ee61dde",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Codex现已支持Windows端计算机使用功能",
-      "url": "https://x.com/OpenAI/status/2060428604727771421",
-      "published_at": "2026-05-29T18:30:34Z",
-      "summary": "Windows用户，这条消息是给你的。 计算机使用功能现已在Windows上可用，因此Codex可以在你的Windows电脑上执行操作。 通过ChatGPT移动应用中Codex的Windows支持，你可以在工作继续在Windows电脑上进行时，随时随地启动、审查和引导任务。 这是一项早期体验，但我们正在努力提供更多方式，让你的工作无论身在何处都能持续进行。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0d17f1d11a2c57d3f02f356971afde61b01eb54b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic估值9650亿美元超越OpenAI",
-      "url": "https://www.bloomberg.com/news/videos/2026-05-29/anthropic-valuation-of-965-billion-passes-openai-video",
-      "published_at": "2026-05-29T17:26:32Z",
-      "summary": "Anthropic在最新融资轮中筹集了650亿美元，融资后公司估值达到9650亿美元，首次超越竞争对手OpenAI的估值水平。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c195ef9d4595f14986d0c36bd932270607c2d845",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Gemini 本月更新：全新界面与智能体助手",
-      "url": "https://x.com/GeminiApp/status/2060389565052096911",
-      "published_at": "2026-05-29T15:55:27Z",
-      "summary": "从全新设计的 Gemini 界面，到 Gemini Spark 提供的全天候智能体辅助，以下是本月 Gemini 更新概览。🧵",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "4089f864a0ac70a8c97279e0ec29c8c81d47273f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "这个 skill 看着不错，可将文字、URL 或文章直接生成公众号首图、小红书图文卡、教程步骤卡等视觉物料，支持 28 种布局和 10 种主题。",
-      "url": "https://x.com/hongming731/status/2060487110906527820",
-      "published_at": "2026-05-29T22:23:03Z",
-      "summary": "claude-design-card 是一款专为中文内容创作者设计的 Skill。它能将文字、URL 或文章直接转化为可发布的视觉卡片，如公众号首图、小红书图文卡、教程步骤卡等，支持 28 种布局与 10 种主题。其核心价值在于自动化了\"写完文章\"后最繁琐的流程：自动提炼重点、选择版式、生成 HTML 并截图成 PNG，替代了以往手动使用 Figma 或 Canva 等工具的步骤。该工具开源，适合经常撰写相关内容的创作者尝试。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:claude",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -352,8 +104,8 @@
       "fetched_count": 978,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 786,
-      "checked_at": "2026-05-30T15:05:16.451929Z"
+      "latency_ms": 904,
+      "checked_at": "2026-05-31T02:47:39.489475Z"
     },
     {
       "source_id": "openai-skills",
@@ -362,10 +114,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 251,
-      "checked_at": "2026-05-30T15:05:16.704150Z"
+      "latency_ms": 286,
+      "checked_at": "2026-05-31T02:47:39.776343Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -376,8 +128,8 @@
       "fetched_count": 219,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 132,
-      "checked_at": "2026-05-30T15:05:16.840536Z"
+      "latency_ms": 104,
+      "checked_at": "2026-05-31T02:47:39.883964Z"
     },
     {
       "source_id": "google-deepmind",
@@ -388,8 +140,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 317,
-      "checked_at": "2026-05-30T15:05:17.159763Z"
+      "latency_ms": 365,
+      "checked_at": "2026-05-31T02:47:40.250746Z"
     },
     {
       "source_id": "google-ai",
@@ -398,10 +150,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 185,
-      "checked_at": "2026-05-30T15:05:17.345787Z"
+      "latency_ms": 160,
+      "checked_at": "2026-05-31T02:47:40.411304Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -412,8 +164,8 @@
       "fetched_count": 788,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 286,
-      "checked_at": "2026-05-30T15:05:17.644683Z"
+      "latency_ms": 316,
+      "checked_at": "2026-05-31T02:47:40.739749Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -424,8 +176,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 117,
-      "checked_at": "2026-05-30T15:05:17.762127Z"
+      "latency_ms": 130,
+      "checked_at": "2026-05-31T02:47:40.869997Z"
     },
     {
       "source_id": "github-changelog",
@@ -434,10 +186,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
       "latency_ms": 27,
-      "checked_at": "2026-05-30T15:05:17.789494Z"
+      "checked_at": "2026-05-31T02:47:40.897782Z"
     },
     {
       "source_id": "aihot",
@@ -446,10 +198,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 1379,
-      "checked_at": "2026-05-30T15:05:19.170570Z"
+      "latency_ms": 1592,
+      "checked_at": "2026-05-31T02:47:42.491036Z"
     }
   ],
   "control_notes": {
