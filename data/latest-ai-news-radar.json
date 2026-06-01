@@ -1,37 +1,98 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-01T02:56:09.435433Z",
+  "generated_at": "2026-06-01T09:05:33.962490Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 1,
+  "item_count": 4,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 1,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          1
+          4
         ]
       ],
       "top_keywords": [
         [
+          "aggregate_noise",
+          4
+        ],
+        [
           "智能体",
-          1
+          3
+        ],
+        [
+          "gemini",
+          2
         ],
         [
           "多模态",
+          2
+        ],
+        [
+          "api",
           1
         ],
         [
-          "aggregate_noise",
+          "API",
+          1
+        ],
+        [
+          "开源模型",
+          1
+        ],
+        [
+          "开发者",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "35d9c2b07ae67a107c474961b2882925c9872593",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "MiniMax M3：前沿编码、100万token上下文与原生多模态一体模型",
+      "url": "https://www.minimax.io/blog/minimax-m3",
+      "published_at": "2026-06-01T03:39:41Z",
+      "summary": "MiniMax M3 是一个开源前沿模型，具备先进的编码与AI智能体能力。它支持100万token的超长上下文窗口，并采用名为MSA（MiniMax Sparse Attention）的新型稀疏注意力架构。该架构使模型在100万token上下文下的每token计算成本降至前代的1/20，预填充速度提升9倍以上，解码速度提升15倍以上。在SWE-Bench Pro编码基准上，MiniMax M3得分59.0%，超越GPT-5.5和Gemini 3.1 Pro，性能接近Opus 4.7。该模型可通过MiniMax Code、Token Plan和API服务使用。",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:智能体",
+        "strong:多模态",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9b96508ad36f8d58c5c1c36eaafcb698f3e02ab9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "NVIDIA 发布工厂运营蓝图，为工厂提供自主智能管理智能体",
+      "url": "https://blogs.nvidia.com/blog/factory-operations-fox-blueprint-ai-brain",
+      "published_at": "2026-06-01T05:00:47Z",
+      "summary": "NVIDIA 在 GTC Taipei 发布了 NVIDIA 工厂运营蓝图（FOX），这是一个用于构建自主工厂管理智能体的参考设计。该蓝图基于 NVIDIA NemoClaw、AI-Q Blueprint 和 NVIDIA Nemotron 开源模型构建，旨在为工厂提供一个统一的决策层，以连接实时机器信号、质量数据和操作警报，实现快速问题解决。蓝图针对 NVIDIA DGX Station 桌面 AI 超级计算机进行了优化。首批采用者包括富士康、和硕、研华和纬创。富士康利用 FOX 和 NemoClaw 构建了 MoMClaw 多智能体系统，预计将根源分析时间缩短 80%，劳动生产率提高 15%，机器故障率降低 10%。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:智能体",
+        "strong:开源模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "a2e05ce0ee329ceb576d17ceee39859906d33b04",
       "source_id": "aihot",
@@ -50,6 +111,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "39b3005ed7417e6044e60a423e802e8e6dc51074",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "NVIDIA与Google Cloud助力下一波AI构建者",
+      "url": "https://blogs.nvidia.com/blog/category/enterprise/cloud-2",
+      "published_at": "2026-06-01T05:00:56Z",
+      "summary": "在Google I/O大会上，NVIDIA与Google Cloud宣布深化合作，旨在支持其联合开发者社区中超过10万名开发者。合作将重点提供NVIDIA L4 Tensor Core GPU以优化AI推理与图形工作负载，并通过支持Vertex AI平台来增强Gemini模型性能。双方还将提供开源软件工具，以简化AI应用的构建与部署流程。",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:gemini",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -62,8 +142,8 @@
       "fetched_count": 978,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 833,
-      "checked_at": "2026-06-01T02:56:06.504894Z"
+      "latency_ms": 610,
+      "checked_at": "2026-06-01T09:05:30.908310Z"
     },
     {
       "source_id": "openai-skills",
@@ -74,8 +154,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 266,
-      "checked_at": "2026-06-01T02:56:06.771565Z"
+      "latency_ms": 378,
+      "checked_at": "2026-06-01T09:05:31.286546Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -86,8 +166,8 @@
       "fetched_count": 219,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 139,
-      "checked_at": "2026-06-01T02:56:06.914415Z"
+      "latency_ms": 121,
+      "checked_at": "2026-06-01T09:05:31.411192Z"
     },
     {
       "source_id": "google-deepmind",
@@ -98,8 +178,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 340,
-      "checked_at": "2026-06-01T02:56:07.256602Z"
+      "latency_ms": 302,
+      "checked_at": "2026-06-01T09:05:31.714940Z"
     },
     {
       "source_id": "google-ai",
@@ -110,8 +190,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 225,
-      "checked_at": "2026-06-01T02:56:07.482015Z"
+      "latency_ms": 202,
+      "checked_at": "2026-06-01T09:05:31.917630Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -122,8 +202,8 @@
       "fetched_count": 788,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 320,
-      "checked_at": "2026-06-01T02:56:07.813924Z"
+      "latency_ms": 310,
+      "checked_at": "2026-06-01T09:05:32.239024Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -134,8 +214,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 216,
-      "checked_at": "2026-06-01T02:56:08.030229Z"
+      "latency_ms": 227,
+      "checked_at": "2026-06-01T09:05:32.466348Z"
     },
     {
       "source_id": "github-changelog",
@@ -146,8 +226,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 39,
-      "checked_at": "2026-06-01T02:56:08.070038Z"
+      "latency_ms": 37,
+      "checked_at": "2026-06-01T09:05:32.503839Z"
     },
     {
       "source_id": "aihot",
@@ -156,10 +236,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 1,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 1357,
-      "checked_at": "2026-06-01T02:56:09.428715Z"
+      "latency_ms": 1449,
+      "checked_at": "2026-06-01T09:05:33.953915Z"
     }
   ],
   "control_notes": {
