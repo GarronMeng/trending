@@ -1,21 +1,33 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-01T14:31:25.230270Z",
+  "generated_at": "2026-06-01T19:20:13.833332Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 18,
   "groups": {
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 3,
       "top_sources": [
         [
           "Hugging Face Blog",
           1
+        ],
+        [
+          "Google AI Blog",
+          1
+        ],
+        [
+          "OpenAI News",
+          1
         ]
       ],
       "top_keywords": [
+        [
+          "official_ai",
+          3
+        ],
         [
           "agent",
           1
@@ -25,31 +37,51 @@
           1
         ],
         [
-          "official_ai",
+          "gemini",
+          1
+        ],
+        [
+          "openai",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 14,
       "top_sources": [
         [
           "AI Hot",
-          9
+          13
+        ],
+        [
+          "Anthropic News via Olshansk RSS",
+          1
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
+          14
         ],
         [
           "智能体",
-          7
+          9
         ],
         [
           "agent",
+          4
+        ],
+        [
+          "多模态",
+          3
+        ],
+        [
+          "api",
+          3
+        ],
+        [
+          "API",
           3
         ],
         [
@@ -57,15 +89,7 @@
           2
         ],
         [
-          "多模态",
-          2
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
+          "anthropic",
           2
         ],
         [
@@ -73,19 +97,35 @@
           1
         ],
         [
-          "codex",
+          "openai",
           1
         ],
         [
-          "开源模型",
+          "chatgpt",
           1
         ],
         [
-          "工作流",
+          "人工智能",
           1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
         ],
         [
-          "开发者",
+          "eval",
           1
         ]
       ]
@@ -134,6 +174,82 @@
       "is_ai_related": true
     },
     {
+      "id": "f8069a42067a0a178740732f42339a2ac380e479",
+      "source_id": "google-ai",
+      "source_name": "Google AI Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How we used Gemini to build Google I/O 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai",
+      "published_at": "2026-06-01T16:00:00Z",
+      "summary": "A collage of I/O-related images, including the Antigravity Coffee Co. pop-up, a colorful jellyfish and a still from the Timmy TPU video. The word AI repeats three times on the left of the image, and there are colorful icons, including a sparkle, as well.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fbdcf05e3a3f2be99be063b4e6ae3fca96ffe76c",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Building the infrastructure for the Intelligence Age in Michigan",
+      "url": "https://openai.com/index/stargate-michigan-data-center",
+      "published_at": "2026-06-01T12:00:00Z",
+      "summary": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "dd1f1db0a3e01534dd516b89e7215640030430b8",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Perplexity发布Search as Code搜索架构",
+      "url": "https://x.com/perplexity_ai/status/2061506359326384319",
+      "published_at": "2026-06-01T17:53:11Z",
+      "summary": "推出Search as Code，我们为AI智能体打造的全新搜索架构。 它直接编写Python代码调用我们的搜索栈，而非逐个循环函数调用。 现已在Perplexity Agent API中提供，并成为Computer的默认选项。 https：//research.perplexity.ai/articles/rethinking-search-as-code-generation",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e167d7e5d22b26b4aabdbae965c42168450aa94c",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Evaluation models in auto for individual plans",
+      "url": "https://github.blog/changelog/2026-06-01-evaluation-models-in-auto-for-individual-plans",
+      "published_at": "2026-06-01T16:18:17Z",
+      "summary": "GitHub Copilot offers access to evaluation models for individual non-enterprise users, and these models may be served in Copilot auto model selection. To disable use of evaluation models through Copilot… The post Evaluation models in auto for individual plans appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "weak:eval",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "f22df7d93ab9c0437aaafabc691a89089c030fb4",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -149,6 +265,63 @@
         "strong:claude",
         "strong:agent",
         "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0c265bb21c9d65f78e74376942df734533734f9d",
+      "source_id": "anthropic-news-unofficial",
+      "source_name": "Anthropic News via Olshansk RSS",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 3,
+      "title": "Anthropic confidentially submits draft S-1 to the SEC",
+      "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "published_at": "2026-06-01T00:00:00Z",
+      "summary": "Anthropic confidentially submits draft S-1 to the SEC",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "source:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b5197a4e06f2deb0c0fe6f1da9872a32979657d4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "佛罗里达州起诉OpenAI与Sam Altman：涉多起ChatGPT相关谋杀案",
+      "url": "https://arstechnica.com/tech-policy/2026/06/florida-sues-openai-sam-altman-after-multiple-chatgpt-linked-murders",
+      "published_at": "2026-06-01T18:52:19Z",
+      "summary": "佛罗里达州对OpenAI及其CEO Sam Altman提起诉讼。该州总检察长指控Altman对人命\"完全漠视\"，案件与多起涉及ChatGPT的谋杀事件相关。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "929f71d5fb272c71ff05ce63fcbc9b247de055e4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "智谱：建议 A 股发行并在科创板上市",
+      "url": "https://www.ithome.com/0/958/444.htm",
+      "published_at": "2026-06-01T15:53:42Z",
+      "summary": "智谱计划向中国监管机构申请发行A股并在科创板上市。发行股份数量占发行完成后总股本的2%至8%，预计全部为新股，原股东不发售。本次发行募集资金净额将投资于人工智能通用基座大模型、大模型MaaS一站式服务平台及补充流动资金。此外，公司拟将英文名称由\"Knowledge Atlas Technology Joint Stock Company Limited\"变更为\"Z.AI Co.， Ltd.\"。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:人工智能",
+        "strong:大模型",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -250,6 +423,25 @@
       "is_ai_related": true
     },
     {
+      "id": "86f1f42f90d02cf96c0d59ebef5d3f86ca2d3460",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Qwen3.7-Plus：多模态智能体智能",
+      "url": "https://qwen.ai/blog?id=qwen3.7-plus",
+      "published_at": "2026-06-01T02:00:00Z",
+      "summary": "Qwen Studio 提供涵盖聊天机器人、图像与视频理解、图像生成、文档处理、网页搜索集成、工具使用及制品生成的全面功能。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:智能体",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "1c24d91d1a51fc511bbc5698ce08dc4a45635624",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -295,11 +487,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 978,
-      "kept_count": 0,
+      "fetched_count": 979,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 892,
-      "checked_at": "2026-06-01T14:31:21.861246Z"
+      "latency_ms": 710,
+      "checked_at": "2026-06-01T19:20:11.222965Z"
     },
     {
       "source_id": "openai-skills",
@@ -310,8 +502,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 405,
-      "checked_at": "2026-06-01T14:31:22.266602Z"
+      "latency_ms": 213,
+      "checked_at": "2026-06-01T19:20:11.436717Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -319,11 +511,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 219,
-      "kept_count": 0,
+      "fetched_count": 220,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 120,
-      "checked_at": "2026-06-01T14:31:22.389849Z"
+      "latency_ms": 92,
+      "checked_at": "2026-06-01T19:20:11.532135Z"
     },
     {
       "source_id": "google-deepmind",
@@ -334,8 +526,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 439,
-      "checked_at": "2026-06-01T14:31:22.830207Z"
+      "latency_ms": 296,
+      "checked_at": "2026-06-01T19:20:11.829946Z"
     },
     {
       "source_id": "google-ai",
@@ -344,10 +536,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 237,
-      "checked_at": "2026-06-01T14:31:23.068065Z"
+      "latency_ms": 186,
+      "checked_at": "2026-06-01T19:20:12.016562Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -355,11 +547,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 788,
+      "fetched_count": 789,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 278,
-      "checked_at": "2026-06-01T14:31:23.354866Z"
+      "latency_ms": 243,
+      "checked_at": "2026-06-01T19:20:12.271277Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -370,8 +562,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 200,
-      "checked_at": "2026-06-01T14:31:23.555279Z"
+      "latency_ms": 121,
+      "checked_at": "2026-06-01T19:20:12.393353Z"
     },
     {
       "source_id": "github-changelog",
@@ -380,10 +572,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 36,
-      "checked_at": "2026-06-01T14:31:23.591737Z"
+      "latency_ms": 24,
+      "checked_at": "2026-06-01T19:20:12.417834Z"
     },
     {
       "source_id": "aihot",
@@ -392,10 +584,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 9,
+      "kept_count": 16,
       "error": null,
-      "latency_ms": 1629,
-      "checked_at": "2026-06-01T14:31:25.222305Z"
+      "latency_ms": 1405,
+      "checked_at": "2026-06-01T19:20:13.825238Z"
     }
   ],
   "control_notes": {
