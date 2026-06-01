@@ -43,17 +43,30 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>6</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>0</b><span>官方源条目</span></div>
-        <div class="stat"><b>6</b><span>聚合源条目</span></div>
+        <div class="stat"><b>10</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>1</b><span>官方源条目</span></div>
+        <div class="stat"><b>9</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-01T12:16:49.307237Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-01T14:31:25.231310Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>Hugging Face Blog</span>
+        <span>official_rss</span>
+        <span>2026-06-01T13:51:18Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption" target="_blank" rel="noreferrer">Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic</a></h3>
+      
+      <div class="tags"><span>strong:agent</span><span>strong:llm</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>AI Hot</span>
@@ -64,6 +77,45 @@
       <h3><a href="https://www.minimax.io/blog/minimax-m3" target="_blank" rel="noreferrer">MiniMax M3：前沿编码、100万token上下文与原生多模态一体模型</a></h3>
       <p class='summary'>MiniMax M3 是一个开源前沿模型，具备先进的编码与AI智能体能力。它支持100万token的超长上下文窗口，并采用名为MSA（MiniMax Sparse Attention）的新型稀疏注意力架构。该架构使模型在100万token上下文下的每token计算成本降至前代的1/20，预填充速度提升9倍以上，解码速度提升15倍以上。在SWE-Bench Pro编码基准上，MiniMax M3得分59.0%，超越GPT-5.5和Gemini 3.1 Pro，性能接近Opus 4.7。该模型可通过MiniMax Code、Token Plan和API服务使用。</p>
       <div class="tags"><span>strong:gemini</span><span>strong:智能体</span><span>strong:多模态</span><span>weak:api</span><span>weak:API</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-01T12:06:50Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://x.com/AYi_AInotes/status/2061419197154857286" target="_blank" rel="noreferrer">使用Claude Opus 4.8将书籍转化为AI技能的教程</a></h3>
+      <p class='summary'>本文以《非暴力沟通》为例，提供了一个将书籍转化为可调用AI技能（Skill）的六步教程。作者使用Claude Opus 4.8模型，因其具备100万token上下文窗口、结构化输出及多步智能体（Agent）能力，能一次性处理全书逻辑。流程包含文本准备、全局结构分析、五类提炼（框架/原则/技法/反模式/作者声音）、技能生成及关键的自检步骤。生成的技能保留了书中原始框架命名（如OFNR四要素、长颈鹿语言），并将触发词优化为&quot;怎么提意见不像在指责&quot;等日常表达。整个流程耗时约45分钟，消耗约30万token，成本不到20元人民币。</p>
+      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-01T13:44:14Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://x.com/vista8/status/2061443708374208769" target="_blank" rel="noreferrer">作者分享使用 Codex App 开发的开源项目合集</a></h3>
+      <p class='summary'>作者分享了使用 Codex App 等工具开发的一系列开源项目，包括4个 Chrome 插件（如快捷提示词、新标签页）、4个网站（如艺术家风格对比、音乐展示）和5个 AI Skill（如论文解读、阅读助手）。项目基于 GPT-Image-2 API、Suno 等技术，并整合了 Read-frog、Hyperframe 等开源项目。</p>
+      <div class="tags"><span>strong:codex</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-01T12:34:05Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://www.ithome.com/0/958/410.htm" target="_blank" rel="noreferrer">王兴：美团 AI Agent&quot;小美&quot;与腾讯元宝即将深度合作，用户订单无缝连接</a></h3>
+      <p class='summary'>美团2026年第一季度财报显示营收910.39亿元，净利润亏损68.27亿元。财报电话会上，CEO王兴透露其AI Agent&quot;小美&quot;将与腾讯元宝深度合作。用户在腾讯元宝中提交本地服务需求，将被无缝连接至美团的外卖点餐、配送等生态。王兴强调，面向智能体的服务（To A）正变得日益重要，美团已将AI助手&quot;小团&quot;置于App核心位置，并拓展AI服务外延。</p>
+      <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -136,15 +188,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>978</td><td>0</td><td>692ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>265ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>219</td><td>0</td><td>98ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>400ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>254ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>788</td><td>0</td><td>226ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>122ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>27ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>6</td><td>1378ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>978</td><td>0</td><td>892ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>405ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>219</td><td>0</td><td>120ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>439ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>237ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>788</td><td>1</td><td>278ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>200ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>36ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>9</td><td>1629ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

@@ -1,28 +1,56 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-01T12:16:49.306099Z",
+  "generated_at": "2026-06-01T14:31:25.230270Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 10,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "Hugging Face Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "agent",
+          1
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          6
+          9
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          9
         ],
         [
           "智能体",
-          5
+          7
+        ],
+        [
+          "agent",
+          3
         ],
         [
           "gemini",
@@ -34,14 +62,18 @@
         ],
         [
           "api",
-          1
+          2
         ],
         [
           "API",
+          2
+        ],
+        [
+          "claude",
           1
         ],
         [
-          "agent",
+          "codex",
           1
         ],
         [
@@ -61,6 +93,25 @@
   },
   "items": [
     {
+      "id": "e027f6e7e3136e331c3c0aeada39282eea897e71",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
+      "url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
+      "published_at": "2026-06-01T13:51:18Z",
+      "summary": null,
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:llm",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "35d9c2b07ae67a107c474961b2882925c9872593",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -78,6 +129,65 @@
         "strong:多模态",
         "weak:api",
         "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f22df7d93ab9c0437aaafabc691a89089c030fb4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "使用Claude Opus 4.8将书籍转化为AI技能的教程",
+      "url": "https://x.com/AYi_AInotes/status/2061419197154857286",
+      "published_at": "2026-06-01T12:06:50Z",
+      "summary": "本文以《非暴力沟通》为例，提供了一个将书籍转化为可调用AI技能（Skill）的六步教程。作者使用Claude Opus 4.8模型，因其具备100万token上下文窗口、结构化输出及多步智能体（Agent）能力，能一次性处理全书逻辑。流程包含文本准备、全局结构分析、五类提炼（框架/原则/技法/反模式/作者声音）、技能生成及关键的自检步骤。生成的技能保留了书中原始框架命名（如OFNR四要素、长颈鹿语言），并将触发词优化为\"怎么提意见不像在指责\"等日常表达。整个流程耗时约45分钟，消耗约30万token，成本不到20元人民币。",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "cde719d64aa3c7a2f30c0fba4a0f6d9201e66520",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "作者分享使用 Codex App 开发的开源项目合集",
+      "url": "https://x.com/vista8/status/2061443708374208769",
+      "published_at": "2026-06-01T13:44:14Z",
+      "summary": "作者分享了使用 Codex App 等工具开发的一系列开源项目，包括4个 Chrome 插件（如快捷提示词、新标签页）、4个网站（如艺术家风格对比、音乐展示）和5个 AI Skill（如论文解读、阅读助手）。项目基于 GPT-Image-2 API、Suno 等技术，并整合了 Read-frog、Hyperframe 等开源项目。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:codex",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "128b74619eb09051fb0d7eb9bee0c89df57c2bd0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "王兴：美团 AI Agent\"小美\"与腾讯元宝即将深度合作，用户订单无缝连接",
+      "url": "https://www.ithome.com/0/958/410.htm",
+      "published_at": "2026-06-01T12:34:05Z",
+      "summary": "美团2026年第一季度财报显示营收910.39亿元，净利润亏损68.27亿元。财报电话会上，CEO王兴透露其AI Agent\"小美\"将与腾讯元宝深度合作。用户在腾讯元宝中提交本地服务需求，将被无缝连接至美团的外卖点餐、配送等生态。王兴强调，面向智能体的服务（To A）正变得日益重要，美团已将AI助手\"小团\"置于App核心位置，并拓展AI服务外延。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -188,8 +298,8 @@
       "fetched_count": 978,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 692,
-      "checked_at": "2026-06-01T12:16:46.505103Z"
+      "latency_ms": 892,
+      "checked_at": "2026-06-01T14:31:21.861246Z"
     },
     {
       "source_id": "openai-skills",
@@ -200,8 +310,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 265,
-      "checked_at": "2026-06-01T12:16:46.770873Z"
+      "latency_ms": 405,
+      "checked_at": "2026-06-01T14:31:22.266602Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -212,8 +322,8 @@
       "fetched_count": 219,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 98,
-      "checked_at": "2026-06-01T12:16:46.872519Z"
+      "latency_ms": 120,
+      "checked_at": "2026-06-01T14:31:22.389849Z"
     },
     {
       "source_id": "google-deepmind",
@@ -224,8 +334,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 400,
-      "checked_at": "2026-06-01T12:16:47.274675Z"
+      "latency_ms": 439,
+      "checked_at": "2026-06-01T14:31:22.830207Z"
     },
     {
       "source_id": "google-ai",
@@ -236,8 +346,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-06-01T12:16:47.529230Z"
+      "latency_ms": 237,
+      "checked_at": "2026-06-01T14:31:23.068065Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -246,10 +356,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 788,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 226,
-      "checked_at": "2026-06-01T12:16:47.767104Z"
+      "latency_ms": 278,
+      "checked_at": "2026-06-01T14:31:23.354866Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -260,8 +370,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 122,
-      "checked_at": "2026-06-01T12:16:47.889936Z"
+      "latency_ms": 200,
+      "checked_at": "2026-06-01T14:31:23.555279Z"
     },
     {
       "source_id": "github-changelog",
@@ -272,8 +382,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-06-01T12:16:47.917522Z"
+      "latency_ms": 36,
+      "checked_at": "2026-06-01T14:31:23.591737Z"
     },
     {
       "source_id": "aihot",
@@ -282,10 +392,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 1378,
-      "checked_at": "2026-06-01T12:16:49.297346Z"
+      "latency_ms": 1629,
+      "checked_at": "2026-06-01T14:31:25.222305Z"
     }
   ],
   "control_notes": {
