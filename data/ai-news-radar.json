@@ -1,12 +1,57 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-05-31T15:16:50.366685Z",
+  "generated_at": "2026-06-01T02:56:09.435433Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 0,
-  "groups": {},
-  "items": [],
+  "item_count": 1,
+  "groups": {
+    "aggregate": {
+      "group": "aggregate",
+      "count": 1,
+      "top_sources": [
+        [
+          "AI Hot",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "智能体",
+          1
+        ],
+        [
+          "多模态",
+          1
+        ],
+        [
+          "aggregate_noise",
+          1
+        ]
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "a2e05ce0ee329ceb576d17ceee39859906d33b04",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "上海：支持多模态智能体开发与应用，有序推进智能驾驶在共享出行、物流运输等多场景应用",
+      "url": "https://www.ithome.com/0/957/985.htm",
+      "published_at": "2026-06-01T02:16:40Z",
+      "summary": "上海市人民政府办公厅印发《上海市服务业发展\"十五五\"规划》，提出发展AI软件技术及服务产业集群。规划支持多模态智能体开发与应用，推动智能客服等工具规模化；有序推进智能驾驶在共享出行、物流运输等多场景应用；做强算运存协同布局的智算云网络，推广模型即服务（MaaS）；并支持开发面向家庭、养老、文旅等场景的具身智能整机产品，加速机器人向通用智能与精细化服务跃升。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:智能体",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    }
+  ],
   "source_health": [
     {
       "source_id": "openai-news",
@@ -17,8 +62,8 @@
       "fetched_count": 978,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 599,
-      "checked_at": "2026-05-31T15:16:45.921942Z"
+      "latency_ms": 833,
+      "checked_at": "2026-06-01T02:56:06.504894Z"
     },
     {
       "source_id": "openai-skills",
@@ -29,8 +74,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 329,
-      "checked_at": "2026-05-31T15:16:46.251993Z"
+      "latency_ms": 266,
+      "checked_at": "2026-06-01T02:56:06.771565Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -41,8 +86,8 @@
       "fetched_count": 219,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 215,
-      "checked_at": "2026-05-31T15:16:46.470431Z"
+      "latency_ms": 139,
+      "checked_at": "2026-06-01T02:56:06.914415Z"
     },
     {
       "source_id": "google-deepmind",
@@ -53,8 +98,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 407,
-      "checked_at": "2026-05-31T15:16:46.879250Z"
+      "latency_ms": 340,
+      "checked_at": "2026-06-01T02:56:07.256602Z"
     },
     {
       "source_id": "google-ai",
@@ -65,8 +110,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 341,
-      "checked_at": "2026-05-31T15:16:47.220601Z"
+      "latency_ms": 225,
+      "checked_at": "2026-06-01T02:56:07.482015Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -77,8 +122,8 @@
       "fetched_count": 788,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 314,
-      "checked_at": "2026-05-31T15:16:47.546432Z"
+      "latency_ms": 320,
+      "checked_at": "2026-06-01T02:56:07.813924Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -89,8 +134,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 230,
-      "checked_at": "2026-05-31T15:16:47.776636Z"
+      "latency_ms": 216,
+      "checked_at": "2026-06-01T02:56:08.030229Z"
     },
     {
       "source_id": "github-changelog",
@@ -101,8 +146,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 41,
-      "checked_at": "2026-05-31T15:16:47.818044Z"
+      "latency_ms": 39,
+      "checked_at": "2026-06-01T02:56:08.070038Z"
     },
     {
       "source_id": "aihot",
@@ -111,10 +156,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 2539,
-      "checked_at": "2026-05-31T15:16:50.358428Z"
+      "latency_ms": 1357,
+      "checked_at": "2026-06-01T02:56:09.428715Z"
     }
   ],
   "control_notes": {
