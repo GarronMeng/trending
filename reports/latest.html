@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>4</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>6</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>0</b><span>官方源条目</span></div>
-        <div class="stat"><b>4</b><span>聚合源条目</span></div>
+        <div class="stat"><b>6</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-01T09:05:33.963492Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-01T12:16:49.307237Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -64,6 +64,19 @@
       <h3><a href="https://www.minimax.io/blog/minimax-m3" target="_blank" rel="noreferrer">MiniMax M3：前沿编码、100万token上下文与原生多模态一体模型</a></h3>
       <p class='summary'>MiniMax M3 是一个开源前沿模型，具备先进的编码与AI智能体能力。它支持100万token的超长上下文窗口，并采用名为MSA（MiniMax Sparse Attention）的新型稀疏注意力架构。该架构使模型在100万token上下文下的每token计算成本降至前代的1/20，预填充速度提升9倍以上，解码速度提升15倍以上。在SWE-Bench Pro编码基准上，MiniMax M3得分59.0%，超越GPT-5.5和Gemini 3.1 Pro，性能接近Opus 4.7。该模型可通过MiniMax Code、Token Plan和API服务使用。</p>
       <div class="tags"><span>strong:gemini</span><span>strong:智能体</span><span>strong:多模态</span><span>weak:api</span><span>weak:API</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-01T09:01:25Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://x.com/TencentHunyuan/status/2061372535267357029" target="_blank" rel="noreferrer">腾讯混元发布智能体长期记忆插件Hy-Memory</a></h3>
+      <p class='summary'>腾讯混元正式发布专为OpenClaw等长期协作智能体（Agent）设计的记忆插件 Hy-Memory。它基于6层记忆框架、System1/System2双系统与三层进化链构建，旨在成为智能体的&quot;第二大脑&quot;。该插件解决了记忆碎片化问题，实现了显著性能提升：记忆数量减少70%以上，单条记忆信息密度提升45%以上，在超长上下文场景中token消耗降低35%，记忆更新速度提升20%。</p>
+      <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -97,6 +110,19 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
+        <span>2026-06-01T10:53:26Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://x.com/alibaba_cloud/status/2061400724018217381" target="_blank" rel="noreferrer">Apache RocketMQ 发布 AI 专用消息引擎</a></h3>
+      <p class='summary'>🚀 Apache RocketMQ 为 AI 升级！推出 RocketMQ for AI--一个专为长时间会话、多智能体工作流和公平资源调度构建的新消息引擎。凭借 Lite-Topics、有序消息和智能流量整形，它解决了状态丢失、级联故障和突发负载问题。由阿里云大规模构建，现已开源。 了解更多： https：//int.alibabacloud.com/m/1000413178/ #RocketMQ #AI #CloudNative</p>
+      <div class="tags"><span>strong:智能体</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
         <span>2026-06-01T05:00:56Z</span>
         <strong>Score 2</strong>
       </div>
@@ -110,15 +136,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>978</td><td>0</td><td>610ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>378ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>219</td><td>0</td><td>121ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>302ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>202ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>788</td><td>0</td><td>310ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>227ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>37ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>4</td><td>1449ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>978</td><td>0</td><td>692ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>265ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>219</td><td>0</td><td>98ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>400ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>254ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>788</td><td>0</td><td>226ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>122ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>27ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>6</td><td>1378ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
