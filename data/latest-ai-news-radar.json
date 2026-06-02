@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-02T08:16:54.925672Z",
+  "generated_at": "2026-06-02T11:04:44.720873Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 17,
+  "item_count": 16,
   "groups": {
     "official": {
       "group": "official",
@@ -29,15 +29,19 @@
           4
         ],
         [
-          "openai",
-          2
-        ],
-        [
           "codex",
           1
         ],
         [
-          "eval",
+          "workflow automation",
+          1
+        ],
+        [
+          "tool",
+          1
+        ],
+        [
+          "automation",
           1
         ],
         [
@@ -55,26 +59,30 @@
         [
           "gemini",
           1
+        ],
+        [
+          "openai",
+          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 11,
+      "count": 10,
       "top_sources": [
         [
           "AI Hot",
-          11
+          10
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          11
+          10
         ],
         [
           "智能体",
-          7
+          6
         ],
         [
           "agent",
@@ -97,11 +105,15 @@
           2
         ],
         [
-          "工作流",
-          2
+          "开发者",
+          1
         ],
         [
-          "开发者",
+          "工作流",
+          1
+        ],
+        [
+          "agents",
           1
         ],
         [
@@ -110,10 +122,6 @@
         ],
         [
           "chatgpt",
-          1
-        ],
-        [
-          "人工智能",
           1
         ]
       ]
@@ -145,21 +153,22 @@
   },
   "items": [
     {
-      "id": "dde737d204ae7d87f9ce512bc057a51f873fa692",
+      "id": "4892b852cec2d1bce8147754c88150edf0203e62",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "OpenAI frontier models and Codex are now available on AWS",
-      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
-      "published_at": "2026-06-01T10:00:00Z",
-      "summary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
-      "relevance_score": 7,
+      "title": "Codex is becoming a productivity tool for everyone",
+      "url": "https://openai.com/index/codex-for-knowledge-work",
+      "published_at": "2026-06-02T02:00:00Z",
+      "summary": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation.",
+      "relevance_score": 8,
       "relevance_reasons": [
-        "strong:openai",
         "strong:codex",
-        "weak:eval",
+        "strong:workflow automation",
+        "weak:tool",
+        "weak:automation",
         "weak:workflow",
         "source_prior:official_ai"
       ],
@@ -258,6 +267,26 @@
       "relevance_reasons": [
         "strong:openai",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "164a7f22c733d6c846d9008a8f91c6d096f65df0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "阿里云发布AgentScope Java 1.1及Claw等新功能",
+      "url": "https://x.com/alibaba_cloud/status/2061745401393291554",
+      "published_at": "2026-06-02T09:43:03Z",
+      "summary": "🚀 AgentScope Java 1.1：构建可自我进化的智能体 ✨ Claw：具备Shell访问权限的本地\"MinQwenPaw\" ✨ Builder：多租户、零代码企业平台 ✨ 工作区驱动的进化与分布式隔离 从笔记本电脑到集群无缝扩展。👇 https：//int.alibabacloud.com/m/1000413896/ #AgentScope #AIAgents #Java",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -437,44 +466,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "260e33fc961bce71b28114fd5398747cd3c7ec61",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "腾讯混元发布智能体长期记忆插件Hy-Memory",
-      "url": "https://x.com/TencentHunyuan/status/2061372535267357029",
-      "published_at": "2026-06-01T09:01:25Z",
-      "summary": "腾讯混元正式发布专为OpenClaw等长期协作智能体（Agent）设计的记忆插件 Hy-Memory。它基于6层记忆框架、System1/System2双系统与三层进化链构建，旨在成为智能体的\"第二大脑\"。该插件解决了记忆碎片化问题，实现了显著性能提升：记忆数量减少70%以上，单条记忆信息密度提升45%以上，在超长上下文场景中token消耗降低35%，记忆更新速度提升20%。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1c24d91d1a51fc511bbc5698ce08dc4a45635624",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Apache RocketMQ 发布 AI 专用消息引擎",
-      "url": "https://x.com/alibaba_cloud/status/2061400724018217381",
-      "published_at": "2026-06-01T10:53:26Z",
-      "summary": "🚀 Apache RocketMQ 为 AI 升级！推出 RocketMQ for AI--一个专为长时间会话、多智能体工作流和公平资源调度构建的新消息引擎。凭借 Lite-Topics、有序消息和智能流量整形，它解决了状态丢失、级联故障和突发负载问题。由阿里云大规模构建，现已开源。 了解更多： https：//int.alibabacloud.com/m/1000413178/ #RocketMQ #AI #CloudNative",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -484,11 +475,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 981,
+      "fetched_count": 982,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 847,
-      "checked_at": "2026-06-02T08:16:51.792066Z"
+      "latency_ms": 900,
+      "checked_at": "2026-06-02T11:04:41.881854Z"
     },
     {
       "source_id": "openai-skills",
@@ -499,8 +490,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 321,
-      "checked_at": "2026-06-02T08:16:52.113368Z"
+      "latency_ms": 288,
+      "checked_at": "2026-06-02T11:04:42.170861Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -512,7 +503,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 105,
-      "checked_at": "2026-06-02T08:16:52.222146Z"
+      "checked_at": "2026-06-02T11:04:42.279630Z"
     },
     {
       "source_id": "google-deepmind",
@@ -523,8 +514,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 374,
-      "checked_at": "2026-06-02T08:16:52.597776Z"
+      "latency_ms": 314,
+      "checked_at": "2026-06-02T11:04:42.595453Z"
     },
     {
       "source_id": "google-ai",
@@ -535,8 +526,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 162,
-      "checked_at": "2026-06-02T08:16:52.760787Z"
+      "latency_ms": 190,
+      "checked_at": "2026-06-02T11:04:42.786187Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -547,8 +538,8 @@
       "fetched_count": 789,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 303,
-      "checked_at": "2026-06-02T08:16:53.076193Z"
+      "latency_ms": 281,
+      "checked_at": "2026-06-02T11:04:43.080475Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -559,8 +550,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 351,
-      "checked_at": "2026-06-02T08:16:53.427837Z"
+      "latency_ms": 153,
+      "checked_at": "2026-06-02T11:04:43.234410Z"
     },
     {
       "source_id": "github-changelog",
@@ -571,8 +562,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-06-02T08:16:53.454151Z"
+      "latency_ms": 28,
+      "checked_at": "2026-06-02T11:04:43.263663Z"
     },
     {
       "source_id": "aihot",
@@ -581,10 +572,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 14,
+      "kept_count": 13,
       "error": null,
-      "latency_ms": 1464,
-      "checked_at": "2026-06-02T08:16:54.919733Z"
+      "latency_ms": 1449,
+      "checked_at": "2026-06-02T11:04:44.714513Z"
     }
   ],
   "control_notes": {
