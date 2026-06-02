@@ -43,8 +43,8 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>18</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>3</b><span>官方源条目</span></div>
+        <div class="stat"><b>20</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>4</b><span>官方源条目</span></div>
         <div class="stat"><b>14</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
@@ -52,8 +52,21 @@
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-01T19:20:13.838891Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-02T02:53:06.715604Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-06-01T10:00:00Z</span>
+        <strong>Score 7</strong>
+      </div>
+      <h3><a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws" target="_blank" rel="noreferrer">OpenAI frontier models and Codex are now available on AWS</a></h3>
+      <p class='summary'>OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.</p>
+      <div class="tags"><span>strong:openai</span><span>strong:codex</span><span>weak:eval</span><span>weak:workflow</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>Hugging Face Blog</span>
@@ -64,6 +77,19 @@
       <h3><a href="https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption" target="_blank" rel="noreferrer">Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic</a></h3>
       
       <div class="tags"><span>strong:agent</span><span>strong:llm</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-02T00:55:00Z</span>
+        <strong>Score 7</strong>
+      </div>
+      <h3><a href="https://x.com/shao__meng/status/2061612512580346245" target="_blank" rel="noreferrer">Anthropic 开发者分享 Claude Code「理解验证」工作流</a></h3>
+      <p class='summary'>Anthropic 核心开发者分享了一套用于 Claude Code 的「理解验证」工作流。该工作流将 AI 定位为&quot;高效且睿智的教师&quot;，成功标准不仅是完成任务，更是确保人类对问题、方案及影响有可复述、可辩护的掌握。它通过增量教学、用户复述、清单+测验等方式，围绕问题域、方案域和语境域三条轴线展开，具体包含8个可执行步骤，强调在进入下一阶段前需确认用户已真正理解。此工作流旨在对抗长会话中人类易沦为&quot;审批按钮&quot;的&quot;智能体黑箱&quot;问题，强制沉淀决策上下文，实现可审计的深度理解。</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:智能体</span><span>weak:开发者</span><span>weak:工作流</span></div>
     </article>
     
 
@@ -95,6 +121,19 @@
 
     <article class="card">
       <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-06-01T14:00:26Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans" target="_blank" rel="noreferrer">Updates to GitHub Copilot billing and plans</a></h3>
+      <p class='summary'>As announced in our recent blog post, usage-based billing for GitHub Copilot is now live for all users and Copilot code review consumes GitHub Actions minutes, in addition to GitHub… The post Updates to GitHub Copilot billing and plans appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:copilot</span><span>source:copilot</span><span>source:actions</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
         <span>OpenAI News</span>
         <span>official_rss</span>
         <span>2026-06-01T12:00:00Z</span>
@@ -116,6 +155,19 @@
       <h3><a href="https://x.com/perplexity_ai/status/2061506359326384319" target="_blank" rel="noreferrer">Perplexity发布Search as Code搜索架构</a></h3>
       <p class='summary'>推出Search as Code，我们为AI智能体打造的全新搜索架构。 它直接编写Python代码调用我们的搜索栈，而非逐个循环函数调用。 现已在Perplexity Agent API中提供，并成为Computer的默认选项。 https：//research.perplexity.ai/articles/rethinking-search-as-code-generation</p>
       <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-01T16:24:52Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://www.anthropic.com/news/confidential-draft-s1-sec" target="_blank" rel="noreferrer">Anthropic 保密向 SEC 提交 S-1 草案</a></h3>
+      <p class='summary'>Anthropic， PBC 今日保密向美国证券交易委员会提交了 S-1 表格草案，计划进行普通股的首次公开发行。这使其在 SEC 完成审核后拥有上市的选择权。IPO 的具体发行股数和价格尚未确定，将取决于市场条件等因素。公司近期刚完成由 Altimeter Capital 等领投的 650 亿美元 H 轮融资，估值达 9650 亿美元，并发布了 Claude Opus 4.8 模型。</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -147,14 +199,14 @@
 
     <article class="card">
       <div class="meta">
-        <span>Anthropic News via Olshansk RSS</span>
+        <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-06-01T00:00:00Z</span>
+        <span>2026-06-02T02:00:00Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://www.anthropic.com/news/confidential-draft-s1-sec" target="_blank" rel="noreferrer">Anthropic confidentially submits draft S-1 to the SEC</a></h3>
-      <p class='summary'>Anthropic confidentially submits draft S-1 to the SEC</p>
-      <div class="tags"><span>strong:anthropic</span><span>source:anthropic</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2" target="_blank" rel="noreferrer">NVIDIA JetPack 7.2支持内存优化的边缘智能体部署</a></h3>
+      <p class='summary'>NVIDIA JetPack 7.2发布，支持一键部署开源NVIDIA NemoClaw堆栈，该堆栈为OpenClaw添加了隐私与安全控制。同时引入NVIDIA agent skills for Jetson，为Jetson设备提供智能体技能。该版本优化了内存效率，旨在加速AI代理从数字世界向物理环境的边缘部署。</p>
+      <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -240,32 +292,6 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-06-01T02:16:40Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://www.ithome.com/0/957/985.htm" target="_blank" rel="noreferrer">上海：支持多模态智能体开发与应用，有序推进智能驾驶在共享出行、物流运输等多场景应用</a></h3>
-      <p class='summary'>上海市人民政府办公厅印发《上海市服务业发展&quot;十五五&quot;规划》，提出发展AI软件技术及服务产业集群。规划支持多模态智能体开发与应用，推动智能客服等工具规模化；有序推进智能驾驶在共享出行、物流运输等多场景应用；做强算运存协同布局的智算云网络，推广模型即服务（MaaS）；并支持开发面向家庭、养老、文旅等场景的具身智能整机产品，加速机器人向通用智能与精细化服务跃升。</p>
-      <div class="tags"><span>strong:智能体</span><span>strong:多模态</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-01T02:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://qwen.ai/blog?id=qwen3.7-plus" target="_blank" rel="noreferrer">Qwen3.7-Plus：多模态智能体智能</a></h3>
-      <p class='summary'>Qwen Studio 提供涵盖聊天机器人、图像与视频理解、图像生成、文档处理、网页搜索集成、工具使用及制品生成的全面功能。</p>
-      <div class="tags"><span>strong:智能体</span><span>strong:多模态</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
         <span>2026-06-01T10:53:26Z</span>
         <strong>Score 2</strong>
       </div>
@@ -292,15 +318,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>979</td><td>1</td><td>710ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>213ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>220</td><td>1</td><td>92ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>296ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>186ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>789</td><td>1</td><td>243ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>121ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>24ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>16</td><td>1405ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>981</td><td>2</td><td>669ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>221ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>220</td><td>0</td><td>123ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>575ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>129ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>789</td><td>1</td><td>244ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>240ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>22ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>17</td><td>1465ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

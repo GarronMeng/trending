@@ -1,15 +1,19 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-01T19:20:13.833332Z",
+  "generated_at": "2026-06-02T02:53:06.711345Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 18,
+  "item_count": 20,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 4,
       "top_sources": [
+        [
+          "OpenAI News",
+          2
+        ],
         [
           "Hugging Face Blog",
           1
@@ -17,16 +21,28 @@
         [
           "Google AI Blog",
           1
-        ],
-        [
-          "OpenAI News",
-          1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
+          4
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "eval",
+          1
+        ],
+        [
+          "workflow",
+          1
         ],
         [
           "agent",
@@ -39,10 +55,6 @@
         [
           "gemini",
           1
-        ],
-        [
-          "openai",
-          1
         ]
       ]
     },
@@ -52,11 +64,7 @@
       "top_sources": [
         [
           "AI Hot",
-          13
-        ],
-        [
-          "Anthropic News via Olshansk RSS",
-          1
+          14
         ]
       ],
       "top_keywords": [
@@ -70,59 +78,63 @@
         ],
         [
           "agent",
-          4
-        ],
-        [
-          "多模态",
-          3
+          5
         ],
         [
           "api",
-          3
+          4
         ],
         [
           "API",
-          3
+          4
         ],
         [
-          "gemini",
-          2
+          "claude",
+          3
         ],
         [
           "anthropic",
           2
         ],
         [
-          "claude",
+          "开发者",
+          2
+        ],
+        [
+          "工作流",
+          2
+        ],
+        [
+          "gemini",
+          2
+        ],
+        [
+          "多模态",
           1
         ],
         [
           "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "人工智能",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          1
+          2
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          2
+          4
+        ],
+        [
+          "actions",
+          1
         ],
         [
           "eval",
@@ -132,6 +144,27 @@
     }
   },
   "items": [
+    {
+      "id": "dde737d204ae7d87f9ce512bc057a51f873fa692",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "OpenAI frontier models and Codex are now available on AWS",
+      "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
+      "published_at": "2026-06-01T10:00:00Z",
+      "summary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already use. Customers can get started with OpenAI on AWS and move faster from evaluation to production.",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "weak:eval",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "e027f6e7e3136e331c3c0aeada39282eea897e71",
       "source_id": "huggingface-blog",
@@ -148,6 +181,28 @@
         "strong:agent",
         "strong:llm",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "92667aa1be4efbdf77b8009d89952289850ee800",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 开发者分享 Claude Code「理解验证」工作流",
+      "url": "https://x.com/shao__meng/status/2061612512580346245",
+      "published_at": "2026-06-02T00:55:00Z",
+      "summary": "Anthropic 核心开发者分享了一套用于 Claude Code 的「理解验证」工作流。该工作流将 AI 定位为\"高效且睿智的教师\"，成功标准不仅是完成任务，更是确保人类对问题、方案及影响有可复述、可辩护的掌握。它通过增量教学、用户复述、清单+测验等方式，围绕问题域、方案域和语境域三条轴线展开，具体包含8个可执行步骤，强调在进入下一阶段前需确认用户已真正理解。此工作流旨在对抗长会话中人类易沦为\"审批按钮\"的\"智能体黑箱\"问题，强制沉淀决策上下文，实现可审计的深度理解。",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:智能体",
+        "weak:开发者",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -192,6 +247,25 @@
       "is_ai_related": true
     },
     {
+      "id": "0fb14849c351930dab6f0415807b932e9d84a95b",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Updates to GitHub Copilot billing and plans",
+      "url": "https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans",
+      "published_at": "2026-06-01T14:00:26Z",
+      "summary": "As announced in our recent blog post, usage-based billing for GitHub Copilot is now live for all users and Copilot code review consumes GitHub Actions minutes, in addition to GitHub… The post Updates to GitHub Copilot billing and plans appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot",
+        "source:actions"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "fbdcf05e3a3f2be99be063b4e6ae3fca96ffe76c",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -224,6 +298,27 @@
       "relevance_reasons": [
         "strong:agent",
         "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2ababe8937e68737338b531169f3f2d0ad13b1c2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 保密向 SEC 提交 S-1 草案",
+      "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "published_at": "2026-06-01T16:24:52Z",
+      "summary": "Anthropic， PBC 今日保密向美国证券交易委员会提交了 S-1 表格草案，计划进行普通股的首次公开发行。这使其在 SEC 完成审核后拥有上市的选择权。IPO 的具体发行股数和价格尚未确定，将取决于市场条件等因素。公司近期刚完成由 Altimeter Capital 等领投的 650 亿美元 H 轮融资，估值达 9650 亿美元，并发布了 Claude Opus 4.8 模型。",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
         "weak:api",
         "weak:API",
         "source_penalty:aggregate_noise"
@@ -270,20 +365,20 @@
       "is_ai_related": true
     },
     {
-      "id": "0c265bb21c9d65f78e74376942df734533734f9d",
-      "source_id": "anthropic-news-unofficial",
-      "source_name": "Anthropic News via Olshansk RSS",
+      "id": "a376ee82853e8dde571c5d7890a4dd7b825f8704",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
-      "source_weight": 3,
-      "title": "Anthropic confidentially submits draft S-1 to the SEC",
-      "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
-      "published_at": "2026-06-01T00:00:00Z",
-      "summary": "Anthropic confidentially submits draft S-1 to the SEC",
+      "source_weight": 2,
+      "title": "NVIDIA JetPack 7.2支持内存优化的边缘智能体部署",
+      "url": "https://developer.nvidia.com/blog/deploy-agentic-ready-ai-at-the-edge-with-memory-efficiency-in-nvidia-jetpack-7-2",
+      "published_at": "2026-06-02T02:00:00Z",
+      "summary": "NVIDIA JetPack 7.2发布，支持一键部署开源NVIDIA NemoClaw堆栈，该堆栈为OpenClaw添加了隐私与安全控制。同时引入NVIDIA agent skills for Jetson，为Jetson设备提供智能体技能。该版本优化了内存效率，旨在加速AI代理从数字世界向物理环境的边缘部署。",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
-        "source:anthropic",
+        "strong:agent",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -404,44 +499,6 @@
       "is_ai_related": true
     },
     {
-      "id": "a2e05ce0ee329ceb576d17ceee39859906d33b04",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "上海：支持多模态智能体开发与应用，有序推进智能驾驶在共享出行、物流运输等多场景应用",
-      "url": "https://www.ithome.com/0/957/985.htm",
-      "published_at": "2026-06-01T02:16:40Z",
-      "summary": "上海市人民政府办公厅印发《上海市服务业发展\"十五五\"规划》，提出发展AI软件技术及服务产业集群。规划支持多模态智能体开发与应用，推动智能客服等工具规模化；有序推进智能驾驶在共享出行、物流运输等多场景应用；做强算运存协同布局的智算云网络，推广模型即服务（MaaS）；并支持开发面向家庭、养老、文旅等场景的具身智能整机产品，加速机器人向通用智能与精细化服务跃升。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "86f1f42f90d02cf96c0d59ebef5d3f86ca2d3460",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Qwen3.7-Plus：多模态智能体智能",
-      "url": "https://qwen.ai/blog?id=qwen3.7-plus",
-      "published_at": "2026-06-01T02:00:00Z",
-      "summary": "Qwen Studio 提供涵盖聊天机器人、图像与视频理解、图像生成、文档处理、网页搜索集成、工具使用及制品生成的全面功能。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "1c24d91d1a51fc511bbc5698ce08dc4a45635624",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -487,11 +544,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 979,
-      "kept_count": 1,
+      "fetched_count": 981,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 710,
-      "checked_at": "2026-06-01T19:20:11.222965Z"
+      "latency_ms": 669,
+      "checked_at": "2026-06-02T02:53:03.666643Z"
     },
     {
       "source_id": "openai-skills",
@@ -502,8 +559,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 213,
-      "checked_at": "2026-06-01T19:20:11.436717Z"
+      "latency_ms": 221,
+      "checked_at": "2026-06-02T02:53:03.887898Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -512,10 +569,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 220,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 92,
-      "checked_at": "2026-06-01T19:20:11.532135Z"
+      "latency_ms": 123,
+      "checked_at": "2026-06-02T02:53:04.014062Z"
     },
     {
       "source_id": "google-deepmind",
@@ -526,8 +583,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 296,
-      "checked_at": "2026-06-01T19:20:11.829946Z"
+      "latency_ms": 575,
+      "checked_at": "2026-06-02T02:53:04.590618Z"
     },
     {
       "source_id": "google-ai",
@@ -538,8 +595,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 186,
-      "checked_at": "2026-06-01T19:20:12.016562Z"
+      "latency_ms": 129,
+      "checked_at": "2026-06-02T02:53:04.720781Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -550,8 +607,8 @@
       "fetched_count": 789,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 243,
-      "checked_at": "2026-06-01T19:20:12.271277Z"
+      "latency_ms": 244,
+      "checked_at": "2026-06-02T02:53:04.975035Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -562,8 +619,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 121,
-      "checked_at": "2026-06-01T19:20:12.393353Z"
+      "latency_ms": 240,
+      "checked_at": "2026-06-02T02:53:05.216043Z"
     },
     {
       "source_id": "github-changelog",
@@ -572,10 +629,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-06-01T19:20:12.417834Z"
+      "latency_ms": 22,
+      "checked_at": "2026-06-02T02:53:05.239208Z"
     },
     {
       "source_id": "aihot",
@@ -584,10 +641,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 16,
+      "kept_count": 17,
       "error": null,
-      "latency_ms": 1405,
-      "checked_at": "2026-06-01T19:20:13.825238Z"
+      "latency_ms": 1465,
+      "checked_at": "2026-06-02T02:53:06.706216Z"
     }
   ],
   "control_notes": {
