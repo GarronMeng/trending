@@ -1,47 +1,51 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-02T12:24:39.990398Z",
+  "generated_at": "2026-06-02T18:04:42.048228Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 14,
+  "item_count": 27,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 3,
+    "developer": {
+      "group": "developer",
+      "count": 10,
       "top_sources": [
         [
-          "OpenAI News",
-          1
-        ],
-        [
-          "Hugging Face Blog",
-          1
-        ],
-        [
-          "Google AI Blog",
-          1
+          "GitHub Changelog",
+          10
         ]
       ],
       "top_keywords": [
         [
-          "official_ai",
-          3
+          "copilot",
+          18
         ],
         [
-          "codex",
-          1
-        ],
-        [
-          "workflow automation",
-          1
+          "agent",
+          5
         ],
         [
           "tool",
+          3
+        ],
+        [
+          "developer tool",
           1
         ],
         [
-          "automation",
+          "api",
+          1
+        ],
+        [
+          "developer",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "gemini",
           1
         ],
         [
@@ -49,51 +53,99 @@
           1
         ],
         [
+          "agents",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 5,
+      "top_sources": [
+        [
+          "OpenAI News",
+          4
+        ],
+        [
+          "Hugging Face Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          5
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "tool",
+          2
+        ],
+        [
+          "workflow",
+          2
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "workflow automation",
+          1
+        ],
+        [
+          "automation",
+          1
+        ],
+        [
           "agent",
           1
         ],
         [
-          "llm",
-          1
-        ],
-        [
-          "gemini",
+          "agents",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 12,
       "top_sources": [
         [
           "AI Hot",
-          9
+          12
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
+          12
         ],
         [
           "智能体",
-          5
+          7
         ],
         [
           "agent",
-          4
+          5
         ],
         [
-          "api",
+          "openai",
           3
         ],
         [
-          "API",
-          3
+          "gemini",
+          2
         ],
         [
-          "anthropic",
+          "deepmind",
+          2
+        ],
+        [
+          "codex",
           2
         ],
         [
@@ -113,41 +165,37 @@
           1
         ],
         [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
-        ],
-        [
-          "actions",
-          1
-        ],
-        [
-          "eval",
+          "anthropic",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "00a007e6520d9f12d44b50048bfe1917341d3280",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot SDK is now generally available",
+      "url": "https://github.blog/changelog/2026-06-02-copilot-sdk-is-now-generally-available",
+      "published_at": "2026-06-02T17:30:00Z",
+      "summary": "The GitHub Copilot SDK is now generally available. You can embed GitHub Copilot’s agentic engine into your own applications, services, and developer tools with a stable API and production-ready support.… The post Copilot SDK is now generally available appeared first on The GitHub Blog .",
+      "relevance_score": 11,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:developer tool",
+        "weak:api",
+        "weak:tool",
+        "weak:developer",
+        "weak:copilot",
+        "weak:API",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "4892b852cec2d1bce8147754c88150edf0203e62",
       "source_id": "openai-news",
@@ -171,39 +219,209 @@
       "is_ai_related": true
     },
     {
-      "id": "e027f6e7e3136e331c3c0aeada39282eea897e71",
+      "id": "9d7058372f84520a8610acb83416e5ac170b749a",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Gemini models in Copilot CLI, cloud agent, and the Copilot app",
+      "url": "https://github.blog/changelog/2026-06-02-gemini-models-in-copilot-cli-cloud-agent-and-the-copilot-app",
+      "published_at": "2026-06-02T16:30:04Z",
+      "summary": "Two Gemini models are now available across additional GitHub Copilot surfaces. Gemini 3.1 Pro (Preview) and Gemini 3.5 Flash can now be used in: Copilot CLI Copilot cloud agent GitHub… The post Gemini models in Copilot CLI, cloud agent, and the Copilot app appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "97ad5775e8190b654d7213f8da5e1d81cd0b6113",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
-      "url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
-      "published_at": "2026-06-01T13:51:18Z",
+      "title": "Holo3.1: Fast & Local Computer Use Agents",
+      "url": "https://huggingface.co/blog/Hcompany/holo31",
+      "published_at": "2026-06-02T14:13:23Z",
       "summary": null,
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:agent",
-        "strong:llm",
+        "strong:agents",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "92667aa1be4efbdf77b8009d89952289850ee800",
+      "id": "5e440589e52b914c92f2f6b8dfffacd769356357",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Codex for every role, tool, and workflow",
+      "url": "https://openai.com/index/codex-for-every-role-tool-workflow",
+      "published_at": "2026-06-02T09:00:00Z",
+      "summary": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:codex",
+        "weak:tool",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1de5234818fd53ebee6f7ea792d0878a15694e55",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Shape Copilot code review around your team",
+      "url": "https://github.blog/changelog/2026-06-02-shape-copilot-code-review-around-your-team",
+      "published_at": "2026-06-02T17:22:00Z",
+      "summary": "Copilot code review adapts to your team’s tools and standards and scales its depth to the complexity of each change. Today we’re shipping two public previews on a unified agent… The post Shape Copilot code review around your team appeared first on The GitHub Blog .",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:tool",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ffbb2e6d5b9343095cb251c19539b2479a4473bb",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Introducing Copilot CLI and agentic capabilities enhancements in JetBrains IDEs",
+      "url": "https://github.blog/changelog/2026-06-02-introducing-copilot-cli-and-agentic-capabilities-enhancements-in-jetbrains-ides",
+      "published_at": "2026-06-02T16:30:40Z",
+      "summary": "With Copilot CLI now available in GitHub Copilot for JetBrains IDEs, this update centers on new capabilities for Copilot CLI sessions, while also delivering a broader set of agentic improvements.… The post Introducing Copilot CLI and agentic capabilities enhancements in JetBrains IDEs appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0a7526900df44ba7c0806704319024cddf6cbfe9",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
+      "url": "https://openai.com/index/travelers",
+      "published_at": "2026-06-02T12:00:00Z",
+      "summary": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1f843888dd56a57e62d2a530a356eef8e6202c55",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Advancing youth safety and opportunity through global leadership",
+      "url": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
+      "published_at": "2026-06-02T07:00:00Z",
+      "summary": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5761349dcd005de2cd61b0c1baa4e20cf3a27389",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Cloud and local sandboxes for GitHub Copilot now in public preview",
+      "url": "https://github.blog/changelog/2026-06-02-cloud-and-local-sandboxes-for-github-copilot-now-in-public-preview",
+      "published_at": "2026-06-02T17:25:00Z",
+      "summary": "GitHub Copilot can now run inside secure, isolated sandboxes, both locally on your machine and in the cloud. Sandboxed Copilot experiences provide isolated environments for Copilot’s tool execution locally as… The post Cloud and local sandboxes for GitHub Copilot now in public preview appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "weak:tool",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "79da738f895cd43189f42e1f875e3ba09fe0d591",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot code review for Azure Repos is now in technical preview",
+      "url": "https://github.blog/changelog/2026-06-02-github-copilot-code-review-for-azure-repos-is-now-in-technical-preview",
+      "published_at": "2026-06-02T17:22:00Z",
+      "summary": "GitHub Copilot code review for Azure Repos is now available in technical preview, bringing on demand pull request reviews directly into your Azure DevOps workflow. How it works Once enabled… The post GitHub Copilot code review for Azure Repos is now in technical preview appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "weak:workflow",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d8268b9ff7873b63449fd4ca69c62e7dc627a91b",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Extend GitHub with agent apps",
+      "url": "https://github.blog/changelog/2026-06-02-extend-github-with-agent-apps",
+      "published_at": "2026-06-02T17:20:00Z",
+      "summary": "Agent apps are AI agents from GitHub partners, installable from the GitHub Marketplace, and integrated directly into GitHub. You install an agent app just like any other GitHub App from… The post Extend GitHub with agent apps appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b5cbf690d5c9962947ce6c49b21e0db3845fef1e",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 开发者分享 Claude Code「理解验证」工作流",
-      "url": "https://x.com/shao__meng/status/2061612512580346245",
-      "published_at": "2026-06-02T00:55:00Z",
-      "summary": "Anthropic 核心开发者分享了一套用于 Claude Code 的「理解验证」工作流。该工作流将 AI 定位为\"高效且睿智的教师\"，成功标准不仅是完成任务，更是确保人类对问题、方案及影响有可复述、可辩护的掌握。它通过增量教学、用户复述、清单+测验等方式，围绕问题域、方案域和语境域三条轴线展开，具体包含8个可执行步骤，强调在进入下一阶段前需确认用户已真正理解。此工作流旨在对抗长会话中人类易沦为\"审批按钮\"的\"智能体黑箱\"问题，强制沉淀决策上下文，实现可审计的深度理解。",
-      "relevance_score": 7,
+      "title": "NVIDIA NemoClaw 部署 Hermes Agent 教程",
+      "url": "https://x.com/NVIDIAAI/status/2061858457519575280",
+      "published_at": "2026-06-02T17:12:18Z",
+      "summary": "教一个智能体一次工作流，让它在每次重建后都记住。 本教程展示如何使用 NVIDIA NemoClaw 和 OpenShell 部署 NousResearch Hermes Agent，将其连接到 Slack、Outlook、GitHub 和 NVIDIA 开发者论坛，然后将聊天纠正转化为可复用的技能。 私有数据保留在运行时策略之后。学到的技能在部署之间持续存在。",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
+        "strong:agent",
         "strong:智能体",
         "weak:开发者",
         "weak:工作流",
@@ -212,39 +430,42 @@
       "is_ai_related": true
     },
     {
-      "id": "f8069a42067a0a178740732f42339a2ac380e479",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How we used Gemini to build Google I/O 2026",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai",
-      "published_at": "2026-06-01T16:00:00Z",
-      "summary": "A collage of I/O-related images, including the Antigravity Coffee Co. pop-up, a colorful jellyfish and a still from the Timmy TPU video. The word AI repeats three times on the left of the image, and there are colorful icons, including a sparkle, as well.",
-      "relevance_score": 3,
+      "id": "2a60c16b4e83e7b1edba6d21b5ee6f5897af807a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google DeepMind 发布 Gemini 多智能体科研系统",
+      "url": "https://x.com/GoogleDeepMind/status/2061857539977842793",
+      "published_at": "2026-06-02T17:08:39Z",
+      "summary": "我们相信 AI 可以成为专属研究伙伴，帮助发现下一个突破。 隆重推出 Co-Scientist：我们最新的基于 Gemini 的多智能体系统，能够为复杂科学问题生成、辩论和演进新颖的假设 🧵",
+      "relevance_score": 5,
       "relevance_reasons": [
         "strong:gemini",
-        "source_prior:official_ai"
+        "strong:deepmind",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "0fb14849c351930dab6f0415807b932e9d84a95b",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Updates to GitHub Copilot billing and plans",
-      "url": "https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans",
-      "published_at": "2026-06-01T14:00:26Z",
-      "summary": "As announced in our recent blog post, usage-based billing for GitHub Copilot is now live for all users and Copilot code review consumes GitHub Actions minutes, in addition to GitHub… The post Updates to GitHub Copilot billing and plans appeared first on The GitHub Blog .",
+      "id": "7a2272c233086c57fa8e3aafea7f24379b99145a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI Codex 发布 Python SDK，可直接嵌入应用",
+      "url": "https://x.com/vista8/status/2061846741885018296",
+      "published_at": "2026-06-02T16:25:45Z",
+      "summary": "这个有点厉害，Codex 出 Python SDK了。 安装指令：pip install openai-codex 整合到自己的代码中，相当于直接内置了顶级编程和生图Agent？ 最关键的是，可以复用 Codex 登录态。",
       "relevance_score": 5,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot",
-        "source:actions"
+        "strong:openai",
+        "strong:codex",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -269,63 +490,151 @@
       "is_ai_related": true
     },
     {
-      "id": "dd1f1db0a3e01534dd516b89e7215640030430b8",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Perplexity发布Search as Code搜索架构",
-      "url": "https://x.com/perplexity_ai/status/2061506359326384319",
-      "published_at": "2026-06-01T17:53:11Z",
-      "summary": "推出Search as Code，我们为AI智能体打造的全新搜索架构。 它直接编写Python代码调用我们的搜索栈，而非逐个循环函数调用。 现已在Perplexity Agent API中提供，并成为Computer的默认选项。 https：//research.perplexity.ai/articles/rethinking-search-as-code-generation",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "2ababe8937e68737338b531169f3f2d0ad13b1c2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 保密向 SEC 提交 S-1 草案",
-      "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
-      "published_at": "2026-06-01T16:24:52Z",
-      "summary": "Anthropic， PBC 今日保密向美国证券交易委员会提交了 S-1 表格草案，计划进行普通股的首次公开发行。这使其在 SEC 完成审核后拥有上市的选择权。IPO 的具体发行股数和价格尚未确定，将取决于市场条件等因素。公司近期刚完成由 Altimeter Capital 等领投的 650 亿美元 H 轮融资，估值达 9650 亿美元，并发布了 Claude Opus 4.8 模型。",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e167d7e5d22b26b4aabdbae965c42168450aa94c",
+      "id": "dd51cdf9aa87fdbafed359df13eca15d223d252e",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Evaluation models in auto for individual plans",
-      "url": "https://github.blog/changelog/2026-06-01-evaluation-models-in-auto-for-individual-plans",
-      "published_at": "2026-06-01T16:18:17Z",
-      "summary": "GitHub Copilot offers access to evaluation models for individual non-enterprise users, and these models may be served in Copilot auto model selection. To disable use of evaluation models through Copilot… The post Evaluation models in auto for individual plans appeared first on The GitHub Blog .",
-      "relevance_score": 4,
+      "title": "Expanded technical preview availability for the GitHub Copilot app",
+      "url": "https://github.blog/changelog/2026-06-02-expanded-technical-preview-availability-for-the-github-copilot-app",
+      "published_at": "2026-06-02T17:36:00Z",
+      "summary": "The GitHub Copilot app technical preview is now available to all existing Copilot Pro, Pro+, Business, and Enterprise customers. Download the Copilot app for Windows, macOS, or Linux to get… The post Expanded technical preview availability for the GitHub Copilot app appeared first on The GitHub Blog .",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "weak:eval",
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0a85fa91325eaa615dd15705b23b3b6905fb07c6",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot CLI: Improved UI, rubber duck, prompt scheduling, and voice input",
+      "url": "https://github.blog/changelog/2026-06-02-copilot-cli-improved-ui-rubber-duck-prompt-scheduling-and-voice-input",
+      "published_at": "2026-06-02T17:27:00Z",
+      "summary": "GitHub Copilot CLI is getting a major refresh at Microsoft Build 2026. Rubber duck, prompt scheduling, and voice input are generally available today, and a new experimental terminal interface—including tabs… The post Copilot CLI: Improved UI, rubber duck, prompt scheduling, and voice input appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2088b4d31cb17e50cdca47b42ce9523624b27c26",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot in Eclipse: BYOK, skills, and chat updates",
+      "url": "https://github.blog/changelog/2026-06-02-github-copilot-in-eclipse-byok-skills-and-chat-updates",
+      "published_at": "2026-06-02T16:30:00Z",
+      "summary": "This release of GitHub Copilot in Eclipse packs a lot: a refreshed chat experience, deeper visibility into your session context, BYOK for Business and Enterprise, better ABAP support, and brand… The post GitHub Copilot in Eclipse: BYOK, skills, and chat updates appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "12add2ae23e0cf5ac2e5d275869f3935370ff15f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Code团队实践：智能体编程如何重塑工程组织与流程",
+      "url": "https://claude.com/blog/running-an-ai-native-engineering-org",
+      "published_at": "2026-06-02T16:45:23Z",
+      "summary": "在Code w/ Claude SF 2026活动上，Claude Code工程团队分享了将智能体编程设为默认工作方式后带来的流程与结构变革。核心变化包括：规划转向即时（JIT）模式，强调快速原型与反馈；上下文收集变为\"先问Claude\"；代码审查中Claude处理风格与测试，人工专注于法律、安全等专业判断。新范式下，工程瓶颈从编写代码转向验证、审查与安全维护。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c44c9f1aabbdb22514f69430e2308fb6ca6a05d0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI Codex Sites 功能发布",
+      "url": "https://x.com/OpenAI/status/2061845949170045346",
+      "published_at": "2026-06-02T16:22:36Z",
+      "summary": "构建应用从未如此简单。 通过 Sites，Codex 可以将你的工作、想法和计划转化为一个交互式网站或应用，你的团队可以通过一个 URL 进行探索、使用和分享。 该功能将首先向 Business 和 Enterprise 计划推出，之后会更广泛地扩展。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e8207ef9bc486e91594eb8f0adbbe0247c5f92bb",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "商汤开源SenseNova-Skills AI办公技能套件",
+      "url": "https://x.com/SenseTime_AI/status/2061822148076093625",
+      "published_at": "2026-06-02T14:48:01Z",
+      "summary": "商汤开源了AI办公技能套件SenseNova-Skills。这是一个为任何技能兼容智能体（如OpenClaw与HermesAgent）设计的开源技能集合，提供四大核心功能：图像信息图表生成（可镜像参考风格）、数据分析（支持多表解析、清洗与可视化）、PPT创建（生成大纲内容并智能排版，输出可编辑文件）以及深度研究（跨学术、技术、社交等多源搜索并生成报告）。该技能套件现已完全开源。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1ede6b53814b0fd1fe89b22732ebcd78611a7165",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic扩展Project Glasswing计划",
+      "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+      "published_at": "2026-06-02T13:28:13Z",
+      "summary": "Anthropic正将其Project Glasswing计划扩展至约150个新组织，此前首批约50个合作伙伴。新伙伴分布于十五个多国家，覆盖电力、水务、医疗、通信和硬件等关键基础设施行业。这些合作伙伴的共同点在于，其代码库若遭成功攻击，后果可能极其严重，影响或超1亿人。项目旨在利用Claude Mythos Preview等前沿模型扫描漏洞并协助修复，以应对AI驱动的网络安全挑战。同时，Anthropic推出了基于Claude Opus 4.8等公开模型的Claude Security产品，用于扫描代码并建议补丁。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9edf453cd78fa22f3eb8bf6c8da38d32e2300227",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gemini Spark：最令人印象深刻也最可怕的AI体验",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/941388/gemini-spark-ai-agent-trip-planning",
+      "published_at": "2026-06-02T12:38:08Z",
+      "summary": "Google DeepMind的AI模型Gemini Spark提供了一次极为深刻但同时令人感到不安的用户体验。该模型展现的强大能力令人印象深刻，但其带来的影响和潜力也引发了深刻的恐惧感。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:deepmind",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -368,59 +677,20 @@
       "is_ai_related": true
     },
     {
-      "id": "929f71d5fb272c71ff05ce63fcbc9b247de055e4",
+      "id": "0d8730474aa62447eaa782120756dfb913a15ca2",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "智谱：建议 A 股发行并在科创板上市",
-      "url": "https://www.ithome.com/0/958/444.htm",
-      "published_at": "2026-06-01T15:53:42Z",
-      "summary": "智谱计划向中国监管机构申请发行A股并在科创板上市。发行股份数量占发行完成后总股本的2%至8%，预计全部为新股，原股东不发售。本次发行募集资金净额将投资于人工智能通用基座大模型、大模型MaaS一站式服务平台及补充流动资金。此外，公司拟将英文名称由\"Knowledge Atlas Technology Joint Stock Company Limited\"变更为\"Z.AI Co.， Ltd.\"。",
-      "relevance_score": 3,
+      "title": "GitHub Copilot应用：智能体原生的桌面体验",
+      "url": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience",
+      "published_at": "2026-06-02T17:30:03Z",
+      "summary": "在微软 Build 2026 大会上，GitHub 发布了新的工具和更新，并将 Copilot 应用定位为\"智能体原生的桌面体验\"。其核心目标是让 AI 智能体能够以用户已经习惯的方式进行工作。",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:人工智能",
-        "strong:大模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "cde719d64aa3c7a2f30c0fba4a0f6d9201e66520",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "作者分享使用 Codex App 开发的开源项目合集",
-      "url": "https://x.com/vista8/status/2061443708374208769",
-      "published_at": "2026-06-01T13:44:14Z",
-      "summary": "作者分享了使用 Codex App 等工具开发的一系列开源项目，包括4个 Chrome 插件（如快捷提示词、新标签页）、4个网站（如艺术家风格对比、音乐展示）和5个 AI Skill（如论文解读、阅读助手）。项目基于 GPT-Image-2 API、Suno 等技术，并整合了 Read-frog、Hyperframe 等开源项目。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:codex",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "128b74619eb09051fb0d7eb9bee0c89df57c2bd0",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "王兴：美团 AI Agent\"小美\"与腾讯元宝即将深度合作，用户订单无缝连接",
-      "url": "https://www.ithome.com/0/958/410.htm",
-      "published_at": "2026-06-01T12:34:05Z",
-      "summary": "美团2026年第一季度财报显示营收910.39亿元，净利润亏损68.27亿元。财报电话会上，CEO王兴透露其AI Agent\"小美\"将与腾讯元宝深度合作。用户在腾讯元宝中提交本地服务需求，将被无缝连接至美团的外卖点餐、配送等生态。王兴强调，面向智能体的服务（To A）正变得日益重要，美团已将AI助手\"小团\"置于App核心位置，并拓展AI服务外延。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
         "strong:智能体",
+        "weak:copilot",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -433,11 +703,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 982,
-      "kept_count": 1,
+      "fetched_count": 985,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 763,
-      "checked_at": "2026-06-02T12:24:36.842271Z"
+      "latency_ms": 639,
+      "checked_at": "2026-06-02T18:04:39.168632Z"
     },
     {
       "source_id": "openai-skills",
@@ -448,8 +718,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 258,
-      "checked_at": "2026-06-02T12:24:37.100685Z"
+      "latency_ms": 409,
+      "checked_at": "2026-06-02T18:04:39.578196Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -457,11 +727,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 220,
+      "fetched_count": 221,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 183,
-      "checked_at": "2026-06-02T12:24:37.287864Z"
+      "latency_ms": 123,
+      "checked_at": "2026-06-02T18:04:39.705265Z"
     },
     {
       "source_id": "google-deepmind",
@@ -472,8 +742,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 428,
-      "checked_at": "2026-06-02T12:24:37.717480Z"
+      "latency_ms": 321,
+      "checked_at": "2026-06-02T18:04:40.028021Z"
     },
     {
       "source_id": "google-ai",
@@ -482,10 +752,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 225,
-      "checked_at": "2026-06-02T12:24:37.942969Z"
+      "latency_ms": 274,
+      "checked_at": "2026-06-02T18:04:40.302587Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -493,11 +763,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 789,
+      "fetched_count": 790,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 260,
-      "checked_at": "2026-06-02T12:24:38.216206Z"
+      "latency_ms": 324,
+      "checked_at": "2026-06-02T18:04:40.639022Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -508,8 +778,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 132,
-      "checked_at": "2026-06-02T12:24:38.348632Z"
+      "latency_ms": 160,
+      "checked_at": "2026-06-02T18:04:40.799758Z"
     },
     {
       "source_id": "github-changelog",
@@ -518,10 +788,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-06-02T12:24:38.377430Z"
+      "latency_ms": 44,
+      "checked_at": "2026-06-02T18:04:40.845260Z"
     },
     {
       "source_id": "aihot",
@@ -530,10 +800,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 11,
+      "kept_count": 13,
       "error": null,
-      "latency_ms": 1602,
-      "checked_at": "2026-06-02T12:24:39.981108Z"
+      "latency_ms": 1194,
+      "checked_at": "2026-06-02T18:04:42.040750Z"
     }
   ],
   "control_notes": {
