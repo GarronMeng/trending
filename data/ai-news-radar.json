@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-03T11:26:49.351319Z",
+  "generated_at": "2026-06-03T12:54:14.099214Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 26,
+  "item_count": 24,
   "groups": {
     "developer": {
       "group": "developer",
@@ -64,22 +64,14 @@
     },
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "Hugging Face Blog",
           1
-        ],
-        [
-          "OpenAI News",
-          1
         ]
       ],
       "top_keywords": [
-        [
-          "official_ai",
-          2
-        ],
         [
           "agent",
           1
@@ -89,24 +81,24 @@
           1
         ],
         [
-          "openai",
+          "official_ai",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 14,
+      "count": 13,
       "top_sources": [
         [
           "AI Hot",
-          14
+          13
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          14
+          13
         ],
         [
           "智能体",
@@ -125,10 +117,6 @@
           3
         ],
         [
-          "deepmind",
-          3
-        ],
-        [
           "codex",
           3
         ],
@@ -141,7 +129,7 @@
           2
         ],
         [
-          "gemini",
+          "deepmind",
           2
         ],
         [
@@ -150,6 +138,10 @@
         ],
         [
           "chatgpt",
+          1
+        ],
+        [
+          "gemini",
           1
         ]
       ]
@@ -318,24 +310,6 @@
         "strong:agent",
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0a7526900df44ba7c0806704319024cddf6cbfe9",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
-      "url": "https://openai.com/index/travelers",
-      "published_at": "2026-06-02T12:00:00Z",
-      "summary": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -627,25 +601,6 @@
       "is_ai_related": true
     },
     {
-      "id": "9edf453cd78fa22f3eb8bf6c8da38d32e2300227",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Gemini Spark：最令人印象深刻也最可怕的AI体验",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/941388/gemini-spark-ai-agent-trip-planning",
-      "published_at": "2026-06-02T12:38:08Z",
-      "summary": "Google DeepMind的AI模型Gemini Spark提供了一次极为深刻但同时令人感到不安的用户体验。该模型展现的强大能力令人印象深刻，但其带来的影响和潜力也引发了深刻的恐惧感。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:deepmind",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "0d8730474aa62447eaa782120756dfb913a15ca2",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -673,10 +628,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 985,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 792,
-      "checked_at": "2026-06-03T11:26:45.585551Z"
+      "latency_ms": 983,
+      "checked_at": "2026-06-03T12:54:11.229517Z"
     },
     {
       "source_id": "openai-skills",
@@ -687,8 +642,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 173,
-      "checked_at": "2026-06-03T11:26:45.759478Z"
+      "latency_ms": 196,
+      "checked_at": "2026-06-03T12:54:11.426390Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -699,8 +654,8 @@
       "fetched_count": 222,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 104,
-      "checked_at": "2026-06-03T11:26:45.867079Z"
+      "latency_ms": 109,
+      "checked_at": "2026-06-03T12:54:11.539641Z"
     },
     {
       "source_id": "google-deepmind",
@@ -711,8 +666,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 255,
-      "checked_at": "2026-06-03T11:26:46.123929Z"
+      "latency_ms": 364,
+      "checked_at": "2026-06-03T12:54:11.905475Z"
     },
     {
       "source_id": "google-ai",
@@ -723,8 +678,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 225,
-      "checked_at": "2026-06-03T11:26:46.350264Z"
+      "latency_ms": 250,
+      "checked_at": "2026-06-03T12:54:12.156796Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -735,8 +690,8 @@
       "fetched_count": 790,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 317,
-      "checked_at": "2026-06-03T11:26:46.679287Z"
+      "latency_ms": 267,
+      "checked_at": "2026-06-03T12:54:12.436713Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -747,8 +702,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 102,
-      "checked_at": "2026-06-03T11:26:46.781826Z"
+      "latency_ms": 125,
+      "checked_at": "2026-06-03T12:54:12.562920Z"
     },
     {
       "source_id": "github-changelog",
@@ -759,8 +714,8 @@
       "fetched_count": 10,
       "kept_count": 10,
       "error": null,
-      "latency_ms": 35,
-      "checked_at": "2026-06-03T11:26:46.817595Z"
+      "latency_ms": 38,
+      "checked_at": "2026-06-03T12:54:12.602264Z"
     },
     {
       "source_id": "aihot",
@@ -769,10 +724,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 14,
+      "kept_count": 13,
       "error": null,
-      "latency_ms": 2524,
-      "checked_at": "2026-06-03T11:26:49.343291Z"
+      "latency_ms": 1485,
+      "checked_at": "2026-06-03T12:54:14.089325Z"
     }
   ],
   "control_notes": {
