@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-03T08:44:13.534069Z",
+  "generated_at": "2026-06-03T11:26:49.351319Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 30,
+  "item_count": 26,
   "groups": {
     "developer": {
       "group": "developer",
@@ -64,21 +64,21 @@
     },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
-          "OpenAI News",
-          2
+          "Hugging Face Blog",
+          1
         ],
         [
-          "Hugging Face Blog",
+          "OpenAI News",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
+          2
         ],
         [
           "agent",
@@ -89,18 +89,6 @@
           1
         ],
         [
-          "codex",
-          1
-        ],
-        [
-          "tool",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
           "openai",
           1
         ]
@@ -108,21 +96,21 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 17,
+      "count": 14,
       "top_sources": [
         [
           "AI Hot",
-          17
+          14
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          17
+          14
         ],
         [
           "智能体",
-          9
+          7
         ],
         [
           "openai",
@@ -130,7 +118,7 @@
         ],
         [
           "claude",
-          5
+          4
         ],
         [
           "anthropic",
@@ -145,23 +133,23 @@
           3
         ],
         [
-          "agent",
-          3
+          "api",
+          2
         ],
         [
-          "工作流",
-          3
+          "API",
+          2
         ],
         [
           "gemini",
           2
         ],
         [
-          "chatgpt",
-          1
+          "agent",
+          2
         ],
         [
-          "api",
+          "chatgpt",
           1
         ]
       ]
@@ -253,22 +241,24 @@
       "is_ai_related": true
     },
     {
-      "id": "5e440589e52b914c92f2f6b8dfffacd769356357",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Codex for every role, tool, and workflow",
-      "url": "https://openai.com/index/codex-for-every-role-tool-workflow",
-      "published_at": "2026-06-02T09:00:00Z",
-      "summary": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI.",
-      "relevance_score": 5,
+      "id": "386e30c20268a2fa8a53c2243705d91d6a3a6825",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 分析 832 个 AI 恶意账户：中高风险攻击者半年从 33% 跃至 56%",
+      "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "published_at": "2026-06-03T09:51:21Z",
+      "summary": "Anthropic 分析 2025 年 3 月至 2026 年 3 月间 832 个被封禁的恶意账户，映射至 MITRE ATT&CK 框架。67.3% 使用 AI 编写恶意软件，6.5% 用于横向移动。六个月间中高风险攻击者占比从 33% 升至 56%。AI 用于账户发现增长 8.9%，AI 辅助钓鱼下降 8.6%。传统基于技术数量或平台（Claude Code、API、聊天界面）的威胁评估失效，而 MITRE ATT&CK 框架尚未收录此类智能体编排行为。",
+      "relevance_score": 7,
       "relevance_reasons": [
-        "strong:codex",
-        "weak:tool",
-        "weak:workflow",
-        "source_prior:official_ai"
+        "strong:anthropic",
+        "strong:claude",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -467,26 +457,6 @@
       "is_ai_related": true
     },
     {
-      "id": "164a7f22c733d6c846d9008a8f91c6d096f65df0",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "阿里云发布AgentScope Java 1.1及Claw等新功能",
-      "url": "https://x.com/alibaba_cloud/status/2061745401393291554",
-      "published_at": "2026-06-02T09:43:03Z",
-      "summary": "🚀 AgentScope Java 1.1：构建可自我进化的智能体 ✨ Claw：具备Shell访问权限的本地\"MinQwenPaw\" ✨ Builder：多租户、零代码企业平台 ✨ 工作区驱动的进化与分布式隔离 从笔记本电脑到集群无缝扩展。👇 https：//int.alibabacloud.com/m/1000413896/ #AgentScope #AIAgents #Java",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "e3e5b1baa46e031bb4ae84b77e36c31d01d225a3",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -500,26 +470,6 @@
       "relevance_score": 4,
       "relevance_reasons": [
         "strong:deepmind",
-        "strong:智能体",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e926e068a6eb6d183c5ddefc203588aa00b9d2dc",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Code 新增动态工作流功能",
-      "url": "https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code",
-      "published_at": "2026-06-02T21:16:49Z",
-      "summary": "Claude Code 新增动态工作流功能，允许模型在运行时即兴创建和协调多智能体框架来处理复杂任务。该功能通过执行特定的 JavaScript 文件来生成和协调拥有独立上下文窗口的子代理，可解决单一上下文窗口中长时间执行任务可能出现的智能惰性等问题。工作流适用于研究、安全分析、代码审查等场景，通常消耗更多 token，更适合高价值复杂任务，其最佳实践仍在发展中。",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:claude",
         "strong:智能体",
         "weak:工作流",
         "source_penalty:aggregate_noise"
@@ -677,25 +627,6 @@
       "is_ai_related": true
     },
     {
-      "id": "1ede6b53814b0fd1fe89b22732ebcd78611a7165",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic扩展Project Glasswing计划",
-      "url": "https://www.anthropic.com/news/expanding-project-glasswing",
-      "published_at": "2026-06-02T13:28:13Z",
-      "summary": "Anthropic正将其Project Glasswing计划扩展至约150个新组织，此前首批约50个合作伙伴。新伙伴分布于十五个多国家，覆盖电力、水务、医疗、通信和硬件等关键基础设施行业。这些合作伙伴的共同点在于，其代码库若遭成功攻击，后果可能极其严重，影响或超1亿人。项目旨在利用Claude Mythos Preview等前沿模型扫描漏洞并协助修复，以应对AI驱动的网络安全挑战。同时，Anthropic推出了基于Claude Opus 4.8等公开模型的Claude Security产品，用于扫描代码并建议补丁。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "9edf453cd78fa22f3eb8bf6c8da38d32e2300227",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -710,25 +641,6 @@
       "relevance_reasons": [
         "strong:gemini",
         "strong:deepmind",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "cca73c5ffb7e26edbdcb3ec4463f3c5aab3aa297",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "NVIDIA 推出 NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
-      "url": "https://blogs.nvidia.com/blog/industrial-software-leaders-secure-autonomous-ai-engineers-nemoclaw",
-      "published_at": "2026-06-02T22:00:58Z",
-      "summary": "在 COMPUTEX 上，NVIDIA 发布了 NemoClaw 平台，这是一个用于构建专业、长时间运行 AI 智能体的开放蓝图。该平台提供安全运行时、前沿模型支持以及多种编排框架集成选项，可通过 DGX Spark、数据中心或云端部署。其核心开源运行时 OpenShell 实施基于策略的安全管控，规范智能体对文件、网络和工具的访问。Cadence、达索系统、西门子、Synopsys 等十多家工业软件厂商正基于 NemoClaw 构建用于 CAE 和 EDA 工作流的自主 AI 工程师，旨在将原本需数周的仿真与设计任务压缩至数小时。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -761,10 +673,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 985,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 569,
-      "checked_at": "2026-06-03T08:44:10.951443Z"
+      "latency_ms": 792,
+      "checked_at": "2026-06-03T11:26:45.585551Z"
     },
     {
       "source_id": "openai-skills",
@@ -775,8 +687,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 188,
-      "checked_at": "2026-06-03T08:44:11.139909Z"
+      "latency_ms": 173,
+      "checked_at": "2026-06-03T11:26:45.759478Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -784,11 +696,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 221,
+      "fetched_count": 222,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 85,
-      "checked_at": "2026-06-03T08:44:11.228946Z"
+      "latency_ms": 104,
+      "checked_at": "2026-06-03T11:26:45.867079Z"
     },
     {
       "source_id": "google-deepmind",
@@ -799,8 +711,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 289,
-      "checked_at": "2026-06-03T08:44:11.519624Z"
+      "latency_ms": 255,
+      "checked_at": "2026-06-03T11:26:46.123929Z"
     },
     {
       "source_id": "google-ai",
@@ -811,8 +723,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 179,
-      "checked_at": "2026-06-03T08:44:11.699895Z"
+      "latency_ms": 225,
+      "checked_at": "2026-06-03T11:26:46.350264Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -823,8 +735,8 @@
       "fetched_count": 790,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 209,
-      "checked_at": "2026-06-03T08:44:11.920580Z"
+      "latency_ms": 317,
+      "checked_at": "2026-06-03T11:26:46.679287Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -835,8 +747,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 116,
-      "checked_at": "2026-06-03T08:44:12.037109Z"
+      "latency_ms": 102,
+      "checked_at": "2026-06-03T11:26:46.781826Z"
     },
     {
       "source_id": "github-changelog",
@@ -847,8 +759,8 @@
       "fetched_count": 10,
       "kept_count": 10,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-06-03T08:44:12.069825Z"
+      "latency_ms": 35,
+      "checked_at": "2026-06-03T11:26:46.817595Z"
     },
     {
       "source_id": "aihot",
@@ -857,10 +769,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 17,
+      "kept_count": 14,
       "error": null,
-      "latency_ms": 1453,
-      "checked_at": "2026-06-03T08:44:13.525257Z"
+      "latency_ms": 2524,
+      "checked_at": "2026-06-03T11:26:49.343291Z"
     }
   ],
   "control_notes": {
