@@ -1,63 +1,39 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-04T11:29:20.082944Z",
+  "generated_at": "2026-06-04T16:53:44.877982Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 10,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI News",
-          3
+          2
+        ],
+        [
+          "Hugging Face Blog",
+          2
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
-        ],
-        [
-          "codex",
-          2
-        ],
-        [
-          "workflow",
-          2
+          4
         ],
         [
           "chatgpt",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
           2
         ],
         [
           "agent",
+          2
+        ],
+        [
+          "codex",
           1
         ],
         [
@@ -65,7 +41,11 @@
           1
         ],
         [
-          "changelog",
+          "workflow",
+          1
+        ],
+        [
+          "tool",
           1
         ]
       ]
@@ -89,10 +69,6 @@
           3
         ],
         [
-          "agent",
-          2
-        ],
-        [
           "api",
           2
         ],
@@ -101,16 +77,8 @@
           2
         ],
         [
-          "anthropic",
-          2
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
-          "自动化",
-          2
+          "agent",
+          1
         ],
         [
           "agents",
@@ -121,11 +89,43 @@
           1
         ],
         [
-          "openai",
+          "claude",
           1
         ],
         [
-          "deepmind",
+          "多模态",
+          1
+        ],
+        [
+          "推理模型",
+          1
+        ],
+        [
+          "工作流",
+          1
+        ],
+        [
+          "openai",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
+        ],
+        [
+          "tool",
           1
         ]
       ]
@@ -155,27 +155,6 @@
       "is_ai_related": true
     },
     {
-      "id": "7458003d28373450a9e712a0a931aeb68ee73199",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Copilot in Visual Studio Code, May releases",
-      "url": "https://github.blog/changelog/2026-06-03-github-copilot-in-visual-studio-code-may-releases",
-      "published_at": "2026-06-03T13:30:58Z",
-      "summary": "VS Code continues with weekly stable releases. This changelog covers releases v1.120 through v1.123, the releases we shipped throughout May and early June 2026. In May, we made the Agents… The post GitHub Copilot in Visual Studio Code, May releases appeared first on The GitHub Blog .",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "weak:changelog",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "55633151fb253de28b1d8f3a59ab717f6126283c",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -199,98 +178,133 @@
       "is_ai_related": true
     },
     {
-      "id": "5c06bd3a3897c3fff16355a61109c8f038e66f2c",
+      "id": "cc2867db682d7c0824a5a2c436aecece2046e525",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 用 Claude 赋能自助数据分析",
-      "url": "https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude",
-      "published_at": "2026-06-03T17:23:16Z",
-      "summary": "Anthropic 使用 Claude 自动化了 95% 的业务分析查询，整体准确率约 95%。其关键在于构建智能体分析栈（agentic analytics stack），通过数据基础层、维护验证流程和技能（skills）分别解决概念-实体歧义、数据过时和检索失败三大错误来源。相比编码场景，数据分析的难点在于将用户问题映射到正确的数据实体，而执行 SQL 反而是简单的。Anthropic 的数据科学团队因此得以专注于因果建模、预测和机器学习等战略工作。",
-      "relevance_score": 8,
+      "title": "Nex-N2-Pro 发布：基于 Qwen3.5 的 397B MoE 推理模型，性能达 GPT-5.5 水平",
+      "url": "https://x.com/SiliconFlowAI/status/2062549952266723493",
+      "published_at": "2026-06-04T15:00:03Z",
+      "summary": "neolab 推出 Nex-N2-Pro，基于 Qwen3.5-397B-A17B，总参数 397B 的 MoE 推理模型，支持 262K 上下文与多模态（VLM），性能达到 GPT-5.5 和 Claude Opus 4.7 级别。模型可自动调节推理深度，减少 30-50% 思考 token 且无性能折损，在 Terminal Bench 2.1、GDPVal、SWE-Verified 上取得 SOTA。擅长智能体编码、深度搜索和工具使用，兼容 Claude Code、Cursor 等工具。硅基流动已提供 T+0 支持，前两周免费使用。",
+      "relevance_score": 7,
       "relevance_reasons": [
-        "strong:anthropic",
         "strong:claude",
-        "strong:agent",
         "strong:智能体",
-        "weak:自动化",
+        "strong:多模态",
+        "strong:推理模型",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "197f602c9e58cc4333a0cfe9e5f2d34e0c78ee78",
+      "id": "64835ce63db1de4b37aa5b0b9be1f829fb783462",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
-      "url": "https://openai.com/index/wasmer",
-      "published_at": "2026-06-03T12:00:00Z",
-      "summary": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months.",
+      "title": "Dreaming: Better memory for a more helpful ChatGPT",
+      "url": "https://openai.com/index/chatgpt-memory-dreaming",
+      "published_at": "2026-06-04T09:00:00Z",
+      "summary": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:codex",
+        "strong:chatgpt",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "fb201e79206f45a32fb65951eabd9c5bb0293cea",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "介绍 Claude Partner Network 的 Services Track 和 Partner Hub",
-      "url": "https://www.anthropic.com/news/services-track-partner-hub",
-      "published_at": "2026-06-03T13:30:21Z",
-      "summary": "Anthropic 扩展 Claude Partner Network，推出 Services Track 分级体系和 Partner Hub 门户。Services Track 设 Select、Preferred、Global Premier 三级，按认证人数、投产客户数及客户推荐信量化评定。Partner Hub 提供每日更新仪表盘和公开目录，方便合作伙伴查看进展、客户寻找供应商。该网络三月启动以来已有超 4 万家公司申请，逾 1 万顾问获认证；Accenture 训练 3 万人，Cognizant 部署约 35 万员工，Deloitte 惠及 47 万人，KPMG 覆盖 27.6 万，Infosys 构建行业智能体，PwC 先在美推广再扩至全球。",
-      "relevance_score": 5,
+      "id": "06537768a099e3d9c667510fb6e5911d8986d552",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
+      "url": "https://huggingface.co/blog/hf-cli-for-agents",
+      "published_at": "2026-06-04T00:00:00Z",
+      "summary": null,
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
+        "strong:agent",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "022d77e36ed7d39787630048574ebac7f8ffb917",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
+      "id": "d1da92bbf15ca229d742a3930f9a5ae408770010",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot in Visual Studio — May update",
+      "url": "https://github.blog/changelog/2026-06-04-github-copilot-in-visual-studio-may-update",
+      "published_at": "2026-06-04T15:35:58Z",
+      "summary": "May 2026 brought sharper tooling for planning, reviewing, and managing your work with GitHub Copilot in Visual Studio 2026. Highlights Here’s what’s new for all GitHub Copilot users in Visual… The post GitHub Copilot in Visual Studio — May update appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "weak:tool",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1d3f9f61f8090dff8464638184e03cee77ea5133",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Introducing new capabilities to GPT-Rosalind",
-      "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
-      "published_at": "2026-06-03T13:15:00Z",
-      "summary": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.",
+      "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+      "published_at": "2026-06-04T12:24:58Z",
+      "summary": null,
       "relevance_score": 2,
       "relevance_reasons": [
-        "weak:workflow",
+        "weak:tool",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "e5d8e65640ee1928a408d6e7b6573773ddfaf969",
+      "id": "885420780b0568ce02db11637ef28e17b67ddf23",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "微软与OpenAI分道扬镳--如今双方准备正面交锋",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/942242/microsoft-build-ai-agents-openai-competition",
-      "published_at": "2026-06-03T14:04:00Z",
-      "summary": "微软与OpenAI的合作关系已彻底破裂，双方进入正面竞争态势。前DeepMind高管、现任微软AI主管Mustafa Suleyman明确表示，微软现在必须从头证明自己能独立完成所有必需的任务。这标志着两家科技巨头从紧密合作伙伴转变为直接竞争对手。",
-      "relevance_score": 3,
+      "title": "NVIDIA Nemotron 3 Ultra 为长时间运行的智能体带来更快、更高效的推理能力",
+      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents",
+      "published_at": "2026-06-04T13:02:49Z",
+      "summary": "NVIDIA 发布 Nemotron 3 Ultra 模型，专为长时间运行的 AI 智能体设计。该模型能够在多轮对话中保持上下文、调用工具、调用子智能体，并高效处理复杂工作流。随着多智能体协作导致模型 token 数量快速增长，Nemotron 3 Ultra 通过优化推理流程显著提升速度并降低计算成本，使长期运行的智能体任务更加可行。",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f94c701b11e8a286b7eae21b8eb0118841b28de5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI称AI递归自我改进迹象初现",
+      "url": "https://x.com/kimmonismus/status/2062517474277675102",
+      "published_at": "2026-06-04T12:51:00Z",
+      "summary": "OpenAI刚刚写道：\"我们也看到了当今系统中递归自我改进（RSI）的早期迹象：AI开发本身正被AI加速。 我们预计这将加剧开发者与国家之间的竞争压力，并带来现有机构无法应对的治理挑战。 随着RSI的出现，社会将需要找到塑造AI发展轨迹的方法，确保其服务于人类利益。\" 气氛变了，有事正在发生。",
+      "relevance_score": 2,
       "relevance_reasons": [
         "strong:openai",
-        "strong:deepmind",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -323,11 +337,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 990,
-      "kept_count": 3,
+      "fetched_count": 991,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 772,
-      "checked_at": "2026-06-04T11:29:16.552613Z"
+      "latency_ms": 791,
+      "checked_at": "2026-06-04T16:53:42.250871Z"
     },
     {
       "source_id": "openai-skills",
@@ -338,8 +352,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 170,
-      "checked_at": "2026-06-04T11:29:16.723101Z"
+      "latency_ms": 173,
+      "checked_at": "2026-06-04T16:53:42.424408Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -350,8 +364,8 @@
       "fetched_count": 223,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 156,
-      "checked_at": "2026-06-04T11:29:16.882707Z"
+      "latency_ms": 107,
+      "checked_at": "2026-06-04T16:53:42.534906Z"
     },
     {
       "source_id": "google-deepmind",
@@ -362,8 +376,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 266,
-      "checked_at": "2026-06-04T11:29:17.150786Z"
+      "latency_ms": 311,
+      "checked_at": "2026-06-04T16:53:42.848143Z"
     },
     {
       "source_id": "google-ai",
@@ -374,8 +388,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 175,
-      "checked_at": "2026-06-04T11:29:17.326642Z"
+      "latency_ms": 157,
+      "checked_at": "2026-06-04T16:53:43.006364Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -383,11 +397,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 791,
-      "kept_count": 0,
+      "fetched_count": 793,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 249,
-      "checked_at": "2026-06-04T11:29:17.587716Z"
+      "latency_ms": 275,
+      "checked_at": "2026-06-04T16:53:43.294591Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -398,8 +412,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 113,
-      "checked_at": "2026-06-04T11:29:17.701210Z"
+      "latency_ms": 102,
+      "checked_at": "2026-06-04T16:53:43.396863Z"
     },
     {
       "source_id": "github-changelog",
@@ -410,8 +424,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 36,
-      "checked_at": "2026-06-04T11:29:17.738413Z"
+      "latency_ms": 34,
+      "checked_at": "2026-06-04T16:53:43.432049Z"
     },
     {
       "source_id": "aihot",
@@ -420,10 +434,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 2335,
-      "checked_at": "2026-06-04T11:29:20.074671Z"
+      "latency_ms": 1435,
+      "checked_at": "2026-06-04T16:53:44.868544Z"
     }
   ],
   "control_notes": {
