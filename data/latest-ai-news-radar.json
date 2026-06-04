@@ -1,11 +1,47 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-04T08:09:17.733491Z",
+  "generated_at": "2026-06-04T10:25:09.511096Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 9,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 3,
+      "top_sources": [
+        [
+          "OpenAI News",
+          3
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          3
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "workflow",
+          2
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ]
+      ]
+    },
     "developer": {
       "group": "developer",
       "count": 1,
@@ -36,40 +72,40 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          6
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          5
         ],
         [
           "智能体",
-          4
-        ],
-        [
-          "api",
-          3
-        ],
-        [
-          "API",
-          3
-        ],
-        [
-          "anthropic",
-          3
-        ],
-        [
-          "claude",
           3
         ],
         [
           "agent",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "claude",
           2
         ],
         [
@@ -93,37 +129,31 @@
           1
         ]
       ]
-    },
-    "official": {
-      "group": "official",
-      "count": 4,
-      "top_sources": [
-        [
-          "OpenAI News",
-          4
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          4
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ]
-      ]
     }
   },
   "items": [
+    {
+      "id": "91795518412120380c48c183a1cd242bb3df6890",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How Endava is redesigning software delivery around AI agents",
+      "url": "https://openai.com/index/endava-frontiers",
+      "published_at": "2026-06-04T12:00:00Z",
+      "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
+      "relevance_score": 10,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "strong:agent",
+        "strong:agents",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "7458003d28373450a9e712a0a931aeb68ee73199",
       "source_id": "github-changelog",
@@ -191,28 +221,6 @@
       "is_ai_related": true
     },
     {
-      "id": "386e30c20268a2fa8a53c2243705d91d6a3a6825",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 分析 832 个 AI 恶意账户：中高风险攻击者半年从 33% 跃至 56%",
-      "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
-      "published_at": "2026-06-03T09:51:21Z",
-      "summary": "Anthropic 分析 2025 年 3 月至 2026 年 3 月间 832 个被封禁的恶意账户，映射至 MITRE ATT&CK 框架。67.3% 使用 AI 编写恶意软件，6.5% 用于横向移动。六个月间中高风险攻击者占比从 33% 升至 56%。AI 用于账户发现增长 8.9%，AI 辅助钓鱼下降 8.6%。传统基于技术数量或平台（Claude Code、API、聊天界面）的威胁评估失效，而 MITRE ATT&CK 框架尚未收录此类智能体编排行为。",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "197f602c9e58cc4333a0cfe9e5f2d34e0c78ee78",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -226,42 +234,6 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:codex",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7669ea0f990ef288884fb6746565e6c5ca82dfcc",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "OpenAI public policy agenda",
-      "url": "https://openai.com/index/public-policy-agenda",
-      "published_at": "2026-06-03T10:00:00Z",
-      "summary": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "10ab3892ad91f8e3fc3a1ee91f4d8b301333aee8",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "A blueprint for democratic governance of frontier AI",
-      "url": "https://openai.com/index/frontier-safety-blueprint",
-      "published_at": "2026-06-03T10:00:00Z",
-      "summary": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -351,11 +323,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 989,
-      "kept_count": 4,
+      "fetched_count": 990,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 751,
-      "checked_at": "2026-06-04T08:09:14.848060Z"
+      "latency_ms": 906,
+      "checked_at": "2026-06-04T10:25:06.369804Z"
     },
     {
       "source_id": "openai-skills",
@@ -366,8 +338,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 246,
-      "checked_at": "2026-06-04T08:09:15.094593Z"
+      "latency_ms": 409,
+      "checked_at": "2026-06-04T10:25:06.779383Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -378,8 +350,8 @@
       "fetched_count": 223,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 125,
-      "checked_at": "2026-06-04T08:09:15.223669Z"
+      "latency_ms": 152,
+      "checked_at": "2026-06-04T10:25:06.935300Z"
     },
     {
       "source_id": "google-deepmind",
@@ -390,8 +362,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 268,
-      "checked_at": "2026-06-04T08:09:15.493357Z"
+      "latency_ms": 353,
+      "checked_at": "2026-06-04T10:25:07.290258Z"
     },
     {
       "source_id": "google-ai",
@@ -402,8 +374,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 142,
-      "checked_at": "2026-06-04T08:09:15.636367Z"
+      "latency_ms": 287,
+      "checked_at": "2026-06-04T10:25:07.578574Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -414,8 +386,8 @@
       "fetched_count": 791,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 194,
-      "checked_at": "2026-06-04T08:09:15.842157Z"
+      "latency_ms": 348,
+      "checked_at": "2026-06-04T10:25:07.939139Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -426,8 +398,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 94,
-      "checked_at": "2026-06-04T08:09:15.937191Z"
+      "latency_ms": 230,
+      "checked_at": "2026-06-04T10:25:08.169911Z"
     },
     {
       "source_id": "github-changelog",
@@ -438,8 +410,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-06-04T08:09:15.969745Z"
+      "latency_ms": 56,
+      "checked_at": "2026-06-04T10:25:08.226249Z"
     },
     {
       "source_id": "aihot",
@@ -448,10 +420,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 1753,
-      "checked_at": "2026-06-04T08:09:17.724458Z"
+      "latency_ms": 1275,
+      "checked_at": "2026-06-04T10:25:09.502731Z"
     }
   ],
   "control_notes": {
