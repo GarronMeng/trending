@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-04T02:57:30.988831Z",
+  "generated_at": "2026-06-04T08:09:17.733491Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -53,6 +53,14 @@
           4
         ],
         [
+          "api",
+          3
+        ],
+        [
+          "API",
+          3
+        ],
+        [
           "anthropic",
           3
         ],
@@ -61,23 +69,19 @@
           3
         ],
         [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
           "agent",
-          1
+          2
         ],
         [
           "自动化",
+          2
+        ],
+        [
+          "agents",
           1
         ],
         [
-          "工作流",
+          "tool",
           1
         ],
         [
@@ -86,10 +90,6 @@
         ],
         [
           "deepmind",
-          1
-        ],
-        [
-          "大模型",
           1
         ]
       ]
@@ -142,6 +142,29 @@
         "weak:changelog",
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "55633151fb253de28b1d8f3a59ab717f6126283c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Meet OpenJarvis：一个本地优先的设备端个人AI智能体框架，支持工具、记忆与学习",
+      "url": "https://www.marktechpost.com/2026/06/03/meet-openjarvis-a-local-first-framework-for-on-device-personal-ai-agents-with-tools-memory-and-learning",
+      "published_at": "2026-06-04T06:23:10Z",
+      "summary": "Stanford 研究人员发布 OpenJarvis，一个完全在设备端运行推理、智能体、记忆与学习的开源框架。它将个人 AI 系统分解为五个可组合原语：Intelligence、Engine、Agents、Tools & Memory 和 Learning。该框架与最佳云端模型的性能差距在 3.2 points 以内，边际 API 成本降低约 800 倍。",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "strong:智能体",
+        "weak:api",
+        "weak:tool",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -282,27 +305,6 @@
       "is_ai_related": true
     },
     {
-      "id": "7f2250d34100d6c4bba002b26abc1062d4418690",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "xAI Grok语音模型上线Vapi平台",
-      "url": "https://x.com/xai/status/2062209374039499178",
-      "published_at": "2026-06-03T16:26:43Z",
-      "summary": "试试 @Vapi_AI 上最自然的TTS和性价比最高的STT API。 来自 @xai 的Grok STT和Grok TTS现已在企业语音AI平台Vapi上线。基于Vapi构建自定义语音智能体，可让它们用客户的语言交流、在受监管的工作流中捕捉重要细节，并在每次通话中明显更具人性化。",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:api",
-        "weak:工作流",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "e5d8e65640ee1928a408d6e7b6573773ddfaf969",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -322,20 +324,21 @@
       "is_ai_related": true
     },
     {
-      "id": "1dca2a68e2c0479c1e0bb4a74a353afea8052607",
+      "id": "60fd9fef0f2af90dde4d2f2b8e2cd8ff74e47e8f",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "消息称 DeepSeek 首轮融资拟筹集 500 亿元，腾讯、宁德时代等参投",
-      "url": "https://www.ithome.com/0/959/249.htm",
-      "published_at": "2026-06-03T04:36:30Z",
-      "summary": "DeepSeek 计划在首轮融资中从腾讯、宁德时代等投资方处筹集约 500 亿元人民币。融资落地后，其投后估值预计在 3500 亿至 4000 亿元。创始人梁文峰将出资 200 亿元，腾讯和宁德时代分别拟投资 100 亿元和 50 亿元，成为最大外部投资者。DeepSeek 去年凭借 V3 大模型与 R1 推理模型获得广泛认可。此次融资凸显了中国正打造从大模型到算力能源基建的全链条 AI 产业。",
-      "relevance_score": 3,
+      "title": "Cloudflare Radar：机器人流量首次超过人类占比57.5%",
+      "url": "https://x.com/xiaohu/status/2062367357868355622",
+      "published_at": "2026-06-04T02:54:29Z",
+      "summary": "Cloudflare Radar 实时统计显示，过去一周（5月28日至6月4日）全球所有 HTML 网页请求流量中，57.5% 来自机器人（爬虫、AI 抓取、自动化脚本），仅42.5%来自真人浏览器，机器人流量首次超过人类。按所有 HTTP 流量返回内容分类，JSON（API 机器通信）占33.1%居首，HTML 仅12%。互联网流量主体已从人类浏览网页转向机器间通信和机器人抓取。",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:大模型",
-        "strong:推理模型",
+        "weak:api",
+        "weak:自动化",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -351,8 +354,8 @@
       "fetched_count": 989,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 1006,
-      "checked_at": "2026-06-04T02:57:25.289096Z"
+      "latency_ms": 751,
+      "checked_at": "2026-06-04T08:09:14.848060Z"
     },
     {
       "source_id": "openai-skills",
@@ -363,8 +366,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 232,
-      "checked_at": "2026-06-04T02:57:25.521932Z"
+      "latency_ms": 246,
+      "checked_at": "2026-06-04T08:09:15.094593Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -375,8 +378,8 @@
       "fetched_count": 223,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 111,
-      "checked_at": "2026-06-04T02:57:25.636423Z"
+      "latency_ms": 125,
+      "checked_at": "2026-06-04T08:09:15.223669Z"
     },
     {
       "source_id": "google-deepmind",
@@ -387,8 +390,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 597,
-      "checked_at": "2026-06-04T02:57:26.235509Z"
+      "latency_ms": 268,
+      "checked_at": "2026-06-04T08:09:15.493357Z"
     },
     {
       "source_id": "google-ai",
@@ -399,8 +402,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 268,
-      "checked_at": "2026-06-04T02:57:26.504783Z"
+      "latency_ms": 142,
+      "checked_at": "2026-06-04T08:09:15.636367Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -411,8 +414,8 @@
       "fetched_count": 791,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 309,
-      "checked_at": "2026-06-04T02:57:26.826887Z"
+      "latency_ms": 194,
+      "checked_at": "2026-06-04T08:09:15.842157Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -423,8 +426,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 312,
-      "checked_at": "2026-06-04T02:57:27.139194Z"
+      "latency_ms": 94,
+      "checked_at": "2026-06-04T08:09:15.937191Z"
     },
     {
       "source_id": "github-changelog",
@@ -435,8 +438,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 38,
-      "checked_at": "2026-06-04T02:57:27.177536Z"
+      "latency_ms": 32,
+      "checked_at": "2026-06-04T08:09:15.969745Z"
     },
     {
       "source_id": "aihot",
@@ -447,8 +450,8 @@
       "fetched_count": 50,
       "kept_count": 6,
       "error": null,
-      "latency_ms": 3800,
-      "checked_at": "2026-06-04T02:57:30.979879Z"
+      "latency_ms": 1753,
+      "checked_at": "2026-06-04T08:09:17.724458Z"
     }
   ],
   "control_notes": {
