@@ -1,72 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-05T11:41:18.978564Z",
+  "generated_at": "2026-06-05T16:29:08.825762Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 18,
+  "item_count": 11,
   "groups": {
-    "official": {
-      "group": "official",
+    "developer": {
+      "group": "developer",
       "count": 3,
       "top_sources": [
         [
-          "Hugging Face Blog",
-          2
-        ],
-        [
-          "OpenAI News",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          3
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "multimodal",
-          1
-        ],
-        [
-          "tool",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 5,
-      "top_sources": [
-        [
           "GitHub Changelog",
-          5
+          3
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          10
+          6
         ],
         [
           "agent",
@@ -83,34 +35,26 @@
         [
           "API",
           1
-        ],
-        [
-          "tool",
-          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 10,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          10
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          10
+          7
         ],
         [
           "智能体",
-          5
-        ],
-        [
-          "claude",
-          3
+          2
         ],
         [
           "api",
@@ -121,15 +65,19 @@
           2
         ],
         [
+          "developer",
+          2
+        ],
+        [
           "llm",
           2
         ],
         [
-          "openai",
+          "开发者",
           2
         ],
         [
-          "developer",
+          "自动化",
           2
         ],
         [
@@ -141,39 +89,37 @@
           2
         ],
         [
-          "开发者",
-          2
+          "claude",
+          1
         ],
         [
           "mcp",
           1
         ]
       ]
+    },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "Hugging Face Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "multimodal",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
     }
   },
   "items": [
-    {
-      "id": "91795518412120380c48c183a1cd242bb3df6890",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How Endava is redesigning software delivery around AI agents",
-      "url": "https://openai.com/index/endava-frontiers",
-      "published_at": "2026-06-04T12:00:00Z",
-      "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
-      "relevance_score": 10,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:codex",
-        "strong:agent",
-        "strong:agents",
-        "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "b2de809e7b09ce72d4b77b1bf71f00dbbb18b12d",
       "source_id": "github-changelog",
@@ -238,27 +184,6 @@
       "is_ai_related": true
     },
     {
-      "id": "cc2867db682d7c0824a5a2c436aecece2046e525",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Nex-N2-Pro 发布：基于 Qwen3.5 的 397B MoE 推理模型，性能达 GPT-5.5 水平",
-      "url": "https://x.com/SiliconFlowAI/status/2062549952266723493",
-      "published_at": "2026-06-04T15:00:03Z",
-      "summary": "neolab 推出 Nex-N2-Pro，基于 Qwen3.5-397B-A17B，总参数 397B 的 MoE 推理模型，支持 262K 上下文与多模态（VLM），性能达到 GPT-5.5 和 Claude Opus 4.7 级别。模型可自动调节推理深度，减少 30-50% 思考 token 且无性能折损，在 Terminal Bench 2.1、GDPVal、SWE-Verified 上取得 SOTA。擅长智能体编码、深度搜索和工具使用，兼容 Claude Code、Cursor 等工具。硅基流动已提供 T+0 支持，前两周免费使用。",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:智能体",
-        "strong:多模态",
-        "strong:推理模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "c132c59740f42703b72650353151543e906df43e",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
@@ -272,64 +197,6 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:multimodal",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "780b323a3ede37ce719ec8affef37839e14eaca9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenRouter 翻遍 11 款 LLM 找最快的决策模型：Claude vs. Grok 领衔",
-      "url": "https://openrouter.ai/announcements/royale-last-agent-standing",
-      "published_at": "2026-06-04T12:00:00Z",
-      "summary": "OpenRouter 用总价 482 美元的推理花费，让 11 款大语言模型在 30 轮实时决策的\"大逃杀\"挑战中正面竞争。实验结果表明，传统的静态 benchmark 排名无法反映模型在需要即时反应的智能体任务（如自主控制机器人）中的真实表现，Claude 和 Grok 系列模型在决策速度与任务成功率上表现突出，而多项高分模型的实时调度能力未达预期。",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:llm",
-        "strong:智能体",
-        "weak:benchmark",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d1da92bbf15ca229d742a3930f9a5ae408770010",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Copilot in Visual Studio — May update",
-      "url": "https://github.blog/changelog/2026-06-04-github-copilot-in-visual-studio-may-update",
-      "published_at": "2026-06-04T15:35:58Z",
-      "summary": "May 2026 brought sharper tooling for planning, reviewing, and managing your work with GitHub Copilot in Visual Studio 2026. Highlights Here’s what’s new for all GitHub Copilot users in Visual… The post GitHub Copilot in Visual Studio — May update appeared first on The GitHub Blog .",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "weak:tool",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1d3f9f61f8090dff8464638184e03cee77ea5133",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
-      "published_at": "2026-06-04T12:24:58Z",
-      "summary": null,
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:tool",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -374,20 +241,22 @@
       "is_ai_related": true
     },
     {
-      "id": "277c560ed7648d15c139e19da1215c24174c9fa6",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot Chat brings richer context to pull requests",
-      "url": "https://github.blog/changelog/2026-06-04-copilot-chat-brings-richer-context-to-pull-requests",
-      "published_at": "2026-06-04T14:40:05Z",
-      "summary": "GitHub Copilot Chat now provides richer context and new capabilities when you’re working with diffs and pull requests on github.com. This feature was previously in public preview and is now… The post Copilot Chat brings richer context to pull requests appeared first on The GitHub Blog .",
+      "id": "15aec6074cca12eef91d98b2ae523c64009330d6",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "社区基于MiniCPM-V 4.6打造财务分析工具AccountingLLM",
+      "url": "https://x.com/OpenBMB/status/2062889699056984281",
+      "published_at": "2026-06-05T13:30:05Z",
+      "summary": "社区开发者使用面壁智能MiniCPM-V 4.6构建了AccountingLLM（quaesto.com），用于自动化财务文档分析。该工具可上传IPO招股书、年报或审计文件，自动从复杂PDF中提取财务表格、重建跨页表格、对照会计等式检查关键数据，并标记可疑条目供人工审核。开发者已将其商业化，成为实际可用的产品。",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:llm",
+        "weak:开发者",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -467,44 +336,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "885420780b0568ce02db11637ef28e17b67ddf23",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "NVIDIA Nemotron 3 Ultra 为长时间运行的智能体带来更快、更高效的推理能力",
-      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents",
-      "published_at": "2026-06-04T13:02:49Z",
-      "summary": "NVIDIA 发布 Nemotron 3 Ultra 模型，专为长时间运行的 AI 智能体设计。该模型能够在多轮对话中保持上下文、调用工具、调用子智能体，并高效处理复杂工作流。随着多智能体协作导致模型 token 数量快速增长，Nemotron 3 Ultra 通过优化推理流程显著提升速度并降低计算成本，使长期运行的智能体任务更加可行。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "f94c701b11e8a286b7eae21b8eb0118841b28de5",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI称AI递归自我改进迹象初现",
-      "url": "https://x.com/kimmonismus/status/2062517474277675102",
-      "published_at": "2026-06-04T12:51:00Z",
-      "summary": "OpenAI刚刚写道：\"我们也看到了当今系统中递归自我改进（RSI）的早期迹象：AI开发本身正被AI加速。 我们预计这将加剧开发者与国家之间的竞争压力，并带来现有机构无法应对的治理挑战。 随着RSI的出现，社会将需要找到塑造AI发展轨迹的方法，确保其服务于人类利益。\" 气氛变了，有事正在发生。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -515,10 +346,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 992,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 558,
-      "checked_at": "2026-06-05T11:41:11.556945Z"
+      "latency_ms": 610,
+      "checked_at": "2026-06-05T16:29:04.722648Z"
     },
     {
       "source_id": "openai-skills",
@@ -529,8 +360,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 287,
-      "checked_at": "2026-06-05T11:41:11.844786Z"
+      "latency_ms": 377,
+      "checked_at": "2026-06-05T16:29:05.100439Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -541,8 +372,8 @@
       "fetched_count": 223,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 100,
-      "checked_at": "2026-06-05T11:41:11.948922Z"
+      "latency_ms": 123,
+      "checked_at": "2026-06-05T16:29:05.227450Z"
     },
     {
       "source_id": "google-deepmind",
@@ -553,8 +384,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 385,
-      "checked_at": "2026-06-05T11:41:12.335632Z"
+      "latency_ms": 358,
+      "checked_at": "2026-06-05T16:29:05.587182Z"
     },
     {
       "source_id": "google-ai",
@@ -565,8 +396,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 246,
-      "checked_at": "2026-06-05T11:41:12.582660Z"
+      "latency_ms": 215,
+      "checked_at": "2026-06-05T16:29:05.803574Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -575,10 +406,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 793,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
       "latency_ms": 328,
-      "checked_at": "2026-06-05T11:41:12.924172Z"
+      "checked_at": "2026-06-05T16:29:06.144260Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -589,8 +420,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 151,
-      "checked_at": "2026-06-05T11:41:13.075850Z"
+      "latency_ms": 176,
+      "checked_at": "2026-06-05T16:29:06.320516Z"
     },
     {
       "source_id": "github-changelog",
@@ -599,10 +430,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 5,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 35,
-      "checked_at": "2026-06-05T11:41:13.111656Z"
+      "latency_ms": 34,
+      "checked_at": "2026-06-05T16:29:06.355735Z"
     },
     {
       "source_id": "aihot",
@@ -611,10 +442,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 11,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 5857,
-      "checked_at": "2026-06-05T11:41:18.970862Z"
+      "latency_ms": 2460,
+      "checked_at": "2026-06-05T16:29:08.818043Z"
     }
   ],
   "control_notes": {
