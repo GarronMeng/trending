@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-04T16:53:44.877982Z",
+  "generated_at": "2026-06-05T02:45:14.593143Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 17,
   "groups": {
     "official": {
       "group": "official",
@@ -29,11 +29,11 @@
           2
         ],
         [
-          "agent",
-          2
+          "codex",
+          1
         ],
         [
-          "codex",
+          "agent",
           1
         ],
         [
@@ -45,6 +45,46 @@
           1
         ],
         [
+          "multimodal",
+          1
+        ],
+        [
+          "tool",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 5,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          5
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          10
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "actions",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
           "tool",
           1
         ]
@@ -52,33 +92,45 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          5
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          8
         ],
         [
           "智能体",
-          3
+          4
         ],
         [
           "api",
-          2
+          3
         ],
         [
           "API",
-          2
+          3
         ],
         [
           "agent",
-          1
+          2
+        ],
+        [
+          "claude",
+          2
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "developer",
+          2
         ],
         [
           "agents",
@@ -89,43 +141,11 @@
           1
         ],
         [
-          "claude",
-          1
-        ],
-        [
           "多模态",
           1
         ],
         [
           "推理模型",
-          1
-        ],
-        [
-          "工作流",
-          1
-        ],
-        [
-          "openai",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
-        ],
-        [
-          "tool",
           1
         ]
       ]
@@ -151,6 +171,47 @@
         "strong:agents",
         "weak:workflow",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b2de809e7b09ce72d4b77b1bf71f00dbbb18b12d",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Fix with Copilot for failing Actions now in Pro, Pro+, and Max",
+      "url": "https://github.blog/changelog/2026-06-04-fix-with-copilot-for-failing-actions-now-in-pro-pro-and-max",
+      "published_at": "2026-06-04T20:46:11Z",
+      "summary": "When a GitHub Actions job fails, Copilot Pro, Pro+, and Max subscribers can now ask Copilot cloud agent to fix it in one click. Click the Fix with Copilot button… The post Fix with Copilot for failing Actions now in Pro, Pro+, and Max appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot",
+        "source:actions"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0ac28bef2fae91da280fb81a881bf7270326c927",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Agent tasks REST API now available for Copilot Pro, Pro+, and Max",
+      "url": "https://github.blog/changelog/2026-06-04-agent-tasks-rest-api-now-available-for-copilot-pro-pro-and-max",
+      "published_at": "2026-06-04T20:42:10Z",
+      "summary": "Copilot Pro, Pro+, and Max users can now programmatically start and track Copilot cloud agent tasks with the Agent tasks REST API, available in public preview. Copilot cloud agent works… The post Agent tasks REST API now available for Copilot Pro, Pro+, and Max appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:api",
+        "weak:copilot",
+        "weak:API",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -199,6 +260,45 @@
       "is_ai_related": true
     },
     {
+      "id": "c132c59740f42703b72650353151543e906df43e",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+      "published_at": "2026-06-04T18:57:45Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:multimodal",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "780b323a3ede37ce719ec8affef37839e14eaca9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenRouter 翻遍 11 款 LLM 找最快的决策模型：Claude vs. Grok 领衔",
+      "url": "https://openrouter.ai/announcements/royale-last-agent-standing",
+      "published_at": "2026-06-04T12:00:00Z",
+      "summary": "OpenRouter 用总价 482 美元的推理花费，让 11 款大语言模型在 30 轮实时决策的\"大逃杀\"挑战中正面竞争。实验结果表明，传统的静态 benchmark 排名无法反映模型在需要即时反应的智能体任务（如自主控制机器人）中的真实表现，Claude 和 Grok 系列模型在决策速度与任务成功率上表现突出，而多项高分模型的实时调度能力未达预期。",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:llm",
+        "strong:智能体",
+        "weak:benchmark",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "64835ce63db1de4b37aa5b0b9be1f829fb783462",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -212,24 +312,6 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:chatgpt",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "06537768a099e3d9c667510fb6e5911d8986d552",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
-      "url": "https://huggingface.co/blog/hf-cli-for-agents",
-      "published_at": "2026-06-04T00:00:00Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -268,6 +350,82 @@
       "relevance_reasons": [
         "weak:tool",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "639ded66c611cbdb2cc9e8ad095cb1487785163a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI API 新增内容审核评分",
+      "url": "https://x.com/OpenAIDevs/status/2062619558440267801",
+      "published_at": "2026-06-04T19:36:39Z",
+      "summary": "Moderation scores 现已在 Responses API 和 Completions API 中可用。 在与生成相同的请求流程中返回审核信号，然后由你的应用决定如何使用它们进行记录、路由、审核或拦截。 https：//developers.openai.com/api/docs/guides/moderation",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:api",
+        "weak:developer",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ca86b6cbee3429196c2474690a15898edac7ff24",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Larger context windows and configurable reasoning levels for GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-06-04-larger-context-windows-and-configurable-reasoning-levels-for-github-copilot",
+      "published_at": "2026-06-04T18:45:04Z",
+      "summary": "GitHub Copilot now supports larger context windows and configurable reasoning levels to help you tackle deeper, more complex work. Leverage one-million-token context windows A one-million-token context window means users can… The post Larger context windows and configurable reasoning levels for GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "277c560ed7648d15c139e19da1215c24174c9fa6",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot Chat brings richer context to pull requests",
+      "url": "https://github.blog/changelog/2026-06-04-copilot-chat-brings-richer-context-to-pull-requests",
+      "published_at": "2026-06-04T14:40:05Z",
+      "summary": "GitHub Copilot Chat now provides richer context and new capabilities when you’re working with diffs and pull requests on github.com. This feature was previously in public preview and is now… The post Copilot Chat brings richer context to pull requests appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "abf3628939277ca6710cc3ea47a2d772d880dd13",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google Magenta RealTime 2 （MRT2） 实时音乐模型发布",
+      "url": "https://x.com/googleaidevs/status/2062603374789263646",
+      "published_at": "2026-06-04T18:32:20Z",
+      "summary": "Google AI for Developers 宣布推出开放权重的实时音乐模型 Magenta RealTime 2 （MRT2）。该模型可通过 MIDI 键盘、实时文本提示甚至手势进行演奏。MRT2 在 MacBook 上原生运行，延迟低于 200ms，提供开放权重、开源推理引擎以及配套应用和插件套件。",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:developer",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -337,11 +495,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 991,
+      "fetched_count": 992,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 791,
-      "checked_at": "2026-06-04T16:53:42.250871Z"
+      "latency_ms": 650,
+      "checked_at": "2026-06-05T02:45:11.221398Z"
     },
     {
       "source_id": "openai-skills",
@@ -352,8 +510,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 173,
-      "checked_at": "2026-06-04T16:53:42.424408Z"
+      "latency_ms": 365,
+      "checked_at": "2026-06-05T02:45:11.586974Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -364,8 +522,8 @@
       "fetched_count": 223,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 107,
-      "checked_at": "2026-06-04T16:53:42.534906Z"
+      "latency_ms": 144,
+      "checked_at": "2026-06-05T02:45:11.734126Z"
     },
     {
       "source_id": "google-deepmind",
@@ -376,8 +534,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 311,
-      "checked_at": "2026-06-04T16:53:42.848143Z"
+      "latency_ms": 424,
+      "checked_at": "2026-06-05T02:45:12.159924Z"
     },
     {
       "source_id": "google-ai",
@@ -388,8 +546,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 157,
-      "checked_at": "2026-06-04T16:53:43.006364Z"
+      "latency_ms": 229,
+      "checked_at": "2026-06-05T02:45:12.390077Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -400,8 +558,8 @@
       "fetched_count": 793,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 275,
-      "checked_at": "2026-06-04T16:53:43.294591Z"
+      "latency_ms": 335,
+      "checked_at": "2026-06-05T02:45:12.735896Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -412,8 +570,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 102,
-      "checked_at": "2026-06-04T16:53:43.396863Z"
+      "latency_ms": 333,
+      "checked_at": "2026-06-05T02:45:13.069948Z"
     },
     {
       "source_id": "github-changelog",
@@ -422,10 +580,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 34,
-      "checked_at": "2026-06-04T16:53:43.432049Z"
+      "latency_ms": 42,
+      "checked_at": "2026-06-05T02:45:13.112480Z"
     },
     {
       "source_id": "aihot",
@@ -434,10 +592,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 1435,
-      "checked_at": "2026-06-04T16:53:44.868544Z"
+      "latency_ms": 1472,
+      "checked_at": "2026-06-05T02:45:14.585772Z"
     }
   ],
   "control_notes": {
