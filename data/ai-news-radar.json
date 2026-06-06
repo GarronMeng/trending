@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-06T06:44:14.970393Z",
+  "generated_at": "2026-06-06T09:07:01.875447Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 9,
-  "item_count": 11,
+  "healthy_source_count": 8,
+  "item_count": 10,
   "groups": {
     "aggregate": {
       "group": "aggregate",
@@ -22,7 +22,7 @@
         ],
         [
           "智能体",
-          4
+          5
         ],
         [
           "agent",
@@ -33,23 +33,19 @@
           3
         ],
         [
+          "开发者",
+          3
+        ],
+        [
           "gemini",
           2
         ],
         [
-          "开发者",
+          "llm",
           2
         ],
         [
           "anthropic",
-          2
-        ],
-        [
-          "人工智能",
-          2
-        ],
-        [
-          "llm",
           2
         ],
         [
@@ -62,6 +58,10 @@
         ],
         [
           "API",
+          1
+        ],
+        [
+          "eval",
           1
         ]
       ]
@@ -86,26 +86,6 @@
         ],
         [
           "agent",
-          1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "Hugging Face Blog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "agent",
-          1
-        ],
-        [
-          "official_ai",
           1
         ]
       ]
@@ -178,24 +158,6 @@
       "is_ai_related": true
     },
     {
-      "id": "3cc39c238994014a69d2e4ef98325fbb39e17600",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
-      "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
-      "published_at": "2026-06-05T22:18:46Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "8be85871311c6bc1cd494179d5d2228e85a91c5c",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -211,6 +173,26 @@
         "strong:claude",
         "strong:agent",
         "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "195a0f4d85af1176a50545b10b39a0d20b0fafdb",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "用Qwen2.5-3B构建多智能体经济体：工程报告",
+      "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
+      "published_at": "2026-06-05T22:18:46Z",
+      "summary": "开发者用Qwen2.5-3B构建了五人森林生物多智能体经济体，每个智能体独立运行，通过vLLM部署在Modal，以Gradio为交互窗口。3B模型在100%调用中输出有效JSON，但经济判断能力弱。通过设计稀缺性（食物品种限制、易腐坏、冬季燃料危机）和优化提示词（禁止买入自产物品、给出示例）提升决策质量。15轮模拟中，蜜价从10跌至3、柴价从4涨至7、财富基尼系数从0.14扩至0.38。项目展示了小模型可靠格式化与不可靠推理之间的工程填补。",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:llm",
+        "strong:智能体",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -310,25 +292,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "868d884c0d809657a76b12b1c44d54d5b0c2c33e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "腾讯混元联合人大开源PlanningBench评估框架",
-      "url": "https://x.com/TencentHunyuan/status/2062803141314437391",
-      "published_at": "2026-06-05T07:46:08Z",
-      "summary": "腾讯混元（Tencent Hunyuan）与中国人民大学高瓴人工智能学院合作，开源PlanningBench--一个可扩展、可验证的LLM规划能力评估与训练框架。该框架包含30+真实世界规划任务，支持自动验证和训练。PlanningBench旨在推动LLM从\"说\"到\"做\"的规划能力发展。资源已发布于arXiv、GitHub及HuggingFace。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:llm",
-        "strong:人工智能",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -341,8 +304,8 @@
       "fetched_count": 992,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 1726,
-      "checked_at": "2026-06-06T06:44:08.519210Z"
+      "latency_ms": 724,
+      "checked_at": "2026-06-06T09:06:55.151367Z"
     },
     {
       "source_id": "openai-skills",
@@ -353,8 +316,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 179,
-      "checked_at": "2026-06-06T06:44:08.699059Z"
+      "latency_ms": 190,
+      "checked_at": "2026-06-06T09:06:55.341835Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -365,8 +328,8 @@
       "fetched_count": 223,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 105,
-      "checked_at": "2026-06-06T06:44:08.807282Z"
+      "latency_ms": 100,
+      "checked_at": "2026-06-06T09:06:55.445204Z"
     },
     {
       "source_id": "google-deepmind",
@@ -377,8 +340,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 309,
-      "checked_at": "2026-06-06T06:44:09.117826Z"
+      "latency_ms": 257,
+      "checked_at": "2026-06-06T09:06:55.703976Z"
     },
     {
       "source_id": "google-ai",
@@ -389,20 +352,20 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 155,
-      "checked_at": "2026-06-06T06:44:09.273373Z"
+      "latency_ms": 271,
+      "checked_at": "2026-06-06T09:06:55.975365Z"
     },
     {
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "enabled": true,
-      "ok": true,
-      "fetched_count": 794,
-      "kept_count": 1,
-      "error": null,
-      "latency_ms": 230,
-      "checked_at": "2026-06-06T06:44:09.515588Z"
+      "ok": false,
+      "fetched_count": 0,
+      "kept_count": 0,
+      "error": "429 Client Error: Too Many Requests for url: https://huggingface.co/blog/feed.xml",
+      "latency_ms": 78,
+      "checked_at": "2026-06-06T09:06:56.054130Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -413,8 +376,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 139,
-      "checked_at": "2026-06-06T06:44:09.654930Z"
+      "latency_ms": 140,
+      "checked_at": "2026-06-06T09:06:56.194608Z"
     },
     {
       "source_id": "github-changelog",
@@ -425,8 +388,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-06-06T06:44:09.681044Z"
+      "latency_ms": 26,
+      "checked_at": "2026-06-06T09:06:56.221438Z"
     },
     {
       "source_id": "aihot",
@@ -435,10 +398,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 9,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 5279,
-      "checked_at": "2026-06-06T06:44:14.962176Z"
+      "latency_ms": 5643,
+      "checked_at": "2026-06-06T09:07:01.866367Z"
     }
   ],
   "control_notes": {
