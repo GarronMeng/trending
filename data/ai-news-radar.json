@@ -1,59 +1,51 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-05T16:29:08.825762Z",
+  "generated_at": "2026-06-06T02:32:56.772607Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 9,
-  "item_count": 11,
+  "healthy_source_count": 8,
+  "item_count": 14,
   "groups": {
-    "developer": {
-      "group": "developer",
-      "count": 3,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          3
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          6
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "actions",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 12,
       "top_sources": [
         [
           "AI Hot",
-          7
+          12
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          12
         ],
         [
           "智能体",
+          7
+        ],
+        [
+          "agent",
+          4
+        ],
+        [
+          "claude",
+          4
+        ],
+        [
+          "开发者",
+          4
+        ],
+        [
+          "llm",
+          3
+        ],
+        [
+          "人工智能",
+          3
+        ],
+        [
+          "gemini",
           2
         ],
         [
@@ -65,55 +57,35 @@
           2
         ],
         [
-          "developer",
-          2
-        ],
-        [
-          "llm",
-          2
-        ],
-        [
-          "开发者",
+          "anthropic",
           2
         ],
         [
           "自动化",
           2
-        ],
-        [
-          "人工智能",
-          2
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "mcp",
-          1
         ]
       ]
     },
-    "official": {
-      "group": "official",
-      "count": 1,
+    "developer": {
+      "group": "developer",
+      "count": 2,
       "top_sources": [
         [
-          "Hugging Face Blog",
-          1
+          "GitHub Changelog",
+          2
         ]
       ],
       "top_keywords": [
         [
-          "multimodal",
+          "copilot",
+          4
+        ],
+        [
+          "codex",
           1
         ],
         [
-          "official_ai",
+          "agent",
           1
         ]
       ]
@@ -121,43 +93,67 @@
   },
   "items": [
     {
-      "id": "b2de809e7b09ce72d4b77b1bf71f00dbbb18b12d",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Fix with Copilot for failing Actions now in Pro, Pro+, and Max",
-      "url": "https://github.blog/changelog/2026-06-04-fix-with-copilot-for-failing-actions-now-in-pro-pro-and-max",
-      "published_at": "2026-06-04T20:46:11Z",
-      "summary": "When a GitHub Actions job fails, Copilot Pro, Pro+, and Max subscribers can now ask Copilot cloud agent to fix it in one click. Click the Fix with Copilot button… The post Fix with Copilot for failing Actions now in Pro, Pro+, and Max appeared first on The GitHub Blog .",
-      "relevance_score": 7,
+      "id": "5d783d41b7caa003ba4517b02133dd899c0a0a01",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google AI 本周产品更新：Nano Banana 2、Co-Scientist、dreambeans、Gemma 4 等",
+      "url": "https://x.com/GoogleAI/status/2062942864288387430",
+      "published_at": "2026-06-05T17:01:21Z",
+      "summary": "Google AI 本周发布多项更新：Nano Banana 2 及 Pro 正式 GA，可通过 Gemini Enterprise Agent Platform、Gemini API 和 Google AI Studio 获取；Co-Scientist 多智能体系统面向科研自动生成优化新假设；Google Labs 推出 dreambeans，根据用户 Google 应用数据每日生成个性化话题集；Gemma 4 12B 统一无编码器多模态模型可完全离线运行于笔记本；Gemma 4 系列及草稿模型引入 QAT 降低内存需求；Google Magenta RealTime 2 开源实时音乐模型，支持 MIDI 键盘、文本提示和手势演奏。",
+      "relevance_score": 9,
       "relevance_reasons": [
+        "strong:gemini",
         "strong:agent",
-        "weak:copilot",
-        "source:copilot",
-        "source:actions"
+        "strong:智能体",
+        "strong:多模态",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "0ac28bef2fae91da280fb81a881bf7270326c927",
+      "id": "ba8b09528ff4816918c5ae9cffc50437387c106c",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Agent tasks REST API now available for Copilot Pro, Pro+, and Max",
-      "url": "https://github.blog/changelog/2026-06-04-agent-tasks-rest-api-now-available-for-copilot-pro-pro-and-max",
-      "published_at": "2026-06-04T20:42:10Z",
-      "summary": "Copilot Pro, Pro+, and Max users can now programmatically start and track Copilot cloud agent tasks with the Agent tasks REST API, available in public preview. Copilot cloud agent works… The post Agent tasks REST API now available for Copilot Pro, Pro+, and Max appeared first on The GitHub Blog .",
+      "title": "GPT-5.2 and GPT-5.2-Codex deprecated",
+      "url": "https://github.blog/changelog/2026-06-05-gpt-5-2-and-gpt-5-2-codex-deprecated",
+      "published_at": "2026-06-05T22:32:00Z",
+      "summary": "As of today, June 5, 2026, we have deprecated the following models across most GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Note… The post GPT-5.2 and GPT-5.2-Codex deprecated appeared first on The GitHub Blog .",
       "relevance_score": 7,
       "relevance_reasons": [
+        "strong:codex",
         "strong:agent",
-        "weak:api",
         "weak:copilot",
-        "weak:API",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6c0855e1438f9d64d622fdab5847c7b6c1bc98f6",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "谷歌推出基于 Gemini Enterprise Agent Platform 的 Agentic RAG 框架",
+      "url": "https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag",
+      "published_at": "2026-06-05T20:30:02Z",
+      "summary": "Google Research 与 Google Cloud 合作推出跨语料库检索（Cross-Corpus Retrieval）框架，作为 Gemini Enterprise Agent Platform 的 Agentic RAG。该多智能体工作流将复杂企业查询分解为子任务，通过规划、重写和路由，迭代搜索多个数据源直至获得充分上下文，再生成可靠回答。与标准 RAG 相比，在事实性数据集上准确率最高提升 34%；在多个领域特定内部数据集上也实现了更好的接地与推理准确性。",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "strong:智能体",
+        "weak:eval",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -184,59 +180,118 @@
       "is_ai_related": true
     },
     {
-      "id": "c132c59740f42703b72650353151543e906df43e",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
-      "published_at": "2026-06-04T18:57:45Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:multimodal",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "639ded66c611cbdb2cc9e8ad095cb1487785163a",
+      "id": "8be85871311c6bc1cd494179d5d2228e85a91c5c",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI API 新增内容审核评分",
-      "url": "https://x.com/OpenAIDevs/status/2062619558440267801",
-      "published_at": "2026-06-04T19:36:39Z",
-      "summary": "Moderation scores 现已在 Responses API 和 Completions API 中可用。 在与生成相同的请求流程中返回审核信号，然后由你的应用决定如何使用它们进行记录、路由、审核或拦截。 https：//developers.openai.com/api/docs/guides/moderation",
-      "relevance_score": 4,
+      "title": "Arena 发布真实世界 AI 智能体排行榜 Agent Arena",
+      "url": "https://x.com/rohanpaul_ai/status/2063018358795300982",
+      "published_at": "2026-06-05T22:01:20Z",
+      "summary": "Arena 推出基于真实用户任务的智能体排行榜，评估模型在代码编写、应用构建、文档分析等工作中的表现，而非孤立基准。排行榜基于30万+任务、200万+工具调用和4000万行代码，综合任务成功、纠正遵从性、错误恢复、用户表扬与抱怨、工具幻觉等信号。前三名：GPT-5.5 High（+10.7%）、Claude Opus 4.7 Thinking（+9.5%）、GPT-5.4 High（+8.9%）。",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:openai",
-        "weak:api",
-        "weak:developer",
-        "weak:API",
+        "strong:claude",
+        "strong:agent",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "ca86b6cbee3429196c2474690a15898edac7ff24",
+      "id": "195a0f4d85af1176a50545b10b39a0d20b0fafdb",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "用Qwen2.5-3B构建多智能体经济体：工程报告",
+      "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
+      "published_at": "2026-06-05T22:18:46Z",
+      "summary": "开发者用Qwen2.5-3B构建了五人森林生物多智能体经济体，每个智能体独立运行，通过vLLM部署在Modal，以Gradio为交互窗口。3B模型在100%调用中输出有效JSON，但经济判断能力弱。通过设计稀缺性（食物品种限制、易腐坏、冬季燃料危机）和优化提示词（禁止买入自产物品、给出示例）提升决策质量。15轮模拟中，蜜价从10跌至3、柴价从4涨至7、财富基尼系数从0.14扩至0.38。项目展示了小模型可靠格式化与不可靠推理之间的工程填补。",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:llm",
+        "strong:智能体",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b94e372f62345f72dddbd367615c25d1b1a37b82",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Larger context windows and configurable reasoning levels for GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-06-04-larger-context-windows-and-configurable-reasoning-levels-for-github-copilot",
-      "published_at": "2026-06-04T18:45:04Z",
-      "summary": "GitHub Copilot now supports larger context windows and configurable reasoning levels to help you tackle deeper, more complex work. Leverage one-million-token context windows A one-million-token context window means users can… The post Larger context windows and configurable reasoning levels for GitHub Copilot appeared first on The GitHub Blog .",
+      "title": "Enterprise-managed plugins in VS Code in public preview",
+      "url": "https://github.blog/changelog/2026-06-05-enterprise-managed-plugins-in-vs-code-in-public-preview",
+      "published_at": "2026-06-05T21:01:48Z",
+      "summary": "Last month we launched a public preview with Copilot CLI that allows enterprise administrators the ability to configure and distribute plugins to GitHub Copilot CLI users across their enterprise. VS… The post Enterprise-managed plugins in VS Code in public preview appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7b9d7858edaee5f2c03575b6f93871a2b7a8d8e9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google Colab CLI 发布",
+      "url": "https://developers.googleblog.com/introducing-the-google-colab-cli",
+      "published_at": "2026-06-05T17:12:11Z",
+      "summary": "Google 推出 Colab 命令行界面（CLI），允许开发者和 AI 智能体将本地终端连接到远程 Colab 运行时，实现无摩擦执行。该轻量级 CLI 支持请求高性能 GPU、远程运行本地 Python 脚本，并检索工件日志或模型（如微调后的 Gemma 3 适配器）。工具可直接集成到标准终端环境，可被 Antigravity、Claude Code 等 AI 智能体调用以管理复杂机器学习流水线。",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:智能体",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "32ae70975d0f18ebb3bd2a5ebe3a89af4cb3a59f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Apollo 敲定 350 亿美元债务融资，为 Anthropic 采购 AI 芯片",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-05/apollo-wraps-up-35-billion-debt-to-buy-ai-chips-for-anthropic",
+      "published_at": "2026-06-05T21:02:29Z",
+      "summary": "Apollo Global Management 和 Blackstone 已为 Anthropic 敲定 350 亿美元融资方案，用于扩充其 AI 基础设施。这是人工智能竞赛中最新的一笔巨额交易。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:人工智能",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "125686bde20d935704669ffd4703de609fce1164",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic：让Claude成为化学家",
+      "url": "https://www.anthropic.com/research/making-claude-a-chemist",
+      "published_at": "2026-06-05T19:33:26Z",
+      "summary": "Anthropic与顶尖化学家合作，提升Claude在化学领域的实用性。首个白皮书测试Claude在NMR谱图分析上的表现：在20个化合物上，对比Claude Opus 4.7、Opus 4.6、Sonnet 4.6与ChemDraw、MestReNova的正向预测（从结构预测谱图）和反向结构解析（从实验谱图推断结构）能力。所有化合物选自模型训练截止日期后发布的ChemRxiv预印本，以避免选择偏差。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -317,25 +372,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "abf3628939277ca6710cc3ea47a2d772d880dd13",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google Magenta RealTime 2 （MRT2） 实时音乐模型发布",
-      "url": "https://x.com/googleaidevs/status/2062603374789263646",
-      "published_at": "2026-06-04T18:32:20Z",
-      "summary": "Google AI for Developers 宣布推出开放权重的实时音乐模型 Magenta RealTime 2 （MRT2）。该模型可通过 MIDI 键盘、实时文本提示甚至手势进行演奏。MRT2 在 MacBook 上原生运行，延迟低于 200ms，提供开放权重、开源推理引擎以及配套应用和插件套件。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:developer",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -348,8 +384,8 @@
       "fetched_count": 992,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 610,
-      "checked_at": "2026-06-05T16:29:04.722648Z"
+      "latency_ms": 671,
+      "checked_at": "2026-06-06T02:32:54.348460Z"
     },
     {
       "source_id": "openai-skills",
@@ -360,8 +396,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 377,
-      "checked_at": "2026-06-05T16:29:05.100439Z"
+      "latency_ms": 372,
+      "checked_at": "2026-06-06T02:32:54.720756Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -372,8 +408,8 @@
       "fetched_count": 223,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 123,
-      "checked_at": "2026-06-05T16:29:05.227450Z"
+      "latency_ms": 126,
+      "checked_at": "2026-06-06T02:32:54.850184Z"
     },
     {
       "source_id": "google-deepmind",
@@ -384,8 +420,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 358,
-      "checked_at": "2026-06-05T16:29:05.587182Z"
+      "latency_ms": 368,
+      "checked_at": "2026-06-06T02:32:55.220555Z"
     },
     {
       "source_id": "google-ai",
@@ -396,20 +432,20 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 215,
-      "checked_at": "2026-06-05T16:29:05.803574Z"
+      "latency_ms": 243,
+      "checked_at": "2026-06-06T02:32:55.464631Z"
     },
     {
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "enabled": true,
-      "ok": true,
-      "fetched_count": 793,
-      "kept_count": 1,
-      "error": null,
-      "latency_ms": 328,
-      "checked_at": "2026-06-05T16:29:06.144260Z"
+      "ok": false,
+      "fetched_count": 0,
+      "kept_count": 0,
+      "error": "429 Client Error: Too Many Requests for url: https://huggingface.co/blog/feed.xml",
+      "latency_ms": 94,
+      "checked_at": "2026-06-06T02:32:55.558826Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -420,8 +456,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 176,
-      "checked_at": "2026-06-05T16:29:06.320516Z"
+      "latency_ms": 150,
+      "checked_at": "2026-06-06T02:32:55.709135Z"
     },
     {
       "source_id": "github-changelog",
@@ -430,10 +466,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 34,
-      "checked_at": "2026-06-05T16:29:06.355735Z"
+      "latency_ms": 31,
+      "checked_at": "2026-06-06T02:32:55.740895Z"
     },
     {
       "source_id": "aihot",
@@ -442,10 +478,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 12,
       "error": null,
-      "latency_ms": 2460,
-      "checked_at": "2026-06-05T16:29:08.818043Z"
+      "latency_ms": 1021,
+      "checked_at": "2026-06-06T02:32:56.763641Z"
     }
   ],
   "control_notes": {
