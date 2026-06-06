@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>14</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>0</b><span>官方源条目</span></div>
-        <div class="stat"><b>12</b><span>聚合源条目</span></div>
-        <div class="stat"><b>8/9</b><span>健康信源</span></div>
+        <div class="stat"><b>11</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>1</b><span>官方源条目</span></div>
+        <div class="stat"><b>8</b><span>聚合源条目</span></div>
+        <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-06T02:32:56.774083Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-06T06:44:14.974283Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -95,14 +95,14 @@
 
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-05T06:18:53Z</span>
-        <strong>Score 7</strong>
+        <span>Hugging Face Blog</span>
+        <span>official_rss</span>
+        <span>2026-06-05T22:18:46Z</span>
+        <strong>Score 3</strong>
       </div>
-      <h3><a href="https://x.com/alibaba_cloud/status/2062781182417490310" target="_blank" rel="noreferrer">PolarDB-X Zero 上线：30秒全分布式数据库</a></h3>
-      <p class='summary'>PolarDB-X Zero 上线了！ 无需注册。无需配置。只需一次 API 调用。 30 秒内获得一个全分布式数据库。 原生 HNSW 向量索引--内置兼容 MySQL 的引擎。 关系型 + 语义搜索--一条 SQL 语句。 AI 智能体就绪--MCP 协议、AI IDE 兼容（Cursor、Claude、Qoder、Qodex 等） 立即尝试：https：//zero.polardbx.com #AlibabaCloud #PolarDB #ApsaraDB</p>
-      <div class="tags"><span>strong:claude</span><span>strong:mcp</span><span>strong:智能体</span><span>weak:api</span><span>weak:API</span></div>
+      <h3><a href="https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim" target="_blank" rel="noreferrer">Thousand Token Wood: shipping a multi-agent economy on a 3B model</a></h3>
+      
+      <div class="tags"><span>strong:agent</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -116,19 +116,6 @@
       <h3><a href="https://x.com/rohanpaul_ai/status/2063018358795300982" target="_blank" rel="noreferrer">Arena 发布真实世界 AI 智能体排行榜 Agent Arena</a></h3>
       <p class='summary'>Arena 推出基于真实用户任务的智能体排行榜，评估模型在代码编写、应用构建、文档分析等工作中的表现，而非孤立基准。排行榜基于30万+任务、200万+工具调用和4000万行代码，综合任务成功、纠正遵从性、错误恢复、用户表扬与抱怨、工具幻觉等信号。前三名：GPT-5.5 High（+10.7%）、Claude Opus 4.7 Thinking（+9.5%）、GPT-5.4 High（+8.9%）。</p>
       <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-05T22:18:46Z</span>
-        <strong>Score 4</strong>
-      </div>
-      <h3><a href="https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim" target="_blank" rel="noreferrer">用Qwen2.5-3B构建多智能体经济体：工程报告</a></h3>
-      <p class='summary'>开发者用Qwen2.5-3B构建了五人森林生物多智能体经济体，每个智能体独立运行，通过vLLM部署在Modal，以Gradio为交互窗口。3B模型在100%调用中输出有效JSON，但经济判断能力弱。通过设计稀缺性（食物品种限制、易腐坏、冬季燃料危机）和优化提示词（禁止买入自产物品、给出示例）提升决策质量。15轮模拟中，蜜价从10跌至3、柴价从4涨至7、财富基尼系数从0.14扩至0.38。项目展示了小模型可靠格式化与不可靠推理之间的工程填补。</p>
-      <div class="tags"><span>strong:llm</span><span>strong:智能体</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -208,47 +195,21 @@
       <p class='summary'>腾讯混元（Tencent Hunyuan）与中国人民大学高瓴人工智能学院合作，开源PlanningBench--一个可扩展、可验证的LLM规划能力评估与训练框架。该框架包含30+真实世界规划任务，支持自动验证和训练。PlanningBench旨在推动LLM从&quot;说&quot;到&quot;做&quot;的规划能力发展。资源已发布于arXiv、GitHub及HuggingFace。</p>
       <div class="tags"><span>strong:llm</span><span>strong:人工智能</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-05T06:04:59Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/alibaba_cloud/status/2062777684120244656" target="_blank" rel="noreferrer">阿里云发布SkillClaw与Nacos的Agent技能进化循环</a></h3>
-      <p class='summary'>阿里云推出SkillClaw与Nacos结合，构建AI智能体技能进化流水线。关键特性：自动从真实对话中提取经验并封装为可复用技能（Skill）；Nacos负责集中化版本管理、审核与审计；打破本地孤岛，实现团队安全共享与分发；形成完整的&quot;生成-治理-分发&quot;持续进化闭环。目标是将个人洞察转化为团队的AI资产。</p>
-      <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-05T05:16:06Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://github.com/alibaba/open-code-review" target="_blank" rel="noreferrer">Open Code Review - 一款基于人工智能的代码审查命令行工具</a></h3>
-      <p class='summary'>Open Code Review 是一个基于人工智能的代码审查命令行（CLI）工具，旨在帮助开发者通过自动化的方式提升代码审查效率。</p>
-      <div class="tags"><span>strong:人工智能</span><span>weak:开发者</span><span>weak:自动化</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>992</td><td>0</td><td>671ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>372ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>223</td><td>0</td><td>126ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>368ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>243ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='err'>ERR</td><td>0</td><td>0</td><td>94ms</td><td>429 Client Error: Too Many Requests for url: https://huggingface.co/blog/feed.xml</td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>150ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>31ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>12</td><td>1021ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>992</td><td>0</td><td>1726ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>179ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>223</td><td>0</td><td>105ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>309ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>155ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>794</td><td>1</td><td>230ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>139ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>25ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>9</td><td>5279ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
