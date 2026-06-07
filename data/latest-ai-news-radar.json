@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-07T09:46:02.712247Z",
+  "generated_at": "2026-06-07T10:39:49.661100Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 7,
   "groups": {
     "aggregate": {
       "group": "aggregate",
@@ -65,6 +65,26 @@
           1
         ]
       ]
+    },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "Hugging Face Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "claude",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
     }
   },
   "items": [
@@ -87,6 +107,24 @@
         "strong:agent",
         "weak:copilot",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c68d5ad9ac548d53d16d13aa60d8d1aaa21adecf",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Her · हेर — a detective for your Claude Code sessions",
+      "url": "https://huggingface.co/blog/build-small-hackathon/her-blog",
+      "published_at": "2026-06-07T10:13:41Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -197,8 +235,8 @@
       "fetched_count": 992,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 614,
-      "checked_at": "2026-06-07T09:45:55.535984Z"
+      "latency_ms": 611,
+      "checked_at": "2026-06-07T10:39:46.950526Z"
     },
     {
       "source_id": "openai-skills",
@@ -209,8 +247,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 249,
-      "checked_at": "2026-06-07T09:45:55.785952Z"
+      "latency_ms": 228,
+      "checked_at": "2026-06-07T10:39:47.178941Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -221,8 +259,8 @@
       "fetched_count": 223,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 167,
-      "checked_at": "2026-06-07T09:45:55.956693Z"
+      "latency_ms": 104,
+      "checked_at": "2026-06-07T10:39:47.286532Z"
     },
     {
       "source_id": "google-deepmind",
@@ -233,8 +271,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 406,
-      "checked_at": "2026-06-07T09:45:56.364687Z"
+      "latency_ms": 219,
+      "checked_at": "2026-06-07T10:39:47.507117Z"
     },
     {
       "source_id": "google-ai",
@@ -245,8 +283,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 239,
-      "checked_at": "2026-06-07T09:45:56.604357Z"
+      "latency_ms": 252,
+      "checked_at": "2026-06-07T10:39:47.760088Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -255,10 +293,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 794,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 286,
-      "checked_at": "2026-06-07T09:45:56.901653Z"
+      "latency_ms": 281,
+      "checked_at": "2026-06-07T10:39:48.052218Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -269,8 +307,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 492,
-      "checked_at": "2026-06-07T09:45:57.394797Z"
+      "latency_ms": 215,
+      "checked_at": "2026-06-07T10:39:48.268262Z"
     },
     {
       "source_id": "github-changelog",
@@ -281,8 +319,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 34,
-      "checked_at": "2026-06-07T09:45:57.429604Z"
+      "latency_ms": 25,
+      "checked_at": "2026-06-07T10:39:48.294188Z"
     },
     {
       "source_id": "aihot",
@@ -293,8 +331,8 @@
       "fetched_count": 50,
       "kept_count": 6,
       "error": null,
-      "latency_ms": 5273,
-      "checked_at": "2026-06-07T09:46:02.703620Z"
+      "latency_ms": 1358,
+      "checked_at": "2026-06-07T10:39:49.653726Z"
     }
   ],
   "control_notes": {
