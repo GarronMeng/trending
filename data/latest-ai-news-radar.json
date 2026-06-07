@@ -1,36 +1,40 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-07T02:51:39.093931Z",
+  "generated_at": "2026-06-07T07:44:25.200203Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 4,
+  "item_count": 6,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          4
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
+          6
+        ],
+        [
+          "claude",
+          2
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "智能体",
+          2
         ],
         [
           "llm",
           2
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "codex",
-          1
         ],
         [
           "gemini",
@@ -45,7 +49,11 @@
           1
         ],
         [
-          "智能体",
+          "openai",
+          1
+        ],
+        [
+          "anthropic",
           1
         ],
         [
@@ -54,10 +62,6 @@
         ],
         [
           "hugging face",
-          1
-        ],
-        [
-          "inference",
           1
         ]
       ]
@@ -82,6 +86,45 @@
         "strong:gemini",
         "strong:agent",
         "weak:copilot",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "390ada1b0fcf4df8f1778938af97dc271a13c3d9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Harness 工程：在智能体优先的世界中运用 Codex",
+      "url": "https://openai.com/index/harness-engineering",
+      "published_at": "2026-06-07T03:39:37Z",
+      "summary": "Harness 工程在智能体优先的世界中利用 OpenAI Codex 的实践文章，6月6日发布于 openai.com，在 Hacker News 上获得 102 点热度。",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f98c6fecc5c742e477a22b1f9d4ec0b2cf8599a7",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Opus 4.8 缓存命中率与有效价格可实时查看",
+      "url": "https://x.com/OpenRouter/status/2063504950429147376",
+      "published_at": "2026-06-07T06:14:52Z",
+      "summary": "不同模型提供商在缓存命中率和有效价格上有什么差异？ 现在你可以从 Pricing 标签查看实时缓存命中率和历史流量。这里是 Opus 4.8：https：//openrouter.ai/anthropic/claude-opus-4.8/pricing",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -154,8 +197,8 @@
       "fetched_count": 992,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 885,
-      "checked_at": "2026-06-07T02:51:34.776145Z"
+      "latency_ms": 1498,
+      "checked_at": "2026-06-07T07:44:21.858978Z"
     },
     {
       "source_id": "openai-skills",
@@ -166,8 +209,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 276,
-      "checked_at": "2026-06-07T02:51:35.052504Z"
+      "latency_ms": 219,
+      "checked_at": "2026-06-07T07:44:22.078324Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -178,8 +221,8 @@
       "fetched_count": 223,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 105,
-      "checked_at": "2026-06-07T02:51:35.161176Z"
+      "latency_ms": 114,
+      "checked_at": "2026-06-07T07:44:22.196716Z"
     },
     {
       "source_id": "google-deepmind",
@@ -190,8 +233,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 573,
-      "checked_at": "2026-06-07T02:51:35.735855Z"
+      "latency_ms": 408,
+      "checked_at": "2026-06-07T07:44:22.606408Z"
     },
     {
       "source_id": "google-ai",
@@ -202,8 +245,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 185,
-      "checked_at": "2026-06-07T02:51:35.921580Z"
+      "latency_ms": 230,
+      "checked_at": "2026-06-07T07:44:22.836804Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -214,8 +257,8 @@
       "fetched_count": 794,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 277,
-      "checked_at": "2026-06-07T02:51:36.210774Z"
+      "latency_ms": 284,
+      "checked_at": "2026-06-07T07:44:23.134095Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -226,8 +269,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 294,
-      "checked_at": "2026-06-07T02:51:36.505855Z"
+      "latency_ms": 257,
+      "checked_at": "2026-06-07T07:44:23.391923Z"
     },
     {
       "source_id": "github-changelog",
@@ -238,8 +281,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-06-07T02:51:36.532351Z"
+      "latency_ms": 25,
+      "checked_at": "2026-06-07T07:44:23.417411Z"
     },
     {
       "source_id": "aihot",
@@ -248,10 +291,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 2551,
-      "checked_at": "2026-06-07T02:51:39.085092Z"
+      "latency_ms": 1772,
+      "checked_at": "2026-06-07T07:44:25.191216Z"
     }
   ],
   "control_notes": {
