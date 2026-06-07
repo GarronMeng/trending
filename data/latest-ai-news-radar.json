@@ -1,24 +1,28 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-07T10:39:49.661100Z",
+  "generated_at": "2026-06-07T15:23:50.096659Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 6,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          6
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          5
+        ],
+        [
+          "anthropic",
+          2
         ],
         [
           "claude",
@@ -33,19 +37,19 @@
           2
         ],
         [
-          "llm",
-          2
-        ],
-        [
-          "gemini",
+          "hugging face",
           1
         ],
         [
-          "agent",
+          "mcp",
           1
         ],
         [
-          "copilot",
+          "api",
+          1
+        ],
+        [
+          "API",
           1
         ],
         [
@@ -53,15 +57,11 @@
           1
         ],
         [
-          "anthropic",
+          "chatgpt",
           1
         ],
         [
-          "大模型",
-          1
-        ],
-        [
-          "hugging face",
+          "自动化",
           1
         ]
       ]
@@ -77,7 +77,11 @@
       ],
       "top_keywords": [
         [
-          "claude",
+          "openai",
+          1
+        ],
+        [
+          "codex",
           1
         ],
         [
@@ -89,41 +93,43 @@
   },
   "items": [
     {
-      "id": "d53e01104988baccfa4acca46c3daed4e862180a",
+      "id": "ab10b27e74fddcdd27f22fdb3c588b1468e1088e",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "GitHub 开源 Spec Kit 工具包，用产品规范引导 AI 编码",
-      "url": "https://x.com/rohanpaul_ai/status/2063246343842501091",
-      "published_at": "2026-06-06T13:07:16Z",
-      "summary": "GitHub 发布开源工具包 Spec Kit，旨在解决 \"vibe coding\" 的最大弱点--AI 常在规则未明确时就开始编码。它把流程从 \"让 AI 直接构建\" 改为 \"先写产品规范，再让 AI 根据规范实现\"。当前 AI 编码模式常因松散提示直接跳入代码，导致需求薄弱、边界遗漏和反复返工。Spec Kit 推动反向流程：先定义产品功能，再澄清差距、制订技术计划、分解任务，最后让 agent 执行。规范成为可执行的开发合约，支持 Copilot、Claude Code、Codex、Gemini、Cursor、Qwen 等 30+ agent 集成。项目已获 109K+ 星标。",
-      "relevance_score": 8,
+      "title": "Her · हेर - Claude Code 会话分析工具",
+      "url": "https://huggingface.co/blog/build-small-hackathon/her-blog",
+      "published_at": "2026-06-07T10:13:41Z",
+      "summary": "Her（हेर）是专为 Claude Code 设计的会话分析工具。用户上传 `.jsonl` 文件后，Her 用自然语言重建每轮交互，标记部署、配置变更、秘密等高风险操作并定位到具体轮次。它展示 token 消耗、所用工具、子智能体、技能和 MCP 服务器，并结合 Anthropic 与社区最佳实践给出改进建议（仅在有明确可修复模式时）。内置\"Ask Her\"问答功能，支持单会话与跨会话项目分析。工具不调用第三方 AI API，使用 Nemotron-Mini-4B-Instruct 模型在 Hugging Face ZeroGPU 上运行，评估引擎完全确定，模型仅负责文本生成与建议。Her 内置 Homebrew、npm、PyPI 主流 CLI 工具数据库，自动识别会话中使用的工具，并对部署工具、数据库客户",
+      "relevance_score": 9,
       "relevance_reasons": [
+        "strong:anthropic",
         "strong:claude",
-        "strong:codex",
-        "strong:gemini",
-        "strong:agent",
-        "weak:copilot",
+        "strong:hugging face",
+        "strong:mcp",
+        "weak:api",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "c68d5ad9ac548d53d16d13aa60d8d1aaa21adecf",
+      "id": "63cdcfaedf0f610eeb696ab7c069cc93ccc2b8a3",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Her · हेर — a detective for your Claude Code sessions",
-      "url": "https://huggingface.co/blog/build-small-hackathon/her-blog",
-      "published_at": "2026-06-07T10:13:41Z",
+      "title": "Sponsors especially OPENAI CODEX voucher usage for codex - openAI challange",
+      "url": "https://huggingface.co/blog/build-small-hackathon/sponsors-vouchers",
+      "published_at": "2026-06-07T11:38:54Z",
       "summary": null,
-      "relevance_score": 3,
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:claude",
+        "strong:openai",
+        "strong:codex",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -144,6 +150,26 @@
         "strong:openai",
         "strong:codex",
         "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9ca79695f17a56e3fac12c7f8b90c2dee100f1a9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "\"我在田里雇了一名工程师，它叫 Codex\" -- 北海道一个西兰花农的 8 个真实 AI 用法",
+      "url": "https://x.com/AYi_AInotes/status/2063573709672104286",
+      "published_at": "2026-06-07T10:48:06Z",
+      "summary": "日本北海道农民富安弘毅用 ChatGPT 和 Codex 解决农场实际问题，涵盖 8 个用法：拍照识别西兰花病害、卫星监测获取 NDVI 数据、用 ESP32 和 LINE 机器人远程控制温室卷帘、为农场群聊开发机器人管理温度与排期、从聊天记录追踪播种数量、学习 RTK-GPS 自动转向原理并评估自建成本、设计基于 Airtable 的农场管理数据库。他说 AI 让传统昂贵的自动化变得低成本可及，\"如同身边有一位超级工程师\"。",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "weak:自动化",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -185,44 +211,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "f6805224e151a032caf0a855d64378855f3887ef",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenCV 5 发布：升级全新 DNN 引擎、原生支持大模型",
-      "url": "https://www.ithome.com/0/960/969.htm",
-      "published_at": "2026-06-06T12:48:12Z",
-      "summary": "OpenCV 5 正式发布，采用基于图的 DNN 引擎，ONNX 算子覆盖率从 4.x 的不到 23% 提升至超 80%，原生支持 Transformer、视觉语言模型（VLM）和大语言模型（LLM）。其他更新包括：更好的 Python 集成与命名参数、更紧凑核心代码、清晰硬件加速层、原生 FP16/BF16、规范化 0D/1D 张量、扩展 3D 视觉及现代化文档。该库 GitHub 拥有超 86，000 stars，每日安装量超一百万次。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:llm",
-        "strong:大模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5a1dcf6e644d32a11f6873d368daccda29fc5b9d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Persona Atlas：Hugging Face 上的开源人物思维映射工具",
-      "url": "https://huggingface.co/blog/build-small-hackathon/persona-atlas",
-      "published_at": "2026-06-06T11:42:01Z",
-      "summary": "Persona Atlas 是一个运行在 Hugging Face Inference Providers 上的开源项目。它通过工具调用代理执行真实网络搜索，生成公众人物的资料、事实清单和风格假设，然后让该人物回答十个关于身份、伦理等开放式问题。每个回答被转化为嵌入向量，从而在向量空间中对不同人物进行距离比较，并基于十个特质锚点绘制热力图。前端采用 Gradio，提供研究、比较和检查代理完整追溯三个标签页，预设多个人物角色，无需 token 即可直接体验。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "weak:inference",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -235,8 +223,8 @@
       "fetched_count": 992,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 611,
-      "checked_at": "2026-06-07T10:39:46.950526Z"
+      "latency_ms": 910,
+      "checked_at": "2026-06-07T15:23:47.320739Z"
     },
     {
       "source_id": "openai-skills",
@@ -247,8 +235,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 228,
-      "checked_at": "2026-06-07T10:39:47.178941Z"
+      "latency_ms": 276,
+      "checked_at": "2026-06-07T15:23:47.597935Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -259,8 +247,8 @@
       "fetched_count": 223,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 104,
-      "checked_at": "2026-06-07T10:39:47.286532Z"
+      "latency_ms": 92,
+      "checked_at": "2026-06-07T15:23:47.693425Z"
     },
     {
       "source_id": "google-deepmind",
@@ -271,8 +259,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 219,
-      "checked_at": "2026-06-07T10:39:47.507117Z"
+      "latency_ms": 312,
+      "checked_at": "2026-06-07T15:23:48.007180Z"
     },
     {
       "source_id": "google-ai",
@@ -283,8 +271,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 252,
-      "checked_at": "2026-06-07T10:39:47.760088Z"
+      "latency_ms": 179,
+      "checked_at": "2026-06-07T15:23:48.186853Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -295,8 +283,8 @@
       "fetched_count": 794,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 281,
-      "checked_at": "2026-06-07T10:39:48.052218Z"
+      "latency_ms": 273,
+      "checked_at": "2026-06-07T15:23:48.470705Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -307,8 +295,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 215,
-      "checked_at": "2026-06-07T10:39:48.268262Z"
+      "latency_ms": 217,
+      "checked_at": "2026-06-07T15:23:48.688113Z"
     },
     {
       "source_id": "github-changelog",
@@ -319,8 +307,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-06-07T10:39:48.294188Z"
+      "latency_ms": 21,
+      "checked_at": "2026-06-07T15:23:48.710036Z"
     },
     {
       "source_id": "aihot",
@@ -329,10 +317,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 1358,
-      "checked_at": "2026-06-07T10:39:49.653726Z"
+      "latency_ms": 1380,
+      "checked_at": "2026-06-07T15:23:50.091533Z"
     }
   ],
   "control_notes": {
