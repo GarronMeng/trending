@@ -1,92 +1,57 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-08T08:31:22.442983Z",
+  "generated_at": "2026-06-08T11:25:11.220865Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 3,
+  "item_count": 2,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "AI Hot",
-          3
+          2
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          3
-        ],
-        [
-          "anthropic",
           2
-        ],
-        [
-          "chatgpt",
-          2
-        ],
-        [
-          "codex",
-          2
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "hugging face",
-          1
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
         ],
         [
           "openai",
           1
         ],
         [
-          "自动化",
+          "anthropic",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "智能体",
           1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "ab10b27e74fddcdd27f22fdb3c588b1468e1088e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Her · हेर - Claude Code 会话分析工具",
-      "url": "https://huggingface.co/blog/build-small-hackathon/her-blog",
-      "published_at": "2026-06-07T10:13:41Z",
-      "summary": "Her（हेर）是专为 Claude Code 设计的会话分析工具。用户上传 `.jsonl` 文件后，Her 用自然语言重建每轮交互，标记部署、配置变更、秘密等高风险操作并定位到具体轮次。它展示 token 消耗、所用工具、子智能体、技能和 MCP 服务器，并结合 Anthropic 与社区最佳实践给出改进建议（仅在有明确可修复模式时）。内置\"Ask Her\"问答功能，支持单会话与跨会话项目分析。工具不调用第三方 AI API，使用 Nemotron-Mini-4B-Instruct 模型在 Hugging Face ZeroGPU 上运行，评估引擎完全确定，模型仅负责文本生成与建议。Her 内置 Homebrew、npm、PyPI 主流 CLI 工具数据库，自动识别会话中使用的工具，并对部署工具、数据库客户",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:hugging face",
-        "strong:mcp",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "4e1b9e5d185e0912b05761e320949da23dc7e3dc",
       "source_id": "aihot",
@@ -109,21 +74,21 @@
       "is_ai_related": true
     },
     {
-      "id": "9ca79695f17a56e3fac12c7f8b90c2dee100f1a9",
+      "id": "b2ed8db47239efda8e7be91c158524a931d06db6",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "\"我在田里雇了一名工程师，它叫 Codex\" -- 北海道一个西兰花农的 8 个真实 AI 用法",
-      "url": "https://x.com/AYi_AInotes/status/2063573709672104286",
-      "published_at": "2026-06-07T10:48:06Z",
-      "summary": "日本北海道农民富安弘毅用 ChatGPT 和 Codex 解决农场实际问题，涵盖 8 个用法：拍照识别西兰花病害、卫星监测获取 NDVI 数据、用 ESP32 和 LINE 机器人远程控制温室卷帘、为农场群聊开发机器人管理温度与排期、从聊天记录追踪播种数量、学习 RTK-GPS 自动转向原理并评估自建成本、设计基于 Airtable 的农场管理数据库。他说 AI 让传统昂贵的自动化变得低成本可及，\"如同身边有一位超级工程师\"。",
-      "relevance_score": 4,
+      "title": "AgentScope Java 2.0 发布",
+      "url": "https://x.com/alibaba_cloud/status/2063923881857945815",
+      "published_at": "2026-06-08T09:59:33Z",
+      "summary": "阿里云发布AgentScope Java 2.0，面向企业级AI智能体开发。新版本主要特性：分布式无状态架构，支持K8s弹性扩缩容与会话恢复；多租户隔离，通过Workspace抽象实现安全数据分离；长期稳定性，HarnessAgent负责上下文管理与容错；安全执行，提供细粒度权限控制和Human-in-the-Loop支持。适用于JVM生产环境。开源地址见推文链接。",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:codex",
-        "weak:自动化",
+        "strong:agent",
+        "strong:agents",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -139,8 +104,8 @@
       "fetched_count": 992,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 850,
-      "checked_at": "2026-06-08T08:31:19.860554Z"
+      "latency_ms": 696,
+      "checked_at": "2026-06-08T11:25:08.372398Z"
     },
     {
       "source_id": "openai-skills",
@@ -151,8 +116,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 175,
-      "checked_at": "2026-06-08T08:31:20.036801Z"
+      "latency_ms": 314,
+      "checked_at": "2026-06-08T11:25:08.687277Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -163,8 +128,8 @@
       "fetched_count": 223,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 116,
-      "checked_at": "2026-06-08T08:31:20.156741Z"
+      "latency_ms": 102,
+      "checked_at": "2026-06-08T11:25:08.793321Z"
     },
     {
       "source_id": "google-deepmind",
@@ -175,8 +140,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 203,
-      "checked_at": "2026-06-08T08:31:20.362064Z"
+      "latency_ms": 353,
+      "checked_at": "2026-06-08T11:25:09.147861Z"
     },
     {
       "source_id": "google-ai",
@@ -187,8 +152,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 158,
-      "checked_at": "2026-06-08T08:31:20.520831Z"
+      "latency_ms": 188,
+      "checked_at": "2026-06-08T11:25:09.336307Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -199,8 +164,8 @@
       "fetched_count": 794,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 332,
-      "checked_at": "2026-06-08T08:31:20.866220Z"
+      "latency_ms": 365,
+      "checked_at": "2026-06-08T11:25:09.713999Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -211,8 +176,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 109,
-      "checked_at": "2026-06-08T08:31:20.976303Z"
+      "latency_ms": 250,
+      "checked_at": "2026-06-08T11:25:09.964684Z"
     },
     {
       "source_id": "github-changelog",
@@ -223,8 +188,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-06-08T08:31:21.002647Z"
+      "latency_ms": 31,
+      "checked_at": "2026-06-08T11:25:09.996366Z"
     },
     {
       "source_id": "aihot",
@@ -233,10 +198,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 1429,
-      "checked_at": "2026-06-08T08:31:22.433037Z"
+      "latency_ms": 1217,
+      "checked_at": "2026-06-08T11:25:11.214723Z"
     }
   ],
   "control_notes": {
