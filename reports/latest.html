@@ -43,8 +43,8 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>6</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>1</b><span>官方源条目</span></div>
+        <div class="stat"><b>5</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>0</b><span>官方源条目</span></div>
         <div class="stat"><b>5</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
@@ -52,7 +52,7 @@
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-07T15:23:50.100922Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-08T02:54:10.940324Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -69,14 +69,14 @@
 
     <article class="card">
       <div class="meta">
-        <span>Hugging Face Blog</span>
-        <span>official_rss</span>
-        <span>2026-06-07T11:38:54Z</span>
-        <strong>Score 5</strong>
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-07T18:14:27Z</span>
+        <strong>Score 7</strong>
       </div>
-      <h3><a href="https://huggingface.co/blog/build-small-hackathon/sponsors-vouchers" target="_blank" rel="noreferrer">Sponsors especially OPENAI CODEX voucher usage for codex - openAI challange</a></h3>
-      
-      <div class="tags"><span>strong:openai</span><span>strong:codex</span><span>source_prior:official_ai</span></div>
+      <h3><a href="https://x.com/dotey/status/2063686036895478162" target="_blank" rel="noreferrer">ChatGPT 要变 AgentGPT 了</a></h3>
+      <p class='summary'>OpenAI 正筹备 ChatGPT 自 2022 年上线以来最大规模改版，从聊天机器人转向超级应用/Agent 平台，整合编程工具 Codex、图像生成及第三方应用（Canva、Booking）。高管称&quot;聊天已死&quot;，目标成为跨平台个人 AI 助手，未来甚至省去用户输入提示词。改版预计未来几周在网页和手机端上线。商业压力：ChatGPT 有 9 亿周活用户、5000 万付费用户、月收入 20 亿美元但未盈利；企业客户贡献约 40% 收入，目标年底达 50%；Codex 桌面版周活超 500 万。竞争对手 Anthropic 估值已达 9650 亿美元。OpenAI 刚完成 1220 亿美元融资，估值 8520 亿美元，IPO 目标估值可能超 1 万亿美元。</p>
+      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>strong:chatgpt</span><span>strong:codex</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -117,34 +117,21 @@
       <p class='summary'>不同模型提供商在缓存命中率和有效价格上有什么差异？ 现在你可以从 Pricing 标签查看实时缓存命中率和历史流量。这里是 Opus 4.8：https：//openrouter.ai/anthropic/claude-opus-4.8/pricing</p>
       <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-06T19:02:33Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2" target="_blank" rel="noreferrer">五个实验室，五个心智：用小模型构建多模型金融剧情游戏</a></h3>
-      <p class='summary'>Thousand Token Wood v2使用四个不同实验室的小模型（gpt-oss-20b、MiniCPM3-4B、Nemotron-Mini-4B及微调Qwen 0.5B）驱动金融模拟游戏的智能体。核心发现是异构服务层摩擦在于vLLM 0.22.1需CUDA工具包，而非模型本身。通过容忍性JSON解析层，添加模型只需一条配置。信息隔离确保内幕标志不在提示词中，扫描测试验证无泄露。记忆用情绪摘要截断避免淹没。微调0.5B模型实现0%自成交、100%有效报价，真相防火墙零泄露。小模型是可靠格式生成器但不可靠推理器，可通过结构化、提示词和微调弥补。</p>
-      <div class="tags"><span>strong:llm</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>992</td><td>0</td><td>910ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>276ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>223</td><td>0</td><td>92ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>312ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>179ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>794</td><td>1</td><td>273ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>217ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>21ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>5</td><td>1380ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>992</td><td>0</td><td>550ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>164ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>223</td><td>0</td><td>91ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>208ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>145ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>794</td><td>0</td><td>236ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>128ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>22ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>5</td><td>1854ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
