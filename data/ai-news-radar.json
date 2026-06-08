@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-08T11:25:11.220865Z",
+  "generated_at": "2026-06-08T12:45:12.623197Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 2,
+  "item_count": 3,
   "groups": {
     "aggregate": {
       "group": "aggregate",
@@ -49,6 +49,26 @@
           1
         ]
       ]
+    },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "Hugging Face Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "tool",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
     }
   },
   "items": [
@@ -70,6 +90,24 @@
         "strong:chatgpt",
         "strong:codex",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a8e686165c6a4d854d03d6b91cfc98c4c0c96e1a",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Building Pakistan Notice Helper: A Small AI Tool for a Very Local Safety Problem",
+      "url": "https://huggingface.co/blog/build-small-hackathon/building-pakistan-notice-helper",
+      "published_at": "2026-06-08T11:46:56Z",
+      "summary": null,
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:tool",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -104,8 +142,8 @@
       "fetched_count": 992,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 696,
-      "checked_at": "2026-06-08T11:25:08.372398Z"
+      "latency_ms": 903,
+      "checked_at": "2026-06-08T12:45:09.389747Z"
     },
     {
       "source_id": "openai-skills",
@@ -116,8 +154,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 314,
-      "checked_at": "2026-06-08T11:25:08.687277Z"
+      "latency_ms": 393,
+      "checked_at": "2026-06-08T12:45:09.783343Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -128,8 +166,8 @@
       "fetched_count": 223,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 102,
-      "checked_at": "2026-06-08T11:25:08.793321Z"
+      "latency_ms": 186,
+      "checked_at": "2026-06-08T12:45:09.973290Z"
     },
     {
       "source_id": "google-deepmind",
@@ -140,8 +178,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 353,
-      "checked_at": "2026-06-08T11:25:09.147861Z"
+      "latency_ms": 478,
+      "checked_at": "2026-06-08T12:45:10.452860Z"
     },
     {
       "source_id": "google-ai",
@@ -152,8 +190,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 188,
-      "checked_at": "2026-06-08T11:25:09.336307Z"
+      "latency_ms": 229,
+      "checked_at": "2026-06-08T12:45:10.682788Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -162,10 +200,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 794,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 365,
-      "checked_at": "2026-06-08T11:25:09.713999Z"
+      "latency_ms": 309,
+      "checked_at": "2026-06-08T12:45:11.003302Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -176,8 +214,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 250,
-      "checked_at": "2026-06-08T11:25:09.964684Z"
+      "latency_ms": 221,
+      "checked_at": "2026-06-08T12:45:11.224700Z"
     },
     {
       "source_id": "github-changelog",
@@ -188,8 +226,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-06-08T11:25:09.996366Z"
+      "latency_ms": 39,
+      "checked_at": "2026-06-08T12:45:11.264773Z"
     },
     {
       "source_id": "aihot",
@@ -200,8 +238,8 @@
       "fetched_count": 50,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 1217,
-      "checked_at": "2026-06-08T11:25:11.214723Z"
+      "latency_ms": 1350,
+      "checked_at": "2026-06-08T12:45:12.616393Z"
     }
   ],
   "control_notes": {
