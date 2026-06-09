@@ -1,24 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-09T07:33:51.634555Z",
+  "generated_at": "2026-06-09T10:08:30.927499Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 17,
+  "item_count": 15,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 16,
+      "count": 14,
       "top_sources": [
         [
           "AI Hot",
-          16
+          14
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          16
+          14
         ],
         [
           "claude",
@@ -27,10 +27,6 @@
         [
           "智能体",
           6
-        ],
-        [
-          "agent",
-          5
         ],
         [
           "openai",
@@ -53,11 +49,15 @@
           3
         ],
         [
-          "开发者",
+          "agent",
           3
         ],
         [
           "agents",
+          2
+        ],
+        [
+          "开发者",
           2
         ],
         [
@@ -353,25 +353,6 @@
       "is_ai_related": true
     },
     {
-      "id": "c75be9de84687bc600bd43637eadf8968abb912e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Agent 辅助开发，一站式打通 Qwen3-VL Android 端侧推理",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA%3D%3D&mid=2247501437&idx=1&sn=d6c6dcb853adbed4ea946711d478779a",
-      "published_at": "2026-06-08T09:54:08Z",
-      "summary": "通义实验室教程演示了如何用 Agent（Qoder）辅助完成 Qwen3-VL-2B 模型在 Android 端侧的全流程部署。操作包括：检查 JDK 21、NDK 27、CMake 3.18.1 等环境；创建 arm64-v8a 的 Native C++ 工程（minSdk 29、compileSdk 35）；通过 ModelScope CLI 下载约 1.4GB 的 MNN/Qwen3-VL-2B-Instruct-MNN 模型；编译开启 LLM 视觉支持（MNN_BUILD_LLM、LLM_SUPPORT_VISION）的 libMNN.so；构建 APK 并推送模型至手机私有目录。最终 App 提供图文推理页面，输出 MNN 版本（v3.5.0）、ABI 及推理指标。所有繁琐步骤均可由 Agent 自动",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:llm",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "6cf0f0e2d2cea1e9251787e926738153fe9d746c",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -408,25 +389,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "035252368e4653b63fde9143054566f1f0c72271",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "微信AI Agent生态曝光：嵌入小程序调用与手机厂商合作",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647683054&idx=1&sn=dcaa25bd4fdfc9bd5c0211532021bf7c",
-      "published_at": "2026-06-08T09:38:30Z",
-      "summary": "腾讯正测试嵌入微信的AI Agent，用户右滑唤出对话窗口，通过自然语言指令调用数百万小程序完成点咖啡等任务。微信还与华为、荣耀、小米、OPPO、vivo合作推出A2A助手能力，可通过手机语音助理发起微信音视频通话或发送消息。6月8日，微信官方发布《关于开发者接入微信AI生态的指引》，提供自动接入模式，利用微信沙箱全自动改造小程序，使其可被AI直接调用。这一布局被视为Agentic Commerce（代理式交易）的雏形。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -439,8 +401,8 @@
       "fetched_count": 995,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 797,
-      "checked_at": "2026-06-09T07:33:48.925194Z"
+      "latency_ms": 591,
+      "checked_at": "2026-06-09T10:08:27.359786Z"
     },
     {
       "source_id": "openai-skills",
@@ -451,8 +413,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 193,
-      "checked_at": "2026-06-09T07:33:49.118995Z"
+      "latency_ms": 323,
+      "checked_at": "2026-06-09T10:08:27.683716Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -463,8 +425,8 @@
       "fetched_count": 223,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 100,
-      "checked_at": "2026-06-09T07:33:49.222554Z"
+      "latency_ms": 216,
+      "checked_at": "2026-06-09T10:08:27.903804Z"
     },
     {
       "source_id": "google-deepmind",
@@ -475,8 +437,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 289,
-      "checked_at": "2026-06-09T07:33:49.513748Z"
+      "latency_ms": 399,
+      "checked_at": "2026-06-09T10:08:28.305240Z"
     },
     {
       "source_id": "google-ai",
@@ -487,8 +449,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 166,
-      "checked_at": "2026-06-09T07:33:49.680646Z"
+      "latency_ms": 232,
+      "checked_at": "2026-06-09T10:08:28.538560Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -496,11 +458,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 794,
+      "fetched_count": 795,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 214,
-      "checked_at": "2026-06-09T07:33:49.906258Z"
+      "latency_ms": 327,
+      "checked_at": "2026-06-09T10:08:28.877860Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -511,8 +473,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 168,
-      "checked_at": "2026-06-09T07:33:50.075193Z"
+      "latency_ms": 133,
+      "checked_at": "2026-06-09T10:08:29.011507Z"
     },
     {
       "source_id": "github-changelog",
@@ -523,8 +485,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-06-09T07:33:50.099306Z"
+      "latency_ms": 28,
+      "checked_at": "2026-06-09T10:08:29.040126Z"
     },
     {
       "source_id": "aihot",
@@ -533,10 +495,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 16,
+      "kept_count": 14,
       "error": null,
-      "latency_ms": 1522,
-      "checked_at": "2026-06-09T07:33:51.623919Z"
+      "latency_ms": 1876,
+      "checked_at": "2026-06-09T10:08:30.918530Z"
     }
   ],
   "control_notes": {
