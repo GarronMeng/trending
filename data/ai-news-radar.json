@@ -1,11 +1,43 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-09T10:08:30.927499Z",
+  "generated_at": "2026-06-09T11:37:42.823051Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 15,
+  "item_count": 16,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "Hugging Face Blog",
+          1
+        ],
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "openai",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
       "count": 14,
@@ -65,29 +97,28 @@
           1
         ]
       ]
-    },
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "openai",
-          1
-        ],
-        [
-          "official_ai",
-          1
-        ]
-      ]
     }
   },
   "items": [
+    {
+      "id": "77617a0971b872f8e4bc344c791251204dd06cc2",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
+      "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
+      "published_at": "2026-06-09T10:46:19Z",
+      "summary": null,
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:agent",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "a076a2e14edb11cd51324fc070b4450e958b7d66",
       "source_id": "aihot",
@@ -401,8 +432,8 @@
       "fetched_count": 995,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 591,
-      "checked_at": "2026-06-09T10:08:27.359786Z"
+      "latency_ms": 863,
+      "checked_at": "2026-06-09T11:37:39.505465Z"
     },
     {
       "source_id": "openai-skills",
@@ -413,8 +444,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 323,
-      "checked_at": "2026-06-09T10:08:27.683716Z"
+      "latency_ms": 318,
+      "checked_at": "2026-06-09T11:37:39.823780Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -425,8 +456,8 @@
       "fetched_count": 223,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 216,
-      "checked_at": "2026-06-09T10:08:27.903804Z"
+      "latency_ms": 133,
+      "checked_at": "2026-06-09T11:37:39.960449Z"
     },
     {
       "source_id": "google-deepmind",
@@ -437,8 +468,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 399,
-      "checked_at": "2026-06-09T10:08:28.305240Z"
+      "latency_ms": 356,
+      "checked_at": "2026-06-09T11:37:40.318988Z"
     },
     {
       "source_id": "google-ai",
@@ -449,8 +480,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 232,
-      "checked_at": "2026-06-09T10:08:28.538560Z"
+      "latency_ms": 210,
+      "checked_at": "2026-06-09T11:37:40.530229Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -459,10 +490,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 795,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 327,
-      "checked_at": "2026-06-09T10:08:28.877860Z"
+      "latency_ms": 300,
+      "checked_at": "2026-06-09T11:37:40.843121Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -473,8 +504,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 133,
-      "checked_at": "2026-06-09T10:08:29.011507Z"
+      "latency_ms": 210,
+      "checked_at": "2026-06-09T11:37:41.054267Z"
     },
     {
       "source_id": "github-changelog",
@@ -485,8 +516,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-06-09T10:08:29.040126Z"
+      "latency_ms": 34,
+      "checked_at": "2026-06-09T11:37:41.088725Z"
     },
     {
       "source_id": "aihot",
@@ -497,8 +528,8 @@
       "fetched_count": 50,
       "kept_count": 14,
       "error": null,
-      "latency_ms": 1876,
-      "checked_at": "2026-06-09T10:08:30.918530Z"
+      "latency_ms": 1725,
+      "checked_at": "2026-06-09T11:37:42.816293Z"
     }
   ],
   "control_notes": {
