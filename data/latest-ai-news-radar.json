@@ -1,63 +1,67 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-08T17:22:18.190988Z",
+  "generated_at": "2026-06-09T02:31:44.949485Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 16,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 15,
       "top_sources": [
         [
           "AI Hot",
-          7
+          15
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          15
+        ],
+        [
+          "claude",
+          8
         ],
         [
           "智能体",
+          6
+        ],
+        [
+          "agent",
+          5
+        ],
+        [
+          "anthropic",
           4
         ],
         [
           "openai",
-          3
+          4
         ],
         [
           "codex",
           3
         ],
         [
-          "claude",
+          "api",
           3
         ],
         [
-          "anthropic",
-          2
+          "API",
+          3
         ],
         [
-          "agent",
-          2
+          "开发者",
+          3
         ],
         [
           "agents",
           2
         ],
         [
-          "chatgpt",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
+          "人工智能",
           1
         ]
       ]
@@ -67,13 +71,13 @@
       "count": 1,
       "top_sources": [
         [
-          "Hugging Face Blog",
+          "OpenAI News",
           1
         ]
       ],
       "top_keywords": [
         [
-          "agent",
+          "openai",
           1
         ],
         [
@@ -85,41 +89,126 @@
   },
   "items": [
     {
-      "id": "4e1b9e5d185e0912b05761e320949da23dc7e3dc",
+      "id": "a076a2e14edb11cd51324fc070b4450e958b7d66",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "ChatGPT 要变 AgentGPT 了",
-      "url": "https://x.com/dotey/status/2063686036895478162",
-      "published_at": "2026-06-07T18:14:27Z",
-      "summary": "OpenAI 正筹备 ChatGPT 自 2022 年上线以来最大规模改版，从聊天机器人转向超级应用/Agent 平台，整合编程工具 Codex、图像生成及第三方应用（Canva、Booking）。高管称\"聊天已死\"，目标成为跨平台个人 AI 助手，未来甚至省去用户输入提示词。改版预计未来几周在网页和手机端上线。商业压力：ChatGPT 有 9 亿周活用户、5000 万付费用户、月收入 20 亿美元但未盈利；企业客户贡献约 40% 收入，目标年底达 50%；Codex 桌面版周活超 500 万。竞争对手 Anthropic 估值已达 9650 亿美元。OpenAI 刚完成 1220 亿美元融资，估值 8520 亿美元，IPO 目标估值可能超 1 万亿美元。",
+      "title": "Viggle API 上线：任意角色任意动作秒级生成",
+      "url": "https://x.com/ViggleAI/status/2064083087806390319",
+      "published_at": "2026-06-08T20:32:11Z",
+      "summary": "推出 Viggle API。 给任意角色添加任意动作，一次 API 调用--数秒内即可激活。 可接入 Claude、Codex 或你正在构建的任何智能体。起价 $0.01/秒。 注册即获 100 次免费额度。 转发 + 关注 + 评论，10 位中奖者再获 100 次！ 了解更多👇",
       "relevance_score": 7,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:chatgpt",
+        "strong:claude",
         "strong:codex",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "3c6e66d2dc6484a6845af5c47b97759e0e029ff9",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "a4f8a7f98834942c29579c7adea9a0910c645d00",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic：AI编码快于生物学的缘由",
+      "url": "https://x.com/AnthropicAI/status/2064054837294354677",
+      "published_at": "2026-06-08T18:39:56Z",
+      "summary": "新的科学博客：为什么 AI 在编码方面的进步比在生物学方面更快？ 对智能体而言，生物数据库就像汽车发明前建造的城市--开进去会让人抓狂，因为它们是针对不同的交通流量设计的。 我们如何构建智能体可以使用的基础设施？ https：//www.anthropic.com/research/agents-in-biology",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:agent",
+        "strong:agents",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "14a02f1d732cbf865cdf3a57b495dc15edc20d3c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "奥尔特曼宣布 OpenAI 进入第三发展阶段：让 AI 普及、易用且安全",
+      "url": "https://www.ithome.com/0/961/721.htm",
+      "published_at": "2026-06-08T22:50:42Z",
+      "summary": "本周一，OpenAI CEO 奥尔特曼与首席科学家帕霍茨基联合发文，宣布公司进入第三发展阶段，目标让 AI 普及、易用且安全。此前第一阶段聚焦通用人工智能技术研发，第二阶段面向全球推出产品。第三阶段三大核心目标是打造自动化人工智能研究员、推动经济提速、为每人配备专属通用人工智能。二人强调智能系统须坚守安全底线，呼吁成立国际机构应对 AI 风险，必要时可暂缓前沿模型研发。同日，OpenAI 秘密提交 IPO 申请，但上市仍需较长时间。上周 Anthropic 研究人员也建议适当放缓前沿 AI 研发。",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:人工智能",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0611ebc90e8c010e70cc30d5a28778a1abf156e4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude 支持 Apple Foundation Models 框架，推出新 Swift 包",
+      "url": "https://claude.com/blog/claude-for-foundation-models",
+      "published_at": "2026-06-08T22:24:02Z",
+      "summary": "Anthropic 通过一个新 Swift 包，让 Apple 开发者能在 Foundation Models 框架中直接调用 Claude。开发者用 Apple 框架以原生 Swift 方式，仅需三行代码即可通过引导生成返回类型化 Swift 值。当请求涉及多步推理、代码生成、联网搜索或数据分析时，Claude 可接手处理，并将流式响应传回同一视图。该支持可在 iOS 27、iPadOS 27、macOS 27、visionOS 27 和 watchOS 27 上使用，开发者需添加包并配置 Anthropic API 密钥。",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:api",
+        "weak:开发者",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8bfae239e88746ec6ebe3d0a775062f3ca738cf8",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "The Open Source Community is backing OpenEnv for Agentic RL",
-      "url": "https://huggingface.co/blog/openenv-agentic-rl",
-      "published_at": "2026-06-08T00:00:00Z",
-      "summary": null,
+      "title": "Confidential submission of draft S-1 to the SEC",
+      "url": "https://openai.com/index/openai-submits-confidential-s-1",
+      "published_at": "2026-06-08T14:00:00Z",
+      "summary": "OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action.",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:agent",
+        "strong:openai",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "39775d7b152b5d7e894626876aa7afaadbb35cd9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "开源工具 Tokei：在菜单栏实时监控 AI coding agent 的 token 用量与成本",
+      "url": "https://x.com/berryxia/status/2064155452934639718",
+      "published_at": "2026-06-09T01:19:44Z",
+      "summary": "Berry Xia 推荐开源工具 Tokei，这是一个 macOS 菜单栏小工具，只读本地日志、零网络调用，30 秒自动刷新，实时监控 Claude Code、Grok CLI、Aider、OpenCode 等 8 个主流 AI coding agent 的 token 用量、实时成本与性能数据，并附每日图表、周热力图和年度 Wrapped。支持私人 Git 多设备同步、价格表本地覆盖，闲置过久会提醒休息。引用推文指出，token 消耗情况可作为深度使用 AI 的面试亮点，数据全程私有，零侵入，无需任何认证。",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "strong:ai coding",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -205,21 +294,41 @@
       "is_ai_related": true
     },
     {
-      "id": "b2ed8db47239efda8e7be91c158524a931d06db6",
+      "id": "68ee8ea34c0f8faa7b9207a91e8454fe7f5c3451",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "AgentScope Java 2.0 发布",
-      "url": "https://x.com/alibaba_cloud/status/2063923881857945815",
-      "published_at": "2026-06-08T09:59:33Z",
-      "summary": "阿里云发布AgentScope Java 2.0，面向企业级AI智能体开发。新版本主要特性：分布式无状态架构，支持K8s弹性扩缩容与会话恢复；多租户隔离，通过Workspace抽象实现安全数据分离；长期稳定性，HarnessAgent负责上下文管理与容错；安全执行，提供细粒度权限控制和Human-in-the-Loop支持。适用于JVM生产环境。开源地址见推文链接。",
-      "relevance_score": 5,
+      "title": "Claude 为 Connector 开发者推出性能监控仪表盘",
+      "url": "https://claude.com/blog/observability-for-developers-building-connectors",
+      "published_at": "2026-06-08T18:50:51Z",
+      "summary": "Claude 为目录中已发布的 Connector 新增性能监控仪表盘（公开测试版）。所有者可追踪活跃用户、工具调用次数、目录排名、健康评分、错误率、延迟，并按工具细分错误归因；还能按 Claude、Claude Code、Cowork 等产品分解使用情况。访问需 Team 或 Enterprise 账号（Admin/Owner 权限或自定义角色）。基于 MCP 构建的 Connector 可直接在 Claude 应用内提交至目录，该目录已有超 300 个第三方 Connector，每日被数百万人使用。",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
+        "strong:claude",
+        "strong:mcp",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b409ba7bda0d8b2da1188e1d9f13999aea9dbe93",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "为生物学AI智能体铺路",
+      "url": "https://www.anthropic.com/research/agents-in-biology",
+      "published_at": "2026-06-08T17:46:10Z",
+      "summary": "一项实验让Claude、Biomni、Edison Analysis、GPT等科研智能体从病毒学数据库NCBI Virus中检索序列数据，即使最强模型也无法稳定达到可靠数据集构建所需的准确率。加入确定性检索层gget virus后，准确率接近100%。研究指出，当前生物学数据基础设施存在碎片化、格式特殊、接口不统一等问题，导致AI智能体难以像在软件领域那样高效工作。确定性检索工具是实现可靠智能体工作流的关键，生物学数据库需为智能体作为规模化用户而设计。",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:claude",
         "strong:智能体",
+        "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -242,6 +351,63 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "c75be9de84687bc600bd43637eadf8968abb912e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Agent 辅助开发，一站式打通 Qwen3-VL Android 端侧推理",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA%3D%3D&mid=2247501437&idx=1&sn=d6c6dcb853adbed4ea946711d478779a",
+      "published_at": "2026-06-08T09:54:08Z",
+      "summary": "通义实验室教程演示了如何用 Agent（Qoder）辅助完成 Qwen3-VL-2B 模型在 Android 端侧的全流程部署。操作包括：检查 JDK 21、NDK 27、CMake 3.18.1 等环境；创建 arm64-v8a 的 Native C++ 工程（minSdk 29、compileSdk 35）；通过 ModelScope CLI 下载约 1.4GB 的 MNN/Qwen3-VL-2B-Instruct-MNN 模型；编译开启 LLM 视觉支持（MNN_BUILD_LLM、LLM_SUPPORT_VISION）的 libMNN.so；构建 APK 并推送模型至手机私有目录。最终 App 提供图文推理页面，输出 MNN 版本（v3.5.0）、ABI 及推理指标。所有繁琐步骤均可由 Agent 自动",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:llm",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "16a8ce5d2a94147d736c127455768a829b3718e5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 秘密提交 IPO 申请，奥特曼旗下 Tools for Humanity 裁员",
+      "url": "https://www.ithome.com/0/961/792.htm",
+      "published_at": "2026-06-09T02:19:48Z",
+      "summary": "OpenAI 近日秘密提交 IPO 申请。其 CEO 山姆·奥特曼旗下的 Tools for Humanity 公司正裁员，该公司因虹膜扫描项目 World 及加密货币 Worldcoin 知名，投后估值 25 亿美元，获 Andreessen Horowitz 等投资。因营收困境，公司缩减规模。海外监管方面，肯尼亚以隐私和金融风险为由叫停运营，韩国因违反隐私法规罚款 83 万美元。",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:tool",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "035252368e4653b63fde9143054566f1f0c72271",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "微信AI Agent生态曝光：嵌入小程序调用与手机厂商合作",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647683054&idx=1&sn=dcaa25bd4fdfc9bd5c0211532021bf7c",
+      "published_at": "2026-06-08T09:38:30Z",
+      "summary": "腾讯正测试嵌入微信的AI Agent，用户右滑唤出对话窗口，通过自然语言指令调用数百万小程序完成点咖啡等任务。微信还与华为、荣耀、小米、OPPO、vivo合作推出A2A助手能力，可通过手机语音助理发起微信音视频通话或发送消息。6月8日，微信官方发布《关于开发者接入微信AI生态的指引》，提供自动接入模式，利用微信沙箱全自动改造小程序，使其可被AI直接调用。这一布局被视为Agentic Commerce（代理式交易）的雏形。",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -251,11 +417,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 992,
-      "kept_count": 0,
+      "fetched_count": 995,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 607,
-      "checked_at": "2026-06-08T17:22:10.726656Z"
+      "latency_ms": 643,
+      "checked_at": "2026-06-09T02:31:41.902915Z"
     },
     {
       "source_id": "openai-skills",
@@ -266,8 +432,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 376,
-      "checked_at": "2026-06-08T17:22:11.103544Z"
+      "latency_ms": 301,
+      "checked_at": "2026-06-09T02:31:42.204633Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -278,8 +444,8 @@
       "fetched_count": 223,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 205,
-      "checked_at": "2026-06-08T17:22:11.312453Z"
+      "latency_ms": 110,
+      "checked_at": "2026-06-09T02:31:42.319022Z"
     },
     {
       "source_id": "google-deepmind",
@@ -290,8 +456,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 427,
-      "checked_at": "2026-06-08T17:22:11.741120Z"
+      "latency_ms": 396,
+      "checked_at": "2026-06-09T02:31:42.717509Z"
     },
     {
       "source_id": "google-ai",
@@ -302,8 +468,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 407,
-      "checked_at": "2026-06-08T17:22:12.148875Z"
+      "latency_ms": 269,
+      "checked_at": "2026-06-09T02:31:42.987661Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -311,11 +477,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 795,
-      "kept_count": 1,
+      "fetched_count": 794,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 365,
-      "checked_at": "2026-06-08T17:22:12.526357Z"
+      "latency_ms": 324,
+      "checked_at": "2026-06-09T02:31:43.324987Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -326,8 +492,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 131,
-      "checked_at": "2026-06-08T17:22:12.658209Z"
+      "latency_ms": 337,
+      "checked_at": "2026-06-09T02:31:43.662992Z"
     },
     {
       "source_id": "github-changelog",
@@ -338,8 +504,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-06-08T17:22:12.688871Z"
+      "latency_ms": 31,
+      "checked_at": "2026-06-09T02:31:43.694891Z"
     },
     {
       "source_id": "aihot",
@@ -348,10 +514,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 15,
       "error": null,
-      "latency_ms": 5494,
-      "checked_at": "2026-06-08T17:22:18.184723Z"
+      "latency_ms": 1244,
+      "checked_at": "2026-06-09T02:31:44.941839Z"
     }
   ],
   "control_notes": {
