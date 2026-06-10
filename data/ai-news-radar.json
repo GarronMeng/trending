@@ -1,55 +1,19 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-10T02:45:19.399496Z",
+  "generated_at": "2026-06-10T07:56:54.784550Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 8,
+  "healthy_source_count": 9,
   "item_count": 24,
   "groups": {
-    "developer": {
-      "group": "developer",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "claude",
-          2
-        ],
-        [
-          "copilot",
-          2
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "coding agent",
-          1
-        ],
-        [
-          "anthropic",
-          1
-        ]
-      ]
-    },
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 8,
       "top_sources": [
+        [
+          "Hugging Face Blog",
+          3
+        ],
         [
           "Google DeepMind",
           2
@@ -66,18 +30,22 @@
       "top_keywords": [
         [
           "official_ai",
-          5
+          8
+        ],
+        [
+          "agent",
+          3
+        ],
+        [
+          "agents",
+          2
         ],
         [
           "codex",
           2
         ],
         [
-          "agent",
-          1
-        ],
-        [
-          "agents",
+          "benchmark",
           1
         ],
         [
@@ -89,28 +57,60 @@
           1
         ],
         [
+          "hugging face",
+          1
+        ],
+        [
           "gemini",
           1
         ],
         [
           "multimodal",
           1
+        ],
+        [
+          "developer",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
+          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 17,
+      "count": 15,
       "top_sources": [
         [
           "AI Hot",
-          17
+          15
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          17
+          15
         ],
         [
           "claude",
@@ -125,35 +125,35 @@
           5
         ],
         [
-          "agents",
-          4
-        ],
-        [
           "anthropic",
           4
         ],
         [
-          "openai",
-          2
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
+          "agents",
+          3
         ],
         [
           "llm",
           2
         ],
         [
-          "开发者",
+          "人工智能",
           2
         ],
         [
-          "gemini",
+          "自动化",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "api",
           1
         ]
       ]
@@ -161,23 +161,22 @@
   },
   "items": [
     {
-      "id": "af92c6708010b1c9f3afc5318e9b98019d8bf609",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
+      "id": "cf07358cfc27172309e0623f8f36fb9143b9fdf8",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Security validation for third-party coding agents",
-      "url": "https://github.blog/changelog/2026-06-09-security-validation-for-third-party-coding-agents",
-      "published_at": "2026-06-09T07:12:54Z",
-      "summary": "Security validation for third-party coding agents is now generally available. GitHub supports third-party coding agents (including Claude and OpenAI Codex) that work directly within your repositories to implement features, fix… The post Security validation for third-party coding agents appeared first on The GitHub Blog .",
-      "relevance_score": 10,
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
+      "published_at": "2026-06-09T19:38:28Z",
+      "summary": null,
+      "relevance_score": 6,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:claude",
-        "strong:codex",
         "strong:agent",
-        "source:coding agent"
+        "strong:agents",
+        "weak:benchmark",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -223,6 +222,25 @@
       "is_ai_related": true
     },
     {
+      "id": "77617a0971b872f8e4bc344c791251204dd06cc2",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
+      "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
+      "published_at": "2026-06-09T10:46:19Z",
+      "summary": null,
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:agent",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "cc6da257dabaa3b1d330c333d44d196805647344",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -238,27 +256,6 @@
         "strong:claude",
         "strong:agent",
         "strong:agents",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "96bc4de93c2bb1e25c76617a65d1477b9248b9cf",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Hugging Face 博客发布语音智能体代码切换基准测试",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
-      "published_at": "2026-06-09T19:38:28Z",
-      "summary": "Hugging Face 博客发布针对语音智能体处理代码切换语音的基准测试。数据集覆盖西班牙语-英语、法语-英语、加拿大法语-英语和德语-英语四对语言，基于人力资源与IT服务管理场景构建。采用词错误率、语义词错误率和答案错误率三项指标评估七种ASR系统，包括AssemblyAI Universal 3-Pro、Deepgram Nova 3 Multilang、ElevenLabs Scribe V2、Gemini 3 Flash、Mistral AI Voxtral Small 24B-2507、Nvidia Parakeet TDT 0.6b V3和OpenAI Whisper Large V3 Turbo。主要发现：代码切换的转录成本因语言对和模型而异；ElevenLabs Scribe V2、Gemin",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:gemini",
-        "strong:hugging face",
         "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
@@ -378,23 +375,20 @@
       "is_ai_related": true
     },
     {
-      "id": "1f172ac5677c52a7009dbf6f40fe8432c0c943a5",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "一个Agent如何通过链式调用两个HuggingFace Space构建3D巴黎画廊",
-      "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
-      "published_at": "2026-06-09T10:46:19Z",
-      "summary": "一个编码Agent调用HuggingFace上的两个Space，从零构建了展示巴黎地标3D高斯散点图的交互式画廊。Agent先用ideogram-ai/ideogram4生成每个纪念碑的黑色背景图像，再通过VAST-AI/TripoSplat从单张图像重建3D高斯散点（.ply），自动完成坐标系校正、取景、压缩为.ksplat（体积缩小约3倍），并构建基于Three.js的滚动切换、拖拽旋转查看器，最终部署为静态Space。整个过程无需客户端库，每个Space通过`agents.md`暴露可调用API。",
-      "relevance_score": 5,
+      "id": "aef6218e4792605a0102d355d0af803aa6b11ebc",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Introducing North Mini Code: Cohere’s First Model For Developers",
+      "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
+      "published_at": "2026-06-09T15:56:23Z",
+      "summary": null,
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
+        "weak:developer",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -414,6 +408,44 @@
         "strong:claude",
         "strong:llm",
         "weak:workflow",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1808649d4dec0305399dedc1e95e1ce448307abd",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "工信部印发《\"人工智能+信息通信\"创新发展实施意见》",
+      "url": "https://www.ithome.com/0/962/456.htm",
+      "published_at": "2026-06-10T07:07:13Z",
+      "summary": "工信部发文，要求加快建设400Gbps/800Gbps骨干传输网络，优化东中西部国家枢纽节点间通道；推进城域400Gbps及以上、全光交叉等高速光传输系统应用，构建城域毫秒级低时延入算能力。同时推动5G-A/6G、新一代光网络、\"IPv6+\"、工业互联网与AI融合发展，攻关空口智能化、网络高等级自智、智能体互联网等核心技术。鼓励基础电信企业用AI赋能传统业务，深化智慧个人助理、智慧管家、家庭看护、3D观影等新型应用。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:人工智能",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9e7bcbfa46347c1e3ecc76904449b30bc6efe5af",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "2026年高考，跟着千问，选好志愿！",
+      "url": "https://mp.weixin.qq.com/s/4fovMM29x8tJ2E25kidl1A",
+      "published_at": "2026-06-10T06:00:49Z",
+      "summary": "千问发布国内首个全周期高考志愿填报Agent，由数百位资深高报师参与训练。该智能体提供AI志愿报告，为考生量身定制深度全面的填报方案；AI志愿日历帮助制定专属填报计划；高考专业知识库整合夸克高考8年积累，并引入志愿专家顾问，数据权威可信赖，全程陪伴考生完成志愿填报。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -572,25 +604,6 @@
       "is_ai_related": true
     },
     {
-      "id": "026a080f2f6995dc0c84a4652bdfa968d3907e2e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Cohere发布North Mini Code：面向开发者的开源编码模型",
-      "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
-      "published_at": "2026-06-09T15:56:23Z",
-      "summary": "Cohere发布North Mini Code，一款30B参数MoE模型（3B活跃参数），Apache 2.0开源。在Artificial Analysis Coding Index上得分33.4，超越Qwen3.5、Gemma 4等同类模型。后训练采用两阶段SFT和RLVR，在SWE-Bench Verified上pass@10达80.2%，Terminal-Bench v2上达55.1%。支持64K/128K上下文长度，专为智能体编码任务优化。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "7d509810a80634237a61958ff5df242dee0fdb7a",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -608,25 +621,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "6cf0f0e2d2cea1e9251787e926738153fe9d746c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "AI 编程独角兽 Cursor 欧洲总部落子伦敦，SpaceX 手握 600 亿美元收购选择权",
-      "url": "https://www.ithome.com/0/961/868.htm",
-      "published_at": "2026-06-09T05:53:06Z",
-      "summary": "Cursor 将欧洲总部设在伦敦，计划招聘约 200 名员工，并在巴黎、慕尼黑等地开设小型办事处。SpaceX 拥有以 600 亿美元收购 Cursor 的选择权，或支付 100 亿美元开展全新合作。Cursor 目前 B2B 年化营收约 26 亿美元，客户包括英国航空、英国石油、诺基亚等。公司强调数据留存欧洲本地以满足监管合规，其平台支持用户用自然语言生成代码，主打模型中立，竞争对手包括 GitHub Copilot、OpenAI 和谷歌的同类产品。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:copilot",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -639,8 +633,8 @@
       "fetched_count": 996,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 632,
-      "checked_at": "2026-06-10T02:45:16.226996Z"
+      "latency_ms": 629,
+      "checked_at": "2026-06-10T07:56:51.784552Z"
     },
     {
       "source_id": "openai-skills",
@@ -651,8 +645,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 223,
-      "checked_at": "2026-06-10T02:45:16.451170Z"
+      "latency_ms": 449,
+      "checked_at": "2026-06-10T07:56:52.233845Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -663,8 +657,8 @@
       "fetched_count": 224,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 102,
-      "checked_at": "2026-06-10T02:45:16.556783Z"
+      "latency_ms": 196,
+      "checked_at": "2026-06-10T07:56:52.433840Z"
     },
     {
       "source_id": "google-deepmind",
@@ -675,8 +669,8 @@
       "fetched_count": 100,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 307,
-      "checked_at": "2026-06-10T02:45:16.865648Z"
+      "latency_ms": 423,
+      "checked_at": "2026-06-10T07:56:52.859338Z"
     },
     {
       "source_id": "google-ai",
@@ -687,20 +681,20 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 211,
-      "checked_at": "2026-06-10T02:45:17.077045Z"
+      "latency_ms": 217,
+      "checked_at": "2026-06-10T07:56:53.077358Z"
     },
     {
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "enabled": true,
-      "ok": false,
-      "fetched_count": 0,
-      "kept_count": 0,
-      "error": "429 Client Error: Too Many Requests for url: https://huggingface.co/blog/feed.xml",
-      "latency_ms": 37,
-      "checked_at": "2026-06-10T02:45:17.114828Z"
+      "ok": true,
+      "fetched_count": 797,
+      "kept_count": 3,
+      "error": null,
+      "latency_ms": 320,
+      "checked_at": "2026-06-10T07:56:53.410213Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -711,8 +705,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 143,
-      "checked_at": "2026-06-10T02:45:17.258469Z"
+      "latency_ms": 148,
+      "checked_at": "2026-06-10T07:56:53.558914Z"
     },
     {
       "source_id": "github-changelog",
@@ -721,10 +715,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-06-10T02:45:17.282011Z"
+      "latency_ms": 30,
+      "checked_at": "2026-06-10T07:56:53.589424Z"
     },
     {
       "source_id": "aihot",
@@ -733,10 +727,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 19,
+      "kept_count": 20,
       "error": null,
-      "latency_ms": 2109,
-      "checked_at": "2026-06-10T02:45:19.393254Z"
+      "latency_ms": 1183,
+      "checked_at": "2026-06-10T07:56:54.775010Z"
     }
   ],
   "control_notes": {
