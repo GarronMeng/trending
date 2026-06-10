@@ -1,26 +1,22 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-10T11:54:58.861738Z",
+  "generated_at": "2026-06-10T16:57:31.666357Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 22,
+  "item_count": 14,
   "groups": {
     "official": {
       "group": "official",
-      "count": 7,
+      "count": 3,
       "top_sources": [
         [
           "Hugging Face Blog",
-          2
+          1
         ],
         [
           "OpenAI News",
-          2
-        ],
-        [
-          "Google DeepMind",
-          2
+          1
         ],
         [
           "GitHub AI & ML",
@@ -30,26 +26,18 @@
       "top_keywords": [
         [
           "official_ai",
-          7
+          3
         ],
         [
           "agent",
-          2
+          1
         ],
         [
           "agents",
-          2
+          1
         ],
         [
           "benchmark",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "copilot",
           1
         ],
         [
@@ -57,36 +45,24 @@
           1
         ],
         [
-          "gemini",
-          1
-        ],
-        [
-          "multimodal",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "developer",
+          "copilot",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          1
+          2
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          2
+          4
         ],
         [
           "anthropic",
@@ -100,45 +76,37 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 14,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          14
+          9
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          14
+          9
         ],
         [
           "claude",
-          8
-        ],
-        [
-          "agent",
           5
         ],
         [
           "智能体",
-          5
-        ],
-        [
-          "anthropic",
           4
         ],
         [
-          "agents",
+          "agent",
           3
         ],
         [
-          "大模型",
-          2
+          "agents",
+          1
         ],
         [
-          "人工智能",
-          2
+          "大模型",
+          1
         ],
         [
           "开源模型",
@@ -149,11 +117,19 @@
           1
         ],
         [
-          "自动化",
+          "codex",
           1
         ],
         [
-          "codex",
+          "llm",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "人工智能",
           1
         ]
       ]
@@ -176,27 +152,6 @@
         "strong:agent",
         "strong:agents",
         "weak:benchmark",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "2fc930de473ecd25032e44a501791e0913b68a84",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI",
-      "url": "https://github.blog/ai-and-ml/github-copilot/from-one-off-prompts-to-workflows-how-to-use-custom-agents-in-github-copilot-cli",
-      "published_at": "2026-06-09T16:00:00Z",
-      "summary": "Custom agents let GitHub Copilot CLI understand your stack and team workflows, turning one-off terminal prompts into repeatable, reviewable processes. The post From one-off prompts to workflows: How to use custom agents in GitHub Copilot CLI appeared first on The GitHub Blog .",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "weak:workflow",
-        "weak:copilot",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -282,81 +237,6 @@
       "is_ai_related": true
     },
     {
-      "id": "5754c55c5430b77f3c87059dc9d3153b73f367e0",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Managed Agents 新增定时运行和环境变量存储功能",
-      "url": "https://claude.com/blog/whats-new-in-claude-managed-agents",
-      "published_at": "2026-06-09T21:06:26Z",
-      "summary": "Claude Managed Agents 今日在 Claude Platform 公开测试两项新功能：代理可按 cron 计划自动执行周期性任务（如夜间数据同步、周度合规扫描、每日摘要），无需用户自建调度器，支持暂停、恢复、归档或按需触发；vaults 新增环境变量支持，允许代理通过 CLI 进行认证请求，真实密钥仅附加在网络边界，代理无法读取。已集成的 CLI 包括 Browserbase、KERNEL、Notion、Ramp 和 Sentry。Rakuten、Actively AI、Ando、Milana 等团队正在使用这些功能实现自动化数据报表、跨账户搜索、招聘提醒等场景。",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "strong:agents",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "bbfbf1dbbea30091489b93726d6af56852ccc4b0",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Fluid, natural voice translation with Gemini 3.5 Live Translate",
-      "url": "https://deepmind.google/blog/fluid-natural-voice-translation-with-gemini-35-live-translate",
-      "published_at": "2026-06-09T15:16:25Z",
-      "summary": "Gemini 3.5 Live Translate brings near real-time, natural speech translation to Google AI Studio, Google Translate and Google Meet.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "44a4ca1290f6a898d62ffd56da43d66837827371",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model",
-      "url": "https://deepmind.google/blog/introducing-gemma-4-12b-a-unified-encoder-free-multimodal-model",
-      "published_at": "2026-06-09T14:10:19Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:multimodal",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "56af081b71fc35d3c7f9c31ce1d8476620611adc",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How engineers at Nextdoor use Codex to build without limits",
-      "url": "https://openai.com/index/nextdoor",
-      "published_at": "2026-06-09T12:00:00Z",
-      "summary": "How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:codex",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "f578fde364bfc872d0d4f1ee99cd51ce919a8d9b",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -377,20 +257,38 @@
       "is_ai_related": true
     },
     {
-      "id": "aef6218e4792605a0102d355d0af803aa6b11ebc",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "ee30f4cf919773bc78111fc0e32411b023e2d4db",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
       "source_type": "official_rss",
       "source_group": "official",
-      "source_weight": 5,
-      "title": "Introducing North Mini Code: Cohere’s First Model For Developers",
-      "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
-      "published_at": "2026-06-09T15:56:23Z",
-      "summary": null,
+      "source_weight": 4,
+      "title": "Give GitHub Copilot CLI real code intelligence with language servers",
+      "url": "https://github.blog/ai-and-ml/github-copilot/give-github-copilot-cli-real-code-intelligence-with-language-servers",
+      "published_at": "2026-06-10T16:00:00Z",
+      "summary": "Install and configure LSP servers for GitHub Copilot CLI, replacing brute-force grep/decompile with real code intelligence. The post Give GitHub Copilot CLI real code intelligence with language servers appeared first on The GitHub Blog .",
       "relevance_score": 2,
       "relevance_reasons": [
-        "weak:developer",
+        "weak:copilot",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f64145f282d6a3c2288fe4057ea2f001f3311de0",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Dedicated security review command now available in Copilot CLI",
+      "url": "https://github.blog/changelog/2026-06-10-dedicated-security-review-command-now-available-in-copilot-cli",
+      "published_at": "2026-06-10T11:44:41Z",
+      "summary": "You can now run a security review on your code changes directly from GitHub Copilot CLI. The new /security-review slash command is shipping as an experimental feature in public preview,… The post Dedicated security review command now available in Copilot CLI appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -492,96 +390,20 @@
       "is_ai_related": true
     },
     {
-      "id": "474d76bdf76702219636ccc155c3721b423458b0",
+      "id": "d7a1e4faa208569dbdd9d6f3afb64da5a420d8ce",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Claude Fable 5 和 Claude Mythos 5",
-      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-      "published_at": "2026-06-09T17:04:29Z",
-      "summary": "Anthropic 今日推出 Claude Fable 5（通用安全版）和 Claude Mythos 5（受限安全版）。Fable 5 在软件工程、知识工作、视觉、科研等几乎所有测试基准上达到 SOTA，Stripe 称其将数月工程压缩至数天，FrontierCode 评分居前沿模型之首，可仅凭截图重建网页应用源码。Mythos 5 在药物设计中实现约 10 倍加速，其分子生物学假说盲测获科学家偏好的概率约 80%。两模型售价均为 $10/百万输入 tokens、$50/百万输出 tokens，较 Claude Mythos Preview 降价过半。Fable 5 在部分敏感主题上回退至 Claude Opus 4.8，安全触发率低于 5% 的会话。Mythos 5 通过 Project Glasswing",
-      "relevance_score": 3,
+      "title": "DiffusionGemma：文本生成速度提升4倍的开源扩散模型",
+      "url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation",
+      "published_at": "2026-06-10T16:24:11Z",
+      "summary": "Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。该 26B MoE 模型推理时仅激活 3.8B 参数，量化后适配 18GB 显存消费级 GPU。在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.0 许可证开放。",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c77e27f7eb99f300ab85861d0bd772d6e9c095c3",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Apollo 与 Blackstone 联手 350 亿美元 AI 融资交易",
-      "url": "https://www.bloomberg.com/news/videos/2026-06-09/apollo-blackstone-fund-ai-boom-video",
-      "published_at": "2026-06-09T16:54:29Z",
-      "summary": "Apollo 和 Blackstone 合作开展 350 亿美元 AI 融资交易，可能重塑人工智能基础设施的融资方式。华尔街正为昂贵的 AI 芯片创建新的融资模型，Anthropic 和 Broadcom 参与其中。这笔交易可能标志着一个全新 AI 投资类别的开端。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:人工智能",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ace9c4203f05d12517cdde7c310e0c6ad3455f49",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenRouter与Cursor集成指南",
-      "url": "https://x.com/OpenRouter/status/2064384545256833209",
-      "published_at": "2026-06-09T16:30:04Z",
-      "summary": "想要在Cursor中使用OpenRouter吗？ 这里有一份集成指南：https：//openrouter.ai/docs/cookbook/coding-agents/cursor-integration",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "592ab2b98e43714d00870b563a83430e88946f13",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Mythos 即将发布，Fable 精简版同日登场",
-      "url": "https://x.com/kimmonismus/status/2064362469632405807",
-      "published_at": "2026-06-09T15:02:21Z",
-      "summary": "确认，Claude Mythos 将在接下来几小时内揭晓。 【引用 @steph_palazzolo】： 独家：一个名为 Claude Fable 的精简版 Mythos 今天推出。它价格昂贵--是 Opus 的两倍--但或许不像人们从最初 Mythos 定价（Opus 的 5 倍）所想的那样昂贵。 更多内容及 Apple WWDC 见 AI Agenda： https：//www.theinformation.com/newsletters/ai-agenda/anthropics-mythos-coming-today-apple-pursues-modest-goals-siri-revamp",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "17b161dafffbe2c9bd14125b4bea484e139ba442",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "全新汽车品牌AIVA发布，火山引擎助力打造AI汽车新体验",
-      "url": "https://mp.weixin.qq.com/s/toK_uIB9ECFHVaoCgK-w9Q",
-      "published_at": "2026-06-09T13:00:21Z",
-      "summary": "由赛力斯、宁德时代等多方产业资本组建的AI出行品牌AIVA正式发布。火山引擎提供豆包大模型、智能座舱等技术服务。概念车AIVA Origin Concept亮相，首款量产车AIVA ME7将于2026年内亮相，全系覆盖20万元以上市场。AIVA提出\"AI定义汽车\"路径，让汽车成为具身AI生命体。火山引擎副总裁表示，人与汽车的关系将实现交互、智能、感受三方面根本转变。未来双方将围绕AI交互、智能体验、情感陪伴深度共创。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:大模型",
-        "strong:智能体",
+        "strong:deepmind",
+        "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -595,10 +417,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 997,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 750,
-      "checked_at": "2026-06-10T11:54:53.671194Z"
+      "latency_ms": 616,
+      "checked_at": "2026-06-10T16:57:23.710081Z"
     },
     {
       "source_id": "openai-skills",
@@ -609,8 +431,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 444,
-      "checked_at": "2026-06-10T11:54:54.115619Z"
+      "latency_ms": 355,
+      "checked_at": "2026-06-10T16:57:24.066121Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -621,8 +443,8 @@
       "fetched_count": 224,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 286,
-      "checked_at": "2026-06-10T11:54:54.404833Z"
+      "latency_ms": 101,
+      "checked_at": "2026-06-10T16:57:24.170666Z"
     },
     {
       "source_id": "google-deepmind",
@@ -631,10 +453,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 397,
-      "checked_at": "2026-06-10T11:54:54.803292Z"
+      "latency_ms": 402,
+      "checked_at": "2026-06-10T16:57:24.575056Z"
     },
     {
       "source_id": "google-ai",
@@ -645,8 +467,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 239,
-      "checked_at": "2026-06-10T11:54:55.042813Z"
+      "latency_ms": 217,
+      "checked_at": "2026-06-10T16:57:24.793346Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -655,10 +477,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 797,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 297,
-      "checked_at": "2026-06-10T11:54:55.350769Z"
+      "latency_ms": 319,
+      "checked_at": "2026-06-10T16:57:25.125243Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -669,8 +491,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 188,
-      "checked_at": "2026-06-10T11:54:55.539843Z"
+      "latency_ms": 286,
+      "checked_at": "2026-06-10T16:57:25.412135Z"
     },
     {
       "source_id": "github-changelog",
@@ -679,10 +501,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-06-10T11:54:55.567161Z"
+      "latency_ms": 29,
+      "checked_at": "2026-06-10T16:57:25.442178Z"
     },
     {
       "source_id": "aihot",
@@ -691,10 +513,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 18,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 3285,
-      "checked_at": "2026-06-10T11:54:58.854347Z"
+      "latency_ms": 6213,
+      "checked_at": "2026-06-10T16:57:31.657423Z"
     }
   ],
   "control_notes": {
