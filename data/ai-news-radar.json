@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-10T07:56:54.784550Z",
+  "generated_at": "2026-06-10T10:40:17.529406Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 24,
+  "item_count": 25,
   "groups": {
     "official": {
       "group": "official",
@@ -15,11 +15,11 @@
           3
         ],
         [
-          "Google DeepMind",
+          "OpenAI News",
           2
         ],
         [
-          "OpenAI News",
+          "Google DeepMind",
           2
         ],
         [
@@ -41,10 +41,6 @@
           2
         ],
         [
-          "codex",
-          2
-        ],
-        [
           "benchmark",
           1
         ],
@@ -61,11 +57,19 @@
           1
         ],
         [
+          "openai",
+          1
+        ],
+        [
           "gemini",
           1
         ],
         [
           "multimodal",
+          1
+        ],
+        [
+          "codex",
           1
         ],
         [
@@ -100,21 +104,21 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 15,
+      "count": 16,
       "top_sources": [
         [
           "AI Hot",
-          15
+          16
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          15
+          16
         ],
         [
           "claude",
-          7
+          8
         ],
         [
           "agent",
@@ -133,6 +137,10 @@
           3
         ],
         [
+          "大模型",
+          2
+        ],
+        [
           "llm",
           2
         ],
@@ -141,19 +149,15 @@
           2
         ],
         [
+          "开源模型",
+          1
+        ],
+        [
+          "评测",
+          1
+        ],
+        [
           "自动化",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "api",
           1
         ]
       ]
@@ -262,6 +266,45 @@
       "is_ai_related": true
     },
     {
+      "id": "addabdc164071415236cfde158c78d7df9b923ba",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "摩尔线程开源 MusaCoder 代码大模型，9B/27B 参数基于国产 GPU 全链路训练",
+      "url": "https://www.ithome.com/0/962/509.htm",
+      "published_at": "2026-06-10T08:21:45Z",
+      "summary": "摩尔线程发布并开源 MusaCoder 代码大模型，含 9B 和 27B 两个参数规模，是业内首个基于国产 GPU 算力底座完成全链路训练与验证的开源模型。后训练流程在基于 MTT S5000 的夸娥智算集群上完成，支持从 PyTorch 标准算子自动生成高性能 CUDA/MUSA 原生 Kernel 代码。在 KernelBench 评测中，MusaCoder-27B-RL 以 Overall Pass@8 93.2%、Avg.@8 88.60% 超越 Claude Opus、DeepSeek-V4 Pro、GLM-5.1、Kimi K2.6 等主流 SOTA 代码模型。",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:大模型",
+        "strong:开源模型",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f9bbaeefec8c939685bc527c49e89ecdd0225dc4",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "From data to decisions: how LSEG is scaling trusted AI",
+      "url": "https://openai.com/index/lseg",
+      "published_at": "2026-06-10T00:00:00Z",
+      "summary": "See how LSEG uses OpenAI to scale trusted AI across its global business, accelerating insights, shrinking release cycles, and empowering 4,000 employees.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "5754c55c5430b77f3c87059dc9d3153b73f367e0",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -329,24 +372,6 @@
       "url": "https://openai.com/index/nextdoor",
       "published_at": "2026-06-09T12:00:00Z",
       "summary": "How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:codex",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "850167dc2b2a1d9623498e56fa4407389d39c772",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "What Codex unlocks for Notion",
-      "url": "https://openai.com/index/notion",
-      "published_at": "2026-06-09T10:00:00Z",
-      "summary": "How Notion uses Codex to one-shot specs, build AI Voice Input for the web, and multiply engineering power across small teams.",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:codex",
@@ -630,11 +655,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 996,
+      "fetched_count": 997,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 629,
-      "checked_at": "2026-06-10T07:56:51.784552Z"
+      "latency_ms": 819,
+      "checked_at": "2026-06-10T10:40:11.145585Z"
     },
     {
       "source_id": "openai-skills",
@@ -645,8 +670,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 449,
-      "checked_at": "2026-06-10T07:56:52.233845Z"
+      "latency_ms": 216,
+      "checked_at": "2026-06-10T10:40:11.362078Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -657,8 +682,8 @@
       "fetched_count": 224,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 196,
-      "checked_at": "2026-06-10T07:56:52.433840Z"
+      "latency_ms": 105,
+      "checked_at": "2026-06-10T10:40:11.470832Z"
     },
     {
       "source_id": "google-deepmind",
@@ -669,8 +694,8 @@
       "fetched_count": 100,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 423,
-      "checked_at": "2026-06-10T07:56:52.859338Z"
+      "latency_ms": 395,
+      "checked_at": "2026-06-10T10:40:11.868268Z"
     },
     {
       "source_id": "google-ai",
@@ -681,8 +706,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 217,
-      "checked_at": "2026-06-10T07:56:53.077358Z"
+      "latency_ms": 104,
+      "checked_at": "2026-06-10T10:40:11.972918Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -693,8 +718,8 @@
       "fetched_count": 797,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 320,
-      "checked_at": "2026-06-10T07:56:53.410213Z"
+      "latency_ms": 241,
+      "checked_at": "2026-06-10T10:40:12.227006Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -705,8 +730,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 148,
-      "checked_at": "2026-06-10T07:56:53.558914Z"
+      "latency_ms": 120,
+      "checked_at": "2026-06-10T10:40:12.347916Z"
     },
     {
       "source_id": "github-changelog",
@@ -717,8 +742,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-06-10T07:56:53.589424Z"
+      "latency_ms": 23,
+      "checked_at": "2026-06-10T10:40:12.371763Z"
     },
     {
       "source_id": "aihot",
@@ -727,10 +752,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 20,
+      "kept_count": 21,
       "error": null,
-      "latency_ms": 1183,
-      "checked_at": "2026-06-10T07:56:54.775010Z"
+      "latency_ms": 5148,
+      "checked_at": "2026-06-10T10:40:17.522502Z"
     }
   ],
   "control_notes": {
