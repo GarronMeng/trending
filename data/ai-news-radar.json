@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-10T10:40:17.529406Z",
+  "generated_at": "2026-06-10T11:54:58.861738Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 25,
+  "item_count": 22,
   "groups": {
     "official": {
       "group": "official",
-      "count": 8,
+      "count": 7,
       "top_sources": [
         [
           "Hugging Face Blog",
-          3
+          2
         ],
         [
           "OpenAI News",
@@ -30,11 +30,11 @@
       "top_keywords": [
         [
           "official_ai",
-          8
+          7
         ],
         [
           "agent",
-          3
+          2
         ],
         [
           "agents",
@@ -50,10 +50,6 @@
         ],
         [
           "copilot",
-          1
-        ],
-        [
-          "hugging face",
           1
         ],
         [
@@ -104,17 +100,17 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 16,
+      "count": 14,
       "top_sources": [
         [
           "AI Hot",
-          16
+          14
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          16
+          14
         ],
         [
           "claude",
@@ -141,10 +137,6 @@
           2
         ],
         [
-          "llm",
-          2
-        ],
-        [
           "人工智能",
           2
         ],
@@ -158,6 +150,10 @@
         ],
         [
           "自动化",
+          1
+        ],
+        [
+          "codex",
           1
         ]
       ]
@@ -222,25 +218,6 @@
         "strong:claude",
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "77617a0971b872f8e4bc344c791251204dd06cc2",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
-      "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
-      "published_at": "2026-06-09T10:46:19Z",
-      "summary": null,
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "strong:agent",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -608,44 +585,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "b692332175d7d1d82222b6ef92ee7b4a3f874638",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "腾讯混元发布UniRL：统一多模态强化学习基础设施",
-      "url": "https://x.com/TencentHunyuan/status/2064312869827809702",
-      "published_at": "2026-06-09T11:45:15Z",
-      "summary": "腾讯混元推出UniRL，一个支持统一多模态模型的强化学习基础设施，并发布两个新算法DRPO和Flow-DPPO。UniRL通过单个后训练循环（生成→评分→优势→更新→同步）覆盖扩散/流匹配模型、LLM/VLM及统一多模态模型（如Hunyuan-Image 3和Bagel）。模型与算法作为独立轴，可实现模型×算法的组合覆盖。框架支持可插拔rollout引擎（训练侧/SGLang/vLLM-Omni）、FSDP2分片和三种部署模式。FlowDPPO针对流/扩散模型引入基于精确散度的信任域策略优化；DRPO为LLM RL提供平滑的优势加权二次正则化方法。代码已开源。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:llm",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7d509810a80634237a61958ff5df242dee0fdb7a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "火山引擎TRAE Work企业版正式上线，面向全员提供AI办公平台",
-      "url": "https://mp.weixin.qq.com/s/f7QzLzwHPHHv3tWT1Wrnkw",
-      "published_at": "2026-06-09T11:45:02Z",
-      "summary": "火山引擎将TRAE Solo品牌升级为TRAE Work企业版，发布面向企业的AI办公平台。平台提供Work和Code两种模式：Work模式面向产品、运营、市场等非技术岗位，支持上传.pptx、.xlsx、图片等多种格式混合输入直接输出PPT或文档，支持语音讨论自动整理结构化纪要，支持按天或按周自动运行的数据整理和报告生成；Code模式面向开发者和业务同学，可用自然语言描述需求直接生成页面或小应用。桌面端、网页端和移动端多端同步。企业后台可统一配置模型、用量限额、上传内部文档，沙箱机制隔离执行，支持命令黑名单、MCP白名单、内容安全策略，关键操作可审计。同时发起TRAE Enterprise Fellow招募计划。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:mcp",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -658,8 +597,8 @@
       "fetched_count": 997,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 819,
-      "checked_at": "2026-06-10T10:40:11.145585Z"
+      "latency_ms": 750,
+      "checked_at": "2026-06-10T11:54:53.671194Z"
     },
     {
       "source_id": "openai-skills",
@@ -670,8 +609,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 216,
-      "checked_at": "2026-06-10T10:40:11.362078Z"
+      "latency_ms": 444,
+      "checked_at": "2026-06-10T11:54:54.115619Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -682,8 +621,8 @@
       "fetched_count": 224,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 105,
-      "checked_at": "2026-06-10T10:40:11.470832Z"
+      "latency_ms": 286,
+      "checked_at": "2026-06-10T11:54:54.404833Z"
     },
     {
       "source_id": "google-deepmind",
@@ -694,8 +633,8 @@
       "fetched_count": 100,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 395,
-      "checked_at": "2026-06-10T10:40:11.868268Z"
+      "latency_ms": 397,
+      "checked_at": "2026-06-10T11:54:54.803292Z"
     },
     {
       "source_id": "google-ai",
@@ -706,8 +645,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 104,
-      "checked_at": "2026-06-10T10:40:11.972918Z"
+      "latency_ms": 239,
+      "checked_at": "2026-06-10T11:54:55.042813Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -716,10 +655,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 797,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 241,
-      "checked_at": "2026-06-10T10:40:12.227006Z"
+      "latency_ms": 297,
+      "checked_at": "2026-06-10T11:54:55.350769Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -730,8 +669,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 120,
-      "checked_at": "2026-06-10T10:40:12.347916Z"
+      "latency_ms": 188,
+      "checked_at": "2026-06-10T11:54:55.539843Z"
     },
     {
       "source_id": "github-changelog",
@@ -742,8 +681,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-06-10T10:40:12.371763Z"
+      "latency_ms": 27,
+      "checked_at": "2026-06-10T11:54:55.567161Z"
     },
     {
       "source_id": "aihot",
@@ -752,10 +691,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 21,
+      "kept_count": 18,
       "error": null,
-      "latency_ms": 5148,
-      "checked_at": "2026-06-10T10:40:17.522502Z"
+      "latency_ms": 3285,
+      "checked_at": "2026-06-10T11:54:58.854347Z"
     }
   ],
   "control_notes": {
