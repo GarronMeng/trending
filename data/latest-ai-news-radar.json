@@ -1,27 +1,31 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-09T16:30:45.489113Z",
+  "generated_at": "2026-06-10T02:45:19.399496Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 9,
-  "item_count": 17,
+  "healthy_source_count": 8,
+  "item_count": 24,
   "groups": {
     "developer": {
       "group": "developer",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          1
+          2
         ]
       ],
       "top_keywords": [
         [
-          "openai",
-          1
+          "claude",
+          2
         ],
         [
-          "claude",
+          "copilot",
+          2
+        ],
+        [
+          "openai",
           1
         ],
         [
@@ -35,34 +39,42 @@
         [
           "coding agent",
           1
+        ],
+        [
+          "anthropic",
+          1
         ]
       ]
     },
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "Google DeepMind",
           2
         ],
         [
-          "GitHub AI & ML",
-          1
+          "OpenAI News",
+          2
         ],
         [
-          "Hugging Face Blog",
+          "GitHub AI & ML",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          4
+          5
+        ],
+        [
+          "codex",
+          2
         ],
         [
           "agent",
-          2
+          1
         ],
         [
           "agents",
@@ -77,10 +89,6 @@
           1
         ],
         [
-          "hugging face",
-          1
-        ],
-        [
           "gemini",
           1
         ],
@@ -92,60 +100,60 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 12,
+      "count": 17,
       "top_sources": [
         [
           "AI Hot",
-          12
+          17
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          12
+          17
+        ],
+        [
+          "claude",
+          7
+        ],
+        [
+          "agent",
+          5
         ],
         [
           "智能体",
           5
         ],
         [
-          "agent",
+          "agents",
           4
         ],
         [
-          "claude",
-          3
-        ],
-        [
           "anthropic",
-          3
+          4
         ],
         [
           "openai",
-          3
-        ],
-        [
-          "agents",
           2
         ],
         [
-          "codex",
-          1
-        ],
-        [
           "api",
-          1
+          2
         ],
         [
           "API",
-          1
+          2
         ],
         [
-          "人工智能",
-          1
+          "llm",
+          2
         ],
         [
-          "自动化",
+          "开发者",
+          2
+        ],
+        [
+          "gemini",
           1
         ]
       ]
@@ -195,63 +203,84 @@
       "is_ai_related": true
     },
     {
-      "id": "77617a0971b872f8e4bc344c791251204dd06cc2",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "2464ec3483caf6207027f2ecdfad3abd43649659",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
-      "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
-      "published_at": "2026-06-09T10:46:19Z",
-      "summary": null,
-      "relevance_score": 5,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Claude Fable 5 is generally available for GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-06-09-claude-fable-5-is-generally-available-for-github-copilot",
+      "published_at": "2026-06-09T17:39:26Z",
+      "summary": "Claude Fable 5 from Anthropic is now available in GitHub Copilot, the first model in Anthropic’s Mythos class, designed for long-horizon, autonomous coding and knowledge-work tasks. Unlike other Claude models… The post Claude Fable 5 is generally available for GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 7,
       "relevance_reasons": [
-        "strong:hugging face",
-        "strong:agent",
-        "source_prior:official_ai"
+        "strong:anthropic",
+        "strong:claude",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
     {
-      "id": "a076a2e14edb11cd51324fc070b4450e958b7d66",
+      "id": "cc6da257dabaa3b1d330c333d44d196805647344",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Viggle API 上线：任意角色任意动作秒级生成",
-      "url": "https://x.com/ViggleAI/status/2064083087806390319",
-      "published_at": "2026-06-08T20:32:11Z",
-      "summary": "推出 Viggle API。 给任意角色添加任意动作，一次 API 调用--数秒内即可激活。 可接入 Claude、Codex 或你正在构建的任何智能体。起价 $0.01/秒。 注册即获 100 次免费额度。 转发 + 关注 + 评论，10 位中奖者再获 100 次！ 了解更多👇",
+      "title": "在 AgentsView 中为 Claude Fable 5 设置自定义价格",
+      "url": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price",
+      "published_at": "2026-06-09T21:35:31Z",
+      "summary": "Wes McKinney 开发的 AgentsView 是一个用于追踪本地编码智能体 token 使用情况的工具。由于近日发布的 Claude Fable 5 尚未被收录进 AgentsView 的定价数据库，作者利用 Fable 逆向工程，找到了为该模型设置自定义价格的方法，并展示了 Fable 5 当天在不同本地项目中的使用量树状图。",
       "relevance_score": 7,
       "relevance_reasons": [
         "strong:claude",
-        "strong:codex",
+        "strong:agent",
+        "strong:agents",
         "strong:智能体",
-        "weak:api",
-        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "a4f8a7f98834942c29579c7adea9a0910c645d00",
+      "id": "96bc4de93c2bb1e25c76617a65d1477b9248b9cf",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic：AI编码快于生物学的缘由",
-      "url": "https://x.com/AnthropicAI/status/2064054837294354677",
-      "published_at": "2026-06-08T18:39:56Z",
-      "summary": "新的科学博客：为什么 AI 在编码方面的进步比在生物学方面更快？ 对智能体而言，生物数据库就像汽车发明前建造的城市--开进去会让人抓狂，因为它们是针对不同的交通流量设计的。 我们如何构建智能体可以使用的基础设施？ https：//www.anthropic.com/research/agents-in-biology",
+      "title": "Hugging Face 博客发布语音智能体代码切换基准测试",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
+      "published_at": "2026-06-09T19:38:28Z",
+      "summary": "Hugging Face 博客发布针对语音智能体处理代码切换语音的基准测试。数据集覆盖西班牙语-英语、法语-英语、加拿大法语-英语和德语-英语四对语言，基于人力资源与IT服务管理场景构建。采用词错误率、语义词错误率和答案错误率三项指标评估七种ASR系统，包括AssemblyAI Universal 3-Pro、Deepgram Nova 3 Multilang、ElevenLabs Scribe V2、Gemini 3 Flash、Mistral AI Voxtral Small 24B-2507、Nvidia Parakeet TDT 0.6b V3和OpenAI Whisper Large V3 Turbo。主要发现：代码切换的转录成本因语言对和模型而异；ElevenLabs Scribe V2、Gemin",
       "relevance_score": 7,
       "relevance_reasons": [
-        "strong:anthropic",
+        "strong:openai",
+        "strong:gemini",
+        "strong:hugging face",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5754c55c5430b77f3c87059dc9d3153b73f367e0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Managed Agents 新增定时运行和环境变量存储功能",
+      "url": "https://claude.com/blog/whats-new-in-claude-managed-agents",
+      "published_at": "2026-06-09T21:06:26Z",
+      "summary": "Claude Managed Agents 今日在 Claude Platform 公开测试两项新功能：代理可按 cron 计划自动执行周期性任务（如夜间数据同步、周度合规扫描、每日摘要），无需用户自建调度器，支持暂停、恢复、归档或按需触发；vaults 新增环境变量支持，允许代理通过 CLI 进行认证请求，真实密钥仅附加在网络边界，代理无法读取。已集成的 CLI 包括 Browserbase、KERNEL、Notion、Ramp 和 Sentry。Rakuten、Actively AI、Ando、Milana 等团队正在使用这些功能实现自动化数据报表、跨账户搜索、招聘提醒等场景。",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:claude",
         "strong:agent",
         "strong:agents",
-        "strong:智能体",
+        "weak:自动化",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -293,62 +322,194 @@
       "is_ai_related": true
     },
     {
-      "id": "14a02f1d732cbf865cdf3a57b495dc15edc20d3c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "奥尔特曼宣布 OpenAI 进入第三发展阶段：让 AI 普及、易用且安全",
-      "url": "https://www.ithome.com/0/961/721.htm",
-      "published_at": "2026-06-08T22:50:42Z",
-      "summary": "本周一，OpenAI CEO 奥尔特曼与首席科学家帕霍茨基联合发文，宣布公司进入第三发展阶段，目标让 AI 普及、易用且安全。此前第一阶段聚焦通用人工智能技术研发，第二阶段面向全球推出产品。第三阶段三大核心目标是打造自动化人工智能研究员、推动经济提速、为每人配备专属通用人工智能。二人强调智能系统须坚守安全底线，呼吁成立国际机构应对 AI 风险，必要时可暂缓前沿模型研发。同日，OpenAI 秘密提交 IPO 申请，但上市仍需较长时间。上周 Anthropic 研究人员也建议适当放缓前沿 AI 研发。",
-      "relevance_score": 6,
+      "id": "56af081b71fc35d3c7f9c31ce1d8476620611adc",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How engineers at Nextdoor use Codex to build without limits",
+      "url": "https://openai.com/index/nextdoor",
+      "published_at": "2026-06-09T12:00:00Z",
+      "summary": "How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes.",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:人工智能",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
+        "strong:codex",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "39775d7b152b5d7e894626876aa7afaadbb35cd9",
+      "id": "850167dc2b2a1d9623498e56fa4407389d39c772",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "What Codex unlocks for Notion",
+      "url": "https://openai.com/index/notion",
+      "published_at": "2026-06-09T10:00:00Z",
+      "summary": "How Notion uses Codex to one-shot specs, build AI Voice Input for the web, and multiply engineering power across small teams.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:codex",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f578fde364bfc872d0d4f1ee99cd51ce919a8d9b",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "开源工具 Tokei：在菜单栏实时监控 AI coding agent 的 token 用量与成本",
-      "url": "https://x.com/berryxia/status/2064155452934639718",
-      "published_at": "2026-06-09T01:19:44Z",
-      "summary": "Berry Xia 推荐开源工具 Tokei，这是一个 macOS 菜单栏小工具，只读本地日志、零网络调用，30 秒自动刷新，实时监控 Claude Code、Grok CLI、Aider、OpenCode 等 8 个主流 AI coding agent 的 token 用量、实时成本与性能数据，并附每日图表、周热力图和年度 Wrapped。支持私人 Git 多设备同步、价格表本地覆盖，闲置过久会提醒休息。引用推文指出，token 消耗情况可作为深度使用 AI 的面试亮点，数据全程私有，零侵入，无需任何认证。",
+      "title": "Text-To-Lottie：Agent Skill + 本地预览 Harness，让 Agent 生成 Lottie 动画并实时验收",
+      "url": "https://x.com/shao__meng/status/2064508455051043008",
+      "published_at": "2026-06-10T00:42:27Z",
+      "summary": "开源项目 Text-To-Lottie 提供一套 Agent Skill 和本地预览工具，让 Codex/Claude Code/Cursor 等 Agent 生成标准 Bodymovin JSON（public/lottie.json），通过 Skottie 渲染引擎在浏览器中实时验收。安装命令：`npx skills add diffusionstudio/lottie`。技术特点：输出标准 Lottie JSON，使用 Skottie 渲染（非 lottie-web）；基于 Vite 热重载实现自动刷新闭环；支持通过 Skottie Slots + controls.json 调整颜色、尺寸；Agent 可用 URL 参数 `？frame=60&paused=1` 精确定位帧截图。Prompt 指南包括：",
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:claude",
+        "strong:codex",
         "strong:agent",
-        "strong:ai coding",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "d892204547e62bd21025faaaeb2938d7be97e3cb",
+      "id": "1f172ac5677c52a7009dbf6f40fe8432c0c943a5",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Perplexity与哈佛：AI智能体提效87%降本94%",
-      "url": "https://x.com/perplexity_ai/status/2064023455453110286",
-      "published_at": "2026-06-08T16:35:14Z",
-      "summary": "我们与哈佛大学发表新研究，关于从聊天界面转向像Computer这样的自主智能体的转变。 超过3个月的研究结果表明，使用Computer的工人在完成任务上比仅使用搜索快87%，成本低94%，且满意度更高。 https：//research.perplexity.ai/articles/how-ai-agents-reshape-knowledge-work",
+      "title": "一个Agent如何通过链式调用两个HuggingFace Space构建3D巴黎画廊",
+      "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
+      "published_at": "2026-06-09T10:46:19Z",
+      "summary": "一个编码Agent调用HuggingFace上的两个Space，从零构建了展示巴黎地标3D高斯散点图的交互式画廊。Agent先用ideogram-ai/ideogram4生成每个纪念碑的黑色背景图像，再通过VAST-AI/TripoSplat从单张图像重建3D高斯散点（.ply），自动完成坐标系校正、取景、压缩为.ksplat（体积缩小约3倍），并构建基于Three.js的滚动切换、拖拽旋转查看器，最终部署为静态Space。整个过程无需客户端库，每个Space通过`agents.md`暴露可调用API。",
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:agent",
         "strong:agents",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9696fc94980167d408fa7c317f5d44c119614815",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Code 团队 Thariq 分享提升 Claude Code 效率的十条建议",
+      "url": "https://x.com/rohanpaul_ai/status/2064425086409679358",
+      "published_at": "2026-06-09T19:11:10Z",
+      "summary": "Thariq（Claude Code 团队）提出十条建议，核心转变是：从检查 Claude 是否做对工作，转向检查它是否在做正确的工作。具体包括：提前提供完整上下文，将其视为思考伙伴；用小规格文档让 Claude 访谈实现细节；探索多方向并生成 HTML 原型；提供丰富上下文（如功能可能一个月后删除）而非硬约束；设定明确目标与验证方法；使用 /goal 命令；利用 Workflows 并行任务、自我验证并生成对比报告；同时设置目标和 workflow；更勇敢地将此前认为 LLM 无法完成的任务交给 Claude Fable 5，因其可运行数小时、自检并产出高质量代码。Thariq 本人用 Claude Fable 5 剪辑了整段视频证明其能力。",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:llm",
+        "weak:workflow",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "40a274e0c029f883427170bd377fe8c6a220de3e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Magnetar用数百AI智能体替代分析师",
+      "url": "https://x.com/rohanpaul_ai/status/2064524448582267047",
+      "published_at": "2026-06-10T01:46:00Z",
+      "summary": "Bloomberg：Magnetar Capital，这家 180 亿美元的对冲基金公司，将在其最新产品中避免使用人类分析师，转而依靠数百个 AI 智能体进行股票研究。 这家 180 亿美元的对冲基金公司希望 AI 搜索投资想法、研究公司、推荐头寸并预测趋势，而人类仍负责批准交易。",
+      "relevance_score": 3,
+      "relevance_reasons": [
         "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "db86a2aa9a907f65a4cb295d9ff94ae52cea5803",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Fable 发布：Anthropic 带来的另一种推理体验",
+      "url": "https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos",
+      "published_at": "2026-06-09T17:11:22Z",
+      "summary": "Anthropic 发布 Claude Fable，这是一款提供截然不同推理体验的 AI 模型。它擅长规划与生成复杂代码库，在需要精确构建代码结构或理解程序员深层需求的场景中，其表现相比 Claude Sonnet 有了大幅提升。用户描述与它协作更像与一位直觉敏锐的资深工程师合作，其对代码意图的捕捉和方案生成能力令人惊叹，但并非通用型 AI。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "474d76bdf76702219636ccc155c3721b423458b0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Fable 5 和 Claude Mythos 5",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "published_at": "2026-06-09T17:04:29Z",
+      "summary": "Anthropic 今日推出 Claude Fable 5（通用安全版）和 Claude Mythos 5（受限安全版）。Fable 5 在软件工程、知识工作、视觉、科研等几乎所有测试基准上达到 SOTA，Stripe 称其将数月工程压缩至数天，FrontierCode 评分居前沿模型之首，可仅凭截图重建网页应用源码。Mythos 5 在药物设计中实现约 10 倍加速，其分子生物学假说盲测获科学家偏好的概率约 80%。两模型售价均为 $10/百万输入 tokens、$50/百万输出 tokens，较 Claude Mythos Preview 降价过半。Fable 5 在部分敏感主题上回退至 Claude Opus 4.8，安全触发率低于 5% 的会话。Mythos 5 通过 Project Glasswing",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c77e27f7eb99f300ab85861d0bd772d6e9c095c3",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Apollo 与 Blackstone 联手 350 亿美元 AI 融资交易",
+      "url": "https://www.bloomberg.com/news/videos/2026-06-09/apollo-blackstone-fund-ai-boom-video",
+      "published_at": "2026-06-09T16:54:29Z",
+      "summary": "Apollo 和 Blackstone 合作开展 350 亿美元 AI 融资交易，可能重塑人工智能基础设施的融资方式。华尔街正为昂贵的 AI 芯片创建新的融资模型，Anthropic 和 Broadcom 参与其中。这笔交易可能标志着一个全新 AI 投资类别的开端。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:人工智能",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ace9c4203f05d12517cdde7c310e0c6ad3455f49",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenRouter与Cursor集成指南",
+      "url": "https://x.com/OpenRouter/status/2064384545256833209",
+      "published_at": "2026-06-09T16:30:04Z",
+      "summary": "想要在Cursor中使用OpenRouter吗？ 这里有一份集成指南：https：//openrouter.ai/docs/cookbook/coding-agents/cursor-integration",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -411,20 +572,20 @@
       "is_ai_related": true
     },
     {
-      "id": "cd1a66b2d956024ddd57053b4072507b2f0265f1",
+      "id": "026a080f2f6995dc0c84a4652bdfa968d3907e2e",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Kimi 预测全部104场世界杯比赛：德国或被低估",
-      "url": "https://x.com/Kimi_Moonshot/status/2064311212243120459",
-      "published_at": "2026-06-09T11:38:40Z",
-      "summary": "Kimi 利用 Agent Swarm 系统并行协调300个子智能体，分析战术、球员状态、伤病、赛程、天气、赔率等因素，预测2026年美加墨世界杯全部104场比赛，并发布每轮赛前预测和赛后回顾。模型层融合了 Elo/FIFA 强度、Poisson 进球分布、xG/xT 指标、蒙特卡洛模拟等方法。预测结果显示西班牙和法国为头号热门，但德国夺冠概率可能被市场低估：模型基线估计约11.0%，校准估计约11.3%，而部分市场隐含概率仅约7.4%，正向偏差约+3.6个百分点。该判断基于多分析链交叉验证，可能源于对德国近两届小组出局的近因偏差以及纳格尔斯曼高位压迫体系与穆西亚拉/维尔茨新创造轴的复苏信号。",
-      "relevance_score": 3,
+      "title": "Cohere发布North Mini Code：面向开发者的开源编码模型",
+      "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
+      "published_at": "2026-06-09T15:56:23Z",
+      "summary": "Cohere发布North Mini Code，一款30B参数MoE模型（3B活跃参数），Apache 2.0开源。在Artificial Analysis Coding Index上得分33.4，超越Qwen3.5、Gemma 4等同类模型。后训练采用两阶段SFT和RLVR，在SWE-Bench Verified上pass@10达80.2%，Terminal-Bench v2上达55.1%。支持64K/128K上下文长度，专为智能体编码任务优化。",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:agent",
         "strong:智能体",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -466,25 +627,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "16a8ce5d2a94147d736c127455768a829b3718e5",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 秘密提交 IPO 申请，奥特曼旗下 Tools for Humanity 裁员",
-      "url": "https://www.ithome.com/0/961/792.htm",
-      "published_at": "2026-06-09T02:19:48Z",
-      "summary": "OpenAI 近日秘密提交 IPO 申请。其 CEO 山姆·奥特曼旗下的 Tools for Humanity 公司正裁员，该公司因虹膜扫描项目 World 及加密货币 Worldcoin 知名，投后估值 25 亿美元，获 Andreessen Horowitz 等投资。因营收困境，公司缩减规模。海外监管方面，肯尼亚以隐私和金融风险为由叫停运营，韩国因违反隐私法规罚款 83 万美元。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:tool",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -494,11 +636,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 995,
-      "kept_count": 0,
+      "fetched_count": 996,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 868,
-      "checked_at": "2026-06-09T16:30:38.081921Z"
+      "latency_ms": 632,
+      "checked_at": "2026-06-10T02:45:16.226996Z"
     },
     {
       "source_id": "openai-skills",
@@ -509,8 +651,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 207,
-      "checked_at": "2026-06-09T16:30:38.289794Z"
+      "latency_ms": 223,
+      "checked_at": "2026-06-10T02:45:16.451170Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -518,11 +660,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 223,
+      "fetched_count": 224,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 108,
-      "checked_at": "2026-06-09T16:30:38.401496Z"
+      "latency_ms": 102,
+      "checked_at": "2026-06-10T02:45:16.556783Z"
     },
     {
       "source_id": "google-deepmind",
@@ -533,8 +675,8 @@
       "fetched_count": 100,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 291,
-      "checked_at": "2026-06-09T16:30:38.694292Z"
+      "latency_ms": 307,
+      "checked_at": "2026-06-10T02:45:16.865648Z"
     },
     {
       "source_id": "google-ai",
@@ -545,20 +687,20 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 150,
-      "checked_at": "2026-06-09T16:30:38.845495Z"
+      "latency_ms": 211,
+      "checked_at": "2026-06-10T02:45:17.077045Z"
     },
     {
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "enabled": true,
-      "ok": true,
-      "fetched_count": 795,
-      "kept_count": 1,
-      "error": null,
-      "latency_ms": 270,
-      "checked_at": "2026-06-09T16:30:39.127953Z"
+      "ok": false,
+      "fetched_count": 0,
+      "kept_count": 0,
+      "error": "429 Client Error: Too Many Requests for url: https://huggingface.co/blog/feed.xml",
+      "latency_ms": 37,
+      "checked_at": "2026-06-10T02:45:17.114828Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -569,8 +711,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 112,
-      "checked_at": "2026-06-09T16:30:39.240884Z"
+      "latency_ms": 143,
+      "checked_at": "2026-06-10T02:45:17.258469Z"
     },
     {
       "source_id": "github-changelog",
@@ -579,10 +721,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 21,
-      "checked_at": "2026-06-09T16:30:39.263188Z"
+      "latency_ms": 23,
+      "checked_at": "2026-06-10T02:45:17.282011Z"
     },
     {
       "source_id": "aihot",
@@ -591,10 +733,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 15,
+      "kept_count": 19,
       "error": null,
-      "latency_ms": 6215,
-      "checked_at": "2026-06-09T16:30:45.480015Z"
+      "latency_ms": 2109,
+      "checked_at": "2026-06-10T02:45:19.393254Z"
     }
   ],
   "control_notes": {
