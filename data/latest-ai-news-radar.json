@@ -1,22 +1,78 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-10T16:57:31.666357Z",
+  "generated_at": "2026-06-11T02:54:52.763762Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 14,
+  "item_count": 15,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 3,
+    "aggregate": {
+      "group": "aggregate",
+      "count": 9,
       "top_sources": [
         [
-          "Hugging Face Blog",
+          "AI Hot",
+          9
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          9
+        ],
+        [
+          "agent",
+          5
+        ],
+        [
+          "claude",
+          3
+        ],
+        [
+          "智能体",
+          3
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "大模型",
+          2
+        ],
+        [
+          "人工智能",
+          2
+        ],
+        [
+          "mcp",
           1
         ],
         [
-          "OpenAI News",
+          "api",
           1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "开源模型",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 4,
+      "top_sources": [
+        [
+          "OpenAI News",
+          3
         ],
         [
           "GitHub AI & ML",
@@ -26,22 +82,18 @@
       "top_keywords": [
         [
           "official_ai",
-          3
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "benchmark",
-          1
+          4
         ],
         [
           "openai",
+          2
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "chatgpt",
           1
         ],
         [
@@ -65,71 +117,7 @@
           4
         ],
         [
-          "anthropic",
-          1
-        ],
-        [
-          "claude",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 9,
-      "top_sources": [
-        [
-          "AI Hot",
-          9
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          9
-        ],
-        [
-          "claude",
-          5
-        ],
-        [
-          "智能体",
-          4
-        ],
-        [
           "agent",
-          3
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "大模型",
-          1
-        ],
-        [
-          "开源模型",
-          1
-        ],
-        [
-          "评测",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "llm",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "人工智能",
           1
         ]
       ]
@@ -137,63 +125,121 @@
   },
   "items": [
     {
-      "id": "cf07358cfc27172309e0623f8f36fb9143b9fdf8",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
-      "published_at": "2026-06-09T19:38:28Z",
-      "summary": null,
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "weak:benchmark",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "2464ec3483caf6207027f2ecdfad3abd43649659",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Claude Fable 5 is generally available for GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-06-09-claude-fable-5-is-generally-available-for-github-copilot",
-      "published_at": "2026-06-09T17:39:26Z",
-      "summary": "Claude Fable 5 from Anthropic is now available in GitHub Copilot, the first model in Anthropic’s Mythos class, designed for long-horizon, autonomous coding and knowledge-work tasks. Unlike other Claude models… The post Claude Fable 5 is generally available for GitHub Copilot appeared first on The GitHub Blog .",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "cc6da257dabaa3b1d330c333d44d196805647344",
+      "id": "d369f78a523f03d5b72ac75815766b74734c57e1",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "在 AgentsView 中为 Claude Fable 5 设置自定义价格",
-      "url": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price",
-      "published_at": "2026-06-09T21:35:31Z",
-      "summary": "Wes McKinney 开发的 AgentsView 是一个用于追踪本地编码智能体 token 使用情况的工具。由于近日发布的 Claude Fable 5 尚未被收录进 AgentsView 的定价数据库，作者利用 Fable 逆向工程，找到了为该模型设置自定义价格的方法，并展示了 Fable 5 当天在不同本地项目中的使用量树状图。",
+      "title": "从0到1速通WorkBuddy：国内通用Agent产品教程",
+      "url": "https://mp.weixin.qq.com/s/nFSSzluc57xPv50Zbh4owg",
+      "published_at": "2026-06-11T01:58:00Z",
+      "summary": "WorkBuddy是面向国内用户的通用Agent产品，支持Windows和Mac，提供免费版和58元/月个人专业版，企业版已推出。内置代码开发、日常办公、设计创意三种场景模式及100多个行业领域AI专家。模型集成腾讯混元、DeepSeek（推荐V4 Pro）、GLM、Kimi等国产大模型，也支持接入兼容OpenAI协议的外部API。拥有Skills市场和MCP连接器生态，可打通QQ邮箱、腾讯会议、腾讯文档等服务。教程通过公众号周报生成和功能网页开发两个案例演示实际用法。",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
+        "strong:mcp",
+        "strong:大模型",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b9cb29ea90e67722f28560a9acbef24f686d83e3",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Access OpenAI models and Codex through your Oracle cloud commitment",
+      "url": "https://openai.com/index/openai-on-oracle-cloud",
+      "published_at": "2026-06-10T20:00:00Z",
+      "summary": "Access OpenAI models and Codex through Oracle Cloud, using existing commitments to build and deploy AI with enterprise security and governance.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9fb6fac0d3981cfaf98df136cafb28efedee5a2b",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "PRC-linked influence operations are targeting AI debates in the US",
+      "url": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
+      "published_at": "2026-06-10T12:00:00Z",
+      "summary": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c406dd832c9ecba6bd739c45f217ca992b534347",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "小米发布 MiMo Code V0.1 开源终端 AI 编程助手",
+      "url": "https://x.com/XiaomiMiMo/status/2064772356443394441",
+      "published_at": "2026-06-10T18:11:06Z",
+      "summary": "小米推出开源终端 AI 编程助手 MiMo Code V0.1，附带限时免费使用的多模态模型 MiMo V2.5，支持百万 token 上下文窗口。核心特性包括：无限上下文（自动知识积累与无损压缩）、Agent-模型深度协同（测试-审查-验证闭环）、Compose 模式（规格→计划→构建→报告）、自进化系统、语音输入（基于 MiMo-V2.5-ASR）、兼容 Claude Code（零成本迁移），以及 MIT 许可、支持 Anthropic、OpenAI、DeepSeek、Kimi、GLM 等主流模型提供商。",
       "relevance_score": 7,
       "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
         "strong:claude",
         "strong:agent",
-        "strong:agents",
-        "strong:智能体",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "39928206aab2677650d87f3a134f7a38d5ba39a2",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How an astrophysicist uses Codex to help simulate black holes",
+      "url": "https://openai.com/index/using-codex-to-simulate-black-holes",
+      "published_at": "2026-06-11T00:00:00Z",
+      "summary": "Discover how astrophysicist Chi-kwan Chan uses Codex to build black hole simulations, helping scientists study extreme physics and test Einstein’s theory of general relativity.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:codex",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "44ca1b9fc451045f60f02d23228a9dcda27de6d5",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot Chat now sees your agent sessions",
+      "url": "https://github.blog/changelog/2026-06-10-copilot-chat-now-sees-your-agent-sessions",
+      "published_at": "2026-06-10T20:46:17Z",
+      "summary": "We’ve improved the handoff experience between Copilot Chat and Copilot cloud agent on the web. We’ve also enabled new functionality which allows you to search and query past agent sessions… The post Copilot Chat now sees your agent sessions appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -219,39 +265,41 @@
       "is_ai_related": true
     },
     {
-      "id": "f9bbaeefec8c939685bc527c49e89ecdd0225dc4",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "From data to decisions: how LSEG is scaling trusted AI",
-      "url": "https://openai.com/index/lseg",
-      "published_at": "2026-06-10T00:00:00Z",
-      "summary": "See how LSEG uses OpenAI to scale trusted AI across its global business, accelerating insights, shrinking release cycles, and empowering 4,000 employees.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "f578fde364bfc872d0d4f1ee99cd51ce919a8d9b",
+      "id": "7f048a847fd28eae68a8274037b57f4bc535eaee",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Text-To-Lottie：Agent Skill + 本地预览 Harness，让 Agent 生成 Lottie 动画并实时验收",
-      "url": "https://x.com/shao__meng/status/2064508455051043008",
-      "published_at": "2026-06-10T00:42:27Z",
-      "summary": "开源项目 Text-To-Lottie 提供一套 Agent Skill 和本地预览工具，让 Codex/Claude Code/Cursor 等 Agent 生成标准 Bodymovin JSON（public/lottie.json），通过 Skottie 渲染引擎在浏览器中实时验收。安装命令：`npx skills add diffusionstudio/lottie`。技术特点：输出标准 Lottie JSON，使用 Skottie 渲染（非 lottie-web）；基于 Vite 热重载实现自动刷新闭环；支持通过 Skottie Slots + controls.json 调整颜色、尺寸；Agent 可用 URL 参数 `？frame=60&paused=1` 精确定位帧截图。Prompt 指南包括：",
+      "title": "小米发布并开源终端AI编程助手MiMo Code V0.1.0，采用MIT协议",
+      "url": "https://mp.weixin.qq.com/s/WkMPz-eBK2Hz0ZTQEwtx6w",
+      "published_at": "2026-06-10T18:06:35Z",
+      "summary": "小米发布并开源终端AI编程助手MiMo Code V0.1.0，采用MIT协议。内置限时免费MiMo-V2.5多模态模型，性能比肩Claude Sonnet 4.6；支持接入DeepSeek、Kimi、GLM等模型。核心能力包括持久记忆系统（项目记忆、会话检查点、任务进度）和无限上下文--通过独立subagent自动保存状态解决长会话遗忘。独创Compose模式实现模型与Agent协同优化，SWE-Bench Pro达62%（Claude Code 57%），Terminal Bench 2达73%（68%）。内置语音输入和/dream命令，每7天自动合并记忆。终端输入`mimo`即可使用，所有设置中文汉化。",
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:claude",
-        "strong:codex",
         "strong:agent",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "92fa2fa8baa089cb2bb92b8f1b73dbaec1e6640f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Apache Burr：构建可靠的人工智能代理和应用程序",
+      "url": "https://burr.apache.org",
+      "published_at": "2026-06-10T18:33:56Z",
+      "summary": "Apache Burr 是一个用于构建可靠 AI 智能体和应用程序的框架，已在 Apache 基金会下发布。该项目提供工具和抽象，帮助开发者设计、开发和部署可信任的智能体应用，强调可靠性、可观测性和生产级部署能力。",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:人工智能",
+        "strong:智能体",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -293,21 +341,20 @@
       "is_ai_related": true
     },
     {
-      "id": "9696fc94980167d408fa7c317f5d44c119614815",
+      "id": "479ea21f699938764d23d1c44d3d11c909202802",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Claude Code 团队 Thariq 分享提升 Claude Code 效率的十条建议",
-      "url": "https://x.com/rohanpaul_ai/status/2064425086409679358",
-      "published_at": "2026-06-09T19:11:10Z",
-      "summary": "Thariq（Claude Code 团队）提出十条建议，核心转变是：从检查 Claude 是否做对工作，转向检查它是否在做正确的工作。具体包括：提前提供完整上下文，将其视为思考伙伴；用小规格文档让 Claude 访谈实现细节；探索多方向并生成 HTML 原型；提供丰富上下文（如功能可能一个月后删除）而非硬约束；设定明确目标与验证方法；使用 /goal 命令；利用 Workflows 并行任务、自我验证并生成对比报告；同时设置目标和 workflow；更勇敢地将此前认为 LLM 无法完成的任务交给 Claude Fable 5，因其可运行数小时、自检并产出高质量代码。Thariq 本人用 Claude Fable 5 剪辑了整段视频证明其能力。",
-      "relevance_score": 4,
+      "title": "Cursor Bugbot 更新：速度提升超 3 倍、成本降低 22%、发现更多 Bug",
+      "url": "https://cursor.com/blog/bugbot-updates-june-2026",
+      "published_at": "2026-06-10T12:00:00Z",
+      "summary": "Cursor 的代码审查工具 Bugbot 迎来重大更新：运行速度提升超 3 倍，成本降低 22%，每轮审查多发现 10% 的 bug，90% 的运行在三分钟内完成。新增 `/review` 命令，可在推送代码前运行 Bugbot 和安全审查，并与 GitHub/GitLab 同步--若已通过 `/review` 审查过同一 diff，打开 PR 时 Bugbot 会自动跳过并备注。支持配置仅审查 PR 中新增内容。性能提升源于驱动 Bugbot 的 Composer 2.5 模型训练改进。Bugbot 遵循模型阻止列表，若组织禁用 Composer 2.5 则自动回退。该功能已在 Cursor 3.7+ 和 cursor.com/agents 上线，CLI 支持即将推出。",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:claude",
-        "strong:llm",
-        "weak:workflow",
+        "strong:agent",
+        "strong:agents",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -351,45 +398,6 @@
       "is_ai_related": true
     },
     {
-      "id": "40a274e0c029f883427170bd377fe8c6a220de3e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Magnetar用数百AI智能体替代分析师",
-      "url": "https://x.com/rohanpaul_ai/status/2064524448582267047",
-      "published_at": "2026-06-10T01:46:00Z",
-      "summary": "Bloomberg：Magnetar Capital，这家 180 亿美元的对冲基金公司，将在其最新产品中避免使用人类分析师，转而依靠数百个 AI 智能体进行股票研究。 这家 180 亿美元的对冲基金公司希望 AI 搜索投资想法、研究公司、推荐头寸并预测趋势，而人类仍负责批准交易。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "db86a2aa9a907f65a4cb295d9ff94ae52cea5803",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Fable 发布：Anthropic 带来的另一种推理体验",
-      "url": "https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos",
-      "published_at": "2026-06-09T17:11:22Z",
-      "summary": "Anthropic 发布 Claude Fable，这是一款提供截然不同推理体验的 AI 模型。它擅长规划与生成复杂代码库，在需要精确构建代码结构或理解程序员深层需求的场景中，其表现相比 Claude Sonnet 有了大幅提升。用户描述与它协作更像与一位直觉敏锐的资深工程师合作，其对代码意图的捕捉和方案生成能力令人惊叹，但并非通用型 AI。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "d7a1e4faa208569dbdd9d6f3afb64da5a420d8ce",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -416,11 +424,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 997,
-      "kept_count": 1,
+      "fetched_count": 1000,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 616,
-      "checked_at": "2026-06-10T16:57:23.710081Z"
+      "latency_ms": 826,
+      "checked_at": "2026-06-11T02:54:49.783001Z"
     },
     {
       "source_id": "openai-skills",
@@ -431,8 +439,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 355,
-      "checked_at": "2026-06-10T16:57:24.066121Z"
+      "latency_ms": 275,
+      "checked_at": "2026-06-11T02:54:50.058439Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -443,8 +451,8 @@
       "fetched_count": 224,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 101,
-      "checked_at": "2026-06-10T16:57:24.170666Z"
+      "latency_ms": 167,
+      "checked_at": "2026-06-11T02:54:50.229127Z"
     },
     {
       "source_id": "google-deepmind",
@@ -455,8 +463,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 402,
-      "checked_at": "2026-06-10T16:57:24.575056Z"
+      "latency_ms": 324,
+      "checked_at": "2026-06-11T02:54:50.555365Z"
     },
     {
       "source_id": "google-ai",
@@ -467,8 +475,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 217,
-      "checked_at": "2026-06-10T16:57:24.793346Z"
+      "latency_ms": 299,
+      "checked_at": "2026-06-11T02:54:50.854750Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -477,10 +485,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 797,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 319,
-      "checked_at": "2026-06-10T16:57:25.125243Z"
+      "latency_ms": 299,
+      "checked_at": "2026-06-11T02:54:51.165167Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -491,8 +499,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 286,
-      "checked_at": "2026-06-10T16:57:25.412135Z"
+      "latency_ms": 188,
+      "checked_at": "2026-06-11T02:54:51.354176Z"
     },
     {
       "source_id": "github-changelog",
@@ -503,8 +511,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-06-10T16:57:25.442178Z"
+      "latency_ms": 31,
+      "checked_at": "2026-06-11T02:54:51.385666Z"
     },
     {
       "source_id": "aihot",
@@ -515,8 +523,8 @@
       "fetched_count": 50,
       "kept_count": 10,
       "error": null,
-      "latency_ms": 6213,
-      "checked_at": "2026-06-10T16:57:31.657423Z"
+      "latency_ms": 1368,
+      "checked_at": "2026-06-11T02:54:52.755109Z"
     }
   ],
   "control_notes": {
