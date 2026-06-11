@@ -43,30 +43,17 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>15</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>4</b><span>官方源条目</span></div>
-        <div class="stat"><b>9</b><span>聚合源条目</span></div>
+        <div class="stat"><b>7</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>5</b><span>官方源条目</span></div>
+        <div class="stat"><b>0</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-11T02:54:52.765249Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-11T08:24:49.622068Z</p></div>
       <div class="grid">
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-11T01:58:00Z</span>
-        <strong>Score 9</strong>
-      </div>
-      <h3><a href="https://mp.weixin.qq.com/s/nFSSzluc57xPv50Zbh4owg" target="_blank" rel="noreferrer">从0到1速通WorkBuddy：国内通用Agent产品教程</a></h3>
-      <p class='summary'>WorkBuddy是面向国内用户的通用Agent产品，支持Windows和Mac，提供免费版和58元/月个人专业版，企业版已推出。内置代码开发、日常办公、设计创意三种场景模式及100多个行业领域AI专家。模型集成腾讯混元、DeepSeek（推荐V4 Pro）、GLM、Kimi等国产大模型，也支持接入兼容OpenAI协议的外部API。拥有Skills市场和MCP连接器生态，可打通QQ邮箱、腾讯会议、腾讯文档等服务。教程通过公众号周报生成和功能网页开发两个案例演示实际用法。</p>
-      <div class="tags"><span>strong:openai</span><span>strong:agent</span><span>strong:mcp</span><span>strong:大模型</span><span>weak:api</span></div>
-    </article>
-    
-
     <article class="card">
       <div class="meta">
         <span>OpenAI News</span>
@@ -95,14 +82,14 @@
 
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-10T18:11:06Z</span>
-        <strong>Score 7</strong>
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-06-11T00:00:00Z</span>
+        <strong>Score 4</strong>
       </div>
-      <h3><a href="https://x.com/XiaomiMiMo/status/2064772356443394441" target="_blank" rel="noreferrer">小米发布 MiMo Code V0.1 开源终端 AI 编程助手</a></h3>
-      <p class='summary'>小米推出开源终端 AI 编程助手 MiMo Code V0.1，附带限时免费使用的多模态模型 MiMo V2.5，支持百万 token 上下文窗口。核心特性包括：无限上下文（自动知识积累与无损压缩）、Agent-模型深度协同（测试-审查-验证闭环）、Compose 模式（规格→计划→构建→报告）、自进化系统、语音输入（基于 MiMo-V2.5-ASR）、兼容 Claude Code（零成本迁移），以及 MIT 许可、支持 Anthropic、OpenAI、DeepSeek、Kimi、GLM 等主流模型提供商。</p>
-      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>strong:claude</span><span>strong:agent</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem" target="_blank" rel="noreferrer">Supporting Europe’s work in ensuring a trustworthy AI ecosystem</a></h3>
+      <p class='summary'>OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content.</p>
+      <div class="tags"><span>strong:openai</span><span>weak:tool</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -134,45 +121,6 @@
 
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-10T08:21:45Z</span>
-        <strong>Score 6</strong>
-      </div>
-      <h3><a href="https://www.ithome.com/0/962/509.htm" target="_blank" rel="noreferrer">摩尔线程开源 MusaCoder 代码大模型，9B/27B 参数基于国产 GPU 全链路训练</a></h3>
-      <p class='summary'>摩尔线程发布并开源 MusaCoder 代码大模型，含 9B 和 27B 两个参数规模，是业内首个基于国产 GPU 算力底座完成全链路训练与验证的开源模型。后训练流程在基于 MTT S5000 的夸娥智算集群上完成，支持从 PyTorch 标准算子自动生成高性能 CUDA/MUSA 原生 Kernel 代码。在 KernelBench 评测中，MusaCoder-27B-RL 以 Overall Pass@8 93.2%、Avg.@8 88.60% 超越 Claude Opus、DeepSeek-V4 Pro、GLM-5.1、Kimi K2.6 等主流 SOTA 代码模型。</p>
-      <div class="tags"><span>strong:claude</span><span>strong:大模型</span><span>strong:开源模型</span><span>weak:评测</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-10T18:06:35Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://mp.weixin.qq.com/s/WkMPz-eBK2Hz0ZTQEwtx6w" target="_blank" rel="noreferrer">小米发布并开源终端AI编程助手MiMo Code V0.1.0，采用MIT协议</a></h3>
-      <p class='summary'>小米发布并开源终端AI编程助手MiMo Code V0.1.0，采用MIT协议。内置限时免费MiMo-V2.5多模态模型，性能比肩Claude Sonnet 4.6；支持接入DeepSeek、Kimi、GLM等模型。核心能力包括持久记忆系统（项目记忆、会话检查点、任务进度）和无限上下文--通过独立subagent自动保存状态解决长会话遗忘。独创Compose模式实现模型与Agent协同优化，SWE-Bench Pro达62%（Claude Code 57%），Terminal Bench 2达73%（68%）。内置语音输入和/dream命令，每7天自动合并记忆。终端输入`mimo`即可使用，所有设置中文汉化。</p>
-      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>strong:多模态</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-10T18:33:56Z</span>
-        <strong>Score 4</strong>
-      </div>
-      <h3><a href="https://burr.apache.org" target="_blank" rel="noreferrer">Apache Burr：构建可靠的人工智能代理和应用程序</a></h3>
-      <p class='summary'>Apache Burr 是一个用于构建可靠 AI 智能体和应用程序的框架，已在 Apache 基金会下发布。该项目提供工具和抽象，帮助开发者设计、开发和部署可信任的智能体应用，强调可靠性、可观测性和生产级部署能力。</p>
-      <div class="tags"><span>strong:人工智能</span><span>strong:智能体</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
         <span>GitHub AI &amp; ML</span>
         <span>official_rss</span>
         <span>2026-06-10T16:00:00Z</span>
@@ -195,73 +143,21 @@
       <p class='summary'>You can now run a security review on your code changes directly from GitHub Copilot CLI. The new /security-review slash command is shipping as an experimental feature in public preview,… The post Dedicated security review command now available in Copilot CLI appeared first on The GitHub Blog .</p>
       <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-10T12:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://cursor.com/blog/bugbot-updates-june-2026" target="_blank" rel="noreferrer">Cursor Bugbot 更新：速度提升超 3 倍、成本降低 22%、发现更多 Bug</a></h3>
-      <p class='summary'>Cursor 的代码审查工具 Bugbot 迎来重大更新：运行速度提升超 3 倍，成本降低 22%，每轮审查多发现 10% 的 bug，90% 的运行在三分钟内完成。新增 `/review` 命令，可在推送代码前运行 Bugbot 和安全审查，并与 GitHub/GitLab 同步--若已通过 `/review` 审查过同一 diff，打开 PR 时 Bugbot 会自动跳过并备注。支持配置仅审查 PR 中新增内容。性能提升源于驱动 Bugbot 的 Composer 2.5 模型训练改进。Bugbot 遵循模型阻止列表，若组织禁用 Composer 2.5 则自动回退。该功能已在 Cursor 3.7+ 和 cursor.com/agents 上线，CLI 支持即将推出。</p>
-      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-10T07:07:13Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://www.ithome.com/0/962/456.htm" target="_blank" rel="noreferrer">工信部印发《&quot;人工智能+信息通信&quot;创新发展实施意见》</a></h3>
-      <p class='summary'>工信部发文，要求加快建设400Gbps/800Gbps骨干传输网络，优化东中西部国家枢纽节点间通道；推进城域400Gbps及以上、全光交叉等高速光传输系统应用，构建城域毫秒级低时延入算能力。同时推动5G-A/6G、新一代光网络、&quot;IPv6+&quot;、工业互联网与AI融合发展，攻关空口智能化、网络高等级自智、智能体互联网等核心技术。鼓励基础电信企业用AI赋能传统业务，深化智慧个人助理、智慧管家、家庭看护、3D观影等新型应用。</p>
-      <div class="tags"><span>strong:人工智能</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-10T06:00:49Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://mp.weixin.qq.com/s/4fovMM29x8tJ2E25kidl1A" target="_blank" rel="noreferrer">2026年高考，跟着千问，选好志愿！</a></h3>
-      <p class='summary'>千问发布国内首个全周期高考志愿填报Agent，由数百位资深高报师参与训练。该智能体提供AI志愿报告，为考生量身定制深度全面的填报方案；AI志愿日历帮助制定专属填报计划；高考专业知识库整合夸克高考8年积累，并引入志愿专家顾问，数据权威可信赖，全程陪伴考生完成志愿填报。</p>
-      <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-10T16:24:11Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation" target="_blank" rel="noreferrer">DiffusionGemma：文本生成速度提升4倍的开源扩散模型</a></h3>
-      <p class='summary'>Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。该 26B MoE 模型推理时仅激活 3.8B 参数，量化后适配 18GB 显存消费级 GPU。在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.0 许可证开放。</p>
-      <div class="tags"><span>strong:deepmind</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1000</td><td>3</td><td>826ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>275ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>224</td><td>0</td><td>167ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>324ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>299ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>797</td><td>0</td><td>299ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>188ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>31ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>10</td><td>1368ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1001</td><td>4</td><td>805ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>206ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>224</td><td>0</td><td>103ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>241ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>265ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>797</td><td>0</td><td>247ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>111ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>23ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>0</td><td>0</td><td>1048ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
