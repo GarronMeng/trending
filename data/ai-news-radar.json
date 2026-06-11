@@ -1,28 +1,28 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-11T11:08:35.052232Z",
+  "generated_at": "2026-06-11T12:27:13.720913Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 8,
-  "item_count": 14,
+  "healthy_source_count": 9,
+  "item_count": 11,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          7
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          6
         ],
         [
           "agent",
-          5
+          4
         ],
         [
           "claude",
@@ -68,11 +68,11 @@
     },
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI News",
-          4
+          3
         ],
         [
           "GitHub AI & ML",
@@ -82,19 +82,15 @@
       "top_keywords": [
         [
           "official_ai",
-          5
+          4
         ],
         [
           "openai",
-          3
+          2
         ],
         [
           "codex",
           2
-        ],
-        [
-          "chatgpt",
-          1
         ],
         [
           "tool",
@@ -108,17 +104,17 @@
     },
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          1
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          4
+          2
         ],
         [
           "agent",
@@ -166,25 +162,6 @@
       "relevance_reasons": [
         "strong:openai",
         "strong:codex",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "9fb6fac0d3981cfaf98df136cafb28efedee5a2b",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "PRC-linked influence operations are targeting AI debates in the US",
-      "url": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
-      "published_at": "2026-06-10T12:00:00Z",
-      "summary": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -325,24 +302,6 @@
       "is_ai_related": true
     },
     {
-      "id": "f64145f282d6a3c2288fe4057ea2f001f3311de0",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Dedicated security review command now available in Copilot CLI",
-      "url": "https://github.blog/changelog/2026-06-10-dedicated-security-review-command-now-available-in-copilot-cli",
-      "published_at": "2026-06-10T11:44:41Z",
-      "summary": "You can now run a security review on your code changes directly from GitHub Copilot CLI. The new /security-review slash command is shipping as an experimental feature in public preview,… The post Dedicated security review command now available in Copilot CLI appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "8aad86948a7518dbf085757216b2ecd43ab69175",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -357,25 +316,6 @@
       "relevance_reasons": [
         "strong:agent",
         "strong:开源模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "479ea21f699938764d23d1c44d3d11c909202802",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Cursor Bugbot 更新：速度提升超 3 倍、成本降低 22%、发现更多 Bug",
-      "url": "https://cursor.com/blog/bugbot-updates-june-2026",
-      "published_at": "2026-06-10T12:00:00Z",
-      "summary": "Cursor 的代码审查工具 Bugbot 迎来重大更新：运行速度提升超 3 倍，成本降低 22%，每轮审查多发现 10% 的 bug，90% 的运行在三分钟内完成。新增 `/review` 命令，可在推送代码前运行 Bugbot 和安全审查，并与 GitHub/GitLab 同步--若已通过 `/review` 审查过同一 diff，打开 PR 时 Bugbot 会自动跳过并备注。支持配置仅审查 PR 中新增内容。性能提升源于驱动 Bugbot 的 Composer 2.5 模型训练改进。Bugbot 遵循模型阻止列表，若组织禁用 Composer 2.5 则自动回退。该功能已在 Cursor 3.7+ 和 cursor.com/agents 上线，CLI 支持即将推出。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -408,10 +348,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1001,
-      "kept_count": 4,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 800,
-      "checked_at": "2026-06-11T11:08:32.591656Z"
+      "latency_ms": 723,
+      "checked_at": "2026-06-11T12:27:10.772314Z"
     },
     {
       "source_id": "openai-skills",
@@ -422,8 +362,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 211,
-      "checked_at": "2026-06-11T11:08:32.803821Z"
+      "latency_ms": 215,
+      "checked_at": "2026-06-11T12:27:10.988066Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -434,8 +374,8 @@
       "fetched_count": 224,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 93,
-      "checked_at": "2026-06-11T11:08:32.900003Z"
+      "latency_ms": 100,
+      "checked_at": "2026-06-11T12:27:11.091521Z"
     },
     {
       "source_id": "google-deepmind",
@@ -446,8 +386,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 381,
-      "checked_at": "2026-06-11T11:08:33.282955Z"
+      "latency_ms": 308,
+      "checked_at": "2026-06-11T12:27:11.401860Z"
     },
     {
       "source_id": "google-ai",
@@ -458,20 +398,20 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 206,
-      "checked_at": "2026-06-11T11:08:33.490000Z"
+      "latency_ms": 150,
+      "checked_at": "2026-06-11T12:27:11.552304Z"
     },
     {
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "enabled": true,
-      "ok": false,
-      "fetched_count": 0,
+      "ok": true,
+      "fetched_count": 798,
       "kept_count": 0,
-      "error": "429 Client Error: Too Many Requests for url: https://huggingface.co/blog/feed.xml",
-      "latency_ms": 36,
-      "checked_at": "2026-06-11T11:08:33.526816Z"
+      "error": null,
+      "latency_ms": 242,
+      "checked_at": "2026-06-11T12:27:11.805496Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -482,8 +422,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 131,
-      "checked_at": "2026-06-11T11:08:33.658457Z"
+      "latency_ms": 350,
+      "checked_at": "2026-06-11T12:27:12.156378Z"
     },
     {
       "source_id": "github-changelog",
@@ -492,10 +432,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 20,
-      "checked_at": "2026-06-11T11:08:33.679366Z"
+      "latency_ms": 24,
+      "checked_at": "2026-06-11T12:27:12.181269Z"
     },
     {
       "source_id": "aihot",
@@ -504,10 +444,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 1361,
-      "checked_at": "2026-06-11T11:08:35.042390Z"
+      "latency_ms": 1529,
+      "checked_at": "2026-06-11T12:27:13.711760Z"
     }
   ],
   "control_notes": {
