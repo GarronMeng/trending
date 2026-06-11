@@ -1,78 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-11T12:27:13.720913Z",
+  "generated_at": "2026-06-11T17:35:59.778430Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 18,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
+    "official": {
+      "group": "official",
       "count": 6,
       "top_sources": [
         [
-          "AI Hot",
-          6
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          6
-        ],
-        [
-          "agent",
-          4
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
-          "开发者",
-          2
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "大模型",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "多模态",
-          1
-        ],
-        [
-          "人工智能",
-          1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 4,
-      "top_sources": [
-        [
           "OpenAI News",
-          3
+          5
         ],
         [
           "GitHub AI & ML",
@@ -82,48 +22,166 @@
       "top_keywords": [
         [
           "official_ai",
-          4
+          6
         ],
         [
           "openai",
-          2
+          4
         ],
         [
           "codex",
-          2
+          3
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "chatgpt",
+          1
         ],
         [
           "tool",
           1
         ],
         [
-          "copilot",
+          "llm",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 8,
+      "top_sources": [
+        [
+          "AI Hot",
+          7
+        ],
+        [
+          "Anthropic News via Olshansk RSS",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          8
+        ],
+        [
+          "agent",
+          4
+        ],
+        [
+          "claude",
+          4
+        ],
+        [
+          "开发者",
+          4
+        ],
+        [
+          "mcp",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "大模型",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "tool",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 1,
+      "count": 4,
       "top_sources": [
         [
           "GitHub Changelog",
-          1
+          4
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          2
+          4
         ],
         [
           "agent",
+          3
+        ],
+        [
+          "workflow",
+          2
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "coding agent",
+          1
+        ],
+        [
+          "actions",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "2583b26d3c67bd4fd35390c7737819d5015ed828",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "OpenAI to acquire Ona",
+      "url": "https://openai.com/index/openai-to-acquire-ona",
+      "published_at": "2026-06-11T00:00:00Z",
+      "summary": "OpenAI plans to acquire Ona to expand Codex with secure, persistent cloud environments, enabling long-running AI agents across enterprise workflows.",
+      "relevance_score": 10,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "strong:agent",
+        "strong:agents",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "d369f78a523f03d5b72ac75815766b74734c57e1",
       "source_id": "aihot",
@@ -144,6 +202,45 @@
         "weak:api",
         "weak:API",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a164cdefb6a8e5b3f54562bf5f1aba50c9dc5e55",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Agentic Workflows is now in public preview",
+      "url": "https://github.blog/changelog/2026-06-11-github-agentic-workflows-is-now-in-public-preview",
+      "published_at": "2026-06-11T16:00:35Z",
+      "summary": "GitHub Agentic Workflows is now in public preview. With agentic workflows, you can automate reasoning-based tasks like issue triage, CI failure analysis, and documentation updates by leveraging coding agents inside… The post GitHub Agentic Workflows is now in public preview appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "weak:workflow",
+        "source:coding agent"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c07b0759a794df3978dcf1bab0d046effb53cb53",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "BBVA puts AI at the core of banking with OpenAI",
+      "url": "https://openai.com/index/bbva",
+      "published_at": "2026-06-11T00:00:00Z",
+      "summary": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -182,6 +279,25 @@
         "strong:openai",
         "weak:tool",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "dd36b50b218c931593218e590cae710e4dc38260",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Agentic workflows no longer need a personal access token",
+      "url": "https://github.blog/changelog/2026-06-11-agentic-workflows-no-longer-need-a-personal-access-token",
+      "published_at": "2026-06-11T15:55:49Z",
+      "summary": "You can now use GitHub Agentic Workflows with GitHub Actions’s built-in GITHUB_TOKEN. This means that you no longer need to create and store a personal access token (PAT), eliminating the… The post Agentic workflows no longer need a personal access token appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:workflow",
+        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -244,6 +360,45 @@
       "is_ai_related": true
     },
     {
+      "id": "b724d8617c5342cdd67772414e2a01fb141a096e",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "Making secret scanning more trustworthy: Reducing false positives at scale",
+      "url": "https://github.blog/security/making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale",
+      "published_at": "2026-06-11T16:00:00Z",
+      "summary": "Alerts are more trustworthy and actionable when noise is reduced. See how we improved the verification step with context-aware LLM reasoning. The post Making secret scanning more trustworthy: Reducing false positives at scale appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:llm",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a7aa33682c4af43fb27594ae30ad32a43b990a14",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "xAI 推出 Grok Build Plugin Marketplace",
+      "url": "https://x.ai/news/grok-plugin-marketplace",
+      "published_at": "2026-06-11T00:00:00Z",
+      "summary": "xAI 今日发布 Grok Build 内置插件市场。插件将技能、斜杠命令、AI 智能体、钩子、MCP 服务器和 LSP 打包为可安装包，用户无需离开终端即可浏览、安装和更新。首发合作伙伴包括 MongoDB、Vercel、Sentry、Chrome DevTools、Cloudflare 和 Superpowers。在 Grok Build 中输入 `/marketplace` 或使用 CLI 即可安装，每个远程插件均固定到特定 commit SHA 并经过验证。开发者可提交 PR 到 xai-org/plugin-marketplace 发布自己的插件。",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:mcp",
+        "strong:智能体",
+        "weak:tool",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "7f048a847fd28eae68a8274037b57f4bc535eaee",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -259,6 +414,64 @@
         "strong:claude",
         "strong:agent",
         "strong:多模态",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f214c10b085612c0ecd76fffe866df12b30c8549",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gemini Omni Flash 视频任务达 SOTA",
+      "url": "https://x.com/OfficialLoganK/status/2065118111360303414",
+      "published_at": "2026-06-11T17:05:00Z",
+      "summary": "Gemini Omni Flash 在图像到视频、文本到视频和视频编辑方面达到了 SATA ： ） 很高兴很快能将这一能力通过 API 提供给开发者！",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:gemini",
+        "weak:api",
+        "weak:开发者",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "54da23783d705e382e69df2dea25120e38063e08",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot CLI: Configure everything from one place with /settings",
+      "url": "https://github.blog/changelog/2026-06-11-copilot-cli-configure-everything-from-one-place-with-settings",
+      "published_at": "2026-06-11T16:44:55Z",
+      "summary": "GitHub Copilot CLI now has a unified, schema-driven home for configuration. The new /settings slash command combines the scattered commands like /theme, /streamer-mode, and /experimental with options that previously required… The post Copilot CLI: Configure everything from one place with /settings appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1d064dafdbd5062e2516149fb9130bb39f79404b",
+      "source_id": "anthropic-news-unofficial",
+      "source_name": "Anthropic News via Olshansk RSS",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 3,
+      "title": "Introducing Claude Corps",
+      "url": "https://www.anthropic.com/news/claude-corps",
+      "published_at": "2026-06-11T00:00:00Z",
+      "summary": "Introducing Claude Corps",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "source:claude",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -284,24 +497,6 @@
       "is_ai_related": true
     },
     {
-      "id": "ee30f4cf919773bc78111fc0e32411b023e2d4db",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "Give GitHub Copilot CLI real code intelligence with language servers",
-      "url": "https://github.blog/ai-and-ml/github-copilot/give-github-copilot-cli-real-code-intelligence-with-language-servers",
-      "published_at": "2026-06-10T16:00:00Z",
-      "summary": "Install and configure LSP servers for GitHub Copilot CLI, replacing brute-force grep/decompile with real code intelligence. The post Give GitHub Copilot CLI real code intelligence with language servers appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "8aad86948a7518dbf085757216b2ecd43ab69175",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -319,25 +514,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "d7a1e4faa208569dbdd9d6f3afb64da5a420d8ce",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "DiffusionGemma：文本生成速度提升4倍的开源扩散模型",
-      "url": "https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation",
-      "published_at": "2026-06-10T16:24:11Z",
-      "summary": "Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。该 26B MoE 模型推理时仅激活 3.8B 参数，量化后适配 18GB 显存消费级 GPU。在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.0 许可证开放。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:deepmind",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -347,11 +523,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1001,
-      "kept_count": 3,
+      "fetched_count": 1003,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 723,
-      "checked_at": "2026-06-11T12:27:10.772314Z"
+      "latency_ms": 701,
+      "checked_at": "2026-06-11T17:35:57.173861Z"
     },
     {
       "source_id": "openai-skills",
@@ -362,8 +538,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 215,
-      "checked_at": "2026-06-11T12:27:10.988066Z"
+      "latency_ms": 206,
+      "checked_at": "2026-06-11T17:35:57.381039Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -371,11 +547,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 224,
-      "kept_count": 0,
+      "fetched_count": 225,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 100,
-      "checked_at": "2026-06-11T12:27:11.091521Z"
+      "latency_ms": 93,
+      "checked_at": "2026-06-11T17:35:57.478270Z"
     },
     {
       "source_id": "google-deepmind",
@@ -386,8 +562,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 308,
-      "checked_at": "2026-06-11T12:27:11.401860Z"
+      "latency_ms": 279,
+      "checked_at": "2026-06-11T17:35:57.758867Z"
     },
     {
       "source_id": "google-ai",
@@ -398,8 +574,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 150,
-      "checked_at": "2026-06-11T12:27:11.552304Z"
+      "latency_ms": 117,
+      "checked_at": "2026-06-11T17:35:57.876850Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -410,8 +586,8 @@
       "fetched_count": 798,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 242,
-      "checked_at": "2026-06-11T12:27:11.805496Z"
+      "latency_ms": 229,
+      "checked_at": "2026-06-11T17:35:58.118180Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -422,8 +598,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 350,
-      "checked_at": "2026-06-11T12:27:12.156378Z"
+      "latency_ms": 137,
+      "checked_at": "2026-06-11T17:35:58.255644Z"
     },
     {
       "source_id": "github-changelog",
@@ -432,10 +608,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-06-11T12:27:12.181269Z"
+      "latency_ms": 21,
+      "checked_at": "2026-06-11T17:35:58.278057Z"
     },
     {
       "source_id": "aihot",
@@ -444,10 +620,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 1529,
-      "checked_at": "2026-06-11T12:27:13.711760Z"
+      "latency_ms": 1487,
+      "checked_at": "2026-06-11T17:35:59.767235Z"
     }
   ],
   "control_notes": {
