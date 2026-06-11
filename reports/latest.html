@@ -43,17 +43,30 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>7</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>14</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>5</b><span>官方源条目</span></div>
-        <div class="stat"><b>0</b><span>聚合源条目</span></div>
-        <div class="stat"><b>9/9</b><span>健康信源</span></div>
+        <div class="stat"><b>7</b><span>聚合源条目</span></div>
+        <div class="stat"><b>8/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-11T08:24:49.622068Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-11T11:08:35.053801Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-11T01:58:00Z</span>
+        <strong>Score 9</strong>
+      </div>
+      <h3><a href="https://mp.weixin.qq.com/s/nFSSzluc57xPv50Zbh4owg" target="_blank" rel="noreferrer">从0到1速通WorkBuddy：国内通用Agent产品教程</a></h3>
+      <p class='summary'>WorkBuddy是面向国内用户的通用Agent产品，支持Windows和Mac，提供免费版和58元/月个人专业版，企业版已推出。内置代码开发、日常办公、设计创意三种场景模式及100多个行业领域AI专家。模型集成腾讯混元、DeepSeek（推荐V4 Pro）、GLM、Kimi等国产大模型，也支持接入兼容OpenAI协议的外部API。拥有Skills市场和MCP连接器生态，可打通QQ邮箱、腾讯会议、腾讯文档等服务。教程通过公众号周报生成和功能网页开发两个案例演示实际用法。</p>
+      <div class="tags"><span>strong:openai</span><span>strong:agent</span><span>strong:mcp</span><span>strong:大模型</span><span>weak:api</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>OpenAI News</span>
@@ -95,6 +108,19 @@
 
     <article class="card">
       <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-11T08:50:49Z</span>
+        <strong>Score 6</strong>
+      </div>
+      <h3><a href="https://www.ithome.com/0/963/009.htm" target="_blank" rel="noreferrer">阿里云发布 Meoo CLI：本地 AI 编程项目可一键部署上线</a></h3>
+      <p class='summary'>阿里云今日推出 Meoo（秒悟）开源命令行工具 Meoo CLI，面向开发者，支持 Claude Code、Codex、Cursor 等本地 AI 编程助手。通过调用阿里云云端能力，可自动完成数据库接入、用户登录、文件存储及项目发布，将本地项目一键部署上线并生成可分享的访问链接。该工具定位为本地 Agent 与秒悟云端能力的连接入口，已开放下载，支持主流 Linux、macOS 及 Windows 平台。</p>
+      <div class="tags"><span>strong:claude</span><span>strong:codex</span><span>strong:agent</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
         <span>OpenAI News</span>
         <span>official_rss</span>
         <span>2026-06-11T00:00:00Z</span>
@@ -116,6 +142,32 @@
       <h3><a href="https://github.blog/changelog/2026-06-10-copilot-chat-now-sees-your-agent-sessions" target="_blank" rel="noreferrer">Copilot Chat now sees your agent sessions</a></h3>
       <p class='summary'>We’ve improved the handoff experience between Copilot Chat and Copilot cloud agent on the web. We’ve also enabled new functionality which allows you to search and query past agent sessions… The post Copilot Chat now sees your agent sessions appeared first on The GitHub Blog .</p>
       <div class="tags"><span>strong:agent</span><span>weak:copilot</span><span>source:copilot</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-10T18:06:35Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://mp.weixin.qq.com/s/WkMPz-eBK2Hz0ZTQEwtx6w" target="_blank" rel="noreferrer">小米发布并开源终端AI编程助手MiMo Code V0.1.0，采用MIT协议</a></h3>
+      <p class='summary'>小米发布并开源终端AI编程助手MiMo Code V0.1.0，采用MIT协议。内置限时免费MiMo-V2.5多模态模型，性能比肩Claude Sonnet 4.6；支持接入DeepSeek、Kimi、GLM等模型。核心能力包括持久记忆系统（项目记忆、会话检查点、任务进度）和无限上下文--通过独立subagent自动保存状态解决长会话遗忘。独创Compose模式实现模型与Agent协同优化，SWE-Bench Pro达62%（Claude Code 57%），Terminal Bench 2达73%（68%）。内置语音输入和/dream命令，每7天自动合并记忆。终端输入`mimo`即可使用，所有设置中文汉化。</p>
+      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>strong:多模态</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-10T18:33:56Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://burr.apache.org" target="_blank" rel="noreferrer">Apache Burr：构建可靠的人工智能代理和应用程序</a></h3>
+      <p class='summary'>Apache Burr 是一个用于构建可靠 AI 智能体和应用程序的框架，已在 Apache 基金会下发布。该项目提供工具和抽象，帮助开发者设计、开发和部署可信任的智能体应用，强调可靠性、可观测性和生产级部署能力。</p>
+      <div class="tags"><span>strong:人工智能</span><span>strong:智能体</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -143,21 +195,60 @@
       <p class='summary'>You can now run a security review on your code changes directly from GitHub Copilot CLI. The new /security-review slash command is shipping as an experimental feature in public preview,… The post Dedicated security review command now available in Copilot CLI appeared first on The GitHub Blog .</p>
       <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-11T10:17:47Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://x.com/SiliconFlowAI/status/2065015632215912879" target="_blank" rel="noreferrer">Hermes Agent Desktop 发布，硅基流动支持一键切换</a></h3>
+      <p class='summary'>@NousResearch 发布了 Hermes Agent Desktop--现在通过 @硅基流动 SiliconFlow 使用前沿开源模型更加便捷 🔥 → 一键随时切换模型--DeepSeek-V4、GLM-5.1、Kimi-K2.6、MiniMax-M3 等，均在硅基流动上 … … 通过硅基流动开启你的 Hermes 之旅的完整指南 👇🧵</p>
+      <div class="tags"><span>strong:agent</span><span>strong:开源模型</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-10T12:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://cursor.com/blog/bugbot-updates-june-2026" target="_blank" rel="noreferrer">Cursor Bugbot 更新：速度提升超 3 倍、成本降低 22%、发现更多 Bug</a></h3>
+      <p class='summary'>Cursor 的代码审查工具 Bugbot 迎来重大更新：运行速度提升超 3 倍，成本降低 22%，每轮审查多发现 10% 的 bug，90% 的运行在三分钟内完成。新增 `/review` 命令，可在推送代码前运行 Bugbot 和安全审查，并与 GitHub/GitLab 同步--若已通过 `/review` 审查过同一 diff，打开 PR 时 Bugbot 会自动跳过并备注。支持配置仅审查 PR 中新增内容。性能提升源于驱动 Bugbot 的 Composer 2.5 模型训练改进。Bugbot 遵循模型阻止列表，若组织禁用 Composer 2.5 则自动回退。该功能已在 Cursor 3.7+ 和 cursor.com/agents 上线，CLI 支持即将推出。</p>
+      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-10T16:24:11Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://deepmind.google/blog/diffusiongemma-4x-faster-text-generation" target="_blank" rel="noreferrer">DiffusionGemma：文本生成速度提升4倍的开源扩散模型</a></h3>
+      <p class='summary'>Google DeepMind 发布开源实验模型 DiffusionGemma，采用文本扩散技术，突破自回归逐 token 生成方式，每次前向并行生成 256 个 token。该 26B MoE 模型推理时仅激活 3.8B 参数，量化后适配 18GB 显存消费级 GPU。在 H100 上达 1000+ tokens/s，RTX 5090 上 700+ tokens/s，速度提升 4 倍。具备双向注意力和自我修正能力，面向内联编辑、代码填充等本地交互工作流，以 Apache 2.0 许可证开放。</p>
+      <div class="tags"><span>strong:deepmind</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1001</td><td>4</td><td>805ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>206ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>224</td><td>0</td><td>103ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>241ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>265ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>797</td><td>0</td><td>247ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>111ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>23ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>0</td><td>0</td><td>1048ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1001</td><td>4</td><td>800ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>211ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>224</td><td>0</td><td>93ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>381ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>206ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='err'>ERR</td><td>0</td><td>0</td><td>36ms</td><td>429 Client Error: Too Many Requests for url: https://huggingface.co/blog/feed.xml</td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>131ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>20ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>8</td><td>1361ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
