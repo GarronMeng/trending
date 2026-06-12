@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-12T10:48:31.075564Z",
+  "generated_at": "2026-06-12T11:58:30.721259Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 15,
+  "item_count": 16,
   "groups": {
     "developer": {
       "group": "developer",
@@ -72,24 +72,28 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          8
+          9
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          9
+        ],
+        [
+          "claude",
+          4
         ],
         [
           "开发者",
           3
         ],
         [
-          "claude",
+          "anthropic",
           3
         ],
         [
@@ -98,10 +102,6 @@
         ],
         [
           "agent",
-          2
-        ],
-        [
-          "anthropic",
           2
         ],
         [
@@ -283,6 +283,25 @@
       "is_ai_related": true
     },
     {
+      "id": "b045b641ce4898d1453c724896e466eb61f771d0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Fable 5 官方指南：提示词要做减法，省钱的用法拆解",
+      "url": "https://x.com/xiaohu/status/2065398692128137525",
+      "published_at": "2026-06-12T11:39:56Z",
+      "summary": "Anthropic 发布 Claude Fable 5，官方指南强调旧模型提示词会拖后腿，建议\"做减法\"。Fable 5 支持多天长任务、effort 分级（low/medium/high/xhigh），其 low 档性能已超旧版 Opus 4.8 xhigh。新增并行子代理调度和内置记事本能力。省钱方面：输入 $10/M、输出 $50/M（单价为 Opus 4.8 两倍），但更少的 token 消耗使复杂任务总成本反而可能更低。推荐日常用 Low 档，Medium 是性价比甜区，复杂项目可用 Fable 做编排器、Opus/Sonnet 执行。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "c457f9738a8bcb8ca064800d41f509f7fbf31230",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -427,8 +446,8 @@
       "fetched_count": 1004,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 710,
-      "checked_at": "2026-06-12T10:48:27.318681Z"
+      "latency_ms": 632,
+      "checked_at": "2026-06-12T11:58:27.953349Z"
     },
     {
       "source_id": "openai-skills",
@@ -439,8 +458,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 283,
-      "checked_at": "2026-06-12T10:48:27.602621Z"
+      "latency_ms": 376,
+      "checked_at": "2026-06-12T11:58:28.330505Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -451,8 +470,8 @@
       "fetched_count": 226,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 110,
-      "checked_at": "2026-06-12T10:48:27.716218Z"
+      "latency_ms": 101,
+      "checked_at": "2026-06-12T11:58:28.435112Z"
     },
     {
       "source_id": "google-deepmind",
@@ -463,8 +482,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 270,
-      "checked_at": "2026-06-12T10:48:27.987818Z"
+      "latency_ms": 376,
+      "checked_at": "2026-06-12T11:58:28.813246Z"
     },
     {
       "source_id": "google-ai",
@@ -475,8 +494,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 142,
-      "checked_at": "2026-06-12T10:48:28.130804Z"
+      "latency_ms": 224,
+      "checked_at": "2026-06-12T11:58:29.037765Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -487,8 +506,8 @@
       "fetched_count": 797,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 285,
-      "checked_at": "2026-06-12T10:48:28.427894Z"
+      "latency_ms": 315,
+      "checked_at": "2026-06-12T11:58:29.365684Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -499,8 +518,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 148,
-      "checked_at": "2026-06-12T10:48:28.576571Z"
+      "latency_ms": 165,
+      "checked_at": "2026-06-12T11:58:29.531818Z"
     },
     {
       "source_id": "github-changelog",
@@ -511,8 +530,8 @@
       "fetched_count": 10,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-06-12T10:48:28.601149Z"
+      "latency_ms": 30,
+      "checked_at": "2026-06-12T11:58:29.562490Z"
     },
     {
       "source_id": "aihot",
@@ -521,10 +540,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 2463,
-      "checked_at": "2026-06-12T10:48:31.065611Z"
+      "latency_ms": 1149,
+      "checked_at": "2026-06-12T11:58:30.713543Z"
     }
   ],
   "control_notes": {
