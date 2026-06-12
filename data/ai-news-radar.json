@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-12T08:12:05.023837Z",
+  "generated_at": "2026-06-12T10:48:31.075564Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 16,
+  "item_count": 15,
   "groups": {
     "developer": {
       "group": "developer",
@@ -42,35 +42,63 @@
         ]
       ]
     },
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ],
+        [
+          "GitHub AI & ML",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "llm",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
-      "count": 10,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          10
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          10
-        ],
-        [
-          "claude",
-          4
-        ],
-        [
-          "codex",
-          4
-        ],
-        [
-          "agent",
-          4
+          8
         ],
         [
           "开发者",
-          4
+          3
+        ],
+        [
+          "claude",
+          3
+        ],
+        [
+          "codex",
+          3
+        ],
+        [
+          "agent",
+          2
         ],
         [
           "anthropic",
@@ -101,26 +129,6 @@
           1
         ]
       ]
-    },
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub AI & ML",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "llm",
-          1
-        ],
-        [
-          "official_ai",
-          1
-        ]
-      ]
     }
   },
   "items": [
@@ -145,6 +153,24 @@
       "is_ai_related": true
     },
     {
+      "id": "a903666ae2d4e41b2d39071dbbb22af0263d14cf",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How Preply combines AI and human tutors to personalize learning",
+      "url": "https://openai.com/index/preply",
+      "published_at": "2026-06-12T00:00:00Z",
+      "summary": "Preply uses OpenAI to launch AI-generated lesson summaries, providing personalised feedback and language learning exercises.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "dd36b50b218c931593218e590cae710e4dc38260",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -160,27 +186,6 @@
         "strong:agent",
         "weak:workflow",
         "source:actions"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a092be1874cfb2a148fa7d3174a764d64102ca81",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "阿里云发布 Meoo CLI：本地 AI 编程项目可一键部署上线",
-      "url": "https://www.ithome.com/0/963/009.htm",
-      "published_at": "2026-06-11T08:50:49Z",
-      "summary": "阿里云今日推出 Meoo（秒悟）开源命令行工具 Meoo CLI，面向开发者，支持 Claude Code、Codex、Cursor 等本地 AI 编程助手。通过调用阿里云云端能力，可自动完成数据库接入、用户登录、文件存储及项目发布，将本地项目一键部署上线并生成可分享的访问链接。该工具定位为本地 Agent 与秒悟云端能力的连接入口，已开放下载，支持主流 Linux、macOS 及 Windows 平台。",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:codex",
-        "strong:agent",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -393,25 +398,6 @@
       "is_ai_related": true
     },
     {
-      "id": "8aad86948a7518dbf085757216b2ecd43ab69175",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Hermes Agent Desktop 发布，硅基流动支持一键切换",
-      "url": "https://x.com/SiliconFlowAI/status/2065015632215912879",
-      "published_at": "2026-06-11T10:17:47Z",
-      "summary": "@NousResearch 发布了 Hermes Agent Desktop--现在通过 @硅基流动 SiliconFlow 使用前沿开源模型更加便捷 🔥 → 一键随时切换模型--DeepSeek-V4、GLM-5.1、Kimi-K2.6、MiniMax-M3 等，均在硅基流动上 … … 通过硅基流动开启你的 Hermes 之旅的完整指南 👇🧵",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:开源模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "a6a338d96356950683bb3d1742f2ce11e213cacf",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -438,11 +424,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1003,
-      "kept_count": 0,
+      "fetched_count": 1004,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 713,
-      "checked_at": "2026-06-12T08:12:02.176287Z"
+      "latency_ms": 710,
+      "checked_at": "2026-06-12T10:48:27.318681Z"
     },
     {
       "source_id": "openai-skills",
@@ -453,8 +439,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 391,
-      "checked_at": "2026-06-12T08:12:02.568120Z"
+      "latency_ms": 283,
+      "checked_at": "2026-06-12T10:48:27.602621Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -465,8 +451,8 @@
       "fetched_count": 226,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 115,
-      "checked_at": "2026-06-12T08:12:02.686191Z"
+      "latency_ms": 110,
+      "checked_at": "2026-06-12T10:48:27.716218Z"
     },
     {
       "source_id": "google-deepmind",
@@ -477,8 +463,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 381,
-      "checked_at": "2026-06-12T08:12:03.069373Z"
+      "latency_ms": 270,
+      "checked_at": "2026-06-12T10:48:27.987818Z"
     },
     {
       "source_id": "google-ai",
@@ -489,8 +475,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 236,
-      "checked_at": "2026-06-12T08:12:03.306105Z"
+      "latency_ms": 142,
+      "checked_at": "2026-06-12T10:48:28.130804Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -501,8 +487,8 @@
       "fetched_count": 797,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 321,
-      "checked_at": "2026-06-12T08:12:03.638046Z"
+      "latency_ms": 285,
+      "checked_at": "2026-06-12T10:48:28.427894Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -513,8 +499,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 151,
-      "checked_at": "2026-06-12T08:12:03.789733Z"
+      "latency_ms": 148,
+      "checked_at": "2026-06-12T10:48:28.576571Z"
     },
     {
       "source_id": "github-changelog",
@@ -525,8 +511,8 @@
       "fetched_count": 10,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-06-12T08:12:03.817093Z"
+      "latency_ms": 24,
+      "checked_at": "2026-06-12T10:48:28.601149Z"
     },
     {
       "source_id": "aihot",
@@ -535,10 +521,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 10,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 1198,
-      "checked_at": "2026-06-12T08:12:05.016361Z"
+      "latency_ms": 2463,
+      "checked_at": "2026-06-12T10:48:31.065611Z"
     }
   ],
   "control_notes": {
