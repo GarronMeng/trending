@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-12T02:51:52.596001Z",
+  "generated_at": "2026-06-12T08:12:05.023837Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 8,
-  "item_count": 14,
+  "healthy_source_count": 9,
+  "item_count": 16,
   "groups": {
     "developer": {
       "group": "developer",
@@ -44,33 +44,33 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 10,
       "top_sources": [
         [
           "AI Hot",
-          8
+          10
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          10
         ],
         [
           "claude",
-          3
+          4
         ],
         [
           "codex",
-          3
+          4
         ],
         [
           "agent",
-          3
+          4
         ],
         [
           "开发者",
-          3
+          4
         ],
         [
           "anthropic",
@@ -278,6 +278,25 @@
       "is_ai_related": true
     },
     {
+      "id": "c457f9738a8bcb8ca064800d41f509f7fbf31230",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "小互开源公众号自动排版技能组合",
+      "url": "https://x.com/xiaohu/status/2065278092441268246",
+      "published_at": "2026-06-12T03:40:42Z",
+      "summary": "小互（@xiaohu）升级了公众号排版技能组合，实现一句话完成排版、封面生成并一键发送到公众号草稿箱。该工具已开源，提供20种主题颜色可选，可自动分析内容进行排版，支持非Markdown文件。用户只需在Claude Code、Codex或OpenClaw中提供文章链接或文档位置，即可获得可视化预览界面进行选择，全程无需手动操作。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "9c67b30c317c01313475f7b48fba8421fcd7a3bc",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -391,6 +410,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "a6a338d96356950683bb3d1742f2ce11e213cacf",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "qiaomu-ai-prd：面向AI的PRD生成Prompt",
+      "url": "https://x.com/vista8/status/2065264509170876417",
+      "published_at": "2026-06-12T02:46:44Z",
+      "summary": "推文提出AI Agent开发中人类与AI对PRD的需求不同，为此发布了一个专门服务于AI的PRD文档生成Prompt（命名为qiaomu-ai-prd）。开发者先使用该Prompt生成文档，再交给AI开发，可显著提升功能完整度和丰富性。安装指令为：`npx skills add joeseesun/qiaomu-ai-prd`，开源地址及Prompt见评论区。",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -403,8 +441,8 @@
       "fetched_count": 1003,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 724,
-      "checked_at": "2026-06-12T02:51:46.488249Z"
+      "latency_ms": 713,
+      "checked_at": "2026-06-12T08:12:02.176287Z"
     },
     {
       "source_id": "openai-skills",
@@ -415,8 +453,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 176,
-      "checked_at": "2026-06-12T02:51:46.664964Z"
+      "latency_ms": 391,
+      "checked_at": "2026-06-12T08:12:02.568120Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -427,8 +465,8 @@
       "fetched_count": 226,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 89,
-      "checked_at": "2026-06-12T02:51:46.757790Z"
+      "latency_ms": 115,
+      "checked_at": "2026-06-12T08:12:02.686191Z"
     },
     {
       "source_id": "google-deepmind",
@@ -439,8 +477,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 265,
-      "checked_at": "2026-06-12T02:51:47.025202Z"
+      "latency_ms": 381,
+      "checked_at": "2026-06-12T08:12:03.069373Z"
     },
     {
       "source_id": "google-ai",
@@ -451,20 +489,20 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 117,
-      "checked_at": "2026-06-12T02:51:47.143415Z"
+      "latency_ms": 236,
+      "checked_at": "2026-06-12T08:12:03.306105Z"
     },
     {
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "enabled": true,
-      "ok": false,
-      "fetched_count": 0,
+      "ok": true,
+      "fetched_count": 797,
       "kept_count": 0,
-      "error": "429 Client Error: Too Many Requests for url: https://huggingface.co/blog/feed.xml",
-      "latency_ms": 47,
-      "checked_at": "2026-06-12T02:51:47.191041Z"
+      "error": null,
+      "latency_ms": 321,
+      "checked_at": "2026-06-12T08:12:03.638046Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -475,8 +513,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 327,
-      "checked_at": "2026-06-12T02:51:47.518890Z"
+      "latency_ms": 151,
+      "checked_at": "2026-06-12T08:12:03.789733Z"
     },
     {
       "source_id": "github-changelog",
@@ -487,8 +525,8 @@
       "fetched_count": 10,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 20,
-      "checked_at": "2026-06-12T02:51:47.540358Z"
+      "latency_ms": 26,
+      "checked_at": "2026-06-12T08:12:03.817093Z"
     },
     {
       "source_id": "aihot",
@@ -497,10 +535,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 5045,
-      "checked_at": "2026-06-12T02:51:52.586942Z"
+      "latency_ms": 1198,
+      "checked_at": "2026-06-12T08:12:05.016361Z"
     }
   ],
   "control_notes": {
