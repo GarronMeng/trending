@@ -1,83 +1,35 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-13T09:42:19.871391Z",
+  "generated_at": "2026-06-13T10:44:41.959272Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
   "item_count": 9,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 3,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ],
-        [
-          "Hugging Face Blog",
-          1
-        ],
-        [
-          "GitHub AI & ML",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          3
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "eval",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          4
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
-        ],
-        [
-          "openai",
-          2
+          5
         ],
         [
           "api",
-          2
+          3
         ],
         [
           "API",
+          3
+        ],
+        [
+          "openai",
           2
         ],
         [
@@ -105,11 +57,39 @@
           1
         ],
         [
-          "人工智能",
+          "开源模型",
           1
         ],
         [
-          "agent",
+          "人工智能",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "Hugging Face Blog",
+          1
+        ],
+        [
+          "GitHub AI & ML",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
+        [
+          "eval",
+          1
+        ],
+        [
+          "copilot",
           1
         ]
       ]
@@ -136,27 +116,6 @@
     }
   },
   "items": [
-    {
-      "id": "55c79cbedd4af3ef4ffe8617faf5be3cfc2c2c06",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "New OpenAI Academy courses for the next era of work",
-      "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
-      "published_at": "2026-06-12T10:00:00Z",
-      "summary": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work.",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:agent",
-        "strong:agents",
-        "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "73ed9b189fe9fede778b7d1ea03f0dfeb2e243a9",
       "source_id": "aihot",
@@ -257,6 +216,26 @@
       "is_ai_related": true
     },
     {
+      "id": "f930d89304df4fbd888858c5a8cf019e56a02e4f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "智谱 GLM-5.2 全量开放，支持 1M 上下文且下周开源",
+      "url": "https://mp.weixin.qq.com/s/LDrbtLM0wiCTJorvd5GY9w",
+      "published_at": "2026-06-13T06:19:36Z",
+      "summary": "GLM-5.2 是智谱迄今能力最强的开源模型，支持真正可用的 1M 上下文，在长程任务中继续保持领先，并被智谱称为最强的国产 Coding 模型。今晚 5：21 起面向 GLM Coding Plan 全量用户开放（覆盖 Lite、Pro、Max、团队版）。API 将于下周上线，模型下周正式开源，遵循 MIT 协议。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:开源模型",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "ad681444109f4a049ba24fe7f144ebc34695b11a",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -320,10 +299,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1005,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 662,
-      "checked_at": "2026-06-13T09:42:16.906308Z"
+      "latency_ms": 623,
+      "checked_at": "2026-06-13T10:44:38.494147Z"
     },
     {
       "source_id": "openai-skills",
@@ -334,8 +313,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 262,
-      "checked_at": "2026-06-13T09:42:17.169450Z"
+      "latency_ms": 429,
+      "checked_at": "2026-06-13T10:44:38.924325Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -346,8 +325,8 @@
       "fetched_count": 229,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 107,
-      "checked_at": "2026-06-13T09:42:17.280949Z"
+      "latency_ms": 124,
+      "checked_at": "2026-06-13T10:44:39.052654Z"
     },
     {
       "source_id": "google-deepmind",
@@ -358,8 +337,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 382,
-      "checked_at": "2026-06-13T09:42:17.665197Z"
+      "latency_ms": 356,
+      "checked_at": "2026-06-13T10:44:39.410363Z"
     },
     {
       "source_id": "google-ai",
@@ -371,7 +350,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 232,
-      "checked_at": "2026-06-13T09:42:17.897971Z"
+      "checked_at": "2026-06-13T10:44:39.643429Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -382,8 +361,8 @@
       "fetched_count": 798,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 302,
-      "checked_at": "2026-06-13T09:42:18.212410Z"
+      "latency_ms": 367,
+      "checked_at": "2026-06-13T10:44:40.023668Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -394,8 +373,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 117,
-      "checked_at": "2026-06-13T09:42:18.330381Z"
+      "latency_ms": 633,
+      "checked_at": "2026-06-13T10:44:40.657239Z"
     },
     {
       "source_id": "github-changelog",
@@ -406,8 +385,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-06-13T09:42:18.359805Z"
+      "latency_ms": 36,
+      "checked_at": "2026-06-13T10:44:40.693641Z"
     },
     {
       "source_id": "aihot",
@@ -418,8 +397,8 @@
       "fetched_count": 50,
       "kept_count": 6,
       "error": null,
-      "latency_ms": 1502,
-      "checked_at": "2026-06-13T09:42:19.863319Z"
+      "latency_ms": 1256,
+      "checked_at": "2026-06-13T10:44:41.951447Z"
     }
   ],
   "control_notes": {
