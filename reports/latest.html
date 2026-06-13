@@ -44,7 +44,7 @@
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
         <div class="stat"><b>13</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>2</b><span>官方源条目</span></div>
+        <div class="stat"><b>3</b><span>官方源条目</span></div>
         <div class="stat"><b>8</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
@@ -52,8 +52,21 @@
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-12T16:43:42.428952Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-13T02:44:28.642711Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-06-12T10:00:00Z</span>
+        <strong>Score 8</strong>
+      </div>
+      <h3><a href="https://openai.com/index/academy-courses-applying-ai-at-work" target="_blank" rel="noreferrer">New OpenAI Academy courses for the next era of work</a></h3>
+      <p class='summary'>OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work.</p>
+      <div class="tags"><span>strong:openai</span><span>strong:agent</span><span>strong:agents</span><span>weak:workflow</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>AI Hot</span>
@@ -69,14 +82,14 @@
 
     <article class="card">
       <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-06-12T00:00:00Z</span>
-        <strong>Score 3</strong>
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-13T01:42:50Z</span>
+        <strong>Score 5</strong>
       </div>
-      <h3><a href="https://openai.com/index/preply" target="_blank" rel="noreferrer">How Preply combines AI and human tutors to personalize learning</a></h3>
-      <p class='summary'>Preply uses OpenAI to launch AI-generated lesson summaries, providing personalised feedback and language learning exercises.</p>
-      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
+      <h3><a href="https://x.com/AYi_AInotes/status/2065610814598402067" target="_blank" rel="noreferrer">Claude Fable 5 因美国指令暂停访问</a></h3>
+      <p class='summary'>Anthropic 旗下模型 Claude Fable 5 因美国政府指令被全面暂停访问。所有用户新会话将默认运行 Opus 4.8 或其他 Claude 模型，现有 Fable 5 会话报错结束，API 请求同样返回错误，需更新集成。有用户（@AYi_AINotes）发文告别，称昨晚曾用 Fable 5 生成中国女子看世界杯的图片作为最后的怀念。</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -95,14 +108,27 @@
 
     <article class="card">
       <div class="meta">
+        <span>GitHub AI &amp; ML</span>
+        <span>official_rss</span>
+        <span>2026-06-12T22:26:23Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation" target="_blank" rel="noreferrer">How we made GitHub Copilot CLI more selective about delegation</a></h3>
+      <p class='summary'>Better orchestration, fewer handoffs, faster progress, without a single new knob. The post How we made GitHub Copilot CLI more selective about delegation appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:copilot</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
         <span>GitHub Changelog</span>
         <span>official_rss</span>
-        <span>2026-06-11T19:00:56Z</span>
+        <span>2026-06-12T21:37:14Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://github.blog/changelog/2026-06-11-bot-created-pull-requests-can-run-workflows-if-approved" target="_blank" rel="noreferrer">Bot-created pull requests can run workflows if approved</a></h3>
-      <p class='summary'>Pull requests created by the github-actions[bot] are now able to run your CI/CD workflows with user approval. Requiring approval is a security measure to ensure generated code does not automatically… The post Bot-created pull requests can run workflows if approved appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:workflow</span><span>source:actions</span></div>
+      <h3><a href="https://github.blog/changelog/2026-06-12-copilot-code-review-new-configurations-and-controls" target="_blank" rel="noreferrer">Copilot code review: New configurations and controls</a></h3>
+      <p class='summary'>With new organization runner controls, Copilot content exclusion support, and the removal of the character limit on repository custom instructions, Copilot code review is now easier to tailor to your… The post Copilot code review: New configurations and controls appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
     
 
@@ -110,25 +136,38 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-06-11T17:05:00Z</span>
-        <strong>Score 4</strong>
+        <span>2026-06-13T02:25:36Z</span>
+        <strong>Score 3</strong>
       </div>
-      <h3><a href="https://x.com/OfficialLoganK/status/2065118111360303414" target="_blank" rel="noreferrer">Gemini Omni Flash 视频任务达 SOTA</a></h3>
-      <p class='summary'>Gemini Omni Flash 在图像到视频、文本到视频和视频编辑方面达到了 SATA ： ） 很高兴很快能将这一能力通过 API 提供给开发者！</p>
-      <div class="tags"><span>strong:gemini</span><span>weak:api</span><span>weak:开发者</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://x.com/shao__meng/status/2065621579703390259" target="_blank" rel="noreferrer">Anthropic Fable 5/Mythos 5 遭出口管制全球下线</a></h3>
+      <p class='summary'>美国政府以国家安全为由向 Anthropic 下达出口管制指令，禁止任何外国籍人士（包括 Anthropic 外籍员工）使用 Fable 5 和 Mythos 5。为合规，Anthropic 不得不对全部客户紧急下线这两款模型，其余 Claude 模型不受影响。指令于美东时间 6月12日 17：21 送达，用户几乎无缓冲期。Anthropic 表示这是误解，正努力恢复访问。</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
     <article class="card">
       <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-06-11T16:44:55Z</span>
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-13T01:15:57Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://github.blog/changelog/2026-06-11-copilot-cli-configure-everything-from-one-place-with-settings" target="_blank" rel="noreferrer">Copilot CLI: Configure everything from one place with /settings</a></h3>
-      <p class='summary'>GitHub Copilot CLI now has a unified, schema-driven home for configuration. The new /settings slash command combines the scattered commands like /theme, /streamer-mode, and /experimental with options that previously required… The post Copilot CLI: Configure everything from one place with /settings appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
+      <h3><a href="https://www.anthropic.com/news/fable-mythos-access" target="_blank" rel="noreferrer">关于美国政府指令暂停访问Fable 5和Mythos 5的声明</a></h3>
+      <p class='summary'>美国政府以国家安全为由，指令Anthropic暂停所有外国国民（含海外员工）对Fable 5和Mythos 5的访问。Anthropic当日5：21pm （ET）收到指令后立即向所有客户禁用这两个模型，其他模型不受影响。政府称发现一种越狱Fable 5的方法；Anthropic审核认为该技术仅能识别少量已知微小漏洞，且其他公开模型（如OpenAI的GPT-5.5）也能做到。Anthropic坚持深度防御策略，认为此次越狱不具普遍性，不同意以此标准召回已服务数亿人的商用模型，正与政府合作争取尽快恢复访问。</p>
+      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-13T00:27:02Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://www.bloomberg.com/news/articles/2026-06-13/openai-probed-by-coalition-of-state-attorneys-general" target="_blank" rel="noreferrer">OpenAI 遭多州总检察长联合调查</a></h3>
+      <p class='summary'>OpenAI 正被一个由多州总检察长组成的联盟调查，该联盟已向这家人工智能公司索取涵盖广泛主题的信息。</p>
+      <div class="tags"><span>strong:openai</span><span>strong:人工智能</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -175,45 +214,6 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-06-12T00:15:07Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/OpenAIDevs/status/2065226355495895521" target="_blank" rel="noreferrer">Codex 推出浏览器开发者模式</a></h3>
-      <p class='summary'>为 Chrome 和 Codex 内置浏览器引入开发者模式。 Codex 可以使用 Chrome DevTools 协议（CDP）来调试浏览器问题，通过分析 JavaScript 性能、检查控制台输出、网络流量和页面状态。</p>
-      <div class="tags"><span>strong:codex</span><span>weak:tool</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-12T00:11:11Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/OpenAI/status/2065225362544726371" target="_blank" rel="noreferrer">OpenAI Codex 推出速率重置攒存功能</a></h3>
-      <p class='summary'>我们听说您希望能在自己方便的时候使用 Codex 速率限制重置。 从今天起，我们开始推出将速率限制重置保留到以后使用的功能。 我们从 Go、Plus、Pro 和 Business 用户开始，每人提供一次免费重置：</p>
-      <div class="tags"><span>strong:openai</span><span>strong:codex</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-11T18:58:07Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/Replit/status/2065146579326271883" target="_blank" rel="noreferrer">Replit Agent 新增自定义指令与技能功能</a></h3>
-      <p class='summary'>AI 智能体很强大，但它们不记得你的偏好。 所以你总是重复指令--如何组织项目、你的品牌指南。 现在你可以通过自定义指令和技能让 Replit Agent 学会你的惯例。 它会在每个项目中自动将这些考虑进去。</p>
-      <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
         <span>2026-06-12T02:46:44Z</span>
         <strong>Score 2</strong>
       </div>
@@ -227,15 +227,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1004</td><td>1</td><td>648ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>385ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>226</td><td>0</td><td>126ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>389ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>201ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>798</td><td>1</td><td>434ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>187ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>3</td><td>34ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>9</td><td>1246ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1005</td><td>1</td><td>734ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>162ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>229</td><td>0</td><td>131ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>267ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>152ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>798</td><td>1</td><td>255ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>111ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>31ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>10</td><td>1282ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

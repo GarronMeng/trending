@@ -1,11 +1,59 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-12T16:43:42.427468Z",
+  "generated_at": "2026-06-13T02:44:28.641275Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
   "item_count": 13,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 3,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ],
+        [
+          "Hugging Face Blog",
+          1
+        ],
+        [
+          "GitHub AI & ML",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          3
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "eval",
+          1
+        ],
+        [
+          "copilot",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
       "count": 8,
@@ -21,20 +69,12 @@
           8
         ],
         [
-          "开发者",
+          "anthropic",
           3
         ],
         [
-          "agent",
+          "claude",
           3
-        ],
-        [
-          "codex",
-          3
-        ],
-        [
-          "智能体",
-          2
         ],
         [
           "api",
@@ -45,7 +85,19 @@
           2
         ],
         [
+          "openai",
+          2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
           "mcp",
+          1
+        ],
+        [
+          "智能体",
           1
         ],
         [
@@ -53,73 +105,58 @@
           1
         ],
         [
-          "gemini",
+          "人工智能",
           1
         ],
         [
           "大模型",
-          1
-        ],
-        [
-          "claude",
-          1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ],
-        [
-          "Hugging Face Blog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          2
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "eval",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          3
+          2
         ]
       ],
       "top_keywords": [
-        [
-          "actions",
-          2
-        ],
         [
           "copilot",
           2
         ],
         [
-          "workflow",
+          "actions",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "55c79cbedd4af3ef4ffe8617faf5be3cfc2c2c06",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "New OpenAI Academy courses for the next era of work",
+      "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
+      "published_at": "2026-06-12T10:00:00Z",
+      "summary": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work.",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
+        "strong:agents",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "91585f9b4fa972cbbbbcb2af46d2957388c11fb4",
       "source_id": "aihot",
@@ -143,20 +180,23 @@
       "is_ai_related": true
     },
     {
-      "id": "a903666ae2d4e41b2d39071dbbb22af0263d14cf",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How Preply combines AI and human tutors to personalize learning",
-      "url": "https://openai.com/index/preply",
-      "published_at": "2026-06-12T00:00:00Z",
-      "summary": "Preply uses OpenAI to launch AI-generated lesson summaries, providing personalised feedback and language learning exercises.",
-      "relevance_score": 3,
+      "id": "9164700ad041169b2c9895eaa87691e2483c5d54",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Fable 5 因美国指令暂停访问",
+      "url": "https://x.com/AYi_AInotes/status/2065610814598402067",
+      "published_at": "2026-06-13T01:42:50Z",
+      "summary": "Anthropic 旗下模型 Claude Fable 5 因美国政府指令被全面暂停访问。所有用户新会话将默认运行 Opus 4.8 或其他 Claude 模型，现有 Fable 5 会话报错结束，API 请求同样返回错误，需更新集成。有用户（@AYi_AINotes）发文告别，称昨晚曾用 Fable 5 生成中国女子看世界杯的图片作为最后的怀念。",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
+        "strong:anthropic",
+        "strong:claude",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -179,59 +219,95 @@
       "is_ai_related": true
     },
     {
-      "id": "35895988abe10f4eaf67da4ce65237ebe83ec3f1",
+      "id": "8548041e2d8156d949ac1fe8ae08b5ebcb13dd88",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "How we made GitHub Copilot CLI more selective about delegation",
+      "url": "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation",
+      "published_at": "2026-06-12T22:26:23Z",
+      "summary": "Better orchestration, fewer handoffs, faster progress, without a single new knob. The post How we made GitHub Copilot CLI more selective about delegation appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "56c3ad1c68c29fbbe95a9767f0be549a41d517be",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Bot-created pull requests can run workflows if approved",
-      "url": "https://github.blog/changelog/2026-06-11-bot-created-pull-requests-can-run-workflows-if-approved",
-      "published_at": "2026-06-11T19:00:56Z",
-      "summary": "Pull requests created by the github-actions[bot] are now able to run your CI/CD workflows with user approval. Requiring approval is a security measure to ensure generated code does not automatically… The post Bot-created pull requests can run workflows if approved appeared first on The GitHub Blog .",
+      "title": "Copilot code review: New configurations and controls",
+      "url": "https://github.blog/changelog/2026-06-12-copilot-code-review-new-configurations-and-controls",
+      "published_at": "2026-06-12T21:37:14Z",
+      "summary": "With new organization runner controls, Copilot content exclusion support, and the removal of the character limit on repository custom instructions, Copilot code review is now easier to tailor to your… The post Copilot code review: New configurations and controls appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:workflow",
-        "source:actions"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
     {
-      "id": "f214c10b085612c0ecd76fffe866df12b30c8549",
+      "id": "e770481e5ff065702e3ad05c8e1858c0969485bf",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Gemini Omni Flash 视频任务达 SOTA",
-      "url": "https://x.com/OfficialLoganK/status/2065118111360303414",
-      "published_at": "2026-06-11T17:05:00Z",
-      "summary": "Gemini Omni Flash 在图像到视频、文本到视频和视频编辑方面达到了 SATA ： ） 很高兴很快能将这一能力通过 API 提供给开发者！",
-      "relevance_score": 4,
+      "title": "Anthropic Fable 5/Mythos 5 遭出口管制全球下线",
+      "url": "https://x.com/shao__meng/status/2065621579703390259",
+      "published_at": "2026-06-13T02:25:36Z",
+      "summary": "美国政府以国家安全为由向 Anthropic 下达出口管制指令，禁止任何外国籍人士（包括 Anthropic 外籍员工）使用 Fable 5 和 Mythos 5。为合规，Anthropic 不得不对全部客户紧急下线这两款模型，其余 Claude 模型不受影响。指令于美东时间 6月12日 17：21 送达，用户几乎无缓冲期。Anthropic 表示这是误解，正努力恢复访问。",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:gemini",
-        "weak:api",
-        "weak:开发者",
-        "weak:API",
+        "strong:anthropic",
+        "strong:claude",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "54da23783d705e382e69df2dea25120e38063e08",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot CLI: Configure everything from one place with /settings",
-      "url": "https://github.blog/changelog/2026-06-11-copilot-cli-configure-everything-from-one-place-with-settings",
-      "published_at": "2026-06-11T16:44:55Z",
-      "summary": "GitHub Copilot CLI now has a unified, schema-driven home for configuration. The new /settings slash command combines the scattered commands like /theme, /streamer-mode, and /experimental with options that previously required… The post Copilot CLI: Configure everything from one place with /settings appeared first on The GitHub Blog .",
+      "id": "9ef03a8056042aab6ff93b83498deb460c800ca8",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "关于美国政府指令暂停访问Fable 5和Mythos 5的声明",
+      "url": "https://www.anthropic.com/news/fable-mythos-access",
+      "published_at": "2026-06-13T01:15:57Z",
+      "summary": "美国政府以国家安全为由，指令Anthropic暂停所有外国国民（含海外员工）对Fable 5和Mythos 5的访问。Anthropic当日5：21pm （ET）收到指令后立即向所有客户禁用这两个模型，其他模型不受影响。政府称发现一种越狱Fable 5的方法；Anthropic审核认为该技术仅能识别少量已知微小漏洞，且其他公开模型（如OpenAI的GPT-5.5）也能做到。Anthropic坚持深度防御策略，认为此次越狱不具普遍性，不同意以此标准召回已服务数亿人的商用模型，正与政府合作争取尽快恢复访问。",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ad681444109f4a049ba24fe7f144ebc34695b11a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 遭多州总检察长联合调查",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-13/openai-probed-by-coalition-of-state-attorneys-general",
+      "published_at": "2026-06-13T00:27:02Z",
+      "summary": "OpenAI 正被一个由多州总检察长组成的联盟调查，该联盟已向这家人工智能公司索取涵盖广泛主题的信息。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:人工智能",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -291,64 +367,6 @@
       "is_ai_related": true
     },
     {
-      "id": "9c67b30c317c01313475f7b48fba8421fcd7a3bc",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Codex 推出浏览器开发者模式",
-      "url": "https://x.com/OpenAIDevs/status/2065226355495895521",
-      "published_at": "2026-06-12T00:15:07Z",
-      "summary": "为 Chrome 和 Codex 内置浏览器引入开发者模式。 Codex 可以使用 Chrome DevTools 协议（CDP）来调试浏览器问题，通过分析 JavaScript 性能、检查控制台输出、网络流量和页面状态。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:codex",
-        "weak:tool",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5e5b9d6df7e80684da47987c509b36837ee19edc",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI Codex 推出速率重置攒存功能",
-      "url": "https://x.com/OpenAI/status/2065225362544726371",
-      "published_at": "2026-06-12T00:11:11Z",
-      "summary": "我们听说您希望能在自己方便的时候使用 Codex 速率限制重置。 从今天起，我们开始推出将速率限制重置保留到以后使用的功能。 我们从 Go、Plus、Pro 和 Business 用户开始，每人提供一次免费重置：",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "56d431b311e4b6082105f47b9d304ae21612b4c2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Replit Agent 新增自定义指令与技能功能",
-      "url": "https://x.com/Replit/status/2065146579326271883",
-      "published_at": "2026-06-11T18:58:07Z",
-      "summary": "AI 智能体很强大，但它们不记得你的偏好。 所以你总是重复指令--如何组织项目、你的品牌指南。 现在你可以通过自定义指令和技能让 Replit Agent 学会你的惯例。 它会在每个项目中自动将这些考虑进去。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "a6a338d96356950683bb3d1742f2ce11e213cacf",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -375,11 +393,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1004,
+      "fetched_count": 1005,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 648,
-      "checked_at": "2026-06-12T16:43:39.394088Z"
+      "latency_ms": 734,
+      "checked_at": "2026-06-13T02:44:26.216310Z"
     },
     {
       "source_id": "openai-skills",
@@ -390,8 +408,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 385,
-      "checked_at": "2026-06-12T16:43:39.779414Z"
+      "latency_ms": 162,
+      "checked_at": "2026-06-13T02:44:26.379372Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -399,11 +417,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 226,
+      "fetched_count": 229,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 126,
-      "checked_at": "2026-06-12T16:43:39.909210Z"
+      "latency_ms": 131,
+      "checked_at": "2026-06-13T02:44:26.514577Z"
     },
     {
       "source_id": "google-deepmind",
@@ -414,8 +432,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 389,
-      "checked_at": "2026-06-12T16:43:40.300321Z"
+      "latency_ms": 267,
+      "checked_at": "2026-06-13T02:44:26.783191Z"
     },
     {
       "source_id": "google-ai",
@@ -426,8 +444,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 201,
-      "checked_at": "2026-06-12T16:43:40.502682Z"
+      "latency_ms": 152,
+      "checked_at": "2026-06-13T02:44:26.936364Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -438,8 +456,8 @@
       "fetched_count": 798,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 434,
-      "checked_at": "2026-06-12T16:43:40.949183Z"
+      "latency_ms": 255,
+      "checked_at": "2026-06-13T02:44:27.204361Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -448,10 +466,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 187,
-      "checked_at": "2026-06-12T16:43:41.136833Z"
+      "latency_ms": 111,
+      "checked_at": "2026-06-13T02:44:27.316532Z"
     },
     {
       "source_id": "github-changelog",
@@ -460,10 +478,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 34,
-      "checked_at": "2026-06-12T16:43:41.172225Z"
+      "latency_ms": 31,
+      "checked_at": "2026-06-13T02:44:27.348739Z"
     },
     {
       "source_id": "aihot",
@@ -472,10 +490,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 9,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 1246,
-      "checked_at": "2026-06-12T16:43:42.419356Z"
+      "latency_ms": 1282,
+      "checked_at": "2026-06-13T02:44:28.632711Z"
     }
   ],
   "control_notes": {
