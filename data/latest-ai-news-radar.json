@@ -1,29 +1,21 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-13T15:42:27.085065Z",
+  "generated_at": "2026-06-14T02:55:52.780087Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 2,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "AI Hot",
-          3
+          2
         ]
       ],
       "top_keywords": [
-        [
-          "aggregate_noise",
-          3
-        ],
-        [
-          "openai",
-          2
-        ],
         [
           "api",
           2
@@ -31,6 +23,14 @@
         [
           "API",
           2
+        ],
+        [
+          "aggregate_noise",
+          2
+        ],
+        [
+          "openai",
+          1
         ],
         [
           "anthropic",
@@ -46,58 +46,6 @@
         ],
         [
           "开源模型",
-          1
-        ],
-        [
-          "人工智能",
-          1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "Hugging Face Blog",
-          1
-        ],
-        [
-          "GitHub AI & ML",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          2
-        ],
-        [
-          "eval",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
-        ],
-        [
-          "actions",
           1
         ]
       ]
@@ -128,60 +76,6 @@
       "is_ai_related": true
     },
     {
-      "id": "dfb83be2463d02e37924af96e4e0af027e3e9031",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "olmo-eval: An evaluation workbench for the model development loop",
-      "url": "https://huggingface.co/blog/allenai/olmo-eval",
-      "published_at": "2026-06-12T15:56:10Z",
-      "summary": null,
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:eval",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8548041e2d8156d949ac1fe8ae08b5ebcb13dd88",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "How we made GitHub Copilot CLI more selective about delegation",
-      "url": "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation",
-      "published_at": "2026-06-12T22:26:23Z",
-      "summary": "Better orchestration, fewer handoffs, faster progress, without a single new knob. The post How we made GitHub Copilot CLI more selective about delegation appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "56c3ad1c68c29fbbe95a9767f0be549a41d517be",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot code review: New configurations and controls",
-      "url": "https://github.blog/changelog/2026-06-12-copilot-code-review-new-configurations-and-controls",
-      "published_at": "2026-06-12T21:37:14Z",
-      "summary": "With new organization runner controls, Copilot content exclusion support, and the removal of the character limit on repository custom instructions, Copilot code review is now easier to tailor to your… The post Copilot code review: New configurations and controls appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "f930d89304df4fbd888858c5a8cf019e56a02e4f",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -200,42 +94,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "ad681444109f4a049ba24fe7f144ebc34695b11a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 遭多州总检察长联合调查",
-      "url": "https://www.bloomberg.com/news/articles/2026-06-13/openai-probed-by-coalition-of-state-attorneys-general",
-      "published_at": "2026-06-13T00:27:02Z",
-      "summary": "OpenAI 正被一个由多州总检察长组成的联盟调查，该联盟已向这家人工智能公司索取涵盖广泛主题的信息。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:人工智能",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ad7ec1eddaa1ec5fdafe7aec1e10667e49daa257",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Actions: Minimum version enforcement timeline for self-hosted runners",
-      "url": "https://github.blog/changelog/2026-06-12-github-actions-minimum-version-enforcement-timeline-for-self-hosted-runners",
-      "published_at": "2026-06-12T16:04:57Z",
-      "summary": "GitHub Actions is resuming enforcement of version requirements for self-hosted runners on github.com and GitHub Enterprise Cloud with Data Residency. This change is part of a broader effort to rebuild… The post GitHub Actions: Minimum version enforcement timeline for self-hosted runners appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "source:actions"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -248,8 +106,8 @@
       "fetched_count": 1005,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 830,
-      "checked_at": "2026-06-13T15:42:19.287292Z"
+      "latency_ms": 883,
+      "checked_at": "2026-06-14T02:55:49.584485Z"
     },
     {
       "source_id": "openai-skills",
@@ -260,8 +118,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 231,
-      "checked_at": "2026-06-13T15:42:19.519443Z"
+      "latency_ms": 205,
+      "checked_at": "2026-06-14T02:55:49.790455Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -272,8 +130,8 @@
       "fetched_count": 229,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 106,
-      "checked_at": "2026-06-13T15:42:19.629258Z"
+      "latency_ms": 121,
+      "checked_at": "2026-06-14T02:55:49.915491Z"
     },
     {
       "source_id": "google-deepmind",
@@ -284,8 +142,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 291,
-      "checked_at": "2026-06-13T15:42:19.922235Z"
+      "latency_ms": 380,
+      "checked_at": "2026-06-14T02:55:50.297745Z"
     },
     {
       "source_id": "google-ai",
@@ -296,8 +154,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 219,
-      "checked_at": "2026-06-13T15:42:20.141770Z"
+      "latency_ms": 165,
+      "checked_at": "2026-06-14T02:55:50.463164Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -306,10 +164,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 798,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 264,
-      "checked_at": "2026-06-13T15:42:20.418698Z"
+      "latency_ms": 285,
+      "checked_at": "2026-06-14T02:55:50.760734Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -318,10 +176,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 211,
-      "checked_at": "2026-06-13T15:42:20.630051Z"
+      "latency_ms": 120,
+      "checked_at": "2026-06-14T02:55:50.881365Z"
     },
     {
       "source_id": "github-changelog",
@@ -330,10 +188,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-06-13T15:42:20.658554Z"
+      "latency_ms": 33,
+      "checked_at": "2026-06-14T02:55:50.914782Z"
     },
     {
       "source_id": "aihot",
@@ -342,10 +200,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 6417,
-      "checked_at": "2026-06-13T15:42:27.076709Z"
+      "latency_ms": 1856,
+      "checked_at": "2026-06-14T02:55:52.772219Z"
     }
   ],
   "control_notes": {
