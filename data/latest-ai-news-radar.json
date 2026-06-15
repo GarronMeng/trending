@@ -1,12 +1,95 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-14T15:48:23.865989Z",
+  "generated_at": "2026-06-15T03:28:48.180373Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 0,
-  "groups": {},
-  "items": [],
+  "item_count": 2,
+  "groups": {
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "openai",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 1,
+      "top_sources": [
+        [
+          "AI Hot",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "openai",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "aggregate_noise",
+          1
+        ]
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "d596262924c0e0707de23dcfa31b4d7bdad4b334",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Introducing the OpenAI Partner Network",
+      "url": "https://openai.com/index/introducing-openai-partner-network",
+      "published_at": "2026-06-14T17:00:00Z",
+      "summary": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "af86bb4cbb75c0c340a623fac44a55024a5f3c6c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "白宫AI监管决定被指偏袒OpenAI与亚马逊",
+      "url": "https://garymarcus.substack.com/p/what-washington-must-do",
+      "published_at": "2026-06-14T16:15:35Z",
+      "summary": "白宫周五做出的AI监管决定被指偏袒OpenAI、亚马逊等企业，同时对Anthropic施压不足24小时，缺乏透明度和事实依据。Gary Marcus、Dean W Ball及卡托研究所Kevin Frazier等专家指出，这种由少数人闭门快速决策的做法带有腐败嫌疑，可能促使其他国家加速发展\"主权AI\"甚至中国AI，并导致美国人才流失。Anthropic声明称政府应在法定程序中基于技术事实阻止不安全部署，而非当前方式。Marcus呼吁建立独立机构负责AI监管，确保公平、清晰、基于证据的执行。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    }
+  ],
   "source_health": [
     {
       "source_id": "openai-news",
@@ -14,11 +97,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1005,
-      "kept_count": 0,
+      "fetched_count": 1006,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 651,
-      "checked_at": "2026-06-14T15:48:19.289434Z"
+      "latency_ms": 918,
+      "checked_at": "2026-06-15T03:28:45.194469Z"
     },
     {
       "source_id": "openai-skills",
@@ -29,8 +112,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 360,
-      "checked_at": "2026-06-14T15:48:19.650165Z"
+      "latency_ms": 169,
+      "checked_at": "2026-06-15T03:28:45.364478Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -41,8 +124,8 @@
       "fetched_count": 229,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 154,
-      "checked_at": "2026-06-14T15:48:19.808817Z"
+      "latency_ms": 120,
+      "checked_at": "2026-06-15T03:28:45.488015Z"
     },
     {
       "source_id": "google-deepmind",
@@ -53,8 +136,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 413,
-      "checked_at": "2026-06-14T15:48:20.224119Z"
+      "latency_ms": 269,
+      "checked_at": "2026-06-15T03:28:45.759336Z"
     },
     {
       "source_id": "google-ai",
@@ -65,8 +148,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-06-14T15:48:20.478905Z"
+      "latency_ms": 148,
+      "checked_at": "2026-06-15T03:28:45.908702Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -74,11 +157,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 798,
+      "fetched_count": 797,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 349,
-      "checked_at": "2026-06-14T15:48:20.840820Z"
+      "latency_ms": 324,
+      "checked_at": "2026-06-15T03:28:46.245689Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -89,8 +172,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 222,
-      "checked_at": "2026-06-14T15:48:21.063575Z"
+      "latency_ms": 315,
+      "checked_at": "2026-06-15T03:28:46.561352Z"
     },
     {
       "source_id": "github-changelog",
@@ -101,8 +184,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 44,
-      "checked_at": "2026-06-14T15:48:21.108617Z"
+      "latency_ms": 32,
+      "checked_at": "2026-06-15T03:28:46.593940Z"
     },
     {
       "source_id": "aihot",
@@ -110,11 +193,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 0,
-      "kept_count": 0,
+      "fetched_count": 50,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 2749,
-      "checked_at": "2026-06-14T15:48:23.858463Z"
+      "latency_ms": 1577,
+      "checked_at": "2026-06-15T03:28:48.171681Z"
     }
   ],
   "control_notes": {
