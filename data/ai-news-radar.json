@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-15T03:28:48.180373Z",
+  "generated_at": "2026-06-15T09:47:51.824873Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 2,
+  "item_count": 3,
   "groups": {
     "official": {
       "group": "official",
@@ -28,25 +28,25 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "AI Hot",
-          1
+          2
         ]
       ],
       "top_keywords": [
         [
           "openai",
-          1
+          2
         ],
         [
           "anthropic",
-          1
+          2
         ],
         [
           "aggregate_noise",
-          1
+          2
         ]
       ]
     }
@@ -67,6 +67,25 @@
       "relevance_reasons": [
         "strong:openai",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6fd6b6645db51b4c7fb1d3d6f7da9eb858386fb3",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "AI裁员浪潮成为火药桶",
+      "url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg",
+      "published_at": "2026-06-15T07:25:41Z",
+      "summary": "今年科技公司已累计裁员约15万人，日均974人，速度比去年快44%；上月裁员近4万创两年新高，AI连续三个月被列为裁员首要原因。Block近半数员工被裁后，CEO Jack Dorsey否认AI是根源，Marc Andreessen则称AI只是\"银弹借口\"。Uber裁撤23%人事部门，但此前CTO透露AI编码预算四个月内耗尽。与此同时，AI芯片商Cerebras上市首日市值达670亿美元，SpaceX上市市值2.1万亿美元，Anthropic和OpenAI估值均约1万亿美元。Meta在扎克伯格购入1.7亿美元豪宅后宣布裁员8000人。民调显示65%选民认为中产阶级生活遥不可及，76%美国人将生活成本列为首要经济问题。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -100,8 +119,8 @@
       "fetched_count": 1006,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 918,
-      "checked_at": "2026-06-15T03:28:45.194469Z"
+      "latency_ms": 773,
+      "checked_at": "2026-06-15T09:47:47.903600Z"
     },
     {
       "source_id": "openai-skills",
@@ -112,8 +131,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 169,
-      "checked_at": "2026-06-15T03:28:45.364478Z"
+      "latency_ms": 199,
+      "checked_at": "2026-06-15T09:47:48.103114Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -124,8 +143,8 @@
       "fetched_count": 229,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 120,
-      "checked_at": "2026-06-15T03:28:45.488015Z"
+      "latency_ms": 103,
+      "checked_at": "2026-06-15T09:47:48.210043Z"
     },
     {
       "source_id": "google-deepmind",
@@ -136,8 +155,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 269,
-      "checked_at": "2026-06-15T03:28:45.759336Z"
+      "latency_ms": 236,
+      "checked_at": "2026-06-15T09:47:48.448543Z"
     },
     {
       "source_id": "google-ai",
@@ -148,8 +167,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 148,
-      "checked_at": "2026-06-15T03:28:45.908702Z"
+      "latency_ms": 245,
+      "checked_at": "2026-06-15T09:47:48.693966Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -160,8 +179,8 @@
       "fetched_count": 797,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 324,
-      "checked_at": "2026-06-15T03:28:46.245689Z"
+      "latency_ms": 267,
+      "checked_at": "2026-06-15T09:47:48.973076Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -172,8 +191,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 315,
-      "checked_at": "2026-06-15T03:28:46.561352Z"
+      "latency_ms": 101,
+      "checked_at": "2026-06-15T09:47:49.074385Z"
     },
     {
       "source_id": "github-changelog",
@@ -184,8 +203,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-06-15T03:28:46.593940Z"
+      "latency_ms": 27,
+      "checked_at": "2026-06-15T09:47:49.102237Z"
     },
     {
       "source_id": "aihot",
@@ -194,10 +213,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 1577,
-      "checked_at": "2026-06-15T03:28:48.171681Z"
+      "latency_ms": 2713,
+      "checked_at": "2026-06-15T09:47:51.816738Z"
     }
   ],
   "control_notes": {
