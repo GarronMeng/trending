@@ -1,55 +1,35 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-16T13:10:36.332937Z",
+  "generated_at": "2026-06-16T18:26:48.649749Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 10,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          9
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
+          7
         ],
         [
           "智能体",
-          4
-        ],
-        [
-          "claude",
-          2
+          3
         ],
         [
           "工作流",
           2
         ],
         [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
           "agent",
-          2
-        ],
-        [
-          "大模型",
-          2
-        ],
-        [
-          "多模态",
           2
         ],
         [
@@ -61,7 +41,27 @@
           1
         ],
         [
-          "llm",
+          "claude",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "eval",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "自动化",
+          1
+        ],
+        [
+          "API",
           1
         ]
       ]
@@ -153,43 +153,43 @@
       "is_ai_related": true
     },
     {
-      "id": "e08afc4e978b54c2bc1a1631de6a552b8ab55988",
+      "id": "dcd755dfe8995cb491ff6565d5845e98f8b4572c",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "免费LLM API比较：速率限制、模型与真实成本（2026）",
-      "url": "https://openrouter.ai/blog/tutorials/free-llm-apis-compared",
-      "published_at": "2026-06-15T17:00:00Z",
-      "summary": "13个平台提供免费LLM API，含永久免费层与试用额度。OpenRouter拥有20+免费模型，单密钥无需信用卡；Groq以约320 tokens/秒运行Llama 3.3 70B；Google AI Studio支持1M上下文；Mistral实验层约10亿token/月但需同意数据训练；Cerebras约1M token/天；GitHub Models提供GPT-4o、Claude 3.5 Sonnet等前沿模型。各免费层有速率限制、数据训练授权、上下文缩减等隐藏成本，建议早期测试2-3个方案并设置故障转移。",
-      "relevance_score": 6,
+      "title": "小米 MiMo Claw 正式版发布：旗舰模型+金山办公，全新订阅服务上线",
+      "url": "https://mp.weixin.qq.com/s/N5ac768a8LkhEjOVpkR1dQ",
+      "published_at": "2026-06-16T13:32:48Z",
+      "summary": "小米推出云端轻量化 Claw 类产品 MiMo Claw 正式版，搭载与 OpenClaw 框架深度适配的 MiMo-V2.5-Pro 旗舰模型。该模型原生兼容 MCP 工具调用协议，内置百万级超长上下文，支持单会话千次以上连续工具调用；依托 MTP 三层解码架构，在 OpenClaw 标准 Agent 工作流中吞吐效率提升约 3 倍。ClawEval 测试中任务达标率（Pass3）达 63.8%，Token 消耗较同类产品降低 40%-60%。联动金山办公生态，提供 Word、Excel、PPT、PDF 等格式的 AI 生成、预览与在线编辑一站式服务。免费用户每日单次体验时长从1小时升级至4小时，面向高频用户推出 TokenPlan 分层订阅（Lite/Standard/Pro/Max），支持灵活叠加，限时定",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:claude",
-        "strong:llm",
-        "weak:api",
-        "weak:github models",
-        "weak:API",
+        "strong:agent",
+        "strong:mcp",
+        "weak:eval",
+        "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "dc7367205354c6f12abd0c4a6a5325b965997627",
+      "id": "1f499cc0b9178fcc0717192d1413e3fa15ff8a28",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "伯克利RDI发布Agents' Last Exam基准",
-      "url": "https://rdi.berkeley.edu/blog/agents-last-exam",
-      "published_at": "2026-06-16T01:59:10Z",
-      "summary": "2026年6月，伯克利RDI发布Agents' Last Exam（ALE）基准，包含1，500余项源于真实工作的任务，覆盖55个非体力职业。对Fable 5、GPT-5.5、Composer 2.5等前沿智能体的测评显示：在最困难层级成功率均为0%；整体任务表现接近，但单任务成本差异巨大（Fable 5约$15.70，GPT-5.5约$3.80，Composer 2.5约$1.33）。CLI子集ALE-CLI最佳通过率仅25.2%。主要失败模式是智能体未验证输出即宣称完成。数据集、代码及CLI子集已开源。",
-      "relevance_score": 5,
+      "title": "GLM-5.2 发布：1M 上下文窗口，MIT 开源权重",
+      "url": "https://x.com/kimmonismus/status/2066947839591084212",
+      "published_at": "2026-06-16T18:15:41Z",
+      "summary": "GLM-5.2 作为开放权重模型发布，采用 MIT 许可，拥有 1M 上下文窗口。提供两种推理模式：max（极限推理）和 high（平衡性能与 token 效率）。在编码和智能体任务上有显著提升，专为大规模实现、自动化研究、性能优化和复杂调试训练。API 定价与 GLM-5.1 保持一致。",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
         "strong:智能体",
+        "weak:api",
+        "weak:自动化",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -227,47 +227,6 @@
       "relevance_reasons": [
         "weak:developer",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "2e3b922856b4e8a6ddaea2bc597adf0f6ba46713",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "智能体AI治理：你的API密钥就是护栏",
-      "url": "https://openrouter.ai/blog/insights/agentic-ai-governance",
-      "published_at": "2026-06-15T16:00:00Z",
-      "summary": "智能体AI使用量将在未来两年急剧上升，但治理滞后--仅五分之一企业拥有成熟治理模型。典型事故：销售智能体重试失败调用后自行升级到GPT-5.5，一夜消耗200美元。API路由层位于智能体与模型之间，是强制执行预算上限、模型白名单、提供方准入和请求日志的理想点。IBM报告指出97%遭遇AI安全事件的组织缺乏AI访问控制。最小可行治理方案：为每个智能体工作流分配独立API密钥，在API密钥层面实现预算控制、模型准入和审计追踪。",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:api",
-        "weak:工作流",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e65736eea83dc0fe9134399f46180abbf7648e78",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Salesforce以36亿美元收购AI客服平台Fin",
-      "url": "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b",
-      "published_at": "2026-06-15T14:34:45Z",
-      "summary": "Salesforce宣布以36亿美元收购AI客服平台Fin（前身为Intercom）。Fin提供可跨实时聊天、WhatsApp、短信、电话、Slack等多渠道解决客户问题的AI智能体。Salesforce计划利用Fin的技术和团队增强其企业级Agentforce平台，该平台允许企业构建自定义AI智能体以自动化任务。交易预计在Salesforce 2027财年第四季度（即2027年初）完成。Fin联合创始人兼CEO Eoghan McCabe将继续担任CEO，研发负责人Des继续领导研发。",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -310,38 +269,38 @@
       "is_ai_related": true
     },
     {
-      "id": "113f8e054895c7432238c5d86340e2b266e20602",
+      "id": "53d87c1868c96d0805cf4889308f3d8d086fa9c8",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "MiniMax 开源 M3 模型权重及 MSA 技术论文",
-      "url": "https://mp.weixin.qq.com/s/AW6L89QZkwN-jD27hQ84ww",
-      "published_at": "2026-06-15T14:40:02Z",
-      "summary": "MiniMax 上周五开源了 428B 总参数、23B 激活参数的 M3 模型权重，同步发布 MSA（MiniMax Sparse Attention）技术论文，该架构显著降低长上下文计算成本。M3 是首个从预训练阶段就进行文本、图像等多模态交错混合训练的开源模型。发布两周后，M3 在 Artificial Analysis 综合智能指数、GDPval-AA 排行榜均获开源模型第一，Code Arena WebDev 跻身帕累托最优序列，Vals.AI 榜单居国产模型首位。输出速度已从约 30 TPS 提升至约 80 TPS，计划再提速 30-40%；Token Plan 后台新增调用量看板。",
-      "relevance_score": 3,
+      "title": "Copilot Cowork 全球正式可用，支持多模型",
+      "url": "https://x.com/satyanadella/status/2066911399494963335",
+      "published_at": "2026-06-16T15:50:53Z",
+      "summary": "Copilot Cowork 现已全球正式可用，并支持多模型！ 每个组织都可以让长期运行的智能体处理复杂的多步骤任务，基于你组织的独特知识和专有技术。 https：//www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/？v=15",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:开源模型",
-        "strong:多模态",
+        "strong:智能体",
+        "weak:copilot",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "eba29990a06c73af77073fb0fd65ede9d1339f0d",
+      "id": "e612c48477ab5c3742cb10b7cd513c4c9b6e2fd0",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "SpaceX 以约 600 亿美元全股票收购 Cursor，补齐编程能力短板",
-      "url": "https://x.com/AYi_AInotes/status/2066860066024698175",
-      "published_at": "2026-06-16T12:26:54Z",
-      "summary": "SpaceX 宣布以约 600 亿美元全股票收购 AI 编程工具 Cursor，预计 2026 年第三季度完成。收购完成后，Cursor 将成为 SpaceX 全资子公司，原股东置换 SpaceX A 类股份。此举旨在补齐 xAI 在编程能力上的短板--Cursor 拥有百万日活开发者、高质量代码数据及自研编程模型，并与 xAI 的算力（地面+轨道）和大模型形成全链路闭环。Cursor CEO 透露，其内部 30% 的合并 PR 由异步云代理自动创建，单周运行两千多个并发代理，生成三百万行代码，消耗几十亿个 token，工程师只需定义范围并做最终审核。",
+      "title": "WorkBuddy日活飙升至行业第二的3-4倍，非技术用户涌入",
+      "url": "https://mp.weixin.qq.com/s/iAgbUzPrsbpqvu4s2XiH0g",
+      "published_at": "2026-06-16T12:42:11Z",
+      "summary": "从3月至今，WorkBuddy日活用户数已达行业第二名的3-4倍，用户不再限于开发者，大量HR、运营、行政等非技术岗位也在使用。其企业版和项目功能进一步扩展了Agent办公场景。同期，Trae Work、QoderWork、Kimi Work等产品纷纷改名或出新，争夺市场。腾讯云认为这可能是十年一遇的机遇。",
       "relevance_score": 2,
       "relevance_reasons": [
-        "strong:大模型",
+        "strong:agent",
         "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
@@ -358,8 +317,8 @@
       "fetched_count": 1006,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 849,
-      "checked_at": "2026-06-16T13:10:31.038482Z"
+      "latency_ms": 821,
+      "checked_at": "2026-06-16T18:26:46.022194Z"
     },
     {
       "source_id": "openai-skills",
@@ -370,8 +329,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 228,
-      "checked_at": "2026-06-16T13:10:31.267131Z"
+      "latency_ms": 227,
+      "checked_at": "2026-06-16T18:26:46.249987Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -382,8 +341,8 @@
       "fetched_count": 229,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 107,
-      "checked_at": "2026-06-16T13:10:31.377800Z"
+      "latency_ms": 94,
+      "checked_at": "2026-06-16T18:26:46.348146Z"
     },
     {
       "source_id": "google-deepmind",
@@ -394,8 +353,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 257,
-      "checked_at": "2026-06-16T13:10:31.637152Z"
+      "latency_ms": 247,
+      "checked_at": "2026-06-16T18:26:46.596953Z"
     },
     {
       "source_id": "google-ai",
@@ -406,8 +365,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 244,
-      "checked_at": "2026-06-16T13:10:31.881598Z"
+      "latency_ms": 172,
+      "checked_at": "2026-06-16T18:26:46.769896Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -418,8 +377,8 @@
       "fetched_count": 797,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 407,
-      "checked_at": "2026-06-16T13:10:32.301698Z"
+      "latency_ms": 234,
+      "checked_at": "2026-06-16T18:26:47.015214Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -430,8 +389,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 100,
-      "checked_at": "2026-06-16T13:10:32.402714Z"
+      "latency_ms": 98,
+      "checked_at": "2026-06-16T18:26:47.113834Z"
     },
     {
       "source_id": "github-changelog",
@@ -442,8 +401,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-06-16T13:10:32.432348Z"
+      "latency_ms": 25,
+      "checked_at": "2026-06-16T18:26:47.139230Z"
     },
     {
       "source_id": "aihot",
@@ -452,10 +411,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 10,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 3889,
-      "checked_at": "2026-06-16T13:10:36.323231Z"
+      "latency_ms": 1500,
+      "checked_at": "2026-06-16T18:26:48.640676Z"
     }
   ],
   "control_notes": {
