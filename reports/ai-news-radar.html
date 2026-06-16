@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>11</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>12</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>2</b><span>官方源条目</span></div>
-        <div class="stat"><b>8</b><span>聚合源条目</span></div>
+        <div class="stat"><b>9</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-16T11:41:14.714298Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-16T13:10:36.334409Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -195,21 +195,34 @@
       <p class='summary'>MiniMax 上周五开源了 428B 总参数、23B 激活参数的 M3 模型权重，同步发布 MSA（MiniMax Sparse Attention）技术论文，该架构显著降低长上下文计算成本。M3 是首个从预训练阶段就进行文本、图像等多模态交错混合训练的开源模型。发布两周后，M3 在 Artificial Analysis 综合智能指数、GDPval-AA 排行榜均获开源模型第一，Code Arena WebDev 跻身帕累托最优序列，Vals.AI 榜单居国产模型首位。输出速度已从约 30 TPS 提升至约 80 TPS，计划再提速 30-40%；Token Plan 后台新增调用量看板。</p>
       <div class="tags"><span>strong:开源模型</span><span>strong:多模态</span><span>source_penalty:aggregate_noise</span></div>
     </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-16T12:26:54Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://x.com/AYi_AInotes/status/2066860066024698175" target="_blank" rel="noreferrer">SpaceX 以约 600 亿美元全股票收购 Cursor，补齐编程能力短板</a></h3>
+      <p class='summary'>SpaceX 宣布以约 600 亿美元全股票收购 AI 编程工具 Cursor，预计 2026 年第三季度完成。收购完成后，Cursor 将成为 SpaceX 全资子公司，原股东置换 SpaceX A 类股份。此举旨在补齐 xAI 在编程能力上的短板--Cursor 拥有百万日活开发者、高质量代码数据及自研编程模型，并与 xAI 的算力（地面+轨道）和大模型形成全链路闭环。Cursor CEO 透露，其内部 30% 的合并 PR 由异步云代理自动创建，单周运行两千多个并发代理，生成三百万行代码，消耗几十亿个 token，工程师只需定义范围并做最终审核。</p>
+      <div class="tags"><span>strong:大模型</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1006</td><td>0</td><td>655ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>409ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>229</td><td>0</td><td>368ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>399ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>332ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>797</td><td>0</td><td>334ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>152ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>35ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>9</td><td>6070ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1006</td><td>0</td><td>849ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>228ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>229</td><td>0</td><td>107ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>257ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>244ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>797</td><td>0</td><td>407ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>100ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>29ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>10</td><td>3889ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
