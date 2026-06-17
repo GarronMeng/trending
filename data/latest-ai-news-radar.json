@@ -1,47 +1,71 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-16T18:26:48.649749Z",
+  "generated_at": "2026-06-17T02:58:21.144455Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
   "item_count": 10,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "Google DeepMind",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "deepmind",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          7
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          8
+        ],
+        [
+          "claude",
+          3
+        ],
+        [
+          "openai",
+          3
+        ],
+        [
+          "anthropic",
+          3
         ],
         [
           "智能体",
           3
         ],
         [
-          "工作流",
-          2
-        ],
-        [
           "agent",
           2
         ],
         [
-          "openai",
+          "chatgpt",
           1
         ],
         [
-          "anthropic",
-          1
-        ],
-        [
-          "claude",
+          "人工智能",
           1
         ],
         [
@@ -53,43 +77,11 @@
           1
         ],
         [
-          "api",
-          1
-        ],
-        [
-          "自动化",
-          1
-        ],
-        [
-          "API",
-          1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub AI & ML",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          2
-        ],
-        [
-          "agent",
+          "工作流",
           1
         ],
         [
           "copilot",
-          1
-        ],
-        [
-          "developer",
           1
         ]
       ]
@@ -105,7 +97,7 @@
       ],
       "top_keywords": [
         [
-          "copilot",
+          "github models",
           2
         ]
       ]
@@ -113,42 +105,80 @@
   },
   "items": [
     {
-      "id": "9c9c23921c7ebd0d3012b85dfa722585b72c1817",
+      "id": "1814c86df75f5040408d241c716a219793cdf544",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Unlocking UK house-building with AI-accelerated planning",
+      "url": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning",
+      "published_at": "2026-06-16T21:29:50Z",
+      "summary": "UK government partners with Google DeepMind to build a new AI-powered prototype aimed at faster housing decisions.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:deepmind",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a7e26dccc5396f75393d5369b9a1e91dac82b672",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "五角大楼将大部分日常AI工作流从Anthropic转移，目标9月前完全切断",
-      "url": "https://x.com/AYi_AInotes/status/2066679835607412846",
-      "published_at": "2026-06-16T00:30:44Z",
-      "summary": "五角大楼宣布已将超2/3日常AI工作流从Anthropic转移，目标9月前清零。起因是年初五角大楼要求Anthropic签署协议允许Claude用于大规模监控和全自动武器，CEO Dario Amodei以模型不可靠为由拒绝。五角大楼将其列为\"供应链风险\"，起诉未果。OpenAI调整立场获得订单。Polymarket预测6月底前和解概率仅9%。此事件凸显AI公司需在原则与政府合作间抉择。",
-      "relevance_score": 6,
+      "title": "人工智能是否已经让自助类非虚构书籍销声匿迹了？",
+      "url": "https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction",
+      "published_at": "2026-06-16T23:09:29Z",
+      "summary": "2026年Q1美国成人非虚构书籍销量同比下降9%，自助类下跌26.3%，仅手工艺/爱好/古董/游戏和宗教两个子类别增长。一位出版了多本《纽约时报》畅销书的作者透露，其五本书的印刷版年销量从2022年基准连续下滑：2023年-5%，2024年-13%，2025年-46%，2026年年化跌幅达-57% vs 2025年；若持续，2026年销量将比2022年减少约80%。所有格式在2025年下半年环比上半年下降约45%。作者认为，Claude、ChatGPT等大语言模型能提供更快、更便宜、更个性化的建议，正在系统性取代自助类书籍的\"指令传递\"价值。头部自助类品牌同期销量也下滑约40-60%，唯一显著变化是AI加速普及。作者判断整个指令传递型内容（包括YouTube教程、播客、在线课程、newsletter）都将面临替",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
         "strong:claude",
-        "weak:工作流",
+        "strong:chatgpt",
+        "strong:人工智能",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "a9ef1dcffd076561891b973590361b039b007965",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "GitHub Copilot CLI for Beginners: Overview of common slash commands",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands",
-      "published_at": "2026-06-15T20:15:31Z",
-      "summary": "GitHub Copilot CLI for Beginners: Learn how to use slash commands to control your terminal AI agent. The post GitHub Copilot CLI for Beginners: Overview of common slash commands appeared first on The GitHub Blog .",
-      "relevance_score": 4,
+      "id": "c45d9f67c50c77bd496669aeca9d2a4d1e564f04",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 5月企业AI订阅份额首超OpenAI，特朗普政府禁令反促采用量创新高",
+      "url": "https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests",
+      "published_at": "2026-06-16T22:34:17Z",
+      "summary": "Anthropic 5月企业AI订阅市场份额达41%，首次超越OpenAI（39.5%）。公司刚完成650亿美元融资、估值9650亿美元，并因首次盈利季度秘密提交IPO。特朗普政府以出口管制为由要求Anthropic禁止非美国人访问最新模型Mythos 5及Fable 5，导致两款模型下架。Ramp首席经济学家指出，类似争议（如3月被国防部列为供应链风险）反而推动Anthropic企业采用量创纪录。Ramp数据显示，企业支出主要流向Claude Opus模型（最新为Opus 4.8）。",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source_prior:official_ai"
+        "strong:openai",
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "00eaf326319e88b12bd379946a34395fd752b548",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic：智能体编码中专业知识回报持续存在",
+      "url": "https://www.anthropic.com/research/claude-code-expertise",
+      "published_at": "2026-06-16T19:35:22Z",
+      "summary": "Anthropic 基于约40万次 Claude Code 交互会话（2025年10月至2026年4月）分析发现：人类主导规划决策（做什么），Claude 主导执行决策（怎么做）。领域专业知识越强，模型每次指令完成的工作量越多。各类职业完成任务的成功率与软件工程师平均相近；领域专家成功率更高，但与中级用户差距不大。七个月间调试会话占比下降近一半，使用转向端到端智能体任务（部署运行代码、分析数据、编写非代码文档），典型任务价值平均上升约25%。",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -174,96 +204,57 @@
       "is_ai_related": true
     },
     {
-      "id": "1f499cc0b9178fcc0717192d1413e3fa15ff8a28",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "GLM-5.2 发布：1M 上下文窗口，MIT 开源权重",
-      "url": "https://x.com/kimmonismus/status/2066947839591084212",
-      "published_at": "2026-06-16T18:15:41Z",
-      "summary": "GLM-5.2 作为开放权重模型发布，采用 MIT 许可，拥有 1M 上下文窗口。提供两种推理模式：max（极限推理）和 high（平衡性能与 token 效率）。在编码和智能体任务上有显著提升，专为大规模实现、自动化研究、性能优化和复杂调试训练。API 定价与 GLM-5.1 保持一致。",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:api",
-        "weak:自动化",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0ba07bd5d79fefe1fbe80d12f80278aebee771b3",
+      "id": "3d8331a2776100b38e702da54ac11f8676ac7733",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Copilot usage metrics now include more of your active users",
-      "url": "https://github.blog/changelog/2026-06-15-copilot-usage-metrics-now-include-more-of-your-active-users",
-      "published_at": "2026-06-15T21:30:13Z",
-      "summary": "Copilot usage metrics reports now draw on server-side telemetry in addition to client signals, so more of your active Copilot users show up in reports. Enterprise usage reports returned by… The post Copilot usage metrics now include more of your active users appeared first on The GitHub Blog .",
+      "title": "GitHub Models is no longer available to new customers",
+      "url": "https://github.blog/changelog/2026-06-16-github-models-is-no-longer-available-to-new-customers",
+      "published_at": "2026-06-16T20:24:41Z",
+      "summary": "We are retiring GitHub Models. As a first step, new customers can no longer use it. If your organization or enterprise have not previously used GitHub Models, you won’t see… The post GitHub Models is no longer available to new customers appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "weak:github models",
+        "source:github models"
       ],
       "is_ai_related": true
     },
     {
-      "id": "6787253f21ed2919700fd172a21b76d9594d530a",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "Accelerating researchers and developers building multilingual AI with a new open dataset",
-      "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset",
-      "published_at": "2026-06-15T19:17:30Z",
-      "summary": "A new repository-level dataset, published on GitHub under CC0-1.0, helps researchers and developers discover multilingual developer content across READMEs, issues, and pull requests. The post Accelerating researchers and developers building multilingual AI with a new open dataset appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:developer",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7a6bc2fecbab7b4d14d8f22c6bac044a9708e4c4",
+      "id": "610cb8a6ab38476297d973e4a00e87b4c07b75a6",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Qwen-RobotWorld：具身智能体的无界世界",
-      "url": "https://qwen.ai/blog?id=qwen-robotworld",
-      "published_at": "2026-06-16T00:00:00Z",
-      "summary": "Qwen-RobotWorld以语言为统一动作接口，采用双流Multimodal Diffusion Transformer（MMDiT）架构，将Qwen2.5-VL作为动作编码器。在4个基准测试中取得顶尖成绩，统一20余种机器人形态，基于860万跨场景训练对和1300多项操作技能。语言接口标准化500多种动作类别，支持操作、自动驾驶、室内导航的联合训练。还支持Scene2Robot人类到机器人转移及2-4路多视角几何一致视频生成。",
+      "title": "OpenAI 的领先优势正在快速缩小",
+      "url": "https://garymarcus.substack.com/p/openais-lead-is-dwindling-fast",
+      "published_at": "2026-06-16T21:54:47Z",
+      "summary": "评论认为 OpenAI 正面临多重危机：缺乏护城河导致市场领先地位下滑；最大投资者微软持续疏远，近期甚至公开考虑将主要产品外包给中国；亏损速度远超预期，年亏损额以 8 倍增长。华盛顿方面可能打压 Anthropic，但也可能反而帮助其崛起，而 Elon Musk 成为另一个潜在的竞标者。",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:multimodal",
-        "strong:智能体",
+        "strong:openai",
+        "strong:anthropic",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "eb8095d5fc5ea00fdd83956021c61a697ec7d03e",
+      "id": "1f9193050b7c7344b3f524f8915eb1bdd0f4c185",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "项目负责人揭秘为何苹果 AI 版 Siri 姗姗来迟：推倒重来，彻底重构",
-      "url": "https://www.ithome.com/0/964/620.htm",
-      "published_at": "2026-06-15T23:16:58Z",
-      "summary": "苹果AI版Siri迟迟未上线，项目负责人迈克·罗克韦尔在WWDC技术分享会上透露，去年团队曾做出在原有Siri基础上小幅改良、新增工具调用的可运行版本，但因无法达到产品愿景，最终选择推倒重来，完整从零重构系统，依托全新大模型搭建。重构后的Siri拥有独立应用程序，原生支持多模态交互，隐私保护贯穿底层架构，并覆盖iPhone、iPad、Mac、Apple Watch、Vision Pro、CarPlay、AirPods等全平台，提供统一连贯体验。",
+      "title": "公开聊天数据能否预测真实世界AI失调？",
+      "url": "https://alignment.openai.com/validating-public-evals",
+      "published_at": "2026-06-16T18:00:00Z",
+      "summary": "OpenAI利用WildChat公开数据集（2023年4月至2024年5月收集的100万条对话）模拟模型部署，预测GPT-5.1、GPT-5.2、GPT-5.4在真实生产环境中的不良行为率。与私有生产数据对比发现，WildChat模拟的平均预测误差约3倍；但对技术性和智能体型失调的预测精度下降。研究验证了公开数据集作为外部审计工具的可行性。",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:大模型",
-        "strong:多模态",
+        "strong:openai",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -314,11 +305,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1006,
+      "fetched_count": 1007,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 821,
-      "checked_at": "2026-06-16T18:26:46.022194Z"
+      "latency_ms": 850,
+      "checked_at": "2026-06-17T02:58:18.054907Z"
     },
     {
       "source_id": "openai-skills",
@@ -329,8 +320,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 227,
-      "checked_at": "2026-06-16T18:26:46.249987Z"
+      "latency_ms": 303,
+      "checked_at": "2026-06-17T02:58:18.358872Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -341,8 +332,8 @@
       "fetched_count": 229,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 94,
-      "checked_at": "2026-06-16T18:26:46.348146Z"
+      "latency_ms": 199,
+      "checked_at": "2026-06-17T02:58:18.562324Z"
     },
     {
       "source_id": "google-deepmind",
@@ -351,10 +342,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 247,
-      "checked_at": "2026-06-16T18:26:46.596953Z"
+      "latency_ms": 424,
+      "checked_at": "2026-06-17T02:58:18.988845Z"
     },
     {
       "source_id": "google-ai",
@@ -365,8 +356,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 172,
-      "checked_at": "2026-06-16T18:26:46.769896Z"
+      "latency_ms": 257,
+      "checked_at": "2026-06-17T02:58:19.247061Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -377,8 +368,8 @@
       "fetched_count": 797,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 234,
-      "checked_at": "2026-06-16T18:26:47.015214Z"
+      "latency_ms": 315,
+      "checked_at": "2026-06-17T02:58:19.574694Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -387,10 +378,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 98,
-      "checked_at": "2026-06-16T18:26:47.113834Z"
+      "latency_ms": 372,
+      "checked_at": "2026-06-17T02:58:19.947252Z"
     },
     {
       "source_id": "github-changelog",
@@ -401,8 +392,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-06-16T18:26:47.139230Z"
+      "latency_ms": 35,
+      "checked_at": "2026-06-17T02:58:19.983089Z"
     },
     {
       "source_id": "aihot",
@@ -413,8 +404,8 @@
       "fetched_count": 50,
       "kept_count": 8,
       "error": null,
-      "latency_ms": 1500,
-      "checked_at": "2026-06-16T18:26:48.640676Z"
+      "latency_ms": 1152,
+      "checked_at": "2026-06-17T02:58:21.136559Z"
     }
   ],
   "control_notes": {
