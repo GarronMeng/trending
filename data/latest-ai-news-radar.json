@@ -1,18 +1,54 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-17T12:34:48.898343Z",
+  "generated_at": "2026-06-17T16:53:58.599409Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 13,
+  "item_count": 18,
   "groups": {
+    "developer": {
+      "group": "developer",
+      "count": 4,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          4
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          6
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "github models",
+          2
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "tool",
+          1
+        ]
+      ]
+    },
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "Hugging Face Blog",
-          1
+          2
         ],
         [
           "Google DeepMind",
@@ -22,18 +58,18 @@
       "top_keywords": [
         [
           "official_ai",
+          3
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "agents",
           2
         ],
         [
           "hugging face",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
           1
         ],
         [
@@ -44,20 +80,32 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 10,
+      "count": 11,
       "top_sources": [
         [
           "AI Hot",
           10
+        ],
+        [
+          "Anthropic News via Olshansk RSS",
+          1
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          10
+          11
+        ],
+        [
+          "智能体",
+          5
         ],
         [
           "openai",
+          4
+        ],
+        [
+          "anthropic",
           4
         ],
         [
@@ -65,16 +113,20 @@
           3
         ],
         [
-          "anthropic",
-          3
-        ],
-        [
-          "智能体",
-          3
+          "gemini",
+          2
         ],
         [
           "agent",
-          3
+          2
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "开发者",
+          1
         ],
         [
           "chatgpt",
@@ -85,41 +137,35 @@
           1
         ],
         [
-          "mcp",
-          1
-        ],
-        [
-          "eval",
-          1
-        ],
-        [
-          "工作流",
-          1
-        ],
-        [
           "api",
           1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "github models",
-          2
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "d3f0188cd00e2857682826c1cd36b16d1706bc12",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Agent finder for GitHub Copilot now available",
+      "url": "https://github.blog/changelog/2026-06-17-agent-finder-for-github-copilot-now-available",
+      "published_at": "2026-06-17T16:21:56Z",
+      "summary": "GitHub agent finder is now available. Instead of hand-wiring which MCP servers, skills, canvases, agents, and tools each agent should use—and filling your context window in the process—GitHub Copilot can… The post Agent finder for GitHub Copilot now available appeared first on The GitHub Blog .",
+      "relevance_score": 10,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "strong:mcp",
+        "weak:tool",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "84c40905cf3737e45ad30dfc17c41f9631691eeb",
       "source_id": "huggingface-blog",
@@ -141,6 +187,65 @@
       "is_ai_related": true
     },
     {
+      "id": "5f0d8be6c696913137b4debc4884f6d3d888446a",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Agentic Resource Discovery: Let agents search",
+      "url": "https://huggingface.co/blog/agentic-resource-discovery-launch",
+      "published_at": "2026-06-17T00:00:00Z",
+      "summary": null,
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "dcd017ff2df4035babd62168eee57a16eed5b44f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
+      "url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification",
+      "published_at": "2026-06-17T16:08:36Z",
+      "summary": "Agentic Resource Discovery（ARD）是一项开放规范，用于在Web上发布、发现和验证AI工具、技能与智能体。它基于两个原语：组织在其自有域名下托管catalog描述可用能力，registry作为搜索引擎索引catalog并响应发现请求。ARD支持加密验证，使客户端与端点连接前确认发布者身份，然后直接通过原生协议调用能力。Google Cloud的Gemini Enterprise Agent Platform通过Agent Registry提供企业级支持，包括URN命名、出站策略、工具固定和基于Agent Identity的信任验证。该规范现已发布，开发者可通过托管`ai-catalog.json`文件使其服务可发现。",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "strong:智能体",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4d24e60726f2227cf3f8c7ca8fe058ca58d7aefe",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot app generally available",
+      "url": "https://github.blog/changelog/2026-06-17-github-copilot-app-generally-available",
+      "published_at": "2026-06-17T13:00:33Z",
+      "summary": "The GitHub Copilot app is now generally available for macOS, Windows, and Linux. It’s the desktop home for agent-driven development, built natively on GitHub. Download the GitHub Copilot app to… The post GitHub Copilot app generally available appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "1814c86df75f5040408d241c716a219793cdf544",
       "source_id": "google-deepmind",
       "source_name": "Google DeepMind",
@@ -155,6 +260,26 @@
       "relevance_reasons": [
         "strong:deepmind",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "14f73ce1fca8eebe6f0a8ce2cbb38de20b8ba626",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Omnigent开源：AI智能体团队元框架",
+      "url": "https://x.com/Yuchenj_UW/status/2067273020352380950",
+      "published_at": "2026-06-17T15:47:50Z",
+      "summary": "编程的未来不是单一智能体，而是一个完整的AI团队。 Omnigent让你在一个实时会话中运行一个智能体团队：Claude Code、Codex、Cursor、Pi，以及你自己的智能体。 它是一个面向AI智能体的元框架，基于我们内部的Databricks开发工具构建，现已开源给所有人。 由传奇人物@matei_zaharia和Databricks AI团队打造。没错，Matei仍然编写大量代码，包括Omnigent和我们产品的前端代码。",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -199,42 +324,38 @@
       "is_ai_related": true
     },
     {
-      "id": "00eaf326319e88b12bd379946a34395fd752b548",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic：智能体编码中专业知识回报持续存在",
-      "url": "https://www.anthropic.com/research/claude-code-expertise",
-      "published_at": "2026-06-16T19:35:22Z",
-      "summary": "Anthropic 基于约40万次 Claude Code 交互会话（2025年10月至2026年4月）分析发现：人类主导规划决策（做什么），Claude 主导执行决策（怎么做）。领域专业知识越强，模型每次指令完成的工作量越多。各类职业完成任务的成功率与软件工程师平均相近；领域专家成功率更高，但与中级用户差距不大。七个月间调试会话占比下降近一半，使用转向端到端智能体任务（部署运行代码、分析数据、编写非代码文档），典型任务价值平均上升约25%。",
-      "relevance_score": 5,
+      "id": "5069d93b1bbaabe7e9ba468f99434b4624bdcc87",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Auto mode in Copilot Chat available for all users",
+      "url": "https://github.blog/changelog/2026-06-17-auto-mode-in-copilot-chat-available-for-all-users",
+      "published_at": "2026-06-17T16:24:33Z",
+      "summary": "GitHub Copilot auto model selection is now generally available in Copilot Chat on github.com and the GitHub mobile app for all Copilot plans. With auto, Copilot chooses a model on… The post Auto mode in Copilot Chat available for all users appeared first on The GitHub Blog .",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
     {
-      "id": "dcd755dfe8995cb491ff6565d5845e98f8b4572c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
+      "id": "0deffef455de563bcf754b6ea79bac2d87ff93fd",
+      "source_id": "anthropic-news-unofficial",
+      "source_name": "Anthropic News via Olshansk RSS",
       "source_type": "public_feed",
       "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "小米 MiMo Claw 正式版发布：旗舰模型+金山办公，全新订阅服务上线",
-      "url": "https://mp.weixin.qq.com/s/N5ac768a8LkhEjOVpkR1dQ",
-      "published_at": "2026-06-16T13:32:48Z",
-      "summary": "小米推出云端轻量化 Claw 类产品 MiMo Claw 正式版，搭载与 OpenClaw 框架深度适配的 MiMo-V2.5-Pro 旗舰模型。该模型原生兼容 MCP 工具调用协议，内置百万级超长上下文，支持单会话千次以上连续工具调用；依托 MTP 三层解码架构，在 OpenClaw 标准 Agent 工作流中吞吐效率提升约 3 倍。ClawEval 测试中任务达标率（Pass3）达 63.8%，Token 消耗较同类产品降低 40%-60%。联动金山办公生态，提供 Word、Excel、PPT、PDF 等格式的 AI 生成、预览与在线编辑一站式服务。免费用户每日单次体验时长从1小时升级至4小时，面向高频用户推出 TokenPlan 分层订阅（Lite/Standard/Pro/Max），支持灵活叠加，限时定",
-      "relevance_score": 5,
+      "source_weight": 3,
+      "title": "Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
+      "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+      "published_at": "2026-06-17T00:00:00Z",
+      "summary": "Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:mcp",
-        "weak:eval",
-        "weak:工作流",
+        "strong:anthropic",
+        "source:anthropic",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -254,6 +375,44 @@
       "relevance_reasons": [
         "weak:github models",
         "source:github models"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "012eb699ba3591a6ab79e8f7dc514c819f16ca1d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "NVIDIA GEAR实验室发布ENPIRE：8个Codex智能体自主控制机器人完成物理实验",
+      "url": "https://x.com/DrJimFan/status/2067283904986517866",
+      "published_at": "2026-06-17T16:31:05Z",
+      "summary": "NVIDIA GEAR实验室推出ENPIRE系统，首次实现物理世界自主研究。系统让8个Codex智能体控制8台机器人，配备GPU和token预算。安全方面采用硬运动极限切断和扭矩受限夹爪两层硬件保障，支持通宵无人运行。奖励函数通过视觉分类器离线固定并冻结，防止智能体作弊。实时监测机器人利用率（MRU）、token利用率（MTU）和GPU利用率，以Tokens-to-Success和Time-to-Success评估效率。ENPIRE自主完成扎带、整理细针、安装GPU等高精度任务，发现8机器人并行探索显著更快。系统将开源。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:codex",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b7f0a7fa0a3ab4d97e26aac86c5749f2473d4473",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google 医学推理 AI 系统 AMIE 新研究：从诊断迈向长期疾病管理",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature",
+      "published_at": "2026-06-17T15:00:00Z",
+      "summary": "今日发表在《自然》杂志上的研究展示了 Google 的医学推理 AI 系统 AMIE（Articulate Medical Intelligence Explorer）从单次诊断对话演进到长期疾病管理的能力。AMIE 利用 Gemini 模型的长上下文能力，整合共情对话智能体和深度思考管理推理智能体，可交叉引用数百页临床指南。在盲测中，AMIE 与 21 名初级保健医生相比，在整体管理推理上匹配临床医生，在计划精确性和指南一致性上得分显著更高。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -333,44 +492,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "53d87c1868c96d0805cf4889308f3d8d086fa9c8",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Copilot Cowork 全球正式可用，支持多模型",
-      "url": "https://x.com/satyanadella/status/2066911399494963335",
-      "published_at": "2026-06-16T15:50:53Z",
-      "summary": "Copilot Cowork 现已全球正式可用，并支持多模型！ 每个组织都可以让长期运行的智能体处理复杂的多步骤任务，基于你组织的独特知识和专有技术。 https：//www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/？v=15",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:copilot",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e612c48477ab5c3742cb10b7cd513c4c9b6e2fd0",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "WorkBuddy日活飙升至行业第二的3-4倍，非技术用户涌入",
-      "url": "https://mp.weixin.qq.com/s/iAgbUzPrsbpqvu4s2XiH0g",
-      "published_at": "2026-06-16T12:42:11Z",
-      "summary": "从3月至今，WorkBuddy日活用户数已达行业第二名的3-4倍，用户不再限于开发者，大量HR、运营、行政等非技术岗位也在使用。其企业版和项目功能进一步扩展了Agent办公场景。同期，Trae Work、QoderWork、Kimi Work等产品纷纷改名或出新，争夺市场。腾讯云认为这可能是十年一遇的机遇。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -383,8 +504,8 @@
       "fetched_count": 1007,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 903,
-      "checked_at": "2026-06-17T12:34:46.290399Z"
+      "latency_ms": 810,
+      "checked_at": "2026-06-17T16:53:55.790804Z"
     },
     {
       "source_id": "openai-skills",
@@ -395,8 +516,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 221,
-      "checked_at": "2026-06-17T12:34:46.512381Z"
+      "latency_ms": 241,
+      "checked_at": "2026-06-17T16:53:56.032399Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -404,11 +525,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 229,
-      "kept_count": 0,
+      "fetched_count": 230,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 103,
-      "checked_at": "2026-06-17T12:34:46.619566Z"
+      "latency_ms": 104,
+      "checked_at": "2026-06-17T16:53:56.139977Z"
     },
     {
       "source_id": "google-deepmind",
@@ -419,8 +540,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 296,
-      "checked_at": "2026-06-17T12:34:46.917605Z"
+      "latency_ms": 282,
+      "checked_at": "2026-06-17T16:53:56.423787Z"
     },
     {
       "source_id": "google-ai",
@@ -431,8 +552,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 173,
-      "checked_at": "2026-06-17T12:34:47.091153Z"
+      "latency_ms": 271,
+      "checked_at": "2026-06-17T16:53:56.695889Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -440,11 +561,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 799,
-      "kept_count": 1,
+      "fetched_count": 800,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 237,
-      "checked_at": "2026-06-17T12:34:47.340288Z"
+      "latency_ms": 232,
+      "checked_at": "2026-06-17T16:53:56.939898Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -455,8 +576,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 115,
-      "checked_at": "2026-06-17T12:34:47.456333Z"
+      "latency_ms": 146,
+      "checked_at": "2026-06-17T16:53:57.086679Z"
     },
     {
       "source_id": "github-changelog",
@@ -465,10 +586,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 4,
       "error": null,
       "latency_ms": 29,
-      "checked_at": "2026-06-17T12:34:47.486465Z"
+      "checked_at": "2026-06-17T16:53:57.116133Z"
     },
     {
       "source_id": "aihot",
@@ -477,10 +598,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 11,
+      "kept_count": 12,
       "error": null,
-      "latency_ms": 1400,
-      "checked_at": "2026-06-17T12:34:48.888155Z"
+      "latency_ms": 1473,
+      "checked_at": "2026-06-17T16:53:58.590409Z"
     }
   ],
   "control_notes": {
