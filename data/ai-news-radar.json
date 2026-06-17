@@ -1,15 +1,19 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-17T08:51:05.315213Z",
+  "generated_at": "2026-06-17T11:21:03.315550Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 13,
   "groups": {
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 2,
       "top_sources": [
+        [
+          "Hugging Face Blog",
+          1
+        ],
         [
           "Google DeepMind",
           1
@@ -17,28 +21,40 @@
       ],
       "top_keywords": [
         [
-          "deepmind",
+          "official_ai",
+          2
+        ],
+        [
+          "hugging face",
           1
         ],
         [
-          "official_ai",
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "deepmind",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 10,
       "top_sources": [
         [
           "AI Hot",
-          9
+          10
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
+          10
         ],
         [
           "openai",
@@ -58,7 +74,7 @@
         ],
         [
           "agent",
-          2
+          3
         ],
         [
           "chatgpt",
@@ -81,7 +97,7 @@
           1
         ],
         [
-          "大模型",
+          "api",
           1
         ]
       ]
@@ -104,6 +120,26 @@
     }
   },
   "items": [
+    {
+      "id": "84c40905cf3737e45ad30dfc17c41f9631691eeb",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot",
+      "url": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
+      "published_at": "2026-06-17T10:18:05Z",
+      "summary": null,
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "1814c86df75f5040408d241c716a219793cdf544",
       "source_id": "google-deepmind",
@@ -222,6 +258,26 @@
       "is_ai_related": true
     },
     {
+      "id": "5179f714518abf76292e27d2d8cb6d7508fc6dd0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Kickart 3.0发布，让广告视频创作更精准高效",
+      "url": "https://mp.weixin.qq.com/s/e6SOMeRbdMB_zATsNcYmUQ",
+      "published_at": "2026-06-17T09:45:29Z",
+      "summary": "火山引擎一站式营销创作平台Kickart 3.0（原\"创作Agent\"）正式上线，升级为对话式视频生成模式，用户可通过多轮对话调整商品图、故事板等，用自然语言生成营销视频。新增\"爆款裂变\"能力，上传视频链接后自动拆解爆款逻辑并重构至新商品视频，支持抖音电商内容合规与质量预审核。平台开放SaaS、API及Skill等多种交付方式，并已接入Seedance 2.0 mini，助力降低广告营销成本。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "4078eba0339c457963f6a552eeb5517c7a1bf29c",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -327,8 +383,8 @@
       "fetched_count": 1007,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 641,
-      "checked_at": "2026-06-17T08:50:54.981084Z"
+      "latency_ms": 848,
+      "checked_at": "2026-06-17T11:20:59.035472Z"
     },
     {
       "source_id": "openai-skills",
@@ -339,8 +395,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 220,
-      "checked_at": "2026-06-17T08:50:55.201514Z"
+      "latency_ms": 235,
+      "checked_at": "2026-06-17T11:20:59.271608Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -351,8 +407,8 @@
       "fetched_count": 229,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 105,
-      "checked_at": "2026-06-17T08:50:55.310136Z"
+      "latency_ms": 102,
+      "checked_at": "2026-06-17T11:20:59.377454Z"
     },
     {
       "source_id": "google-deepmind",
@@ -363,8 +419,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 3915,
-      "checked_at": "2026-06-17T08:50:59.227211Z"
+      "latency_ms": 344,
+      "checked_at": "2026-06-17T11:20:59.723649Z"
     },
     {
       "source_id": "google-ai",
@@ -375,8 +431,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 162,
-      "checked_at": "2026-06-17T08:50:59.389643Z"
+      "latency_ms": 225,
+      "checked_at": "2026-06-17T11:20:59.949284Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -384,11 +440,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 797,
-      "kept_count": 0,
+      "fetched_count": 799,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 228,
-      "checked_at": "2026-06-17T08:50:59.629444Z"
+      "latency_ms": 502,
+      "checked_at": "2026-06-17T11:21:00.463400Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -399,8 +455,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 119,
-      "checked_at": "2026-06-17T08:50:59.749135Z"
+      "latency_ms": 331,
+      "checked_at": "2026-06-17T11:21:00.795079Z"
     },
     {
       "source_id": "github-changelog",
@@ -411,8 +467,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-06-17T08:50:59.778780Z"
+      "latency_ms": 28,
+      "checked_at": "2026-06-17T11:21:00.824259Z"
     },
     {
       "source_id": "aihot",
@@ -421,10 +477,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 9,
+      "kept_count": 11,
       "error": null,
-      "latency_ms": 5527,
-      "checked_at": "2026-06-17T08:51:05.307815Z"
+      "latency_ms": 2480,
+      "checked_at": "2026-06-17T11:21:03.305790Z"
     }
   ],
   "control_notes": {
