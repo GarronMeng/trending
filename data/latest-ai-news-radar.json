@@ -1,31 +1,83 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-17T16:53:58.599409Z",
+  "generated_at": "2026-06-18T02:56:44.322846Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 18,
+  "item_count": 9,
   "groups": {
-    "developer": {
-      "group": "developer",
+    "official": {
+      "group": "official",
       "count": 4,
       "top_sources": [
         [
-          "GitHub Changelog",
+          "OpenAI Skills Commits",
+          1
+        ],
+        [
+          "Hugging Face Blog",
+          1
+        ],
+        [
+          "OpenAI News",
+          1
+        ],
+        [
+          "GitHub AI & ML",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
           4
+        ],
+        [
+          "openai",
+          3
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "skill",
+          1
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "copilot",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 5,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          5
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          6
+          10
         ],
         [
           "agent",
-          2
-        ],
-        [
-          "github models",
           2
         ],
         [
@@ -41,109 +93,31 @@
           1
         ]
       ]
-    },
-    "official": {
-      "group": "official",
-      "count": 3,
-      "top_sources": [
-        [
-          "Hugging Face Blog",
-          2
-        ],
-        [
-          "Google DeepMind",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          3
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "agents",
-          2
-        ],
-        [
-          "hugging face",
-          1
-        ],
-        [
-          "deepmind",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 11,
-      "top_sources": [
-        [
-          "AI Hot",
-          10
-        ],
-        [
-          "Anthropic News via Olshansk RSS",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          11
-        ],
-        [
-          "智能体",
-          5
-        ],
-        [
-          "openai",
-          4
-        ],
-        [
-          "anthropic",
-          4
-        ],
-        [
-          "claude",
-          3
-        ],
-        [
-          "gemini",
-          2
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "codex",
-          2
-        ],
-        [
-          "开发者",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "人工智能",
-          1
-        ],
-        [
-          "api",
-          1
-        ]
-      ]
     }
   },
   "items": [
+    {
+      "id": "e12d5409f4f286e8e5ef4567bdf1b2808f0d6910",
+      "source_id": "openai-skills",
+      "source_name": "OpenAI Skills Commits",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "[codex] Mirror compact OpenAI docs search guidance (#494)",
+      "url": "https://github.com/openai/skills/commit/972cb867affac58fda9afa76bb1a19b399a278cf",
+      "published_at": "2026-06-17T19:15:37Z",
+      "summary": "[codex] Mirror compact OpenAI docs search guidance (#494) ## Summary Mirrors [openai/codex#28389](https://github.com/openai/codex/pull/28389) into the system and curated OpenAI Docs skills. The compact search guidance performs better in Codex. ## Validation - Both skill validations passed - `git diff --check`",
+      "relevance_score": 11,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "source:skill",
+        "source:codex",
+        "source:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "d3f0188cd00e2857682826c1cd36b16d1706bc12",
       "source_id": "github-changelog",
@@ -187,46 +161,6 @@
       "is_ai_related": true
     },
     {
-      "id": "5f0d8be6c696913137b4debc4884f6d3d888446a",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Agentic Resource Discovery: Let agents search",
-      "url": "https://huggingface.co/blog/agentic-resource-discovery-launch",
-      "published_at": "2026-06-17T00:00:00Z",
-      "summary": null,
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "dcd017ff2df4035babd62168eee57a16eed5b44f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
-      "url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification",
-      "published_at": "2026-06-17T16:08:36Z",
-      "summary": "Agentic Resource Discovery（ARD）是一项开放规范，用于在Web上发布、发现和验证AI工具、技能与智能体。它基于两个原语：组织在其自有域名下托管catalog描述可用能力，registry作为搜索引擎索引catalog并响应发现请求。ARD支持加密验证，使客户端与端点连接前确认发布者身份，然后直接通过原生协议调用能力。Google Cloud的Gemini Enterprise Agent Platform通过Agent Registry提供企业级支持，包括URN命名、出站策略、工具固定和基于Agent Identity的信任验证。该规范现已发布，开发者可通过托管`ai-catalog.json`文件使其服务可发现。",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:agent",
-        "strong:智能体",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "4d24e60726f2227cf3f8c7ca8fe058ca58d7aefe",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -246,80 +180,56 @@
       "is_ai_related": true
     },
     {
-      "id": "1814c86df75f5040408d241c716a219793cdf544",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
+      "id": "307c14e05323c3debc36d966d7e8cd1133b7cab0",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Unlocking UK house-building with AI-accelerated planning",
-      "url": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning",
-      "published_at": "2026-06-16T21:29:50Z",
-      "summary": "UK government partners with Google DeepMind to build a new AI-powered prototype aimed at faster housing decisions.",
+      "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
+      "url": "https://openai.com/index/ai-chemist-improves-reaction",
+      "published_at": "2026-06-17T10:00:00Z",
+      "summary": "OpenAI and Molecule.one show how a near-autonomous AI chemist using GPT-5.4 improved a key drug-making reaction, advancing medicinal chemistry research.",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:deepmind",
+        "strong:openai",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "14f73ce1fca8eebe6f0a8ce2cbb38de20b8ba626",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Omnigent开源：AI智能体团队元框架",
-      "url": "https://x.com/Yuchenj_UW/status/2067273020352380950",
-      "published_at": "2026-06-17T15:47:50Z",
-      "summary": "编程的未来不是单一智能体，而是一个完整的AI团队。 Omnigent让你在一个实时会话中运行一个智能体团队：Claude Code、Codex、Cursor、Pi，以及你自己的智能体。 它是一个面向AI智能体的元框架，基于我们内部的Databricks开发工具构建，现已开源给所有人。 由传奇人物@matei_zaharia和Databricks AI团队打造。没错，Matei仍然编写大量代码，包括Omnigent和我们产品的前端代码。",
-      "relevance_score": 5,
+      "id": "14b9b10f74e385fb5c22a87efdb2835fe7b0a300",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "Getting more from each token: How Copilot improves context handling and model routing",
+      "url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing",
+      "published_at": "2026-06-17T19:41:46Z",
+      "summary": "How GitHub Copilot is making more of each session go toward useful work, so your credits go further. The post Getting more from each token: How Copilot improves context handling and model routing appeared first on The GitHub Blog .",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:claude",
-        "strong:codex",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
+        "weak:copilot",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "a7e26dccc5396f75393d5369b9a1e91dac82b672",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "人工智能是否已经让自助类非虚构书籍销声匿迹了？",
-      "url": "https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction",
-      "published_at": "2026-06-16T23:09:29Z",
-      "summary": "2026年Q1美国成人非虚构书籍销量同比下降9%，自助类下跌26.3%，仅手工艺/爱好/古董/游戏和宗教两个子类别增长。一位出版了多本《纽约时报》畅销书的作者透露，其五本书的印刷版年销量从2022年基准连续下滑：2023年-5%，2024年-13%，2025年-46%，2026年年化跌幅达-57% vs 2025年；若持续，2026年销量将比2022年减少约80%。所有格式在2025年下半年环比上半年下降约45%。作者认为，Claude、ChatGPT等大语言模型能提供更快、更便宜、更个性化的建议，正在系统性取代自助类书籍的\"指令传递\"价值。头部自助类品牌同期销量也下滑约40-60%，唯一显著变化是AI加速普及。作者判断整个指令传递型内容（包括YouTube教程、播客、在线课程、newsletter）都将面临替",
-      "relevance_score": 5,
+      "id": "3bbc41ac7a85e4d33009714d671b0cb2782fb211",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Enterprise-managed settings now support bypass permission controls",
+      "url": "https://github.blog/changelog/2026-06-17-enterprise-managed-settings-now-support-bypass-permission-controls",
+      "published_at": "2026-06-17T17:13:47Z",
+      "summary": "We’re adding our first governance capability to the enterprise-managed settings configuration. Enterprise administrators can now set disableBypassPermissionsMode to \"disable\" in the enterprise-managed settings.json to prevent GitHub Copilot CLI and VS… The post Enterprise-managed settings now support bypass permission controls appeared first on The GitHub Bl",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:claude",
-        "strong:chatgpt",
-        "strong:人工智能",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c45d9f67c50c77bd496669aeca9d2a4d1e564f04",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 5月企业AI订阅份额首超OpenAI，特朗普政府禁令反促采用量创新高",
-      "url": "https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests",
-      "published_at": "2026-06-16T22:34:17Z",
-      "summary": "Anthropic 5月企业AI订阅市场份额达41%，首次超越OpenAI（39.5%）。公司刚完成650亿美元融资、估值9650亿美元，并因首次盈利季度秘密提交IPO。特朗普政府以出口管制为由要求Anthropic禁止非美国人访问最新模型Mythos 5及Fable 5，导致两款模型下架。Ramp首席经济学家指出，类似争议（如3月被国防部列为供应链风险）反而推动Anthropic企业采用量创纪录。Ramp数据显示，企业支出主要流向Claude Opus模型（最新为Opus 4.8）。",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -342,154 +252,20 @@
       "is_ai_related": true
     },
     {
-      "id": "0deffef455de563bcf754b6ea79bac2d87ff93fd",
-      "source_id": "anthropic-news-unofficial",
-      "source_name": "Anthropic News via Olshansk RSS",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 3,
-      "title": "Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
-      "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
-      "published_at": "2026-06-17T00:00:00Z",
-      "summary": "Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "source:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "3d8331a2776100b38e702da54ac11f8676ac7733",
+      "id": "0182de3bc8a081a4b2b140376b5e861568a94f44",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "GitHub Models is no longer available to new customers",
-      "url": "https://github.blog/changelog/2026-06-16-github-models-is-no-longer-available-to-new-customers",
-      "published_at": "2026-06-16T20:24:41Z",
-      "summary": "We are retiring GitHub Models. As a first step, new customers can no longer use it. If your organization or enterprise have not previously used GitHub Models, you won’t see… The post GitHub Models is no longer available to new customers appeared first on The GitHub Blog .",
+      "title": "Copilot individual plan sign-ups are reopening",
+      "url": "https://github.blog/changelog/2026-06-17-copilot-individual-plan-sign-ups-are-reopening",
+      "published_at": "2026-06-17T14:10:00Z",
+      "summary": "We’re reopening sign-ups for GitHub Copilot Student, Pro, Pro+, and Max plans gradually over the next couple of weeks for new subscribers. If you’ve been waiting to get started with… The post Copilot individual plan sign-ups are reopening appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:github models",
-        "source:github models"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "012eb699ba3591a6ab79e8f7dc514c819f16ca1d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "NVIDIA GEAR实验室发布ENPIRE：8个Codex智能体自主控制机器人完成物理实验",
-      "url": "https://x.com/DrJimFan/status/2067283904986517866",
-      "published_at": "2026-06-17T16:31:05Z",
-      "summary": "NVIDIA GEAR实验室推出ENPIRE系统，首次实现物理世界自主研究。系统让8个Codex智能体控制8台机器人，配备GPU和token预算。安全方面采用硬运动极限切断和扭矩受限夹爪两层硬件保障，支持通宵无人运行。奖励函数通过视觉分类器离线固定并冻结，防止智能体作弊。实时监测机器人利用率（MRU）、token利用率（MTU）和GPU利用率，以Tokens-to-Success和Time-to-Success评估效率。ENPIRE自主完成扎带、整理细针、安装GPU等高精度任务，发现8机器人并行探索显著更快。系统将开源。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:codex",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b7f0a7fa0a3ab4d97e26aac86c5749f2473d4473",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google 医学推理 AI 系统 AMIE 新研究：从诊断迈向长期疾病管理",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature",
-      "published_at": "2026-06-17T15:00:00Z",
-      "summary": "今日发表在《自然》杂志上的研究展示了 Google 的医学推理 AI 系统 AMIE（Articulate Medical Intelligence Explorer）从单次诊断对话演进到长期疾病管理的能力。AMIE 利用 Gemini 模型的长上下文能力，整合共情对话智能体和深度思考管理推理智能体，可交叉引用数百页临床指南。在盲测中，AMIE 与 21 名初级保健医生相比，在整体管理推理上匹配临床医生，在计划精确性和指南一致性上得分显著更高。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5179f714518abf76292e27d2d8cb6d7508fc6dd0",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Kickart 3.0发布，让广告视频创作更精准高效",
-      "url": "https://mp.weixin.qq.com/s/e6SOMeRbdMB_zATsNcYmUQ",
-      "published_at": "2026-06-17T09:45:29Z",
-      "summary": "火山引擎一站式营销创作平台Kickart 3.0（原\"创作Agent\"）正式上线，升级为对话式视频生成模式，用户可通过多轮对话调整商品图、故事板等，用自然语言生成营销视频。新增\"爆款裂变\"能力，上传视频链接后自动拆解爆款逻辑并重构至新商品视频，支持抖音电商内容合规与质量预审核。平台开放SaaS、API及Skill等多种交付方式，并已接入Seedance 2.0 mini，助力降低广告营销成本。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "4078eba0339c457963f6a552eeb5517c7a1bf29c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "消息称 OpenAI 今年一季度现金消耗达 37 亿美元，超同期收入的一半",
-      "url": "https://www.ithome.com/0/965/335.htm",
-      "published_at": "2026-06-17T04:55:33Z",
-      "summary": "OpenAI 在 2026 年第一季度现金消耗达 37 亿美元，超过同期 57 亿美元收入的一半。数据来自一份向股东披露的文件，直观体现 AI 大模型研发与规模化落地的巨额成本。OpenAI 正筹备上市，已在美国保密递交 IPO 申请，最早或于 9 月完成，估值最高可达 1 万亿美元。头部 AI 企业持续重金投入算力、模型研发与人才招募以维持竞争优势。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:大模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "610cb8a6ab38476297d973e4a00e87b4c07b75a6",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 的领先优势正在快速缩小",
-      "url": "https://garymarcus.substack.com/p/openais-lead-is-dwindling-fast",
-      "published_at": "2026-06-16T21:54:47Z",
-      "summary": "评论认为 OpenAI 正面临多重危机：缺乏护城河导致市场领先地位下滑；最大投资者微软持续疏远，近期甚至公开考虑将主要产品外包给中国；亏损速度远超预期，年亏损额以 8 倍增长。华盛顿方面可能打压 Anthropic，但也可能反而帮助其崛起，而 Elon Musk 成为另一个潜在的竞标者。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1f9193050b7c7344b3f524f8915eb1bdd0f4c185",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "公开聊天数据能否预测真实世界AI失调？",
-      "url": "https://alignment.openai.com/validating-public-evals",
-      "published_at": "2026-06-16T18:00:00Z",
-      "summary": "OpenAI利用WildChat公开数据集（2023年4月至2024年5月收集的100万条对话）模拟模型部署，预测GPT-5.1、GPT-5.2、GPT-5.4在真实生产环境中的不良行为率。与私有生产数据对比发现，WildChat模拟的平均预测误差约3倍；但对技术性和智能体型失调的预测精度下降。研究验证了公开数据集作为外部审计工具的可行性。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     }
@@ -501,11 +277,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1007,
-      "kept_count": 0,
+      "fetched_count": 1009,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 810,
-      "checked_at": "2026-06-17T16:53:55.790804Z"
+      "latency_ms": 739,
+      "checked_at": "2026-06-18T02:56:38.030538Z"
     },
     {
       "source_id": "openai-skills",
@@ -514,10 +290,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 241,
-      "checked_at": "2026-06-17T16:53:56.032399Z"
+      "latency_ms": 191,
+      "checked_at": "2026-06-18T02:56:38.222626Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -526,10 +302,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 230,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 104,
-      "checked_at": "2026-06-17T16:53:56.139977Z"
+      "latency_ms": 107,
+      "checked_at": "2026-06-18T02:56:38.333704Z"
     },
     {
       "source_id": "google-deepmind",
@@ -538,10 +314,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 282,
-      "checked_at": "2026-06-17T16:53:56.423787Z"
+      "latency_ms": 227,
+      "checked_at": "2026-06-18T02:56:38.562856Z"
     },
     {
       "source_id": "google-ai",
@@ -552,8 +328,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 271,
-      "checked_at": "2026-06-17T16:53:56.695889Z"
+      "latency_ms": 181,
+      "checked_at": "2026-06-18T02:56:38.745074Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -562,10 +338,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 800,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 232,
-      "checked_at": "2026-06-17T16:53:56.939898Z"
+      "latency_ms": 298,
+      "checked_at": "2026-06-18T02:56:39.056261Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -574,10 +350,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 146,
-      "checked_at": "2026-06-17T16:53:57.086679Z"
+      "latency_ms": 126,
+      "checked_at": "2026-06-18T02:56:39.182705Z"
     },
     {
       "source_id": "github-changelog",
@@ -586,10 +362,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-06-17T16:53:57.116133Z"
+      "latency_ms": 37,
+      "checked_at": "2026-06-18T02:56:39.221156Z"
     },
     {
       "source_id": "aihot",
@@ -597,11 +373,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 50,
-      "kept_count": 12,
+      "fetched_count": 0,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 1473,
-      "checked_at": "2026-06-17T16:53:58.590409Z"
+      "latency_ms": 5093,
+      "checked_at": "2026-06-18T02:56:44.315037Z"
     }
   ],
   "control_notes": {
