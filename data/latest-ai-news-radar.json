@@ -1,17 +1,25 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-18T12:00:53.467822Z",
+  "generated_at": "2026-06-18T16:55:16.142290Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 25,
+  "item_count": 20,
   "groups": {
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI Skills Commits",
+          1
+        ],
+        [
+          "OpenAI News",
+          1
+        ],
+        [
+          "Hugging Face Blog",
           1
         ],
         [
@@ -21,15 +29,15 @@
       ],
       "top_keywords": [
         [
+          "official_ai",
+          4
+        ],
+        [
           "openai",
-          2
+          3
         ],
         [
           "codex",
-          2
-        ],
-        [
-          "official_ai",
           2
         ],
         [
@@ -37,60 +45,40 @@
           1
         ],
         [
-          "copilot",
+          "reasoning model",
           1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 6,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          6
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          12
         ],
         [
           "agent",
-          2
-        ],
-        [
-          "agents",
           1
         ],
         [
-          "mcp",
+          "benchmark",
           1
         ],
         [
           "tool",
+          1
+        ],
+        [
+          "copilot",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 17,
+      "count": 13,
       "top_sources": [
         [
           "AI Hot",
-          17
+          13
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          17
-        ],
-        [
-          "智能体",
-          6
+          13
         ],
         [
           "api",
@@ -106,14 +94,18 @@
         ],
         [
           "claude",
-          4
-        ],
-        [
-          "agent",
           3
         ],
         [
-          "gemini",
+          "chatgpt",
+          3
+        ],
+        [
+          "智能体",
+          3
+        ],
+        [
+          "anthropic",
           3
         ],
         [
@@ -125,12 +117,36 @@
           3
         ],
         [
-          "anthropic",
+          "gemini",
           2
         ],
         [
-          "mcp",
+          "agent",
           2
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 3,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          3
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          4
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "actions",
+          1
         ]
       ]
     }
@@ -159,24 +175,63 @@
       "is_ai_related": true
     },
     {
-      "id": "d3f0188cd00e2857682826c1cd36b16d1706bc12",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
+      "id": "fe7c1b0a945ecdefe7e78156dd617a51b1acc600",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Adobe 为 Photoshop、Premiere 等多款 Creative Cloud 应用加入 AI 智能体",
+      "url": "https://the-decoder.com/adobe-adds-ai-agents-to-photoshop-premiere-and-more-creative-cloud-apps",
+      "published_at": "2026-06-18T12:59:00Z",
+      "summary": "Adobe 将其\"创意智能体\"扩展至 Photoshop、Premiere 等应用，以公开测试形式提供 AI Assistant。该智能体可自动完成多步骤常规任务，如 Premiere 分拣素材和粗剪、Photoshop 换背景、Illustrator 批量生成文件、InDesign 更新版式等。Firefly 新增面向个人创作者的品牌套件、产品图转短视频及 Quick Cut 自动剪辑功能。Adobe 工具已集成至 ChatGPT、Claude 及 Microsoft 365 Copilot，Google Gemini 和 Slack 集成即将推出。",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:chatgpt",
+        "strong:gemini",
+        "strong:智能体",
+        "weak:copilot",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "969a4eae15b9dacb17133b6a0616851b3c591b93",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Agent finder for GitHub Copilot now available",
-      "url": "https://github.blog/changelog/2026-06-17-agent-finder-for-github-copilot-now-available",
-      "published_at": "2026-06-17T16:21:56Z",
-      "summary": "GitHub agent finder is now available. Instead of hand-wiring which MCP servers, skills, canvases, agents, and tools each agent should use—and filling your context window in the process—GitHub Copilot can… The post Agent finder for GitHub Copilot now available appeared first on The GitHub Blog .",
-      "relevance_score": 10,
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+      "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
+      "published_at": "2026-06-18T08:00:00Z",
+      "summary": "Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:reasoning model",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "36deb338577304e9cb2e38b207344adf4ecc0a44",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+      "url": "https://huggingface.co/blog/is-it-agentic-enough",
+      "published_at": "2026-06-18T00:00:00Z",
+      "summary": null,
+      "relevance_score": 5,
       "relevance_reasons": [
         "strong:agent",
-        "strong:agents",
-        "strong:mcp",
+        "weak:benchmark",
         "weak:tool",
-        "weak:copilot",
-        "source:copilot"
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -225,46 +280,6 @@
       "is_ai_related": true
     },
     {
-      "id": "dcd017ff2df4035babd62168eee57a16eed5b44f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
-      "url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification",
-      "published_at": "2026-06-17T16:08:36Z",
-      "summary": "Agentic Resource Discovery（ARD）是一项开放规范，用于在Web上发布、发现和验证AI工具、技能与智能体。它基于两个原语：组织在其自有域名下托管catalog描述可用能力，registry作为搜索引擎索引catalog并响应发现请求。ARD支持加密验证，使客户端与端点连接前确认发布者身份，然后直接通过原生协议调用能力。Google Cloud的Gemini Enterprise Agent Platform通过Agent Registry提供企业级支持，包括URN命名、出站策略、工具固定和基于Agent Identity的信任验证。该规范现已发布，开发者可通过托管`ai-catalog.json`文件使其服务可发现。",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:agent",
-        "strong:智能体",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "4d24e60726f2227cf3f8c7ca8fe058ca58d7aefe",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Copilot app generally available",
-      "url": "https://github.blog/changelog/2026-06-17-github-copilot-app-generally-available",
-      "published_at": "2026-06-17T13:00:33Z",
-      "summary": "The GitHub Copilot app is now generally available for macOS, Windows, and Linux. It’s the desktop home for agent-driven development, built natively on GitHub. Download the GitHub Copilot app to… The post GitHub Copilot app generally available appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "e796a36a9e4c7d013c3edf9129979fef9b69baa3",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -280,6 +295,27 @@
         "strong:人工智能",
         "strong:大模型",
         "strong:开源模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b113c3f17bf3fa2e7a2af5cc6d9505ddac47ed4e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "超越 LoRA：如何选择最佳参数高效微调技术？",
+      "url": "https://huggingface.co/blog/peft-beyond-lora",
+      "published_at": "2026-06-18T00:00:00Z",
+      "summary": "参数高效微调（PEFT）技术中，LoRA 占据绝对主导：Hugging Face Hub 上 20，834 张提及单一 PEFT 技术的模型卡中 20，509 张指向 LoRA（98.4%）；外部站点 10，000 个检查点中 95.0% 是 LoRA；GitHub 搜索 `from peft import` 代码片段的 71.3% 结果为 LoRA。但研究者宣称其他技术超越 LoRA 的论文结果具备偏向性--调整学习率即可让 LoRA 匹配更优技术。Hugging Face 的 PEFT 库提供统一 API 实现 40 余种 PEFT 技术，并开始建立基准测试：在数学数据集上对 LLM 进行思维链推理微调，以帮助用户做出更优选择。",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:llm",
+        "weak:api",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -326,22 +362,20 @@
       "is_ai_related": true
     },
     {
-      "id": "14f73ce1fca8eebe6f0a8ce2cbb38de20b8ba626",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Omnigent开源：AI智能体团队元框架",
-      "url": "https://x.com/Yuchenj_UW/status/2067273020352380950",
-      "published_at": "2026-06-17T15:47:50Z",
-      "summary": "编程的未来不是单一智能体，而是一个完整的AI团队。 Omnigent让你在一个实时会话中运行一个智能体团队：Claude Code、Codex、Cursor、Pi，以及你自己的智能体。 它是一个面向AI智能体的元框架，基于我们内部的Databricks开发工具构建，现已开源给所有人。 由传奇人物@matei_zaharia和Databricks AI团队打造。没错，Matei仍然编写大量代码，包括Omnigent和我们产品的前端代码。",
-      "relevance_score": 5,
+      "id": "790753bd5be02261b8b45d06a2b515ec64739c01",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Safer pull_request_target defaults for GitHub Actions checkout",
+      "url": "https://github.blog/changelog/2026-06-18-safer-pull_request_target-defaults-for-github-actions-checkout",
+      "published_at": "2026-06-18T14:06:55Z",
+      "summary": "The pull_request_target event is one of the most commonly misused triggers in GitHub Actions, leading to vulnerabilities in workflows. Workflows triggered by pull_request_target run with the base repository’s GITHUB_TOKEN, secrets,… The post Safer pull_request_target defaults for GitHub Actions checkout appeared first on The GitHub Blog .",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:claude",
-        "strong:codex",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
+        "weak:workflow",
+        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -400,38 +434,21 @@
       "is_ai_related": true
     },
     {
-      "id": "5069d93b1bbaabe7e9ba468f99434b4624bdcc87",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Auto mode in Copilot Chat available for all users",
-      "url": "https://github.blog/changelog/2026-06-17-auto-mode-in-copilot-chat-available-for-all-users",
-      "published_at": "2026-06-17T16:24:33Z",
-      "summary": "GitHub Copilot auto model selection is now generally available in Copilot Chat on github.com and the GitHub mobile app for all Copilot plans. With auto, Copilot chooses a model on… The post Auto mode in Copilot Chat available for all users appeared first on The GitHub Blog .",
+      "id": "e1c26a5676cd7b839d1cc5944a617b66e58d9eda",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic Project Fetch 第二阶段：Claude Opus 4.7 自主完成任务，速度比人类团队快约20倍",
+      "url": "https://www.anthropic.com/research/project-fetch-phase-two",
+      "published_at": "2026-06-18T16:22:33Z",
+      "summary": "Anthropic 发布 Project Fetch 实验第二阶段结果。在2024年8月原始实验中，配备 Claude Opus 4.1 的人类团队在操控四足机器人时显著超越无 AI 团队。新实验中，Claude Opus 4.7 无需人类协助即完成所有任务，速度比最快人类团队快约20倍，比无 Claude 团队快37倍以上，编码量减少近10倍。模型在传感器连接、路径规划等环节表现出色，但在精确移动沙滩球等闭环控制任务上仍存在困难。这些进展源于通用模型规模化，而非针对机器人领域的专项优化。",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0182de3bc8a081a4b2b140376b5e861568a94f44",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot individual plan sign-ups are reopening",
-      "url": "https://github.blog/changelog/2026-06-17-copilot-individual-plan-sign-ups-are-reopening",
-      "published_at": "2026-06-17T14:10:00Z",
-      "summary": "We’re reopening sign-ups for GitHub Copilot Student, Pro, Pro+, and Max plans gradually over the next couple of weeks for new subscribers. If you’ve been waiting to get started with… The post Copilot individual plan sign-ups are reopening appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -530,102 +547,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "baa21c588d8d818be7627229e68949ebc176a898",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "借助 Workload Identity Federation 安全访问 Claude Platform",
-      "url": "https://claude.com/blog/workload-identity-federation",
-      "published_at": "2026-06-17T20:44:36Z",
-      "summary": "Workload Identity Federation （WIF） 已在 Claude Platform 上全面可用。WIF 兼容任何 OIDC 身份提供者，覆盖所有 Claude API 端点（包括第一方 SDK 和 Claude Code）。WIF 用短生命期凭证替代静态 API 密钥，并引入服务账户，每个工作负载拥有独立身份、角色和审计日志。Claude Console 提供引导设置流程，支持 Admin API 进行组织管理。API 密钥可并行使用以便逐步迁移。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "012eb699ba3591a6ab79e8f7dc514c819f16ca1d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "NVIDIA GEAR实验室发布ENPIRE：8个Codex智能体自主控制机器人完成物理实验",
-      "url": "https://x.com/DrJimFan/status/2067283904986517866",
-      "published_at": "2026-06-17T16:31:05Z",
-      "summary": "NVIDIA GEAR实验室推出ENPIRE系统，首次实现物理世界自主研究。系统让8个Codex智能体控制8台机器人，配备GPU和token预算。安全方面采用硬运动极限切断和扭矩受限夹爪两层硬件保障，支持通宵无人运行。奖励函数通过视觉分类器离线固定并冻结，防止智能体作弊。实时监测机器人利用率（MRU）、token利用率（MTU）和GPU利用率，以Tokens-to-Success和Time-to-Success评估效率。ENPIRE自主完成扎带、整理细针、安装GPU等高精度任务，发现8机器人并行探索显著更快。系统将开源。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:codex",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b7f0a7fa0a3ab4d97e26aac86c5749f2473d4473",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google 医学推理 AI 系统 AMIE 新研究：从诊断迈向长期疾病管理",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature",
-      "published_at": "2026-06-17T15:00:00Z",
-      "summary": "今日发表在《自然》杂志上的研究展示了 Google 的医学推理 AI 系统 AMIE（Articulate Medical Intelligence Explorer）从单次诊断对话演进到长期疾病管理的能力。AMIE 利用 Gemini 模型的长上下文能力，整合共情对话智能体和深度思考管理推理智能体，可交叉引用数百页临床指南。在盲测中，AMIE 与 21 名初级保健医生相比，在整体管理推理上匹配临床医生，在计划精确性和指南一致性上得分显著更高。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "65e0272e587f0de6bffc4ee7e239e859aab399fd",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google 分享 A2UI 与 MCP Apps 三种集成架构模式",
-      "url": "https://developers.googleblog.com/a2ui-and-mcp-apps",
-      "published_at": "2026-06-17T21:13:53Z",
-      "summary": "Google 分享了三种集成 A2UI 与 MCP Apps 的架构模式，旨在结合两者优势。A2UI 采用声明式框架，通过 JSON payload 定义 UI，由宿主原生渲染，确保一致性与安全性，但受限于预定义组件库。MCP Apps 在 iframe 中使用标准 Web 技术提供自定义界面，但存在设计碎片化、性能与安全挑战。三种模式包括：通过 MCP 服务器提供 A2UI，利用 MCP Resources 或 Tool 调用传递 JSON，实现\"一次编写，原生渲染\"的跨平台能力；以及静态与动态交付方案。Google 正考虑扩展 MCP 以原生支持 A2UI。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:mcp",
-        "weak:tool",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "3acd49e9429b80de89b2e40af04fc2012ddfab39",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Design 更新：跨项目保持品牌一致，与Claude Code协同",
-      "url": "https://claude.com/blog/claude-design-stays-on-brand-for-daily-work",
-      "published_at": "2026-06-17T20:44:36Z",
-      "summary": "6月17日，Claude Design 更新，支持跨项目使用统一设计系统，并与Claude Code同步工作流。用户可直接拖拽、对齐和缩放画布元素，编辑器稳定性大幅提升。设计系统可从GitHub、设计文件或原始上传导入，团队管理员可锁定标准系统防止篡改。新增桌面端侧边栏入口及独立网页端claude.ai/design。使用限制与聊天、Claude Cowork、Claude Code共享，每次任务消耗更少token，错误率下降。支持导出PDF、PPT，集成Adobe、Canva、Gamma等工具。发布首周用户超一百万。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:claude",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -635,11 +556,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1009,
-      "kept_count": 0,
+      "fetched_count": 1010,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 822,
-      "checked_at": "2026-06-18T12:00:48.887604Z"
+      "latency_ms": 523,
+      "checked_at": "2026-06-18T16:55:13.034941Z"
     },
     {
       "source_id": "openai-skills",
@@ -650,8 +571,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 241,
-      "checked_at": "2026-06-18T12:00:49.129425Z"
+      "latency_ms": 328,
+      "checked_at": "2026-06-18T16:55:13.364117Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -662,8 +583,8 @@
       "fetched_count": 230,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 103,
-      "checked_at": "2026-06-18T12:00:49.236670Z"
+      "latency_ms": 104,
+      "checked_at": "2026-06-18T16:55:13.472187Z"
     },
     {
       "source_id": "google-deepmind",
@@ -674,8 +595,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 440,
-      "checked_at": "2026-06-18T12:00:49.679229Z"
+      "latency_ms": 601,
+      "checked_at": "2026-06-18T16:55:14.074768Z"
     },
     {
       "source_id": "google-ai",
@@ -686,8 +607,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 166,
-      "checked_at": "2026-06-18T12:00:49.845716Z"
+      "latency_ms": 376,
+      "checked_at": "2026-06-18T16:55:14.451561Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -695,11 +616,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 800,
-      "kept_count": 0,
+      "fetched_count": 802,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 298,
-      "checked_at": "2026-06-18T12:00:50.156370Z"
+      "latency_ms": 312,
+      "checked_at": "2026-06-18T16:55:14.776066Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -710,8 +631,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 129,
-      "checked_at": "2026-06-18T12:00:50.285686Z"
+      "latency_ms": 141,
+      "checked_at": "2026-06-18T16:55:14.918249Z"
     },
     {
       "source_id": "github-changelog",
@@ -720,10 +641,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 6,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-06-18T12:00:50.314925Z"
+      "latency_ms": 38,
+      "checked_at": "2026-06-18T16:55:14.957072Z"
     },
     {
       "source_id": "aihot",
@@ -732,10 +653,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 17,
+      "kept_count": 15,
       "error": null,
-      "latency_ms": 3145,
-      "checked_at": "2026-06-18T12:00:53.462099Z"
+      "latency_ms": 1177,
+      "checked_at": "2026-06-18T16:55:16.135577Z"
     }
   ],
   "control_notes": {

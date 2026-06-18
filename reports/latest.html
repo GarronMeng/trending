@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>25</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>2</b><span>官方源条目</span></div>
-        <div class="stat"><b>17</b><span>聚合源条目</span></div>
+        <div class="stat"><b>20</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>4</b><span>官方源条目</span></div>
+        <div class="stat"><b>13</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-18T12:00:53.471285Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-18T16:55:16.143929Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -69,14 +69,40 @@
 
     <article class="card">
       <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-06-17T16:21:56Z</span>
-        <strong>Score 10</strong>
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-18T12:59:00Z</span>
+        <strong>Score 8</strong>
       </div>
-      <h3><a href="https://github.blog/changelog/2026-06-17-agent-finder-for-github-copilot-now-available" target="_blank" rel="noreferrer">Agent finder for GitHub Copilot now available</a></h3>
-      <p class='summary'>GitHub agent finder is now available. Instead of hand-wiring which MCP servers, skills, canvases, agents, and tools each agent should use—and filling your context window in the process—GitHub Copilot can… The post Agent finder for GitHub Copilot now available appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>strong:mcp</span><span>weak:tool</span><span>weak:copilot</span></div>
+      <h3><a href="https://the-decoder.com/adobe-adds-ai-agents-to-photoshop-premiere-and-more-creative-cloud-apps" target="_blank" rel="noreferrer">Adobe 为 Photoshop、Premiere 等多款 Creative Cloud 应用加入 AI 智能体</a></h3>
+      <p class='summary'>Adobe 将其&quot;创意智能体&quot;扩展至 Photoshop、Premiere 等应用，以公开测试形式提供 AI Assistant。该智能体可自动完成多步骤常规任务，如 Premiere 分拣素材和粗剪、Photoshop 换背景、Illustrator 批量生成文件、InDesign 更新版式等。Firefly 新增面向个人创作者的品牌套件、产品图转短视频及 Quick Cut 自动剪辑功能。Adobe 工具已集成至 ChatGPT、Claude 及 Microsoft 365 Copilot，Google Gemini 和 Slack 集成即将推出。</p>
+      <div class="tags"><span>strong:claude</span><span>strong:chatgpt</span><span>strong:gemini</span><span>strong:智能体</span><span>weak:copilot</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-06-18T08:00:00Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://openai.com/index/diagnose-rare-childhood-diseases" target="_blank" rel="noreferrer">Using AI to help physicians diagnose rare genetic diseases affecting children</a></h3>
+      <p class='summary'>Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases.</p>
+      <div class="tags"><span>strong:openai</span><span>strong:reasoning model</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>Hugging Face Blog</span>
+        <span>official_rss</span>
+        <span>2026-06-18T00:00:00Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://huggingface.co/blog/is-it-agentic-enough" target="_blank" rel="noreferrer">Is it agentic enough? Benchmarking open models on your own tooling</a></h3>
+      
+      <div class="tags"><span>strong:agent</span><span>weak:benchmark</span><span>weak:tool</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -110,25 +136,12 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-06-17T16:08:36Z</span>
-        <strong>Score 6</strong>
-      </div>
-      <h3><a href="https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification" target="_blank" rel="noreferrer">谷歌发布Agentic Resource Discovery（ARD）开放规范</a></h3>
-      <p class='summary'>Agentic Resource Discovery（ARD）是一项开放规范，用于在Web上发布、发现和验证AI工具、技能与智能体。它基于两个原语：组织在其自有域名下托管catalog描述可用能力，registry作为搜索引擎索引catalog并响应发现请求。ARD支持加密验证，使客户端与端点连接前确认发布者身份，然后直接通过原生协议调用能力。Google Cloud的Gemini Enterprise Agent Platform通过Agent Registry提供企业级支持，包括URN命名、出站策略、工具固定和基于Agent Identity的信任验证。该规范现已发布，开发者可通过托管`ai-catalog.json`文件使其服务可发现。</p>
-      <div class="tags"><span>strong:gemini</span><span>strong:agent</span><span>strong:智能体</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-06-17T13:00:33Z</span>
+        <span>2026-06-18T02:31:28Z</span>
         <strong>Score 5</strong>
       </div>
-      <h3><a href="https://github.blog/changelog/2026-06-17-github-copilot-app-generally-available" target="_blank" rel="noreferrer">GitHub Copilot app generally available</a></h3>
-      <p class='summary'>The GitHub Copilot app is now generally available for macOS, Windows, and Linux. It’s the desktop home for agent-driven development, built natively on GitHub. Download the GitHub Copilot app to… The post GitHub Copilot app generally available appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>strong:agent</span><span>weak:copilot</span><span>source:copilot</span></div>
+      <h3><a href="https://mp.weixin.qq.com/s/50q5uY849FKnBzk1Q04MRg" target="_blank" rel="noreferrer">首个统一科学大模型 LOGOS 正式开源</a></h3>
+      <p class='summary'>LOGOS 由 ATH-Token Foundry 联合中国人民大学高瓴人工智能学院开源，是首个基于统一&quot;科学语法&quot;的多领域科学生成基础模型。LOGOS-1B（1B参数）在六大科学任务上匹配或超越领域专用方法：口袋条件配体生成纯序列范式首次超越3D扩散模型，超越NatureLM（8×7B）；逆合成预测Top-1准确率74.8%；口袋位点识别仅靠序列达58.5% Top-n准确率；MOF材料生成NBB提升至17.78%。模型采用统一词汇表将蛋白质、小分子等编码为离散Token，通过空间交互离散化实现无需3D坐标的序列预测。预训练与下游任务形式与目标一致，跨领域知识迁移经实验验证有效。已完整开源模型权重、推理代码与技术报告。</p>
+      <div class="tags"><span>strong:人工智能</span><span>strong:大模型</span><span>strong:开源模型</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -136,12 +149,12 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-06-18T02:31:28Z</span>
+        <span>2026-06-18T00:00:00Z</span>
         <strong>Score 5</strong>
       </div>
-      <h3><a href="https://mp.weixin.qq.com/s/50q5uY849FKnBzk1Q04MRg" target="_blank" rel="noreferrer">首个统一科学大模型 LOGOS 正式开源</a></h3>
-      <p class='summary'>LOGOS 由 ATH-Token Foundry 联合中国人民大学高瓴人工智能学院开源，是首个基于统一&quot;科学语法&quot;的多领域科学生成基础模型。LOGOS-1B（1B参数）在六大科学任务上匹配或超越领域专用方法：口袋条件配体生成纯序列范式首次超越3D扩散模型，超越NatureLM（8×7B）；逆合成预测Top-1准确率74.8%；口袋位点识别仅靠序列达58.5% Top-n准确率；MOF材料生成NBB提升至17.78%。模型采用统一词汇表将蛋白质、小分子等编码为离散Token，通过空间交互离散化实现无需3D坐标的序列预测。预训练与下游任务形式与目标一致，跨领域知识迁移经实验验证有效。已完整开源模型权重、推理代码与技术报告。</p>
-      <div class="tags"><span>strong:人工智能</span><span>strong:大模型</span><span>strong:开源模型</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://huggingface.co/blog/peft-beyond-lora" target="_blank" rel="noreferrer">超越 LoRA：如何选择最佳参数高效微调技术？</a></h3>
+      <p class='summary'>参数高效微调（PEFT）技术中，LoRA 占据绝对主导：Hugging Face Hub 上 20，834 张提及单一 PEFT 技术的模型卡中 20，509 张指向 LoRA（98.4%）；外部站点 10，000 个检查点中 95.0% 是 LoRA；GitHub 搜索 `from peft import` 代码片段的 71.3% 结果为 LoRA。但研究者宣称其他技术超越 LoRA 的论文结果具备偏向性--调整学习率即可让 LoRA 匹配更优技术。Hugging Face 的 PEFT 库提供统一 API 实现 40 余种 PEFT 技术，并开始建立基准测试：在数学数据集上对 LLM 进行思维链推理微调，以帮助用户做出更优选择。</p>
+      <div class="tags"><span>strong:hugging face</span><span>strong:llm</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -173,14 +186,14 @@
 
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-17T15:47:50Z</span>
-        <strong>Score 5</strong>
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-06-18T14:06:55Z</span>
+        <strong>Score 3</strong>
       </div>
-      <h3><a href="https://x.com/Yuchenj_UW/status/2067273020352380950" target="_blank" rel="noreferrer">Omnigent开源：AI智能体团队元框架</a></h3>
-      <p class='summary'>编程的未来不是单一智能体，而是一个完整的AI团队。 Omnigent让你在一个实时会话中运行一个智能体团队：Claude Code、Codex、Cursor、Pi，以及你自己的智能体。 它是一个面向AI智能体的元框架，基于我们内部的Databricks开发工具构建，现已开源给所有人。 由传奇人物@matei_zaharia和Databricks AI团队打造。没错，Matei仍然编写大量代码，包括Omnigent和我们产品的前端代码。</p>
-      <div class="tags"><span>strong:claude</span><span>strong:codex</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://github.blog/changelog/2026-06-18-safer-pull_request_target-defaults-for-github-actions-checkout" target="_blank" rel="noreferrer">Safer pull_request_target defaults for GitHub Actions checkout</a></h3>
+      <p class='summary'>The pull_request_target event is one of the most commonly misused triggers in GitHub Actions, leading to vulnerabilities in workflows. Workflows triggered by pull_request_target run with the base repository’s GITHUB_TOKEN, secrets,… The post Safer pull_request_target defaults for GitHub Actions checkout appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:workflow</span><span>source:actions</span></div>
     </article>
     
 
@@ -225,27 +238,14 @@
 
     <article class="card">
       <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-06-17T16:24:33Z</span>
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-18T16:22:33Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://github.blog/changelog/2026-06-17-auto-mode-in-copilot-chat-available-for-all-users" target="_blank" rel="noreferrer">Auto mode in Copilot Chat available for all users</a></h3>
-      <p class='summary'>GitHub Copilot auto model selection is now generally available in Copilot Chat on github.com and the GitHub mobile app for all Copilot plans. With auto, Copilot chooses a model on… The post Auto mode in Copilot Chat available for all users appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-06-17T14:10:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-06-17-copilot-individual-plan-sign-ups-are-reopening" target="_blank" rel="noreferrer">Copilot individual plan sign-ups are reopening</a></h3>
-      <p class='summary'>We’re reopening sign-ups for GitHub Copilot Student, Pro, Pro+, and Max plans gradually over the next couple of weeks for new subscribers. If you’ve been waiting to get started with… The post Copilot individual plan sign-ups are reopening appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
+      <h3><a href="https://www.anthropic.com/research/project-fetch-phase-two" target="_blank" rel="noreferrer">Anthropic Project Fetch 第二阶段：Claude Opus 4.7 自主完成任务，速度比人类团队快约20倍</a></h3>
+      <p class='summary'>Anthropic 发布 Project Fetch 实验第二阶段结果。在2024年8月原始实验中，配备 Claude Opus 4.1 的人类团队在操控四足机器人时显著超越无 AI 团队。新实验中，Claude Opus 4.7 无需人类协助即完成所有任务，速度比最快人类团队快约20倍，比无 Claude 团队快37倍以上，编码量减少近10倍。模型在传感器连接、路径规划等环节表现出色，但在精确移动沙滩球等闭环控制任务上仍存在困难。这些进展源于通用模型规模化，而非针对机器人领域的专项优化。</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -312,86 +312,21 @@
       <p class='summary'>OpenAI 2025年营收130.7亿美元（2024年37亿），但研发成本达191.8亿（含向微软支付105.9亿），收入成本（推理计算）75亿，销售营销成本57.3亿，运营亏损209.2亿。2025年净亏损约390亿，扣除约300亿一次性会计费用后约80亿。2025年3月获1220亿融资（估值8520亿）。ChatGPT周活超9亿，付费约5000万。为控制成本已关闭Sora视频模型并削减非核心业务。</p>
       <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-17T20:44:36Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://claude.com/blog/workload-identity-federation" target="_blank" rel="noreferrer">借助 Workload Identity Federation 安全访问 Claude Platform</a></h3>
-      <p class='summary'>Workload Identity Federation （WIF） 已在 Claude Platform 上全面可用。WIF 兼容任何 OIDC 身份提供者，覆盖所有 Claude API 端点（包括第一方 SDK 和 Claude Code）。WIF 用短生命期凭证替代静态 API 密钥，并引入服务账户，每个工作负载拥有独立身份、角色和审计日志。Claude Console 提供引导设置流程，支持 Admin API 进行组织管理。API 密钥可并行使用以便逐步迁移。</p>
-      <div class="tags"><span>strong:claude</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-17T16:31:05Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://x.com/DrJimFan/status/2067283904986517866" target="_blank" rel="noreferrer">NVIDIA GEAR实验室发布ENPIRE：8个Codex智能体自主控制机器人完成物理实验</a></h3>
-      <p class='summary'>NVIDIA GEAR实验室推出ENPIRE系统，首次实现物理世界自主研究。系统让8个Codex智能体控制8台机器人，配备GPU和token预算。安全方面采用硬运动极限切断和扭矩受限夹爪两层硬件保障，支持通宵无人运行。奖励函数通过视觉分类器离线固定并冻结，防止智能体作弊。实时监测机器人利用率（MRU）、token利用率（MTU）和GPU利用率，以Tokens-to-Success和Time-to-Success评估效率。ENPIRE自主完成扎带、整理细针、安装GPU等高精度任务，发现8机器人并行探索显著更快。系统将开源。</p>
-      <div class="tags"><span>strong:codex</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-17T15:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature" target="_blank" rel="noreferrer">Google 医学推理 AI 系统 AMIE 新研究：从诊断迈向长期疾病管理</a></h3>
-      <p class='summary'>今日发表在《自然》杂志上的研究展示了 Google 的医学推理 AI 系统 AMIE（Articulate Medical Intelligence Explorer）从单次诊断对话演进到长期疾病管理的能力。AMIE 利用 Gemini 模型的长上下文能力，整合共情对话智能体和深度思考管理推理智能体，可交叉引用数百页临床指南。在盲测中，AMIE 与 21 名初级保健医生相比，在整体管理推理上匹配临床医生，在计划精确性和指南一致性上得分显著更高。</p>
-      <div class="tags"><span>strong:gemini</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-17T21:13:53Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://developers.googleblog.com/a2ui-and-mcp-apps" target="_blank" rel="noreferrer">Google 分享 A2UI 与 MCP Apps 三种集成架构模式</a></h3>
-      <p class='summary'>Google 分享了三种集成 A2UI 与 MCP Apps 的架构模式，旨在结合两者优势。A2UI 采用声明式框架，通过 JSON payload 定义 UI，由宿主原生渲染，确保一致性与安全性，但受限于预定义组件库。MCP Apps 在 iframe 中使用标准 Web 技术提供自定义界面，但存在设计碎片化、性能与安全挑战。三种模式包括：通过 MCP 服务器提供 A2UI，利用 MCP Resources 或 Tool 调用传递 JSON，实现&quot;一次编写，原生渲染&quot;的跨平台能力；以及静态与动态交付方案。Google 正考虑扩展 MCP 以原生支持 A2UI。</p>
-      <div class="tags"><span>strong:mcp</span><span>weak:tool</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-17T20:44:36Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://claude.com/blog/claude-design-stays-on-brand-for-daily-work" target="_blank" rel="noreferrer">Claude Design 更新：跨项目保持品牌一致，与Claude Code协同</a></h3>
-      <p class='summary'>6月17日，Claude Design 更新，支持跨项目使用统一设计系统，并与Claude Code同步工作流。用户可直接拖拽、对齐和缩放画布元素，编辑器稳定性大幅提升。设计系统可从GitHub、设计文件或原始上传导入，团队管理员可锁定标准系统防止篡改。新增桌面端侧边栏入口及独立网页端claude.ai/design。使用限制与聊天、Claude Cowork、Claude Code共享，每次任务消耗更少token，错误率下降。支持导出PDF、PPT，集成Adobe、Canva、Gamma等工具。发布首周用户超一百万。</p>
-      <div class="tags"><span>strong:claude</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1009</td><td>0</td><td>822ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>241ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>230</td><td>0</td><td>103ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>440ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>166ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>800</td><td>0</td><td>298ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>129ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>6</td><td>28ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>17</td><td>3145ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1010</td><td>1</td><td>523ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>328ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>230</td><td>0</td><td>104ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>601ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>376ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>802</td><td>1</td><td>312ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>141ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>3</td><td>38ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>15</td><td>1177ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
