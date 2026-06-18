@@ -1,25 +1,17 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-18T08:27:29.578300Z",
+  "generated_at": "2026-06-18T10:53:22.365374Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 25,
+  "item_count": 24,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI Skills Commits",
-          1
-        ],
-        [
-          "Hugging Face Blog",
-          1
-        ],
-        [
-          "OpenAI News",
           1
         ],
         [
@@ -29,31 +21,19 @@
       ],
       "top_keywords": [
         [
-          "official_ai",
-          4
-        ],
-        [
           "openai",
-          3
+          2
         ],
         [
           "codex",
           2
         ],
         [
+          "official_ai",
+          2
+        ],
+        [
           "skill",
-          1
-        ],
-        [
-          "hugging face",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
           1
         ],
         [
@@ -64,17 +44,17 @@
     },
     "developer": {
       "group": "developer",
-      "count": 5,
+      "count": 6,
       "top_sources": [
         [
           "GitHub Changelog",
-          5
+          6
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          10
+          12
         ],
         [
           "agent",
@@ -121,15 +101,15 @@
           5
         ],
         [
-          "agent",
-          4
-        ],
-        [
           "claude",
           4
         ],
         [
           "openai",
+          3
+        ],
+        [
+          "agent",
           3
         ],
         [
@@ -141,15 +121,15 @@
           3
         ],
         [
+          "大模型",
+          3
+        ],
+        [
           "anthropic",
           2
         ],
         [
           "mcp",
-          2
-        ],
-        [
-          "大模型",
           2
         ]
       ]
@@ -197,26 +177,6 @@
         "weak:tool",
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "84c40905cf3737e45ad30dfc17c41f9631691eeb",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot",
-      "url": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
-      "published_at": "2026-06-17T10:18:05Z",
-      "summary": null,
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "strong:agent",
-        "strong:agents",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -305,24 +265,6 @@
       "is_ai_related": true
     },
     {
-      "id": "307c14e05323c3debc36d966d7e8cd1133b7cab0",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
-      "url": "https://openai.com/index/ai-chemist-improves-reaction",
-      "published_at": "2026-06-17T10:00:00Z",
-      "summary": "OpenAI and Molecule.one show how a near-autonomous AI chemist using GPT-5.4 improved a key drug-making reaction, advancing medicinal chemistry research.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "e796a36a9e4c7d013c3edf9129979fef9b69baa3",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -404,6 +346,24 @@
       "is_ai_related": true
     },
     {
+      "id": "2005a420113e7d143fd4ebcc3a030813b396f9ef",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Generated release notes credit you for Copilot pull requests",
+      "url": "https://github.blog/changelog/2026-06-18-generated-release-notes-credit-you-for-copilot-pull-requests",
+      "published_at": "2026-06-18T09:30:02Z",
+      "summary": "When you generate release notes for a new release, the generated notes include a list of pull requests merged since the last release. For more information about automatically generating release… The post Generated release notes credit you for Copilot pull requests appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "14b9b10f74e385fb5c22a87efdb2835fe7b0a300",
       "source_id": "github-ai-ml",
       "source_name": "GitHub AI & ML",
@@ -472,6 +432,26 @@
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9b65b187dad8336489d0f9aa553013d11ca11426",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "火山引擎上线豆包实时语音模型3.0 API 服务，开启邀测",
+      "url": "https://mp.weixin.qq.com/s/L4BJnexabQu5DAxDnwEGxw",
+      "published_at": "2026-06-18T10:36:31Z",
+      "summary": "火山引擎上线豆包实时语音模型3.0（Seeduplex）API 服务并开启邀测。该模型为原生全双工端到端语音大模型，具备精准遵循、抗干扰、动态判停三大优势。可在多人对话中安静待命，指定话题出现时主动加入；支持通过自定义工具在实时交互中完成预定日历、发送邮件等任务。抗干扰力提升，误回复率与误打断率大幅降低；判停延迟缩短约250ms，复杂场景抢话比例下降40%，用户主动打断延迟缩短约300ms。适用于汽车智能座舱、智能硬件、智能客服等场景。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:大模型",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -591,26 +571,6 @@
       "is_ai_related": true
     },
     {
-      "id": "5179f714518abf76292e27d2d8cb6d7508fc6dd0",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Kickart 3.0发布，让广告视频创作更精准高效",
-      "url": "https://mp.weixin.qq.com/s/e6SOMeRbdMB_zATsNcYmUQ",
-      "published_at": "2026-06-17T09:45:29Z",
-      "summary": "火山引擎一站式营销创作平台Kickart 3.0（原\"创作Agent\"）正式上线，升级为对话式视频生成模式，用户可通过多轮对话调整商品图、故事板等，用自然语言生成营销视频。新增\"爆款裂变\"能力，上传视频链接后自动拆解爆款逻辑并重构至新商品视频，支持抖音电商内容合规与质量预审核。平台开放SaaS、API及Skill等多种交付方式，并已接入Seedance 2.0 mini，助力降低广告营销成本。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "65e0272e587f0de6bffc4ee7e239e859aab399fd",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -657,10 +617,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1009,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 954,
-      "checked_at": "2026-06-18T08:27:25.959332Z"
+      "latency_ms": 539,
+      "checked_at": "2026-06-18T10:53:18.912625Z"
     },
     {
       "source_id": "openai-skills",
@@ -671,8 +631,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 426,
-      "checked_at": "2026-06-18T08:27:26.386186Z"
+      "latency_ms": 377,
+      "checked_at": "2026-06-18T10:53:19.290029Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -683,8 +643,8 @@
       "fetched_count": 230,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 115,
-      "checked_at": "2026-06-18T08:27:26.504812Z"
+      "latency_ms": 120,
+      "checked_at": "2026-06-18T10:53:19.414575Z"
     },
     {
       "source_id": "google-deepmind",
@@ -695,8 +655,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 628,
-      "checked_at": "2026-06-18T08:27:27.134925Z"
+      "latency_ms": 582,
+      "checked_at": "2026-06-18T10:53:19.998987Z"
     },
     {
       "source_id": "google-ai",
@@ -707,8 +667,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 270,
-      "checked_at": "2026-06-18T08:27:27.405932Z"
+      "latency_ms": 248,
+      "checked_at": "2026-06-18T10:53:20.248003Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -717,10 +677,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 800,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 313,
-      "checked_at": "2026-06-18T08:27:27.730121Z"
+      "latency_ms": 379,
+      "checked_at": "2026-06-18T10:53:20.640262Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -731,8 +691,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 416,
-      "checked_at": "2026-06-18T08:27:28.146457Z"
+      "latency_ms": 130,
+      "checked_at": "2026-06-18T10:53:20.771194Z"
     },
     {
       "source_id": "github-changelog",
@@ -741,10 +701,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 5,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-06-18T08:27:28.179716Z"
+      "latency_ms": 35,
+      "checked_at": "2026-06-18T10:53:20.807139Z"
     },
     {
       "source_id": "aihot",
@@ -753,10 +713,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 17,
+      "kept_count": 16,
       "error": null,
-      "latency_ms": 1391,
-      "checked_at": "2026-06-18T08:27:29.572968Z"
+      "latency_ms": 1547,
+      "checked_at": "2026-06-18T10:53:22.356690Z"
     }
   ],
   "control_notes": {
