@@ -1,29 +1,57 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-18T16:55:16.142290Z",
+  "generated_at": "2026-06-19T03:39:10.629401Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 20,
+  "item_count": 23,
   "groups": {
+    "developer": {
+      "group": "developer",
+      "count": 9,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          9
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          10
+        ],
+        [
+          "agent",
+          3
+        ],
+        [
+          "actions",
+          3
+        ],
+        [
+          "workflow",
+          2
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ]
+      ]
+    },
     "official": {
       "group": "official",
       "count": 4,
       "top_sources": [
         [
-          "OpenAI Skills Commits",
-          1
-        ],
-        [
           "OpenAI News",
-          1
+          3
         ],
         [
           "Hugging Face Blog",
-          1
-        ],
-        [
-          "GitHub AI & ML",
           1
         ]
       ],
@@ -34,58 +62,42 @@
         ],
         [
           "openai",
-          3
-        ],
-        [
-          "codex",
           2
         ],
         [
-          "skill",
-          1
+          "chatgpt",
+          2
         ],
         [
           "reasoning model",
           1
         ],
         [
+          "eval",
+          1
+        ],
+        [
           "agent",
-          1
-        ],
-        [
-          "benchmark",
-          1
-        ],
-        [
-          "tool",
-          1
-        ],
-        [
-          "copilot",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 13,
+      "count": 10,
       "top_sources": [
         [
           "AI Hot",
-          13
+          10
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          13
+          10
         ],
         [
-          "api",
-          5
-        ],
-        [
-          "API",
+          "claude",
           5
         ],
         [
@@ -93,15 +105,7 @@
           4
         ],
         [
-          "claude",
-          3
-        ],
-        [
           "chatgpt",
-          3
-        ],
-        [
-          "智能体",
           3
         ],
         [
@@ -109,43 +113,31 @@
           3
         ],
         [
-          "人工智能",
-          3
-        ],
-        [
-          "大模型",
-          3
+          "智能体",
+          2
         ],
         [
           "gemini",
-          2
-        ],
-        [
-          "agent",
-          2
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 3,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          3
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
-        ],
-        [
-          "workflow",
           1
         ],
         [
-          "actions",
+          "copilot",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "model context protocol",
+          1
+        ],
+        [
+          "工作流",
+          1
+        ],
+        [
+          "deepmind",
           1
         ]
       ]
@@ -153,23 +145,40 @@
   },
   "items": [
     {
-      "id": "e12d5409f4f286e8e5ef4567bdf1b2808f0d6910",
-      "source_id": "openai-skills",
-      "source_name": "OpenAI Skills Commits",
+      "id": "8629a789374e27582339ddd8a35219e5d99f18ec",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot code review: AGENTS.md support and UI improvements",
+      "url": "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements",
+      "published_at": "2026-06-18T19:11:51Z",
+      "summary": "Copilot code review now supports repository-level AGENTS.md files, and it’s easier to request a review from Copilot on draft pull requests with the Request button. These changes are all generally… The post Copilot code review: AGENTS.md support and UI improvements appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "352a9c5ad8ffb92dc13fbdc4130d7f2bd035b05a",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "[codex] Mirror compact OpenAI docs search guidance (#494)",
-      "url": "https://github.com/openai/skills/commit/972cb867affac58fda9afa76bb1a19b399a278cf",
-      "published_at": "2026-06-17T19:15:37Z",
-      "summary": "[codex] Mirror compact OpenAI docs search guidance (#494) ## Summary Mirrors [openai/codex#28389](https://github.com/openai/codex/pull/28389) into the system and curated OpenAI Docs skills. The compact search guidance performs better in Codex. ## Validation - Both skill validations passed - `git diff --check`",
-      "relevance_score": 11,
+      "title": "New usage analytics and updated spend controls for enterprises",
+      "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+      "published_at": "2026-06-18T17:00:00Z",
+      "summary": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence.",
+      "relevance_score": 5,
       "relevance_reasons": [
         "strong:openai",
-        "strong:codex",
-        "source:skill",
-        "source:codex",
-        "source:openai",
+        "strong:chatgpt",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -216,147 +225,175 @@
       "is_ai_related": true
     },
     {
-      "id": "36deb338577304e9cb2e38b207344adf4ecc0a44",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "dd0cb2940d33b3fb9f3f460585c59285b36c666c",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Is it agentic enough? Benchmarking open models on your own tooling",
-      "url": "https://huggingface.co/blog/is-it-agentic-enough",
-      "published_at": "2026-06-18T00:00:00Z",
-      "summary": null,
-      "relevance_score": 5,
+      "title": "Improving health intelligence in ChatGPT",
+      "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+      "published_at": "2026-06-18T11:00:00Z",
+      "summary": "Learn how GPT-5.5 Instant improves ChatGPT’s health and wellness responses with stronger reasoning, better context, clearer communication, and physician-informed evaluations.",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:agent",
-        "weak:benchmark",
-        "weak:tool",
+        "strong:chatgpt",
+        "weak:eval",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "8732ff24885bcd5d71229e4ca1cf8602ef5fe9e3",
+      "id": "e84cb33b7ab1b68df5fa7a3b401d6d51ddbd492c",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Upcoming deprecation of Opus 4.6 (fast)",
+      "url": "https://github.blog/changelog/2026-06-18-upcoming-deprecation-of-opus-4-6-fast",
+      "published_at": "2026-06-18T23:58:34Z",
+      "summary": "We will deprecate Opus 4.6 (fast) across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions), on June 29th, 2026: Model Deprecation date… The post Upcoming deprecation of Opus 4.6 (fast) appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ee3d8cbe186121fe671962dbaa15bf54200f0bb4",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "MosaicLeaks: Can your research agent keep a secret?",
+      "url": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
+      "published_at": "2026-06-18T18:13:13Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fa7f5be67acc4e30a7ba14e165c1ce8831e70421",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "苹果 Xcode 27 核心首次深度集成 AI 智能体：支持自然语言修 Bug、构建 App",
-      "url": "https://www.ithome.com/0/965/734.htm",
-      "published_at": "2026-06-18T00:43:26Z",
-      "summary": "在 2026 年 WWDC 期间，苹果发布 Xcode 27，其核心组件首次整合 AI 智能体，能理解 Swift 语言并通过多轮自然语言对话辅助开发。AI 可跨多个文件修改整个代码库，也能根据提示与资源生成应用设计并独立构建完整应用，建成后仍可通过对话添加特效、动画等。Xcode 27 支持接入 Anthropic、OpenAI 和 Google 等第三方 AI 模型，同时引入 Core AI 框架提供现代 Swift API 调用端侧模型，并升级开源框架 MLX。",
-      "relevance_score": 7,
+      "title": "Claude Enterprise 推出企业托管 MCP 连接器授权管理",
+      "url": "https://claude.com/blog/enterprise-managed-auth",
+      "published_at": "2026-06-18T17:51:29Z",
+      "summary": "Claude Enterprise 推出企业托管授权功能，管理员可通过身份提供商（率先支持 Okta）为整个组织配置 MCP 连接器。用户首次登录 Claude 时自动获得授权，无需手动操作，实现零接触设置。该功能基于 Model Context Protocol 的 Enterprise-Managed Authorization 扩展构建，支持 Asana、Atlassian、Canva、Figma、Granola、Linear、Supabase 等 MCP 提供商，Slack 即将支持。授权管理集成到现有 IdP 工作流中，可按组限定范围、通过 IdP 快速撤销授权，并支持要求连接器仅通过 IdP 连接以隔离工作与个人使用。",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:mcp",
+        "strong:model context protocol",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "013cd5c6fb019b4d5d7444b65101ed177e51b99b",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot-authored pull requests now included in author searches",
+      "url": "https://github.blog/changelog/2026-06-18-copilot-authored-pull-requests-now-included-in-author-searches",
+      "published_at": "2026-06-18T16:24:05Z",
+      "summary": "Searching for pull requests using author: now shows pull requests opened by Copilot cloud agent on the user’s behalf. For example, searching with author:@me on github.com/pulls will return your own… The post Copilot-authored pull requests now included in author searches appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d97638f98b23a3a718cd03923b46166208273af2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI IPO前连下两城：招揽Transformer共同作者及前白宫AI政策官员",
+      "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo",
+      "published_at": "2026-06-18T19:59:22Z",
+      "summary": "OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Transformer架构共同作者Noam Shazeer，以及前特朗普白宫AI政策官员Dean Ball。Shazeer此前通过27亿美元收购协议重返Google，此次离职加盟OpenAI。Ball将于7月6日加入，领导新组建的Strategic Futures团队，向首席战略官Jason Kwon汇报，团队将负责前沿AI政策与内部治理，聚焦灾难性风险、递归自我改进、劳动力市场影响及前沿实验室与政府关系等议题。此举正值Anthropic因美国政府出口管制禁令被迫下架Fable 5和Mythos 5模型。",
+      "relevance_score": 5,
       "relevance_reasons": [
         "strong:openai",
         "strong:anthropic",
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
+        "strong:deepmind",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "015dff22e63fcf65d9f64b1d919b4bb26f6bba1f",
+      "id": "23add0a84a3270a3e40b03117d02923b9de27294",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Vercel 发布开源 AI 智能体框架 Eve：每个智能体就是一个文件目录",
-      "url": "https://www.marktechpost.com/2026/06/17/vercel-releases-eve",
-      "published_at": "2026-06-17T17:22:51Z",
-      "summary": "Vercel 发布开源 AI 智能体框架 Eve（npm 包，Apache-2.0 许可）。Eve 采用文件系统优先设计：每个智能体对应一个磁盘目录，目录结构直接映射模型、指令、工具、技能、连接、子智能体等能力，无需额外注册代码。内置六大生产级能力：持久执行（每步检查点，崩溃后可恢复）、沙箱计算、人机审批、安全连接（支持 MCP 和 OpenAPI）、多通道（Slack、Discord、Teams 等）以及追踪与评估（OpenTelemetry）。Vercel 内部运行了上百个智能体，包括数据分析工具 d0（月处理超3万查询）、自动销售代理 Lead Agent（年费约5000美元、回报32倍）和支持智能体 Vertex（自主解决92%工单）。",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:mcp",
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e796a36a9e4c7d013c3edf9129979fef9b69baa3",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "首个统一科学大模型 LOGOS 正式开源",
-      "url": "https://mp.weixin.qq.com/s/50q5uY849FKnBzk1Q04MRg",
-      "published_at": "2026-06-18T02:31:28Z",
-      "summary": "LOGOS 由 ATH-Token Foundry 联合中国人民大学高瓴人工智能学院开源，是首个基于统一\"科学语法\"的多领域科学生成基础模型。LOGOS-1B（1B参数）在六大科学任务上匹配或超越领域专用方法：口袋条件配体生成纯序列范式首次超越3D扩散模型，超越NatureLM（8×7B）；逆合成预测Top-1准确率74.8%；口袋位点识别仅靠序列达58.5% Top-n准确率；MOF材料生成NBB提升至17.78%。模型采用统一词汇表将蛋白质、小分子等编码为离散Token，通过空间交互离散化实现无需3D坐标的序列预测。预训练与下游任务形式与目标一致，跨领域知识迁移经实验验证有效。已完整开源模型权重、推理代码与技术报告。",
+      "title": "OpenAI 联合多国医生：GPT-5.5 Instant 健康问答能力追平前沿 Thinking 模型",
+      "url": "https://x.com/gdb/status/2067675030335668270",
+      "published_at": "2026-06-18T18:25:17Z",
+      "summary": "OpenAI 与全球 60 个国家、49 种语言、26 个专科的数百名医生合作，通过医生主导的评估大幅提升了 GPT-5.5 Instant 在健康相关问题的智能水平，现已能与公司前沿 Thinking 模型（推理模型）相当。该模型每周为超过 2.3 亿 ChatGPT 用户服务，能更好识别紧急医疗需求、询问相关上下文、解释不确定性并简化复杂信息。由于面向所有 ChatGPT 免费用户开放，这些改进可惠及更多人。",
       "relevance_score": 5,
       "relevance_reasons": [
-        "strong:人工智能",
-        "strong:大模型",
-        "strong:开源模型",
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:推理模型",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "b113c3f17bf3fa2e7a2af5cc6d9505ddac47ed4e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "超越 LoRA：如何选择最佳参数高效微调技术？",
-      "url": "https://huggingface.co/blog/peft-beyond-lora",
-      "published_at": "2026-06-18T00:00:00Z",
-      "summary": "参数高效微调（PEFT）技术中，LoRA 占据绝对主导：Hugging Face Hub 上 20，834 张提及单一 PEFT 技术的模型卡中 20，509 张指向 LoRA（98.4%）；外部站点 10，000 个检查点中 95.0% 是 LoRA；GitHub 搜索 `from peft import` 代码片段的 71.3% 结果为 LoRA。但研究者宣称其他技术超越 LoRA 的论文结果具备偏向性--调整学习率即可让 LoRA 匹配更优技术。Hugging Face 的 PEFT 库提供统一 API 实现 40 余种 PEFT 技术，并开始建立基准测试：在数学数据集上对 LLM 进行思维链推理微调，以帮助用户做出更优选择。",
-      "relevance_score": 5,
+      "id": "c4d24446312281c38ece586e95fbc8423e127fad",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "MAI-Code-1-Flash available on more Copilot surfaces",
+      "url": "https://github.blog/changelog/2026-06-18-mai-code-1-flash-available-on-more-copilot-surfaces",
+      "published_at": "2026-06-18T20:11:24Z",
+      "summary": "MAI‑Code‑1‑Flash, Microsoft’s purpose‑built small coding model, is now available across additional GitHub Copilot surfaces. MAI‑Code‑1‑Flash can now be used in: Copilot CLI GitHub Copilot app Copilot Chat on GitHub Visual… The post MAI-Code-1-Flash available on more Copilot surfaces appeared first on The GitHub Blog .",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:hugging face",
-        "strong:llm",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
     {
-      "id": "511a7e4529e999bc61588561115ac0887230f985",
+      "id": "be9ba80df714780d020d575b8dfd38383af0c076",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Claude Code v2.1.181 发布",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.181",
-      "published_at": "2026-06-17T22:07:41Z",
-      "summary": "Claude Code v2.1.181 发布，新增 `/config key=value` 语法允许在提示中直接设置任意配置项，新增 `sandbox.allowAppleEvents` 选项使沙盒命令支持 Apple Events，新增 `CLAUDE_CLIENT_PRESENCE_FILE` 环境变量用于抑制移动端推送通知。内置 Bun 运行时升级至 1.4，改进了长段落流式输出（逐行显示）和 API 连接中断后自动重试。子 agent 面板优化：空闲 agent 30 秒自动隐藏、列表最多 5 行。修复了提示缓存读取、Write/Edit 在网络驱动器产生 0 字节文件、启动性能回归（约 120ms）、启动阻塞（最长 15 秒）、macOS TUI 冻结、子 agent 时长显示错误、API 重试指示",
-      "relevance_score": 5,
+      "title": "驾驭 Claude Code：CLAUDE.md、技能、钩子、规则、子智能体等",
+      "url": "https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more",
+      "published_at": "2026-06-18T17:51:29Z",
+      "summary": "Claude Code 提供七种自定义指令方式：CLAUDE.md（根目录始终加载，子目录按需加载）、规则（无范围或路径范围）、技能（按需调用，共享 token 预算）、子智能体（隔离上下文运行并返回最终消息）、钩子（生命周期事件触发，绕过压缩）、输出样式（注入系统提示，永不压缩）和附加系统提示（CLI 标志，仅单次有效）。每种方式在加载时机、压缩行为、上下文成本和适用场景上各有不同，例如 CLAUDE.md 适合存放构建命令与编码规范，路径范围规则避免无关上下文消耗，子智能体用于并行隔离任务，钩子用于确定性自动化（如运行 linter 或备份聊天记录）。",
+      "relevance_score": 4,
       "relevance_reasons": [
         "strong:claude",
-        "strong:agent",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "fd880783d6177f296a2e6b299a819d0702f72823",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic与DeepMind CEO呼吁G7组建AI联盟排除中国",
-      "url": "https://x.com/kimmonismus/status/2067310431669223425",
-      "published_at": "2026-06-17T18:16:30Z",
-      "summary": "Dario Amodei（Anthropic）与Demis Hassabis（Google DeepMind）在G7闭门会议上呼吁组建美国主导的联盟，为人工智能制定全球规则和标准。Amodei指出，该联盟应以前沿模型和硬件（包括芯片及其他关键组件）的访问权限为手段，将中国排除在外。这一主张被评论为高技术新冷战的开端，竞争方将从根本上被剥夺参与权。",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:deepmind",
-        "strong:人工智能",
+        "strong:智能体",
+        "weak:自动化",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -372,6 +409,24 @@
       "url": "https://github.blog/changelog/2026-06-18-safer-pull_request_target-defaults-for-github-actions-checkout",
       "published_at": "2026-06-18T14:06:55Z",
       "summary": "The pull_request_target event is one of the most commonly misused triggers in GitHub Actions, leading to vulnerabilities in workflows. Workflows triggered by pull_request_target run with the base repository’s GITHUB_TOKEN, secrets,… The post Safer pull_request_target defaults for GitHub Actions checkout appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:workflow",
+        "source:actions"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "76da70b6bdb8d84a7e9dfe415bff3b4cda462401",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Control who and what triggers GitHub Actions workflows",
+      "url": "https://github.blog/changelog/2026-06-18-control-who-and-what-triggers-github-actions-workflows",
+      "published_at": "2026-06-18T14:06:18Z",
+      "summary": "Workflow execution protections are now in public preview for GitHub Enterprise, organizations, and repositories. This new capability lets enterprise administrators define an allow list that controls who can trigger GitHub… The post Control who and what triggers GitHub Actions workflows appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
         "weak:workflow",
@@ -398,38 +453,38 @@
       "is_ai_related": true
     },
     {
-      "id": "14b9b10f74e385fb5c22a87efdb2835fe7b0a300",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "Getting more from each token: How Copilot improves context handling and model routing",
-      "url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing",
-      "published_at": "2026-06-17T19:41:46Z",
-      "summary": "How GitHub Copilot is making more of each session go toward useful work, so your credits go further. The post Getting more from each token: How Copilot improves context handling and model routing appeared first on The GitHub Blog .",
-      "relevance_score": 2,
+      "id": "1a01fab279e2c2187bf3038027169d59fa338bb5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "这家韩国电信巨头是Anthropic\"Mythos\"争议的焦点",
+      "url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls",
+      "published_at": "2026-06-19T01:33:10Z",
+      "summary": "美国政府对Anthropic最强大的AI模型Claude Mythos实施出口管制，导火索是该公司将访问权限授予韩国电信巨头SK Telecom，美方担忧SK Telecom与中国存在关联。随后亚马逊向白宫报告Mythos的公开版本Fable 5存在可被绕过的防护漏洞，加剧不信任。白宫命令Anthropic撤销所有外国国民（包括美国境内移民）对Mythos和Fable 5的访问权限，Anthropic因此完全禁用这两个模型。Mythos此前通过Project Glasswing向约150家组织开放，SK Telecom于本月早些时候获得访问权，其曾向Anthropic投资1亿美元。SK Telecom在2024年中国营收仅约190万美元，但其所属SK集团在华业务广泛，且与中国联通有过合资历史，引发审查。",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source_prior:official_ai"
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "3bbc41ac7a85e4d33009714d671b0cb2782fb211",
+      "id": "b57bc7160c3790f5d44bc94fb1ef692e0de4eaab",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Enterprise-managed settings now support bypass permission controls",
-      "url": "https://github.blog/changelog/2026-06-17-enterprise-managed-settings-now-support-bypass-permission-controls",
-      "published_at": "2026-06-17T17:13:47Z",
-      "summary": "We’re adding our first governance capability to the enterprise-managed settings configuration. Enterprise administrators can now set disableBypassPermissionsMode to \"disable\" in the enterprise-managed settings.json to prevent GitHub Copilot CLI and VS… The post Enterprise-managed settings now support bypass permission controls appeared first on The GitHub Bl",
-      "relevance_score": 3,
+      "title": "Detecting Duplicate Issues – Public Preview and issue fields MCP support for GitHub Issues",
+      "url": "https://github.blog/changelog/2026-06-18-duplicate-detection-and-issue-fields-mcp-support-for-github-issues",
+      "published_at": "2026-06-18T18:04:33Z",
+      "summary": "Duplicate issues are one of the biggest time sinks for maintainers: triaging the same bug filed multiple ways, closing duplicates, and linking back to the original. For large repositories, this… The post Detecting Duplicate Issues – Public Preview and issue fields MCP support for GitHub Issues appeared first on The GitHub Blog .",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:mcp"
       ],
       "is_ai_related": true
     },
@@ -449,6 +504,23 @@
         "strong:anthropic",
         "strong:claude",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d98b37dd597df17e57437f495f56da0bd01ef6d2",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Actions: Build custom images from custom images",
+      "url": "https://github.blog/changelog/2026-06-18-actions-build-custom-images-from-custom-images",
+      "published_at": "2026-06-18T15:32:44Z",
+      "summary": "Custom images for GitHub-hosted runners are getting new capabilities that give you more flexibility over how you compose and manage your image-generation pipelines. You can now build custom images on… The post Actions: Build custom images from custom images appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -492,58 +564,20 @@
       "is_ai_related": true
     },
     {
-      "id": "3a6a951612a56d47ba20fb2d4ce88785011183be",
+      "id": "22d926586fee7d4cf1bdfac996b038dcdb334c8d",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "上交所发布指引：AI大模型企业可适用科创板第五套上市标准",
-      "url": "https://www.ithome.com/0/965/735.htm",
-      "published_at": "2026-06-18T00:49:16Z",
-      "summary": "上海证券交易所6月17日发布指引，支持尚未形成稳定收入的优质人工智能大模型企业通过科创板第五套上市标准发行上市。申报企业需在行业地位、产业链优势、目标市场需求、研发进度及关键指标方面具备突出竞争力。指引明确，申报时至少有一个大模型产品已完成上线发布并实现规模化应用，以验证商业模式可行性。下一步，上交所将在中国证监会指导下推进符合标准的企业上市。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:人工智能",
-        "strong:大模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "2cdb2636b99862e0015a787a7f5321f818d12cd4",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Noam Shazeer 离开 Google 加入 OpenAI",
-      "url": "https://x.com/Yuchenj_UW/status/2067401895178817999",
-      "published_at": "2026-06-18T00:19:56Z",
-      "summary": "两年前谷歌花 27 亿美元请回的 AI 传奇 Noam Shazeer 已离开谷歌，加入 OpenAI。 对 Gemini 来说是个残酷的消息。",
-      "relevance_score": 3,
+      "title": "OpenAI 强化学习实现广泛且持久的有益模型",
+      "url": "https://alignment.openai.com/beneficial-rl",
+      "published_at": "2026-06-18T18:00:00Z",
+      "summary": "OpenAI 通过强化学习在真实对话场景中训练模型，使其展现诚实、认知谦逊、元认知透明、可纠正性、普遍公平性和对人类福祉的关心等有益特质。训练数据涵盖健康、教育、科学、法律、工程等多个领域。训练后模型在数十项独立对齐评测（包括奖励黑客、欺骗、有害建议、规范遵从等）上均表现提升，且这种改善泛化到未参与训练的领域、任务和评分设定。在对抗性提示或微调下，模型仍难以被导向有害行为，表明有益特质强化学习可产生广泛且持久的对齐泛化。",
+      "relevance_score": 2,
       "relevance_reasons": [
         "strong:openai",
-        "strong:gemini",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d55964bf176644f0eae56c71994418ac6823129c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "泄露文件显示OpenAI年营收130亿但亏损远超收入",
-      "url": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year",
-      "published_at": "2026-06-17T23:09:09Z",
-      "summary": "OpenAI 2025年营收130.7亿美元（2024年37亿），但研发成本达191.8亿（含向微软支付105.9亿），收入成本（推理计算）75亿，销售营销成本57.3亿，运营亏损209.2亿。2025年净亏损约390亿，扣除约300亿一次性会计费用后约80亿。2025年3月获1220亿融资（估值8520亿）。ChatGPT周活超9亿，付费约5000万。为控制成本已关闭Sora视频模型并削减非核心业务。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
+        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -556,11 +590,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1010,
-      "kept_count": 1,
+      "fetched_count": 1012,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 523,
-      "checked_at": "2026-06-18T16:55:13.034941Z"
+      "latency_ms": 724,
+      "checked_at": "2026-06-19T03:39:08.132269Z"
     },
     {
       "source_id": "openai-skills",
@@ -569,10 +603,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 328,
-      "checked_at": "2026-06-18T16:55:13.364117Z"
+      "latency_ms": 187,
+      "checked_at": "2026-06-19T03:39:08.319888Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -583,8 +617,8 @@
       "fetched_count": 230,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 104,
-      "checked_at": "2026-06-18T16:55:13.472187Z"
+      "latency_ms": 92,
+      "checked_at": "2026-06-19T03:39:08.415250Z"
     },
     {
       "source_id": "google-deepmind",
@@ -595,8 +629,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 601,
-      "checked_at": "2026-06-18T16:55:14.074768Z"
+      "latency_ms": 279,
+      "checked_at": "2026-06-19T03:39:08.695842Z"
     },
     {
       "source_id": "google-ai",
@@ -607,8 +641,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 376,
-      "checked_at": "2026-06-18T16:55:14.451561Z"
+      "latency_ms": 149,
+      "checked_at": "2026-06-19T03:39:08.845611Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -616,11 +650,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 802,
+      "fetched_count": 803,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 312,
-      "checked_at": "2026-06-18T16:55:14.776066Z"
+      "latency_ms": 298,
+      "checked_at": "2026-06-19T03:39:09.155352Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -629,10 +663,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 141,
-      "checked_at": "2026-06-18T16:55:14.918249Z"
+      "latency_ms": 171,
+      "checked_at": "2026-06-19T03:39:09.327135Z"
     },
     {
       "source_id": "github-changelog",
@@ -641,10 +675,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 38,
-      "checked_at": "2026-06-18T16:55:14.957072Z"
+      "latency_ms": 22,
+      "checked_at": "2026-06-19T03:39:09.350183Z"
     },
     {
       "source_id": "aihot",
@@ -653,10 +687,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 15,
+      "kept_count": 13,
       "error": null,
-      "latency_ms": 1177,
-      "checked_at": "2026-06-18T16:55:16.135577Z"
+      "latency_ms": 1268,
+      "checked_at": "2026-06-19T03:39:10.620063Z"
     }
   ],
   "control_notes": {
