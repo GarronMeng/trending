@@ -1,24 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-19T08:55:01.932780Z",
+  "generated_at": "2026-06-19T11:04:13.793128Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 23,
+  "item_count": 18,
   "groups": {
     "developer": {
       "group": "developer",
-      "count": 9,
+      "count": 8,
       "top_sources": [
         [
           "GitHub Changelog",
-          9
+          8
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          10
+          8
         ],
         [
           "agent",
@@ -44,11 +44,11 @@
     },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          1
         ],
         [
           "Hugging Face Blog",
@@ -58,10 +58,6 @@
       "top_keywords": [
         [
           "official_ai",
-          3
-        ],
-        [
-          "chatgpt",
           2
         ],
         [
@@ -69,7 +65,7 @@
           1
         ],
         [
-          "eval",
+          "chatgpt",
           1
         ],
         [
@@ -80,29 +76,21 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 11,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          11
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          11
+          8
         ],
         [
           "claude",
-          5
-        ],
-        [
-          "openai",
-          3
-        ],
-        [
-          "anthropic",
-          3
+          4
         ],
         [
           "chatgpt",
@@ -117,7 +105,7 @@
           2
         ],
         [
-          "大模型",
+          "openai",
           2
         ],
         [
@@ -134,6 +122,14 @@
         ],
         [
           "工作流",
+          1
+        ],
+        [
+          "自动化",
+          1
+        ],
+        [
+          "agent",
           1
         ]
       ]
@@ -198,25 +194,6 @@
         "strong:智能体",
         "weak:copilot",
         "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "dd0cb2940d33b3fb9f3f460585c59285b36c666c",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Improving health intelligence in ChatGPT",
-      "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
-      "published_at": "2026-06-18T11:00:00Z",
-      "summary": "Learn how GPT-5.5 Instant improves ChatGPT’s health and wellness responses with stronger reasoning, better context, clearer communication, and physician-informed evaluations.",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "weak:eval",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -298,26 +275,6 @@
       "is_ai_related": true
     },
     {
-      "id": "d97638f98b23a3a718cd03923b46166208273af2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI IPO前连下两城：招揽Transformer共同作者及前白宫AI政策官员",
-      "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo",
-      "published_at": "2026-06-18T19:59:22Z",
-      "summary": "OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Transformer架构共同作者Noam Shazeer，以及前特朗普白宫AI政策官员Dean Ball。Shazeer此前通过27亿美元收购协议重返Google，此次离职加盟OpenAI。Ball将于7月6日加入，领导新组建的Strategic Futures团队，向首席战略官Jason Kwon汇报，团队将负责前沿AI政策与内部治理，聚焦灾难性风险、递归自我改进、劳动力市场影响及前沿实验室与政府关系等议题。此举正值Anthropic因美国政府出口管制禁令被迫下架Fable 5和Mythos 5模型。",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:deepmind",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "c4d24446312281c38ece586e95fbc8423e127fad",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -392,24 +349,6 @@
       "is_ai_related": true
     },
     {
-      "id": "2005a420113e7d143fd4ebcc3a030813b396f9ef",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Generated release notes credit you for Copilot pull requests",
-      "url": "https://github.blog/changelog/2026-06-18-generated-release-notes-credit-you-for-copilot-pull-requests",
-      "published_at": "2026-06-18T09:30:02Z",
-      "summary": "When you generate release notes for a new release, the generated notes include a list of pull requests merged since the last release. For more information about automatically generating release… The post Generated release notes credit you for Copilot pull requests appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "daa534aeb48e5672fafe90459e40a7189faea0ac",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -443,25 +382,6 @@
       "relevance_reasons": [
         "strong:llm",
         "strong:大模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1a01fab279e2c2187bf3038027169d59fa338bb5",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "这家韩国电信巨头是Anthropic\"Mythos\"争议的焦点",
-      "url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls",
-      "published_at": "2026-06-19T01:33:10Z",
-      "summary": "美国政府对Anthropic最强大的AI模型Claude Mythos实施出口管制，导火索是该公司将访问权限授予韩国电信巨头SK Telecom，美方担忧SK Telecom与中国存在关联。随后亚马逊向白宫报告Mythos的公开版本Fable 5存在可被绕过的防护漏洞，加剧不信任。白宫命令Anthropic撤销所有外国国民（包括美国境内移民）对Mythos和Fable 5的访问权限，Anthropic因此完全禁用这两个模型。Mythos此前通过Project Glasswing向约150家组织开放，SK Telecom于本月早些时候获得访问权，其曾向Anthropic投资1亿美元。SK Telecom在2024年中国营收仅约190万美元，但其所属SK集团在华业务广泛，且与中国联通有过合资历史，引发审查。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -539,26 +459,6 @@
       "is_ai_related": true
     },
     {
-      "id": "9b65b187dad8336489d0f9aa553013d11ca11426",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "火山引擎上线豆包实时语音模型3.0 API 服务，开启邀测",
-      "url": "https://mp.weixin.qq.com/s/L4BJnexabQu5DAxDnwEGxw",
-      "published_at": "2026-06-18T10:36:31Z",
-      "summary": "火山引擎上线豆包实时语音模型3.0（Seeduplex）API 服务并开启邀测。该模型为原生全双工端到端语音大模型，具备精准遵循、抗干扰、动态判停三大优势。可在多人对话中安静待命，指定话题出现时主动加入；支持通过自定义工具在实时交互中完成预定日历、发送邮件等任务。抗干扰力提升，误回复率与误打断率大幅降低；判停延迟缩短约250ms，复杂场景抢话比例下降40%，用户主动打断延迟缩短约300ms。适用于汽车智能座舱、智能硬件、智能客服等场景。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:大模型",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "22d926586fee7d4cf1bdfac996b038dcdb334c8d",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -586,10 +486,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1012,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 560,
-      "checked_at": "2026-06-19T08:54:58.751583Z"
+      "latency_ms": 570,
+      "checked_at": "2026-06-19T11:04:11.030125Z"
     },
     {
       "source_id": "openai-skills",
@@ -600,8 +500,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 233,
-      "checked_at": "2026-06-19T08:54:58.985149Z"
+      "latency_ms": 332,
+      "checked_at": "2026-06-19T11:04:11.362708Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -612,8 +512,8 @@
       "fetched_count": 230,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 119,
-      "checked_at": "2026-06-19T08:54:59.108091Z"
+      "latency_ms": 103,
+      "checked_at": "2026-06-19T11:04:11.469910Z"
     },
     {
       "source_id": "google-deepmind",
@@ -624,8 +524,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 470,
-      "checked_at": "2026-06-19T08:54:59.580095Z"
+      "latency_ms": 388,
+      "checked_at": "2026-06-19T11:04:11.860020Z"
     },
     {
       "source_id": "google-ai",
@@ -636,8 +536,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 259,
-      "checked_at": "2026-06-19T08:54:59.840226Z"
+      "latency_ms": 220,
+      "checked_at": "2026-06-19T11:04:12.081247Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -648,8 +548,8 @@
       "fetched_count": 803,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 375,
-      "checked_at": "2026-06-19T08:55:00.227973Z"
+      "latency_ms": 363,
+      "checked_at": "2026-06-19T11:04:12.457076Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -660,8 +560,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 560,
-      "checked_at": "2026-06-19T08:55:00.788477Z"
+      "latency_ms": 143,
+      "checked_at": "2026-06-19T11:04:12.600598Z"
     },
     {
       "source_id": "github-changelog",
@@ -670,10 +570,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 9,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 56,
-      "checked_at": "2026-06-19T08:55:00.845215Z"
+      "latency_ms": 31,
+      "checked_at": "2026-06-19T11:04:12.632331Z"
     },
     {
       "source_id": "aihot",
@@ -682,10 +582,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 13,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 1077,
-      "checked_at": "2026-06-19T08:55:01.924386Z"
+      "latency_ms": 1150,
+      "checked_at": "2026-06-19T11:04:13.784071Z"
     }
   ],
   "control_notes": {
