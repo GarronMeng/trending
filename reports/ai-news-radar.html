@@ -44,15 +44,15 @@
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
         <div class="stat"><b>23</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>4</b><span>官方源条目</span></div>
-        <div class="stat"><b>10</b><span>聚合源条目</span></div>
+        <div class="stat"><b>3</b><span>官方源条目</span></div>
+        <div class="stat"><b>11</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-19T03:39:10.631516Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-19T08:55:01.934574Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -90,19 +90,6 @@
       <h3><a href="https://the-decoder.com/adobe-adds-ai-agents-to-photoshop-premiere-and-more-creative-cloud-apps" target="_blank" rel="noreferrer">Adobe 为 Photoshop、Premiere 等多款 Creative Cloud 应用加入 AI 智能体</a></h3>
       <p class='summary'>Adobe 将其&quot;创意智能体&quot;扩展至 Photoshop、Premiere 等应用，以公开测试形式提供 AI Assistant。该智能体可自动完成多步骤常规任务，如 Premiere 分拣素材和粗剪、Photoshop 换背景、Illustrator 批量生成文件、InDesign 更新版式等。Firefly 新增面向个人创作者的品牌套件、产品图转短视频及 Quick Cut 自动剪辑功能。Adobe 工具已集成至 ChatGPT、Claude 及 Microsoft 365 Copilot，Google Gemini 和 Slack 集成即将推出。</p>
       <div class="tags"><span>strong:claude</span><span>strong:chatgpt</span><span>strong:gemini</span><span>strong:智能体</span><span>weak:copilot</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-06-18T08:00:00Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://openai.com/index/diagnose-rare-childhood-diseases" target="_blank" rel="noreferrer">Using AI to help physicians diagnose rare genetic diseases affecting children</a></h3>
-      <p class='summary'>Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases.</p>
-      <div class="tags"><span>strong:openai</span><span>strong:reasoning model</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -186,19 +173,6 @@
 
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-18T18:25:17Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://x.com/gdb/status/2067675030335668270" target="_blank" rel="noreferrer">OpenAI 联合多国医生：GPT-5.5 Instant 健康问答能力追平前沿 Thinking 模型</a></h3>
-      <p class='summary'>OpenAI 与全球 60 个国家、49 种语言、26 个专科的数百名医生合作，通过医生主导的评估大幅提升了 GPT-5.5 Instant 在健康相关问题的智能水平，现已能与公司前沿 Thinking 模型（推理模型）相当。该模型每周为超过 2.3 亿 ChatGPT 用户服务，能更好识别紧急医疗需求、询问相关上下文、解释不确定性并简化复杂信息。由于面向所有 ChatGPT 免费用户开放，这些改进可惠及更多人。</p>
-      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>strong:推理模型</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
         <span>GitHub Changelog</span>
         <span>official_rss</span>
         <span>2026-06-18T20:11:24Z</span>
@@ -259,6 +233,32 @@
       <h3><a href="https://github.blog/changelog/2026-06-18-generated-release-notes-credit-you-for-copilot-pull-requests" target="_blank" rel="noreferrer">Generated release notes credit you for Copilot pull requests</a></h3>
       <p class='summary'>When you generate release notes for a new release, the generated notes include a list of pull requests merged since the last release. For more information about automatically generating release… The post Generated release notes credit you for Copilot pull requests appeared first on The GitHub Blog .</p>
       <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-19T05:01:18Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://www.elastic.co/search-labs/blog/agent-memory-elasticsearch" target="_blank" rel="noreferrer">我们在 Elasticsearch 上构建了一个持久化代理内存层，其召回率为0.89</a></h3>
+      <p class='summary'>Agent Builder 正式上市（GA）。基于 Elasticsearch 的持久化内存层将记忆分为情景、语义、程序三类，分别存入独立索引，各设不同写速率与过期规则。召回采用 BM25 与 Jina v5 稠密向量的 RRF 融合，再经交叉编码器重排序。在 168 道 QA 题评估中，R@10 平均 0.89，零跨租户泄漏。该层可通过支持 MCP 协议的客户端访问，不绑定特定运行时，已开源至 GitHub。</p>
+      <div class="tags"><span>strong:agent</span><span>strong:mcp</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-19T04:49:25Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://x.com/AYi_AInotes/status/2067832098816250346" target="_blank" rel="noreferrer">阿里开源向量数据库Zvec，UCSD黄碧薇教授提出因果AI第四代范式</a></h3>
+      <p class='summary'>阿里开源内部向量数据库Zvec，pip install zvec免费使用，对标Pinecone每月70美元能力。支持十亿向量毫秒级检索，无需单独起服务，全平台兼容；v0.5.0新增原生全文混合搜索。UCSD黄碧薇教授（causal-learn作者）提出AI四代范式：相关性小模型→因果小模型→相关性大模型（LLM）→因果大模型，认为当前正站在第四代门口。其创立的Aether AI完成首轮融资，致力于从视频中自动抽取物理规律，探索下一代因果AI范式。</p>
+      <div class="tags"><span>strong:llm</span><span>strong:大模型</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -357,15 +357,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1012</td><td>3</td><td>724ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>187ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>230</td><td>0</td><td>92ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>279ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>149ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>803</td><td>1</td><td>298ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>171ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>9</td><td>22ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>13</td><td>1268ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1012</td><td>2</td><td>560ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>233ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>230</td><td>0</td><td>119ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>470ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>259ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>803</td><td>1</td><td>375ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>560ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>9</td><td>56ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>13</td><td>1077ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

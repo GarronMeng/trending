@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-19T03:39:10.629401Z",
+  "generated_at": "2026-06-19T08:55:01.932780Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -44,11 +44,11 @@
     },
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
           "OpenAI News",
-          3
+          2
         ],
         [
           "Hugging Face Blog",
@@ -58,18 +58,14 @@
       "top_keywords": [
         [
           "official_ai",
-          4
-        ],
-        [
-          "openai",
-          2
+          3
         ],
         [
           "chatgpt",
           2
         ],
         [
-          "reasoning model",
+          "openai",
           1
         ],
         [
@@ -84,17 +80,17 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 10,
+      "count": 11,
       "top_sources": [
         [
           "AI Hot",
-          10
+          11
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          10
+          11
         ],
         [
           "claude",
@@ -102,10 +98,6 @@
         ],
         [
           "openai",
-          4
-        ],
-        [
-          "chatgpt",
           3
         ],
         [
@@ -113,7 +105,19 @@
           3
         ],
         [
+          "chatgpt",
+          2
+        ],
+        [
           "智能体",
+          2
+        ],
+        [
+          "mcp",
+          2
+        ],
+        [
+          "大模型",
           2
         ],
         [
@@ -125,19 +129,11 @@
           1
         ],
         [
-          "mcp",
-          1
-        ],
-        [
           "model context protocol",
           1
         ],
         [
           "工作流",
-          1
-        ],
-        [
-          "deepmind",
           1
         ]
       ]
@@ -202,25 +198,6 @@
         "strong:智能体",
         "weak:copilot",
         "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "969a4eae15b9dacb17133b6a0616851b3c591b93",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
-      "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
-      "published_at": "2026-06-18T08:00:00Z",
-      "summary": "Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:reasoning model",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -341,26 +318,6 @@
       "is_ai_related": true
     },
     {
-      "id": "23add0a84a3270a3e40b03117d02923b9de27294",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 联合多国医生：GPT-5.5 Instant 健康问答能力追平前沿 Thinking 模型",
-      "url": "https://x.com/gdb/status/2067675030335668270",
-      "published_at": "2026-06-18T18:25:17Z",
-      "summary": "OpenAI 与全球 60 个国家、49 种语言、26 个专科的数百名医生合作，通过医生主导的评估大幅提升了 GPT-5.5 Instant 在健康相关问题的智能水平，现已能与公司前沿 Thinking 模型（推理模型）相当。该模型每周为超过 2.3 亿 ChatGPT 用户服务，能更好识别紧急医疗需求、询问相关上下文、解释不确定性并简化复杂信息。由于面向所有 ChatGPT 免费用户开放，这些改进可惠及更多人。",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:推理模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "c4d24446312281c38ece586e95fbc8423e127fad",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -449,6 +406,44 @@
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "daa534aeb48e5672fafe90459e40a7189faea0ac",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "我们在 Elasticsearch 上构建了一个持久化代理内存层，其召回率为0.89",
+      "url": "https://www.elastic.co/search-labs/blog/agent-memory-elasticsearch",
+      "published_at": "2026-06-19T05:01:18Z",
+      "summary": "Agent Builder 正式上市（GA）。基于 Elasticsearch 的持久化内存层将记忆分为情景、语义、程序三类，分别存入独立索引，各设不同写速率与过期规则。召回采用 BM25 与 Jina v5 稠密向量的 RRF 融合，再经交叉编码器重排序。在 168 道 QA 题评估中，R@10 平均 0.89，零跨租户泄漏。该层可通过支持 MCP 协议的客户端访问，不绑定特定运行时，已开源至 GitHub。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:mcp",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "602c56db13276d1d412b4f48fb87d83e063bb627",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "阿里开源向量数据库Zvec，UCSD黄碧薇教授提出因果AI第四代范式",
+      "url": "https://x.com/AYi_AInotes/status/2067832098816250346",
+      "published_at": "2026-06-19T04:49:25Z",
+      "summary": "阿里开源内部向量数据库Zvec，pip install zvec免费使用，对标Pinecone每月70美元能力。支持十亿向量毫秒级检索，无需单独起服务，全平台兼容；v0.5.0新增原生全文混合搜索。UCSD黄碧薇教授（causal-learn作者）提出AI四代范式：相关性小模型→因果小模型→相关性大模型（LLM）→因果大模型，认为当前正站在第四代门口。其创立的Aether AI完成首轮融资，致力于从视频中自动抽取物理规律，探索下一代因果AI范式。",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:llm",
+        "strong:大模型",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -591,10 +586,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1012,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 724,
-      "checked_at": "2026-06-19T03:39:08.132269Z"
+      "latency_ms": 560,
+      "checked_at": "2026-06-19T08:54:58.751583Z"
     },
     {
       "source_id": "openai-skills",
@@ -605,8 +600,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 187,
-      "checked_at": "2026-06-19T03:39:08.319888Z"
+      "latency_ms": 233,
+      "checked_at": "2026-06-19T08:54:58.985149Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -617,8 +612,8 @@
       "fetched_count": 230,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 92,
-      "checked_at": "2026-06-19T03:39:08.415250Z"
+      "latency_ms": 119,
+      "checked_at": "2026-06-19T08:54:59.108091Z"
     },
     {
       "source_id": "google-deepmind",
@@ -629,8 +624,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 279,
-      "checked_at": "2026-06-19T03:39:08.695842Z"
+      "latency_ms": 470,
+      "checked_at": "2026-06-19T08:54:59.580095Z"
     },
     {
       "source_id": "google-ai",
@@ -641,8 +636,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 149,
-      "checked_at": "2026-06-19T03:39:08.845611Z"
+      "latency_ms": 259,
+      "checked_at": "2026-06-19T08:54:59.840226Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -653,8 +648,8 @@
       "fetched_count": 803,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 298,
-      "checked_at": "2026-06-19T03:39:09.155352Z"
+      "latency_ms": 375,
+      "checked_at": "2026-06-19T08:55:00.227973Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -665,8 +660,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 171,
-      "checked_at": "2026-06-19T03:39:09.327135Z"
+      "latency_ms": 560,
+      "checked_at": "2026-06-19T08:55:00.788477Z"
     },
     {
       "source_id": "github-changelog",
@@ -677,8 +672,8 @@
       "fetched_count": 10,
       "kept_count": 9,
       "error": null,
-      "latency_ms": 22,
-      "checked_at": "2026-06-19T03:39:09.350183Z"
+      "latency_ms": 56,
+      "checked_at": "2026-06-19T08:55:00.845215Z"
     },
     {
       "source_id": "aihot",
@@ -689,8 +684,8 @@
       "fetched_count": 50,
       "kept_count": 13,
       "error": null,
-      "latency_ms": 1268,
-      "checked_at": "2026-06-19T03:39:10.620063Z"
+      "latency_ms": 1077,
+      "checked_at": "2026-06-19T08:55:01.924386Z"
     }
   ],
   "control_notes": {
