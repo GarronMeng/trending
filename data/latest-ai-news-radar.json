@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-20T02:42:57.933711Z",
+  "generated_at": "2026-06-20T07:39:13.280551Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 8,
   "groups": {
     "developer": {
       "group": "developer",
@@ -56,17 +56,17 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          8
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          6
         ],
         [
           "anthropic",
@@ -74,10 +74,6 @@
         ],
         [
           "开源模型",
-          2
-        ],
-        [
-          "llm",
           2
         ],
         [
@@ -89,11 +85,11 @@
           2
         ],
         [
-          "agent",
-          2
+          "openai",
+          1
         ],
         [
-          "openai",
+          "llm",
           1
         ],
         [
@@ -105,11 +101,15 @@
           1
         ],
         [
+          "agent",
+          1
+        ],
+        [
           "deepmind",
           1
         ],
         [
-          "mcp",
+          "智能体",
           1
         ]
       ]
@@ -255,44 +255,6 @@
       "is_ai_related": true
     },
     {
-      "id": "daa534aeb48e5672fafe90459e40a7189faea0ac",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "我们在 Elasticsearch 上构建了一个持久化代理内存层，其召回率为0.89",
-      "url": "https://www.elastic.co/search-labs/blog/agent-memory-elasticsearch",
-      "published_at": "2026-06-19T05:01:18Z",
-      "summary": "Agent Builder 正式上市（GA）。基于 Elasticsearch 的持久化内存层将记忆分为情景、语义、程序三类，分别存入独立索引，各设不同写速率与过期规则。召回采用 BM25 与 Jina v5 稠密向量的 RRF 融合，再经交叉编码器重排序。在 168 道 QA 题评估中，R@10 平均 0.89，零跨租户泄漏。该层可通过支持 MCP 协议的客户端访问，不绑定特定运行时，已开源至 GitHub。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:mcp",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "602c56db13276d1d412b4f48fb87d83e063bb627",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "阿里开源向量数据库Zvec，UCSD黄碧薇教授提出因果AI第四代范式",
-      "url": "https://x.com/AYi_AInotes/status/2067832098816250346",
-      "published_at": "2026-06-19T04:49:25Z",
-      "summary": "阿里开源内部向量数据库Zvec，pip install zvec免费使用，对标Pinecone每月70美元能力。支持十亿向量毫秒级检索，无需单独起服务，全平台兼容；v0.5.0新增原生全文混合搜索。UCSD黄碧薇教授（causal-learn作者）提出AI四代范式：相关性小模型→因果小模型→相关性大模型（LLM）→因果大模型，认为当前正站在第四代门口。其创立的Aether AI完成首轮融资，致力于从视频中自动抽取物理规律，探索下一代因果AI范式。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:llm",
-        "strong:大模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "c7dff95965f1645ab22995dd62b6c83779f67668",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -322,8 +284,8 @@
       "fetched_count": 1012,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 603,
-      "checked_at": "2026-06-20T02:42:55.409164Z"
+      "latency_ms": 652,
+      "checked_at": "2026-06-20T07:39:10.422318Z"
     },
     {
       "source_id": "openai-skills",
@@ -334,8 +296,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 203,
-      "checked_at": "2026-06-20T02:42:55.612897Z"
+      "latency_ms": 185,
+      "checked_at": "2026-06-20T07:39:10.608156Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -347,7 +309,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 101,
-      "checked_at": "2026-06-20T02:42:55.717524Z"
+      "checked_at": "2026-06-20T07:39:10.712955Z"
     },
     {
       "source_id": "google-deepmind",
@@ -358,8 +320,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 213,
-      "checked_at": "2026-06-20T02:42:55.932497Z"
+      "latency_ms": 274,
+      "checked_at": "2026-06-20T07:39:10.988688Z"
     },
     {
       "source_id": "google-ai",
@@ -370,8 +332,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 142,
-      "checked_at": "2026-06-20T02:42:56.075027Z"
+      "latency_ms": 303,
+      "checked_at": "2026-06-20T07:39:11.292572Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -382,8 +344,8 @@
       "fetched_count": 803,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-06-20T02:42:56.340979Z"
+      "latency_ms": 309,
+      "checked_at": "2026-06-20T07:39:11.613612Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -394,8 +356,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 105,
-      "checked_at": "2026-06-20T02:42:56.447010Z"
+      "latency_ms": 111,
+      "checked_at": "2026-06-20T07:39:11.725390Z"
     },
     {
       "source_id": "github-changelog",
@@ -406,8 +368,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-06-20T02:42:56.473543Z"
+      "latency_ms": 25,
+      "checked_at": "2026-06-20T07:39:11.751501Z"
     },
     {
       "source_id": "aihot",
@@ -416,10 +378,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 1450,
-      "checked_at": "2026-06-20T02:42:57.924853Z"
+      "latency_ms": 1518,
+      "checked_at": "2026-06-20T07:39:13.271210Z"
     }
   ],
   "control_notes": {
