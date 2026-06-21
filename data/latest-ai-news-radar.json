@@ -1,279 +1,12 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-20T15:45:19.679891Z",
+  "generated_at": "2026-06-21T02:59:21.672554Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
-  "groups": {
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub AI & ML",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "agent",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ],
-        [
-          "official_ai",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 6,
-      "top_sources": [
-        [
-          "AI Hot",
-          6
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          6
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "llm",
-          1
-        ],
-        [
-          "developer",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "开源模型",
-          1
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "deepmind",
-          1
-        ]
-      ]
-    }
-  },
-  "items": [
-    {
-      "id": "b5abb35fd8738ea2d8f14a649b14b2b02d6554f2",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "AI credits consumed per user now in the Copilot usage metrics API",
-      "url": "https://github.blog/changelog/2026-06-19-ai-credits-consumed-per-user-now-in-the-copilot-usage-metrics-api",
-      "published_at": "2026-06-19T16:23:29Z",
-      "summary": "The Copilot usage metrics API now reports how many AI credits each user consumed per day, derived from the same AI credits consumption data used in the usage-based billing API.… The post AI credits consumed per user now in the Copilot usage metrics API appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:copilot",
-        "weak:API",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "f2b838453284f54774c01d4827fbcf4ae0460b0d",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "How we built an internal data analytics agent",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent",
-      "published_at": "2026-06-19T16:00:00Z",
-      "summary": "Qubot, our internal Copilot-powered analytics agent, allows any GitHub employee to ask questions about our data in plain language. Here's what we learned as we built it. The post How we built an internal data analytics agent appeared first on The GitHub Blog .",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e9b6056c95441e4208ef850b82e606a48af4be1d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "开源教程《Deep Agents 实战》发布",
-      "url": "https://x.com/shao__meng/status/2068306942184034471",
-      "published_at": "2026-06-20T12:16:16Z",
-      "summary": "LangChain 官方认证大使 @zhanghaili0610 推出开源教程《Deep Agents 实战》，基于 LangChain / LangGraph 生态，讲解如何用 Deep Agents Harness 框架构建真实 Agent 应用。核心是\"三层架构\"：Runtime（LangGraph）、Framework（LangChain）、Harness（Deep Agents）。技术内核为上下文工程，通过虚拟文件系统实现按需读取、中间结果落盘、大文件局部读取。教程共 8 章 + 2 准备篇，覆盖虚拟文件系统（六大工具）、任务规划、子 Agent 委派（异步并行）及 Skills 复用（可在 Claude Code、Cursor 等 30+ 工具中通用）。",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "strong:agents",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "4aacfa64e0a109b24beaf73822eaaa1166895796",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenRouter vs Portkey：你的团队该选哪个LLM网关？",
-      "url": "https://openrouter.ai/blog/insights/openrouter-vs-portkey",
-      "published_at": "2026-06-19T19:00:00Z",
-      "summary": "OpenRouter是托管路由网络，买credits后通过一个API路由至70+供应商，自动故障转移，无需自有密钥；覆盖300+模型（含20+免费），按用量收费（零加成+5.5%平台费，首100万免费），支持零数据保留和欧盟路由。Portkey是AI控制平面（2026年被Palo Alto收购），置于用户密钥之上，增加治理、提示管理、护栏和可观测性；提供1600+ LLM统一API，按日志计费（Developer免费，Production $49/月），支持HIPAA、SSO、私有部署。两者均可组合使用。",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:llm",
-        "weak:api",
-        "weak:developer",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "15ea34186b100c07fdf48e799abc736cce18f7f9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "baoyu-design Skill迭代：修复导出样式与渐变丢失问题，支持AI配图导出PPTX",
-      "url": "https://x.com/dotey/status/2068042001895809420",
-      "published_at": "2026-06-19T18:43:30Z",
-      "summary": "宝玉分享 baoyu-design Skill 的迭代过程：用户测试发现导出问题（样式表未铺满整页、渐变色丢失），他在本地复现后让 Agent 分析原因、给出解决方案并添加测试覆盖，修复后效果改善。该 Skill 可在制作 PPT、动画视频或网站时调用 AI 生图配图，支持 Codex 内置画图或配合 baoyu-image-gen Skill 调用 Codex CLI 画图，并能连同图片一起导出为 PPTX，在 PowerPoint/Keynote 中二次编辑。迭代循环：自己用 → 发现问题 → 让 Agent 分析 → 出方案 → 确认 → 更新 Skill。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:codex",
-        "strong:agent",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c363bc80982543d322c7f6d76bc3cd6c6176a2d1",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "AI中心的数据黑洞",
-      "url": "https://www.dwarkesh.com/p/the-sample-efficiency-black-hole-2",
-      "published_at": "2026-06-19T16:45:03Z",
-      "summary": "智能的一种定义是样本效率，但近年AI进步主要靠扩充数据分布和增加算力。强化学习本质是合成数据生成--投入大量算力通过验证器筛选\"好\"数据，再训练模型预测正确输出。这一过程需要每个领域和技能的海量人类专家示例，数据行业年收入已达数十亿美元。近日Epoch报告，开源模型仅落后前沿闭源模型4个月，原因在于数据可从公开API蒸馏，而超参数等不易复制。人类一生接触约2亿token，前沿模型训练在数十到数百T token之间，相差近百万倍--机器人、自动驾驶等领域同样存在巨大效率差距。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:开源模型",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c79c49b073047588a7e4479fcad9e8cc42622097",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "AlphaFold 负责人 John Jumper 离职 Google DeepMind，加入 Anthropic",
-      "url": "https://x.com/demishassabis/status/2068002732250640603",
-      "published_at": "2026-06-19T16:07:27Z",
-      "summary": "AlphaFold 团队负责人 John Jumper 宣布，在 Google DeepMind 工作近 9 年后决定离职，将加入 Anthropic（先休整一段时间）。DeepMind CEO Demis Hassabis 表示，过去 9 年与 Jumper 的非凡合作改变了世界，AlphaFold 展示了 AI 在科学与医学领域的巨大潜力，并为 AI 造福人类指明了方向。Jumper 回忆，Hassabis 在他博士毕业仅 6 个月后就大胆让他领导 AlphaFold 团队，感谢团队教会他如何做伟大的科学。",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:deepmind",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c7dff95965f1645ab22995dd62b6c83779f67668",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "NVIDIA Research 发布 SpatialClaw：免训练空间推理框架",
-      "url": "https://www.marktechpost.com/2026/06/19/nvidia-ai-introduce-spatialclaw-a-training-free-agent-that-treats-code-as-the-action-interface-for-spatial-reasoning",
-      "published_at": "2026-06-19T22:51:59Z",
-      "summary": "NVIDIA Research 发布 SpatialClaw，一个免训练的空间推理框架。它通过将代码作为动作接口，让智能体调用感知工具（Depth Anything 3、SAM 3）并自由组合输出，解决视觉语言模型在 3D 空间判断上的弱点。在 20 项基准测试中平均准确率达 59.9%，比近期智能体 SpaceTools 高 11.2 个百分点，比无工具基线高 6.5 点，比结构化工具调用高 3.2 点。框架无需重新训练，同一提示词和工具集可跨所有基准和骨干网络运行，支持 Qwen3.5/3.6 及 Gemma4 等 26B 至 397B 参数的模型。",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:tool",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    }
-  ],
+  "item_count": 0,
+  "groups": {},
+  "items": [],
   "source_health": [
     {
       "source_id": "openai-news",
@@ -284,8 +17,8 @@
       "fetched_count": 1012,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 680,
-      "checked_at": "2026-06-20T15:45:16.370972Z"
+      "latency_ms": 1177,
+      "checked_at": "2026-06-21T02:59:18.091792Z"
     },
     {
       "source_id": "openai-skills",
@@ -296,8 +29,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 390,
-      "checked_at": "2026-06-20T15:45:16.761557Z"
+      "latency_ms": 204,
+      "checked_at": "2026-06-21T02:59:18.296675Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -308,8 +41,8 @@
       "fetched_count": 230,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 126,
-      "checked_at": "2026-06-20T15:45:16.891980Z"
+      "latency_ms": 125,
+      "checked_at": "2026-06-21T02:59:18.425366Z"
     },
     {
       "source_id": "google-deepmind",
@@ -320,8 +53,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 389,
-      "checked_at": "2026-06-20T15:45:17.283076Z"
+      "latency_ms": 345,
+      "checked_at": "2026-06-21T02:59:18.771835Z"
     },
     {
       "source_id": "google-ai",
@@ -332,8 +65,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 257,
-      "checked_at": "2026-06-20T15:45:17.541284Z"
+      "latency_ms": 250,
+      "checked_at": "2026-06-21T02:59:19.022590Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -344,8 +77,8 @@
       "fetched_count": 803,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 343,
-      "checked_at": "2026-06-20T15:45:17.897014Z"
+      "latency_ms": 251,
+      "checked_at": "2026-06-21T02:59:19.285258Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -354,10 +87,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-06-20T15:45:18.152335Z"
+      "latency_ms": 135,
+      "checked_at": "2026-06-21T02:59:19.421263Z"
     },
     {
       "source_id": "github-changelog",
@@ -366,10 +99,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 33,
-      "checked_at": "2026-06-20T15:45:18.185767Z"
+      "latency_ms": 26,
+      "checked_at": "2026-06-21T02:59:19.448277Z"
     },
     {
       "source_id": "aihot",
@@ -377,11 +110,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 50,
-      "kept_count": 6,
+      "fetched_count": 0,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 1484,
-      "checked_at": "2026-06-20T15:45:19.671582Z"
+      "latency_ms": 2215,
+      "checked_at": "2026-06-21T02:59:21.663496Z"
     }
   ],
   "control_notes": {
