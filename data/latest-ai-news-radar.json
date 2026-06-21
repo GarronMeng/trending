@@ -1,12 +1,62 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-21T02:59:21.672554Z",
+  "generated_at": "2026-06-21T08:18:25.292630Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 0,
-  "groups": {},
-  "items": [],
+  "item_count": 1,
+  "groups": {
+    "aggregate": {
+      "group": "aggregate",
+      "count": 1,
+      "top_sources": [
+        [
+          "AI Hot",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "claude",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "aggregate_noise",
+          1
+        ]
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "e9b6056c95441e4208ef850b82e606a48af4be1d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "开源教程《Deep Agents 实战》发布",
+      "url": "https://x.com/shao__meng/status/2068306942184034471",
+      "published_at": "2026-06-20T12:16:16Z",
+      "summary": "LangChain 官方认证大使 @zhanghaili0610 推出开源教程《Deep Agents 实战》，基于 LangChain / LangGraph 生态，讲解如何用 Deep Agents Harness 框架构建真实 Agent 应用。核心是\"三层架构\"：Runtime（LangGraph）、Framework（LangChain）、Harness（Deep Agents）。技术内核为上下文工程，通过虚拟文件系统实现按需读取、中间结果落盘、大文件局部读取。教程共 8 章 + 2 准备篇，覆盖虚拟文件系统（六大工具）、任务规划、子 Agent 委派（异步并行）及 Skills 复用（可在 Claude Code、Cursor 等 30+ 工具中通用）。",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "strong:agents",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    }
+  ],
   "source_health": [
     {
       "source_id": "openai-news",
@@ -17,8 +67,8 @@
       "fetched_count": 1012,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 1177,
-      "checked_at": "2026-06-21T02:59:18.091792Z"
+      "latency_ms": 584,
+      "checked_at": "2026-06-21T08:18:17.949489Z"
     },
     {
       "source_id": "openai-skills",
@@ -29,8 +79,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 204,
-      "checked_at": "2026-06-21T02:59:18.296675Z"
+      "latency_ms": 269,
+      "checked_at": "2026-06-21T08:18:18.219505Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -41,8 +91,8 @@
       "fetched_count": 230,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 125,
-      "checked_at": "2026-06-21T02:59:18.425366Z"
+      "latency_ms": 127,
+      "checked_at": "2026-06-21T08:18:18.350063Z"
     },
     {
       "source_id": "google-deepmind",
@@ -53,8 +103,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 345,
-      "checked_at": "2026-06-21T02:59:18.771835Z"
+      "latency_ms": 414,
+      "checked_at": "2026-06-21T08:18:18.765821Z"
     },
     {
       "source_id": "google-ai",
@@ -65,8 +115,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 250,
-      "checked_at": "2026-06-21T02:59:19.022590Z"
+      "latency_ms": 211,
+      "checked_at": "2026-06-21T08:18:18.977697Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -77,8 +127,8 @@
       "fetched_count": 803,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 251,
-      "checked_at": "2026-06-21T02:59:19.285258Z"
+      "latency_ms": 304,
+      "checked_at": "2026-06-21T08:18:19.293664Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -89,8 +139,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 135,
-      "checked_at": "2026-06-21T02:59:19.421263Z"
+      "latency_ms": 249,
+      "checked_at": "2026-06-21T08:18:19.543344Z"
     },
     {
       "source_id": "github-changelog",
@@ -101,8 +151,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-06-21T02:59:19.448277Z"
+      "latency_ms": 33,
+      "checked_at": "2026-06-21T08:18:19.576687Z"
     },
     {
       "source_id": "aihot",
@@ -110,11 +160,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 0,
-      "kept_count": 0,
+      "fetched_count": 50,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 2215,
-      "checked_at": "2026-06-21T02:59:21.663496Z"
+      "latency_ms": 5706,
+      "checked_at": "2026-06-21T08:18:25.283809Z"
     }
   ],
   "control_notes": {
