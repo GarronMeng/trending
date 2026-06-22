@@ -1,11 +1,39 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-21T15:49:55.780210Z",
+  "generated_at": "2026-06-22T03:29:47.983148Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 1,
+  "item_count": 2,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "openai",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
       "count": 1,
@@ -33,6 +61,26 @@
   },
   "items": [
     {
+      "id": "804e1ae43cec1e2da5f3e6de1acc2ba2982a3af2",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+      "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+      "published_at": "2026-06-21T23:00:00Z",
+      "summary": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts.",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "47ceda63f084fbd1f66ad69a3ba56ea328a106d5",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -59,11 +107,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1012,
-      "kept_count": 0,
+      "fetched_count": 1013,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 724,
-      "checked_at": "2026-06-21T15:49:50.415928Z"
+      "latency_ms": 750,
+      "checked_at": "2026-06-22T03:29:44.449393Z"
     },
     {
       "source_id": "openai-skills",
@@ -74,8 +122,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 185,
-      "checked_at": "2026-06-21T15:49:50.601586Z"
+      "latency_ms": 275,
+      "checked_at": "2026-06-22T03:29:44.724666Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -86,8 +134,8 @@
       "fetched_count": 230,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 102,
-      "checked_at": "2026-06-21T15:49:50.707816Z"
+      "latency_ms": 106,
+      "checked_at": "2026-06-22T03:29:44.834796Z"
     },
     {
       "source_id": "google-deepmind",
@@ -98,8 +146,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 339,
-      "checked_at": "2026-06-21T15:49:51.049217Z"
+      "latency_ms": 320,
+      "checked_at": "2026-06-22T03:29:45.156455Z"
     },
     {
       "source_id": "google-ai",
@@ -110,8 +158,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 227,
-      "checked_at": "2026-06-21T15:49:51.277471Z"
+      "latency_ms": 157,
+      "checked_at": "2026-06-22T03:29:45.314636Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -122,8 +170,8 @@
       "fetched_count": 803,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 242,
-      "checked_at": "2026-06-21T15:49:51.531655Z"
+      "latency_ms": 287,
+      "checked_at": "2026-06-22T03:29:45.614930Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -134,8 +182,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 229,
-      "checked_at": "2026-06-21T15:49:51.761001Z"
+      "latency_ms": 135,
+      "checked_at": "2026-06-22T03:29:45.751261Z"
     },
     {
       "source_id": "github-changelog",
@@ -146,8 +194,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-06-21T15:49:51.787441Z"
+      "latency_ms": 25,
+      "checked_at": "2026-06-22T03:29:45.776428Z"
     },
     {
       "source_id": "aihot",
@@ -158,8 +206,8 @@
       "fetched_count": 50,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 3982,
-      "checked_at": "2026-06-21T15:49:55.770763Z"
+      "latency_ms": 2197,
+      "checked_at": "2026-06-22T03:29:47.974096Z"
     }
   ],
   "control_notes": {
