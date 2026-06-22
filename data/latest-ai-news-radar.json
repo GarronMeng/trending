@@ -1,18 +1,46 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-22T14:11:39.187089Z",
+  "generated_at": "2026-06-22T18:12:09.965043Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 3,
+  "item_count": 10,
   "groups": {
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ]
+      ]
+    },
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI News",
-          1
+          3
         ],
         [
           "Hugging Face Blog",
@@ -22,18 +50,22 @@
       "top_keywords": [
         [
           "official_ai",
-          2
+          4
         ],
         [
           "openai",
-          1
+          3
+        ],
+        [
+          "codex",
+          2
         ],
         [
           "chatgpt",
           1
         ],
         [
-          "codex",
+          "tool",
           1
         ],
         [
@@ -44,14 +76,34 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 1,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          1
+          5
         ]
       ],
       "top_keywords": [
+        [
+          "aggregate_noise",
+          5
+        ],
+        [
+          "智能体",
+          4
+        ],
+        [
+          "developer",
+          2
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
         [
           "anthropic",
           1
@@ -61,17 +113,50 @@
           1
         ],
         [
-          "智能体",
+          "api",
           1
         ],
         [
-          "aggregate_noise",
+          "API",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "codex",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "a738feff88232651e72757b25b613c21cf8c7d37",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "New features and Claude as agent provider preview in JetBrains IDEs",
+      "url": "https://github.blog/changelog/2026-06-22-new-features-and-claude-as-agent-provider-preview-in-jetbrains-ides",
+      "published_at": "2026-06-22T15:34:00Z",
+      "summary": "This update adds support for organization and enterprise agents from GitHub, lets you queue and steer messages in Copilot CLI sessions, introduces a new agent debug logs summary view, and… The post New features and Claude as agent provider preview in JetBrains IDEs appeared first on The GitHub Blog .",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "strong:agents",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "804e1ae43cec1e2da5f3e6de1acc2ba2982a3af2",
       "source_id": "openai-news",
@@ -93,6 +178,47 @@
       "is_ai_related": true
     },
     {
+      "id": "7f94e5712bb81b8d0667b928f847dccd041b1d6a",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Daybreak: Tools for securing every organization in the world",
+      "url": "https://openai.com/index/daybreak-securing-the-world",
+      "published_at": "2026-06-22T10:00:00Z",
+      "summary": "OpenAI introduces new Daybreak tools, including Codex Security and GPT-5.5-Cyber, to help organizations find, validate, and patch vulnerabilities at scale.",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "weak:tool",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7cbc76105346b1898502702ea8fc03aa386bb0a4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战",
+      "url": "https://aihot.virxact.com/items/cmqpgzgfq00hislp5hwlbgz0h",
+      "published_at": "2026-06-22T17:08:43Z",
+      "summary": "一篇技术博客展示了如何用 Google Agent Development Kit （ADK） 与 Agent2Agent （A2A） 协议搭建跨语言多智能体流水线：Python agent 调用 Gemini 解析合同条款，Go agent 用纯确定性逻辑校验合规性。A2A 协议通过 Agent Card 实现能力发现、JSON-RPC 2.0 完成通信、Task 状态机管理任务生命周期；ADK 的 RemoteA2aAgent 抽象可将任意 A2A 兼容服务封装成本地子智能体。文中强调将单体提示词分解为专业化微智能体，以解决上下文退化、故障爆炸半径和不可测试性问题。完整源码已在 GitHub 发布。 🔗 阅读原文：https://developers.googleblog.com/build-cross-l",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "strong:智能体",
+        "weak:developer",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "c6854d203b06ad439320a4ee49153861f6d592a5",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
@@ -106,6 +232,24 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:hugging face",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b65899966bada5ebcc49858a6279a46bdfecfd8a",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
+      "url": "https://openai.com/index/patch-the-planet",
+      "published_at": "2026-06-22T10:00:00Z",
+      "summary": "OpenAI introduces Patch the Planet, a Daybreak initiative helping open-source maintainers find, validate, and fix vulnerabilities with AI and expert review.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -129,6 +273,65 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "e8cc9b048b4af43ab43ddece82dcbb16394bcd08",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "东京 AI 公司 Sakana AI 推出多智能体编排系统 Sakana Fugu",
+      "url": "https://aihot.virxact.com/items/cmqpez1uu001gslp5j4h23mih",
+      "published_at": "2026-06-22T16:11:41Z",
+      "summary": "Sakana AI 是 2023 年成立于东京的 AI 公司，由前 Google Brain 的 David Ha（CEO）、Transformer 论文共同作者 Llion Jones（CTO）及前日本外交官 Ren Ito（主席）联合创立。其产品 Sakana Fugu 将多智能体系统封装成单个 API 调用，内部自动拆解任务、调度全球模型并验证结果。Fugu Ultra 在工程、科学、推理等基准上对标 Fable/Mythos，通过动态编排多模型天然绕开单一供应商出口管制风险，被视为将多智能体从复杂工程变为开箱即用的产品形态。 🔗 阅读原文：https://x.com/berryxia/status/2069090959938466298",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "beeb8e87a71b97178c234a1891d2e9875e8b9fc0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google Labs 提出用\"洞察策略\"评估 AI 编码智能体的主动性",
+      "url": "https://aihot.virxact.com/items/cmqpeu90600l4sldksepc49lt",
+      "published_at": "2026-06-22T16:08:41Z",
+      "summary": "Google Labs 提出以\"洞察策略\"评估 AI 编码智能体的主动性，而非仅按任务完成度打分。团队基于 Google 内部代码库 705 个 bug（1178 个 CL），通过时空近邻与语义相似度聚类还原开发者实际的高层级目标。初步实验显示：Jules 在单轮探索下洞察相关性评分平均 4.5/5；探索预算从两轮增至三轮时，Hit@5 准确率从 33% 升至 57%。团队正将评估方法扩展至公开 GitHub 数据，并探索纳入问题追踪器、对话等更丰富的上下文。 🔗 阅读原文：https://developers.googleblog.com/measuring-what-matters-with-jules",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:developer",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e85e44f0de41ddbe9b0644d3c81f0746377c6fa0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布 Daybreak 安全工具：Codex Security 与 GPT-5.5-Cyber",
+      "url": "https://aihot.virxact.com/items/cmqph7ap700n2slp5g4tfjs46",
+      "published_at": "2026-06-22T10:00:00Z",
+      "summary": "OpenAI 推出 Daybreak 系列工具，包括 Codex Security 和 GPT-5.5-Cyber，帮助组织大规模发现、验证并修补漏洞。 🔗 阅读原文：https://openai.com/index/daybreak-securing-the-world",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -138,11 +341,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1013,
-      "kept_count": 1,
+      "fetched_count": 1015,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 691,
-      "checked_at": "2026-06-22T14:11:35.496342Z"
+      "latency_ms": 762,
+      "checked_at": "2026-06-22T18:12:05.567358Z"
     },
     {
       "source_id": "openai-skills",
@@ -153,8 +356,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 428,
-      "checked_at": "2026-06-22T14:11:35.925280Z"
+      "latency_ms": 399,
+      "checked_at": "2026-06-22T18:12:05.967449Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -165,8 +368,8 @@
       "fetched_count": 230,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 208,
-      "checked_at": "2026-06-22T14:11:36.137273Z"
+      "latency_ms": 197,
+      "checked_at": "2026-06-22T18:12:06.168333Z"
     },
     {
       "source_id": "google-deepmind",
@@ -177,8 +380,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 403,
-      "checked_at": "2026-06-22T14:11:36.542093Z"
+      "latency_ms": 373,
+      "checked_at": "2026-06-22T18:12:06.543253Z"
     },
     {
       "source_id": "google-ai",
@@ -189,8 +392,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 200,
-      "checked_at": "2026-06-22T14:11:36.742980Z"
+      "latency_ms": 263,
+      "checked_at": "2026-06-22T18:12:06.807570Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -201,8 +404,8 @@
       "fetched_count": 804,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 328,
-      "checked_at": "2026-06-22T14:11:37.085476Z"
+      "latency_ms": 392,
+      "checked_at": "2026-06-22T18:12:07.212233Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -213,8 +416,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 129,
-      "checked_at": "2026-06-22T14:11:37.215423Z"
+      "latency_ms": 352,
+      "checked_at": "2026-06-22T18:12:07.565079Z"
     },
     {
       "source_id": "github-changelog",
@@ -223,10 +426,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 33,
-      "checked_at": "2026-06-22T14:11:37.248579Z"
+      "latency_ms": 45,
+      "checked_at": "2026-06-22T18:12:07.610678Z"
     },
     {
       "source_id": "aihot",
@@ -235,10 +438,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 1,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 1929,
-      "checked_at": "2026-06-22T14:11:39.178950Z"
+      "latency_ms": 2345,
+      "checked_at": "2026-06-22T18:12:09.957198Z"
     }
   ],
   "control_notes": {
