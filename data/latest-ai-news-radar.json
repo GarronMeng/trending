@@ -1,79 +1,47 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-23T11:37:41.085426Z",
+  "generated_at": "2026-06-23T16:26:25.576167Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 19,
+  "item_count": 16,
   "groups": {
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 14,
+      "count": 11,
       "top_sources": [
         [
           "AI Hot",
-          14
+          11
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          14
+          11
         ],
         [
           "智能体",
-          8
-        ],
-        [
-          "api",
-          5
-        ],
-        [
-          "claude",
-          4
+          6
         ],
         [
           "agent",
+          5
+        ],
+        [
+          "api",
           4
         ],
         [
-          "API",
-          4
-        ],
-        [
-          "anthropic",
-          3
+          "openai",
+          2
         ],
         [
           "开发者",
+          2
+        ],
+        [
+          "claude",
           2
         ],
         [
@@ -81,22 +49,26 @@
           2
         ],
         [
-          "developer",
+          "llm",
           2
         ],
         [
-          "llm",
+          "API",
           2
         ],
         [
           "大模型",
           2
+        ],
+        [
+          "mcp",
+          1
         ]
       ]
     },
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "Hugging Face Blog",
@@ -109,12 +81,20 @@
         [
           "OpenAI Skills Commits",
           1
+        ],
+        [
+          "GitHub AI & ML",
+          1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          4
+          5
+        ],
+        [
+          "agent",
+          1
         ],
         [
           "openai",
@@ -125,11 +105,11 @@
           1
         ],
         [
-          "hugging face",
+          "tool",
           1
         ],
         [
-          "tool",
+          "automation",
           1
         ]
       ]
@@ -137,23 +117,25 @@
   },
   "items": [
     {
-      "id": "a738feff88232651e72757b25b613c21cf8c7d37",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "New features and Claude as agent provider preview in JetBrains IDEs",
-      "url": "https://github.blog/changelog/2026-06-22-new-features-and-claude-as-agent-provider-preview-in-jetbrains-ides",
-      "published_at": "2026-06-22T15:34:00Z",
-      "summary": "This update adds support for organization and enterprise agents from GitHub, lets you queue and steer messages in Copilot CLI sessions, introduces a new agent debug logs summary view, and… The post New features and Claude as agent provider preview in JetBrains IDEs appeared first on The GitHub Blog .",
+      "id": "8d6dfaa52151ed27963dcf9735c775ac389bfedc",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "IBM 开源 CUGA：轻量级智能体框架，提供二十余个单文件示例应用",
+      "url": "https://aihot.virxact.com/items/cmqqo96e30bv9slp5ds265bki",
+      "published_at": "2026-06-23T12:51:55Z",
+      "summary": "IBM 开源了 CUGA（Configurable Generalist Agent），一个处理规划、执行循环、工具调用和状态管理的轻量级智能体框架。开发者只需提供工具列表和提示词即可构建 CugaAgent。内置计划-执行-反思循环，在 AppWorld（2025年7月-2026年2月）和 WebArena（2025年2月-9月）基准上排名第一。支持 Fast / Balanced / Accurate 三种推理模式，代码执行可在本地、Docker 或 E2B 沙箱中运行。可互换工具支持 OpenAPI、MCP 和 LangChain 函数，通过环境变量一键切换 OpenAI、watsonx、Ollama 等提供商。随框架发布二十余个单文件示例应用，涵盖电影推荐、IBM Cloud 架构顾问等场景，每个应用仅",
       "relevance_score": 9,
       "relevance_reasons": [
-        "strong:claude",
+        "strong:openai",
         "strong:agent",
-        "strong:agents",
-        "weak:copilot",
-        "source:copilot"
+        "strong:mcp",
+        "strong:智能体",
+        "weak:api",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -177,6 +159,24 @@
         "weak:api",
         "weak:开发者",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0754302c41dd0088834d966482c369c5ba2764a1",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Build real agentic apps using CUGA: two dozen working examples on a lightweight harness",
+      "url": "https://huggingface.co/blog/ibm-research/cuga-apps",
+      "published_at": "2026-06-23T12:51:55Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -255,24 +255,6 @@
         "strong:智能体",
         "weak:developer",
         "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c6854d203b06ad439320a4ee49153861f6d592a5",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "PP-OCRv6 on Hugging Face: 50-Language OCR from 1.5M to 34.5M Parameters",
-      "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
-      "published_at": "2026-06-22T13:18:56Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -356,43 +338,20 @@
       "is_ai_related": true
     },
     {
-      "id": "1a61bcada67e5d86aba5cbd5a8d246d3623076f0",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenRouter：通过API路由实现AI数据驻留合规",
-      "url": "https://aihot.virxact.com/items/cmqpyc83704y1slp584b2av9b",
-      "published_at": "2026-06-22T15:00:00Z",
-      "summary": "Deloitte 报告显示 77% 的公司将供应商国籍纳入 AI 选型考量。OpenRouter 将数据驻留视为路由决策：通过 API 请求中的 `provider` 对象设置 `order` 或 `only` 限定服务商、`allow_fallbacks` 为 `false` 禁止回退、`data_collection` 为 `deny` 禁止数据存储或训练、`zdr` 为 `true` 要求零数据保留。示例以 `anthropic/claude-sonnet-4.6` 调用，首选 Anthropic 直连和 Amazon Bedrock。针对欧盟需求，可限制仅 Mistral 等欧盟总部供应商。若无可合规供应商，API 返回错误而非路由至不合规服务商。 🔗 阅读原文：https://openrouter.a",
-      "relevance_score": 5,
+      "id": "49b1701def55cf2a3faf0a25b0dd50d62e177cf0",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "I automated my job (and it made me a better leader)",
+      "url": "https://github.blog/developer-skills/github/i-automated-my-job-and-it-made-me-a-better-leader",
+      "published_at": "2026-06-23T16:00:00Z",
+      "summary": "Explore how my day as a senior leader looks now that I use 40 automations to help, and learn more about some of my favorites. The post I automated my job (and it made me a better leader) appeared first on The GitHub Blog .",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "90a9edc827f2c6d8e2a8c3c4d319ccf2254982d1",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 工程负责人：Claude Code 让程序员更孤独",
-      "url": "https://aihot.virxact.com/items/cmqpaflwr08cpslx6umzww19d",
-      "published_at": "2026-06-22T13:25:46Z",
-      "summary": "6月22日，Anthropic工程负责人Fiona Fung表示，Claude Code和Claude Cowork等AI智能体让工程师越发依赖智能体工作，彼此之间交流减少，长期易感孤独。团队为此组织编程午餐、黑客松和共同开发时段，重新创造面对面协作机会。调查显示Claude Code已成为创业公司最常用的AI编程工具，\"氛围编程\"兴起使\"单人创业者\"增多，但Fung强调协作仍不可或缺。 🔗 阅读原文：https://www.ithome.com/0/967/216.htm",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
+        "weak:automation",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -455,46 +414,6 @@
       "is_ai_related": true
     },
     {
-      "id": "e8cc9b048b4af43ab43ddece82dcbb16394bcd08",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "东京 AI 公司 Sakana AI 推出多智能体编排系统 Sakana Fugu",
-      "url": "https://aihot.virxact.com/items/cmqpez1uu001gslp5j4h23mih",
-      "published_at": "2026-06-22T16:11:41Z",
-      "summary": "Sakana AI 是 2023 年成立于东京的 AI 公司，由前 Google Brain 的 David Ha（CEO）、Transformer 论文共同作者 Llion Jones（CTO）及前日本外交官 Ren Ito（主席）联合创立。其产品 Sakana Fugu 将多智能体系统封装成单个 API 调用，内部自动拆解任务、调度全球模型并验证结果。Fugu Ultra 在工程、科学、推理等基准上对标 Fable/Mythos，通过动态编排多模型天然绕开单一供应商出口管制风险，被视为将多智能体从复杂工程变为开箱即用的产品形态。 🔗 阅读原文：https://x.com/berryxia/status/2069090959938466298",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "beeb8e87a71b97178c234a1891d2e9875e8b9fc0",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google Labs 提出用\"洞察策略\"评估 AI 编码智能体的主动性",
-      "url": "https://aihot.virxact.com/items/cmqpeu90600l4sldksepc49lt",
-      "published_at": "2026-06-22T16:08:41Z",
-      "summary": "Google Labs 提出以\"洞察策略\"评估 AI 编码智能体的主动性，而非仅按任务完成度打分。团队基于 Google 内部代码库 705 个 bug（1178 个 CL），通过时空近邻与语义相似度聚类还原开发者实际的高层级目标。初步实验显示：Jules 在单轮探索下洞察相关性评分平均 4.5/5；探索预算从两轮增至三轮时，Hit@5 准确率从 33% 升至 57%。团队正将评估方法扩展至公开 GitHub 数据，并探索纳入问题追踪器、对话等更丰富的上下文。 🔗 阅读原文：https://developers.googleblog.com/measuring-what-matters-with-jules",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:developer",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "00b5e5c17887f6f6a9353430ed1a5ef5e36ba4a3",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -524,8 +443,8 @@
       "fetched_count": 1017,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 776,
-      "checked_at": "2026-06-23T11:37:37.338805Z"
+      "latency_ms": 549,
+      "checked_at": "2026-06-23T16:26:22.010579Z"
     },
     {
       "source_id": "openai-skills",
@@ -536,8 +455,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 388,
-      "checked_at": "2026-06-23T11:37:37.727592Z"
+      "latency_ms": 327,
+      "checked_at": "2026-06-23T16:26:22.338452Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -548,8 +467,8 @@
       "fetched_count": 230,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 192,
-      "checked_at": "2026-06-23T11:37:37.922100Z"
+      "latency_ms": 117,
+      "checked_at": "2026-06-23T16:26:22.459783Z"
     },
     {
       "source_id": "google-deepmind",
@@ -560,8 +479,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 390,
-      "checked_at": "2026-06-23T11:37:38.313368Z"
+      "latency_ms": 382,
+      "checked_at": "2026-06-23T16:26:22.844145Z"
     },
     {
       "source_id": "google-ai",
@@ -572,8 +491,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 251,
-      "checked_at": "2026-06-23T11:37:38.565453Z"
+      "latency_ms": 236,
+      "checked_at": "2026-06-23T16:26:23.081180Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -581,11 +500,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 806,
+      "fetched_count": 807,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 258,
-      "checked_at": "2026-06-23T11:37:38.830223Z"
+      "latency_ms": 296,
+      "checked_at": "2026-06-23T16:26:23.389585Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -594,10 +513,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 278,
-      "checked_at": "2026-06-23T11:37:39.108806Z"
+      "latency_ms": 312,
+      "checked_at": "2026-06-23T16:26:23.702301Z"
     },
     {
       "source_id": "github-changelog",
@@ -606,10 +525,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 22,
-      "checked_at": "2026-06-23T11:37:39.131703Z"
+      "latency_ms": 32,
+      "checked_at": "2026-06-23T16:26:23.735188Z"
     },
     {
       "source_id": "aihot",
@@ -618,10 +537,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 14,
+      "kept_count": 11,
       "error": null,
-      "latency_ms": 1945,
-      "checked_at": "2026-06-23T11:37:41.078435Z"
+      "latency_ms": 1831,
+      "checked_at": "2026-06-23T16:26:25.567934Z"
     }
   ],
   "control_notes": {
