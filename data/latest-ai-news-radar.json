@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-22T18:12:09.965043Z",
+  "generated_at": "2026-06-23T02:37:00.761425Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 13,
   "groups": {
     "developer": {
       "group": "developer",
@@ -40,7 +40,11 @@
       "top_sources": [
         [
           "OpenAI News",
-          3
+          2
+        ],
+        [
+          "OpenAI Skills Commits",
+          1
         ],
         [
           "Hugging Face Blog",
@@ -54,18 +58,18 @@
         ],
         [
           "openai",
-          3
-        ],
-        [
-          "codex",
           2
         ],
         [
-          "chatgpt",
+          "codex",
           1
         ],
         [
           "tool",
+          1
+        ],
+        [
+          "skill",
           1
         ],
         [
@@ -76,24 +80,44 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          5
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          8
         ],
         [
           "智能体",
-          4
+          6
+        ],
+        [
+          "claude",
+          3
+        ],
+        [
+          "api",
+          3
+        ],
+        [
+          "API",
+          3
         ],
         [
           "developer",
+          2
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "anthropic",
           2
         ],
         [
@@ -105,31 +129,11 @@
           1
         ],
         [
-          "anthropic",
-          1
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
+          "llm",
           1
         ],
         [
           "开发者",
-          1
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "codex",
           1
         ]
       ]
@@ -158,26 +162,6 @@
       "is_ai_related": true
     },
     {
-      "id": "804e1ae43cec1e2da5f3e6de1acc2ba2982a3af2",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Samsung Electronics brings ChatGPT and Codex to employees",
-      "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
-      "published_at": "2026-06-21T23:00:00Z",
-      "summary": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts.",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:codex",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "7f94e5712bb81b8d0667b928f847dccd041b1d6a",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -193,6 +177,24 @@
         "strong:openai",
         "strong:codex",
         "weak:tool",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "96ee14052c1854c3e9dbc78c313b660b065e0652",
+      "source_id": "openai-skills",
+      "source_name": "OpenAI Skills Commits",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Deprecate skills repository (#496)",
+      "url": "https://github.com/openai/skills/commit/778b0e6129cf18cbaee3bf11479f583fadae8d03",
+      "published_at": "2026-06-22T20:36:37Z",
+      "summary": "Deprecate skills repository (#496) Move users towards Plugins directory for skills and apps.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "source:skill",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -251,6 +253,68 @@
       "relevance_reasons": [
         "strong:openai",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "708bfb38deae57d0a1935a262abbacaec443d6d5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Show HN：Oak--专为代理设计的 Git 替代方案",
+      "url": "https://aihot.virxact.com/items/cmqppo7c402qnslp5p92n6y3b",
+      "published_at": "2026-06-22T21:00:09Z",
+      "summary": "Oak 是开源版本控制系统，专为 AI 智能体（Claude Code、Codex、Cursor）设计。采用 BLAKE3 内容哈希、内容定义分块、diff/merge 及 Blob/Manifest/Commit/Tree 数据模型，可选 SQLite 和 git 后端。以分支-会话为基本工作单元，用分支描述替代逐次提交，通过内容寻址懒加载使智能体数秒内编辑任意仓库。速度远超 git。已发布公开测试版 v0.99.0，支持 macOS（Apple Silicon）、Linux（x86_64）及 Windows，可通过 curl 或 cargo 安装，Apache-2.0 开源。 🔗 阅读原文：https://oak.space/oak/oak",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "62f83bcec14fd0c9026b65f97750c0d7c7ad6974",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "AI 治理清单：LLM 架构先行",
+      "url": "https://aihot.virxact.com/items/cmqpyc83704y0slp54f6dv3w7",
+      "published_at": "2026-06-22T19:00:00Z",
+      "summary": "Deloitte 报告显示企业 AI 抱负与治理成熟度之间差 53 个百分点，74% 计划两年内部署智能体 AI，仅 21% 拥有成熟治理模型。路由架构是首个治理层。三种姿态--托管网关（如 OpenRouter、Portkey）、自托管网关（如 LiteLLM）和直接 API--默认治理能力不同，直接 API 缺乏统一控制面，造成治理盲区。治理清单可映射为资产盘点、问责制、访问控制、证据记录与合规性五大支柱。路由层能提供跨团队可见性与审计证据，而电子表格不能。 🔗 阅读原文：https://openrouter.ai/blog/insights/ai-governance-checklist",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:llm",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1a61bcada67e5d86aba5cbd5a8d246d3623076f0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenRouter：通过API路由实现AI数据驻留合规",
+      "url": "https://aihot.virxact.com/items/cmqpyc83704y1slp584b2av9b",
+      "published_at": "2026-06-22T15:00:00Z",
+      "summary": "Deloitte 报告显示 77% 的公司将供应商国籍纳入 AI 选型考量。OpenRouter 将数据驻留视为路由决策：通过 API 请求中的 `provider` 对象设置 `order` 或 `only` 限定服务商、`allow_fallbacks` 为 `false` 禁止回退、`data_collection` 为 `deny` 禁止数据存储或训练、`zdr` 为 `true` 要求零数据保留。示例以 `anthropic/claude-sonnet-4.6` 调用，首选 Anthropic 直连和 Amazon Bedrock。针对欧盟需求，可限制仅 Mistral 等欧盟总部供应商。若无可合规供应商，API 返回错误而非路由至不合规服务商。 🔗 阅读原文：https://openrouter.a",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -341,11 +405,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1015,
-      "kept_count": 3,
+      "fetched_count": 1016,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 762,
-      "checked_at": "2026-06-22T18:12:05.567358Z"
+      "latency_ms": 722,
+      "checked_at": "2026-06-23T02:36:57.039101Z"
     },
     {
       "source_id": "openai-skills",
@@ -354,10 +418,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 399,
-      "checked_at": "2026-06-22T18:12:05.967449Z"
+      "latency_ms": 312,
+      "checked_at": "2026-06-23T02:36:57.351684Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -368,8 +432,8 @@
       "fetched_count": 230,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 197,
-      "checked_at": "2026-06-22T18:12:06.168333Z"
+      "latency_ms": 112,
+      "checked_at": "2026-06-23T02:36:57.467398Z"
     },
     {
       "source_id": "google-deepmind",
@@ -380,8 +444,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 373,
-      "checked_at": "2026-06-22T18:12:06.543253Z"
+      "latency_ms": 354,
+      "checked_at": "2026-06-23T02:36:57.822883Z"
     },
     {
       "source_id": "google-ai",
@@ -392,8 +456,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 263,
-      "checked_at": "2026-06-22T18:12:06.807570Z"
+      "latency_ms": 236,
+      "checked_at": "2026-06-23T02:36:58.059737Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -404,8 +468,8 @@
       "fetched_count": 804,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 392,
-      "checked_at": "2026-06-22T18:12:07.212233Z"
+      "latency_ms": 304,
+      "checked_at": "2026-06-23T02:36:58.375808Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -416,8 +480,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 352,
-      "checked_at": "2026-06-22T18:12:07.565079Z"
+      "latency_ms": 166,
+      "checked_at": "2026-06-23T02:36:58.542241Z"
     },
     {
       "source_id": "github-changelog",
@@ -428,8 +492,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 45,
-      "checked_at": "2026-06-22T18:12:07.610678Z"
+      "latency_ms": 32,
+      "checked_at": "2026-06-23T02:36:58.575331Z"
     },
     {
       "source_id": "aihot",
@@ -438,10 +502,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 2345,
-      "checked_at": "2026-06-22T18:12:09.957198Z"
+      "latency_ms": 2176,
+      "checked_at": "2026-06-23T02:37:00.752778Z"
     }
   ],
   "control_notes": {

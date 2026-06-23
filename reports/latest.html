@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>10</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>13</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>4</b><span>官方源条目</span></div>
-        <div class="stat"><b>5</b><span>聚合源条目</span></div>
+        <div class="stat"><b>8</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-22T18:12:09.966319Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-23T02:37:00.762909Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -71,25 +71,25 @@
       <div class="meta">
         <span>OpenAI News</span>
         <span>official_rss</span>
-        <span>2026-06-21T23:00:00Z</span>
-        <strong>Score 7</strong>
-      </div>
-      <h3><a href="https://openai.com/index/samsung-electronics-chatgpt-codex-deployment" target="_blank" rel="noreferrer">Samsung Electronics brings ChatGPT and Codex to employees</a></h3>
-      <p class='summary'>Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts.</p>
-      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>strong:codex</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
         <span>2026-06-22T10:00:00Z</span>
         <strong>Score 6</strong>
       </div>
       <h3><a href="https://openai.com/index/daybreak-securing-the-world" target="_blank" rel="noreferrer">Daybreak: Tools for securing every organization in the world</a></h3>
       <p class='summary'>OpenAI introduces new Daybreak tools, including Codex Security and GPT-5.5-Cyber, to help organizations find, validate, and patch vulnerabilities at scale.</p>
       <div class="tags"><span>strong:openai</span><span>strong:codex</span><span>weak:tool</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI Skills Commits</span>
+        <span>official_rss</span>
+        <span>2026-06-22T20:36:37Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://github.com/openai/skills/commit/778b0e6129cf18cbaee3bf11479f583fadae8d03" target="_blank" rel="noreferrer">Deprecate skills repository (#496)</a></h3>
+      <p class='summary'>Deprecate skills repository (#496) Move users towards Plugins directory for skills and apps.</p>
+      <div class="tags"><span>source:skill</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -129,6 +129,45 @@
       <h3><a href="https://openai.com/index/patch-the-planet" target="_blank" rel="noreferrer">Patch the Planet: a Daybreak initiative to support open source maintainers</a></h3>
       <p class='summary'>OpenAI introduces Patch the Planet, a Daybreak initiative helping open-source maintainers find, validate, and fix vulnerabilities with AI and expert review.</p>
       <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-22T21:00:09Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmqppo7c402qnslp5p92n6y3b" target="_blank" rel="noreferrer">Show HN：Oak--专为代理设计的 Git 替代方案</a></h3>
+      <p class='summary'>Oak 是开源版本控制系统，专为 AI 智能体（Claude Code、Codex、Cursor）设计。采用 BLAKE3 内容哈希、内容定义分块、diff/merge 及 Blob/Manifest/Commit/Tree 数据模型，可选 SQLite 和 git 后端。以分支-会话为基本工作单元，用分支描述替代逐次提交，通过内容寻址懒加载使智能体数秒内编辑任意仓库。速度远超 git。已发布公开测试版 v0.99.0，支持 macOS（Apple Silicon）、Linux（x86_64）及 Windows，可通过 curl 或 cargo 安装，Apache-2.0 开源。 🔗 阅读原文：https://oak.space/oak/oak</p>
+      <div class="tags"><span>strong:claude</span><span>strong:codex</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-22T19:00:00Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmqpyc83704y0slp54f6dv3w7" target="_blank" rel="noreferrer">AI 治理清单：LLM 架构先行</a></h3>
+      <p class='summary'>Deloitte 报告显示企业 AI 抱负与治理成熟度之间差 53 个百分点，74% 计划两年内部署智能体 AI，仅 21% 拥有成熟治理模型。路由架构是首个治理层。三种姿态--托管网关（如 OpenRouter、Portkey）、自托管网关（如 LiteLLM）和直接 API--默认治理能力不同，直接 API 缺乏统一控制面，造成治理盲区。治理清单可映射为资产盘点、问责制、访问控制、证据记录与合规性五大支柱。路由层能提供跨团队可见性与审计证据，而电子表格不能。 🔗 阅读原文：https://openrouter.ai/blog/insights/ai-governance-checklist</p>
+      <div class="tags"><span>strong:llm</span><span>strong:智能体</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-22T15:00:00Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmqpyc83704y1slp584b2av9b" target="_blank" rel="noreferrer">OpenRouter：通过API路由实现AI数据驻留合规</a></h3>
+      <p class='summary'>Deloitte 报告显示 77% 的公司将供应商国籍纳入 AI 选型考量。OpenRouter 将数据驻留视为路由决策：通过 API 请求中的 `provider` 对象设置 `order` 或 `only` 限定服务商、`allow_fallbacks` 为 `false` 禁止回退、`data_collection` 为 `deny` 禁止数据存储或训练、`zdr` 为 `true` 要求零数据保留。示例以 `anthropic/claude-sonnet-4.6` 调用，首选 Anthropic 直连和 Amazon Bedrock。针对欧盟需求，可限制仅 Mistral 等欧盟总部供应商。若无可合规供应商，API 返回错误而非路由至不合规服务商。 🔗 阅读原文：https://openrouter.a</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -188,15 +227,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1015</td><td>3</td><td>762ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>399ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>230</td><td>0</td><td>197ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>373ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>263ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>804</td><td>1</td><td>392ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>352ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>45ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>5</td><td>2345ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1016</td><td>2</td><td>722ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>312ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>230</td><td>0</td><td>112ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>354ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>236ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>804</td><td>1</td><td>304ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>166ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>32ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>8</td><td>2176ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
