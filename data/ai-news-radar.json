@@ -1,85 +1,25 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-23T16:26:25.576167Z",
+  "generated_at": "2026-06-24T02:37:45.823437Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 16,
+  "item_count": 17,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
-      "count": 11,
-      "top_sources": [
-        [
-          "AI Hot",
-          11
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          11
-        ],
-        [
-          "智能体",
-          6
-        ],
-        [
-          "agent",
-          5
-        ],
-        [
-          "api",
-          4
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "开发者",
-          2
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
-          "gemini",
-          2
-        ],
-        [
-          "llm",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "大模型",
-          2
-        ],
-        [
-          "mcp",
-          1
-        ]
-      ]
-    },
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
-          "Hugging Face Blog",
-          2
+          "OpenAI Skills Commits",
+          1
         ],
         [
           "OpenAI News",
           1
         ],
         [
-          "OpenAI Skills Commits",
+          "Hugging Face Blog",
           1
         ],
         [
@@ -90,22 +30,26 @@
       "top_keywords": [
         [
           "official_ai",
-          5
-        ],
-        [
-          "agent",
-          1
+          4
         ],
         [
           "openai",
-          1
+          3
+        ],
+        [
+          "codex",
+          2
         ],
         [
           "skill",
           1
         ],
         [
-          "tool",
+          "eval",
+          1
+        ],
+        [
+          "agent",
           1
         ],
         [
@@ -113,9 +57,152 @@
           1
         ]
       ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 4,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          4
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          4
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "actions",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 9,
+      "top_sources": [
+        [
+          "AI Hot",
+          9
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          9
+        ],
+        [
+          "agent",
+          4
+        ],
+        [
+          "大模型",
+          3
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "开发者",
+          2
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "自动化",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "llm",
+          1
+        ]
+      ]
     }
   },
   "items": [
+    {
+      "id": "3dd3b016712aa1900e357658f60951216246e5e7",
+      "source_id": "openai-skills",
+      "source_name": "OpenAI Skills Commits",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "[codex] Update skill installer post-install guidance (#507)",
+      "url": "https://github.com/openai/skills/commit/49f948faa9258a0c61caceaf225e179651397431",
+      "published_at": "2026-06-24T02:36:12Z",
+      "summary": "[codex] Update skill installer post-install guidance (#507) ## Summary - Update the skill installer's post-install guidance to say the skill will be available on the user's next turn. - Remove the obsolete instruction to restart Codex. ## Why Codex refreshes its skill catalog between turns. The existing instruction predates that behavior and causes the model",
+      "relevance_score": 11,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "source:skill",
+        "source:codex",
+        "source:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "eae8394848c2b2eb1c266ac1cd0be80f346c4079",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot app support for BYOK",
+      "url": "https://github.blog/changelog/2026-06-23-github-copilot-app-support-for-byok",
+      "published_at": "2026-06-23T08:00:02Z",
+      "summary": "The GitHub Copilot app now supports bring your own key (BYOK), so you can run agent sessions against your own model providers, including OpenAI, Azure OpenAI, Microsoft Foundry, Anthropic, LM… The post GitHub Copilot app support for BYOK appeared first on The GitHub Blog .",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "8d6dfaa52151ed27963dcf9735c775ac389bfedc",
       "source_id": "aihot",
@@ -140,25 +227,21 @@
       "is_ai_related": true
     },
     {
-      "id": "870db18a5d3d6d33d49e83a9ef6a379154aec3b1",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Seed2.1 正式发布，深入 AI 生产力",
-      "url": "https://aihot.virxact.com/items/cmqq5ns6p06scslp5dlnxluux",
-      "published_at": "2026-06-23T00:02:42Z",
-      "summary": "字节Seed发布Seed2.1系列，面向真实生产力场景的智能体，强化通用Agent能力、代码工程交付与多模态理解。Seed2.1 Pro在GDPval基准获最高分，Agents' Last Exam位列参评模型第一梯队；MobileWorld手机GUI任务最高分，CreativeWork多环境任务表现突出。多模态在CharXiv-RQ等多项基准取得SOTA。代码能力上，Seed2.1 Pro在NL2Repo-Bench表现良好，开发者评测相比Claude Opus 4.6获59.1%胜率。模型已在豆包、TRAE上线，API通过火山方舟提供。 🔗 阅读原文：https://seed.bytedance.com/zh/blog/seed2-1-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83",
-      "relevance_score": 9,
+      "id": "b6f9eb79c1fcbdb5ac1bef02a48f771b536eff0e",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Helping build shared standards for advanced AI",
+      "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+      "published_at": "2026-06-23T13:00:00Z",
+      "summary": "OpenAI helps build shared standards for advanced AI, supporting evaluation frameworks, safety practices, and global cooperation through the Appia Foundation.",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "strong:agents",
-        "strong:智能体",
-        "weak:api",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
+        "strong:openai",
+        "weak:eval",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -202,63 +285,6 @@
       "is_ai_related": true
     },
     {
-      "id": "66a44e33c95e4250cdb3527d1a19b08475c24583",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How Omio is building the future of conversational travel",
-      "url": "https://openai.com/index/omio",
-      "published_at": "2026-06-23T00:00:00Z",
-      "summary": "Discover how Omio uses OpenAI to power conversational travel experiences, accelerate product development, and transform into an AI-native company.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "96ee14052c1854c3e9dbc78c313b660b065e0652",
-      "source_id": "openai-skills",
-      "source_name": "OpenAI Skills Commits",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Deprecate skills repository (#496)",
-      "url": "https://github.com/openai/skills/commit/778b0e6129cf18cbaee3bf11479f583fadae8d03",
-      "published_at": "2026-06-22T20:36:37Z",
-      "summary": "Deprecate skills repository (#496) Move users towards Plugins directory for skills and apps.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "source:skill",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7cbc76105346b1898502702ea8fc03aa386bb0a4",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战",
-      "url": "https://aihot.virxact.com/items/cmqpgzgfq00hislp5hwlbgz0h",
-      "published_at": "2026-06-22T17:08:43Z",
-      "summary": "一篇技术博客展示了如何用 Google Agent Development Kit （ADK） 与 Agent2Agent （A2A） 协议搭建跨语言多智能体流水线：Python agent 调用 Gemini 解析合同条款，Go agent 用纯确定性逻辑校验合规性。A2A 协议通过 Agent Card 实现能力发现、JSON-RPC 2.0 完成通信、Task 状态机管理任务生命周期；ADK 的 RemoteA2aAgent 抽象可将任意 A2A 兼容服务封装成本地子智能体。文中强调将单体提示词分解为专业化微智能体，以解决上下文退化、故障爆炸半径和不可测试性问题。完整源码已在 GitHub 发布。 🔗 阅读原文：https://developers.googleblog.com/build-cross-l",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:agent",
-        "strong:智能体",
-        "weak:developer",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "90ca22552901ce165f07b518001e42efb27d0649",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -279,61 +305,20 @@
       "is_ai_related": true
     },
     {
-      "id": "62370d2007055ba3271d2ce009f4f58ced5d9d6a",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "1c55d91002e0aaba14cca1b99d235326672501ee",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Shipping huggingface_hub every week with AI, open tools, and a human in the loop",
-      "url": "https://huggingface.co/blog/huggingface-hub-release-ci",
-      "published_at": "2026-06-23T00:00:00Z",
-      "summary": null,
-      "relevance_score": 2,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot CLI: New terminal interface is generally available",
+      "url": "https://github.blog/changelog/2026-06-23-copilot-cli-new-terminal-interface-is-generally-available",
+      "published_at": "2026-06-23T16:35:45Z",
+      "summary": "The redesigned terminal interface for GitHub Copilot CLI that we previewed at Microsoft Build 2026 is now generally available. You get a tabbed layout for working with GitHub directly from… The post Copilot CLI: New terminal interface is generally available appeared first on The GitHub Blog .",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "weak:tool",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "708bfb38deae57d0a1935a262abbacaec443d6d5",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Show HN：Oak--专为代理设计的 Git 替代方案",
-      "url": "https://aihot.virxact.com/items/cmqppo7c402qnslp5p92n6y3b",
-      "published_at": "2026-06-22T21:00:09Z",
-      "summary": "Oak 是开源版本控制系统，专为 AI 智能体（Claude Code、Codex、Cursor）设计。采用 BLAKE3 内容哈希、内容定义分块、diff/merge 及 Blob/Manifest/Commit/Tree 数据模型，可选 SQLite 和 git 后端。以分支-会话为基本工作单元，用分支描述替代逐次提交，通过内容寻址懒加载使智能体数秒内编辑任意仓库。速度远超 git。已发布公开测试版 v0.99.0，支持 macOS（Apple Silicon）、Linux（x86_64）及 Windows，可通过 curl 或 cargo 安装，Apache-2.0 开源。 🔗 阅读原文：https://oak.space/oak/oak",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:codex",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "62f83bcec14fd0c9026b65f97750c0d7c7ad6974",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "AI 治理清单：LLM 架构先行",
-      "url": "https://aihot.virxact.com/items/cmqpyc83704y0slp54f6dv3w7",
-      "published_at": "2026-06-22T19:00:00Z",
-      "summary": "Deloitte 报告显示企业 AI 抱负与治理成熟度之间差 53 个百分点，74% 计划两年内部署智能体 AI，仅 21% 拥有成熟治理模型。路由架构是首个治理层。三种姿态--托管网关（如 OpenRouter、Portkey）、自托管网关（如 LiteLLM）和直接 API--默认治理能力不同，直接 API 缺乏统一控制面，造成治理盲区。治理清单可映射为资产盘点、问责制、访问控制、证据记录与合规性五大支柱。路由层能提供跨团队可见性与审计证据，而电子表格不能。 🔗 阅读原文：https://openrouter.ai/blog/insights/ai-governance-checklist",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:llm",
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -352,6 +337,79 @@
       "relevance_reasons": [
         "weak:automation",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9f1f33217cbf6279ddc90fb96b33e98ab838a00c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "今天，豆包正式推出专业版",
+      "url": "https://aihot.virxact.com/items/cmqrdmylf0iyeslp50lteppvq",
+      "published_at": "2026-06-24T01:00:00Z",
+      "summary": "豆包专业版基于豆包2.1系列大模型上线，面向复杂办公与生产力场景。办公任务模式接入可执行Agent任务的豆包2.1模型，支持操作本地电脑、浏览器、调用Skills技能、定时任务，内置Office办公套件，并可生成带后端数据库的在线应用。免费用户可体验豆包2.1 Turbo版办公任务模式，专业版接入豆包2.1 Pro模型。定价：标准套餐68元/月（连续包月），加强套餐200元/月，高级套餐500元/月。大学生认证后标准套餐38元/月，持续6个月。 🔗 阅读原文：https://mp.weixin.qq.com/s/Sb-NMXTrWFQES1EDO_Gr2g",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:大模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "278db8995bcc4e93fdd35190e2e9276fd9750b7a",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Fetch Code Quality findings via REST API",
+      "url": "https://github.blog/changelog/2026-06-23-fetch-code-quality-findings-via-rest-api",
+      "published_at": "2026-06-23T18:38:41Z",
+      "summary": "Repository-level REST APIs for Code Quality findings are now available in public preview, bringing API support closer to the functionality already available in the GitHub UI. Two new read-only endpoints… The post Fetch Code Quality findings via REST API appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:API"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "cad8a3b60525594fd25bda54697749ecc23c31f2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 推出 Claude Tag：在 Slack 中通过 @Claude 协作",
+      "url": "https://aihot.virxact.com/items/cmqqwge4a0e6tslp50f3tli27",
+      "published_at": "2026-06-23T17:09:41Z",
+      "summary": "Anthropic 推出 Claude Tag，一种在 Slack 频道中通过 @Claude 委托任务的新协作方式。Claude 可记住频道上下文，支持多用户交互，经授权后可自动学习其他频道和数据源。开启\"环境\"行为后，能主动更新未解决的线程或任务。支持异步工作，可自主推进项目数小时或数天。即日起面向 Claude Enterprise 和 Team 客户提供 beta 版。管理员可精细控制工具和渠道访问权限、设置 token 消耗限额，并查看所有操作日志。 🔗 阅读原文：https://www.anthropic.com/news/introducing-claude-tag",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0edc2e8bf8fbfb9dc1eac98a13419ad4d2e953d8",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Automatic Dependabot access to GitHub-hosted registries",
+      "url": "https://github.blog/changelog/2026-06-23-automatic-dependabot-access-to-github-hosted-registries",
+      "published_at": "2026-06-23T16:46:05Z",
+      "summary": "Dependabot can now read from private GitHub Packages registries without a personal access token. If a package has granted your repository access through “Manage Actions access” in the package settings,… The post Automatic Dependabot access to GitHub-hosted registries appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -414,20 +472,20 @@
       "is_ai_related": true
     },
     {
-      "id": "00b5e5c17887f6f6a9353430ed1a5ef5e36ba4a3",
+      "id": "36963a3601c320836b7b0325324e9fa21a212904",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "huggingface_hub 实现每周发布：AI、开源工具、人工审核闭环",
-      "url": "https://aihot.virxact.com/items/cmqqd9e3008seslp5644lhzaa",
-      "published_at": "2026-06-23T00:00:00Z",
-      "summary": "Hugging Face 将 huggingface_hub 的发布周期从每 4-6 周缩短至每周，全部由单个 GitHub Actions 工作流自动完成。流程依赖开源工具和开权重模型（当前为 Z.ai 的 GLM-5.2）来起草发布说明和 Slack 公告，但保留人类在最终审核环节的决定权。自动步骤包括版本号更新、提交标签推送、PyPI 发布、下游测试分支创建、发布说明草稿、Slack 公告草稿、归档、后置版本提升以及对合入 PR 的评论。所有组件均基于开源生态构建，任何维护者都可直接复制使用。 🔗 阅读原文：https://huggingface.co/blog/huggingface-hub-release-ci",
+      "title": "GitHub联合开源联盟呼吁修改加州AI透明度法案以保护开源",
+      "url": "https://aihot.virxact.com/items/cmqr1y54m0frmslp5b6e6js37",
+      "published_at": "2026-06-23T15:48:00Z",
+      "summary": "GitHub 联合 Black Forest Labs、Hugging Face 与 Mozilla Corporation 组成开源联盟，呼吁对加州 AI 透明度法案（SB 942，拟由 SB 1000 修正）进行针对性修改。当前草案要求开发者在下游用户未履行义务时撤销开源许可证，这与开源许可证永久不可撤销的性质冲突。联盟认为该要求非必要，已有直接监管和执法机制，并建议参考欧盟 AI 法案的透明度实践规范，以向下游用户通知最佳实践文档的方式替代撤销条款。GitHub 支持这些修正，以在保持透明度目标的同时兼容开源开发模式。 🔗 阅读原文：https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advoc",
       "relevance_score": 2,
       "relevance_reasons": [
         "strong:hugging face",
-        "weak:工作流",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -440,11 +498,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1017,
+      "fetched_count": 1019,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 549,
-      "checked_at": "2026-06-23T16:26:22.010579Z"
+      "latency_ms": 813,
+      "checked_at": "2026-06-24T02:37:38.688303Z"
     },
     {
       "source_id": "openai-skills",
@@ -455,8 +513,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 327,
-      "checked_at": "2026-06-23T16:26:22.338452Z"
+      "latency_ms": 184,
+      "checked_at": "2026-06-24T02:37:38.873395Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -464,11 +522,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 230,
+      "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 117,
-      "checked_at": "2026-06-23T16:26:22.459783Z"
+      "latency_ms": 107,
+      "checked_at": "2026-06-24T02:37:38.984856Z"
     },
     {
       "source_id": "google-deepmind",
@@ -479,8 +537,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 382,
-      "checked_at": "2026-06-23T16:26:22.844145Z"
+      "latency_ms": 342,
+      "checked_at": "2026-06-24T02:37:39.328974Z"
     },
     {
       "source_id": "google-ai",
@@ -491,8 +549,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 236,
-      "checked_at": "2026-06-23T16:26:23.081180Z"
+      "latency_ms": 164,
+      "checked_at": "2026-06-24T02:37:39.493435Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -500,11 +558,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 807,
-      "kept_count": 2,
+      "fetched_count": 808,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 296,
-      "checked_at": "2026-06-23T16:26:23.389585Z"
+      "latency_ms": 256,
+      "checked_at": "2026-06-24T02:37:39.762204Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -515,8 +573,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 312,
-      "checked_at": "2026-06-23T16:26:23.702301Z"
+      "latency_ms": 100,
+      "checked_at": "2026-06-24T02:37:39.862826Z"
     },
     {
       "source_id": "github-changelog",
@@ -525,10 +583,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-06-23T16:26:23.735188Z"
+      "latency_ms": 28,
+      "checked_at": "2026-06-24T02:37:39.891466Z"
     },
     {
       "source_id": "aihot",
@@ -537,10 +595,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 11,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 1831,
-      "checked_at": "2026-06-23T16:26:25.567934Z"
+      "latency_ms": 5922,
+      "checked_at": "2026-06-24T02:37:45.815375Z"
     }
   ],
   "control_notes": {
