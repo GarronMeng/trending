@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-24T02:37:45.823437Z",
+  "generated_at": "2026-06-24T07:02:33.775035Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -117,19 +117,19 @@
           4
         ],
         [
+          "openai",
+          3
+        ],
+        [
+          "智能体",
+          3
+        ],
+        [
           "大模型",
           3
         ],
         [
-          "openai",
-          2
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "api",
+          "mcp",
           2
         ],
         [
@@ -137,23 +137,23 @@
           2
         ],
         [
+          "claude",
+          2
+        ],
+        [
           "anthropic",
           2
         ],
         [
-          "mcp",
+          "api",
+          1
+        ],
+        [
+          "评测",
           1
         ],
         [
           "自动化",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "llm",
           1
         ]
       ]
@@ -227,6 +227,28 @@
       "is_ai_related": true
     },
     {
+      "id": "e62f762d1b22d682e935f97502ab62bc6e529af9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Qwen-AgentWorld 开源：让 Agent 学会\"先预测，再行动\"",
+      "url": "https://aihot.virxact.com/items/cmqrizuey0kmcslp5zt7bajh0",
+      "published_at": "2026-06-24T03:32:04Z",
+      "summary": "通义千问推出首个原生语言世界模型 Qwen-AgentWorld，覆盖 MCP、Search、Terminal、SWE、Web、OS、Android 七大领域。模型基于超 1000 万条真实交互轨迹，经 CPT→SFT→RL 三阶段训练，在 AgentWorldBench 上超越 GPT-5.4（58.25）和 Claude Opus 4.8，Qwen-AgentWorld-397B-A17B 取得 58.71 分。两种范式已验证其能力：作为解耦环境模拟器实现可控 Sim RL，在 WideSearch 上超越真实环境 RL（F1 50.3% vs 45.6%）；作为智能体基础模型，LWM 预热可迁移至七个基准（三个完全未出现在训练集中）。模型与评测基准已开源。 🔗 阅读原文：https://mp.weixin",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "strong:mcp",
+        "strong:智能体",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "b6f9eb79c1fcbdb5ac1bef02a48f771b536eff0e",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -285,26 +307,6 @@
       "is_ai_related": true
     },
     {
-      "id": "90ca22552901ce165f07b518001e42efb27d0649",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "京东全栈开源JoyAI-VL-Interaction，从\"一问一答\"走向\"边看边说\"",
-      "url": "https://aihot.virxact.com/items/cmqq8ww0e07m4slp5mk5snl0z",
-      "published_at": "2026-06-23T06:04:50Z",
-      "summary": "京东近日开源全球首个全栈交互模型JoyAI-VL-Interaction，获vLLM-Omni原生支持。该模型能持续观察视频流、主动判断关键事件并实时响应，支持将复杂任务委托后台Agent处理。在58个真人盲评中，对比豆包视频通话助手胜率77.6%，对比Gemini视频通话助手胜率87.9%，监控预警场景达100%胜率。开源内容包括模型权重、交互数据集、训练方案及完整可部署系统，支持摄像头、直播流等视频输入及语音交互、长期记忆、vLLM部署，适用于安防监控、老人看护、直播讲解等实时场景。 🔗 阅读原文：https://mp.weixin.qq.com/s/IY6XGp4k6VgD9ZPH6YprCA",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:agent",
-        "strong:llm",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "1c55d91002e0aaba14cca1b99d235326672501ee",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -337,6 +339,25 @@
       "relevance_reasons": [
         "weak:automation",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a37fbc73b936fdc27e814b9328134a50e0a808a6",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI ChatGPT 语音最大规模升级：双向AI语音模型 Bidi 1 已上线测试",
+      "url": "https://aihot.virxact.com/items/cmqrl73460l9gslp5w33pryqi",
+      "published_at": "2026-06-24T04:34:24Z",
+      "summary": "6月23日，部分用户反馈 ChatGPT 网页版和 App 版上线了双向 AI 语音模型 Bidi 1，位于设置模型选择器中，与标准语音和高级语音并列。该模型支持边说话边监听，用户可在对话中途打断并发出新指令，例如要求从1数到10时中途喊停倒数，模型会立即切换执行。OpenAI 尚未官宣，预计本周启动更大范围测试。 🔗 阅读原文：https://www.ithome.com/0/967/852.htm",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -452,26 +473,6 @@
       "is_ai_related": true
     },
     {
-      "id": "36556454fd62c9bb1f53a51935d4b85beeee3ee2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "豆包音频生成模型1.0发布，重新定义AI音频创作",
-      "url": "https://aihot.virxact.com/items/cmqq876yf07gsslp5eix31xaq",
-      "published_at": "2026-06-23T05:41:11Z",
-      "summary": "火山引擎正式发布豆包音频生成模型1.0（Doubao-Seed-Audio 1.0），支持文本与音频参考生成，端到端输出目标音频。单条Prompt可编排多角色对白、情绪语气、背景音乐及环境氛围，长时生成中保持多角色音色一致性，无需后期多轨混音。模型支持0样本多模态输入，无需额外训练即可生成；实现音色与风格解耦控制及\"一声多角\"能力。一次支持2分钟音频创作，多次延长保持音色统一。已开启火山方舟API邀测，个人用户享30分钟创作额度，即将上线剪映、即梦、番茄等产品。 🔗 阅读原文：https://mp.weixin.qq.com/s/iL0uyUjOMUEfudeuDP6wQQ",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:多模态",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "36963a3601c320836b7b0325324e9fa21a212904",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -501,8 +502,8 @@
       "fetched_count": 1019,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 813,
-      "checked_at": "2026-06-24T02:37:38.688303Z"
+      "latency_ms": 730,
+      "checked_at": "2026-06-24T07:02:29.839741Z"
     },
     {
       "source_id": "openai-skills",
@@ -513,8 +514,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 184,
-      "checked_at": "2026-06-24T02:37:38.873395Z"
+      "latency_ms": 203,
+      "checked_at": "2026-06-24T07:02:30.043982Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -525,8 +526,8 @@
       "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 107,
-      "checked_at": "2026-06-24T02:37:38.984856Z"
+      "latency_ms": 91,
+      "checked_at": "2026-06-24T07:02:30.138489Z"
     },
     {
       "source_id": "google-deepmind",
@@ -537,8 +538,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 342,
-      "checked_at": "2026-06-24T02:37:39.328974Z"
+      "latency_ms": 223,
+      "checked_at": "2026-06-24T07:02:30.362904Z"
     },
     {
       "source_id": "google-ai",
@@ -549,8 +550,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 164,
-      "checked_at": "2026-06-24T02:37:39.493435Z"
+      "latency_ms": 282,
+      "checked_at": "2026-06-24T07:02:30.645879Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -561,8 +562,8 @@
       "fetched_count": 808,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 256,
-      "checked_at": "2026-06-24T02:37:39.762204Z"
+      "latency_ms": 434,
+      "checked_at": "2026-06-24T07:02:31.092266Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -573,8 +574,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 100,
-      "checked_at": "2026-06-24T02:37:39.862826Z"
+      "latency_ms": 264,
+      "checked_at": "2026-06-24T07:02:31.356944Z"
     },
     {
       "source_id": "github-changelog",
@@ -585,8 +586,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-06-24T02:37:39.891466Z"
+      "latency_ms": 24,
+      "checked_at": "2026-06-24T07:02:31.381518Z"
     },
     {
       "source_id": "aihot",
@@ -597,8 +598,8 @@
       "fetched_count": 50,
       "kept_count": 9,
       "error": null,
-      "latency_ms": 5922,
-      "checked_at": "2026-06-24T02:37:45.815375Z"
+      "latency_ms": 2383,
+      "checked_at": "2026-06-24T07:02:33.765771Z"
     }
   ],
   "control_notes": {
