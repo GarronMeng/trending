@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-24T11:22:09.409809Z",
+  "generated_at": "2026-06-24T16:20:09.711480Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,7 +8,7 @@
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
           "OpenAI Skills Commits",
@@ -21,19 +21,15 @@
         [
           "Hugging Face Blog",
           1
-        ],
-        [
-          "GitHub AI & ML",
-          1
         ]
       ],
       "top_keywords": [
         [
-          "official_ai",
-          4
+          "openai",
+          3
         ],
         [
-          "openai",
+          "official_ai",
           3
         ],
         [
@@ -45,75 +41,75 @@
           1
         ],
         [
-          "eval",
+          "llm",
           1
         ],
         [
-          "agent",
+          "inference",
           1
         ],
         [
-          "automation",
+          "benchmark",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          7
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          8
         ],
         [
           "agent",
-          4
+          3
         ],
         [
           "openai",
-          2
+          3
         ],
         [
           "mcp",
           2
         ],
         [
-          "智能体",
-          2
-        ],
-        [
-          "开发者",
+          "评测",
           2
         ],
         [
           "claude",
-          2
+          1
+        ],
+        [
+          "智能体",
+          1
         ],
         [
           "api",
           1
         ],
         [
-          "评测",
+          "workflow",
           1
         ],
         [
-          "chatgpt",
+          "开发者",
           1
         ],
         [
-          "大模型",
+          "自动化",
           1
         ],
         [
-          "anthropic",
+          "API",
           1
         ]
       ]
@@ -171,25 +167,22 @@
       "is_ai_related": true
     },
     {
-      "id": "8d6dfaa52151ed27963dcf9735c775ac389bfedc",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "IBM 开源 CUGA：轻量级智能体框架，提供二十余个单文件示例应用",
-      "url": "https://aihot.virxact.com/items/cmqqo96e30bv9slp5ds265bki",
-      "published_at": "2026-06-23T12:51:55Z",
-      "summary": "IBM 开源了 CUGA（Configurable Generalist Agent），一个处理规划、执行循环、工具调用和状态管理的轻量级智能体框架。开发者只需提供工具列表和提示词即可构建 CugaAgent。内置计划-执行-反思循环，在 AppWorld（2025年7月-2026年2月）和 WebArena（2025年2月-9月）基准上排名第一。支持 Fast / Balanced / Accurate 三种推理模式，代码执行可在本地、Docker 或 E2B 沙箱中运行。可互换工具支持 OpenAPI、MCP 和 LangChain 函数，通过环境变量一键切换 OpenAI、watsonx、Ollama 等提供商。随框架发布二十余个单文件示例应用，涵盖电影推荐、IBM Cloud 架构顾问等场景，每个应用仅",
-      "relevance_score": 9,
+      "id": "61a27e8856b8e6ba22373fd40e52475782c54c6c",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+      "published_at": "2026-06-24T06:00:00Z",
+      "summary": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems.",
+      "relevance_score": 6,
       "relevance_reasons": [
         "strong:openai",
-        "strong:agent",
-        "strong:mcp",
-        "strong:智能体",
-        "weak:api",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
+        "strong:llm",
+        "weak:inference",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -216,39 +209,83 @@
       "is_ai_related": true
     },
     {
-      "id": "b6f9eb79c1fcbdb5ac1bef02a48f771b536eff0e",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Helping build shared standards for advanced AI",
-      "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
-      "published_at": "2026-06-23T13:00:00Z",
-      "summary": "OpenAI helps build shared standards for advanced AI, supporting evaluation frameworks, safety practices, and global cooperation through the Appia Foundation.",
-      "relevance_score": 4,
+      "id": "e3f0c68429c140d94b99241823e76bf9d217da80",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Mistral AI 为 Connectors 推出多项安全与可控新能力",
+      "url": "https://aihot.virxact.com/items/cmqs9eic7012cslfuu3w4io4c",
+      "published_at": "2026-06-24T15:59:47Z",
+      "summary": "2026年6月24日，Mistral AI 发布 Connectors 多项新能力：Enriched admin controls（GA）支持按工作空间设置连接器访问权限并单独开关工具；API keys with connector scopes（GA）防止自动化 AI 工作负载中身份冒充；Multi-account connectors（GA）允许单个连接器绑定多个账户；Connectors Debugger（公开预览）对 MCP 连接器进行端到端根因分析；Connectors in Vibe Code（GA）和 Connectors in Workflows（公开预览）分别允许在开发者界面复用连接器及支持长时间运行任务不中断。 🔗 阅读原文：https://mistral.ai/news/more-cont",
+      "relevance_score": 6,
       "relevance_reasons": [
-        "strong:openai",
-        "weak:eval",
-        "source_prior:official_ai"
+        "strong:mcp",
+        "weak:api",
+        "weak:workflow",
+        "weak:开发者",
+        "weak:自动化",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "0754302c41dd0088834d966482c369c5ba2764a1",
+      "id": "33d6d3995430a837ae7d9de49789b604bff4d399",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "里德·霍夫曼称SpaceX\"不是一家人工智能公司\"，xAI则是\"彻底的灾难\"",
+      "url": "https://aihot.virxact.com/items/cmqs65ogk008hslfuodhruc4w",
+      "published_at": "2026-06-24T14:20:14Z",
+      "summary": "LinkedIn联合创始人、Anthropic和OpenAI投资者Reid Hoffman在播客中公开批评SpaceX和xAI。他指出SpaceX\"不是一家人工智能公司\"，6月12日上市后收购AI编程工具Cursor属于\"花钱买相关性\"；xAI则是\"彻底的灾难\"，所有11位联合创始人已离职，Grok模型在基准测试中落后于Anthropic和OpenAI。他还批评美国政府6月11日以出口管制为由强制Anthropic下架Fable和Mythos模型，理由仅为Amazon CEO报告Fable 5存在jailbreak漏洞，称此举\"专断随意\"。Hoffman认为Anthropic和OpenAI均有巨大发展空间，但Cursor可能已过巅峰。他建议年轻人不要抵制AI。 🔗 阅读原文：https://fortune.co",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:人工智能",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "59e25ec300dbe88b11daab7ce2b142ba0948e427",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Build real agentic apps using CUGA: two dozen working examples on a lightweight harness",
-      "url": "https://huggingface.co/blog/ibm-research/cuga-apps",
-      "published_at": "2026-06-23T12:51:55Z",
+      "title": "Introducing the FFASR Leaderboard: Benchmarking ASR in the Real World",
+      "url": "https://huggingface.co/blog/ffasr-leaderboard",
+      "published_at": "2026-06-24T00:00:00Z",
       "summary": null,
-      "relevance_score": 3,
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:agent",
+        "weak:benchmark",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "122e839a03121d93426102ab6280f8c0bf0487e1",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 与 Broadcom 发布面向 LLM 推理的定制芯片 Jalapeño",
+      "url": "https://aihot.virxact.com/items/cmqs319vw0qkcslp52gzwr77q",
+      "published_at": "2026-06-24T06:00:00Z",
+      "summary": "OpenAI 与 Broadcom 联合推出 Jalapeño，一款专为大语言模型（LLM）推理优化的定制 AI 芯片，旨在提升 AI 系统的性能、效率与规模。 🔗 阅读原文：https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:llm",
+        "weak:inference",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -267,24 +304,6 @@
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "49b1701def55cf2a3faf0a25b0dd50d62e177cf0",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "I automated my job (and it made me a better leader)",
-      "url": "https://github.blog/developer-skills/github/i-automated-my-job-and-it-made-me-a-better-leader",
-      "published_at": "2026-06-23T16:00:00Z",
-      "summary": "Explore how my day as a senior leader looks now that I use 40 automations to help, and learn more about some of my favorites. The post I automated my job (and it made me a better leader) appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:automation",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -345,25 +364,6 @@
       "is_ai_related": true
     },
     {
-      "id": "cad8a3b60525594fd25bda54697749ecc23c31f2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 推出 Claude Tag：在 Slack 中通过 @Claude 协作",
-      "url": "https://aihot.virxact.com/items/cmqqwge4a0e6tslp50f3tli27",
-      "published_at": "2026-06-23T17:09:41Z",
-      "summary": "Anthropic 推出 Claude Tag，一种在 Slack 频道中通过 @Claude 委托任务的新协作方式。Claude 可记住频道上下文，支持多用户交互，经授权后可自动学习其他频道和数据源。开启\"环境\"行为后，能主动更新未解决的线程或任务。支持异步工作，可自主推进项目数小时或数天。即日起面向 Claude Enterprise 和 Team 客户提供 beta 版。管理员可精细控制工具和渠道访问权限、设置 token 消耗限额，并查看所有操作日志。 🔗 阅读原文：https://www.anthropic.com/news/introducing-claude-tag",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "0edc2e8bf8fbfb9dc1eac98a13419ad4d2e953d8",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -400,20 +400,20 @@
       "is_ai_related": true
     },
     {
-      "id": "36963a3601c320836b7b0325324e9fa21a212904",
+      "id": "44f62ece71597c8e971503180e37464fff928b37",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "GitHub联合开源联盟呼吁修改加州AI透明度法案以保护开源",
-      "url": "https://aihot.virxact.com/items/cmqr1y54m0frmslp5b6e6js37",
-      "published_at": "2026-06-23T15:48:00Z",
-      "summary": "GitHub 联合 Black Forest Labs、Hugging Face 与 Mozilla Corporation 组成开源联盟，呼吁对加州 AI 透明度法案（SB 942，拟由 SB 1000 修正）进行针对性修改。当前草案要求开发者在下游用户未履行义务时撤销开源许可证，这与开源许可证永久不可撤销的性质冲突。联盟认为该要求非必要，已有直接监管和执法机制，并建议参考欧盟 AI 法案的透明度实践规范，以向下游用户通知最佳实践文档的方式替代撤销条款。GitHub 支持这些修正，以在保持透明度目标的同时兼容开源开发模式。 🔗 阅读原文：https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advoc",
+      "title": "FFASR 排行榜发布：真实远场条件下 ASR 评测",
+      "url": "https://aihot.virxact.com/items/cmqs9yjcy0188slfu7cf8old7",
+      "published_at": "2026-06-24T00:00:00Z",
+      "summary": "Treble Technologies 与 Hugging Face 联合推出 FFASR（Far-Field ASR）排行榜，这是首个开源社区驱动的真实远场声学条件 ASR 评测基准。传统近场评测无法反映混响、背景噪声和麦克风距离带来的性能下降。FFASR 使用混合波模拟引擎生成声学数据，涵盖 14 种房间（20-470 m3）和三个信噪比级别（远场高 SNR >14 dB、中 SNR 8-12 dB、低 SNR <6 dB），加上近场干燥条件，共四类条件决定主排名。另有实验室实测/模拟验证轨道和移动声源 beta 版。性能指标同时报告词错误率（WER）和实时因子（RTFx，在 NVIDIA L4 GPU 上评估）。未来将支持多说话人场景、麦克风阵列和回声消除。 🔗 阅读原文：https://huggingf",
       "relevance_score": 2,
       "relevance_reasons": [
         "strong:hugging face",
-        "weak:开发者",
+        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -426,11 +426,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1019,
+      "fetched_count": 1020,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 933,
-      "checked_at": "2026-06-24T11:22:03.935209Z"
+      "latency_ms": 750,
+      "checked_at": "2026-06-24T16:20:06.216676Z"
     },
     {
       "source_id": "openai-skills",
@@ -441,8 +441,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-06-24T11:22:04.189880Z"
+      "latency_ms": 235,
+      "checked_at": "2026-06-24T16:20:06.452320Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -453,8 +453,8 @@
       "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 105,
-      "checked_at": "2026-06-24T11:22:04.299367Z"
+      "latency_ms": 106,
+      "checked_at": "2026-06-24T16:20:06.561965Z"
     },
     {
       "source_id": "google-deepmind",
@@ -465,8 +465,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 283,
-      "checked_at": "2026-06-24T11:22:04.584700Z"
+      "latency_ms": 267,
+      "checked_at": "2026-06-24T16:20:06.831051Z"
     },
     {
       "source_id": "google-ai",
@@ -477,8 +477,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 119,
-      "checked_at": "2026-06-24T11:22:04.704345Z"
+      "latency_ms": 110,
+      "checked_at": "2026-06-24T16:20:06.941571Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -486,11 +486,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 808,
+      "fetched_count": 810,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 241,
-      "checked_at": "2026-06-24T11:22:04.958386Z"
+      "latency_ms": 230,
+      "checked_at": "2026-06-24T16:20:07.183766Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -499,10 +499,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 93,
-      "checked_at": "2026-06-24T11:22:05.052515Z"
+      "latency_ms": 112,
+      "checked_at": "2026-06-24T16:20:07.296747Z"
     },
     {
       "source_id": "github-changelog",
@@ -513,8 +513,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-06-24T11:22:05.080054Z"
+      "latency_ms": 28,
+      "checked_at": "2026-06-24T16:20:07.325383Z"
     },
     {
       "source_id": "aihot",
@@ -523,10 +523,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 4320,
-      "checked_at": "2026-06-24T11:22:09.401923Z"
+      "latency_ms": 2375,
+      "checked_at": "2026-06-24T16:20:09.701991Z"
     }
   ],
   "control_notes": {
