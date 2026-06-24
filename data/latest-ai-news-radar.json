@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-24T07:02:33.775035Z",
+  "generated_at": "2026-06-24T09:56:36.727225Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 17,
+  "item_count": 7,
   "groups": {
     "official": {
       "group": "official",
@@ -60,29 +60,17 @@
     },
     "developer": {
       "group": "developer",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
           "GitHub Changelog",
-          4
+          3
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          4
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "agent",
-          1
+          2
         ],
         [
           "api",
@@ -94,66 +82,6 @@
         ],
         [
           "actions",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 9,
-      "top_sources": [
-        [
-          "AI Hot",
-          9
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          9
-        ],
-        [
-          "agent",
-          4
-        ],
-        [
-          "openai",
-          3
-        ],
-        [
-          "智能体",
-          3
-        ],
-        [
-          "大模型",
-          3
-        ],
-        [
-          "mcp",
-          2
-        ],
-        [
-          "开发者",
-          2
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
-          "anthropic",
-          2
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "评测",
-          1
-        ],
-        [
-          "自动化",
           1
         ]
       ]
@@ -179,72 +107,6 @@
         "source:codex",
         "source:openai",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "eae8394848c2b2eb1c266ac1cd0be80f346c4079",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Copilot app support for BYOK",
-      "url": "https://github.blog/changelog/2026-06-23-github-copilot-app-support-for-byok",
-      "published_at": "2026-06-23T08:00:02Z",
-      "summary": "The GitHub Copilot app now supports bring your own key (BYOK), so you can run agent sessions against your own model providers, including OpenAI, Azure OpenAI, Microsoft Foundry, Anthropic, LM… The post GitHub Copilot app support for BYOK appeared first on The GitHub Blog .",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8d6dfaa52151ed27963dcf9735c775ac389bfedc",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "IBM 开源 CUGA：轻量级智能体框架，提供二十余个单文件示例应用",
-      "url": "https://aihot.virxact.com/items/cmqqo96e30bv9slp5ds265bki",
-      "published_at": "2026-06-23T12:51:55Z",
-      "summary": "IBM 开源了 CUGA（Configurable Generalist Agent），一个处理规划、执行循环、工具调用和状态管理的轻量级智能体框架。开发者只需提供工具列表和提示词即可构建 CugaAgent。内置计划-执行-反思循环，在 AppWorld（2025年7月-2026年2月）和 WebArena（2025年2月-9月）基准上排名第一。支持 Fast / Balanced / Accurate 三种推理模式，代码执行可在本地、Docker 或 E2B 沙箱中运行。可互换工具支持 OpenAPI、MCP 和 LangChain 函数，通过环境变量一键切换 OpenAI、watsonx、Ollama 等提供商。随框架发布二十余个单文件示例应用，涵盖电影推荐、IBM Cloud 架构顾问等场景，每个应用仅",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:agent",
-        "strong:mcp",
-        "strong:智能体",
-        "weak:api",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e62f762d1b22d682e935f97502ab62bc6e529af9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Qwen-AgentWorld 开源：让 Agent 学会\"先预测，再行动\"",
-      "url": "https://aihot.virxact.com/items/cmqrizuey0kmcslp5zt7bajh0",
-      "published_at": "2026-06-24T03:32:04Z",
-      "summary": "通义千问推出首个原生语言世界模型 Qwen-AgentWorld，覆盖 MCP、Search、Terminal、SWE、Web、OS、Android 七大领域。模型基于超 1000 万条真实交互轨迹，经 CPT→SFT→RL 三阶段训练，在 AgentWorldBench 上超越 GPT-5.4（58.25）和 Claude Opus 4.8，Qwen-AgentWorld-397B-A17B 取得 58.71 分。两种范式已验证其能力：作为解耦环境模拟器实现可控 Sim RL，在 WideSearch 上超越真实环境 RL（F1 50.3% vs 45.6%）；作为智能体基础模型，LWM 预热可迁移至七个基准（三个完全未出现在训练集中）。模型与评测基准已开源。 🔗 阅读原文：https://mp.weixin",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "strong:mcp",
-        "strong:智能体",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -286,27 +148,6 @@
       "is_ai_related": true
     },
     {
-      "id": "bdcfde42cd680663376a90215e4a957a2e626483",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "五眼联盟警告：AI网络威胁数月内将影响普通用户",
-      "url": "https://aihot.virxact.com/items/cmqqdbcno08taslp5yd9dbxjt",
-      "published_at": "2026-06-23T08:00:00Z",
-      "summary": "2026年6月22日，五眼联盟（美、英、加、澳、新）网络安全部门联合警告，即将到来的AI模型（如OpenAI的GPT-5.5-Cyber、Anthropic的Mythos）将降低编写复杂攻击代码的门槛。自动化智能体可全天候扫描互联网漏洞，大幅缩短安全窗口期。AI驱动的超个性化钓鱼诈骗已在亚太蔓延，印度2026年初勒索软件事件激增165%。五眼联盟建议企业部署自动化防御AI，个人用户开启多因素认证、删除闲置账户。 🔗 阅读原文：https://www.artificialintelligence-news.com/news/five-eyes-warning-ai-cyber-threats",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:智能体",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "1c55d91002e0aaba14cca1b99d235326672501ee",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -343,44 +184,6 @@
       "is_ai_related": true
     },
     {
-      "id": "a37fbc73b936fdc27e814b9328134a50e0a808a6",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI ChatGPT 语音最大规模升级：双向AI语音模型 Bidi 1 已上线测试",
-      "url": "https://aihot.virxact.com/items/cmqrl73460l9gslp5w33pryqi",
-      "published_at": "2026-06-24T04:34:24Z",
-      "summary": "6月23日，部分用户反馈 ChatGPT 网页版和 App 版上线了双向 AI 语音模型 Bidi 1，位于设置模型选择器中，与标准语音和高级语音并列。该模型支持边说话边监听，用户可在对话中途打断并发出新指令，例如要求从1数到10时中途喊停倒数，模型会立即切换执行。OpenAI 尚未官宣，预计本周启动更大范围测试。 🔗 阅读原文：https://www.ithome.com/0/967/852.htm",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "9f1f33217cbf6279ddc90fb96b33e98ab838a00c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "今天，豆包正式推出专业版",
-      "url": "https://aihot.virxact.com/items/cmqrdmylf0iyeslp50lteppvq",
-      "published_at": "2026-06-24T01:00:00Z",
-      "summary": "豆包专业版基于豆包2.1系列大模型上线，面向复杂办公与生产力场景。办公任务模式接入可执行Agent任务的豆包2.1模型，支持操作本地电脑、浏览器、调用Skills技能、定时任务，内置Office办公套件，并可生成带后端数据库的在线应用。免费用户可体验豆包2.1 Turbo版办公任务模式，专业版接入豆包2.1 Pro模型。定价：标准套餐68元/月（连续包月），加强套餐200元/月，高级套餐500元/月。大学生认证后标准套餐38元/月，持续6个月。 🔗 阅读原文：https://mp.weixin.qq.com/s/Sb-NMXTrWFQES1EDO_Gr2g",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:大模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "278db8995bcc4e93fdd35190e2e9276fd9750b7a",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -395,25 +198,6 @@
       "relevance_reasons": [
         "weak:api",
         "weak:API"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "cad8a3b60525594fd25bda54697749ecc23c31f2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 推出 Claude Tag：在 Slack 中通过 @Claude 协作",
-      "url": "https://aihot.virxact.com/items/cmqqwge4a0e6tslp50f3tli27",
-      "published_at": "2026-06-23T17:09:41Z",
-      "summary": "Anthropic 推出 Claude Tag，一种在 Slack 频道中通过 @Claude 委托任务的新协作方式。Claude 可记住频道上下文，支持多用户交互，经授权后可自动学习其他频道和数据源。开启\"环境\"行为后，能主动更新未解决的线程或任务。支持异步工作，可自主推进项目数小时或数天。即日起面向 Claude Enterprise 和 Team 客户提供 beta 版。管理员可精细控制工具和渠道访问权限、设置 token 消耗限额，并查看所有操作日志。 🔗 阅读原文：https://www.anthropic.com/news/introducing-claude-tag",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -433,63 +217,6 @@
         "source:actions"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "6c623f2bdb8f80626c73da664eb386e6c98075ca",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "网易有道发布 Confucius4-TTS：14 语种跨语种无口音语音克隆开源模型",
-      "url": "https://aihot.virxact.com/items/cmqqjmnoj0af8slp5kb7ky21w",
-      "published_at": "2026-06-23T11:00:00Z",
-      "summary": "网易有道推出\"子曰 4.0\"TTS 引擎 Confucius4-TTS，声称是业内首个支持 14 种语言跨语种无口音、且无需参考文本即可完成语音克隆的开源模型。用户仅需 3 秒音频即可实现零样本音色克隆，克隆音色与原声相似度超 85%，任务准确度达 97%。模型支持中文、英语等 14 种语言，首创音频 Prompt 情感克隆迁移。底层采用 GPT 式语义大模型、SSL 预训练特征与 ECAPA-TDNN 说话人编码器、Flow Matching 框架。已全量开源（Apache 协议），提供 54GB 资源包供本地部署。 🔗 阅读原文：https://www.ithome.com/0/967/636.htm",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:大模型",
-        "strong:开源模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "91f0dff85f71d40a5a344c935affdf9bb79f76d4",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "国内首个高考志愿AI测评出炉，千问多项表现超过资深咨询师",
-      "url": "https://aihot.virxact.com/items/cmqqjmqyn0afsslp5fgdp81yv",
-      "published_at": "2026-06-23T10:54:49Z",
-      "summary": "友松实验室发布国内首个高考志愿AI能力测评报告，测试千问高考志愿填报Agent四大模块。与53位平均从业4.6年的人类咨询师对照，千问表现更稳定精确：44道事实题全对；模拟10个志愿中6个可录取；100场匿名对比中专家58次倾向千问回答。使用千问辅助后，人类咨询师正确率提升，耗时减少约27%。该Agent基于千问高考志愿大模型和夸克8年高考数据，覆盖约3000所院校、2000多个专业。 🔗 阅读原文：https://mp.weixin.qq.com/s/oGHVP4MgGS1rbmT8s8St8Q",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:大模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "36963a3601c320836b7b0325324e9fa21a212904",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "GitHub联合开源联盟呼吁修改加州AI透明度法案以保护开源",
-      "url": "https://aihot.virxact.com/items/cmqr1y54m0frmslp5b6e6js37",
-      "published_at": "2026-06-23T15:48:00Z",
-      "summary": "GitHub 联合 Black Forest Labs、Hugging Face 与 Mozilla Corporation 组成开源联盟，呼吁对加州 AI 透明度法案（SB 942，拟由 SB 1000 修正）进行针对性修改。当前草案要求开发者在下游用户未履行义务时撤销开源许可证，这与开源许可证永久不可撤销的性质冲突。联盟认为该要求非必要，已有直接监管和执法机制，并建议参考欧盟 AI 法案的透明度实践规范，以向下游用户通知最佳实践文档的方式替代撤销条款。GitHub 支持这些修正，以在保持透明度目标的同时兼容开源开发模式。 🔗 阅读原文：https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advoc",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -502,8 +229,8 @@
       "fetched_count": 1019,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 730,
-      "checked_at": "2026-06-24T07:02:29.839741Z"
+      "latency_ms": 681,
+      "checked_at": "2026-06-24T09:56:34.143791Z"
     },
     {
       "source_id": "openai-skills",
@@ -514,8 +241,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 203,
-      "checked_at": "2026-06-24T07:02:30.043982Z"
+      "latency_ms": 168,
+      "checked_at": "2026-06-24T09:56:34.312664Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -526,8 +253,8 @@
       "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 91,
-      "checked_at": "2026-06-24T07:02:30.138489Z"
+      "latency_ms": 106,
+      "checked_at": "2026-06-24T09:56:34.422657Z"
     },
     {
       "source_id": "google-deepmind",
@@ -538,8 +265,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 223,
-      "checked_at": "2026-06-24T07:02:30.362904Z"
+      "latency_ms": 245,
+      "checked_at": "2026-06-24T09:56:34.670048Z"
     },
     {
       "source_id": "google-ai",
@@ -550,8 +277,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 282,
-      "checked_at": "2026-06-24T07:02:30.645879Z"
+      "latency_ms": 109,
+      "checked_at": "2026-06-24T09:56:34.779664Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -562,8 +289,8 @@
       "fetched_count": 808,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 434,
-      "checked_at": "2026-06-24T07:02:31.092266Z"
+      "latency_ms": 389,
+      "checked_at": "2026-06-24T09:56:35.180971Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -574,8 +301,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 264,
-      "checked_at": "2026-06-24T07:02:31.356944Z"
+      "latency_ms": 95,
+      "checked_at": "2026-06-24T09:56:35.276515Z"
     },
     {
       "source_id": "github-changelog",
@@ -584,10 +311,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-06-24T07:02:31.381518Z"
+      "latency_ms": 27,
+      "checked_at": "2026-06-24T09:56:35.304689Z"
     },
     {
       "source_id": "aihot",
@@ -595,11 +322,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 50,
-      "kept_count": 9,
+      "fetched_count": 0,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 2383,
-      "checked_at": "2026-06-24T07:02:33.765771Z"
+      "latency_ms": 1414,
+      "checked_at": "2026-06-24T09:56:36.719396Z"
     }
   ],
   "control_notes": {
