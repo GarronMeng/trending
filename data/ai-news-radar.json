@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-25T11:13:12.136360Z",
+  "generated_at": "2026-06-25T16:22:37.321807Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -57,32 +57,16 @@
           8
         ],
         [
+          "智能体",
+          4
+        ],
+        [
           "anthropic",
           4
         ],
         [
-          "gemini",
-          2
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "开发者",
-          2
-        ],
-        [
-          "自动化",
-          2
-        ],
-        [
-          "API",
-          2
+          "claude",
+          3
         ],
         [
           "mcp",
@@ -93,11 +77,27 @@
           2
         ],
         [
-          "人工智能",
+          "gemini",
           2
         ],
         [
+          "codex",
+          1
+        ],
+        [
+          "benchmark",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
           "agent",
+          1
+        ],
+        [
+          "开源模型",
           1
         ]
       ]
@@ -141,25 +141,66 @@
       "is_ai_related": true
     },
     {
-      "id": "7b282332b84cf32f18b0bc8102f8e4d2918dd743",
+      "id": "7b6dbe7171c819b48ea31a00b008d4fa412788e2",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Gemini 3.5 Flash 中的计算机使用",
-      "url": "https://aihot.virxact.com/items/cmqsl6c5y042hslfu74apxkap",
-      "published_at": "2026-06-24T21:16:01Z",
-      "summary": "Google 将计算机使用（Computer use）作为内置工具集成至 Gemini 3.5 Flash，使开发者能构建跨浏览器、移动端和桌面环境的智能体。此前该功能仅作为独立模型在 Gemini 2.5 中提供，现已原生整合至主 Flash 模型。开发者可通过 Gemini API 及 Gemini Enterprise Agent Platform 调用。安全方面，模型采用针对性对抗训练降低提示注入风险，并新增两项可选企业级保护：要求用户确认敏感操作、检测到间接提示注入时自动停止。该能力在持续软件测试、跨应用知识工作等长周期企业自动化场景中表现更优。（198字） 🔗 阅读原文：https://blog.google/innovation-and-ai/models-and-research/gemini-",
+      "title": "OpenRouter MCP 服务器发布",
+      "url": "https://aihot.virxact.com/items/cmqtkuscr04g8sl0eoqzwkdm7",
+      "published_at": "2026-06-25T00:00:00Z",
+      "summary": "OpenRouter 推出 MCP 服务器，为编程智能体提供实时模型数据、基准排名、定价和文档查询。开发者通过一键安装（支持 Claude Code、Codex CLI、Cursor 等客户端），即可在编辑器内完成模型筛选、价格对比和测试推理，无需切换标签页。服务器整合 Artificial Analysis、Design Arena 及 OpenRouter 自身排名数据，例如推荐 GLM-5.2 作为性价比最佳的编码模型。工具集包括 models-list、model-get、model-endpoints、benchmarks 等，支持通过 chat-send 发送测试提示，比较不同模型（如 Claude Opus 4.8、GPT-5.5、DeepSeek V4 Pro）的响应、成本和延迟。API 密钥附",
       "relevance_score": 9,
       "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "strong:mcp",
+        "strong:智能体",
+        "weak:benchmark",
+        "weak:api",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "679530f82b58317a30d58bb9ec38844b34acdde6",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "多数主流AI聊天机器人政治立场偏左，\"反觉醒\"模型也不例外",
+      "url": "https://aihot.virxact.com/items/cmqtp5syl05k5sl0ec5cvuedt",
+      "published_at": "2026-06-25T16:04:32Z",
+      "summary": "华盛顿邮报调查显示，多数主流AI聊天机器人在政治问题上明显偏左。OpenAI GPT-5.5在80%回答中仅呈现左派论据；DeepSeek V4 Pro为70%；Anthropic Claude Opus 4.8有43%纯左、57%给出双方观点。xAI的Grok 4.3左倾回答仍多于右倾。右翼平台Gab的Arya左倾回答是右倾的12倍。Google Gemini 3.1 Pro是例外，93%回答同时呈现双方立场。特朗普推动的\"反觉醒\"AI未能改变这一格局。 🔗 阅读原文：https://the-decoder.com/most-major-ai-chatbots-still-lean-left-on-political-questions-even-anti-woke-models-are-no-excepti",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:claude",
         "strong:gemini",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8e0bdaa1fed050f75f87283cbd460346f1e199d5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Ornith-1.0 开源模型家族发布，专注 Agentic Coding 全参数规模",
+      "url": "https://aihot.virxact.com/items/cmqtpj36o05pusl0e9ingyoye",
+      "published_at": "2026-06-25T15:30:41Z",
+      "summary": "Ornith-1.0 开源模型家族发布，专注智能体编程（Agentic Coding），覆盖 9B Dense、31B Dense、35B MoE 及 397B MoE 全参数规模。在 Agent Coding 基准上达开源顶尖：SWE-Bench Verified 82.4、SWE-Bench Pro 62.2、Terminal-Bench 2.1 77.5、NL2Repo 48.2、SWE Atlas 41.2 QnA、ClawEval 77.1。基于 gemma4 和 qwen3.5 后训练，采用强化学习联合优化任务脚手架（scaffold）与最终解决方案，让模型自主改进执行框架。全系列 MIT 开源，提供 GGUF 版本，支持 Ollama、Unsloth 等本地运行。 🔗 阅读原文：https://x",
+      "relevance_score": 6,
+      "relevance_reasons": [
         "strong:agent",
         "strong:智能体",
-        "weak:api",
-        "weak:开发者",
-        "weak:自动化",
-        "weak:API",
+        "strong:开源模型",
+        "weak:eval",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -183,44 +224,21 @@
       "is_ai_related": true
     },
     {
-      "id": "e3f0c68429c140d94b99241823e76bf9d217da80",
+      "id": "3dc74d671dc1d5ed87f4664c42ea0b79546a45bd",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Mistral AI 为 Connectors 推出多项安全与可控新能力",
-      "url": "https://aihot.virxact.com/items/cmqs9eic7012cslfuu3w4io4c",
-      "published_at": "2026-06-24T15:59:47Z",
-      "summary": "2026年6月24日，Mistral AI 发布 Connectors 多项新能力：Enriched admin controls（GA）支持按工作空间设置连接器访问权限并单独开关工具；API keys with connector scopes（GA）防止自动化 AI 工作负载中身份冒充；Multi-account connectors（GA）允许单个连接器绑定多个账户；Connectors Debugger（公开预览）对 MCP 连接器进行端到端根因分析；Connectors in Vibe Code（GA）和 Connectors in Workflows（公开预览）分别允许在开发者界面复用连接器及支持长时间运行任务不中断。 🔗 阅读原文：https://mistral.ai/news/more-cont",
-      "relevance_score": 6,
+      "title": "Gemini 3.5 Flash 的 Computer Use 工具正式可用",
+      "url": "https://aihot.virxact.com/items/cmqtpdugb05nnsl0e5e1zykrd",
+      "published_at": "2026-06-25T16:00:25Z",
+      "summary": "Google AI 宣布 Gemini 3.5 Flash 的 Computer Use 工具正式可用，支持构建能观察并操作浏览器、移动端和桌面环境的 AI 智能体，可处理长期任务。新特性包括：内置移动与桌面操作系统支持；所有函数调用配备 intent arguments；可定制的客户端函数实现人工接管（HITL）；提示词注入检测及可配置的 action-level 安全策略。可用于自动化 QA 测试、业务流程等场景。 🔗 阅读原文：https://x.com/googleaidevs/status/2070175289481576777",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:mcp",
-        "weak:api",
-        "weak:workflow",
-        "weak:开发者",
+        "strong:gemini",
+        "strong:智能体",
         "weak:自动化",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "33d6d3995430a837ae7d9de49789b604bff4d399",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "里德·霍夫曼称SpaceX\"不是一家人工智能公司\"，xAI则是\"彻底的灾难\"",
-      "url": "https://aihot.virxact.com/items/cmqs65ogk008hslfuodhruc4w",
-      "published_at": "2026-06-24T14:20:14Z",
-      "summary": "LinkedIn联合创始人、Anthropic和OpenAI投资者Reid Hoffman在播客中公开批评SpaceX和xAI。他指出SpaceX\"不是一家人工智能公司\"，6月12日上市后收购AI编程工具Cursor属于\"花钱买相关性\"；xAI则是\"彻底的灾难\"，所有11位联合创始人已离职，Grok模型在基准测试中落后于Anthropic和OpenAI。他还批评美国政府6月11日以出口管制为由强制Anthropic下架Fable和Mythos模型，理由仅为Amazon CEO报告Fable 5存在jailbreak漏洞，称此举\"专断随意\"。Hoffman认为Anthropic和OpenAI均有巨大发展空间，但Cursor可能已过巅峰。他建议年轻人不要抵制AI。 🔗 阅读原文：https://fortune.co",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:人工智能",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -320,25 +338,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "e818a26ac176f370edcb922e88bf25f8b136d6f1",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "思考即回忆：推理如何解锁LLM中的参数化知识",
-      "url": "https://aihot.virxact.com/items/cmqsbr8l701ndslfubzp0hnmi",
-      "published_at": "2026-06-24T17:05:40Z",
-      "summary": "Google Research研究发现，推理（chain-of-thought）能帮助大语言模型（LLM）回忆简单事实，即使这些事实无需复杂推导。在Gemini-2.5 Flash和Pro以及Qwen3-32B上，启用推理后模型能够回答原本无法直接回答的简单问题，pass@k显示正确事实存在于输出分布中。该现象由两个机制驱动：一是生成的推理token充当计算缓冲，允许模型进行隐藏计算以提取参数化知识；二是推理过程中产生的相关事实起到启动效应（factual priming），帮助模型激活正确答案。 🔗 阅读原文：https://research.google/blog/thinking-to-recall-how-reasoning-unlocks-parametric-knowledge-in-llms",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:llm",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -351,8 +350,8 @@
       "fetched_count": 1021,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 804,
-      "checked_at": "2026-06-25T11:13:08.717250Z"
+      "latency_ms": 652,
+      "checked_at": "2026-06-25T16:22:33.855622Z"
     },
     {
       "source_id": "openai-skills",
@@ -363,8 +362,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 195,
-      "checked_at": "2026-06-25T11:13:08.913105Z"
+      "latency_ms": 331,
+      "checked_at": "2026-06-25T16:22:34.187550Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -375,8 +374,8 @@
       "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 104,
-      "checked_at": "2026-06-25T11:13:09.020776Z"
+      "latency_ms": 223,
+      "checked_at": "2026-06-25T16:22:34.414343Z"
     },
     {
       "source_id": "google-deepmind",
@@ -387,8 +386,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 277,
-      "checked_at": "2026-06-25T11:13:09.299491Z"
+      "latency_ms": 405,
+      "checked_at": "2026-06-25T16:22:34.821369Z"
     },
     {
       "source_id": "google-ai",
@@ -399,8 +398,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 280,
-      "checked_at": "2026-06-25T11:13:09.580379Z"
+      "latency_ms": 257,
+      "checked_at": "2026-06-25T16:22:35.079292Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -411,8 +410,8 @@
       "fetched_count": 810,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 238,
-      "checked_at": "2026-06-25T11:13:09.831012Z"
+      "latency_ms": 328,
+      "checked_at": "2026-06-25T16:22:35.420989Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -423,8 +422,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 133,
-      "checked_at": "2026-06-25T11:13:09.964732Z"
+      "latency_ms": 128,
+      "checked_at": "2026-06-25T16:22:35.550198Z"
     },
     {
       "source_id": "github-changelog",
@@ -435,8 +434,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-06-25T11:13:09.993664Z"
+      "latency_ms": 31,
+      "checked_at": "2026-06-25T16:22:35.582505Z"
     },
     {
       "source_id": "aihot",
@@ -447,8 +446,8 @@
       "fetched_count": 50,
       "kept_count": 8,
       "error": null,
-      "latency_ms": 2132,
-      "checked_at": "2026-06-25T11:13:12.127406Z"
+      "latency_ms": 1729,
+      "checked_at": "2026-06-25T16:22:37.313301Z"
     }
   ],
   "control_notes": {
