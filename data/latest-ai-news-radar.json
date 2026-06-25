@@ -1,47 +1,39 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-25T02:38:43.526774Z",
+  "generated_at": "2026-06-25T07:02:34.644571Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 14,
+  "item_count": 11,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 11,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          11
+          9
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          11
-        ],
-        [
-          "openai",
-          4
-        ],
-        [
-          "agent",
-          3
-        ],
-        [
-          "智能体",
-          3
-        ],
-        [
-          "mcp",
-          3
+          9
         ],
         [
           "anthropic",
-          3
+          4
         ],
         [
           "gemini",
+          2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "智能体",
           2
         ],
         [
@@ -61,6 +53,14 @@
           2
         ],
         [
+          "mcp",
+          2
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
           "人工智能",
           2
         ]
@@ -68,12 +68,8 @@
     },
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 1,
       "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ],
         [
           "Google DeepMind",
           1
@@ -81,23 +77,11 @@
       ],
       "top_keywords": [
         [
-          "official_ai",
-          2
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "llm",
-          1
-        ],
-        [
-          "inference",
-          1
-        ],
-        [
           "gemini",
+          1
+        ],
+        [
+          "official_ai",
           1
         ]
       ]
@@ -140,48 +124,6 @@
         "weak:开发者",
         "weak:自动化",
         "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "61a27e8856b8e6ba22373fd40e52475782c54c6c",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
-      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-      "published_at": "2026-06-24T06:00:00Z",
-      "summary": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems.",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:llm",
-        "weak:inference",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e62f762d1b22d682e935f97502ab62bc6e529af9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Qwen-AgentWorld 开源：让 Agent 学会\"先预测，再行动\"",
-      "url": "https://aihot.virxact.com/items/cmqrizuey0kmcslp5zt7bajh0",
-      "published_at": "2026-06-24T03:32:04Z",
-      "summary": "通义千问推出首个原生语言世界模型 Qwen-AgentWorld，覆盖 MCP、Search、Terminal、SWE、Web、OS、Android 七大领域。模型基于超 1000 万条真实交互轨迹，经 CPT→SFT→RL 三阶段训练，在 AgentWorldBench 上超越 GPT-5.4（58.25）和 Claude Opus 4.8，Qwen-AgentWorld-397B-A17B 取得 58.71 分。两种范式已验证其能力：作为解耦环境模拟器实现可控 Sim RL，在 WideSearch 上超越真实环境 RL（F1 50.3% vs 45.6%）；作为智能体基础模型，LWM 预热可迁移至七个基准（三个完全未出现在训练集中）。模型与评测基准已开源。 🔗 阅读原文：https://mp.weixin",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "strong:mcp",
-        "strong:智能体",
-        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -306,21 +248,20 @@
       "is_ai_related": true
     },
     {
-      "id": "122e839a03121d93426102ab6280f8c0bf0487e1",
+      "id": "e9c16b8a186e5d39562f6873036ebe1af0ac67a4",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 与 Broadcom 发布面向 LLM 推理的定制芯片 Jalapeño",
-      "url": "https://aihot.virxact.com/items/cmqs319vw0qkcslp52gzwr77q",
-      "published_at": "2026-06-24T06:00:00Z",
-      "summary": "OpenAI 与 Broadcom 联合推出 Jalapeño，一款专为大语言模型（LLM）推理优化的定制 AI 芯片，旨在提升 AI 系统的性能、效率与规模。 🔗 阅读原文：https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-      "relevance_score": 4,
+      "title": "Anthropic称阿里巴巴非法获取了Claude AI模型的功能",
+      "url": "https://aihot.virxact.com/items/cmqsy1vs107c5slfu4fmksjzd",
+      "published_at": "2026-06-25T03:07:48Z",
+      "summary": "Anthropic指控阿里巴巴未经授权提取了其Claude AI模型的能力。该指控基于Anthropic的调查，认为阿里巴巴通过逆向工程或其他手段复制了Claude的核心技术。目前阿里巴巴尚未公开回应。 🔗 阅读原文：https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:llm",
-        "weak:inference",
+        "strong:anthropic",
+        "strong:claude",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -364,25 +305,6 @@
       "is_ai_related": true
     },
     {
-      "id": "a37fbc73b936fdc27e814b9328134a50e0a808a6",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI ChatGPT 语音最大规模升级：双向AI语音模型 Bidi 1 已上线测试",
-      "url": "https://aihot.virxact.com/items/cmqrl73460l9gslp5w33pryqi",
-      "published_at": "2026-06-24T04:34:24Z",
-      "summary": "6月23日，部分用户反馈 ChatGPT 网页版和 App 版上线了双向 AI 语音模型 Bidi 1，位于设置模型选择器中，与标准语音和高级语音并列。该模型支持边说话边监听，用户可在对话中途打断并发出新指令，例如要求从1数到10时中途喊停倒数，模型会立即切换执行。OpenAI 尚未官宣，预计本周启动更大范围测试。 🔗 阅读原文：https://www.ithome.com/0/967/852.htm",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "fa62d56c520ae7151587de54284727bb0884dbde",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -410,10 +332,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1020,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 704,
-      "checked_at": "2026-06-25T02:38:40.068601Z"
+      "latency_ms": 606,
+      "checked_at": "2026-06-25T07:02:30.829197Z"
     },
     {
       "source_id": "openai-skills",
@@ -424,8 +346,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 323,
-      "checked_at": "2026-06-25T02:38:40.392637Z"
+      "latency_ms": 301,
+      "checked_at": "2026-06-25T07:02:31.131223Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -436,8 +358,8 @@
       "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 104,
-      "checked_at": "2026-06-25T02:38:40.500719Z"
+      "latency_ms": 108,
+      "checked_at": "2026-06-25T07:02:31.242785Z"
     },
     {
       "source_id": "google-deepmind",
@@ -448,8 +370,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 460,
-      "checked_at": "2026-06-25T02:38:40.963064Z"
+      "latency_ms": 440,
+      "checked_at": "2026-06-25T07:02:31.684717Z"
     },
     {
       "source_id": "google-ai",
@@ -460,8 +382,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 268,
-      "checked_at": "2026-06-25T02:38:41.232283Z"
+      "latency_ms": 254,
+      "checked_at": "2026-06-25T07:02:31.939845Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -472,8 +394,8 @@
       "fetched_count": 810,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 461,
-      "checked_at": "2026-06-25T02:38:41.705684Z"
+      "latency_ms": 319,
+      "checked_at": "2026-06-25T07:02:32.272455Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -484,8 +406,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 124,
-      "checked_at": "2026-06-25T02:38:41.830327Z"
+      "latency_ms": 151,
+      "checked_at": "2026-06-25T07:02:32.423976Z"
     },
     {
       "source_id": "github-changelog",
@@ -496,8 +418,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 36,
-      "checked_at": "2026-06-25T02:38:41.866888Z"
+      "latency_ms": 35,
+      "checked_at": "2026-06-25T07:02:32.460222Z"
     },
     {
       "source_id": "aihot",
@@ -506,10 +428,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 11,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 1649,
-      "checked_at": "2026-06-25T02:38:43.518095Z"
+      "latency_ms": 2173,
+      "checked_at": "2026-06-25T07:02:34.635503Z"
     }
   ],
   "control_notes": {
