@@ -1,11 +1,47 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-25T07:02:34.644571Z",
+  "generated_at": "2026-06-25T09:51:15.818336Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 12,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ],
+        [
+          "Google DeepMind",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
       "count": 9,
@@ -66,26 +102,6 @@
         ]
       ]
     },
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "Google DeepMind",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "gemini",
-          1
-        ],
-        [
-          "official_ai",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
       "count": 1,
@@ -104,6 +120,26 @@
     }
   },
   "items": [
+    {
+      "id": "27e77591612ee5a0ea16f3b02955af567ede5f88",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How agents are transforming work",
+      "url": "https://openai.com/index/how-agents-are-transforming-work",
+      "published_at": "2026-06-25T02:00:00Z",
+      "summary": "A new OpenAI research paper shows how AI agents are transforming work, enabling longer, more complex tasks and expanding productivity across roles.",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "7b282332b84cf32f18b0bc8102f8e4d2918dd743",
       "source_id": "aihot",
@@ -331,11 +367,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1020,
-      "kept_count": 0,
+      "fetched_count": 1021,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 606,
-      "checked_at": "2026-06-25T07:02:30.829197Z"
+      "latency_ms": 647,
+      "checked_at": "2026-06-25T09:51:12.420849Z"
     },
     {
       "source_id": "openai-skills",
@@ -346,8 +382,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 301,
-      "checked_at": "2026-06-25T07:02:31.131223Z"
+      "latency_ms": 300,
+      "checked_at": "2026-06-25T09:51:12.721244Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -358,8 +394,8 @@
       "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 108,
-      "checked_at": "2026-06-25T07:02:31.242785Z"
+      "latency_ms": 206,
+      "checked_at": "2026-06-25T09:51:12.930957Z"
     },
     {
       "source_id": "google-deepmind",
@@ -370,8 +406,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 440,
-      "checked_at": "2026-06-25T07:02:31.684717Z"
+      "latency_ms": 355,
+      "checked_at": "2026-06-25T09:51:13.287804Z"
     },
     {
       "source_id": "google-ai",
@@ -382,8 +418,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-06-25T07:02:31.939845Z"
+      "latency_ms": 287,
+      "checked_at": "2026-06-25T09:51:13.575854Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -394,8 +430,8 @@
       "fetched_count": 810,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 319,
-      "checked_at": "2026-06-25T07:02:32.272455Z"
+      "latency_ms": 300,
+      "checked_at": "2026-06-25T09:51:13.889408Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -406,8 +442,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 151,
-      "checked_at": "2026-06-25T07:02:32.423976Z"
+      "latency_ms": 124,
+      "checked_at": "2026-06-25T09:51:14.014327Z"
     },
     {
       "source_id": "github-changelog",
@@ -419,7 +455,7 @@
       "kept_count": 1,
       "error": null,
       "latency_ms": 35,
-      "checked_at": "2026-06-25T07:02:32.460222Z"
+      "checked_at": "2026-06-25T09:51:14.049739Z"
     },
     {
       "source_id": "aihot",
@@ -430,8 +466,8 @@
       "fetched_count": 50,
       "kept_count": 9,
       "error": null,
-      "latency_ms": 2173,
-      "checked_at": "2026-06-25T07:02:34.635503Z"
+      "latency_ms": 1759,
+      "checked_at": "2026-06-25T09:51:15.810014Z"
     }
   ],
   "control_notes": {
