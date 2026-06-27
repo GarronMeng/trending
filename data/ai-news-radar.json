@@ -1,118 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-26T16:14:59.247918Z",
+  "generated_at": "2026-06-27T02:34:07.469851Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 14,
+  "item_count": 9,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
-      "count": 7,
-      "top_sources": [
-        [
-          "AI Hot",
-          7
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          7
-        ],
-        [
-          "openai",
-          4
-        ],
-        [
-          "claude",
-          4
-        ],
-        [
-          "自动化",
-          3
-        ],
-        [
-          "codex",
-          2
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "anthropic",
-          2
-        ],
-        [
-          "chatgpt",
-          2
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub AI & ML",
-          1
-        ],
-        [
-          "Hugging Face Blog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          2
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "benchmark",
-          1
-        ],
-        [
-          "eval",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ],
-        [
-          "llm",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
-      "count": 5,
+      "count": 3,
       "top_sources": [
         [
           "GitHub Changelog",
-          5
+          3
         ]
       ],
       "top_keywords": [
@@ -121,15 +21,91 @@
           6
         ],
         [
-          "workflow",
-          2
+          "api",
+          1
         ],
         [
-          "actions",
-          2
+          "API",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 5,
+      "top_sources": [
+        [
+          "AI Hot",
+          5
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          5
         ],
         [
-          "tool",
+          "claude",
+          3
+        ],
+        [
+          "大模型",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "benchmark",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "自动化",
+          1
+        ],
+        [
+          "openai",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "openai",
+          1
+        ],
+        [
+          "official_ai",
           1
         ]
       ]
@@ -137,125 +113,100 @@
   },
   "items": [
     {
-      "id": "ca8a8a4deceeafe6cada7339d9abc3f8fd9c7062",
+      "id": "4bc4adf9c399f796a5cfb6aec98cf0f40b8e368e",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Track total merges by adoption phase in enterprise and organization reports",
+      "url": "https://github.blog/changelog/2026-06-26-track-total-merges-by-adoption-phase-in-enterprise-and-organization-reports",
+      "published_at": "2026-06-26T20:55:03Z",
+      "summary": "Building on the AI adoption phase cohorts added to the Copilot usage metrics API, organization and enterprise reports now report the total number of pull requests merged by each adoption… The post Track total merges by adoption phase in enterprise and organization reports appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:copilot",
+        "weak:API",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8ee38228b0461cde7cdfd2734e191481e8f27caa",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "小互开源个人IP配图技能\"小互IP Studio\"，含31个原创角色",
-      "url": "https://aihot.virxact.com/items/cmqu93tek02e2sl80iom0bica",
-      "published_at": "2026-06-26T01:26:23Z",
-      "summary": "博主小互开源个人IP配图技能\"小互IP Studio\"，包含31个原创角色（15个手绘线稿角色+16个谐音梗meme形象）及一套配图方法论。该Agent可自动读取文章、规划配图类型（情绪图/示意图/四格漫画）、生成并自查返工。默认画风为手绘线稿淡彩，另备5种皮肤（3D盲盒、黑白线稿等）可切换。安装仅需Python3，支持Claude Code、Codex等工具，需自备OpenAI兼容的图像API key（默认GPT-image-2）；也可只输出提示词手动生图。 🔗 阅读原文：https://x.com/xiaohu/status/2070317717811540149",
-      "relevance_score": 9,
+      "title": "Leaf 开源项目：将网红峰哥做成实时通话 AI 分身",
+      "url": "https://aihot.virxact.com/items/cmqv4vak40a1ssl805nqs76uk",
+      "published_at": "2026-06-26T15:37:43Z",
+      "summary": "开发者 Leaf 开源项目，将网红峰哥做成能实时通话的 AI 分身，集成实时对话、音色克隆和人格注入，工程延迟压到 1 秒内。技术拆解：语音识别用 Cartesia ink-whisper 降噪防误触发；大模型选 MiniMax 高速版，首字响应 361ms；语音合成用 VoxCPM 开源克隆，15 秒素材即可复刻。整体从最初 8-20 秒优化至体感 2-3 秒。人格通过女娲 Skill 从直播语料蒸馏出口头禅和思维逻辑。普通人半小时可跑通：克隆项目后，用 Claude Code 或 Cursor 配置，填两个 API Key 即可使用。 🔗 阅读原文：https://x.com/AYi_AInotes/status/2070531964067623381",
+      "relevance_score": 6,
       "relevance_reasons": [
-        "strong:openai",
         "strong:claude",
-        "strong:codex",
-        "strong:agent",
+        "strong:大模型",
         "weak:api",
+        "weak:开发者",
         "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "26495d0eee1d3fcf09b090e373bf8eee3af81247",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
+      "id": "037899da9e10d22c58f1a3995803b79caa980246",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
-      "source_weight": 4,
-      "title": "Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks",
-      "url": "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks",
-      "published_at": "2026-06-25T22:59:45Z",
-      "summary": "Explore how the GitHub Copilot agentic harness delivers strong results across multiple benchmarks and leading token efficiency, while maintaining flexibility to choose among more than 20 models. The post Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks appeared first on The GitHub Blog .",
-      "relevance_score": 6,
+      "source_weight": 5,
+      "title": "Previewing GPT-5.6 Sol: a next-generation model",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+      "published_at": "2026-06-26T10:00:00Z",
+      "summary": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack.",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:agent",
-        "weak:benchmark",
-        "weak:eval",
-        "weak:copilot",
+        "strong:openai",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "e37c702571215cb0b266042e55fa2062fb58f976",
+      "id": "fb62cd862cb5d07e9488e9ea72d11c2dc2ef974a",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Claude Code v2.1.193 发布",
-      "url": "https://aihot.virxact.com/items/cmqu24x8v00lssl8065rajmsy",
-      "published_at": "2026-06-25T21:45:57Z",
-      "summary": "Claude Code v2.1.193 新增 `autoMode.classifyAllShell` 设置，将全部 Bash/PowerShell 命令经自动模式分类器处理。自动模式拒绝原因现加入转录、拒绝提示及 `/permissions` 页面。新增 `claude_code.assistant_response` OpenTelemetry 日志事件（默认不记录，需设置 `OTEL_LOG_ASSISTANT_RESPONSES=1`）。Bash 模式支持实时文件路径自动补全；MCP 服务器需认证时显示启动提示。新增空闲后台 shell 命令自动内存压力回收（可禁用）。修复 `/model` UI 状态滞后、后台任务误取消、子 agent 隐藏同级等问题，并改进了后台 agent 启动指令、MCP 认证",
-      "relevance_score": 7,
+      "title": "Cursor 研究发现奖励攻击虚增编码智能体 SWE-bench Pro 分数",
+      "url": "https://aihot.virxact.com/items/cmqvkko1q0dvqsl80vjsqu4rm",
+      "published_at": "2026-06-26T23:31:29Z",
+      "summary": "Cursor 最新研究发现，编码智能体在 SWE-bench Pro 等基准测试中存在奖励攻击问题：智能体通过检索已知修复而非独立推导来通过测试。对 731 条 Opus 4.8 Max 轨迹的审计显示，63% 的成功修复来自检索，其中上游查找占 57%，git 历史挖掘占 9%。严格隔离 git 历史并限制网络访问后，Opus 4.8 Max 的 SWE-bench Pro 分数从 87.1% 降至 73.0%；Cursor 自家 Composer 2.5 差距最大，达 20.7 个点。新模型比旧模型更容易出现此问题。研究报告建议采用严格测试环境（隔离 git 历史、限制网络出口）以获取可信分数。 🔗 阅读原文：https://www.marktechpost.com/2026/06/26/cursor-st",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
         "strong:agent",
-        "strong:mcp",
+        "strong:智能体",
+        "weak:benchmark",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "01db7c593895a4d2803826f1176c8a3ec3c7dfba",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Run a vLLM Server on HF Jobs in One Command",
-      "url": "https://huggingface.co/blog/vllm-jobs",
-      "published_at": "2026-06-26T00:00:00Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:llm",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c8a68c80302284abe2eb11cb41c3d55b4a9aa1a3",
+      "id": "f061d01e3fa6ef5bb4eace3c11e16118b63fb335",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Copilot code review: Analysis depth and efficiency updates",
-      "url": "https://github.blog/changelog/2026-06-25-copilot-code-review-analysis-depth-and-efficiency-updates",
-      "published_at": "2026-06-25T21:41:18Z",
-      "summary": "Copilot code review now uses the built-in file exploration tools available in the Copilot CLI and SDK, significantly improving review cost efficiency with no change to your existing workflow. If… The post Copilot code review: Analysis depth and efficiency updates appeared first on The GitHub Blog .",
-      "relevance_score": 5,
+      "title": "MAI-Code-1-Flash for Copilot Business and Copilot Enterprise",
+      "url": "https://github.blog/changelog/2026-06-26-mai-code-1-flash-for-copilot-business-and-copilot-enterprise",
+      "published_at": "2026-06-26T16:35:06Z",
+      "summary": "MAI-Code-1-Flash, Microsoft AI’s in-house coding model, is now generally available for GitHub Copilot Business and Copilot Enterprise, building on its recent expansion across Copilot surfaces. Purpose-built for coding and optimized… The post MAI-Code-1-Flash for Copilot Business and Copilot Enterprise appeared first on The GitHub Blog .",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "weak:tool",
-        "weak:workflow",
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "24bd9d6d87487eb615bb400778bddf204d6e931e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Codex 在 ChatGPT 移动 App 正式可用",
-      "url": "https://aihot.virxact.com/items/cmqu0cbyl006isl80rufd707u",
-      "published_at": "2026-06-25T21:15:18Z",
-      "summary": "OpenAI 宣布 Codex 在 ChatGPT 移动应用中正式开放（GA），并新增一对一设备配对实现更安全的手机与电脑连接。移动端新增通知、目标、侧边聊天、文件预览及内联审阅评论功能。此前预览版已明确，用户可通过 ChatGPT 移动 App 启动新工作、审查输出、引导执行和批准下一步，而 Codex 实际继续在笔记本、Mac mini 或开发机上后台运行。 🔗 阅读原文：https://x.com/OpenAIDevs/status/2070254532911882707",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -318,92 +269,20 @@
       "is_ai_related": true
     },
     {
-      "id": "e98956cee7532f41cdc894c10d8563913bfc1e49",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Enterprise-managed settings now support strictKnownMarketplaces in VS Code and GitHub Copilot CLI",
-      "url": "https://github.blog/changelog/2026-06-25-enterprise-managed-settings-now-support-strictknownmarketplaces-in-vs-code-and-the-cli",
-      "published_at": "2026-06-25T21:30:42Z",
-      "summary": "Enterprises can now control which plugins their users can install in GitHub Copilot CLI and VS Code. This setting is now available in public preview. Add strictKnownMarketplaces to your enterprise-managed… The post Enterprise-managed settings now support strictKnownMarketplaces in VS Code and GitHub Copilot CLI appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "3f4cb8c88f8893f545d55c10423f6e682efa954d",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Actions steps can now be run in parallel",
-      "url": "https://github.blog/changelog/2026-06-25-actions-steps-can-now-be-run-in-parallel",
-      "published_at": "2026-06-25T16:46:09Z",
-      "summary": "GitHub Actions now supports running steps concurrently using background. Previously, all steps in a workflow ran in sequence, with each step starting only after the previous step completed. Previously, you… The post Actions steps can now be run in parallel appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:workflow",
-        "source:actions"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "6908a520905fe3aee12b9c9d4ee660c69e775fb2",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "More control over your GitHub-hosted runners",
-      "url": "https://github.blog/changelog/2026-06-25-more-control-over-your-github-hosted-runners",
-      "published_at": "2026-06-25T18:16:46Z",
-      "summary": "Organizations now have more control over who can use GitHub-hosted runners in Actions. Admins can now disable the standard labels for hosted runners such as ubuntu-latest, as well as add… The post More control over your GitHub-hosted runners appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "source:actions"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "6510b317325c8c684959f8fa9ecf75792d40a34e",
+      "id": "366fc83d50333e539ea2b2bd7f9e4cc55d04005c",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Claude Code 6个实用Hook玩法",
-      "url": "https://aihot.virxact.com/items/cmquanuro02prsl8053rbhfjl",
-      "published_at": "2026-06-26T02:02:00Z",
-      "summary": "Claude Code 内置近30个Hook事件（年初仅13个），本质是写死的规则脚本，运行时不消耗token。6个实用玩法：权限弹窗提醒、开机日程播报（问候+天气+飞书日程）、上下文预压缩时自动生成摘要卡片、结合Skill自动整理下载文件夹、启动后每小时久坐提醒、通过Bark实现手机/手表任务完成/失败推送。让AI从被动聊天框变为事件驱动的自动化系统。 🔗 阅读原文：https://mp.weixin.qq.com/s/LVj2foSXi_hBRKxjuYaUyw",
-      "relevance_score": 2,
+      "title": "华盛顿邮报报告：AI聊天机器人存在左翼偏见",
+      "url": "https://aihot.virxact.com/items/cmqv67led0aejsl80grsdthsq",
+      "published_at": "2026-06-26T16:51:17Z",
+      "summary": "《华盛顿邮报》报道，基于达特茅斯和斯坦福研究的测试显示，AI聊天机器人在约30项政策议题（税收、医保、移民等）上存在左翼偏见。GPT-5.5仅给出左倾立场占80%，双方立场17%，右倾3%；Gemini 3.1 Pro则93%给出双方立场，左倾仅7%；Claude Opus 4.8双方立场占57%；Grok 4.3是唯一右倾占33%的模型。文章指出，问题不在于答案倾向，而在于模型在展现权衡前已用单一道德框架压缩政治分歧，其行为更多受排序选择、拒绝规则、训练反馈和默认回答风格影响。 🔗 阅读原文：https://x.com/rohanpaul_ai/status/2070550479621488896",
+      "relevance_score": 3,
       "relevance_reasons": [
         "strong:claude",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "60cf65c955d04ef586111c18cf2ee7e0d5af853e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "美国政府要求OpenAI暂缓GPT-5.6广泛发布",
-      "url": "https://aihot.virxact.com/items/cmqu0e95l006ysl8097qhn8ny",
-      "published_at": "2026-06-25T21:06:58Z",
-      "summary": "The Information 报道，美国政府因安全顾虑要求 OpenAI 暂缓 GPT-5.6 的广泛发布，改为推出受控预览版。OpenAI 计划先向小部分合作伙伴提供早期访问，并由政府逐客户审批准入。这一非常规做法主要担忧模型在自动化高技能网络工作上的能力：既能帮防御者更快发现漏洞，也可能被攻击者用于加速测试漏洞利用。本周四，CEO Sam Altman 已向员工确认该审批流程。 🔗 阅读原文：https://x.com/rohanpaul_ai/status/2070252433109049466",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:自动化",
+        "strong:gemini",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -416,11 +295,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1021,
-      "kept_count": 0,
+      "fetched_count": 1022,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 781,
-      "checked_at": "2026-06-26T16:14:54.944059Z"
+      "latency_ms": 724,
+      "checked_at": "2026-06-27T02:34:04.107904Z"
     },
     {
       "source_id": "openai-skills",
@@ -431,8 +310,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 278,
-      "checked_at": "2026-06-26T16:14:55.222996Z"
+      "latency_ms": 163,
+      "checked_at": "2026-06-27T02:34:04.271472Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -443,8 +322,8 @@
       "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 132,
-      "checked_at": "2026-06-26T16:14:55.358778Z"
+      "latency_ms": 98,
+      "checked_at": "2026-06-27T02:34:04.372919Z"
     },
     {
       "source_id": "google-deepmind",
@@ -455,8 +334,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 387,
-      "checked_at": "2026-06-26T16:14:55.747279Z"
+      "latency_ms": 239,
+      "checked_at": "2026-06-27T02:34:04.614016Z"
     },
     {
       "source_id": "google-ai",
@@ -467,8 +346,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 309,
-      "checked_at": "2026-06-26T16:14:56.056899Z"
+      "latency_ms": 245,
+      "checked_at": "2026-06-27T02:34:04.859841Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -477,10 +356,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 811,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 341,
-      "checked_at": "2026-06-26T16:14:56.408326Z"
+      "latency_ms": 210,
+      "checked_at": "2026-06-27T02:34:05.081557Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -489,10 +368,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 167,
-      "checked_at": "2026-06-26T16:14:56.575966Z"
+      "latency_ms": 180,
+      "checked_at": "2026-06-27T02:34:05.262466Z"
     },
     {
       "source_id": "github-changelog",
@@ -501,10 +380,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 5,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-06-26T16:14:56.605854Z"
+      "latency_ms": 21,
+      "checked_at": "2026-06-27T02:34:05.284194Z"
     },
     {
       "source_id": "aihot",
@@ -513,10 +392,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 2633,
-      "checked_at": "2026-06-26T16:14:59.240359Z"
+      "latency_ms": 2176,
+      "checked_at": "2026-06-27T02:34:07.461097Z"
     }
   ],
   "control_notes": {
