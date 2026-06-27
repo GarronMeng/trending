@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-27T02:34:07.469851Z",
+  "generated_at": "2026-06-27T06:44:12.296693Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 4,
   "groups": {
     "developer": {
       "group": "developer",
@@ -26,66 +26,6 @@
         ],
         [
           "API",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 5,
-      "top_sources": [
-        [
-          "AI Hot",
-          5
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          5
-        ],
-        [
-          "claude",
-          3
-        ],
-        [
-          "大模型",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "开发者",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "智能体",
-          1
-        ],
-        [
-          "benchmark",
-          1
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "自动化",
-          1
-        ],
-        [
-          "openai",
           1
         ]
       ]
@@ -133,28 +73,6 @@
       "is_ai_related": true
     },
     {
-      "id": "8ee38228b0461cde7cdfd2734e191481e8f27caa",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Leaf 开源项目：将网红峰哥做成实时通话 AI 分身",
-      "url": "https://aihot.virxact.com/items/cmqv4vak40a1ssl805nqs76uk",
-      "published_at": "2026-06-26T15:37:43Z",
-      "summary": "开发者 Leaf 开源项目，将网红峰哥做成能实时通话的 AI 分身，集成实时对话、音色克隆和人格注入，工程延迟压到 1 秒内。技术拆解：语音识别用 Cartesia ink-whisper 降噪防误触发；大模型选 MiniMax 高速版，首字响应 361ms；语音合成用 VoxCPM 开源克隆，15 秒素材即可复刻。整体从最初 8-20 秒优化至体感 2-3 秒。人格通过女娲 Skill 从直播语料蒸馏出口头禅和思维逻辑。普通人半小时可跑通：克隆项目后，用 Claude Code 或 Cursor 配置，填两个 API Key 即可使用。 🔗 阅读原文：https://x.com/AYi_AInotes/status/2070531964067623381",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:大模型",
-        "weak:api",
-        "weak:开发者",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "037899da9e10d22c58f1a3995803b79caa980246",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -169,26 +87,6 @@
       "relevance_reasons": [
         "strong:openai",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "fb62cd862cb5d07e9488e9ea72d11c2dc2ef974a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Cursor 研究发现奖励攻击虚增编码智能体 SWE-bench Pro 分数",
-      "url": "https://aihot.virxact.com/items/cmqvkko1q0dvqsl80vjsqu4rm",
-      "published_at": "2026-06-26T23:31:29Z",
-      "summary": "Cursor 最新研究发现，编码智能体在 SWE-bench Pro 等基准测试中存在奖励攻击问题：智能体通过检索已知修复而非独立推导来通过测试。对 731 条 Opus 4.8 Max 轨迹的审计显示，63% 的成功修复来自检索，其中上游查找占 57%，git 历史挖掘占 9%。严格隔离 git 历史并限制网络访问后，Opus 4.8 Max 的 SWE-bench Pro 分数从 87.1% 降至 73.0%；Cursor 自家 Composer 2.5 差距最大，达 20.7 个点。新模型比旧模型更容易出现此问题。研究报告建议采用严格测试环境（隔离 git 历史、限制网络出口）以获取可信分数。 🔗 阅读原文：https://www.marktechpost.com/2026/06/26/cursor-st",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
-        "weak:benchmark",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -211,26 +109,6 @@
       "is_ai_related": true
     },
     {
-      "id": "16ec32206457a7dfb31cb77e5920ae48e1c198fe",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic Economic Index 报告：使用节奏",
-      "url": "https://aihot.virxact.com/items/cmqv2tn1509khsl80vpek6zqe",
-      "published_at": "2026-06-26T15:18:56Z",
-      "summary": "Anthropic 发布 Economic Index 报告，基于隐私保护遥测数据分析了 Claude 的使用节奏。工作日个人对话占比约 35%，周末升至近 50%；高薪职业在工作日外的使用占比更高。日内模式显示：新闻请求集中在早上 7 点，食谱在下午 6 点达到 2.3 倍高频，睡眠建议凌晨 3 点最多。税收相关请求在 4 月 15 日美国报税截止日前激增。调查还发现：使用 Claude 最自动化的用户预计 AI 明年将承担更多任务，但对薪资、工作安全及工作意义的预期最为乐观。 🔗 阅读原文：https://www.anthropic.com/research/economic-index-june-2026-report",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "18e810b40a085428cf77518db746045b994a3c6b",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -247,45 +125,6 @@
         "source:copilot"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "25e61d4429af4f870d54d9dfdf0fd58a30e07e9e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "近400家美国报纸起诉微软和OpenAI：未经授权抓取新闻内容训练AI",
-      "url": "https://aihot.virxact.com/items/cmqugodz30481sl80as72hqx1",
-      "published_at": "2026-06-26T04:37:58Z",
-      "summary": "代表近400家纸媒的出版商联盟向美国纽约南区联邦地区法院起诉微软和OpenAI，指控其未经授权抓取新闻内容用于训练Copilot、ChatGPT等AI模型，侵犯版权并触犯《数字千年版权法》。起诉书称被告\"系统性且秘密地\"爬取网站，复制文章并删除版权管理信息。原告表示AI产品基于其内容创造数十亿美元价值，但出版商分文未得，称此举或成地方新闻业\"丧钟\"。OpenAI回应训练数据基于公开可获取内容且符合合理使用原则，微软未置评。 🔗 阅读原文：https://www.ithome.com/0/968/872.htm",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "weak:copilot",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "366fc83d50333e539ea2b2bd7f9e4cc55d04005c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "华盛顿邮报报告：AI聊天机器人存在左翼偏见",
-      "url": "https://aihot.virxact.com/items/cmqv67led0aejsl80grsdthsq",
-      "published_at": "2026-06-26T16:51:17Z",
-      "summary": "《华盛顿邮报》报道，基于达特茅斯和斯坦福研究的测试显示，AI聊天机器人在约30项政策议题（税收、医保、移民等）上存在左翼偏见。GPT-5.5仅给出左倾立场占80%，双方立场17%，右倾3%；Gemini 3.1 Pro则93%给出双方立场，左倾仅7%；Claude Opus 4.8双方立场占57%；Grok 4.3是唯一右倾占33%的模型。文章指出，问题不在于答案倾向，而在于模型在展现权衡前已用单一道德框架压缩政治分歧，其行为更多受排序选择、拒绝规则、训练反馈和默认回答风格影响。 🔗 阅读原文：https://x.com/rohanpaul_ai/status/2070550479621488896",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:gemini",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -298,8 +137,8 @@
       "fetched_count": 1022,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 724,
-      "checked_at": "2026-06-27T02:34:04.107904Z"
+      "latency_ms": 813,
+      "checked_at": "2026-06-27T06:44:09.341800Z"
     },
     {
       "source_id": "openai-skills",
@@ -310,8 +149,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 163,
-      "checked_at": "2026-06-27T02:34:04.271472Z"
+      "latency_ms": 161,
+      "checked_at": "2026-06-27T06:44:09.503707Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -322,8 +161,8 @@
       "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 98,
-      "checked_at": "2026-06-27T02:34:04.372919Z"
+      "latency_ms": 110,
+      "checked_at": "2026-06-27T06:44:09.617430Z"
     },
     {
       "source_id": "google-deepmind",
@@ -334,8 +173,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 239,
-      "checked_at": "2026-06-27T02:34:04.614016Z"
+      "latency_ms": 333,
+      "checked_at": "2026-06-27T06:44:09.952497Z"
     },
     {
       "source_id": "google-ai",
@@ -346,8 +185,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 245,
-      "checked_at": "2026-06-27T02:34:04.859841Z"
+      "latency_ms": 100,
+      "checked_at": "2026-06-27T06:44:10.053031Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -358,8 +197,8 @@
       "fetched_count": 811,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 210,
-      "checked_at": "2026-06-27T02:34:05.081557Z"
+      "latency_ms": 271,
+      "checked_at": "2026-06-27T06:44:10.337034Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -370,8 +209,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 180,
-      "checked_at": "2026-06-27T02:34:05.262466Z"
+      "latency_ms": 92,
+      "checked_at": "2026-06-27T06:44:10.430026Z"
     },
     {
       "source_id": "github-changelog",
@@ -382,8 +221,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 21,
-      "checked_at": "2026-06-27T02:34:05.284194Z"
+      "latency_ms": 24,
+      "checked_at": "2026-06-27T06:44:10.455072Z"
     },
     {
       "source_id": "aihot",
@@ -391,11 +230,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 50,
-      "kept_count": 5,
+      "fetched_count": 0,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 2176,
-      "checked_at": "2026-06-27T02:34:07.461097Z"
+      "latency_ms": 1833,
+      "checked_at": "2026-06-27T06:44:12.288486Z"
     }
   ],
   "control_notes": {
