@@ -1,12 +1,118 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-28T07:40:44.556971Z",
+  "generated_at": "2026-06-28T09:40:54.566798Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 0,
-  "groups": {},
-  "items": [],
+  "item_count": 3,
+  "groups": {
+    "aggregate": {
+      "group": "aggregate",
+      "count": 3,
+      "top_sources": [
+        [
+          "AI Hot",
+          3
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          3
+        ],
+        [
+          "claude",
+          2
+        ],
+        [
+          "gemini",
+          2
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ]
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "dd3fb442997e9cf1501cbfdae15689d66f4b0a0e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "阿德拉菲尼尔：仅在AI agent工作时阻止Mac睡眠的菜单栏工具",
+      "url": "https://aihot.virxact.com/items/cmqx9k72u0425slp05ijlfezl",
+      "published_at": "2026-06-28T03:55:17Z",
+      "summary": "Adrafinil 是一款 macOS 菜单栏应用，仅在 Claude Code、Codex、Cursor、Gemini CLI、Aider、Hermes、OpenCode、Cline、Pi 等 9 种 AI coding agent 持有活跃会话时阻止系统睡眠（包括合盖睡眠）。无 agent 工作时，合盖后 Mac 正常睡眠。它通过各 agent 的钩子系统调用 CLI，往返延迟低于 50ms，支持引用计数断言、热切出（温度阈值强制释放）、空闲释放及进程嗅探。需要 macOS Tahoe 26.4，Xcode 26+ 构建，以签名公证的磁盘映像提供。 🔗 阅读原文：https://github.com/kageroumado/adrafinil",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "strong:gemini",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "418897a072a9e3dec7f049816747e21a9f97c9b5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "四大顶级AI对决《文明VI》：Claude核平法国仍输，暴露感知与执行短板",
+      "url": "https://aihot.virxact.com/items/cmqx7behn03g3slp0pzrofqz9",
+      "published_at": "2026-06-28T02:45:16Z",
+      "summary": "英国前首相府数据科学家Liam Wilkinson搭建76个MCP工具，将Claude Opus 4.6、GPT-5.4、Gemini 3.1 Pro等四个模型放入《文明VI》进行23场对局。Claude扮演葡萄牙时，因法国文化胜利逼近，花50回合研发核弹核平图卢兹，但法国最终以外交胜利获胜。Wilkinson发现：AI主动检查全局状态仅占1-2%（感知盲区），计划后10回合内执行率仅48-66%（知行差距）。结论是智商非瓶颈，感知与执行才是关键。 🔗 阅读原文：https://www.ithome.com/0/969/570.htm",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:gemini",
+        "strong:mcp",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0c32dadf92b46afaaa97f75e435cc9b0ee102921",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "\"Raise Us\"启动：前美商务部长与四州合作筹集10亿美元应对AI就业冲击",
+      "url": "https://aihot.virxact.com/items/cmqwclgpa00a0slfd8mlysoe8",
+      "published_at": "2026-06-27T12:25:21Z",
+      "summary": "前美国商务部长Raimondo与前印第安纳州长Holcomb共同发起非营利\"Raise Us\"，目标为AI经济下工人再培训筹集10亿美元，已锁定5亿。Amazon、Anthropic、Microsoft、OpenAI等支持，引发独立性质疑。将在阿肯色、康涅狄格、马里兰、犹他四州试点，包括AI职业导航、服务年计划扩展、工资保险等。工作分州合作、雇主联盟、教育培训、政策实验室四大支柱。此前美国工人再培训效果不佳，计划能否成功尚待观察。 🔗 阅读原文：https://the-decoder.com/the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-billion-program-to-retrain-you",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    }
+  ],
   "source_health": [
     {
       "source_id": "openai-news",
@@ -17,8 +123,8 @@
       "fetched_count": 1022,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 747,
-      "checked_at": "2026-06-28T07:40:36.842092Z"
+      "latency_ms": 569,
+      "checked_at": "2026-06-28T09:40:47.564052Z"
     },
     {
       "source_id": "openai-skills",
@@ -29,8 +135,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 327,
-      "checked_at": "2026-06-28T07:40:37.169374Z"
+      "latency_ms": 316,
+      "checked_at": "2026-06-28T09:40:47.881101Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -41,8 +147,8 @@
       "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 156,
-      "checked_at": "2026-06-28T07:40:37.329168Z"
+      "latency_ms": 104,
+      "checked_at": "2026-06-28T09:40:47.988795Z"
     },
     {
       "source_id": "google-deepmind",
@@ -53,8 +159,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 400,
-      "checked_at": "2026-06-28T07:40:37.731133Z"
+      "latency_ms": 372,
+      "checked_at": "2026-06-28T09:40:48.362690Z"
     },
     {
       "source_id": "google-ai",
@@ -65,8 +171,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 407,
-      "checked_at": "2026-06-28T07:40:38.138974Z"
+      "latency_ms": 240,
+      "checked_at": "2026-06-28T09:40:48.603472Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -77,8 +183,8 @@
       "fetched_count": 811,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 361,
-      "checked_at": "2026-06-28T07:40:38.512801Z"
+      "latency_ms": 315,
+      "checked_at": "2026-06-28T09:40:48.931851Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -89,8 +195,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 315,
-      "checked_at": "2026-06-28T07:40:38.828085Z"
+      "latency_ms": 419,
+      "checked_at": "2026-06-28T09:40:49.351457Z"
     },
     {
       "source_id": "github-changelog",
@@ -101,8 +207,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 41,
-      "checked_at": "2026-06-28T07:40:38.869332Z"
+      "latency_ms": 30,
+      "checked_at": "2026-06-28T09:40:49.382321Z"
     },
     {
       "source_id": "aihot",
@@ -110,11 +216,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 0,
-      "kept_count": 0,
+      "fetched_count": 50,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 5680,
-      "checked_at": "2026-06-28T07:40:44.549638Z"
+      "latency_ms": 5175,
+      "checked_at": "2026-06-28T09:40:54.558252Z"
     }
   ],
   "control_notes": {
