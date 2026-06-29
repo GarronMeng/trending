@@ -1,24 +1,36 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-29T12:45:19.861363Z",
+  "generated_at": "2026-06-29T16:52:12.203903Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 9,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          6
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          7
+        ],
+        [
+          "anthropic",
+          3
+        ],
+        [
+          "claude",
+          3
+        ],
+        [
+          "agent",
+          3
         ],
         [
           "openai",
@@ -37,19 +49,11 @@
           3
         ],
         [
-          "agent",
-          2
-        ],
-        [
-          "anthropic",
-          2
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
           "eval",
+          2
+        ],
+        [
+          "推理模型",
           1
         ],
         [
@@ -58,10 +62,6 @@
         ],
         [
           "开发者",
-          1
-        ],
-        [
-          "开源模型",
           1
         ]
       ]
@@ -96,6 +96,28 @@
     }
   },
   "items": [
+    {
+      "id": "e0de1cfeae5e8d1adf470b6138018268a9d3325b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic工程师Margot Van Laar：提示词工程实战--调试生产提示词为主，评估是唯一严谨方式",
+      "url": "https://aihot.virxact.com/items/cmqzdby9m00o8sltjugcnx002",
+      "published_at": "2026-06-29T15:04:14Z",
+      "summary": "An anthropic应用AI工程师Margot Van Laar在Code with Claude分享提示词工程实战，核心观点：大部分时间在调试和维护已有生产提示词而非从零编写。两个场景：客服机器人维护中，用XML标签结构化清理，移除旧模型遗留的\"禁止列表\"指令（新模型会过度拟合），精确计算应调用工具，转人工决策需明确代价与收益；零售排班Agent从零构建时，拆成生成-评估-修复三个简单提示词更稳定，选用更强推理模型（Opus）。她反复强调：评估（Eval）是唯一严谨方式，没有评估就是碰运气。 🔗 阅读原文：https://x.com/berryxia/status/2071610700213191075",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:agent",
+        "strong:推理模型",
+        "weak:eval",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "1a8ba0ce4a1e7eb5b2d160175d1a43f65d0a87b0",
       "source_id": "aihot",
@@ -272,8 +294,8 @@
       "fetched_count": 1024,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 822,
-      "checked_at": "2026-06-29T12:45:17.015512Z"
+      "latency_ms": 815,
+      "checked_at": "2026-06-29T16:52:08.873183Z"
     },
     {
       "source_id": "openai-skills",
@@ -284,8 +306,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 194,
-      "checked_at": "2026-06-29T12:45:17.210632Z"
+      "latency_ms": 374,
+      "checked_at": "2026-06-29T16:52:09.247566Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -296,8 +318,8 @@
       "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 110,
-      "checked_at": "2026-06-29T12:45:17.325009Z"
+      "latency_ms": 156,
+      "checked_at": "2026-06-29T16:52:09.407286Z"
     },
     {
       "source_id": "google-deepmind",
@@ -308,8 +330,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 286,
-      "checked_at": "2026-06-29T12:45:17.613478Z"
+      "latency_ms": 361,
+      "checked_at": "2026-06-29T16:52:09.770022Z"
     },
     {
       "source_id": "google-ai",
@@ -320,8 +342,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 245,
-      "checked_at": "2026-06-29T12:45:17.859127Z"
+      "latency_ms": 285,
+      "checked_at": "2026-06-29T16:52:10.055687Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -332,8 +354,8 @@
       "fetched_count": 811,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 329,
-      "checked_at": "2026-06-29T12:45:18.201136Z"
+      "latency_ms": 374,
+      "checked_at": "2026-06-29T16:52:10.442068Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -344,8 +366,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 98,
-      "checked_at": "2026-06-29T12:45:18.299692Z"
+      "latency_ms": 323,
+      "checked_at": "2026-06-29T16:52:10.765809Z"
     },
     {
       "source_id": "github-changelog",
@@ -356,8 +378,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-06-29T12:45:18.324383Z"
+      "latency_ms": 42,
+      "checked_at": "2026-06-29T16:52:10.808491Z"
     },
     {
       "source_id": "aihot",
@@ -366,10 +388,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 1527,
-      "checked_at": "2026-06-29T12:45:19.853034Z"
+      "latency_ms": 1386,
+      "checked_at": "2026-06-29T16:52:12.196371Z"
     }
   ],
   "control_notes": {
