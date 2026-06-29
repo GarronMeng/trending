@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>5</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>4</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>4</b><span>聚合源条目</span></div>
+        <div class="stat"><b>3</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-29T02:47:46.191279Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-29T08:45:14.506971Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -64,19 +64,6 @@
       <h3><a href="https://aihot.virxact.com/items/cmqy1fj3003cislwfljtykjvx" target="_blank" rel="noreferrer">Wayfinder Router：在本地和托管的大语言模型之间进行确定性查询路由</a></h3>
       <p class='summary'>Wayfinder Router 通过分析提示词的结构（长度、标题、列表、代码）和措辞（证明、数学、硬约束），在微秒级完成路由决策，完全离线且无需调用其他模型。默认仅使用结构特征，词汇线索因盲测未泛化而默认为关闭。对比依赖模型调用的路由器（如 RouteLLM、NotDiamond），它避免了延迟、成本和随机性。用户可在自有数据上校准评分阈值。支持任何 OpenAI 兼容 API（含 Ollama、Anthropic、Groq、vLLM 等），可自托管。提供终端和网页演示（--dry-run 无需密钥），以及基准测试和 FAQ。 🔗 阅读原文：https://github.com/itsthelore/wayfinder-router</p>
       <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>strong:llm</span><span>weak:api</span><span>weak:API</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-28T03:55:17Z</span>
-        <strong>Score 7</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmqx9k72u0425slp05ijlfezl" target="_blank" rel="noreferrer">阿德拉菲尼尔：仅在AI agent工作时阻止Mac睡眠的菜单栏工具</a></h3>
-      <p class='summary'>Adrafinil 是一款 macOS 菜单栏应用，仅在 Claude Code、Codex、Cursor、Gemini CLI、Aider、Hermes、OpenCode、Cline、Pi 等 9 种 AI coding agent 持有活跃会话时阻止系统睡眠（包括合盖睡眠）。无 agent 工作时，合盖后 Mac 正常睡眠。它通过各 agent 的钩子系统调用 CLI，往返延迟低于 50ms，支持引用计数断言、热切出（温度阈值强制释放）、空闲释放及进程嗅探。需要 macOS Tahoe 26.4，Xcode 26+ 构建，以签名公证的磁盘映像提供。 🔗 阅读原文：https://github.com/kageroumado/adrafinil</p>
-      <div class="tags"><span>strong:claude</span><span>strong:codex</span><span>strong:gemini</span><span>strong:agent</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -123,15 +110,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1023</td><td>1</td><td>1043ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>164ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>231</td><td>0</td><td>108ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>249ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>151ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>811</td><td>0</td><td>320ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>109ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>24ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>4</td><td>1483ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1023</td><td>1</td><td>632ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>179ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>231</td><td>0</td><td>114ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>274ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>234ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>811</td><td>0</td><td>220ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>222ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>21ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>3</td><td>1877ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
