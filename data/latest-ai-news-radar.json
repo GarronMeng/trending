@@ -1,39 +1,47 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-29T08:45:14.505929Z",
+  "generated_at": "2026-06-29T11:30:55.608964Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 4,
+  "item_count": 7,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          3
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
+          5
+        ],
+        [
+          "openai",
+          3
+        ],
+        [
+          "智能体",
           3
         ],
         [
           "api",
-          2
+          3
         ],
         [
           "API",
-          2
+          3
         ],
         [
-          "智能体",
-          2
+          "agent",
+          1
         ],
         [
-          "openai",
+          "eval",
           1
         ],
         [
@@ -45,41 +53,92 @@
           1
         ],
         [
-          "开源模型",
-          1
-        ],
-        [
-          "多模态",
-          1
-        ],
-        [
           "claude",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ],
+        [
+          "开源模型",
           1
         ]
       ]
     },
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI News",
-          1
+          2
         ]
       ],
       "top_keywords": [
         [
           "openai",
-          1
+          2
         ],
         [
           "official_ai",
+          2
+        ],
+        [
+          "automation",
+          1
+        ],
+        [
+          "workflow",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "1a8ba0ce4a1e7eb5b2d160175d1a43f65d0a87b0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "EverOS：开源Markdown优先智能体记忆运行时，支持混合检索与自进化技能",
+      "url": "https://aihot.virxact.com/items/cmqz3upwc00axsldytm3kw949",
+      "published_at": "2026-06-29T10:42:47Z",
+      "summary": "EverMind 推出开源智能体记忆运行时 EverOS（Apache 2.0 许可）。它以可编辑的 Markdown 文件为记忆主体，经 SQLite 管理状态、LanceDB 实现混合检索（BM25 关键词 + 向量搜索 + 标量过滤）。每个完成的任务记录为 Case，离线提炼为可复用的 Skill，使记忆随使用自我进化。v1.1.0 新增 Knowledge APIs（支持分类与话题搜索的 Markdown 页面）和 Reflection（跨会话优化 Profile 和 Skill）。据 EverMind 报告，LoCoMo 得分 93.05%，LongMemEval 83.00%，HaluMem 93.04%，p95 检索延迟低于 500ms。运行时可本地优先部署，也提供 EverOS Cloud 托管",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
+        "strong:智能体",
+        "weak:eval",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1ba227ae771ca681297517da637a09d542e57f6d",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Mapping Europe’s AI Workforce Opportunity",
+      "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+      "published_at": "2026-06-29T07:00:00Z",
+      "summary": "A new OpenAI report maps how AI could reshape jobs across the EU, highlighting which occupations may face automation, growth, or workflow changes.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:automation",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "932f2611584c81e8aeeb9ef25cead936038862ee",
       "source_id": "aihot",
@@ -97,6 +156,28 @@
         "strong:anthropic",
         "strong:llm",
         "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ed4d7c25ca17e2850808acd740aed129f90fa25e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Code 打开 GitHub 仓库即执行隐藏恶意代码，攻击者可获完全控制",
+      "url": "https://aihot.virxact.com/items/cmqz20a0a000dsly4gw09u9xt",
+      "published_at": "2026-06-29T10:04:32Z",
+      "summary": "安全研究人员在 Mozilla 的 GenAI 漏洞赏金平台 0DIN 发现新攻击向量。一个看似正常的 GitHub 仓库包含 setup 脚本，该脚本运行时从 DNS 条目拉取命令并执行，恶意代码从未存在于仓库中，对扫描器、代码审查和 AI 智能体不可见。开发者使用 Claude Code 等 AI 编码工具打开该仓库时，Claude Code 在设置过程中遇到常规错误消息后自动运行该脚本，打开反向 shell，攻击者可窃取 API 密钥和登录凭据并维持持久访问。研究人员建议 AI 智能体应在运行前显示 setup 脚本内容，开发者应将第三方仓库的 setup 说明视为不受信任代码。 🔗 阅读原文：https://the-decoder.com/claude-code-runs-a-github-repos-",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:智能体",
+        "weak:api",
+        "weak:开发者",
         "weak:API",
         "source_penalty:aggregate_noise"
       ],
@@ -141,22 +222,21 @@
       "is_ai_related": true
     },
     {
-      "id": "ec2a1668742cec06c6995d4706537847623a4730",
+      "id": "055a679a0ebd588b52de95ed7020bee13360296a",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "仅有三个AI模型在500天创业测试中盈利超过起始资本",
-      "url": "https://aihot.virxact.com/items/cmqxnrjtc004ssljh9zvejgbo",
-      "published_at": "2026-06-28T10:16:13Z",
-      "summary": "普林斯顿大学推出CEO-Bench基准测试，让AI智能体在模拟环境中运营订阅软件公司NovaMind 500天，起始资金100万美元。14个测试模型中，仅Claude Fable 5（最佳轮次盈利4715万美元）、Claude Opus 4.8（2780万美元）和GPT-5.5（2130万美元）在最佳运行中超过起始资本。一个不调用语言模型的简单规则启发式方法通过固定定价、配额和针对性开发达到1576万美元，超越除上述三款外的所有模型。多数模型无法保持连贯策略，在模拟结束前破产。该测试旨在衡量AI的长期战略决策能力。 🔗 阅读原文：https://the-decoder.com/only-three-ai-models-finished-above-starting-capital-in-a-500-day-st",
-      "relevance_score": 5,
+      "title": "OpenAI 报告：绘制欧洲 AI 劳动力机遇版图",
+      "url": "https://aihot.virxact.com/items/cmqz31dsn003usldyi61f0cgf",
+      "published_at": "2026-06-29T07:00:00Z",
+      "summary": "OpenAI 发布新报告，分析 AI 对欧盟就业的影响，划定哪些职业面临自动化、增长或工作流程变化。 🔗 阅读原文：https://openai.com/index/mapping-ai-jobs-transition-eu",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:claude",
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
+        "strong:openai",
+        "weak:自动化",
+        "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -169,11 +249,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1023,
-      "kept_count": 1,
+      "fetched_count": 1024,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 632,
-      "checked_at": "2026-06-29T08:45:11.334550Z"
+      "latency_ms": 652,
+      "checked_at": "2026-06-29T11:30:49.206037Z"
     },
     {
       "source_id": "openai-skills",
@@ -184,8 +264,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 179,
-      "checked_at": "2026-06-29T08:45:11.514304Z"
+      "latency_ms": 209,
+      "checked_at": "2026-06-29T11:30:49.416052Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -196,8 +276,8 @@
       "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 114,
-      "checked_at": "2026-06-29T08:45:11.631561Z"
+      "latency_ms": 102,
+      "checked_at": "2026-06-29T11:30:49.522184Z"
     },
     {
       "source_id": "google-deepmind",
@@ -208,8 +288,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 274,
-      "checked_at": "2026-06-29T08:45:11.907980Z"
+      "latency_ms": 249,
+      "checked_at": "2026-06-29T11:30:49.772822Z"
     },
     {
       "source_id": "google-ai",
@@ -220,8 +300,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 234,
-      "checked_at": "2026-06-29T08:45:12.142728Z"
+      "latency_ms": 160,
+      "checked_at": "2026-06-29T11:30:49.933174Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -232,8 +312,8 @@
       "fetched_count": 811,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 220,
-      "checked_at": "2026-06-29T08:45:12.374964Z"
+      "latency_ms": 263,
+      "checked_at": "2026-06-29T11:30:50.208082Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -244,8 +324,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 222,
-      "checked_at": "2026-06-29T08:45:12.597253Z"
+      "latency_ms": 143,
+      "checked_at": "2026-06-29T11:30:50.351329Z"
     },
     {
       "source_id": "github-changelog",
@@ -256,8 +336,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 21,
-      "checked_at": "2026-06-29T08:45:12.618548Z"
+      "latency_ms": 25,
+      "checked_at": "2026-06-29T11:30:50.377314Z"
     },
     {
       "source_id": "aihot",
@@ -266,10 +346,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 1877,
-      "checked_at": "2026-06-29T08:45:14.496973Z"
+      "latency_ms": 5221,
+      "checked_at": "2026-06-29T11:30:55.599854Z"
     }
   ],
   "control_notes": {
