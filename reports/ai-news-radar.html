@@ -43,8 +43,8 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>10</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>0</b><span>官方源条目</span></div>
+        <div class="stat"><b>15</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>4</b><span>官方源条目</span></div>
         <div class="stat"><b>9</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
@@ -52,7 +52,7 @@
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-30T11:25:28.450309Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-30T16:22:37.779415Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -69,14 +69,79 @@
 
     <article class="card">
       <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-06-30T09:00:00Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://openai.com/index/how-chatgpt-adoption-has-expanded" target="_blank" rel="noreferrer">How ChatGPT adoption has expanded</a></h3>
+      <p class='summary'>New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages.</p>
+      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-06-30T16:00:19Z</span>
+        <strong>Score 6</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-06-30-copilot-agent-is-now-available-in-jetbrains-ai-assistant" target="_blank" rel="noreferrer">Copilot Agent is now available in JetBrains AI Assistant</a></h3>
+      <p class='summary'>Today, JetBrains and GitHub are announcing a deeper integration between JetBrains AI Assistant and GitHub Copilot. Millions of developers already rely on the GitHub Copilot plugin as their AI pair… The post Copilot Agent is now available in JetBrains AI Assistant appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>strong:agent</span><span>weak:developer</span><span>weak:copilot</span><span>source:copilot</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>Hugging Face Blog</span>
+        <span>official_rss</span>
+        <span>2026-06-30T00:00:00Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://huggingface.co/blog/eee-community-evals" target="_blank" rel="noreferrer">Featuring Every Eval Ever Results on Hugging Face Model Pages</a></h3>
+      
+      <div class="tags"><span>strong:hugging face</span><span>weak:eval</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>Google DeepMind</span>
+        <span>official_rss</span>
+        <span>2026-06-30T16:02:40Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash" target="_blank" rel="noreferrer">Start building with Nano Banana 2 Lite and Gemini Omni Flash</a></h3>
+      
+      <div class="tags"><span>strong:gemini</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-06-29T15:04:14Z</span>
-        <strong>Score 8</strong>
+        <span>2026-06-30T16:02:40Z</span>
+        <strong>Score 6</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmqzdby9m00o8sltjugcnx002" target="_blank" rel="noreferrer">Anthropic工程师Margot Van Laar：提示词工程实战--调试生产提示词为主，评估是唯一严谨方式</a></h3>
-      <p class='summary'>An anthropic应用AI工程师Margot Van Laar在Code with Claude分享提示词工程实战，核心观点：大部分时间在调试和维护已有生产提示词而非从零编写。两个场景：客服机器人维护中，用XML标签结构化清理，移除旧模型遗留的&quot;禁止列表&quot;指令（新模型会过度拟合），精确计算应调用工具，转人工决策需明确代价与收益；零售排班Agent从零构建时，拆成生成-评估-修复三个简单提示词更稳定，选用更强推理模型（Opus）。她反复强调：评估（Eval）是唯一严谨方式，没有评估就是碰运气。 🔗 阅读原文：https://x.com/berryxia/status/2071610700213191075</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:agent</span><span>strong:推理模型</span><span>weak:eval</span></div>
+      <h3><a href="https://aihot.virxact.com/items/cmr0ucc880030slatw1gfkq2h" target="_blank" rel="noreferrer">Google DeepMind 发布 Nano Banana 2 Lite 和 Gemini Omni Flash</a></h3>
+      <p class='summary'>Google DeepMind 推出 Nano Banana 2 Lite（gemini-3.1-flash-lite-image），为 Nano Banana 系列速度最快、成本最低的图像模型，文本到图像输出仅需 4 秒，每 1K 分辨率图像成本 $0.034，已上线 Google AI Studio、Gemini API 及消费者产品（AI Mode in Search、Gemini app 等）。同时推出 Gemini Omni Flash（gemini-omni-flash-preview），支持高画质视频生成与对话式编辑，视频输出定价 $0.10/秒，面向开发者开放 API。 🔗 阅读原文：https://deepmind.google/blog/start-building-with-nano-ba</p>
+      <div class="tags"><span>strong:gemini</span><span>strong:deepmind</span><span>weak:api</span><span>weak:开发者</span><span>weak:API</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-06-30T00:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug" target="_blank" rel="noreferrer">Core dump epidemiology: fixing an 18-year-old bug</a></h3>
+      <p class='summary'>OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug.</p>
+      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -90,6 +155,19 @@
       <h3><a href="https://github.blog/changelog/2026-06-29-claude-opus-4-8-fast-mode-is-now-in-preview-for-github-copilot" target="_blank" rel="noreferrer">Claude Opus 4.8 (fast mode) is now in preview for GitHub Copilot</a></h3>
       <p class='summary'>Claude Opus 4.8 (fast mode) is now rolling out in preview on GitHub Copilot. Fast mode delivers significantly faster output token speeds while maintaining the same intelligence as Claude Opus… The post Claude Opus 4.8 (fast mode) is now in preview for GitHub Copilot appeared first on The GitHub Blog .</p>
       <div class="tags"><span>strong:claude</span><span>weak:copilot</span><span>source:copilot</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-30T11:14:52Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr0kov5302qnslolcwg00yqd" target="_blank" rel="noreferrer">Meta秘密测试ChatGPT等竞品：承包商假扮未成年发送数万条危机提示</a></h3>
+      <p class='summary'>Meta通过承包商Covelen发起代号&quot;Cannes&quot;的项目，雇佣数百人假扮未成年人，向ChatGPT、Gemini和Character.AI发送关于自杀、自残、饮食障碍和毒品的敏感提示，并将回复录入表格。2025年8月一轮测试中发送了超过4.5万条提示。Meta称这是行业标准安全测试，未将数据用于训练自家模型。被测试公司不知情--Character.AI表示违反其服务条款，OpenAI已调查，Google称未批准。青少年使用AI聊天机器人引发的担忧持续，此前已有用户自杀事件。 🔗 阅读原文：https://the-decoder.com/meta-secretly-tested-chatgpt-gemini-and-character-ai-with-thousands-of-minor-perspecti</p>
+      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>strong:gemini</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -149,12 +227,12 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-06-29T12:30:21Z</span>
-        <strong>Score 5</strong>
+        <span>2026-06-30T09:00:00Z</span>
+        <strong>Score 3</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmqz7d8df001gslurh618qik6" target="_blank" rel="noreferrer">美军用AI选目标却误炸伊朗学校，Anthropic Claude嵌入Palantir系统首日建议约1000目标</a></h3>
-      <p class='summary'>美军在打击伊朗时首次大规模使用AI选择目标（Anthropic的Claude模型嵌入Palantir的Maven Smart System，首日建议约1000个目标），但对一所学校的导弹袭击导致约120名儿童死亡。调查发现，情报分析师早在2019年就通过数字工具标记该地点已变为小学，但该工具未连接军方官方目标数据库MIDB，信息从未送达指挥官。MIDB建于1980年代，依赖手动输入，替代系统MARS多年延迟。五角大楼事后宣布推出agentic AI initiative。Project Maven创建人Jack Shanahan批评目标验证不力不可原谅。 🔗 阅读原文：https://the-decoder.com/the-us-military-used-ai-to-pick-thousands-of-tar</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:agent</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://aihot.virxact.com/items/cmr0uio0g003vslatqnaiw1pu" target="_blank" rel="noreferrer">OpenAI Signals 数据揭示 ChatGPT 全球采用趋势</a></h3>
+      <p class='summary'>OpenAI Signals 数据显示，用户注册六个月后日均消息量增加50%，尝试任务种类翻倍。自2023年7月以来，各大洲活跃用户均大幅增长，非洲和亚洲增速最快，低人类发展指数国家增长尤为显著。用户群体更加多元化，女性名字用户已占全球多数，巴西、哥伦比亚、波兰和纳米比亚等国女性用户显著多于男性。非英语用户占活跃用户半数以上，领先语言为西班牙语、葡萄牙语和阿拉伯语；乌兹别克语、哈萨克语和缅甸语用户占比增长百分比最大。 🔗 阅读原文：https://openai.com/index/how-chatgpt-adoption-has-expanded</p>
+      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -169,34 +247,21 @@
       <p class='summary'>黑石计划未来3~5年在日本AI数据中心领域投资300亿美元，此前的500MW基础上新增超1GW容量。黑石总裁认为AI投资仍处早期，真正风险是算力短缺而非基建泡沫；谷歌、亚马逊是英伟达潜在挑战者。此外，黑石、阿波罗、博通本月9日成立AI XPV平台，目标2028年向OpenAI、Anthropic等提供超20GW算力，首期350亿美元支持Anthropic在Fluidstack数据中心部署1GW基础设施。 🔗 阅读原文：https://www.ithome.com/0/970/583.htm</p>
       <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-29T12:00:00Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmqzisfra009asl8hojqmr1k2" target="_blank" rel="noreferrer">从任何地点构建--Cursor for iOS 公测版发布</a></h3>
-      <p class='summary'>Cursor 推出 iOS 原生公测版，所有付费计划可用。开发者可在手机上启动始终在线的云端智能体，或远程操控电脑端智能体。支持语音输入、斜杠命令和选择前沿模型。智能体运行后，锁屏 Live Activities 和推送通知实时更新状态，完成或需要输入时提醒。云端智能体在隔离虚拟机中运行，可自动迭代生成合并就绪的 PR，并输出演示、截图和日志。本地与云端智能体支持双向切换。移动端 Composer 2.5 享受 75% 折扣，优惠至 2026 年 7 月 5 日。 🔗 阅读原文：https://cursor.com/blog/ios-mobile-app</p>
-      <div class="tags"><span>strong:智能体</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1024</td><td>0</td><td>854ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>462ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>231</td><td>0</td><td>107ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>345ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>175ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>811</td><td>0</td><td>419ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>195ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>26ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>9</td><td>5588ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1026</td><td>2</td><td>677ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>248ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>231</td><td>0</td><td>70ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>1</td><td>522ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>162ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>813</td><td>1</td><td>212ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>169ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>18ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>9</td><td>5685ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

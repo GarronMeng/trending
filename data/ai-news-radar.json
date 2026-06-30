@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-30T11:25:28.448957Z",
+  "generated_at": "2026-06-30T16:22:37.770956Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 15,
   "groups": {
     "aggregate": {
       "group": "aggregate",
@@ -21,31 +21,31 @@
           9
         ],
         [
-          "claude",
-          6
-        ],
-        [
-          "anthropic",
-          6
-        ],
-        [
           "api",
-          4
+          5
         ],
         [
           "API",
+          5
+        ],
+        [
+          "claude",
           4
         ],
         [
-          "agent",
-          3
+          "openai",
+          4
         ],
         [
-          "智能体",
+          "anthropic",
+          4
+        ],
+        [
+          "gemini",
           2
         ],
         [
-          "openai",
+          "chatgpt",
           2
         ],
         [
@@ -57,28 +57,80 @@
           1
         ],
         [
-          "推理模型",
+          "智能体",
+          1
+        ],
+        [
+          "deepmind",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 4,
+      "top_sources": [
+        [
+          "OpenAI News",
+          2
+        ],
+        [
+          "Hugging Face Blog",
+          1
+        ],
+        [
+          "Google DeepMind",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          4
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "hugging face",
           1
         ],
         [
           "eval",
+          1
+        ],
+        [
+          "gemini",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          1
+          2
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          2
+          4
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "developer",
+          1
         ],
         [
           "claude",
@@ -112,24 +164,118 @@
       "is_ai_related": true
     },
     {
-      "id": "e0de1cfeae5e8d1adf470b6138018268a9d3325b",
+      "id": "b2363c80eec981a1417354ede31eb4f7b9ab6e11",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How ChatGPT adoption has expanded",
+      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+      "published_at": "2026-06-30T09:00:00Z",
+      "summary": "New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ac26b983d63939c56fce8b5c37128f92f5eadf60",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot Agent is now available in JetBrains AI Assistant",
+      "url": "https://github.blog/changelog/2026-06-30-copilot-agent-is-now-available-in-jetbrains-ai-assistant",
+      "published_at": "2026-06-30T16:00:19Z",
+      "summary": "Today, JetBrains and GitHub are announcing a deeper integration between JetBrains AI Assistant and GitHub Copilot. Millions of developers already rely on the GitHub Copilot plugin as their AI pair… The post Copilot Agent is now available in JetBrains AI Assistant appeared first on The GitHub Blog .",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:developer",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "23101b3e69a335d9c2d96444cc4d7eab7e93714e",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Featuring Every Eval Ever Results on Hugging Face Model Pages",
+      "url": "https://huggingface.co/blog/eee-community-evals",
+      "published_at": "2026-06-30T00:00:00Z",
+      "summary": null,
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "weak:eval",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "295fbad4fd0f1120fb71099d79010dd0bd7f641e",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Start building with Nano Banana 2 Lite and Gemini Omni Flash",
+      "url": "https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash",
+      "published_at": "2026-06-30T16:02:40Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9dd650fea9799b5e288f65d1d02d0b4a2c3b335e",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic工程师Margot Van Laar：提示词工程实战--调试生产提示词为主，评估是唯一严谨方式",
-      "url": "https://aihot.virxact.com/items/cmqzdby9m00o8sltjugcnx002",
-      "published_at": "2026-06-29T15:04:14Z",
-      "summary": "An anthropic应用AI工程师Margot Van Laar在Code with Claude分享提示词工程实战，核心观点：大部分时间在调试和维护已有生产提示词而非从零编写。两个场景：客服机器人维护中，用XML标签结构化清理，移除旧模型遗留的\"禁止列表\"指令（新模型会过度拟合），精确计算应调用工具，转人工决策需明确代价与收益；零售排班Agent从零构建时，拆成生成-评估-修复三个简单提示词更稳定，选用更强推理模型（Opus）。她反复强调：评估（Eval）是唯一严谨方式，没有评估就是碰运气。 🔗 阅读原文：https://x.com/berryxia/status/2071610700213191075",
-      "relevance_score": 8,
+      "title": "Google DeepMind 发布 Nano Banana 2 Lite 和 Gemini Omni Flash",
+      "url": "https://aihot.virxact.com/items/cmr0ucc880030slatw1gfkq2h",
+      "published_at": "2026-06-30T16:02:40Z",
+      "summary": "Google DeepMind 推出 Nano Banana 2 Lite（gemini-3.1-flash-lite-image），为 Nano Banana 系列速度最快、成本最低的图像模型，文本到图像输出仅需 4 秒，每 1K 分辨率图像成本 $0.034，已上线 Google AI Studio、Gemini API 及消费者产品（AI Mode in Search、Gemini app 等）。同时推出 Gemini Omni Flash（gemini-omni-flash-preview），支持高画质视频生成与对话式编辑，视频输出定价 $0.10/秒，面向开发者开放 API。 🔗 阅读原文：https://deepmind.google/blog/start-building-with-nano-ba",
+      "relevance_score": 6,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:agent",
-        "strong:推理模型",
-        "weak:eval",
+        "strong:gemini",
+        "strong:deepmind",
+        "weak:api",
+        "weak:开发者",
+        "weak:API",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b2c4804644c4597ff9a66434fe3964e64225bb2e",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Core dump epidemiology: fixing an 18-year-old bug",
+      "url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+      "published_at": "2026-06-30T00:00:00Z",
+      "summary": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -149,6 +295,26 @@
         "strong:claude",
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "635130a65fd45b7b6ffa1e99680f8bd2a5e372fb",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Meta秘密测试ChatGPT等竞品：承包商假扮未成年发送数万条危机提示",
+      "url": "https://aihot.virxact.com/items/cmr0kov5302qnslolcwg00yqd",
+      "published_at": "2026-06-30T11:14:52Z",
+      "summary": "Meta通过承包商Covelen发起代号\"Cannes\"的项目，雇佣数百人假扮未成年人，向ChatGPT、Gemini和Character.AI发送关于自杀、自残、饮食障碍和毒品的敏感提示，并将回复录入表格。2025年8月一轮测试中发送了超过4.5万条提示。Meta称这是行业标准安全测试，未将数据用于训练自家模型。被测试公司不知情--Character.AI表示违反其服务条款，OpenAI已调查，Google称未批准。青少年使用AI聊天机器人引发的担忧持续，此前已有用户自杀事件。 🔗 阅读原文：https://the-decoder.com/meta-secretly-tested-chatgpt-gemini-and-character-ai-with-thousands-of-minor-perspecti",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:gemini",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -237,21 +403,20 @@
       "is_ai_related": true
     },
     {
-      "id": "a4b4db4d112d1ddc9c4aaf2d9b32a97490a8c0fe",
+      "id": "98092e48ccff39ac66dcc5fbb931701da2bde258",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "美军用AI选目标却误炸伊朗学校，Anthropic Claude嵌入Palantir系统首日建议约1000目标",
-      "url": "https://aihot.virxact.com/items/cmqz7d8df001gslurh618qik6",
-      "published_at": "2026-06-29T12:30:21Z",
-      "summary": "美军在打击伊朗时首次大规模使用AI选择目标（Anthropic的Claude模型嵌入Palantir的Maven Smart System，首日建议约1000个目标），但对一所学校的导弹袭击导致约120名儿童死亡。调查发现，情报分析师早在2019年就通过数字工具标记该地点已变为小学，但该工具未连接军方官方目标数据库MIDB，信息从未送达指挥官。MIDB建于1980年代，依赖手动输入，替代系统MARS多年延迟。五角大楼事后宣布推出agentic AI initiative。Project Maven创建人Jack Shanahan批评目标验证不力不可原谅。 🔗 阅读原文：https://the-decoder.com/the-us-military-used-ai-to-pick-thousands-of-tar",
-      "relevance_score": 5,
+      "title": "OpenAI Signals 数据揭示 ChatGPT 全球采用趋势",
+      "url": "https://aihot.virxact.com/items/cmr0uio0g003vslatqnaiw1pu",
+      "published_at": "2026-06-30T09:00:00Z",
+      "summary": "OpenAI Signals 数据显示，用户注册六个月后日均消息量增加50%，尝试任务种类翻倍。自2023年7月以来，各大洲活跃用户均大幅增长，非洲和亚洲增速最快，低人类发展指数国家增长尤为显著。用户群体更加多元化，女性名字用户已占全球多数，巴西、哥伦比亚、波兰和纳米比亚等国女性用户显著多于男性。非英语用户占活跃用户半数以上，领先语言为西班牙语、葡萄牙语和阿拉伯语；乌兹别克语、哈萨克语和缅甸语用户占比增长百分比最大。 🔗 阅读原文：https://openai.com/index/how-chatgpt-adoption-has-expanded",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:agent",
+        "strong:openai",
+        "strong:chatgpt",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -274,25 +439,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "8fc10cbad7407716bd7beea8f1c364a8e17ea4d9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "从任何地点构建--Cursor for iOS 公测版发布",
-      "url": "https://aihot.virxact.com/items/cmqzisfra009asl8hojqmr1k2",
-      "published_at": "2026-06-29T12:00:00Z",
-      "summary": "Cursor 推出 iOS 原生公测版，所有付费计划可用。开发者可在手机上启动始终在线的云端智能体，或远程操控电脑端智能体。支持语音输入、斜杠命令和选择前沿模型。智能体运行后，锁屏 Live Activities 和推送通知实时更新状态，完成或需要输入时提醒。云端智能体在隔离虚拟机中运行，可自动迭代生成合并就绪的 PR，并输出演示、截图和日志。本地与云端智能体支持双向切换。移动端 Composer 2.5 享受 75% 折扣，优惠至 2026 年 7 月 5 日。 🔗 阅读原文：https://cursor.com/blog/ios-mobile-app",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -302,11 +448,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1024,
-      "kept_count": 0,
+      "fetched_count": 1026,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 854,
-      "checked_at": "2026-06-30T11:25:21.097845Z"
+      "latency_ms": 677,
+      "checked_at": "2026-06-30T16:22:30.652761Z"
     },
     {
       "source_id": "openai-skills",
@@ -317,8 +463,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 462,
-      "checked_at": "2026-06-30T11:25:21.560623Z"
+      "latency_ms": 248,
+      "checked_at": "2026-06-30T16:22:30.901234Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -329,8 +475,8 @@
       "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 107,
-      "checked_at": "2026-06-30T11:25:21.671978Z"
+      "latency_ms": 70,
+      "checked_at": "2026-06-30T16:22:30.974531Z"
     },
     {
       "source_id": "google-deepmind",
@@ -339,10 +485,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 345,
-      "checked_at": "2026-06-30T11:25:22.019564Z"
+      "latency_ms": 522,
+      "checked_at": "2026-06-30T16:22:31.498519Z"
     },
     {
       "source_id": "google-ai",
@@ -353,8 +499,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 175,
-      "checked_at": "2026-06-30T11:25:22.195013Z"
+      "latency_ms": 162,
+      "checked_at": "2026-06-30T16:22:31.661772Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -362,11 +508,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 811,
-      "kept_count": 0,
+      "fetched_count": 813,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 419,
-      "checked_at": "2026-06-30T11:25:22.627388Z"
+      "latency_ms": 212,
+      "checked_at": "2026-06-30T16:22:31.883811Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -377,8 +523,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 195,
-      "checked_at": "2026-06-30T11:25:22.822802Z"
+      "latency_ms": 169,
+      "checked_at": "2026-06-30T16:22:32.053628Z"
     },
     {
       "source_id": "github-changelog",
@@ -387,10 +533,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-06-30T11:25:22.849341Z"
+      "latency_ms": 18,
+      "checked_at": "2026-06-30T16:22:32.072731Z"
     },
     {
       "source_id": "aihot",
@@ -401,8 +547,8 @@
       "fetched_count": 50,
       "kept_count": 9,
       "error": null,
-      "latency_ms": 5588,
-      "checked_at": "2026-06-30T11:25:28.439613Z"
+      "latency_ms": 5685,
+      "checked_at": "2026-06-30T16:22:37.758909Z"
     }
   ],
   "control_notes": {
