@@ -44,16 +44,29 @@
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
         <div class="stat"><b>12</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>10</b><span>聚合源条目</span></div>
+        <div class="stat"><b>0</b><span>官方源条目</span></div>
+        <div class="stat"><b>11</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-30T02:41:57.361519Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-06-30T07:38:52.843865Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-30T04:40:25Z</span>
+        <strong>Score 9</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr07c62l04huslkimxy3vdw5" target="_blank" rel="noreferrer">X（Twitter）发布 hosted X MCP，AI 智能体可直连 X API</a></h3>
+      <p class='summary'>X（Twitter）官方推出 hosted X MCP，AI 智能体可通过 MCP 协议直接调用 X API 获取实时信息，支持 Grok、Cursor 等工具。用户需注册 X API 并按量付费，个人优惠价每次调用 0.01 美元（1 美元 1000 次）。有用户实测拉取近三天书签仅花 0.1 美元。配置步骤：创建 APP 并充值、获取配置 ID、辅助配置（可交给 Codex/Claude）、授权启动。 🔗 阅读原文：https://x.com/op7418/status/2071816099986022650</p>
+      <div class="tags"><span>strong:claude</span><span>strong:codex</span><span>strong:mcp</span><span>strong:智能体</span><span>weak:api</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>AI Hot</span>
@@ -77,19 +90,6 @@
       <h3><a href="https://aihot.virxact.com/items/cmqz3upwc00axsldytm3kw949" target="_blank" rel="noreferrer">EverOS：开源Markdown优先智能体记忆运行时，支持混合检索与自进化技能</a></h3>
       <p class='summary'>EverMind 推出开源智能体记忆运行时 EverOS（Apache 2.0 许可）。它以可编辑的 Markdown 文件为记忆主体，经 SQLite 管理状态、LanceDB 实现混合检索（BM25 关键词 + 向量搜索 + 标量过滤）。每个完成的任务记录为 Case，离线提炼为可复用的 Skill，使记忆随使用自我进化。v1.1.0 新增 Knowledge APIs（支持分类与话题搜索的 Markdown 页面）和 Reflection（跨会话优化 Profile 和 Skill）。据 EverMind 报告，LoCoMo 得分 93.05%，LongMemEval 83.00%，HaluMem 93.04%，p95 检索延迟低于 500ms。运行时可本地优先部署，也提供 EverOS Cloud 托管</p>
       <div class="tags"><span>strong:openai</span><span>strong:agent</span><span>strong:智能体</span><span>weak:eval</span><span>weak:api</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-06-29T07:00:00Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://openai.com/index/mapping-ai-jobs-transition-eu" target="_blank" rel="noreferrer">Mapping Europe’s AI Workforce Opportunity</a></h3>
-      <p class='summary'>A new OpenAI report maps how AI could reshape jobs across the EU, highlighting which occupations may face automation, growth, or workflow changes.</p>
-      <div class="tags"><span>strong:openai</span><span>weak:automation</span><span>weak:workflow</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -123,6 +123,32 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
+        <span>2026-06-30T07:06:59Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr0c2vwj00hxslolxf1r9vsx" target="_blank" rel="noreferrer">LongCat-2.0 开源：1.6T 总参数、48B 活跃参数的 MoE 模型</a></h3>
+      <p class='summary'>LongCat-2.0 正式开源，总参数 1.6 万亿，每 token 激活约 480 亿参数，采用 MoE 架构。新引入 LongCat Sparse Attention（LSA）和 N-gram Embedding 模块，支持百万级上下文窗口。模型在 5 万+ AI ASIC 上训练，消耗超 35 万亿 tokens，训练全程无回滚。在编码和智能体任务上表现优异，深度集成 Claude Code 等工具。提供 GitHub、HuggingFace 及 API 访问。 🔗 阅读原文：https://longcat.chat/blog/longcat-2.0</p>
+      <div class="tags"><span>strong:claude</span><span>strong:智能体</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-06-30T03:23:23Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr03h5tq03jjslki3a281zet" target="_blank" rel="noreferrer">一个人管理5款产品，80%时间不写代码？Every的复利工程</a></h3>
+      <p class='summary'>媒体软件公司Every公开「复利工程」方法论，以单人工程团队维护5款产品。核心是四步循环：Plan→Work→Review→Compound，其中Compound将每次解决问题的解法写入CLAUDE.md和docs/solutions/，使AI下次自动避坑。工程师80%时间花在Plan和Review，仅20%用于写代码。配套开源插件支持Claude Code等，含26个专项agent、23条工作流命令、13项技能，可零配置使用。/workflows：review一次并发14个agent审查代码，/workflows：plan在ultrathink模式下可并发40多个研究agent。 🔗 阅读原文：https://x.com/xiaohu/status/2071796715162857477</p>
+      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>weak:workflow</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
         <span>2026-06-30T01:47:00Z</span>
         <strong>Score 5</strong>
       </div>
@@ -142,19 +168,6 @@
       <h3><a href="https://aihot.virxact.com/items/cmqzq4so7002zslki45ad5xtq" target="_blank" rel="noreferrer">为 Amazon Bedrock 和 Google Cloud 推出的 Claude apps gateway</a></h3>
       <p class='summary'>Anthropic 今日推出 Claude apps gateway，一个自托管控制平面，让企业能在 Amazon Bedrock 和 Google Cloud 上运行 Claude Code。它作为单个无状态容器部署于 Linux，后端使用 PostgreSQL，提供企业级 SSO 登录（通过 OIDC 对接 Google Workspace、Microsoft Entra ID、Okta 等）、集中策略管理、角色权限、路由（支持故障转移）以及按日/周/月、按组织/群组/用户的消费上限。遥测数据通过 OTLP 发送至用户配置的收集器。gateway 不会向 Anthropic 发送推理流量或使用数据（除非配置使用 Claude API）。即日起可用。 🔗 阅读原文：https://claude.com/blo</p>
       <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-29T21:06:43Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmqzqabkh0069slkildw65dhy" target="_blank" rel="noreferrer">美团LongCat Owl Alpha：OpenRouter最流行模型，1.6万亿MoE，国产ASIC训练</a></h3>
-      <p class='summary'>美团LongCat的1.6万亿参数MoE模型Owl Alpha成为OpenRouter上最流行模型，累计消耗10万亿tokens，性能达Gemini/Opus 4.6级别。该模型使用35万亿tokens训练，完全在5万块国产ASIC上完成。据官方推文，Owl Alpha上线后每日调用量全球Top3，在Hermes Agent排名#1，Claude Code排名#2，OpenClaw排名#3。该模型即将退役，后续版本待公布。 🔗 阅读原文：https://x.com/EMostaque/status/2071701921241448574</p>
-      <div class="tags"><span>strong:claude</span><span>strong:gemini</span><span>strong:agent</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -188,19 +201,6 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-06-29T07:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmqz31dsn003usldyi61f0cgf" target="_blank" rel="noreferrer">OpenAI 报告：绘制欧洲 AI 劳动力机遇版图</a></h3>
-      <p class='summary'>OpenAI 发布新报告，分析 AI 对欧盟就业的影响，划定哪些职业面临自动化、增长或工作流程变化。 🔗 阅读原文：https://openai.com/index/mapping-ai-jobs-transition-eu</p>
-      <div class="tags"><span>strong:openai</span><span>weak:自动化</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
         <span>2026-06-29T12:00:00Z</span>
         <strong>Score 2</strong>
       </div>
@@ -214,15 +214,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1024</td><td>1</td><td>683ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>264ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>231</td><td>0</td><td>110ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>654ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>187ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>811</td><td>0</td><td>285ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>140ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>25ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>10</td><td>1763ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1024</td><td>0</td><td>841ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>372ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>231</td><td>0</td><td>155ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>322ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>234ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>811</td><td>0</td><td>361ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>354ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>43ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>11</td><td>2522ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

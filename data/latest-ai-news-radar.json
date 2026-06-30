@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-30T02:41:57.360045Z",
+  "generated_at": "2026-06-30T07:38:52.842310Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,32 +8,36 @@
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 10,
+      "count": 11,
       "top_sources": [
         [
           "AI Hot",
-          10
+          11
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          10
+          11
         ],
         [
           "claude",
-          6
-        ],
-        [
-          "anthropic",
-          5
+          8
         ],
         [
           "api",
-          5
+          7
         ],
         [
           "API",
+          7
+        ],
+        [
+          "智能体",
+          5
+        ],
+        [
+          "anthropic",
           5
         ],
         [
@@ -41,15 +45,11 @@
           4
         ],
         [
-          "openai",
-          3
-        ],
-        [
-          "智能体",
-          3
-        ],
-        [
           "eval",
+          2
+        ],
+        [
+          "openai",
           2
         ],
         [
@@ -57,39 +57,11 @@
           2
         ],
         [
-          "推理模型",
+          "codex",
           1
         ],
         [
-          "gemini",
-          1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "openai",
-          1
-        ],
-        [
-          "automation",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "official_ai",
+          "mcp",
           1
         ]
       ]
@@ -116,6 +88,29 @@
     }
   },
   "items": [
+    {
+      "id": "8040a5b3643576ac723a47155eb90639aa26e441",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "X（Twitter）发布 hosted X MCP，AI 智能体可直连 X API",
+      "url": "https://aihot.virxact.com/items/cmr07c62l04huslkimxy3vdw5",
+      "published_at": "2026-06-30T04:40:25Z",
+      "summary": "X（Twitter）官方推出 hosted X MCP，AI 智能体可通过 MCP 协议直接调用 X API 获取实时信息，支持 Grok、Cursor 等工具。用户需注册 X API 并按量付费，个人优惠价每次调用 0.01 美元（1 美元 1000 次）。有用户实测拉取近三天书签仅花 0.1 美元。配置步骤：创建 APP 并充值、获取配置 ID、辅助配置（可交给 Codex/Claude）、授权启动。 🔗 阅读原文：https://x.com/op7418/status/2071816099986022650",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "strong:mcp",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "e0de1cfeae5e8d1adf470b6138018268a9d3325b",
       "source_id": "aihot",
@@ -162,26 +157,6 @@
       "is_ai_related": true
     },
     {
-      "id": "1ba227ae771ca681297517da637a09d542e57f6d",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Mapping Europe’s AI Workforce Opportunity",
-      "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
-      "published_at": "2026-06-29T07:00:00Z",
-      "summary": "A new OpenAI report maps how AI could reshape jobs across the EU, highlighting which occupations may face automation, growth, or workflow changes.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:automation",
-        "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "5c69e38118f4b9765a9bfc9c282bd92604dec513",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -218,6 +193,48 @@
         "weak:api",
         "weak:开发者",
         "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7c0cefbfd9f8e145e8834e5d660771cdf71cc50f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "LongCat-2.0 开源：1.6T 总参数、48B 活跃参数的 MoE 模型",
+      "url": "https://aihot.virxact.com/items/cmr0c2vwj00hxslolxf1r9vsx",
+      "published_at": "2026-06-30T07:06:59Z",
+      "summary": "LongCat-2.0 正式开源，总参数 1.6 万亿，每 token 激活约 480 亿参数，采用 MoE 架构。新引入 LongCat Sparse Attention（LSA）和 N-gram Embedding 模块，支持百万级上下文窗口。模型在 5 万+ AI ASIC 上训练，消耗超 35 万亿 tokens，训练全程无回滚。在编码和智能体任务上表现优异，深度集成 Claude Code 等工具。提供 GitHub、HuggingFace 及 API 访问。 🔗 阅读原文：https://longcat.chat/blog/longcat-2.0",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "376528672d91a21589370f86085ac9e5a0963942",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "一个人管理5款产品，80%时间不写代码？Every的复利工程",
+      "url": "https://aihot.virxact.com/items/cmr03h5tq03jjslki3a281zet",
+      "published_at": "2026-06-30T03:23:23Z",
+      "summary": "媒体软件公司Every公开「复利工程」方法论，以单人工程团队维护5款产品。核心是四步循环：Plan→Work→Review→Compound，其中Compound将每次解决问题的解法写入CLAUDE.md和docs/solutions/，使AI下次自动避坑。工程师80%时间花在Plan和Review，仅20%用于写代码。配套开源插件支持Claude Code等，含26个专项agent、23条工作流命令、13项技能，可零配置使用。/workflows：review一次并发14个agent审查代码，/workflows：plan在ultrathink模式下可并发40多个研究agent。 🔗 阅读原文：https://x.com/xiaohu/status/2071796715162857477",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "weak:workflow",
+        "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -265,26 +282,6 @@
       "is_ai_related": true
     },
     {
-      "id": "a167b7d898e46861f8e99e4bd7ebbce6d12f9023",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "美团LongCat Owl Alpha：OpenRouter最流行模型，1.6万亿MoE，国产ASIC训练",
-      "url": "https://aihot.virxact.com/items/cmqzqabkh0069slkildw65dhy",
-      "published_at": "2026-06-29T21:06:43Z",
-      "summary": "美团LongCat的1.6万亿参数MoE模型Owl Alpha成为OpenRouter上最流行模型，累计消耗10万亿tokens，性能达Gemini/Opus 4.6级别。该模型使用35万亿tokens训练，完全在5万块国产ASIC上完成。据官方推文，Owl Alpha上线后每日调用量全球Top3，在Hermes Agent排名#1，Claude Code排名#2，OpenClaw排名#3。该模型即将退役，后续版本待公布。 🔗 阅读原文：https://x.com/EMostaque/status/2071701921241448574",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:gemini",
-        "strong:agent",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "0eeba418b694867864d723a7f311db5b97ea1ec2",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -326,26 +323,6 @@
       "is_ai_related": true
     },
     {
-      "id": "055a679a0ebd588b52de95ed7020bee13360296a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 报告：绘制欧洲 AI 劳动力机遇版图",
-      "url": "https://aihot.virxact.com/items/cmqz31dsn003usldyi61f0cgf",
-      "published_at": "2026-06-29T07:00:00Z",
-      "summary": "OpenAI 发布新报告，分析 AI 对欧盟就业的影响，划定哪些职业面临自动化、增长或工作流程变化。 🔗 阅读原文：https://openai.com/index/mapping-ai-jobs-transition-eu",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:自动化",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "8fc10cbad7407716bd7beea8f1c364a8e17ea4d9",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -373,10 +350,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1024,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 683,
-      "checked_at": "2026-06-30T02:41:53.899523Z"
+      "latency_ms": 841,
+      "checked_at": "2026-06-30T07:38:48.448925Z"
     },
     {
       "source_id": "openai-skills",
@@ -387,8 +364,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 264,
-      "checked_at": "2026-06-30T02:41:54.164752Z"
+      "latency_ms": 372,
+      "checked_at": "2026-06-30T07:38:48.821613Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -399,8 +376,8 @@
       "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 110,
-      "checked_at": "2026-06-30T02:41:54.278381Z"
+      "latency_ms": 155,
+      "checked_at": "2026-06-30T07:38:48.980481Z"
     },
     {
       "source_id": "google-deepmind",
@@ -411,8 +388,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 654,
-      "checked_at": "2026-06-30T02:41:54.934668Z"
+      "latency_ms": 322,
+      "checked_at": "2026-06-30T07:38:49.304853Z"
     },
     {
       "source_id": "google-ai",
@@ -423,8 +400,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 187,
-      "checked_at": "2026-06-30T02:41:55.122922Z"
+      "latency_ms": 234,
+      "checked_at": "2026-06-30T07:38:49.539458Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -435,8 +412,8 @@
       "fetched_count": 811,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 285,
-      "checked_at": "2026-06-30T02:41:55.420516Z"
+      "latency_ms": 361,
+      "checked_at": "2026-06-30T07:38:49.912934Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -447,8 +424,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 140,
-      "checked_at": "2026-06-30T02:41:55.561646Z"
+      "latency_ms": 354,
+      "checked_at": "2026-06-30T07:38:50.267394Z"
     },
     {
       "source_id": "github-changelog",
@@ -459,8 +436,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-06-30T02:41:55.587392Z"
+      "latency_ms": 43,
+      "checked_at": "2026-06-30T07:38:50.310916Z"
     },
     {
       "source_id": "aihot",
@@ -469,10 +446,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 10,
+      "kept_count": 11,
       "error": null,
-      "latency_ms": 1763,
-      "checked_at": "2026-06-30T02:41:57.352256Z"
+      "latency_ms": 2522,
+      "checked_at": "2026-06-30T07:38:52.834794Z"
     }
   ],
   "control_notes": {
