@@ -1,43 +1,39 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-30T07:38:52.842310Z",
+  "generated_at": "2026-06-30T10:06:48.985822Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 11,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 11,
+      "count": 10,
       "top_sources": [
         [
           "AI Hot",
-          11
+          10
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          11
+          10
         ],
         [
           "claude",
-          8
-        ],
-        [
-          "api",
-          7
-        ],
-        [
-          "API",
-          7
-        ],
-        [
-          "智能体",
-          5
+          6
         ],
         [
           "anthropic",
+          6
+        ],
+        [
+          "api",
+          5
+        ],
+        [
+          "API",
           5
         ],
         [
@@ -45,15 +41,15 @@
           4
         ],
         [
-          "eval",
-          2
+          "智能体",
+          3
         ],
         [
           "openai",
-          2
+          3
         ],
         [
-          "开发者",
+          "eval",
           2
         ],
         [
@@ -62,6 +58,10 @@
         ],
         [
           "mcp",
+          1
+        ],
+        [
+          "推理模型",
           1
         ]
       ]
@@ -176,49 +176,6 @@
       "is_ai_related": true
     },
     {
-      "id": "ed4d7c25ca17e2850808acd740aed129f90fa25e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Code 打开 GitHub 仓库即执行隐藏恶意代码，攻击者可获完全控制",
-      "url": "https://aihot.virxact.com/items/cmqz20a0a000dsly4gw09u9xt",
-      "published_at": "2026-06-29T10:04:32Z",
-      "summary": "安全研究人员在 Mozilla 的 GenAI 漏洞赏金平台 0DIN 发现新攻击向量。一个看似正常的 GitHub 仓库包含 setup 脚本，该脚本运行时从 DNS 条目拉取命令并执行，恶意代码从未存在于仓库中，对扫描器、代码审查和 AI 智能体不可见。开发者使用 Claude Code 等 AI 编码工具打开该仓库时，Claude Code 在设置过程中遇到常规错误消息后自动运行该脚本，打开反向 shell，攻击者可窃取 API 密钥和登录凭据并维持持久访问。研究人员建议 AI 智能体应在运行前显示 setup 脚本内容，开发者应将第三方仓库的 setup 说明视为不受信任代码。 🔗 阅读原文：https://the-decoder.com/claude-code-runs-a-github-repos-",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:智能体",
-        "weak:api",
-        "weak:开发者",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7c0cefbfd9f8e145e8834e5d660771cdf71cc50f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "LongCat-2.0 开源：1.6T 总参数、48B 活跃参数的 MoE 模型",
-      "url": "https://aihot.virxact.com/items/cmr0c2vwj00hxslolxf1r9vsx",
-      "published_at": "2026-06-30T07:06:59Z",
-      "summary": "LongCat-2.0 正式开源，总参数 1.6 万亿，每 token 激活约 480 亿参数，采用 MoE 架构。新引入 LongCat Sparse Attention（LSA）和 N-gram Embedding 模块，支持百万级上下文窗口。模型在 5 万+ AI ASIC 上训练，消耗超 35 万亿 tokens，训练全程无回滚。在编码和智能体任务上表现优异，深度集成 Claude Code 等工具。提供 GitHub、HuggingFace 及 API 访问。 🔗 阅读原文：https://longcat.chat/blog/longcat-2.0",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "376528672d91a21589370f86085ac9e5a0963942",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -323,6 +280,25 @@
       "is_ai_related": true
     },
     {
+      "id": "8988fbb6b3d3613e100ba6915c6ad8e5cfbf64fc",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "黑石未来3~5年拟投300亿美元在日本建AI数据中心，联合成立AI XPV平台",
+      "url": "https://aihot.virxact.com/items/cmr0czddc00pyslole7byaugu",
+      "published_at": "2026-06-30T07:56:46Z",
+      "summary": "黑石计划未来3~5年在日本AI数据中心领域投资300亿美元，此前的500MW基础上新增超1GW容量。黑石总裁认为AI投资仍处早期，真正风险是算力短缺而非基建泡沫；谷歌、亚马逊是英伟达潜在挑战者。此外，黑石、阿波罗、博通本月9日成立AI XPV平台，目标2028年向OpenAI、Anthropic等提供超20GW算力，首期350亿美元支持Anthropic在Fluidstack数据中心部署1GW基础设施。 🔗 阅读原文：https://www.ithome.com/0/970/583.htm",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "8fc10cbad7407716bd7beea8f1c364a8e17ea4d9",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -352,8 +328,8 @@
       "fetched_count": 1024,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 841,
-      "checked_at": "2026-06-30T07:38:48.448925Z"
+      "latency_ms": 964,
+      "checked_at": "2026-06-30T10:06:41.486349Z"
     },
     {
       "source_id": "openai-skills",
@@ -364,8 +340,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 372,
-      "checked_at": "2026-06-30T07:38:48.821613Z"
+      "latency_ms": 212,
+      "checked_at": "2026-06-30T10:06:41.699333Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -376,8 +352,8 @@
       "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 155,
-      "checked_at": "2026-06-30T07:38:48.980481Z"
+      "latency_ms": 119,
+      "checked_at": "2026-06-30T10:06:41.822738Z"
     },
     {
       "source_id": "google-deepmind",
@@ -388,8 +364,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 322,
-      "checked_at": "2026-06-30T07:38:49.304853Z"
+      "latency_ms": 280,
+      "checked_at": "2026-06-30T10:06:42.104339Z"
     },
     {
       "source_id": "google-ai",
@@ -400,8 +376,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 234,
-      "checked_at": "2026-06-30T07:38:49.539458Z"
+      "latency_ms": 266,
+      "checked_at": "2026-06-30T10:06:42.371117Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -412,8 +388,8 @@
       "fetched_count": 811,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 361,
-      "checked_at": "2026-06-30T07:38:49.912934Z"
+      "latency_ms": 250,
+      "checked_at": "2026-06-30T10:06:42.633804Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -424,8 +400,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 354,
-      "checked_at": "2026-06-30T07:38:50.267394Z"
+      "latency_ms": 4918,
+      "checked_at": "2026-06-30T10:06:47.552869Z"
     },
     {
       "source_id": "github-changelog",
@@ -436,8 +412,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 43,
-      "checked_at": "2026-06-30T07:38:50.310916Z"
+      "latency_ms": 29,
+      "checked_at": "2026-06-30T10:06:47.582576Z"
     },
     {
       "source_id": "aihot",
@@ -446,10 +422,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 11,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 2522,
-      "checked_at": "2026-06-30T07:38:52.834794Z"
+      "latency_ms": 1394,
+      "checked_at": "2026-06-30T10:06:48.978062Z"
     }
   ],
   "control_notes": {
