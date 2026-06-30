@@ -1,36 +1,44 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-29T16:52:12.203903Z",
+  "generated_at": "2026-06-30T02:41:57.360045Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 12,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 10,
       "top_sources": [
         [
           "AI Hot",
-          7
+          10
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
-        ],
-        [
-          "anthropic",
-          3
+          10
         ],
         [
           "claude",
-          3
+          6
+        ],
+        [
+          "anthropic",
+          5
+        ],
+        [
+          "api",
+          5
+        ],
+        [
+          "API",
+          5
         ],
         [
           "agent",
-          3
+          4
         ],
         [
           "openai",
@@ -41,15 +49,11 @@
           3
         ],
         [
-          "api",
-          3
-        ],
-        [
-          "API",
-          3
-        ],
-        [
           "eval",
+          2
+        ],
+        [
+          "开发者",
           2
         ],
         [
@@ -57,32 +61,24 @@
           1
         ],
         [
-          "llm",
-          1
-        ],
-        [
-          "开发者",
+          "gemini",
           1
         ]
       ]
     },
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          1
         ]
       ],
       "top_keywords": [
         [
           "openai",
-          2
-        ],
-        [
-          "official_ai",
-          2
+          1
         ],
         [
           "automation",
@@ -90,6 +86,30 @@
         ],
         [
           "workflow",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
+        ],
+        [
+          "claude",
           1
         ]
       ]
@@ -162,24 +182,21 @@
       "is_ai_related": true
     },
     {
-      "id": "932f2611584c81e8aeeb9ef25cead936038862ee",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Wayfinder Router：在本地和托管的大语言模型之间进行确定性查询路由",
-      "url": "https://aihot.virxact.com/items/cmqy1fj3003cislwfljtykjvx",
-      "published_at": "2026-06-28T16:58:56Z",
-      "summary": "Wayfinder Router 通过分析提示词的结构（长度、标题、列表、代码）和措辞（证明、数学、硬约束），在微秒级完成路由决策，完全离线且无需调用其他模型。默认仅使用结构特征，词汇线索因盲测未泛化而默认为关闭。对比依赖模型调用的路由器（如 RouteLLM、NotDiamond），它避免了延迟、成本和随机性。用户可在自有数据上校准评分阈值。支持任何 OpenAI 兼容 API（含 Ollama、Anthropic、Groq、vLLM 等），可自托管。提供终端和网页演示（--dry-run 无需密钥），以及基准测试和 FAQ。 🔗 阅读原文：https://github.com/itsthelore/wayfinder-router",
-      "relevance_score": 7,
+      "id": "5c69e38118f4b9765a9bfc9c282bd92604dec513",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Claude Opus 4.8 (fast mode) is now in preview for GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-06-29-claude-opus-4-8-fast-mode-is-now-in-preview-for-github-copilot",
+      "published_at": "2026-06-29T16:47:16Z",
+      "summary": "Claude Opus 4.8 (fast mode) is now rolling out in preview on GitHub Copilot. Fast mode delivers significantly faster output token speeds while maintaining the same intelligence as Claude Opus… The post Claude Opus 4.8 (fast mode) is now in preview for GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:llm",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
+        "strong:claude",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -206,20 +223,85 @@
       "is_ai_related": true
     },
     {
-      "id": "8f5febc79cafe1cc81a7a125c956be05a8e98c39",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "HP Inc. launches Frontier strategic partnership with OpenAI",
-      "url": "https://openai.com/index/hp-frontier-partnership",
-      "published_at": "2026-06-28T17:00:00Z",
-      "summary": "HP Inc. scales its OpenAI Frontier partnership to deploy AI across customer experiences, software development, and enterprise operations.",
-      "relevance_score": 3,
+      "id": "550498c998c6c2b655d475ee83685e0b163985cb",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "AI News Radar 大更新：新增自媒体板块，支持订阅多平台账号",
+      "url": "https://aihot.virxact.com/items/cmqzzpqet02gpslki3d15k1l0",
+      "published_at": "2026-06-30T01:47:00Z",
+      "summary": "AI News Radar 迎来大更新，新增自媒体板块，支持订阅某书、某音、某站、某X等平台账号，每日按热度推荐 Top10 信息（无热门则不硬凑），同时保留时间轴视图，可在热度优先和时间优先间切换。官方来源包括 OpenAI、Anthropic、Google 等一手消息及 GitHub AI&ML 更新日志。信息流按来源、类型、信号等级分类，标注高优先级与多源认证。项目完全开源，可零 API 部署独立 AI 日报页面，支持手机移动端及暗色界面。 🔗 阅读原文：https://mp.weixin.qq.com/s/iW5FVqbHtYi31mJ22Q_cog",
+      "relevance_score": 5,
       "relevance_reasons": [
         "strong:openai",
-        "source_prior:official_ai"
+        "strong:anthropic",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a90ae696a21aab04e3edd1974d7bd86e9c924baa",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "为 Amazon Bedrock 和 Google Cloud 推出的 Claude apps gateway",
+      "url": "https://aihot.virxact.com/items/cmqzq4so7002zslki45ad5xtq",
+      "published_at": "2026-06-29T21:22:33Z",
+      "summary": "Anthropic 今日推出 Claude apps gateway，一个自托管控制平面，让企业能在 Amazon Bedrock 和 Google Cloud 上运行 Claude Code。它作为单个无状态容器部署于 Linux，后端使用 PostgreSQL，提供企业级 SSO 登录（通过 OIDC 对接 Google Workspace、Microsoft Entra ID、Okta 等）、集中策略管理、角色权限、路由（支持故障转移）以及按日/周/月、按组织/群组/用户的消费上限。遥测数据通过 OTLP 发送至用户配置的收集器。gateway 不会向 Anthropic 发送推理流量或使用数据（除非配置使用 Claude API）。即日起可用。 🔗 阅读原文：https://claude.com/blo",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a167b7d898e46861f8e99e4bd7ebbce6d12f9023",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "美团LongCat Owl Alpha：OpenRouter最流行模型，1.6万亿MoE，国产ASIC训练",
+      "url": "https://aihot.virxact.com/items/cmqzqabkh0069slkildw65dhy",
+      "published_at": "2026-06-29T21:06:43Z",
+      "summary": "美团LongCat的1.6万亿参数MoE模型Owl Alpha成为OpenRouter上最流行模型，累计消耗10万亿tokens，性能达Gemini/Opus 4.6级别。该模型使用35万亿tokens训练，完全在5万块国产ASIC上完成。据官方推文，Owl Alpha上线后每日调用量全球Top3，在Hermes Agent排名#1，Claude Code排名#2，OpenClaw排名#3。该模型即将退役，后续版本待公布。 🔗 阅读原文：https://x.com/EMostaque/status/2071701921241448574",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:gemini",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0eeba418b694867864d723a7f311db5b97ea1ec2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude 在 Microsoft Foundry 正式可用",
+      "url": "https://aihot.virxact.com/items/cmqzjpce1006aslqvqo2kpjo6",
+      "published_at": "2026-06-29T18:22:20Z",
+      "summary": "从今天起，Claude 模型在 Microsoft Foundry 上正式可用，托管于 Azure 环境，运行在 NVIDIA GB300 GPU 上。首批提供 Claude Opus 4.8 和 Claude Haiku 4.5，通过 Messages API 调用，支持提示缓存和扩展思考。用户可选择推理处理位置，包括美国数据区域，由 Anthropic 负责推理运营。Azure 用户可使用现有身份验证、计费与治理控制，并获得统一账单；符合条件的 Enterprise Agreement 客户可将 Claude 用量计入 Azure 承诺消费。 🔗 阅读原文：https://claude.com/blog/claude-in-microsoft-foundry",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -244,26 +326,6 @@
       "is_ai_related": true
     },
     {
-      "id": "58dedbd670f73fab2228328a03d82800ed8aebd1",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Artifacts 22：Zyphra、Cohere 和 Poolside 正在扩展生态系统广度",
-      "url": "https://aihot.virxact.com/items/cmqy28vh30050slr1uzaev9nk",
-      "published_at": "2026-06-28T17:03:07Z",
-      "summary": "开源模型生态正变得更多元，参与者从少数中国公司扩展到全球各类组织。纯模型制造商包括 DeepSeek、智谱、MiniMax、Poolside、Arcee、Zyphra 及主权 AI 玩家 Cohere、Sovereign、Mistral、Trillion Labs；科技巨头如阿里 Qwen、Google Gemma 和 NVIDIA 各有不同动机；产品公司如 JetBrains、Zed、Krea、Photoroom 则训练高度专业的小模型。NVIDIA 发布 Nemotron-3-Ultra-550B-A55B-BF16，采用 LatentMoE 架构并改用 OpenMDW 许可证。Cohere 以 Apache 2.0 开源其旗舰模型 Command A+（05-2026-bf16），这是一款 218B-A2",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:智能体",
-        "strong:开源模型",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "055a679a0ebd588b52de95ed7020bee13360296a",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -282,6 +344,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "8fc10cbad7407716bd7beea8f1c364a8e17ea4d9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "从任何地点构建--Cursor for iOS 公测版发布",
+      "url": "https://aihot.virxact.com/items/cmqzisfra009asl8hojqmr1k2",
+      "published_at": "2026-06-29T12:00:00Z",
+      "summary": "Cursor 推出 iOS 原生公测版，所有付费计划可用。开发者可在手机上启动始终在线的云端智能体，或远程操控电脑端智能体。支持语音输入、斜杠命令和选择前沿模型。智能体运行后，锁屏 Live Activities 和推送通知实时更新状态，完成或需要输入时提醒。云端智能体在隔离虚拟机中运行，可自动迭代生成合并就绪的 PR，并输出演示、截图和日志。本地与云端智能体支持双向切换。移动端 Composer 2.5 享受 75% 折扣，优惠至 2026 年 7 月 5 日。 🔗 阅读原文：https://cursor.com/blog/ios-mobile-app",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -292,10 +373,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1024,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 815,
-      "checked_at": "2026-06-29T16:52:08.873183Z"
+      "latency_ms": 683,
+      "checked_at": "2026-06-30T02:41:53.899523Z"
     },
     {
       "source_id": "openai-skills",
@@ -306,8 +387,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 374,
-      "checked_at": "2026-06-29T16:52:09.247566Z"
+      "latency_ms": 264,
+      "checked_at": "2026-06-30T02:41:54.164752Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -318,8 +399,8 @@
       "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 156,
-      "checked_at": "2026-06-29T16:52:09.407286Z"
+      "latency_ms": 110,
+      "checked_at": "2026-06-30T02:41:54.278381Z"
     },
     {
       "source_id": "google-deepmind",
@@ -330,8 +411,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 361,
-      "checked_at": "2026-06-29T16:52:09.770022Z"
+      "latency_ms": 654,
+      "checked_at": "2026-06-30T02:41:54.934668Z"
     },
     {
       "source_id": "google-ai",
@@ -342,8 +423,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 285,
-      "checked_at": "2026-06-29T16:52:10.055687Z"
+      "latency_ms": 187,
+      "checked_at": "2026-06-30T02:41:55.122922Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -354,8 +435,8 @@
       "fetched_count": 811,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 374,
-      "checked_at": "2026-06-29T16:52:10.442068Z"
+      "latency_ms": 285,
+      "checked_at": "2026-06-30T02:41:55.420516Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -366,8 +447,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 323,
-      "checked_at": "2026-06-29T16:52:10.765809Z"
+      "latency_ms": 140,
+      "checked_at": "2026-06-30T02:41:55.561646Z"
     },
     {
       "source_id": "github-changelog",
@@ -376,10 +457,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 42,
-      "checked_at": "2026-06-29T16:52:10.808491Z"
+      "latency_ms": 25,
+      "checked_at": "2026-06-30T02:41:55.587392Z"
     },
     {
       "source_id": "aihot",
@@ -388,10 +469,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 1386,
-      "checked_at": "2026-06-29T16:52:12.196371Z"
+      "latency_ms": 1763,
+      "checked_at": "2026-06-30T02:41:57.352256Z"
     }
   ],
   "control_notes": {
