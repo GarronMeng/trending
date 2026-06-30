@@ -1,24 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-30T10:06:48.985822Z",
+  "generated_at": "2026-06-30T11:25:28.448957Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 10,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 10,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          10
+          9
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          10
+          9
         ],
         [
           "claude",
@@ -30,26 +30,22 @@
         ],
         [
           "api",
-          5
-        ],
-        [
-          "API",
-          5
-        ],
-        [
-          "agent",
           4
         ],
         [
-          "智能体",
+          "API",
+          4
+        ],
+        [
+          "agent",
           3
+        ],
+        [
+          "智能体",
+          2
         ],
         [
           "openai",
-          3
-        ],
-        [
-          "eval",
           2
         ],
         [
@@ -62,6 +58,10 @@
         ],
         [
           "推理模型",
+          1
+        ],
+        [
+          "eval",
           1
         ]
       ]
@@ -129,29 +129,6 @@
         "strong:agent",
         "strong:推理模型",
         "weak:eval",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1a8ba0ce4a1e7eb5b2d160175d1a43f65d0a87b0",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "EverOS：开源Markdown优先智能体记忆运行时，支持混合检索与自进化技能",
-      "url": "https://aihot.virxact.com/items/cmqz3upwc00axsldytm3kw949",
-      "published_at": "2026-06-29T10:42:47Z",
-      "summary": "EverMind 推出开源智能体记忆运行时 EverOS（Apache 2.0 许可）。它以可编辑的 Markdown 文件为记忆主体，经 SQLite 管理状态、LanceDB 实现混合检索（BM25 关键词 + 向量搜索 + 标量过滤）。每个完成的任务记录为 Case，离线提炼为可复用的 Skill，使记忆随使用自我进化。v1.1.0 新增 Knowledge APIs（支持分类与话题搜索的 Markdown 页面）和 Reflection（跨会话优化 Profile 和 Skill）。据 EverMind 报告，LoCoMo 得分 93.05%，LongMemEval 83.00%，HaluMem 93.04%，p95 检索延迟低于 500ms。运行时可本地优先部署，也提供 EverOS Cloud 托管",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:agent",
-        "strong:智能体",
-        "weak:eval",
-        "weak:api",
-        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -328,8 +305,8 @@
       "fetched_count": 1024,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 964,
-      "checked_at": "2026-06-30T10:06:41.486349Z"
+      "latency_ms": 854,
+      "checked_at": "2026-06-30T11:25:21.097845Z"
     },
     {
       "source_id": "openai-skills",
@@ -340,8 +317,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 212,
-      "checked_at": "2026-06-30T10:06:41.699333Z"
+      "latency_ms": 462,
+      "checked_at": "2026-06-30T11:25:21.560623Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -352,8 +329,8 @@
       "fetched_count": 231,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 119,
-      "checked_at": "2026-06-30T10:06:41.822738Z"
+      "latency_ms": 107,
+      "checked_at": "2026-06-30T11:25:21.671978Z"
     },
     {
       "source_id": "google-deepmind",
@@ -364,8 +341,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 280,
-      "checked_at": "2026-06-30T10:06:42.104339Z"
+      "latency_ms": 345,
+      "checked_at": "2026-06-30T11:25:22.019564Z"
     },
     {
       "source_id": "google-ai",
@@ -376,8 +353,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 266,
-      "checked_at": "2026-06-30T10:06:42.371117Z"
+      "latency_ms": 175,
+      "checked_at": "2026-06-30T11:25:22.195013Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -388,8 +365,8 @@
       "fetched_count": 811,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 250,
-      "checked_at": "2026-06-30T10:06:42.633804Z"
+      "latency_ms": 419,
+      "checked_at": "2026-06-30T11:25:22.627388Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -400,8 +377,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 4918,
-      "checked_at": "2026-06-30T10:06:47.552869Z"
+      "latency_ms": 195,
+      "checked_at": "2026-06-30T11:25:22.822802Z"
     },
     {
       "source_id": "github-changelog",
@@ -412,8 +389,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-06-30T10:06:47.582576Z"
+      "latency_ms": 26,
+      "checked_at": "2026-06-30T11:25:22.849341Z"
     },
     {
       "source_id": "aihot",
@@ -422,10 +399,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 10,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 1394,
-      "checked_at": "2026-06-30T10:06:48.978062Z"
+      "latency_ms": 5588,
+      "checked_at": "2026-06-30T11:25:28.439613Z"
     }
   ],
   "control_notes": {
