@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-01T11:37:38.498259Z",
+  "generated_at": "2026-07-01T16:25:27.535021Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,24 +8,20 @@
   "groups": {
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          3
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          4
+          6
         ],
         [
           "agent",
-          2
-        ],
-        [
-          "developer",
           2
         ],
         [
@@ -37,7 +33,79 @@
           1
         ],
         [
+          "developer",
+          1
+        ],
+        [
           "workflow",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "tool",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 10,
+      "top_sources": [
+        [
+          "AI Hot",
+          10
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          10
+        ],
+        [
+          "agent",
+          7
+        ],
+        [
+          "智能体",
+          7
+        ],
+        [
+          "claude",
+          3
+        ],
+        [
+          "gemini",
+          2
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "chatgpt",
           1
         ]
       ]
@@ -48,11 +116,7 @@
       "top_sources": [
         [
           "Hugging Face Blog",
-          1
-        ],
-        [
-          "Google DeepMind",
-          1
+          2
         ]
       ],
       "top_keywords": [
@@ -73,67 +137,7 @@
           1
         ],
         [
-          "gemini",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 11,
-      "top_sources": [
-        [
-          "AI Hot",
-          11
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          11
-        ],
-        [
-          "智能体",
-          6
-        ],
-        [
-          "agent",
-          6
-        ],
-        [
-          "claude",
-          5
-        ],
-        [
-          "anthropic",
-          4
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "评测",
-          2
-        ],
-        [
-          "gemini",
-          2
-        ],
-        [
-          "开发者",
-          2
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "deepmind",
+          "hugging face",
           1
         ]
       ]
@@ -164,6 +168,50 @@
       "is_ai_related": true
     },
     {
+      "id": "c46b0ab082f9fb25dec1d6b5868662dc67e55edd",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Browser tools for GitHub Copilot in VS Code are generally available",
+      "url": "https://github.blog/changelog/2026-07-01-browser-tools-for-github-copilot-in-vs-code-are-generally-available",
+      "published_at": "2026-07-01T16:01:00Z",
+      "summary": "Browser tools for GitHub Copilot in VS Code are now generally available. Agents can now drive a real browser, navigate live web apps, and feed what they find back into… The post Browser tools for GitHub Copilot in VS Code are generally available appeared first on The GitHub Blog .",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "weak:tool",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "927c64a66fdfa9dbc3f808d80d930c19bb970f47",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "xAI 发布 Voice Agent Builder 测试版",
+      "url": "https://aihot.virxact.com/items/cmr2a81sq066ssl8z8vo7so2x",
+      "published_at": "2026-07-01T00:00:00Z",
+      "summary": "xAI 推出 Voice Agent Builder 测试版，这是一个基于 Grok Voice 的无代码平台，可在两分钟内创建生产级语音智能体。它集成电话、知识检索、工具、MCP、Guardrails 及可观测性，支持连接现有 SIP 号码、API 和 WebSocket，采用语音到语音路径。在 τ-voice Bench 上，Grok Voice Think Fast 1.0 得分 67.3%，领先 Gemini 3.1 Flash Live（43.8%）和 GPT Realtime 1.5（35.3%）。定价为每分钟音频 0.05 美元、电话费 0.01 美元，提供 80+ 种语音及声音克隆，每个账户附赠一个免费电话号码。 🔗 阅读原文：https://x.ai/news/grok-voice-agent",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "strong:mcp",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "1aba0c293e76f0ffd76deb39a7ae12d5812a8a06",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
@@ -180,29 +228,6 @@
         "strong:agents",
         "weak:benchmark",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0ce361a1ebfc8a2f2740091220f526af5e0fe14a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Sonnet 5 发布",
-      "url": "https://aihot.virxact.com/items/cmr0yev3s005cslw8omm20ml6",
-      "published_at": "2026-06-30T18:02:06Z",
-      "summary": "Claude Sonnet 5 是 Anthropic 推出的最新 Sonnet 模型，具备计划、浏览器和终端工具使用能力，可自主运行。性能接近 Opus 4.8，定价更低：即日起至 2026 年 8 月 31 日，输入 token $2/百万，输出 $10/百万，之后恢复为 $3/百万输入和 $15/百万输出。相比 Sonnet 4.6，在推理、工具使用、编程和知识工作等智能体能力上大幅提升。在 BrowseComp 和 OSWorld-Verified 评测中严格优于 Sonnet 4.6。安全评估显示不良行为率更低，幻觉和谄媚减少，但网络安全能力弱于 Opus 4.8。即日起在所有套餐及 Claude Code、Claude API 中可用。 🔗 阅读原文：https://www.anthropic.co",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -228,62 +253,20 @@
       "is_ai_related": true
     },
     {
-      "id": "ac26b983d63939c56fce8b5c37128f92f5eadf60",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot Agent is now available in JetBrains AI Assistant",
-      "url": "https://github.blog/changelog/2026-06-30-copilot-agent-is-now-available-in-jetbrains-ai-assistant",
-      "published_at": "2026-06-30T16:00:19Z",
-      "summary": "Today, JetBrains and GitHub are announcing a deeper integration between JetBrains AI Assistant and GitHub Copilot. Millions of developers already rely on the GitHub Copilot plugin as their AI pair… The post Copilot Agent is now available in JetBrains AI Assistant appeared first on The GitHub Blog .",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:developer",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "295fbad4fd0f1120fb71099d79010dd0bd7f641e",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
+      "id": "77780fcaaa501f96022e36d19c9644f666b3a2fd",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Start building with Nano Banana 2 Lite and Gemini Omni Flash",
-      "url": "https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash",
-      "published_at": "2026-06-30T16:02:40Z",
+      "title": "Hugging Face and Cerebras bring Gemma 4 to real-time voice AI",
+      "url": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
+      "published_at": "2026-07-01T00:00:00Z",
       "summary": null,
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:gemini",
+        "strong:hugging face",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "9dd650fea9799b5e288f65d1d02d0b4a2c3b335e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google DeepMind 发布 Nano Banana 2 Lite 和 Gemini Omni Flash",
-      "url": "https://aihot.virxact.com/items/cmr0ucc880030slatw1gfkq2h",
-      "published_at": "2026-06-30T16:02:40Z",
-      "summary": "Google DeepMind 推出 Nano Banana 2 Lite（gemini-3.1-flash-lite-image），为 Nano Banana 系列速度最快、成本最低的图像模型，文本到图像输出仅需 4 秒，每 1K 分辨率图像成本 $0.034，已上线 Google AI Studio、Gemini API 及消费者产品（AI Mode in Search、Gemini app 等）。同时推出 Gemini Omni Flash（gemini-omni-flash-preview），支持高画质视频生成与对话式编辑，视频输出定价 $0.10/秒，面向开发者开放 API。 🔗 阅读原文：https://deepmind.google/blog/start-building-with-nano-ba",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:deepmind",
-        "weak:api",
-        "weak:开发者",
-        "weak:API",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -323,26 +306,6 @@
         "strong:anthropic",
         "strong:人工智能",
         "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d98fd8ddc422cb95188c30f0494c189b22e9dfac",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Science 科研工作台正式上线",
-      "url": "https://aihot.virxact.com/items/cmr0xc7sg0040slb3yenz5k02",
-      "published_at": "2026-06-30T17:32:06Z",
-      "summary": "Anthropic 推出 AI 科研工作台 Claude Science，整合常用工具与计算资源，支持从文献分析到多步骤研究的全流程。提供超 60 项预配置技能与连接器，覆盖基因组学、单细胞、蛋白质组学、结构生物学、化学信息学等领域；可在macOS/Linux本地运行，或通过SSH/HPC远程使用。生成含代码和环境的可审计成果（3D蛋白质结构、基因组浏览器轨迹等），内置reviewer agent自动检查引用与计算错误。通过NVIDIA BioNeMo接入Evo 2、Boltz-2等模型，也支持连接自有模型与管道。今日以beta版面向Claude Pro、Max、Team和Enterprise用户开放。 🔗 阅读原文：https://www.anthropic.com/news/claude-science-a",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:agent",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -389,6 +352,24 @@
       "is_ai_related": true
     },
     {
+      "id": "128108f5e6c8d1185e54ff3def20c9a87a04f3db",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot CLI auto model selection routes based on task",
+      "url": "https://github.blog/changelog/2026-07-01-copilot-cli-auto-model-selection-routes-based-on-task",
+      "published_at": "2026-07-01T15:13:29Z",
+      "summary": "GitHub Copilot auto model selection now routes to the best model for your task in Copilot CLI, using utilization and model health metrics for a high quality, reliable, and token-efficient… The post Copilot CLI auto model selection routes based on task appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "7dd9adb3e97907984cb025eae8ab95fcc093f6de",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -429,6 +410,25 @@
       "is_ai_related": true
     },
     {
+      "id": "526ad735f3d6ccb1b34d03569169a6b4d2171d85",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "xAI 推出 Voice Agent Builder 语音智能体平台",
+      "url": "https://aihot.virxact.com/items/cmr29kohb061isl8z1yt6b0hh",
+      "published_at": "2026-07-01T15:33:21Z",
+      "summary": "介绍 Voice Agent Builder：一个无代码平台，可使用 Grok Voice 创建类人语音智能体。 今日可用，$0.05 / 分钟。 http：//x.ai/voice 🔗 阅读原文：https://x.com/xai/status/2072342803787702422",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "3f97b8add4dff07c8f097e6706bd78fe7cf62f31",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -458,8 +458,8 @@
       "fetched_count": 1028,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 877,
-      "checked_at": "2026-07-01T11:37:35.658651Z"
+      "latency_ms": 618,
+      "checked_at": "2026-07-01T16:25:24.870203Z"
     },
     {
       "source_id": "openai-skills",
@@ -470,8 +470,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 195,
-      "checked_at": "2026-07-01T11:37:35.854262Z"
+      "latency_ms": 306,
+      "checked_at": "2026-07-01T16:25:25.177043Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -482,8 +482,8 @@
       "fetched_count": 234,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 113,
-      "checked_at": "2026-07-01T11:37:35.971175Z"
+      "latency_ms": 106,
+      "checked_at": "2026-07-01T16:25:25.286664Z"
     },
     {
       "source_id": "google-deepmind",
@@ -492,10 +492,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 294,
-      "checked_at": "2026-07-01T11:37:36.266976Z"
+      "latency_ms": 410,
+      "checked_at": "2026-07-01T16:25:25.698262Z"
     },
     {
       "source_id": "google-ai",
@@ -507,7 +507,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 209,
-      "checked_at": "2026-07-01T11:37:36.476442Z"
+      "checked_at": "2026-07-01T16:25:25.907998Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -515,11 +515,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 813,
-      "kept_count": 1,
+      "fetched_count": 814,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 255,
-      "checked_at": "2026-07-01T11:37:36.744645Z"
+      "latency_ms": 323,
+      "checked_at": "2026-07-01T16:25:26.243804Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -530,8 +530,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 213,
-      "checked_at": "2026-07-01T11:37:36.958474Z"
+      "latency_ms": 117,
+      "checked_at": "2026-07-01T16:25:26.361967Z"
     },
     {
       "source_id": "github-changelog",
@@ -540,10 +540,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-07-01T11:37:36.982724Z"
+      "latency_ms": 32,
+      "checked_at": "2026-07-01T16:25:26.395344Z"
     },
     {
       "source_id": "aihot",
@@ -552,10 +552,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 11,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 1506,
-      "checked_at": "2026-07-01T11:37:38.490113Z"
+      "latency_ms": 1129,
+      "checked_at": "2026-07-01T16:25:27.526284Z"
     }
   ],
   "control_notes": {
