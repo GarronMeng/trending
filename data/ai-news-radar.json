@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-01T07:59:12.308429Z",
+  "generated_at": "2026-07-01T10:29:20.173919Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 17,
+  "item_count": 16,
   "groups": {
     "developer": {
       "group": "developer",
@@ -44,14 +44,10 @@
     },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "Hugging Face Blog",
-          1
-        ],
-        [
-          "OpenAI News",
           1
         ],
         [
@@ -62,7 +58,7 @@
       "top_keywords": [
         [
           "official_ai",
-          3
+          2
         ],
         [
           "agent",
@@ -74,14 +70,6 @@
         ],
         [
           "benchmark",
-          1
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
           1
         ],
         [
@@ -113,11 +101,11 @@
           6
         ],
         [
-          "anthropic",
-          4
+          "claude",
+          5
         ],
         [
-          "claude",
+          "anthropic",
           4
         ],
         [
@@ -219,25 +207,6 @@
       "is_ai_related": true
     },
     {
-      "id": "b2363c80eec981a1417354ede31eb4f7b9ab6e11",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How ChatGPT adoption has expanded",
-      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-      "published_at": "2026-06-30T09:00:00Z",
-      "summary": "New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "06a8b4663e840fce95af928e15fd7da72d73eba0",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -314,6 +283,26 @@
         "weak:api",
         "weak:开发者",
         "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "bdc7a8c379aec65a3cbf3b9a04e0d8f64969621a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI论文揭示GPT-5.6三个Pro变体，打破单一顶级策略",
+      "url": "https://aihot.virxact.com/items/cmr1wzzsm02uosl8zop6s0sly",
+      "published_at": "2026-07-01T10:03:41Z",
+      "summary": "OpenAI论文首次列出GPT-5.6的三个Pro变体：Luna Pro、Terra Pro和Sol Pro，取代以往单一Pro模式。在基因组学基准中，Sol Pro通过率31.5%居60个测试模型之首，领先标准Sol（28.7%）和Claude Opus 4.8（16.0%）。Pro相比标准版本提升逐级递减：Luna Pro提升7.1个百分点（16.5%→23.6%），Terra Pro提升5.2（23.3%→28.5%），Sol Pro仅提升2.8（28.7%→31.5%）。Terra Pro（28.5%）几乎与标准Sol（28.7%）持平。论文未披露Pro运行的token用量，也不清楚该分层是否会在ChatGPT中实际推出。 🔗 阅读原文：https://the-decoder.com/openai-pa",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:claude",
+        "strong:chatgpt",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -477,25 +466,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "98092e48ccff39ac66dcc5fbb931701da2bde258",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI Signals 数据揭示 ChatGPT 全球采用趋势",
-      "url": "https://aihot.virxact.com/items/cmr0uio0g003vslatqnaiw1pu",
-      "published_at": "2026-06-30T09:00:00Z",
-      "summary": "OpenAI Signals 数据显示，用户注册六个月后日均消息量增加50%，尝试任务种类翻倍。自2023年7月以来，各大洲活跃用户均大幅增长，非洲和亚洲增速最快，低人类发展指数国家增长尤为显著。用户群体更加多元化，女性名字用户已占全球多数，巴西、哥伦比亚、波兰和纳米比亚等国女性用户显著多于男性。非英语用户占活跃用户半数以上，领先语言为西班牙语、葡萄牙语和阿拉伯语；乌兹别克语、哈萨克语和缅甸语用户占比增长百分比最大。 🔗 阅读原文：https://openai.com/index/how-chatgpt-adoption-has-expanded",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -506,10 +476,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1028,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 567,
-      "checked_at": "2026-07-01T07:59:09.364172Z"
+      "latency_ms": 868,
+      "checked_at": "2026-07-01T10:29:17.048242Z"
     },
     {
       "source_id": "openai-skills",
@@ -520,8 +490,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 334,
-      "checked_at": "2026-07-01T07:59:09.699159Z"
+      "latency_ms": 179,
+      "checked_at": "2026-07-01T10:29:17.228099Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -532,8 +502,8 @@
       "fetched_count": 234,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 105,
-      "checked_at": "2026-07-01T07:59:09.808605Z"
+      "latency_ms": 114,
+      "checked_at": "2026-07-01T10:29:17.346065Z"
     },
     {
       "source_id": "google-deepmind",
@@ -544,8 +514,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 433,
-      "checked_at": "2026-07-01T07:59:10.243851Z"
+      "latency_ms": 221,
+      "checked_at": "2026-07-01T10:29:17.569566Z"
     },
     {
       "source_id": "google-ai",
@@ -556,8 +526,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 213,
-      "checked_at": "2026-07-01T07:59:10.457362Z"
+      "latency_ms": 207,
+      "checked_at": "2026-07-01T10:29:17.777084Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -568,8 +538,8 @@
       "fetched_count": 813,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 380,
-      "checked_at": "2026-07-01T07:59:10.850117Z"
+      "latency_ms": 326,
+      "checked_at": "2026-07-01T10:29:18.116272Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -580,8 +550,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 140,
-      "checked_at": "2026-07-01T07:59:10.990837Z"
+      "latency_ms": 124,
+      "checked_at": "2026-07-01T10:29:18.241321Z"
     },
     {
       "source_id": "github-changelog",
@@ -592,8 +562,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-07-01T07:59:11.021727Z"
+      "latency_ms": 24,
+      "checked_at": "2026-07-01T10:29:18.266618Z"
     },
     {
       "source_id": "aihot",
@@ -604,8 +574,8 @@
       "fetched_count": 50,
       "kept_count": 12,
       "error": null,
-      "latency_ms": 1276,
-      "checked_at": "2026-07-01T07:59:12.299486Z"
+      "latency_ms": 1896,
+      "checked_at": "2026-07-01T10:29:20.164848Z"
     }
   ],
   "control_notes": {
