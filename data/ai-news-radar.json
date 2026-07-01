@@ -1,115 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-06-30T16:22:37.770956Z",
+  "generated_at": "2026-07-01T02:48:04.620381Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 15,
+  "item_count": 18,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
-      "count": 9,
-      "top_sources": [
-        [
-          "AI Hot",
-          9
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          9
-        ],
-        [
-          "api",
-          5
-        ],
-        [
-          "API",
-          5
-        ],
-        [
-          "claude",
-          4
-        ],
-        [
-          "openai",
-          4
-        ],
-        [
-          "anthropic",
-          4
-        ],
-        [
-          "gemini",
-          2
-        ],
-        [
-          "chatgpt",
-          2
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "智能体",
-          1
-        ],
-        [
-          "deepmind",
-          1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 4,
-      "top_sources": [
-        [
-          "OpenAI News",
-          2
-        ],
-        [
-          "Hugging Face Blog",
-          1
-        ],
-        [
-          "Google DeepMind",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          4
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "hugging face",
-          1
-        ],
-        [
-          "eval",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
       "count": 2,
@@ -126,20 +22,179 @@
         ],
         [
           "agent",
-          1
+          2
         ],
         [
           "developer",
+          2
+        ],
+        [
+          "anthropic",
           1
         ],
         [
           "claude",
           1
+        ],
+        [
+          "workflow",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 3,
+      "top_sources": [
+        [
+          "Hugging Face Blog",
+          1
+        ],
+        [
+          "OpenAI News",
+          1
+        ],
+        [
+          "Google DeepMind",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          3
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "benchmark",
+          1
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 13,
+      "top_sources": [
+        [
+          "AI Hot",
+          13
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          13
+        ],
+        [
+          "claude",
+          6
+        ],
+        [
+          "智能体",
+          6
+        ],
+        [
+          "agent",
+          6
+        ],
+        [
+          "anthropic",
+          4
+        ],
+        [
+          "api",
+          3
+        ],
+        [
+          "API",
+          3
+        ],
+        [
+          "gemini",
+          3
+        ],
+        [
+          "openai",
+          3
+        ],
+        [
+          "开发者",
+          2
+        ],
+        [
+          "工作流",
+          2
+        ],
+        [
+          "chatgpt",
+          2
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "f21ca00a7fc7734b8c350ae9ef835f34e28f87ef",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Claude Sonnet 5 is generally available for GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-06-30-claude-sonnet-5-is-generally-available-for-github-copilot",
+      "published_at": "2026-06-30T17:25:51Z",
+      "summary": "Claude Sonnet 5 is Anthropic’s latest Sonnet-class model, now available in GitHub Copilot. It brings strong coding performance to everyday development and agentic workflows, giving developers a new Sonnet-class option… The post Claude Sonnet 5 is generally available for GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 11,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:agent",
+        "weak:developer",
+        "weak:workflow",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1aba0c293e76f0ffd76deb39a7ae12d5812a8a06",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration",
+      "url": "https://huggingface.co/blog/ibm-research/scarfbench",
+      "published_at": "2026-06-30T18:32:50Z",
+      "summary": null,
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "weak:benchmark",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "8040a5b3643576ac723a47155eb90639aa26e441",
       "source_id": "aihot",
@@ -164,6 +219,29 @@
       "is_ai_related": true
     },
     {
+      "id": "0ce361a1ebfc8a2f2740091220f526af5e0fe14a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Sonnet 5 发布",
+      "url": "https://aihot.virxact.com/items/cmr0yev3s005cslw8omm20ml6",
+      "published_at": "2026-06-30T18:02:06Z",
+      "summary": "Claude Sonnet 5 是 Anthropic 推出的最新 Sonnet 模型，具备计划、浏览器和终端工具使用能力，可自主运行。性能接近 Opus 4.8，定价更低：即日起至 2026 年 8 月 31 日，输入 token $2/百万，输出 $10/百万，之后恢复为 $3/百万输入和 $15/百万输出。相比 Sonnet 4.6，在推理、工具使用、编程和知识工作等智能体能力上大幅提升。在 BrowseComp 和 OSWorld-Verified 评测中严格优于 Sonnet 4.6。安全评估显示不良行为率更低，幻觉和谄媚减少，但网络安全能力弱于 Opus 4.8。即日起在所有套餐及 Claude Code、Claude API 中可用。 🔗 阅读原文：https://www.anthropic.co",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "b2363c80eec981a1417354ede31eb4f7b9ab6e11",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -179,6 +257,27 @@
         "strong:openai",
         "strong:chatgpt",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "06a8b4663e840fce95af928e15fd7da72d73eba0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Acti 将 AI 智能体直接放入手机键盘",
+      "url": "https://aihot.virxact.com/items/cmr0yab2e003oslw8uw5zghrc",
+      "published_at": "2026-06-30T17:52:46Z",
+      "summary": "新加坡初创公司 Acti 发布基于 Google Gemini 的智能体键盘，可代替用户在应用中执行操作。核心功能 Skills 允许用自然语言创建快捷方式，如长按 T 键翻译消息、C 键发送会议链接。早期测试者两周内创建超 1000 个 Skills。采用本地优先架构，默认不访问私人消息。公司获 530 万美元种子轮融资，由 BITKRAFT Ventures 领投，现已开放下载。 🔗 阅读原文：https://techcrunch.com/2026/06/30/acti-puts-ai-agents-directly-into-your-smartphone-keyboard",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "strong:agents",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -199,25 +298,6 @@
         "weak:developer",
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "23101b3e69a335d9c2d96444cc4d7eab7e93714e",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Featuring Every Eval Ever Results on Hugging Face Model Pages",
-      "url": "https://huggingface.co/blog/eee-community-evals",
-      "published_at": "2026-06-30T00:00:00Z",
-      "summary": null,
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "weak:eval",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -262,39 +342,63 @@
       "is_ai_related": true
     },
     {
-      "id": "b2c4804644c4597ff9a66434fe3964e64225bb2e",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Core dump epidemiology: fixing an 18-year-old bug",
-      "url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
-      "published_at": "2026-06-30T00:00:00Z",
-      "summary": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug.",
-      "relevance_score": 3,
+      "id": "d98fd8ddc422cb95188c30f0494c189b22e9dfac",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Science 科研工作台正式上线",
+      "url": "https://aihot.virxact.com/items/cmr0xc7sg0040slb3yenz5k02",
+      "published_at": "2026-06-30T17:32:06Z",
+      "summary": "Anthropic 推出 AI 科研工作台 Claude Science，整合常用工具与计算资源，支持从文献分析到多步骤研究的全流程。提供超 60 项预配置技能与连接器，覆盖基因组学、单细胞、蛋白质组学、结构生物学、化学信息学等领域；可在macOS/Linux本地运行，或通过SSH/HPC远程使用。生成含代码和环境的可审计成果（3D蛋白质结构、基因组浏览器轨迹等），内置reviewer agent自动检查引用与计算错误。通过NVIDIA BioNeMo接入Evo 2、Boltz-2等模型，也支持连接自有模型与管道。今日以beta版面向Claude Pro、Max、Team和Enterprise用户开放。 🔗 阅读原文：https://www.anthropic.com/news/claude-science-a",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
+        "strong:anthropic",
+        "strong:claude",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "5c69e38118f4b9765a9bfc9c282bd92604dec513",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Claude Opus 4.8 (fast mode) is now in preview for GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-06-29-claude-opus-4-8-fast-mode-is-now-in-preview-for-github-copilot",
-      "published_at": "2026-06-29T16:47:16Z",
-      "summary": "Claude Opus 4.8 (fast mode) is now rolling out in preview on GitHub Copilot. Fast mode delivers significantly faster output token speeds while maintaining the same intelligence as Claude Opus… The post Claude Opus 4.8 (fast mode) is now in preview for GitHub Copilot appeared first on The GitHub Blog .",
+      "id": "8a2f61487f6986d928cc4a56179afb915305faf7",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Code 入门：智能体循环",
+      "url": "https://aihot.virxact.com/items/cmr0x7y97001yslb3tyb8w4ce",
+      "published_at": "2026-06-30T17:28:28Z",
+      "summary": "Claude Code 团队将智能体循环定义为 agent 重复工作直到满足停止条件的过程，并划分出四种主要类型：turn-based 循环（用户提示触发，Claude 自行判断完成或需更多上下文）、goal-based 循环（通过 `/goal` 命令设定可验证完成标准与最大轮次）、time-based 循环（通过 `/loop` 按时间间隔重复执行，可用 `/schedule` 移至云端）、以及 proactive 循环（基于事件或计划自动运行，无人实时参与）。文章还介绍了如何编写 SKILL.md 文件将人工验证步骤编码，让 Claude 进行端到端自检，减少 turn-based 循环中的手动操作。 🔗 阅读原文：https://claude.com/blog/getting-started-with-",
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:claude",
-        "weak:copilot",
-        "source:copilot"
+        "strong:agent",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "14a52c859b99301d85a9db56635dffbfd7956bde",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "ADK Go 2.0 发布：构建可靠的多智能体应用，新增基于图的工作流引擎、人工参与循环与动态编排",
+      "url": "https://aihot.virxact.com/items/cmr0wupt4007gsl403t7s6dbn",
+      "published_at": "2026-06-30T17:17:40Z",
+      "summary": "Agent Development Kit （ADK） for Go 2.0 发布，引入了一类基于图的工作流引擎，用于组合复杂多智能体应用。新版本内置人工参与循环（HITL）编排、使用纯 Go 代码的动态执行、以及指数退避重试等自动弹性特性。统一执行模型后，单智能体应用与复杂图均运行在同一运行时上，简化了遥测与状态持久化。 🔗 阅读原文：https://developers.googleblog.com/announcing-adk-go-20",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "weak:developer",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -340,64 +444,40 @@
       "is_ai_related": true
     },
     {
-      "id": "550498c998c6c2b655d475ee83685e0b163985cb",
+      "id": "c067c48679c57114a15c5b4e501ff3999809c1f8",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "AI News Radar 大更新：新增自媒体板块，支持订阅多平台账号",
-      "url": "https://aihot.virxact.com/items/cmqzzpqet02gpslki3d15k1l0",
-      "published_at": "2026-06-30T01:47:00Z",
-      "summary": "AI News Radar 迎来大更新，新增自媒体板块，支持订阅某书、某音、某站、某X等平台账号，每日按热度推荐 Top10 信息（无热门则不硬凑），同时保留时间轴视图，可在热度优先和时间优先间切换。官方来源包括 OpenAI、Anthropic、Google 等一手消息及 GitHub AI&ML 更新日志。信息流按来源、类型、信号等级分类，标注高优先级与多源认证。项目完全开源，可零 API 部署独立 AI 日报页面，支持手机移动端及暗色界面。 🔗 阅读原文：https://mp.weixin.qq.com/s/iW5FVqbHtYi31mJ22Q_cog",
-      "relevance_score": 5,
+      "title": "用 shot-scraper video 让 AI 智能体录制工作演示视频",
+      "url": "https://aihot.virxact.com/items/cmr0wwa6g0085sl40xkkzeruy",
+      "published_at": "2026-06-30T16:54:26Z",
+      "summary": "shot-scraper 1.10 新增 shot-scraper video 命令，支持通过 storyboard.yml 文件定义操作步骤，并利用 Playwright 录制浏览器视频。演示视频展示了 Datasette 中从粘贴的 CSV/TSV/JSON 数据创建新表的功能。该功能依赖 Playwright 1.61.0 新增的 screencast 机制，解决了此前视频开头白帧、宽度固定 800px 等问题。开发者 Simon Willison 强调，将 --help 输出设计得足够详细，可使编码 Agent 直接利用该命令生成演示视频。 🔗 阅读原文：https://simonwillison.net/2026/Jun/30/shot-scraper-video",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "weak:api",
-        "weak:API",
+        "strong:agent",
+        "strong:智能体",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "a90ae696a21aab04e3edd1974d7bd86e9c924baa",
+      "id": "3f97b8add4dff07c8f097e6706bd78fe7cf62f31",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "为 Amazon Bedrock 和 Google Cloud 推出的 Claude apps gateway",
-      "url": "https://aihot.virxact.com/items/cmqzq4so7002zslki45ad5xtq",
-      "published_at": "2026-06-29T21:22:33Z",
-      "summary": "Anthropic 今日推出 Claude apps gateway，一个自托管控制平面，让企业能在 Amazon Bedrock 和 Google Cloud 上运行 Claude Code。它作为单个无状态容器部署于 Linux，后端使用 PostgreSQL，提供企业级 SSO 登录（通过 OIDC 对接 Google Workspace、Microsoft Entra ID、Okta 等）、集中策略管理、角色权限、路由（支持故障转移）以及按日/周/月、按组织/群组/用户的消费上限。遥测数据通过 OTLP 发送至用户配置的收集器。gateway 不会向 Anthropic 发送推理流量或使用数据（除非配置使用 Claude API）。即日起可用。 🔗 阅读原文：https://claude.com/blo",
-      "relevance_score": 5,
+      "title": "Anthropic在Claude Code中植入隐写术代码识别中国用户",
+      "url": "https://aihot.virxact.com/items/cmr1bxokg01eoslnlem278yfq",
+      "published_at": "2026-07-01T00:11:00Z",
+      "summary": "Anthropic在Claude Code中植入隐写术：读取本地时区（Asia/Shanghai或Asia/Urumqi）和ANTHROPIC_BASE_URL环境变量，与一份经base64+XOR（密钥91）加密的147个域名列表（含美团、字节跳动、月之暗面等）比对，识别中国用户。识别后，在请求发送前将系统提示词中日期字符串的单引号（U+0027）替换为其他Unicode字符，连字符改为斜杠，作为2-3比特分类标记传回服务器。该隐蔽行为被社区逆向发现后引发争议，被认为破坏用户信任。 🔗 阅读原文：https://mp.weixin.qq.com/s/yLb4T2UC16ebKHApdBbgWw",
+      "relevance_score": 3,
       "relevance_reasons": [
         "strong:anthropic",
         "strong:claude",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0eeba418b694867864d723a7f311db5b97ea1ec2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude 在 Microsoft Foundry 正式可用",
-      "url": "https://aihot.virxact.com/items/cmqzjpce1006aslqvqo2kpjo6",
-      "published_at": "2026-06-29T18:22:20Z",
-      "summary": "从今天起，Claude 模型在 Microsoft Foundry 上正式可用，托管于 Azure 环境，运行在 NVIDIA GB300 GPU 上。首批提供 Claude Opus 4.8 和 Claude Haiku 4.5，通过 Messages API 调用，支持提示缓存和扩展思考。用户可选择推理处理位置，包括美国数据区域，由 Anthropic 负责推理运营。Azure 用户可使用现有身份验证、计费与治理控制，并获得统一账单；符合条件的 Enterprise Agreement 客户可将 Claude 用量计入 Azure 承诺消费。 🔗 阅读原文：https://claude.com/blog/claude-in-microsoft-foundry",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:api",
-        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -448,11 +528,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1026,
-      "kept_count": 2,
+      "fetched_count": 1028,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 677,
-      "checked_at": "2026-06-30T16:22:30.652761Z"
+      "latency_ms": 836,
+      "checked_at": "2026-07-01T02:47:57.693036Z"
     },
     {
       "source_id": "openai-skills",
@@ -463,8 +543,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 248,
-      "checked_at": "2026-06-30T16:22:30.901234Z"
+      "latency_ms": 183,
+      "checked_at": "2026-07-01T02:47:57.876906Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -472,11 +552,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 231,
+      "fetched_count": 233,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 70,
-      "checked_at": "2026-06-30T16:22:30.974531Z"
+      "latency_ms": 116,
+      "checked_at": "2026-07-01T02:47:57.997379Z"
     },
     {
       "source_id": "google-deepmind",
@@ -487,8 +567,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 522,
-      "checked_at": "2026-06-30T16:22:31.498519Z"
+      "latency_ms": 262,
+      "checked_at": "2026-07-01T02:47:58.261287Z"
     },
     {
       "source_id": "google-ai",
@@ -499,8 +579,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 162,
-      "checked_at": "2026-06-30T16:22:31.661772Z"
+      "latency_ms": 192,
+      "checked_at": "2026-07-01T02:47:58.453901Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -511,8 +591,8 @@
       "fetched_count": 813,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 212,
-      "checked_at": "2026-06-30T16:22:31.883811Z"
+      "latency_ms": 300,
+      "checked_at": "2026-07-01T02:47:58.766631Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -523,8 +603,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 169,
-      "checked_at": "2026-06-30T16:22:32.053628Z"
+      "latency_ms": 106,
+      "checked_at": "2026-07-01T02:47:58.873255Z"
     },
     {
       "source_id": "github-changelog",
@@ -535,8 +615,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 18,
-      "checked_at": "2026-06-30T16:22:32.072731Z"
+      "latency_ms": 24,
+      "checked_at": "2026-07-01T02:47:58.898232Z"
     },
     {
       "source_id": "aihot",
@@ -545,10 +625,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 9,
+      "kept_count": 13,
       "error": null,
-      "latency_ms": 5685,
-      "checked_at": "2026-06-30T16:22:37.758909Z"
+      "latency_ms": 5712,
+      "checked_at": "2026-07-01T02:48:04.612323Z"
     }
   ],
   "control_notes": {
