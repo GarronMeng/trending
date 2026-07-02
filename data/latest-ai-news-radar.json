@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-02T06:56:51.911370Z",
+  "generated_at": "2026-07-02T09:42:34.135211Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,32 +8,36 @@
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          5
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          6
+        ],
+        [
+          "agent",
+          4
         ],
         [
           "claude",
           3
         ],
         [
-          "agent",
-          3
-        ],
-        [
-          "anthropic",
+          "agents",
           2
         ],
         [
-          "agents",
+          "api",
+          2
+        ],
+        [
+          "API",
           2
         ],
         [
@@ -41,15 +45,15 @@
           2
         ],
         [
-          "api",
-          1
-        ],
-        [
-          "API",
+          "anthropic",
           1
         ],
         [
           "codex",
+          1
+        ],
+        [
+          "tool",
           1
         ],
         [
@@ -59,26 +63,22 @@
         [
           "chatgpt",
           1
-        ],
-        [
-          "人工智能",
-          1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 7,
+      "count": 6,
       "top_sources": [
         [
           "GitHub Changelog",
-          7
+          6
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          12
+          10
         ],
         [
           "github models",
@@ -86,10 +86,6 @@
         ],
         [
           "agent",
-          1
-        ],
-        [
-          "tool",
           1
         ]
       ]
@@ -141,6 +137,28 @@
       "is_ai_related": true
     },
     {
+      "id": "4fd08f90dd361f818ca615e9f42f1e7143a88577",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google Health API 推出 CLI：ghealth 是一款针对 Fitbit 数据的开源工具",
+      "url": "https://aihot.virxact.com/items/cmr3a67dj01zusly043ms4axe",
+      "published_at": "2026-07-02T08:46:56Z",
+      "summary": "ghealth 是一款封装 Google Health API v4 的开源命令行工具，以单个 Go 二进制文件发布（Apache 2.0 协议）。它提供 40 种已验证的数据类型（包括步数、心率、睡眠、体重、血氧饱和度、心率变异性等）的结构化 JSON 输出。工具采用 Agent 优先设计，具备确定性退出码、--dry-run 和 --raw 标志，并附带两个 SKILL.md 文件供 AI 智能体使用。用户需自行创建 OAuth 凭据，通过 PKCE S256 认证。数据来源覆盖 Fitbit、Pixel Watch 及连接的第三方设备。 🔗 阅读原文：https://www.marktechpost.com/2026/07/02/the-google-health-api-got-a-cli-ghealt",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "weak:api",
+        "weak:tool",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "dcb178e8e48ac8cd877d30c7486cac2a9dfbd10b",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -154,25 +172,6 @@
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c46b0ab082f9fb25dec1d6b5868662dc67e55edd",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Browser tools for GitHub Copilot in VS Code are generally available",
-      "url": "https://github.blog/changelog/2026-07-01-browser-tools-for-github-copilot-in-vs-code-are-generally-available",
-      "published_at": "2026-07-01T16:01:00Z",
-      "summary": "Editor’s note (July 1, 2026): Added more detail about which permissions stay under your control and the existing network domain controls. Browser tools for GitHub Copilot in VS Code are… The post Browser tools for GitHub Copilot in VS Code are generally available appeared first on The GitHub Blog .",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "weak:tool",
         "weak:copilot",
         "source:copilot"
       ],
@@ -194,26 +193,6 @@
         "strong:openai",
         "strong:claude",
         "strong:chatgpt",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c23e91187c666d519aa73d8a625ca070c1565aae",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "亚马逊 AWS 砸 10 亿美元，派遣工程师进驻客户公司",
-      "url": "https://aihot.virxact.com/items/cmr1qbf1w012isl8zibrcgm2h",
-      "published_at": "2026-07-01T06:57:42Z",
-      "summary": "亚马逊 AWS 宣布设立新部门，组建前置驻场工程师团队，先期投入 10 亿美元（约 67.97 亿元人民币）。团队分批派驻客户企业，每批 5-6 组工程师，驻场周期 45 天，协助客户落地人工智能软件与智能体应用。该模式在 Palantir、Salesforce、Anthropic、谷歌云等企业已有先例，领英数据显示 2023 至 2025 年间同类岗位需求增长 42 倍。新部门员工规模将达数千人，首批客户包括 NBA 与理光。 🔗 阅读原文：https://www.ithome.com/0/971/071.htm",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:人工智能",
-        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -326,6 +305,26 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "de4719896f515b46c823323a2193264e5433d390",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Kimi K2.7 Code 已在 GitHub Copilot 上正式发布",
+      "url": "https://aihot.virxact.com/items/cmr397vx001s3sly0t7mkh3fh",
+      "published_at": "2026-07-02T08:24:53Z",
+      "summary": "Kimi K2.7 Code 开源权重模型已在 GitHub Copilot 中正式可用，成为 Copilot 模型选择器首个可选的开源权重模型，为编程工作流提供更低成本选择。该模型由 GitHub 托管于 Microsoft Azure，按供应商列表价格以用量计费。逐步向 Copilot Pro、Pro+ 和 Max 计划用户推送，用户可在 Visual Studio Code 1.127.0 或更新版本、Visual Studio 17.14.6 或更新版本、JetBrains 1.9.1-251 或更新版本、Xcode、Eclipse 等 IDE 及 Copilot CLI、GitHub.com、GitHub Mobile 等平台中选用。后续几周将扩展至 Copilot Business 和 Enterp",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:changelog",
+        "weak:copilot",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -338,8 +337,8 @@
       "fetched_count": 1028,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 1100,
-      "checked_at": "2026-07-02T06:56:48.900927Z"
+      "latency_ms": 859,
+      "checked_at": "2026-07-02T09:42:30.821281Z"
     },
     {
       "source_id": "openai-skills",
@@ -350,8 +349,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 169,
-      "checked_at": "2026-07-02T06:56:49.070696Z"
+      "latency_ms": 369,
+      "checked_at": "2026-07-02T09:42:31.191405Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -362,8 +361,8 @@
       "fetched_count": 234,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 109,
-      "checked_at": "2026-07-02T06:56:49.184251Z"
+      "latency_ms": 214,
+      "checked_at": "2026-07-02T09:42:31.409027Z"
     },
     {
       "source_id": "google-deepmind",
@@ -374,8 +373,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 352,
-      "checked_at": "2026-07-02T06:56:49.537871Z"
+      "latency_ms": 383,
+      "checked_at": "2026-07-02T09:42:31.793865Z"
     },
     {
       "source_id": "google-ai",
@@ -386,8 +385,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 203,
-      "checked_at": "2026-07-02T06:56:49.742231Z"
+      "latency_ms": 355,
+      "checked_at": "2026-07-02T09:42:32.150108Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -398,8 +397,8 @@
       "fetched_count": 814,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 318,
-      "checked_at": "2026-07-02T06:56:50.073178Z"
+      "latency_ms": 353,
+      "checked_at": "2026-07-02T09:42:32.515853Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -410,8 +409,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 99,
-      "checked_at": "2026-07-02T06:56:50.172913Z"
+      "latency_ms": 338,
+      "checked_at": "2026-07-02T09:42:32.854237Z"
     },
     {
       "source_id": "github-changelog",
@@ -420,10 +419,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 7,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-07-02T06:56:50.203845Z"
+      "latency_ms": 48,
+      "checked_at": "2026-07-02T09:42:32.903489Z"
     },
     {
       "source_id": "aihot",
@@ -432,10 +431,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 1698,
-      "checked_at": "2026-07-02T06:56:51.902858Z"
+      "latency_ms": 1224,
+      "checked_at": "2026-07-02T09:42:34.129099Z"
     }
   ],
   "control_notes": {
