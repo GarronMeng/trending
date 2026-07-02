@@ -43,27 +43,53 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>15</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>2</b><span>官方源条目</span></div>
-        <div class="stat"><b>10</b><span>聚合源条目</span></div>
+        <div class="stat"><b>11</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>0</b><span>官方源条目</span></div>
+        <div class="stat"><b>4</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-01T16:25:27.536562Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-02T02:37:33.244281Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-01T20:45:36Z</span>
+        <strong>Score 9</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr2jtg2z08nvsl8zt9pagjoe" target="_blank" rel="noreferrer">Claude Code v2.1.198 发布</a></h3>
+      <p class='summary'>Claude Code v2.1.198 更新。Claude in Chrome 现已全面可用。为 claude agents 新增后台智能体通知（agent_needs_input / agent_completed）。新增 /dataviz 技能，提供图表与仪表盘设计指导及配色验证器。Gateway 增加 AWS 上的 Claude Platform 作为上游提供商。后台智能体在 worktree 中完成代码后自动提交、推送并创建草稿 PR。内置 Explore 智能体现继承主会话模型（上限 opus）。修复网络短暂断开导致响应中断、后台任务卡在&quot;Running&quot;状态、智能体团队队友因 API 错误失败等问题。 🔗 阅读原文：https://github.com/anthropics/claude-code</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:agent</span><span>strong:agents</span><span>weak:api</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-02T00:56:56Z</span>
+        <strong>Score 7</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr2t1n9h0b18sl8zqxn9r5nu" target="_blank" rel="noreferrer">Emil Kowalski 发布设计工程师 Skills，让 AI 编码工具具备 UI 动画审美</a></h3>
+      <p class='summary'>Emil Kowalski 将多年 UI/动画原则沉淀为三个 Skill，使 Codex、Claude Code、Cursor 等 Coding Agents 具备资深设计工程师的审美判断。核心规则：动画必须有理由；每天 100+ 次的高频操作禁用动画；UI 动画控制在 300ms 内；只动画 transform 和 opacity；入口从 scale（0.95）+opacity：0 开始；尊重 prefers-reduced-motion（仅移除位移动画）。review-animations 以严格标准审查动画代码，输出 Before/After/Why 表格。animation-vocabulary 将模糊描述（如&quot;弹一下的效果&quot;）转为专业动效术语。 🔗 阅读原文：https://x.com/shao__m</p>
+      <div class="tags"><span>strong:claude</span><span>strong:codex</span><span>strong:agent</span><span>strong:agents</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>GitHub Changelog</span>
         <span>official_rss</span>
-        <span>2026-06-30T17:25:51Z</span>
-        <strong>Score 11</strong>
+        <span>2026-07-01T18:33:24Z</span>
+        <strong>Score 5</strong>
       </div>
-      <h3><a href="https://github.blog/changelog/2026-06-30-claude-sonnet-5-is-generally-available-for-github-copilot" target="_blank" rel="noreferrer">Claude Sonnet 5 is generally available for GitHub Copilot</a></h3>
-      <p class='summary'>Claude Sonnet 5 is Anthropic’s latest Sonnet-class model, now available in GitHub Copilot. It brings strong coding performance to everyday development and agentic workflows, giving developers a new Sonnet-class option… The post Claude Sonnet 5 is generally available for GitHub Copilot appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:agent</span><span>weak:developer</span><span>weak:workflow</span></div>
+      <h3><a href="https://github.blog/changelog/2026-07-01-set-ai-credit-session-limits-in-copilot-cli-and-sdk" target="_blank" rel="noreferrer">Set AI credit session limits in Copilot CLI and SDK</a></h3>
+      <p class='summary'>You can now set AI credit session limits in Copilot CLI and the GitHub Copilot SDK to cap the amount an agent spends in a session. This is especially useful… The post Set AI credit session limits in Copilot CLI and SDK appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>strong:agent</span><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
     
 
@@ -72,63 +98,11 @@
         <span>GitHub Changelog</span>
         <span>official_rss</span>
         <span>2026-07-01T16:01:00Z</span>
-        <strong>Score 8</strong>
+        <strong>Score 4</strong>
       </div>
       <h3><a href="https://github.blog/changelog/2026-07-01-browser-tools-for-github-copilot-in-vs-code-are-generally-available" target="_blank" rel="noreferrer">Browser tools for GitHub Copilot in VS Code are generally available</a></h3>
-      <p class='summary'>Browser tools for GitHub Copilot in VS Code are now generally available. Agents can now drive a real browser, navigate live web apps, and feed what they find back into… The post Browser tools for GitHub Copilot in VS Code are generally available appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>weak:tool</span><span>weak:copilot</span><span>source:copilot</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-01T00:00:00Z</span>
-        <strong>Score 9</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmr2a81sq066ssl8z8vo7so2x" target="_blank" rel="noreferrer">xAI 发布 Voice Agent Builder 测试版</a></h3>
-      <p class='summary'>xAI 推出 Voice Agent Builder 测试版，这是一个基于 Grok Voice 的无代码平台，可在两分钟内创建生产级语音智能体。它集成电话、知识检索、工具、MCP、Guardrails 及可观测性，支持连接现有 SIP 号码、API 和 WebSocket，采用语音到语音路径。在 τ-voice Bench 上，Grok Voice Think Fast 1.0 得分 67.3%，领先 Gemini 3.1 Flash Live（43.8%）和 GPT Realtime 1.5（35.3%）。定价为每分钟音频 0.05 美元、电话费 0.01 美元，提供 80+ 种语音及声音克隆，每个账户附赠一个免费电话号码。 🔗 阅读原文：https://x.ai/news/grok-voice-agent</p>
-      <div class="tags"><span>strong:gemini</span><span>strong:agent</span><span>strong:mcp</span><span>strong:智能体</span><span>weak:api</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>Hugging Face Blog</span>
-        <span>official_rss</span>
-        <span>2026-06-30T18:32:50Z</span>
-        <strong>Score 6</strong>
-      </div>
-      <h3><a href="https://huggingface.co/blog/ibm-research/scarfbench" target="_blank" rel="noreferrer">ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration</a></h3>
-      
-      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>weak:benchmark</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-30T17:52:46Z</span>
-        <strong>Score 7</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmr0yab2e003oslw8uw5zghrc" target="_blank" rel="noreferrer">Acti 将 AI 智能体直接放入手机键盘</a></h3>
-      <p class='summary'>新加坡初创公司 Acti 发布基于 Google Gemini 的智能体键盘，可代替用户在应用中执行操作。核心功能 Skills 允许用自然语言创建快捷方式，如长按 T 键翻译消息、C 键发送会议链接。早期测试者两周内创建超 1000 个 Skills。采用本地优先架构，默认不访问私人消息。公司获 530 万美元种子轮融资，由 BITKRAFT Ventures 领投，现已开放下载。 🔗 阅读原文：https://techcrunch.com/2026/06/30/acti-puts-ai-agents-directly-into-your-smartphone-keyboard</p>
-      <div class="tags"><span>strong:gemini</span><span>strong:agent</span><span>strong:agents</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>Hugging Face Blog</span>
-        <span>official_rss</span>
-        <span>2026-07-01T00:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://huggingface.co/blog/cerebras-gemma4-voice-ai" target="_blank" rel="noreferrer">Hugging Face and Cerebras bring Gemma 4 to real-time voice AI</a></h3>
-      
-      <div class="tags"><span>strong:hugging face</span><span>source_prior:official_ai</span></div>
+      <p class='summary'>Editor’s note (July 1, 2026): Added more detail about which permissions stay under your control and the existing network domain controls. Browser tools for GitHub Copilot in VS Code are… The post Browser tools for GitHub Copilot in VS Code are generally available appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:tool</span><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
     
 
@@ -160,27 +134,14 @@
 
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-30T17:28:28Z</span>
-        <strong>Score 5</strong>
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-07-01T22:27:16Z</span>
+        <strong>Score 3</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmr0x7y97001yslb3tyb8w4ce" target="_blank" rel="noreferrer">Claude Code 入门：智能体循环</a></h3>
-      <p class='summary'>Claude Code 团队将智能体循环定义为 agent 重复工作直到满足停止条件的过程，并划分出四种主要类型：turn-based 循环（用户提示触发，Claude 自行判断完成或需更多上下文）、goal-based 循环（通过 `/goal` 命令设定可验证完成标准与最大轮次）、time-based 循环（通过 `/loop` 按时间间隔重复执行，可用 `/schedule` 移至云端）、以及 proactive 循环（基于事件或计划自动运行，无人实时参与）。文章还介绍了如何编写 SKILL.md 文件将人工验证步骤编码，让 Claude 进行端到端自检，减少 turn-based 循环中的手动操作。 🔗 阅读原文：https://claude.com/blog/getting-started-with-</p>
-      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-30T17:17:40Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmr0wupt4007gsl403t7s6dbn" target="_blank" rel="noreferrer">ADK Go 2.0 发布：构建可靠的多智能体应用，新增基于图的工作流引擎、人工参与循环与动态编排</a></h3>
-      <p class='summary'>Agent Development Kit （ADK） for Go 2.0 发布，引入了一类基于图的工作流引擎，用于组合复杂多智能体应用。新版本内置人工参与循环（HITL）编排、使用纯 Go 代码的动态执行、以及指数退避重试等自动弹性特性。统一执行模型后，单智能体应用与复杂图均运行在同一运行时上，简化了遥测与状态持久化。 🔗 阅读原文：https://developers.googleblog.com/announcing-adk-go-20</p>
-      <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>weak:developer</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://github.blog/changelog/2026-07-01-enterprises-can-default-to-auto-model-selection" target="_blank" rel="noreferrer">Enterprises can default to auto model selection</a></h3>
+      <p class='summary'>Enterprise administrators can now set model to auto in the enterprise managed-settings.json to make Copilot auto model selection the default for new conversations. Add auto to .github-private/.github/copilot/managed-settings.json in your source… The post Enterprises can default to auto model selection appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
     
 
@@ -188,64 +149,51 @@
       <div class="meta">
         <span>GitHub Changelog</span>
         <span>official_rss</span>
-        <span>2026-07-01T15:13:29Z</span>
+        <span>2026-07-01T21:30:20Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://github.blog/changelog/2026-07-01-copilot-cli-auto-model-selection-routes-based-on-task" target="_blank" rel="noreferrer">Copilot CLI auto model selection routes based on task</a></h3>
-      <p class='summary'>GitHub Copilot auto model selection now routes to the best model for your task in Copilot CLI, using utilization and model health metrics for a high quality, reliable, and token-efficient… The post Copilot CLI auto model selection routes based on task appeared first on The GitHub Blog .</p>
+      <h3><a href="https://github.blog/changelog/2026-07-01-github-models-is-being-fully-retired-on-july-30-2026" target="_blank" rel="noreferrer">GitHub Models is being fully retired on July 30, 2026</a></h3>
+      <p class='summary'>In June, we announced that we are retiring GitHub Models and closed it to new customers. We’re now sharing the timeline for the next step: GitHub Models will be fully… The post GitHub Models is being fully retired on July 30, 2026 appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:github models</span><span>source:github models</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-07-01T20:32:52Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-07-01-new-c-language-server-config-skill-for-copilot-cli" target="_blank" rel="noreferrer">New C++ language server config skill for Copilot CLI</a></h3>
+      <p class='summary'>The Microsoft C++ Language Server is now available as a plugin on the Copilot Plugins marketplace. It includes a new built-in setup skill that helps automate project setup, making it… The post New C++ language server config skill for Copilot CLI appeared first on The GitHub Blog .</p>
       <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
     
 
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-01T02:24:00Z</span>
-        <strong>Score 4</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmr1js18u03imslnld2yrjboo" target="_blank" rel="noreferrer">美团 LongCat-2.0 正式发布：国产算力集群训练的万亿参数大模型</a></h3>
-      <p class='summary'>美团于6月30日发布新一代万亿参数大模型LongCat-2.0并开源。总参数1.6T，平均激活约48B，原生支持1M超长上下文，在五万卡国产算力集群上完成全流程训练与推理。采用LSA稀疏注意力、零计算专家、ScMoE及MOPD多专家融合（Agent/Reasoning/Interaction三组专家）架构。评测中SWE-bench Pro获59.5，SWE-bench Multilingual获77.3。预览版已通过OpenRouter和longcat.ai开放，月调用量跻身OpenRouter全球前三。 🔗 阅读原文：https://mp.weixin.qq.com/s/9XFcx3fmFcmbry5bHMJsow</p>
-      <div class="tags"><span>strong:agent</span><span>strong:大模型</span><span>weak:评测</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-06-30T16:54:26Z</span>
-        <strong>Score 4</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmr0wwa6g0085sl40xkkzeruy" target="_blank" rel="noreferrer">用 shot-scraper video 让 AI 智能体录制工作演示视频</a></h3>
-      <p class='summary'>shot-scraper 1.10 新增 shot-scraper video 命令，支持通过 storyboard.yml 文件定义操作步骤，并利用 Playwright 录制浏览器视频。演示视频展示了 Datasette 中从粘贴的 CSV/TSV/JSON 数据创建新表的功能。该功能依赖 Playwright 1.61.0 新增的 screencast 机制，解决了此前视频开头白帧、宽度固定 800px 等问题。开发者 Simon Willison 强调，将 --help 输出设计得足够详细，可使编码 Agent 直接利用该命令生成演示视频。 🔗 阅读原文：https://simonwillison.net/2026/Jun/30/shot-scraper-video</p>
-      <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-01T15:33:21Z</span>
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-07-01T19:00:21Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmr29kohb061isl8z1yt6b0hh" target="_blank" rel="noreferrer">xAI 推出 Voice Agent Builder 语音智能体平台</a></h3>
-      <p class='summary'>介绍 Voice Agent Builder：一个无代码平台，可使用 Grok Voice 创建类人语音智能体。 今日可用，$0.05 / 分钟。 http：//x.ai/voice 🔗 阅读原文：https://x.com/xai/status/2072342803787702422</p>
-      <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot" target="_blank" rel="noreferrer">Kimi K2.7 Code is generally available in GitHub Copilot</a></h3>
+      <p class='summary'>Kimi K2.7 Code, an open-weight model, is now generally available in GitHub Copilot. This is the first open-weight model offered as a selectable option in the Copilot model picker, giving… The post Kimi K2.7 Code is generally available in GitHub Copilot appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
     
 
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-01T00:11:00Z</span>
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-07-01T18:39:17Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmr1bxokg01eoslnlem278yfq" target="_blank" rel="noreferrer">Anthropic在Claude Code中植入隐写术代码识别中国用户</a></h3>
-      <p class='summary'>Anthropic在Claude Code中植入隐写术：读取本地时区（Asia/Shanghai或Asia/Urumqi）和ANTHROPIC_BASE_URL环境变量，与一份经base64+XOR（密钥91）加密的147个域名列表（含美团、字节跳动、月之暗面等）比对，识别中国用户。识别后，在请求发送前将系统提示词中日期字符串的单引号（U+0027）替换为其他Unicode字符，连字符改为斜杠，作为2-3比特分类标记传回服务器。该隐蔽行为被社区逆向发现后引发争议，被认为破坏用户信任。 🔗 阅读原文：https://mp.weixin.qq.com/s/yLb4T2UC16ebKHApdBbgWw</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://github.blog/changelog/2026-07-01-copilot-vision-is-generally-available" target="_blank" rel="noreferrer">Copilot vision is generally available</a></h3>
+      <p class='summary'>Copilot vision is now generally available. You can attach images and PDFs directly to your chat prompts so Copilot can reason about what it sees alongside your code. Supported file… The post Copilot vision is generally available appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
     </div>
     </section>
@@ -253,15 +201,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1028</td><td>0</td><td>618ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>306ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>234</td><td>0</td><td>106ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>410ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>209ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>814</td><td>2</td><td>323ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>117ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>3</td><td>32ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>10</td><td>1129ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1028</td><td>0</td><td>922ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>173ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>234</td><td>0</td><td>114ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>257ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>244ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>814</td><td>0</td><td>267ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>155ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>7</td><td>30ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>4</td><td>1679ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
