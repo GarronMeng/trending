@@ -43,27 +43,53 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>15</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>19</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>0</b><span>官方源条目</span></div>
-        <div class="stat"><b>9</b><span>聚合源条目</span></div>
+        <div class="stat"><b>14</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-02T16:04:56.699495Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-03T02:13:09.931618Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-07-01T20:45:36Z</span>
+        <span>2026-07-02T18:37:56Z</span>
         <strong>Score 9</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmr2jtg2z08nvsl8zt9pagjoe" target="_blank" rel="noreferrer">Claude Code v2.1.198 发布</a></h3>
-      <p class='summary'>Claude Code v2.1.198 更新。Claude in Chrome 现已全面可用。为 claude agents 新增后台智能体通知（agent_needs_input / agent_completed）。新增 /dataviz 技能，提供图表与仪表盘设计指导及配色验证器。Gateway 增加 AWS 上的 Claude Platform 作为上游提供商。后台智能体在 worktree 中完成代码后自动提交、推送并创建草稿 PR。内置 Explore 智能体现继承主会话模型（上限 opus）。修复网络短暂断开导致响应中断、后台任务卡在&quot;Running&quot;状态、智能体团队队友因 API 错误失败等问题。 🔗 阅读原文：https://github.com/anthropics/claude-code</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:agent</span><span>strong:agents</span><span>weak:api</span></div>
+      <h3><a href="https://aihot.virxact.com/items/cmr3uklx8008dslbrcmev44qb" target="_blank" rel="noreferrer">Agent辅助的SGLang开发：初步探索</a></h3>
+      <p class='summary'>SGLang团队将LLM服务、分布式运行时、GPU内核、扩散管道等工作流编码为可执行的SKILL.md文件、脚本、基准合约和审查循环。现有技能包括：SGLang .claude/skills（CUDA调试、内核集成、性能分析等）、SGLang diffusion .claude/skills（扩散模型添加与调优）、BBuf/AI-Infra-Auto-Driven-SKILLS（跨框架SOTA循环）、KDA（MLSys 2026 FlashInfer内核竞赛获胜方案）以及BBuf/KDA-Pilot（已合并三个SGLang集成PR）。Profile证据是性能工作的核心，长期优化转向Loop Engineering--SGLang SOTA Performance Loop将追求SOTA分解为公平基准测试、差距决</p>
+      <div class="tags"><span>strong:claude</span><span>strong:codex</span><span>strong:agent</span><span>strong:llm</span><span>weak:开发者</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-07-02T23:07:06Z</span>
+        <strong>Score 7</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-07-02-upcoming-deprecation-of-gemini-2-5-pro-and-gemini-3-flash" target="_blank" rel="noreferrer">Upcoming deprecation of Gemini 2.5 Pro and Gemini 3 Flash</a></h3>
+      <p class='summary'>We will deprecate Gemini 2.5 Pro and Gemini 3 Flash across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on July 31st,… The post Upcoming deprecation of Gemini 2.5 Pro and Gemini 3 Flash appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>strong:gemini</span><span>strong:agent</span><span>weak:copilot</span><span>source:copilot</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-07-02T18:05:05Z</span>
+        <strong>Score 7</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview" target="_blank" rel="noreferrer">Copilot agent session streaming is now in public preview</a></h3>
+      <p class='summary'>GitHub Enterprise Cloud customers with enterprise managed users can now access GitHub Copilot agent session data across all Copilot clients, including: Cloud agents operating on github.com and data resident deployments… The post Copilot agent session streaming is now in public preview appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
     
 
@@ -95,14 +121,40 @@
 
     <article class="card">
       <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-07-02T23:19:06Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-07-02-improved-accuracy-and-coverage-in-copilot-usage-metrics-reports" target="_blank" rel="noreferrer">Improved accuracy and coverage in Copilot usage metrics reports</a></h3>
+      <p class='summary'>We’ve made three improvements to the Copilot usage metrics API that make its reports more complete and accurate: GitHub Copilot CLI now reports suggested lines of code, users seen only… The post Improved accuracy and coverage in Copilot usage metrics reports appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:api</span><span>weak:copilot</span><span>weak:API</span><span>source:copilot</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-07-02T00:56:56Z</span>
-        <strong>Score 7</strong>
+        <span>2026-07-02T20:51:39Z</span>
+        <strong>Score 6</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmr2t1n9h0b18sl8zqxn9r5nu" target="_blank" rel="noreferrer">Emil Kowalski 发布设计工程师 Skills，让 AI 编码工具具备 UI 动画审美</a></h3>
-      <p class='summary'>Emil Kowalski 将多年 UI/动画原则沉淀为三个 Skill，使 Codex、Claude Code、Cursor 等 Coding Agents 具备资深设计工程师的审美判断。核心规则：动画必须有理由；每天 100+ 次的高频操作禁用动画；UI 动画控制在 300ms 内；只动画 transform 和 opacity；入口从 scale（0.95）+opacity：0 开始；尊重 prefers-reduced-motion（仅移除位移动画）。review-animations 以严格标准审查动画代码，输出 Before/After/Why 表格。animation-vocabulary 将模糊描述（如&quot;弹一下的效果&quot;）转为专业动效术语。 🔗 阅读原文：https://x.com/shao__m</p>
-      <div class="tags"><span>strong:claude</span><span>strong:codex</span><span>strong:agent</span><span>strong:agents</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://aihot.virxact.com/items/cmr3zye9z00qfslw2sg1izmks" target="_blank" rel="noreferrer">阿里巴巴发布 Page Agent：开源 JavaScript 库实现网页 DOM 自然语言操控</a></h3>
+      <p class='summary'>阿里巴巴发布 Page Agent，一个开源的 JavaScript 客户端库，嵌入网页后可通过自然语言指令直接操作 DOM 元素。与 Playwright、Puppeteer 等外部浏览器自动化工具不同，Page Agent 不依赖截图或多模态模型，而是将实时 DOM 脱水压缩为 FlatDomTree 文本映射，让纯文本模型精准执行点击、表单填写等操作。它继承用户 cookies 和会话，无需独立后端，并支持任意 OpenAI 兼容端点的模型（示例使用 `qwen3.5-plus`）。项目采用 MIT 许可证，适合在自有应用内构建 AI 副驾、智能表单填充或无障碍控制等场景，但限于单页面范围，风险操作仍需服务端验证。 🔗 阅读原文：https://www.marktechpost.com/2026/07/0</p>
+      <div class="tags"><span>strong:openai</span><span>strong:agent</span><span>strong:多模态</span><span>weak:自动化</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-07-02T20:25:32Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-07-02-copilot-cli-no-longer-needs-a-personal-access-token-in-github-actions" target="_blank" rel="noreferrer">Copilot CLI no longer needs a personal access token in GitHub Actions</a></h3>
+      <p class='summary'>You can now run GitHub Copilot CLI in GitHub Actions using the built-in GITHUB_TOKEN. This means that you no longer need to create and store a personal access token (PAT),… The post Copilot CLI no longer needs a personal access token in GitHub Actions appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:copilot</span><span>source:copilot</span><span>source:actions</span></div>
     </article>
     
 
@@ -121,14 +173,14 @@
 
     <article class="card">
       <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-07-01T18:33:24Z</span>
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-02T23:38:10Z</span>
         <strong>Score 5</strong>
       </div>
-      <h3><a href="https://github.blog/changelog/2026-07-01-set-ai-credit-session-limits-in-copilot-cli-and-sdk" target="_blank" rel="noreferrer">Set AI credit session limits in Copilot CLI and SDK</a></h3>
-      <p class='summary'>You can now set AI credit session limits in Copilot CLI and the GitHub Copilot SDK to cap the amount an agent spends in a session. This is especially useful… The post Set AI credit session limits in Copilot CLI and SDK appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>strong:agent</span><span>weak:copilot</span><span>source:copilot</span></div>
+      <h3><a href="https://aihot.virxact.com/items/cmr46bjmz00x0sl3g5rj6sp46" target="_blank" rel="noreferrer">扎克伯格称AI智能体开发速度未如预期</a></h3>
+      <p class='summary'>Meta CEO 扎克伯格在本周内部全体会议上表示，AI 智能体的开发速度并未像高管们此前预期的那样加速。今年早些时候Meta裁减约8000名员工（约占10%），并将另外7000人调至多个AI团队，包括Agent Transformation小组。扎克伯格称裁员不够&quot;干净&quot;，原因是高管担心公司无法足够快地适应技术行业变化。他还指出以AI为中心的新公司结构所预期的好处尚未实现，但相信未来三到六个月将开始看到AI投资的改善。路透社报道，Meta今年预计在AI基础设施上投入高达1450亿美元。 🔗 阅读原文：https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-</p>
+      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -160,14 +212,53 @@
 
     <article class="card">
       <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-07-01T22:27:16Z</span>
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-02T18:03:22Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr3tce0201rwsl7lm25hjxbo" target="_blank" rel="noreferrer">Claude Enterprise 新增用量与成本分析及支出管控功能</a></h3>
+      <p class='summary'>Claude Enterprise 推出更丰富的管理分析工具和成本控制功能。仪表板现可按群组和用户分析用量与成本，支持按 SCIM 群组筛选，展示制品创建、文件编辑、技能和连接器对应的成本。Claude Code 管理控制台新增&quot;使用量&quot;和&quot;价值&quot;选项卡，分别显示活跃开发者、会话次数、常用命令，以及生产力提升估算、每次提交成本和年度价值估算。分析聊天支持自然语言查询并返回可导出图表。Analytics API 可将数据接入 Datadog Cloud Cost Management 和 CloudZero。管理员可设置模型默认和权限控制，并配置组织级支出限额的 75%、90% 告警通知；用户在 75% 和 95% 时收到应用内提醒。Admin API 支持自动审批额度增加、标记接近限额用户及快速变化的用量。 🔗</p>
+      <div class="tags"><span>strong:claude</span><span>weak:api</span><span>weak:开发者</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-03T00:16:00Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://github.blog/changelog/2026-07-01-enterprises-can-default-to-auto-model-selection" target="_blank" rel="noreferrer">Enterprises can default to auto model selection</a></h3>
-      <p class='summary'>Enterprise administrators can now set model to auto in the enterprise managed-settings.json to make Copilot auto model selection the default for new conversations. Add auto to .github-private/.github/copilot/managed-settings.json in your source… The post Enterprises can default to auto model selection appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
+      <h3><a href="https://aihot.virxact.com/items/cmr4768yq013qsl3g29wasjnp" target="_blank" rel="noreferrer">Claude Fable 5 自主优化 AIHOT 网站 SEO/GEO 全记录</a></h3>
+      <p class='summary'>作者用 Claude Fable 5 优化 AIHOT 网站的 SEO 与 GEO。模型自主启动 22 个 Agent 调研 40 分钟，发现豆包 App 每天六千多次访问未被统计等异常。规划境外加速时，否定 Claude Opus 4.8 的 Cloudflare 方案（无法国内直连/国外分流，且 2025 年起默认拦截 AI 爬虫），改用火山引擎 CDN。因需白名单，模型自行找到工单入口提交专业工单，22 分钟开通；发现工程师漏答回源 IP 网段问题，礼貌追问并补充备选方案；发现官方方案有安全漏洞，自行加暗号验证。23：30 切换域名解析，10 分钟后 616 个海外请求走新线路。最终生成运维文档，提醒边缘证书 10 月 2 日到期并附续期步骤。 🔗 阅读原文：https://mp.weixin.qq.co</p>
+      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-02T19:18:29Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr3wzycy008tslnxrw3opnfn" target="_blank" rel="noreferrer">Microsoft 成立&quot;Frontier Company&quot;，斥资 25 亿美元派驻 6000 名 AI 工程师到企业客户现场</a></h3>
+      <p class='summary'>Microsoft 新设业务部门&quot;Frontier Company&quot;，拨款 25 亿美元，将 6000 名行业与工程专家派驻企业客户现场，&quot;共同设计、共同创新、部署并持续改进 AI 系统&quot;。该部门由 Rodrigo Kede Lima 领导，旨在超越&quot;前部署工程&quot;模式，成为&quot;最大、以结果为导向的工程组织&quot;。Microsoft 将自己定位为 OpenAI 和 Anthropic 的&quot;平台中立&quot;替代方案，后两者也已设立专门部署公司。Microsoft 将借助埃森哲、凯捷、安永等系统集成商扩大覆盖范围。 🔗 阅读原文：https://the-decoder.com/microsoft-launches-2-5-billion-frontier-company-to-embed-6000-ai-engineers-in</p>
+      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-02T16:24:50Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr3pz3hx00w5sl7lk3qk71x5" target="_blank" rel="noreferrer">Anthropic与五角大楼控权之争：Claude军事用途护栏分歧</a></h3>
+      <p class='summary'>WSJ法庭文件显示，Anthropic CEO Dario Amodei与五角大楼副部长Emil Michael数月邮件往来，核心分歧在于Claude的军事用途护栏。Anthropic要求禁止全自主武器及某些监控用途，五角大楼则希望Claude可用于所有合法国家安全场景。Michael称若分歧太大不愿&quot;强行推动&quot;。随后五角大楼将Anthropic列为供应链风险，阻止合作伙伴在国防部项目中使用其模型。法官暂停部分措施，政府正在上诉。Michael称原先采用Anthropic的操作中已有三分之二切换至其他AI工具。 🔗 阅读原文：https://x.com/kimmonismus/status/2072718147279335507</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -175,51 +266,12 @@
       <div class="meta">
         <span>GitHub Changelog</span>
         <span>official_rss</span>
-        <span>2026-07-01T21:30:20Z</span>
-        <strong>Score 3</strong>
+        <span>2026-07-02T16:00:51Z</span>
+        <strong>Score 2</strong>
       </div>
-      <h3><a href="https://github.blog/changelog/2026-07-01-github-models-is-being-fully-retired-on-july-30-2026" target="_blank" rel="noreferrer">GitHub Models is being fully retired on July 30, 2026</a></h3>
-      <p class='summary'>In June, we announced that we are retiring GitHub Models and closed it to new customers. We’re now sharing the timeline for the next step: GitHub Models will be fully… The post GitHub Models is being fully retired on July 30, 2026 appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:github models</span><span>source:github models</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-07-01T20:32:52Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-07-01-new-c-language-server-config-skill-for-copilot-cli" target="_blank" rel="noreferrer">New C++ language server config skill for Copilot CLI</a></h3>
-      <p class='summary'>The Microsoft C++ Language Server is now available as a plugin on the Copilot Plugins marketplace. It includes a new built-in setup skill that helps automate project setup, making it… The post New C++ language server config skill for Copilot CLI appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-07-01T19:00:21Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot" target="_blank" rel="noreferrer">Kimi K2.7 Code is generally available in GitHub Copilot</a></h3>
-      <p class='summary'>Kimi K2.7 Code, an open-weight model, is now generally available in GitHub Copilot. This is the first open-weight model offered as a selectable option in the Copilot model picker, giving… The post Kimi K2.7 Code is generally available in GitHub Copilot appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-07-01T18:39:17Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-07-01-copilot-vision-is-generally-available" target="_blank" rel="noreferrer">Copilot vision is generally available</a></h3>
-      <p class='summary'>Copilot vision is now generally available. You can attach images and PDFs directly to your chat prompts so Copilot can reason about what it sees alongside your code. Supported file… The post Copilot vision is generally available appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
+      <h3><a href="https://github.blog/changelog/2026-07-02-cost-centers-now-support-included-usage-caps" target="_blank" rel="noreferrer">Cost centers now support AI credit pools</a></h3>
+      <p class='summary'>You can now cap how much of your enterprise’s monthly included AI credits a cost center can use. This is available through the REST API today. Management in the cost… The post Cost centers now support AI credit pools appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:api</span><span>weak:API</span></div>
     </article>
     
 
@@ -253,15 +305,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1028</td><td>0</td><td>608ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>326ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>234</td><td>0</td><td>110ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>398ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>602ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>814</td><td>0</td><td>335ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>277ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>6</td><td>37ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>9</td><td>1092ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1028</td><td>0</td><td>794ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>266ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>235</td><td>0</td><td>170ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>736ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>210ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>814</td><td>0</td><td>307ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>438ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>5</td><td>35ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>14</td><td>790ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
