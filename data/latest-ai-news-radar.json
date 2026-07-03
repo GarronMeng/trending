@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-03T09:41:48.547510Z",
+  "generated_at": "2026-07-03T11:07:46.048785Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -22,15 +22,23 @@
         ],
         [
           "claude",
-          8
+          7
         ],
         [
           "agent",
-          6
+          5
         ],
         [
           "智能体",
           4
+        ],
+        [
+          "开发者",
+          3
+        ],
+        [
+          "自动化",
+          3
         ],
         [
           "llm",
@@ -41,15 +49,7 @@
           2
         ],
         [
-          "开发者",
-          2
-        ],
-        [
           "agents",
-          2
-        ],
-        [
-          "自动化",
           2
         ],
         [
@@ -61,7 +61,7 @@
           2
         ],
         [
-          "工作流",
+          "mcp",
           1
         ]
       ]
@@ -108,6 +108,30 @@
     }
   },
   "items": [
+    {
+      "id": "d0f18cd68a1a94c306bf5dce59c50a3b77aefb55",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "面向 Web 开发者的 Safari MCP 服务器",
+      "url": "https://aihot.virxact.com/items/cmr4s179804l5sll5u47j7031",
+      "published_at": "2026-07-03T09:59:42Z",
+      "summary": "Safari Technology Preview 247 推出 Safari MCP 服务器，基于 Model Context Protocol，允许任何 MCP 兼容客户端连接 Safari 浏览器窗口。智能体可获取 DOM、网络请求、截图、控制台输出等信息，自主完成调试、性能分析、可访问性检查等任务。内置 `browser_console_messages`、`screenshot`、`evaluate_javascript`、`list_network_requests` 等工具。开发者安装后启用\"远程自动化与外部智能体\"选项，即可通过命令接入，减少窗口切换。 🔗 阅读原文：https://webkit.org/blog/18136/introducing-the-safari-mcp-server-f",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:mcp",
+        "strong:model context protocol",
+        "strong:智能体",
+        "weak:eval",
+        "weak:developer",
+        "weak:开发者",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "076e152ddcc06de97e5b1171e622e56ccfb2aa23",
       "source_id": "aihot",
@@ -315,26 +339,6 @@
       "is_ai_related": true
     },
     {
-      "id": "865b41ce848f56f37c7403b33817cd9c4e602397",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Senior SWE-Bench：评估AI智能体作为高级工程师的基准测试",
-      "url": "https://aihot.virxact.com/items/cmr3epwmy008bsllx0y68akps",
-      "published_at": "2026-07-02T11:04:07Z",
-      "summary": "Senior SWE-Bench是一个开源基准测试，用于评估AI智能体完成高级软件工程师级别任务的能力。任务分功能开发与Bug修复两类：功能任务指令类似自然语言消息，采用验证智能体基于专家配方自动生成行为测试；Bug任务要求根据日志、profiling等运行时信息深入调查。排行榜显示，Claude Opus 4.8搭配Mini-SWE-Agent（max effort）通过率24.0%，Claude Sonnet 5为19.4%，GPT-5.5为16.0%，最强前沿模型在超75%任务中未能达到高级工程师级别的正确性与品味。每个功能任务平均涉及11个文件，最强智能体也需数百步完成；中位指令长度仅为SWE-Bench Pro的31%。任务来源于从库到多服务应用的仓库PR，由拥有数百次提交的工程师编写。 🔗 阅读原文",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "ef10db87629945d74c3400fcba9134c35dd54bd3",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -460,8 +464,8 @@
       "fetched_count": 1028,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 639,
-      "checked_at": "2026-07-03T09:41:45.736569Z"
+      "latency_ms": 781,
+      "checked_at": "2026-07-03T11:07:39.495106Z"
     },
     {
       "source_id": "openai-skills",
@@ -472,8 +476,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 267,
-      "checked_at": "2026-07-03T09:41:46.004126Z"
+      "latency_ms": 370,
+      "checked_at": "2026-07-03T11:07:39.865902Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -484,8 +488,8 @@
       "fetched_count": 235,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 226,
-      "checked_at": "2026-07-03T09:41:46.233934Z"
+      "latency_ms": 342,
+      "checked_at": "2026-07-03T11:07:40.211454Z"
     },
     {
       "source_id": "google-deepmind",
@@ -496,8 +500,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 432,
-      "checked_at": "2026-07-03T09:41:46.667619Z"
+      "latency_ms": 383,
+      "checked_at": "2026-07-03T11:07:40.596838Z"
     },
     {
       "source_id": "google-ai",
@@ -508,8 +512,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 314,
-      "checked_at": "2026-07-03T09:41:46.982016Z"
+      "latency_ms": 257,
+      "checked_at": "2026-07-03T11:07:40.854970Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -520,8 +524,8 @@
       "fetched_count": 814,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 481,
-      "checked_at": "2026-07-03T09:41:47.476643Z"
+      "latency_ms": 357,
+      "checked_at": "2026-07-03T11:07:41.224728Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -532,8 +536,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-07-03T09:41:47.730877Z"
+      "latency_ms": 195,
+      "checked_at": "2026-07-03T11:07:41.420774Z"
     },
     {
       "source_id": "github-changelog",
@@ -544,8 +548,8 @@
       "fetched_count": 10,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 60,
-      "checked_at": "2026-07-03T09:41:47.791799Z"
+      "latency_ms": 47,
+      "checked_at": "2026-07-03T11:07:41.468707Z"
     },
     {
       "source_id": "aihot",
@@ -556,8 +560,8 @@
       "fetched_count": 50,
       "kept_count": 12,
       "error": null,
-      "latency_ms": 746,
-      "checked_at": "2026-07-03T09:41:48.539535Z"
+      "latency_ms": 4570,
+      "checked_at": "2026-07-03T11:07:46.040746Z"
     }
   ],
   "control_notes": {
