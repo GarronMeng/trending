@@ -1,111 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-03T15:51:50.184817Z",
+  "generated_at": "2026-07-04T02:11:37.295681Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 9,
-  "item_count": 17,
+  "healthy_source_count": 8,
+  "item_count": 1,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
-      "count": 11,
-      "top_sources": [
-        [
-          "AI Hot",
-          11
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          11
-        ],
-        [
-          "agent",
-          5
-        ],
-        [
-          "claude",
-          5
-        ],
-        [
-          "openai",
-          3
-        ],
-        [
-          "anthropic",
-          3
-        ],
-        [
-          "api",
-          3
-        ],
-        [
-          "API",
-          3
-        ],
-        [
-          "智能体",
-          3
-        ],
-        [
-          "开发者",
-          3
-        ],
-        [
-          "自动化",
-          2
-        ],
-        [
-          "llm",
-          2
-        ],
-        [
-          "gemini",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 5,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          5
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          8
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "actions",
-          1
-        ]
-      ]
-    },
     "official": {
       "group": "official",
       "count": 1,
@@ -129,116 +29,6 @@
   },
   "items": [
     {
-      "id": "d579f271ed6d11034f9a5c4d9803c3114e104058",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "全球首例 AI Agent 勒索攻击曝光，从漏洞利用到数据库加密全程自主完成",
-      "url": "https://aihot.virxact.com/items/cmr4w2clt05kasll56e54tanx",
-      "published_at": "2026-07-03T11:57:00Z",
-      "summary": "安全厂商 Sysdig 首次记录到 AI Agent\"JADEPUFFER\"自动完成的勒索攻击。攻击利用暴露的 Langflow 服务漏洞 CVE-2025-3248 远程执行 Python 代码，随后自主收集 OpenAI、Anthropic、DeepSeek、Gemini 等 API 密钥及阿里云、腾讯云、华为云、AWS、Google Cloud、Azure 等云平台凭证，通过 MinIO 默认密码访问对象存储并创建每 30 分钟连接的计划任务。横向移动到 MySQL 和 Nacos 服务器，利用数据库 Root 账号及 Nacos 漏洞 CVE-2021-29441 获取管理权限，加密全部 1342 条配置数据，留下包含比特币钱包地址和 Proton Mail 的勒索信息。AI 在首次操作失败后 31 秒",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:gemini",
-        "strong:agent",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d0f18cd68a1a94c306bf5dce59c50a3b77aefb55",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "面向 Web 开发者的 Safari MCP 服务器",
-      "url": "https://aihot.virxact.com/items/cmr4s179804l5sll5u47j7031",
-      "published_at": "2026-07-03T09:59:42Z",
-      "summary": "Safari Technology Preview 247 推出 Safari MCP 服务器，基于 Model Context Protocol，允许任何 MCP 兼容客户端连接 Safari 浏览器窗口。智能体可获取 DOM、网络请求、截图、控制台输出等信息，自主完成调试、性能分析、可访问性检查等任务。内置 `browser_console_messages`、`screenshot`、`evaluate_javascript`、`list_network_requests` 等工具。开发者安装后启用\"远程自动化与外部智能体\"选项，即可通过命令接入，减少窗口切换。 🔗 阅读原文：https://webkit.org/blog/18136/introducing-the-safari-mcp-server-f",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:mcp",
-        "strong:model context protocol",
-        "strong:智能体",
-        "weak:eval",
-        "weak:developer",
-        "weak:开发者",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "076e152ddcc06de97e5b1171e622e56ccfb2aa23",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Agent辅助的SGLang开发：初步探索",
-      "url": "https://aihot.virxact.com/items/cmr3uklx8008dslbrcmev44qb",
-      "published_at": "2026-07-02T18:37:56Z",
-      "summary": "SGLang团队将LLM服务、分布式运行时、GPU内核、扩散管道等工作流编码为可执行的SKILL.md文件、脚本、基准合约和审查循环。现有技能包括：SGLang .claude/skills（CUDA调试、内核集成、性能分析等）、SGLang diffusion .claude/skills（扩散模型添加与调优）、BBuf/AI-Infra-Auto-Driven-SKILLS（跨框架SOTA循环）、KDA（MLSys 2026 FlashInfer内核竞赛获胜方案）以及BBuf/KDA-Pilot（已合并三个SGLang集成PR）。Profile证据是性能工作的核心，长期优化转向Loop Engineering--SGLang SOTA Performance Loop将追求SOTA分解为公平基准测试、差距决",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:codex",
-        "strong:agent",
-        "strong:llm",
-        "weak:开发者",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e9602af378c7a84f166b49b002157d14825b39a1",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Upcoming deprecation of Gemini 2.5 Pro and Gemini 3 Flash",
-      "url": "https://github.blog/changelog/2026-07-02-upcoming-deprecation-of-gemini-2-5-pro-and-gemini-3-flash",
-      "published_at": "2026-07-02T23:07:06Z",
-      "summary": "We will deprecate Gemini 2.5 Pro and Gemini 3 Flash across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on July 31st,… The post Upcoming deprecation of Gemini 2.5 Pro and Gemini 3 Flash appeared first on The GitHub Blog .",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "234bda41e1bbde131a99687030b6cec4699c957a",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot agent session streaming is now in public preview",
-      "url": "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview",
-      "published_at": "2026-07-02T18:05:05Z",
-      "summary": "GitHub Enterprise Cloud customers with enterprise managed users can now access GitHub Copilot agent session data across all Copilot clients, including: Cloud agents operating on github.com and data resident deployments… The post Copilot agent session streaming is now in public preview appeared first on The GitHub Blog .",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "195266b38635573c1dae650e128187ae23a54862",
       "source_id": "google-deepmind",
       "source_name": "Google DeepMind",
@@ -255,221 +45,6 @@
         "source_prior:official_ai"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "352dd131cff894061a7e698a1f1f071440d2deb3",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Improved accuracy and coverage in Copilot usage metrics reports",
-      "url": "https://github.blog/changelog/2026-07-02-improved-accuracy-and-coverage-in-copilot-usage-metrics-reports",
-      "published_at": "2026-07-02T23:19:06Z",
-      "summary": "We’ve made three improvements to the Copilot usage metrics API that make its reports more complete and accurate: GitHub Copilot CLI now reports suggested lines of code, users seen only… The post Improved accuracy and coverage in Copilot usage metrics reports appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:copilot",
-        "weak:API",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0dcf88aa25969f156fb39868b56e6158104fa1e8",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "阿里巴巴发布 Page Agent：开源 JavaScript 库实现网页 DOM 自然语言操控",
-      "url": "https://aihot.virxact.com/items/cmr3zye9z00qfslw2sg1izmks",
-      "published_at": "2026-07-02T20:51:39Z",
-      "summary": "阿里巴巴发布 Page Agent，一个开源的 JavaScript 客户端库，嵌入网页后可通过自然语言指令直接操作 DOM 元素。与 Playwright、Puppeteer 等外部浏览器自动化工具不同，Page Agent 不依赖截图或多模态模型，而是将实时 DOM 脱水压缩为 FlatDomTree 文本映射，让纯文本模型精准执行点击、表单填写等操作。它继承用户 cookies 和会话，无需独立后端，并支持任意 OpenAI 兼容端点的模型（示例使用 `qwen3.5-plus`）。项目采用 MIT 许可证，适合在自有应用内构建 AI 副驾、智能表单填充或无障碍控制等场景，但限于单页面范围，风险操作仍需服务端验证。 🔗 阅读原文：https://www.marktechpost.com/2026/07/0",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:agent",
-        "strong:多模态",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c93698119d4a2da26d2b3cd7fc92414aa61903de",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot CLI no longer needs a personal access token in GitHub Actions",
-      "url": "https://github.blog/changelog/2026-07-02-copilot-cli-no-longer-needs-a-personal-access-token-in-github-actions",
-      "published_at": "2026-07-02T20:25:32Z",
-      "summary": "You can now run GitHub Copilot CLI in GitHub Actions using the built-in GITHUB_TOKEN. This means that you no longer need to create and store a personal access token (PAT),… The post Copilot CLI no longer needs a personal access token in GitHub Actions appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot",
-        "source:actions"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0055eb06715c6a241d0a78c8436a3279f8988b48",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "扎克伯格称AI智能体开发速度未如预期",
-      "url": "https://aihot.virxact.com/items/cmr46bjmz00x0sl3g5rj6sp46",
-      "published_at": "2026-07-02T23:38:10Z",
-      "summary": "Meta CEO 扎克伯格在本周内部全体会议上表示，AI 智能体的开发速度并未像高管们此前预期的那样加速。今年早些时候Meta裁减约8000名员工（约占10%），并将另外7000人调至多个AI团队，包括Agent Transformation小组。扎克伯格称裁员不够\"干净\"，原因是高管担心公司无法足够快地适应技术行业变化。他还指出以AI为中心的新公司结构所预期的好处尚未实现，但相信未来三到六个月将开始看到AI投资的改善。路透社报道，Meta今年预计在AI基础设施上投入高达1450亿美元。 🔗 阅读原文：https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ef10db87629945d74c3400fcba9134c35dd54bd3",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Enterprise 新增用量与成本分析及支出管控功能",
-      "url": "https://aihot.virxact.com/items/cmr3tce0201rwsl7lm25hjxbo",
-      "published_at": "2026-07-02T18:03:22Z",
-      "summary": "Claude Enterprise 推出更丰富的管理分析工具和成本控制功能。仪表板现可按群组和用户分析用量与成本，支持按 SCIM 群组筛选，展示制品创建、文件编辑、技能和连接器对应的成本。Claude Code 管理控制台新增\"使用量\"和\"价值\"选项卡，分别显示活跃开发者、会话次数、常用命令，以及生产力提升估算、每次提交成本和年度价值估算。分析聊天支持自然语言查询并返回可导出图表。Analytics API 可将数据接入 Datadog Cloud Cost Management 和 CloudZero。管理员可设置模型默认和权限控制，并配置组织级支出限额的 75%、90% 告警通知；用户在 75% 和 95% 时收到应用内提醒。Admin API 支持自动审批额度增加、标记接近限额用户及快速变化的用量。 🔗",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:claude",
-        "weak:api",
-        "weak:开发者",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "332aa54bf683aa162b5c0d37460a7d4ac82fb001",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Leanstral 1.5：人人可用的证明丰富性",
-      "url": "https://aihot.virxact.com/items/cmr52xv9507bssll51ft3loac",
-      "published_at": "2026-07-03T15:19:52Z",
-      "summary": "Mistral AI 今日发布 Leanstral 1.5，一款 Apache-2.0 许可的开源形式化验证模型，119B 总参数仅 6B 活跃。在 miniF2F 上达 100% 饱和，PutnamBench 解决 587/672 题，FATE-H（87%）和 FATE-X（34%）创 SOTA。训练经历 mid-training、SFT 和基于 CISPO 的强化学习。具备智能体式证明能力，在 57 个开源仓库中发现 5 个未知 bug。模型已通过 HuggingFace 和免费 API 开放使用。 🔗 阅读原文：https://mistral.ai/news/leanstral-1-5",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "fa6e269fc4a98af3de4d70940ecc08231342c2f1",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "claude-real-video ─ 让任何大语言模型（LLM）都能观看视频",
-      "url": "https://aihot.virxact.com/items/cmr4hb6x001txsll5jfiiy9u3",
-      "published_at": "2026-07-03T04:56:06Z",
-      "summary": "claude-real-video 是一个开源工具，让大语言模型基于视频画面而非字幕进行理解。它通过场景变化检测提取关键帧、滑动窗口去重并转录音频，生成干净的本地文件夹供模型读取。支持 YouTube 链接或本地文件，依赖 ffmpeg 和 Whisper，通过 pip 安装。全部处理在本地完成，不上传云端。 🔗 阅读原文：https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:llm",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "fb5850bce15811e35c972836c6de1ae3a51029ad",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Fable 5 自主优化 AIHOT 网站 SEO/GEO 全记录",
-      "url": "https://aihot.virxact.com/items/cmr4768yq013qsl3g29wasjnp",
-      "published_at": "2026-07-03T00:16:00Z",
-      "summary": "作者用 Claude Fable 5 优化 AIHOT 网站的 SEO 与 GEO。模型自主启动 22 个 Agent 调研 40 分钟，发现豆包 App 每天六千多次访问未被统计等异常。规划境外加速时，否定 Claude Opus 4.8 的 Cloudflare 方案（无法国内直连/国外分流，且 2025 年起默认拦截 AI 爬虫），改用火山引擎 CDN。因需白名单，模型自行找到工单入口提交专业工单，22 分钟开通；发现工程师漏答回源 IP 网段问题，礼貌追问并补充备选方案；发现官方方案有安全漏洞，自行加暗号验证。23：30 切换域名解析，10 分钟后 616 个海外请求走新线路。最终生成运维文档，提醒边缘证书 10 月 2 日到期并附续期步骤。 🔗 阅读原文：https://mp.weixin.qq.co",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "12e807ad51ec042d92c56f7495c794304e0a2be8",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Microsoft 成立\"Frontier Company\"，斥资 25 亿美元派驻 6000 名 AI 工程师到企业客户现场",
-      "url": "https://aihot.virxact.com/items/cmr3wzycy008tslnxrw3opnfn",
-      "published_at": "2026-07-02T19:18:29Z",
-      "summary": "Microsoft 新设业务部门\"Frontier Company\"，拨款 25 亿美元，将 6000 名行业与工程专家派驻企业客户现场，\"共同设计、共同创新、部署并持续改进 AI 系统\"。该部门由 Rodrigo Kede Lima 领导，旨在超越\"前部署工程\"模式，成为\"最大、以结果为导向的工程组织\"。Microsoft 将自己定位为 OpenAI 和 Anthropic 的\"平台中立\"替代方案，后两者也已设立专门部署公司。Microsoft 将借助埃森哲、凯捷、安永等系统集成商扩大覆盖范围。 🔗 阅读原文：https://the-decoder.com/microsoft-launches-2-5-billion-frontier-company-to-embed-6000-ai-engineers-in",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a7399b822c9018d1a6df7f3993009d45267359a7",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic与五角大楼控权之争：Claude军事用途护栏分歧",
-      "url": "https://aihot.virxact.com/items/cmr3pz3hx00w5sl7lk3qk71x5",
-      "published_at": "2026-07-02T16:24:50Z",
-      "summary": "WSJ法庭文件显示，Anthropic CEO Dario Amodei与五角大楼副部长Emil Michael数月邮件往来，核心分歧在于Claude的军事用途护栏。Anthropic要求禁止全自主武器及某些监控用途，五角大楼则希望Claude可用于所有合法国家安全场景。Michael称若分歧太大不愿\"强行推动\"。随后五角大楼将Anthropic列为供应链风险，阻止合作伙伴在国防部项目中使用其模型。法官暂停部分措施，政府正在上诉。Michael称原先采用Anthropic的操作中已有三分之二切换至其他AI工具。 🔗 阅读原文：https://x.com/kimmonismus/status/2072718147279335507",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c939a36782d9f31bd58d46433206d1e71b179962",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Cost centers now support AI credit pools",
-      "url": "https://github.blog/changelog/2026-07-02-cost-centers-now-support-included-usage-caps",
-      "published_at": "2026-07-02T16:00:51Z",
-      "summary": "You can now cap how much of your enterprise’s monthly included AI credits a cost center can use. This is available through the REST API today. Management in the cost… The post Cost centers now support AI credit pools appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:API"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -482,8 +57,8 @@
       "fetched_count": 1028,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 599,
-      "checked_at": "2026-07-03T15:51:47.906273Z"
+      "latency_ms": 711,
+      "checked_at": "2026-07-04T02:11:35.752261Z"
     },
     {
       "source_id": "openai-skills",
@@ -494,8 +69,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 367,
-      "checked_at": "2026-07-03T15:51:48.273531Z"
+      "latency_ms": 178,
+      "checked_at": "2026-07-04T02:11:35.930999Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -506,8 +81,8 @@
       "fetched_count": 236,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 157,
-      "checked_at": "2026-07-03T15:51:48.433821Z"
+      "latency_ms": 106,
+      "checked_at": "2026-07-04T02:11:36.040672Z"
     },
     {
       "source_id": "google-deepmind",
@@ -518,8 +93,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 461,
-      "checked_at": "2026-07-03T15:51:48.896922Z"
+      "latency_ms": 260,
+      "checked_at": "2026-07-04T02:11:36.302965Z"
     },
     {
       "source_id": "google-ai",
@@ -530,8 +105,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 257,
-      "checked_at": "2026-07-03T15:51:49.154873Z"
+      "latency_ms": 161,
+      "checked_at": "2026-07-04T02:11:36.464891Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -542,8 +117,8 @@
       "fetched_count": 814,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 289,
-      "checked_at": "2026-07-03T15:51:49.454488Z"
+      "latency_ms": 231,
+      "checked_at": "2026-07-04T02:11:36.707880Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -554,8 +129,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 139,
-      "checked_at": "2026-07-03T15:51:49.594083Z"
+      "latency_ms": 105,
+      "checked_at": "2026-07-04T02:11:36.813301Z"
     },
     {
       "source_id": "github-changelog",
@@ -564,22 +139,22 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 5,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 33,
-      "checked_at": "2026-07-03T15:51:49.627616Z"
+      "latency_ms": 28,
+      "checked_at": "2026-07-04T02:11:36.841823Z"
     },
     {
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "enabled": true,
-      "ok": true,
-      "fetched_count": 50,
-      "kept_count": 11,
-      "error": null,
-      "latency_ms": 548,
-      "checked_at": "2026-07-03T15:51:50.177265Z"
+      "ok": false,
+      "fetched_count": 0,
+      "kept_count": 0,
+      "error": "HTTPSConnectionPool(host='aihot.virxact.com', port=443): Max retries exceeded with url: /feed.xml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f225c0f61b0>: Failed to establish a new connection: [Errno 111] Connection refused'))",
+      "latency_ms": 453,
+      "checked_at": "2026-07-04T02:11:37.295527Z"
     }
   ],
   "control_notes": {
