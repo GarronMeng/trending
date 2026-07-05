@@ -1,12 +1,77 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-05T06:57:25.565569Z",
+  "generated_at": "2026-07-05T09:26:51.746871Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 0,
-  "groups": {},
-  "items": [],
+  "item_count": 1,
+  "groups": {
+    "aggregate": {
+      "group": "aggregate",
+      "count": 1,
+      "top_sources": [
+        [
+          "AI Hot",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "openai",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "eval",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "aggregate_noise",
+          1
+        ]
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "8b604e377d25042d5d8c958ddc1296f7a42abbc4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "LlamaIndex 发布 legal-kb：基于 Index v2 的智能体检索参考应用",
+      "url": "https://aihot.virxact.com/items/cmr7ita5g00reslxdrprk52b0",
+      "published_at": "2026-07-05T07:50:19Z",
+      "summary": "LlamaIndex 发布 legal-kb，一个基于 Index v2（LlamaParse Platform）的法律文档知识库参考应用。采用 Retrieval Harness 模式，赋予 Agent 四个文件系统风格工具：retrieve（混合语义检索，支持 rerank 和引用）、findFiles（精确/模糊文件名搜索）、readFile（带偏移量的原始内容读取）和 grepFile（正则匹配并返回字符位置）。Agent 需先调用 findFiles 确定文件清单，再依次使用其他工具定位内容。底层基于 Vercel AI SDK 6 的 ToolLoopAgent，可选用 OpenAI 或 Anthropic 模型，支持用户自带 API key。项目以 TanStack Start web app 形",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:agent",
+        "strong:智能体",
+        "weak:eval",
+        "weak:api",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    }
+  ],
   "source_health": [
     {
       "source_id": "openai-news",
@@ -17,8 +82,8 @@
       "fetched_count": 1028,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 692,
-      "checked_at": "2026-07-05T06:57:16.269483Z"
+      "latency_ms": 717,
+      "checked_at": "2026-07-05T09:26:49.127375Z"
     },
     {
       "source_id": "openai-skills",
@@ -29,8 +94,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 284,
-      "checked_at": "2026-07-05T06:57:16.554058Z"
+      "latency_ms": 167,
+      "checked_at": "2026-07-05T09:26:49.295602Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -41,8 +106,8 @@
       "fetched_count": 236,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 217,
-      "checked_at": "2026-07-05T06:57:16.775004Z"
+      "latency_ms": 114,
+      "checked_at": "2026-07-05T09:26:49.414134Z"
     },
     {
       "source_id": "google-deepmind",
@@ -53,8 +118,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 378,
-      "checked_at": "2026-07-05T06:57:17.154754Z"
+      "latency_ms": 187,
+      "checked_at": "2026-07-05T09:26:49.603501Z"
     },
     {
       "source_id": "google-ai",
@@ -65,8 +130,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 213,
-      "checked_at": "2026-07-05T06:57:17.368740Z"
+      "latency_ms": 223,
+      "checked_at": "2026-07-05T09:26:49.827553Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -77,8 +142,8 @@
       "fetched_count": 814,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 444,
-      "checked_at": "2026-07-05T06:57:17.825708Z"
+      "latency_ms": 258,
+      "checked_at": "2026-07-05T09:26:50.099346Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -89,8 +154,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 142,
-      "checked_at": "2026-07-05T06:57:17.968323Z"
+      "latency_ms": 95,
+      "checked_at": "2026-07-05T09:26:50.194644Z"
     },
     {
       "source_id": "github-changelog",
@@ -101,8 +166,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 37,
-      "checked_at": "2026-07-05T06:57:18.005496Z"
+      "latency_ms": 28,
+      "checked_at": "2026-07-05T09:26:50.222867Z"
     },
     {
       "source_id": "aihot",
@@ -111,10 +176,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 7551,
-      "checked_at": "2026-07-05T06:57:25.557696Z"
+      "latency_ms": 1512,
+      "checked_at": "2026-07-05T09:26:51.736439Z"
     }
   ],
   "control_notes": {
