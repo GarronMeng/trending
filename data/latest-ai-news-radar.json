@@ -1,11 +1,71 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-06T12:23:17.050575Z",
+  "generated_at": "2026-07-06T16:51:01.724007Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 8,
-  "item_count": 1,
+  "healthy_source_count": 9,
+  "item_count": 6,
   "groups": {
+    "aggregate": {
+      "group": "aggregate",
+      "count": 5,
+      "top_sources": [
+        [
+          "AI Hot",
+          5
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          5
+        ],
+        [
+          "api",
+          3
+        ],
+        [
+          "API",
+          3
+        ],
+        [
+          "claude",
+          2
+        ],
+        [
+          "gemini",
+          2
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "工作流",
+          1
+        ],
+        [
+          "copilot",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ],
+        [
+          "openai",
+          1
+        ]
+      ]
+    },
     "official": {
       "group": "official",
       "count": 1,
@@ -29,6 +89,51 @@
   },
   "items": [
     {
+      "id": "5533cb269468da4fe77288f4b0239d53bf4effed",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Synthetic Sciences 发布 OpenScience：面向机器学习、生物学、物理学和化学研究的开源模型无关 AI 工作台",
+      "url": "https://aihot.virxact.com/items/cmr8reau2005fslvpmqjll6du",
+      "published_at": "2026-07-06T05:07:12Z",
+      "summary": "Synthetic Sciences 推出开源（Apache 2.0）AI 科研工作台 OpenScience，覆盖机器学习、生物学、物理学、化学。它运行从文献、假设、代码、实验到分析与撰写的完整科研循环，支持按请求切换任意模型（Claude、GPT、Gemini、GLM、Kimi、DeepSeek 及本地微调模型）。内置 250 余项可编辑技能和 UniProt、PDB、ChEMBL、arXiv 等约 30 个科学数据库作为智能体工具。用户可自带 API 密钥在自己的基础设施上免费运行，安装命令为 `npm install -g @synsci/openscience`，运行 `openscience` 启动浏览器工作台。另提供可选托管层 Atlas。该项目定位为 Anthropic Claude Scien",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:gemini",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "427947bf2eb56c0cbdd6bc5c259916b412cd49bd",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "分享8个Claude Fable 5下线前必跑的超实用Prompt",
+      "url": "https://aihot.virxact.com/items/cmr8j9weh02kxsl0dy08683oe",
+      "published_at": "2026-07-06T01:19:09Z",
+      "summary": "Claude Fable 5即将下线，作者整理了8个经实战验证的提示词：/goal提示语让模型自主跑25次实验（花费165美元，构建速度提高50%、token开销降60%）；工作模式提示语将用户习惯转化为可复用Skills；行动规范提示语约束subagent行为；subagent分配提示语智能分配任务；25个定时循环工作流（含Shadow prompt loop做A/B测试）；自治运行+自动暂停提示语；记忆系统提示语保留错题本；反向面试提示语确保95%把握再执行。这些提示词可迁移至API计费后继续使用，核心是让模型研究用户而非限制能力。 🔗 阅读原文：https://mp.weixin.qq.com/s/ZkMsdeTK6wmgkaER0iPT8w via AI HOT · https://aihot.virx",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "weak:api",
+        "weak:工作流",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "bc019eff6a00804a43ce69e61d7b987c3e9ed69e",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
@@ -45,6 +150,67 @@
         "source_prior:official_ai"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "69090f5bcaa58845a51ab1646c327aaef8a837e6",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "AI颠覆初级程序员就业市场：斯坦福数据揭示年轻开发者就业锐减19%",
+      "url": "https://aihot.virxact.com/items/cmr96dq8400pdslsmu56r8muy",
+      "published_at": "2026-07-06T11:51:40Z",
+      "summary": "斯坦福数字经济实验室基于ADP薪资数据发现，美国22-25岁软件开发人员就业较2022年峰值下降19%，而41-49岁增长14%。入门级岗位招聘减少28%，计算机科学毕业生失业率达6.1%，高于文科专业。核心推手是2024-2025年兴起的智能体编程（Agentic programming）。总程序员就业增长4.4%，但全部来自年长群体。GitHub一年新增3600万账号，80%新用户一周内使用Copilot。编程工作未消失，但\"初级程序员\"头衔正在消亡。 🔗 阅读原文：https://seldo.com/posts/ai-has-torched-the-market-for-junior-programmers via AI HOT · https://aihot.virxact.com/items/cmr9",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "weak:copilot",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "449efec055c9d3fd681ca5f51746c25357a98fd3",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Meta 被曝让外包人员伪装未成年人，诱导竞争对手 AI 聊敏感话题",
+      "url": "https://aihot.virxact.com/items/cmr91yrn100noslmpusn7u7q0",
+      "published_at": "2026-07-06T09:23:28Z",
+      "summary": "据《连线》报道，Meta 通过外包公司 Covalen 开展代号\"Cannes\"的项目，让数百名外包人员伪装成未成年人，向 OpenAI ChatGPT、谷歌 Gemini 及 Character.AI 发送涉及自杀、自残、进食障碍等高风险提示词，以测试竞品聊天机器人的安全拦截机制。项目持续至 4 月 21 日，单轮测试发送超 4.5 万个提示词，外包人员创建 18 岁以下虚假账号并上传药片、刀具等图片。Meta 称这是常规安全测试，且不会用竞品测试数据训练自家模型。 🔗 阅读原文：https://www.ithome.com/0/973/207.htm via AI HOT · https://aihot.virxact.com/items/cmr91yrn100noslmpusn7u7q0",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:gemini",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "98279792835440cd4d222fa81a027bf3984fdb67",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "免费开源API中转站监测网站tokhub.me上线",
+      "url": "https://aihot.virxact.com/items/cmr9apy0u02hxslsmxllfd51t",
+      "published_at": "2026-07-06T13:57:49Z",
+      "summary": "作者与姚老师合作开发中转站评测网站tokhub.me，通过真实充值调用API进行模型监控，区别于单纯速度评测。代码完全开源，支持一键Docker部署，还可作为公司内部Token和网关管理系统，省去繁杂的API Key和Base URL管理。开源代码见Github评论区。 🔗 阅读原文：https://x.com/vista8/status/2074130700421456089 via AI HOT · https://aihot.virxact.com/items/cmr9apy0u02hxslsmxllfd51t",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:API",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -57,8 +223,8 @@
       "fetched_count": 1028,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 761,
-      "checked_at": "2026-07-06T12:22:49.890181Z"
+      "latency_ms": 772,
+      "checked_at": "2026-07-06T16:50:59.092392Z"
     },
     {
       "source_id": "openai-skills",
@@ -69,8 +235,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 297,
-      "checked_at": "2026-07-06T12:22:50.187710Z"
+      "latency_ms": 181,
+      "checked_at": "2026-07-06T16:50:59.273912Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -81,8 +247,8 @@
       "fetched_count": 236,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 147,
-      "checked_at": "2026-07-06T12:22:50.339214Z"
+      "latency_ms": 115,
+      "checked_at": "2026-07-06T16:50:59.393420Z"
     },
     {
       "source_id": "google-deepmind",
@@ -93,8 +259,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 358,
-      "checked_at": "2026-07-06T12:22:50.698925Z"
+      "latency_ms": 275,
+      "checked_at": "2026-07-06T16:50:59.670667Z"
     },
     {
       "source_id": "google-ai",
@@ -105,8 +271,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 209,
-      "checked_at": "2026-07-06T12:22:50.909058Z"
+      "latency_ms": 199,
+      "checked_at": "2026-07-06T16:50:59.870639Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -114,11 +280,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 816,
+      "fetched_count": 817,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 354,
-      "checked_at": "2026-07-06T12:22:51.276010Z"
+      "latency_ms": 289,
+      "checked_at": "2026-07-06T16:51:00.172911Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -129,8 +295,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 146,
-      "checked_at": "2026-07-06T12:22:51.423140Z"
+      "latency_ms": 92,
+      "checked_at": "2026-07-06T16:51:00.265966Z"
     },
     {
       "source_id": "github-changelog",
@@ -141,20 +307,20 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 38,
-      "checked_at": "2026-07-06T12:22:51.461751Z"
+      "latency_ms": 28,
+      "checked_at": "2026-07-06T16:51:00.294158Z"
     },
     {
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "enabled": true,
-      "ok": false,
-      "fetched_count": 0,
-      "kept_count": 0,
-      "error": "HTTPSConnectionPool(host='aihot.virxact.com', port=443): Max retries exceeded with url: /feed.xml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f6188755340>, 'Connection to aihot.virxact.com timed out. (connect timeout=25)'))",
-      "latency_ms": 25588,
-      "checked_at": "2026-07-06T12:23:17.050380Z"
+      "ok": true,
+      "fetched_count": 50,
+      "kept_count": 5,
+      "error": null,
+      "latency_ms": 1420,
+      "checked_at": "2026-07-06T16:51:01.716003Z"
     }
   ],
   "control_notes": {
