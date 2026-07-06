@@ -1,31 +1,35 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-06T08:06:49.034902Z",
+  "generated_at": "2026-07-06T11:11:38.269547Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 4,
+  "item_count": 6,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          4
+          5
         ]
       ],
       "top_keywords": [
+        [
+          "aggregate_noise",
+          5
+        ],
         [
           "claude",
           4
         ],
         [
-          "aggregate_noise",
-          4
+          "anthropic",
+          2
         ],
         [
-          "anthropic",
+          "gemini",
           2
         ],
         [
@@ -41,10 +45,6 @@
           2
         ],
         [
-          "gemini",
-          1
-        ],
-        [
           "智能体",
           1
         ],
@@ -53,11 +53,35 @@
           1
         ],
         [
-          "codex",
+          "openai",
           1
         ],
         [
-          "benchmark",
+          "chatgpt",
+          1
+        ],
+        [
+          "codex",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "Hugging Face Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "eval",
+          1
+        ],
+        [
+          "official_ai",
           1
         ]
       ]
@@ -105,6 +129,44 @@
         "weak:api",
         "weak:工作流",
         "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "bc019eff6a00804a43ce69e61d7b987c3e9ed69e",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "LeRobot v0.6.0: Imagine, Evaluate, Improve",
+      "url": "https://huggingface.co/blog/lerobot-release-v060",
+      "published_at": "2026-07-07T00:00:00Z",
+      "summary": null,
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:eval",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "449efec055c9d3fd681ca5f51746c25357a98fd3",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Meta 被曝让外包人员伪装未成年人，诱导竞争对手 AI 聊敏感话题",
+      "url": "https://aihot.virxact.com/items/cmr91yrn100noslmpusn7u7q0",
+      "published_at": "2026-07-06T09:23:28Z",
+      "summary": "据《连线》报道，Meta 通过外包公司 Covalen 开展代号\"Cannes\"的项目，让数百名外包人员伪装成未成年人，向 OpenAI ChatGPT、谷歌 Gemini 及 Character.AI 发送涉及自杀、自残、进食障碍等高风险提示词，以测试竞品聊天机器人的安全拦截机制。项目持续至 4 月 21 日，单轮测试发送超 4.5 万个提示词，外包人员创建 18 岁以下虚假账号并上传药片、刀具等图片。Meta 称这是常规安全测试，且不会用竞品测试数据训练自家模型。 🔗 阅读原文：https://www.ithome.com/0/973/207.htm via AI HOT · https://aihot.virxact.com/items/cmr91yrn100noslmpusn7u7q0",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:gemini",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -160,8 +222,8 @@
       "fetched_count": 1028,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 873,
-      "checked_at": "2026-07-06T08:06:40.397734Z"
+      "latency_ms": 513,
+      "checked_at": "2026-07-06T11:11:35.425322Z"
     },
     {
       "source_id": "openai-skills",
@@ -172,8 +234,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 371,
-      "checked_at": "2026-07-06T08:06:40.769028Z"
+      "latency_ms": 343,
+      "checked_at": "2026-07-06T11:11:35.768958Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -184,8 +246,8 @@
       "fetched_count": 236,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 198,
-      "checked_at": "2026-07-06T08:06:40.971376Z"
+      "latency_ms": 80,
+      "checked_at": "2026-07-06T11:11:35.851152Z"
     },
     {
       "source_id": "google-deepmind",
@@ -196,8 +258,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 388,
-      "checked_at": "2026-07-06T08:06:41.361387Z"
+      "latency_ms": 372,
+      "checked_at": "2026-07-06T11:11:36.224005Z"
     },
     {
       "source_id": "google-ai",
@@ -208,8 +270,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 283,
-      "checked_at": "2026-07-06T08:06:41.645325Z"
+      "latency_ms": 185,
+      "checked_at": "2026-07-06T11:11:36.410096Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -217,11 +279,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 815,
-      "kept_count": 0,
+      "fetched_count": 816,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 363,
-      "checked_at": "2026-07-06T08:06:42.021751Z"
+      "latency_ms": 202,
+      "checked_at": "2026-07-06T11:11:36.618177Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -232,8 +294,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 179,
-      "checked_at": "2026-07-06T08:06:42.201029Z"
+      "latency_ms": 160,
+      "checked_at": "2026-07-06T11:11:36.778726Z"
     },
     {
       "source_id": "github-changelog",
@@ -244,8 +306,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 46,
-      "checked_at": "2026-07-06T08:06:42.247992Z"
+      "latency_ms": 23,
+      "checked_at": "2026-07-06T11:11:36.802693Z"
     },
     {
       "source_id": "aihot",
@@ -254,10 +316,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 6776,
-      "checked_at": "2026-07-06T08:06:49.025108Z"
+      "latency_ms": 1459,
+      "checked_at": "2026-07-06T11:11:38.262814Z"
     }
   ],
   "control_notes": {
