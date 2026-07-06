@@ -1,31 +1,43 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-05T15:10:55.372999Z",
+  "generated_at": "2026-07-06T02:31:40.118739Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 1,
+  "item_count": 4,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 1,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          1
+          4
         ]
       ],
       "top_keywords": [
         [
-          "openai",
-          1
-        ],
-        [
-          "anthropic",
-          1
+          "aggregate_noise",
+          4
         ],
         [
           "agent",
+          3
+        ],
+        [
+          "claude",
+          3
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "openai",
           1
         ],
         [
@@ -37,11 +49,19 @@
           1
         ],
         [
-          "api",
+          "工作流",
           1
         ],
         [
-          "aggregate_noise",
+          "API",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "benchmark",
           1
         ]
       ]
@@ -70,6 +90,68 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "427947bf2eb56c0cbdd6bc5c259916b412cd49bd",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "分享8个Claude Fable 5下线前必跑的超实用Prompt",
+      "url": "https://aihot.virxact.com/items/cmr8j9weh02kxsl0dy08683oe",
+      "published_at": "2026-07-06T01:19:09Z",
+      "summary": "Claude Fable 5即将下线，作者整理了8个经实战验证的提示词：/goal提示语让模型自主跑25次实验（花费165美元，构建速度提高50%、token开销降60%）；工作模式提示语将用户习惯转化为可复用Skills；行动规范提示语约束subagent行为；subagent分配提示语智能分配任务；25个定时循环工作流（含Shadow prompt loop做A/B测试）；自治运行+自动暂停提示语；记忆系统提示语保留错题本；反向面试提示语确保95%把握再执行。这些提示词可迁移至API计费后继续使用，核心是让模型研究用户而非限制能力。 🔗 阅读原文：https://mp.weixin.qq.com/s/ZkMsdeTK6wmgkaER0iPT8w via AI HOT · https://aihot.virx",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "weak:api",
+        "weak:工作流",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "24f2ae19ec3019284dc47ff99e3d0704bf55913e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic Claude Design 反向工程提示词开源更新",
+      "url": "https://aihot.virxact.com/items/cmr7z00up0065sl0472bil7hs",
+      "published_at": "2026-07-05T15:35:42Z",
+      "summary": "Anthropic 旗下 Claude Design 的反向工程系统提示词在 GitHub 以 MIT 许可证开源，包含 20 章提示词和 14 项技能，覆盖内容纪律、美学、无障碍（WCAG、语义 HTML、键盘导航）、交互状态、系统思维等。近日针对 Fable 5/Opus 4.7+ 系列校准，新增自主决策条款：小决定直接执行记录而不询问。项目支持 Claude Code/Claude.ai 及 Codex 两种变体。 🔗 阅读原文：https://github.com/Trystan-SA/claude-design-system-prompt via AI HOT · https://aihot.virxact.com/items/cmr7z00up0065sl0472bil7hs",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c814d1ab98076bb96a9674edef19b4e641868a31",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "美团 LongCat-2.0 完全开源（MIT 许可），1.6T MoE 模型开放权重与推理代码",
+      "url": "https://aihot.virxact.com/items/cmr7vpphy007oslgnz4aotpx4",
+      "published_at": "2026-07-05T14:00:18Z",
+      "summary": "美团今日宣布 LongCat-2.0 完全开源（MIT 许可），公开模型权重与推理代码。该模型为 MoE 架构，总参数量 1.6T，每 token 激活约 48B，支持 1M token 上下文。技术亮点包括 LongCat Sparse Attention 高效处理长文本、Zero-Compute Experts 动态激活 33B-56B 零浪费计算、MOPD 按任务路由 Agent/Reasoning/Interaction 三组专家。Benchmark 成绩：Terminal-Bench 2.1 70.8；SWE-bench Pro 59.5（超越 GPT-5.5 的 58.6）；SWE-bench Multilingual 77.3；FORTE 73.2；RWSearch 78.8；BrowseComp",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "weak:benchmark",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -82,8 +164,8 @@
       "fetched_count": 1028,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 1014,
-      "checked_at": "2026-07-05T15:10:52.897445Z"
+      "latency_ms": 998,
+      "checked_at": "2026-07-06T02:31:37.764862Z"
     },
     {
       "source_id": "openai-skills",
@@ -94,8 +176,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 154,
-      "checked_at": "2026-07-05T15:10:53.052175Z"
+      "latency_ms": 149,
+      "checked_at": "2026-07-06T02:31:37.914994Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -106,8 +188,8 @@
       "fetched_count": 236,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 111,
-      "checked_at": "2026-07-05T15:10:53.167730Z"
+      "latency_ms": 114,
+      "checked_at": "2026-07-06T02:31:38.033396Z"
     },
     {
       "source_id": "google-deepmind",
@@ -118,8 +200,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 233,
-      "checked_at": "2026-07-05T15:10:53.402932Z"
+      "latency_ms": 206,
+      "checked_at": "2026-07-06T02:31:38.241227Z"
     },
     {
       "source_id": "google-ai",
@@ -130,8 +212,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 129,
-      "checked_at": "2026-07-05T15:10:53.532592Z"
+      "latency_ms": 115,
+      "checked_at": "2026-07-06T02:31:38.356904Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -142,8 +224,8 @@
       "fetched_count": 814,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 277,
-      "checked_at": "2026-07-05T15:10:53.822564Z"
+      "latency_ms": 264,
+      "checked_at": "2026-07-06T02:31:38.634228Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -154,8 +236,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 95,
-      "checked_at": "2026-07-05T15:10:53.918412Z"
+      "latency_ms": 118,
+      "checked_at": "2026-07-06T02:31:38.752623Z"
     },
     {
       "source_id": "github-changelog",
@@ -166,8 +248,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-07-05T15:10:53.946414Z"
+      "latency_ms": 26,
+      "checked_at": "2026-07-06T02:31:38.779267Z"
     },
     {
       "source_id": "aihot",
@@ -176,10 +258,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 1,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 1416,
-      "checked_at": "2026-07-05T15:10:55.363885Z"
+      "latency_ms": 1329,
+      "checked_at": "2026-07-06T02:31:40.109536Z"
     }
   ],
   "control_notes": {

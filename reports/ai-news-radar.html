@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>1</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>4</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>0</b><span>官方源条目</span></div>
-        <div class="stat"><b>1</b><span>聚合源条目</span></div>
+        <div class="stat"><b>4</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-05T15:10:55.373853Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-06T02:31:40.119769Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -65,21 +65,60 @@
       <p class='summary'>LlamaIndex 发布 legal-kb，一个基于 Index v2（LlamaParse Platform）的法律文档知识库参考应用。采用 Retrieval Harness 模式，赋予 Agent 四个文件系统风格工具：retrieve（混合语义检索，支持 rerank 和引用）、findFiles（精确/模糊文件名搜索）、readFile（带偏移量的原始内容读取）和 grepFile（正则匹配并返回字符位置）。Agent 需先调用 findFiles 确定文件清单，再依次使用其他工具定位内容。底层基于 Vercel AI SDK 6 的 ToolLoopAgent，可选用 OpenAI 或 Anthropic 模型，支持用户自带 API key。项目以 TanStack Start web app 形</p>
       <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>strong:agent</span><span>strong:智能体</span><span>weak:eval</span></div>
     </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-06T01:19:09Z</span>
+        <strong>Score 6</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr8j9weh02kxsl0dy08683oe" target="_blank" rel="noreferrer">分享8个Claude Fable 5下线前必跑的超实用Prompt</a></h3>
+      <p class='summary'>Claude Fable 5即将下线，作者整理了8个经实战验证的提示词：/goal提示语让模型自主跑25次实验（花费165美元，构建速度提高50%、token开销降60%）；工作模式提示语将用户习惯转化为可复用Skills；行动规范提示语约束subagent行为；subagent分配提示语智能分配任务；25个定时循环工作流（含Shadow prompt loop做A/B测试）；自治运行+自动暂停提示语；记忆系统提示语保留错题本；反向面试提示语确保95%把握再执行。这些提示词可迁移至API计费后继续使用，核心是让模型研究用户而非限制能力。 🔗 阅读原文：https://mp.weixin.qq.com/s/ZkMsdeTK6wmgkaER0iPT8w via AI HOT · https://aihot.virx</p>
+      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>weak:api</span><span>weak:工作流</span><span>weak:API</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-05T15:35:42Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr7z00up0065sl0472bil7hs" target="_blank" rel="noreferrer">Anthropic Claude Design 反向工程提示词开源更新</a></h3>
+      <p class='summary'>Anthropic 旗下 Claude Design 的反向工程系统提示词在 GitHub 以 MIT 许可证开源，包含 20 章提示词和 14 项技能，覆盖内容纪律、美学、无障碍（WCAG、语义 HTML、键盘导航）、交互状态、系统思维等。近日针对 Fable 5/Opus 4.7+ 系列校准，新增自主决策条款：小决定直接执行记录而不询问。项目支持 Claude Code/Claude.ai 及 Codex 两种变体。 🔗 阅读原文：https://github.com/Trystan-SA/claude-design-system-prompt via AI HOT · https://aihot.virxact.com/items/cmr7z00up0065sl0472bil7hs</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:codex</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-05T14:00:18Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr7vpphy007oslgnz4aotpx4" target="_blank" rel="noreferrer">美团 LongCat-2.0 完全开源（MIT 许可），1.6T MoE 模型开放权重与推理代码</a></h3>
+      <p class='summary'>美团今日宣布 LongCat-2.0 完全开源（MIT 许可），公开模型权重与推理代码。该模型为 MoE 架构，总参数量 1.6T，每 token 激活约 48B，支持 1M token 上下文。技术亮点包括 LongCat Sparse Attention 高效处理长文本、Zero-Compute Experts 动态激活 33B-56B 零浪费计算、MOPD 按任务路由 Agent/Reasoning/Interaction 三组专家。Benchmark 成绩：Terminal-Bench 2.1 70.8；SWE-bench Pro 59.5（超越 GPT-5.5 的 58.6）；SWE-bench Multilingual 77.3；FORTE 73.2；RWSearch 78.8；BrowseComp</p>
+      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>weak:benchmark</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1028</td><td>0</td><td>1014ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>154ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>236</td><td>0</td><td>111ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>233ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>129ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>814</td><td>0</td><td>277ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>95ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>27ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>1</td><td>1416ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1028</td><td>0</td><td>998ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>149ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>236</td><td>0</td><td>114ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>206ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>115ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>814</td><td>0</td><td>264ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>118ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>26ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>4</td><td>1329ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
