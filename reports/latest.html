@@ -43,17 +43,43 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>1</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>9</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>0</b><span>聚合源条目</span></div>
-        <div class="stat"><b>8/9</b><span>健康信源</span></div>
+        <div class="stat"><b>8</b><span>聚合源条目</span></div>
+        <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-07T02:32:09.650691Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-07T07:05:04.308424Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-06T23:56:14Z</span>
+        <strong>Score 9</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr9wjj3g00jhih9kuibhf720" target="_blank" rel="noreferrer">Sysdig 澄清首例&quot;智能体勒索软件&quot;JadePuffer：AI 执行攻击但人类仍负责设置与选目标</a></h3>
+      <p class='summary'>云安全公司 Sysdig 记录了首例&quot;智能体勒索软件&quot;攻击 JadePuffer，AI 智能体独立完成入侵、窃取凭证、横向移动、加密超 1，300 条配置记录并撰写赎金信，还能在 31 秒内修复失败登录并以自然语言注释解释推理过程。但 Sysdig 高级威胁研究总监 Michael Clark 澄清，人类仍负责设置攻击基础设施、选择受害目标、提供通过此前入侵获取的数据库凭证。Sysdig 未能识别驱动该智能体的具体模型；AI 智能体在攻击中窃取了 OpenAI、Anthropic、DeepSeek 和 Gemini 的 API 密钥，Clark 表示这些密钥属于&quot;战利品&quot;而非驱动模型。微软研究员 Geoff McDonald 推测模型为移除安全训练的开源权重模型。 🔗 阅读原文：https://techcrun</p>
+      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>strong:gemini</span><span>strong:智能体</span><span>weak:api</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-06T22:51:16Z</span>
+        <strong>Score 9</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr9u1olo002sihdbunnazaoz" target="_blank" rel="noreferrer">Claude Code v2.1.202 发布</a></h3>
+      <p class='summary'>Claude Code v2.1.202 在 `/config` 中新增&quot;Dynamic workflow size&quot;设置，可控制动态工作流的 agent 数量规模（小/中/大），作为指导性建议而非硬性上限。工作流派生的 agent 现在会发射 `workflow.run_id` 和 `workflow.name` 的 OpenTelemetry 属性。修复了 mTLS 握手失败、远程控制发送命令失败、移动端发送无说明图片被静默丢弃、语音听写在麦克风故障时无限重试（改为暂停输入）、重载已有技能导致重复指令等问题。改进了工作流 agent 列表布局，MCP 错误消息更清晰。`/review ` 恢复为快速单次审查，多 agent 审查请使用 `/code-review`。 🔗 阅读原文：https://githu</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:agent</span><span>strong:mcp</span><span>weak:workflow</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>Hugging Face Blog</span>
@@ -65,21 +91,99 @@
       
       <div class="tags"><span>weak:eval</span><span>source_prior:official_ai</span></div>
     </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-06T11:51:40Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr96dq8400pdslsmu56r8muy" target="_blank" rel="noreferrer">AI颠覆初级程序员就业市场：斯坦福数据揭示年轻开发者就业锐减19%</a></h3>
+      <p class='summary'>斯坦福数字经济实验室基于ADP薪资数据发现，美国22-25岁软件开发人员就业较2022年峰值下降19%，而41-49岁增长14%。入门级岗位招聘减少28%，计算机科学毕业生失业率达6.1%，高于文科专业。核心推手是2024-2025年兴起的智能体编程（Agentic programming）。总程序员就业增长4.4%，但全部来自年长群体。GitHub一年新增3600万账号，80%新用户一周内使用Copilot。编程工作未消失，但&quot;初级程序员&quot;头衔正在消亡。 🔗 阅读原文：https://seldo.com/posts/ai-has-torched-the-market-for-junior-programmers via AI HOT · https://aihot.virxact.com/items/cmr9</p>
+      <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>weak:copilot</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-06T09:23:28Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr91yrn100noslmpusn7u7q0" target="_blank" rel="noreferrer">Meta 被曝让外包人员伪装未成年人，诱导竞争对手 AI 聊敏感话题</a></h3>
+      <p class='summary'>据《连线》报道，Meta 通过外包公司 Covalen 开展代号&quot;Cannes&quot;的项目，让数百名外包人员伪装成未成年人，向 OpenAI ChatGPT、谷歌 Gemini 及 Character.AI 发送涉及自杀、自残、进食障碍等高风险提示词，以测试竞品聊天机器人的安全拦截机制。项目持续至 4 月 21 日，单轮测试发送超 4.5 万个提示词，外包人员创建 18 岁以下虚假账号并上传药片、刀具等图片。Meta 称这是常规安全测试，且不会用竞品测试数据训练自家模型。 🔗 阅读原文：https://www.ithome.com/0/973/207.htm via AI HOT · https://aihot.virxact.com/items/cmr91yrn100noslmpusn7u7q0</p>
+      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>strong:gemini</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-06T23:03:34Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr9u2kma003gihdb8r5drdfd" target="_blank" rel="noreferrer">OfficeCLI：为AI智能体设计的开源Office套件</a></h3>
+      <p class='summary'>OfficeCLI是全球首个专为AI智能体设计的开源Office套件，以单二进制文件运行，无需安装Office或任何依赖。它内置HTML渲染引擎，可将.docx/.xlsx/.pptx转换为HTML或PNG，形成&quot;渲染→查看→修复&quot;的视觉闭环，使AI代理能自主创建、读取和修改Word、Excel、PowerPoint文档。支持公式、图表、条件格式、RTL布局、修订追踪、表格、数据透视表等复杂功能。提供CLI命令和基于自然语言的桌面应用AionUi，并可一键安装到Claude Code、Cursor、Windsurf、GitHub Copilot等AI编码工具中。 🔗 阅读原文：https://github.com/iOfficeAI/OfficeCLI via AI HOT · https://aihot.vi</p>
+      <div class="tags"><span>strong:claude</span><span>strong:智能体</span><span>weak:copilot</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-06T19:08:45Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr9lm48z00u7ihe85tjkvn5t" target="_blank" rel="noreferrer">Claude Code 团队详解四种智能体循环类型</a></h3>
+      <p class='summary'>Claude Code 团队将&quot;设计循环&quot;定义为智能体重复工作直到满足停止条件，划分四种类型：1）回合循环--手动提示触发，Claude 自判完成，适合短任务，可通过 SKILL.md 提升验证；2）目标循环--`/goal` 手动触发，达成目标或达最大轮数停止，需确定性完成标准（如测试通过数）；3）时间循环--`/loop` 和 `/schedule` 按间隔触发，适合同步消息、检查 PR 等重复任务，可云端运行；4）主动循环--事件或计划触发，无人实时参与，每个子任务独立退出。建议从最简单方案开始，选择性使用复杂循环。 🔗 阅读原文：https://x.com/ClaudeDevs/status/2074208949205881033 via AI HOT · https://aihot.virxact.c</p>
+      <div class="tags"><span>strong:claude</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-06T16:00:00Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmra3zy5200p0ihx88zih8ib8" target="_blank" rel="noreferrer">字节 Seed 发布 EdgeBench：衡量真实世界环境学习，发现新 Scaling Law</a></h3>
+      <p class='summary'>字节 Seed 发布超长程评测集 EdgeBench，含 134 个真实任务（覆盖六大领域），每个任务支持 Agent 持续工作至少 12 小时。基于约 38000 小时交互数据，发现 Agent 环境学习表现遵循高精度 log-sigmoid 曲线（平均 R2=0.998）；自 2025 年 9 月至 2026 年 5 月，前沿模型学习速度约每三个月翻一倍。EdgeBench 已开源 51 个任务及完整评测框架。 🔗 阅读原文：https://seed.bytedance.com/zh/blog/edgebench-%E8%A1%A1%E9%87%8F%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%8E%AF%E5%A2%83%E5%AD%A6%E4%B9%A0-%E5%8F%</p>
+      <div class="tags"><span>strong:agent</span><span>weak:评测</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-06T13:57:49Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmr9apy0u02hxslsmxllfd51t" target="_blank" rel="noreferrer">免费开源API中转站监测网站tokhub.me上线</a></h3>
+      <p class='summary'>作者与姚老师合作开发中转站评测网站tokhub.me，通过真实充值调用API进行模型监控，区别于单纯速度评测。代码完全开源，支持一键Docker部署，还可作为公司内部Token和网关管理系统，省去繁杂的API Key和Base URL管理。开源代码见Github评论区。 🔗 阅读原文：https://x.com/vista8/status/2074130700421456089 via AI HOT · https://aihot.virxact.com/items/cmr9apy0u02hxslsmxllfd51t</p>
+      <div class="tags"><span>weak:api</span><span>weak:API</span><span>weak:评测</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1028</td><td>0</td><td>895ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>180ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>237</td><td>0</td><td>115ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>340ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>244ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>817</td><td>1</td><td>320ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>95ms</td><td></td></tr>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1028</td><td>0</td><td>871ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>188ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>237</td><td>0</td><td>110ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>248ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>196ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>817</td><td>1</td><td>253ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>104ms</td><td></td></tr>
 <tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>27ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='err'>ERR</td><td>0</td><td>0</td><td>305530ms</td><td>HTTPSConnectionPool(host=&#x27;aihot.virxact.com&#x27;, port=443): Max retries exceeded with url: /feed.xml (Caused by ConnectTimeoutError(&lt;urllib3.connection.HTTPSConnection object at 0x7faf09958ec0&gt;, &#x27;Connection to aihot.virxact.com timed out. (connect timeout=25)&#x27;))</td></tr></tbody>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>8</td><td>51387ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
