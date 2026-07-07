@@ -1,33 +1,245 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-07T11:27:52.284236Z",
+  "generated_at": "2026-07-07T16:32:18.206960Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 8,
-  "item_count": 1,
+  "healthy_source_count": 9,
+  "item_count": 12,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 1,
+    "aggregate": {
+      "group": "aggregate",
+      "count": 8,
       "top_sources": [
         [
-          "Hugging Face Blog",
-          1
+          "AI Hot",
+          8
         ]
       ],
       "top_keywords": [
         [
-          "eval",
+          "aggregate_noise",
+          8
+        ],
+        [
+          "claude",
+          5
+        ],
+        [
+          "智能体",
+          4
+        ],
+        [
+          "agent",
+          3
+        ],
+        [
+          "api",
+          3
+        ],
+        [
+          "API",
+          3
+        ],
+        [
+          "开源模型",
+          2
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "mcp",
+          2
+        ],
+        [
+          "agents",
           1
         ],
         [
+          "openai",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "Hugging Face Blog",
+          2
+        ]
+      ],
+      "top_keywords": [
+        [
           "official_ai",
+          2
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "eval",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 2,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          2
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          4
+        ],
+        [
+          "agent",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "429c7c65d5e7758d83c33153f5bea1ffbcf98173",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Weblica：面向视觉网页智能体的可扩展可复现训练环境",
+      "url": "https://aihot.virxact.com/items/cmrasd6r300i0ihog8xxwezye",
+      "published_at": "2026-07-07T00:00:00Z",
+      "summary": "苹果研究团队提出Weblica框架，通过HTTP级缓存保存网页稳定视觉状态并保留交互行为，结合大语言模型基于真实网站与核心导航技能合成环境，构建可复现、可扩展的训练环境。该框架将强化学习训练扩展到数千个多样化的环境和任务。最佳模型Weblica-8B在多个网页导航基准上超越同等规模的开源模型，推理步骤更少，测试时计算扩展性良好，性能与API模型相当。 🔗 阅读原文：https://machinelearning.apple.com/research/weblica-visual-web-agents via AI HOT · https://aihot.virxact.com/items/cmrasd6r300i0ihog8xxwezye",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "strong:智能体",
+        "strong:开源模型",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "3bf8b2bc1ee9c1de0b248ea8cf3b83de66d3a4ac",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Sysdig 澄清首例\"智能体勒索软件\"JadePuffer：AI 执行攻击但人类仍负责设置与选目标",
+      "url": "https://aihot.virxact.com/items/cmr9wjj3g00jhih9kuibhf720",
+      "published_at": "2026-07-06T23:56:14Z",
+      "summary": "云安全公司 Sysdig 记录了首例\"智能体勒索软件\"攻击 JadePuffer，AI 智能体独立完成入侵、窃取凭证、横向移动、加密超 1，300 条配置记录并撰写赎金信，还能在 31 秒内修复失败登录并以自然语言注释解释推理过程。但 Sysdig 高级威胁研究总监 Michael Clark 澄清，人类仍负责设置攻击基础设施、选择受害目标、提供通过此前入侵获取的数据库凭证。Sysdig 未能识别驱动该智能体的具体模型；AI 智能体在攻击中窃取了 OpenAI、Anthropic、DeepSeek 和 Gemini 的 API 密钥，Clark 表示这些密钥属于\"战利品\"而非驱动模型。微软研究员 Geoff McDonald 推测模型为移除安全训练的开源权重模型。 🔗 阅读原文：https://techcrun",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:gemini",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "06fc1aac2646be96cf0d2b76063cc8526d40e341",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Code v2.1.202 发布",
+      "url": "https://aihot.virxact.com/items/cmr9u1olo002sihdbunnazaoz",
+      "published_at": "2026-07-06T22:51:16Z",
+      "summary": "Claude Code v2.1.202 在 `/config` 中新增\"Dynamic workflow size\"设置，可控制动态工作流的 agent 数量规模（小/中/大），作为指导性建议而非硬性上限。工作流派生的 agent 现在会发射 `workflow.run_id` 和 `workflow.name` 的 OpenTelemetry 属性。修复了 mTLS 握手失败、远程控制发送命令失败、移动端发送无说明图片被静默丢弃、语音听写在麦克风故障时无限重试（改为暂停输入）、重载已有技能导致重复指令等问题。改进了工作流 agent 列表布局，MCP 错误消息更清晰。`/review ` 恢复为快速单次审查，多 agent 审查请使用 `/code-review`。 🔗 阅读原文：https://githu",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:agent",
+        "strong:mcp",
+        "weak:workflow",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4110a2eee03bca9b9f6393c833c68af65c42555b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Elvis Saravia 通过 HITL 和 DialAgent 提升 agentic loops 可靠性",
+      "url": "https://aihot.virxact.com/items/cmrasc88300h6ihog8mwnmob9",
+      "published_at": "2026-07-07T14:49:47Z",
+      "summary": "Elvis Saravia 介绍使用 human-in-the-loop（HITL）来提升 agentic loops 的可靠性。他所有 Claude 和 Codex agent 会话都通过 @DialAgent MCP 服务器，该服务器为 agent 提供专属号码，支持语音、SMS、iMessage 作为原生工具。当循环/自动化处理 PR 或新功能时，agent 会通过简短电话将决策升级给人类，尤其适合在路上或离开电脑时。用户可粘贴指令让 agent 拨打电话测试。DialAgent 提供 $5 免费额度：http://getdial.ai 🔗 阅读原文：https://x.com/omarsar0/status/2074506169352180108 via AI HOT · https://aihot.v",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "strong:agent",
+        "strong:mcp",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f29fd6308d723d3ee699ffaf86701761a8c72d58",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Hugging Face Models on Foundry Managed Compute",
+      "url": "https://huggingface.co/blog/microsoft/foundry-managed-compute",
+      "published_at": "2026-07-07T15:20:06Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b9d3ea65d9c42e6df0a84a2325c54aabc99f62fa",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot app available to all",
+      "url": "https://github.blog/changelog/2026-07-07-github-copilot-app-available-to-all",
+      "published_at": "2026-07-07T15:10:14Z",
+      "summary": "The GitHub Copilot app is now available on every Copilot plan. Sign in with your GitHub account to start agent-driven development from your desktop. Available on macOS, Windows, and Linux… The post GitHub Copilot app available to all appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "bc019eff6a00804a43ce69e61d7b987c3e9ed69e",
       "source_id": "huggingface-blog",
@@ -45,6 +257,102 @@
         "source_prior:official_ai"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "ce94c0659a0f270caf4c5de1340937fa66b9eef5",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot Billing Preview app will be retired on August 3",
+      "url": "https://github.blog/changelog/2026-07-07-copilot-billing-preview-app-will-be-retired-on-august-3",
+      "published_at": "2026-07-07T14:51:13Z",
+      "summary": "The Copilot Billing Preview app will be retired on August 3, 2026. If you use it to review your GitHub Copilot spend, you can get even greater visibility directly in… The post Copilot Billing Preview app will be retired on August 3 appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e98c3dc803860032fcf376f78856c12fa3454d5d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OfficeCLI：为AI智能体设计的开源Office套件",
+      "url": "https://aihot.virxact.com/items/cmr9u2kma003gihdb8r5drdfd",
+      "published_at": "2026-07-06T23:03:34Z",
+      "summary": "OfficeCLI是全球首个专为AI智能体设计的开源Office套件，以单二进制文件运行，无需安装Office或任何依赖。它内置HTML渲染引擎，可将.docx/.xlsx/.pptx转换为HTML或PNG，形成\"渲染→查看→修复\"的视觉闭环，使AI代理能自主创建、读取和修改Word、Excel、PowerPoint文档。支持公式、图表、条件格式、RTL布局、修订追踪、表格、数据透视表等复杂功能。提供CLI命令和基于自然语言的桌面应用AionUi，并可一键安装到Claude Code、Cursor、Windsurf、GitHub Copilot等AI编码工具中。 🔗 阅读原文：https://github.com/iOfficeAI/OfficeCLI via AI HOT · https://aihot.vi",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:智能体",
+        "weak:copilot",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6fc59e8c93865b0ea0f0f67df82cee387519ff1b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "中国拟限制外国访问最强AI模型",
+      "url": "https://aihot.virxact.com/items/cmrasueu500qmihog3d8up11t",
+      "published_at": "2026-07-07T15:14:30Z",
+      "summary": "中国计划限制外国访问其最强AI模型，近期与阿里巴巴、字节跳动、Z.ai等企业会谈，拟将先进模型（含未发布）留在中国国内。商务部主导、国家发改委参与，表明此举属出口管制而非平台监管。目标涵盖闭源和开源模型，不仅限API访问，还包括可下载权重。同时讨论将模型泄漏视为国家安全犯罪，并限制外国资本投资中国AI初创。若实施，外国公司将失去低成本模型访问权。此前华盛顿已限制美国先进模型出口，此举可能进一步分裂全球AI市场。 🔗 阅读原文：https://x.com/rohanpaul_ai/status/2074512389526237609 via AI HOT · https://aihot.virxact.com/items/cmrasueu500qmihog3d8up11t",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:开源模型",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2b21c61467c168d7702ca4aabe7578f63434380f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "在 Claude Code 中选择 Claude 模型与努力级别",
+      "url": "https://aihot.virxact.com/items/cmraqmpst004cihogf6nqkgvh",
+      "published_at": "2026-07-07T14:21:59Z",
+      "summary": "Claude Code 提供模型（model）和努力级别（effort）两种设置。模型选择决定能力范围，更大模型（如 Claude Fable 5）在基准上优于 Claude Sonnet。努力级别不单是思考时间，还控制读取文件数、验证步骤及多步任务的推进深度。较高努力下 Claude 会自行读取文件、运行测试并复核；较低努力则更倾向请求用户提供上下文。若 Claude 已掌握上下文但仍出错，应换更强大模型；若因跳读文件或未运行测试而出错，则应提高努力级别。 🔗 阅读原文：https://claude.com/blog/claude-model-and-effort-level-in-claude-code via AI HOT · https://aihot.virxact.com/items/cmraqmp",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:大模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fda806ae73dbeb9519b80538d59774c8d1c61c21",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Code 团队详解四种智能体循环类型",
+      "url": "https://aihot.virxact.com/items/cmr9lm48z00u7ihe85tjkvn5t",
+      "published_at": "2026-07-06T19:08:45Z",
+      "summary": "Claude Code 团队将\"设计循环\"定义为智能体重复工作直到满足停止条件，划分四种类型：1）回合循环--手动提示触发，Claude 自判完成，适合短任务，可通过 SKILL.md 提升验证；2）目标循环--`/goal` 手动触发，达成目标或达最大轮数停止，需确定性完成标准（如测试通过数）；3）时间循环--`/loop` 和 `/schedule` 按间隔触发，适合同步消息、检查 PR 等重复任务，可云端运行；4）主动循环--事件或计划触发，无人实时参与，每个子任务独立退出。建议从最简单方案开始，选择性使用复杂循环。 🔗 阅读原文：https://x.com/ClaudeDevs/status/2074208949205881033 via AI HOT · https://aihot.virxact.c",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -57,8 +365,8 @@
       "fetched_count": 1028,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 614,
-      "checked_at": "2026-07-07T11:22:49.661495Z"
+      "latency_ms": 884,
+      "checked_at": "2026-07-07T16:28:28.852871Z"
     },
     {
       "source_id": "openai-skills",
@@ -69,8 +377,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 340,
-      "checked_at": "2026-07-07T11:22:50.002569Z"
+      "latency_ms": 369,
+      "checked_at": "2026-07-07T16:28:29.222130Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -81,8 +389,8 @@
       "fetched_count": 237,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 77,
-      "checked_at": "2026-07-07T11:22:50.083143Z"
+      "latency_ms": 150,
+      "checked_at": "2026-07-07T16:28:29.376159Z"
     },
     {
       "source_id": "google-deepmind",
@@ -93,8 +401,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 426,
-      "checked_at": "2026-07-07T11:22:50.511020Z"
+      "latency_ms": 345,
+      "checked_at": "2026-07-07T16:28:29.722838Z"
     },
     {
       "source_id": "google-ai",
@@ -105,8 +413,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 287,
-      "checked_at": "2026-07-07T11:22:50.798829Z"
+      "latency_ms": 322,
+      "checked_at": "2026-07-07T16:28:30.046008Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -114,11 +422,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 817,
-      "kept_count": 1,
+      "fetched_count": 818,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 264,
-      "checked_at": "2026-07-07T11:22:51.072854Z"
+      "latency_ms": 321,
+      "checked_at": "2026-07-07T16:28:30.380090Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -129,8 +437,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 173,
-      "checked_at": "2026-07-07T11:22:51.246569Z"
+      "latency_ms": 366,
+      "checked_at": "2026-07-07T16:28:30.746569Z"
     },
     {
       "source_id": "github-changelog",
@@ -139,22 +447,22 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-07-07T11:22:51.273761Z"
+      "latency_ms": 42,
+      "checked_at": "2026-07-07T16:28:30.789423Z"
     },
     {
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "enabled": true,
-      "ok": false,
-      "fetched_count": 0,
-      "kept_count": 0,
-      "error": "HTTPSConnectionPool(host='aihot.virxact.com', port=443): Max retries exceeded with url: /feed.xml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fdb3d7625a0>, 'Connection to aihot.virxact.com timed out. (connect timeout=25)'))",
-      "latency_ms": 301010,
-      "checked_at": "2026-07-07T11:27:52.284064Z"
+      "ok": true,
+      "fetched_count": 50,
+      "kept_count": 8,
+      "error": null,
+      "latency_ms": 227407,
+      "checked_at": "2026-07-07T16:32:18.198097Z"
     }
   ],
   "control_notes": {
