@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>9</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>8</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>8</b><span>聚合源条目</span></div>
+        <div class="stat"><b>7</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-07T07:05:04.308424Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-07T10:06:31.806570Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -103,19 +103,6 @@
       <h3><a href="https://aihot.virxact.com/items/cmr96dq8400pdslsmu56r8muy" target="_blank" rel="noreferrer">AI颠覆初级程序员就业市场：斯坦福数据揭示年轻开发者就业锐减19%</a></h3>
       <p class='summary'>斯坦福数字经济实验室基于ADP薪资数据发现，美国22-25岁软件开发人员就业较2022年峰值下降19%，而41-49岁增长14%。入门级岗位招聘减少28%，计算机科学毕业生失业率达6.1%，高于文科专业。核心推手是2024-2025年兴起的智能体编程（Agentic programming）。总程序员就业增长4.4%，但全部来自年长群体。GitHub一年新增3600万账号，80%新用户一周内使用Copilot。编程工作未消失，但&quot;初级程序员&quot;头衔正在消亡。 🔗 阅读原文：https://seldo.com/posts/ai-has-torched-the-market-for-junior-programmers via AI HOT · https://aihot.virxact.com/items/cmr9</p>
       <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>weak:copilot</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-06T09:23:28Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmr91yrn100noslmpusn7u7q0" target="_blank" rel="noreferrer">Meta 被曝让外包人员伪装未成年人，诱导竞争对手 AI 聊敏感话题</a></h3>
-      <p class='summary'>据《连线》报道，Meta 通过外包公司 Covalen 开展代号&quot;Cannes&quot;的项目，让数百名外包人员伪装成未成年人，向 OpenAI ChatGPT、谷歌 Gemini 及 Character.AI 发送涉及自杀、自残、进食障碍等高风险提示词，以测试竞品聊天机器人的安全拦截机制。项目持续至 4 月 21 日，单轮测试发送超 4.5 万个提示词，外包人员创建 18 岁以下虚假账号并上传药片、刀具等图片。Meta 称这是常规安全测试，且不会用竞品测试数据训练自家模型。 🔗 阅读原文：https://www.ithome.com/0/973/207.htm via AI HOT · https://aihot.virxact.com/items/cmr91yrn100noslmpusn7u7q0</p>
-      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>strong:gemini</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -175,15 +162,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1028</td><td>0</td><td>871ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>188ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>237</td><td>0</td><td>110ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>248ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>196ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>817</td><td>1</td><td>253ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>104ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>27ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>8</td><td>51387ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1028</td><td>0</td><td>841ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>250ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>237</td><td>0</td><td>106ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>425ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>223ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>817</td><td>1</td><td>234ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>128ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>28ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>7</td><td>51409ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
