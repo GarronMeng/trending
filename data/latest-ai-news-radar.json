@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-08T02:06:11.577803Z",
+  "generated_at": "2026-07-08T06:16:41.928002Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 8,
-  "item_count": 6,
+  "healthy_source_count": 9,
+  "item_count": 18,
   "groups": {
     "official": {
       "group": "official",
@@ -54,19 +54,87 @@
         ]
       ]
     },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 11,
+      "top_sources": [
+        [
+          "AI Hot",
+          11
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          11
+        ],
+        [
+          "agent",
+          5
+        ],
+        [
+          "claude",
+          4
+        ],
+        [
+          "mcp",
+          3
+        ],
+        [
+          "api",
+          3
+        ],
+        [
+          "智能体",
+          3
+        ],
+        [
+          "大模型",
+          3
+        ],
+        [
+          "agents",
+          2
+        ],
+        [
+          "tool",
+          2
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "开发者",
+          2
+        ]
+      ]
+    },
     "developer": {
       "group": "developer",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "GitHub Changelog",
-          3
+          4
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          6
+          8
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
         ],
         [
           "agent",
@@ -100,6 +168,93 @@
       "is_ai_related": true
     },
     {
+      "id": "2935dc1da000fcd3cb1caeca900218345accf56d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gemini API Managed Agents 新增后台执行、远程 MCP 与自定义函数等能力",
+      "url": "https://aihot.virxact.com/items/cmraw22r701jjihogh1k8hbu6",
+      "published_at": "2026-07-07T08:54:00Z",
+      "summary": "Google 为 Gemini API 的 Managed Agents 新增后台执行、远程 MCP 服务器集成、自定义函数调用与凭证刷新功能。后台执行通过传入 `background： true` 异步运行任务，立即返回 ID 供轮询状态或流式获取进度。Managed Agents 可直接连接远程 MCP 服务器，无需自定义代理中间件，并能与内置沙箱工具（如 Google 搜索、代码执行）混合使用。自定义函数调用支持本地执行业务逻辑，内置工具自动在服务端运行。凭证刷新通过传递现有环境 ID 和新网络配置完成，沙箱内文件系统、已安装包和仓库保持不变。这些更新旨在帮助开发者构建可靠的生产级 AI 智能体。 🔗 阅读原文：https://blog.google/innovation-and-ai/technolog",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "strong:agents",
+        "strong:mcp",
+        "weak:api",
+        "weak:tool",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4110a2eee03bca9b9f6393c833c68af65c42555b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Elvis Saravia 通过 HITL 和 DialAgent 提升 agentic loops 可靠性",
+      "url": "https://aihot.virxact.com/items/cmrasc88300h6ihog8mwnmob9",
+      "published_at": "2026-07-07T14:49:47Z",
+      "summary": "Elvis Saravia 介绍使用 human-in-the-loop（HITL）来提升 agentic loops 的可靠性。他所有 Claude 和 Codex agent 会话都通过 @DialAgent MCP 服务器，该服务器为 agent 提供专属号码，支持语音、SMS、iMessage 作为原生工具。当循环/自动化处理 PR 或新功能时，agent 会通过简短电话将决策升级给人类，尤其适合在路上或离开电脑时。用户可粘贴指令让 agent 拨打电话测试。DialAgent 提供 $5 免费额度：http://getdial.ai 🔗 阅读原文：https://x.com/omarsar0/status/2074506169352180108 via AI HOT · https://aihot.v",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "strong:agent",
+        "strong:mcp",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "79b3c7c876d0c4d53a4bb39b1686aaf6dc8cd44d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Rowboat：开源、本地优先的桌面AI助手",
+      "url": "https://aihot.virxact.com/items/cmrb7dzge01d6ihl1bthomtam",
+      "published_at": "2026-07-07T16:10:44Z",
+      "summary": "Rowboat 是一个开源、本地优先的桌面 AI 助手，将邮件、会议、Slack 等数据索引为 Obsidian 风格的知识图谱，提供持久上下文记忆。内置邮件客户端、浏览器、会议记录器、代码模式（可调用 Claude Code 或 Codex 代理），并支持按事件或定时运行的背景代理。用户可通过 MCP 协议接入 Exa 搜索、GitHub 等外部工具。所有数据以纯 Markdown 格式本地存储，无供应商锁定，支持 Ollama/LM Studio 本地模型或使用 API 密钥的托管模型。 🔗 阅读原文：https://github.com/rowboatlabs/rowboat via AI HOT · https://aihot.virxact.com/items/cmrb7dzge01d6ihl1bth",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "strong:mcp",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c38baee8d0a1cf456639f0541334fc36ada5b6be",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Add review cycles and time to adoption phases in the usage API",
+      "url": "https://github.blog/changelog/2026-07-07-add-review-cycles-and-time-to-adoption-phases-in-the-usage-api",
+      "published_at": "2026-07-08T04:53:01Z",
+      "summary": "The Copilot usage metrics API now reports two additional code-review velocity metrics for each AI adoption phase, extending the adoption phase cohorts fields available in the enterprise and organization reports.… The post Add review cycles and time to adoption phases in the usage API appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:copilot",
+        "weak:API",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "ae3fa7bc16553a83e471dbc9043db5ede0aaea2c",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
@@ -114,6 +269,27 @@
       "relevance_reasons": [
         "strong:hugging face",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ab8c45d73ccd091c950942578028573a5e2f9735",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "微软为降成本在Copilot中用自研MAI模型替换OpenAI和Anthropic模型",
+      "url": "https://aihot.virxact.com/items/cmrb0u6pv02qtihogovduu795",
+      "published_at": "2026-07-07T18:35:58Z",
+      "summary": "微软正用自研MAI模型替换Copilot产品中的OpenAI和Anthropic模型以降低支出。MAI模型已在Excel和Outlook中每周处理数万次请求，但占比仍小。Build大会上发布推理模型MAI-Thinking 1，声称编码媲美Sonnet 4.6和Opus 4.6，但基准测试大幅落后，仅与DeepSeek V3.2相当。AI负责人承认目标是削减并消除对Anthropic的支出。CEO暗示未来可能按用量计费，MAI为默认，第三方模型付费附加。微软称MAI使用干净商业许可数据，实际基于Common Crawl。 🔗 阅读原文：https://the-decoder.com/copilot-goes-cheap-as-microsoft-phases-out-openai-and-anthropic-m",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:推理模型",
+        "weak:copilot",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -155,6 +331,67 @@
       "is_ai_related": true
     },
     {
+      "id": "560f14ff1a3dee4c576cdc29f67442c8629e5688",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude开发者分享两种多智能体模式：Advisor和Orchestrator",
+      "url": "https://aihot.virxact.com/items/cmrbdqlcv02y4ihl11xbxx9xs",
+      "published_at": "2026-07-08T01:06:01Z",
+      "summary": "Claude开发者官方分享团队高频使用的两种多智能体模式。Advisor模式：Sonnet 5作为执行者，通过tool call调用Fable 5获取指导。SWE-bench Pro（482题）上，Sonnet 5单独75.5%/$0.75，加顾问达84%/$1.40，Fable 5单独91.5%/$2.25；组合方案约92%性能、63%成本。Orchestrator模式：Fable 5作为编排者规划并向多个Sonnet 5 worker扇出任务。BrowseComp上，全Sonnet 5 77.8%/$16.01，编排方案86.8%/$18.53，全Fable 5 90.8%/$40.56；编排方案约96%性能、46%成本。 🔗 阅读原文：https://x.com/shao__meng/status/207",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:智能体",
+        "weak:tool",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8aaf28566a67052853c3b37939f5c8712b13b340",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "蚂蚁集团周俊AICon演讲：从Token数量到Token密度，万亿参数模型效率优先",
+      "url": "https://aihot.virxact.com/items/cmrbdsefa02yjihl17gg7mhx3",
+      "published_at": "2026-07-08T01:00:00Z",
+      "summary": "蚂蚁集团副总裁周俊在AICon演讲指出，万亿参数模型每运行15分钟算力成本约等于一辆特斯拉，效率是智能体时代最需解决的问题。团队提出从\"更多Token\"转向\"更高Token密度\"策略，采用7份Lightning Attention加1份MLA的混合线性注意力架构，使256K长上下文成本从指数级降至线性级，算力更多用于思考。通过Kpop算法区分工具调用与自然语言Token，结合思维链剪枝、自蒸馏等，Token输出减少约4倍而能力不降。在LongBench、BFCL等基准上提升显著，千亿参数模型在Agent任务中超越部分更大模型；小模型flash吞吐达2.4倍，五轮对话成本下降10倍以上。 🔗 阅读原文：https://mp.weixin.qq.com/s/dsIfi4C-T5Q4emmIh-7yzg via AI",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:大模型",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7210cd997e4bfd69df7d3214b1187b812015ed56",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "智能免费，然后呢？--Data Systems for， of， and by Agents",
+      "url": "https://aihot.virxact.com/items/cmrawne9601nfihogtkxwy0bs",
+      "published_at": "2026-07-07T09:00:00Z",
+      "summary": "AI推理成本急剧下降。GPT-4级能力从2023年初每百万token约30美元降至今天不到1美元，部分供应商已低于0.10美元。推理价格每年下降9至900倍，中位数约50倍。知识工作级智能即将近乎免费。这给数据系统带来三重变革：面向智能体的数据系统需支持智能体推测式探索--单个 🔗 阅读原文：http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what via AI HOT · https://aihot.virxact.com/items/cmrawne9601nfihogtkxwy0bs",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "d33c8b7b6ecfca67599e5a1f83949de8323c3b85",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -189,6 +426,83 @@
         "source:copilot"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "ec093dec09c8b32aad0bfa7b527e95cc7c421a3b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "蚂蚁集团旗下Robbyant开源LingBot-Vision：1B参数边界中心视觉基础模型，用于密集空间感知",
+      "url": "https://aihot.virxact.com/items/cmrbikwbz04b5ihl16qfp5ntw",
+      "published_at": "2026-07-08T03:03:22Z",
+      "summary": "蚂蚁集团旗下具身智能公司Robbyant开源LingBot-Vision，一套自监督视觉Transformer家族，专为密集空间感知设计。旗舰ViT-g/16参数约1.1B，采用掩膜边界建模训练，将边界作为原生预训练信号。在密集空间任务中，该1B模型匹配或超越参数规模高达7倍的大模型（如7B DINOv3）。模型以Apache-2.0许可证在Hugging Face开源，提供ViT-g、ViT-L（300M）、ViT-B（86M）、ViT-S四个规模。 🔗 阅读原文：https://www.marktechpost.com/2026/07/07/ant-groups-robbyant-open-sources-lingbot-vision-a-1b-boundary-centric-vision-foundat",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:大模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6fc59e8c93865b0ea0f0f67df82cee387519ff1b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "中国拟限制外国访问最强AI模型",
+      "url": "https://aihot.virxact.com/items/cmrasueu500qmihog3d8up11t",
+      "published_at": "2026-07-07T15:14:30Z",
+      "summary": "中国计划限制外国访问其最强AI模型，近期与阿里巴巴、字节跳动、Z.ai等企业会谈，拟将先进模型（含未发布）留在中国国内。商务部主导、国家发改委参与，表明此举属出口管制而非平台监管。目标涵盖闭源和开源模型，不仅限API访问，还包括可下载权重。同时讨论将模型泄漏视为国家安全犯罪，并限制外国资本投资中国AI初创。若实施，外国公司将失去低成本模型访问权。此前华盛顿已限制美国先进模型出口，此举可能进一步分裂全球AI市场。 🔗 阅读原文：https://x.com/rohanpaul_ai/status/2074512389526237609 via AI HOT · https://aihot.virxact.com/items/cmrasueu500qmihog3d8up11t",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:开源模型",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2b21c61467c168d7702ca4aabe7578f63434380f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "在 Claude Code 中选择 Claude 模型与努力级别",
+      "url": "https://aihot.virxact.com/items/cmraqmpst004cihogf6nqkgvh",
+      "published_at": "2026-07-07T14:21:59Z",
+      "summary": "Claude Code 提供模型（model）和努力级别（effort）两种设置。模型选择决定能力范围，更大模型（如 Claude Fable 5）在基准上优于 Claude Sonnet。努力级别不单是思考时间，还控制读取文件数、验证步骤及多步任务的推进深度。较高努力下 Claude 会自行读取文件、运行测试并复核；较低努力则更倾向请求用户提供上下文。若 Claude 已掌握上下文但仍出错，应换更强大模型；若因跳读文件或未运行测试而出错，则应提高努力级别。 🔗 阅读原文：https://claude.com/blog/claude-model-and-effort-level-in-claude-code via AI HOT · https://aihot.virxact.com/items/cmraqmp",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:大模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5efd4929b503ce8145ec3e54a4dd35170ce5c8ff",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "YC CEO声称每日用AI部署3.7万行代码，开发者审查发现前端代码大量臃肿低效",
+      "url": "https://aihot.virxact.com/items/cmrayv5ja0293ihog3rixaqua",
+      "published_at": "2026-07-07T17:52:12Z",
+      "summary": "Y Combinator CEO Garry Tan在X上宣称，他与AI编码代理每天在五个项目中部署37000行代码，并保持连续72天发布记录。波兰开发者Gregorein深入审查Tan网站前端代码，发现大量臃肿与低效问题：页面加载169次请求、总计6.42MB数据（对比Hacker News仅7次12KB）；包含28个测试文件、78个未使用的JavaScript控制器、八种格式Logo（含空文件）、未压缩的旧PNG等。Gregorein指出，AI虽能快速生成代码，但质量仍应优先于数量。 🔗 阅读原文：https://www.fastcompany.com/91520702/y-combinator-garry-tan-agentic-ai-social-media via AI HOT · https://a",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -201,8 +515,8 @@
       "fetched_count": 1029,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 689,
-      "checked_at": "2026-07-08T02:01:09.332013Z"
+      "latency_ms": 504,
+      "checked_at": "2026-07-08T06:16:39.248353Z"
     },
     {
       "source_id": "openai-skills",
@@ -213,8 +527,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 341,
-      "checked_at": "2026-07-08T02:01:09.673793Z"
+      "latency_ms": 290,
+      "checked_at": "2026-07-08T06:16:39.538902Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -225,8 +539,8 @@
       "fetched_count": 237,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 225,
-      "checked_at": "2026-07-08T02:01:09.902916Z"
+      "latency_ms": 111,
+      "checked_at": "2026-07-08T06:16:39.652993Z"
     },
     {
       "source_id": "google-deepmind",
@@ -237,8 +551,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 397,
-      "checked_at": "2026-07-08T02:01:10.302261Z"
+      "latency_ms": 407,
+      "checked_at": "2026-07-08T06:16:40.062077Z"
     },
     {
       "source_id": "google-ai",
@@ -249,8 +563,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 255,
-      "checked_at": "2026-07-08T02:01:10.558162Z"
+      "latency_ms": 262,
+      "checked_at": "2026-07-08T06:16:40.325108Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -261,8 +575,8 @@
       "fetched_count": 820,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 331,
-      "checked_at": "2026-07-08T02:01:10.902015Z"
+      "latency_ms": 372,
+      "checked_at": "2026-07-08T06:16:40.707815Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -273,8 +587,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 140,
-      "checked_at": "2026-07-08T02:01:11.043122Z"
+      "latency_ms": 247,
+      "checked_at": "2026-07-08T06:16:40.955617Z"
     },
     {
       "source_id": "github-changelog",
@@ -283,22 +597,22 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-07-08T02:01:11.073338Z"
+      "latency_ms": 51,
+      "checked_at": "2026-07-08T06:16:41.007983Z"
     },
     {
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "enabled": true,
-      "ok": false,
-      "fetched_count": 0,
-      "kept_count": 0,
-      "error": "HTTPSConnectionPool(host='aihot.virxact.com', port=443): Max retries exceeded with url: /feed.xml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f423c0eb5c0>, 'Connection to aihot.virxact.com timed out. (connect timeout=25)'))",
-      "latency_ms": 300504,
-      "checked_at": "2026-07-08T02:06:11.577560Z"
+      "ok": true,
+      "fetched_count": 50,
+      "kept_count": 11,
+      "error": null,
+      "latency_ms": 913,
+      "checked_at": "2026-07-08T06:16:41.922905Z"
     }
   ],
   "control_notes": {
