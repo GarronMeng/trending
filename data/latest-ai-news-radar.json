@@ -1,107 +1,47 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-08T06:16:41.928002Z",
+  "generated_at": "2026-07-08T09:06:06.486793Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 18,
+  "item_count": 16,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 3,
-      "top_sources": [
-        [
-          "Hugging Face Blog",
-          2
-        ],
-        [
-          "Google AI Blog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          3
-        ],
-        [
-          "hugging face",
-          2
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 11,
+      "count": 10,
       "top_sources": [
         [
           "AI Hot",
-          11
+          10
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          11
-        ],
-        [
-          "agent",
-          5
+          10
         ],
         [
           "claude",
+          5
+        ],
+        [
+          "agent",
           4
-        ],
-        [
-          "mcp",
-          3
-        ],
-        [
-          "api",
-          3
-        ],
-        [
-          "智能体",
-          3
         ],
         [
           "大模型",
           3
         ],
         [
-          "agents",
-          2
-        ],
-        [
-          "tool",
-          2
-        ],
-        [
           "codex",
+          2
+        ],
+        [
+          "mcp",
+          2
+        ],
+        [
+          "api",
           2
         ],
         [
@@ -109,8 +49,20 @@
           2
         ],
         [
+          "copilot",
+          2
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
           "开发者",
           2
+        ],
+        [
+          "自动化",
+          1
         ]
       ]
     },
@@ -141,55 +93,29 @@
           1
         ]
       ]
+    },
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "Hugging Face Blog",
+          2
+        ]
+      ],
+      "top_keywords": [
+        [
+          "hugging face",
+          2
+        ],
+        [
+          "official_ai",
+          2
+        ]
+      ]
     }
   },
   "items": [
-    {
-      "id": "21788636d3b88bc6222524e273fcfdcc573307dd",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api",
-      "published_at": "2026-07-07T08:54:00Z",
-      "summary": "Managed agents feature bundle launch",
-      "relevance_score": 11,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:agent",
-        "strong:agents",
-        "strong:mcp",
-        "weak:api",
-        "weak:API",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "2935dc1da000fcd3cb1caeca900218345accf56d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Gemini API Managed Agents 新增后台执行、远程 MCP 与自定义函数等能力",
-      "url": "https://aihot.virxact.com/items/cmraw22r701jjihogh1k8hbu6",
-      "published_at": "2026-07-07T08:54:00Z",
-      "summary": "Google 为 Gemini API 的 Managed Agents 新增后台执行、远程 MCP 服务器集成、自定义函数调用与凭证刷新功能。后台执行通过传入 `background： true` 异步运行任务，立即返回 ID 供轮询状态或流式获取进度。Managed Agents 可直接连接远程 MCP 服务器，无需自定义代理中间件，并能与内置沙箱工具（如 Google 搜索、代码执行）混合使用。自定义函数调用支持本地执行业务逻辑，内置工具自动在服务端运行。凭证刷新通过传递现有环境 ID 和新网络配置完成，沙箱内文件系统、已安装包和仓库保持不变。这些更新旨在帮助开发者构建可靠的生产级 AI 智能体。 🔗 阅读原文：https://blog.google/innovation-and-ai/technolog",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:agent",
-        "strong:agents",
-        "strong:mcp",
-        "weak:api",
-        "weak:tool",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "4110a2eee03bca9b9f6393c833c68af65c42555b",
       "source_id": "aihot",
@@ -331,6 +257,27 @@
       "is_ai_related": true
     },
     {
+      "id": "00e2293c127f5ff121740505fa2c137f881c19bd",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "GitLost：Noma Labs 发现 GitHub AI 代理提示词注入漏洞",
+      "url": "https://aihot.virxact.com/items/cmrbu023x079pihl1q4rvhzky",
+      "published_at": "2026-07-08T08:29:47Z",
+      "summary": "Noma Labs 在 GitHub Agentic Workflows 中发现严重提示词注入漏洞 GitLost。未认证攻击者仅需在属于同一组织的公共仓库中创建一个嵌有恶意指令的 Issue，即可诱使基于 Claude 或 GitHub Copilot 的 AI 代理读取并公开该组织内私有仓库的内容。攻击无需编码技能或凭证，根源在于代理将用户可控内容视为可信指令，且 GitHub 的防护措施因 \"Additionally\" 关键词被绕过。Noma Labs 已公开 PoC 并建议限制跨仓库权限、隔离用户输入。 🔗 阅读原文：https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos ",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "weak:workflow",
+        "weak:copilot",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "560f14ff1a3dee4c576cdc29f67442c8629e5688",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -366,26 +313,6 @@
       "relevance_reasons": [
         "strong:agent",
         "strong:大模型",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7210cd997e4bfd69df7d3214b1187b812015ed56",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "智能免费，然后呢？--Data Systems for， of， and by Agents",
-      "url": "https://aihot.virxact.com/items/cmrawne9601nfihogtkxwy0bs",
-      "published_at": "2026-07-07T09:00:00Z",
-      "summary": "AI推理成本急剧下降。GPT-4级能力从2023年初每百万token约30美元降至今天不到1美元，部分供应商已低于0.10美元。推理价格每年下降9至900倍，中位数约50倍。知识工作级智能即将近乎免费。这给数据系统带来三重变革：面向智能体的数据系统需支持智能体推测式探索--单个 🔗 阅读原文：http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what via AI HOT · https://aihot.virxact.com/items/cmrawne9601nfihogtkxwy0bs",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
         "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
@@ -515,8 +442,8 @@
       "fetched_count": 1029,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 504,
-      "checked_at": "2026-07-08T06:16:39.248353Z"
+      "latency_ms": 863,
+      "checked_at": "2026-07-08T09:06:04.071655Z"
     },
     {
       "source_id": "openai-skills",
@@ -528,7 +455,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 290,
-      "checked_at": "2026-07-08T06:16:39.538902Z"
+      "checked_at": "2026-07-08T09:06:04.362521Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -539,8 +466,8 @@
       "fetched_count": 237,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 111,
-      "checked_at": "2026-07-08T06:16:39.652993Z"
+      "latency_ms": 128,
+      "checked_at": "2026-07-08T09:06:04.494817Z"
     },
     {
       "source_id": "google-deepmind",
@@ -551,8 +478,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 407,
-      "checked_at": "2026-07-08T06:16:40.062077Z"
+      "latency_ms": 341,
+      "checked_at": "2026-07-08T09:06:04.837727Z"
     },
     {
       "source_id": "google-ai",
@@ -561,10 +488,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 262,
-      "checked_at": "2026-07-08T06:16:40.325108Z"
+      "latency_ms": 209,
+      "checked_at": "2026-07-08T09:06:05.047499Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -575,8 +502,8 @@
       "fetched_count": 820,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 372,
-      "checked_at": "2026-07-08T06:16:40.707815Z"
+      "latency_ms": 269,
+      "checked_at": "2026-07-08T09:06:05.328580Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -587,8 +514,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 247,
-      "checked_at": "2026-07-08T06:16:40.955617Z"
+      "latency_ms": 193,
+      "checked_at": "2026-07-08T09:06:05.522378Z"
     },
     {
       "source_id": "github-changelog",
@@ -599,8 +526,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 51,
-      "checked_at": "2026-07-08T06:16:41.007983Z"
+      "latency_ms": 34,
+      "checked_at": "2026-07-08T09:06:05.556907Z"
     },
     {
       "source_id": "aihot",
@@ -609,10 +536,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 11,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 913,
-      "checked_at": "2026-07-08T06:16:41.922905Z"
+      "latency_ms": 919,
+      "checked_at": "2026-07-08T09:06:06.477816Z"
     }
   ],
   "control_notes": {

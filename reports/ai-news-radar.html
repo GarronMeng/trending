@@ -43,43 +43,17 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>18</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>3</b><span>官方源条目</span></div>
-        <div class="stat"><b>11</b><span>聚合源条目</span></div>
+        <div class="stat"><b>16</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>2</b><span>官方源条目</span></div>
+        <div class="stat"><b>10</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-08T06:16:41.932343Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-08T09:06:06.488404Z</p></div>
       <div class="grid">
-    <article class="card">
-      <div class="meta">
-        <span>Google AI Blog</span>
-        <span>official_rss</span>
-        <span>2026-07-07T08:54:00Z</span>
-        <strong>Score 11</strong>
-      </div>
-      <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api" target="_blank" rel="noreferrer">Expanding Managed Agents in Gemini API: background tasks, remote MCP and more</a></h3>
-      <p class='summary'>Managed agents feature bundle launch</p>
-      <div class="tags"><span>strong:gemini</span><span>strong:agent</span><span>strong:agents</span><span>strong:mcp</span><span>weak:api</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-07T08:54:00Z</span>
-        <strong>Score 9</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmraw22r701jjihogh1k8hbu6" target="_blank" rel="noreferrer">Gemini API Managed Agents 新增后台执行、远程 MCP 与自定义函数等能力</a></h3>
-      <p class='summary'>Google 为 Gemini API 的 Managed Agents 新增后台执行、远程 MCP 服务器集成、自定义函数调用与凭证刷新功能。后台执行通过传入 `background： true` 异步运行任务，立即返回 ID 供轮询状态或流式获取进度。Managed Agents 可直接连接远程 MCP 服务器，无需自定义代理中间件，并能与内置沙箱工具（如 Google 搜索、代码执行）混合使用。自定义函数调用支持本地执行业务逻辑，内置工具自动在服务端运行。凭证刷新通过传递现有环境 ID 和新网络配置完成，沙箱内文件系统、已安装包和仓库保持不变。这些更新旨在帮助开发者构建可靠的生产级 AI 智能体。 🔗 阅读原文：https://blog.google/innovation-and-ai/technolog</p>
-      <div class="tags"><span>strong:gemini</span><span>strong:agent</span><span>strong:agents</span><span>strong:mcp</span><span>weak:api</span></div>
-    </article>
-    
-
     <article class="card">
       <div class="meta">
         <span>AI Hot</span>
@@ -175,6 +149,19 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
+        <span>2026-07-08T08:29:47Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmrbu023x079pihl1q4rvhzky" target="_blank" rel="noreferrer">GitLost：Noma Labs 发现 GitHub AI 代理提示词注入漏洞</a></h3>
+      <p class='summary'>Noma Labs 在 GitHub Agentic Workflows 中发现严重提示词注入漏洞 GitLost。未认证攻击者仅需在属于同一组织的公共仓库中创建一个嵌有恶意指令的 Issue，即可诱使基于 Claude 或 GitHub Copilot 的 AI 代理读取并公开该组织内私有仓库的内容。攻击无需编码技能或凭证，根源在于代理将用户可控内容视为可信指令，且 GitHub 的防护措施因 &quot;Additionally&quot; 关键词被绕过。Noma Labs 已公开 PoC 并建议限制跨仓库权限、隔离用户输入。 🔗 阅读原文：https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos </p>
+      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>weak:workflow</span><span>weak:copilot</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
         <span>2026-07-08T01:06:01Z</span>
         <strong>Score 5</strong>
       </div>
@@ -194,19 +181,6 @@
       <h3><a href="https://aihot.virxact.com/items/cmrbdsefa02yjihl17gg7mhx3" target="_blank" rel="noreferrer">蚂蚁集团周俊AICon演讲：从Token数量到Token密度，万亿参数模型效率优先</a></h3>
       <p class='summary'>蚂蚁集团副总裁周俊在AICon演讲指出，万亿参数模型每运行15分钟算力成本约等于一辆特斯拉，效率是智能体时代最需解决的问题。团队提出从&quot;更多Token&quot;转向&quot;更高Token密度&quot;策略，采用7份Lightning Attention加1份MLA的混合线性注意力架构，使256K长上下文成本从指数级降至线性级，算力更多用于思考。通过Kpop算法区分工具调用与自然语言Token，结合思维链剪枝、自蒸馏等，Token输出减少约4倍而能力不降。在LongBench、BFCL等基准上提升显著，千亿参数模型在Agent任务中超越部分更大模型；小模型flash吞吐达2.4倍，五轮对话成本下降10倍以上。 🔗 阅读原文：https://mp.weixin.qq.com/s/dsIfi4C-T5Q4emmIh-7yzg via AI</p>
       <div class="tags"><span>strong:agent</span><span>strong:大模型</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-07T09:00:00Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrawne9601nfihogtkxwy0bs" target="_blank" rel="noreferrer">智能免费，然后呢？--Data Systems for， of， and by Agents</a></h3>
-      <p class='summary'>AI推理成本急剧下降。GPT-4级能力从2023年初每百万token约30美元降至今天不到1美元，部分供应商已低于0.10美元。推理价格每年下降9至900倍，中位数约50倍。知识工作级智能即将近乎免费。这给数据系统带来三重变革：面向智能体的数据系统需支持智能体推测式探索--单个 🔗 阅读原文：http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what via AI HOT · https://aihot.virxact.com/items/cmrawne9601nfihogtkxwy0bs</p>
-      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -292,15 +266,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1029</td><td>0</td><td>504ms</td><td></td></tr>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1029</td><td>0</td><td>863ms</td><td></td></tr>
 <tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>290ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>237</td><td>0</td><td>111ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>407ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>262ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>820</td><td>2</td><td>372ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>247ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>4</td><td>51ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>11</td><td>913ms</td><td></td></tr></tbody>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>237</td><td>0</td><td>128ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>341ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>209ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>820</td><td>2</td><td>269ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>193ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>4</td><td>34ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>10</td><td>919ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
