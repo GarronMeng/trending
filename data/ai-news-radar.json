@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-09T02:13:34.742618Z",
+  "generated_at": "2026-07-09T07:24:48.134960Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 8,
-  "item_count": 14,
+  "healthy_source_count": 9,
+  "item_count": 17,
   "groups": {
     "official": {
       "group": "official",
@@ -60,21 +60,21 @@
     },
     "developer": {
       "group": "developer",
-      "count": 8,
+      "count": 6,
       "top_sources": [
         [
           "GitHub Changelog",
-          8
+          6
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          12
+          10
         ],
         [
           "agent",
-          3
+          2
         ],
         [
           "developer",
@@ -85,27 +85,71 @@
           1
         ],
         [
-          "codex",
-          1
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
           "changelog",
           1
         ],
         [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
           "actions",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 5,
+      "top_sources": [
+        [
+          "AI Hot",
+          5
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          5
+        ],
+        [
+          "openai",
+          4
+        ],
+        [
+          "claude",
+          2
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "eval",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ],
+        [
+          "评测",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "copilot",
+          1
+        ],
+        [
+          "chatgpt",
           1
         ]
       ]
@@ -172,25 +216,6 @@
       "is_ai_related": true
     },
     {
-      "id": "390850f40a26a234a6154a9cbd905d3db08ee75b",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Codex as agent provider and agentic enhancements in JetBrains IDEs",
-      "url": "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides",
-      "published_at": "2026-07-08T02:55:53Z",
-      "summary": "This update brings Codex as a new agent provider in public preview, expands the Customizations editor with Hooks support and richer MCP server management, and introduces custom model support configured… The post Codex as agent provider and agentic enhancements in JetBrains IDEs appeared first on The GitHub Blog .",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:codex",
-        "strong:agent",
-        "strong:mcp"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "bc6bc52f541754a9f28db7efadf79a73e36cfa70",
       "source_id": "github-ai-ml",
       "source_name": "GitHub AI & ML",
@@ -248,6 +273,28 @@
       "is_ai_related": true
     },
     {
+      "id": "eae7aad6dff7290e6090259efe22bad5960b9551",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 审计 SWE-Bench Pro 发现约 30% 的评测任务存在缺陷",
+      "url": "https://aihot.virxact.com/items/cmrcigf5k01bqihx54i8oph9u",
+      "published_at": "2026-07-08T13:00:00Z",
+      "summary": "OpenAI 对编码评测基准 SWE-Bench Pro 进行详细审计，发现约 30% 的任务存在缺陷。在 731 个任务的公开子集中，前沿模型通过率在八个月内从 23.3% 提升至 80.3%，但数据质量检查显示大量任务存在测试过于严格、提示词描述不足、测试覆盖不全或误导性提示等问题。OpenAI 建议模型开发者仔细审视评测结果，并指出 AI 智能体在规模化数据质量检查中日益增长的实用性。 🔗 阅读原文：https://openai.com/index/separating-signal-from-noise-coding-evaluations via AI HOT · https://aihot.virxact.com/items/cmrcigf5k01bqihx54i8oph9u",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "weak:eval",
+        "weak:开发者",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "cfd40a66936fc414c75a58cd2d2249111f88306b",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -285,22 +332,22 @@
       "is_ai_related": true
     },
     {
-      "id": "c38baee8d0a1cf456639f0541334fc36ada5b6be",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Add review cycles and time to adoption phases in the usage API",
-      "url": "https://github.blog/changelog/2026-07-07-add-review-cycles-and-time-to-adoption-phases-in-the-usage-api",
-      "published_at": "2026-07-08T04:53:01Z",
-      "summary": "The Copilot usage metrics API now reports two additional code-review velocity metrics for each AI adoption phase, extending the adoption phase cohorts fields available in the enterprise and organization reports.… The post Add review cycles and time to adoption phases in the usage API appeared first on The GitHub Blog .",
+      "id": "93ec2d7b08c6fed061580af9cedb8ed80a408d7a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "利润超10亿美元、ARR剑指千亿，Anthropic抢先OpenAI冲击IPO",
+      "url": "https://aihot.virxact.com/items/cmrcp5by2031uihx57fypdkfo",
+      "published_at": "2026-07-08T22:30:38Z",
+      "summary": "Anthropic今年第三季度利润预计超10亿美元，已于6月1日秘密提交IPO申请，若成功将成为规模最大AI实验室IPO。其与OpenAI的年度经常性收入合计接近1000亿美元。凭借Claude Code在软件开发领域的快速普及，Anthropic在2026年实现AI模型盈利变现，成为B2B市场领跑者。SemiAnalysis报告认为其商业模式优越，若持续良好执行，市值可能触及6万亿美元。 🔗 阅读原文：https://www.ithome.com/0/974/275.htm via AI HOT · https://aihot.virxact.com/items/cmrcp5by2031uihx57fypdkfo",
       "relevance_score": 5,
       "relevance_reasons": [
-        "weak:api",
-        "weak:copilot",
-        "weak:API",
-        "source:copilot"
+        "strong:openai",
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -320,6 +367,27 @@
         "weak:developer",
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "00e2293c127f5ff121740505fa2c137f881c19bd",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "GitLost：Noma Labs 发现 GitHub AI 代理提示词注入漏洞",
+      "url": "https://aihot.virxact.com/items/cmrbu023x079pihl1q4rvhzky",
+      "published_at": "2026-07-08T08:29:47Z",
+      "summary": "Noma Labs 在 GitHub Agentic Workflows 中发现严重提示词注入漏洞 GitLost。未认证攻击者仅需在属于同一组织的公共仓库中创建一个嵌有恶意指令的 Issue，即可诱使基于 Claude 或 GitHub Copilot 的 AI 代理读取并公开该组织内私有仓库的内容。攻击无需编码技能或凭证，根源在于代理将用户可控内容视为可信指令，且 GitHub 的防护措施因 \"Additionally\" 关键词被绕过。Noma Labs 已公开 PoC 并建议限制跨仓库权限、隔离用户输入。 🔗 阅读原文：https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos ",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "weak:workflow",
+        "weak:copilot",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -375,6 +443,44 @@
         "source:actions"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "f05f27ae6b3002dc357b1e306e20ff6d19f0a1d4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "加拿大不列颠哥伦比亚省拟起诉OpenAI：未上报ChatGPT暴力对话致校园枪击惨案",
+      "url": "https://aihot.virxact.com/items/cmrbxa3ll003yihgens8d2sqg",
+      "published_at": "2026-07-08T09:55:17Z",
+      "summary": "加拿大不列颠哥伦比亚省7月7日宣布将起诉OpenAI，指控其未向执法部门上报一名ChatGPT用户2025年6月封禁前的暴力相关对话内容。该用户随后于今年2月在塔布勒岭制造校园枪击案，杀害8人。OpenAI CEO萨姆·奥尔特曼今年4月为此公开致歉，承认本应上报但未执行。受害家属已在加州法院提起诉讼，省政府正协调独立诉讼，要求赔偿用于社区重建。 🔗 阅读原文：https://www.ithome.com/0/974/169.htm via AI HOT · https://aihot.virxact.com/items/cmrbxa3ll003yihgens8d2sqg",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "3fabfe552ee78e4da29634570b72403b7c0dbe23",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI发布政府与国家安全合作伙伴关系方针",
+      "url": "https://aihot.virxact.com/items/cmrcjj0xz01mqihx5zwai9t6j",
+      "published_at": "2026-07-08T13:30:00Z",
+      "summary": "OpenAI近日公布国家安全原则，阐明在政府及国家安全领域部署前沿AI系统的方针。原则强调在保护公民、防御关键基础设施、提供公共服务及应对新兴威胁（网络防御和生物安全）中发挥AI优势，同时确保民主问责、人类判断和法治。过去一个月，OpenAI通过Daybreak网络防御计划与澳大利亚、加拿大、日本、韩国、法国、德国、波兰、荷兰及欧盟ENISA等机构建立网络安全信任访问合作，并与英国政府开展网络安全测试评估。上月，OpenAI向部分美国政府及盟友合作伙伴开放GPT-Rosalind模型用于公共卫生和生物防御。原则适用于现有及未来合作，包括与Department of War的协议，明确禁止大规模国内监控、自主武器系统及高风险自动化决策。OpenAI支持立法对高风险军事用途（如国内监控、自主武器）建立保障措施。 🔗",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -387,8 +493,8 @@
       "fetched_count": 1033,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 687,
-      "checked_at": "2026-07-09T02:13:32.632941Z"
+      "latency_ms": 652,
+      "checked_at": "2026-07-09T07:24:45.931405Z"
     },
     {
       "source_id": "openai-skills",
@@ -399,8 +505,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 221,
-      "checked_at": "2026-07-09T02:13:32.854362Z"
+      "latency_ms": 353,
+      "checked_at": "2026-07-09T07:24:46.285204Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -411,8 +517,8 @@
       "fetched_count": 237,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 112,
-      "checked_at": "2026-07-09T02:13:32.970418Z"
+      "latency_ms": 368,
+      "checked_at": "2026-07-09T07:24:46.656554Z"
     },
     {
       "source_id": "google-deepmind",
@@ -423,8 +529,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 578,
-      "checked_at": "2026-07-09T02:13:33.550519Z"
+      "latency_ms": 382,
+      "checked_at": "2026-07-09T07:24:47.040508Z"
     },
     {
       "source_id": "google-ai",
@@ -435,8 +541,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 174,
-      "checked_at": "2026-07-09T02:13:33.725509Z"
+      "latency_ms": 179,
+      "checked_at": "2026-07-09T07:24:47.219906Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -447,8 +553,8 @@
       "fetched_count": 822,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 283,
-      "checked_at": "2026-07-09T02:13:34.021385Z"
+      "latency_ms": 256,
+      "checked_at": "2026-07-09T07:24:47.485830Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -459,8 +565,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 209,
-      "checked_at": "2026-07-09T02:13:34.231157Z"
+      "latency_ms": 226,
+      "checked_at": "2026-07-09T07:24:47.712715Z"
     },
     {
       "source_id": "github-changelog",
@@ -469,22 +575,22 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 8,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-07-09T02:13:34.263687Z"
+      "latency_ms": 30,
+      "checked_at": "2026-07-09T07:24:47.743799Z"
     },
     {
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "enabled": true,
-      "ok": false,
-      "fetched_count": 0,
-      "kept_count": 0,
-      "error": "HTTPSConnectionPool(host='aihot.virxact.com', port=443): Max retries exceeded with url: /feed.xml (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f2c70d584a0>: Failed to resolve 'aihot.virxact.com' ([Errno -2] Name or service not known)\"))",
-      "latency_ms": 478,
-      "checked_at": "2026-07-09T02:13:34.742362Z"
+      "ok": true,
+      "fetched_count": 50,
+      "kept_count": 5,
+      "error": null,
+      "latency_ms": 382,
+      "checked_at": "2026-07-09T07:24:48.127302Z"
     }
   ],
   "control_notes": {
