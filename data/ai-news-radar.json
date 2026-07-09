@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-09T11:24:20.842553Z",
+  "generated_at": "2026-07-09T16:26:30.940064Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,32 +8,24 @@
   "groups": {
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 2,
       "top_sources": [
         [
-          "OpenAI News",
-          2
+          "Hugging Face Blog",
+          1
         ],
         [
           "GitHub AI & ML",
-          2
-        ],
-        [
-          "Hugging Face Blog",
           1
         ]
       ],
       "top_keywords": [
         [
-          "official_ai",
-          5
-        ],
-        [
           "agent",
           2
         ],
         [
-          "openai",
+          "official_ai",
           2
         ],
         [
@@ -41,36 +33,24 @@
           1
         ],
         [
-          "benchmark",
-          1
-        ],
-        [
-          "eval",
-          1
-        ],
-        [
           "workflow",
-          1
-        ],
-        [
-          "copilot",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "GitHub Changelog",
-          4
+          5
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          6
+          8
         ],
         [
           "developer",
@@ -88,44 +68,52 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          4
+          5
+        ],
+        [
+          "Anthropic News via Olshansk RSS",
+          1
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
+          6
+        ],
+        [
+          "claude",
           4
         ],
         [
+          "anthropic",
+          2
+        ],
+        [
+          "开发者",
+          2
+        ],
+        [
           "openai",
-          3
+          1
+        ],
+        [
+          "agent",
+          1
         ],
         [
           "智能体",
           1
         ],
         [
-          "eval",
+          "大模型",
           1
         ],
         [
-          "开发者",
-          1
-        ],
-        [
-          "评测",
-          1
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "claude",
+          "开源模型",
           1
         ],
         [
@@ -134,10 +122,6 @@
         ],
         [
           "llm",
-          1
-        ],
-        [
-          "自动化",
           1
         ]
       ]
@@ -159,26 +143,6 @@
       "relevance_reasons": [
         "strong:agent",
         "strong:agents",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "813eb524dc9258271c6a5182d2288ec27e07a6a9",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Separating signal from noise in coding evaluations",
-      "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
-      "published_at": "2026-07-08T13:00:00Z",
-      "summary": "A new analysis from OpenAI reveals issues in SWE-Bench Pro, a popular coding benchmark, raising concerns about reliability and accuracy in evaluating AI models.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:benchmark",
-        "weak:eval",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -223,46 +187,6 @@
       "is_ai_related": true
     },
     {
-      "id": "8b7c64c248665a2a109a1e8a2f3a448e5e8739b3",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Our approach to government and national security partnerships",
-      "url": "https://openai.com/index/government-national-security-partnerships",
-      "published_at": "2026-07-08T13:30:00Z",
-      "summary": "Learn how OpenAI approaches government and national security partnerships, with principles for responsible AI use, democratic accountability, and public safety.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "eae7aad6dff7290e6090259efe22bad5960b9551",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 审计 SWE-Bench Pro 发现约 30% 的评测任务存在缺陷",
-      "url": "https://aihot.virxact.com/items/cmrcigf5k01bqihx54i8oph9u",
-      "published_at": "2026-07-08T13:00:00Z",
-      "summary": "OpenAI 对编码评测基准 SWE-Bench Pro 进行详细审计，发现约 30% 的任务存在缺陷。在 731 个任务的公开子集中，前沿模型通过率在八个月内从 23.3% 提升至 80.3%，但数据质量检查显示大量任务存在测试过于严格、提示词描述不足、测试覆盖不全或误导性提示等问题。OpenAI 建议模型开发者仔细审视评测结果，并指出 AI 智能体在规模化数据质量检查中日益增长的实用性。 🔗 阅读原文：https://openai.com/index/separating-signal-from-noise-coding-evaluations via AI HOT · https://aihot.virxact.com/items/cmrcigf5k01bqihx54i8oph9u",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "weak:eval",
-        "weak:开发者",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "93ec2d7b08c6fed061580af9cedb8ed80a408d7a",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -302,6 +226,83 @@
       "is_ai_related": true
     },
     {
+      "id": "f5fc1d95fafd3445aaf1b4621e8f94129971f802",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Ask Copilot for a repository overview",
+      "url": "https://github.blog/changelog/2026-07-09-ask-copilot-for-a-repository-overview",
+      "published_at": "2026-07-09T14:25:33Z",
+      "summary": "You can now ask GitHub Copilot for a high-level overview of any repository you’re exploring for the first time. When you visit the home page of a repository you haven’t… The post Ask Copilot for a repository overview appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b88b551ca56e92da99295bce4106b31b3f84e772",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "TeXada：基于MiniCPM的本地数学Agent发布",
+      "url": "https://aihot.virxact.com/items/cmrdl9o8g04twih4b0sqb2p2d",
+      "published_at": "2026-07-09T14:01:03Z",
+      "summary": "社区开发者基于MiniCPM5-1B和MiniCPM-V 4.6构建了本地优先的数学智能体TeXada。该Agent支持自然语言直接转LaTeX、手写/图像公式OCR转可编辑LaTeX、LaTeX补全与错误修复等核心功能。所有推理在本地完成，无需依赖云服务，保障隐私安全，适用于学生、研究人员和开发者随时随地处理数学表达式。已开源至GitHub，并提供HuggingFace模型下载。 🔗 阅读原文：https://x.com/OpenBMB/status/2075218678027850154 via AI HOT · https://aihot.virxact.com/items/cmrdl9o8g04twih4b0sqb2p2d",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5a1e3fe267f024743b56f9af2b0304f19ba813f5",
+      "source_id": "anthropic-news-unofficial",
+      "source_name": "Anthropic News via Olshansk RSS",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 3,
+      "title": "Introducing a way to reflect on how you use Claude",
+      "url": "https://www.anthropic.com/news/reflect-with-claude",
+      "published_at": "2026-07-09T00:00:00Z",
+      "summary": "Introducing a way to reflect on how you use Claude",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "source:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fa1473272b9cc15fa7fc122e1cd661373b417699",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Ollama 开发者数达890万，B轮融资由Theory领投",
+      "url": "https://aihot.virxact.com/items/cmrdm3exj052mih4bnm4k525b",
+      "published_at": "2026-07-09T00:00:00Z",
+      "summary": "Ollama 让开源模型在本地或云端轻松运行，保持体验一致。目前拥有890万开发者、6.7万集成，并与各大模型实验室及硬件供应商建立合作。B轮融资由Theory领投。 🔗 阅读原文：https://www.tomtunguz.com/ollama-series-b via AI HOT · https://aihot.virxact.com/items/cmrdm3exj052mih4bnm4k525b",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:大模型",
+        "strong:开源模型",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "cfcae9a91ce04f3be0c3566c8aa305236cc25b6f",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -320,20 +321,21 @@
       "is_ai_related": true
     },
     {
-      "id": "0d0f7d3b93c456100df5cc4cdb1dc751c46018e1",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "How GitHub Copilot enables zero DNS configuration for GitHub Pages",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-github-copilot-enables-zero-dns-configuration-for-github-pages",
-      "published_at": "2026-07-08T16:00:00Z",
-      "summary": "Go from an empty repository to a live custom domain with HTTPS in about 14 minutes, without manually editing a single DNS record. The post How GitHub Copilot enables zero DNS configuration for GitHub Pages appeared first on The GitHub Blog .",
-      "relevance_score": 2,
+      "id": "6a9dd5414de6ad8d7457e65f353429482c7d3ee0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude 推出反思功能（Beta）",
+      "url": "https://aihot.virxact.com/items/cmrdk0zfw04ixih4b84colsmb",
+      "published_at": "2026-07-09T13:40:30Z",
+      "summary": "Anthropic 为 Claude 推出一项反思功能（Beta），帮助用户追踪使用模式。用户可回顾过去 1、3、6 或 12 个月的活动总结，涵盖关键主题、使用频率和任务类型。功能结合 4D AI Fluency Framework（委托、描述、辨别、勤勉）提供协作分析，支持设定静音时段或定时休息提醒。隐私方面，不涉及无痕对话和健康集成工具，也不提取连接工具中的底层文件。该功能面向 Free、Pro 和 Max 用户，需开启记忆功能，可通过 Claude 网页或桌面应用设置。 🔗 阅读原文：https://www.anthropic.com/news/reflect-with-claude via AI HOT · https://aihot.virxact.com/items/cmrdk0zfw04ixih",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source_prior:official_ai"
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -372,25 +374,6 @@
         "source:actions"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "3fabfe552ee78e4da29634570b72403b7c0dbe23",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI发布政府与国家安全合作伙伴关系方针",
-      "url": "https://aihot.virxact.com/items/cmrcjj0xz01mqihx5zwai9t6j",
-      "published_at": "2026-07-08T13:30:00Z",
-      "summary": "OpenAI近日公布国家安全原则，阐明在政府及国家安全领域部署前沿AI系统的方针。原则强调在保护公民、防御关键基础设施、提供公共服务及应对新兴威胁（网络防御和生物安全）中发挥AI优势，同时确保民主问责、人类判断和法治。过去一个月，OpenAI通过Daybreak网络防御计划与澳大利亚、加拿大、日本、韩国、法国、德国、波兰、荷兰及欧盟ENISA等机构建立网络安全信任访问合作，并与英国政府开展网络安全测试评估。上月，OpenAI向部分美国政府及盟友合作伙伴开放GPT-Rosalind模型用于公共卫生和生物防御。原则适用于现有及未来合作，包括与Department of War的协议，明确禁止大规模国内监控、自主武器系统及高风险自动化决策。OpenAI支持立法对高风险军事用途（如国内监控、自主武器）建立保障措施。 🔗",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -401,10 +384,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1033,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 951,
-      "checked_at": "2026-07-09T11:24:18.808197Z"
+      "latency_ms": 792,
+      "checked_at": "2026-07-09T16:26:19.337512Z"
     },
     {
       "source_id": "openai-skills",
@@ -415,8 +398,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 318,
-      "checked_at": "2026-07-09T11:24:19.127260Z"
+      "latency_ms": 9761,
+      "checked_at": "2026-07-09T16:26:29.099653Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -424,11 +407,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 237,
-      "kept_count": 0,
+      "fetched_count": 238,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 111,
-      "checked_at": "2026-07-09T11:24:19.242045Z"
+      "latency_ms": 112,
+      "checked_at": "2026-07-09T16:26:29.216215Z"
     },
     {
       "source_id": "google-deepmind",
@@ -439,8 +422,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 338,
-      "checked_at": "2026-07-09T11:24:19.582606Z"
+      "latency_ms": 358,
+      "checked_at": "2026-07-09T16:26:29.576406Z"
     },
     {
       "source_id": "google-ai",
@@ -451,8 +434,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 199,
-      "checked_at": "2026-07-09T11:24:19.782125Z"
+      "latency_ms": 243,
+      "checked_at": "2026-07-09T16:26:29.820234Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -463,8 +446,8 @@
       "fetched_count": 822,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 329,
-      "checked_at": "2026-07-09T11:24:20.124757Z"
+      "latency_ms": 332,
+      "checked_at": "2026-07-09T16:26:30.165560Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -473,10 +456,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 303,
-      "checked_at": "2026-07-09T11:24:20.428540Z"
+      "latency_ms": 148,
+      "checked_at": "2026-07-09T16:26:30.314746Z"
     },
     {
       "source_id": "github-changelog",
@@ -485,10 +468,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 39,
-      "checked_at": "2026-07-09T11:24:20.468827Z"
+      "latency_ms": 35,
+      "checked_at": "2026-07-09T16:26:30.350408Z"
     },
     {
       "source_id": "aihot",
@@ -497,10 +480,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 363,
-      "checked_at": "2026-07-09T11:24:20.833425Z"
+      "latency_ms": 580,
+      "checked_at": "2026-07-09T16:26:30.931745Z"
     }
   ],
   "control_notes": {
