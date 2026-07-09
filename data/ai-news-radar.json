@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-09T07:24:48.134960Z",
+  "generated_at": "2026-07-09T10:03:30.216087Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 17,
+  "item_count": 13,
   "groups": {
     "official": {
       "group": "official",
-      "count": 6,
+      "count": 5,
       "top_sources": [
         [
           "OpenAI News",
-          3
+          2
         ],
         [
           "GitHub AI & ML",
@@ -26,14 +26,14 @@
       "top_keywords": [
         [
           "official_ai",
-          6
-        ],
-        [
-          "openai",
-          3
+          5
         ],
         [
           "agent",
+          2
+        ],
+        [
+          "openai",
           2
         ],
         [
@@ -60,29 +60,21 @@
     },
     "developer": {
       "group": "developer",
-      "count": 6,
+      "count": 4,
       "top_sources": [
         [
           "GitHub Changelog",
-          6
+          4
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          10
-        ],
-        [
-          "agent",
-          2
+          6
         ],
         [
           "developer",
           2
-        ],
-        [
-          "coding agent",
-          1
         ],
         [
           "changelog",
@@ -96,25 +88,21 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          5
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
-        ],
-        [
-          "openai",
           4
         ],
         [
-          "claude",
-          2
+          "openai",
+          3
         ],
         [
           "智能体",
@@ -137,19 +125,19 @@
           1
         ],
         [
-          "agent",
+          "claude",
           1
         ],
         [
-          "workflow",
+          "hugging face",
           1
         ],
         [
-          "copilot",
+          "llm",
           1
         ],
         [
-          "chatgpt",
+          "自动化",
           1
         ]
       ]
@@ -192,26 +180,6 @@
         "weak:benchmark",
         "weak:eval",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a1a975eb7463125ed21703dabac465839bd4c933",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Mobile: Live notifications for Copilot CLI sessions",
-      "url": "https://github.blog/changelog/2026-07-08-github-mobile-live-notifications-for-copilot-cli-sessions",
-      "published_at": "2026-07-08T09:45:09Z",
-      "summary": "Live coding agent notifications on GitHub Mobile now support remote Copilot CLI sessions, making it easier to stay connected to agent work that starts outside of GitHub Mobile. When a… The post GitHub Mobile: Live notifications for Copilot CLI sessions appeared first on The GitHub Blog .",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot",
-        "source:coding agent"
       ],
       "is_ai_related": true
     },
@@ -295,43 +263,6 @@
       "is_ai_related": true
     },
     {
-      "id": "cfd40a66936fc414c75a58cd2d2249111f88306b",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Helping K–12 educators build practical AI skills",
-      "url": "https://openai.com/index/k-12-educators-practical-skills",
-      "published_at": "2026-07-08T10:00:00Z",
-      "summary": "OpenAI Academy and the Walton Family Foundation are bringing hands-on AI Skills Jams to help K–12 educators build practical AI skills for the classroom.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "922055e544e58a251de2e7c829757a374832ee4e",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Mobile: Fix merge conflicts with Copilot cloud agent",
-      "url": "https://github.blog/changelog/2026-07-08-github-mobile-fix-merge-conflicts-with-copilot-cloud-agent",
-      "published_at": "2026-07-08T09:45:22Z",
-      "summary": "GitHub Mobile now supports fixing pull request merge conflicts with Copilot cloud agent, making it easier to unblock pull requests while you’re on the go. When a pull request has… The post GitHub Mobile: Fix merge conflicts with Copilot cloud agent appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "93ec2d7b08c6fed061580af9cedb8ed80a408d7a",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -367,27 +298,6 @@
         "weak:developer",
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "00e2293c127f5ff121740505fa2c137f881c19bd",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "GitLost：Noma Labs 发现 GitHub AI 代理提示词注入漏洞",
-      "url": "https://aihot.virxact.com/items/cmrbu023x079pihl1q4rvhzky",
-      "published_at": "2026-07-08T08:29:47Z",
-      "summary": "Noma Labs 在 GitHub Agentic Workflows 中发现严重提示词注入漏洞 GitLost。未认证攻击者仅需在属于同一组织的公共仓库中创建一个嵌有恶意指令的 Issue，即可诱使基于 Claude 或 GitHub Copilot 的 AI 代理读取并公开该组织内私有仓库的内容。攻击无需编码技能或凭证，根源在于代理将用户可控内容视为可信指令，且 GitHub 的防护措施因 \"Additionally\" 关键词被绕过。Noma Labs 已公开 PoC 并建议限制跨仓库权限、隔离用户输入。 🔗 阅读原文：https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos ",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "weak:workflow",
-        "weak:copilot",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -428,6 +338,25 @@
       "is_ai_related": true
     },
     {
+      "id": "20be8e04667ee4c9605ff748231c87fc5142caa4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "NVIDIA 发布 Nemotron-Labs-3-Puzzle-75B-A9B：压缩混合 MoE 模型，服务器吞吐量提升 2.03 倍",
+      "url": "https://aihot.virxact.com/items/cmrd9x7xz01wzih4bch5uoywh",
+      "published_at": "2026-07-09T08:47:37Z",
+      "summary": "NVIDIA 发布 Nemotron-3-Super 的压缩变体 Nemotron-Labs-3-Puzzle-75B-A9B，总参数从 120.7B 降至 75.3B，活跃参数从 12.8B 降至 9.3B，保持 88 块混合布局（40 Mamba、40 MoE、8 注意力）。在 8×B200 节点上，8K/64K 场景匹配用户吞吐量≥100 tok/s 时，服务器吞吐量提升 2.03 倍。单 H100 上 1M-token 并发从 1 增至 8，权重占用从 70 GB 降至 44.5 GB。迭代式 Puzzle 方法平均得分比单步高 0.57。代价：Arena-Hard-V2 降 4.2 分、SWE-Bench 降 2.6 分。Hugging Face 提供 BF16、FP8、NVFP4 检查点。 🔗 阅读",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:llm",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "b6598275fd8bda67c2a7032c46e3d7b740118982",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -441,25 +370,6 @@
       "relevance_score": 2,
       "relevance_reasons": [
         "source:actions"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "f05f27ae6b3002dc357b1e306e20ff6d19f0a1d4",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "加拿大不列颠哥伦比亚省拟起诉OpenAI：未上报ChatGPT暴力对话致校园枪击惨案",
-      "url": "https://aihot.virxact.com/items/cmrbxa3ll003yihgens8d2sqg",
-      "published_at": "2026-07-08T09:55:17Z",
-      "summary": "加拿大不列颠哥伦比亚省7月7日宣布将起诉OpenAI，指控其未向执法部门上报一名ChatGPT用户2025年6月封禁前的暴力相关对话内容。该用户随后于今年2月在塔布勒岭制造校园枪击案，杀害8人。OpenAI CEO萨姆·奥尔特曼今年4月为此公开致歉，承认本应上报但未执行。受害家属已在加州法院提起诉讼，省政府正协调独立诉讼，要求赔偿用于社区重建。 🔗 阅读原文：https://www.ithome.com/0/974/169.htm via AI HOT · https://aihot.virxact.com/items/cmrbxa3ll003yihgens8d2sqg",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -491,10 +401,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1033,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 652,
-      "checked_at": "2026-07-09T07:24:45.931405Z"
+      "latency_ms": 1658,
+      "checked_at": "2026-07-09T10:03:28.410974Z"
     },
     {
       "source_id": "openai-skills",
@@ -505,8 +415,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 353,
-      "checked_at": "2026-07-09T07:24:46.285204Z"
+      "latency_ms": 202,
+      "checked_at": "2026-07-09T10:03:28.614052Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -517,8 +427,8 @@
       "fetched_count": 237,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 368,
-      "checked_at": "2026-07-09T07:24:46.656554Z"
+      "latency_ms": 104,
+      "checked_at": "2026-07-09T10:03:28.721845Z"
     },
     {
       "source_id": "google-deepmind",
@@ -529,8 +439,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 382,
-      "checked_at": "2026-07-09T07:24:47.040508Z"
+      "latency_ms": 286,
+      "checked_at": "2026-07-09T10:03:29.009906Z"
     },
     {
       "source_id": "google-ai",
@@ -541,8 +451,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 179,
-      "checked_at": "2026-07-09T07:24:47.219906Z"
+      "latency_ms": 217,
+      "checked_at": "2026-07-09T10:03:29.228172Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -553,8 +463,8 @@
       "fetched_count": 822,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 256,
-      "checked_at": "2026-07-09T07:24:47.485830Z"
+      "latency_ms": 269,
+      "checked_at": "2026-07-09T10:03:29.509727Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -565,8 +475,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 226,
-      "checked_at": "2026-07-09T07:24:47.712715Z"
+      "latency_ms": 131,
+      "checked_at": "2026-07-09T10:03:29.641369Z"
     },
     {
       "source_id": "github-changelog",
@@ -575,10 +485,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 6,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-07-09T07:24:47.743799Z"
+      "latency_ms": 32,
+      "checked_at": "2026-07-09T10:03:29.674219Z"
     },
     {
       "source_id": "aihot",
@@ -587,10 +497,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 382,
-      "checked_at": "2026-07-09T07:24:48.127302Z"
+      "latency_ms": 530,
+      "checked_at": "2026-07-09T10:03:30.205960Z"
     }
   ],
   "control_notes": {
