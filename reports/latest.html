@@ -43,27 +43,131 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>13</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>3</b><span>官方源条目</span></div>
-        <div class="stat"><b>8</b><span>聚合源条目</span></div>
-        <div class="stat"><b>9/9</b><span>健康信源</span></div>
+        <div class="stat"><b>14</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>6</b><span>官方源条目</span></div>
+        <div class="stat"><b>0</b><span>聚合源条目</span></div>
+        <div class="stat"><b>8/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-08T16:01:32.996878Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-09T02:13:34.744048Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-07T16:10:44Z</span>
+        <span>Hugging Face Blog</span>
+        <span>official_rss</span>
+        <span>2026-07-08T17:16:05Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://huggingface.co/blog/nvidia/open-data-for-agents" target="_blank" rel="noreferrer">Data for Agents</a></h3>
+      
+      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-07-08T13:00:00Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://openai.com/index/separating-signal-from-noise-coding-evaluations" target="_blank" rel="noreferrer">Separating signal from noise in coding evaluations</a></h3>
+      <p class='summary'>A new analysis from OpenAI reveals issues in SWE-Bench Pro, a popular coding benchmark, raising concerns about reliability and accuracy in evaluating AI models.</p>
+      <div class="tags"><span>strong:openai</span><span>weak:benchmark</span><span>weak:eval</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-07-08T09:45:09Z</span>
         <strong>Score 7</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrb7dzge01d6ihl1bthomtam" target="_blank" rel="noreferrer">Rowboat：开源、本地优先的桌面AI助手</a></h3>
-      <p class='summary'>Rowboat 是一个开源、本地优先的桌面 AI 助手，将邮件、会议、Slack 等数据索引为 Obsidian 风格的知识图谱，提供持久上下文记忆。内置邮件客户端、浏览器、会议记录器、代码模式（可调用 Claude Code 或 Codex 代理），并支持按事件或定时运行的背景代理。用户可通过 MCP 协议接入 Exa 搜索、GitHub 等外部工具。所有数据以纯 Markdown 格式本地存储，无供应商锁定，支持 Ollama/LM Studio 本地模型或使用 API 密钥的托管模型。 🔗 阅读原文：https://github.com/rowboatlabs/rowboat via AI HOT · https://aihot.virxact.com/items/cmrb7dzge01d6ihl1bth</p>
-      <div class="tags"><span>strong:claude</span><span>strong:codex</span><span>strong:mcp</span><span>weak:api</span><span>weak:API</span></div>
+      <h3><a href="https://github.blog/changelog/2026-07-08-github-mobile-live-notifications-for-copilot-cli-sessions" target="_blank" rel="noreferrer">GitHub Mobile: Live notifications for Copilot CLI sessions</a></h3>
+      <p class='summary'>Live coding agent notifications on GitHub Mobile now support remote Copilot CLI sessions, making it easier to stay connected to agent work that starts outside of GitHub Mobile. When a… The post GitHub Mobile: Live notifications for Copilot CLI sessions appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>strong:agent</span><span>weak:copilot</span><span>source:copilot</span><span>source:coding agent</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-07-08T02:55:53Z</span>
+        <strong>Score 6</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides" target="_blank" rel="noreferrer">Codex as agent provider and agentic enhancements in JetBrains IDEs</a></h3>
+      <p class='summary'>This update brings Codex as a new agent provider in public preview, expands the Customizations editor with Hooks support and richer MCP server management, and introduces custom model support configured… The post Codex as agent provider and agentic enhancements in JetBrains IDEs appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>strong:codex</span><span>strong:agent</span><span>strong:mcp</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub AI &amp; ML</span>
+        <span>official_rss</span>
+        <span>2026-07-08T21:11:56Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows" target="_blank" rel="noreferrer">Automating cross-repo documentation with GitHub Agentic Workflows</a></h3>
+      <p class='summary'>Explore how the Aspire team turns merged product changes into SME-reviewed docs pull requests, closing the gap between release and documentation. The post Automating cross-repo documentation with GitHub Agentic Workflows appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>strong:agent</span><span>weak:workflow</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-07-08T18:24:55Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases" target="_blank" rel="noreferrer">GitHub Copilot in Visual Studio Code, June 2026 releases</a></h3>
+      <p class='summary'>This changelog covers VS Code v1.123 through v1.127, shipped throughout June and early July 2026. The latest VS Code releases build on the Copilot experience developers use every day, making… The post GitHub Copilot in Visual Studio Code, June 2026 releases appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:changelog</span><span>weak:developer</span><span>weak:copilot</span><span>source:copilot</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-07-08T13:30:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://openai.com/index/government-national-security-partnerships" target="_blank" rel="noreferrer">Our approach to government and national security partnerships</a></h3>
+      <p class='summary'>Learn how OpenAI approaches government and national security partnerships, with principles for responsible AI use, democratic accountability, and public safety.</p>
+      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-07-08T10:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://openai.com/index/k-12-educators-practical-skills" target="_blank" rel="noreferrer">Helping K–12 educators build practical AI skills</a></h3>
+      <p class='summary'>OpenAI Academy and the Walton Family Foundation are bringing hands-on AI Skills Jams to help K–12 educators build practical AI skills for the classroom.</p>
+      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-07-08T09:45:22Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-07-08-github-mobile-fix-merge-conflicts-with-copilot-cloud-agent" target="_blank" rel="noreferrer">GitHub Mobile: Fix merge conflicts with Copilot cloud agent</a></h3>
+      <p class='summary'>GitHub Mobile now supports fixing pull request merge conflicts with Copilot cloud agent, making it easier to unblock pull requests while you’re on the go. When a pull request has… The post GitHub Mobile: Fix merge conflicts with Copilot cloud agent appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>strong:agent</span><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
     
 
@@ -82,79 +186,27 @@
 
     <article class="card">
       <div class="meta">
-        <span>Hugging Face Blog</span>
+        <span>GitHub Changelog</span>
         <span>official_rss</span>
-        <span>2026-07-08T00:00:00Z</span>
+        <span>2026-07-08T20:50:07Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-07-08-enterprise-managed-opentelemetry-export-for-vs-code-and-cli" target="_blank" rel="noreferrer">Enterprise-managed OpenTelemetry export for VS Code and CLI</a></h3>
+      <p class='summary'>Organizations can now mandate where GitHub Copilot sends OpenTelemetry (OTel) data, so telemetry flows to an approved collector without each developer setting OTEL_* environment variables. The configuration is delivered through… The post Enterprise-managed OpenTelemetry export for VS Code and CLI appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:developer</span><span>weak:copilot</span><span>source:copilot</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-07-08T20:38:56Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://huggingface.co/blog/native-speed-vllm-transformers-backend" target="_blank" rel="noreferrer">Native-speed vLLM transformers modeling backend</a></h3>
-      
-      <div class="tags"><span>strong:llm</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>Hugging Face Blog</span>
-        <span>official_rss</span>
-        <span>2026-07-07T21:15:33Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio" target="_blank" rel="noreferrer">From Hugging Face to Amazon SageMaker Studio in one click</a></h3>
-      
-      <div class="tags"><span>strong:hugging face</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-07T18:35:58Z</span>
-        <strong>Score 6</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrb0u6pv02qtihogovduu795" target="_blank" rel="noreferrer">微软为降成本在Copilot中用自研MAI模型替换OpenAI和Anthropic模型</a></h3>
-      <p class='summary'>微软正用自研MAI模型替换Copilot产品中的OpenAI和Anthropic模型以降低支出。MAI模型已在Excel和Outlook中每周处理数万次请求，但占比仍小。Build大会上发布推理模型MAI-Thinking 1，声称编码媲美Sonnet 4.6和Opus 4.6，但基准测试大幅落后，仅与DeepSeek V3.2相当。AI负责人承认目标是削减并消除对Anthropic的支出。CEO暗示未来可能按用量计费，MAI为默认，第三方模型付费附加。微软称MAI使用干净商业许可数据，实际基于Common Crawl。 🔗 阅读原文：https://the-decoder.com/copilot-goes-cheap-as-microsoft-phases-out-openai-and-anthropic-m</p>
-      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>strong:推理模型</span><span>weak:copilot</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-08T08:29:47Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrbu023x079pihl1q4rvhzky" target="_blank" rel="noreferrer">GitLost：Noma Labs 发现 GitHub AI 代理提示词注入漏洞</a></h3>
-      <p class='summary'>Noma Labs 在 GitHub Agentic Workflows 中发现严重提示词注入漏洞 GitLost。未认证攻击者仅需在属于同一组织的公共仓库中创建一个嵌有恶意指令的 Issue，即可诱使基于 Claude 或 GitHub Copilot 的 AI 代理读取并公开该组织内私有仓库的内容。攻击无需编码技能或凭证，根源在于代理将用户可控内容视为可信指令，且 GitHub 的防护措施因 &quot;Additionally&quot; 关键词被绕过。Noma Labs 已公开 PoC 并建议限制跨仓库权限、隔离用户输入。 🔗 阅读原文：https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos </p>
-      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>weak:workflow</span><span>weak:copilot</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-08T01:06:01Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrbdqlcv02y4ihl11xbxx9xs" target="_blank" rel="noreferrer">Claude开发者分享两种多智能体模式：Advisor和Orchestrator</a></h3>
-      <p class='summary'>Claude开发者官方分享团队高频使用的两种多智能体模式。Advisor模式：Sonnet 5作为执行者，通过tool call调用Fable 5获取指导。SWE-bench Pro（482题）上，Sonnet 5单独75.5%/$0.75，加顾问达84%/$1.40，Fable 5单独91.5%/$2.25；组合方案约92%性能、63%成本。Orchestrator模式：Fable 5作为编排者规划并向多个Sonnet 5 worker扇出任务。BrowseComp上，全Sonnet 5 77.8%/$16.01，编排方案86.8%/$18.53，全Fable 5 90.8%/$40.56；编排方案约96%性能、46%成本。 🔗 阅读原文：https://x.com/shao__meng/status/207</p>
-      <div class="tags"><span>strong:claude</span><span>strong:智能体</span><span>weak:tool</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-08T01:00:00Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrbdsefa02yjihl17gg7mhx3" target="_blank" rel="noreferrer">蚂蚁集团周俊AICon演讲：从Token数量到Token密度，万亿参数模型效率优先</a></h3>
-      <p class='summary'>蚂蚁集团副总裁周俊在AICon演讲指出，万亿参数模型每运行15分钟算力成本约等于一辆特斯拉，效率是智能体时代最需解决的问题。团队提出从&quot;更多Token&quot;转向&quot;更高Token密度&quot;策略，采用7份Lightning Attention加1份MLA的混合线性注意力架构，使256K长上下文成本从指数级降至线性级，算力更多用于思考。通过Kpop算法区分工具调用与自然语言Token，结合思维链剪枝、自蒸馏等，Token输出减少约4倍而能力不降。在LongBench、BFCL等基准上提升显著，千亿参数模型在Agent任务中超越部分更大模型；小模型flash吞吐达2.4倍，五轮对话成本下降10倍以上。 🔗 阅读原文：https://mp.weixin.qq.com/s/dsIfi4C-T5Q4emmIh-7yzg via AI</p>
-      <div class="tags"><span>strong:agent</span><span>strong:大模型</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli" target="_blank" rel="noreferrer">Deploy managed Copilot settings via MDM in VS Code and CLI</a></h3>
+      <p class='summary'>Enterprise administrators can now deliver managed GitHub Copilot settings directly to devices through native mobile device management (MDM) and file-based configuration, in addition to the existing server-managed channel. This is… The post Deploy managed Copilot settings via MDM in VS Code and CLI appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
     
 
@@ -175,51 +227,12 @@
       <div class="meta">
         <span>GitHub Changelog</span>
         <span>official_rss</span>
-        <span>2026-07-08T00:05:35Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-07-07-kimi-k2-7-now-available-for-copilot-business-and-enterprise" target="_blank" rel="noreferrer">Kimi K2.7 now available for Copilot Business and Enterprise</a></h3>
-      <p class='summary'>On July 1, 2026, we announced Kimi K2.7 would be available to Copilot Pro, Pro+, and Max plans. The model is now additionally available on Copilot Business and Copilot Enterprise… The post Kimi K2.7 now available for Copilot Business and Enterprise appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-08T09:55:17Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrbxa3ll003yihgens8d2sqg" target="_blank" rel="noreferrer">加拿大不列颠哥伦比亚省拟起诉OpenAI：未上报ChatGPT暴力对话致校园枪击惨案</a></h3>
-      <p class='summary'>加拿大不列颠哥伦比亚省7月7日宣布将起诉OpenAI，指控其未向执法部门上报一名ChatGPT用户2025年6月封禁前的暴力相关对话内容。该用户随后于今年2月在塔布勒岭制造校园枪击案，杀害8人。OpenAI CEO萨姆·奥尔特曼今年4月为此公开致歉，承认本应上报但未执行。受害家属已在加州法院提起诉讼，省政府正协调独立诉讼，要求赔偿用于社区重建。 🔗 阅读原文：https://www.ithome.com/0/974/169.htm via AI HOT · https://aihot.virxact.com/items/cmrbxa3ll003yihgens8d2sqg</p>
-      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-08T03:03:22Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrbikwbz04b5ihl16qfp5ntw" target="_blank" rel="noreferrer">蚂蚁集团旗下Robbyant开源LingBot-Vision：1B参数边界中心视觉基础模型，用于密集空间感知</a></h3>
-      <p class='summary'>蚂蚁集团旗下具身智能公司Robbyant开源LingBot-Vision，一套自监督视觉Transformer家族，专为密集空间感知设计。旗舰ViT-g/16参数约1.1B，采用掩膜边界建模训练，将边界作为原生预训练信号。在密集空间任务中，该1B模型匹配或超越参数规模高达7倍的大模型（如7B DINOv3）。模型以Apache-2.0许可证在Hugging Face开源，提供ViT-g、ViT-L（300M）、ViT-B（86M）、ViT-S四个规模。 🔗 阅读原文：https://www.marktechpost.com/2026/07/07/ant-groups-robbyant-open-sources-lingbot-vision-a-1b-boundary-centric-vision-foundat</p>
-      <div class="tags"><span>strong:hugging face</span><span>strong:大模型</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-07T17:52:12Z</span>
+        <span>2026-07-08T17:05:06Z</span>
         <strong>Score 2</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrayv5ja0293ihog3rixaqua" target="_blank" rel="noreferrer">YC CEO声称每日用AI部署3.7万行代码，开发者审查发现前端代码大量臃肿低效</a></h3>
-      <p class='summary'>Y Combinator CEO Garry Tan在X上宣称，他与AI编码代理每天在五个项目中部署37000行代码，并保持连续72天发布记录。波兰开发者Gregorein深入审查Tan网站前端代码，发现大量臃肿与低效问题：页面加载169次请求、总计6.42MB数据（对比Hacker News仅7次12KB）；包含28个测试文件、78个未使用的JavaScript控制器、八种格式Logo（含空文件）、未压缩的旧PNG等。Gregorein指出，AI虽能快速生成代码，但质量仍应优先于数量。 🔗 阅读原文：https://www.fastcompany.com/91520702/y-combinator-garry-tan-agentic-ai-social-media via AI HOT · https://a</p>
-      <div class="tags"><span>strong:agent</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://github.blog/changelog/2026-07-08-setup-java-v5-5-0-signature-verification-kona-jdk-and-maven-fixes" target="_blank" rel="noreferrer">setup-java v5.5.0: signature verification, Kona JDK, and Maven fixes</a></h3>
+      <p class='summary'>The actions/setup-java v5.5.0 release adds cryptographic signature verification for downloaded JDKs, support for a new distribution, and several quality-of-life improvements for Maven users. Here’s what changed since v5.4.0. Verify JDK… The post setup-java v5.5.0: signature verification, Kona JDK, and Maven fixes appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>source:actions</span></div>
     </article>
     </div>
     </section>
@@ -227,15 +240,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1029</td><td>0</td><td>984ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>424ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>237</td><td>0</td><td>108ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>413ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>256ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>821</td><td>2</td><td>326ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>585ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>30ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>8</td><td>338ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1033</td><td>3</td><td>687ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>221ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>237</td><td>0</td><td>112ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>578ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>174ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>822</td><td>1</td><td>283ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>209ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>8</td><td>31ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='err'>ERR</td><td>0</td><td>0</td><td>478ms</td><td>HTTPSConnectionPool(host=&#x27;aihot.virxact.com&#x27;, port=443): Max retries exceeded with url: /feed.xml (Caused by NameResolutionError(&quot;&lt;urllib3.connection.HTTPSConnection object at 0x7f2c70d584a0&gt;: Failed to resolve &#x27;aihot.virxact.com&#x27; ([Errno -2] Name or service not known)&quot;))</td></tr></tbody>
       </table>
     </section>
   </main>

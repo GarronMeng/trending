@@ -1,52 +1,88 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-08T16:01:32.995299Z",
+  "generated_at": "2026-07-09T02:13:34.742618Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 9,
-  "item_count": 13,
+  "healthy_source_count": 8,
+  "item_count": 14,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
+    "official": {
+      "group": "official",
+      "count": 6,
+      "top_sources": [
+        [
+          "OpenAI News",
+          3
+        ],
+        [
+          "GitHub AI & ML",
+          2
+        ],
+        [
+          "Hugging Face Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          6
+        ],
+        [
+          "openai",
+          3
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "benchmark",
+          1
+        ],
+        [
+          "eval",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "copilot",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
       "count": 8,
       "top_sources": [
         [
-          "AI Hot",
+          "GitHub Changelog",
           8
         ]
       ],
       "top_keywords": [
         [
-          "aggregate_noise",
-          8
-        ],
-        [
-          "claude",
-          3
+          "copilot",
+          12
         ],
         [
           "agent",
           3
         ],
         [
-          "openai",
+          "developer",
           2
         ],
         [
-          "copilot",
-          2
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "开发者",
-          2
-        ],
-        [
-          "大模型",
-          2
+          "coding agent",
+          1
         ],
         [
           "codex",
@@ -57,28 +93,8 @@
           1
         ],
         [
-          "api",
+          "changelog",
           1
-        ],
-        [
-          "API",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
         ],
         [
           "api",
@@ -87,37 +103,9 @@
         [
           "API",
           1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 3,
-      "top_sources": [
-        [
-          "Hugging Face Blog",
-          2
         ],
         [
-          "GitHub AI & ML",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          3
-        ],
-        [
-          "llm",
-          1
-        ],
-        [
-          "hugging face",
-          1
-        ],
-        [
-          "copilot",
+          "actions",
           1
         ]
       ]
@@ -125,24 +113,174 @@
   },
   "items": [
     {
-      "id": "79b3c7c876d0c4d53a4bb39b1686aaf6dc8cd44d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Rowboat：开源、本地优先的桌面AI助手",
-      "url": "https://aihot.virxact.com/items/cmrb7dzge01d6ihl1bthomtam",
-      "published_at": "2026-07-07T16:10:44Z",
-      "summary": "Rowboat 是一个开源、本地优先的桌面 AI 助手，将邮件、会议、Slack 等数据索引为 Obsidian 风格的知识图谱，提供持久上下文记忆。内置邮件客户端、浏览器、会议记录器、代码模式（可调用 Claude Code 或 Codex 代理），并支持按事件或定时运行的背景代理。用户可通过 MCP 协议接入 Exa 搜索、GitHub 等外部工具。所有数据以纯 Markdown 格式本地存储，无供应商锁定，支持 Ollama/LM Studio 本地模型或使用 API 密钥的托管模型。 🔗 阅读原文：https://github.com/rowboatlabs/rowboat via AI HOT · https://aihot.virxact.com/items/cmrb7dzge01d6ihl1bth",
+      "id": "56fe3e1ea96dac95d9b2452c53a7ec939a472b00",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Data for Agents",
+      "url": "https://huggingface.co/blog/nvidia/open-data-for-agents",
+      "published_at": "2026-07-08T17:16:05Z",
+      "summary": null,
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "813eb524dc9258271c6a5182d2288ec27e07a6a9",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Separating signal from noise in coding evaluations",
+      "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+      "published_at": "2026-07-08T13:00:00Z",
+      "summary": "A new analysis from OpenAI reveals issues in SWE-Bench Pro, a popular coding benchmark, raising concerns about reliability and accuracy in evaluating AI models.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:benchmark",
+        "weak:eval",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a1a975eb7463125ed21703dabac465839bd4c933",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Mobile: Live notifications for Copilot CLI sessions",
+      "url": "https://github.blog/changelog/2026-07-08-github-mobile-live-notifications-for-copilot-cli-sessions",
+      "published_at": "2026-07-08T09:45:09Z",
+      "summary": "Live coding agent notifications on GitHub Mobile now support remote Copilot CLI sessions, making it easier to stay connected to agent work that starts outside of GitHub Mobile. When a… The post GitHub Mobile: Live notifications for Copilot CLI sessions appeared first on The GitHub Blog .",
       "relevance_score": 7,
       "relevance_reasons": [
-        "strong:claude",
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot",
+        "source:coding agent"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "390850f40a26a234a6154a9cbd905d3db08ee75b",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Codex as agent provider and agentic enhancements in JetBrains IDEs",
+      "url": "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides",
+      "published_at": "2026-07-08T02:55:53Z",
+      "summary": "This update brings Codex as a new agent provider in public preview, expands the Customizations editor with Hooks support and richer MCP server management, and introduces custom model support configured… The post Codex as agent provider and agentic enhancements in JetBrains IDEs appeared first on The GitHub Blog .",
+      "relevance_score": 6,
+      "relevance_reasons": [
         "strong:codex",
-        "strong:mcp",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
+        "strong:agent",
+        "strong:mcp"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "bc6bc52f541754a9f28db7efadf79a73e36cfa70",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "Automating cross-repo documentation with GitHub Agentic Workflows",
+      "url": "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows",
+      "published_at": "2026-07-08T21:11:56Z",
+      "summary": "Explore how the Aspire team turns merged product changes into SME-reviewed docs pull requests, closing the gap between release and documentation. The post Automating cross-repo documentation with GitHub Agentic Workflows appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "dbe87c91ee907ba1a1c145608102f0851a185e10",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot in Visual Studio Code, June 2026 releases",
+      "url": "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases",
+      "published_at": "2026-07-08T18:24:55Z",
+      "summary": "This changelog covers VS Code v1.123 through v1.127, shipped throughout June and early July 2026. The latest VS Code releases build on the Copilot experience developers use every day, making… The post GitHub Copilot in Visual Studio Code, June 2026 releases appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:changelog",
+        "weak:developer",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8b7c64c248665a2a109a1e8a2f3a448e5e8739b3",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Our approach to government and national security partnerships",
+      "url": "https://openai.com/index/government-national-security-partnerships",
+      "published_at": "2026-07-08T13:30:00Z",
+      "summary": "Learn how OpenAI approaches government and national security partnerships, with principles for responsible AI use, democratic accountability, and public safety.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "cfd40a66936fc414c75a58cd2d2249111f88306b",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Helping K–12 educators build practical AI skills",
+      "url": "https://openai.com/index/k-12-educators-practical-skills",
+      "published_at": "2026-07-08T10:00:00Z",
+      "summary": "OpenAI Academy and the Walton Family Foundation are bringing hands-on AI Skills Jams to help K–12 educators build practical AI skills for the classroom.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "922055e544e58a251de2e7c829757a374832ee4e",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Mobile: Fix merge conflicts with Copilot cloud agent",
+      "url": "https://github.blog/changelog/2026-07-08-github-mobile-fix-merge-conflicts-with-copilot-cloud-agent",
+      "published_at": "2026-07-08T09:45:22Z",
+      "summary": "GitHub Mobile now supports fixing pull request merge conflicts with Copilot cloud agent, making it easier to unblock pull requests while you’re on the go. When a pull request has… The post GitHub Mobile: Fix merge conflicts with Copilot cloud agent appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -167,121 +305,39 @@
       "is_ai_related": true
     },
     {
-      "id": "8f3da1ad4542ad07e0ba6388fcddd0857e9dd50e",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "98e2bbc66952b2850226b704ad6ab341f7ffcdad",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Native-speed vLLM transformers modeling backend",
-      "url": "https://huggingface.co/blog/native-speed-vllm-transformers-backend",
-      "published_at": "2026-07-08T00:00:00Z",
-      "summary": null,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Enterprise-managed OpenTelemetry export for VS Code and CLI",
+      "url": "https://github.blog/changelog/2026-07-08-enterprise-managed-opentelemetry-export-for-vs-code-and-cli",
+      "published_at": "2026-07-08T20:50:07Z",
+      "summary": "Organizations can now mandate where GitHub Copilot sends OpenTelemetry (OTel) data, so telemetry flows to an approved collector without each developer setting OTEL_* environment variables. The configuration is delivered through… The post Enterprise-managed OpenTelemetry export for VS Code and CLI appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "weak:developer",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "cfcae9a91ce04f3be0c3566c8aa305236cc25b6f",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Deploy managed Copilot settings via MDM in VS Code and CLI",
+      "url": "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli",
+      "published_at": "2026-07-08T20:38:56Z",
+      "summary": "Enterprise administrators can now deliver managed GitHub Copilot settings directly to devices through native mobile device management (MDM) and file-based configuration, in addition to the existing server-managed channel. This is… The post Deploy managed Copilot settings via MDM in VS Code and CLI appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:llm",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ae3fa7bc16553a83e471dbc9043db5ede0aaea2c",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "From Hugging Face to Amazon SageMaker Studio in one click",
-      "url": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio",
-      "published_at": "2026-07-07T21:15:33Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ab8c45d73ccd091c950942578028573a5e2f9735",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "微软为降成本在Copilot中用自研MAI模型替换OpenAI和Anthropic模型",
-      "url": "https://aihot.virxact.com/items/cmrb0u6pv02qtihogovduu795",
-      "published_at": "2026-07-07T18:35:58Z",
-      "summary": "微软正用自研MAI模型替换Copilot产品中的OpenAI和Anthropic模型以降低支出。MAI模型已在Excel和Outlook中每周处理数万次请求，但占比仍小。Build大会上发布推理模型MAI-Thinking 1，声称编码媲美Sonnet 4.6和Opus 4.6，但基准测试大幅落后，仅与DeepSeek V3.2相当。AI负责人承认目标是削减并消除对Anthropic的支出。CEO暗示未来可能按用量计费，MAI为默认，第三方模型付费附加。微软称MAI使用干净商业许可数据，实际基于Common Crawl。 🔗 阅读原文：https://the-decoder.com/copilot-goes-cheap-as-microsoft-phases-out-openai-and-anthropic-m",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:推理模型",
         "weak:copilot",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "00e2293c127f5ff121740505fa2c137f881c19bd",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "GitLost：Noma Labs 发现 GitHub AI 代理提示词注入漏洞",
-      "url": "https://aihot.virxact.com/items/cmrbu023x079pihl1q4rvhzky",
-      "published_at": "2026-07-08T08:29:47Z",
-      "summary": "Noma Labs 在 GitHub Agentic Workflows 中发现严重提示词注入漏洞 GitLost。未认证攻击者仅需在属于同一组织的公共仓库中创建一个嵌有恶意指令的 Issue，即可诱使基于 Claude 或 GitHub Copilot 的 AI 代理读取并公开该组织内私有仓库的内容。攻击无需编码技能或凭证，根源在于代理将用户可控内容视为可信指令，且 GitHub 的防护措施因 \"Additionally\" 关键词被绕过。Noma Labs 已公开 PoC 并建议限制跨仓库权限、隔离用户输入。 🔗 阅读原文：https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos ",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "weak:workflow",
-        "weak:copilot",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "560f14ff1a3dee4c576cdc29f67442c8629e5688",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude开发者分享两种多智能体模式：Advisor和Orchestrator",
-      "url": "https://aihot.virxact.com/items/cmrbdqlcv02y4ihl11xbxx9xs",
-      "published_at": "2026-07-08T01:06:01Z",
-      "summary": "Claude开发者官方分享团队高频使用的两种多智能体模式。Advisor模式：Sonnet 5作为执行者，通过tool call调用Fable 5获取指导。SWE-bench Pro（482题）上，Sonnet 5单独75.5%/$0.75，加顾问达84%/$1.40，Fable 5单独91.5%/$2.25；组合方案约92%性能、63%成本。Orchestrator模式：Fable 5作为编排者规划并向多个Sonnet 5 worker扇出任务。BrowseComp上，全Sonnet 5 77.8%/$16.01，编排方案86.8%/$18.53，全Fable 5 90.8%/$40.56；编排方案约96%性能、46%成本。 🔗 阅读原文：https://x.com/shao__meng/status/207",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:智能体",
-        "weak:tool",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8aaf28566a67052853c3b37939f5c8712b13b340",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "蚂蚁集团周俊AICon演讲：从Token数量到Token密度，万亿参数模型效率优先",
-      "url": "https://aihot.virxact.com/items/cmrbdsefa02yjihl17gg7mhx3",
-      "published_at": "2026-07-08T01:00:00Z",
-      "summary": "蚂蚁集团副总裁周俊在AICon演讲指出，万亿参数模型每运行15分钟算力成本约等于一辆特斯拉，效率是智能体时代最需解决的问题。团队提出从\"更多Token\"转向\"更高Token密度\"策略，采用7份Lightning Attention加1份MLA的混合线性注意力架构，使256K长上下文成本从指数级降至线性级，算力更多用于思考。通过Kpop算法区分工具调用与自然语言Token，结合思维链剪枝、自蒸馏等，Token输出减少约4倍而能力不降。在LongBench、BFCL等基准上提升显著，千亿参数模型在Agent任务中超越部分更大模型；小模型flash吞吐达2.4倍，五轮对话成本下降10倍以上。 🔗 阅读原文：https://mp.weixin.qq.com/s/dsIfi4C-T5Q4emmIh-7yzg via AI",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:大模型",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -304,77 +360,19 @@
       "is_ai_related": true
     },
     {
-      "id": "d33c8b7b6ecfca67599e5a1f83949de8323c3b85",
+      "id": "b6598275fd8bda67c2a7032c46e3d7b740118982",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Kimi K2.7 now available for Copilot Business and Enterprise",
-      "url": "https://github.blog/changelog/2026-07-07-kimi-k2-7-now-available-for-copilot-business-and-enterprise",
-      "published_at": "2026-07-08T00:05:35Z",
-      "summary": "On July 1, 2026, we announced Kimi K2.7 would be available to Copilot Pro, Pro+, and Max plans. The model is now additionally available on Copilot Business and Copilot Enterprise… The post Kimi K2.7 now available for Copilot Business and Enterprise appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "f05f27ae6b3002dc357b1e306e20ff6d19f0a1d4",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "加拿大不列颠哥伦比亚省拟起诉OpenAI：未上报ChatGPT暴力对话致校园枪击惨案",
-      "url": "https://aihot.virxact.com/items/cmrbxa3ll003yihgens8d2sqg",
-      "published_at": "2026-07-08T09:55:17Z",
-      "summary": "加拿大不列颠哥伦比亚省7月7日宣布将起诉OpenAI，指控其未向执法部门上报一名ChatGPT用户2025年6月封禁前的暴力相关对话内容。该用户随后于今年2月在塔布勒岭制造校园枪击案，杀害8人。OpenAI CEO萨姆·奥尔特曼今年4月为此公开致歉，承认本应上报但未执行。受害家属已在加州法院提起诉讼，省政府正协调独立诉讼，要求赔偿用于社区重建。 🔗 阅读原文：https://www.ithome.com/0/974/169.htm via AI HOT · https://aihot.virxact.com/items/cmrbxa3ll003yihgens8d2sqg",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ec093dec09c8b32aad0bfa7b527e95cc7c421a3b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "蚂蚁集团旗下Robbyant开源LingBot-Vision：1B参数边界中心视觉基础模型，用于密集空间感知",
-      "url": "https://aihot.virxact.com/items/cmrbikwbz04b5ihl16qfp5ntw",
-      "published_at": "2026-07-08T03:03:22Z",
-      "summary": "蚂蚁集团旗下具身智能公司Robbyant开源LingBot-Vision，一套自监督视觉Transformer家族，专为密集空间感知设计。旗舰ViT-g/16参数约1.1B，采用掩膜边界建模训练，将边界作为原生预训练信号。在密集空间任务中，该1B模型匹配或超越参数规模高达7倍的大模型（如7B DINOv3）。模型以Apache-2.0许可证在Hugging Face开源，提供ViT-g、ViT-L（300M）、ViT-B（86M）、ViT-S四个规模。 🔗 阅读原文：https://www.marktechpost.com/2026/07/07/ant-groups-robbyant-open-sources-lingbot-vision-a-1b-boundary-centric-vision-foundat",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "strong:大模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5efd4929b503ce8145ec3e54a4dd35170ce5c8ff",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "YC CEO声称每日用AI部署3.7万行代码，开发者审查发现前端代码大量臃肿低效",
-      "url": "https://aihot.virxact.com/items/cmrayv5ja0293ihog3rixaqua",
-      "published_at": "2026-07-07T17:52:12Z",
-      "summary": "Y Combinator CEO Garry Tan在X上宣称，他与AI编码代理每天在五个项目中部署37000行代码，并保持连续72天发布记录。波兰开发者Gregorein深入审查Tan网站前端代码，发现大量臃肿与低效问题：页面加载169次请求、总计6.42MB数据（对比Hacker News仅7次12KB）；包含28个测试文件、78个未使用的JavaScript控制器、八种格式Logo（含空文件）、未压缩的旧PNG等。Gregorein指出，AI虽能快速生成代码，但质量仍应优先于数量。 🔗 阅读原文：https://www.fastcompany.com/91520702/y-combinator-garry-tan-agentic-ai-social-media via AI HOT · https://a",
+      "title": "setup-java v5.5.0: signature verification, Kona JDK, and Maven fixes",
+      "url": "https://github.blog/changelog/2026-07-08-setup-java-v5-5-0-signature-verification-kona-jdk-and-maven-fixes",
+      "published_at": "2026-07-08T17:05:06Z",
+      "summary": "The actions/setup-java v5.5.0 release adds cryptographic signature verification for downloaded JDKs, support for a new distribution, and several quality-of-life improvements for Maven users. Here’s what changed since v5.4.0. Verify JDK… The post setup-java v5.5.0: signature verification, Kona JDK, and Maven fixes appeared first on The GitHub Blog .",
       "relevance_score": 2,
       "relevance_reasons": [
-        "strong:agent",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
+        "source:actions"
       ],
       "is_ai_related": true
     }
@@ -386,11 +384,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1029,
-      "kept_count": 0,
+      "fetched_count": 1033,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 984,
-      "checked_at": "2026-07-08T16:01:30.480474Z"
+      "latency_ms": 687,
+      "checked_at": "2026-07-09T02:13:32.632941Z"
     },
     {
       "source_id": "openai-skills",
@@ -401,8 +399,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 424,
-      "checked_at": "2026-07-08T16:01:30.905571Z"
+      "latency_ms": 221,
+      "checked_at": "2026-07-09T02:13:32.854362Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -413,8 +411,8 @@
       "fetched_count": 237,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 108,
-      "checked_at": "2026-07-08T16:01:31.017748Z"
+      "latency_ms": 112,
+      "checked_at": "2026-07-09T02:13:32.970418Z"
     },
     {
       "source_id": "google-deepmind",
@@ -425,8 +423,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 413,
-      "checked_at": "2026-07-08T16:01:31.432558Z"
+      "latency_ms": 578,
+      "checked_at": "2026-07-09T02:13:33.550519Z"
     },
     {
       "source_id": "google-ai",
@@ -437,8 +435,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 256,
-      "checked_at": "2026-07-08T16:01:31.689750Z"
+      "latency_ms": 174,
+      "checked_at": "2026-07-09T02:13:33.725509Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -446,11 +444,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 821,
-      "kept_count": 2,
+      "fetched_count": 822,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 326,
-      "checked_at": "2026-07-08T16:01:32.028982Z"
+      "latency_ms": 283,
+      "checked_at": "2026-07-09T02:13:34.021385Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -459,10 +457,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 585,
-      "checked_at": "2026-07-08T16:01:32.615029Z"
+      "latency_ms": 209,
+      "checked_at": "2026-07-09T02:13:34.231157Z"
     },
     {
       "source_id": "github-changelog",
@@ -471,22 +469,22 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-07-08T16:01:32.645950Z"
+      "latency_ms": 31,
+      "checked_at": "2026-07-09T02:13:34.263687Z"
     },
     {
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "enabled": true,
-      "ok": true,
-      "fetched_count": 50,
-      "kept_count": 8,
-      "error": null,
-      "latency_ms": 338,
-      "checked_at": "2026-07-08T16:01:32.985981Z"
+      "ok": false,
+      "fetched_count": 0,
+      "kept_count": 0,
+      "error": "HTTPSConnectionPool(host='aihot.virxact.com', port=443): Max retries exceeded with url: /feed.xml (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f2c70d584a0>: Failed to resolve 'aihot.virxact.com' ([Errno -2] Name or service not known)\"))",
+      "latency_ms": 478,
+      "checked_at": "2026-07-09T02:13:34.742362Z"
     }
   ],
   "control_notes": {
