@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-10T02:13:42.499839Z",
+  "generated_at": "2026-07-10T07:03:55.638343Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 16,
+  "item_count": 18,
   "groups": {
     "official": {
       "group": "official",
@@ -40,24 +40,28 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 11,
+      "count": 13,
       "top_sources": [
         [
           "AI Hot",
-          11
+          13
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          11
-        ],
-        [
-          "智能体",
-          4
+          13
         ],
         [
           "anthropic",
+          5
+        ],
+        [
+          "智能体",
+          5
+        ],
+        [
+          "claude",
           4
         ],
         [
@@ -65,11 +69,15 @@
           3
         ],
         [
-          "claude",
-          3
+          "mcp",
+          2
         ],
         [
           "chatgpt",
+          2
+        ],
+        [
+          "agent",
           2
         ],
         [
@@ -81,15 +89,7 @@
           1
         ],
         [
-          "mcp",
-          1
-        ],
-        [
           "工作流",
-          1
-        ],
-        [
-          "agent",
           1
         ],
         [
@@ -136,6 +136,27 @@
         "strong:chatgpt",
         "strong:agent",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c6194fd0b7b6c241f0d9976598ca54763bdeafea",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Code v2.1.206 发布",
+      "url": "https://aihot.virxact.com/items/cmreax6su01ozihyy4xtirms5",
+      "published_at": "2026-07-10T01:45:26Z",
+      "summary": "Claude Code v2.1.206 发布，主要更新包括：为 `/cd` 命令添加目录路径建议；新增 `/doctor` 检查以建议修剪 CLAUDE.md 文件中模型可从代码库推导的内容；`/commit-push-pr` 现在自动允许 git push 到仓库配置的推送远程仓库；`/login` 支持 Anthropic 运营的公共网关端点；后台智能体在更新后自动升级。修复了过期登录导致所有模型报错、`claude --resume` 和 `--continue` 在启动时无键盘响应、MCP 服务器忽略 `request_timeout_ms` 配置、OAuth MCP 服务器需手动重新认证、`/model` 选择器价格显示错误、桌面会话卡在\"运行中\"状态、Windows 上键盘输入被忽略等多项问题。 ",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:mcp",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -388,6 +409,25 @@
       "is_ai_related": true
     },
     {
+      "id": "4ce26a5dd7511fccd7079995455e7f7243053101",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "美团 LongCat-2.0 正式开源，同步开放国产卡推理代码",
+      "url": "https://aihot.virxact.com/items/cmrees13p006wihgvrokrpgpy",
+      "published_at": "2026-07-09T11:58:00Z",
+      "summary": "美团万亿参数大模型 LongCat-2.0 正式开源，总参数 1.6T，平均激活约 48B，专为真实 Agentic Coding 任务设计。模型引入 LongCat 稀疏注意力机制与 N-gram Embedding，提升长上下文处理效率与 Token 级表示能力。LongCat-2.0 是业界首个在五万卡国产算力集群上完成推理的万亿参数模型，从模型架构、芯片适配到部署策略进行深度协同优化，支持百万上下文高效推理。开源同步提供 BF16、FP8、INT8 等多精度版本及针对国产算力极致优化的推理代码。 🔗 阅读原文：https://mp.weixin.qq.com/s/iCq4jVlTdKOt74zAMYIIdw via AI HOT · https://aihot.virxact.com/items/cmr",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:大模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "20be8e04667ee4c9605ff748231c87fc5142caa4",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -437,8 +477,8 @@
       "fetched_count": 1039,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 640,
-      "checked_at": "2026-07-10T02:13:40.476033Z"
+      "latency_ms": 897,
+      "checked_at": "2026-07-10T07:03:50.046221Z"
     },
     {
       "source_id": "openai-skills",
@@ -449,8 +489,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 297,
-      "checked_at": "2026-07-10T02:13:40.773528Z"
+      "latency_ms": 152,
+      "checked_at": "2026-07-10T07:03:50.199323Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -461,8 +501,8 @@
       "fetched_count": 241,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 109,
-      "checked_at": "2026-07-10T02:13:40.886636Z"
+      "latency_ms": 116,
+      "checked_at": "2026-07-10T07:03:50.319868Z"
     },
     {
       "source_id": "google-deepmind",
@@ -473,8 +513,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 512,
-      "checked_at": "2026-07-10T02:13:41.400748Z"
+      "latency_ms": 318,
+      "checked_at": "2026-07-10T07:03:50.639845Z"
     },
     {
       "source_id": "google-ai",
@@ -485,8 +525,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 263,
-      "checked_at": "2026-07-10T02:13:41.664975Z"
+      "latency_ms": 174,
+      "checked_at": "2026-07-10T07:03:50.815114Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -497,8 +537,8 @@
       "fetched_count": 822,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 329,
-      "checked_at": "2026-07-10T02:13:42.006267Z"
+      "latency_ms": 254,
+      "checked_at": "2026-07-10T07:03:51.082041Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -509,8 +549,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 126,
-      "checked_at": "2026-07-10T02:13:42.133464Z"
+      "latency_ms": 140,
+      "checked_at": "2026-07-10T07:03:51.222919Z"
     },
     {
       "source_id": "github-changelog",
@@ -521,8 +561,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 36,
-      "checked_at": "2026-07-10T02:13:42.170047Z"
+      "latency_ms": 27,
+      "checked_at": "2026-07-10T07:03:51.250448Z"
     },
     {
       "source_id": "aihot",
@@ -531,10 +571,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 11,
+      "kept_count": 13,
       "error": null,
-      "latency_ms": 319,
-      "checked_at": "2026-07-10T02:13:42.490896Z"
+      "latency_ms": 4377,
+      "checked_at": "2026-07-10T07:03:55.629467Z"
     }
   ],
   "control_notes": {
