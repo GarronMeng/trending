@@ -1,35 +1,27 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-10T09:59:22.365371Z",
+  "generated_at": "2026-07-10T11:23:21.169205Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 19,
+  "item_count": 17,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI News",
-          4
+          2
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          4
-        ],
-        [
-          "openai",
           2
         ],
         [
-          "chatgpt",
-          1
-        ],
-        [
-          "agent",
+          "openai",
           1
         ],
         [
@@ -44,24 +36,20 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 13,
+      "count": 12,
       "top_sources": [
         [
           "AI Hot",
-          13
+          12
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          13
+          12
         ],
         [
           "anthropic",
-          5
-        ],
-        [
-          "智能体",
           5
         ],
         [
@@ -69,11 +57,11 @@
           4
         ],
         [
-          "mcp",
-          3
+          "智能体",
+          4
         ],
         [
-          "openai",
+          "mcp",
           3
         ],
         [
@@ -81,16 +69,16 @@
           3
         ],
         [
-          "chatgpt",
+          "开发者",
+          2
+        ],
+        [
+          "openai",
           2
         ],
         [
           "codex",
-          2
-        ],
-        [
-          "开发者",
-          2
+          1
         ],
         [
           "workflow",
@@ -99,22 +87,26 @@
         [
           "工作流",
           1
+        ],
+        [
+          "多模态",
+          1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          3
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          4
+          6
         ],
         [
           "openai",
@@ -124,25 +116,6 @@
     }
   },
   "items": [
-    {
-      "id": "57c2182ab038a03a2275431f98d86fdc1c5ccdd6",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "ChatGPT is now a partner for your most ambitious work",
-      "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
-      "published_at": "2026-07-09T10:00:00Z",
-      "summary": "ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:agent",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "5ee72aa374dc03f4a438464b862b358614115664",
       "source_id": "openai-news",
@@ -178,27 +151,6 @@
         "strong:anthropic",
         "strong:claude",
         "strong:mcp",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "bf5724af2a0c4f04b12ab93c78a9302ebe4d1982",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 推出 ChatGPT Work：可跨应用自主工作的 AI 智能体",
-      "url": "https://aihot.virxact.com/items/cmrdrlair06hpih4bxerobguv",
-      "published_at": "2026-07-09T10:00:00Z",
-      "summary": "OpenAI 发布 ChatGPT Work，一个能跨应用和文件收集信息、将复杂项目分解为小步骤独立完成并持续工作数小时的 AI 智能体。它内置 Codex 技术，目前每周超 500 万用户使用 Codex，其中超 100 万用于非软件开发场景。ChatGPT Work 由今天同步推出的最新前沿模型 GPT-5.6 驱动，具备多步骤推理和按模板生成材料的能力。该功能今天起面向 Pro、Enterprise 和 Edu 计划推出，未来几天扩展至 Plus 和 Business 计划。桌面版 ChatGPT 在所有计划（含免费版）中提供 Chat、Work 和 Codex 模式，且 Codex 应用已合并至新的桌面应用。 🔗 阅读原文：https://openai.com/index/chatgpt-for-you",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:codex",
         "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
@@ -245,24 +197,6 @@
       "is_ai_related": true
     },
     {
-      "id": "84a3d62d220eaf1591b4308c8817c53a7b778bc1",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "GPT-5.5 Bio Bug Bounty",
-      "url": "https://openai.com/index/bio-bug-bounty",
-      "published_at": "2026-07-09T10:00:00Z",
-      "summary": "Details about the OpenAI Bio Bounty program",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "bb9e5a4114e578fe1601afd856d22f07283be48b",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -277,6 +211,24 @@
       "relevance_reasons": [
         "weak:copilot",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c0991e533c0c10cfd461bcdce98a689f0d349b63",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Mobile: Improved filters and sorting for Copilot sessions",
+      "url": "https://github.blog/changelog/2026-07-10-github-mobile-improved-filters-and-sorting-for-copilot-sessions",
+      "published_at": "2026-07-10T09:45:30Z",
+      "summary": "GitHub Mobile now includes improved filters and sorting for Copilot sessions, making it easier to find the right session as your session list grows. You can now narrow your session… The post GitHub Mobile: Improved filters and sorting for Copilot sessions appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -500,10 +452,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1040,
-      "kept_count": 4,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 704,
-      "checked_at": "2026-07-10T09:59:19.877297Z"
+      "latency_ms": 818,
+      "checked_at": "2026-07-10T11:23:14.350632Z"
     },
     {
       "source_id": "openai-skills",
@@ -514,8 +466,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 266,
-      "checked_at": "2026-07-10T09:59:20.144332Z"
+      "latency_ms": 207,
+      "checked_at": "2026-07-10T11:23:14.558378Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -526,8 +478,8 @@
       "fetched_count": 241,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 164,
-      "checked_at": "2026-07-10T09:59:20.310639Z"
+      "latency_ms": 111,
+      "checked_at": "2026-07-10T11:23:14.673954Z"
     },
     {
       "source_id": "google-deepmind",
@@ -538,8 +490,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 410,
-      "checked_at": "2026-07-10T09:59:20.721593Z"
+      "latency_ms": 258,
+      "checked_at": "2026-07-10T11:23:14.934072Z"
     },
     {
       "source_id": "google-ai",
@@ -550,8 +502,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 187,
-      "checked_at": "2026-07-10T09:59:20.909408Z"
+      "latency_ms": 221,
+      "checked_at": "2026-07-10T11:23:15.156236Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -562,8 +514,8 @@
       "fetched_count": 823,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 228,
-      "checked_at": "2026-07-10T09:59:21.144538Z"
+      "latency_ms": 326,
+      "checked_at": "2026-07-10T11:23:15.494881Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -574,8 +526,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 159,
-      "checked_at": "2026-07-10T09:59:21.304455Z"
+      "latency_ms": 240,
+      "checked_at": "2026-07-10T11:23:15.735139Z"
     },
     {
       "source_id": "github-changelog",
@@ -584,10 +536,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-07-10T09:59:21.332420Z"
+      "latency_ms": 28,
+      "checked_at": "2026-07-10T11:23:15.763950Z"
     },
     {
       "source_id": "aihot",
@@ -596,10 +548,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 13,
+      "kept_count": 12,
       "error": null,
-      "latency_ms": 1024,
-      "checked_at": "2026-07-10T09:59:22.358147Z"
+      "latency_ms": 5396,
+      "checked_at": "2026-07-10T11:23:21.161966Z"
     }
   ],
   "control_notes": {
