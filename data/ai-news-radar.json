@@ -1,24 +1,28 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-10T07:03:55.638343Z",
+  "generated_at": "2026-07-10T09:59:22.365371Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 18,
+  "item_count": 19,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI News",
-          3
+          4
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
+          4
+        ],
+        [
+          "openai",
+          2
         ],
         [
           "chatgpt",
@@ -29,7 +33,7 @@
           1
         ],
         [
-          "openai",
+          "workflow",
           1
         ],
         [
@@ -65,19 +69,23 @@
           4
         ],
         [
+          "mcp",
+          3
+        ],
+        [
           "openai",
           3
         ],
         [
-          "mcp",
-          2
+          "agent",
+          3
         ],
         [
           "chatgpt",
           2
         ],
         [
-          "agent",
+          "codex",
           2
         ],
         [
@@ -85,15 +93,11 @@
           2
         ],
         [
-          "codex",
+          "workflow",
           1
         ],
         [
           "工作流",
-          1
-        ],
-        [
-          "多模态",
           1
         ]
       ]
@@ -140,6 +144,25 @@
       "is_ai_related": true
     },
     {
+      "id": "5ee72aa374dc03f4a438464b862b358614115664",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How Deutsche Telekom is rewiring telecommunications with AI",
+      "url": "https://openai.com/index/deutsche-telekom",
+      "published_at": "2026-07-10T07:00:00Z",
+      "summary": "How Deutsche Telekom is becoming an AI-native telco with OpenAI-transforming customer service, employee workflows, network operations, and the future of voice.",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "c6194fd0b7b6c241f0d9976598ca54763bdeafea",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -177,6 +200,27 @@
         "strong:chatgpt",
         "strong:codex",
         "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "08a043010091223910352f24fa40fdf4bb2ac021",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Elon Musk 转发用户称赞 Grok Build 的反馈",
+      "url": "https://aihot.virxact.com/items/cmrema2b4022bihcleaow4j8v",
+      "published_at": "2026-07-10T07:14:39Z",
+      "summary": "Elon Musk 转发用户 @0x0funky 对 Grok Build 的称赞。该用户称 Grok Build 是目前唯一集大成的 coding agentic workflow，内建图像生成和图片生视频功能，生图速度快且品质不输 Codex。Agent 可直接完成图像与视频生成，无需额外串接 MCP 或外部服务。用户结合 Agent Sprite Forge 工具，利用 Grok Build 的视频生成能力，先产出 6 秒角色动作视频再反编译为 game sprite，大幅减少对齐问题，制作 2D 横版游戏耗时不到 30 分钟，而此前用 Codex 需 1-2 小时且品质更优。 🔗 阅读原文：https://x.com/elonmusk/status/2075478792273842370 via AI ",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:codex",
+        "strong:agent",
+        "strong:mcp",
+        "weak:workflow",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -428,25 +472,6 @@
       "is_ai_related": true
     },
     {
-      "id": "20be8e04667ee4c9605ff748231c87fc5142caa4",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "NVIDIA 发布 Nemotron-Labs-3-Puzzle-75B-A9B：压缩混合 MoE 模型，服务器吞吐量提升 2.03 倍",
-      "url": "https://aihot.virxact.com/items/cmrd9x7xz01wzih4bch5uoywh",
-      "published_at": "2026-07-09T08:47:37Z",
-      "summary": "NVIDIA 发布 Nemotron-3-Super 的压缩变体 Nemotron-Labs-3-Puzzle-75B-A9B，总参数从 120.7B 降至 75.3B，活跃参数从 12.8B 降至 9.3B，保持 88 块混合布局（40 Mamba、40 MoE、8 注意力）。在 8×B200 节点上，8K/64K 场景匹配用户吞吐量≥100 tok/s 时，服务器吞吐量提升 2.03 倍。单 H100 上 1M-token 并发从 1 增至 8，权重占用从 70 GB 降至 44.5 GB。迭代式 Puzzle 方法平均得分比单步高 0.57。代价：Arena-Hard-V2 降 4.2 分、SWE-Bench 降 2.6 分。Hugging Face 提供 BF16、FP8、NVFP4 检查点。 🔗 阅读",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "strong:llm",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "a440d33d4fe3b8a74e0cb36fe14d4d7e47645e2c",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -474,11 +499,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1039,
-      "kept_count": 3,
+      "fetched_count": 1040,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 897,
-      "checked_at": "2026-07-10T07:03:50.046221Z"
+      "latency_ms": 704,
+      "checked_at": "2026-07-10T09:59:19.877297Z"
     },
     {
       "source_id": "openai-skills",
@@ -489,8 +514,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 152,
-      "checked_at": "2026-07-10T07:03:50.199323Z"
+      "latency_ms": 266,
+      "checked_at": "2026-07-10T09:59:20.144332Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -501,8 +526,8 @@
       "fetched_count": 241,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 116,
-      "checked_at": "2026-07-10T07:03:50.319868Z"
+      "latency_ms": 164,
+      "checked_at": "2026-07-10T09:59:20.310639Z"
     },
     {
       "source_id": "google-deepmind",
@@ -513,8 +538,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 318,
-      "checked_at": "2026-07-10T07:03:50.639845Z"
+      "latency_ms": 410,
+      "checked_at": "2026-07-10T09:59:20.721593Z"
     },
     {
       "source_id": "google-ai",
@@ -525,8 +550,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 174,
-      "checked_at": "2026-07-10T07:03:50.815114Z"
+      "latency_ms": 187,
+      "checked_at": "2026-07-10T09:59:20.909408Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -534,11 +559,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 822,
+      "fetched_count": 823,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-07-10T07:03:51.082041Z"
+      "latency_ms": 228,
+      "checked_at": "2026-07-10T09:59:21.144538Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -549,8 +574,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 140,
-      "checked_at": "2026-07-10T07:03:51.222919Z"
+      "latency_ms": 159,
+      "checked_at": "2026-07-10T09:59:21.304455Z"
     },
     {
       "source_id": "github-changelog",
@@ -562,7 +587,7 @@
       "kept_count": 2,
       "error": null,
       "latency_ms": 27,
-      "checked_at": "2026-07-10T07:03:51.250448Z"
+      "checked_at": "2026-07-10T09:59:21.332420Z"
     },
     {
       "source_id": "aihot",
@@ -573,8 +598,8 @@
       "fetched_count": 50,
       "kept_count": 13,
       "error": null,
-      "latency_ms": 4377,
-      "checked_at": "2026-07-10T07:03:55.629467Z"
+      "latency_ms": 1024,
+      "checked_at": "2026-07-10T09:59:22.358147Z"
     }
   ],
   "control_notes": {

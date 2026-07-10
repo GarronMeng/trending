@@ -43,8 +43,8 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>18</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>3</b><span>官方源条目</span></div>
+        <div class="stat"><b>19</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>4</b><span>官方源条目</span></div>
         <div class="stat"><b>13</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
@@ -52,7 +52,7 @@
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-10T07:03:55.640048Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-10T09:59:22.366576Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -64,6 +64,19 @@
       <h3><a href="https://openai.com/index/chatgpt-for-your-most-ambitious-work" target="_blank" rel="noreferrer">ChatGPT is now a partner for your most ambitious work</a></h3>
       <p class='summary'>ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.</p>
       <div class="tags"><span>strong:chatgpt</span><span>strong:agent</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-07-10T07:00:00Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://openai.com/index/deutsche-telekom" target="_blank" rel="noreferrer">How Deutsche Telekom is rewiring telecommunications with AI</a></h3>
+      <p class='summary'>How Deutsche Telekom is becoming an AI-native telco with OpenAI-transforming customer service, employee workflows, network operations, and the future of voice.</p>
+      <div class="tags"><span>strong:openai</span><span>weak:workflow</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -90,6 +103,19 @@
       <h3><a href="https://aihot.virxact.com/items/cmrdrlair06hpih4bxerobguv" target="_blank" rel="noreferrer">OpenAI 推出 ChatGPT Work：可跨应用自主工作的 AI 智能体</a></h3>
       <p class='summary'>OpenAI 发布 ChatGPT Work，一个能跨应用和文件收集信息、将复杂项目分解为小步骤独立完成并持续工作数小时的 AI 智能体。它内置 Codex 技术，目前每周超 500 万用户使用 Codex，其中超 100 万用于非软件开发场景。ChatGPT Work 由今天同步推出的最新前沿模型 GPT-5.6 驱动，具备多步骤推理和按模板生成材料的能力。该功能今天起面向 Pro、Enterprise 和 Edu 计划推出，未来几天扩展至 Plus 和 Business 计划。桌面版 ChatGPT 在所有计划（含免费版）中提供 Chat、Work 和 Codex 模式，且 Codex 应用已合并至新的桌面应用。 🔗 阅读原文：https://openai.com/index/chatgpt-for-you</p>
       <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>strong:codex</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-10T07:14:39Z</span>
+        <strong>Score 6</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmrema2b4022bihcleaow4j8v" target="_blank" rel="noreferrer">Elon Musk 转发用户称赞 Grok Build 的反馈</a></h3>
+      <p class='summary'>Elon Musk 转发用户 @0x0funky 对 Grok Build 的称赞。该用户称 Grok Build 是目前唯一集大成的 coding agentic workflow，内建图像生成和图片生视频功能，生图速度快且品质不输 Codex。Agent 可直接完成图像与视频生成，无需额外串接 MCP 或外部服务。用户结合 Agent Sprite Forge 工具，利用 Grok Build 的视频生成能力，先产出 6 秒角色动作视频再反编译为 game sprite，大幅减少对齐问题，制作 2D 横版游戏耗时不到 30 分钟，而此前用 Codex 需 1-2 小时且品质更优。 🔗 阅读原文：https://x.com/elonmusk/status/2075478792273842370 via AI </p>
+      <div class="tags"><span>strong:codex</span><span>strong:agent</span><span>strong:mcp</span><span>weak:workflow</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -266,19 +292,6 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-07-09T08:47:37Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrd9x7xz01wzih4bch5uoywh" target="_blank" rel="noreferrer">NVIDIA 发布 Nemotron-Labs-3-Puzzle-75B-A9B：压缩混合 MoE 模型，服务器吞吐量提升 2.03 倍</a></h3>
-      <p class='summary'>NVIDIA 发布 Nemotron-3-Super 的压缩变体 Nemotron-Labs-3-Puzzle-75B-A9B，总参数从 120.7B 降至 75.3B，活跃参数从 12.8B 降至 9.3B，保持 88 块混合布局（40 Mamba、40 MoE、8 注意力）。在 8×B200 节点上，8K/64K 场景匹配用户吞吐量≥100 tok/s 时，服务器吞吐量提升 2.03 倍。单 H100 上 1M-token 并发从 1 增至 8，权重占用从 70 GB 降至 44.5 GB。迭代式 Puzzle 方法平均得分比单步高 0.57。代价：Arena-Hard-V2 降 4.2 分、SWE-Bench 降 2.6 分。Hugging Face 提供 BF16、FP8、NVFP4 检查点。 🔗 阅读</p>
-      <div class="tags"><span>strong:hugging face</span><span>strong:llm</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
         <span>2026-07-09T21:21:08Z</span>
         <strong>Score 2</strong>
       </div>
@@ -292,15 +305,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1039</td><td>3</td><td>897ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>152ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>241</td><td>0</td><td>116ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>318ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>174ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>822</td><td>0</td><td>254ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>140ms</td><td></td></tr>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1040</td><td>4</td><td>704ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>266ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>241</td><td>0</td><td>164ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>410ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>187ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>823</td><td>0</td><td>228ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>159ms</td><td></td></tr>
 <tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>27ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>13</td><td>4377ms</td><td></td></tr></tbody>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>13</td><td>1024ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
