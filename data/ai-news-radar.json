@@ -1,76 +1,88 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-10T11:23:21.169205Z",
+  "generated_at": "2026-07-10T16:23:26.928741Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 17,
+  "item_count": 13,
   "groups": {
     "official": {
       "group": "official",
       "count": 2,
       "top_sources": [
         [
+          "GitHub AI & ML",
+          1
+        ],
+        [
           "OpenAI News",
-          2
+          1
         ]
       ],
       "top_keywords": [
+        [
+          "workflow",
+          2
+        ],
         [
           "official_ai",
           2
         ],
         [
-          "openai",
+          "agent",
           1
         ],
         [
-          "workflow",
+          "api",
+          1
+        ],
+        [
+          "tool",
           1
         ],
         [
           "copilot",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "openai",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 12,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          12
+          9
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          12
+          9
         ],
         [
           "anthropic",
-          5
+          4
         ],
         [
           "claude",
-          4
-        ],
-        [
-          "智能体",
-          4
+          3
         ],
         [
           "mcp",
           3
         ],
         [
-          "agent",
+          "智能体",
           3
-        ],
-        [
-          "开发者",
-          2
         ],
         [
           "openai",
@@ -78,6 +90,10 @@
         ],
         [
           "codex",
+          1
+        ],
+        [
+          "agent",
           1
         ],
         [
@@ -91,22 +107,26 @@
         [
           "多模态",
           1
+        ],
+        [
+          "chatgpt",
+          1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          3
+          2
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          6
+          4
         ],
         [
           "openai",
@@ -116,6 +136,29 @@
     }
   },
   "items": [
+    {
+      "id": "7cc395845613355130c2e6f8311b0413ce734186",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "Better tools made Copilot code review worse. Here’s how we actually improved it.",
+      "url": "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it",
+      "published_at": "2026-07-10T15:57:47Z",
+      "summary": "How migrating Copilot code review to shared Unix-style code exploration tools reduced review cost by reshaping agent workflows around pull request evidence. The post Better tools made Copilot code review worse. Here’s how we actually improved it. appeared first on The GitHub Blog .",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:api",
+        "weak:tool",
+        "weak:workflow",
+        "weak:copilot",
+        "weak:API",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "5ee72aa374dc03f4a438464b862b358614115664",
       "source_id": "openai-news",
@@ -197,24 +240,6 @@
       "is_ai_related": true
     },
     {
-      "id": "bb9e5a4114e578fe1601afd856d22f07283be48b",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
-      "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
-      "published_at": "2026-07-09T13:00:00Z",
-      "summary": "Learn how GPT-5.6 powers Microsoft 365 Copilot with stronger AI capabilities across Word, Excel, PowerPoint, Chat, and Cowork for faster, higher-quality work.",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "c0991e533c0c10cfd461bcdce98a689f0d349b63",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -248,44 +273,6 @@
         "strong:mcp",
         "strong:智能体",
         "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "f5fc1d95fafd3445aaf1b4621e8f94129971f802",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Ask Copilot for a repository overview",
-      "url": "https://github.blog/changelog/2026-07-09-ask-copilot-for-a-repository-overview",
-      "published_at": "2026-07-09T14:25:33Z",
-      "summary": "You can now ask GitHub Copilot for a high-level overview of any repository you’re exploring for the first time. When you visit the home page of a repository you haven’t… The post Ask Copilot for a repository overview appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b88b551ca56e92da99295bce4106b31b3f84e772",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "TeXada：基于MiniCPM的本地数学Agent发布",
-      "url": "https://aihot.virxact.com/items/cmrdl9o8g04twih4b0sqb2p2d",
-      "published_at": "2026-07-09T14:01:03Z",
-      "summary": "社区开发者基于MiniCPM5-1B和MiniCPM-V 4.6构建了本地优先的数学智能体TeXada。该Agent支持自然语言直接转LaTeX、手写/图像公式OCR转可编辑LaTeX、LaTeX补全与错误修复等核心功能。所有推理在本地完成，无需依赖云服务，保障隐私安全，适用于学生、研究人员和开发者随时随地处理数学表达式。已开源至GitHub，并提供HuggingFace模型下载。 🔗 阅读原文：https://x.com/OpenBMB/status/2075218678027850154 via AI HOT · https://aihot.virxact.com/items/cmrdl9o8g04twih4b0sqb2p2d",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
-        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -386,44 +373,6 @@
       "is_ai_related": true
     },
     {
-      "id": "6a9dd5414de6ad8d7457e65f353429482c7d3ee0",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude 推出反思功能（Beta）",
-      "url": "https://aihot.virxact.com/items/cmrdk0zfw04ixih4b84colsmb",
-      "published_at": "2026-07-09T13:40:30Z",
-      "summary": "Anthropic 为 Claude 推出一项反思功能（Beta），帮助用户追踪使用模式。用户可回顾过去 1、3、6 或 12 个月的活动总结，涵盖关键主题、使用频率和任务类型。功能结合 4D AI Fluency Framework（委托、描述、辨别、勤勉）提供协作分析，支持设定静音时段或定时休息提醒。隐私方面，不涉及无痕对话和健康集成工具，也不提取连接工具中的底层文件。该功能面向 Free、Pro 和 Max 用户，需开启记忆功能，可通过 Claude 网页或桌面应用设置。 🔗 阅读原文：https://www.anthropic.com/news/reflect-with-claude via AI HOT · https://aihot.virxact.com/items/cmrdk0zfw04ixih",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "4ce26a5dd7511fccd7079995455e7f7243053101",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "美团 LongCat-2.0 正式开源，同步开放国产卡推理代码",
-      "url": "https://aihot.virxact.com/items/cmrees13p006wihgvrokrpgpy",
-      "published_at": "2026-07-09T11:58:00Z",
-      "summary": "美团万亿参数大模型 LongCat-2.0 正式开源，总参数 1.6T，平均激活约 48B，专为真实 Agentic Coding 任务设计。模型引入 LongCat 稀疏注意力机制与 N-gram Embedding，提升长上下文处理效率与 Token 级表示能力。LongCat-2.0 是业界首个在五万卡国产算力集群上完成推理的万亿参数模型，从模型架构、芯片适配到部署策略进行深度协同优化，支持百万上下文高效推理。开源同步提供 BF16、FP8、INT8 等多精度版本及针对国产算力极致优化的推理代码。 🔗 阅读原文：https://mp.weixin.qq.com/s/iCq4jVlTdKOt74zAMYIIdw via AI HOT · https://aihot.virxact.com/items/cmr",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:大模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "a440d33d4fe3b8a74e0cb36fe14d4d7e47645e2c",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -452,10 +401,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1040,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 818,
-      "checked_at": "2026-07-10T11:23:14.350632Z"
+      "latency_ms": 817,
+      "checked_at": "2026-07-10T16:23:24.301291Z"
     },
     {
       "source_id": "openai-skills",
@@ -466,8 +415,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 207,
-      "checked_at": "2026-07-10T11:23:14.558378Z"
+      "latency_ms": 298,
+      "checked_at": "2026-07-10T16:23:24.600090Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -478,8 +427,8 @@
       "fetched_count": 241,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 111,
-      "checked_at": "2026-07-10T11:23:14.673954Z"
+      "latency_ms": 169,
+      "checked_at": "2026-07-10T16:23:24.773002Z"
     },
     {
       "source_id": "google-deepmind",
@@ -490,8 +439,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 258,
-      "checked_at": "2026-07-10T11:23:14.934072Z"
+      "latency_ms": 384,
+      "checked_at": "2026-07-10T16:23:25.158992Z"
     },
     {
       "source_id": "google-ai",
@@ -502,8 +451,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 221,
-      "checked_at": "2026-07-10T11:23:15.156236Z"
+      "latency_ms": 255,
+      "checked_at": "2026-07-10T16:23:25.415070Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -514,8 +463,8 @@
       "fetched_count": 823,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 326,
-      "checked_at": "2026-07-10T11:23:15.494881Z"
+      "latency_ms": 321,
+      "checked_at": "2026-07-10T16:23:25.749476Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -524,10 +473,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 240,
-      "checked_at": "2026-07-10T11:23:15.735139Z"
+      "latency_ms": 206,
+      "checked_at": "2026-07-10T16:23:25.956284Z"
     },
     {
       "source_id": "github-changelog",
@@ -536,10 +485,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-07-10T11:23:15.763950Z"
+      "latency_ms": 42,
+      "checked_at": "2026-07-10T16:23:25.999313Z"
     },
     {
       "source_id": "aihot",
@@ -548,10 +497,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 12,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 5396,
-      "checked_at": "2026-07-10T11:23:21.161966Z"
+      "latency_ms": 919,
+      "checked_at": "2026-07-10T16:23:26.920262Z"
     }
   ],
   "control_notes": {
