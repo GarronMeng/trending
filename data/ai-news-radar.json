@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-11T09:56:23.343504Z",
+  "generated_at": "2026-07-11T14:51:19.897949Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 4,
+  "item_count": 7,
   "groups": {
     "official": {
       "group": "official",
@@ -48,32 +48,44 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          2
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          2
-        ],
-        [
-          "openai",
-          1
+          5
         ],
         [
           "anthropic",
+          3
+        ],
+        [
+          "claude",
+          3
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ],
+        [
+          "API",
           1
         ],
         [
           "agent",
-          1
-        ],
-        [
-          "claude",
           1
         ],
         [
@@ -82,6 +94,10 @@
         ],
         [
           "gemini",
+          1
+        ],
+        [
+          "codex",
           1
         ]
       ]
@@ -132,6 +148,28 @@
       "is_ai_related": true
     },
     {
+      "id": "ced24825d7797f9497dcc10b2daab2461246caf7",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun",
+      "url": "https://aihot.virxact.com/items/cmrg3syhp00l7iha7a3ansg62",
+      "published_at": "2026-07-11T07:33:08Z",
+      "summary": "开发者Jarred Sumner借助Claude Fable 5模型，11天内将Bun从Zig重写为Rust，64个实例并行编写超100万行代码，API费用约16.5万美元。重构主因是Zig频繁内存错误，Rust可在编译时捕获。Bun v1.4.0以Canary版本发布，修复128个错误，速度提高约2%到5%。Bun团队已于2025年12月被Anthropic收购。 🔗 阅读原文：https://www.ithome.com/0/975/469.htm via AI HOT · https://aihot.virxact.com/items/cmrg3syhp00l7iha7a3ansg62",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:api",
+        "weak:开发者",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "0b2c379a896897cb59d7103f3f1b557f14254ead",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -172,6 +210,44 @@
       "is_ai_related": true
     },
     {
+      "id": "5822e96bb21c9696a690c0f238aff0ea0f8e7dff",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Code v2.1.207 发布",
+      "url": "https://aihot.virxact.com/items/cmrfoggdz01o7ihjl1exdh1qt",
+      "published_at": "2026-07-11T00:52:10Z",
+      "summary": "Claude Code v2.1.207 发布。Auto 模式在 Bedrock、Vertex AI 和 Foundry 上无需 `CLAUDE_CODE_ENABLE_AUTO_MODE` 即可使用，可通过 `disableAutoMode` 设置关闭。修复了流式响应中包含超长列表、表格、段落或代码块时终端冻结和按键延迟的问题；修复了非交互式运行中远程托管设置被永久记录为已同意而未显示安全同意对话框的问题；修复了自动更新程序每次发布时覆盖 `~/.local/bin/claude` 自定义启动脚本或符号链接的问题。Bedrock、Vertex 和 Claude Platform on AWS 默认切换为 Claude Opus 4.8。Auto 模式不再从 `.claude/settings.local.js",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "17c9e0f5d0503ddce53175adc4799a9f9834e295",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 论文：GPT-5.6 Sol Ultra 证明图论\"循环双覆盖猜想\"",
+      "url": "https://aihot.virxact.com/items/cmrfdbe4g016aihxb8btg5nu0",
+      "published_at": "2026-07-10T19:59:11Z",
+      "summary": "OpenAI 发布论文，称 GPT-5.6 Sol Ultra 证明了图论中悬而未决的\"循环双覆盖猜想\"。该猜想断言每个无桥无向图都存在一组环，每条边恰好被覆盖两次。论文利用 GPT-5.6 Sol Ultra 完成证明，并借助 Codex 撰写。证明过程首先将问题简化为三次图，利用 8-流定理和 Tutte 的结果将边标记为 F32 的非零元，再转化为每个顶点处每个元素出现零次或两次的二元集标记，最终归结为线性代数论证。 🔗 阅读原文：https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf via AI HOT · https://aihot.virxact.com/items/cmrfdbe4g016aihx",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "9b12514af99661a15249695b4a05b96072b66176",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -200,8 +276,8 @@
       "fetched_count": 1040,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 688,
-      "checked_at": "2026-07-11T09:56:21.205188Z"
+      "latency_ms": 733,
+      "checked_at": "2026-07-11T14:51:13.867658Z"
     },
     {
       "source_id": "openai-skills",
@@ -212,8 +288,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 188,
-      "checked_at": "2026-07-11T09:56:21.394302Z"
+      "latency_ms": 196,
+      "checked_at": "2026-07-11T14:51:14.064609Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -224,8 +300,8 @@
       "fetched_count": 241,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 106,
-      "checked_at": "2026-07-11T09:56:21.504506Z"
+      "latency_ms": 115,
+      "checked_at": "2026-07-11T14:51:14.183512Z"
     },
     {
       "source_id": "google-deepmind",
@@ -236,8 +312,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 280,
-      "checked_at": "2026-07-11T09:56:21.786568Z"
+      "latency_ms": 404,
+      "checked_at": "2026-07-11T14:51:14.589186Z"
     },
     {
       "source_id": "google-ai",
@@ -248,8 +324,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 243,
-      "checked_at": "2026-07-11T09:56:22.030803Z"
+      "latency_ms": 182,
+      "checked_at": "2026-07-11T14:51:14.771986Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -260,8 +336,8 @@
       "fetched_count": 823,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 276,
-      "checked_at": "2026-07-11T09:56:22.318036Z"
+      "latency_ms": 311,
+      "checked_at": "2026-07-11T14:51:15.095557Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -272,8 +348,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 131,
-      "checked_at": "2026-07-11T09:56:22.449877Z"
+      "latency_ms": 147,
+      "checked_at": "2026-07-11T14:51:15.243643Z"
     },
     {
       "source_id": "github-changelog",
@@ -285,7 +361,7 @@
       "kept_count": 1,
       "error": null,
       "latency_ms": 25,
-      "checked_at": "2026-07-11T09:56:22.475256Z"
+      "checked_at": "2026-07-11T14:51:15.269027Z"
     },
     {
       "source_id": "aihot",
@@ -294,10 +370,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 858,
-      "checked_at": "2026-07-11T09:56:23.334254Z"
+      "latency_ms": 4619,
+      "checked_at": "2026-07-11T14:51:19.889910Z"
     }
   ],
   "control_notes": {
