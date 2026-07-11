@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-11T01:59:17.423316Z",
+  "generated_at": "2026-07-11T06:02:28.211191Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 7,
   "groups": {
     "official": {
       "group": "official",
@@ -56,24 +56,24 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          2
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
+          3
+        ],
+        [
+          "agent",
           2
         ],
         [
           "codex",
-          1
-        ],
-        [
-          "agent",
           1
         ],
         [
@@ -82,6 +82,14 @@
         ],
         [
           "workflow",
+          1
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "anthropic",
           1
         ],
         [
@@ -188,6 +196,26 @@
       "is_ai_related": true
     },
     {
+      "id": "0b2c379a896897cb59d7103f3f1b557f14254ead",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI GPT-5.6-Sol 删光 AI 创业者 Matt Shumer 的 Mac 硬盘",
+      "url": "https://aihot.virxact.com/items/cmrfr2xvi02brihjlp1tlzg1n",
+      "published_at": "2026-07-11T01:56:54Z",
+      "summary": "知名 AI 创业者 Matt Shumer 的 Mac 硬盘被 OpenAI 最新 Agent 模型 GPT-5.6-Sol 彻底清空。他在本地 Agent 上开启 Full Access 权限，让 subagent 执行文件清理任务，结果 shell 变量 $HOME 路径解析错误，Agent 直接执行 `rm -rf /Users/mattsdevbox`，导致数年代码、文件、照片丢失。该任务此前已安全运行数百次。事后 Agent 自动生成事故报告承认错误。Matt 表示\"1000x 更信任 Anthropic 的 Fable\"。事件暴露 Agent 行业核心风险：顶级模型仍会在变量展开、路径等细节翻车；Subagent + 长时自主运行 + 全权限构成灾难放大器；模型厂商安全底线差异巨大。 🔗 阅读原文：",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "4bc3407535bce9f46bb0ee845fd1a4357bc57e9d",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -254,8 +282,8 @@
       "fetched_count": 1040,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 718,
-      "checked_at": "2026-07-11T01:59:15.063150Z"
+      "latency_ms": 552,
+      "checked_at": "2026-07-11T06:02:26.092243Z"
     },
     {
       "source_id": "openai-skills",
@@ -266,8 +294,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 237,
-      "checked_at": "2026-07-11T01:59:15.301058Z"
+      "latency_ms": 352,
+      "checked_at": "2026-07-11T06:02:26.444519Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -278,8 +306,8 @@
       "fetched_count": 241,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 130,
-      "checked_at": "2026-07-11T01:59:15.435131Z"
+      "latency_ms": 104,
+      "checked_at": "2026-07-11T06:02:26.551650Z"
     },
     {
       "source_id": "google-deepmind",
@@ -290,8 +318,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 351,
-      "checked_at": "2026-07-11T01:59:15.788425Z"
+      "latency_ms": 335,
+      "checked_at": "2026-07-11T06:02:26.887976Z"
     },
     {
       "source_id": "google-ai",
@@ -302,8 +330,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 204,
-      "checked_at": "2026-07-11T01:59:15.993389Z"
+      "latency_ms": 206,
+      "checked_at": "2026-07-11T06:02:27.094621Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -314,8 +342,8 @@
       "fetched_count": 823,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 317,
-      "checked_at": "2026-07-11T01:59:16.322384Z"
+      "latency_ms": 261,
+      "checked_at": "2026-07-11T06:02:27.364401Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -326,8 +354,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 193,
-      "checked_at": "2026-07-11T01:59:16.516210Z"
+      "latency_ms": 165,
+      "checked_at": "2026-07-11T06:02:27.529825Z"
     },
     {
       "source_id": "github-changelog",
@@ -338,8 +366,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 36,
-      "checked_at": "2026-07-11T01:59:16.552666Z"
+      "latency_ms": 26,
+      "checked_at": "2026-07-11T06:02:27.556218Z"
     },
     {
       "source_id": "aihot",
@@ -348,10 +376,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 860,
-      "checked_at": "2026-07-11T01:59:17.414257Z"
+      "latency_ms": 646,
+      "checked_at": "2026-07-11T06:02:28.203277Z"
     }
   ],
   "control_notes": {
