@@ -1,32 +1,60 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-12T02:02:50.945594Z",
+  "generated_at": "2026-07-12T06:20:36.855036Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 3,
+  "item_count": 5,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          3
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
+          5
+        ],
+        [
+          "api",
           3
+        ],
+        [
+          "API",
+          3
+        ],
+        [
+          "claude",
+          3
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "llm",
+          2
         ],
         [
           "anthropic",
           2
         ],
         [
-          "claude",
+          "智能体",
           2
+        ],
+        [
+          "人工智能",
+          1
+        ],
+        [
+          "大模型",
+          1
         ],
         [
           "chatgpt",
@@ -35,35 +63,34 @@
         [
           "gemini",
           1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "开发者",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "llm",
-          1
-        ],
-        [
-          "智能体",
-          1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "5b3700664c47b6f6ce3b01ac5889a90375747f54",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Mesh LLM：在 iroh 上进行分布式人工智能计算",
+      "url": "https://aihot.virxact.com/items/cmrh78s5t00w5bir7mozf8oyb",
+      "published_at": "2026-07-12T02:23:05Z",
+      "summary": "Mesh LLM 是一个开源项目，能将用户多台机器上的 GPU 和内存池化，对外暴露兼容 OpenAI 的 API。它通过 iroh 网络库实现点对点连接，无需中央服务器。请求可在本地 GPU 运行、路由到已加载模型的节点，或将大模型按层分区（内部称\"Skippy\"）流水线式拆分到多台机器。系统内置 40 多个模型，从 5 亿参数到 235B MoE 巨模型均可支持。软件体积约 18 MB，启动后以 `localhost：9337/v1` 提供服务。 🔗 阅读原文：https://www.iroh.computer/blog/mesh-llm via AI HOT · https://aihot.virxact.com/items/cmrh78s5t00w5bir7mozf8oyb",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:llm",
+        "strong:人工智能",
+        "strong:大模型",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "c4af27beff1397af05eb0893c0014e2f5ec4f002",
       "source_id": "aihot",
@@ -108,6 +135,27 @@
       "is_ai_related": true
     },
     {
+      "id": "7aae7b1a28388e3fadc239e46486dcc6d9e6d8e9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Tibo 分享通过 CLIProxyAPI 将 Claude Code 后端模型切换为 GPT-5.6 Sol 的方法",
+      "url": "https://aihot.virxact.com/items/cmrh57xvj00gvbir7awab8dgb",
+      "published_at": "2026-07-12T01:40:04Z",
+      "summary": "用户 Tibo 分享了一种通过 CLIProxyAPI 将 Claude Code 后端模型切换为 GPT-5.6 Sol 的方法。只需三步：安装 CLIProxyAPI、连接认证、设置环境变量别名 `claudex`。该别名配置了子智能体模型、始终启用 Effort、最大并发工具调用数等参数。引用推文作者 Theo 补充，若已配置好代理，仅需约 2 条提示词即可完成设置。Tibo 称整个过程约 5 分钟，若被封锁可重置。 🔗 阅读原文：https://x.com/thsottiaux/status/2076119366647894371 via AI HOT · https://aihot.virxact.com/items/cmrh57xvj00gvbir7awab8dgb",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "f4dcb755283b5df41ea98989e7bec81a07a16432",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -138,8 +186,8 @@
       "fetched_count": 1040,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 919,
-      "checked_at": "2026-07-12T02:02:49.093754Z"
+      "latency_ms": 778,
+      "checked_at": "2026-07-12T06:20:35.048811Z"
     },
     {
       "source_id": "openai-skills",
@@ -150,8 +198,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 200,
-      "checked_at": "2026-07-12T02:02:49.294695Z"
+      "latency_ms": 166,
+      "checked_at": "2026-07-12T06:20:35.215444Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -162,8 +210,8 @@
       "fetched_count": 241,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 115,
-      "checked_at": "2026-07-12T02:02:49.413831Z"
+      "latency_ms": 109,
+      "checked_at": "2026-07-12T06:20:35.328786Z"
     },
     {
       "source_id": "google-deepmind",
@@ -174,8 +222,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 374,
-      "checked_at": "2026-07-12T02:02:49.789737Z"
+      "latency_ms": 276,
+      "checked_at": "2026-07-12T06:20:35.606415Z"
     },
     {
       "source_id": "google-ai",
@@ -186,8 +234,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 198,
-      "checked_at": "2026-07-12T02:02:49.989035Z"
+      "latency_ms": 234,
+      "checked_at": "2026-07-12T06:20:35.841195Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -198,8 +246,8 @@
       "fetched_count": 823,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 323,
-      "checked_at": "2026-07-12T02:02:50.325012Z"
+      "latency_ms": 236,
+      "checked_at": "2026-07-12T06:20:36.089503Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -210,8 +258,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 101,
-      "checked_at": "2026-07-12T02:02:50.426243Z"
+      "latency_ms": 132,
+      "checked_at": "2026-07-12T06:20:36.222693Z"
     },
     {
       "source_id": "github-changelog",
@@ -222,8 +270,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-07-12T02:02:50.450917Z"
+      "latency_ms": 26,
+      "checked_at": "2026-07-12T06:20:36.249179Z"
     },
     {
       "source_id": "aihot",
@@ -232,10 +280,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 484,
-      "checked_at": "2026-07-12T02:02:50.936003Z"
+      "latency_ms": 597,
+      "checked_at": "2026-07-12T06:20:36.847344Z"
     }
   ],
   "control_notes": {
