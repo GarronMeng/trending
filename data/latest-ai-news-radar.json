@@ -1,32 +1,36 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-13T09:52:57.570700Z",
+  "generated_at": "2026-07-13T11:36:43.047343Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 6,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          5
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          6
+        ],
+        [
+          "agent",
+          4
         ],
         [
           "claude",
           3
         ],
         [
-          "agent",
-          3
+          "llm",
+          2
         ],
         [
           "codex",
@@ -53,11 +57,11 @@
           1
         ],
         [
-          "chatgpt",
+          "大模型",
           1
         ],
         [
-          "llm",
+          "chatgpt",
           1
         ]
       ]
@@ -103,6 +107,26 @@
         "strong:claude",
         "strong:agent",
         "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2333eaea6fb556b910821c43a371a8851451d04e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "腾讯混元发布 HyOCR-1.5：端到端 OCR 大模型全栈开源，推理提速 6.37 倍",
+      "url": "https://aihot.virxact.com/items/cmrj4s89p05nhbilkljqel2d5",
+      "published_at": "2026-07-13T11:12:59Z",
+      "summary": "腾讯混元发布 HyOCR-1.5，这是端到端 OCR 大模型领域首个将训练、推理、模型权重完整开源的专家模型。仅 1B 参数，覆盖 8 种以上 text-centric 任务。引入 DFlash 投机解码框架，在 Transformers 下实现 6.37× 加速，vLLM 下 2.14× 加速，端到端推理达每页 1.408s。支持 4K 分辨率与 128K 上下文窗口，通过 Agentic Data Flow 扩展低资源 OCR（331 种语言）、古文字识别与多图问答能力。在 OmniDocBench v1.6 上以 94.74 分居端到端第一。 🔗 阅读原文：https://mp.weixin.qq.com/s/vKFCa9FfoGBUGK8J1MhFag via AI HOT · https://aiho",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:llm",
+        "strong:大模型",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -175,8 +199,8 @@
       "fetched_count": 1040,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 831,
-      "checked_at": "2026-07-13T09:52:55.970825Z"
+      "latency_ms": 676,
+      "checked_at": "2026-07-13T11:36:41.055528Z"
     },
     {
       "source_id": "openai-skills",
@@ -187,8 +211,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 164,
-      "checked_at": "2026-07-13T09:52:56.135078Z"
+      "latency_ms": 251,
+      "checked_at": "2026-07-13T11:36:41.307758Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -199,8 +223,8 @@
       "fetched_count": 241,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 113,
-      "checked_at": "2026-07-13T09:52:56.252683Z"
+      "latency_ms": 142,
+      "checked_at": "2026-07-13T11:36:41.454157Z"
     },
     {
       "source_id": "google-deepmind",
@@ -211,8 +235,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 220,
-      "checked_at": "2026-07-13T09:52:56.475201Z"
+      "latency_ms": 350,
+      "checked_at": "2026-07-13T11:36:41.806424Z"
     },
     {
       "source_id": "google-ai",
@@ -223,8 +247,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 263,
-      "checked_at": "2026-07-13T09:52:56.739337Z"
+      "latency_ms": 198,
+      "checked_at": "2026-07-13T11:36:42.005597Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -235,8 +259,8 @@
       "fetched_count": 823,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 259,
-      "checked_at": "2026-07-13T09:52:57.011301Z"
+      "latency_ms": 343,
+      "checked_at": "2026-07-13T11:36:42.361342Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -247,8 +271,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 129,
-      "checked_at": "2026-07-13T09:52:57.141141Z"
+      "latency_ms": 170,
+      "checked_at": "2026-07-13T11:36:42.532128Z"
     },
     {
       "source_id": "github-changelog",
@@ -259,8 +283,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-07-13T09:52:57.164269Z"
+      "latency_ms": 38,
+      "checked_at": "2026-07-13T11:36:42.571284Z"
     },
     {
       "source_id": "aihot",
@@ -269,10 +293,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 399,
-      "checked_at": "2026-07-13T09:52:57.564793Z"
+      "latency_ms": 469,
+      "checked_at": "2026-07-13T11:36:43.041545Z"
     }
   ],
   "control_notes": {
