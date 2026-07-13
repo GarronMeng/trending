@@ -1,39 +1,31 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-13T11:36:43.047343Z",
+  "generated_at": "2026-07-13T16:30:53.924264Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 5,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          6
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          5
         ],
         [
           "agent",
-          4
-        ],
-        [
-          "claude",
           3
         ],
         [
-          "llm",
-          2
-        ],
-        [
-          "codex",
+          "claude",
           2
         ],
         [
@@ -57,11 +49,19 @@
           1
         ],
         [
+          "llm",
+          1
+        ],
+        [
           "大模型",
           1
         ],
         [
-          "chatgpt",
+          "开源模型",
+          1
+        ],
+        [
+          "benchmark",
           1
         ]
       ]
@@ -132,6 +132,26 @@
       "is_ai_related": true
     },
     {
+      "id": "e8230c5ef967abc2b17e94ad08e5c1c0ce8ec704",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "德国AI协会发布开源模型Soofi S，在英语和德语基准测试中领先",
+      "url": "https://aihot.virxact.com/items/cmrj6actv0651bilkm5pfz6ub",
+      "published_at": "2026-07-13T11:41:01Z",
+      "summary": "德国AI协会协调的研究联盟发布开源大语言模型Soofi S 30B-A3B。该模型总参数量316亿，每个token仅激活约32亿参数，采用Mamba-2与标准注意力层混合的MoE架构。模型完全在德国电信慕尼黑工业AI云上训练，训练数据中德语占比从第一阶段的7.2%提升至第二阶段的15.3%。在基准测试中，Soofi S在所有完全开源模型中取得英语和德语综合最高分，超越OLMo 3 32B和Apertus 70B。在HumanEval上得分73.8%，MBPP得分70.2，德语版MBPP得分84.2。上下文窗口支持最高100万token，在4万token长度下，生成吞吐量约为同规模稠密模型的8倍。模型权重已开源。 🔗 阅读原文：https://the-decoder.com/german-ai-consortiu",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:开源模型",
+        "weak:benchmark",
+        "weak:eval",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "150fb0580291920967de5ff97372490576006173",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -149,44 +169,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "40c783a0f711132cf685df3efc175af0222fb527",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "腾讯混元发布Hy3模型：295B参数MoE架构，Agent向LLM定位，已集成微信服务10亿+用户",
-      "url": "https://aihot.virxact.com/items/cmri0lo1e00irbixecx7cj2f5",
-      "published_at": "2026-07-12T16:24:32Z",
-      "summary": "腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。Hy3定位为Agent向LLM，从preview到正式版基于50多个真实业务反馈迭代，内部WorkBuddy任务成功率从72%提升至90%，耗时降低34%，幻觉和常识错误持续下降。实测显示其在coding、办公、复杂任务规划方面表现突出，纯视觉能力为短板。Hy3已集成至微信服务10亿+用户，视频演示包括生成HTML网页、Agent网页和10页PPT，模型具备自检和主动说明不足的能力。 🔗 阅读原文：https://x.com/AYi_AInotes/status/2076341952023310580 via AI HOT · https://aihot.virxact.com/items/cm",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:llm",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "73ea9597087f5b1402dafaa5d7090372be3a5552",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Mindwalk：在代码库 3D 地图上回放编码代理会话",
-      "url": "https://aihot.virxact.com/items/cmrhvwe6k00y7biidjabepmem",
-      "published_at": "2026-07-12T13:51:05Z",
-      "summary": "Mindwalk 是一款可视化工具，可将 Claude Code 和 Codex 的会话日志在代码库的 3D 地图上回放。它将仓库绘制成夜间地图，代理搜索、读取和编辑过的文件会发光，未触及区域保持黑暗，让用户一眼看清代理对任务的理解范围。单个 Go 二进制文件即可运行，所有会话数据完全本地处理，不会离开机器。支持树状图/地形图两种视图，文件触达状态分为未访问、已查看、已读取、已编辑四种颜色标记。播放界面包含错误率、文件修改量等摩擦信号面板，以及上下文压缩、子代理启动、用户交互等时间轴标记。支持键盘快捷键控制播放速度、跳转编辑点或错误点。 🔗 阅读原文：https://github.com/cosmtrek/mindwalk via AI HOT · https://aihot.virxact.com/items",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -199,8 +181,8 @@
       "fetched_count": 1040,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 676,
-      "checked_at": "2026-07-13T11:36:41.055528Z"
+      "latency_ms": 850,
+      "checked_at": "2026-07-13T16:30:51.887166Z"
     },
     {
       "source_id": "openai-skills",
@@ -211,8 +193,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 251,
-      "checked_at": "2026-07-13T11:36:41.307758Z"
+      "latency_ms": 416,
+      "checked_at": "2026-07-13T16:30:52.303467Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -223,8 +205,8 @@
       "fetched_count": 241,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 142,
-      "checked_at": "2026-07-13T11:36:41.454157Z"
+      "latency_ms": 103,
+      "checked_at": "2026-07-13T16:30:52.409176Z"
     },
     {
       "source_id": "google-deepmind",
@@ -235,8 +217,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 350,
-      "checked_at": "2026-07-13T11:36:41.806424Z"
+      "latency_ms": 402,
+      "checked_at": "2026-07-13T16:30:52.813036Z"
     },
     {
       "source_id": "google-ai",
@@ -247,8 +229,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 198,
-      "checked_at": "2026-07-13T11:36:42.005597Z"
+      "latency_ms": 300,
+      "checked_at": "2026-07-13T16:30:53.113754Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -259,8 +241,8 @@
       "fetched_count": 823,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 343,
-      "checked_at": "2026-07-13T11:36:42.361342Z"
+      "latency_ms": 263,
+      "checked_at": "2026-07-13T16:30:53.385352Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -271,8 +253,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 170,
-      "checked_at": "2026-07-13T11:36:42.532128Z"
+      "latency_ms": 159,
+      "checked_at": "2026-07-13T16:30:53.544952Z"
     },
     {
       "source_id": "github-changelog",
@@ -283,8 +265,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 38,
-      "checked_at": "2026-07-13T11:36:42.571284Z"
+      "latency_ms": 25,
+      "checked_at": "2026-07-13T16:30:53.570639Z"
     },
     {
       "source_id": "aihot",
@@ -293,10 +275,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 469,
-      "checked_at": "2026-07-13T11:36:43.041545Z"
+      "latency_ms": 348,
+      "checked_at": "2026-07-13T16:30:53.919453Z"
     }
   ],
   "control_notes": {
