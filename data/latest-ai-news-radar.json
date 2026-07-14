@@ -1,51 +1,39 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-13T16:30:53.924264Z",
+  "generated_at": "2026-07-14T01:50:31.399585Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 4,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          5
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
-        ],
-        [
-          "agent",
-          3
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
+          4
         ],
         [
           "openai",
           1
         ],
         [
-          "智能体",
+          "chatgpt",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "agent",
           1
         ],
         [
@@ -57,11 +45,23 @@
           1
         ],
         [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
           "开源模型",
           1
         ],
         [
           "benchmark",
+          1
+        ],
+        [
+          "eval",
           1
         ]
       ]
@@ -69,44 +69,21 @@
   },
   "items": [
     {
-      "id": "5db1bd4214717fb62bd74586e81d58aee9ffb40b",
+      "id": "e1afa0b96f2d5887f461ce8cc22094edde67a952",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "xAI 官方 Grok CLI 被曝静默上传整个代码库及用户密钥",
-      "url": "https://aihot.virxact.com/items/cmriguktg00arbijpt0l7c2vh",
-      "published_at": "2026-07-13T00:05:00Z",
-      "summary": "安全研究者发现，xAI 官方 Grok CLI（npm 包 `@xai-official/grok` 0.2.93 版）会在每轮任务前后，将当前工作目录打包为 `before_codebase.tar.gz` 和 `after_codebase.tar.gz`，通过独立旁路通道静默上传至 xAI 的 Google Cloud 仓库。验证显示，即使模型仅回复一个单词，上传依然发生。上传包还包含仓库外的 `~/.claude.json`、Claude Code 设置、全局 AGENTS 规则、30 多个 Skill 文件及一个 API 密钥。7 月 13 日凌晨，xAI 通过服务端远程开关新增 `disable_codebase_upload` 字段，将默认上传行为关闭，但此前该功能默认开启。 🔗 阅读原文：htt",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "strong:agents",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1490eff2cbb40fb0a8b9d3d3eaf6c5e2b9312a46",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol",
-      "url": "https://aihot.virxact.com/items/cmrig9mkx0024bijp9pr04hss",
-      "published_at": "2026-07-12T23:41:11Z",
-      "summary": "Ploy 将其 AI 智能体默认模型从 Claude Opus 4.8 切换至 OpenAI 今晨发布的 GPT-5.6 Sol。在真实营销网站构建测试中，GPT-5.6 Sol 完成页面平均耗时 3 分 42 秒，较 Opus 4.8 的 8 分钟快 2.2 倍；每次构建成本从 3.06 美元降至 2.22 美元，降低 27%；输出 token 从 33.0K 降至 17.1K，视觉评分从 0.936 提升至 0.970。迁移过程发现，GPT-5.6 会为所有 25 个工具参数填充默认值，导致 52%-64% 的文件读取返回空结果；提示词指令和 OpenAI strict 模式均无法修复此行为。此外，评估框架中约三分之一的原始失败源于针对旧模型的假设，而非模型本身问题。 🔗 阅读原文：https://ploy",
-      "relevance_score": 7,
+      "title": "OpenAI 面向普通用户发布提示词指南：从结果出发，少写步骤",
+      "url": "https://aihot.virxact.com/items/cmrjj6scy03ghbi03olyygged",
+      "published_at": "2026-07-13T17:47:39Z",
+      "summary": "OpenAI 整合了一份面向普通用户的提示词指南，涵盖目标、上下文、输出格式和边界四个可选模块。指南建议以结果而非步骤开头，用一两条硬性规则替代逐步骤脚本。Chat 处理快速任务，基于 Codex 技术和 GPT-5.6 模型的 ChatGPT Work 负责多源、多步骤的复杂项目。Codex 新增 Steer（重定向当前运行）、Queue（排队下一条消息）和沙盒模式，支持 `/plan`、`/goal` 和 `/review` 等斜杠命令。用户无需一次性写对提示词，后续追问是预期调整方式。 🔗 阅读原文：https://the-decoder.com/openais-new-prompting-guide-tells-users-to-stop-overthinking-and-start-with-the-",
+      "relevance_score": 5,
       "relevance_reasons": [
         "strong:openai",
-        "strong:claude",
-        "strong:agent",
-        "strong:智能体",
+        "strong:chatgpt",
+        "strong:codex",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -132,6 +109,25 @@
       "is_ai_related": true
     },
     {
+      "id": "11ea59966f9593114a5c747f8f7466a56594953d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "前沿模型实际成本：tokenizer 差异导致隐性涨价",
+      "url": "https://aihot.virxact.com/items/cmrjrg5aj0202bis4f9pzo8d3",
+      "published_at": "2026-07-13T21:50:30Z",
+      "summary": "同一份 TypeScript 文件在 GPT-5.x 上为 681 个 token，在 Claude 最新 tokenizer 下为 1，178 个，相差 1.73 倍。Anthropic 新 tokenizer 比旧版多产生约 30% 的 token，标价不变，构成隐性涨价。Claude Opus 4.6 与 Opus 4.8 标价同为 $5.00 / $25.00，但新 tokenizer 使同一代码的 token 数增加约 32%。Claude Sonnet 5 的 $2.00 / $10.00 为促销价，2026 年 8 月 31 日后恢复 $3.00 / $15.00，届时相同代码成本将比 Sonnet 4.6 高出约 32%。跨厂商对比中，Claude 新 tokenizer 在代码上比 GPT 多",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "e8230c5ef967abc2b17e94ad08e5c1c0ce8ec704",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -150,25 +146,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "150fb0580291920967de5ff97372490576006173",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Codex与ChatGPT Work多项更新：取消5小时限制",
-      "url": "https://aihot.virxact.com/items/cmri4o4kx00qcbi3hqxj8rxqd",
-      "published_at": "2026-07-12T17:59:57Z",
-      "summary": "早上好。过去48小时里，Codex和ChatGPT Work非常忙碌！三项重要更新： - 暂时取消所有Plus、Business和Pro计划的5小时使用限制 - 正在推出变更，使GPT 5.6 Sol整体更高效，这将体现在使用量减少上，从而让你能走得更远。具体影响待量化后公布 - 我们已达到600万活跃用户，并将在接下来一小时内进行使用量重置 去创造吧。 🔗 阅读原文：https://x.com/thsottiaux/status/2076365965915467978 via AI HOT · https://aihot.virxact.com/items/cmri4o4kx00qcbi3hqxj8rxqd",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -181,8 +158,8 @@
       "fetched_count": 1040,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 850,
-      "checked_at": "2026-07-13T16:30:51.887166Z"
+      "latency_ms": 772,
+      "checked_at": "2026-07-14T01:50:29.757861Z"
     },
     {
       "source_id": "openai-skills",
@@ -193,8 +170,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 416,
-      "checked_at": "2026-07-13T16:30:52.303467Z"
+      "latency_ms": 169,
+      "checked_at": "2026-07-14T01:50:29.927190Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -205,8 +182,8 @@
       "fetched_count": 241,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 103,
-      "checked_at": "2026-07-13T16:30:52.409176Z"
+      "latency_ms": 116,
+      "checked_at": "2026-07-14T01:50:30.047104Z"
     },
     {
       "source_id": "google-deepmind",
@@ -217,8 +194,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 402,
-      "checked_at": "2026-07-13T16:30:52.813036Z"
+      "latency_ms": 291,
+      "checked_at": "2026-07-14T01:50:30.340457Z"
     },
     {
       "source_id": "google-ai",
@@ -229,8 +206,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 300,
-      "checked_at": "2026-07-13T16:30:53.113754Z"
+      "latency_ms": 241,
+      "checked_at": "2026-07-14T01:50:30.582077Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -241,8 +218,8 @@
       "fetched_count": 823,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 263,
-      "checked_at": "2026-07-13T16:30:53.385352Z"
+      "latency_ms": 276,
+      "checked_at": "2026-07-14T01:50:30.871394Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -253,8 +230,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 159,
-      "checked_at": "2026-07-13T16:30:53.544952Z"
+      "latency_ms": 100,
+      "checked_at": "2026-07-14T01:50:30.971864Z"
     },
     {
       "source_id": "github-changelog",
@@ -266,7 +243,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 25,
-      "checked_at": "2026-07-13T16:30:53.570639Z"
+      "checked_at": "2026-07-14T01:50:30.997437Z"
     },
     {
       "source_id": "aihot",
@@ -275,10 +252,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 348,
-      "checked_at": "2026-07-13T16:30:53.919453Z"
+      "latency_ms": 393,
+      "checked_at": "2026-07-14T01:50:31.391929Z"
     }
   ],
   "control_notes": {

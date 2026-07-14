@@ -43,40 +43,27 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>5</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>4</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>0</b><span>官方源条目</span></div>
-        <div class="stat"><b>5</b><span>聚合源条目</span></div>
+        <div class="stat"><b>4</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-13T16:30:53.928387Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-14T01:50:31.400528Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-07-13T00:05:00Z</span>
-        <strong>Score 7</strong>
+        <span>2026-07-13T17:47:39Z</span>
+        <strong>Score 5</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmriguktg00arbijpt0l7c2vh" target="_blank" rel="noreferrer">xAI 官方 Grok CLI 被曝静默上传整个代码库及用户密钥</a></h3>
-      <p class='summary'>安全研究者发现，xAI 官方 Grok CLI（npm 包 `@xai-official/grok` 0.2.93 版）会在每轮任务前后，将当前工作目录打包为 `before_codebase.tar.gz` 和 `after_codebase.tar.gz`，通过独立旁路通道静默上传至 xAI 的 Google Cloud 仓库。验证显示，即使模型仅回复一个单词，上传依然发生。上传包还包含仓库外的 `~/.claude.json`、Claude Code 设置、全局 AGENTS 规则、30 多个 Skill 文件及一个 API 密钥。7 月 13 日凌晨，xAI 通过服务端远程开关新增 `disable_codebase_upload` 字段，将默认上传行为关闭，但此前该功能默认开启。 🔗 阅读原文：htt</p>
-      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>strong:agents</span><span>weak:api</span><span>weak:API</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-12T23:41:11Z</span>
-        <strong>Score 7</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrig9mkx0024bijp9pr04hss" target="_blank" rel="noreferrer">Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol</a></h3>
-      <p class='summary'>Ploy 将其 AI 智能体默认模型从 Claude Opus 4.8 切换至 OpenAI 今晨发布的 GPT-5.6 Sol。在真实营销网站构建测试中，GPT-5.6 Sol 完成页面平均耗时 3 分 42 秒，较 Opus 4.8 的 8 分钟快 2.2 倍；每次构建成本从 3.06 美元降至 2.22 美元，降低 27%；输出 token 从 33.0K 降至 17.1K，视觉评分从 0.936 提升至 0.970。迁移过程发现，GPT-5.6 会为所有 25 个工具参数填充默认值，导致 52%-64% 的文件读取返回空结果；提示词指令和 OpenAI strict 模式均无法修复此行为。此外，评估框架中约三分之一的原始失败源于针对旧模型的假设，而非模型本身问题。 🔗 阅读原文：https://ploy</p>
-      <div class="tags"><span>strong:openai</span><span>strong:claude</span><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://aihot.virxact.com/items/cmrjj6scy03ghbi03olyygged" target="_blank" rel="noreferrer">OpenAI 面向普通用户发布提示词指南：从结果出发，少写步骤</a></h3>
+      <p class='summary'>OpenAI 整合了一份面向普通用户的提示词指南，涵盖目标、上下文、输出格式和边界四个可选模块。指南建议以结果而非步骤开头，用一两条硬性规则替代逐步骤脚本。Chat 处理快速任务，基于 Codex 技术和 GPT-5.6 模型的 ChatGPT Work 负责多源、多步骤的复杂项目。Codex 新增 Steer（重定向当前运行）、Queue（排队下一条消息）和沙盒模式，支持 `/plan`、`/goal` 和 `/review` 等斜杠命令。用户无需一次性写对提示词，后续追问是预期调整方式。 🔗 阅读原文：https://the-decoder.com/openais-new-prompting-guide-tells-users-to-stop-overthinking-and-start-with-the-</p>
+      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>strong:codex</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -97,12 +84,12 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-07-13T11:41:01Z</span>
+        <span>2026-07-13T21:50:30Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrj6actv0651bilkm5pfz6ub" target="_blank" rel="noreferrer">德国AI协会发布开源模型Soofi S，在英语和德语基准测试中领先</a></h3>
-      <p class='summary'>德国AI协会协调的研究联盟发布开源大语言模型Soofi S 30B-A3B。该模型总参数量316亿，每个token仅激活约32亿参数，采用Mamba-2与标准注意力层混合的MoE架构。模型完全在德国电信慕尼黑工业AI云上训练，训练数据中德语占比从第一阶段的7.2%提升至第二阶段的15.3%。在基准测试中，Soofi S在所有完全开源模型中取得英语和德语综合最高分，超越OLMo 3 32B和Apertus 70B。在HumanEval上得分73.8%，MBPP得分70.2，德语版MBPP得分84.2。上下文窗口支持最高100万token，在4万token长度下，生成吞吐量约为同规模稠密模型的8倍。模型权重已开源。 🔗 阅读原文：https://the-decoder.com/german-ai-consortiu</p>
-      <div class="tags"><span>strong:开源模型</span><span>weak:benchmark</span><span>weak:eval</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://aihot.virxact.com/items/cmrjrg5aj0202bis4f9pzo8d3" target="_blank" rel="noreferrer">前沿模型实际成本：tokenizer 差异导致隐性涨价</a></h3>
+      <p class='summary'>同一份 TypeScript 文件在 GPT-5.x 上为 681 个 token，在 Claude 最新 tokenizer 下为 1，178 个，相差 1.73 倍。Anthropic 新 tokenizer 比旧版多产生约 30% 的 token，标价不变，构成隐性涨价。Claude Opus 4.6 与 Opus 4.8 标价同为 $5.00 / $25.00，但新 tokenizer 使同一代码的 token 数增加约 32%。Claude Sonnet 5 的 $2.00 / $10.00 为促销价，2026 年 8 月 31 日后恢复 $3.00 / $15.00，届时相同代码成本将比 Sonnet 4.6 高出约 32%。跨厂商对比中，Claude 新 tokenizer 在代码上比 GPT 多</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -110,12 +97,12 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-07-12T17:59:57Z</span>
+        <span>2026-07-13T11:41:01Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmri4o4kx00qcbi3hqxj8rxqd" target="_blank" rel="noreferrer">Codex与ChatGPT Work多项更新：取消5小时限制</a></h3>
-      <p class='summary'>早上好。过去48小时里，Codex和ChatGPT Work非常忙碌！三项重要更新： - 暂时取消所有Plus、Business和Pro计划的5小时使用限制 - 正在推出变更，使GPT 5.6 Sol整体更高效，这将体现在使用量减少上，从而让你能走得更远。具体影响待量化后公布 - 我们已达到600万活跃用户，并将在接下来一小时内进行使用量重置 去创造吧。 🔗 阅读原文：https://x.com/thsottiaux/status/2076365965915467978 via AI HOT · https://aihot.virxact.com/items/cmri4o4kx00qcbi3hqxj8rxqd</p>
-      <div class="tags"><span>strong:chatgpt</span><span>strong:codex</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://aihot.virxact.com/items/cmrj6actv0651bilkm5pfz6ub" target="_blank" rel="noreferrer">德国AI协会发布开源模型Soofi S，在英语和德语基准测试中领先</a></h3>
+      <p class='summary'>德国AI协会协调的研究联盟发布开源大语言模型Soofi S 30B-A3B。该模型总参数量316亿，每个token仅激活约32亿参数，采用Mamba-2与标准注意力层混合的MoE架构。模型完全在德国电信慕尼黑工业AI云上训练，训练数据中德语占比从第一阶段的7.2%提升至第二阶段的15.3%。在基准测试中，Soofi S在所有完全开源模型中取得英语和德语综合最高分，超越OLMo 3 32B和Apertus 70B。在HumanEval上得分73.8%，MBPP得分70.2，德语版MBPP得分84.2。上下文窗口支持最高100万token，在4万token长度下，生成吞吐量约为同规模稠密模型的8倍。模型权重已开源。 🔗 阅读原文：https://the-decoder.com/german-ai-consortiu</p>
+      <div class="tags"><span>strong:开源模型</span><span>weak:benchmark</span><span>weak:eval</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     </div>
     </section>
@@ -123,15 +110,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1040</td><td>0</td><td>850ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>416ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>241</td><td>0</td><td>103ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>402ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>300ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>823</td><td>0</td><td>263ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>159ms</td><td></td></tr>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1040</td><td>0</td><td>772ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>169ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>241</td><td>0</td><td>116ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>291ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>241ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>823</td><td>0</td><td>276ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>100ms</td><td></td></tr>
 <tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>25ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>5</td><td>348ms</td><td></td></tr></tbody>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>4</td><td>393ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
