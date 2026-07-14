@@ -1,55 +1,59 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-14T10:15:21.982632Z",
+  "generated_at": "2026-07-14T15:22:31.771912Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 11,
   "groups": {
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
-          "Google DeepMind",
-          1
+          "OpenAI News",
+          2
         ]
       ],
       "top_keywords": [
         [
-          "gemini",
-          1
-        ],
-        [
-          "tool",
-          1
+          "chatgpt",
+          2
         ],
         [
           "official_ai",
-          1
+          2
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          7
+          6
+        ],
+        [
+          "Anthropic News via Olshansk RSS",
+          2
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          8
+        ],
+        [
+          "claude",
+          4
+        ],
+        [
+          "anthropic",
+          4
         ],
         [
           "agent",
-          3
-        ],
-        [
-          "llm",
           2
         ],
         [
@@ -65,10 +69,6 @@
           1
         ],
         [
-          "大模型",
-          1
-        ],
-        [
           "deepmind",
           1
         ],
@@ -77,36 +77,65 @@
           1
         ],
         [
-          "anthropic",
+          "llm",
           1
         ],
         [
-          "claude",
+          "工作流",
           1
-        ],
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
         [
-          "开源模型",
+          "GitHub Changelog",
           1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
         ]
       ]
     }
   },
   "items": [
     {
-      "id": "3339cddb087e0723f76d98f54f7d4e7d93ac1715",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
+      "id": "75105cfe481d9a51edb1df83ec458d6b808de32f",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Empowering India’s next generation of innovators with ATL Saathi",
-      "url": "https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi",
-      "published_at": "2026-07-13T12:37:28Z",
-      "summary": "Google and AIM launched ATL Saathi, a Gemini-powered AI tool empowering Indian educators in robotics labs.",
-      "relevance_score": 4,
+      "title": "How sales teams use ChatGPT Work",
+      "url": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
+      "published_at": "2026-07-14T00:00:00Z",
+      "summary": "See how sales teams can use ChatGPT Work to create pipeline briefs, meeting prep packets, forecast reviews, account plans, and stalled-deal diagnoses from real work inputs.",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:gemini",
-        "weak:tool",
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9517f9018516e2bc3f759b52faf2a81092ea0a4f",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How data science teams use ChatGPT Work",
+      "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+      "published_at": "2026-07-14T00:00:00Z",
+      "summary": "See how data science teams can use ChatGPT Work to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -132,21 +161,76 @@
       "is_ai_related": true
     },
     {
-      "id": "2333eaea6fb556b910821c43a371a8851451d04e",
+      "id": "871ac7e582c860b7f2e68a67dafbae8fb895b714",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Security reviews now available in the GitHub Copilot app",
+      "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
+      "published_at": "2026-07-14T12:54:12Z",
+      "summary": "You can now run a security review on your in-flight code changes directly from the GitHub Copilot app. The /security-review slash command is shipping in public preview, bringing the same… The post Security reviews now available in the GitHub Copilot app appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "29cf4dad8e032e7633870c28f18d485c5333a48a",
+      "source_id": "anthropic-news-unofficial",
+      "source_name": "Anthropic News via Olshansk RSS",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 3,
+      "title": "Introducing Claude for Teachers",
+      "url": "https://www.anthropic.com/news/claude-for-teachers",
+      "published_at": "2026-07-14T00:00:00Z",
+      "summary": "Introducing Claude for Teachers",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "source:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0ce38532e7398b7b939beed139e5fa6e22a9d6f1",
+      "source_id": "anthropic-news-unofficial",
+      "source_name": "Anthropic News via Olshansk RSS",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 3,
+      "title": "Anthropic commits $10 million to Canadian AI research",
+      "url": "https://www.anthropic.com/news/canadian-ai-research",
+      "published_at": "2026-07-14T00:00:00Z",
+      "summary": "Anthropic commits $10 million to Canadian AI research",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "source:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "3955274e6a0288386dcc2f048852c1ee43fe9e45",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "腾讯混元发布 HyOCR-1.5：端到端 OCR 大模型全栈开源，推理提速 6.37 倍",
-      "url": "https://aihot.virxact.com/items/cmrj4s89p05nhbilkljqel2d5",
-      "published_at": "2026-07-13T11:12:59Z",
-      "summary": "腾讯混元发布 HyOCR-1.5，这是端到端 OCR 大模型领域首个将训练、推理、模型权重完整开源的专家模型。仅 1B 参数，覆盖 8 种以上 text-centric 任务。引入 DFlash 投机解码框架，在 Transformers 下实现 6.37× 加速，vLLM 下 2.14× 加速，端到端推理达每页 1.408s。支持 4K 分辨率与 128K 上下文窗口，通过 Agentic Data Flow 扩展低资源 OCR（331 种语言）、古文字识别与多图问答能力。在 OmniDocBench v1.6 上以 94.74 分居端到端第一。 🔗 阅读原文：https://mp.weixin.qq.com/s/vKFCa9FfoGBUGK8J1MhFag via AI HOT · https://aiho",
-      "relevance_score": 5,
+      "title": "Anthropic 经济指数：加拿大 Claude 使用情况分析",
+      "url": "https://aihot.virxact.com/items/cmrko155e005ubixirangezv8",
+      "published_at": "2026-07-14T13:06:56Z",
+      "summary": "基于2026年2月Claude.ai对话样本，加拿大占全球流量的2.6%，人均使用量是预期的4.4倍，在总使用量前十国家中仅次于美国。加拿大内部采用率高度集中：安大略省占43.9%对话，不列颠哥伦比亚省人均使用量达预期的1.4倍，而纽芬兰与拉布拉多省仅为0.2倍。省级人均使用量与收入无关，而与专业、科学和技术服务业的就业占比高度相关。各省使用场景稳定：工作占34-40%，课程作业占13-18%，个人用途占44-51%。翻译请求与公共管理就业份额正相关，反映加拿大联邦双语政策；文档翻译是加拿大相对于其他英语国家最独特的使用场景。加拿大整体使用偏向学术和早期职业场景。 🔗 阅读原文：https://www.anthropic.com/research/how-canada-uses-claude via AI HO",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:llm",
-        "strong:大模型",
+        "strong:anthropic",
+        "strong:claude",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -209,26 +293,6 @@
       "is_ai_related": true
     },
     {
-      "id": "e8230c5ef967abc2b17e94ad08e5c1c0ce8ec704",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "德国AI协会发布开源模型Soofi S，在英语和德语基准测试中领先",
-      "url": "https://aihot.virxact.com/items/cmrj6actv0651bilkm5pfz6ub",
-      "published_at": "2026-07-13T11:41:01Z",
-      "summary": "德国AI协会协调的研究联盟发布开源大语言模型Soofi S 30B-A3B。该模型总参数量316亿，每个token仅激活约32亿参数，采用Mamba-2与标准注意力层混合的MoE架构。模型完全在德国电信慕尼黑工业AI云上训练，训练数据中德语占比从第一阶段的7.2%提升至第二阶段的15.3%。在基准测试中，Soofi S在所有完全开源模型中取得英语和德语综合最高分，超越OLMo 3 32B和Apertus 70B。在HumanEval上得分73.8%，MBPP得分70.2，德语版MBPP得分84.2。上下文窗口支持最高100万token，在4万token长度下，生成吞吐量约为同规模稠密模型的8倍。模型权重已开源。 🔗 阅读原文：https://the-decoder.com/german-ai-consortiu",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:开源模型",
-        "weak:benchmark",
-        "weak:eval",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "8118be913296050957d9ecd2d225766f6652a5e5",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -256,10 +320,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1040,
-      "kept_count": 0,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 706,
-      "checked_at": "2026-07-14T10:15:19.927905Z"
+      "latency_ms": 869,
+      "checked_at": "2026-07-14T15:22:27.290085Z"
     },
     {
       "source_id": "openai-skills",
@@ -270,8 +334,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 304,
-      "checked_at": "2026-07-14T10:15:20.233011Z"
+      "latency_ms": 374,
+      "checked_at": "2026-07-14T15:22:27.664949Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -279,11 +343,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 241,
-      "kept_count": 0,
+      "fetched_count": 243,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 113,
-      "checked_at": "2026-07-14T10:15:20.350335Z"
+      "latency_ms": 146,
+      "checked_at": "2026-07-14T15:22:27.814359Z"
     },
     {
       "source_id": "google-deepmind",
@@ -292,10 +356,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 361,
-      "checked_at": "2026-07-14T10:15:20.713074Z"
+      "latency_ms": 444,
+      "checked_at": "2026-07-14T15:22:28.260460Z"
     },
     {
       "source_id": "google-ai",
@@ -306,8 +370,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 274,
-      "checked_at": "2026-07-14T10:15:20.988105Z"
+      "latency_ms": 264,
+      "checked_at": "2026-07-14T15:22:28.525465Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -318,8 +382,8 @@
       "fetched_count": 823,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 368,
-      "checked_at": "2026-07-14T10:15:21.369779Z"
+      "latency_ms": 330,
+      "checked_at": "2026-07-14T15:22:28.865720Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -330,8 +394,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 127,
-      "checked_at": "2026-07-14T10:15:21.497665Z"
+      "latency_ms": 331,
+      "checked_at": "2026-07-14T15:22:29.197843Z"
     },
     {
       "source_id": "github-changelog",
@@ -340,10 +404,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-07-14T10:15:21.529523Z"
+      "latency_ms": 41,
+      "checked_at": "2026-07-14T15:22:29.239699Z"
     },
     {
       "source_id": "aihot",
@@ -352,10 +416,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 442,
-      "checked_at": "2026-07-14T10:15:21.973632Z"
+      "latency_ms": 2522,
+      "checked_at": "2026-07-14T15:22:31.763303Z"
     }
   ],
   "control_notes": {
