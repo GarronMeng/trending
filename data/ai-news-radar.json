@@ -1,35 +1,27 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-15T10:19:05.988593Z",
+  "generated_at": "2026-07-15T15:24:55.368961Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 8,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          9
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
-        ],
-        [
-          "claude",
-          4
+          6
         ],
         [
           "codex",
-          3
-        ],
-        [
-          "开发者",
           3
         ],
         [
@@ -37,7 +29,7 @@
           3
         ],
         [
-          "api",
+          "claude",
           2
         ],
         [
@@ -45,11 +37,11 @@
           2
         ],
         [
-          "API",
+          "多模态",
           2
         ],
         [
-          "多模态",
+          "开发者",
           2
         ],
         [
@@ -57,28 +49,36 @@
           2
         ],
         [
-          "anthropic",
-          2
+          "llm",
+          1
         ],
         [
-          "llm",
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "developer",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          3
+          2
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          6
+          4
         ],
         [
           "mcp",
@@ -110,29 +110,6 @@
         "strong:llm",
         "weak:api",
         "weak:自动化",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c438c9a56d6ea6a4d182bec6eb8c8cb404bad689",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google AI 发布 Gemini 3.5 Live Translate，支持 70+ 语言近实时语音到语音翻译",
-      "url": "https://aihot.virxact.com/items/cmrkta2fv011vbi5qe7hdwh0s",
-      "published_at": "2026-07-14T15:17:40Z",
-      "summary": "Google AI 发布 Gemini 3.5 Live Translate，支持 70+ 语言、近实时延迟的语音到语音翻译。该模型直接处理原始音频流，保留说话者语调、节奏和音高。东南亚超级应用 Grab 正探索将其用于司机与乘客间的跨语言沟通，其用户每月发起超 1000 万次语音通话。开发者可通过 Gemini Live API 集成 LiveKit、Fishjam、Pipecat 或 Vision Agents 构建应用。LiveKit 已实现虚拟会议室多语言即时理解；Software Mansion 结合 MoQ 协议突破流媒体瓶颈；VisionAgents AI 展示了动态多语言切换能力。开发者可在 Google AI Studio 试用并获取 Cookbook 示例代码。 🔗 阅读原文：https:/",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:agent",
-        "strong:agents",
-        "weak:api",
-        "weak:开发者",
         "weak:API",
         "source_penalty:aggregate_noise"
       ],
@@ -258,24 +235,6 @@
       "is_ai_related": true
     },
     {
-      "id": "871ac7e582c860b7f2e68a67dafbae8fb895b714",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Security reviews now available in the GitHub Copilot app",
-      "url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app",
-      "published_at": "2026-07-14T12:54:12Z",
-      "summary": "You can now run a security review on your in-flight code changes directly from the GitHub Copilot app. The /security-review slash command is shipping in public preview, bringing the same… The post Security reviews now available in the GitHub Copilot app appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "d352ff971b603364bfd9ccb833113739530e1a96",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -293,44 +252,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "b247e980d0049b7b2c86307983bf8ed79df5dd72",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 推出 Claude for Teachers",
-      "url": "https://aihot.virxact.com/items/cmrksgyym00utbi5qx5x6v42u",
-      "published_at": "2026-07-14T15:11:11Z",
-      "summary": "Anthropic 发布 Claude for Teachers，为美国认证的 K-12 教师免费提供高级 Claude 功能、教学技能库及对接全美 50 州学术标准的课程资源。该工具连接 Learning Commons，可调用 OpenSciEd、IM v.360 等课程资源，并集成 ASSISTments、Brisk Teaching、Canva Education 等第三方工具。教师可基于高质量教材规划课程、为不同水平学生差异化教学，还能通过 Claude Code 和 Cowork 自动分析班级数据、安排重复任务。教师数据不用于模型训练，学生信息受 FERPA 合规的 K-12 数据处理附录保护。Anthropic 同时发布与 Teach for America 及美国教师联合会共创的 AI 素养课程",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "3955274e6a0288386dcc2f048852c1ee43fe9e45",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 经济指数：加拿大 Claude 使用情况分析",
-      "url": "https://aihot.virxact.com/items/cmrko155e005ubixirangezv8",
-      "published_at": "2026-07-14T13:06:56Z",
-      "summary": "基于2026年2月Claude.ai对话样本，加拿大占全球流量的2.6%，人均使用量是预期的4.4倍，在总使用量前十国家中仅次于美国。加拿大内部采用率高度集中：安大略省占43.9%对话，不列颠哥伦比亚省人均使用量达预期的1.4倍，而纽芬兰与拉布拉多省仅为0.2倍。省级人均使用量与收入无关，而与专业、科学和技术服务业的就业占比高度相关。各省使用场景稳定：工作占34-40%，课程作业占13-18%，个人用途占44-51%。翻译请求与公共管理就业份额正相关，反映加拿大联邦双语政策；文档翻译是加拿大相对于其他英语国家最独特的使用场景。加拿大整体使用偏向学术和早期职业场景。 🔗 阅读原文：https://www.anthropic.com/research/how-canada-uses-claude via AI HO",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -340,11 +261,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1035,
+      "fetched_count": 1034,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 561,
-      "checked_at": "2026-07-15T10:19:04.029174Z"
+      "latency_ms": 681,
+      "checked_at": "2026-07-15T15:24:48.211588Z"
     },
     {
       "source_id": "openai-skills",
@@ -355,8 +276,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 324,
-      "checked_at": "2026-07-15T10:19:04.353970Z"
+      "latency_ms": 402,
+      "checked_at": "2026-07-15T15:24:48.614707Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -367,8 +288,8 @@
       "fetched_count": 243,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 110,
-      "checked_at": "2026-07-15T10:19:04.467987Z"
+      "latency_ms": 365,
+      "checked_at": "2026-07-15T15:24:48.982873Z"
     },
     {
       "source_id": "google-deepmind",
@@ -379,8 +300,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 409,
-      "checked_at": "2026-07-15T10:19:04.879255Z"
+      "latency_ms": 488,
+      "checked_at": "2026-07-15T15:24:49.472501Z"
     },
     {
       "source_id": "google-ai",
@@ -391,8 +312,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 274,
-      "checked_at": "2026-07-15T10:19:05.154238Z"
+      "latency_ms": 294,
+      "checked_at": "2026-07-15T15:24:49.767561Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -400,11 +321,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 823,
+      "fetched_count": 824,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 300,
-      "checked_at": "2026-07-15T10:19:05.467039Z"
+      "latency_ms": 292,
+      "checked_at": "2026-07-15T15:24:50.070264Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -415,8 +336,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 134,
-      "checked_at": "2026-07-15T10:19:05.601913Z"
+      "latency_ms": 135,
+      "checked_at": "2026-07-15T15:24:50.205773Z"
     },
     {
       "source_id": "github-changelog",
@@ -425,10 +346,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 35,
-      "checked_at": "2026-07-15T10:19:05.637852Z"
+      "latency_ms": 32,
+      "checked_at": "2026-07-15T15:24:50.238160Z"
     },
     {
       "source_id": "aihot",
@@ -437,10 +358,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 9,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 343,
-      "checked_at": "2026-07-15T10:19:05.982392Z"
+      "latency_ms": 5124,
+      "checked_at": "2026-07-15T15:24:55.363897Z"
     }
   ],
   "control_notes": {
