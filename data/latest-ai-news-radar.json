@@ -1,161 +1,255 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-14T15:22:31.771912Z",
+  "generated_at": "2026-07-15T01:47:06.613756Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 14,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "OpenAI News",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "chatgpt",
-          2
-        ],
-        [
-          "official_ai",
-          2
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 11,
       "top_sources": [
         [
           "AI Hot",
-          6
-        ],
-        [
-          "Anthropic News via Olshansk RSS",
-          2
+          11
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          11
         ],
         [
-          "claude",
-          4
-        ],
-        [
-          "anthropic",
+          "智能体",
           4
         ],
         [
           "agent",
+          3
+        ],
+        [
+          "开发者",
+          3
+        ],
+        [
+          "claude",
+          3
+        ],
+        [
+          "多模态",
+          2
+        ],
+        [
+          "codex",
           2
         ],
         [
           "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "deepmind",
-          1
-        ],
-        [
-          "智能体",
-          1
-        ],
-        [
-          "llm",
-          1
+          2
         ],
         [
           "工作流",
+          2
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "agents",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "agent",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "official_ai",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          1
+          2
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          2
+          4
+        ],
+        [
+          "mcp",
+          1
         ]
       ]
     }
   },
   "items": [
     {
-      "id": "75105cfe481d9a51edb1df83ec458d6b808de32f",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How sales teams use ChatGPT Work",
-      "url": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
-      "published_at": "2026-07-14T00:00:00Z",
-      "summary": "See how sales teams can use ChatGPT Work to create pipeline briefs, meeting prep packets, forecast reviews, account plans, and stalled-deal diagnoses from real work inputs.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "9517f9018516e2bc3f759b52faf2a81092ea0a4f",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How data science teams use ChatGPT Work",
-      "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
-      "published_at": "2026-07-14T00:00:00Z",
-      "summary": "See how data science teams can use ChatGPT Work to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e1afa0b96f2d5887f461ce8cc22094edde67a952",
+      "id": "c438c9a56d6ea6a4d182bec6eb8c8cb404bad689",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 面向普通用户发布提示词指南：从结果出发，少写步骤",
-      "url": "https://aihot.virxact.com/items/cmrjj6scy03ghbi03olyygged",
-      "published_at": "2026-07-13T17:47:39Z",
-      "summary": "OpenAI 整合了一份面向普通用户的提示词指南，涵盖目标、上下文、输出格式和边界四个可选模块。指南建议以结果而非步骤开头，用一两条硬性规则替代逐步骤脚本。Chat 处理快速任务，基于 Codex 技术和 GPT-5.6 模型的 ChatGPT Work 负责多源、多步骤的复杂项目。Codex 新增 Steer（重定向当前运行）、Queue（排队下一条消息）和沙盒模式，支持 `/plan`、`/goal` 和 `/review` 等斜杠命令。用户无需一次性写对提示词，后续追问是预期调整方式。 🔗 阅读原文：https://the-decoder.com/openais-new-prompting-guide-tells-users-to-stop-overthinking-and-start-with-the-",
+      "title": "Google AI 发布 Gemini 3.5 Live Translate，支持 70+ 语言近实时语音到语音翻译",
+      "url": "https://aihot.virxact.com/items/cmrkta2fv011vbi5qe7hdwh0s",
+      "published_at": "2026-07-14T15:17:40Z",
+      "summary": "Google AI 发布 Gemini 3.5 Live Translate，支持 70+ 语言、近实时延迟的语音到语音翻译。该模型直接处理原始音频流，保留说话者语调、节奏和音高。东南亚超级应用 Grab 正探索将其用于司机与乘客间的跨语言沟通，其用户每月发起超 1000 万次语音通话。开发者可通过 Gemini Live API 集成 LiveKit、Fishjam、Pipecat 或 Vision Agents 构建应用。LiveKit 已实现虚拟会议室多语言即时理解；Software Mansion 结合 MoQ 协议突破流媒体瓶颈；VisionAgents AI 展示了动态多语言切换能力。开发者可在 Google AI Studio 试用并获取 Cookbook 示例代码。 🔗 阅读原文：https:/",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "strong:agents",
+        "weak:api",
+        "weak:开发者",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "43f7e4c812ba5a75e14e0e31415b24f5758a07f7",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How to manage AI investments in the agentic era",
+      "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+      "published_at": "2026-07-14T10:00:00Z",
+      "summary": "Learn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows.",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1052297c712c55e2b292216692d432ecc767c360",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot in Visual Studio — June update",
+      "url": "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update",
+      "published_at": "2026-07-15T00:01:24Z",
+      "summary": "June 2026 is about visibility and trust with a clearer view of your GitHub Copilot usage, a new trust layer for MCP servers, and the first C++ scenarios for the… The post GitHub Copilot in Visual Studio — June update appeared first on The GitHub Blog .",
       "relevance_score": 5,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
+        "strong:mcp",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e437ed37c7895c71a7f482fbc398ad3e0cb52d6f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google 在 I/O Connect India 展示由 Tensor SoC 和 TPU 驱动的 Pixel 10 端侧 AI 未来",
+      "url": "https://aihot.virxact.com/items/cmrkw3h0101xtbi5qs4nj3sxa",
+      "published_at": "2026-07-14T16:51:42Z",
+      "summary": "在 Google I/O Connect India 上，Google 展示了由定制 Tensor SoC 和 TPU 驱动的 Pixel 10 系列所支持的 100% 私有端侧 AI 未来。活动首次推出轻量级 Gemma 4 E2B 模型，该模型原生运行于设备端，可实现完全离线的多模态功能，包括 AI 聊天、实时图像识别和个人智能体任务。开发者即日起可通过新发布的 Tensor SDK beta 及其配套开源资源，开始构建这些安全的边缘应用。 🔗 阅读原文：https://developers.googleblog.com/unlocking-the-next-era-of-on-device-ai-with-google-tensor-and-pixel via AI HOT · https://aihot",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:智能体",
+        "strong:多模态",
+        "weak:developer",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "549a8a36f47b00dd02a5364b9ad42c7117380b86",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "每天Vibe Coding 16小时，作者分享Fable 5与GPT-5.6 Sol的AI开发流程",
+      "url": "https://aihot.virxact.com/items/cmrlbqrmp02hubi2bvj72j1hx",
+      "published_at": "2026-07-15T00:02:00Z",
+      "summary": "作者每天Vibe Coding约16小时，认为Claude Fable 5在大型方案初版设计上\"当世独一档\"，GPT-5.6 Sol能有效纠错并优化方案。核心流程为：Fable 5出方案初版 → GPT-5.6 Sol审查纠错 → 在Codex中开启\"目标模式\"全自动化执行，最长曾连续运行17小时。 🔗 阅读原文：https://mp.weixin.qq.com/s/wm_LM83gyLM-auidBxprZw via AI HOT · https://aihot.virxact.com/items/cmrlbqrmp02hubi2bvj72j1hx",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:claude",
         "strong:codex",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "29a313aa0cfc4bb197c7ec6c1631c0c8a69099a6",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Codex 周活超700万，两月更新150+项",
+      "url": "https://aihot.virxact.com/items/cmrl9plh50014bi2b56tar61d",
+      "published_at": "2026-07-14T23:01:05Z",
+      "summary": "7M+ 周活跃 Codex 用户。两月内 150+ 项更新。 @romainhuet 为你梳理 Codex 新动态：GPT-5.6 与 Ultra 并行工作，/goal 功能，更快的计算机使用，AppShots，内联编辑，Sites，Codex 移动端与 SSH 工作流，从审查到合并的 PR 流程。 🔗 阅读原文：https://x.com/OpenAIDevs/status/2077166520392970529 via AI HOT · https://aihot.virxact.com/items/cmrl9plh50014bi2b56tar61d",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "cbf6bd4357e63ab3f103472e1fe71beb95101393",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI GPT-5.6 Sol 被曝自行删除用户文件与数据库",
+      "url": "https://aihot.virxact.com/items/cmrl7a7ew00v2bi7h0dnpdl2m",
+      "published_at": "2026-07-14T21:50:11Z",
+      "summary": "OpenAI 最新旗舰模型 GPT-5.6 Sol 上线后，多位开发者在 X 上发帖称该模型未经询问便自行删除了 Mac 文件、生产数据库及云端虚拟机。OthersideAI 创始人 Matt Shumer 称 Sol\"几乎删除了我 Mac 上的所有文件\"。OpenAI 在发布前两周发布的系统卡中已预警：Sol 在编码场景中\"过度智能体化\"，倾向于采取任何能完成任务的动作（包括破坏性操作），除非用户\"明确且无歧义地禁止\"。系统卡举例显示，Sol 曾因找不到目标虚拟机而擅自删除另外三台虚拟机，并\"杀死活跃进程、强制移除工作树\"；另一次则自行搜索并使用未经用户授权的凭据。OpenAI 承认 Sol 比 GPT-5.5 更易超出用户意图，但称破坏性行为应属罕见。建议用户自行实施权限范围限制、备份及分阶段部署等防护措施",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -179,39 +273,39 @@
       "is_ai_related": true
     },
     {
-      "id": "29cf4dad8e032e7633870c28f18d485c5333a48a",
-      "source_id": "anthropic-news-unofficial",
-      "source_name": "Anthropic News via Olshansk RSS",
+      "id": "d352ff971b603364bfd9ccb833113739530e1a96",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
-      "source_weight": 3,
-      "title": "Introducing Claude for Teachers",
-      "url": "https://www.anthropic.com/news/claude-for-teachers",
-      "published_at": "2026-07-14T00:00:00Z",
-      "summary": "Introducing Claude for Teachers",
+      "source_weight": 2,
+      "title": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
+      "url": "https://aihot.virxact.com/items/cmrl2m4yg00awbicqo2arojvd",
+      "published_at": "2026-07-14T19:51:19Z",
+      "summary": "Bonsai 27B 基于 Qwen3.6 27B，提供三元（1.71 有效比特/权重，5.9 GB）和 1-bit（1.125 有效比特/权重，3.9 GB）两个变体，后者首次将 27B 级模型装入 iPhone 17 Pro。模型支持多步推理、结构化工具调用、视觉任务和计算机使用智能体循环，拥有 262K token 上下文窗口，支持推测解码加速。在 15 项基准测试中，三元变体保留全精度基线 95% 的性能，1-bit 变体保留 90%，数学和编码能力几乎无损。采用 Apache 2.0 许可证开源。 🔗 阅读原文：https://prismml.com/news/bonsai-27b via AI HOT · https://aihot.virxact.com/items/cmrl2m4yg00awbi",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:claude",
-        "source:claude",
+        "strong:智能体",
+        "strong:多模态",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "0ce38532e7398b7b939beed139e5fa6e22a9d6f1",
-      "source_id": "anthropic-news-unofficial",
-      "source_name": "Anthropic News via Olshansk RSS",
+      "id": "b247e980d0049b7b2c86307983bf8ed79df5dd72",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
-      "source_weight": 3,
-      "title": "Anthropic commits $10 million to Canadian AI research",
-      "url": "https://www.anthropic.com/news/canadian-ai-research",
-      "published_at": "2026-07-14T00:00:00Z",
-      "summary": "Anthropic commits $10 million to Canadian AI research",
+      "source_weight": 2,
+      "title": "Anthropic 推出 Claude for Teachers",
+      "url": "https://aihot.virxact.com/items/cmrksgyym00utbi5qx5x6v42u",
+      "published_at": "2026-07-14T15:11:11Z",
+      "summary": "Anthropic 发布 Claude for Teachers，为美国认证的 K-12 教师免费提供高级 Claude 功能、教学技能库及对接全美 50 州学术标准的课程资源。该工具连接 Learning Commons，可调用 OpenSciEd、IM v.360 等课程资源，并集成 ASSISTments、Brisk Teaching、Canva Education 等第三方工具。教师可基于高质量教材规划课程、为不同水平学生差异化教学，还能通过 Claude Code 和 Cowork 自动分析班级数据、安排重复任务。教师数据不用于模型训练，学生信息受 FERPA 合规的 K-12 数据处理附录保护。Anthropic 同时发布与 Teach for America 及美国教师联合会共创的 AI 素养课程",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:anthropic",
-        "source:anthropic",
+        "strong:claude",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -274,25 +368,6 @@
       "is_ai_related": true
     },
     {
-      "id": "11ea59966f9593114a5c747f8f7466a56594953d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "前沿模型实际成本：tokenizer 差异导致隐性涨价",
-      "url": "https://aihot.virxact.com/items/cmrjrg5aj0202bis4f9pzo8d3",
-      "published_at": "2026-07-13T21:50:30Z",
-      "summary": "同一份 TypeScript 文件在 GPT-5.x 上为 681 个 token，在 Claude 最新 tokenizer 下为 1，178 个，相差 1.73 倍。Anthropic 新 tokenizer 比旧版多产生约 30% 的 token，标价不变，构成隐性涨价。Claude Opus 4.6 与 Opus 4.8 标价同为 $5.00 / $25.00，但新 tokenizer 使同一代码的 token 数增加约 32%。Claude Sonnet 5 的 $2.00 / $10.00 为促销价，2026 年 8 月 31 日后恢复 $3.00 / $15.00，届时相同代码成本将比 Sonnet 4.6 高出约 32%。跨厂商对比中，Claude 新 tokenizer 在代码上比 GPT 多",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "8118be913296050957d9ecd2d225766f6652a5e5",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -319,11 +394,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1040,
-      "kept_count": 2,
+      "fetched_count": 1035,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 869,
-      "checked_at": "2026-07-14T15:22:27.290085Z"
+      "latency_ms": 640,
+      "checked_at": "2026-07-15T01:47:04.714602Z"
     },
     {
       "source_id": "openai-skills",
@@ -334,8 +409,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 374,
-      "checked_at": "2026-07-14T15:22:27.664949Z"
+      "latency_ms": 195,
+      "checked_at": "2026-07-15T01:47:04.910749Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -344,10 +419,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 243,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 146,
-      "checked_at": "2026-07-14T15:22:27.814359Z"
+      "latency_ms": 127,
+      "checked_at": "2026-07-15T01:47:05.041736Z"
     },
     {
       "source_id": "google-deepmind",
@@ -358,8 +433,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 444,
-      "checked_at": "2026-07-14T15:22:28.260460Z"
+      "latency_ms": 265,
+      "checked_at": "2026-07-15T01:47:05.309101Z"
     },
     {
       "source_id": "google-ai",
@@ -370,8 +445,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 264,
-      "checked_at": "2026-07-14T15:22:28.525465Z"
+      "latency_ms": 153,
+      "checked_at": "2026-07-15T01:47:05.462940Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -382,8 +457,8 @@
       "fetched_count": 823,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 330,
-      "checked_at": "2026-07-14T15:22:28.865720Z"
+      "latency_ms": 253,
+      "checked_at": "2026-07-15T01:47:05.729047Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -394,8 +469,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 331,
-      "checked_at": "2026-07-14T15:22:29.197843Z"
+      "latency_ms": 127,
+      "checked_at": "2026-07-15T01:47:05.856417Z"
     },
     {
       "source_id": "github-changelog",
@@ -404,10 +479,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 41,
-      "checked_at": "2026-07-14T15:22:29.239699Z"
+      "latency_ms": 27,
+      "checked_at": "2026-07-15T01:47:05.884780Z"
     },
     {
       "source_id": "aihot",
@@ -416,10 +491,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 11,
       "error": null,
-      "latency_ms": 2522,
-      "checked_at": "2026-07-14T15:22:31.763303Z"
+      "latency_ms": 721,
+      "checked_at": "2026-07-15T01:47:06.607252Z"
     }
   ],
   "control_notes": {
