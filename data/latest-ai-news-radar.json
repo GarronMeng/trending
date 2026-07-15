@@ -1,28 +1,36 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-15T01:47:06.613756Z",
+  "generated_at": "2026-07-15T06:01:11.374206Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 14,
+  "item_count": 16,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 11,
+      "count": 12,
       "top_sources": [
         [
           "AI Hot",
-          11
+          12
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          11
+          12
+        ],
+        [
+          "claude",
+          4
         ],
         [
           "智能体",
           4
+        ],
+        [
+          "codex",
+          3
         ],
         [
           "agent",
@@ -33,36 +41,28 @@
           3
         ],
         [
-          "claude",
-          3
+          "llm",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "自动化",
+          2
+        ],
+        [
+          "API",
+          2
         ],
         [
           "多模态",
           2
         ],
         [
-          "codex",
-          2
-        ],
-        [
           "openai",
           2
-        ],
-        [
-          "工作流",
-          2
-        ],
-        [
-          "anthropic",
-          2
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "agents",
-          1
         ]
       ]
     },
@@ -92,26 +92,53 @@
     },
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          3
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          4
+          6
         ],
         [
           "mcp",
+          1
+        ],
+        [
+          "actions",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "c9e86920a4618584b0e773b2b8f2f6049c4cd665",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "开源 LLM TODO Skill\"阿福\"：用 Claude Code 和 Codex 实现知识管理到排期自动化",
+      "url": "https://aihot.virxact.com/items/cmrlg0ucc080qbi2bb8hn7nj3",
+      "published_at": "2026-07-15T01:52:00Z",
+      "summary": "作者基于 API 版 Fable5 和 Codex 开发了开源 TODO Skill\"阿福\"，用于将收件箱中的待办资料自动转为 Markdown 任务卡，识别信息不完整项（如视频链接需通过 yt-dlp 和本地 Whisper 提取字幕），并支持批量排期、AI 分组合并、拖拽调整周视图及同步到 Mac 日历或飞书日历。项目已开源在 GitHub，安装仅需一条命令。 🔗 阅读原文：https://mp.weixin.qq.com/s/QcGHxKohg0gW9e84Nd_9jA via AI HOT · https://aihot.virxact.com/items/cmrlg0ucc080qbi2bb8hn7nj3",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "strong:llm",
+        "weak:api",
+        "weak:自动化",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "c438c9a56d6ea6a4d182bec6eb8c8cb404bad689",
       "source_id": "aihot",
@@ -170,6 +197,25 @@
         "strong:mcp",
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7d0697d84f58343cd49a241a50289b43678676fb",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot for JetBrains expands BYOK capabilities",
+      "url": "https://github.blog/changelog/2026-07-14-github-copilot-for-jetbrains-expands-byok-capabilities",
+      "published_at": "2026-07-14T23:37:29Z",
+      "summary": "This update brings major advances in customization and model provider flexibility to all tiers of GitHub Copilot for JetBrains IDEs. With richer plugin and provider experiences, improved conversational interactions, and… The post GitHub Copilot for JetBrains expands BYOK capabilities appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot",
+        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -397,8 +443,8 @@
       "fetched_count": 1035,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 640,
-      "checked_at": "2026-07-15T01:47:04.714602Z"
+      "latency_ms": 888,
+      "checked_at": "2026-07-15T06:01:09.637174Z"
     },
     {
       "source_id": "openai-skills",
@@ -409,8 +455,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 195,
-      "checked_at": "2026-07-15T01:47:04.910749Z"
+      "latency_ms": 175,
+      "checked_at": "2026-07-15T06:01:09.813054Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -421,8 +467,8 @@
       "fetched_count": 243,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 127,
-      "checked_at": "2026-07-15T01:47:05.041736Z"
+      "latency_ms": 112,
+      "checked_at": "2026-07-15T06:01:09.929688Z"
     },
     {
       "source_id": "google-deepmind",
@@ -433,8 +479,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 265,
-      "checked_at": "2026-07-15T01:47:05.309101Z"
+      "latency_ms": 329,
+      "checked_at": "2026-07-15T06:01:10.260693Z"
     },
     {
       "source_id": "google-ai",
@@ -445,8 +491,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 153,
-      "checked_at": "2026-07-15T01:47:05.462940Z"
+      "latency_ms": 146,
+      "checked_at": "2026-07-15T06:01:10.407419Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -457,8 +503,8 @@
       "fetched_count": 823,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-07-15T01:47:05.729047Z"
+      "latency_ms": 293,
+      "checked_at": "2026-07-15T06:01:10.713876Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -469,8 +515,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 127,
-      "checked_at": "2026-07-15T01:47:05.856417Z"
+      "latency_ms": 100,
+      "checked_at": "2026-07-15T06:01:10.814108Z"
     },
     {
       "source_id": "github-changelog",
@@ -479,10 +525,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-07-15T01:47:05.884780Z"
+      "latency_ms": 28,
+      "checked_at": "2026-07-15T06:01:10.843415Z"
     },
     {
       "source_id": "aihot",
@@ -491,10 +537,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 11,
+      "kept_count": 12,
       "error": null,
-      "latency_ms": 721,
-      "checked_at": "2026-07-15T01:47:06.607252Z"
+      "latency_ms": 523,
+      "checked_at": "2026-07-15T06:01:11.368464Z"
     }
   ],
   "control_notes": {
