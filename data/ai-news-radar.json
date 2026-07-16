@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-16T06:05:45.314844Z",
+  "generated_at": "2026-07-16T08:40:17.592209Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 13,
   "groups": {
     "official": {
       "group": "official",
@@ -40,25 +40,25 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          8
+          9
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          9
         ],
         [
           "agent",
-          3
+          4
         ],
         [
           "智能体",
-          3
+          4
         ],
         [
           "开发者",
@@ -71,6 +71,14 @@
         [
           "mcp",
           2
+        ],
+        [
+          "eval",
+          1
+        ],
+        [
+          "工作流",
+          1
         ],
         [
           "chatgpt",
@@ -86,14 +94,6 @@
         ],
         [
           "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "openai",
           1
         ]
       ]
@@ -172,6 +172,27 @@
       "relevance_reasons": [
         "strong:openai",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ec8ceced7a0286dc648a1c7fdcf6cb568375eb42",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Patter SDK 教程：构建餐厅预订电话智能体，支持动态变量、护栏、延迟仪表盘与评估检查",
+      "url": "https://aihot.virxact.com/items/cmrn7cx9z07c0bije5ilnyr7x",
+      "published_at": "2026-07-16T07:42:49Z",
+      "summary": "Patter SDK 发布教程，演示如何构建一个餐厅预订场景的语音智能体工作流。该流程支持动态调用变量、注册可调用工具、应用输出护栏（如PII脱敏、脏话过滤、话题范围限制），并可在无需实时电话凭证的情况下运行脚本化通话模拟。教程还涵盖延迟与成本指标追踪、回归式评估检查，以及将智能体逻辑、工具调用、安全检查和通话模拟整合为单一结构化管线。 🔗 阅读原文：https://www.marktechpost.com/2026/07/16/patter-sdk-guide-to-building-a-restaurant-booking-phone-agent-with-dynamic-variables-guardrails-latency-dashboards-and-eval-checks via AI HOT ·",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "weak:eval",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -360,8 +381,8 @@
       "fetched_count": 1036,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 788,
-      "checked_at": "2026-07-16T06:05:42.158690Z"
+      "latency_ms": 859,
+      "checked_at": "2026-07-16T08:40:07.060644Z"
     },
     {
       "source_id": "openai-skills",
@@ -372,8 +393,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-07-16T06:05:42.412310Z"
+      "latency_ms": 302,
+      "checked_at": "2026-07-16T08:40:07.363378Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -384,8 +405,8 @@
       "fetched_count": 243,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 136,
-      "checked_at": "2026-07-16T06:05:42.552332Z"
+      "latency_ms": 198,
+      "checked_at": "2026-07-16T08:40:07.564124Z"
     },
     {
       "source_id": "google-deepmind",
@@ -396,8 +417,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 466,
-      "checked_at": "2026-07-16T06:05:43.020706Z"
+      "latency_ms": 336,
+      "checked_at": "2026-07-16T08:40:07.901532Z"
     },
     {
       "source_id": "google-ai",
@@ -408,8 +429,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 163,
-      "checked_at": "2026-07-16T06:05:43.184197Z"
+      "latency_ms": 196,
+      "checked_at": "2026-07-16T08:40:08.098203Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -420,8 +441,8 @@
       "fetched_count": 827,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 1103,
-      "checked_at": "2026-07-16T06:05:44.300355Z"
+      "latency_ms": 8615,
+      "checked_at": "2026-07-16T08:40:16.722408Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -432,8 +453,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 167,
-      "checked_at": "2026-07-16T06:05:44.467671Z"
+      "latency_ms": 128,
+      "checked_at": "2026-07-16T08:40:16.850793Z"
     },
     {
       "source_id": "github-changelog",
@@ -445,7 +466,7 @@
       "kept_count": 1,
       "error": null,
       "latency_ms": 30,
-      "checked_at": "2026-07-16T06:05:44.498652Z"
+      "checked_at": "2026-07-16T08:40:16.881068Z"
     },
     {
       "source_id": "aihot",
@@ -454,10 +475,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 804,
-      "checked_at": "2026-07-16T06:05:45.304779Z"
+      "latency_ms": 702,
+      "checked_at": "2026-07-16T08:40:17.584094Z"
     }
   ],
   "control_notes": {
