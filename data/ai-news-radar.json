@@ -1,43 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-16T08:40:17.592209Z",
+  "generated_at": "2026-07-16T10:24:33.013038Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
   "item_count": 13,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 3,
-      "top_sources": [
-        [
-          "OpenAI News",
-          2
-        ],
-        [
-          "Hugging Face Blog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          3
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
       "count": 9,
@@ -54,15 +22,19 @@
         ],
         [
           "agent",
-          4
+          5
         ],
         [
           "智能体",
-          4
+          5
         ],
         [
           "开发者",
-          3
+          4
+        ],
+        [
+          "工作流",
+          2
         ],
         [
           "claude",
@@ -73,11 +45,15 @@
           2
         ],
         [
-          "eval",
+          "gemini",
           1
         ],
         [
-          "工作流",
+          "developer",
+          1
+        ],
+        [
+          "eval",
           1
         ],
         [
@@ -87,13 +63,45 @@
         [
           "codex",
           1
-        ],
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 3,
+      "top_sources": [
         [
-          "anthropic",
+          "Hugging Face Blog",
           1
         ],
         [
-          "api",
+          "Google DeepMind",
+          1
+        ],
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          3
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "deepmind",
+          1
+        ],
+        [
+          "openai",
           1
         ]
       ]
@@ -121,6 +129,29 @@
   },
   "items": [
     {
+      "id": "9fc8f6d2564c634e44c0ce923a8475728e9683c2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gemini Enterprise Agent Platform 新增 Parallel Web Search 网络接地提供商",
+      "url": "https://aihot.virxact.com/items/cmrnc82t9016bbic6qmevgy67",
+      "published_at": "2026-07-16T09:58:51Z",
+      "summary": "Google Cloud 与 Parallel Web Systems 合作，将 Parallel 的搜索基础设施作为新的网络接地提供商原生集成到 Gemini Enterprise Agent Platform 中。该集成使开发者能将 AI 智能体锚定在可验证的实时网络结果上，以提升企业工作流的事实准确性。用户还可编程提取、永久缓存并与其他大语言模型一起处理网络数据。 🔗 阅读原文：https://developers.googleblog.com/expanding-choice-in-gemini-enterprise-agent-platform-introducing-grounding-with-parallel-web-search via AI HOT · https://aihot.virxa",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "strong:智能体",
+        "weak:developer",
+        "weak:开发者",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "1833db647308dfc38a7734c15bcaac7b1c46755a",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
@@ -140,6 +171,24 @@
       "is_ai_related": true
     },
     {
+      "id": "139685a9c3deb4575435a08586093f0dc453dc7d",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Our approach to bioresilience",
+      "url": "https://deepmind.google/blog/our-approach-to-bioresilience",
+      "published_at": "2026-07-16T09:30:42Z",
+      "summary": "Google DeepMind and Isomorphic Labs are sharing our joint approach to bioresilience and AI models.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:deepmind",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "078ffb904e7745332fbfba021f26e561592ef691",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -150,24 +199,6 @@
       "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
       "published_at": "2026-07-15T12:00:00Z",
       "summary": "OpenAI outlines a “reverse federalism” approach to AI governance, where state laws help build a national framework for safe, democratic AI.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0c3006ed7731abd618f03c1142f9cd80127860c2",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
-      "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
-      "published_at": "2026-07-15T10:00:00Z",
-      "summary": "Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness.",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
@@ -350,25 +381,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "e782301814ea7560a12503e256b19f9441a2dbbc",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 发布 GPT-Red：通过自动化红队测试提升模型鲁棒性",
-      "url": "https://aihot.virxact.com/items/cmrmc527c0088bivcfrd3s2uz",
-      "published_at": "2026-07-15T10:00:00Z",
-      "summary": "OpenAI 训练了自动化红队模型 GPT-Red，用于在部署前发现漏洞并在训练中生成攻击以提升模型鲁棒性。GPT-Red 能攻破此前几乎所有模型，其攻击被用于对抗训练 GPT-5.6 Sol，使该模型在直接提示注入基准测试中的失败率降至四个月前最佳生产模型的 1/6。GPT-Red 通过自对弈强化学习训练，投入了 OpenAI 后训练中前所未有的计算规模。 🔗 阅读原文：https://openai.com/index/unlocking-self-improvement-gpt-red via AI HOT · https://aihot.virxact.com/items/cmrmc527c0088bivcfrd3s2uz",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -379,10 +391,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1036,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 859,
-      "checked_at": "2026-07-16T08:40:07.060644Z"
+      "latency_ms": 799,
+      "checked_at": "2026-07-16T10:24:30.844019Z"
     },
     {
       "source_id": "openai-skills",
@@ -393,8 +405,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 302,
-      "checked_at": "2026-07-16T08:40:07.363378Z"
+      "latency_ms": 223,
+      "checked_at": "2026-07-16T10:24:31.067876Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -405,8 +417,8 @@
       "fetched_count": 243,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 198,
-      "checked_at": "2026-07-16T08:40:07.564124Z"
+      "latency_ms": 123,
+      "checked_at": "2026-07-16T10:24:31.195144Z"
     },
     {
       "source_id": "google-deepmind",
@@ -415,10 +427,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 336,
-      "checked_at": "2026-07-16T08:40:07.901532Z"
+      "latency_ms": 482,
+      "checked_at": "2026-07-16T10:24:31.679639Z"
     },
     {
       "source_id": "google-ai",
@@ -429,8 +441,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 196,
-      "checked_at": "2026-07-16T08:40:08.098203Z"
+      "latency_ms": 147,
+      "checked_at": "2026-07-16T10:24:31.827738Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -441,8 +453,8 @@
       "fetched_count": 827,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 8615,
-      "checked_at": "2026-07-16T08:40:16.722408Z"
+      "latency_ms": 234,
+      "checked_at": "2026-07-16T10:24:32.073738Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -453,8 +465,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 128,
-      "checked_at": "2026-07-16T08:40:16.850793Z"
+      "latency_ms": 116,
+      "checked_at": "2026-07-16T10:24:32.190154Z"
     },
     {
       "source_id": "github-changelog",
@@ -466,7 +478,7 @@
       "kept_count": 1,
       "error": null,
       "latency_ms": 30,
-      "checked_at": "2026-07-16T08:40:16.881068Z"
+      "checked_at": "2026-07-16T10:24:32.221024Z"
     },
     {
       "source_id": "aihot",
@@ -477,8 +489,8 @@
       "fetched_count": 50,
       "kept_count": 9,
       "error": null,
-      "latency_ms": 702,
-      "checked_at": "2026-07-16T08:40:17.584094Z"
+      "latency_ms": 781,
+      "checked_at": "2026-07-16T10:24:33.004127Z"
     }
   ],
   "control_notes": {
