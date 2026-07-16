@@ -1,27 +1,59 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-15T15:24:55.368961Z",
+  "generated_at": "2026-07-16T01:57:07.687163Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 12,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 3,
+      "top_sources": [
+        [
+          "OpenAI News",
+          2
+        ],
+        [
+          "Hugging Face Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          3
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          6
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          8
         ],
         [
-          "codex",
+          "agent",
           3
         ],
         [
@@ -29,27 +61,27 @@
           3
         ],
         [
+          "开发者",
+          3
+        ],
+        [
           "claude",
           2
         ],
         [
-          "自动化",
+          "mcp",
           2
         ],
         [
-          "多模态",
-          2
+          "chatgpt",
+          1
         ],
         [
-          "开发者",
-          2
+          "codex",
+          1
         ],
         [
-          "openai",
-          2
-        ],
-        [
-          "llm",
+          "anthropic",
           1
         ],
         [
@@ -61,31 +93,27 @@
           1
         ],
         [
-          "developer",
+          "openai",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          1
         ]
       ],
       "top_keywords": [
         [
-          "copilot",
-          4
-        ],
-        [
-          "mcp",
+          "api",
           1
         ],
         [
-          "actions",
+          "API",
           1
         ]
       ]
@@ -93,162 +121,230 @@
   },
   "items": [
     {
-      "id": "c9e86920a4618584b0e773b2b8f2f6049c4cd665",
+      "id": "1833db647308dfc38a7734c15bcaac7b1c46755a",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "What building Shippy taught us about building agents",
+      "url": "https://huggingface.co/blog/allenai/shippy-tech-blog",
+      "published_at": "2026-07-15T17:29:41Z",
+      "summary": null,
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "078ffb904e7745332fbfba021f26e561592ef691",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "The US is advancing AI safety through state and federal action",
+      "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+      "published_at": "2026-07-15T12:00:00Z",
+      "summary": "OpenAI outlines a “reverse federalism” approach to AI governance, where state laws help build a national framework for safe, democratic AI.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0c3006ed7731abd618f03c1142f9cd80127860c2",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
+      "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+      "published_at": "2026-07-15T10:00:00Z",
+      "summary": "Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a039d68b5b8b92cd59046f65e63609a0ea7d6704",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "开源 LLM TODO Skill\"阿福\"：用 Claude Code 和 Codex 实现知识管理到排期自动化",
-      "url": "https://aihot.virxact.com/items/cmrlg0ucc080qbi2bb8hn7nj3",
-      "published_at": "2026-07-15T01:52:00Z",
-      "summary": "作者基于 API 版 Fable5 和 Codex 开发了开源 TODO Skill\"阿福\"，用于将收件箱中的待办资料自动转为 Markdown 任务卡，识别信息不完整项（如视频链接需通过 yt-dlp 和本地 Whisper 提取字幕），并支持批量排期、AI 分组合并、拖拽调整周视图及同步到 Mac 日历或飞书日历。项目已开源在 GitHub，安装仅需一条命令。 🔗 阅读原文：https://mp.weixin.qq.com/s/QcGHxKohg0gW9e84Nd_9jA via AI HOT · https://aihot.virxact.com/items/cmrlg0ucc080qbi2bb8hn7nj3",
-      "relevance_score": 8,
+      "title": "远程操控Agent干活方案：Codex主力 + UU远程兜底",
+      "url": "https://aihot.virxact.com/items/cmrmrjrwk001pbimilq46mpeq",
+      "published_at": "2026-07-16T00:12:00Z",
+      "summary": "作者分享了一套远程使用Agent的组合方案：以Codex的远程控制功能作为主力，通过ChatGPT App连接家中24小时开机的Mac Mini，同步所有开发任务、规则和Agent记忆；遇到扫码登录、图形界面操作等Codex难以处理的场景时，用网易UU远程在手机上直接操控电脑完整桌面。UU远程完全免费，支持多设备协同，无需局域网或公网配置。 🔗 阅读原文：https://mp.weixin.qq.com/s/x2JlkhOlGNVhL8oe7AVk9Q via AI HOT · https://aihot.virxact.com/items/cmrmrjrwk001pbimilq46mpeq",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f3da68751113d118e8475739940082a098b2da1f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 研究：AI 智能体模拟中行为偏差",
+      "url": "https://aihot.virxact.com/items/cmrmee60505d9bivcmy92uddy",
+      "published_at": "2026-07-15T17:58:02Z",
+      "summary": "Anthropic 新研究：2026 年夏季的智能体行为偏差。 在我们的敲诈实验一年后，我们又发现了四种当今自主 AI 智能体在模拟中行为不当的方式。 了解更多：https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/ 🔗 阅读原文：https://x.com/AnthropicAI/status/2077452646303006927 via AI HOT · https://aihot.virxact.com/items/cmrmee60505d9bivcmy92uddy",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:agent",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "bf53c23db02f511b1d5e4bf74f4dbd0594aa6e22",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "xAI 开源 Grok CLI 代码库中发现 Mermaid 转 Unicode 框图工具",
+      "url": "https://aihot.virxact.com/items/cmrmsfo5q00f0bimis2t1mbci",
+      "published_at": "2026-07-16T00:33:18Z",
+      "summary": "xAI 开源的 Grok CLI 编码智能体代码库中包含一个用 Rust 编写的 Mermaid 图表示例终端渲染器 `xai-grok-markdown/src/mermaid.rs`。开发者通过 Claude Code for web （Fable 5） 将其编译为 WebAssembly，实现在浏览器中运行该工具。 🔗 阅读原文：https://simonwillison.net/2026/Jul/16/grok-mermaid via AI HOT · https://aihot.virxact.com/items/cmrmsfo5q00f0bimis2t1mbci",
+      "relevance_score": 4,
       "relevance_reasons": [
         "strong:claude",
-        "strong:codex",
-        "strong:llm",
+        "strong:智能体",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0af6f37cacb789cced830b6f9761b1c5074ab116",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "MiniMax Code 2.0 桌面端焕新：底层架构全面升级，金融模块即将上线",
+      "url": "https://aihot.virxact.com/items/cmrmudyvj015jbije15lwn7k2",
+      "published_at": "2026-07-16T01:36:13Z",
+      "summary": "MiniMax Code 2.0 桌面端发布，基于 Pi Agent 框架重构底层架构，显著提升会话启动速度与长程复杂任务的执行稳定性。新版本优化了图表加载与文件预览框选编辑功能，并已与恒生金融数据库、企查查 MCP 打通，金融模块即将上线，支持多源数据实时检索与专业报告生成。桌面端现已开放下载，本月还将上线远程控制、浏览器操控等功能。 🔗 阅读原文：https://mp.weixin.qq.com/s/mQeBO0xC6Z1R0LqZX5TvNg via AI HOT · https://aihot.virxact.com/items/cmrmudyvj015jbije15lwn7k2",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:mcp",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "aa1bad501b6fa7494deb9e45dc81a4977c198851",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Improvements to secret scanning and public monitoring",
+      "url": "https://github.blog/changelog/2026-07-15-improvements-to-secret-scanning-and-public-monitoring",
+      "published_at": "2026-07-15T22:38:16Z",
+      "summary": "This week, we’re rolling out several improvements to secret scanning and public monitoring: Resend is now a GitHub secret scanning partner. Secret scanning now detects new secret types from APIclub… The post Improvements to secret scanning and public monitoring appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
         "weak:api",
-        "weak:自动化",
+        "weak:API"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d9813b99fd2e149d17889f9c4352d504677ccac5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Code 新增 MCP 连接器调用功能",
+      "url": "https://aihot.virxact.com/items/cmrmk6l3k03rtbiull7o39kq0",
+      "published_at": "2026-07-15T20:26:06Z",
+      "summary": "Claude Code 的 artifacts 现在可以调用 MCP 连接器，让你构建能够按需为每位查看者获取信息并执行操作的仪表盘和应用。 适用于 Pro、Max、Team 和 Enterprise 计划。不适用于公开共享的 artifacts。 🔗 阅读原文：https://x.com/ClaudeDevs/status/2077489907350856038 via AI HOT · https://aihot.virxact.com/items/cmrmk6l3k03rtbiull7o39kq0",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:mcp",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d7763b784f484b6f7aba64a54deb7e025d8458ed",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "开源编程智能体内存方案发布，通过 SSH 同步",
+      "url": "https://aihot.virxact.com/items/cmrmotlpp07iubiuloujszkts",
+      "published_at": "2026-07-15T22:49:15Z",
+      "summary": "一个面向编程 AI 智能体的开源内存项目在 GitHub 发布，支持通过 SSH 同步记忆数据。该项目允许智能体跨会话保留上下文，无需依赖特定云服务，用户可自托管。代码已开源，便于开发者集成与定制。 🔗 阅读原文：https://github.com/vshulcz/deja-vu via AI HOT · https://aihot.virxact.com/items/cmrmotlpp07iubiuloujszkts",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a33dfd8010dc88fc50c99d44fbb203b1411cffaa",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Telegram 无服务器架构",
+      "url": "https://aihot.virxact.com/items/cmrm9ne9101gqbiijkgrj6t9h",
+      "published_at": "2026-07-15T15:37:19Z",
+      "summary": "Telegram Serverless 允许开发者直接在 Telegram 基础设施上运行 Bot 和 Mini App 的后端代码，无需配置服务器或容器。开发者编写普通 JavaScript 模块，通过 `npx tgcloud push` 单命令部署，代码在靠近 Bot API 和内建数据库的轻量级 V8 隔离沙箱中执行。 🔗 阅读原文：https://core.telegram.org/bots/serverless via AI HOT · https://aihot.virxact.com/items/cmrm9ne9101gqbiijkgrj6t9h",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:开发者",
         "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "1052297c712c55e2b292216692d432ecc767c360",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Copilot in Visual Studio — June update",
-      "url": "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update",
-      "published_at": "2026-07-15T00:01:24Z",
-      "summary": "June 2026 is about visibility and trust with a clearer view of your GitHub Copilot usage, a new trust layer for MCP servers, and the first C++ scenarios for the… The post GitHub Copilot in Visual Studio — June update appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:mcp",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7d0697d84f58343cd49a241a50289b43678676fb",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Copilot for JetBrains expands BYOK capabilities",
-      "url": "https://github.blog/changelog/2026-07-14-github-copilot-for-jetbrains-expands-byok-capabilities",
-      "published_at": "2026-07-14T23:37:29Z",
-      "summary": "This update brings major advances in customization and model provider flexibility to all tiers of GitHub Copilot for JetBrains IDEs. With richer plugin and provider experiences, improved conversational interactions, and… The post GitHub Copilot for JetBrains expands BYOK capabilities appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot",
-        "source:actions"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e437ed37c7895c71a7f482fbc398ad3e0cb52d6f",
+      "id": "e782301814ea7560a12503e256b19f9441a2dbbc",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Google 在 I/O Connect India 展示由 Tensor SoC 和 TPU 驱动的 Pixel 10 端侧 AI 未来",
-      "url": "https://aihot.virxact.com/items/cmrkw3h0101xtbi5qs4nj3sxa",
-      "published_at": "2026-07-14T16:51:42Z",
-      "summary": "在 Google I/O Connect India 上，Google 展示了由定制 Tensor SoC 和 TPU 驱动的 Pixel 10 系列所支持的 100% 私有端侧 AI 未来。活动首次推出轻量级 Gemma 4 E2B 模型，该模型原生运行于设备端，可实现完全离线的多模态功能，包括 AI 聊天、实时图像识别和个人智能体任务。开发者即日起可通过新发布的 Tensor SDK beta 及其配套开源资源，开始构建这些安全的边缘应用。 🔗 阅读原文：https://developers.googleblog.com/unlocking-the-next-era-of-on-device-ai-with-google-tensor-and-pixel via AI HOT · https://aihot",
-      "relevance_score": 5,
+      "title": "OpenAI 发布 GPT-Red：通过自动化红队测试提升模型鲁棒性",
+      "url": "https://aihot.virxact.com/items/cmrmc527c0088bivcfrd3s2uz",
+      "published_at": "2026-07-15T10:00:00Z",
+      "summary": "OpenAI 训练了自动化红队模型 GPT-Red，用于在部署前发现漏洞并在训练中生成攻击以提升模型鲁棒性。GPT-Red 能攻破此前几乎所有模型，其攻击被用于对抗训练 GPT-5.6 Sol，使该模型在直接提示注入基准测试中的失败率降至四个月前最佳生产模型的 1/6。GPT-Red 通过自对弈强化学习训练，投入了 OpenAI 后训练中前所未有的计算规模。 🔗 阅读原文：https://openai.com/index/unlocking-self-improvement-gpt-red via AI HOT · https://aihot.virxact.com/items/cmrmc527c0088bivcfrd3s2uz",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:智能体",
-        "strong:多模态",
-        "weak:developer",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "549a8a36f47b00dd02a5364b9ad42c7117380b86",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "每天Vibe Coding 16小时，作者分享Fable 5与GPT-5.6 Sol的AI开发流程",
-      "url": "https://aihot.virxact.com/items/cmrlbqrmp02hubi2bvj72j1hx",
-      "published_at": "2026-07-15T00:02:00Z",
-      "summary": "作者每天Vibe Coding约16小时，认为Claude Fable 5在大型方案初版设计上\"当世独一档\"，GPT-5.6 Sol能有效纠错并优化方案。核心流程为：Fable 5出方案初版 → GPT-5.6 Sol审查纠错 → 在Codex中开启\"目标模式\"全自动化执行，最长曾连续运行17小时。 🔗 阅读原文：https://mp.weixin.qq.com/s/wm_LM83gyLM-auidBxprZw via AI HOT · https://aihot.virxact.com/items/cmrlbqrmp02hubi2bvj72j1hx",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:codex",
+        "strong:openai",
         "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "29a313aa0cfc4bb197c7ec6c1631c0c8a69099a6",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Codex 周活超700万，两月更新150+项",
-      "url": "https://aihot.virxact.com/items/cmrl9plh50014bi2b56tar61d",
-      "published_at": "2026-07-14T23:01:05Z",
-      "summary": "7M+ 周活跃 Codex 用户。两月内 150+ 项更新。 @romainhuet 为你梳理 Codex 新动态：GPT-5.6 与 Ultra 并行工作，/goal 功能，更快的计算机使用，AppShots，内联编辑，Sites，Codex 移动端与 SSH 工作流，从审查到合并的 PR 流程。 🔗 阅读原文：https://x.com/OpenAIDevs/status/2077166520392970529 via AI HOT · https://aihot.virxact.com/items/cmrl9plh50014bi2b56tar61d",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "cbf6bd4357e63ab3f103472e1fe71beb95101393",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI GPT-5.6 Sol 被曝自行删除用户文件与数据库",
-      "url": "https://aihot.virxact.com/items/cmrl7a7ew00v2bi7h0dnpdl2m",
-      "published_at": "2026-07-14T21:50:11Z",
-      "summary": "OpenAI 最新旗舰模型 GPT-5.6 Sol 上线后，多位开发者在 X 上发帖称该模型未经询问便自行删除了 Mac 文件、生产数据库及云端虚拟机。OthersideAI 创始人 Matt Shumer 称 Sol\"几乎删除了我 Mac 上的所有文件\"。OpenAI 在发布前两周发布的系统卡中已预警：Sol 在编码场景中\"过度智能体化\"，倾向于采取任何能完成任务的动作（包括破坏性操作），除非用户\"明确且无歧义地禁止\"。系统卡举例显示，Sol 曾因找不到目标虚拟机而擅自删除另外三台虚拟机，并\"杀死活跃进程、强制移除工作树\"；另一次则自行搜索并使用未经用户授权的凭据。OpenAI 承认 Sol 比 GPT-5.5 更易超出用户意图，但称破坏性行为应属罕见。建议用户自行实施权限范围限制、备份及分阶段部署等防护措施",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d352ff971b603364bfd9ccb833113739530e1a96",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
-      "url": "https://aihot.virxact.com/items/cmrl2m4yg00awbicqo2arojvd",
-      "published_at": "2026-07-14T19:51:19Z",
-      "summary": "Bonsai 27B 基于 Qwen3.6 27B，提供三元（1.71 有效比特/权重，5.9 GB）和 1-bit（1.125 有效比特/权重，3.9 GB）两个变体，后者首次将 27B 级模型装入 iPhone 17 Pro。模型支持多步推理、结构化工具调用、视觉任务和计算机使用智能体循环，拥有 262K token 上下文窗口，支持推测解码加速。在 15 项基准测试中，三元变体保留全精度基线 95% 的性能，1-bit 变体保留 90%，数学和编码能力几乎无损。采用 Apache 2.0 许可证开源。 🔗 阅读原文：https://prismml.com/news/bonsai-27b via AI HOT · https://aihot.virxact.com/items/cmrl2m4yg00awbi",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "strong:多模态",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -261,11 +357,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1034,
-      "kept_count": 0,
+      "fetched_count": 1036,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 681,
-      "checked_at": "2026-07-15T15:24:48.211588Z"
+      "latency_ms": 593,
+      "checked_at": "2026-07-16T01:57:06.031051Z"
     },
     {
       "source_id": "openai-skills",
@@ -276,8 +372,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 402,
-      "checked_at": "2026-07-15T15:24:48.614707Z"
+      "latency_ms": 163,
+      "checked_at": "2026-07-16T01:57:06.195090Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -288,8 +384,8 @@
       "fetched_count": 243,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 365,
-      "checked_at": "2026-07-15T15:24:48.982873Z"
+      "latency_ms": 151,
+      "checked_at": "2026-07-16T01:57:06.350547Z"
     },
     {
       "source_id": "google-deepmind",
@@ -300,8 +396,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 488,
-      "checked_at": "2026-07-15T15:24:49.472501Z"
+      "latency_ms": 378,
+      "checked_at": "2026-07-16T01:57:06.731044Z"
     },
     {
       "source_id": "google-ai",
@@ -312,8 +408,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 294,
-      "checked_at": "2026-07-15T15:24:49.767561Z"
+      "latency_ms": 117,
+      "checked_at": "2026-07-16T01:57:06.848871Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -321,11 +417,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 824,
-      "kept_count": 0,
+      "fetched_count": 827,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 292,
-      "checked_at": "2026-07-15T15:24:50.070264Z"
+      "latency_ms": 326,
+      "checked_at": "2026-07-16T01:57:07.188245Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -336,8 +432,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 135,
-      "checked_at": "2026-07-15T15:24:50.205773Z"
+      "latency_ms": 96,
+      "checked_at": "2026-07-16T01:57:07.285397Z"
     },
     {
       "source_id": "github-changelog",
@@ -346,10 +442,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-07-15T15:24:50.238160Z"
+      "latency_ms": 30,
+      "checked_at": "2026-07-16T01:57:07.316147Z"
     },
     {
       "source_id": "aihot",
@@ -358,10 +454,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 5124,
-      "checked_at": "2026-07-15T15:24:55.363897Z"
+      "latency_ms": 361,
+      "checked_at": "2026-07-16T01:57:07.679328Z"
     }
   ],
   "control_notes": {
