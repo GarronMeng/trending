@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-16T10:24:33.013038Z",
+  "generated_at": "2026-07-16T15:37:47.799506Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,21 +8,21 @@
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 10,
       "top_sources": [
         [
           "AI Hot",
-          9
+          10
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
+          10
         ],
         [
           "agent",
-          5
+          6
         ],
         [
           "智能体",
@@ -30,14 +30,18 @@
         ],
         [
           "开发者",
-          4
+          3
+        ],
+        [
+          "claude",
+          3
         ],
         [
           "工作流",
           2
         ],
         [
-          "claude",
+          "anthropic",
           2
         ],
         [
@@ -59,16 +63,12 @@
         [
           "chatgpt",
           1
-        ],
-        [
-          "codex",
-          1
         ]
       ]
     },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "Hugging Face Blog",
@@ -77,16 +77,12 @@
         [
           "Google DeepMind",
           1
-        ],
-        [
-          "OpenAI News",
-          1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
+          2
         ],
         [
           "agent",
@@ -98,10 +94,6 @@
         ],
         [
           "deepmind",
-          1
-        ],
-        [
-          "openai",
           1
         ]
       ]
@@ -189,24 +181,6 @@
       "is_ai_related": true
     },
     {
-      "id": "078ffb904e7745332fbfba021f26e561592ef691",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "The US is advancing AI safety through state and federal action",
-      "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
-      "published_at": "2026-07-15T12:00:00Z",
-      "summary": "OpenAI outlines a “reverse federalism” approach to AI governance, where state laws help build a national framework for safe, democratic AI.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "ec8ceced7a0286dc648a1c7fdcf6cb568375eb42",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -288,6 +262,25 @@
       "is_ai_related": true
     },
     {
+      "id": "99a15468c2847a902dd5191896b92481728ae1f0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "在 Claude Cowork 中使用 Claude Fable 5",
+      "url": "https://aihot.virxact.com/items/cmrnlyzl3006sbi8v0f80nbaz",
+      "published_at": "2026-07-16T14:32:22Z",
+      "summary": "Anthropic 发布最强通用模型 Claude Fable 5，专为长时间、多步骤的复杂异步工作设计，可在 Claude Cowork 中自主执行深度研究、尽职调查等任务。该模型需手动选择，默认模型为 Claude Sonnet 5。 🔗 阅读原文：https://claude.com/blog/working-with-claude-fable-5-in-claude-cowork via AI HOT · https://aihot.virxact.com/items/cmrnlyzl3006sbi8v0f80nbaz",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "0af6f37cacb789cced830b6f9761b1c5074ab116",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -344,6 +337,25 @@
       "is_ai_related": true
     },
     {
+      "id": "4bb46fd72b4768b6f0a8e8616ed93090eb978e6c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "秒哒 3.5 全球首发 iOS App，无代码开发与多端共享后端能力升级",
+      "url": "https://aihot.virxact.com/items/cmrnhly4m0007bii5zd6dhl1p",
+      "published_at": "2026-07-16T12:17:11Z",
+      "summary": "百度智能云在 WAIC2026 发布秒哒 3.5，新增 iOS 打包能力，用户无需 Mac 或 Xcode 即可将应用打包为 IPA 文件或上架 App Store。3.5 版本还内置 SEO Agent 实现搜索优化自动化，支持多应用共享同一后端数据库，并推出数据库多环境隔离与后端资源分级功能。秒哒累计服务超 3500 万用户，已创造 350 万个商业应用。 🔗 阅读原文：https://mp.weixin.qq.com/s/W3QACoSYgwK0TW4zG-KFsg via AI HOT · https://aihot.virxact.com/items/cmrnhly4m0007bii5zd6dhl1p",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "d7763b784f484b6f7aba64a54deb7e025d8458ed",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -361,26 +373,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "a33dfd8010dc88fc50c99d44fbb203b1411cffaa",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Telegram 无服务器架构",
-      "url": "https://aihot.virxact.com/items/cmrm9ne9101gqbiijkgrj6t9h",
-      "published_at": "2026-07-15T15:37:19Z",
-      "summary": "Telegram Serverless 允许开发者直接在 Telegram 基础设施上运行 Bot 和 Mini App 的后端代码，无需配置服务器或容器。开发者编写普通 JavaScript 模块，通过 `npx tgcloud push` 单命令部署，代码在靠近 Bot API 和内建数据库的轻量级 V8 隔离沙箱中执行。 🔗 阅读原文：https://core.telegram.org/bots/serverless via AI HOT · https://aihot.virxact.com/items/cmrm9ne9101gqbiijkgrj6t9h",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:开发者",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -391,10 +383,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1036,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 799,
-      "checked_at": "2026-07-16T10:24:30.844019Z"
+      "latency_ms": 634,
+      "checked_at": "2026-07-16T15:37:40.460862Z"
     },
     {
       "source_id": "openai-skills",
@@ -405,8 +397,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 223,
-      "checked_at": "2026-07-16T10:24:31.067876Z"
+      "latency_ms": 254,
+      "checked_at": "2026-07-16T15:37:40.715671Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -417,8 +409,8 @@
       "fetched_count": 243,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 123,
-      "checked_at": "2026-07-16T10:24:31.195144Z"
+      "latency_ms": 93,
+      "checked_at": "2026-07-16T15:37:40.812823Z"
     },
     {
       "source_id": "google-deepmind",
@@ -429,8 +421,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 482,
-      "checked_at": "2026-07-16T10:24:31.679639Z"
+      "latency_ms": 380,
+      "checked_at": "2026-07-16T15:37:41.194701Z"
     },
     {
       "source_id": "google-ai",
@@ -441,8 +433,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 147,
-      "checked_at": "2026-07-16T10:24:31.827738Z"
+      "latency_ms": 276,
+      "checked_at": "2026-07-16T15:37:41.471176Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -450,11 +442,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 827,
+      "fetched_count": 829,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 234,
-      "checked_at": "2026-07-16T10:24:32.073738Z"
+      "latency_ms": 235,
+      "checked_at": "2026-07-16T15:37:41.718383Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -465,8 +457,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 116,
-      "checked_at": "2026-07-16T10:24:32.190154Z"
+      "latency_ms": 144,
+      "checked_at": "2026-07-16T15:37:41.862950Z"
     },
     {
       "source_id": "github-changelog",
@@ -477,8 +469,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-07-16T10:24:32.221024Z"
+      "latency_ms": 26,
+      "checked_at": "2026-07-16T15:37:41.889929Z"
     },
     {
       "source_id": "aihot",
@@ -487,10 +479,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 9,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 781,
-      "checked_at": "2026-07-16T10:24:33.004127Z"
+      "latency_ms": 5898,
+      "checked_at": "2026-07-16T15:37:47.790098Z"
     }
   ],
   "control_notes": {
