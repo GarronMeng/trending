@@ -44,16 +44,29 @@
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
         <div class="stat"><b>13</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>2</b><span>官方源条目</span></div>
-        <div class="stat"><b>10</b><span>聚合源条目</span></div>
+        <div class="stat"><b>4</b><span>官方源条目</span></div>
+        <div class="stat"><b>8</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-16T15:37:47.801013Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-17T02:01:21.868877Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-07-16T16:00:00Z</span>
+        <strong>Score 6</strong>
+      </div>
+      <h3><a href="https://openai.com/index/why-teens-deserve-access-safe-ai" target="_blank" rel="noreferrer">Why teens deserve access to safe AI</a></h3>
+      <p class='summary'>Learn how OpenAI is making ChatGPT safer for teens with age-appropriate protections, learning tools, parental controls, and expert partnerships.</p>
+      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>weak:tool</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>AI Hot</span>
@@ -71,12 +84,25 @@
       <div class="meta">
         <span>Hugging Face Blog</span>
         <span>official_rss</span>
-        <span>2026-07-15T17:29:41Z</span>
-        <strong>Score 5</strong>
+        <span>2026-07-16T16:01:21Z</span>
+        <strong>Score 4</strong>
       </div>
-      <h3><a href="https://huggingface.co/blog/allenai/shippy-tech-blog" target="_blank" rel="noreferrer">What building Shippy taught us about building agents</a></h3>
+      <h3><a href="https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb" target="_blank" rel="noreferrer">NVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB, Advancing Agentic Retrieval</a></h3>
       
-      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>source_prior:official_ai</span></div>
+      <div class="tags"><span>strong:agent</span><span>weak:eval</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>Google AI Blog</span>
+        <span>official_rss</span>
+        <span>2026-07-16T16:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars" target="_blank" rel="noreferrer">Create, edit and star in videos with two Google Vids updates</a></h3>
+      <p class='summary'>Text &quot;Gemini Omni and Personal Avatars in Google Vids&quot; surrounded by various images</p>
+      <div class="tags"><span>strong:gemini</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -97,6 +123,58 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
+        <span>2026-07-17T00:40:20Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmro8l78w00j5bitou01qowy4" target="_blank" rel="noreferrer">生成式人工智能是一场工程灾难：AI公司抢购70%高端内存，推高电脑价格</a></h3>
+      <p class='summary'>AI公司为维持大语言模型（如ChatGPT、Claude）运行，可能已购买全球70%的高端计算机内存，导致内存与存储价格飙升：两年前350美元的硬盘现已涨至800美元且缺货，部分笔记本电脑涨价50%。科技公司计划未来几年将美国数据中心容量扩大8倍，部分站点甚至用喷气发动机供电。预测称，平价入门级电脑可能在2028年前消失，内存短缺预计持续数年。 🔗 阅读原文：https://www.theatlantic.com/technology/2026/07/generative-ai-engineering-disaster/687901 via AI HOT · https://aihot.virxact.com/items/cmro8l78w00j5bitou01qowy4</p>
+      <div class="tags"><span>strong:claude</span><span>strong:chatgpt</span><span>strong:人工智能</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-16T19:02:38Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmrnvme99015abixymkemy6lj" target="_blank" rel="noreferrer">54%企业已遭遇AI智能体安全事件，多数仍共享凭证</a></h3>
+      <p class='summary'>VentureBeat调查107家企业发现，54%已遭遇AI智能体安全事件（18%确认事故，36%险些酿祸）。仅32%为每个智能体分配独立身份凭证，30%将高风险智能体隔离在沙箱中。安全工具主要依赖模型提供商原生方案，专用智能体安全产品渗透率极低。 🔗 阅读原文：https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials via AI HOT · https://aihot.virxact.com/items/cmrnvme99015abixymkemy6lj</p>
+      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-16T17:32:26Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmrnse7qy002tbixy7gnolvr3" target="_blank" rel="noreferrer">Anthropic 用 Claude Code 大规模迁移代码：Bun 百万行 Zig 转 Rust，两周完成</a></h3>
+      <p class='summary'>Anthropic 工程师用 Claude Code 在两周内将 Bun 的百万行 Zig 代码迁移至 Rust，100% 现有测试通过，合并后出现 19 个回归问题已全部修复。另一工程师用周末将 Python 代码库迁移至 16.5 万行 TypeScript。迁移消耗约 16.5 万美元 API 成本，但编译时间从八分钟降至两秒，二进制启动快 6 倍。 🔗 阅读原文：https://claude.com/blog/ai-code-migration via AI HOT · https://aihot.virxact.com/items/cmrnse7qy002tbixy7gnolvr3</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-16T16:40:48Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmrnrc11901tnbizz2dlcio3z" target="_blank" rel="noreferrer">企业AI智能体评估存在&quot;现实对齐&quot;缺口：半数组织曾将通过内部测试的智能体部署到生产环境后导致客户故障</a></h3>
+      <p class='summary'>对157家企业的调查显示，50%的组织在过去一年曾部署通过内部评估但导致客户故障的AI智能体或大语言模型功能，5%的企业完全信任自动化评估，29%认为评估与现实结果对齐不佳是最大局限。尽管信任度低，66%的企业已允许或正计划在12个月内实现低风险智能体的全自动、无人工干预部署。 🔗 阅读原文：https://venturebeat.com/ai/the-agent-evaluation-gap-enterprise-ai-organizations-have-a-reality-alignment-problem-not-a-coverage-problem-and-most-are-shipping-to-production-anyway via AI HOT · https://aihot.virxact</p>
+      <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>weak:eval</span><span>weak:自动化</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
         <span>2026-07-16T07:42:49Z</span>
         <strong>Score 5</strong>
       </div>
@@ -108,40 +186,14 @@
 
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-16T00:12:00Z</span>
-        <strong>Score 5</strong>
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-07-16T18:06:52Z</span>
+        <strong>Score 2</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrmrjrwk001pbimilq46mpeq" target="_blank" rel="noreferrer">远程操控Agent干活方案：Codex主力 + UU远程兜底</a></h3>
-      <p class='summary'>作者分享了一套远程使用Agent的组合方案：以Codex的远程控制功能作为主力，通过ChatGPT App连接家中24小时开机的Mac Mini，同步所有开发任务、规则和Agent记忆；遇到扫码登录、图形界面操作等Codex难以处理的场景时，用网易UU远程在手机上直接操控电脑完整桌面。UU远程完全免费，支持多设备协同，无需局域网或公网配置。 🔗 阅读原文：https://mp.weixin.qq.com/s/x2JlkhOlGNVhL8oe7AVk9Q via AI HOT · https://aihot.virxact.com/items/cmrmrjrwk001pbimilq46mpeq</p>
-      <div class="tags"><span>strong:chatgpt</span><span>strong:codex</span><span>strong:agent</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-15T17:58:02Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrmee60505d9bivcmy92uddy" target="_blank" rel="noreferrer">Anthropic 研究：AI 智能体模拟中行为偏差</a></h3>
-      <p class='summary'>Anthropic 新研究：2026 年夏季的智能体行为偏差。 在我们的敲诈实验一年后，我们又发现了四种当今自主 AI 智能体在模拟中行为不当的方式。 了解更多：https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/ 🔗 阅读原文：https://x.com/AnthropicAI/status/2077452646303006927 via AI HOT · https://aihot.virxact.com/items/cmrmee60505d9bivcmy92uddy</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-16T00:33:18Z</span>
-        <strong>Score 4</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrmsfo5q00f0bimis2t1mbci" target="_blank" rel="noreferrer">xAI 开源 Grok CLI 代码库中发现 Mermaid 转 Unicode 框图工具</a></h3>
-      <p class='summary'>xAI 开源的 Grok CLI 编码智能体代码库中包含一个用 Rust 编写的 Mermaid 图表示例终端渲染器 `xai-grok-markdown/src/mermaid.rs`。开发者通过 Claude Code for web （Fable 5） 将其编译为 WebAssembly，实现在浏览器中运行该工具。 🔗 阅读原文：https://simonwillison.net/2026/Jul/16/grok-mermaid via AI HOT · https://aihot.virxact.com/items/cmrmsfo5q00f0bimis2t1mbci</p>
-      <div class="tags"><span>strong:claude</span><span>strong:智能体</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://github.blog/changelog/2026-07-16-rest-api-endpoints-for-visual-studio-subscription-management" target="_blank" rel="noreferrer">REST API endpoints for Visual Studio Subscription management</a></h3>
+      <p class='summary'>GitHub Enterprise Cloud admins can now use the following REST API endpoints to programmatically manage Visual Studio Subscription (VSS) assignments: GET /enterprises/{enterprise}/visual-studio-subscriptions: Returns all VSS assignments for an enterprise, including… The post REST API endpoints for Visual Studio Subscription management appeared first on The Gi</p>
+      <div class="tags"><span>weak:api</span><span>weak:API</span></div>
     </article>
     
 
@@ -162,45 +214,6 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-07-16T01:36:13Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrmudyvj015jbije15lwn7k2" target="_blank" rel="noreferrer">MiniMax Code 2.0 桌面端焕新：底层架构全面升级，金融模块即将上线</a></h3>
-      <p class='summary'>MiniMax Code 2.0 桌面端发布，基于 Pi Agent 框架重构底层架构，显著提升会话启动速度与长程复杂任务的执行稳定性。新版本优化了图表加载与文件预览框选编辑功能，并已与恒生金融数据库、企查查 MCP 打通，金融模块即将上线，支持多源数据实时检索与专业报告生成。桌面端现已开放下载，本月还将上线远程控制、浏览器操控等功能。 🔗 阅读原文：https://mp.weixin.qq.com/s/mQeBO0xC6Z1R0LqZX5TvNg via AI HOT · https://aihot.virxact.com/items/cmrmudyvj015jbije15lwn7k2</p>
-      <div class="tags"><span>strong:agent</span><span>strong:mcp</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-07-15T22:38:16Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-07-15-improvements-to-secret-scanning-and-public-monitoring" target="_blank" rel="noreferrer">Improvements to secret scanning and public monitoring</a></h3>
-      <p class='summary'>This week, we’re rolling out several improvements to secret scanning and public monitoring: Resend is now a GitHub secret scanning partner. Secret scanning now detects new secret types from APIclub… The post Improvements to secret scanning and public monitoring appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:api</span><span>weak:API</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-15T20:26:06Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrmk6l3k03rtbiull7o39kq0" target="_blank" rel="noreferrer">Claude Code 新增 MCP 连接器调用功能</a></h3>
-      <p class='summary'>Claude Code 的 artifacts 现在可以调用 MCP 连接器，让你构建能够按需为每位查看者获取信息并执行操作的仪表盘和应用。 适用于 Pro、Max、Team 和 Enterprise 计划。不适用于公开共享的 artifacts。 🔗 阅读原文：https://x.com/ClaudeDevs/status/2077489907350856038 via AI HOT · https://aihot.virxact.com/items/cmrmk6l3k03rtbiull7o39kq0</p>
-      <div class="tags"><span>strong:claude</span><span>strong:mcp</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
         <span>2026-07-16T12:17:11Z</span>
         <strong>Score 2</strong>
       </div>
@@ -208,34 +221,21 @@
       <p class='summary'>百度智能云在 WAIC2026 发布秒哒 3.5，新增 iOS 打包能力，用户无需 Mac 或 Xcode 即可将应用打包为 IPA 文件或上架 App Store。3.5 版本还内置 SEO Agent 实现搜索优化自动化，支持多应用共享同一后端数据库，并推出数据库多环境隔离与后端资源分级功能。秒哒累计服务超 3500 万用户，已创造 350 万个商业应用。 🔗 阅读原文：https://mp.weixin.qq.com/s/W3QACoSYgwK0TW4zG-KFsg via AI HOT · https://aihot.virxact.com/items/cmrnhly4m0007bii5zd6dhl1p</p>
       <div class="tags"><span>strong:agent</span><span>weak:自动化</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-15T22:49:15Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrmotlpp07iubiuloujszkts" target="_blank" rel="noreferrer">开源编程智能体内存方案发布，通过 SSH 同步</a></h3>
-      <p class='summary'>一个面向编程 AI 智能体的开源内存项目在 GitHub 发布，支持通过 SSH 同步记忆数据。该项目允许智能体跨会话保留上下文，无需依赖特定云服务，用户可自托管。代码已开源，便于开发者集成与定制。 🔗 阅读原文：https://github.com/vshulcz/deja-vu via AI HOT · https://aihot.virxact.com/items/cmrmotlpp07iubiuloujszkts</p>
-      <div class="tags"><span>strong:智能体</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1036</td><td>0</td><td>634ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>254ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>243</td><td>0</td><td>93ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>1</td><td>380ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>276ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>829</td><td>1</td><td>235ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>144ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>26ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>10</td><td>5898ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1038</td><td>1</td><td>806ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>299ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>243</td><td>0</td><td>112ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>1</td><td>373ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>605ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>829</td><td>1</td><td>339ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>125ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>35ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>8</td><td>316ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
