@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>11</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>9</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>3</b><span>官方源条目</span></div>
-        <div class="stat"><b>7</b><span>聚合源条目</span></div>
+        <div class="stat"><b>5</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-17T10:16:21.630179Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-17T15:11:32.840727Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -169,47 +169,21 @@
       <p class='summary'>GitHub Enterprise Cloud admins can now use the following REST API endpoints to programmatically manage Visual Studio Subscription (VSS) assignments: GET /enterprises/{enterprise}/visual-studio-subscriptions: Returns all VSS assignments for an enterprise, including… The post REST API endpoints for Visual Studio Subscription management appeared first on The Gi</p>
       <div class="tags"><span>weak:api</span><span>weak:API</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-16T14:32:22Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrnlyzl3006sbi8v0f80nbaz" target="_blank" rel="noreferrer">在 Claude Cowork 中使用 Claude Fable 5</a></h3>
-      <p class='summary'>Anthropic 发布最强通用模型 Claude Fable 5，专为长时间、多步骤的复杂异步工作设计，可在 Claude Cowork 中自主执行深度研究、尽职调查等任务。该模型需手动选择，默认模型为 Claude Sonnet 5。 🔗 阅读原文：https://claude.com/blog/working-with-claude-fable-5-in-claude-cowork via AI HOT · https://aihot.virxact.com/items/cmrnlyzl3006sbi8v0f80nbaz</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-16T12:17:11Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmrnhly4m0007bii5zd6dhl1p" target="_blank" rel="noreferrer">秒哒 3.5 全球首发 iOS App，无代码开发与多端共享后端能力升级</a></h3>
-      <p class='summary'>百度智能云在 WAIC2026 发布秒哒 3.5，新增 iOS 打包能力，用户无需 Mac 或 Xcode 即可将应用打包为 IPA 文件或上架 App Store。3.5 版本还内置 SEO Agent 实现搜索优化自动化，支持多应用共享同一后端数据库，并推出数据库多环境隔离与后端资源分级功能。秒哒累计服务超 3500 万用户，已创造 350 万个商业应用。 🔗 阅读原文：https://mp.weixin.qq.com/s/W3QACoSYgwK0TW4zG-KFsg via AI HOT · https://aihot.virxact.com/items/cmrnhly4m0007bii5zd6dhl1p</p>
-      <div class="tags"><span>strong:agent</span><span>weak:自动化</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1038</td><td>1</td><td>777ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>168ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>243</td><td>0</td><td>113ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>247ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>211ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>829</td><td>1</td><td>270ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>146ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>29ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>7</td><td>500ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1039</td><td>1</td><td>650ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>319ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>243</td><td>0</td><td>124ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>414ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>347ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>829</td><td>1</td><td>382ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>459ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>62ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>5</td><td>4249ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
