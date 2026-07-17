@@ -1,14 +1,14 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-17T08:34:02.751655Z",
+  "generated_at": "2026-07-17T10:16:21.628716Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 13,
+  "item_count": 11,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
           "OpenAI News",
@@ -21,16 +21,12 @@
         [
           "Google AI Blog",
           1
-        ],
-        [
-          "Google DeepMind",
-          1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          4
+          3
         ],
         [
           "openai",
@@ -55,38 +51,34 @@
         [
           "gemini",
           1
-        ],
-        [
-          "deepmind",
-          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          8
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
-        ],
-        [
-          "agent",
-          4
-        ],
-        [
-          "智能体",
-          4
+          7
         ],
         [
           "claude",
           4
+        ],
+        [
+          "智能体",
+          3
+        ],
+        [
+          "agent",
+          3
         ],
         [
           "api",
@@ -105,19 +97,19 @@
           2
         ],
         [
-          "gemini",
+          "chatgpt",
           1
         ],
         [
-          "developer",
+          "人工智能",
           1
         ],
         [
-          "开发者",
+          "agents",
           1
         ],
         [
-          "工作流",
+          "eval",
           1
         ]
       ]
@@ -165,29 +157,6 @@
       "is_ai_related": true
     },
     {
-      "id": "9fc8f6d2564c634e44c0ce923a8475728e9683c2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Gemini Enterprise Agent Platform 新增 Parallel Web Search 网络接地提供商",
-      "url": "https://aihot.virxact.com/items/cmrnc82t9016bbic6qmevgy67",
-      "published_at": "2026-07-16T09:58:51Z",
-      "summary": "Google Cloud 与 Parallel Web Systems 合作，将 Parallel 的搜索基础设施作为新的网络接地提供商原生集成到 Gemini Enterprise Agent Platform 中。该集成使开发者能将 AI 智能体锚定在可验证的实时网络结果上，以提升企业工作流的事实准确性。用户还可编程提取、永久缓存并与其他大语言模型一起处理网络数据。 🔗 阅读原文：https://developers.googleblog.com/expanding-choice-in-gemini-enterprise-agent-platform-introducing-grounding-with-parallel-web-search via AI HOT · https://aihot.virxa",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:agent",
-        "strong:智能体",
-        "weak:developer",
-        "weak:开发者",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "56cdb3b42c3ca53cc7dc759c1c5443d3ca1d5e20",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
@@ -220,24 +189,6 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:gemini",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "139685a9c3deb4575435a08586093f0dc453dc7d",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Our approach to bioresilience",
-      "url": "https://deepmind.google/blog/our-approach-to-bioresilience",
-      "published_at": "2026-07-16T09:30:42Z",
-      "summary": "Google DeepMind and Isomorphic Labs are sharing our joint approach to bioresilience and AI models.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:deepmind",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -412,8 +363,8 @@
       "fetched_count": 1038,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 1293,
-      "checked_at": "2026-07-17T08:34:00.331067Z"
+      "latency_ms": 777,
+      "checked_at": "2026-07-17T10:16:19.910610Z"
     },
     {
       "source_id": "openai-skills",
@@ -424,8 +375,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 392,
-      "checked_at": "2026-07-17T08:34:00.723413Z"
+      "latency_ms": 168,
+      "checked_at": "2026-07-17T10:16:20.079620Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -436,8 +387,8 @@
       "fetched_count": 243,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 348,
-      "checked_at": "2026-07-17T08:34:01.074697Z"
+      "latency_ms": 113,
+      "checked_at": "2026-07-17T10:16:20.197007Z"
     },
     {
       "source_id": "google-deepmind",
@@ -446,10 +397,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 339,
-      "checked_at": "2026-07-17T08:34:01.415481Z"
+      "latency_ms": 247,
+      "checked_at": "2026-07-17T10:16:20.445930Z"
     },
     {
       "source_id": "google-ai",
@@ -460,8 +411,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 250,
-      "checked_at": "2026-07-17T08:34:01.666193Z"
+      "latency_ms": 211,
+      "checked_at": "2026-07-17T10:16:20.658123Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -472,8 +423,8 @@
       "fetched_count": 829,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 252,
-      "checked_at": "2026-07-17T08:34:01.927692Z"
+      "latency_ms": 270,
+      "checked_at": "2026-07-17T10:16:20.940958Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -484,8 +435,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 155,
-      "checked_at": "2026-07-17T08:34:02.083409Z"
+      "latency_ms": 146,
+      "checked_at": "2026-07-17T10:16:21.087340Z"
     },
     {
       "source_id": "github-changelog",
@@ -496,8 +447,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-07-17T08:34:02.111530Z"
+      "latency_ms": 29,
+      "checked_at": "2026-07-17T10:16:21.117290Z"
     },
     {
       "source_id": "aihot",
@@ -506,10 +457,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 627,
-      "checked_at": "2026-07-17T08:34:02.741019Z"
+      "latency_ms": 500,
+      "checked_at": "2026-07-17T10:16:21.619334Z"
     }
   ],
   "control_notes": {
