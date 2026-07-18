@@ -1,135 +1,91 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-17T15:11:32.839395Z",
+  "generated_at": "2026-07-18T01:50:31.893789Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 6,
   "groups": {
+    "developer": {
+      "group": "developer",
+      "count": 4,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          4
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          8
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "coding agent",
+          1
+        ]
+      ]
+    },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 1,
       "top_sources": [
         [
           "OpenAI News",
-          1
-        ],
-        [
-          "Hugging Face Blog",
-          1
-        ],
-        [
-          "Google AI Blog",
           1
         ]
       ],
       "top_keywords": [
         [
-          "official_ai",
-          3
-        ],
-        [
           "openai",
           1
         ],
         [
-          "chatgpt",
-          1
-        ],
-        [
-          "tool",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "eval",
-          1
-        ],
-        [
-          "gemini",
+          "official_ai",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
-      "top_sources": [
-        [
-          "AI Hot",
-          5
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          5
-        ],
-        [
-          "claude",
-          3
-        ],
-        [
-          "智能体",
-          3
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "人工智能",
-          1
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "eval",
-          1
-        ],
-        [
-          "自动化",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
       "count": 1,
       "top_sources": [
         [
-          "GitHub Changelog",
+          "AI Hot",
           1
         ]
       ],
       "top_keywords": [
+        [
+          "claude",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
         [
           "api",
           1
         ],
         [
           "API",
+          1
+        ],
+        [
+          "aggregate_noise",
           1
         ]
       ]
@@ -137,58 +93,80 @@
   },
   "items": [
     {
-      "id": "07a2abba5f5890e1915e6a442be009ef614505bb",
+      "id": "0e0424c736fd13a64b820f0c3d14e46d262d5bd9",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Repository-level GitHub Copilot usage metrics generally available",
+      "url": "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available",
+      "published_at": "2026-07-17T22:05:18Z",
+      "summary": "The Copilot usage metrics REST API now reports repository-level activity. Two new endpoints return a daily, per-repository breakdown of pull request activity for Copilot coding agent and Copilot code review.… The post Repository-level GitHub Copilot usage metrics generally available appeared first on The GitHub Blog .",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:api",
+        "weak:copilot",
+        "weak:API",
+        "source:copilot",
+        "source:coding agent"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d9c302821cc106e9e1f348f6e8537ccaec7e1dc6",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot app now available in the usage metrics API",
+      "url": "https://github.blog/changelog/2026-07-17-github-copilot-app-now-available-in-the-usage-metrics-api",
+      "published_at": "2026-07-17T22:05:11Z",
+      "summary": "The Copilot usage metrics API now reports the GitHub Copilot app usage in the enterprise and organization 1-day and 28-day reports. This gives enterprise and organization admins visibility into the… The post GitHub Copilot app now available in the usage metrics API appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:copilot",
+        "weak:API",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "11d63a1ebd5541df74f1676db2b5d5dffca9167e",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Mobile: Fix pull request comments with Copilot cloud agent",
+      "url": "https://github.blog/changelog/2026-07-17-github-mobile-fix-pull-request-comments-with-copilot-cloud-agent",
+      "published_at": "2026-07-17T19:47:45Z",
+      "summary": "You can now select Fix with Copilot directly from Copilot code review pull request comments in GitHub Mobile. The button is available both on the pull request’s main view and… The post GitHub Mobile: Fix pull request comments with Copilot cloud agent appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "65cbc3db856ec2df47771767c4e13f041c9d9923",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Why teens deserve access to safe AI",
-      "url": "https://openai.com/index/why-teens-deserve-access-safe-ai",
-      "published_at": "2026-07-16T16:00:00Z",
-      "summary": "Learn how OpenAI is making ChatGPT safer for teens with age-appropriate protections, learning tools, parental controls, and expert partnerships.",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "weak:tool",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "56cdb3b42c3ca53cc7dc759c1c5443d3ca1d5e20",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "NVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB, Advancing Agentic Retrieval",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb",
-      "published_at": "2026-07-16T16:01:21Z",
-      "summary": null,
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:eval",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "97ba479b043f6931ece8f628eab481d1e3874c87",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Create, edit and star in videos with two Google Vids updates",
-      "url": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars",
-      "published_at": "2026-07-16T16:00:00Z",
-      "summary": "Text \"Gemini Omni and Personal Avatars in Google Vids\" surrounded by various images",
+      "title": "A scorecard for the AI age",
+      "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
+      "published_at": "2026-07-17T10:00:00Z",
+      "summary": "Sarah Friar, CFO of OpenAI, introduces a practical AI scorecard to measure ROI through useful work, cost per successful task, dependability, and return on compute.",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:gemini",
+        "strong:openai",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -215,102 +193,20 @@
       "is_ai_related": true
     },
     {
-      "id": "d35eb68e500b77851d61aea95a65e28715503828",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "生成式人工智能是一场工程灾难：AI公司抢购70%高端内存，推高电脑价格",
-      "url": "https://aihot.virxact.com/items/cmro8l78w00j5bitou01qowy4",
-      "published_at": "2026-07-17T00:40:20Z",
-      "summary": "AI公司为维持大语言模型（如ChatGPT、Claude）运行，可能已购买全球70%的高端计算机内存，导致内存与存储价格飙升：两年前350美元的硬盘现已涨至800美元且缺货，部分笔记本电脑涨价50%。科技公司计划未来几年将美国数据中心容量扩大8倍，部分站点甚至用喷气发动机供电。预测称，平价入门级电脑可能在2028年前消失，内存短缺预计持续数年。 🔗 阅读原文：https://www.theatlantic.com/technology/2026/07/generative-ai-engineering-disaster/687901 via AI HOT · https://aihot.virxact.com/items/cmro8l78w00j5bitou01qowy4",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:chatgpt",
-        "strong:人工智能",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "aeb81e08c3b46ceb44b9d1db125f60f3ddd4683c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "54%企业已遭遇AI智能体安全事件，多数仍共享凭证",
-      "url": "https://aihot.virxact.com/items/cmrnvme99015abixymkemy6lj",
-      "published_at": "2026-07-16T19:02:38Z",
-      "summary": "VentureBeat调查107家企业发现，54%已遭遇AI智能体安全事件（18%确认事故，36%险些酿祸）。仅32%为每个智能体分配独立身份凭证，30%将高风险智能体隔离在沙箱中。安全工具主要依赖模型提供商原生方案，专用智能体安全产品渗透率极低。 🔗 阅读原文：https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials via AI HOT · https://aihot.virxact.com/items/cmrnvme99015abixymkemy6lj",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "cf7ae42e9d02a2be7d2d28a05f58cbe686b147c0",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 用 Claude Code 大规模迁移代码：Bun 百万行 Zig 转 Rust，两周完成",
-      "url": "https://aihot.virxact.com/items/cmrnse7qy002tbixy7gnolvr3",
-      "published_at": "2026-07-16T17:32:26Z",
-      "summary": "Anthropic 工程师用 Claude Code 在两周内将 Bun 的百万行 Zig 代码迁移至 Rust，100% 现有测试通过，合并后出现 19 个回归问题已全部修复。另一工程师用周末将 Python 代码库迁移至 16.5 万行 TypeScript。迁移消耗约 16.5 万美元 API 成本，但编译时间从八分钟降至两秒，二进制启动快 6 倍。 🔗 阅读原文：https://claude.com/blog/ai-code-migration via AI HOT · https://aihot.virxact.com/items/cmrnse7qy002tbixy7gnolvr3",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0a6c1ee88950bd6d8a70e7813bb9291eb7a20b64",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "企业AI智能体评估存在\"现实对齐\"缺口：半数组织曾将通过内部测试的智能体部署到生产环境后导致客户故障",
-      "url": "https://aihot.virxact.com/items/cmrnrc11901tnbizz2dlcio3z",
-      "published_at": "2026-07-16T16:40:48Z",
-      "summary": "对157家企业的调查显示，50%的组织在过去一年曾部署通过内部评估但导致客户故障的AI智能体或大语言模型功能，5%的企业完全信任自动化评估，29%认为评估与现实结果对齐不佳是最大局限。尽管信任度低，66%的企业已允许或正计划在12个月内实现低风险智能体的全自动、无人工干预部署。 🔗 阅读原文：https://venturebeat.com/ai/the-agent-evaluation-gap-enterprise-ai-organizations-have-a-reality-alignment-problem-not-a-coverage-problem-and-most-are-shipping-to-production-anyway via AI HOT · https://aihot.virxact",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
-        "weak:eval",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "cc314bedee1265ef3e08e163c93149cecce1ae52",
+      "id": "d5f598915a3603f193e8179a3629b5784ecd6f36",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "REST API endpoints for Visual Studio Subscription management",
-      "url": "https://github.blog/changelog/2026-07-16-rest-api-endpoints-for-visual-studio-subscription-management",
-      "published_at": "2026-07-16T18:06:52Z",
-      "summary": "GitHub Enterprise Cloud admins can now use the following REST API endpoints to programmatically manage Visual Studio Subscription (VSS) assignments: GET /enterprises/{enterprise}/visual-studio-subscriptions: Returns all VSS assignments for an enterprise, including… The post REST API endpoints for Visual Studio Subscription management appeared first on The Gi",
-      "relevance_score": 2,
+      "title": "Copilot code review: Customization and configurability improvements",
+      "url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements",
+      "published_at": "2026-07-17T21:08:30Z",
+      "summary": "Copilot code review now utilizes a firewall, custom setup steps, and independent runner configurations. It now reads custom instructions from the head branch to allow for easy testing and validation… The post Copilot code review: Customization and configurability improvements appeared first on The GitHub Blog .",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "weak:api",
-        "weak:API"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     }
@@ -325,8 +221,8 @@
       "fetched_count": 1039,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 650,
-      "checked_at": "2026-07-17T15:11:26.449911Z"
+      "latency_ms": 697,
+      "checked_at": "2026-07-18T01:50:28.848157Z"
     },
     {
       "source_id": "openai-skills",
@@ -337,8 +233,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 319,
-      "checked_at": "2026-07-17T15:11:26.769966Z"
+      "latency_ms": 389,
+      "checked_at": "2026-07-18T01:50:29.237743Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -349,8 +245,8 @@
       "fetched_count": 243,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 124,
-      "checked_at": "2026-07-17T15:11:26.897972Z"
+      "latency_ms": 149,
+      "checked_at": "2026-07-18T01:50:29.390060Z"
     },
     {
       "source_id": "google-deepmind",
@@ -361,8 +257,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 414,
-      "checked_at": "2026-07-17T15:11:27.313962Z"
+      "latency_ms": 431,
+      "checked_at": "2026-07-18T01:50:29.823019Z"
     },
     {
       "source_id": "google-ai",
@@ -371,10 +267,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 347,
-      "checked_at": "2026-07-17T15:11:27.662256Z"
+      "latency_ms": 325,
+      "checked_at": "2026-07-18T01:50:30.148942Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -383,10 +279,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 829,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 382,
-      "checked_at": "2026-07-17T15:11:28.057454Z"
+      "latency_ms": 359,
+      "checked_at": "2026-07-18T01:50:30.519447Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -397,8 +293,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 459,
-      "checked_at": "2026-07-17T15:11:28.517622Z"
+      "latency_ms": 340,
+      "checked_at": "2026-07-18T01:50:30.859690Z"
     },
     {
       "source_id": "github-changelog",
@@ -407,10 +303,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 62,
-      "checked_at": "2026-07-17T15:11:28.580176Z"
+      "latency_ms": 43,
+      "checked_at": "2026-07-18T01:50:30.903354Z"
     },
     {
       "source_id": "aihot",
@@ -419,10 +315,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 4249,
-      "checked_at": "2026-07-17T15:11:32.831031Z"
+      "latency_ms": 981,
+      "checked_at": "2026-07-18T01:50:31.886211Z"
     }
   ],
   "control_notes": {
