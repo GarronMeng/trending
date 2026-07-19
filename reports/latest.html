@@ -43,7 +43,7 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>4</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>0</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>0</b><span>官方源条目</span></div>
         <div class="stat"><b>0</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
@@ -52,73 +52,22 @@
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-18T14:50:11.260756Z</p></div>
-      <div class="grid">
-    <article class="card">
-      <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-07-17T22:05:18Z</span>
-        <strong>Score 9</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available" target="_blank" rel="noreferrer">Repository-level GitHub Copilot usage metrics generally available</a></h3>
-      <p class='summary'>The Copilot usage metrics REST API now reports repository-level activity. Two new endpoints return a daily, per-repository breakdown of pull request activity for Copilot coding agent and Copilot code review.… The post Repository-level GitHub Copilot usage metrics generally available appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>strong:agent</span><span>weak:api</span><span>weak:copilot</span><span>weak:API</span><span>source:copilot</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-07-17T22:05:11Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-07-17-github-copilot-app-now-available-in-the-usage-metrics-api" target="_blank" rel="noreferrer">GitHub Copilot app now available in the usage metrics API</a></h3>
-      <p class='summary'>The Copilot usage metrics API now reports the GitHub Copilot app usage in the enterprise and organization 1-day and 28-day reports. This gives enterprise and organization admins visibility into the… The post GitHub Copilot app now available in the usage metrics API appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:api</span><span>weak:copilot</span><span>weak:API</span><span>source:copilot</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-07-17T19:47:45Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-07-17-github-mobile-fix-pull-request-comments-with-copilot-cloud-agent" target="_blank" rel="noreferrer">GitHub Mobile: Fix pull request comments with Copilot cloud agent</a></h3>
-      <p class='summary'>You can now select Fix with Copilot directly from Copilot code review pull request comments in GitHub Mobile. The button is available both on the pull request’s main view and… The post GitHub Mobile: Fix pull request comments with Copilot cloud agent appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>strong:agent</span><span>weak:copilot</span><span>source:copilot</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-07-17T21:08:30Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements" target="_blank" rel="noreferrer">Copilot code review: Customization and configurability improvements</a></h3>
-      <p class='summary'>Copilot code review now utilizes a firewall, custom setup steps, and independent runner configurations. It now reads custom instructions from the head branch to allow for easy testing and validation… The post Copilot code review: Customization and configurability improvements appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
-    </article>
-    </div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-19T02:00:33.954721Z</p></div>
+      <div class="grid"><p>本轮没有抓到达到阈值的条目。</p></div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1039</td><td>0</td><td>661ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>382ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>243</td><td>0</td><td>137ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>353ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>262ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>829</td><td>0</td><td>329ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>138ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>4</td><td>35ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>0</td><td>355ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1039</td><td>0</td><td>590ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>310ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>243</td><td>0</td><td>231ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>471ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>236ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>829</td><td>0</td><td>322ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>146ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>38ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>0</td><td>526ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
