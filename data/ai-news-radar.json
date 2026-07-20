@@ -1,21 +1,33 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-20T06:35:34.931702Z",
+  "generated_at": "2026-07-20T09:41:08.105067Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 1,
+  "item_count": 2,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "AI Hot",
-          1
+          2
         ]
       ],
       "top_keywords": [
+        [
+          "aggregate_noise",
+          2
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "多模态",
+          1
+        ],
         [
           "agent",
           1
@@ -23,15 +35,30 @@
         [
           "大模型",
           1
-        ],
-        [
-          "aggregate_noise",
-          1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "ce2087a32c22300aa1567f65ba992feabcb64612",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "上海科学智能研究院开放科学多模态基础模型\"神珍\"",
+      "url": "https://aihot.virxact.com/items/cmrsxb09d0098bitl4vd2rp04",
+      "published_at": "2026-07-20T07:00:15Z",
+      "summary": "上海科学智能研究院开放科学多模态基础模型\"神珍\"，总参数约110亿，可处理DNA、RNA、蛋白质、小分子、地球系统和医学影像六类数据。在生物序列20项任务中，该模型9项取得最优结果；医学影像分割平均Dice得分91.20，在7种参评方法中最优。模型权重及代码已在星河启智、Hugging Face和GitHub开放。 🔗 阅读原文：https://www.ithome.com/0/979/017.htm via AI HOT · https://aihot.virxact.com/items/cmrsxb09d0098bitl4vd2rp04",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "a289aafedb439de82861818b9780829f00628a11",
       "source_id": "aihot",
@@ -62,8 +89,8 @@
       "fetched_count": 1039,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 678,
-      "checked_at": "2026-07-20T06:35:33.091157Z"
+      "latency_ms": 708,
+      "checked_at": "2026-07-20T09:41:06.010106Z"
     },
     {
       "source_id": "openai-skills",
@@ -74,8 +101,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 181,
-      "checked_at": "2026-07-20T06:35:33.272884Z"
+      "latency_ms": 246,
+      "checked_at": "2026-07-20T09:41:06.256704Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -86,8 +113,8 @@
       "fetched_count": 243,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 106,
-      "checked_at": "2026-07-20T06:35:33.382248Z"
+      "latency_ms": 173,
+      "checked_at": "2026-07-20T09:41:06.433598Z"
     },
     {
       "source_id": "google-deepmind",
@@ -98,8 +125,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 287,
-      "checked_at": "2026-07-20T06:35:33.671659Z"
+      "latency_ms": 300,
+      "checked_at": "2026-07-20T09:41:06.735539Z"
     },
     {
       "source_id": "google-ai",
@@ -110,8 +137,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 229,
-      "checked_at": "2026-07-20T06:35:33.901147Z"
+      "latency_ms": 262,
+      "checked_at": "2026-07-20T09:41:06.998004Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -122,8 +149,8 @@
       "fetched_count": 829,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 262,
-      "checked_at": "2026-07-20T06:35:34.175011Z"
+      "latency_ms": 290,
+      "checked_at": "2026-07-20T09:41:07.301268Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -134,8 +161,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 132,
-      "checked_at": "2026-07-20T06:35:34.307591Z"
+      "latency_ms": 114,
+      "checked_at": "2026-07-20T09:41:07.416147Z"
     },
     {
       "source_id": "github-changelog",
@@ -146,8 +173,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-07-20T06:35:34.337082Z"
+      "latency_ms": 27,
+      "checked_at": "2026-07-20T09:41:07.444001Z"
     },
     {
       "source_id": "aihot",
@@ -156,10 +183,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 584,
-      "checked_at": "2026-07-20T06:35:34.922581Z"
+      "latency_ms": 651,
+      "checked_at": "2026-07-20T09:41:08.096091Z"
     }
   ],
   "control_notes": {
