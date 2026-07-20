@@ -1,12 +1,57 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-19T14:53:29.248602Z",
+  "generated_at": "2026-07-20T02:21:33.999074Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 0,
-  "groups": {},
-  "items": [],
+  "item_count": 1,
+  "groups": {
+    "aggregate": {
+      "group": "aggregate",
+      "count": 1,
+      "top_sources": [
+        [
+          "AI Hot",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "agent",
+          1
+        ],
+        [
+          "大模型",
+          1
+        ],
+        [
+          "aggregate_noise",
+          1
+        ]
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "a289aafedb439de82861818b9780829f00628a11",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "不会代码也能做产品：一份从0开始的Vibe Coding保姆级教程",
+      "url": "https://aihot.virxact.com/items/cmrshb0i008zzbiwmuvh5kufa",
+      "published_at": "2026-07-20T00:08:00Z",
+      "summary": "本文面向零代码用户，提供一套使用国产大模型（Kimi、GLM、Qwen等）从零开发并上线产品的完整流程。核心步骤包括购买Coding Plan、下载官方Agent编程产品、注册域名与服务器并同步做ICP备案，然后通过Agent的Plan模式描述需求并让AI自动执行开发。上线后建议建立分支保护与测试流程，并强调即使不懂代码，也必须对系统架构了如指掌。 🔗 阅读原文：https://mp.weixin.qq.com/s/EeHjsju08ARLbwtwFcViqg via AI HOT · https://aihot.virxact.com/items/cmrshb0i008zzbiwmuvh5kufa",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:大模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    }
+  ],
   "source_health": [
     {
       "source_id": "openai-news",
@@ -17,8 +62,8 @@
       "fetched_count": 1039,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 776,
-      "checked_at": "2026-07-19T14:53:27.258104Z"
+      "latency_ms": 646,
+      "checked_at": "2026-07-20T02:21:31.831429Z"
     },
     {
       "source_id": "openai-skills",
@@ -29,8 +74,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 270,
-      "checked_at": "2026-07-19T14:53:27.529216Z"
+      "latency_ms": 381,
+      "checked_at": "2026-07-20T02:21:32.213452Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -41,8 +86,8 @@
       "fetched_count": 243,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 90,
-      "checked_at": "2026-07-19T14:53:27.621511Z"
+      "latency_ms": 251,
+      "checked_at": "2026-07-20T02:21:32.468189Z"
     },
     {
       "source_id": "google-deepmind",
@@ -53,8 +98,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 322,
-      "checked_at": "2026-07-19T14:53:27.944451Z"
+      "latency_ms": 397,
+      "checked_at": "2026-07-20T02:21:32.867127Z"
     },
     {
       "source_id": "google-ai",
@@ -65,8 +110,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 208,
-      "checked_at": "2026-07-19T14:53:28.153507Z"
+      "latency_ms": 241,
+      "checked_at": "2026-07-20T02:21:33.109256Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -77,8 +122,8 @@
       "fetched_count": 829,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 273,
-      "checked_at": "2026-07-19T14:53:28.438478Z"
+      "latency_ms": 332,
+      "checked_at": "2026-07-20T02:21:33.454125Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -89,8 +134,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 179,
-      "checked_at": "2026-07-19T14:53:28.617958Z"
+      "latency_ms": 140,
+      "checked_at": "2026-07-20T02:21:33.595164Z"
     },
     {
       "source_id": "github-changelog",
@@ -101,8 +146,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 34,
-      "checked_at": "2026-07-19T14:53:28.652499Z"
+      "latency_ms": 35,
+      "checked_at": "2026-07-20T02:21:33.630537Z"
     },
     {
       "source_id": "aihot",
@@ -111,10 +156,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 588,
-      "checked_at": "2026-07-19T14:53:29.241710Z"
+      "latency_ms": 359,
+      "checked_at": "2026-07-20T02:21:33.990703Z"
     }
   ],
   "control_notes": {
