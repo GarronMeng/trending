@@ -1,11 +1,55 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-21T10:36:54.546848Z",
+  "generated_at": "2026-07-21T15:41:57.763082Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 7,
   "groups": {
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "agent",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "Google DeepMind",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "gemini",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
       "count": 5,
@@ -21,19 +65,31 @@
           5
         ],
         [
-          "智能体",
-          3
-        ],
-        [
-          "hugging face",
+          "api",
           2
         ],
         [
-          "agent",
+          "API",
           2
         ],
         [
-          "llm",
+          "anthropic",
+          2
+        ],
+        [
+          "claude",
+          2
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "deepmind",
+          1
+        ],
+        [
+          "开发者",
           1
         ],
         [
@@ -41,23 +97,15 @@
           1
         ],
         [
-          "anthropic",
-          1
-        ],
-        [
           "开源模型",
           1
         ],
         [
-          "claude",
+          "自动化",
           1
         ],
         [
-          "api",
-          1
-        ],
-        [
-          "API",
+          "hugging face",
           1
         ]
       ]
@@ -65,22 +113,61 @@
   },
   "items": [
     {
-      "id": "c0ab5bc9a809f94ed25a61252d46d1f6478ebc90",
+      "id": "36a7cf231fe383ecf3a1ac807cc23e26fb46379e",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Gemini 3.6 Flash is now available in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-07-21-gemini-3-6-flash-is-now-available-in-github-copilot",
+      "published_at": "2026-07-21T15:04:31Z",
+      "summary": "Gemini 3.6 Flash, Google’s latest Flash model, is now rolling out in GitHub Copilot. It is designed for web and app development, coding, and longer-horizon agentic tasks. It has configurable… The post Gemini 3.6 Flash is now available in GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "53c92dc36d1cc84df5928f576c3c94bc2b9dd0cf",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
+      "url": "https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber",
+      "published_at": "2026-07-21T15:16:30Z",
+      "summary": "We’re introducing new Gemini models, including Gemini 3.6 Flash, 3.5 Flash-Lite and 3.5 Flash Cyber.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a5f4ee3f77cfc470573732ecbbd2e6ee7be4beb8",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Hugging Face 遭自主AI智能体入侵，用AI工具完成数小时取证分析",
-      "url": "https://aihot.virxact.com/items/cmrt6yjfo1407bitlsdp6qyn6",
-      "published_at": "2026-07-20T12:12:47Z",
-      "summary": "Hugging Face 披露其部分生产基础设施遭一个自主AI智能体系统入侵，攻击者通过恶意数据集利用数据处理管道中的代码执行漏洞，窃取了内部数据集和多项服务凭证。该公司部署LLM驱动的分析智能体，在数小时内完成了对17000多条攻击行为的取证分析，而此类工作通常需要数天。 🔗 阅读原文：https://the-decoder.com/hugging-face-says-an-ai-agent-hacked-its-infrastructure-and-it-used-ai-to-fight-back via AI HOT · https://aihot.virxact.com/items/cmrt6yjfo1407bitlsdp6qyn6",
-      "relevance_score": 7,
+      "title": "Google DeepMind 发布 Gemini 3.6 Flash、3.5 Flash-Lite 与 3.5 Flash Cyber 三款新模型",
+      "url": "https://aihot.virxact.com/items/cmrusyoaf0bfgbi9ttofctwvj",
+      "published_at": "2026-07-21T15:16:30Z",
+      "summary": "Google DeepMind 推出 Gemini 3.6 Flash、3.5 Flash-Lite 和 3.5 Flash Cyber 三款新模型。其中 Gemini 3.6 Flash 为最新主力模型，3.5 Flash-Lite 主打更低成本与更高效率，3.5 Flash Cyber 则针对网络安全场景优化。三款模型均通过 Google AI 开发者平台提供 API 访问。 🔗 阅读原文：https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber via AI HOT · https://aihot.virxact.com/items/cmrusyoaf0bfgbi9ttofctwvj",
+      "relevance_score": 6,
       "relevance_reasons": [
-        "strong:hugging face",
-        "strong:agent",
-        "strong:llm",
-        "strong:智能体",
+        "strong:gemini",
+        "strong:deepmind",
+        "weak:api",
+        "weak:开发者",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -101,6 +188,26 @@
         "strong:openai",
         "strong:anthropic",
         "strong:开源模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "369fb286cd0a88132f27556687c055f3615edac7",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 团队透露 Claude Tag 承担 65% 产品工程 PR，系统提示词缩减 80%",
+      "url": "https://aihot.virxact.com/items/cmrupmpuw0755biuff0tzsfv5",
+      "published_at": "2026-07-21T12:54:02Z",
+      "summary": "Anthropic 的 Cat Wu 和 Thariq Shihipar 在炉边对话中透露，Claude Tag 现已承担 Claude Code 团队 65% 的产品工程 PR。Claude Code 系统提示词最近缩减了 80%，团队越来越多地依赖自动化代码审查处理产品\"外层\"变更。Fable 已能一次性完成大量功能实现，Thariq 还用它编辑了自己的产品发布视频。 🔗 阅读原文：https://simonwillison.net/2026/Jul/21/cat-and-thariq via AI HOT · https://aihot.virxact.com/items/cmrupmpuw0755biuff0tzsfv5",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:自动化",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -143,25 +250,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "786ccec958bf617bc2f2119b6bda95fe906f5945",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Cursor 测试新型 AI 智能体集群：规划者+执行者分工，4小时通过80% SQL测试",
-      "url": "https://aihot.virxact.com/items/cmrtjg6im3u17bitl3rd7i7m4",
-      "published_at": "2026-07-20T12:00:00Z",
-      "summary": "Cursor 测试了新型 AI 智能体集群，将任务分解为规划者（使用最强模型）和执行者（使用快速廉价模型）。使用 Grok 4.5 时，新集群在 4 小时内通过了 80% 的 SQL 测试套件，而旧集群在第二小时前失败。该系统已用于构建浏览器、修复漏洞和生成数十亿 token 合成训练数据。 🔗 阅读原文：https://cursor.com/blog/agent-swarm-model-economics via AI HOT · https://aihot.virxact.com/items/cmrtjg6im3u17bitl3rd7i7m4",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -174,8 +262,8 @@
       "fetched_count": 1040,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 663,
-      "checked_at": "2026-07-21T10:36:51.993483Z"
+      "latency_ms": 937,
+      "checked_at": "2026-07-21T15:41:50.920839Z"
     },
     {
       "source_id": "openai-skills",
@@ -186,8 +274,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 354,
-      "checked_at": "2026-07-21T10:36:52.348057Z"
+      "latency_ms": 348,
+      "checked_at": "2026-07-21T15:41:51.269484Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -198,8 +286,8 @@
       "fetched_count": 244,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 123,
-      "checked_at": "2026-07-21T10:36:52.474150Z"
+      "latency_ms": 121,
+      "checked_at": "2026-07-21T15:41:51.394073Z"
     },
     {
       "source_id": "google-deepmind",
@@ -208,10 +296,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 379,
-      "checked_at": "2026-07-21T10:36:52.854424Z"
+      "latency_ms": 524,
+      "checked_at": "2026-07-21T15:41:51.919512Z"
     },
     {
       "source_id": "google-ai",
@@ -222,8 +310,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 217,
-      "checked_at": "2026-07-21T10:36:53.072689Z"
+      "latency_ms": 221,
+      "checked_at": "2026-07-21T15:41:52.141765Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -234,8 +322,8 @@
       "fetched_count": 830,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 288,
-      "checked_at": "2026-07-21T10:36:53.369825Z"
+      "latency_ms": 303,
+      "checked_at": "2026-07-21T15:41:52.455791Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -246,8 +334,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 320,
-      "checked_at": "2026-07-21T10:36:53.690271Z"
+      "latency_ms": 165,
+      "checked_at": "2026-07-21T15:41:52.621773Z"
     },
     {
       "source_id": "github-changelog",
@@ -256,10 +344,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 35,
-      "checked_at": "2026-07-21T10:36:53.725917Z"
+      "latency_ms": 30,
+      "checked_at": "2026-07-21T15:41:52.652181Z"
     },
     {
       "source_id": "aihot",
@@ -270,8 +358,8 @@
       "fetched_count": 50,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 812,
-      "checked_at": "2026-07-21T10:36:54.539293Z"
+      "latency_ms": 5101,
+      "checked_at": "2026-07-21T15:41:57.754735Z"
     }
   ],
   "control_notes": {
