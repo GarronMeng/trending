@@ -1,22 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-22T10:37:27.188303Z",
+  "generated_at": "2026-07-22T15:39:32.775647Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 20,
+  "item_count": 19,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 5,
       "top_sources": [
         [
           "OpenAI News",
-          1
-        ],
-        [
-          "Google DeepMind",
-          1
+          4
         ],
         [
           "GitHub AI & ML",
@@ -26,63 +22,47 @@
       "top_keywords": [
         [
           "official_ai",
-          3
+          5
         ],
         [
           "openai",
+          4
+        ],
+        [
+          "workflow",
+          2
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "codex",
           1
         ],
         [
           "chatgpt",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "agent",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 16,
+      "count": 14,
       "top_sources": [
         [
           "AI Hot",
-          16
+          14
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          16
+          14
         ],
         [
           "智能体",
@@ -90,26 +70,14 @@
         ],
         [
           "openai",
-          5
-        ],
-        [
-          "anthropic",
           4
         ],
         [
           "claude",
-          4
+          3
         ],
         [
           "llm",
-          3
-        ],
-        [
-          "gemini",
-          3
-        ],
-        [
-          "开发者",
           3
         ],
         [
@@ -125,13 +93,65 @@
           2
         ],
         [
-          "自动化",
+          "anthropic",
+          2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "大模型",
+          2
+        ],
+        [
+          "gemini",
           2
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "595b016000fb66f9c4aa391e2c22aee02a740afb",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Introducing OpenAI Presence",
+      "url": "https://openai.com/index/introducing-openai-presence",
+      "published_at": "2026-07-22T05:30:00Z",
+      "summary": "Introducing OpenAI Presence, a proven enterprise AI agent platform that helps organizations deploy trusted voice and chat agents for customer and internal workflows.",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
+        "strong:agents",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "82deaeb7631d58a4afe20815d8fd8687d524326b",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Building AI infrastructure with the Effingham County community",
+      "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+      "published_at": "2026-07-22T13:00:00Z",
+      "summary": "OpenAI announces Project Camellia in Effingham County, Georgia, with commitments to responsible energy, community investment, jobs, and access to Codex.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "a627986f55b15eb627bc0373806574f70d51f7ed",
       "source_id": "openai-news",
@@ -148,26 +168,6 @@
         "strong:openai",
         "strong:chatgpt",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "36a7cf231fe383ecf3a1ac807cc23e26fb46379e",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Gemini 3.6 Flash is now available in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-07-21-gemini-3-6-flash-is-now-available-in-github-copilot",
-      "published_at": "2026-07-21T15:04:31Z",
-      "summary": "Gemini 3.6 Flash, Google’s latest Flash model, is now rolling out in GitHub Copilot. It is designed for web and app development, coding, and longer-horizon agentic tasks. It has configurable… The post Gemini 3.6 Flash is now available in GitHub Copilot appeared first on The GitHub Blog .",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -189,6 +189,24 @@
         "strong:智能体",
         "strong:开源模型",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6dc5ffe7d385435a883017902baaf7975a0a89a6",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Advancing the next era of national science",
+      "url": "https://openai.com/index/advancing-the-next-era-of-national-science",
+      "published_at": "2026-07-22T12:00:00Z",
+      "summary": "OpenAI outlines its commitment to advancing American science working with the U.S. Department of Energy and national labs to use frontier AI to accelerate discovery.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -230,46 +248,6 @@
         "strong:llm",
         "strong:智能体",
         "weak:developer",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "53c92dc36d1cc84df5928f576c3c94bc2b9dd0cf",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
-      "url": "https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber",
-      "published_at": "2026-07-21T15:16:30Z",
-      "summary": "We’re introducing new Gemini models, including Gemini 3.6 Flash, 3.5 Flash-Lite and 3.5 Flash Cyber.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a5f4ee3f77cfc470573732ecbbd2e6ee7be4beb8",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google DeepMind 发布 Gemini 3.6 Flash、3.5 Flash-Lite 与 3.5 Flash Cyber 三款新模型",
-      "url": "https://aihot.virxact.com/items/cmrusyoaf0bfgbi9ttofctwvj",
-      "published_at": "2026-07-21T15:16:30Z",
-      "summary": "Google DeepMind 推出 Gemini 3.6 Flash、3.5 Flash-Lite 和 3.5 Flash Cyber 三款新模型。其中 Gemini 3.6 Flash 为最新主力模型，3.5 Flash-Lite 主打更低成本与更高效率，3.5 Flash Cyber 则针对网络安全场景优化。三款模型均通过 Google AI 开发者平台提供 API 访问。 🔗 阅读原文：https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber via AI HOT · https://aihot.virxact.com/items/cmrusyoaf0bfgbi9ttofctwvj",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:deepmind",
-        "weak:api",
-        "weak:开发者",
-        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -335,26 +313,6 @@
       "is_ai_related": true
     },
     {
-      "id": "5c44264e3cd54b58ed2d25e70fba2f89ab00a86f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "美国威胁因知识产权盗窃对中国AI模型实施制裁",
-      "url": "https://aihot.virxact.com/items/cmruu1gjc00bmbijq6ha16nyl",
-      "published_at": "2026-07-21T15:37:05Z",
-      "summary": "美国财政部长Scott Bessent周二表示，美方将审查中国开源模型是否存在知识产权盗窃行为，若证实将对中国AI公司实施制裁。Bessent称政府支持开源模型但不支持IP盗窃，并称有能力对盗窃美国公司技术的外国模型进行制裁。此举正值中国模型（如Moonshot AI的Kimi K3）能力与受欢迎度持续提升，威胁OpenAI、Anthropic等美国头部AI企业的商业模式。 🔗 阅读原文：https://techcrunch.com/2026/07/21/us-threatens-sanctions-against-chinese-ai-models-over-ip-theft via AI HOT · https://aihot.virxact.com/items/cmruu1gjc00bmbijq6ha16",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:开源模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "cee943f50a2ea56c1ce6e5be735f3e6e693811a9",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -393,21 +351,20 @@
       "is_ai_related": true
     },
     {
-      "id": "369fb286cd0a88132f27556687c055f3615edac7",
+      "id": "c3c9cc29593114c291aa101f0e8b7e748f83a364",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 团队透露 Claude Tag 承担 65% 产品工程 PR，系统提示词缩减 80%",
-      "url": "https://aihot.virxact.com/items/cmrupmpuw0755biuff0tzsfv5",
-      "published_at": "2026-07-21T12:54:02Z",
-      "summary": "Anthropic 的 Cat Wu 和 Thariq Shihipar 在炉边对话中透露，Claude Tag 现已承担 Claude Code 团队 65% 的产品工程 PR。Claude Code 系统提示词最近缩减了 80%，团队越来越多地依赖自动化代码审查处理产品\"外层\"变更。Fable 已能一次性完成大量功能实现，Thariq 还用它编辑了自己的产品发布视频。 🔗 阅读原文：https://simonwillison.net/2026/Jul/21/cat-and-thariq via AI HOT · https://aihot.virxact.com/items/cmrupmpuw0755biuff0tzsfv5",
-      "relevance_score": 4,
+      "title": "开源模型季度盘点：Kimi K3、Qwen 3.8、WAIC 演讲、知识蒸馏与开源闭源差距",
+      "url": "https://aihot.virxact.com/items/cmrw7dmtf00ukro8gtnl09yk6",
+      "published_at": "2026-07-22T14:09:04Z",
+      "summary": "Nathan Lambert 与 Florian Brand 在播客中盘点开源模型最新动态。Kimi K3 发布后，中美 AI 地缘政治、开源与闭源模型的经济性、前沿安全等问题加速演进。Qwen 宣布下一代大模型将开源权重，中国厂商在开源策略上持续加码。讨论还涉及开源模型与闭源前沿的性能差距、知识蒸馏争议，以及后训练对特定任务的价值。 🔗 阅读原文：https://www.interconnects.ai/p/open-models-recap-more-on-kimi-k3 via AI HOT · https://aihot.virxact.com/items/cmrw7dmtf00ukro8gtnl09yk6",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:自动化",
+        "strong:大模型",
+        "strong:开源模型",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -536,11 +493,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1043,
-      "kept_count": 1,
+      "fetched_count": 1046,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 682,
-      "checked_at": "2026-07-22T10:37:24.692895Z"
+      "latency_ms": 670,
+      "checked_at": "2026-07-22T15:39:30.346153Z"
     },
     {
       "source_id": "openai-skills",
@@ -551,8 +508,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 231,
-      "checked_at": "2026-07-22T10:37:24.924199Z"
+      "latency_ms": 205,
+      "checked_at": "2026-07-22T15:39:30.551381Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -563,8 +520,8 @@
       "fetched_count": 246,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 128,
-      "checked_at": "2026-07-22T10:37:25.055954Z"
+      "latency_ms": 112,
+      "checked_at": "2026-07-22T15:39:30.667477Z"
     },
     {
       "source_id": "google-deepmind",
@@ -573,10 +530,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 351,
-      "checked_at": "2026-07-22T10:37:25.409376Z"
+      "latency_ms": 301,
+      "checked_at": "2026-07-22T15:39:30.970145Z"
     },
     {
       "source_id": "google-ai",
@@ -587,8 +544,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 280,
-      "checked_at": "2026-07-22T10:37:25.690306Z"
+      "latency_ms": 236,
+      "checked_at": "2026-07-22T15:39:31.207059Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -599,8 +556,8 @@
       "fetched_count": 830,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 344,
-      "checked_at": "2026-07-22T10:37:26.047493Z"
+      "latency_ms": 491,
+      "checked_at": "2026-07-22T15:39:31.710481Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -611,8 +568,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 233,
-      "checked_at": "2026-07-22T10:37:26.280903Z"
+      "latency_ms": 135,
+      "checked_at": "2026-07-22T15:39:31.846722Z"
     },
     {
       "source_id": "github-changelog",
@@ -621,10 +578,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 55,
-      "checked_at": "2026-07-22T10:37:26.336184Z"
+      "latency_ms": 27,
+      "checked_at": "2026-07-22T15:39:31.874031Z"
     },
     {
       "source_id": "aihot",
@@ -633,10 +590,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 16,
+      "kept_count": 14,
       "error": null,
-      "latency_ms": 842,
-      "checked_at": "2026-07-22T10:37:27.180585Z"
+      "latency_ms": 887,
+      "checked_at": "2026-07-22T15:39:32.763274Z"
     }
   ],
   "control_notes": {
