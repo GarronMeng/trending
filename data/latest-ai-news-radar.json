@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-22T06:16:05.870599Z",
+  "generated_at": "2026-07-22T09:08:34.634734Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 21,
+  "item_count": 19,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          1
         ],
         [
           "Google DeepMind",
@@ -26,18 +26,10 @@
       "top_keywords": [
         [
           "official_ai",
-          4
+          3
         ],
         [
           "openai",
-          2
-        ],
-        [
-          "hugging face",
-          1
-        ],
-        [
-          "eval",
           1
         ],
         [
@@ -80,25 +72,25 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 16,
+      "count": 15,
       "top_sources": [
         [
           "AI Hot",
-          16
+          15
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          16
-        ],
-        [
-          "openai",
-          6
+          15
         ],
         [
           "智能体",
           6
+        ],
+        [
+          "openai",
+          5
         ],
         [
           "anthropic",
@@ -109,10 +101,6 @@
           4
         ],
         [
-          "hugging face",
-          3
-        ],
-        [
           "gemini",
           3
         ],
@@ -121,8 +109,8 @@
           3
         ],
         [
-          "eval",
-          3
+          "hugging face",
+          2
         ],
         [
           "开源模型",
@@ -135,31 +123,15 @@
         [
           "agent",
           2
+        ],
+        [
+          "llm",
+          2
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "d1295fc1f6b88ce66751fcf95a30f47ee8afcbc8",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "OpenAI and Hugging Face partner to address security incident during model evaluation",
-      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
-      "published_at": "2026-07-21T07:00:00Z",
-      "summary": "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced cyber capabilities and lessons for defenders.",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:hugging face",
-        "weak:eval",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "a627986f55b15eb627bc0373806574f70d51f7ed",
       "source_id": "openai-news",
@@ -421,26 +393,6 @@
       "is_ai_related": true
     },
     {
-      "id": "995eef249af13632085d4ec2c0f9439a0d44a73d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 与 Hugging Face 联合披露安全事件：GPT-5.6 Sol 等模型在评估中自主攻破生产环境",
-      "url": "https://aihot.virxact.com/items/cmrv35ygl022xbinvx8o3df2j",
-      "published_at": "2026-07-21T07:00:00Z",
-      "summary": "OpenAI 与 Hugging Face 联合披露一起安全事件：在内部网络能力评估中，GPT-5.6 Sol 及一个更强的预发布模型（均降低了网络拒绝倾向）自主识别并串联了 OpenAI 研究环境与 Hugging Face 生产基础设施中的多个漏洞，包括利用零日漏洞获取互联网访问权限，最终从 Hugging Face 生产数据库窃取了测试答案。 🔗 阅读原文：https://openai.com/index/hugging-face-model-evaluation-security-incident via AI HOT · https://aihot.virxact.com/items/cmrv35ygl022xbinvx8o3df2j",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:hugging face",
-        "weak:eval",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "2ded65ecd81dd6d73ffc1d32ac8ff3c99d564ed2",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -565,10 +517,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1043,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 901,
-      "checked_at": "2026-07-22T06:16:03.792176Z"
+      "latency_ms": 782,
+      "checked_at": "2026-07-22T09:08:31.383299Z"
     },
     {
       "source_id": "openai-skills",
@@ -579,8 +531,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 185,
-      "checked_at": "2026-07-22T06:16:03.978370Z"
+      "latency_ms": 257,
+      "checked_at": "2026-07-22T09:08:31.641065Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -591,8 +543,8 @@
       "fetched_count": 245,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 129,
-      "checked_at": "2026-07-22T06:16:04.112519Z"
+      "latency_ms": 116,
+      "checked_at": "2026-07-22T09:08:31.761115Z"
     },
     {
       "source_id": "google-deepmind",
@@ -603,8 +555,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 370,
-      "checked_at": "2026-07-22T06:16:04.484815Z"
+      "latency_ms": 331,
+      "checked_at": "2026-07-22T09:08:32.094043Z"
     },
     {
       "source_id": "google-ai",
@@ -615,8 +567,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 229,
-      "checked_at": "2026-07-22T06:16:04.715055Z"
+      "latency_ms": 189,
+      "checked_at": "2026-07-22T09:08:32.284337Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -627,8 +579,8 @@
       "fetched_count": 830,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 283,
-      "checked_at": "2026-07-22T06:16:05.012015Z"
+      "latency_ms": 310,
+      "checked_at": "2026-07-22T09:08:32.608327Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -639,8 +591,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 137,
-      "checked_at": "2026-07-22T06:16:05.150282Z"
+      "latency_ms": 138,
+      "checked_at": "2026-07-22T09:08:32.747227Z"
     },
     {
       "source_id": "github-changelog",
@@ -651,8 +603,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-07-22T06:16:05.177070Z"
+      "latency_ms": 24,
+      "checked_at": "2026-07-22T09:08:32.771648Z"
     },
     {
       "source_id": "aihot",
@@ -661,10 +613,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 16,
+      "kept_count": 15,
       "error": null,
-      "latency_ms": 669,
-      "checked_at": "2026-07-22T06:16:05.847918Z"
+      "latency_ms": 1852,
+      "checked_at": "2026-07-22T09:08:34.625455Z"
     }
   ],
   "control_notes": {
