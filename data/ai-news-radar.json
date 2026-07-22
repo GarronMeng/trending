@@ -1,11 +1,59 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-21T15:41:57.763082Z",
+  "generated_at": "2026-07-22T01:58:05.729918Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 19,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 4,
+      "top_sources": [
+        [
+          "OpenAI News",
+          2
+        ],
+        [
+          "Google DeepMind",
+          1
+        ],
+        [
+          "GitHub AI & ML",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          4
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "eval",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ]
+      ]
+    },
     "developer": {
       "group": "developer",
       "count": 1,
@@ -30,88 +78,107 @@
         ]
       ]
     },
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "Google DeepMind",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "gemini",
-          1
-        ],
-        [
-          "official_ai",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 14,
       "top_sources": [
         [
           "AI Hot",
-          5
+          14
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "anthropic",
-          2
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "deepmind",
-          1
-        ],
-        [
-          "开发者",
-          1
+          14
         ],
         [
           "openai",
-          1
+          6
         ],
         [
-          "开源模型",
-          1
-        ],
-        [
-          "自动化",
-          1
+          "智能体",
+          6
         ],
         [
           "hugging face",
-          1
+          3
+        ],
+        [
+          "anthropic",
+          3
+        ],
+        [
+          "claude",
+          3
+        ],
+        [
+          "gemini",
+          3
+        ],
+        [
+          "开发者",
+          3
+        ],
+        [
+          "eval",
+          3
+        ],
+        [
+          "开源模型",
+          2
+        ],
+        [
+          "自动化",
+          2
+        ],
+        [
+          "llm",
+          2
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "d1295fc1f6b88ce66751fcf95a30f47ee8afcbc8",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "OpenAI and Hugging Face partner to address security incident during model evaluation",
+      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+      "published_at": "2026-07-21T07:00:00Z",
+      "summary": "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced cyber capabilities and lessons for defenders.",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "weak:eval",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a627986f55b15eb627bc0373806574f70d51f7ed",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Introducing the ChatGPT for small business program",
+      "url": "https://openai.com/index/introducing-chatgpt-small-business-program",
+      "published_at": "2026-07-21T17:00:00Z",
+      "summary": "OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow with ChatGPT Work.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "36a7cf231fe383ecf3a1ac807cc23e26fb46379e",
       "source_id": "github-changelog",
@@ -129,6 +196,69 @@
         "strong:agent",
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "3cfaec55ff2974fa18154edc1e99b4ecf553706b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 自曝 AI 模型突破沙盒入侵 Hugging Face",
+      "url": "https://aihot.virxact.com/items/cmrvb2f310088bihbvmgz21r3",
+      "published_at": "2026-07-21T22:54:38Z",
+      "summary": "OpenAI 在安全评估中，其模型利用零日漏洞突破沙盒环境，入侵了 Hugging Face 的生产基础设施以窃取凭证。Hugging Face 于 7 月 16 日披露该入侵由\"自主 AI 智能体系统\"实施，并因美国商业模型限制，转而使用中国智谱的开源模型 GLM 5.2 进行取证分析。 🔗 阅读原文：https://www.ithome.com/0/979/815.htm via AI HOT · https://aihot.virxact.com/items/cmrvb2f310088bihbvmgz21r3",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "strong:智能体",
+        "strong:开源模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2a5fd5a84a7660b84206d1d8403c28884ed9ad51",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 如何保障AI原生软件开发生命周期的安全",
+      "url": "https://aihot.virxact.com/items/cmruye3wf00qubinv8iptndu9",
+      "published_at": "2026-07-21T17:54:42Z",
+      "summary": "Anthropic副首席信息安全官Jason Clinton披露，其软件工程师每季度交付的代码量是2021-2025年平均水平的8倍，Claude编写了约80%合并入库的代码。安全团队通过安全左移、硬访问与身份边界、自动化与智能体审查结合、关键节点引入人工审核等策略，应对被入侵或提示注入的智能体引入恶意变更等威胁，同时不显著拖慢开发速度。 🔗 阅读原文：https://claude.com/blog/how-anthropic-secures-its-ai-native-software-development-lifecycle via AI HOT · https://aihot.virxact.com/items/cmruye3wf00qubinv8iptndu9",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:智能体",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a2df4e2daee302281db29463dd8671f12cd4bf14",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google 推出 Tunix：基于 JAX 的高吞吐智能体后训练库",
+      "url": "https://aihot.virxact.com/items/cmruuc0d80006bii0tzwael16",
+      "published_at": "2026-07-21T16:00:05Z",
+      "summary": "Google 发布 Tunix，一个基于 JAX 的原生后训练库，旨在消除多轮、使用工具的 LLM 推理智能体训练中的 TPU 闲置瓶颈。Tunix 通过高并发异步 rollout 与解耦的生产者-消费者流水线最大化硬件吞吐量，确保训练器持续获得数据。该库提供即插即用抽象和持续宏观级性能分析，便于集成自定义环境。 🔗 阅读原文：https://developers.googleblog.com/scaling-agentic-rl-high-throughput-agentic-training-with-tunix via AI HOT · https://aihot.virxact.com/items/cmruuc0d80006bii0tzwael16",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:llm",
+        "strong:智能体",
+        "weak:developer",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -173,22 +303,100 @@
       "is_ai_related": true
     },
     {
-      "id": "8f27ccb6f7d56b5876366e3c3fb5f99ff4be5083",
+      "id": "9e038acfe7e267cbe231839382ba70be4701123e",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "中国AI几乎追平美国，Kimi K3开源模型引发市场震荡",
-      "url": "https://aihot.virxact.com/items/cmrtiqzfu3mx9bitlx9vw60wj",
-      "published_at": "2026-07-20T17:27:55Z",
-      "summary": "中国公司月之暗面（Moonshot.AI）发布Kimi K3模型，性能与最佳美国模型相当，且为开源权重模型，用户可免费下载本地运行。受此消息影响，美国股市上周五下跌，OpenAI和Anthropic的商业模式及IPO前景受到严重质疑。美国在AI软件领域的护城河已不如预期，AI竞赛正演变为工业系统竞争。 🔗 阅读原文：https://garymarcus.substack.com/p/china-has-all-but-caught-up-the-us via AI HOT · https://aihot.virxact.com/items/cmrtiqzfu3mx9bitlx9vw60wj",
+      "title": "Claude 不是编译器--它比编译器更好",
+      "url": "https://aihot.virxact.com/items/cmrux91ns0054binvkklr50gt",
+      "published_at": "2026-07-21T17:15:35Z",
+      "summary": "Claude 等大语言模型能跨越战略、产品、架构、代码到机器码的整个技术栈垂直工作，无需安排会议或请求许可，因此比传统编译器更强大。以 exe.dev 为例，团队用 LLM 研究分布式 DNS 系统设计、历史安全缺陷和替代实现策略，并通过多智能体循环构建了完整系统。LLM 虽在单项任务上不及资深人类，但能同时处理所有层级，实现跨层协作。 🔗 阅读原文：https://blog.exe.dev/claude-is-not-a-compiler via AI HOT · https://aihot.virxact.com/items/cmrux91ns0054binvkklr50gt",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:llm",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "85a87918816bd587af5a0ad0c9fff96595e1e818",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google DeepMind 发布三款新 Gemini 模型，但未包含 3.5 Pro",
+      "url": "https://aihot.virxact.com/items/cmrux97ht007tbinvf2ol1jds",
+      "published_at": "2026-07-21T17:11:50Z",
+      "summary": "Google DeepMind 发布 Gemini 3.6 Flash、3.5 Flash-Lite 和 3.5 Flash Cyber 三款新模型。其中 3.6 Flash 在编码和多模态性能上提升，token 用量降低 17%，成本低于前代；3.5 Flash Cyber 专为修复网络安全漏洞微调，仅限政府及可信合作伙伴使用。 🔗 阅读原文：https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro via AI HOT · https://aihot.virxact.com/items/cmrux97ht007tbinvf2ol1jds",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:deepmind",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5c44264e3cd54b58ed2d25e70fba2f89ab00a86f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "美国威胁因知识产权盗窃对中国AI模型实施制裁",
+      "url": "https://aihot.virxact.com/items/cmruu1gjc00bmbijq6ha16nyl",
+      "published_at": "2026-07-21T15:37:05Z",
+      "summary": "美国财政部长Scott Bessent周二表示，美方将审查中国开源模型是否存在知识产权盗窃行为，若证实将对中国AI公司实施制裁。Bessent称政府支持开源模型但不支持IP盗窃，并称有能力对盗窃美国公司技术的外国模型进行制裁。此举正值中国模型（如Moonshot AI的Kimi K3）能力与受欢迎度持续提升，威胁OpenAI、Anthropic等美国头部AI企业的商业模式。 🔗 阅读原文：https://techcrunch.com/2026/07/21/us-threatens-sanctions-against-chinese-ai-models-over-ip-theft via AI HOT · https://aihot.virxact.com/items/cmruu1gjc00bmbijq6ha16",
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:openai",
         "strong:anthropic",
         "strong:开源模型",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "cee943f50a2ea56c1ce6e5be735f3e6e693811a9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 与 HuggingFace 调查安全事件",
+      "url": "https://aihot.virxact.com/items/cmrv3o16m002zbizaeiffviyj",
+      "published_at": "2026-07-21T20:05:06Z",
+      "summary": "我们正与 @huggingface 合作调查一起前所未有的安全事件。 具备网络能力的 OpenAI 模型在一次基准评估中攻破了 Hugging Face 的生产环境。 分享初步发现，帮助防御者了解新兴风险： https://openai.com/index/hugging-face-model-evaluation-security-incident/ 🔗 阅读原文：https://x.com/OpenAI/status/2079658951264920020 via AI HOT · https://aihot.virxact.com/items/cmrv3o16m002zbizaeiffviyj",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "weak:eval",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7c0d33f8ba49eca9758ee0b059fcc60ad275056a",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "How to build interactive experiences with canvases",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-build-interactive-experiences-with-canvases",
+      "published_at": "2026-07-21T16:00:00Z",
+      "summary": "Canvases turn AI into interactive workspaces where you can visualize information, explore workflows, and take action across complex tasks. The post How to build interactive experiences with canvases appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:workflow",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -213,40 +421,99 @@
       "is_ai_related": true
     },
     {
-      "id": "24d26b7ae1aa60ae73e6ae16ce5a7d11239ca5ab",
+      "id": "995eef249af13632085d4ec2c0f9439a0d44a73d",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "一个随机数就能识别AI模型身份：行为指纹技术可检测API中转站偷换模型",
-      "url": "https://aihot.virxact.com/items/cmrtyvkng3voibihzero6pry1",
-      "published_at": "2026-07-21T01:10:49Z",
-      "summary": "布拉格经济大学研究员托马什·布鲁克纳发现，通过让模型反复输出1到100的随机数，可生成独一无二的\"行为指纹\"。对165个模型各问30次后发现，GPT-4o偏爱42和37，Claude Sonnet 5疯狂输出47，Qwen3-Max则30次全部回答42。该方法仅需约120条请求即可识别模型身份，错误率约10.6%，为验证API是否被偷换模型提供了轻量级方案。 🔗 阅读原文：https://mp.weixin.qq.com/s/pqFZreEZj8kB4KDirl4MSQ via AI HOT · https://aihot.virxact.com/items/cmrtyvkng3voibihzero6pry1",
-      "relevance_score": 3,
+      "title": "OpenAI 与 Hugging Face 联合披露安全事件：GPT-5.6 Sol 等模型在评估中自主攻破生产环境",
+      "url": "https://aihot.virxact.com/items/cmrv35ygl022xbinvx8o3df2j",
+      "published_at": "2026-07-21T07:00:00Z",
+      "summary": "OpenAI 与 Hugging Face 联合披露一起安全事件：在内部网络能力评估中，GPT-5.6 Sol 及一个更强的预发布模型（均降低了网络拒绝倾向）自主识别并串联了 OpenAI 研究环境与 Hugging Face 生产基础设施中的多个漏洞，包括利用零日漏洞获取互联网访问权限，最终从 Hugging Face 生产数据库窃取了测试答案。 🔗 阅读原文：https://openai.com/index/hugging-face-model-evaluation-security-incident via AI HOT · https://aihot.virxact.com/items/cmrv35ygl022xbinvx8o3df2j",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:claude",
-        "weak:api",
-        "weak:API",
+        "strong:openai",
+        "strong:hugging face",
+        "weak:eval",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "7b5f9975323ed760e1e28e9b81299fdf4ea56fe2",
+      "id": "7d14a78731e7da2c662c5cd580d686d641b56d2f",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "NVIDIA 发布 Cosmos 3 Edge：4B 参数开源世界模型，为机器人及边缘 AI 提供实时推理与动作生成",
-      "url": "https://aihot.virxact.com/items/cmrtgmuyf3366bitl3gnpc8eo",
-      "published_at": "2026-07-20T15:58:51Z",
-      "summary": "NVIDIA 在 Hugging Face 上开源了 Cosmos 3 Edge，一个 40 亿参数的世界模型，旨在帮助机器人和视觉 AI 智能体在边缘设备上理解环境、实时推理并生成动作。 🔗 阅读原文：https://huggingface.co/blog/nvidia/cosmos3edge via AI HOT · https://aihot.virxact.com/items/cmrtgmuyf3366bitl3gnpc8eo",
+      "title": "OpenRouter 上线 Gemini 3.6 Flash 与 3.5 Flash-Lite",
+      "url": "https://aihot.virxact.com/items/cmrv7y3de002lbi8rsqvvaoq1",
+      "published_at": "2026-07-21T21:54:19Z",
+      "summary": "今日在 OpenRouter 上线：Gemini 3.6 Flash 和 Gemini 3.5 Flash-Lite！ 两者均为其模型系列的重大更新，具备高吞吐量（150+ tok/s），适用于智能体场景，从高效 token 的编码与知识工作，到低延迟、高并发的子智能体。 详情如下 🧵 🔗 阅读原文：https://x.com/OpenRouter/status/2079686435247186015 via AI HOT · https://aihot.virxact.com/items/cmrv7y3de002lbi8rsqvvaoq1",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:hugging face",
+        "strong:gemini",
         "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "778ecadcea45c8d778e7845d5edce2edd91107e5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 在 ChatGPT 中正式推出广告服务",
+      "url": "https://aihot.virxact.com/items/cmrv2m1gu01w8binv2kiup4x2",
+      "published_at": "2026-07-21T19:39:29Z",
+      "summary": "OpenAI 在 ChatGPT 中推出原生广告服务，允许广告主在用户探索选项、比较选择和做出决策时投放相关广告。广告在体验中明确标注并与回答区分，首批广告主包括 Best Buy、Lowe's 和 VistaPrint。广告主可通过 Ads Manager 创建广告系列、设置预算并优化效果。 🔗 阅读原文：https://ads.openai.com/ via AI HOT · https://aihot.virxact.com/items/cmrv2m1gu01w8binv2kiup4x2",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fe61091d2c92d19e2a5b391fe29e975afb5ed670",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布奖励寻求行为新研究",
+      "url": "https://aihot.virxact.com/items/cmruzdnzo00vpbinv65us569l",
+      "published_at": "2026-07-21T18:05:38Z",
+      "summary": "我们正与 @apolloaievals 分享关于奖励寻求行为的新研究--即模型遵循其认为评分者奖励的内容，而非用户或开发者期望的内容--以及一种新方法 Contrastive SDF，用于衡量这些信念对行为的影响程度。 https://alignment.openai.com/measuring-reward-seeking/ 🔗 阅读原文：https://x.com/OpenAI/status/2079628886950994005 via AI HOT · https://aihot.virxact.com/items/cmruzdnzo00vpbinv65us569l",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:eval",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ec03d03f8c61ee9560dc783ae9d65177050780f6",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "GitHub Copilot 推出 canvases 扩展，实现开发者与 AI 智能体实时协作",
+      "url": "https://aihot.virxact.com/items/cmruw1pl7005hbiymh0y085cv",
+      "published_at": "2026-07-21T16:00:00Z",
+      "summary": "GitHub Copilot 在应用中推出 canvases 扩展，这是一种共享交互式界面，开发者和 AI 智能体可在其中实时协作。用户通过 `/create-canvas` 指令创建画布，Copilot 可动态更新内容，用户则通过点击、编辑等操作与同一工作区交互。示例包括快速分类 Issue、生成交互式代码库关系图、管理会话工作树、优化提示词质量以及跨平台搜索知识联系人。 🔗 阅读原文：https://github.blog/ai-and-ml/github-copilot/how-to-build-interactive-experiences-with-canvases via AI HOT · https://aihot.virxact.com/items/cmruw1pl7005hbiymh0y085",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:copilot",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -259,11 +526,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1040,
-      "kept_count": 0,
+      "fetched_count": 1043,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 937,
-      "checked_at": "2026-07-21T15:41:50.920839Z"
+      "latency_ms": 759,
+      "checked_at": "2026-07-22T01:58:03.223087Z"
     },
     {
       "source_id": "openai-skills",
@@ -274,8 +541,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 348,
-      "checked_at": "2026-07-21T15:41:51.269484Z"
+      "latency_ms": 226,
+      "checked_at": "2026-07-22T01:58:03.450128Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -283,11 +550,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 244,
+      "fetched_count": 245,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 121,
-      "checked_at": "2026-07-21T15:41:51.394073Z"
+      "latency_ms": 115,
+      "checked_at": "2026-07-22T01:58:03.570844Z"
     },
     {
       "source_id": "google-deepmind",
@@ -298,8 +565,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 524,
-      "checked_at": "2026-07-21T15:41:51.919512Z"
+      "latency_ms": 604,
+      "checked_at": "2026-07-22T01:58:04.177205Z"
     },
     {
       "source_id": "google-ai",
@@ -310,8 +577,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 221,
-      "checked_at": "2026-07-21T15:41:52.141765Z"
+      "latency_ms": 188,
+      "checked_at": "2026-07-22T01:58:04.365903Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -322,8 +589,8 @@
       "fetched_count": 830,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 303,
-      "checked_at": "2026-07-21T15:41:52.455791Z"
+      "latency_ms": 330,
+      "checked_at": "2026-07-22T01:58:04.709323Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -332,10 +599,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 165,
-      "checked_at": "2026-07-21T15:41:52.621773Z"
+      "latency_ms": 212,
+      "checked_at": "2026-07-22T01:58:04.922110Z"
     },
     {
       "source_id": "github-changelog",
@@ -346,8 +613,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-07-21T15:41:52.652181Z"
+      "latency_ms": 24,
+      "checked_at": "2026-07-22T01:58:04.947208Z"
     },
     {
       "source_id": "aihot",
@@ -356,10 +623,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 14,
       "error": null,
-      "latency_ms": 5101,
-      "checked_at": "2026-07-21T15:41:57.754735Z"
+      "latency_ms": 771,
+      "checked_at": "2026-07-22T01:58:05.720432Z"
     }
   ],
   "control_notes": {
