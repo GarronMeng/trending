@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>19</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>20</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>3</b><span>官方源条目</span></div>
-        <div class="stat"><b>15</b><span>聚合源条目</span></div>
+        <div class="stat"><b>16</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-22T09:08:34.636546Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-22T10:37:27.190030Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -142,6 +142,19 @@
       <h3><a href="https://aihot.virxact.com/items/cmrusyoaf0bfgbi9ttofctwvj" target="_blank" rel="noreferrer">Google DeepMind 发布 Gemini 3.6 Flash、3.5 Flash-Lite 与 3.5 Flash Cyber 三款新模型</a></h3>
       <p class='summary'>Google DeepMind 推出 Gemini 3.6 Flash、3.5 Flash-Lite 和 3.5 Flash Cyber 三款新模型。其中 Gemini 3.6 Flash 为最新主力模型，3.5 Flash-Lite 主打更低成本与更高效率，3.5 Flash Cyber 则针对网络安全场景优化。三款模型均通过 Google AI 开发者平台提供 API 访问。 🔗 阅读原文：https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber via AI HOT · https://aihot.virxact.com/items/cmrusyoaf0bfgbi9ttofctwvj</p>
       <div class="tags"><span>strong:gemini</span><span>strong:deepmind</span><span>weak:api</span><span>weak:开发者</span><span>weak:API</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-07-22T10:04:51Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmrvx8ycy0240bipz0pkrvryq" target="_blank" rel="noreferrer">小红书开源 BigMac：多模态大模型训练新范式</a></h3>
+      <p class='summary'>小红书技术团队开源 BigMac，一种针对多模态大模型训练的依赖安全嵌套流水线新范式。它以 LLM 流水线为主干，在不打乱执行顺序的前提下嵌入编码器和生成器计算，相比基线实现 1.08x-1.9x 加速，同时保持激活显存有界。BigMac 已作为 dots 多模态模型训练的核心组件投入生产。 🔗 阅读原文：https://mp.weixin.qq.com/s/tNJARtn1jIayL5URg87Row via AI HOT · https://aihot.virxact.com/items/cmrvx8ycy0240bipz0pkrvryq</p>
+      <div class="tags"><span>strong:llm</span><span>strong:大模型</span><span>strong:多模态</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -305,15 +318,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1043</td><td>1</td><td>782ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>257ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>245</td><td>0</td><td>116ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>1</td><td>331ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>189ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>830</td><td>0</td><td>310ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>138ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>24ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>15</td><td>1852ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1043</td><td>1</td><td>682ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>231ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>246</td><td>0</td><td>128ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>1</td><td>351ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>280ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>830</td><td>0</td><td>344ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>233ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>55ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>16</td><td>842ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
