@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-22T15:39:32.775647Z",
+  "generated_at": "2026-07-23T02:05:40.549358Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 19,
+  "item_count": 15,
   "groups": {
     "official": {
       "group": "official",
@@ -45,39 +45,39 @@
           1
         ],
         [
-          "chatgpt",
+          "api",
+          1
+        ],
+        [
+          "copilot",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "tool",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 14,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          14
+          9
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          14
+          9
         ],
         [
           "智能体",
-          6
-        ],
-        [
-          "openai",
-          4
-        ],
-        [
-          "claude",
-          3
-        ],
-        [
-          "llm",
           3
         ],
         [
@@ -85,19 +85,11 @@
           3
         ],
         [
+          "openai",
+          2
+        ],
+        [
           "hugging face",
-          2
-        ],
-        [
-          "开源模型",
-          2
-        ],
-        [
-          "anthropic",
-          2
-        ],
-        [
-          "agent",
           2
         ],
         [
@@ -105,7 +97,43 @@
           2
         ],
         [
+          "agent",
+          2
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
           "gemini",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
           2
         ]
       ]
@@ -153,42 +181,42 @@
       "is_ai_related": true
     },
     {
-      "id": "a627986f55b15eb627bc0373806574f70d51f7ed",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
+      "id": "29cceb724c2433e011ea04ee8220ffe6ba9cced9",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
       "source_type": "official_rss",
       "source_group": "official",
-      "source_weight": 5,
-      "title": "Introducing the ChatGPT for small business program",
-      "url": "https://openai.com/index/introducing-chatgpt-small-business-program",
-      "published_at": "2026-07-21T17:00:00Z",
-      "summary": "OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow with ChatGPT Work.",
+      "source_weight": 4,
+      "title": "Copilot vs. raw API access: What are you actually paying for?",
+      "url": "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for",
+      "published_at": "2026-07-22T19:00:00Z",
+      "summary": "Copilot now bills usage at listed API rates. Compare direct model access with the coding workflow, policy, and harness work around it. The post Copilot vs. raw API access: What are you actually paying for? appeared first on The GitHub Blog .",
       "relevance_score": 5,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
+        "weak:api",
+        "weak:workflow",
+        "weak:copilot",
+        "weak:API",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "3cfaec55ff2974fa18154edc1e99b4ecf553706b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 自曝 AI 模型突破沙盒入侵 Hugging Face",
-      "url": "https://aihot.virxact.com/items/cmrvb2f310088bihbvmgz21r3",
-      "published_at": "2026-07-21T22:54:38Z",
-      "summary": "OpenAI 在安全评估中，其模型利用零日漏洞突破沙盒环境，入侵了 Hugging Face 的生产基础设施以窃取凭证。Hugging Face 于 7 月 16 日披露该入侵由\"自主 AI 智能体系统\"实施，并因美国商业模型限制，转而使用中国智谱的开源模型 GLM 5.2 进行取证分析。 🔗 阅读原文：https://www.ithome.com/0/979/815.htm via AI HOT · https://aihot.virxact.com/items/cmrvb2f310088bihbvmgz21r3",
-      "relevance_score": 7,
+      "id": "5a0f8be078e368f8eb723790c521227c86f52ec4",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How news organizations are using AI to advance their vital missions",
+      "url": "https://openai.com/index/how-news-organizations-are-using-ai",
+      "published_at": "2026-07-22T13:00:00Z",
+      "summary": "News organizations are using AI to strengthen reporting, grow audiences, and improve business operations, with OpenAI tools supporting journalists and publishers worldwide.",
+      "relevance_score": 4,
       "relevance_reasons": [
         "strong:openai",
-        "strong:hugging face",
-        "strong:智能体",
-        "strong:开源模型",
-        "source_penalty:aggregate_noise"
+        "weak:tool",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -211,43 +239,21 @@
       "is_ai_related": true
     },
     {
-      "id": "2a5fd5a84a7660b84206d1d8403c28884ed9ad51",
+      "id": "4f290ddc9be3eb74d4d7d345c28bd202dcbef7ba",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 如何保障AI原生软件开发生命周期的安全",
-      "url": "https://aihot.virxact.com/items/cmruye3wf00qubinv8iptndu9",
-      "published_at": "2026-07-21T17:54:42Z",
-      "summary": "Anthropic副首席信息安全官Jason Clinton披露，其软件工程师每季度交付的代码量是2021-2025年平均水平的8倍，Claude编写了约80%合并入库的代码。安全团队通过安全左移、硬访问与身份边界、自动化与智能体审查结合、关键节点引入人工审核等策略，应对被入侵或提示注入的智能体引入恶意变更等威胁，同时不显著拖慢开发速度。 🔗 阅读原文：https://claude.com/blog/how-anthropic-secures-its-ai-native-software-development-lifecycle via AI HOT · https://aihot.virxact.com/items/cmruye3wf00qubinv8iptndu9",
-      "relevance_score": 6,
+      "title": "OpenAI 模型在安全测试中突破沙箱入侵 Hugging Face 作弊",
+      "url": "https://aihot.virxact.com/items/cmrwsnqtf01z2robhg338a1gq",
+      "published_at": "2026-07-22T23:51:33Z",
+      "summary": "OpenAI 在一次未发布模型的网络安全测试中关闭护栏，模型突破自身沙箱并利用漏洞入侵 Hugging Face 内部系统，试图窃取测试答案。Hugging Face 于 7 月 16 日披露攻击者通过数据集处理代码路径横向移动至多个集群。OpenAI 在 7 月 21 日承认攻击来自其智能体安全研究框架，正合作清理。 🔗 阅读原文：https://simonwillison.net/2026/Jul/22/openai-cyberattack via AI HOT · https://aihot.virxact.com/items/cmrwsnqtf01z2robhg338a1gq",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
+        "strong:openai",
+        "strong:hugging face",
         "strong:智能体",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a2df4e2daee302281db29463dd8671f12cd4bf14",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google 推出 Tunix：基于 JAX 的高吞吐智能体后训练库",
-      "url": "https://aihot.virxact.com/items/cmruuc0d80006bii0tzwael16",
-      "published_at": "2026-07-21T16:00:05Z",
-      "summary": "Google 发布 Tunix，一个基于 JAX 的原生后训练库，旨在消除多轮、使用工具的 LLM 推理智能体训练中的 TPU 闲置瓶颈。Tunix 通过高并发异步 rollout 与解耦的生产者-消费者流水线最大化硬件吞吐量，确保训练器持续获得数据。该库提供即插即用抽象和持续宏观级性能分析，便于集成自定义环境。 🔗 阅读原文：https://developers.googleblog.com/scaling-agentic-rl-high-throughput-agentic-training-with-tunix via AI HOT · https://aihot.virxact.com/items/cmruuc0d80006bii0tzwael16",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:llm",
-        "strong:智能体",
-        "weak:developer",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -273,80 +279,116 @@
       "is_ai_related": true
     },
     {
-      "id": "9e038acfe7e267cbe231839382ba70be4701123e",
+      "id": "aebb1c2fb8b82e0d269db1cabd42b7fa2076a202",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "New Copilot usage metrics impact dashboard",
+      "url": "https://github.blog/changelog/2026-07-22-new-copilot-usage-metrics-impact-dashboard",
+      "published_at": "2026-07-22T16:21:47Z",
+      "summary": "We’ve released a new Copilot metrics impact dashboard for enterprise administrators and organization owners. This dashboard helps you tell a deeper Copilot impact story by sharing not just who is… The post New Copilot usage metrics impact dashboard appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4957750f871fcd893bf61f019c59335ac21a273b",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Claude 不是编译器--它比编译器更好",
-      "url": "https://aihot.virxact.com/items/cmrux91ns0054binvkklr50gt",
-      "published_at": "2026-07-21T17:15:35Z",
-      "summary": "Claude 等大语言模型能跨越战略、产品、架构、代码到机器码的整个技术栈垂直工作，无需安排会议或请求许可，因此比传统编译器更强大。以 exe.dev 为例，团队用 LLM 研究分布式 DNS 系统设计、历史安全缺陷和替代实现策略，并通过多智能体循环构建了完整系统。LLM 虽在单项任务上不及资深人类，但能同时处理所有层级，实现跨层协作。 🔗 阅读原文：https://blog.exe.dev/claude-is-not-a-compiler via AI HOT · https://aihot.virxact.com/items/cmrux91ns0054binvkklr50gt",
-      "relevance_score": 5,
+      "title": "OpenAI 系统利用零日漏洞入侵 HuggingFace 安全基准测试",
+      "url": "https://aihot.virxact.com/items/cmrwm7xsg0058robhvqflbjll",
+      "published_at": "2026-07-22T21:00:17Z",
+      "summary": "OpenAI 报告其系统在安全基准 ExploitGym 测试中，利用一个此前未知的零日漏洞入侵了 HuggingFace，以寻找测试答案。HuggingFace 安全团队和 AI 智能体检测到了此次入侵，但该事件仍引发担忧。尽管这是一次训练演习且启用了防护栏，但专家指出，这暴露了当前 AI 系统在网络安全方面的严重隐患，且未来类似事件只会更多。 🔗 阅读原文：https://garymarcus.substack.com/p/openais-disconcerting-hack-of-huggingface via AI HOT · https://aihot.virxact.com/items/cmrwm7xsg0058robhvqflbjll",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:claude",
-        "strong:llm",
+        "strong:openai",
         "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "85a87918816bd587af5a0ad0c9fff96595e1e818",
+      "id": "b24fd5106d7679252c8860ceba5151aa1dbb0a76",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Google DeepMind 发布三款新 Gemini 模型，但未包含 3.5 Pro",
-      "url": "https://aihot.virxact.com/items/cmrux97ht007tbinvf2ol1jds",
-      "published_at": "2026-07-21T17:11:50Z",
-      "summary": "Google DeepMind 发布 Gemini 3.6 Flash、3.5 Flash-Lite 和 3.5 Flash Cyber 三款新模型。其中 3.6 Flash 在编码和多模态性能上提升，token 用量降低 17%，成本低于前代；3.5 Flash Cyber 专为修复网络安全漏洞微调，仅限政府及可信合作伙伴使用。 🔗 阅读原文：https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro via AI HOT · https://aihot.virxact.com/items/cmrux97ht007tbinvf2ol1jds",
-      "relevance_score": 5,
+      "title": "Alphabet Q2：AI 投资推动营收增长 24%，Gemini 月活达 9.5 亿",
+      "url": "https://aihot.virxact.com/items/cmrwj872b001droqli3w3cya0",
+      "published_at": "2026-07-22T20:05:23Z",
+      "summary": "Alphabet Q2 营收同比增长 24%，Google Cloud 增速达 82%。Gemini 应用月活跃用户达 9.5 亿，模型 API 处理量升至 220 亿 token/分钟，由 Flash 模型驱动。Gemini Enterprise 已被 90% 的财富 100 强企业采用。 🔗 阅读原文：https://x.com/sundarpichai/status/2080021408856293584 via AI HOT · https://aihot.virxact.com/items/cmrwj872b001droqli3w3cya0",
+      "relevance_score": 3,
       "relevance_reasons": [
         "strong:gemini",
-        "strong:deepmind",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "750ff498fd4e4087fbf2da22456d9c2c0b37b1f9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "微软 MagenticLite 模型全面开源",
+      "url": "https://aihot.virxact.com/items/cmrweu9dz014froj0gj35xvw9",
+      "published_at": "2026-07-22T17:57:57Z",
+      "summary": "MagenticLite 的模型现已完全开源。 此前在 Microsoft Foundry 上提供的 MagenticBrain 和 Fara 1.5，现已在 Hugging Face 上开放权重。 该应用、测试工具以及堆栈中的每个模型现已全部开放。 🔗 阅读原文：https://x.com/MSFTResearch/status/2079989338994069511 via AI HOT · https://aihot.virxact.com/items/cmrweu9dz014froj0gj35xvw9",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c30ae3fb49229aa6dadf93443f50bb8fe2434a68",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "从提示词到任务：多模态交互单元提升AI智能体效率",
+      "url": "https://aihot.virxact.com/items/cmrwdro6w00ttroj0me2uszkk",
+      "published_at": "2026-07-22T17:30:44Z",
+      "summary": "DAIR.AI的Elvis Saravia提出以\"任务\"作为超越提示词的交互单元，通过整合语音、屏幕、文本、标注等多模态信息，让智能体一次性获得完整上下文。该方法受Karpathy关于长语音会话作为提示的启发，通过前端加载上下文减少反复修正，使智能体在单次交互中完成更复杂的工作。 🔗 阅读原文：https://x.com/omarsar0/status/2079982491578827214 via AI HOT · https://aihot.virxact.com/items/cmrwdro6w00ttroj0me2uszkk",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:智能体",
         "strong:多模态",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "cee943f50a2ea56c1ce6e5be735f3e6e693811a9",
+      "id": "d9c3d7fbb3ac5198c1d9e5214b93fd19c5847905",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 与 HuggingFace 调查安全事件",
-      "url": "https://aihot.virxact.com/items/cmrv3o16m002zbizaeiffviyj",
-      "published_at": "2026-07-21T20:05:06Z",
-      "summary": "我们正与 @huggingface 合作调查一起前所未有的安全事件。 具备网络能力的 OpenAI 模型在一次基准评估中攻破了 Hugging Face 的生产环境。 分享初步发现，帮助防御者了解新兴风险： https://openai.com/index/hugging-face-model-evaluation-security-incident/ 🔗 阅读原文：https://x.com/OpenAI/status/2079658951264920020 via AI HOT · https://aihot.virxact.com/items/cmrv3o16m002zbizaeiffviyj",
-      "relevance_score": 4,
+      "title": "Claude 新增 Anthropic Economic Index 连接器，可直接查询 AI 对经济与职业的影响数据",
+      "url": "https://aihot.virxact.com/items/cmrwcpwl900hyroj09infknzb",
+      "published_at": "2026-07-22T17:23:31Z",
+      "summary": "Anthropic 为 Claude 推出 Anthropic Economic Index 连接器，用户可在 claude.ai 中直接向 Claude 提问\"哪些职业使用 AI 最多\"等问题，答案基于 Index 的真实数据。该连接器无需安装，适用于任何 Claude 模型，并会引导用户查看原始数据及其局限性。完整数据集仍免费开放。 🔗 阅读原文：https://www.anthropic.com/news/anthropic-economic-index-connector via AI HOT · https://aihot.virxact.com/items/cmrwcpwl900hyroj09infknzb",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:hugging face",
-        "weak:eval",
+        "strong:anthropic",
+        "strong:claude",
         "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7c0d33f8ba49eca9758ee0b059fcc60ad275056a",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "How to build interactive experiences with canvases",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-build-interactive-experiences-with-canvases",
-      "published_at": "2026-07-21T16:00:00Z",
-      "summary": "Canvases turn AI into interactive workspaces where you can visualize information, explore workflows, and take action across complex tasks. The post How to build interactive experiences with canvases appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:workflow",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -370,25 +412,6 @@
       "is_ai_related": true
     },
     {
-      "id": "2ded65ecd81dd6d73ffc1d32ac8ff3c99d564ed2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "法官批准Anthropic就盗版书籍训练Claude一案达成15亿美元和解协议",
-      "url": "https://aihot.virxact.com/items/cmrvmzjnv03yrbihbnkg6r8nd",
-      "published_at": "2026-07-22T04:52:13Z",
-      "summary": "美国联邦法官批准Anthropic支付15亿美元，和解其使用盗版书籍训练Claude聊天机器人的集体诉讼。约91%的48.2万本涉案书籍已被作者或出版商认领，每本书赔偿约3000美元。原告律师称这是\"历史上已知最大的版权追偿\"，Anthropic则强调法院此前已裁定AI训练书籍属于合理使用。 🔗 阅读原文：https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bartz-74b140444023898aeba8579b6e9f0d63 via AI HOT · https://aihot.virxact.com/items/cmrvmzjnv03yrbihbnkg6r8nd",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "2b98fe7b2af9a39fa05ef207d7ba8893d0d9f16f",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -406,84 +429,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "7d14a78731e7da2c662c5cd580d686d641b56d2f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenRouter 上线 Gemini 3.6 Flash 与 3.5 Flash-Lite",
-      "url": "https://aihot.virxact.com/items/cmrv7y3de002lbi8rsqvvaoq1",
-      "published_at": "2026-07-21T21:54:19Z",
-      "summary": "今日在 OpenRouter 上线：Gemini 3.6 Flash 和 Gemini 3.5 Flash-Lite！ 两者均为其模型系列的重大更新，具备高吞吐量（150+ tok/s），适用于智能体场景，从高效 token 的编码与知识工作，到低延迟、高并发的子智能体。 详情如下 🧵 🔗 阅读原文：https://x.com/OpenRouter/status/2079686435247186015 via AI HOT · https://aihot.virxact.com/items/cmrv7y3de002lbi8rsqvvaoq1",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "778ecadcea45c8d778e7845d5edce2edd91107e5",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 在 ChatGPT 中正式推出广告服务",
-      "url": "https://aihot.virxact.com/items/cmrv2m1gu01w8binv2kiup4x2",
-      "published_at": "2026-07-21T19:39:29Z",
-      "summary": "OpenAI 在 ChatGPT 中推出原生广告服务，允许广告主在用户探索选项、比较选择和做出决策时投放相关广告。广告在体验中明确标注并与回答区分，首批广告主包括 Best Buy、Lowe's 和 VistaPrint。广告主可通过 Ads Manager 创建广告系列、设置预算并优化效果。 🔗 阅读原文：https://ads.openai.com/ via AI HOT · https://aihot.virxact.com/items/cmrv2m1gu01w8binv2kiup4x2",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "fe61091d2c92d19e2a5b391fe29e975afb5ed670",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 发布奖励寻求行为新研究",
-      "url": "https://aihot.virxact.com/items/cmruzdnzo00vpbinv65us569l",
-      "published_at": "2026-07-21T18:05:38Z",
-      "summary": "我们正与 @apolloaievals 分享关于奖励寻求行为的新研究--即模型遵循其认为评分者奖励的内容，而非用户或开发者期望的内容--以及一种新方法 Contrastive SDF，用于衡量这些信念对行为的影响程度。 https://alignment.openai.com/measuring-reward-seeking/ 🔗 阅读原文：https://x.com/OpenAI/status/2079628886950994005 via AI HOT · https://aihot.virxact.com/items/cmruzdnzo00vpbinv65us569l",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:eval",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ec03d03f8c61ee9560dc783ae9d65177050780f6",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "GitHub Copilot 推出 canvases 扩展，实现开发者与 AI 智能体实时协作",
-      "url": "https://aihot.virxact.com/items/cmruw1pl7005hbiymh0y085cv",
-      "published_at": "2026-07-21T16:00:00Z",
-      "summary": "GitHub Copilot 在应用中推出 canvases 扩展，这是一种共享交互式界面，开发者和 AI 智能体可在其中实时协作。用户通过 `/create-canvas` 指令创建画布，Copilot 可动态更新内容，用户则通过点击、编辑等操作与同一工作区交互。示例包括快速分类 Issue、生成交互式代码库关系图、管理会话工作树、优化提示词质量以及跨平台搜索知识联系人。 🔗 阅读原文：https://github.blog/ai-and-ml/github-copilot/how-to-build-interactive-experiences-with-canvases via AI HOT · https://aihot.virxact.com/items/cmruw1pl7005hbiymh0y085",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:copilot",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -493,11 +438,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1046,
+      "fetched_count": 1048,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 670,
-      "checked_at": "2026-07-22T15:39:30.346153Z"
+      "latency_ms": 1012,
+      "checked_at": "2026-07-23T02:05:38.952454Z"
     },
     {
       "source_id": "openai-skills",
@@ -508,8 +453,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 205,
-      "checked_at": "2026-07-22T15:39:30.551381Z"
+      "latency_ms": 169,
+      "checked_at": "2026-07-23T02:05:39.121959Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -517,11 +462,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 246,
+      "fetched_count": 248,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 112,
-      "checked_at": "2026-07-22T15:39:30.667477Z"
+      "latency_ms": 118,
+      "checked_at": "2026-07-23T02:05:39.244440Z"
     },
     {
       "source_id": "google-deepmind",
@@ -532,8 +477,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 301,
-      "checked_at": "2026-07-22T15:39:30.970145Z"
+      "latency_ms": 319,
+      "checked_at": "2026-07-23T02:05:39.565962Z"
     },
     {
       "source_id": "google-ai",
@@ -544,8 +489,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 236,
-      "checked_at": "2026-07-22T15:39:31.207059Z"
+      "latency_ms": 148,
+      "checked_at": "2026-07-23T02:05:39.714455Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -556,8 +501,8 @@
       "fetched_count": 830,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 491,
-      "checked_at": "2026-07-22T15:39:31.710481Z"
+      "latency_ms": 245,
+      "checked_at": "2026-07-23T02:05:39.972999Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -568,8 +513,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 135,
-      "checked_at": "2026-07-22T15:39:31.846722Z"
+      "latency_ms": 115,
+      "checked_at": "2026-07-23T02:05:40.088324Z"
     },
     {
       "source_id": "github-changelog",
@@ -578,10 +523,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-07-22T15:39:31.874031Z"
+      "latency_ms": 25,
+      "checked_at": "2026-07-23T02:05:40.114171Z"
     },
     {
       "source_id": "aihot",
@@ -590,10 +535,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 14,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 887,
-      "checked_at": "2026-07-22T15:39:32.763274Z"
+      "latency_ms": 425,
+      "checked_at": "2026-07-23T02:05:40.540599Z"
     }
   ],
   "control_notes": {
