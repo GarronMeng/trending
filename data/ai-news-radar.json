@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-23T02:05:40.549358Z",
+  "generated_at": "2026-07-23T06:19:42.554773Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 15,
+  "item_count": 14,
   "groups": {
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI News",
-          4
+          3
         ],
         [
           "GitHub AI & ML",
@@ -22,23 +22,11 @@
       "top_keywords": [
         [
           "official_ai",
-          5
-        ],
-        [
-          "openai",
           4
         ],
         [
-          "workflow",
-          2
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
+          "openai",
+          3
         ],
         [
           "codex",
@@ -46,6 +34,10 @@
         ],
         [
           "api",
+          1
+        ],
+        [
+          "workflow",
           1
         ],
         [
@@ -77,15 +69,19 @@
           9
         ],
         [
+          "openai",
+          3
+        ],
+        [
           "智能体",
           3
         ],
         [
-          "多模态",
-          3
+          "anthropic",
+          2
         ],
         [
-          "openai",
+          "claude",
           2
         ],
         [
@@ -97,7 +93,7 @@
           2
         ],
         [
-          "agent",
+          "多模态",
           2
         ],
         [
@@ -114,10 +110,6 @@
         ],
         [
           "API",
-          1
-        ],
-        [
-          "anthropic",
           1
         ]
       ]
@@ -140,27 +132,6 @@
     }
   },
   "items": [
-    {
-      "id": "595b016000fb66f9c4aa391e2c22aee02a740afb",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Introducing OpenAI Presence",
-      "url": "https://openai.com/index/introducing-openai-presence",
-      "published_at": "2026-07-22T05:30:00Z",
-      "summary": "Introducing OpenAI Presence, a proven enterprise AI agent platform that helps organizations deploy trusted voice and chat agents for customer and internal workflows.",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:agent",
-        "strong:agents",
-        "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "82deaeb7631d58a4afe20815d8fd8687d524326b",
       "source_id": "openai-news",
@@ -235,6 +206,26 @@
       "relevance_reasons": [
         "strong:openai",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6e2123b6f0d8bbbd95af031bea8dc089111a2e50",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "AISI 报告 GPT-5.6 Sol 等 5 款 AI 模型均存\"作弊\"行为",
+      "url": "https://aihot.virxact.com/items/cmrwz39z703xjrobh5ex10yo7",
+      "published_at": "2026-07-23T02:51:59Z",
+      "summary": "英国 AI 安全研究所（AISI）测试 OpenAI 与 Anthropic 的 5 款前沿模型，发现所有模型均存在绕过规则或违规操作的\"作弊\"行为。其中 GPT-5.4 作弊率最高达 14.1%，GPT-5.6 Sol 为 12.6%，Claude Opus 4.7 为 9.1%。GPT 系列更倾向搜索互联网，Claude 系列则倾向绕过沙盒限制。 🔗 阅读原文：https://www.ithome.com/0/980/471.htm via AI HOT · https://aihot.virxact.com/items/cmrwz39z703xjrobh5ex10yo7",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -410,25 +401,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "2b98fe7b2af9a39fa05ef207d7ba8893d0d9f16f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "腾讯设计Agent平台Miora全面开放",
-      "url": "https://aihot.virxact.com/items/cmrvl3qgw03hubihbavi1fla0",
-      "published_at": "2026-07-22T04:21:03Z",
-      "summary": "腾讯设计Agent平台Miora今日全面开放，无需邀请码即可使用。该平台由WorkBuddy团队打造，提供品牌设计、影视创意等五大场景模式，支持自定义多模态模型和Agent推理深度，并内置Skill市场与记忆系统。 🔗 阅读原文：https://mp.weixin.qq.com/s/qQhq9nxoeCD68iMwQoEVFQ via AI HOT · https://aihot.virxact.com/items/cmrvl3qgw03hubihbavi1fla0",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -439,10 +411,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1048,
-      "kept_count": 4,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 1012,
-      "checked_at": "2026-07-23T02:05:38.952454Z"
+      "latency_ms": 923,
+      "checked_at": "2026-07-23T06:19:40.669001Z"
     },
     {
       "source_id": "openai-skills",
@@ -453,8 +425,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 169,
-      "checked_at": "2026-07-23T02:05:39.121959Z"
+      "latency_ms": 236,
+      "checked_at": "2026-07-23T06:19:40.906080Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -465,8 +437,8 @@
       "fetched_count": 248,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 118,
-      "checked_at": "2026-07-23T02:05:39.244440Z"
+      "latency_ms": 150,
+      "checked_at": "2026-07-23T06:19:41.060654Z"
     },
     {
       "source_id": "google-deepmind",
@@ -477,8 +449,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 319,
-      "checked_at": "2026-07-23T02:05:39.565962Z"
+      "latency_ms": 283,
+      "checked_at": "2026-07-23T06:19:41.346177Z"
     },
     {
       "source_id": "google-ai",
@@ -489,8 +461,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 148,
-      "checked_at": "2026-07-23T02:05:39.714455Z"
+      "latency_ms": 184,
+      "checked_at": "2026-07-23T06:19:41.531289Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -501,8 +473,8 @@
       "fetched_count": 830,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 245,
-      "checked_at": "2026-07-23T02:05:39.972999Z"
+      "latency_ms": 280,
+      "checked_at": "2026-07-23T06:19:41.824384Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -513,8 +485,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 115,
-      "checked_at": "2026-07-23T02:05:40.088324Z"
+      "latency_ms": 145,
+      "checked_at": "2026-07-23T06:19:41.969888Z"
     },
     {
       "source_id": "github-changelog",
@@ -525,8 +497,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-07-23T02:05:40.114171Z"
+      "latency_ms": 26,
+      "checked_at": "2026-07-23T06:19:41.996434Z"
     },
     {
       "source_id": "aihot",
@@ -537,8 +509,8 @@
       "fetched_count": 50,
       "kept_count": 9,
       "error": null,
-      "latency_ms": 425,
-      "checked_at": "2026-07-23T02:05:40.540599Z"
+      "latency_ms": 548,
+      "checked_at": "2026-07-23T06:19:42.546387Z"
     }
   ],
   "control_notes": {
