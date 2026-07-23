@@ -1,19 +1,15 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-23T10:38:35.909681Z",
+  "generated_at": "2026-07-23T15:53:47.133198Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 13,
+  "item_count": 11,
   "groups": {
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 2,
       "top_sources": [
-        [
-          "OpenAI News",
-          3
-        ],
         [
           "GitHub AI & ML",
           1
@@ -26,15 +22,7 @@
       "top_keywords": [
         [
           "official_ai",
-          5
-        ],
-        [
-          "openai",
-          3
-        ],
-        [
-          "codex",
-          1
+          2
         ],
         [
           "api",
@@ -53,10 +41,6 @@
           1
         ],
         [
-          "tool",
-          1
-        ],
-        [
           "inference",
           1
         ]
@@ -64,17 +48,21 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          7
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          8
+        ],
+        [
+          "claude",
+          3
         ],
         [
           "openai",
@@ -85,7 +73,11 @@
           2
         ],
         [
-          "claude",
+          "gemini",
+          2
+        ],
+        [
+          "agent",
           2
         ],
         [
@@ -93,7 +85,7 @@
           2
         ],
         [
-          "gemini",
+          "chatgpt",
           1
         ],
         [
@@ -109,15 +101,7 @@
           1
         ],
         [
-          "agent",
-          1
-        ],
-        [
           "多模态",
-          1
-        ],
-        [
-          "大模型",
           1
         ]
       ]
@@ -141,25 +125,6 @@
   },
   "items": [
     {
-      "id": "82deaeb7631d58a4afe20815d8fd8687d524326b",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Building AI infrastructure with the Effingham County community",
-      "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
-      "published_at": "2026-07-22T13:00:00Z",
-      "summary": "OpenAI announces Project Camellia in Effingham County, Georgia, with commitments to responsible energy, community investment, jobs, and access to Codex.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "29cceb724c2433e011ea04ee8220ffe6ba9cced9",
       "source_id": "github-ai-ml",
       "source_name": "GitHub AI & ML",
@@ -176,43 +141,6 @@
         "weak:workflow",
         "weak:copilot",
         "weak:API",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5a0f8be078e368f8eb723790c521227c86f52ec4",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How news organizations are using AI to advance their vital missions",
-      "url": "https://openai.com/index/how-news-organizations-are-using-ai",
-      "published_at": "2026-07-22T13:00:00Z",
-      "summary": "News organizations are using AI to strengthen reporting, grow audiences, and improve business operations, with OpenAI tools supporting journalists and publishers worldwide.",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:tool",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "6dc5ffe7d385435a883017902baaf7975a0a89a6",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Advancing the next era of national science",
-      "url": "https://openai.com/index/advancing-the-next-era-of-national-science",
-      "published_at": "2026-07-22T12:00:00Z",
-      "summary": "OpenAI outlines its commitment to advancing American science working with the U.S. Department of Energy and national labs to use frontier AI to accelerate discovery.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -270,6 +198,44 @@
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "71468bcaa2f332655f19a310a16088b1f739d25b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google Gemini 月活用户逼近 9.5 亿，有望成为下一个十亿级产品",
+      "url": "https://aihot.virxact.com/items/cmrxnw4rw00qzroxpll5shp7a",
+      "published_at": "2026-07-23T14:52:44Z",
+      "summary": "Google 在 Q2 2026 财报电话会上宣布，AI 助手 Gemini 月活跃用户已超过 9.5 亿，用户数较去年增长三倍。Gemini 正与月活突破 10 亿的 ChatGPT 展开更直接竞争，其 AI 搜索模式用户也已超过 10 亿。Sensor Tower 报告显示，Gemini 在 AI 助手市场份额升至 27.7%，而 ChatGPT 份额首次跌破 50%。 🔗 阅读原文：https://techcrunch.com/2026/07/23/google-closes-in-on-another-billion-user-product-with-gemini via AI HOT · https://aihot.virxact.com/items/cmrxnw4rw00qzroxpll5shp7",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:gemini",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6c5a70de57166fa4779890de3c5aa808c33bca00",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "昆仑万维方汉：Token堆不出AI原生组织，模型才是长期立足之本",
+      "url": "https://aihot.virxact.com/items/cmrxfjpf800tero983dojzltm",
+      "published_at": "2026-07-23T11:20:00Z",
+      "summary": "昆仑万维CEO方汉在WAIC圆桌上指出，单纯堆砌Token消耗量无法衡量AI价值，模型能力需依赖Claude Code等Coding Agent建立的工程框架才能转化为生产力。他透露昆仑万维仍在持续训练模型，并将发布音乐、具身世界和游戏世界模型，认为模型与算力是AI公司长期立足的基础。方汉同时警示，AI编程带来的技术债可能导致生产事故增幅达数倍，代码审查与责任机制必须同步加强。 🔗 阅读原文：https://mp.weixin.qq.com/s/TEAuv29LPgmjQG_rO3b_Ag via AI HOT · https://aihot.virxact.com/items/cmrxfjpf800tero983dojzltm",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -368,25 +334,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "c3c9cc29593114c291aa101f0e8b7e748f83a364",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "开源模型季度盘点：Kimi K3、Qwen 3.8、WAIC 演讲、知识蒸馏与开源闭源差距",
-      "url": "https://aihot.virxact.com/items/cmrw7dmtf00ukro8gtnl09yk6",
-      "published_at": "2026-07-22T14:09:04Z",
-      "summary": "Nathan Lambert 与 Florian Brand 在播客中盘点开源模型最新动态。Kimi K3 发布后，中美 AI 地缘政治、开源与闭源模型的经济性、前沿安全等问题加速演进。Qwen 宣布下一代大模型将开源权重，中国厂商在开源策略上持续加码。讨论还涉及开源模型与闭源前沿的性能差距、知识蒸馏争议，以及后训练对特定任务的价值。 🔗 阅读原文：https://www.interconnects.ai/p/open-models-recap-more-on-kimi-k3 via AI HOT · https://aihot.virxact.com/items/cmrw7dmtf00ukro8gtnl09yk6",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:大模型",
-        "strong:开源模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -397,10 +344,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1048,
-      "kept_count": 3,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 582,
-      "checked_at": "2026-07-23T10:38:31.665840Z"
+      "latency_ms": 643,
+      "checked_at": "2026-07-23T15:53:44.859433Z"
     },
     {
       "source_id": "openai-skills",
@@ -411,8 +358,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 365,
-      "checked_at": "2026-07-23T10:38:32.031979Z"
+      "latency_ms": 261,
+      "checked_at": "2026-07-23T15:53:45.121189Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -423,8 +370,8 @@
       "fetched_count": 248,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 362,
-      "checked_at": "2026-07-23T10:38:32.397490Z"
+      "latency_ms": 201,
+      "checked_at": "2026-07-23T15:53:45.326400Z"
     },
     {
       "source_id": "google-deepmind",
@@ -435,8 +382,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 336,
-      "checked_at": "2026-07-23T10:38:32.735041Z"
+      "latency_ms": 396,
+      "checked_at": "2026-07-23T15:53:45.724688Z"
     },
     {
       "source_id": "google-ai",
@@ -447,8 +394,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 156,
-      "checked_at": "2026-07-23T10:38:32.891531Z"
+      "latency_ms": 205,
+      "checked_at": "2026-07-23T15:53:45.930523Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -459,8 +406,8 @@
       "fetched_count": 831,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 304,
-      "checked_at": "2026-07-23T10:38:33.207053Z"
+      "latency_ms": 379,
+      "checked_at": "2026-07-23T15:53:46.322448Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -471,8 +418,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 183,
-      "checked_at": "2026-07-23T10:38:33.390423Z"
+      "latency_ms": 232,
+      "checked_at": "2026-07-23T15:53:46.554996Z"
     },
     {
       "source_id": "github-changelog",
@@ -483,8 +430,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-07-23T10:38:33.419576Z"
+      "latency_ms": 57,
+      "checked_at": "2026-07-23T15:53:46.612639Z"
     },
     {
       "source_id": "aihot",
@@ -493,10 +440,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 2481,
-      "checked_at": "2026-07-23T10:38:35.902405Z"
+      "latency_ms": 510,
+      "checked_at": "2026-07-23T15:53:47.123892Z"
     }
   ],
   "control_notes": {
