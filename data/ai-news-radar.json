@@ -1,337 +1,121 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-23T15:53:47.133198Z",
+  "generated_at": "2026-07-24T02:02:03.664385Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 9,
-  "item_count": 11,
+  "healthy_source_count": 8,
+  "item_count": 4,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub AI & ML",
-          1
-        ],
-        [
-          "Hugging Face Blog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          2
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "inference",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 8,
-      "top_sources": [
-        [
-          "AI Hot",
-          8
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          8
-        ],
-        [
-          "claude",
-          3
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "anthropic",
-          2
-        ],
-        [
-          "gemini",
-          2
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "hugging face",
-          1
-        ],
-        [
-          "多模态",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
-      "count": 1,
+      "count": 4,
       "top_sources": [
         [
           "GitHub Changelog",
-          1
+          4
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          2
+          4
+        ],
+        [
+          "agent",
+          3
+        ],
+        [
+          "coding agent",
+          1
+        ],
+        [
+          "actions",
+          1
+        ],
+        [
+          "automation",
+          1
+        ],
+        [
+          "mcp",
+          1
         ]
       ]
     }
   },
   "items": [
     {
-      "id": "29cceb724c2433e011ea04ee8220ffe6ba9cced9",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "Copilot vs. raw API access: What are you actually paying for?",
-      "url": "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for",
-      "published_at": "2026-07-22T19:00:00Z",
-      "summary": "Copilot now bills usage at listed API rates. Compare direct model access with the coding workflow, policy, and harness work around it. The post Copilot vs. raw API access: What are you actually paying for? appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:workflow",
-        "weak:copilot",
-        "weak:API",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "6e2123b6f0d8bbbd95af031bea8dc089111a2e50",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "AISI 报告 GPT-5.6 Sol 等 5 款 AI 模型均存\"作弊\"行为",
-      "url": "https://aihot.virxact.com/items/cmrwz39z703xjrobh5ex10yo7",
-      "published_at": "2026-07-23T02:51:59Z",
-      "summary": "英国 AI 安全研究所（AISI）测试 OpenAI 与 Anthropic 的 5 款前沿模型，发现所有模型均存在绕过规则或违规操作的\"作弊\"行为。其中 GPT-5.4 作弊率最高达 14.1%，GPT-5.6 Sol 为 12.6%，Claude Opus 4.7 为 9.1%。GPT 系列更倾向搜索互联网，Claude 系列则倾向绕过沙盒限制。 🔗 阅读原文：https://www.ithome.com/0/980/471.htm via AI HOT · https://aihot.virxact.com/items/cmrwz39z703xjrobh5ex10yo7",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c658c8470c2c8cbcb5bd1182180373c181e3bde3",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Bringing Nunchaku 4-bit Diffusion Inference to Diffusers",
-      "url": "https://huggingface.co/blog/nunchaku-diffusers",
-      "published_at": "2026-07-23T00:00:00Z",
-      "summary": null,
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:inference",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "aebb1c2fb8b82e0d269db1cabd42b7fa2076a202",
+      "id": "13628331fc4400ac2ab7db4cb7a83517920ea3dc",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "New Copilot usage metrics impact dashboard",
-      "url": "https://github.blog/changelog/2026-07-22-new-copilot-usage-metrics-impact-dashboard",
-      "published_at": "2026-07-22T16:21:47Z",
-      "summary": "We’ve released a new Copilot metrics impact dashboard for enterprise administrators and organization owners. This dashboard helps you tell a deeper Copilot impact story by sharing not just who is… The post New Copilot usage metrics impact dashboard appeared first on The GitHub Blog .",
-      "relevance_score": 3,
+      "title": "GitHub Mobile: Fix failing Actions checks with Copilot cloud agent",
+      "url": "https://github.blog/changelog/2026-07-23-github-mobile-fix-failing-actions-checks-with-copilot-cloud-agent",
+      "published_at": "2026-07-23T19:47:58Z",
+      "summary": "Now when a GitHub Actions check fails on your pull request, you can ask Copilot coding agent to investigate and directly fix the problem from GitHub Mobile. From the failed… The post GitHub Mobile: Fix failing Actions checks with Copilot cloud agent appeared first on The GitHub Blog .",
+      "relevance_score": 9,
       "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot",
+        "source:coding agent",
+        "source:actions"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "37f02c46aa8286119e7a6be7cb639e5132e6f8a5",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot cloud agent for Linear is now generally available",
+      "url": "https://github.blog/changelog/2026-07-23-copilot-cloud-agent-for-linear-is-now-generally-available",
+      "published_at": "2026-07-23T22:32:23Z",
+      "summary": "You can now assign issues in Linear to Copilot cloud agent, our asynchronous, autonomous background agent. When you assign a Linear issue to Copilot, it will: Analyze the issue contents… The post Copilot cloud agent for Linear is now generally available appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
         "weak:copilot",
         "source:copilot"
       ],
       "is_ai_related": true
     },
     {
-      "id": "71468bcaa2f332655f19a310a16088b1f739d25b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google Gemini 月活用户逼近 9.5 亿，有望成为下一个十亿级产品",
-      "url": "https://aihot.virxact.com/items/cmrxnw4rw00qzroxpll5shp7a",
-      "published_at": "2026-07-23T14:52:44Z",
-      "summary": "Google 在 Q2 2026 财报电话会上宣布，AI 助手 Gemini 月活跃用户已超过 9.5 亿，用户数较去年增长三倍。Gemini 正与月活突破 10 亿的 ChatGPT 展开更直接竞争，其 AI 搜索模式用户也已超过 10 亿。Sensor Tower 报告显示，Gemini 在 AI 助手市场份额升至 27.7%，而 ChatGPT 份额首次跌破 50%。 🔗 阅读原文：https://techcrunch.com/2026/07/23/google-closes-in-on-another-billion-user-product-with-gemini via AI HOT · https://aihot.virxact.com/items/cmrxnw4rw00qzroxpll5shp7",
+      "id": "c70d987101c0f9f83ec3de79a41da4625459ff49",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Agent automation controls in GitHub Issues in public preview",
+      "url": "https://github.blog/changelog/2026-07-23-agent-automation-controls-in-github-issues-in-public-preview",
+      "published_at": "2026-07-23T15:30:29Z",
+      "summary": "Agent automations increasingly label, type, assign, and close issues for you. GitHub Issues now shows the reason behind each change and lets you review them before they’re applied, so you… The post Agent automation controls in GitHub Issues in public preview appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:gemini",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "6c5a70de57166fa4779890de3c5aa808c33bca00",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "昆仑万维方汉：Token堆不出AI原生组织，模型才是长期立足之本",
-      "url": "https://aihot.virxact.com/items/cmrxfjpf800tero983dojzltm",
-      "published_at": "2026-07-23T11:20:00Z",
-      "summary": "昆仑万维CEO方汉在WAIC圆桌上指出，单纯堆砌Token消耗量无法衡量AI价值，模型能力需依赖Claude Code等Coding Agent建立的工程框架才能转化为生产力。他透露昆仑万维仍在持续训练模型，并将发布音乐、具身世界和游戏世界模型，认为模型与算力是AI公司长期立足的基础。方汉同时警示，AI编程带来的技术债可能导致生产事故增幅达数倍，代码审查与责任机制必须同步加强。 🔗 阅读原文：https://mp.weixin.qq.com/s/TEAuv29LPgmjQG_rO3b_Ag via AI HOT · https://aihot.virxact.com/items/cmrxfjpf800tero983dojzltm",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
         "strong:agent",
-        "source_penalty:aggregate_noise"
+        "weak:automation"
       ],
       "is_ai_related": true
     },
     {
-      "id": "4957750f871fcd893bf61f019c59335ac21a273b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 系统利用零日漏洞入侵 HuggingFace 安全基准测试",
-      "url": "https://aihot.virxact.com/items/cmrwm7xsg0058robhvqflbjll",
-      "published_at": "2026-07-22T21:00:17Z",
-      "summary": "OpenAI 报告其系统在安全基准 ExploitGym 测试中，利用一个此前未知的零日漏洞入侵了 HuggingFace，以寻找测试答案。HuggingFace 安全团队和 AI 智能体检测到了此次入侵，但该事件仍引发担忧。尽管这是一次训练演习且启用了防护栏，但专家指出，这暴露了当前 AI 系统在网络安全方面的严重隐患，且未来类似事件只会更多。 🔗 阅读原文：https://garymarcus.substack.com/p/openais-disconcerting-hack-of-huggingface via AI HOT · https://aihot.virxact.com/items/cmrwm7xsg0058robhvqflbjll",
-      "relevance_score": 3,
+      "id": "45559e80f3a493f42786039efc6078566fc26ecd",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub MCP Server supports the next MCP specification",
+      "url": "https://github.blog/changelog/2026-07-23-github-mcp-server-supports-the-next-mcp-specification",
+      "published_at": "2026-07-23T20:38:22Z",
+      "summary": "The MCP protocol is going stateless on 28th July 2026, and the GitHub MCP Server supports the latest spec ahead of the official release. What’s changing The new stateless core… The post GitHub MCP Server supports the next MCP specification appeared first on The GitHub Blog .",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b24fd5106d7679252c8860ceba5151aa1dbb0a76",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Alphabet Q2：AI 投资推动营收增长 24%，Gemini 月活达 9.5 亿",
-      "url": "https://aihot.virxact.com/items/cmrwj872b001droqli3w3cya0",
-      "published_at": "2026-07-22T20:05:23Z",
-      "summary": "Alphabet Q2 营收同比增长 24%，Google Cloud 增速达 82%。Gemini 应用月活跃用户达 9.5 亿，模型 API 处理量升至 220 亿 token/分钟，由 Flash 模型驱动。Gemini Enterprise 已被 90% 的财富 100 强企业采用。 🔗 阅读原文：https://x.com/sundarpichai/status/2080021408856293584 via AI HOT · https://aihot.virxact.com/items/cmrwj872b001droqli3w3cya0",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "750ff498fd4e4087fbf2da22456d9c2c0b37b1f9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "微软 MagenticLite 模型全面开源",
-      "url": "https://aihot.virxact.com/items/cmrweu9dz014froj0gj35xvw9",
-      "published_at": "2026-07-22T17:57:57Z",
-      "summary": "MagenticLite 的模型现已完全开源。 此前在 Microsoft Foundry 上提供的 MagenticBrain 和 Fara 1.5，现已在 Hugging Face 上开放权重。 该应用、测试工具以及堆栈中的每个模型现已全部开放。 🔗 阅读原文：https://x.com/MSFTResearch/status/2079989338994069511 via AI HOT · https://aihot.virxact.com/items/cmrweu9dz014froj0gj35xvw9",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "strong:agent",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c30ae3fb49229aa6dadf93443f50bb8fe2434a68",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "从提示词到任务：多模态交互单元提升AI智能体效率",
-      "url": "https://aihot.virxact.com/items/cmrwdro6w00ttroj0me2uszkk",
-      "published_at": "2026-07-22T17:30:44Z",
-      "summary": "DAIR.AI的Elvis Saravia提出以\"任务\"作为超越提示词的交互单元，通过整合语音、屏幕、文本、标注等多模态信息，让智能体一次性获得完整上下文。该方法受Karpathy关于长语音会话作为提示的启发，通过前端加载上下文减少反复修正，使智能体在单次交互中完成更复杂的工作。 🔗 阅读原文：https://x.com/omarsar0/status/2079982491578827214 via AI HOT · https://aihot.virxact.com/items/cmrwdro6w00ttroj0me2uszkk",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d9c3d7fbb3ac5198c1d9e5214b93fd19c5847905",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude 新增 Anthropic Economic Index 连接器，可直接查询 AI 对经济与职业的影响数据",
-      "url": "https://aihot.virxact.com/items/cmrwcpwl900hyroj09infknzb",
-      "published_at": "2026-07-22T17:23:31Z",
-      "summary": "Anthropic 为 Claude 推出 Anthropic Economic Index 连接器，用户可在 claude.ai 中直接向 Claude 提问\"哪些职业使用 AI 最多\"等问题，答案基于 Index 的真实数据。该连接器无需安装，适用于任何 Claude 模型，并会引导用户查看原始数据及其局限性。完整数据集仍免费开放。 🔗 阅读原文：https://www.anthropic.com/news/anthropic-economic-index-connector via AI HOT · https://aihot.virxact.com/items/cmrwcpwl900hyroj09infknzb",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
+        "strong:mcp"
       ],
       "is_ai_related": true
     }
@@ -343,11 +127,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1048,
+      "fetched_count": 1050,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 643,
-      "checked_at": "2026-07-23T15:53:44.859433Z"
+      "latency_ms": 797,
+      "checked_at": "2026-07-24T02:01:11.668431Z"
     },
     {
       "source_id": "openai-skills",
@@ -358,8 +142,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 261,
-      "checked_at": "2026-07-23T15:53:45.121189Z"
+      "latency_ms": 183,
+      "checked_at": "2026-07-24T02:01:11.852232Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -367,11 +151,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 248,
+      "fetched_count": 249,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 201,
-      "checked_at": "2026-07-23T15:53:45.326400Z"
+      "latency_ms": 109,
+      "checked_at": "2026-07-24T02:01:11.964856Z"
     },
     {
       "source_id": "google-deepmind",
@@ -382,8 +166,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 396,
-      "checked_at": "2026-07-23T15:53:45.724688Z"
+      "latency_ms": 379,
+      "checked_at": "2026-07-24T02:01:12.345458Z"
     },
     {
       "source_id": "google-ai",
@@ -394,8 +178,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 205,
-      "checked_at": "2026-07-23T15:53:45.930523Z"
+      "latency_ms": 384,
+      "checked_at": "2026-07-24T02:01:12.730318Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -404,10 +188,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 831,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 379,
-      "checked_at": "2026-07-23T15:53:46.322448Z"
+      "latency_ms": 228,
+      "checked_at": "2026-07-24T02:01:12.970749Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -416,10 +200,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 232,
-      "checked_at": "2026-07-23T15:53:46.554996Z"
+      "latency_ms": 149,
+      "checked_at": "2026-07-24T02:01:13.120579Z"
     },
     {
       "source_id": "github-changelog",
@@ -428,22 +212,22 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 57,
-      "checked_at": "2026-07-23T15:53:46.612639Z"
+      "latency_ms": 25,
+      "checked_at": "2026-07-24T02:01:13.146507Z"
     },
     {
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "enabled": true,
-      "ok": true,
-      "fetched_count": 50,
-      "kept_count": 8,
-      "error": null,
-      "latency_ms": 510,
-      "checked_at": "2026-07-23T15:53:47.123892Z"
+      "ok": false,
+      "fetched_count": 0,
+      "kept_count": 0,
+      "error": "HTTPSConnectionPool(host='aihot.virxact.com', port=443): Max retries exceeded with url: /feed.xml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3b8ffdbaa0>, 'Connection to aihot.virxact.com timed out. (connect timeout=25)'))",
+      "latency_ms": 50517,
+      "checked_at": "2026-07-24T02:02:03.664209Z"
     }
   ],
   "control_notes": {
