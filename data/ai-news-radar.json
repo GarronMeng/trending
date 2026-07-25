@@ -1,83 +1,71 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-24T15:23:54.490755Z",
+  "generated_at": "2026-07-25T02:00:27.243448Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 6,
   "groups": {
     "developer": {
       "group": "developer",
-      "count": 4,
+      "count": 1,
       "top_sources": [
         [
           "GitHub Changelog",
-          4
+          1
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          4
+          2
         ],
         [
-          "agent",
-          3
-        ],
-        [
-          "coding agent",
+          "anthropic",
           1
         ],
         [
-          "actions",
+          "claude",
           1
         ],
         [
-          "automation",
-          1
-        ],
-        [
-          "mcp",
+          "tool",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          6
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          5
         ],
         [
-          "openai",
-          4
+          "anthropic",
+          3
         ],
         [
-          "chatgpt",
-          4
+          "claude",
+          3
         ],
         [
-          "智能体",
-          2
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "codex",
+          "评测",
           1
         ],
         [
-          "agents",
+          "openai",
+          1
+        ],
+        [
+          "agent",
           1
         ],
         [
@@ -89,7 +77,7 @@
           1
         ],
         [
-          "claude",
+          "智能体",
           1
         ]
       ]
@@ -97,102 +85,81 @@
   },
   "items": [
     {
-      "id": "13628331fc4400ac2ab7db4cb7a83517920ea3dc",
+      "id": "3e29c27e3fe29fa66090d8f8c858c523a3a32fef",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "GitHub Mobile: Fix failing Actions checks with Copilot cloud agent",
-      "url": "https://github.blog/changelog/2026-07-23-github-mobile-fix-failing-actions-checks-with-copilot-cloud-agent",
-      "published_at": "2026-07-23T19:47:58Z",
-      "summary": "Now when a GitHub Actions check fails on your pull request, you can ask Copilot coding agent to investigate and directly fix the problem from GitHub Mobile. From the failed… The post GitHub Mobile: Fix failing Actions checks with Copilot cloud agent appeared first on The GitHub Blog .",
-      "relevance_score": 9,
+      "title": "Claude Opus 5 is now available in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-07-24-claude-opus-5-is-now-available-in-github-copilot",
+      "published_at": "2026-07-24T16:40:04Z",
+      "summary": "Claude Opus 5, Anthropic’s newest Opus model, is now available in GitHub Copilot. It is designed for complex, long-running coding tasks that require careful reasoning, effective tool use, and reliable… The post Claude Opus 5 is now available in GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 8,
       "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot",
-        "source:coding agent",
-        "source:actions"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "389c0adb069e1b42478e0cd127a37ec800b690e2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "ChatGPT 桌面版上线语音控制多智能体",
-      "url": "https://aihot.virxact.com/items/cmrxxi2qg03kcroxpcugdaldy",
-      "published_at": "2026-07-23T19:43:04Z",
-      "summary": "ChatGPT 语音功能现已登陆桌面应用。 只需使用语音，即可控制你的电脑，并指挥在 ChatGPT Work 或 Codex 中运行的多个智能体。 该功能由 GPT-Live 驱动，因此它能够同时在该应用中说话、聆听并协调工作。 今日起，面向 macOS 和 Windows 平台的 Plus、Pro、Business、Edu 及 Enterprise 计划用户全球推送。 🔗 阅读原文：https://x.com/OpenAI/status/2080378182469857576 via AI HOT · https://aihot.virxact.com/items/cmrxxi2qg03kcroxpcugdaldy",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:codex",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "3add83e17b0cc41a27974cd49154357d294270ad",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI Workspace Agents 漏洞：一个 ChatGPT 链接即可创建恶意 AI 智能体",
-      "url": "https://aihot.virxact.com/items/cmrxs4yyw01xkroxpom7zfjvc",
-      "published_at": "2026-07-23T17:01:30Z",
-      "summary": "安全公司 Zenity Labs 发现 OpenAI Workspace Agents 存在\"AgentForger\"漏洞，攻击者发送一个含恶意提示词的 ChatGPT 链接，即可在受害者账户下创建自主 AI 智能体。该智能体继承受害者身份和已授权应用权限，绕过安全审批，并设置每五分钟运行一次的定时任务，从攻击者邮箱获取指令执行。OpenAI 在四天内修复了该漏洞。 🔗 阅读原文：https://the-decoder.com/one-tampered-chatgpt-link-could-spawn-a-rogue-ai-agent-that-took-orders-from-an-attacker-every-five-minutes via AI HOT · https://aihot.virxact.c",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:agent",
-        "strong:agents",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "37f02c46aa8286119e7a6be7cb639e5132e6f8a5",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot cloud agent for Linear is now generally available",
-      "url": "https://github.blog/changelog/2026-07-23-copilot-cloud-agent-for-linear-is-now-generally-available",
-      "published_at": "2026-07-23T22:32:23Z",
-      "summary": "You can now assign issues in Linear to Copilot cloud agent, our asynchronous, autonomous background agent. When you assign a Linear issue to Copilot, it will: Analyze the issue contents… The post Copilot cloud agent for Linear is now generally available appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
+        "strong:anthropic",
+        "strong:claude",
+        "weak:tool",
         "weak:copilot",
         "source:copilot"
       ],
       "is_ai_related": true
     },
     {
-      "id": "c70d987101c0f9f83ec3de79a41da4625459ff49",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Agent automation controls in GitHub Issues in public preview",
-      "url": "https://github.blog/changelog/2026-07-23-agent-automation-controls-in-github-issues-in-public-preview",
-      "published_at": "2026-07-23T15:30:29Z",
-      "summary": "Agent automations increasingly label, type, assign, and close issues for you. GitHub Issues now shows the reason behind each change and lets you review them before they’re applied, so you… The post Agent automation controls in GitHub Issues in public preview appeared first on The GitHub Blog .",
+      "id": "3032486a87437232143a6125907552c0d7cd69dd",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude 5 代模型上下文工程新规则：Claude Code 系统提示词精简超 80%",
+      "url": "https://aihot.virxact.com/items/cmrz7ov4300lfrox82ri8kia1",
+      "published_at": "2026-07-24T17:25:50Z",
+      "summary": "Anthropic 为 Claude Opus 5 和 Claude Fable 5 等新一代模型删除了 Claude Code 超过 80% 的系统提示词，且编码评测无显著损失。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmrz7ov4300lfrox82ri8kia1",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "666d54d9f396a81c2c7fb06070202cd6a2991bff",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "英伟达、微软和Meta联合警告：应避免对开放权重模型过度监管",
+      "url": "https://aihot.virxact.com/items/cmrzbx19q0032roqz8nwff6am",
+      "published_at": "2026-07-24T19:07:52Z",
+      "summary": "英伟达、微软和Meta联合签署公开信，警告对开放权重AI模型的过度监管将削弱美国在AI领域的竞争力。信中指出，开放权重模型能促进创新、降低准入门槛，并支持学术研究。OpenAI和Anthropic未签署该信函。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmrzbx19q0032roqz8nwff6am",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:agent",
-        "weak:automation"
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c34bef666ab744c321134cf64b185e06997da1ca",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 发布 Claude Opus 5",
+      "url": "https://aihot.virxact.com/items/cmrz7mrck00gprox8j0j9qfst",
+      "published_at": "2026-07-24T17:24:25Z",
+      "summary": "Anthropic 发布 Claude Opus 5，其智能水平接近 Claude Fable 5，但价格减半。该模型在 Frontier-Bench v0.1 上性能超过 Opus 4.8 两倍以上，在 ARC-AGI 3 上得分是次优模型的三倍。Opus 5 即日起成为 Claude Max 的默认模型和 Claude Pro 的最强模型。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmrz7mrck00gprox8j0j9qfst",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -206,7 +173,7 @@
       "title": "Runway Agent 推出自然语言工作流功能",
       "url": "https://aihot.virxact.com/items/cmrz07a8z00ksroey0zfjw3iq",
       "published_at": "2026-07-24T13:40:08Z",
-      "summary": "在 Runway Agent 中引入工作流。现在你可以通过自然语言构建、运行或编辑基于节点的工作流。工作流可大规模解锁高质量输出。 立即尝试，点击下方链接调用 / Workflow 技能。 🔗 阅读原文：https://x.com/runwayml/status/2080649234672439389 via AI HOT · https://aihot.virxact.com/items/cmrz07a8z00ksroey0zfjw3iq",
+      "summary": "在 Runway Agent 中引入工作流。现在你可以通过自然语言构建、运行或编辑基于节点的工作流。工作流可大规模解锁高质量输出。 立即尝试，点击下方链接调用 / Workflow 技能。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmrz07a8z00ksroey0zfjw3iq",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:agent",
@@ -226,66 +193,11 @@
       "title": "Claude-thermos：保持 Claude 会话缓存热度，避免重新编码费用",
       "url": "https://aihot.virxact.com/items/cmryrjtlb04ehrolgi1zd6eqv",
       "published_at": "2026-07-24T09:47:29Z",
-      "summary": "Claude-thermos 通过本地反向代理监控 Claude Code 会话，在主智能体因等待子智能体而空闲超过 5 分钟时，自动发送预热请求刷新提示缓存。实测约 185 次本地会话中，缓存过期导致的重新编码占账单约 22%。工具以 uvx 运行，支持自定义空闲阈值和预热间隔。 🔗 阅读原文：https://github.com/izeigerman/claude-thermos via AI HOT · https://aihot.virxact.com/items/cmryrjtlb04ehrolgi1zd6eqv",
+      "summary": "Claude-thermos 通过本地反向代理监控 Claude Code 会话，在主智能体因等待子智能体而空闲超过 5 分钟时，自动发送预热请求刷新提示缓存。实测约 185 次本地会话中，缓存过期导致的重新编码占账单约 22%。工具以 uvx 运行，支持自定义空闲阈值和预热间隔。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmryrjtlb04ehrolgi1zd6eqv",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:claude",
         "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "9d15f733f0f58ff60efc80f53678bc133e5bd408",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "佛州男子因相信 ChatGPT 拒绝就医而险些丧命，起诉 OpenAI 及 CEO 奥尔特曼",
-      "url": "https://aihot.virxact.com/items/cmry5ypd2008croeuadelaot9",
-      "published_at": "2026-07-23T23:30:43Z",
-      "summary": "美国佛罗里达州 55 岁男子 Scott Winters 起诉 OpenAI，称 ChatGPT-4o 多次建议其无需就医，导致其因双肺血栓引发大面积肺栓塞，一度濒临死亡。诉状指控 OpenAI 存在疏忽和\"无证行医\"行为，要求经济赔偿并暂停 ChatGPT Health 服务。OpenAI 回应称 ChatGPT 不是医生，不应替代专业医疗护理。 🔗 阅读原文：https://www.ithome.com/0/980/890.htm via AI HOT · https://aihot.virxact.com/items/cmry5ypd2008croeuadelaot9",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "45559e80f3a493f42786039efc6078566fc26ecd",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub MCP Server supports the next MCP specification",
-      "url": "https://github.blog/changelog/2026-07-23-github-mcp-server-supports-the-next-mcp-specification",
-      "published_at": "2026-07-23T20:38:22Z",
-      "summary": "The MCP protocol is going stateless on 28th July 2026, and the GitHub MCP Server supports the latest spec ahead of the official release. What’s changing The new stateless core… The post GitHub MCP Server supports the next MCP specification appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:mcp"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1f8b6f6de8540eed4492a04b790e3cd02cf0e599",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "ChatGPT 向美国用户推出健康功能",
-      "url": "https://aihot.virxact.com/items/cmrxubdvx02mjroxp2kzix1mf",
-      "published_at": "2026-07-23T17:55:42Z",
-      "summary": "OpenAI 宣布向美国用户推出 ChatGPT 健康功能，支持安全连接 Apple Health 及受支持的医疗记录。每周有 3 亿用户使用 ChatGPT 进行健康咨询，新功能可让 ChatGPT 理解个人健康上下文，追踪变化并提供更个性化的帮助。 🔗 阅读原文：https://x.com/gdb/status/2080351159638704615 via AI HOT · https://aihot.virxact.com/items/cmrxubdvx02mjroxp2kzix1mf",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -301,8 +213,8 @@
       "fetched_count": 1050,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 684,
-      "checked_at": "2026-07-24T15:23:52.836375Z"
+      "latency_ms": 458,
+      "checked_at": "2026-07-25T02:00:24.545281Z"
     },
     {
       "source_id": "openai-skills",
@@ -313,8 +225,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 411,
-      "checked_at": "2026-07-24T15:23:53.247988Z"
+      "latency_ms": 321,
+      "checked_at": "2026-07-25T02:00:24.866642Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -322,11 +234,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 249,
+      "fetched_count": 250,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 95,
-      "checked_at": "2026-07-24T15:23:53.345913Z"
+      "latency_ms": 116,
+      "checked_at": "2026-07-25T02:00:24.987455Z"
     },
     {
       "source_id": "google-deepmind",
@@ -337,8 +249,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 298,
-      "checked_at": "2026-07-24T15:23:53.645468Z"
+      "latency_ms": 421,
+      "checked_at": "2026-07-25T02:00:25.410951Z"
     },
     {
       "source_id": "google-ai",
@@ -349,8 +261,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 159,
-      "checked_at": "2026-07-24T15:23:53.805346Z"
+      "latency_ms": 312,
+      "checked_at": "2026-07-25T02:00:25.723432Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -361,8 +273,8 @@
       "fetched_count": 831,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 226,
-      "checked_at": "2026-07-24T15:23:54.041154Z"
+      "latency_ms": 331,
+      "checked_at": "2026-07-25T02:00:26.068519Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -373,8 +285,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 118,
-      "checked_at": "2026-07-24T15:23:54.159679Z"
+      "latency_ms": 137,
+      "checked_at": "2026-07-25T02:00:26.205950Z"
     },
     {
       "source_id": "github-changelog",
@@ -383,10 +295,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-07-24T15:23:54.184772Z"
+      "latency_ms": 33,
+      "checked_at": "2026-07-25T02:00:26.239953Z"
     },
     {
       "source_id": "aihot",
@@ -395,10 +307,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 297,
-      "checked_at": "2026-07-24T15:23:54.483504Z"
+      "latency_ms": 993,
+      "checked_at": "2026-07-25T02:00:27.234365Z"
     }
   ],
   "control_notes": {
