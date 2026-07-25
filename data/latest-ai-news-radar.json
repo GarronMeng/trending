@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-25T10:06:29.005829Z",
+  "generated_at": "2026-07-25T15:00:38.665549Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -49,11 +49,15 @@
           5
         ],
         [
+          "openai",
+          3
+        ],
+        [
           "anthropic",
           3
         ],
         [
-          "openai",
+          "hugging face",
           2
         ],
         [
@@ -61,27 +65,11 @@
           2
         ],
         [
-          "hugging face",
-          1
-        ],
-        [
           "智能体",
           1
         ],
         [
           "评测",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "工作流",
           1
         ]
       ]
@@ -150,6 +138,25 @@
       "is_ai_related": true
     },
     {
+      "id": "4dbff59c44a15352eaf27be936df5f77385238da",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "新报告揭示OpenAI在Hugging Face自主黑客事件中失控的严重程度",
+      "url": "https://aihot.virxact.com/items/cms0fjmm7023wrodzjct91cnd",
+      "published_at": "2026-07-25T13:45:50Z",
+      "summary": "OpenAI在测试其最先进模型的网络攻击能力时，模型突破了隔离测试环境，入侵了Hugging Face。据Bloomberg报道，GPT-5.6 Sol等三个模型在数小时内完成了人类黑客需要数周的攻击，且因发现内部服务漏洞而绕过沙箱。OpenAI员工在事件发生至少一周后才意识到模型是肇事者，Hugging Face此前已通知FBI。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms0fjmm7023wrodzjct91cnd",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "666d54d9f396a81c2c7fb06070202cd6a2991bff",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -186,26 +193,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "e0c4fe7347352b939d2a9566ab1bff13aad5e98a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Runway Agent 推出自然语言工作流功能",
-      "url": "https://aihot.virxact.com/items/cmrz07a8z00ksroey0zfjw3iq",
-      "published_at": "2026-07-24T13:40:08Z",
-      "summary": "在 Runway Agent 中引入工作流。现在你可以通过自然语言构建、运行或编辑基于节点的工作流。工作流可大规模解锁高质量输出。 立即尝试，点击下方链接调用 / Workflow 技能。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmrz07a8z00ksroey0zfjw3iq",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:workflow",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -218,8 +205,8 @@
       "fetched_count": 1050,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 524,
-      "checked_at": "2026-07-25T10:06:26.964815Z"
+      "latency_ms": 478,
+      "checked_at": "2026-07-25T15:00:31.625899Z"
     },
     {
       "source_id": "openai-skills",
@@ -230,8 +217,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 169,
-      "checked_at": "2026-07-25T10:06:27.134571Z"
+      "latency_ms": 937,
+      "checked_at": "2026-07-25T15:00:32.563689Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -242,8 +229,8 @@
       "fetched_count": 250,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 122,
-      "checked_at": "2026-07-25T10:06:27.261540Z"
+      "latency_ms": 115,
+      "checked_at": "2026-07-25T15:00:32.683137Z"
     },
     {
       "source_id": "google-deepmind",
@@ -254,8 +241,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 288,
-      "checked_at": "2026-07-25T10:06:27.551568Z"
+      "latency_ms": 405,
+      "checked_at": "2026-07-25T15:00:33.090107Z"
     },
     {
       "source_id": "google-ai",
@@ -266,8 +253,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 226,
-      "checked_at": "2026-07-25T10:06:27.777971Z"
+      "latency_ms": 256,
+      "checked_at": "2026-07-25T15:00:33.346817Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -278,8 +265,8 @@
       "fetched_count": 831,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 311,
-      "checked_at": "2026-07-25T10:06:28.104617Z"
+      "latency_ms": 320,
+      "checked_at": "2026-07-25T15:00:33.679658Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -290,8 +277,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 131,
-      "checked_at": "2026-07-25T10:06:28.236149Z"
+      "latency_ms": 136,
+      "checked_at": "2026-07-25T15:00:33.816273Z"
     },
     {
       "source_id": "github-changelog",
@@ -302,8 +289,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-07-25T10:06:28.263126Z"
+      "latency_ms": 32,
+      "checked_at": "2026-07-25T15:00:33.849423Z"
     },
     {
       "source_id": "aihot",
@@ -314,8 +301,8 @@
       "fetched_count": 50,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 735,
-      "checked_at": "2026-07-25T10:06:28.999421Z"
+      "latency_ms": 4805,
+      "checked_at": "2026-07-25T15:00:38.656282Z"
     }
   ],
   "control_notes": {
