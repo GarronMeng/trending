@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-25T08:29:33.548628Z",
+  "generated_at": "2026-07-25T10:06:29.005829Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 6,
   "groups": {
     "developer": {
       "group": "developer",
@@ -36,24 +36,20 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          6
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          5
         ],
         [
           "anthropic",
-          3
-        ],
-        [
-          "claude",
           3
         ],
         [
@@ -61,11 +57,15 @@
           2
         ],
         [
-          "智能体",
+          "claude",
           2
         ],
         [
           "hugging face",
+          1
+        ],
+        [
+          "智能体",
           1
         ],
         [
@@ -206,25 +206,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "5450a7f8862ba9851f5694f3842c097ff27f570b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude-thermos：保持 Claude 会话缓存热度，避免重新编码费用",
-      "url": "https://aihot.virxact.com/items/cmryrjtlb04ehrolgi1zd6eqv",
-      "published_at": "2026-07-24T09:47:29Z",
-      "summary": "Claude-thermos 通过本地反向代理监控 Claude Code 会话，在主智能体因等待子智能体而空闲超过 5 分钟时，自动发送预热请求刷新提示缓存。实测约 185 次本地会话中，缓存过期导致的重新编码占账单约 22%。工具以 uvx 运行，支持自定义空闲阈值和预热间隔。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmryrjtlb04ehrolgi1zd6eqv",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -237,8 +218,8 @@
       "fetched_count": 1050,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 489,
-      "checked_at": "2026-07-25T08:29:27.768673Z"
+      "latency_ms": 524,
+      "checked_at": "2026-07-25T10:06:26.964815Z"
     },
     {
       "source_id": "openai-skills",
@@ -249,8 +230,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 215,
-      "checked_at": "2026-07-25T08:29:27.984224Z"
+      "latency_ms": 169,
+      "checked_at": "2026-07-25T10:06:27.134571Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -261,8 +242,8 @@
       "fetched_count": 250,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 135,
-      "checked_at": "2026-07-25T08:29:28.123490Z"
+      "latency_ms": 122,
+      "checked_at": "2026-07-25T10:06:27.261540Z"
     },
     {
       "source_id": "google-deepmind",
@@ -273,8 +254,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 287,
-      "checked_at": "2026-07-25T08:29:28.412419Z"
+      "latency_ms": 288,
+      "checked_at": "2026-07-25T10:06:27.551568Z"
     },
     {
       "source_id": "google-ai",
@@ -285,8 +266,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 270,
-      "checked_at": "2026-07-25T08:29:28.682811Z"
+      "latency_ms": 226,
+      "checked_at": "2026-07-25T10:06:27.777971Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -297,8 +278,8 @@
       "fetched_count": 831,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 334,
-      "checked_at": "2026-07-25T08:29:29.029954Z"
+      "latency_ms": 311,
+      "checked_at": "2026-07-25T10:06:28.104617Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -309,8 +290,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 160,
-      "checked_at": "2026-07-25T08:29:29.190498Z"
+      "latency_ms": 131,
+      "checked_at": "2026-07-25T10:06:28.236149Z"
     },
     {
       "source_id": "github-changelog",
@@ -322,7 +303,7 @@
       "kept_count": 1,
       "error": null,
       "latency_ms": 26,
-      "checked_at": "2026-07-25T08:29:29.217054Z"
+      "checked_at": "2026-07-25T10:06:28.263126Z"
     },
     {
       "source_id": "aihot",
@@ -331,10 +312,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 4324,
-      "checked_at": "2026-07-25T08:29:33.542385Z"
+      "latency_ms": 735,
+      "checked_at": "2026-07-25T10:06:28.999421Z"
     }
   ],
   "control_notes": {
