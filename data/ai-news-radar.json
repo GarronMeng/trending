@@ -1,21 +1,25 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-26T02:05:08.200651Z",
+  "generated_at": "2026-07-26T06:24:48.006899Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 1,
+  "item_count": 2,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "AI Hot",
-          1
+          2
         ]
       ],
       "top_keywords": [
+        [
+          "aggregate_noise",
+          2
+        ],
         [
           "openai",
           1
@@ -25,7 +29,11 @@
           1
         ],
         [
-          "aggregate_noise",
+          "claude",
+          1
+        ],
+        [
+          "开发者",
           1
         ]
       ]
@@ -50,6 +58,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "d13f4097fe1fc0c63ff86a3b0d34f5e29cdcd926",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Opus 5 系统提示词被完整泄露，共 135027 字符、约 3.4 万 token",
+      "url": "https://aihot.virxact.com/items/cms1dpz52040tro0w3c4a9c8p",
+      "published_at": "2026-07-26T05:33:44Z",
+      "summary": "开发者 Eversmile1 在 GitHub 上公开了 Claude Opus 5 的完整系统提示词，包含 30 个工具的 JSON schema、严格的版权合规规则（单次引用不超过 15 词）和跨会话记忆系统。泄露后 24 小时内，已有开发者用 Opus 5 成功生成 3D 射击游戏和《火箭联盟》克隆版等复杂 Demo。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms1dpz52040tro0w3c4a9c8p",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:claude",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -62,8 +89,8 @@
       "fetched_count": 1050,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 484,
-      "checked_at": "2026-07-26T02:05:05.954083Z"
+      "latency_ms": 516,
+      "checked_at": "2026-07-26T06:24:41.507951Z"
     },
     {
       "source_id": "openai-skills",
@@ -74,8 +101,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 246,
-      "checked_at": "2026-07-26T02:05:06.200676Z"
+      "latency_ms": 238,
+      "checked_at": "2026-07-26T06:24:41.747033Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -86,8 +113,8 @@
       "fetched_count": 250,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 115,
-      "checked_at": "2026-07-26T02:05:06.319716Z"
+      "latency_ms": 120,
+      "checked_at": "2026-07-26T06:24:41.871615Z"
     },
     {
       "source_id": "google-deepmind",
@@ -98,8 +125,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 303,
-      "checked_at": "2026-07-26T02:05:06.624550Z"
+      "latency_ms": 326,
+      "checked_at": "2026-07-26T06:24:42.200253Z"
     },
     {
       "source_id": "google-ai",
@@ -110,8 +137,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 162,
-      "checked_at": "2026-07-26T02:05:06.787155Z"
+      "latency_ms": 205,
+      "checked_at": "2026-07-26T06:24:42.405902Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -122,8 +149,8 @@
       "fetched_count": 831,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 314,
-      "checked_at": "2026-07-26T02:05:07.114220Z"
+      "latency_ms": 307,
+      "checked_at": "2026-07-26T06:24:42.726134Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -134,8 +161,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 129,
-      "checked_at": "2026-07-26T02:05:07.243790Z"
+      "latency_ms": 161,
+      "checked_at": "2026-07-26T06:24:42.888222Z"
     },
     {
       "source_id": "github-changelog",
@@ -147,7 +174,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 26,
-      "checked_at": "2026-07-26T02:05:07.269958Z"
+      "checked_at": "2026-07-26T06:24:42.915045Z"
     },
     {
       "source_id": "aihot",
@@ -156,10 +183,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 920,
-      "checked_at": "2026-07-26T02:05:08.191539Z"
+      "latency_ms": 5084,
+      "checked_at": "2026-07-26T06:24:48.000493Z"
     }
   ],
   "control_notes": {
