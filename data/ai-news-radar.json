@@ -1,142 +1,37 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-25T15:00:38.665549Z",
+  "generated_at": "2026-07-26T02:05:08.200651Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 1,
   "groups": {
-    "developer": {
-      "group": "developer",
+    "aggregate": {
+      "group": "aggregate",
       "count": 1,
       "top_sources": [
         [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "tool",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 5,
-      "top_sources": [
-        [
           "AI Hot",
-          5
+          1
         ]
       ],
       "top_keywords": [
-        [
-          "aggregate_noise",
-          5
-        ],
         [
           "openai",
-          3
-        ],
-        [
-          "anthropic",
-          3
+          1
         ],
         [
           "hugging face",
-          2
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
-          "智能体",
           1
         ],
         [
-          "评测",
+          "aggregate_noise",
           1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "3e29c27e3fe29fa66090d8f8c858c523a3a32fef",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Claude Opus 5 is now available in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-07-24-claude-opus-5-is-now-available-in-github-copilot",
-      "published_at": "2026-07-24T16:40:04Z",
-      "summary": "Claude Opus 5, Anthropic’s newest Opus model, is now available in GitHub Copilot. It is designed for complex, long-running coding tasks that require careful reasoning, effective tool use, and reliable… The post Claude Opus 5 is now available in GitHub Copilot appeared first on The GitHub Blog .",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:tool",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "f23739462be0177d9934d5a84726ab007bb18612",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 智能体入侵 Hugging Face，消息人士称 OpenAI 至少一周都没察觉",
-      "url": "https://aihot.virxact.com/items/cmrzpp5580011ro6dkcqp7blk",
-      "published_at": "2026-07-25T01:08:45Z",
-      "summary": "OpenAI 一款由 GPT-5.6 Sol 等驱动的网络安全智能体于 7 月 11 日闯入 Hugging Face 并持续攻击至 7 月 13 日。Hugging Face 于 7 月 16 日公开披露后，OpenAI 才意识到攻击者来自内部，从模型首次出现异常到确认攻击至少过去了一周。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmrzpp5580011ro6dkcqp7blk",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:hugging face",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "3032486a87437232143a6125907552c0d7cd69dd",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude 5 代模型上下文工程新规则：Claude Code 系统提示词精简超 80%",
-      "url": "https://aihot.virxact.com/items/cmrz7ov4300lfrox82ri8kia1",
-      "published_at": "2026-07-24T17:25:50Z",
-      "summary": "Anthropic 为 Claude Opus 5 和 Claude Fable 5 等新一代模型删除了 Claude Code 超过 80% 的系统提示词，且编码评测无显著损失。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmrz7ov4300lfrox82ri8kia1",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "4dbff59c44a15352eaf27be936df5f77385238da",
       "source_id": "aihot",
@@ -155,44 +50,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "666d54d9f396a81c2c7fb06070202cd6a2991bff",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "英伟达、微软和Meta联合警告：应避免对开放权重模型过度监管",
-      "url": "https://aihot.virxact.com/items/cmrzbx19q0032roqz8nwff6am",
-      "published_at": "2026-07-24T19:07:52Z",
-      "summary": "英伟达、微软和Meta联合签署公开信，警告对开放权重AI模型的过度监管将削弱美国在AI领域的竞争力。信中指出，开放权重模型能促进创新、降低准入门槛，并支持学术研究。OpenAI和Anthropic未签署该信函。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmrzbx19q0032roqz8nwff6am",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c34bef666ab744c321134cf64b185e06997da1ca",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude Opus 5",
-      "url": "https://aihot.virxact.com/items/cmrz7mrck00gprox8j0j9qfst",
-      "published_at": "2026-07-24T17:24:25Z",
-      "summary": "Anthropic 发布 Claude Opus 5，其智能水平接近 Claude Fable 5，但价格减半。该模型在 Frontier-Bench v0.1 上性能超过 Opus 4.8 两倍以上，在 ARC-AGI 3 上得分是次优模型的三倍。Opus 5 即日起成为 Claude Max 的默认模型和 Claude Pro 的最强模型。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmrz7mrck00gprox8j0j9qfst",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -205,8 +62,8 @@
       "fetched_count": 1050,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 478,
-      "checked_at": "2026-07-25T15:00:31.625899Z"
+      "latency_ms": 484,
+      "checked_at": "2026-07-26T02:05:05.954083Z"
     },
     {
       "source_id": "openai-skills",
@@ -217,8 +74,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 937,
-      "checked_at": "2026-07-25T15:00:32.563689Z"
+      "latency_ms": 246,
+      "checked_at": "2026-07-26T02:05:06.200676Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -230,7 +87,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 115,
-      "checked_at": "2026-07-25T15:00:32.683137Z"
+      "checked_at": "2026-07-26T02:05:06.319716Z"
     },
     {
       "source_id": "google-deepmind",
@@ -241,8 +98,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 405,
-      "checked_at": "2026-07-25T15:00:33.090107Z"
+      "latency_ms": 303,
+      "checked_at": "2026-07-26T02:05:06.624550Z"
     },
     {
       "source_id": "google-ai",
@@ -253,8 +110,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 256,
-      "checked_at": "2026-07-25T15:00:33.346817Z"
+      "latency_ms": 162,
+      "checked_at": "2026-07-26T02:05:06.787155Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -265,8 +122,8 @@
       "fetched_count": 831,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 320,
-      "checked_at": "2026-07-25T15:00:33.679658Z"
+      "latency_ms": 314,
+      "checked_at": "2026-07-26T02:05:07.114220Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -277,8 +134,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 136,
-      "checked_at": "2026-07-25T15:00:33.816273Z"
+      "latency_ms": 129,
+      "checked_at": "2026-07-26T02:05:07.243790Z"
     },
     {
       "source_id": "github-changelog",
@@ -287,10 +144,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-07-25T15:00:33.849423Z"
+      "latency_ms": 26,
+      "checked_at": "2026-07-26T02:05:07.269958Z"
     },
     {
       "source_id": "aihot",
@@ -299,10 +156,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 4805,
-      "checked_at": "2026-07-25T15:00:38.656282Z"
+      "latency_ms": 920,
+      "checked_at": "2026-07-26T02:05:08.191539Z"
     }
   ],
   "control_notes": {
