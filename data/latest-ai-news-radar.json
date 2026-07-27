@@ -1,11 +1,43 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-27T10:25:59.715125Z",
+  "generated_at": "2026-07-27T11:49:17.151032Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 2,
+  "item_count": 3,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "openai",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
       "count": 2,
@@ -44,6 +76,27 @@
     }
   },
   "items": [
+    {
+      "id": "e9870d73caf2dda97183a88d242891de4b0ea741",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How AI is expanding what people do at work",
+      "url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
+      "published_at": "2026-07-27T03:30:00Z",
+      "summary": "New OpenAI research shows how AI is expanding what workers do, with ChatGPT users taking on tasks across roles and reshaping job boundaries.",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "weak:api",
+        "weak:API",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "2a6c35aee9bf68c9789598786225db459741c349",
       "source_id": "aihot",
@@ -91,11 +144,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1050,
-      "kept_count": 0,
+      "fetched_count": 1051,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 448,
-      "checked_at": "2026-07-27T10:25:57.869124Z"
+      "latency_ms": 449,
+      "checked_at": "2026-07-27T11:49:15.326166Z"
     },
     {
       "source_id": "openai-skills",
@@ -106,8 +159,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 181,
-      "checked_at": "2026-07-27T10:25:58.051229Z"
+      "latency_ms": 163,
+      "checked_at": "2026-07-27T11:49:15.489506Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -118,8 +171,8 @@
       "fetched_count": 250,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 114,
-      "checked_at": "2026-07-27T10:25:58.169659Z"
+      "latency_ms": 113,
+      "checked_at": "2026-07-27T11:49:15.606278Z"
     },
     {
       "source_id": "google-deepmind",
@@ -130,8 +183,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 264,
-      "checked_at": "2026-07-27T10:25:58.436118Z"
+      "latency_ms": 256,
+      "checked_at": "2026-07-27T11:49:15.864238Z"
     },
     {
       "source_id": "google-ai",
@@ -142,8 +195,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 332,
-      "checked_at": "2026-07-27T10:25:58.768664Z"
+      "latency_ms": 194,
+      "checked_at": "2026-07-27T11:49:16.058749Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -154,8 +207,8 @@
       "fetched_count": 831,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 295,
-      "checked_at": "2026-07-27T10:25:59.076939Z"
+      "latency_ms": 264,
+      "checked_at": "2026-07-27T11:49:16.335626Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -166,8 +219,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 170,
-      "checked_at": "2026-07-27T10:25:59.248151Z"
+      "latency_ms": 110,
+      "checked_at": "2026-07-27T11:49:16.446423Z"
     },
     {
       "source_id": "github-changelog",
@@ -178,8 +231,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-07-27T10:25:59.274981Z"
+      "latency_ms": 25,
+      "checked_at": "2026-07-27T11:49:16.471613Z"
     },
     {
       "source_id": "aihot",
@@ -190,8 +243,8 @@
       "fetched_count": 50,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 431,
-      "checked_at": "2026-07-27T10:25:59.707330Z"
+      "latency_ms": 670,
+      "checked_at": "2026-07-27T11:49:17.142686Z"
     }
   ],
   "control_notes": {
