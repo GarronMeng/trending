@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-27T02:12:42.892797Z",
+  "generated_at": "2026-07-27T06:51:58.391462Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -33,15 +33,15 @@
           1
         ],
         [
-          "chatgpt",
-          1
-        ],
-        [
           "claude",
           1
         ],
         [
-          "开发者",
+          "agent",
+          1
+        ],
+        [
+          "chatgpt",
           1
         ]
       ]
@@ -69,6 +69,25 @@
       "is_ai_related": true
     },
     {
+      "id": "5362dabddd7d31e1206a42f6882c31caf95030d2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "浪费20亿Token后，我开源了帮Agent定义目标的Leader.skill",
+      "url": "https://aihot.virxact.com/items/cms2p7s7h03dlro3fzjovkpwc",
+      "published_at": "2026-07-27T00:12:00Z",
+      "summary": "作者开源了Leader.skill，用于将模糊的人类需求转化为Agent可独立执行数小时的目标任务书。该Skill基于\"目标七问\"方法论，涵盖目的、完成态、反作弊、边界等维度，并推荐用Claude Fable 5或Kimi K3规划目标，再交由GPT-5.6 Sol或GLM-5.2等模型长程执行。项目已开源。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms2p7s7h03dlro3fzjovkpwc",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "0570003cd8fbe6a7bbb51ff771fa49e99f00622c",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -86,25 +105,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "d13f4097fe1fc0c63ff86a3b0d34f5e29cdcd926",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Opus 5 系统提示词被完整泄露，共 135027 字符、约 3.4 万 token",
-      "url": "https://aihot.virxact.com/items/cms1dpz52040tro0w3c4a9c8p",
-      "published_at": "2026-07-26T05:33:44Z",
-      "summary": "开发者 Eversmile1 在 GitHub 上公开了 Claude Opus 5 的完整系统提示词，包含 30 个工具的 JSON schema、严格的版权合规规则（单次引用不超过 15 词）和跨会话记忆系统。泄露后 24 小时内，已有开发者用 Opus 5 成功生成 3D 射击游戏和《火箭联盟》克隆版等复杂 Demo。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms1dpz52040tro0w3c4a9c8p",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:claude",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -117,8 +117,8 @@
       "fetched_count": 1050,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 396,
-      "checked_at": "2026-07-27T02:12:40.803247Z"
+      "latency_ms": 493,
+      "checked_at": "2026-07-27T06:51:56.181117Z"
     },
     {
       "source_id": "openai-skills",
@@ -129,8 +129,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 185,
-      "checked_at": "2026-07-27T02:12:40.988636Z"
+      "latency_ms": 265,
+      "checked_at": "2026-07-27T06:51:56.447065Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -141,8 +141,8 @@
       "fetched_count": 250,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 108,
-      "checked_at": "2026-07-27T02:12:41.100901Z"
+      "latency_ms": 128,
+      "checked_at": "2026-07-27T06:51:56.579870Z"
     },
     {
       "source_id": "google-deepmind",
@@ -153,8 +153,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 299,
-      "checked_at": "2026-07-27T02:12:41.402191Z"
+      "latency_ms": 407,
+      "checked_at": "2026-07-27T06:51:56.988523Z"
     },
     {
       "source_id": "google-ai",
@@ -165,8 +165,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 231,
-      "checked_at": "2026-07-27T02:12:41.634353Z"
+      "latency_ms": 289,
+      "checked_at": "2026-07-27T06:51:57.278826Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -177,8 +177,8 @@
       "fetched_count": 831,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 287,
-      "checked_at": "2026-07-27T02:12:41.933435Z"
+      "latency_ms": 372,
+      "checked_at": "2026-07-27T06:51:57.664381Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -189,8 +189,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 268,
-      "checked_at": "2026-07-27T02:12:42.202414Z"
+      "latency_ms": 243,
+      "checked_at": "2026-07-27T06:51:57.907812Z"
     },
     {
       "source_id": "github-changelog",
@@ -201,8 +201,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-07-27T02:12:42.228915Z"
+      "latency_ms": 57,
+      "checked_at": "2026-07-27T06:51:57.965196Z"
     },
     {
       "source_id": "aihot",
@@ -213,8 +213,8 @@
       "fetched_count": 50,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 655,
-      "checked_at": "2026-07-27T02:12:42.885355Z"
+      "latency_ms": 415,
+      "checked_at": "2026-07-27T06:51:58.381838Z"
     }
   ],
   "control_notes": {
