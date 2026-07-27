@@ -1,21 +1,29 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-27T11:49:17.151032Z",
+  "generated_at": "2026-07-27T16:16:13.565133Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 3,
+  "item_count": 4,
   "groups": {
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI News",
           1
+        ],
+        [
+          "GitHub AI & ML",
+          1
         ]
       ],
       "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
         [
           "openai",
           1
@@ -33,7 +41,19 @@
           1
         ],
         [
-          "official_ai",
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "copilot",
           1
         ]
       ]
@@ -49,27 +69,23 @@
       ],
       "top_keywords": [
         [
+          "agent",
+          2
+        ],
+        [
           "aggregate_noise",
           2
         ],
         [
-          "openai",
+          "智能体",
           1
         ],
         [
-          "anthropic",
-          1
-        ],
-        [
-          "开源模型",
+          "工作流",
           1
         ],
         [
           "claude",
-          1
-        ],
-        [
-          "agent",
           1
         ]
       ]
@@ -98,21 +114,42 @@
       "is_ai_related": true
     },
     {
-      "id": "2a6c35aee9bf68c9789598786225db459741c349",
+      "id": "387821357c6776dd56216097707765dfdbf37ff0",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "GitHub Copilot app for Beginners: Getting started",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started",
+      "published_at": "2026-07-27T16:00:00Z",
+      "summary": "New to the GitHub Copilot app? Learn how to start projects, work with AI agents, explore canvases, and streamline your development workflow. The post GitHub Copilot app for Beginners: Getting started appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "weak:workflow",
+        "weak:copilot",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "671954de94466a1b90f97850705aa222f4fe79f9",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI、Anthropic 游说美国限制中国开源模型，黄仁勋与马斯克公开反对",
-      "url": "https://aihot.virxact.com/items/cms1uvdxz0016rog2smc5vo7m",
-      "published_at": "2026-07-26T12:54:28Z",
-      "summary": "OpenAI 与 Anthropic 正游说美国监管机构限制中国开源 AI 模型，认为开放开发过于危险。英伟达 CEO 黄仁勋、微软 CEO 纳德拉、马斯克及扎克伯格等人公开支持开源，签署联名信反对限制。近 200 家硅谷创业公司也敦促特朗普政府不要限制获取中国开源模型，美国官员倾向于将此事作为国家安全问题单独处理。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms1uvdxz0016rog2smc5vo7m",
-      "relevance_score": 5,
+      "title": "Kimi K3 开源分布式智能体环境 AgentENV",
+      "url": "https://aihot.virxact.com/items/cms3dxit00berro3f8etbfxfh",
+      "published_at": "2026-07-27T15:25:45Z",
+      "summary": "我们与 kvcache-ai 合作开源了 AgentENV。 AgentENV 是一个用于大规模运行智能体环境的分布式系统。其组件为 Kimi K3 的智能体强化学习训练提供支持，具备快速快照、恢复和分支功能，适用于大规模并行智能体工作流。 在 GitHub 上探索：http://github.com/kvcache-ai/AgentEnv 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms3dxit00berro3f8etbfxfh",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:开源模型",
+        "strong:agent",
+        "strong:智能体",
+        "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -147,8 +184,8 @@
       "fetched_count": 1051,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 449,
-      "checked_at": "2026-07-27T11:49:15.326166Z"
+      "latency_ms": 472,
+      "checked_at": "2026-07-27T16:16:11.764455Z"
     },
     {
       "source_id": "openai-skills",
@@ -159,8 +196,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 163,
-      "checked_at": "2026-07-27T11:49:15.489506Z"
+      "latency_ms": 181,
+      "checked_at": "2026-07-27T16:16:11.945820Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -171,8 +208,8 @@
       "fetched_count": 250,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 113,
-      "checked_at": "2026-07-27T11:49:15.606278Z"
+      "latency_ms": 118,
+      "checked_at": "2026-07-27T16:16:12.068501Z"
     },
     {
       "source_id": "google-deepmind",
@@ -183,8 +220,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 256,
-      "checked_at": "2026-07-27T11:49:15.864238Z"
+      "latency_ms": 369,
+      "checked_at": "2026-07-27T16:16:12.439212Z"
     },
     {
       "source_id": "google-ai",
@@ -195,8 +232,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 194,
-      "checked_at": "2026-07-27T11:49:16.058749Z"
+      "latency_ms": 272,
+      "checked_at": "2026-07-27T16:16:12.711743Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -207,8 +244,8 @@
       "fetched_count": 831,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 264,
-      "checked_at": "2026-07-27T11:49:16.335626Z"
+      "latency_ms": 333,
+      "checked_at": "2026-07-27T16:16:13.057942Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -217,10 +254,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 110,
-      "checked_at": "2026-07-27T11:49:16.446423Z"
+      "latency_ms": 97,
+      "checked_at": "2026-07-27T16:16:13.155463Z"
     },
     {
       "source_id": "github-changelog",
@@ -231,8 +268,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-07-27T11:49:16.471613Z"
+      "latency_ms": 26,
+      "checked_at": "2026-07-27T16:16:13.182368Z"
     },
     {
       "source_id": "aihot",
@@ -243,8 +280,8 @@
       "fetched_count": 50,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 670,
-      "checked_at": "2026-07-27T11:49:17.142686Z"
+      "latency_ms": 374,
+      "checked_at": "2026-07-27T16:16:13.557522Z"
     }
   ],
   "control_notes": {
