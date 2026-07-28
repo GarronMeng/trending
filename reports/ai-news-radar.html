@@ -43,27 +43,27 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>11</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>3</b><span>官方源条目</span></div>
-        <div class="stat"><b>6</b><span>聚合源条目</span></div>
+        <div class="stat"><b>12</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>2</b><span>官方源条目</span></div>
+        <div class="stat"><b>7</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-28T01:53:12.418484Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-28T06:14:53.282764Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
-        <span>OpenAI News</span>
+        <span>GitHub Changelog</span>
         <span>official_rss</span>
-        <span>2026-07-27T03:30:00Z</span>
-        <strong>Score 7</strong>
+        <span>2026-07-28T01:23:10Z</span>
+        <strong>Score 12</strong>
       </div>
-      <h3><a href="https://openai.com/index/how-ai-is-expanding-what-people-do-at-work" target="_blank" rel="noreferrer">How AI is expanding what people do at work</a></h3>
-      <p class='summary'>New OpenAI research shows how AI is expanding what workers do, with ChatGPT users taking on tasks across roles and reshaping job boundaries.</p>
-      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>weak:api</span><span>weak:API</span><span>source_prior:official_ai</span></div>
+      <h3><a href="https://github.blog/changelog/2026-07-27-github-copilot-for-jetbrains-adds-improvved-opentelemetry-configuration-and-model-management" target="_blank" rel="noreferrer">GitHub Copilot for JetBrains adds improved OpenTelemetry configuration and model management</a></h3>
+      <p class='summary'>This update brings more control and clarity to your GitHub Copilot for JetBrains workflows. You can now connect MCP servers and custom agents in Claude agent flows, tune telemetry and… The post GitHub Copilot for JetBrains adds improved OpenTelemetry configuration and model management appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>strong:claude</span><span>strong:agent</span><span>strong:agents</span><span>strong:mcp</span><span>weak:workflow</span></div>
     </article>
     
 
@@ -162,6 +162,19 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
+        <span>2026-07-27T15:34:59Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cms44no4v06arro82khvjxjj4" target="_blank" rel="noreferrer">Kimi K3 开放日：模型权重、技术报告和关键 Infra 技术同步开放</a></h3>
+      <p class='summary'>月之暗面发布 2.8 万亿参数的混合专家模型 Kimi K3，支持原生视觉理解和 100 万 token 上下文窗口。其规模化效率较 Kimi K2.5 提升 2.5 倍，并同步开源模型权重、技术报告及 MoonEP、FlashKDA、AgentEnv 三项 Infra 技术。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms44no4v06arro82khvjxjj4</p>
+      <div class="tags"><span>strong:agent</span><span>strong:开源模型</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
         <span>2026-07-27T09:00:07Z</span>
         <strong>Score 3</strong>
       </div>
@@ -201,15 +214,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1051</td><td>1</td><td>384ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>243ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>251</td><td>0</td><td>96ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>296ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>178ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>831</td><td>0</td><td>267ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>132ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>23ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>6</td><td>1539ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1051</td><td>0</td><td>540ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>373ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>251</td><td>0</td><td>205ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>404ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>294ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>831</td><td>0</td><td>368ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>378ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>3</td><td>47ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>7</td><td>1706ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

@@ -1,55 +1,31 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-28T01:53:12.416998Z",
+  "generated_at": "2026-07-28T06:14:53.281293Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 12,
   "groups": {
-    "official": {
-      "group": "official",
+    "developer": {
+      "group": "developer",
       "count": 3,
       "top_sources": [
         [
-          "GitHub AI & ML",
-          2
-        ],
-        [
-          "OpenAI News",
-          1
+          "GitHub Changelog",
+          3
         ]
       ],
       "top_keywords": [
         [
-          "official_ai",
-          3
-        ],
-        [
-          "workflow",
-          2
-        ],
-        [
           "copilot",
-          2
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
+          6
         ],
         [
           "agent",
+          2
+        ],
+        [
+          "claude",
           1
         ],
         [
@@ -57,28 +33,32 @@
           1
         ],
         [
-          "tool",
+          "mcp",
+          1
+        ],
+        [
+          "workflow",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          6
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          7
         ],
         [
           "agent",
-          3
+          4
         ],
         [
           "智能体",
@@ -86,6 +66,10 @@
         ],
         [
           "工作流",
+          2
+        ],
+        [
+          "开源模型",
           2
         ],
         [
@@ -115,29 +99,41 @@
         [
           "chatgpt",
           1
-        ],
-        [
-          "hugging face",
-          1
         ]
       ]
     },
-    "developer": {
-      "group": "developer",
+    "official": {
+      "group": "official",
       "count": 2,
       "top_sources": [
         [
-          "GitHub Changelog",
+          "GitHub AI & ML",
           2
         ]
       ],
       "top_keywords": [
         [
+          "workflow",
+          2
+        ],
+        [
           "copilot",
-          4
+          2
+        ],
+        [
+          "official_ai",
+          2
         ],
         [
           "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "tool",
           1
         ]
       ]
@@ -145,23 +141,25 @@
   },
   "items": [
     {
-      "id": "e9870d73caf2dda97183a88d242891de4b0ea741",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
+      "id": "9f0b76bf073d6e10790f3f5cf9839275b6478774",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How AI is expanding what people do at work",
-      "url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
-      "published_at": "2026-07-27T03:30:00Z",
-      "summary": "New OpenAI research shows how AI is expanding what workers do, with ChatGPT users taking on tasks across roles and reshaping job boundaries.",
-      "relevance_score": 7,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot for JetBrains adds improved OpenTelemetry configuration and model management",
+      "url": "https://github.blog/changelog/2026-07-27-github-copilot-for-jetbrains-adds-improvved-opentelemetry-configuration-and-model-management",
+      "published_at": "2026-07-28T01:23:10Z",
+      "summary": "This update brings more control and clarity to your GitHub Copilot for JetBrains workflows. You can now connect MCP servers and custom agents in Claude agent flows, tune telemetry and… The post GitHub Copilot for JetBrains adds improved OpenTelemetry configuration and model management appeared first on The GitHub Blog .",
+      "relevance_score": 12,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "weak:api",
-        "weak:API",
-        "source_prior:official_ai"
+        "strong:claude",
+        "strong:agent",
+        "strong:agents",
+        "strong:mcp",
+        "weak:workflow",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -306,6 +304,25 @@
       "is_ai_related": true
     },
     {
+      "id": "b02a588dbf42a2993cc9bb1c829e27e9b1442a1a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Kimi K3 开放日：模型权重、技术报告和关键 Infra 技术同步开放",
+      "url": "https://aihot.virxact.com/items/cms44no4v06arro82khvjxjj4",
+      "published_at": "2026-07-27T15:34:59Z",
+      "summary": "月之暗面发布 2.8 万亿参数的混合专家模型 Kimi K3，支持原生视觉理解和 100 万 token 上下文窗口。其规模化效率较 Kimi K2.5 提升 2.5 倍，并同步开源模型权重、技术报告及 MoonEP、FlashKDA、AgentEnv 三项 Infra 技术。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms44no4v06arro82khvjxjj4",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:开源模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "55372d2d1c007a4dcd11026cc2a7f7c0ab6ea3da",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -372,10 +389,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1051,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 384,
-      "checked_at": "2026-07-28T01:53:09.611736Z"
+      "latency_ms": 540,
+      "checked_at": "2026-07-28T06:14:49.475064Z"
     },
     {
       "source_id": "openai-skills",
@@ -386,8 +403,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 243,
-      "checked_at": "2026-07-28T01:53:09.855648Z"
+      "latency_ms": 373,
+      "checked_at": "2026-07-28T06:14:49.848780Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -398,8 +415,8 @@
       "fetched_count": 251,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 96,
-      "checked_at": "2026-07-28T01:53:09.956002Z"
+      "latency_ms": 205,
+      "checked_at": "2026-07-28T06:14:50.058102Z"
     },
     {
       "source_id": "google-deepmind",
@@ -410,8 +427,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 296,
-      "checked_at": "2026-07-28T01:53:10.253962Z"
+      "latency_ms": 404,
+      "checked_at": "2026-07-28T06:14:50.464056Z"
     },
     {
       "source_id": "google-ai",
@@ -422,8 +439,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 178,
-      "checked_at": "2026-07-28T01:53:10.432313Z"
+      "latency_ms": 294,
+      "checked_at": "2026-07-28T06:14:50.759087Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -434,8 +451,8 @@
       "fetched_count": 831,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 267,
-      "checked_at": "2026-07-28T01:53:10.711039Z"
+      "latency_ms": 368,
+      "checked_at": "2026-07-28T06:14:51.139620Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -446,8 +463,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 132,
-      "checked_at": "2026-07-28T01:53:10.844181Z"
+      "latency_ms": 378,
+      "checked_at": "2026-07-28T06:14:51.518122Z"
     },
     {
       "source_id": "github-changelog",
@@ -456,10 +473,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-07-28T01:53:10.867548Z"
+      "latency_ms": 47,
+      "checked_at": "2026-07-28T06:14:51.565856Z"
     },
     {
       "source_id": "aihot",
@@ -468,10 +485,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 1539,
-      "checked_at": "2026-07-28T01:53:12.407655Z"
+      "latency_ms": 1706,
+      "checked_at": "2026-07-28T06:14:53.273277Z"
     }
   ],
   "control_notes": {
