@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-28T10:56:19.458577Z",
+  "generated_at": "2026-07-28T16:04:19.834844Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 13,
+  "item_count": 11,
   "groups": {
     "developer": {
       "group": "developer",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "GitHub Changelog",
-          3
+          4
         ]
       ],
       "top_keywords": [
@@ -22,6 +22,10 @@
         ],
         [
           "agent",
+          2
+        ],
+        [
+          "workflow",
           2
         ],
         [
@@ -37,28 +41,28 @@
           1
         ],
         [
-          "workflow",
+          "actions",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          8
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          5
         ],
         [
           "agent",
-          5
+          2
         ],
         [
           "api",
@@ -73,10 +77,6 @@
           2
         ],
         [
-          "智能体",
-          2
-        ],
-        [
           "openai",
           2
         ],
@@ -85,19 +85,23 @@
           2
         ],
         [
-          "工作流",
-          2
-        ],
-        [
-          "copilot",
-          2
-        ],
-        [
           "mcp",
           1
         ],
         [
           "多模态",
+          1
+        ],
+        [
+          "评测",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
           1
         ]
       ]
@@ -108,32 +112,32 @@
       "top_sources": [
         [
           "GitHub AI & ML",
-          2
+          1
+        ],
+        [
+          "Hugging Face Blog",
+          1
         ]
       ],
       "top_keywords": [
-        [
-          "workflow",
-          2
-        ],
-        [
-          "copilot",
-          2
-        ],
         [
           "official_ai",
           2
         ],
         [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
           "tool",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "copilot",
+          1
+        ],
+        [
+          "inference",
           1
         ]
       ]
@@ -211,27 +215,6 @@
       "is_ai_related": true
     },
     {
-      "id": "387821357c6776dd56216097707765dfdbf37ff0",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "GitHub Copilot app for Beginners: Getting started",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started",
-      "published_at": "2026-07-27T16:00:00Z",
-      "summary": "New to the GitHub Copilot app? Learn how to start projects, work with AI agents, explore canvases, and streamline your development workflow. The post GitHub Copilot app for Beginners: Getting started appeared first on The GitHub Blog .",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "weak:workflow",
-        "weak:copilot",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "105ad64adf3e1382fee882ff9727ffa9835a05a6",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -292,6 +275,42 @@
       "is_ai_related": true
     },
     {
+      "id": "ef6d70da64da8b8fcffa71f7516b5d07c9582a4d",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "LFM2.5-Encoders for Fast Long-Context Inference on CPU",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders",
+      "published_at": "2026-07-28T15:01:45Z",
+      "summary": null,
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:inference",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c5836fbb5752371fe6a8508388e4e3f64b58b850",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Actions holds potentially malicious workflows for approval",
+      "url": "https://github.blog/changelog/2026-07-28-github-actions-holds-unproven-workflows-for-approval",
+      "published_at": "2026-07-28T11:57:19Z",
+      "summary": "Recent supply chain attacks use compromised GitHub credentials to push malicious GitHub Actions workflows that steal CI/CD credentials and carry out additional attacks. To help protect public repositories from these… The post GitHub Actions holds potentially malicious workflows for approval appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:workflow",
+        "source:actions"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "b4672db48f44deda350cc18d3aa4946bd46be44a",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -306,26 +325,6 @@
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "671954de94466a1b90f97850705aa222f4fe79f9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Kimi K3 开源分布式智能体环境 AgentENV",
-      "url": "https://aihot.virxact.com/items/cms3dxit00berro3f8etbfxfh",
-      "published_at": "2026-07-27T15:25:45Z",
-      "summary": "我们与 kvcache-ai 合作开源了 AgentENV。 AgentENV 是一个用于大规模运行智能体环境的分布式系统。其组件为 Kimi K3 的智能体强化学习训练提供支持，具备快速快照、恢复和分支功能，适用于大规模并行智能体工作流。 在 GitHub 上探索：http://github.com/kvcache-ai/AgentEnv 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms3dxit00berro3f8etbfxfh",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -349,25 +348,6 @@
       "is_ai_related": true
     },
     {
-      "id": "b02a588dbf42a2993cc9bb1c829e27e9b1442a1a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Kimi K3 开放日：模型权重、技术报告和关键 Infra 技术同步开放",
-      "url": "https://aihot.virxact.com/items/cms44no4v06arro82khvjxjj4",
-      "published_at": "2026-07-27T15:34:59Z",
-      "summary": "月之暗面发布 2.8 万亿参数的混合专家模型 Kimi K3，支持原生视觉理解和 100 万 token 上下文窗口。其规模化效率较 Kimi K2.5 提升 2.5 倍，并同步开源模型权重、技术报告及 MoonEP、FlashKDA、AgentEnv 三项 Infra 技术。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms44no4v06arro82khvjxjj4",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:开源模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "d98f00049c7c0b89e7584d2c493ca12a51777f06",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -386,25 +366,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "7f2dc2745a4e9e4f571004f56078b64554b71b83",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "GitHub Copilot app 入门指南：多 Agent 会话工作区与 Canvas 预览",
-      "url": "https://aihot.virxact.com/items/cms3gqf3h01y1rondsl8z5sxy",
-      "published_at": "2026-07-27T16:00:00Z",
-      "summary": "GitHub Copilot app 将 AI 编码工具升级为多 Agent 会话工作区，支持同时管理多个任务线程而不丢失进度。用户可为每个会话绑定项目上下文，通过 `/create-canvas` 命令在浏览器 Canvas 中预览 UI 并直接点选修改，还能启用 Agent Merge 自动处理 PR 审查反馈和合并冲突。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms3gqf3h01y1rondsl8z5sxy",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -417,8 +378,8 @@
       "fetched_count": 1051,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 503,
-      "checked_at": "2026-07-28T10:56:17.144375Z"
+      "latency_ms": 500,
+      "checked_at": "2026-07-28T16:04:15.755373Z"
     },
     {
       "source_id": "openai-skills",
@@ -429,8 +390,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 241,
-      "checked_at": "2026-07-28T10:56:17.386290Z"
+      "latency_ms": 256,
+      "checked_at": "2026-07-28T16:04:16.012277Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -441,8 +402,8 @@
       "fetched_count": 251,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 131,
-      "checked_at": "2026-07-28T10:56:17.521388Z"
+      "latency_ms": 125,
+      "checked_at": "2026-07-28T16:04:16.141488Z"
     },
     {
       "source_id": "google-deepmind",
@@ -453,8 +414,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 353,
-      "checked_at": "2026-07-28T10:56:17.876224Z"
+      "latency_ms": 476,
+      "checked_at": "2026-07-28T16:04:16.619022Z"
     },
     {
       "source_id": "google-ai",
@@ -465,8 +426,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 218,
-      "checked_at": "2026-07-28T10:56:18.095251Z"
+      "latency_ms": 296,
+      "checked_at": "2026-07-28T16:04:16.916456Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -474,11 +435,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 831,
-      "kept_count": 0,
+      "fetched_count": 832,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 478,
-      "checked_at": "2026-07-28T10:56:18.585361Z"
+      "latency_ms": 400,
+      "checked_at": "2026-07-28T16:04:17.328992Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -487,10 +448,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 139,
-      "checked_at": "2026-07-28T10:56:18.724853Z"
+      "latency_ms": 453,
+      "checked_at": "2026-07-28T16:04:17.782990Z"
     },
     {
       "source_id": "github-changelog",
@@ -499,10 +460,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 33,
-      "checked_at": "2026-07-28T10:56:18.758229Z"
+      "latency_ms": 55,
+      "checked_at": "2026-07-28T16:04:17.839178Z"
     },
     {
       "source_id": "aihot",
@@ -511,10 +472,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 690,
-      "checked_at": "2026-07-28T10:56:19.449946Z"
+      "latency_ms": 1988,
+      "checked_at": "2026-07-28T16:04:19.828553Z"
     }
   ],
   "control_notes": {
