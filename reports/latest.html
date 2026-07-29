@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>18</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>16</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>4</b><span>官方源条目</span></div>
-        <div class="stat"><b>11</b><span>聚合源条目</span></div>
+        <div class="stat"><b>9</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-29T06:20:04.257057Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-07-29T09:20:50.646344Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -103,32 +103,6 @@
       <h3><a href="https://aihot.virxact.com/items/cms4vd9hd02h9roa1iiub4unr" target="_blank" rel="noreferrer">Gemini API Managed Agents 默认升级为 3.6 Flash，新增环境钩子与免费套餐</a></h3>
       <p class='summary'>Google DeepMind 将 Gemini API Managed Agents 的默认模型升级为 Gemini 3.6 Flash，并支持显式选择 3.5 Flash 或 3.5 Flash-Lite。新增环境钩子允许在沙箱内工具调用前后执行自定义脚本，用于安全审查或代码格式化。此外，还推出了免费套餐、预算控制和基于 cron 的定时触发功能。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms4vd9hd02h9roa1iiub4unr</p>
       <div class="tags"><span>strong:gemini</span><span>strong:deepmind</span><span>strong:agent</span><span>strong:agents</span><span>weak:api</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-28T07:51:54Z</span>
-        <strong>Score 9</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cms4himl9047broepnobhk6n2" target="_blank" rel="noreferrer">火山引擎上线豆包搜索服务，为AI Agent提供实时可信搜索能力</a></h3>
-      <p class='summary'>火山引擎正式上线豆包搜索服务，为AI Agent提供跨语言、多模态、多垂类联网信息查询，融合全域互联网信息、行业知识与字节跳动独家内容资源。该服务从网站站点和创作者维度建立权威分级体系，过滤低质信息，在SimpleQA、FreshQA、BrowseComp-ZH等评测中表现优异。豆包搜索支持API、Skill、MCP等多种接入形态，面向企业和开发者提供每月500次免费搜索额度。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms4himl9047broepnobhk6n2</p>
-      <div class="tags"><span>strong:agent</span><span>strong:mcp</span><span>strong:多模态</span><span>weak:api</span><span>weak:开发者</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-07-28T06:21:07Z</span>
-        <strong>Score 7</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cms4b9e8401zrroepw4fw8oka" target="_blank" rel="noreferrer">德里高等法院裁定 OpenAI 利用 ANI 内容训练 AI 未侵犯版权</a></h3>
-      <p class='summary'>德里高等法院认定 OpenAI 利用亚洲国际新闻（ANI）社的内容训练人工智能不构成侵犯版权。法官 Amit Bansal 认为该行为符合印度《版权法》中研究类&quot;合理使用&quot;例外情形，且 ANI 未能证明 ChatGPT 直接复制其受版权保护内容。法院同时指出，现阶段颁布临时禁令将不利于印度正在开发的 LLM 及大量免费使用 ChatGPT 的用户。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms4b9e8401zrroepw4fw8oka</p>
-      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>strong:llm</span><span>strong:人工智能</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -292,15 +266,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1052</td><td>1</td><td>559ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>448ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>251</td><td>0</td><td>256ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>435ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>281ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>833</td><td>2</td><td>331ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>255ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>3</td><td>36ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>11</td><td>904ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1052</td><td>1</td><td>465ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>206ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>251</td><td>0</td><td>117ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>291ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>217ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>833</td><td>2</td><td>289ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>209ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>3</td><td>28ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>9</td><td>1080ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
