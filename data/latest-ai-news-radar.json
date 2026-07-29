@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-29T01:56:13.638517Z",
+  "generated_at": "2026-07-29T06:20:04.255208Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 17,
+  "item_count": 18,
   "groups": {
     "official": {
       "group": "official",
@@ -100,21 +100,21 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 10,
+      "count": 11,
       "top_sources": [
         [
           "AI Hot",
-          10
+          11
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          10
+          11
         ],
         [
           "openai",
-          5
+          6
         ],
         [
           "agent",
@@ -122,11 +122,11 @@
         ],
         [
           "api",
-          3
+          4
         ],
         [
           "API",
-          3
+          4
         ],
         [
           "anthropic",
@@ -134,10 +134,6 @@
         ],
         [
           "hugging face",
-          2
-        ],
-        [
-          "智能体",
           2
         ],
         [
@@ -154,6 +150,10 @@
         ],
         [
           "agents",
+          1
+        ],
+        [
+          "mcp",
           1
         ]
       ]
@@ -352,26 +352,6 @@
       "is_ai_related": true
     },
     {
-      "id": "4d191107401dd54974cdf486eff1994fa566fedb",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 的 Claude Mythos Preview 模型发现 AES 和 HAWK 加密算法漏洞",
-      "url": "https://aihot.virxact.com/items/cms51p9ca00d8rorrkaqqfvr9",
-      "published_at": "2026-07-28T19:12:27Z",
-      "summary": "Anthropic 的 Claude Mythos Preview 模型在自主多智能体系统中，发现了后量子签名方案 HAWK 的改进攻击，以及简化版 AES-128（7 轮）的新攻击方法。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms51p9ca00d8rorrkaqqfvr9",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "154f901e8b60e684623a929b87862aee5c79afe5",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
@@ -446,6 +426,45 @@
       "is_ai_related": true
     },
     {
+      "id": "1f58879826b431191a5cfa4ba42ca1b36ca78664",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "在 M1 Max 上运行 2.8T 参数的 Kimi K3：Deltafin 项目实现 0.0687 token/s 推理",
+      "url": "https://aihot.virxact.com/items/cms5htk9l004nros5wi94l4eh",
+      "published_at": "2026-07-29T02:49:20Z",
+      "summary": "Deltafin 项目成功在 64 GB M1 Max 上运行了 2.8T 参数的 MoE 模型 Kimi K3，当前中位推理速度为 0.0687 token/s（14.6 秒/token）。完整安装需约 1.7 TB 本地磁盘，流式模式仅需 215 GB 但推理速度降至 3 分钟以上/token。项目提供 OpenAI 兼容 API 服务器，支持聊天和代码补全，但建议客户端超时设为小时级别。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms5htk9l004nros5wi94l4eh",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "78ee26df8fcd762681c881f6491b0d352677d0ad",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "我的Claude账号被封了",
+      "url": "https://aihot.virxact.com/items/cms5k3il000narobkhjrg843v",
+      "published_at": "2026-07-29T00:06:00Z",
+      "summary": "Anthropic因支付系统SEPA验证漏洞引发\"零元购\"事件，随后大规模回收漏洞账号并封禁关联账户，作者自用半年多的账号于7月29日被封。作者认为当前已非Claude一家独大，推荐编程用户使用Kimi K3和GPT-5.6 Sol，办公用户选择WorkBuddy+Kimi K3，并指出国产模型已凭二十分之一算力摸到第一梯队。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms5k3il000narobkhjrg843v",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "8dd6cd05df4f4a215ad6d33048d136b04edbdefa",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -514,8 +533,8 @@
       "fetched_count": 1052,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 392,
-      "checked_at": "2026-07-29T01:56:11.684241Z"
+      "latency_ms": 559,
+      "checked_at": "2026-07-29T06:20:01.272736Z"
     },
     {
       "source_id": "openai-skills",
@@ -526,8 +545,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 160,
-      "checked_at": "2026-07-29T01:56:11.844863Z"
+      "latency_ms": 448,
+      "checked_at": "2026-07-29T06:20:01.721620Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -538,8 +557,8 @@
       "fetched_count": 251,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 93,
-      "checked_at": "2026-07-29T01:56:11.942122Z"
+      "latency_ms": 256,
+      "checked_at": "2026-07-29T06:20:01.981703Z"
     },
     {
       "source_id": "google-deepmind",
@@ -550,8 +569,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 261,
-      "checked_at": "2026-07-29T01:56:12.205418Z"
+      "latency_ms": 435,
+      "checked_at": "2026-07-29T06:20:02.418605Z"
     },
     {
       "source_id": "google-ai",
@@ -562,8 +581,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 191,
-      "checked_at": "2026-07-29T01:56:12.397287Z"
+      "latency_ms": 281,
+      "checked_at": "2026-07-29T06:20:02.700731Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -574,8 +593,8 @@
       "fetched_count": 833,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 237,
-      "checked_at": "2026-07-29T01:56:12.646263Z"
+      "latency_ms": 331,
+      "checked_at": "2026-07-29T06:20:03.045426Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -586,8 +605,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 94,
-      "checked_at": "2026-07-29T01:56:12.740806Z"
+      "latency_ms": 255,
+      "checked_at": "2026-07-29T06:20:03.301027Z"
     },
     {
       "source_id": "github-changelog",
@@ -598,8 +617,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-07-29T01:56:12.766594Z"
+      "latency_ms": 36,
+      "checked_at": "2026-07-29T06:20:03.338305Z"
     },
     {
       "source_id": "aihot",
@@ -608,10 +627,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 10,
+      "kept_count": 11,
       "error": null,
-      "latency_ms": 861,
-      "checked_at": "2026-07-29T01:56:13.629560Z"
+      "latency_ms": 904,
+      "checked_at": "2026-07-29T06:20:04.244477Z"
     }
   ],
   "control_notes": {
