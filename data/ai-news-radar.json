@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-30T09:12:13.007085Z",
+  "generated_at": "2026-07-30T10:37:27.900860Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 9,
-  "item_count": 11,
+  "healthy_source_count": 8,
+  "item_count": 10,
   "groups": {
     "developer": {
       "group": "developer",
@@ -32,26 +32,14 @@
     },
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          1
         ]
       ],
       "top_keywords": [
-        [
-          "official_ai",
-          2
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
         [
           "benchmark",
           1
@@ -62,6 +50,10 @@
         ],
         [
           "API",
+          1
+        ],
+        [
+          "official_ai",
           1
         ]
       ]
@@ -145,25 +137,6 @@
         "strong:mcp",
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1a0618cfb3ed637361be10872992724e67a6e4f2",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
-      "url": "https://openai.com/index/chatgpt-for-academic-researchers",
-      "published_at": "2026-07-29T10:00:00Z",
-      "summary": "OpenAI is giving 100,000 academic researchers free access to ChatGPT's most advanced AI models to accelerate scientific research, collaboration, and discovery.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -352,10 +325,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1055,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 601,
-      "checked_at": "2026-07-30T09:12:10.330378Z"
+      "latency_ms": 476,
+      "checked_at": "2026-07-30T10:36:56.054198Z"
     },
     {
       "source_id": "openai-skills",
@@ -366,8 +339,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 416,
-      "checked_at": "2026-07-30T09:12:10.746679Z"
+      "latency_ms": 227,
+      "checked_at": "2026-07-30T10:36:56.282208Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -378,8 +351,8 @@
       "fetched_count": 251,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 137,
-      "checked_at": "2026-07-30T09:12:10.887957Z"
+      "latency_ms": 96,
+      "checked_at": "2026-07-30T10:36:56.381508Z"
     },
     {
       "source_id": "google-deepmind",
@@ -390,20 +363,20 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 313,
-      "checked_at": "2026-07-30T09:12:11.203200Z"
+      "latency_ms": 349,
+      "checked_at": "2026-07-30T10:36:56.732601Z"
     },
     {
       "source_id": "google-ai",
       "source_name": "Google AI Blog",
       "source_type": "official_rss",
       "enabled": true,
-      "ok": true,
-      "fetched_count": 20,
+      "ok": false,
+      "fetched_count": 0,
       "kept_count": 0,
-      "error": null,
-      "latency_ms": 239,
-      "checked_at": "2026-07-30T09:12:11.443393Z"
+      "error": "HTTPSConnectionPool(host='blog.google', port=443): Read timed out. (read timeout=25)",
+      "latency_ms": 25237,
+      "checked_at": "2026-07-30T10:37:21.970049Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -414,8 +387,8 @@
       "fetched_count": 833,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 346,
-      "checked_at": "2026-07-30T09:12:11.802975Z"
+      "latency_ms": 311,
+      "checked_at": "2026-07-30T10:37:22.291487Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -426,8 +399,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 177,
-      "checked_at": "2026-07-30T09:12:11.980721Z"
+      "latency_ms": 121,
+      "checked_at": "2026-07-30T10:37:22.413402Z"
     },
     {
       "source_id": "github-changelog",
@@ -438,8 +411,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 36,
-      "checked_at": "2026-07-30T09:12:12.017374Z"
+      "latency_ms": 23,
+      "checked_at": "2026-07-30T10:37:22.437648Z"
     },
     {
       "source_id": "aihot",
@@ -450,8 +423,8 @@
       "fetched_count": 50,
       "kept_count": 7,
       "error": null,
-      "latency_ms": 982,
-      "checked_at": "2026-07-30T09:12:13.000811Z"
+      "latency_ms": 5457,
+      "checked_at": "2026-07-30T10:37:27.896113Z"
     }
   ],
   "control_notes": {
