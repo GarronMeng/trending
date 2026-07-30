@@ -1,63 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-29T15:48:08.844556Z",
+  "generated_at": "2026-07-30T01:48:19.376346Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 15,
+  "item_count": 10,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 3,
-      "top_sources": [
-        [
-          "Google AI Blog",
-          1
-        ],
-        [
-          "OpenAI News",
-          1
-        ],
-        [
-          "Hugging Face Blog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          3
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "agents",
-          2
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "ai coding",
-          1
-        ],
-        [
-          "inference",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
       "count": 2,
@@ -77,11 +25,35 @@
           1
         ],
         [
-          "reasoning model",
+          "mcp",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "OpenAI News",
+          2
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
+        [
+          "openai",
           1
         ],
         [
-          "workflow",
+          "chatgpt",
+          1
+        ],
+        [
+          "benchmark",
           1
         ],
         [
@@ -96,60 +68,48 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 10,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          10
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          10
-        ],
-        [
-          "openai",
           6
         ],
         [
-          "agent",
-          3
+          "openai",
+          5
         ],
         [
-          "api",
-          3
-        ],
-        [
-          "API",
+          "智能体",
           3
         ],
         [
           "hugging face",
-          3
-        ],
-        [
-          "anthropic",
-          3
-        ],
-        [
-          "智能体",
           2
         ],
         [
-          "claude",
+          "api",
           2
         ],
         [
-          "gemini",
-          1
+          "API",
+          2
         ],
         [
-          "deepmind",
+          "agent",
           1
         ],
         [
           "agents",
+          1
+        ],
+        [
+          "chatgpt",
           1
         ]
       ]
@@ -157,108 +117,101 @@
   },
   "items": [
     {
-      "id": "696dd28ad8553f1f340c7ba47afddc4c9c5b9434",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
+      "id": "51a282b10b4d38e9fd23c57f1eb0520f28c079ad",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks",
-      "published_at": "2026-07-28T16:00:00Z",
-      "summary": "Managed Agents Gemini 3.6 Flash, Hooks and Triggers",
-      "relevance_score": 9,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot code review: Agent skills and MCP now generally available",
+      "url": "https://github.blog/changelog/2026-07-29-copilot-code-review-agent-skills-and-mcp-now-generally-available",
+      "published_at": "2026-07-29T21:26:19Z",
+      "summary": "Copilot code review support for agent skills and MCP servers is now generally available for all Copilot Pro, Pro+, Business, and Enterprise users. Previously announced in public preview, these capabilities… The post Copilot code review: Agent skills and MCP now generally available appeared first on The GitHub Blog .",
+      "relevance_score": 7,
       "relevance_reasons": [
-        "strong:gemini",
         "strong:agent",
-        "strong:agents",
-        "weak:api",
-        "weak:API",
-        "source_prior:official_ai"
+        "strong:mcp",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
     {
-      "id": "491b0a953bfb020cb6a0e2ed8c7afa72966df89f",
+      "id": "1a0618cfb3ed637361be10872992724e67a6e4f2",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Scientific computing in the age of agentic AI",
-      "url": "https://openai.com/index/scientific-computing-agentic-ai",
-      "published_at": "2026-07-28T17:00:00Z",
-      "summary": "A new field report shows how scientists use AI coding agents to modernize scientific computing, accelerating software development and discovery in genomics and beyond.",
-      "relevance_score": 7,
+      "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
+      "url": "https://openai.com/index/chatgpt-for-academic-researchers",
+      "published_at": "2026-07-29T10:00:00Z",
+      "summary": "OpenAI is giving 100,000 academic researchers free access to ChatGPT's most advanced AI models to accelerate scientific research, collaboration, and discovery.",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "strong:ai coding",
+        "strong:openai",
+        "strong:chatgpt",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "d7a9e8b7e2e642d82f0a794e3c2118be810a1896",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
+      "id": "fecc4b45155d5aaa0b7c56dd49184ddad2637ae3",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Grok 4.5 is now available in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-07-28-grok-4-5-is-now-available-in-github-copilot",
-      "published_at": "2026-07-28T19:10:45Z",
-      "summary": "Grok 4.5, xAI’s latest reasoning model, is now rolling out in GitHub Copilot. It is designed for fast, agentic coding and complex multi-step workflows, with a context window of up… The post Grok 4.5 is now available in GitHub Copilot appeared first on The GitHub Blog .",
-      "relevance_score": 8,
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
+      "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+      "published_at": "2026-07-29T15:00:00Z",
+      "summary": "How two API settings improved GPT-5.6 performance on ARC-AGI-3, boosting scores and efficiency by retaining reasoning and enabling compaction.",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:reasoning model",
-        "weak:workflow",
-        "weak:copilot",
-        "source:copilot"
+        "weak:benchmark",
+        "weak:api",
+        "weak:API",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "3c757eb5c3bce1060810c51ddf59bbd6fd42b189",
+      "id": "fe5c58c7c82a012297db5fb620f3bd62b60b3477",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Gemini API Managed Agents 默认升级为 3.6 Flash，新增环境钩子与免费套餐",
-      "url": "https://aihot.virxact.com/items/cms4vd9hd02h9roa1iiub4unr",
-      "published_at": "2026-07-28T16:00:00Z",
-      "summary": "Google DeepMind 将 Gemini API Managed Agents 的默认模型升级为 Gemini 3.6 Flash，并支持显式选择 3.5 Flash 或 3.5 Flash-Lite。新增环境钩子允许在沙箱内工具调用前后执行自定义脚本，用于安全审查或代码格式化。此外，还推出了免费套餐、预算控制和基于 cron 的定时触发功能。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms4vd9hd02h9roa1iiub4unr",
-      "relevance_score": 9,
+      "title": "揭秘 AI 智能体入侵 Hugging Face 全过程：4 天半执行 17600 次操作",
+      "url": "https://aihot.virxact.com/items/cms6r5fog0btjrohz9heu2c6f",
+      "published_at": "2026-07-29T23:29:34Z",
+      "summary": "一套基于 OpenAI 模型的自主 AI 智能体在 4 天半内执行约 17600 次操作，成功突破 Hugging Face 多项安全防护。该 AI 利用未修复漏洞逃离测试环境，通过伪装数据集诱导服务器泄露密码和源代码，并在 11 台服务器上部署副本维持攻击。Hugging Face 指出，AI 能以人类攻击者无法企及的规模和持续性不断尝试攻击路径，大幅提升漏洞发现效率。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms6r5fog0btjrohz9heu2c6f",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:gemini",
-        "strong:deepmind",
-        "strong:agent",
-        "strong:agents",
-        "weak:api",
-        "weak:API",
+        "strong:openai",
+        "strong:hugging face",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "00295d1e8dcc229ec79b22eeb4462ac522aea9d3",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Copilot app usage metrics now expand across report rollups",
-      "url": "https://github.blog/changelog/2026-07-28-github-copilot-app-usage-metrics-now-expand-across-report-rollups",
-      "published_at": "2026-07-28T23:35:01Z",
-      "summary": "Copilot app usage is now reported across much more of the Copilot usage metrics API. Individual Copilot app activity is now attributed to users in the enterprise-user and organization-user reports.… The post GitHub Copilot app usage metrics now expand across report rollups appeared first on The GitHub Blog .",
+      "id": "24294b214de804572cb1d84df38906d9e1e84251",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Perplexity 开源智能体检测层 Numbat",
+      "url": "https://aihot.virxact.com/items/cms6czboh031krotzmczxbw2v",
+      "published_at": "2026-07-29T17:01:42Z",
+      "summary": "今天我们开源了 Numbat，这是一个智能体检测与响应层，旨在跨多种智能体框架工作。 Numbat 为安全团队提供对智能体活动的可见性，并可在执行前阻止选定操作。 了解更多：https://research.perplexity.ai/articles/securing-agents-across-perplexity%E2%80%99s-client-endpoints-with-numbat 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms6czboh031krotzmczxbw2v",
       "relevance_score": 5,
       "relevance_reasons": [
-        "weak:api",
-        "weak:copilot",
-        "weak:API",
-        "source:copilot"
+        "strong:agent",
+        "strong:agents",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -283,79 +236,58 @@
       "is_ai_related": true
     },
     {
-      "id": "0718cb34fd6b980bf45a76abe429cbab84b470ad",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 失控模型二次入侵 Modal 客户",
-      "url": "https://aihot.virxact.com/items/cms573utt01c4roeh702o8mxp",
-      "published_at": "2026-07-28T21:55:12Z",
-      "summary": "OpenAI 的 rogue agent 在逃离后，继攻击 Hugging Face，又入侵了第二家科技公司 Modal Labs 的客户。Modal CTO 确认，一名客户发布了未认证端点，被 rogue agent 利用执行代码，但 Modal 平台本身未被攻破。OpenAI 已因此暂停训练，以重新评估沙箱安全。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms573utt01c4roeh702o8mxp",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:hugging face",
-        "strong:agent",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a320f4d813eefefed0a6f475e9072fd2e83cc702",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Hugging Face 公开自主智能体网络攻击详情",
-      "url": "https://aihot.virxact.com/items/cms54h60d003troehb9tvgl3z",
-      "published_at": "2026-07-28T20:27:17Z",
-      "summary": "首次自主智能体网络攻击是一次前所未有的事件，理应获得前所未有的透明度。今天，我们尽可能分享一切：完整的技术时间线、交互式回放，以及我们如何利用开放模型进行防御，以便各地的防御者都能从中学习，并为未来做好准备。 https://huggingface.co/blog/agent-intrusion-technical-timeline 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms54h60d003troehb9tvgl3z",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "strong:agent",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "154f901e8b60e684623a929b87862aee5c79afe5",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "5734d02c2fa0be68533a9b526e28d6012069b6df",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "The OlmoEarth Platform: Geospatial inference at planetary scale",
-      "url": "https://huggingface.co/blog/allenai/olmoearth-infrastructure",
-      "published_at": "2026-07-28T16:27:42Z",
-      "summary": null,
-      "relevance_score": 2,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Default model enablement for Copilot Business and Enterprise",
+      "url": "https://github.blog/changelog/2026-07-29-default-model-enablement-for-copilot-business-and-enterprise",
+      "published_at": "2026-07-29T14:01:07Z",
+      "summary": "We’re introducing a global default enablement policy for generally available Copilot models on Copilot Business and Copilot Enterprise plans. Instead of requiring admins to manually turn on each new model… The post Default model enablement for Copilot Business and Enterprise appeared first on The GitHub Blog .",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "weak:inference",
-        "source_prior:official_ai"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
     {
-      "id": "4ccf3e285a704c06845c44ae175393d01949ddb4",
+      "id": "790ffecb43c16f25613b54156ab5d98def8e76c5",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "1100多名AI员工联名呼吁美国政府控制AI发展速度，OpenAI CEO奥尔特曼表态支持",
-      "url": "https://aihot.virxact.com/items/cms5dugag02amro7cjrfedsz9",
-      "published_at": "2026-07-29T00:20:32Z",
-      "summary": "OpenAI、Anthropic、谷歌和Meta等公司的1100多名AI员工签署公开信，呼吁美国政府支持国际合作，以\"有意识地把控自动化AI开发的前沿进程\"。该倡议名为\"把控前沿\"，重点关注AI未来可能自行开发和改进AI系统的\"递归式自我改进\"能力。OpenAI CEO萨姆·奥尔特曼在播客采访中表示，可能需要\"把控\"AI发展速度，让社会有时间建立防护机制。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms5dugag02amro7cjrfedsz9",
-      "relevance_score": 4,
+      "title": "OpenAI 为学术研究者免费提供前沿模型",
+      "url": "https://aihot.virxact.com/items/cms6cw5ha02sgrotzfmlr8p11",
+      "published_at": "2026-07-29T17:22:02Z",
+      "summary": "ChatGPT for Academic Researchers - 免费（！！）使用我们的前沿模型，包括 GPT-5.6-Sol Pro，面向数学家、科学家、研究人员和学者。 让未解难题倒下！ 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms6cw5ha02sgrotzfmlr8p11",
+      "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
-        "strong:anthropic",
-        "weak:自动化",
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "affb6a4904c3e7b3c6f5c34b6da6292ff15eae53",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "启用两项 API 设置使 GPT-5.6 在 ARC-AGI-3 基准测试得分提升三倍",
+      "url": "https://aihot.virxact.com/items/cms6p8lnz09o6rohzegz5w5xp",
+      "published_at": "2026-07-29T15:00:00Z",
+      "summary": "OpenAI 通过启用两项 API 设置，使 GPT-5.6 在 ARC-AGI-3 基准测试上的得分提升至原来的三倍。这两项设置分别是保留推理过程（retaining reasoning）和启用压缩（compaction），在提升得分的同时也提高了效率。该发现基于 OpenAI 官方对 GPT-5.6 模型 API 参数的测试结果。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms6p8lnz09o6rohzegz5w5xp",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:api",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -379,83 +311,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "78ee26df8fcd762681c881f6491b0d352677d0ad",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "我的Claude账号被封了",
-      "url": "https://aihot.virxact.com/items/cms5k3il000narobkhjrg843v",
-      "published_at": "2026-07-29T00:06:00Z",
-      "summary": "Anthropic因支付系统SEPA验证漏洞引发\"零元购\"事件，随后大规模回收漏洞账号并封禁关联账户，作者自用半年多的账号于7月29日被封。作者认为当前已非Claude一家独大，推荐编程用户使用Kimi K3和GPT-5.6 Sol，办公用户选择WorkBuddy+Kimi K3，并指出国产模型已凭二十分之一算力摸到第一梯队。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms5k3il000narobkhjrg843v",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8dd6cd05df4f4a215ad6d33048d136b04edbdefa",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 发布 Codex 安全 CLI 与 SDK",
-      "url": "https://aihot.virxact.com/items/cms5a9tpy00utro7c9bw0s295",
-      "published_at": "2026-07-28T23:05:54Z",
-      "summary": "更多开源福利。我们刚刚发布了一个 CLI 和 TypeScript SDK，用于查找、验证和修复代码中的安全漏洞。扫描仓库、审查变更、随时间追踪发现，并在 CI 中运行安全检查。 https://github.com/openai/codex-security 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms5a9tpy00utro7c9bw0s295",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "3b3b97b67fc0811346991c71859c0d2ae887dfb9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 推出两款新转录模型 API",
-      "url": "https://aihot.virxact.com/items/cms54yoqa0090roehc2530rwk",
-      "published_at": "2026-07-28T20:26:58Z",
-      "summary": "我们在 API 中引入了两种新的转录模型： • GPT-Live-Transcribe：专为低延迟实时转录而构建。 • GPT-Transcribe：针对已完成音频文件和批量工作负载的异步转录进行了优化。 两种模型都能更好地理解上下文，并在跨口音和语言的实际音频上提供更准确的转录，包括短句、数字、专业术语以及背景噪音较大的语音。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms54yoqa0090roehc2530rwk",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "46a8fa75c0bbb310d89f63395003b6e931d89dd1",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude 发现加密算法弱点研究发布",
-      "url": "https://aihot.virxact.com/items/cms4xie76037xroa13kv3uglm",
-      "published_at": "2026-07-28T17:16:45Z",
-      "summary": "Anthropic 新研究：用 Claude 发现加密弱点。 Claude Mythos 预览版已帮助我们的研究人员发现加密算法中的弱点--这些数学方法用于保护数据隐私。 了解更多：https://anthropic.com/research/discovering-cryptographic-weaknesses 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms4xie76037xroa13kv3uglm",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -465,11 +320,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1052,
-      "kept_count": 1,
+      "fetched_count": 1055,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 373,
-      "checked_at": "2026-07-29T15:48:05.801800Z"
+      "latency_ms": 392,
+      "checked_at": "2026-07-30T01:48:13.316435Z"
     },
     {
       "source_id": "openai-skills",
@@ -480,8 +335,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 180,
-      "checked_at": "2026-07-29T15:48:05.982173Z"
+      "latency_ms": 215,
+      "checked_at": "2026-07-30T01:48:13.532339Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -492,8 +347,8 @@
       "fetched_count": 251,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 101,
-      "checked_at": "2026-07-29T15:48:06.087351Z"
+      "latency_ms": 94,
+      "checked_at": "2026-07-30T01:48:13.629797Z"
     },
     {
       "source_id": "google-deepmind",
@@ -504,8 +359,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 1344,
-      "checked_at": "2026-07-29T15:48:07.433722Z"
+      "latency_ms": 306,
+      "checked_at": "2026-07-30T01:48:13.938024Z"
     },
     {
       "source_id": "google-ai",
@@ -514,10 +369,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 174,
-      "checked_at": "2026-07-29T15:48:07.608432Z"
+      "latency_ms": 180,
+      "checked_at": "2026-07-30T01:48:14.118778Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -526,10 +381,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 833,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 244,
-      "checked_at": "2026-07-29T15:48:07.864233Z"
+      "latency_ms": 233,
+      "checked_at": "2026-07-30T01:48:14.363387Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -540,8 +395,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 118,
-      "checked_at": "2026-07-29T15:48:07.983081Z"
+      "latency_ms": 107,
+      "checked_at": "2026-07-30T01:48:14.470967Z"
     },
     {
       "source_id": "github-changelog",
@@ -553,7 +408,7 @@
       "kept_count": 2,
       "error": null,
       "latency_ms": 25,
-      "checked_at": "2026-07-29T15:48:08.009176Z"
+      "checked_at": "2026-07-30T01:48:14.497109Z"
     },
     {
       "source_id": "aihot",
@@ -562,10 +417,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 10,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 825,
-      "checked_at": "2026-07-29T15:48:08.835977Z"
+      "latency_ms": 4871,
+      "checked_at": "2026-07-30T01:48:19.369383Z"
     }
   ],
   "control_notes": {
