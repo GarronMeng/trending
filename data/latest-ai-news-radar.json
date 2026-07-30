@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-30T01:48:19.376346Z",
+  "generated_at": "2026-07-30T06:13:28.483296Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -89,16 +89,16 @@
           3
         ],
         [
+          "chatgpt",
+          2
+        ],
+        [
           "hugging face",
           2
         ],
         [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
+          "codex",
+          1
         ],
         [
           "agent",
@@ -109,7 +109,11 @@
           1
         ],
         [
-          "chatgpt",
+          "api",
+          1
+        ],
+        [
+          "API",
           1
         ]
       ]
@@ -172,6 +176,26 @@
         "weak:api",
         "weak:API",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b537d4b7d18dc6bcb0136d6da8f3d20c463d2d43",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 总裁布罗克曼承认新版 ChatGPT 桌面应用\"有点乱\"，目标年底实现\"零标签\"",
+      "url": "https://aihot.virxact.com/items/cms6xky2402xgrouqgudkfgsg",
+      "published_at": "2026-07-30T02:49:47Z",
+      "summary": "OpenAI 联合创始人兼总裁格雷格·布罗克曼承认，合并 Codex 后的新版 ChatGPT 桌面应用界面\"有点乱\"，导致部分用户难以找到聊天记录。他透露，到 2026 年年底，ChatGPT 桌面应用将不再有 Work 标签页，功能会融入 ChatGPT。整合后，Codex 用户数在几天内从 500 万增至 1000 万。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms6xky2402xgrouqgudkfgsg",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -291,26 +315,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "1f58879826b431191a5cfa4ba42ca1b36ca78664",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "在 M1 Max 上运行 2.8T 参数的 Kimi K3：Deltafin 项目实现 0.0687 token/s 推理",
-      "url": "https://aihot.virxact.com/items/cms5htk9l004nros5wi94l4eh",
-      "published_at": "2026-07-29T02:49:20Z",
-      "summary": "Deltafin 项目成功在 64 GB M1 Max 上运行了 2.8T 参数的 MoE 模型 Kimi K3，当前中位推理速度为 0.0687 token/s（14.6 秒/token）。完整安装需约 1.7 TB 本地磁盘，流式模式仅需 215 GB 但推理速度降至 3 分钟以上/token。项目提供 OpenAI 兼容 API 服务器，支持聊天和代码补全，但建议客户端超时设为小时级别。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms5htk9l004nros5wi94l4eh",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -323,8 +327,8 @@
       "fetched_count": 1055,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 392,
-      "checked_at": "2026-07-30T01:48:13.316435Z"
+      "latency_ms": 492,
+      "checked_at": "2026-07-30T06:13:21.026704Z"
     },
     {
       "source_id": "openai-skills",
@@ -335,8 +339,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 215,
-      "checked_at": "2026-07-30T01:48:13.532339Z"
+      "latency_ms": 266,
+      "checked_at": "2026-07-30T06:13:21.292982Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -347,8 +351,8 @@
       "fetched_count": 251,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 94,
-      "checked_at": "2026-07-30T01:48:13.629797Z"
+      "latency_ms": 125,
+      "checked_at": "2026-07-30T06:13:21.422640Z"
     },
     {
       "source_id": "google-deepmind",
@@ -359,8 +363,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 306,
-      "checked_at": "2026-07-30T01:48:13.938024Z"
+      "latency_ms": 423,
+      "checked_at": "2026-07-30T06:13:21.847822Z"
     },
     {
       "source_id": "google-ai",
@@ -371,8 +375,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 180,
-      "checked_at": "2026-07-30T01:48:14.118778Z"
+      "latency_ms": 276,
+      "checked_at": "2026-07-30T06:13:22.125171Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -383,8 +387,8 @@
       "fetched_count": 833,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 233,
-      "checked_at": "2026-07-30T01:48:14.363387Z"
+      "latency_ms": 361,
+      "checked_at": "2026-07-30T06:13:22.498769Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -395,8 +399,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 107,
-      "checked_at": "2026-07-30T01:48:14.470967Z"
+      "latency_ms": 288,
+      "checked_at": "2026-07-30T06:13:22.787499Z"
     },
     {
       "source_id": "github-changelog",
@@ -407,8 +411,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-07-30T01:48:14.497109Z"
+      "latency_ms": 58,
+      "checked_at": "2026-07-30T06:13:22.846678Z"
     },
     {
       "source_id": "aihot",
@@ -419,8 +423,8 @@
       "fetched_count": 50,
       "kept_count": 6,
       "error": null,
-      "latency_ms": 4871,
-      "checked_at": "2026-07-30T01:48:19.369383Z"
+      "latency_ms": 5626,
+      "checked_at": "2026-07-30T06:13:28.474604Z"
     }
   ],
   "control_notes": {
