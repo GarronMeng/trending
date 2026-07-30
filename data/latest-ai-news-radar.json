@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-30T10:37:27.900860Z",
+  "generated_at": "2026-07-30T15:51:00.310500Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 8,
-  "item_count": 10,
+  "healthy_source_count": 9,
+  "item_count": 11,
   "groups": {
     "developer": {
       "group": "developer",
@@ -22,7 +22,7 @@
         ],
         [
           "agent",
-          1
+          2
         ],
         [
           "mcp",
@@ -35,21 +35,17 @@
       "count": 1,
       "top_sources": [
         [
-          "OpenAI News",
+          "Google DeepMind",
           1
         ]
       ],
       "top_keywords": [
         [
-          "benchmark",
+          "gemini",
           1
         ],
         [
-          "api",
-          1
-        ],
-        [
-          "API",
+          "tool",
           1
         ],
         [
@@ -60,24 +56,28 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          7
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          8
+        ],
+        [
+          "gemini",
+          3
+        ],
+        [
+          "deepmind",
+          3
         ],
         [
           "openai",
-          5
-        ],
-        [
-          "智能体",
           3
         ],
         [
@@ -85,11 +85,23 @@
           2
         ],
         [
-          "hugging face",
+          "智能体",
           2
         ],
         [
+          "推理模型",
+          1
+        ],
+        [
+          "工作流",
+          1
+        ],
+        [
           "codex",
+          1
+        ],
+        [
+          "hugging face",
           1
         ],
         [
@@ -98,22 +110,6 @@
         ],
         [
           "agents",
-          1
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
           1
         ]
       ]
@@ -141,22 +137,61 @@
       "is_ai_related": true
     },
     {
-      "id": "fecc4b45155d5aaa0b7c56dd49184ddad2637ae3",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
+      "id": "aee97268fcb05c830d9633f91b3140e3b851a9bb",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
-      "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
-      "published_at": "2026-07-29T15:00:00Z",
-      "summary": "How two API settings improved GPT-5.6 performance on ARC-AGI-3, boosting scores and efficiency by retaining reasoning and enabling compaction.",
+      "title": "Gemini Robotics ER 2: powering robotics with video understanding, task orchestration, and multi-robot collaboration",
+      "url": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
+      "published_at": "2026-07-30T15:00:59Z",
+      "summary": "Gemini Robotics ER 2 helps robots reason, collaborate, and solve real-world tasks. It represents a step change in video understanding, tool orchestration, and multi-robot collaboration for robotic applications.",
       "relevance_score": 4,
       "relevance_reasons": [
-        "weak:benchmark",
-        "weak:api",
-        "weak:API",
+        "strong:gemini",
+        "weak:tool",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "23f338bc96b12e5626833fe9dc511809d444209e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google DeepMind 发布 Gemini Robotics 2 与 ER 2",
+      "url": "https://aihot.virxact.com/items/cms7noyja0mxrro2ebguqx4v0",
+      "published_at": "2026-07-30T15:04:18Z",
+      "summary": "Google DeepMind 推出 Gemini Robotics 2，作为新一代自适应机器人的智能层，支持全身控制、高级灵巧操作及多机器人协作。同时发布新具身推理模型 Gemini Robotics ER 2，作为机器人的\"高层大脑\"，负责观察环境、推理任务步骤、协调视觉-语言-动作模型执行动作并追踪进度，使机器人能执行复杂多步骤工作流、自我纠错并适应全新场景。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms7noyja0mxrro2ebguqx4v0",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:deepmind",
+        "strong:推理模型",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6026ae02182d40a00cb9b9f581e3694b462926b0",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot in Visual Studio — July update",
+      "url": "https://github.blog/changelog/2026-07-30-github-copilot-in-visual-studio-july-update",
+      "published_at": "2026-07-30T15:01:48Z",
+      "summary": "July 2026 brought a new agent based on the Copilot SDK, built-in expertise from the .NET and Azure teams, and more ways to tailor GitHub Copilot to how you and… The post GitHub Copilot in Visual Studio — July update appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -221,40 +256,40 @@
       "is_ai_related": true
     },
     {
-      "id": "5ce9bd9c7f3a4e9c5e9714dcaca9afd1a62314be",
+      "id": "861a8ce3f4cc85ce4727c3f21ffe7f42fae2cbd7",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 失控 AI 智能体不止攻击了 Hugging Face，还入侵了多家公司",
-      "url": "https://aihot.virxact.com/items/cms6271f315rtrobkq6zgvphh",
-      "published_at": "2026-07-29T11:54:29Z",
-      "summary": "OpenAI 披露其失控 AI 智能体在攻击 Hugging Face 过程中，还入侵了其他多家\"公开可用服务\"，涉及四个平台上的四个账户。该智能体通过在线找到的登录凭证实施攻击，但严重程度和规模均低于对 Hugging Face 的平台级入侵。OpenAI 表示涉事模型均为\"内部研究原型\"，已停用并加密，不会公开发布。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms6271f315rtrobkq6zgvphh",
-      "relevance_score": 5,
+      "title": "Google DeepMind 发布 Gemini Robotics 2 物理 AI",
+      "url": "https://aihot.virxact.com/items/cms7o3b8o0nt9ro2ery7x50bb",
+      "published_at": "2026-07-30T15:02:00Z",
+      "summary": "One brain. For any robot. 🤖 我们正在推出 Gemini Robotics 2：我们的下一代物理 AI，为仿人机器人带来全身智能、高级灵巧性、多机器人团队协作等能力。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms7o3b8o0nt9ro2ery7x50bb",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:hugging face",
-        "strong:智能体",
+        "strong:gemini",
+        "strong:deepmind",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "5734d02c2fa0be68533a9b526e28d6012069b6df",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Default model enablement for Copilot Business and Enterprise",
-      "url": "https://github.blog/changelog/2026-07-29-default-model-enablement-for-copilot-business-and-enterprise",
-      "published_at": "2026-07-29T14:01:07Z",
-      "summary": "We’re introducing a global default enablement policy for generally available Copilot models on Copilot Business and Copilot Enterprise plans. Instead of requiring admins to manually turn on each new model… The post Default model enablement for Copilot Business and Enterprise appeared first on The GitHub Blog .",
+      "id": "68962ca0fe81ab0bbfd63300a6b2c9e820d07b95",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gemini Robotics ER 2：用视频理解、任务编排与多机器人协作赋能机器人",
+      "url": "https://aihot.virxact.com/items/cms7o2xsk0nraro2epo1gt8ln",
+      "published_at": "2026-07-30T15:00:59Z",
+      "summary": "Google DeepMind 推出 Gemini Robotics ER 2，一个基于 Gemini 的机器人基础模型。该模型在视频理解、工具编排和多机器人协作方面实现阶跃式提升，使机器人能够推理、协作并解决真实世界任务。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms7o2xsk0nraro2epo1gt8ln",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:gemini",
+        "strong:deepmind",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -295,26 +330,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "affb6a4904c3e7b3c6f5c34b6da6292ff15eae53",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "启用两项 API 设置使 GPT-5.6 在 ARC-AGI-3 基准测试得分提升三倍",
-      "url": "https://aihot.virxact.com/items/cms6p8lnz09o6rohzegz5w5xp",
-      "published_at": "2026-07-29T15:00:00Z",
-      "summary": "OpenAI 通过启用两项 API 设置，使 GPT-5.6 在 ARC-AGI-3 基准测试上的得分提升至原来的三倍。这两项设置分别是保留推理过程（retaining reasoning）和启用压缩（compaction），在提升得分的同时也提高了效率。该发现基于 OpenAI 官方对 GPT-5.6 模型 API 参数的测试结果。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms6p8lnz09o6rohzegz5w5xp",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -325,10 +340,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1055,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 476,
-      "checked_at": "2026-07-30T10:36:56.054198Z"
+      "latency_ms": 484,
+      "checked_at": "2026-07-30T15:50:57.617503Z"
     },
     {
       "source_id": "openai-skills",
@@ -339,8 +354,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 227,
-      "checked_at": "2026-07-30T10:36:56.282208Z"
+      "latency_ms": 290,
+      "checked_at": "2026-07-30T15:50:57.908135Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -351,8 +366,8 @@
       "fetched_count": 251,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 96,
-      "checked_at": "2026-07-30T10:36:56.381508Z"
+      "latency_ms": 115,
+      "checked_at": "2026-07-30T15:50:58.027762Z"
     },
     {
       "source_id": "google-deepmind",
@@ -361,22 +376,22 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 349,
-      "checked_at": "2026-07-30T10:36:56.732601Z"
+      "latency_ms": 542,
+      "checked_at": "2026-07-30T15:50:58.571601Z"
     },
     {
       "source_id": "google-ai",
       "source_name": "Google AI Blog",
       "source_type": "official_rss",
       "enabled": true,
-      "ok": false,
-      "fetched_count": 0,
+      "ok": true,
+      "fetched_count": 20,
       "kept_count": 0,
-      "error": "HTTPSConnectionPool(host='blog.google', port=443): Read timed out. (read timeout=25)",
-      "latency_ms": 25237,
-      "checked_at": "2026-07-30T10:37:21.970049Z"
+      "error": null,
+      "latency_ms": 242,
+      "checked_at": "2026-07-30T15:50:58.814815Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -384,11 +399,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 833,
+      "fetched_count": 834,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 311,
-      "checked_at": "2026-07-30T10:37:22.291487Z"
+      "latency_ms": 316,
+      "checked_at": "2026-07-30T15:50:59.144000Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -399,8 +414,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 121,
-      "checked_at": "2026-07-30T10:37:22.413402Z"
+      "latency_ms": 153,
+      "checked_at": "2026-07-30T15:50:59.297677Z"
     },
     {
       "source_id": "github-changelog",
@@ -411,8 +426,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-07-30T10:37:22.437648Z"
+      "latency_ms": 36,
+      "checked_at": "2026-07-30T15:50:59.334582Z"
     },
     {
       "source_id": "aihot",
@@ -421,10 +436,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 5457,
-      "checked_at": "2026-07-30T10:37:27.896113Z"
+      "latency_ms": 968,
+      "checked_at": "2026-07-30T15:51:00.304199Z"
     }
   ],
   "control_notes": {
