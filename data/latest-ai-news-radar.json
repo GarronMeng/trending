@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-31T02:06:14.631308Z",
+  "generated_at": "2026-07-31T06:33:53.334511Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 16,
+  "item_count": 18,
   "groups": {
     "developer": {
       "group": "developer",
@@ -104,21 +104,29 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 10,
       "top_sources": [
         [
           "AI Hot",
-          8
+          10
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          10
+        ],
+        [
+          "api",
+          3
+        ],
+        [
+          "API",
+          3
         ],
         [
           "openai",
-          3
+          2
         ],
         [
           "claude",
@@ -126,6 +134,10 @@
         ],
         [
           "开发者",
+          2
+        ],
+        [
+          "多模态",
           2
         ],
         [
@@ -141,23 +153,11 @@
           1
         ],
         [
-          "api",
+          "agent",
           1
         ],
         [
-          "API",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "anthropic",
+          "tool",
           1
         ]
       ]
@@ -285,21 +285,22 @@
       "is_ai_related": true
     },
     {
-      "id": "b537d4b7d18dc6bcb0136d6da8f3d20c463d2d43",
+      "id": "8a05589c10c4aeedafca3a53eff7f9e8b78478c1",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 总裁布罗克曼承认新版 ChatGPT 桌面应用\"有点乱\"，目标年底实现\"零标签\"",
-      "url": "https://aihot.virxact.com/items/cms6xky2402xgrouqgudkfgsg",
-      "published_at": "2026-07-30T02:49:47Z",
-      "summary": "OpenAI 联合创始人兼总裁格雷格·布罗克曼承认，合并 Codex 后的新版 ChatGPT 桌面应用界面\"有点乱\"，导致部分用户难以找到聊天记录。他透露，到 2026 年年底，ChatGPT 桌面应用将不再有 Work 标签页，功能会融入 ChatGPT。整合后，Codex 用户数在几天内从 500 万增至 1000 万。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms6xky2402xgrouqgudkfgsg",
-      "relevance_score": 5,
+      "title": "DeepSeek-V4-Flash 正式版 API 上线公测，Agent 能力基准测试远超 V4-Pro 预览版",
+      "url": "https://aihot.virxact.com/items/cms8jgm2l0fvcrot02b3gas7v",
+      "published_at": "2026-07-31T06:02:05Z",
+      "summary": "DeepSeek 今日宣布 DeepSeek-V4-Flash 正式版 API 上线公测，Agent 能力大幅增强，Terminal Bench 2.1 得分 82.7，NL2Repo 54.2，Cybergym 76.7，DeepSWE 54.4，Toolathlon verified 70.3，多项基准远超 V4-Pro-Preview。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms8jgm2l0fvcrot02b3gas7v",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:codex",
+        "strong:agent",
+        "weak:api",
+        "weak:tool",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -375,6 +376,45 @@
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "014e1087a23c613cc853f8568b80215ad9db783b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "国家发改委：将加快《人工智能法》立法进程",
+      "url": "https://aihot.virxact.com/items/cms8d138a08iwrot0isab5ede",
+      "published_at": "2026-07-31T02:48:12Z",
+      "summary": "国家发展改革委在7月31日发布会上表示，上半年国产大模型全球下载量突破100亿次，深度求索、月之暗面等本土企业已发布参数规模达\"万亿\"级别的开源大模型。下一步将加快自主创新、推动应用中试基地布局，并加快《人工智能法》立法进程，强化风险监测防控体系。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms8d138a08iwrot0isab5ede",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:人工智能",
+        "strong:大模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "13af6fa818e53e7ac63e5c2f695267783ea43e8a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "字节发布 Seedance 2.5：单次生成 30 秒视频，支持多模态参考与精准编辑",
+      "url": "https://aihot.virxact.com/items/cms8f7n9q0bezrot06im88lqu",
+      "published_at": "2026-07-30T16:00:00Z",
+      "summary": "字节跳动今日正式发布新一代视频创作模型 Seedance 2.5，单次视频生成时长从 15 秒提升至 30 秒，并支持多轮延长，可产出数分钟连贯内容。模型支持单次输入最多 30 张图片、10 段视频和 10 段音频作为参考素材，并升级白模参考、运动参考及绿幕编辑、时间戳精准编辑等能力。Seedance 2.5 已陆续上线即梦 AI、豆包专业版等平台，API 服务近期将上线火山方舟。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms8f7n9q0bezrot06im88lqu",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:多模态",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -484,8 +524,8 @@
       "fetched_count": 1057,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 418,
-      "checked_at": "2026-07-31T02:06:12.503979Z"
+      "latency_ms": 474,
+      "checked_at": "2026-07-31T06:33:50.725234Z"
     },
     {
       "source_id": "openai-skills",
@@ -496,8 +536,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 184,
-      "checked_at": "2026-07-31T02:06:12.689160Z"
+      "latency_ms": 316,
+      "checked_at": "2026-07-31T06:33:51.042242Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -508,8 +548,8 @@
       "fetched_count": 252,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 150,
-      "checked_at": "2026-07-31T02:06:12.842996Z"
+      "latency_ms": 118,
+      "checked_at": "2026-07-31T06:33:51.164251Z"
     },
     {
       "source_id": "google-deepmind",
@@ -520,8 +560,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 291,
-      "checked_at": "2026-07-31T02:06:13.135785Z"
+      "latency_ms": 447,
+      "checked_at": "2026-07-31T06:33:51.613349Z"
     },
     {
       "source_id": "google-ai",
@@ -532,8 +572,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 222,
-      "checked_at": "2026-07-31T02:06:13.358334Z"
+      "latency_ms": 361,
+      "checked_at": "2026-07-31T06:33:51.975048Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -544,8 +584,8 @@
       "fetched_count": 834,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 249,
-      "checked_at": "2026-07-31T02:06:13.619837Z"
+      "latency_ms": 324,
+      "checked_at": "2026-07-31T06:33:52.312570Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -556,8 +596,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 141,
-      "checked_at": "2026-07-31T02:06:13.761692Z"
+      "latency_ms": 135,
+      "checked_at": "2026-07-31T06:33:52.448725Z"
     },
     {
       "source_id": "github-changelog",
@@ -568,8 +608,8 @@
       "fetched_count": 10,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-07-31T02:06:13.792195Z"
+      "latency_ms": 37,
+      "checked_at": "2026-07-31T06:33:52.486987Z"
     },
     {
       "source_id": "aihot",
@@ -578,10 +618,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 828,
-      "checked_at": "2026-07-31T02:06:14.621795Z"
+      "latency_ms": 835,
+      "checked_at": "2026-07-31T06:33:53.323481Z"
     }
   ],
   "control_notes": {
