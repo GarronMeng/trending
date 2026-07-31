@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-31T09:23:34.099818Z",
+  "generated_at": "2026-07-31T11:04:28.736437Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 20,
+  "item_count": 19,
   "groups": {
     "developer": {
       "group": "developer",
@@ -52,11 +52,11 @@
     },
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI News",
-          3
+          2
         ],
         [
           "Google DeepMind",
@@ -70,11 +70,7 @@
       "top_keywords": [
         [
           "official_ai",
-          5
-        ],
-        [
-          "openai",
-          2
+          4
         ],
         [
           "gemini",
@@ -85,7 +81,7 @@
           1
         ],
         [
-          "workflow",
+          "openai",
           1
         ],
         [
@@ -121,11 +117,11 @@
           4
         ],
         [
-          "agent",
-          2
+          "多模态",
+          3
         ],
         [
-          "openai",
+          "agent",
           2
         ],
         [
@@ -141,10 +137,6 @@
           2
         ],
         [
-          "多模态",
-          2
-        ],
-        [
           "gemini",
           2
         ],
@@ -154,6 +146,10 @@
         ],
         [
           "codex",
+          1
+        ],
+        [
+          "openai",
           1
         ]
       ]
@@ -196,25 +192,6 @@
       "relevance_reasons": [
         "strong:gemini",
         "weak:tool",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a1536bda8db9edbd65c725e7a0871cf40fc46d39",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Advancing the price-performance frontier with GPT-5.6",
-      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
-      "published_at": "2026-07-30T10:00:00Z",
-      "summary": "Explore lower GPT‑5.6 pricing for Luna and Terra—and how OpenAI’s more efficient models help enterprises deploy AI workflows at scale.",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:workflow",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -412,6 +389,25 @@
       "is_ai_related": true
     },
     {
+      "id": "812a9819d045123fabd6d2e00cf048b08a730fb3",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "MiniMax H3 发布：开源全能多模态生成模型，支持 2K 原生立体声视频",
+      "url": "https://aihot.virxact.com/items/cms8rt1ml06j0roghw1n7a4bq",
+      "published_at": "2026-07-31T09:59:02Z",
+      "summary": "MiniMax 正式推出全能多模态生成模型 H3，可联合理解文本、图像、视频和音频，生成最高 2K 分辨率、15 秒时长且带原生立体声的视频。H3 在指令跟随、文字与品牌呈现、V2V 动作迁移上表现突出，2K 下每秒价格低于主流模型三分之一，768p 下低于主流 720p 价格一半。官方计划近日开源模型权重，以支持开源社区并加速硬件兼容。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms8rt1ml06j0roghw1n7a4bq",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:开源模型",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "1d9f957d3becc0181204d487ff0f70855eb46b96",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -525,25 +521,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "91167777b68fb38e08b44fc832ae18c8c582e34a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "GPT-5.6 如何推进性价比前沿",
-      "url": "https://aihot.virxact.com/items/cms7sdkx702mjropbnq4l267q",
-      "published_at": "2026-07-30T10:00:00Z",
-      "summary": "OpenAI 为 GPT-5.6 的 Luna 和 Terra 版本推出更低定价，以更高效的模型帮助企业大规模部署 AI 工作流。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms7sdkx702mjropbnq4l267q",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -554,10 +531,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1059,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 441,
-      "checked_at": "2026-07-31T09:23:31.373145Z"
+      "latency_ms": 470,
+      "checked_at": "2026-07-31T11:04:25.749076Z"
     },
     {
       "source_id": "openai-skills",
@@ -568,8 +545,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 283,
-      "checked_at": "2026-07-31T09:23:31.656885Z"
+      "latency_ms": 204,
+      "checked_at": "2026-07-31T11:04:25.953905Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -580,8 +557,8 @@
       "fetched_count": 252,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 130,
-      "checked_at": "2026-07-31T09:23:31.790997Z"
+      "latency_ms": 163,
+      "checked_at": "2026-07-31T11:04:26.121026Z"
     },
     {
       "source_id": "google-deepmind",
@@ -592,8 +569,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 350,
-      "checked_at": "2026-07-31T09:23:32.143127Z"
+      "latency_ms": 314,
+      "checked_at": "2026-07-31T11:04:26.437531Z"
     },
     {
       "source_id": "google-ai",
@@ -604,8 +581,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 205,
-      "checked_at": "2026-07-31T09:23:32.348831Z"
+      "latency_ms": 215,
+      "checked_at": "2026-07-31T11:04:26.653799Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -616,8 +593,8 @@
       "fetched_count": 834,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 304,
-      "checked_at": "2026-07-31T09:23:32.665217Z"
+      "latency_ms": 284,
+      "checked_at": "2026-07-31T11:04:26.951318Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -628,8 +605,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 230,
-      "checked_at": "2026-07-31T09:23:32.895828Z"
+      "latency_ms": 149,
+      "checked_at": "2026-07-31T11:04:27.101535Z"
     },
     {
       "source_id": "github-changelog",
@@ -640,8 +617,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 41,
-      "checked_at": "2026-07-31T09:23:32.937670Z"
+      "latency_ms": 30,
+      "checked_at": "2026-07-31T11:04:27.132261Z"
     },
     {
       "source_id": "aihot",
@@ -652,8 +629,8 @@
       "fetched_count": 50,
       "kept_count": 11,
       "error": null,
-      "latency_ms": 1151,
-      "checked_at": "2026-07-31T09:23:34.090411Z"
+      "latency_ms": 1594,
+      "checked_at": "2026-07-31T11:04:28.728026Z"
     }
   ],
   "control_notes": {
