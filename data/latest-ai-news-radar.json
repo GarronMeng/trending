@@ -1,40 +1,28 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-31T06:33:53.334511Z",
+  "generated_at": "2026-07-31T09:23:34.099818Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 18,
+  "item_count": 20,
   "groups": {
     "developer": {
       "group": "developer",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "GitHub Changelog",
-          5
+          4
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          6
-        ],
-        [
-          "agent",
-          2
+          4
         ],
         [
           "github models",
           2
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "changelog",
-          1
         ],
         [
           "inference",
@@ -49,6 +37,10 @@
           1
         ],
         [
+          "agent",
+          1
+        ],
+        [
           "workflow",
           1
         ],
@@ -60,14 +52,14 @@
     },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 5,
       "top_sources": [
         [
-          "Google DeepMind",
-          1
+          "OpenAI News",
+          3
         ],
         [
-          "OpenAI News",
+          "Google DeepMind",
           1
         ],
         [
@@ -78,7 +70,11 @@
       "top_keywords": [
         [
           "official_ai",
-          3
+          5
+        ],
+        [
+          "openai",
+          2
         ],
         [
           "gemini",
@@ -89,11 +85,11 @@
           1
         ],
         [
-          "openai",
+          "workflow",
           1
         ],
         [
-          "workflow",
+          "chatgpt",
           1
         ],
         [
@@ -104,36 +100,44 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 10,
+      "count": 11,
       "top_sources": [
         [
           "AI Hot",
-          10
+          11
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          10
+          11
         ],
         [
           "api",
-          3
+          4
         ],
         [
           "API",
-          3
+          4
+        ],
+        [
+          "agent",
+          2
         ],
         [
           "openai",
           2
         ],
         [
-          "claude",
+          "开发者",
           2
         ],
         [
-          "开发者",
+          "人工智能",
+          2
+        ],
+        [
+          "大模型",
           2
         ],
         [
@@ -149,42 +153,13 @@
           2
         ],
         [
-          "llm",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "tool",
+          "codex",
           1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "26f55b7a833f9a8490e7d92c76d783192d4f879d",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Copilot in Visual Studio Code, July 2026 releases",
-      "url": "https://github.blog/changelog/2026-07-30-github-copilot-in-visual-studio-code-july-2026-releases",
-      "published_at": "2026-07-30T08:00:00Z",
-      "summary": "This changelog covers VS Code v1.127 through v1.131, shipped throughout July 2026. These releases improve how you work with agents, review changes, use chat, and navigate VS Code. They also… The post GitHub Copilot in Visual Studio Code, July 2026 releases appeared first on The GitHub Blog .",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "weak:changelog",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "532c325613f7bec704f548cd964ccd71d1f51764",
       "source_id": "github-changelog",
@@ -245,6 +220,42 @@
       "is_ai_related": true
     },
     {
+      "id": "53cb3525cde88897234406f826ec7f895863523d",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Advancing responsible AI across Europe",
+      "url": "https://openai.com/index/advancing-responsible-ai-across-europe",
+      "published_at": "2026-07-31T15:00:00Z",
+      "summary": "OpenAI shares how its safety, security, transparency, and provenance practices support responsible AI governance in Europe. The work will continue as the EU AI Act advances.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "69bc336885b9102965b74e6aaf2c0da93596b792",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Univé builds an AI-ready workforce",
+      "url": "https://openai.com/index/unive",
+      "published_at": "2026-07-31T07:00:00Z",
+      "summary": "See how Univé built an AI-ready workforce with ChatGPT Enterprise by combining leadership, responsible governance, and employee-led innovation to transform work at scale.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "6026ae02182d40a00cb9b9f581e3694b462926b0",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -264,6 +275,27 @@
       "is_ai_related": true
     },
     {
+      "id": "2e15a7d489c7f100b0b7d4e465fdcf81f4384b55",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "DeepSeek-V4-Flash API公测上线，Agent能力大幅升级",
+      "url": "https://aihot.virxact.com/items/cms8ld9380i7arot0lyxt8h3t",
+      "published_at": "2026-07-31T06:56:41Z",
+      "summary": "🚀 DeepSeek-V4-Flash 官方 API 现已上线公测！ 🔷 我们大幅升级了其 Agent 能力--基准测试分数现已远超 V4-Pro-Preview。查看下方巨大的性能飞跃！👇 🔷 官方 V4-Flash 现已原生支持 Responses API 格式，并已完全适配 Codex！ 查看我们官方 API 文档中的配置详情：https://api-docs.deepseek.com/quick_start/agent_integrations/codex 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms8ld9380i7arot0lyxt8h3t",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:codex",
+        "strong:agent",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "b67d81438777fad3ea31c0864376fdc011fd7581",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -279,27 +311,6 @@
         "strong:openai",
         "strong:llm",
         "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8a05589c10c4aeedafca3a53eff7f9e8b78478c1",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "DeepSeek-V4-Flash 正式版 API 上线公测，Agent 能力基准测试远超 V4-Pro 预览版",
-      "url": "https://aihot.virxact.com/items/cms8jgm2l0fvcrot02b3gas7v",
-      "published_at": "2026-07-31T06:02:05Z",
-      "summary": "DeepSeek 今日宣布 DeepSeek-V4-Flash 正式版 API 上线公测，Agent 能力大幅增强，Terminal Bench 2.1 得分 82.7，NL2Repo 54.2，Cybergym 76.7，DeepSWE 54.4，Toolathlon verified 70.3，多项基准远超 V4-Pro-Preview。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms8jgm2l0fvcrot02b3gas7v",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:api",
-        "weak:tool",
         "weak:API",
         "source_penalty:aggregate_noise"
       ],
@@ -362,6 +373,27 @@
       "is_ai_related": true
     },
     {
+      "id": "5ad78523de110f6cebe4708aa616825b640e4820",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "DeepSeek-V4-Flash 正式版 API 上线公测",
+      "url": "https://aihot.virxact.com/items/cms8mb361000prof1z6fg37om",
+      "published_at": "2026-07-30T16:00:00Z",
+      "summary": "DeepSeek-V4-Flash 正式版 API 上线公测，模型名设为 deepseek-v4-flash 即可使用，调用方式不变。其 Agent 能力大幅增强，Terminal Bench 2.1 得分 82.7，NL2Repo 54.2，Toolathlon verified 70.3，DSBench-Hard 59.6，多项基准远超 V4-Pro-Preview。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms8mb361000prof1z6fg37om",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:api",
+        "weak:tool",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "68e4233595ce2b99d9ec73517e2fe527fbeb3d16",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -376,6 +408,25 @@
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1d9f957d3becc0181204d487ff0f70855eb46b96",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "国家发改委：人工智能相关行业保持 30% 以上高增长，全国智能算力规模达去年同期 2.8 倍",
+      "url": "https://aihot.virxact.com/items/cms8llt7f0iaprot0tz5qnk6i",
+      "published_at": "2026-07-31T06:38:54Z",
+      "summary": "国家发展改革委在 7 月新闻发布会上介绍，上半年人工智能自主创新加快，首个全国产 10 万卡人工智能超集群正式投用，截至 6 月底全国智能算力规模达去年同期 2.8 倍。深度求索、月之暗面等本土企业发布多个万亿级参数开源大模型，国产大模型全球总下载量突破 100 亿次。相关行业保持 30% 以上高增长，上半年规模以上工业企业集成电路产量同比增长 23.1%，出口额同比增长 88.7%。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms8llt7f0iaprot0tz5qnk6i",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:人工智能",
+        "strong:大模型",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -457,25 +508,6 @@
       "is_ai_related": true
     },
     {
-      "id": "072709554ae593b688929196f8603125f09cff3a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Token Saver：用本地混合 RAG 将 Claude PDF token 消耗削减 92%-99% 的开源 MCP 扩展",
-      "url": "https://aihot.virxact.com/items/cms782fxi02w4ro2evmcwz6uj",
-      "published_at": "2026-07-30T07:43:29Z",
-      "summary": "Marktechpost AI 团队发布 Token Saver，一款面向 Claude Desktop 的开源 MCP 扩展，通过本地混合 RAG 在设备端检索 PDF，无需上传文件。该工具将 token 消耗削减 92%-99%，并保证数据隐私，设置无需 Python 环境或终端配置。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms782fxi02w4ro2evmcwz6uj",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:mcp",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "b8f1e80db83ac71f333d9caddcf78a080cfcadbc",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -521,11 +553,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1057,
-      "kept_count": 1,
+      "fetched_count": 1059,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 474,
-      "checked_at": "2026-07-31T06:33:50.725234Z"
+      "latency_ms": 441,
+      "checked_at": "2026-07-31T09:23:31.373145Z"
     },
     {
       "source_id": "openai-skills",
@@ -536,8 +568,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 316,
-      "checked_at": "2026-07-31T06:33:51.042242Z"
+      "latency_ms": 283,
+      "checked_at": "2026-07-31T09:23:31.656885Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -548,8 +580,8 @@
       "fetched_count": 252,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 118,
-      "checked_at": "2026-07-31T06:33:51.164251Z"
+      "latency_ms": 130,
+      "checked_at": "2026-07-31T09:23:31.790997Z"
     },
     {
       "source_id": "google-deepmind",
@@ -560,8 +592,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 447,
-      "checked_at": "2026-07-31T06:33:51.613349Z"
+      "latency_ms": 350,
+      "checked_at": "2026-07-31T09:23:32.143127Z"
     },
     {
       "source_id": "google-ai",
@@ -572,8 +604,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 361,
-      "checked_at": "2026-07-31T06:33:51.975048Z"
+      "latency_ms": 205,
+      "checked_at": "2026-07-31T09:23:32.348831Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -584,8 +616,8 @@
       "fetched_count": 834,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 324,
-      "checked_at": "2026-07-31T06:33:52.312570Z"
+      "latency_ms": 304,
+      "checked_at": "2026-07-31T09:23:32.665217Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -596,8 +628,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 135,
-      "checked_at": "2026-07-31T06:33:52.448725Z"
+      "latency_ms": 230,
+      "checked_at": "2026-07-31T09:23:32.895828Z"
     },
     {
       "source_id": "github-changelog",
@@ -606,10 +638,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 5,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 37,
-      "checked_at": "2026-07-31T06:33:52.486987Z"
+      "latency_ms": 41,
+      "checked_at": "2026-07-31T09:23:32.937670Z"
     },
     {
       "source_id": "aihot",
@@ -618,10 +650,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 10,
+      "kept_count": 11,
       "error": null,
-      "latency_ms": 835,
-      "checked_at": "2026-07-31T06:33:53.323481Z"
+      "latency_ms": 1151,
+      "checked_at": "2026-07-31T09:23:34.090411Z"
     }
   ],
   "control_notes": {
