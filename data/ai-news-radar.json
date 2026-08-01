@@ -1,39 +1,31 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-07-31T16:00:38.283968Z",
+  "generated_at": "2026-08-01T02:07:17.702143Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 13,
+  "item_count": 16,
   "groups": {
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          3
         ]
       ],
       "top_keywords": [
         [
-          "github models",
-          2
+          "copilot",
+          4
         ],
         [
-          "inference",
+          "gemini",
           1
         ],
         [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "workflow",
+          "agent",
           1
         ],
         [
@@ -44,21 +36,17 @@
     },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI News",
           2
-        ],
-        [
-          "GitHub AI & ML",
-          1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
+          2
         ],
         [
           "openai",
@@ -67,37 +55,49 @@
         [
           "chatgpt",
           1
-        ],
-        [
-          "copilot",
-          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 11,
       "top_sources": [
         [
           "AI Hot",
-          8
+          11
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          11
+        ],
+        [
+          "claude",
+          3
         ],
         [
           "人工智能",
           3
         ],
         [
-          "anthropic",
+          "codex",
           2
         ],
         [
-          "claude",
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "开源模型",
+          2
+        ],
+        [
+          "智能体",
           2
         ],
         [
@@ -105,31 +105,15 @@
           2
         ],
         [
-          "codex",
-          1
-        ],
-        [
           "agent",
           1
         ],
         [
-          "api",
+          "自动化",
           1
         ],
         [
-          "API",
-          1
-        ],
-        [
-          "开发者",
-          1
-        ],
-        [
-          "llm",
-          1
-        ],
-        [
-          "智能体",
+          "eval",
           1
         ]
       ]
@@ -137,23 +121,22 @@
   },
   "items": [
     {
-      "id": "532c325613f7bec704f548cd964ccd71d1f51764",
+      "id": "e406c88c7f5df0766f8eccc9caded35d3050eacb",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "GitHub Models is now retired",
-      "url": "https://github.blog/changelog/2026-07-30-github-models-is-now-retired",
-      "published_at": "2026-07-30T19:14:22Z",
-      "summary": "As of July 30, 2026, GitHub Models is now retired. The playground, model catalog, inference API, and bring your own key (BYOK) are no longer available to any customer, including… The post GitHub Models is now retired appeared first on The GitHub Blog .",
-      "relevance_score": 6,
+      "title": "Gemini 2.5 Pro and Gemini 3 Flash deprecated",
+      "url": "https://github.blog/changelog/2026-07-31-gemini-2-5-pro-and-gemini-3-flash-deprecated",
+      "published_at": "2026-07-31T20:04:01Z",
+      "summary": "As of today, July 31, 2026, we have deprecated the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Model… The post Gemini 2.5 Pro and Gemini 3 Flash deprecated appeared first on The GitHub Blog .",
+      "relevance_score": 7,
       "relevance_reasons": [
-        "weak:inference",
-        "weak:api",
-        "weak:github models",
-        "weak:API",
-        "source:github models"
+        "strong:gemini",
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -215,58 +198,116 @@
       "is_ai_related": true
     },
     {
-      "id": "77c28f95921f7c0f4b88108424ce41b2560a82cd",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 披露 Claude 在安全评估中入侵真实系统",
-      "url": "https://aihot.virxact.com/items/cms85aex001maroeqt307ub7i",
-      "published_at": "2026-07-30T23:02:34Z",
-      "summary": "Anthropic 在网络安全评估审查中发现，Claude 模型在三次独立事件中从第三方评估环境接入互联网，并未经授权访问了三家不同组织的真实系统。Anthropic 与评估合作伙伴 Irregular 联合调查了事件经过与原因，并公布了改进措施，同时呼吁其他 AI 开发者进行类似审查。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms85aex001maroeqt307ub7i",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7e7d2a7642b4f7d3962e0889106d6a35f1f21439",
+      "id": "ad11ebe7d75917686de637f8664b8d1b49f3a748",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Reference same-repository actions with self-repository syntax",
-      "url": "https://github.blog/changelog/2026-07-30-reference-same-repository-actions-with-self-repository-syntax",
-      "published_at": "2026-07-30T17:39:46Z",
-      "summary": "You can now reference an action or reusable workflow that lives in the same repository using the new self-repository syntax. A uses: value that starts with $/ resolves to your… The post Reference same-repository actions with self-repository syntax appeared first on The GitHub Blog .",
+      "title": "Enterprise teams model policy targeting in public preview",
+      "url": "https://github.blog/changelog/2026-07-31-enterprise-teams-model-policy-targeting-in-public-preview",
+      "published_at": "2026-07-31T18:11:50Z",
+      "summary": "You can now take advantage of user-based model policy targeting for GitHub Enterprise customers with Copilot Business or Copilot Enterprise licenses. This feature empowers AI administrators to set a baseline… The post Enterprise teams model policy targeting in public preview appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:workflow",
-        "source:actions"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
     {
-      "id": "4a2badacf7d8b818159b8583804b6b98ea58bcce",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
+      "id": "4c22558cee6303c080d4ea693dcb51207d454054",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "animated-voiceover 开源：一人干翻动画工作室",
+      "url": "https://aihot.virxact.com/items/cms96t19506karo9k3wjqx5vb",
+      "published_at": "2026-07-31T16:01:51Z",
+      "summary": "前字节产品经理 @s1dashu 开源 animated-voiceover，一套喂给 Codex/Claude Code 的完整动画科普视频制片流程，MIT 协议，可实现 90% 自动化。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms96t19506karo9k3wjqx5vb",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2ba8798dc054ce17d09f732ded10caf26233ad4a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "DeepSeek V4 Flash 0731 开源，登顶开源模型前三",
+      "url": "https://aihot.virxact.com/items/cms9hiyz80fdvro9kepvm1qvk",
+      "published_at": "2026-07-31T21:38:05Z",
+      "summary": "DeepSeek 发布开源模型 DeepSeek V4 Flash 0731，在 Artificial Analysis 智能指数上得分 50，位列开源模型前三。该模型采用 MIT 许可，总参数 284B（激活 13B），FP4/FP8 混合精度约 167GB，与 V4 Flash 架构和定价一致，并已上线官方 API。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms9hiyz80fdvro9kepvm1qvk",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:开源模型",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "dfb017bbd2ebc2bb3e197d64e7a40f65f2d36071",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "smevals：用于评测模型、提示词与评测框架的小型评测套件",
+      "url": "https://aihot.virxact.com/items/cms9has920ey7ro9k5oh4ooow",
+      "published_at": "2026-07-31T21:15:23Z",
+      "summary": "smevals 是 Simon Willison 与 Prime Radiant 实验室合作开发的新工具，用于跨不同模型配置运行小型评测套件并对结果打分。它支持通过 `uvx smevals run` 对 gpt-5.5、claude-opus-4.6 等模型运行评测，并将运行与打分分离，最终可生成静态 HTML 报告。这是 Willison 在评测方法上的第三次迭代。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms9has920ey7ro9k5oh4ooow",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "weak:eval",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "126f4a23a1cdc7df4bbdc206f73effe27f620977",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Tailscale 未能阻止 Hugging Face 入侵事件复盘",
+      "url": "https://aihot.virxact.com/items/cms9fby3v0di0ro9kx53j5ygx",
+      "published_at": "2026-07-31T20:25:20Z",
+      "summary": "一个 AI 智能体逃出安全评估沙箱，利用窃取的 Tailscale 凭据在 Hugging Face 的 tailnet 上注册了 181 个节点，但未发现或利用 Tailscale 的任何漏洞。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms9fby3v0di0ro9kx53j5ygx",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "02c772be8cd9223717292a3cd0aef6cb4f2ac6fd",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "Stacked sessions and pull requests in the GitHub Copilot app",
-      "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app",
-      "published_at": "2026-07-30T17:30:24Z",
-      "summary": "Learn how I modernized an old codebase of mine using stacked sessions and pull requests in the GitHub Copilot app. The post Stacked sessions and pull requests in the GitHub Copilot app appeared first on The GitHub Blog .",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Restricting npm bypass-2FA granular access tokens",
+      "url": "https://github.blog/changelog/2026-07-31-restricting-npm-bypass-2fa-granular-access-tokens",
+      "published_at": "2026-07-31T16:45:50Z",
+      "summary": "npm granular access tokens (GATs) configured to bypass 2FA can no longer perform sensitive account, org, and package management actions. These now require an interactive 2FA challenge, closing one of… The post Restricting npm bypass-2FA granular access tokens appeared first on The GitHub Blog .",
       "relevance_score": 2,
       "relevance_reasons": [
-        "weak:copilot",
-        "source_prior:official_ai"
+        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -392,11 +433,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1060,
+      "fetched_count": 1104,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 609,
-      "checked_at": "2026-07-31T16:00:35.907602Z"
+      "latency_ms": 588,
+      "checked_at": "2026-08-01T02:07:14.348730Z"
     },
     {
       "source_id": "openai-skills",
@@ -408,7 +449,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 357,
-      "checked_at": "2026-07-31T16:00:36.264850Z"
+      "checked_at": "2026-08-01T02:07:14.706533Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -419,8 +460,8 @@
       "fetched_count": 252,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 131,
-      "checked_at": "2026-07-31T16:00:36.399929Z"
+      "latency_ms": 188,
+      "checked_at": "2026-08-01T02:07:14.897971Z"
     },
     {
       "source_id": "google-deepmind",
@@ -431,8 +472,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 329,
-      "checked_at": "2026-07-31T16:00:36.730863Z"
+      "latency_ms": 353,
+      "checked_at": "2026-08-01T02:07:15.252758Z"
     },
     {
       "source_id": "google-ai",
@@ -443,8 +484,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 239,
-      "checked_at": "2026-07-31T16:00:36.970782Z"
+      "latency_ms": 283,
+      "checked_at": "2026-08-01T02:07:15.536470Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -455,8 +496,8 @@
       "fetched_count": 834,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 317,
-      "checked_at": "2026-07-31T16:00:37.298206Z"
+      "latency_ms": 283,
+      "checked_at": "2026-08-01T02:07:15.828627Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -465,10 +506,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 218,
-      "checked_at": "2026-07-31T16:00:37.516637Z"
+      "latency_ms": 333,
+      "checked_at": "2026-08-01T02:07:16.162550Z"
     },
     {
       "source_id": "github-changelog",
@@ -477,10 +518,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 39,
-      "checked_at": "2026-07-31T16:00:37.556130Z"
+      "latency_ms": 40,
+      "checked_at": "2026-08-01T02:07:16.203254Z"
     },
     {
       "source_id": "aihot",
@@ -489,10 +530,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 11,
       "error": null,
-      "latency_ms": 718,
-      "checked_at": "2026-07-31T16:00:38.275368Z"
+      "latency_ms": 1490,
+      "checked_at": "2026-08-01T02:07:17.694060Z"
     }
   ],
   "control_notes": {
