@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-01T06:16:32.852410Z",
+  "generated_at": "2026-08-01T08:39:11.545290Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -45,16 +45,12 @@
       ],
       "top_keywords": [
         [
-          "official_ai",
+          "openai",
           2
         ],
         [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
+          "official_ai",
+          2
         ]
       ]
     },
@@ -73,15 +69,23 @@
           10
         ],
         [
+          "openai",
+          3
+        ],
+        [
           "claude",
           3
         ],
         [
-          "openai",
+          "hugging face",
           2
         ],
         [
-          "hugging face",
+          "api",
+          2
+        ],
+        [
+          "API",
           2
         ],
         [
@@ -90,10 +94,6 @@
         ],
         [
           "智能体",
-          2
-        ],
-        [
-          "人工智能",
           2
         ],
         [
@@ -109,11 +109,7 @@
           1
         ],
         [
-          "api",
-          1
-        ],
-        [
-          "API",
+          "eval",
           1
         ]
       ]
@@ -141,6 +137,24 @@
       "is_ai_related": true
     },
     {
+      "id": "668f4dcc24e222ce6275d89c0969fe5ac0aa4549",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Ten advances in mathematics and theoretical computer science",
+      "url": "https://openai.com/index/ten-advances-in-mathematics",
+      "published_at": "2026-08-01T00:00:00Z",
+      "summary": "OpenAI shares new results on long-standing open problems in mathematics and theoretical computer science, including advances in geometry, cryptography, and complexity.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "53cb3525cde88897234406f826ec7f895863523d",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -154,24 +168,6 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "69bc336885b9102965b74e6aaf2c0da93596b792",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Univé builds an AI-ready workforce",
-      "url": "https://openai.com/index/unive",
-      "published_at": "2026-07-31T07:00:00Z",
-      "summary": "See how Univé built an AI-ready workforce with ChatGPT Enterprise by combining leadership, responsible governance, and employee-led innovation to transform work at scale.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -230,6 +226,26 @@
         "strong:claude",
         "strong:codex",
         "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7b8278136b3a38616cbd4d427fde3ccc5c39238e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI Astra 以约2000美元证明10项数学难题",
+      "url": "https://aihot.virxact.com/items/cmsa302cc01xaro41omun2e1h",
+      "published_at": "2026-08-01T07:39:02Z",
+      "summary": "OpenAI 用下一代模型 Astra 内部版解决了数学与理论计算机科学领域的10项重大进展，总成本约2000美元（按 Sol API 价格计算）。Astra 证明了非 sofic 群的存在，并推翻 Connes 刚性猜想，成果涵盖 von Neumann 代数、高维球堆积、电路复杂度等。OpenAI 已发布全部10项证明，附 Lean 证书与 CoT 逐步推导。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsa302cc01xaro41omun2e1h",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:api",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -385,25 +401,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "1d9f957d3becc0181204d487ff0f70855eb46b96",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "国家发改委：人工智能相关行业保持 30% 以上高增长，全国智能算力规模达去年同期 2.8 倍",
-      "url": "https://aihot.virxact.com/items/cms8llt7f0iaprot0tz5qnk6i",
-      "published_at": "2026-07-31T06:38:54Z",
-      "summary": "国家发展改革委在 7 月新闻发布会上介绍，上半年人工智能自主创新加快，首个全国产 10 万卡人工智能超集群正式投用，截至 6 月底全国智能算力规模达去年同期 2.8 倍。深度求索、月之暗面等本土企业发布多个万亿级参数开源大模型，国产大模型全球总下载量突破 100 亿次。相关行业保持 30% 以上高增长，上半年规模以上工业企业集成电路产量同比增长 23.1%，出口额同比增长 88.7%。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cms8llt7f0iaprot0tz5qnk6i",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:人工智能",
-        "strong:大模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -413,11 +410,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1104,
+      "fetched_count": 1105,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 417,
-      "checked_at": "2026-08-01T06:16:29.728008Z"
+      "latency_ms": 508,
+      "checked_at": "2026-08-01T08:39:09.074307Z"
     },
     {
       "source_id": "openai-skills",
@@ -428,8 +425,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 347,
-      "checked_at": "2026-08-01T06:16:30.075194Z"
+      "latency_ms": 334,
+      "checked_at": "2026-08-01T08:39:09.409261Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -440,8 +437,8 @@
       "fetched_count": 252,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 367,
-      "checked_at": "2026-08-01T06:16:30.449374Z"
+      "latency_ms": 144,
+      "checked_at": "2026-08-01T08:39:09.556800Z"
     },
     {
       "source_id": "google-deepmind",
@@ -452,8 +449,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 503,
-      "checked_at": "2026-08-01T06:16:30.954089Z"
+      "latency_ms": 414,
+      "checked_at": "2026-08-01T08:39:09.972525Z"
     },
     {
       "source_id": "google-ai",
@@ -464,8 +461,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 265,
-      "checked_at": "2026-08-01T06:16:31.219609Z"
+      "latency_ms": 223,
+      "checked_at": "2026-08-01T08:39:10.196229Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -476,8 +473,8 @@
       "fetched_count": 834,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 248,
-      "checked_at": "2026-08-01T06:16:31.476848Z"
+      "latency_ms": 313,
+      "checked_at": "2026-08-01T08:39:10.521394Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -488,8 +485,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 168,
-      "checked_at": "2026-08-01T06:16:31.645447Z"
+      "latency_ms": 230,
+      "checked_at": "2026-08-01T08:39:10.752202Z"
     },
     {
       "source_id": "github-changelog",
@@ -500,8 +497,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-08-01T06:16:31.674235Z"
+      "latency_ms": 44,
+      "checked_at": "2026-08-01T08:39:10.797153Z"
     },
     {
       "source_id": "aihot",
@@ -512,8 +509,8 @@
       "fetched_count": 50,
       "kept_count": 10,
       "error": null,
-      "latency_ms": 1169,
-      "checked_at": "2026-08-01T06:16:32.844455Z"
+      "latency_ms": 738,
+      "checked_at": "2026-08-01T08:39:11.536643Z"
     }
   ],
   "control_notes": {
