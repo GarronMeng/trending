@@ -1,12 +1,62 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-02T10:13:10.278963Z",
+  "generated_at": "2026-08-02T15:00:14.349995Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 0,
-  "groups": {},
-  "items": [],
+  "item_count": 1,
+  "groups": {
+    "aggregate": {
+      "group": "aggregate",
+      "count": 1,
+      "top_sources": [
+        [
+          "AI Hot",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "codex",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "aggregate_noise",
+          1
+        ]
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "54c6a74e2c0d697fc77c578cfb3e85a3547c6c53",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Codex 用 Sol 指挥 Luna Max 省额度翻倍产出",
+      "url": "https://aihot.virxact.com/items/cmsbowa0l0m77rohvw8s15ia1",
+      "published_at": "2026-08-02T10:47:27Z",
+      "summary": "Codex 高阶玩法：让 Sol 在 `~/.codex/agents/` 下创建 `luna-worker.toml` 子代理，模型设 `gpt-5.6-luna`、reasoning effort 设 max，Sol 负责拆任务与审代码，具体实现自动委托给 Luna Max。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsbowa0l0m77rohvw8s15ia1",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:codex",
+        "strong:agent",
+        "strong:agents",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    }
+  ],
   "source_health": [
     {
       "source_id": "openai-news",
@@ -17,8 +67,8 @@
       "fetched_count": 1105,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 357,
-      "checked_at": "2026-08-02T10:13:04.372961Z"
+      "latency_ms": 416,
+      "checked_at": "2026-08-02T15:00:08.200135Z"
     },
     {
       "source_id": "openai-skills",
@@ -29,8 +79,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 457,
-      "checked_at": "2026-08-02T10:13:04.830152Z"
+      "latency_ms": 206,
+      "checked_at": "2026-08-02T15:00:08.406923Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -41,8 +91,8 @@
       "fetched_count": 252,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 95,
-      "checked_at": "2026-08-02T10:13:04.928118Z"
+      "latency_ms": 110,
+      "checked_at": "2026-08-02T15:00:08.521107Z"
     },
     {
       "source_id": "google-deepmind",
@@ -53,8 +103,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 283,
-      "checked_at": "2026-08-02T10:13:05.213039Z"
+      "latency_ms": 219,
+      "checked_at": "2026-08-02T15:00:08.742451Z"
     },
     {
       "source_id": "google-ai",
@@ -65,8 +115,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 235,
-      "checked_at": "2026-08-02T10:13:05.448925Z"
+      "latency_ms": 185,
+      "checked_at": "2026-08-02T15:00:08.928374Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -77,8 +127,8 @@
       "fetched_count": 834,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 217,
-      "checked_at": "2026-08-02T10:13:05.675459Z"
+      "latency_ms": 230,
+      "checked_at": "2026-08-02T15:00:09.170029Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -89,8 +139,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 475,
-      "checked_at": "2026-08-02T10:13:06.150810Z"
+      "latency_ms": 186,
+      "checked_at": "2026-08-02T15:00:09.357001Z"
     },
     {
       "source_id": "github-changelog",
@@ -101,8 +151,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-08-02T10:13:06.182417Z"
+      "latency_ms": 29,
+      "checked_at": "2026-08-02T15:00:09.386323Z"
     },
     {
       "source_id": "aihot",
@@ -111,10 +161,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 4089,
-      "checked_at": "2026-08-02T10:13:10.272802Z"
+      "latency_ms": 4953,
+      "checked_at": "2026-08-02T15:00:14.340954Z"
     }
   ],
   "control_notes": {
