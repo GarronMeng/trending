@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-04T06:15:51.347476Z",
+  "generated_at": "2026-08-04T09:19:25.501550Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 10,
   "groups": {
     "developer": {
       "group": "developer",
@@ -52,21 +52,29 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          6
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          7
         ],
         [
           "agent",
           3
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
         ],
         [
           "openai",
@@ -98,14 +106,6 @@
         ],
         [
           "agents",
-          1
-        ],
-        [
-          "eval",
-          1
-        ],
-        [
-          "api",
           1
         ]
       ]
@@ -266,6 +266,26 @@
       "is_ai_related": true
     },
     {
+      "id": "28191d0225ebde8af7d4874da9b06a2d0e1facf5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "腾讯混元发布 Hy ASR 3.0 preview：真正懂上下文的语音识别",
+      "url": "https://aihot.virxact.com/items/cmsee1mhf0nn6ro2em6rt7tr4",
+      "published_at": "2026-08-04T08:12:36Z",
+      "summary": "腾讯混元发布新一代语音识别模型 Hy ASR 3.0 preview，基于大语言模型 Hy3 与 MoE 架构，融合高精度识别与语义理解。其在开源评测集中中文普通话 WER 3.34%、英语 WER 2.62%、粤语 WER 3.12%，并支持上下文纠错、热词注入及高噪耳语等场景。该模型已上线腾讯云 API，元宝 App 首发并免费开放。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsee1mhf0nn6ro2em6rt7tr4",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:API",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "cc1829363135b4a741c2359d425b55add79de4cc",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -296,8 +316,8 @@
       "fetched_count": 1108,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 536,
-      "checked_at": "2026-08-04T06:15:49.123782Z"
+      "latency_ms": 523,
+      "checked_at": "2026-08-04T09:19:22.489894Z"
     },
     {
       "source_id": "openai-skills",
@@ -308,8 +328,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 181,
-      "checked_at": "2026-08-04T06:15:49.305062Z"
+      "latency_ms": 250,
+      "checked_at": "2026-08-04T09:19:22.741014Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -320,8 +340,8 @@
       "fetched_count": 252,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 132,
-      "checked_at": "2026-08-04T06:15:49.441312Z"
+      "latency_ms": 211,
+      "checked_at": "2026-08-04T09:19:22.956537Z"
     },
     {
       "source_id": "google-deepmind",
@@ -332,8 +352,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 311,
-      "checked_at": "2026-08-04T06:15:49.754872Z"
+      "latency_ms": 506,
+      "checked_at": "2026-08-04T09:19:23.464946Z"
     },
     {
       "source_id": "google-ai",
@@ -344,8 +364,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 164,
-      "checked_at": "2026-08-04T06:15:49.920096Z"
+      "latency_ms": 498,
+      "checked_at": "2026-08-04T09:19:23.963675Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -356,8 +376,8 @@
       "fetched_count": 834,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 251,
-      "checked_at": "2026-08-04T06:15:50.184712Z"
+      "latency_ms": 342,
+      "checked_at": "2026-08-04T09:19:24.318957Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -368,8 +388,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 132,
-      "checked_at": "2026-08-04T06:15:50.316929Z"
+      "latency_ms": 279,
+      "checked_at": "2026-08-04T09:19:24.598177Z"
     },
     {
       "source_id": "github-changelog",
@@ -380,8 +400,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-08-04T06:15:50.340945Z"
+      "latency_ms": 52,
+      "checked_at": "2026-08-04T09:19:24.651339Z"
     },
     {
       "source_id": "aihot",
@@ -390,10 +410,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 998,
-      "checked_at": "2026-08-04T06:15:51.340872Z"
+      "latency_ms": 840,
+      "checked_at": "2026-08-04T09:19:25.493380Z"
     }
   ],
   "control_notes": {
