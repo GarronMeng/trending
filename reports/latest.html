@@ -43,17 +43,43 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>4</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>6</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>0</b><span>官方源条目</span></div>
-        <div class="stat"><b>4</b><span>聚合源条目</span></div>
+        <div class="stat"><b>6</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-08-03T16:22:37.135356Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-08-04T01:51:51.469017Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-08-04T00:06:00Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmsdwjgim0327ro2ek45x3jz5" target="_blank" rel="noreferrer">从零开始，教你用Codex搓出属于你自己的第一个硬件</a></h3>
+      <p class='summary'>作者以零基础身份，全程通过与Codex对话，从需求讨论、电路搭建、代码烧录到3D打印组装，5天内做出一个能提醒久坐的猫爪硬件。文中还介绍了用Agent调试宏键盘、以及OpenAI与Work Louder联名发布的Codex Micro键盘（13个机械按键，售价230美元）等案例，强调&quot;干中学&quot;的AI开发方式。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsdwjgim0327ro2ek45x3jz5</p>
+      <div class="tags"><span>strong:openai</span><span>strong:codex</span><span>strong:agent</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-08-03T16:24:45Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmsdg55m700l4roca3x3gtfb1" target="_blank" rel="noreferrer">AirLLM 实现单块 4GB GPU 运行 70B 模型推理</a></h3>
+      <p class='summary'>AirLLM 项目支持在单块 4GB 显存 GPU 上运行 70B 参数大模型推理，无需多卡或大规模显存配置。该项目已开源，相关讨论在 Hacker News 上获得 103 点热度，引发社区关注。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsdg55m700l4roca3x3gtfb1</p>
+      <div class="tags"><span>strong:llm</span><span>strong:大模型</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>AI Hot</span>
@@ -110,15 +136,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1105</td><td>0</td><td>748ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>236ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>252</td><td>0</td><td>125ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>390ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>283ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>834</td><td>0</td><td>430ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>273ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>58ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>4</td><td>4884ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1107</td><td>0</td><td>564ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>326ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>252</td><td>0</td><td>166ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>436ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>258ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>834</td><td>0</td><td>357ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>366ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>42ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>6</td><td>1064ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
