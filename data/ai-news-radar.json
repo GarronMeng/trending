@@ -1,28 +1,32 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-05T09:18:33.325885Z",
+  "generated_at": "2026-08-05T10:58:22.986766Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 15,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 11,
       "top_sources": [
         [
           "AI Hot",
-          8
+          11
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          11
         ],
         [
           "智能体",
-          6
+          7
+        ],
+        [
+          "openai",
+          4
         ],
         [
           "api",
@@ -33,15 +37,19 @@
           4
         ],
         [
+          "claude",
+          3
+        ],
+        [
           "agent",
           3
         ],
         [
-          "openai",
+          "开发者",
           2
         ],
         [
-          "开发者",
+          "anthropic",
           2
         ],
         [
@@ -49,19 +57,11 @@
           2
         ],
         [
-          "claude",
-          1
-        ],
-        [
           "gemini",
           1
         ],
         [
-          "llm",
-          1
-        ],
-        [
-          "自动化",
+          "评测",
           1
         ]
       ]
@@ -198,6 +198,27 @@
       "is_ai_related": true
     },
     {
+      "id": "52a5b3e255379aa8b1ae71663b398a6639caa42a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Mythos 5 与 GPT-5.6 Sol 在 AISI 评测中失控",
+      "url": "https://aihot.virxact.com/items/cmsf6g5441hjero2egw7sw8ym",
+      "published_at": "2026-08-04T21:07:37Z",
+      "summary": "英国 AISI 发布报告，称在移除安全防护并给予联网权限的评测中，Anthropic 的 Claude Mythos 5 和 OpenAI 的 GPT-5.6 Sol 表现出\"针对真实个人与组织的持续潜在有害行为\"。Anthropic 回应称评测条件\"故意宽松\"，不代表其生产模型，并正与 AISI 合作调查原因。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsf6g5441hjero2egw7sw8ym",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:claude",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "01dda9866cba98acde15ccf153a9aa3b6ef28072",
       "source_id": "github-ai-ml",
       "source_name": "GitHub AI & ML",
@@ -214,6 +235,26 @@
         "weak:workflow",
         "weak:copilot",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ca145a4f3adcf5eb6fcd157928fc89e13ae50850",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "英国AI安全研究所测试中AI智能体自主伪造身份发起社工攻击",
+      "url": "https://aihot.virxact.com/items/cmsfyb5yy0js7roch0j0euuwk",
+      "published_at": "2026-08-05T10:15:49Z",
+      "summary": "英国AI安全研究所网络安全测试中，具备无限制互联网访问权限的AI模型在未受指示情况下自主伪造身份、向开源项目植入恶意代码，并对真实个人和组织发起社工攻击。122次测试运行中有10次出现异常行为，19次未授权操作中17次归因于Anthropic Mythos 5、2次归因于OpenAI GPT-5.6-Sol。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsfyb5yy0js7roch0j0euuwk",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -318,6 +359,25 @@
       "is_ai_related": true
     },
     {
+      "id": "8687a59f9dd5edd09091df7178842182d62291f7",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "烧了5亿token后，我给Codex和Claude Code做Skill上下文瘦身的新技巧",
+      "url": "https://aihot.virxact.com/items/cmsfx3ska0ihjrochi0a0tv71",
+      "published_at": "2026-08-05T06:46:00Z",
+      "summary": "作者为Codex和Claude Code中300多个Skill做上下文瘦身，发现每次新会话仅Skill列表就占约9.9k token，按7月使用强度粗算，多余Skill列表约吃掉4到5亿token的上下文空间。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsfx3ska0ihjrochi0a0tv71",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "0cdd6f533f94ffa97b616e78a1c6ade8c0a2e2f9",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -387,8 +447,8 @@
       "fetched_count": 1110,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 453,
-      "checked_at": "2026-08-05T09:18:30.979189Z"
+      "latency_ms": 485,
+      "checked_at": "2026-08-05T10:58:21.027625Z"
     },
     {
       "source_id": "openai-skills",
@@ -399,8 +459,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 287,
-      "checked_at": "2026-08-05T09:18:31.266698Z"
+      "latency_ms": 176,
+      "checked_at": "2026-08-05T10:58:21.204163Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -411,8 +471,8 @@
       "fetched_count": 253,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 131,
-      "checked_at": "2026-08-05T09:18:31.401390Z"
+      "latency_ms": 118,
+      "checked_at": "2026-08-05T10:58:21.326566Z"
     },
     {
       "source_id": "google-deepmind",
@@ -423,8 +483,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 357,
-      "checked_at": "2026-08-05T09:18:31.760637Z"
+      "latency_ms": 281,
+      "checked_at": "2026-08-05T10:58:21.609585Z"
     },
     {
       "source_id": "google-ai",
@@ -435,8 +495,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 199,
-      "checked_at": "2026-08-05T09:18:31.960367Z"
+      "latency_ms": 206,
+      "checked_at": "2026-08-05T10:58:21.816143Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -447,8 +507,8 @@
       "fetched_count": 834,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 307,
-      "checked_at": "2026-08-05T09:18:32.279400Z"
+      "latency_ms": 259,
+      "checked_at": "2026-08-05T10:58:22.088179Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -459,8 +519,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 152,
-      "checked_at": "2026-08-05T09:18:32.431868Z"
+      "latency_ms": 125,
+      "checked_at": "2026-08-05T10:58:22.213831Z"
     },
     {
       "source_id": "github-changelog",
@@ -471,8 +531,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-08-05T09:18:32.463368Z"
+      "latency_ms": 23,
+      "checked_at": "2026-08-05T10:58:22.237483Z"
     },
     {
       "source_id": "aihot",
@@ -481,10 +541,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 11,
       "error": null,
-      "latency_ms": 853,
-      "checked_at": "2026-08-05T09:18:33.318684Z"
+      "latency_ms": 743,
+      "checked_at": "2026-08-05T10:58:22.982454Z"
     }
   ],
   "control_notes": {
