@@ -1,14 +1,74 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-04T16:09:43.397309Z",
+  "generated_at": "2026-08-05T01:52:35.337067Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 13,
   "groups": {
+    "aggregate": {
+      "group": "aggregate",
+      "count": 9,
+      "top_sources": [
+        [
+          "AI Hot",
+          9
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          9
+        ],
+        [
+          "智能体",
+          6
+        ],
+        [
+          "api",
+          5
+        ],
+        [
+          "API",
+          5
+        ],
+        [
+          "agent",
+          3
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "开发者",
+          2
+        ],
+        [
+          "agents",
+          2
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "自动化",
+          1
+        ]
+      ]
+    },
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "Hugging Face Blog",
@@ -17,12 +77,16 @@
         [
           "OpenAI News",
           1
+        ],
+        [
+          "GitHub AI & ML",
+          1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          2
+          3
         ],
         [
           "agent",
@@ -34,96 +98,67 @@
         ],
         [
           "openai",
+          1
+        ],
+        [
+          "eval",
+          1
+        ],
+        [
+          "tool",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "copilot",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          1
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          4
-        ],
-        [
-          "agent",
           2
-        ],
-        [
-          "automation",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 7,
-      "top_sources": [
-        [
-          "AI Hot",
-          7
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          7
-        ],
-        [
-          "智能体",
-          4
-        ],
-        [
-          "agent",
-          3
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "开发者",
-          1
-        ],
-        [
-          "自动化",
-          1
-        ],
-        [
-          "工作流",
-          1
-        ],
-        [
-          "llm",
-          1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "dd92495a37997e64265aa4f4d0421f7cff56e555",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google Cloud API Gateway 推出统一模型路由功能，支持 Gemini、Claude 与 OpenAI OSS-GPT",
+      "url": "https://aihot.virxact.com/items/cmsew3l4y18qhro2edk0yaat8",
+      "published_at": "2026-08-04T16:45:02Z",
+      "summary": "Google Cloud API Gateway 新增模型路由功能（Public Preview），开发者可在 OpenAPI 3.x 规范中配置虚拟模型名到后端目标的映射，无需硬编码端点或管理开源代理。网关作为无服务器入口层，接受标准 OpenAI 兼容请求，自动将负载转码为目标模型的原生格式并动态路由流量。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsew3l4y18qhro2edk0yaat8",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:claude",
+        "strong:gemini",
+        "weak:api",
+        "weak:开发者",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "cc03c19e45f0593ad551d973e700cc5281854a61",
       "source_id": "huggingface-blog",
@@ -144,59 +179,82 @@
       "is_ai_related": true
     },
     {
-      "id": "f1806e031c124dbca950e1450b0a9b6afaf995d3",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Trigger Copilot automations with comments",
-      "url": "https://github.blog/changelog/2026-08-03-trigger-copilot-automations-with-comments",
-      "published_at": "2026-08-03T19:14:58Z",
-      "summary": "You can now create Copilot cloud agent automations that run when an issue comment or pull request comment is created. Common use cases include: Generate documentation: Comment on a pull… The post Trigger Copilot automations with comments appeared first on The GitHub Blog .",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:automation",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c148dd868c7f946b8f866e305d27a818192c9646",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Customize the reasoning level for Copilot cloud agent",
-      "url": "https://github.blog/changelog/2026-08-03-customize-the-reasoning-level-for-copilot-cloud-agent",
-      "published_at": "2026-08-03T23:27:35Z",
-      "summary": "When you delegate a task to GitHub Copilot cloud agent, you can now set the reasoning level for models that support it. This allows you to control how much the… The post Customize the reasoning level for Copilot cloud agent appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "69296caac099c595dc3763008d88ac8fc2886d01",
+      "id": "6963dc3002c4bd62856fd67518c0a1a33fdec629",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Apple is getting this wrong",
-      "url": "https://openai.com/index/apple-is-getting-this-wrong",
-      "published_at": "2026-08-03T22:00:00Z",
-      "summary": "OpenAI addresses Apple’s baseless lawsuit, corrects claims about its employees, and shares messages documenting what happened.",
-      "relevance_score": 3,
+      "title": "Third-party cyber evaluations involving OpenAI models",
+      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+      "published_at": "2026-08-04T19:00:00Z",
+      "summary": "OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation.",
+      "relevance_score": 4,
       "relevance_reasons": [
         "strong:openai",
+        "weak:eval",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "01dda9866cba98acde15ccf153a9aa3b6ef28072",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "How the GitHub legal team used Copilot CLI to streamline their workflows",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows",
+      "published_at": "2026-08-04T19:02:34Z",
+      "summary": "Learn how to build tools to simplify how you work—without writing a single line of code. The post How the GitHub legal team used Copilot CLI to streamline their workflows appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "weak:tool",
+        "weak:workflow",
+        "weak:copilot",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fad5eb89248c5d883bcaeca058aac90a6b1ca320",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "LLM 0.32 发布：新增推理轨迹、OpenAI Responses、服务端工具与更智能的日志",
+      "url": "https://aihot.virxact.com/items/cmsfdkkcs1ocxro2ed4z3s131",
+      "published_at": "2026-08-04T23:58:24Z",
+      "summary": "Simon Willison 发布 LLM 0.32，这是该项目自启动以来最重要的新版本。新版本支持显示推理轨迹、服务端工具、OpenAI Responses API，并默认使用 GPT-5.6 Luna 模型。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsfdkkcs1ocxro2ed4z3s131",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:llm",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "915fe98a367c87960fac18df7e862e110982b6ac",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google Cloud 推出 Database Operations Agents，实现自主数据库管理",
+      "url": "https://aihot.virxact.com/items/cmsevo5m118dmro2e9d1ven6v",
+      "published_at": "2026-08-04T16:00:00Z",
+      "summary": "Google Cloud 在 Agentic Data Cloud 发布中推出两款 AI 数据库智能体：Database Onboarding Agent 负责 Day 0 的配置与部署，Database Observability Agent 负责 Day 1/2 的监控、故障排查与维护。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsevo5m118dmro2e9d1ven6v",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -221,22 +279,20 @@
       "is_ai_related": true
     },
     {
-      "id": "114479f6f68a51bab8d69e23f5761ca85cc89f16",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "从零开始，教你用Codex搓出属于你自己的第一个硬件",
-      "url": "https://aihot.virxact.com/items/cmsdwjgim0327ro2ek45x3jz5",
-      "published_at": "2026-08-04T00:06:00Z",
-      "summary": "作者以零基础身份，全程通过与Codex对话，从需求讨论、电路搭建、代码烧录到3D打印组装，5天内做出一个能提醒久坐的猫爪硬件。文中还介绍了用Agent调试宏键盘、以及OpenAI与Work Louder联名发布的Codex Micro键盘（13个机械按键，售价230美元）等案例，强调\"干中学\"的AI开发方式。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsdwjgim0327ro2ek45x3jz5",
-      "relevance_score": 5,
+      "id": "9596d6ec3a599bfe6b8c90fcf389875a5349eab2",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Retiring the Copilot Billing Preview app",
+      "url": "https://github.blog/changelog/2026-08-04-retiring-the-copilot-billing-preview-app",
+      "published_at": "2026-08-04T19:09:32Z",
+      "summary": "We’ve retired the GitHub Copilot Billing Preview app, and it’s no longer available. You can review and manage your Copilot spend directly in your GitHub billing settings. The app helped… The post Retiring the Copilot Billing Preview app appeared first on The GitHub Blog .",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "strong:agent",
-        "source_penalty:aggregate_noise"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -256,6 +312,26 @@
         "strong:智能体",
         "weak:api",
         "weak:开发者",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0cdd6f533f94ffa97b616e78a1c6ade8c0a2e2f9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "GitHub 如何用堆叠式 Pull Request 拆解 AI 生成的巨型代码",
+      "url": "https://aihot.virxact.com/items/cmsewck8518x6ro2e32q4bksr",
+      "published_at": "2026-08-04T16:47:18Z",
+      "summary": "GitHub 介绍用堆叠式 Pull Request（stacked PR）解决 AI 编码智能体生成巨型代码难以审查的问题。通过将 1，000+ 行的大 diff 按数据、API、接线、UI 拆成 L1-L4 四个独立分层，每层可分配不同审查者。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsewck8518x6ro2e32q4bksr",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:api",
         "weak:API",
         "source_penalty:aggregate_noise"
       ],
@@ -301,25 +377,6 @@
       "is_ai_related": true
     },
     {
-      "id": "2b92c257cd3429d6b02cf73c4a95bcfd43eba3b8",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "AirLLM 实现单块 4GB GPU 运行 70B 模型推理",
-      "url": "https://aihot.virxact.com/items/cmsdg55m700l4roca3x3gtfb1",
-      "published_at": "2026-08-03T16:24:45Z",
-      "summary": "AirLLM 项目支持在单块 4GB 显存 GPU 上运行 70B 参数大模型推理，无需多卡或大规模显存配置。该项目已开源，相关讨论在 Hacker News 上获得 103 点热度，引发社区关注。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsdg55m700l4roca3x3gtfb1",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:llm",
-        "strong:大模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "28191d0225ebde8af7d4874da9b06a2d0e1facf5",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -347,11 +404,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1108,
+      "fetched_count": 1110,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 396,
-      "checked_at": "2026-08-04T16:09:41.340058Z"
+      "latency_ms": 481,
+      "checked_at": "2026-08-05T01:52:32.502593Z"
     },
     {
       "source_id": "openai-skills",
@@ -362,8 +419,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 176,
-      "checked_at": "2026-08-04T16:09:41.516663Z"
+      "latency_ms": 306,
+      "checked_at": "2026-08-05T01:52:32.809472Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -371,11 +428,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 252,
+      "fetched_count": 253,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 96,
-      "checked_at": "2026-08-04T16:09:41.617096Z"
+      "latency_ms": 114,
+      "checked_at": "2026-08-05T01:52:32.928169Z"
     },
     {
       "source_id": "google-deepmind",
@@ -386,8 +443,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 221,
-      "checked_at": "2026-08-04T16:09:41.839911Z"
+      "latency_ms": 411,
+      "checked_at": "2026-08-05T01:52:33.341573Z"
     },
     {
       "source_id": "google-ai",
@@ -398,8 +455,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 161,
-      "checked_at": "2026-08-04T16:09:42.002026Z"
+      "latency_ms": 264,
+      "checked_at": "2026-08-05T01:52:33.606864Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -410,8 +467,8 @@
       "fetched_count": 834,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 244,
-      "checked_at": "2026-08-04T16:09:42.257843Z"
+      "latency_ms": 324,
+      "checked_at": "2026-08-05T01:52:33.944683Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -420,10 +477,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 99,
-      "checked_at": "2026-08-04T16:09:42.357316Z"
+      "latency_ms": 250,
+      "checked_at": "2026-08-05T01:52:34.195452Z"
     },
     {
       "source_id": "github-changelog",
@@ -432,10 +489,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 21,
-      "checked_at": "2026-08-04T16:09:42.379503Z"
+      "latency_ms": 41,
+      "checked_at": "2026-08-05T01:52:34.237337Z"
     },
     {
       "source_id": "aihot",
@@ -444,10 +501,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 1007,
-      "checked_at": "2026-08-04T16:09:43.389073Z"
+      "latency_ms": 1089,
+      "checked_at": "2026-08-05T01:52:35.328120Z"
     }
   ],
   "control_notes": {
