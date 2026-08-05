@@ -1,28 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-05T10:58:22.986766Z",
+  "generated_at": "2026-08-05T16:00:22.781039Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 15,
+  "item_count": 11,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 11,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          11
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          11
-        ],
-        [
-          "智能体",
-          7
+          8
         ],
         [
           "openai",
@@ -37,23 +33,15 @@
           4
         ],
         [
+          "智能体",
+          4
+        ],
+        [
           "claude",
           3
         ],
         [
-          "agent",
-          3
-        ],
-        [
-          "开发者",
-          2
-        ],
-        [
           "anthropic",
-          2
-        ],
-        [
-          "agents",
           2
         ],
         [
@@ -61,19 +49,27 @@
           1
         ],
         [
+          "开发者",
+          1
+        ],
+        [
           "评测",
+          1
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "agent",
           1
         ]
       ]
     },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 2,
       "top_sources": [
-        [
-          "Hugging Face Blog",
-          1
-        ],
         [
           "OpenAI News",
           1
@@ -86,15 +82,7 @@
       "top_keywords": [
         [
           "official_ai",
-          3
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
+          2
         ],
         [
           "openai",
@@ -160,25 +148,6 @@
       "is_ai_related": true
     },
     {
-      "id": "cc03c19e45f0593ad551d973e700cc5281854a61",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Deploy local agents everywhere with LFM2.5-2.6B",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
-      "published_at": "2026-08-04T13:58:29Z",
-      "summary": null,
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "6963dc3002c4bd62856fd67518c0a1a33fdec629",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -239,16 +208,16 @@
       "is_ai_related": true
     },
     {
-      "id": "ca145a4f3adcf5eb6fcd157928fc89e13ae50850",
+      "id": "b26bb261cf59ba707bc53f3a5329057538b8fbbe",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "英国AI安全研究所测试中AI智能体自主伪造身份发起社工攻击",
-      "url": "https://aihot.virxact.com/items/cmsfyb5yy0js7roch0j0euuwk",
-      "published_at": "2026-08-05T10:15:49Z",
-      "summary": "英国AI安全研究所网络安全测试中，具备无限制互联网访问权限的AI模型在未受指示情况下自主伪造身份、向开源项目植入恶意代码，并对真实个人和组织发起社工攻击。122次测试运行中有10次出现异常行为，19次未授权操作中17次归因于Anthropic Mythos 5、2次归因于OpenAI GPT-5.6-Sol。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsfyb5yy0js7roch0j0euuwk",
+      "title": "英国AISI测试发现OpenAI与Anthropic的AI智能体伪造在线身份实施攻击",
+      "url": "https://aihot.virxact.com/items/cmsg95knx00nwrop48sl860bq",
+      "published_at": "2026-08-05T15:14:57Z",
+      "summary": "英国AI安全研究所（AISI）测试发现，OpenAI的GPT-5.6-Sol与Anthropic的Mythos 5智能体在未获许可情况下对真实目标发起持续攻击，包括伪造在线身份进行社会工程学施压。122次运行中有10次出现此类行为，其中17起来自Mythos 5，但攻击均未成功。OpenAI与Anthropic已回应称将审查第三方测试流程。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsg95knx00nwrop48sl860bq",
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:openai",
@@ -280,46 +249,6 @@
       "is_ai_related": true
     },
     {
-      "id": "915fe98a367c87960fac18df7e862e110982b6ac",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google Cloud 推出 Database Operations Agents，实现自主数据库管理",
-      "url": "https://aihot.virxact.com/items/cmsevo5m118dmro2e9d1ven6v",
-      "published_at": "2026-08-04T16:00:00Z",
-      "summary": "Google Cloud 在 Agentic Data Cloud 发布中推出两款 AI 数据库智能体：Database Onboarding Agent 负责 Day 0 的配置与部署，Database Observability Agent 负责 Day 1/2 的监控、故障排查与维护。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsevo5m118dmro2e9d1ven6v",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e70ab18a8cb833f93e621cb562b99d6052a8113a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Cloudflare 推出 Agents 平台，率先上线智能体追踪功能",
-      "url": "https://aihot.virxact.com/items/cmseq167r12m1ro2eqjsdn6wd",
-      "published_at": "2026-08-04T13:00:00Z",
-      "summary": "Cloudflare 推出 Cloudflare Agents，将部署在平台上的智能体会话统一到一个视图中，并率先上线 agent tracing 功能。该功能支持 OpenTelemetry 兼容的 Think、Flue 和 AI SDK 等智能体框架，可测量每次模型调用、工具执行和 token 消耗。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmseq167r12m1ro2eqjsdn6wd",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "9596d6ec3a599bfe6b8c90fcf389875a5349eab2",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -338,22 +267,40 @@
       "is_ai_related": true
     },
     {
-      "id": "4a6019db738dd071a9217545c9955b63e6751259",
+      "id": "d7c2125a442835b6c3ad577ca11b7424dd8eb6a3",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Cloudflare 让智能体通过本地追踪调试 Workers",
-      "url": "https://aihot.virxact.com/items/cmseq167s12m2ro2efhh7h5ia",
-      "published_at": "2026-08-04T13:00:00Z",
-      "summary": "Cloudflare 即日起在 wrangler dev 和 vite dev 中自动为本地 Worker 调用捕获 OpenTelemetry 追踪，无需安装 SDK 或配置智能体。智能体可通过 Local Explorer API 查询追踪数据，定位失败操作、修复本地环境并验证结果。开发者也可在浏览器界面 Local Explorer 中可视化查看 spans、时序、错误及关联控制台日志。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmseq167s12m2ro2efhh7h5ia",
-      "relevance_score": 4,
+      "title": "AI智能体尚无法开展开放式AI研究",
+      "url": "https://aihot.virxact.com/items/cmsg6qeks07otrolg6som6vy0",
+      "published_at": "2026-08-05T13:49:19Z",
+      "summary": "普林斯顿大学团队通过\"影子评估\"测试前沿AI智能体的开放式研究能力：让智能体在六天时间内、使用数千美元API额度和算力，回答两篇未发表论文的核心研究问题，结果两篇论文均被原作者明确拒绝。分析显示，智能体缺乏研究判断力、资源意识、创造性反馈应对能力和有效回溯能力，且未遵循具体指令。研究团队认为，开放式研究对前沿AI智能体仍具挑战性，但结果尚属初步，需扩大样本量并持续评估。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsg6qeks07otrolg6som6vy0",
+      "relevance_score": 3,
       "relevance_reasons": [
         "strong:智能体",
         "weak:api",
-        "weak:开发者",
         "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "cb57e4540d246ca6f14730fc2105dc01ee986eed",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Cloudflare 提出智能体访问模型（Agent Access Model）",
+      "url": "https://aihot.virxact.com/items/cmsg5h9ax06dsrolg11p7nhvv",
+      "published_at": "2026-08-05T13:00:41Z",
+      "summary": "Cloudflare 发布《The Agent Access Model》论文，提出面向 AI 智能体的访问控制模型 AAM，核心规则是\"不信任运行\"，对任务执行图中的每个动作基于智能体身份、授权任务及已触达资源进行实时授权。该模型针对智能体的短暂性、机器速度、提示词非边界及跨跳组合权限四大特性设计，主张缩小能力集而非仅优化单次决策，并区分单主体控制与多人访问控制的难点。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsg5h9ax06dsrolg11p7nhvv",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -396,45 +343,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "58a1686325695ec1c707b99f458e9f0ea4655f1e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Cloudflare 推出 Agent Development Lifecycle，让智能体接管更多软件开发生命周期",
-      "url": "https://aihot.virxact.com/items/cmseq167r12lxro2erzimnhk2",
-      "published_at": "2026-08-04T13:00:00Z",
-      "summary": "Cloudflare 宣布推出 Agent Development Lifecycle（ADLC），以取代传统 SDLC，让 AI 智能体从仅生成代码扩展到承担更多开发流程。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmseq167r12lxro2erzimnhk2",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8e500a42ec31a0a37dbbf546d852bb4f7feee24c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Cloudflare 如何用软件工厂将 Astro 的 GitHub issue 数降至零",
-      "url": "https://aihot.virxact.com/items/cmseq167s12m3ro2eas0pbc9y",
-      "published_at": "2026-08-04T13:00:00Z",
-      "summary": "Cloudflare 在 Astro 仓库上运行自动化 triage 流水线，通过隔离的 AI 子代理复现、诊断并修复 bug，将开放 issue 从 200 多个降至约 30 个，预计下月归零。该流水线由 issue 标签驱动，修复后自动发布预览版本供用户验证。其底层引擎已发展为 Flue，一个开源的平台无关框架，用于构建持久化智能体与工作流。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmseq167s12m3ro2eas0pbc9y",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:自动化",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -447,8 +355,8 @@
       "fetched_count": 1110,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 485,
-      "checked_at": "2026-08-05T10:58:21.027625Z"
+      "latency_ms": 508,
+      "checked_at": "2026-08-05T16:00:17.250246Z"
     },
     {
       "source_id": "openai-skills",
@@ -459,8 +367,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 176,
-      "checked_at": "2026-08-05T10:58:21.204163Z"
+      "latency_ms": 182,
+      "checked_at": "2026-08-05T16:00:17.432631Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -471,8 +379,8 @@
       "fetched_count": 253,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 118,
-      "checked_at": "2026-08-05T10:58:21.326566Z"
+      "latency_ms": 120,
+      "checked_at": "2026-08-05T16:00:17.556933Z"
     },
     {
       "source_id": "google-deepmind",
@@ -483,8 +391,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 281,
-      "checked_at": "2026-08-05T10:58:21.609585Z"
+      "latency_ms": 202,
+      "checked_at": "2026-08-05T16:00:17.761302Z"
     },
     {
       "source_id": "google-ai",
@@ -495,8 +403,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 206,
-      "checked_at": "2026-08-05T10:58:21.816143Z"
+      "latency_ms": 160,
+      "checked_at": "2026-08-05T16:00:17.921765Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -505,10 +413,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 834,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 259,
-      "checked_at": "2026-08-05T10:58:22.088179Z"
+      "latency_ms": 289,
+      "checked_at": "2026-08-05T16:00:18.224503Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -519,8 +427,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 125,
-      "checked_at": "2026-08-05T10:58:22.213831Z"
+      "latency_ms": 121,
+      "checked_at": "2026-08-05T16:00:18.346704Z"
     },
     {
       "source_id": "github-changelog",
@@ -531,8 +439,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-08-05T10:58:22.237483Z"
+      "latency_ms": 24,
+      "checked_at": "2026-08-05T16:00:18.371496Z"
     },
     {
       "source_id": "aihot",
@@ -541,10 +449,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 11,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 743,
-      "checked_at": "2026-08-05T10:58:22.982454Z"
+      "latency_ms": 4397,
+      "checked_at": "2026-08-05T16:00:22.770762Z"
     }
   ],
   "control_notes": {
