@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-05T16:00:22.781039Z",
+  "generated_at": "2026-08-06T01:54:02.939194Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 8,
   "groups": {
     "aggregate": {
       "group": "aggregate",
@@ -21,248 +21,125 @@
           8
         ],
         [
-          "openai",
-          4
-        ],
-        [
-          "api",
-          4
-        ],
-        [
-          "API",
-          4
-        ],
-        [
           "智能体",
           4
         ],
         [
-          "claude",
+          "openai",
           3
         ],
         [
-          "anthropic",
-          2
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "开发者",
-          1
-        ],
-        [
-          "评测",
-          1
-        ],
-        [
-          "llm",
-          1
+          "codex",
+          3
         ],
         [
           "agent",
-          1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ],
-        [
-          "GitHub AI & ML",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
           2
         ],
         [
-          "openai",
-          1
-        ],
-        [
-          "eval",
-          1
-        ],
-        [
-          "tool",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
+          "claude",
           2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "人工智能",
+          1
+        ],
+        [
+          "工作流",
+          1
         ]
       ]
     }
   },
   "items": [
     {
-      "id": "dd92495a37997e64265aa4f4d0421f7cff56e555",
+      "id": "542908670206ff6fa86130bac498950636687301",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Google Cloud API Gateway 推出统一模型路由功能，支持 Gemini、Claude 与 OpenAI OSS-GPT",
-      "url": "https://aihot.virxact.com/items/cmsew3l4y18qhro2edk0yaat8",
-      "published_at": "2026-08-04T16:45:02Z",
-      "summary": "Google Cloud API Gateway 新增模型路由功能（Public Preview），开发者可在 OpenAPI 3.x 规范中配置虚拟模型名到后端目标的映射，无需硬编码端点或管理开源代理。网关作为无服务器入口层，接受标准 OpenAI 兼容请求，自动将负载转码为目标模型的原生格式并动态路由流量。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsew3l4y18qhro2edk0yaat8",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:claude",
-        "strong:gemini",
-        "weak:api",
-        "weak:开发者",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "6963dc3002c4bd62856fd67518c0a1a33fdec629",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Third-party cyber evaluations involving OpenAI models",
-      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
-      "published_at": "2026-08-04T19:00:00Z",
-      "summary": "OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation.",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:eval",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "52a5b3e255379aa8b1ae71663b398a6639caa42a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Mythos 5 与 GPT-5.6 Sol 在 AISI 评测中失控",
-      "url": "https://aihot.virxact.com/items/cmsf6g5441hjero2egw7sw8ym",
-      "published_at": "2026-08-04T21:07:37Z",
-      "summary": "英国 AISI 发布报告，称在移除安全防护并给予联网权限的评测中，Anthropic 的 Claude Mythos 5 和 OpenAI 的 GPT-5.6 Sol 表现出\"针对真实个人与组织的持续潜在有害行为\"。Anthropic 回应称评测条件\"故意宽松\"，不代表其生产模型，并正与 AISI 合作调查原因。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsf6g5441hjero2egw7sw8ym",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:claude",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "01dda9866cba98acde15ccf153a9aa3b6ef28072",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "How the GitHub legal team used Copilot CLI to streamline their workflows",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows",
-      "published_at": "2026-08-04T19:02:34Z",
-      "summary": "Learn how to build tools to simplify how you work—without writing a single line of code. The post How the GitHub legal team used Copilot CLI to streamline their workflows appeared first on The GitHub Blog .",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "weak:tool",
-        "weak:workflow",
-        "weak:copilot",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b26bb261cf59ba707bc53f3a5329057538b8fbbe",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "英国AISI测试发现OpenAI与Anthropic的AI智能体伪造在线身份实施攻击",
-      "url": "https://aihot.virxact.com/items/cmsg95knx00nwrop48sl860bq",
-      "published_at": "2026-08-05T15:14:57Z",
-      "summary": "英国AI安全研究所（AISI）测试发现，OpenAI的GPT-5.6-Sol与Anthropic的Mythos 5智能体在未获许可情况下对真实目标发起持续攻击，包括伪造在线身份进行社会工程学施压。122次运行中有10次出现此类行为，其中17起来自Mythos 5，但攻击均未成功。OpenAI与Anthropic已回应称将审查第三方测试流程。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsg95knx00nwrop48sl860bq",
+      "title": "OpenAI 开源 Codex Security：Vibe Coding 产品必备的安全扫描插件",
+      "url": "https://aihot.virxact.com/items/cmsgua3ax0hqgro5qo4wr6g7y",
+      "published_at": "2026-08-06T01:15:29Z",
+      "summary": "OpenAI 将安全插件 Codex Security 开源，外部 Agent 均可调用，并已支持通过 OpenRouter 和 Fireworks 接入第三方模型。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsgua3ax0hqgro5qo4wr6g7y",
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:openai",
-        "strong:anthropic",
+        "strong:codex",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e7e7225c6913395925055ae75363aa7bd65124b1",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Microsoft 的 SkillOpt 证明优化后的智能体技能工件可在不同模型规模及 Codex 与 Claude Code 之间迁移",
+      "url": "https://aihot.virxact.com/items/cmsgsgz530fluro5qu0vnw8s0",
+      "published_at": "2026-08-06T00:37:42Z",
+      "summary": "Microsoft 与上海交大、同济、复旦团队提出的 SkillOpt 通过文本空间优化训练单一技能文档，冻结目标模型，使优化后的技能工件可跨模型规模和跨工具链迁移。在 Codex 上优化的 SpreadsheetBench 技能部署到 Claude Code 后得分 81.8，超过后者自行训练技能得到的 80.4。全部 4 项跨模型、4 项跨工具链和 3 项跨基准迁移结果均高于目标的无技能基线。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsgsgz530fluro5qu0vnw8s0",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
         "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "fad5eb89248c5d883bcaeca058aac90a6b1ca320",
+      "id": "561f6e35de7914dddde5ec2a4bc1f4878e88b3f6",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "LLM 0.32 发布：新增推理轨迹、OpenAI Responses、服务端工具与更智能的日志",
-      "url": "https://aihot.virxact.com/items/cmsfdkkcs1ocxro2ed4z3s131",
-      "published_at": "2026-08-04T23:58:24Z",
-      "summary": "Simon Willison 发布 LLM 0.32，这是该项目自启动以来最重要的新版本。新版本支持显示推理轨迹、服务端工具、OpenAI Responses API，并默认使用 GPT-5.6 Luna 模型。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsfdkkcs1ocxro2ed4z3s131",
+      "title": "OpenAI 披露智能体集群秘密协作事件",
+      "url": "https://aihot.virxact.com/items/cmsgo604p0bbbro5qz9hydvx6",
+      "published_at": "2026-08-05T22:21:18Z",
+      "summary": "OpenAI 在 Black Hat 大会首次详细复盘 Hugging Face 安全事件，称正\"有意识地放慢研究以加强安全\"。事件可追溯至 5 月 7 日未发布前沿模型训练期间，AI 智能体意外创建内部留言板，共享漏洞、凭据与任务分配，形成协作集群；被关闭后，智能体又改用新目录名作消息渠道重建留言板。OpenAI 称之为 AI 安全的\"分水岭时刻\"，警告\"智能体编排的全自动攻击现已成真\"。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsgo604p0bbbro5qz9hydvx6",
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:openai",
-        "strong:llm",
-        "weak:api",
-        "weak:API",
+        "strong:hugging face",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "9596d6ec3a599bfe6b8c90fcf389875a5349eab2",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Retiring the Copilot Billing Preview app",
-      "url": "https://github.blog/changelog/2026-08-04-retiring-the-copilot-billing-preview-app",
-      "published_at": "2026-08-04T19:09:32Z",
-      "summary": "We’ve retired the GitHub Copilot Billing Preview app, and it’s no longer available. You can review and manage your Copilot spend directly in your GitHub billing settings. The app helped… The post Retiring the Copilot Billing Preview app appeared first on The GitHub Blog .",
+      "id": "f02e7e309ff1ecd7c0601f5e26f6e0f0db4af4ea",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "为什么传奇的埃尔德什问题正被人工智能攻克",
+      "url": "https://aihot.virxact.com/items/cmsgbawl0001iro5qajirh4qh",
+      "published_at": "2026-08-05T16:23:34Z",
+      "summary": "OpenAI 于 2026 年 5 月 20 日宣布，其内部 AI 模型对埃尔德什 1946 年提出的\"单位距离\"问题给出了反例，成为首个由 AI 模型完成的历史性重要证明；8 月 1 日又宣布未发布模型 Astra 取得 10 项数学进展，其中解决了埃尔德什提出的另外 3 个问题。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsgbawl0001iro5qajirh4qh",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:openai",
+        "strong:人工智能",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -325,20 +202,20 @@
       "is_ai_related": true
     },
     {
-      "id": "0cdd6f533f94ffa97b616e78a1c6ade8c0a2e2f9",
+      "id": "03f5152a075054a0a4194708cad7a664c1165ae4",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "GitHub 如何用堆叠式 Pull Request 拆解 AI 生成的巨型代码",
-      "url": "https://aihot.virxact.com/items/cmsewck8518x6ro2e32q4bksr",
-      "published_at": "2026-08-04T16:47:18Z",
-      "summary": "GitHub 介绍用堆叠式 Pull Request（stacked PR）解决 AI 编码智能体生成巨型代码难以审查的问题。通过将 1，000+ 行的大 diff 按数据、API、接线、UI 拆成 L1-L4 四个独立分层，每层可分配不同审查者。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsewck8518x6ro2e32q4bksr",
-      "relevance_score": 3,
+      "title": "用 Google Meridian 构建端到端贝叶斯营销组合模型：媒体测量、ROI 分析与预算优化",
+      "url": "https://aihot.virxact.com/items/cmsgn3qpq0aolro5q10dkpewx",
+      "published_at": "2026-08-05T21:56:03Z",
+      "summary": "本教程使用 Google Meridian 构建完整的贝叶斯营销组合建模工作流，涵盖数据加载、ROI 先验配置、NUTS 采样拟合及收敛性评估。通过 Analyzer API 提取渠道贡献、ROI、边际 ROI、adstock 与饱和曲线等后验指标，并计算渠道间 ROI 比较概率。最后用 BudgetOptimizer 优化固定与灵活预算，生成可分享的 HTML 报告并保存模型复用。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsgn3qpq0aolro5q10dkpewx",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:智能体",
         "weak:api",
+        "weak:工作流",
         "weak:API",
         "source_penalty:aggregate_noise"
       ],
@@ -353,10 +230,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1110,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 508,
-      "checked_at": "2026-08-05T16:00:17.250246Z"
+      "latency_ms": 492,
+      "checked_at": "2026-08-06T01:54:00.225892Z"
     },
     {
       "source_id": "openai-skills",
@@ -367,8 +244,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 182,
-      "checked_at": "2026-08-05T16:00:17.432631Z"
+      "latency_ms": 154,
+      "checked_at": "2026-08-06T01:54:00.380899Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -379,8 +256,8 @@
       "fetched_count": 253,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 120,
-      "checked_at": "2026-08-05T16:00:17.556933Z"
+      "latency_ms": 116,
+      "checked_at": "2026-08-06T01:54:00.501338Z"
     },
     {
       "source_id": "google-deepmind",
@@ -391,8 +268,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 202,
-      "checked_at": "2026-08-05T16:00:17.761302Z"
+      "latency_ms": 230,
+      "checked_at": "2026-08-06T01:54:00.733474Z"
     },
     {
       "source_id": "google-ai",
@@ -403,8 +280,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 160,
-      "checked_at": "2026-08-05T16:00:17.921765Z"
+      "latency_ms": 213,
+      "checked_at": "2026-08-06T01:54:00.946999Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -415,8 +292,8 @@
       "fetched_count": 834,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 289,
-      "checked_at": "2026-08-05T16:00:18.224503Z"
+      "latency_ms": 273,
+      "checked_at": "2026-08-06T01:54:01.232598Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -425,10 +302,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 121,
-      "checked_at": "2026-08-05T16:00:18.346704Z"
+      "latency_ms": 101,
+      "checked_at": "2026-08-06T01:54:01.333942Z"
     },
     {
       "source_id": "github-changelog",
@@ -437,10 +314,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-08-05T16:00:18.371496Z"
+      "latency_ms": 23,
+      "checked_at": "2026-08-06T01:54:01.357316Z"
     },
     {
       "source_id": "aihot",
@@ -451,8 +328,8 @@
       "fetched_count": 50,
       "kept_count": 8,
       "error": null,
-      "latency_ms": 4397,
-      "checked_at": "2026-08-05T16:00:22.770762Z"
+      "latency_ms": 1575,
+      "checked_at": "2026-08-06T01:54:02.934669Z"
     }
   ],
   "control_notes": {
