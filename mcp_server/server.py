@@ -1114,6 +1114,54 @@ async def send_notification(
 
 # ==================== 启动入口 ====================
 
+def build_arg_parser():
+    """创建 MCP Server 命令行参数解析器。"""
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description='TrendRadar MCP Server - 新闻热点聚合 MCP 工具服务器',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+详细配置教程请查看: README-Cherry-Studio.md
+        """
+    )
+    parser.add_argument(
+        '--transport',
+        choices=['stdio', 'http'],
+        default='stdio',
+        help='传输模式：stdio (默认) 或 http (生产环境)'
+    )
+    parser.add_argument(
+        '--host',
+        default='0.0.0.0',
+        help='HTTP模式的监听地址，默认 0.0.0.0'
+    )
+    parser.add_argument(
+        '--port',
+        type=int,
+        default=3333,
+        help='HTTP模式的监听端口，默认 3333'
+    )
+    parser.add_argument(
+        '--project-root',
+        help='项目根目录路径'
+    )
+    return parser
+
+
+def main(argv: Optional[List[str]] = None) -> None:
+    """命令行入口，供 `python -m mcp_server.server` 和 `trendradar-mcp` 共用。"""
+    parser = build_arg_parser()
+    args = parser.parse_args(argv)
+
+    run_server(
+        project_root=args.project_root,
+        transport=args.transport,
+        host=args.host,
+        port=args.port
+    )
+
+
 def run_server(
     project_root: Optional[str] = None,
     transport: str = 'stdio',
@@ -1216,42 +1264,4 @@ def run_server(
 
 
 if __name__ == '__main__':
-    import argparse
-
-    parser = argparse.ArgumentParser(
-        description='TrendRadar MCP Server - 新闻热点聚合 MCP 工具服务器',
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-详细配置教程请查看: README-Cherry-Studio.md
-        """
-    )
-    parser.add_argument(
-        '--transport',
-        choices=['stdio', 'http'],
-        default='stdio',
-        help='传输模式：stdio (默认) 或 http (生产环境)'
-    )
-    parser.add_argument(
-        '--host',
-        default='0.0.0.0',
-        help='HTTP模式的监听地址，默认 0.0.0.0'
-    )
-    parser.add_argument(
-        '--port',
-        type=int,
-        default=3333,
-        help='HTTP模式的监听端口，默认 3333'
-    )
-    parser.add_argument(
-        '--project-root',
-        help='项目根目录路径'
-    )
-
-    args = parser.parse_args()
-
-    run_server(
-        project_root=args.project_root,
-        transport=args.transport,
-        host=args.host,
-        port=args.port
-    )
+    main()
