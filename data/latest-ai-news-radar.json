@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-06T06:16:30.116207Z",
+  "generated_at": "2026-08-06T09:20:40.740810Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -22,22 +22,18 @@
         ],
         [
           "智能体",
-          4
+          5
         ],
         [
           "openai",
           3
         ],
         [
-          "codex",
+          "agent",
           3
         ],
         [
-          "agent",
-          2
-        ],
-        [
-          "claude",
+          "codex",
           2
         ],
         [
@@ -47,6 +43,10 @@
         [
           "API",
           2
+        ],
+        [
+          "claude",
+          1
         ],
         [
           "hugging face",
@@ -125,6 +125,25 @@
       "is_ai_related": true
     },
     {
+      "id": "48a6290c69b26ca20f66be353ea123961284739e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Prime Intellect 开源 Prime Agent：基于持久 IPython 内核的开放式 RLM 工具",
+      "url": "https://aihot.virxact.com/items/cmshaq3cu05pvronk83gj7y8h",
+      "published_at": "2026-08-06T09:00:08Z",
+      "summary": "Prime Intellect 开源了自改进编码工具 Prime Agent，其核心抽象为递归语言模型（RLM）与持续工具框架（Continual Harness），以持久 IPython 内核作为唯一工具，子智能体以函数调用形式运行。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmshaq3cu05pvronk83gj7y8h",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "f02e7e309ff1ecd7c0601f5e26f6e0f0db4af4ea",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -183,25 +202,6 @@
       "is_ai_related": true
     },
     {
-      "id": "8687a59f9dd5edd09091df7178842182d62291f7",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "烧了5亿token后，我给Codex和Claude Code做Skill上下文瘦身的新技巧",
-      "url": "https://aihot.virxact.com/items/cmsfx3ska0ihjrochi0a0tv71",
-      "published_at": "2026-08-05T06:46:00Z",
-      "summary": "作者为Codex和Claude Code中300多个Skill做上下文瘦身，发现每次新会话仅Skill列表就占约9.9k token，按7月使用强度粗算，多余Skill列表约吃掉4到5亿token的上下文空间。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsfx3ska0ihjrochi0a0tv71",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "03f5152a075054a0a4194708cad7a664c1165ae4",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -232,8 +232,8 @@
       "fetched_count": 1110,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 527,
-      "checked_at": "2026-08-06T06:16:26.502055Z"
+      "latency_ms": 454,
+      "checked_at": "2026-08-06T09:20:37.756359Z"
     },
     {
       "source_id": "openai-skills",
@@ -244,8 +244,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 244,
-      "checked_at": "2026-08-06T06:16:26.747232Z"
+      "latency_ms": 469,
+      "checked_at": "2026-08-06T09:20:38.225600Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -256,8 +256,8 @@
       "fetched_count": 253,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 194,
-      "checked_at": "2026-08-06T06:16:26.945446Z"
+      "latency_ms": 225,
+      "checked_at": "2026-08-06T09:20:38.454553Z"
     },
     {
       "source_id": "google-deepmind",
@@ -268,8 +268,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 357,
-      "checked_at": "2026-08-06T06:16:27.304534Z"
+      "latency_ms": 373,
+      "checked_at": "2026-08-06T09:20:38.829083Z"
     },
     {
       "source_id": "google-ai",
@@ -280,8 +280,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 240,
-      "checked_at": "2026-08-06T06:16:27.545844Z"
+      "latency_ms": 281,
+      "checked_at": "2026-08-06T09:20:39.110564Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -292,8 +292,8 @@
       "fetched_count": 834,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 400,
-      "checked_at": "2026-08-06T06:16:27.958916Z"
+      "latency_ms": 259,
+      "checked_at": "2026-08-06T09:20:39.378325Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -304,8 +304,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 309,
-      "checked_at": "2026-08-06T06:16:28.268994Z"
+      "latency_ms": 273,
+      "checked_at": "2026-08-06T09:20:39.652325Z"
     },
     {
       "source_id": "github-changelog",
@@ -316,8 +316,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 54,
-      "checked_at": "2026-08-06T06:16:28.324080Z"
+      "latency_ms": 23,
+      "checked_at": "2026-08-06T09:20:39.676268Z"
     },
     {
       "source_id": "aihot",
@@ -328,8 +328,8 @@
       "fetched_count": 50,
       "kept_count": 8,
       "error": null,
-      "latency_ms": 1782,
-      "checked_at": "2026-08-06T06:16:30.108078Z"
+      "latency_ms": 1055,
+      "checked_at": "2026-08-06T09:20:40.732790Z"
     }
   ],
   "control_notes": {
