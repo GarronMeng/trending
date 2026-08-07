@@ -1,35 +1,39 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-07T05:25:01.443303Z",
+  "generated_at": "2026-08-07T07:51:40.296343Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 10,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          5
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          7
+        ],
+        [
+          "openai",
+          3
+        ],
+        [
+          "chatgpt",
+          3
         ],
         [
           "智能体",
           2
         ],
         [
-          "openai",
-          2
-        ],
-        [
-          "chatgpt",
+          "开发者",
           2
         ],
         [
@@ -45,10 +49,6 @@
           1
         ],
         [
-          "开发者",
-          1
-        ],
-        [
           "anthropic",
           1
         ],
@@ -59,16 +59,20 @@
         [
           "gemini",
           1
+        ],
+        [
+          "llm",
+          1
         ]
       ]
     },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          1
         ],
         [
           "GitHub AI & ML",
@@ -78,14 +82,10 @@
       "top_keywords": [
         [
           "official_ai",
-          3
+          2
         ],
         [
           "chatgpt",
-          1
-        ],
-        [
-          "openai",
           1
         ],
         [
@@ -157,24 +157,6 @@
       "is_ai_related": true
     },
     {
-      "id": "1d667174a407e8374c6717a066d5475d17d33006",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Working with the American Psychological Association on youth mental health and AI",
-      "url": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
-      "published_at": "2026-08-06T06:00:00Z",
-      "summary": "OpenAI and the American Psychological Association advance evidence-based guidance, resources, and safeguards for responsible AI use and youth mental health.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "46ba9e4a2433b925eb4d9bfaa09611a8edb54c6a",
       "source_id": "github-ai-ml",
       "source_name": "GitHub AI & ML",
@@ -208,6 +190,25 @@
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "003bec26f3b35ecd59a4eba3ebe82f26f5a65150",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 披露 ChatGPT 全球 10 亿用户画像：35 岁及以上用户用量上升",
+      "url": "https://aihot.virxact.com/items/cmsilvone1jezronk60ahdbgi",
+      "published_at": "2026-08-07T06:28:51Z",
+      "summary": "OpenAI 报告称全球超 10 亿用户使用 ChatGPT，使用方式从\"问答工具\"转向\"任务工具\"，工作场景中完成任务或创建内容的可能性是非工作场景的 2 倍以上。自 2026 年 4 月发布 ChatGPT Images 2.0 以来，多媒体相关消息占比升至 7.8%。35 岁及以上用户发送消息份额较 12 个月前增加 5 个百分点，法国和捷克增幅超 10 个百分点。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsilvone1jezronk60ahdbgi",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -286,6 +287,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "ef46fef3340df2dbcc33c8a52a6873cf5bc91d66",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "独立开发者用 VoxCPM 克隆网红声音，让 AI 终于\"会聊天\"了",
+      "url": "https://aihot.virxact.com/items/cmsil63w11iawronkshdpjgy5",
+      "published_at": "2026-08-07T06:41:21Z",
+      "summary": "独立开发者叶小叔用面壁智能开源的 VoxCPM 克隆千万粉丝网红声音，搭建 STT → LLM → VoxCPM（TTS）三段式实时对话管道，TTS 首包延迟不到 1 秒，端到端体感 2 到 3 秒。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsil63w11iawronkshdpjgy5",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:llm",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -296,10 +316,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1113,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 495,
-      "checked_at": "2026-08-07T05:24:58.424875Z"
+      "latency_ms": 402,
+      "checked_at": "2026-08-07T07:51:38.001154Z"
     },
     {
       "source_id": "openai-skills",
@@ -310,8 +330,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 318,
-      "checked_at": "2026-08-07T05:24:58.743307Z"
+      "latency_ms": 296,
+      "checked_at": "2026-08-07T07:51:38.297671Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -322,8 +342,8 @@
       "fetched_count": 254,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 234,
-      "checked_at": "2026-08-07T05:24:58.982298Z"
+      "latency_ms": 101,
+      "checked_at": "2026-08-07T07:51:38.402264Z"
     },
     {
       "source_id": "google-deepmind",
@@ -334,8 +354,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 403,
-      "checked_at": "2026-08-07T05:24:59.387398Z"
+      "latency_ms": 269,
+      "checked_at": "2026-08-07T07:51:38.672785Z"
     },
     {
       "source_id": "google-ai",
@@ -346,8 +366,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 243,
-      "checked_at": "2026-08-07T05:24:59.630814Z"
+      "latency_ms": 172,
+      "checked_at": "2026-08-07T07:51:38.846020Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -358,8 +378,8 @@
       "fetched_count": 835,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 360,
-      "checked_at": "2026-08-07T05:25:00.003984Z"
+      "latency_ms": 310,
+      "checked_at": "2026-08-07T07:51:39.167690Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -370,8 +390,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 139,
-      "checked_at": "2026-08-07T05:25:00.144009Z"
+      "latency_ms": 103,
+      "checked_at": "2026-08-07T07:51:39.271812Z"
     },
     {
       "source_id": "github-changelog",
@@ -382,8 +402,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-08-07T05:25:00.176668Z"
+      "latency_ms": 21,
+      "checked_at": "2026-08-07T07:51:39.293741Z"
     },
     {
       "source_id": "aihot",
@@ -392,10 +412,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 1256,
-      "checked_at": "2026-08-07T05:25:01.434800Z"
+      "latency_ms": 992,
+      "checked_at": "2026-08-07T07:51:40.287628Z"
     }
   ],
   "control_notes": {
