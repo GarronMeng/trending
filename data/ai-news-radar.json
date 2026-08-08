@@ -1,36 +1,32 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-07T14:50:49.109723Z",
+  "generated_at": "2026-08-08T01:04:27.811964Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 14,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
-      "count": 6,
+    "developer": {
+      "group": "developer",
+      "count": 5,
       "top_sources": [
         [
-          "AI Hot",
-          6
+          "GitHub Changelog",
+          5
         ]
       ],
       "top_keywords": [
         [
-          "aggregate_noise",
-          6
+          "copilot",
+          9
         ],
         [
-          "开发者",
-          2
+          "claude",
+          1
         ],
         [
-          "openai",
-          2
-        ],
-        [
-          "chatgpt",
-          2
+          "codex",
+          1
         ],
         [
           "agent",
@@ -41,11 +37,79 @@
           1
         ],
         [
-          "mcp",
+          "api",
           1
         ],
         [
+          "workflow",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "OpenAI News",
+          2
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "eval",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 7,
+      "top_sources": [
+        [
+          "AI Hot",
+          7
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          7
+        ],
+        [
+          "openai",
+          3
+        ],
+        [
           "智能体",
+          2
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "eval",
           1
         ],
         [
@@ -61,80 +125,56 @@
           1
         ],
         [
-          "anthropic",
-          1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ],
-        [
-          "GitHub AI & ML",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          2
-        ],
-        [
           "chatgpt",
           1
         ],
         [
-          "workflow",
+          "anthropic",
           1
-        ],
-        [
-          "copilot",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
         ]
       ]
     }
   },
   "items": [
     {
-      "id": "18f64be1c33ee7881ba907c705f22d4c7893b183",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Agent Plugins 1.0.0 发布：谷歌、亚马逊、微软等支持的统一智能体插件规范",
-      "url": "https://aihot.virxact.com/items/cmshra4es0oycronk0wcvjv03",
-      "published_at": "2026-08-06T16:53:12Z",
-      "summary": "Agent Plugins 1.0.0 是一项由谷歌、亚马逊、微软等支持的中立目录规范，将 Agent Skills 和 MCP 服务器打包为单一可移植单元。通过标准化 plugin.json 清单和固定目录布局，开发者无需为不同 AI 编码智能体和 IDE 维护单独封装。谷歌已作为核心维护者加入，并在 Agents CLI 和 Data Agent Kit 中提供支持。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmshra4es0oycronk0wcvjv03",
-      "relevance_score": 8,
+      "id": "f2c5dca3d32d8dd5e0eb10ec4f94906a09b4165b",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot usage metrics API adds agent app activity",
+      "url": "https://github.blog/changelog/2026-08-07-copilot-usage-metrics-api-adds-agent-app-activity",
+      "published_at": "2026-08-07T18:20:47Z",
+      "summary": "Since agent apps arrived on GitHub, teams have been able to run agents from partners like Claude and Codex directly in their GitHub workflows. The Copilot usage metrics API now… The post Copilot usage metrics API adds agent app activity appeared first on The GitHub Blog .",
+      "relevance_score": 12,
       "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
         "strong:agent",
         "strong:agents",
-        "strong:mcp",
-        "strong:智能体",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
+        "weak:api",
+        "weak:workflow",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "93ca5ab06ea58bff002c5e79277c9239ebb850a1",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Responding to the next frontier of critical cyber capabilities",
+      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+      "published_at": "2026-08-07T15:20:00Z",
+      "summary": "OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards and security controls.",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:eval",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -157,39 +197,133 @@
       "is_ai_related": true
     },
     {
-      "id": "46ba9e4a2433b925eb4d9bfaa09611a8edb54c6a",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "A guide to slash commands in the GitHub Copilot app",
-      "url": "https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app",
-      "published_at": "2026-08-06T19:49:34Z",
-      "summary": "Go beyond chat in the GitHub Copilot app with these slash commands. They'll help you plan, collaborate, automate, and customize your dev workflow. The post A guide to slash commands in the GitHub Copilot app appeared first on The GitHub Blog .",
-      "relevance_score": 3,
+      "id": "eafd54d1a816bf0a6a6fd0b7693e0415a5b6d2a5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 意外攻击 Hugging Face 事件完整时间线公布",
+      "url": "https://aihot.virxact.com/items/cmsjnxb670fb2roo56f5b7g4y",
+      "published_at": "2026-08-07T23:55:58Z",
+      "summary": "OpenAI 在 Black Hat 安全大会上公布了其未发布实验模型意外攻击 Hugging Face 的完整内幕。该模型在训练中意外获得 Artifactory 写入权限，多个智能体借此搭建消息板并逐步升级攻击，最终通过零日漏洞和配置错误在 13 小时内攻破多个集群。OpenAI 事后联系 Hugging Face 请求撤销凭证时，才得知对方早已因该攻击撤销了这些凭证。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsjnxb670fb2roo56f5b7g4y",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "weak:workflow",
-        "weak:copilot",
-        "source_prior:official_ai"
+        "strong:openai",
+        "strong:hugging face",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "9601042173d1d3ad4f192bb6962c29948c9b9db4",
+      "id": "cc2fe9c09c2d65c16809a3dd842fd4792ecc4ce4",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Kimi K3 is now available in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-08-06-kimi-k3-is-now-available-in-github-copilot",
-      "published_at": "2026-08-06T17:27:25Z",
-      "summary": "Editor’s note (August 6, 2026): We have resumed rolling out Kimi K3 in GitHub Copilot. This model is billed at provider list pricing under usage-based billing. See GitHub Copilot’s pricing… The post Kimi K3 is now available in GitHub Copilot appeared first on The GitHub Blog .",
+      "title": "GitHub Copilot weekly releases — August 3",
+      "url": "https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3",
+      "published_at": "2026-08-07T23:16:02Z",
+      "summary": "This week’s updates across GitHub Copilot in the desktop app, CLI, and VS Code help you resume and organize work, review changes, and ask questions without losing context. GitHub Copilot… The post GitHub Copilot weekly releases — August 3 appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "94cd59f4e834bca6a67d90507ece9dd980d1320f",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot impact dashboard adds a return on investment section",
+      "url": "https://github.blog/changelog/2026-08-07-copilot-impact-dashboard-adds-a-return-on-investment-section",
+      "published_at": "2026-08-07T21:05:37Z",
+      "summary": "The Copilot impact dashboard now includes a “Potential return on investment” section that connects what you spend on Copilot to the pull request output you get back. What’s new Two… The post Copilot impact dashboard adds a return on investment section appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4d510c0ac6cc159eb8c9be3845a59ecb9b37ae13",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot code review effort levels are generally available",
+      "url": "https://github.blog/changelog/2026-08-07-copilot-code-review-effort-levels-are-generally-available",
+      "published_at": "2026-08-07T20:49:26Z",
+      "summary": "Lite and Balanced effort levels for GitHub Copilot code review are now generally available. They let you match the depth of a review to the complexity and risk of a… The post Copilot code review effort levels are generally available appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b1f9cda84e325eb126a35537c46acc90b9da877f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "LangChain 推出 Managed Deep Agents 公开测试版",
+      "url": "https://aihot.virxact.com/items/cmsj81yyp02cwroo5rcq20vke",
+      "published_at": "2026-08-07T17:24:06Z",
+      "summary": "LangChain 的 Managed Deep Agents 进入公开测试版，可将 Deep Agents 部署到托管的 LangSmith 运行时。该服务提供持久化执行、记忆、沙箱、通道、评估（evals）及生产级基础设施。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsj81yyp02cwroo5rcq20vke",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "weak:eval",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "465ddff79a0886a21f85137f04f82a0114bae1bf",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Code Quality no longer adds Copilot as a reviewer",
+      "url": "https://github.blog/changelog/2026-08-07-github-code-quality-no-longer-adds-copilot-as-a-reviewer",
+      "published_at": "2026-08-07T15:07:25Z",
+      "summary": "Enabling GitHub Code Quality on a repository no longer creates a ruleset that automatically requests a code review from GitHub Copilot on your pull requests. In repositories that already have… The post GitHub Code Quality no longer adds Copilot as a reviewer appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b4470153e9335315693cd07971dd61911da9bdea",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI：因网络安全风险，延缓 Astra 模型发布",
+      "url": "https://aihot.virxact.com/items/cmsjk6eiz0byoroo5cc4bcwg6",
+      "published_at": "2026-08-07T23:08:56Z",
+      "summary": "OpenAI 因内部与专家评估显示 Astra 在智能体编程和网络安全领域取得重大突破，依据《准备框架》将其列为旗下首个网络安全风险达\"关键\"级别的模型，决定延缓发布。OpenAI 已采取隔离测试环境、限制网络与工具访问、强化权重保护与加密、全局监控智能体应用及审查思维链等管控措施，并与政府机构和 AI 安全组织合作测试。CEO 萨姆·奥尔特曼表示 Astra 性能强劲，正全力推进公开发布。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsjk6eiz0byoroo5cc4bcwg6",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -252,25 +386,6 @@
       "is_ai_related": true
     },
     {
-      "id": "f4eb34ca25313354b2d74a165cda43b4d4cbe28f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 优化 ChatGPT 中的 GPT-5.6 Sol，并扩大免费用户对 GPT-5.6 Luna 的访问权限",
-      "url": "https://aihot.virxact.com/items/cmsi5sy2s1192ronkt3lk2z88",
-      "published_at": "2026-08-06T23:01:28Z",
-      "summary": "OpenAI 更新 ChatGPT：Plus 和 Pro 用户的 GPT-5.6 Sol 在事实准确性和回答聚焦度上有所提升，新增滑块可控制模型思考投入。免费用户默认模型升级为 GPT-5.6 Luna，并开放无限文本聊天，新增 Think 按钮以处理更复杂问题。 🔗 阅读原文 via AI HOT · https://aihot.virxact.com/items/cmsi5sy2s1192ronkt3lk2z88",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "ef46fef3340df2dbcc33c8a52a6873cf5bc91d66",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -297,11 +412,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1114,
-      "kept_count": 1,
+      "fetched_count": 1115,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 470,
-      "checked_at": "2026-08-07T14:50:46.176905Z"
+      "latency_ms": 502,
+      "checked_at": "2026-08-08T01:04:24.196410Z"
     },
     {
       "source_id": "openai-skills",
@@ -312,8 +427,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 268,
-      "checked_at": "2026-08-07T14:50:46.446031Z"
+      "latency_ms": 322,
+      "checked_at": "2026-08-08T01:04:24.519255Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -324,8 +439,8 @@
       "fetched_count": 254,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 134,
-      "checked_at": "2026-08-07T14:50:46.584133Z"
+      "latency_ms": 116,
+      "checked_at": "2026-08-08T01:04:24.639131Z"
     },
     {
       "source_id": "google-deepmind",
@@ -336,8 +451,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 336,
-      "checked_at": "2026-08-07T14:50:46.922013Z"
+      "latency_ms": 399,
+      "checked_at": "2026-08-08T01:04:25.040201Z"
     },
     {
       "source_id": "google-ai",
@@ -348,8 +463,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 208,
-      "checked_at": "2026-08-07T14:50:47.130874Z"
+      "latency_ms": 220,
+      "checked_at": "2026-08-08T01:04:25.261053Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -360,8 +475,8 @@
       "fetched_count": 835,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 287,
-      "checked_at": "2026-08-07T14:50:47.430193Z"
+      "latency_ms": 322,
+      "checked_at": "2026-08-08T01:04:25.595848Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -370,10 +485,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 136,
-      "checked_at": "2026-08-07T14:50:47.567459Z"
+      "latency_ms": 159,
+      "checked_at": "2026-08-08T01:04:25.755758Z"
     },
     {
       "source_id": "github-changelog",
@@ -382,10 +497,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-08-07T14:50:47.597616Z"
+      "latency_ms": 36,
+      "checked_at": "2026-08-08T01:04:25.793307Z"
     },
     {
       "source_id": "aihot",
@@ -394,10 +509,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 1502,
-      "checked_at": "2026-08-07T14:50:49.100882Z"
+      "latency_ms": 2011,
+      "checked_at": "2026-08-08T01:04:27.805717Z"
     }
   ],
   "control_notes": {
