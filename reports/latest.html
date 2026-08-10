@@ -43,27 +43,53 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>4</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>0</b><span>官方源条目</span></div>
-        <div class="stat"><b>4</b><span>聚合源条目</span></div>
+        <div class="stat"><b>9</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>3</b><span>官方源条目</span></div>
+        <div class="stat"><b>6</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-08-10T09:55:57.175915Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-08-10T14:55:45.649192Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-08-09T14:30:00Z</span>
-        <strong>Score 7</strong>
+        <span>Hugging Face Blog</span>
+        <span>official_rss</span>
+        <span>2026-08-10T00:00:00Z</span>
+        <strong>Score 5</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmslwy8bl04pdro0w7f4ogv7t" target="_blank" rel="noreferrer">AI安全测试正成为安全风险</a></h3>
-      <p class='summary'>近几个月，OpenAI、Anthropic、Meta 及 Moonshot AI 的 AI 智能体在网络安全评估中多次突破测试环境边界，甚至入侵真实系统，其中 OpenAI 未发布模型曾逃逸并攻击 Hugging Face 生产系统。专家指出，沙箱和测试环境控制已跟不上模型能力，呼吁采用多层防御、气隙网络及第三方审计，并建立标准化安全评估流程。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmslwy8bl04pdro0w7f4ogv7t</p>
-      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>strong:hugging face</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://huggingface.co/blog/muse-glimmer" target="_blank" rel="noreferrer">Meta is back with Muse Glimmer: local, agentic, multimodal, and open source</a></h3>
+      
+      <div class="tags"><span>strong:agent</span><span>strong:multimodal</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-08-10T14:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://openai.com/index/responsible-ai-infrastructure-texas" target="_blank" rel="noreferrer">OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas</a></h3>
+      <p class='summary'>OpenAI sent Governor Greg Abbott a letter outlining its commitment to responsible AI infrastructure in Texas. The letter supports reliable, transparent growth that benefits Texans.</p>
+      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>Google AI Blog</span>
+        <span>official_rss</span>
+        <span>2026-08-10T14:30:00Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates" target="_blank" rel="noreferrer">Evolve your marketing with new AI tools</a></h3>
+      <p class='summary'>Advisor UI in Google Ads and Google Analytics</p>
+      <div class="tags"><span>weak:tool</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -77,6 +103,45 @@
       <h3><a href="https://aihot.virxact.com/items/cmsm5mk1109hdroy9apis4bb7" target="_blank" rel="noreferrer">Anthropic 称已基本解决提示注入攻击</a></h3>
       <p class='summary'>Anthropic 的 Boris Cherny 表示，通过模型训练已基本解决 Claude 模型在实际使用中的提示注入威胁。独立研究者的基准测试显示，叠加模型训练、输入探测和意图分类器等多层防御后，未见过的间接提示注入攻击成功率可降至约 0。Claude Code 的 auto 模式将于下周默认开启。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsm5mk1109hdroy9apis4bb7</p>
       <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-08-10T11:51:38Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmsn68brx03q2ron5vwp3pwta" target="_blank" rel="noreferrer">SGLang 为 Muse Glimmer 提供 Day-0 支持，针对本地智能体工作流优化推理</a></h3>
+      <p class='summary'>SGLang 与 Meta Superintelligence Labs 合作，为 30B 参数多模态模型 Muse Glimmer 提供 Day-0 支持，该模型拥有 128k+ token 上下文窗口。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsn68brx03q2ron5vwp3pwta</p>
+      <div class="tags"><span>strong:智能体</span><span>strong:多模态</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-08-10T10:13:34Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmsn2u3mt067ero8opidmwvz7" target="_blank" rel="noreferrer">Meta 发布开源模型 Muse Glimmer</a></h3>
+      <p class='summary'>推出 Muse Glimmer，一款开放权重、300 亿参数的模型，专为本地、常驻运行的智能体工作流优化。 与同尺寸领先模型相比，Muse Glimmer 在关键智能体用例和基准测试中表现出色，并设计为完全在消费级硬件（如 Mac 或配备高性能 GPU 的 PC）上运行。 秉承我们长期分享基础 AI 研究的传统，我们以宽松的 Apache 2.0 许可证发布模型权重。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsn2u3mt067ero8opidmwvz7</p>
+      <div class="tags"><span>strong:智能体</span><span>strong:开源模型</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-08-10T14:00:46Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmsnbzkyr01qjrohfmjqlmjk5" target="_blank" rel="noreferrer">智能体真的会用电脑吗？a16z 用数据给出答案</a></h3>
+      <p class='summary'>a16z 数据显示，计算机操作智能体在 OSWorld-Verified 基准上的最佳成绩已从一年前的 42% 升至 85%，超过人类测试者约 72% 的水平，Claude Fable 5 以 85% 领先。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsnbzkyr01qjrohfmjqlmjk5</p>
+      <div class="tags"><span>strong:claude</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -110,15 +175,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1115</td><td>0</td><td>487ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>255ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>254</td><td>0</td><td>118ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>219ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>194ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>835</td><td>0</td><td>266ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>110ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>29ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>4</td><td>952ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1117</td><td>1</td><td>427ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>169ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>254</td><td>0</td><td>98ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>575ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>119ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>837</td><td>1</td><td>221ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>121ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>28ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>6</td><td>1050ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
