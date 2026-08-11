@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-11T04:54:23.046461Z",
+  "generated_at": "2026-08-11T07:45:21.736571Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 13,
+  "item_count": 16,
   "groups": {
     "official": {
       "group": "official",
@@ -60,52 +60,60 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          5
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          8
         ],
         [
           "智能体",
-          4
-        ],
-        [
-          "工作流",
-          2
+          5
         ],
         [
           "claude",
-          2
+          3
+        ],
+        [
+          "工作流",
+          3
         ],
         [
           "agent",
-          1
+          2
         ],
         [
           "agents",
-          1
+          2
+        ],
+        [
+          "多模态",
+          2
         ],
         [
           "自动化",
           1
         ],
         [
-          "多模态",
+          "api",
           1
         ],
         [
-          "开源模型",
+          "API",
           1
         ],
         [
-          "anthropic",
+          "llm",
+          1
+        ],
+        [
+          "评测",
           1
         ]
       ]
@@ -241,6 +249,26 @@
       "is_ai_related": true
     },
     {
+      "id": "680a0364c9613fa15988e9c1d5f53beb5ebe049d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "ZCode全面升级：Goal、Subagents、Remote Control与闲时任务四大功能上线",
+      "url": "https://aihot.virxact.com/items/cmso95agg0ig3rofwaqvy9crw",
+      "published_at": "2026-08-11T05:52:25Z",
+      "summary": "ZCode针对GLM深度优化，今日上线Goal、Subagents、Remote Control与闲时任务四大功能。在Z.ai Code Bench测试中，GLM-5.2搭配ZCode较搭配Claude Code任务整体通过率高2.39%；ZCode缓存命中率超98%，叠加1.5倍限时额度加成后，GLM Coding Plan整体使用量接近常规额度的1.8倍。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmso95agg0ig3rofwaqvy9crw",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "strong:agents",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "b232906a3ee8daaa20c5140d77d95aaca6f1d8e6",
       "source_id": "github-ai-ml",
       "source_name": "GitHub AI & ML",
@@ -274,6 +302,47 @@
       "relevance_reasons": [
         "weak:tool",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b7449257b33c5b896a9b7e255ee8b72103cd22bb",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "用 ComfyUI API 实现 MiniMax-H3 多模态视频与音频生成流水线",
+      "url": "https://aihot.virxact.com/items/cmso8nqa70eq4rofw24w1wlwt",
+      "published_at": "2026-08-11T05:44:38Z",
+      "summary": "本教程演示如何以 ComfyUI 为无头推理后端，构建端到端的 MiniMax-H3 视频生成工作流。通过 Python 直接构建执行图，支持文生视频、首尾帧条件生成和参考图像条件生成，并自动根据 GPU 显存选择 quality、balanced、squeeze 三种权重配置。流水线涵盖模型自动下载、节点模式校验、音视频联合解码与进度监控，无需图形界面即可复现实验。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmso8nqa70eq4rofw24w1wlwt",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:多模态",
+        "weak:api",
+        "weak:工作流",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "90bf74feea7ebfa654a533ed3933d4214f782a12",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "编写智能体时，哪种编程语言最合适？",
+      "url": "https://aihot.virxact.com/items/cmso7i0al0dlsrofwivmpsjh1",
+      "published_at": "2026-08-11T04:58:14Z",
+      "summary": "针对\"动态语言比静态语言更省 LLM token\"的流行说法，作者用 GPT-5.6 Sol 让智能体实现 zstd 解码器进行实测。结果显示，medium 努力度下动态语言表现更好，ultra 下静态语言反而更优，且此前评测存在测试路径错误等缺陷。作者认为，琐碎任务上的性能无法推广到更大问题。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmso7i0al0dlsrofwivmpsjh1",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:llm",
+        "strong:智能体",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -384,8 +453,8 @@
       "fetched_count": 1123,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 514,
-      "checked_at": "2026-08-11T04:54:19.668464Z"
+      "latency_ms": 549,
+      "checked_at": "2026-08-11T07:45:18.632644Z"
     },
     {
       "source_id": "openai-skills",
@@ -396,8 +465,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 244,
-      "checked_at": "2026-08-11T04:54:19.913278Z"
+      "latency_ms": 360,
+      "checked_at": "2026-08-11T07:45:18.993372Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -408,8 +477,8 @@
       "fetched_count": 254,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 130,
-      "checked_at": "2026-08-11T04:54:20.047255Z"
+      "latency_ms": 345,
+      "checked_at": "2026-08-11T07:45:19.342904Z"
     },
     {
       "source_id": "google-deepmind",
@@ -420,8 +489,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 349,
-      "checked_at": "2026-08-11T04:54:20.398574Z"
+      "latency_ms": 350,
+      "checked_at": "2026-08-11T07:45:19.694983Z"
     },
     {
       "source_id": "google-ai",
@@ -432,8 +501,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 229,
-      "checked_at": "2026-08-11T04:54:20.628942Z"
+      "latency_ms": 210,
+      "checked_at": "2026-08-11T07:45:19.906147Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -444,8 +513,8 @@
       "fetched_count": 838,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 373,
-      "checked_at": "2026-08-11T04:54:21.014888Z"
+      "latency_ms": 335,
+      "checked_at": "2026-08-11T07:45:20.254719Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -456,8 +525,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-08-11T04:54:21.269559Z"
+      "latency_ms": 240,
+      "checked_at": "2026-08-11T07:45:20.495937Z"
     },
     {
       "source_id": "github-changelog",
@@ -468,8 +537,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 60,
-      "checked_at": "2026-08-11T04:54:21.329915Z"
+      "latency_ms": 37,
+      "checked_at": "2026-08-11T07:45:20.533323Z"
     },
     {
       "source_id": "aihot",
@@ -478,10 +547,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 1709,
-      "checked_at": "2026-08-11T04:54:23.040216Z"
+      "latency_ms": 1193,
+      "checked_at": "2026-08-11T07:45:21.727694Z"
     }
   ],
   "control_notes": {
