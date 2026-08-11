@@ -1,21 +1,25 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-10T14:55:45.647803Z",
+  "generated_at": "2026-08-11T01:09:00.372631Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 15,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 7,
       "top_sources": [
+        [
+          "OpenAI News",
+          4
+        ],
         [
           "Hugging Face Blog",
           1
         ],
         [
-          "OpenAI News",
+          "GitHub AI & ML",
           1
         ],
         [
@@ -26,18 +30,26 @@
       "top_keywords": [
         [
           "official_ai",
-          3
+          7
+        ],
+        [
+          "openai",
+          4
         ],
         [
           "agent",
           1
         ],
         [
-          "multimodal",
+          "agents",
           1
         ],
         [
-          "openai",
+          "developer",
+          1
+        ],
+        [
+          "copilot",
           1
         ],
         [
@@ -48,25 +60,21 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          6
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          7
         ],
         [
           "智能体",
-          5
-        ],
-        [
-          "claude",
-          2
+          6
         ],
         [
           "多模态",
@@ -77,15 +85,19 @@
           2
         ],
         [
-          "anthropic",
+          "claude",
+          2
+        ],
+        [
+          "agent",
           1
         ],
         [
-          "api",
+          "agents",
           1
         ],
         [
-          "API",
+          "自动化",
           1
         ],
         [
@@ -93,28 +105,87 @@
           1
         ],
         [
+          "anthropic",
+          1
+        ],
+        [
           "开发者",
           1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
         ]
       ]
     }
   },
   "items": [
     {
-      "id": "1ffec54e80529ab3e64b357b60a1722352ba3bdd",
+      "id": "d2725984167c4fb3a5aec5033654c82594bac8af",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
-      "url": "https://huggingface.co/blog/muse-glimmer",
-      "published_at": "2026-08-10T00:00:00Z",
+      "title": "Build Low-Latency Multilingual Voice Agents: Open Weights & Full Deployment Control with NVIDIA Magpie TTS",
+      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+      "published_at": "2026-08-10T16:25:36Z",
       "summary": null,
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:agent",
-        "strong:multimodal",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "78679d65cd5f3fb963c8a8d7da16a3749b9f611b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Databricks 如何在兼顾治理的前提下让 Genie Agents 同时基于结构化数据与文档运行",
+      "url": "https://aihot.virxact.com/items/cmsnxf57501y5rofw32tota54",
+      "published_at": "2026-08-10T23:08:50Z",
+      "summary": "Databricks 介绍如何让 Genie Agents 同时基于结构化数据与文档运行，且不牺牲治理能力。文章探讨了构建自动化简单业务任务的智能体虽易，但要在统一治理框架下融合两类数据源、确保安全合规地执行查询，仍需解决数据权限、血缘追踪与策略管控等关键问题。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsnxf57501y5rofw32tota54",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "strong:智能体",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "95aa92c2612a188a8d6e4f97edcff0f0add7d7db",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "What building an AI-native finance function taught me",
+      "url": "https://openai.com/index/building-an-ai-native-finance-function",
+      "published_at": "2026-08-10T17:00:00Z",
+      "summary": "OpenAI CFO Sarah Friar shares five lessons for building an AI-native finance function, from automated forecasting to stronger controls and AI ROI.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -138,6 +209,61 @@
       "is_ai_related": true
     },
     {
+      "id": "f3d265f6479c9e3cdf9f5f777c6f30e46c825bfc",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Putting frontier cyber models in more trusted hands",
+      "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
+      "published_at": "2026-08-10T10:00:00Z",
+      "summary": "Approved Daybreak partners can use OpenAI’s frontier cyber models to deliver authorized, governed cybersecurity services to customers.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "09e51582944e0d6d9d4d1a280e5b62c351f12880",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
+      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+      "published_at": "2026-08-10T10:00:00Z",
+      "summary": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b232906a3ee8daaa20c5140d77d95aaca6f1d8e6",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "Using the GitHub Copilot SDK for Java",
+      "url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java",
+      "published_at": "2026-08-10T19:30:00Z",
+      "summary": "Enterprise Java developers have a new superpower—drive GitHub Copilot from idiomatic Java code with annotations, virtual threads, and more. The post Using the GitHub Copilot SDK for Java appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:developer",
+        "weak:copilot",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "e0734a8d3a7956e66395ebeb5f17f80dbc3c02e2",
       "source_id": "google-ai",
       "source_name": "Google AI Blog",
@@ -156,23 +282,20 @@
       "is_ai_related": true
     },
     {
-      "id": "0453bbe72e5f186d12abf49aadc21a0a47189e58",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 称已基本解决提示注入攻击",
-      "url": "https://aihot.virxact.com/items/cmsm5mk1109hdroy9apis4bb7",
-      "published_at": "2026-08-09T18:32:14Z",
-      "summary": "Anthropic 的 Boris Cherny 表示，通过模型训练已基本解决 Claude 模型在实际使用中的提示注入威胁。独立研究者的基准测试显示，叠加模型训练、输入探测和意图分类器等多层防御后，未见过的间接提示注入攻击成功率可降至约 0。Claude Code 的 auto 模式将于下周默认开启。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsm5mk1109hdroy9apis4bb7",
-      "relevance_score": 5,
+      "id": "96366df8de518649d2d59f69bdf7393e5221cb00",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot on web expands conversation controls",
+      "url": "https://github.blog/changelog/2026-08-10-copilot-on-web-expands-conversation-controls",
+      "published_at": "2026-08-10T14:27:04Z",
+      "summary": "We’ve made improvements to Copilot Chat on github.com that make it easier to use. These include easier access to your recent conversations in chat, the ability to minimize the chat… The post Copilot on web expands conversation controls appeared first on The GitHub Blog .",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -212,6 +335,25 @@
         "strong:智能体",
         "strong:开源模型",
         "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5d3a670015cf9a9824a0a0afe5e208ea9134a574",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude 未发布研究版将黎曼 zeta 函数零点下界从 41.6% 提升至 67.2%",
+      "url": "https://aihot.virxact.com/items/cmsnix1by08d3rohfftiex1xp",
+      "published_at": "2026-08-10T17:46:50Z",
+      "summary": "Anthropic 员工让 Claude 尝试攻克黎曼猜想，虽未成功，但一个未发布的研究版 Claude 在相关问题上取得突破：将满足黎曼猜想的 zeta 函数零点比例下界从 41.6% 提升至 67.2%。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsnix1by08d3rohfftiex1xp",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -281,11 +423,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1117,
-      "kept_count": 1,
+      "fetched_count": 1123,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 427,
-      "checked_at": "2026-08-10T14:55:43.230901Z"
+      "latency_ms": 447,
+      "checked_at": "2026-08-11T01:08:58.405481Z"
     },
     {
       "source_id": "openai-skills",
@@ -296,8 +438,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 169,
-      "checked_at": "2026-08-10T14:55:43.401005Z"
+      "latency_ms": 203,
+      "checked_at": "2026-08-11T01:08:58.608980Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -308,8 +450,8 @@
       "fetched_count": 254,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 98,
-      "checked_at": "2026-08-10T14:55:43.503075Z"
+      "latency_ms": 110,
+      "checked_at": "2026-08-11T01:08:58.722896Z"
     },
     {
       "source_id": "google-deepmind",
@@ -320,8 +462,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 575,
-      "checked_at": "2026-08-10T14:55:44.080425Z"
+      "latency_ms": 264,
+      "checked_at": "2026-08-11T01:08:58.988871Z"
     },
     {
       "source_id": "google-ai",
@@ -332,8 +474,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 119,
-      "checked_at": "2026-08-10T14:55:44.200747Z"
+      "latency_ms": 213,
+      "checked_at": "2026-08-11T01:08:59.202956Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -341,11 +483,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 837,
+      "fetched_count": 838,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 221,
-      "checked_at": "2026-08-10T14:55:44.434851Z"
+      "latency_ms": 232,
+      "checked_at": "2026-08-11T01:08:59.447539Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -354,10 +496,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 121,
-      "checked_at": "2026-08-10T14:55:44.556942Z"
+      "latency_ms": 133,
+      "checked_at": "2026-08-11T01:08:59.581745Z"
     },
     {
       "source_id": "github-changelog",
@@ -366,10 +508,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-08-10T14:55:44.586031Z"
+      "latency_ms": 30,
+      "checked_at": "2026-08-11T01:08:59.612688Z"
     },
     {
       "source_id": "aihot",
@@ -378,10 +520,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 1050,
-      "checked_at": "2026-08-10T14:55:45.637275Z"
+      "latency_ms": 749,
+      "checked_at": "2026-08-11T01:09:00.363418Z"
     }
   ],
   "control_notes": {
