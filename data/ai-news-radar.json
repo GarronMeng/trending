@@ -1,40 +1,92 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-11T09:29:11.455727Z",
+  "generated_at": "2026-08-11T14:54:59.797467Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 16,
+  "item_count": 10,
   "groups": {
-    "official": {
-      "group": "official",
+    "aggregate": {
+      "group": "aggregate",
       "count": 7,
       "top_sources": [
         [
-          "OpenAI News",
+          "AI Hot",
+          7
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          7
+        ],
+        [
+          "智能体",
           4
         ],
+        [
+          "开源模型",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "工作流",
+          2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "agents",
+          2
+        ],
+        [
+          "claude",
+          2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "自动化",
+          1
+        ],
+        [
+          "多模态",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 3,
+      "top_sources": [
         [
           "Hugging Face Blog",
           1
         ],
         [
-          "GitHub AI & ML",
+          "OpenAI News",
           1
         ],
         [
-          "Google AI Blog",
+          "GitHub AI & ML",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          7
-        ],
-        [
-          "openai",
-          4
+          3
         ],
         [
           "agent",
@@ -42,6 +94,10 @@
         ],
         [
           "agents",
+          1
+        ],
+        [
+          "openai",
           1
         ],
         [
@@ -51,91 +107,34 @@
         [
           "copilot",
           1
-        ],
-        [
-          "tool",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 8,
-      "top_sources": [
-        [
-          "AI Hot",
-          8
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          8
-        ],
-        [
-          "智能体",
-          5
-        ],
-        [
-          "claude",
-          3
-        ],
-        [
-          "工作流",
-          3
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "agents",
-          2
-        ],
-        [
-          "多模态",
-          2
-        ],
-        [
-          "自动化",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "llm",
-          1
-        ],
-        [
-          "评测",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "9c6c1c0f5b6360f40e75234c3b5f899da538163f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "SGLang 宣布 Day-0 支持 NVIDIA Nemotron 3.5 Lightning",
+      "url": "https://aihot.virxact.com/items/cmsopyoum028urohdhqzve6ba",
+      "published_at": "2026-08-11T13:51:45Z",
+      "summary": "SGLang 宣布对 NVIDIA Nemotron 3.5 Lightning 提供 Day-0 支持，该开源模型为 30B 总参数、3B 激活参数的混合专家架构，支持最长 1M token 上下文，可从 Hugging Face 下载 BF16 和 NVFP4 权重。模型支持 MTP、DFlash、DSpark 三种投机解码技术，并可通过 OpenAI 兼容 API 接入智能体工作流。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsopyoum028urohdhqzve6ba",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "strong:智能体",
+        "strong:开源模型",
+        "weak:api",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "d2725984167c4fb3a5aec5033654c82594bac8af",
       "source_id": "huggingface-blog",
@@ -195,60 +194,6 @@
       "is_ai_related": true
     },
     {
-      "id": "ea62075228d951fda6f29fabc86aa8a1aad0e3bc",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas",
-      "url": "https://openai.com/index/responsible-ai-infrastructure-texas",
-      "published_at": "2026-08-10T14:00:00Z",
-      "summary": "OpenAI sent Governor Greg Abbott a letter outlining its commitment to responsible AI infrastructure in Texas. The letter supports reliable, transparent growth that benefits Texans.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "f3d265f6479c9e3cdf9f5f777c6f30e46c825bfc",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Putting frontier cyber models in more trusted hands",
-      "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
-      "published_at": "2026-08-10T10:00:00Z",
-      "summary": "Approved Daybreak partners can use OpenAI’s frontier cyber models to deliver authorized, governed cybersecurity services to customers.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "09e51582944e0d6d9d4d1a280e5b62c351f12880",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
-      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-      "published_at": "2026-08-10T10:00:00Z",
-      "summary": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "680a0364c9613fa15988e9c1d5f53beb5ebe049d",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -283,24 +228,6 @@
       "relevance_reasons": [
         "weak:developer",
         "weak:copilot",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e0734a8d3a7956e66395ebeb5f17f80dbc3c02e2",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Evolve your marketing with new AI tools",
-      "url": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates",
-      "published_at": "2026-08-10T14:30:00Z",
-      "summary": "Advisor UI in Google Ads and Google Analytics",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:tool",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -347,59 +274,20 @@
       "is_ai_related": true
     },
     {
-      "id": "96366df8de518649d2d59f69bdf7393e5221cb00",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot on web expands conversation controls",
-      "url": "https://github.blog/changelog/2026-08-10-copilot-on-web-expands-conversation-controls",
-      "published_at": "2026-08-10T14:27:04Z",
-      "summary": "We’ve made improvements to Copilot Chat on github.com that make it easier to use. These include easier access to your recent conversations in chat, the ability to minimize the chat… The post Copilot on web expands conversation controls appeared first on The GitHub Blog .",
+      "id": "72692dcfbcc8fa8e333ddab49f523effa8a77cf6",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "NVIDIA 推出 Nemotron 3.5 Lightning，加速本地智能体任务",
+      "url": "https://aihot.virxact.com/items/cmsoolxde07isrop2eb5rrtvq",
+      "published_at": "2026-08-11T13:00:25Z",
+      "summary": "NVIDIA 发布 Nemotron 3.5 Lightning，一款可定制的开源 30B 混合专家（MoE）模型，专为常驻智能体设计。相比同类开源模型，其 token 生成速度最高提升 4 倍，任务完成时间缩短 30%。该模型采用开放权重，支持用户微调以匹配特定任务，并可在 RTX PC、DGX Spark 及 Jetson 等设备上运行。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsoolxde07isrop2eb5rrtvq",
       "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "14d5a1b610cb1042f146327913a9c84e63131ac3",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "SGLang 为 Muse Glimmer 提供 Day-0 支持，针对本地智能体工作流优化推理",
-      "url": "https://aihot.virxact.com/items/cmsn68brx03q2ron5vwp3pwta",
-      "published_at": "2026-08-10T11:51:38Z",
-      "summary": "SGLang 与 Meta Superintelligence Labs 合作，为 30B 参数多模态模型 Muse Glimmer 提供 Day-0 支持，该模型拥有 128k+ token 上下文窗口。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsn68brx03q2ron5vwp3pwta",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:智能体",
-        "strong:多模态",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "4e74f15e3af740ba3f0ada40fc54adbce23254cc",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Meta 发布开源模型 Muse Glimmer",
-      "url": "https://aihot.virxact.com/items/cmsn2u3mt067ero8opidmwvz7",
-      "published_at": "2026-08-10T10:13:34Z",
-      "summary": "推出 Muse Glimmer，一款开放权重、300 亿参数的模型，专为本地、常驻运行的智能体工作流优化。 与同尺寸领先模型相比，Muse Glimmer 在关键智能体用例和基准测试中表现出色，并设计为完全在消费级硬件（如 Mac 或配备高性能 GPU 的 PC）上运行。 秉承我们长期分享基础 AI 研究的传统，我们以宽松的 Apache 2.0 许可证发布模型权重。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsn2u3mt067ero8opidmwvz7",
-      "relevance_score": 4,
       "relevance_reasons": [
         "strong:智能体",
         "strong:开源模型",
-        "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -422,25 +310,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "191e4531a0f1a97a9788745db50b5104c0cc1225",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "智能体真的会用电脑吗？a16z 用数据给出答案",
-      "url": "https://aihot.virxact.com/items/cmsnbzkyr01qjrohfmjqlmjk5",
-      "published_at": "2026-08-10T14:00:46Z",
-      "summary": "a16z 数据显示，计算机操作智能体在 OSWorld-Verified 基准上的最佳成绩已从一年前的 42% 升至 85%，超过人类测试者约 72% 的水平，Claude Fable 5 以 85% 领先。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsnbzkyr01qjrohfmjqlmjk5",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -451,10 +320,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1123,
-      "kept_count": 4,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 492,
-      "checked_at": "2026-08-11T09:29:05.031155Z"
+      "latency_ms": 327,
+      "checked_at": "2026-08-11T14:54:54.581348Z"
     },
     {
       "source_id": "openai-skills",
@@ -465,8 +334,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 359,
-      "checked_at": "2026-08-11T09:29:05.390854Z"
+      "latency_ms": 296,
+      "checked_at": "2026-08-11T14:54:54.878371Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -477,8 +346,8 @@
       "fetched_count": 254,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 113,
-      "checked_at": "2026-08-11T09:29:05.508732Z"
+      "latency_ms": 73,
+      "checked_at": "2026-08-11T14:54:54.954666Z"
     },
     {
       "source_id": "google-deepmind",
@@ -489,8 +358,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 388,
-      "checked_at": "2026-08-11T09:29:05.898994Z"
+      "latency_ms": 373,
+      "checked_at": "2026-08-11T14:54:55.329317Z"
     },
     {
       "source_id": "google-ai",
@@ -499,10 +368,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 274,
-      "checked_at": "2026-08-11T09:29:06.174293Z"
+      "latency_ms": 279,
+      "checked_at": "2026-08-11T14:54:55.609551Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -510,11 +379,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 838,
+      "fetched_count": 839,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 332,
-      "checked_at": "2026-08-11T09:29:06.519825Z"
+      "latency_ms": 246,
+      "checked_at": "2026-08-11T14:54:55.865278Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -525,8 +394,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 140,
-      "checked_at": "2026-08-11T09:29:06.660438Z"
+      "latency_ms": 352,
+      "checked_at": "2026-08-11T14:54:56.217887Z"
     },
     {
       "source_id": "github-changelog",
@@ -535,10 +404,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 35,
-      "checked_at": "2026-08-11T09:29:06.696455Z"
+      "latency_ms": 27,
+      "checked_at": "2026-08-11T14:54:56.245071Z"
     },
     {
       "source_id": "aihot",
@@ -547,10 +416,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 4748,
-      "checked_at": "2026-08-11T09:29:11.446114Z"
+      "latency_ms": 3542,
+      "checked_at": "2026-08-11T14:54:59.788257Z"
     }
   ],
   "control_notes": {
