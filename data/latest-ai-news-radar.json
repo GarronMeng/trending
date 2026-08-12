@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-12T01:17:17.693568Z",
+  "generated_at": "2026-08-12T05:18:43.690234Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -25,15 +25,23 @@
           4
         ],
         [
-          "智能体",
-          4
-        ],
-        [
           "openai",
           3
         ],
         [
           "api",
+          3
+        ],
+        [
+          "智能体",
+          3
+        ],
+        [
+          "工作流",
+          3
+        ],
+        [
+          "codex",
           3
         ],
         [
@@ -45,23 +53,15 @@
           2
         ],
         [
-          "工作流",
-          2
-        ],
-        [
           "gemini",
           2
         ],
         [
-          "codex",
+          "claude",
           2
         ],
         [
           "anthropic",
-          1
-        ],
-        [
-          "推理模型",
           1
         ]
       ]
@@ -340,6 +340,26 @@
       "is_ai_related": true
     },
     {
+      "id": "3f072d2482eccd847acb521e757d4b2eb7e0f4a3",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "跨会话传消息后，Codex 和 Claude 如何重构 vibe coding 工作流",
+      "url": "https://aihot.virxact.com/items/cmspk9ofu02cbrojej28w43eh",
+      "published_at": "2026-08-11T14:15:07Z",
+      "summary": "Codex 和 Claude 新增跨 Session 传消息功能后，新对话可从之前所有对话中选择可用消息，省去交接文档和 git 备份。作者据此重构工作流：主对话守住目标与决策，分支对话独立探索新想法，完成后由主对话读取完整记录。Codex 通过复制会话 ID 精确寻址，Claude Code 则用内置 session management 搜索对话历史，但桌面端只能搜索当前可访问的会话记录。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmspk9ofu02cbrojej28w43eh",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "b7449257b33c5b896a9b7e255ee8b72103cd22bb",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -356,26 +376,6 @@
         "weak:api",
         "weak:工作流",
         "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "90bf74feea7ebfa654a533ed3933d4214f782a12",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "编写智能体时，哪种编程语言最合适？",
-      "url": "https://aihot.virxact.com/items/cmso7i0al0dlsrofwivmpsjh1",
-      "published_at": "2026-08-11T04:58:14Z",
-      "summary": "针对\"动态语言比静态语言更省 LLM token\"的流行说法，作者用 GPT-5.6 Sol 让智能体实现 zstd 解码器进行实测。结果显示，medium 努力度下动态语言表现更好，ultra 下静态语言反而更优，且此前评测存在测试路径错误等缺陷。作者认为，琐碎任务上的性能无法推广到更大问题。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmso7i0al0dlsrofwivmpsjh1",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:llm",
-        "strong:智能体",
-        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -448,8 +448,8 @@
       "fetched_count": 1124,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 580,
-      "checked_at": "2026-08-12T01:17:15.179915Z"
+      "latency_ms": 458,
+      "checked_at": "2026-08-12T05:18:41.072985Z"
     },
     {
       "source_id": "openai-skills",
@@ -460,8 +460,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 245,
-      "checked_at": "2026-08-12T01:17:15.425824Z"
+      "latency_ms": 469,
+      "checked_at": "2026-08-12T05:18:41.542517Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -472,8 +472,8 @@
       "fetched_count": 254,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 148,
-      "checked_at": "2026-08-12T01:17:15.578610Z"
+      "latency_ms": 110,
+      "checked_at": "2026-08-12T05:18:41.655574Z"
     },
     {
       "source_id": "google-deepmind",
@@ -484,8 +484,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 347,
-      "checked_at": "2026-08-12T01:17:15.927378Z"
+      "latency_ms": 340,
+      "checked_at": "2026-08-12T05:18:41.997171Z"
     },
     {
       "source_id": "google-ai",
@@ -496,8 +496,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 237,
-      "checked_at": "2026-08-12T01:17:16.165476Z"
+      "latency_ms": 175,
+      "checked_at": "2026-08-12T05:18:42.172789Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -508,8 +508,8 @@
       "fetched_count": 839,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 363,
-      "checked_at": "2026-08-12T01:17:16.542188Z"
+      "latency_ms": 227,
+      "checked_at": "2026-08-12T05:18:42.407550Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -520,8 +520,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 216,
-      "checked_at": "2026-08-12T01:17:16.758984Z"
+      "latency_ms": 308,
+      "checked_at": "2026-08-12T05:18:42.716532Z"
     },
     {
       "source_id": "github-changelog",
@@ -532,8 +532,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 38,
-      "checked_at": "2026-08-12T01:17:16.797857Z"
+      "latency_ms": 27,
+      "checked_at": "2026-08-12T05:18:42.743860Z"
     },
     {
       "source_id": "aihot",
@@ -544,8 +544,8 @@
       "fetched_count": 50,
       "kept_count": 10,
       "error": null,
-      "latency_ms": 887,
-      "checked_at": "2026-08-12T01:17:17.686508Z"
+      "latency_ms": 940,
+      "checked_at": "2026-08-12T05:18:43.684960Z"
     }
   ],
   "control_notes": {
