@@ -1,24 +1,56 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-12T09:38:48.128018Z",
+  "generated_at": "2026-08-12T14:54:14.842725Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 14,
+  "item_count": 11,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "openai",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          8
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          6
         ],
         [
           "chatgpt",
@@ -26,30 +58,18 @@
         ],
         [
           "openai",
-          3
-        ],
-        [
-          "智能体",
-          3
-        ],
-        [
-          "codex",
-          3
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "开源模型",
-          2
-        ],
-        [
-          "工作流",
           2
         ],
         [
           "gemini",
+          2
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "智能体",
           2
         ],
         [
@@ -61,35 +81,19 @@
           1
         ],
         [
+          "api",
+          1
+        ],
+        [
           "API",
           1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "OpenAI News",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "openai",
-          2
         ],
         [
-          "official_ai",
-          2
-        ],
-        [
-          "chatgpt",
+          "mcp",
           1
         ],
         [
-          "workflow",
+          "deepmind",
           1
         ]
       ]
@@ -121,6 +125,27 @@
   },
   "items": [
     {
+      "id": "6fd6e1fae675e8a3812e56013e77f047656403bf",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "From assistance to execution: How enterprises put AI to work",
+      "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+      "published_at": "2026-08-12T06:00:00Z",
+      "summary": "OpenAI research reveals how enterprises are adopting agentic AI, using ChatGPT and Codex, and how frontier firms are pulling ahead in AI adoption.",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "strong:agent",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "c3415164b85f38c4ac65f44218719be62e149509",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -144,48 +169,6 @@
       "is_ai_related": true
     },
     {
-      "id": "9c6c1c0f5b6360f40e75234c3b5f899da538163f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "SGLang 宣布 Day-0 支持 NVIDIA Nemotron 3.5 Lightning",
-      "url": "https://aihot.virxact.com/items/cmsopyoum028urohdhqzve6ba",
-      "published_at": "2026-08-11T13:51:45Z",
-      "summary": "SGLang 宣布对 NVIDIA Nemotron 3.5 Lightning 提供 Day-0 支持，该开源模型为 30B 总参数、3B 激活参数的混合专家架构，支持最长 1M token 上下文，可从 Hugging Face 下载 BF16 和 NVFP4 权重。模型支持 MTP、DFlash、DSpark 三种投机解码技术，并可通过 OpenAI 兼容 API 接入智能体工作流。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsopyoum028urohdhqzve6ba",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:hugging face",
-        "strong:智能体",
-        "strong:开源模型",
-        "weak:api",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "82675799e2e258ab4ea1a9eecb53b223e82cec43",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Testing ads in ChatGPT",
-      "url": "https://openai.com/index/testing-ads-in-chatgpt",
-      "published_at": "2026-08-11T10:00:00Z",
-      "summary": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "a2fe5b909e2785ae03a80207ec0ab0e98c158bc3",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -202,25 +185,6 @@
         "weak:workflow",
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "27cfd09aa62f573f81dcab83873887e47bff524b",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Daybreak models are now available on AWS",
-      "url": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
-      "published_at": "2026-08-11T10:00:00Z",
-      "summary": "OpenAI and AWS are making Daybreak cybersecurity capabilities available through Amazon Bedrock to support enterprise security workflows.",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:workflow",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -320,21 +284,20 @@
       "is_ai_related": true
     },
     {
-      "id": "3f072d2482eccd847acb521e757d4b2eb7e0f4a3",
+      "id": "8622dd44a0f26066d5f64a6d23ffb815ff0c035e",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "跨会话传消息后，Codex 和 Claude 如何重构 vibe coding 工作流",
-      "url": "https://aihot.virxact.com/items/cmspk9ofu02cbrojej28w43eh",
-      "published_at": "2026-08-11T14:15:07Z",
-      "summary": "Codex 和 Claude 新增跨 Session 传消息功能后，新对话可从之前所有对话中选择可用消息，省去交接文档和 git 备份。作者据此重构工作流：主对话守住目标与决策，分支对话独立探索新想法，完成后由主对话读取完整记录。Codex 通过复制会话 ID 精确寻址，Claude Code 则用内置 session management 搜索对话历史，但桌面端只能搜索当前可访问的会话记录。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmspk9ofu02cbrojej28w43eh",
-      "relevance_score": 4,
+      "title": "Meta 开源 Muse Glimmer 登陆 OpenRouter",
+      "url": "https://aihot.virxact.com/items/cmsq1hwsb02norobuzbw8cdcc",
+      "published_at": "2026-08-12T12:00:18Z",
+      "summary": "Meta AI 超级智能实验室的首个开放权重模型 Muse Glimmer 已在 OpenRouter 上线！ 这是一款 30B 密集文本+图像模型，采用 Apache 2.0 许可证，旨在成为可靠的本地智能体，MCP Atlas 得分 75.5，SWE-Bench Pro 得分 51.2。 https://openrouter.ai/meta/muse-glimmer-30b 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsq1hwsb02norobuzbw8cdcc",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:claude",
-        "strong:codex",
-        "weak:工作流",
+        "strong:mcp",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -376,25 +339,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "72692dcfbcc8fa8e333ddab49f523effa8a77cf6",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "NVIDIA 推出 Nemotron 3.5 Lightning，加速本地智能体任务",
-      "url": "https://aihot.virxact.com/items/cmsoolxde07isrop2eb5rrtvq",
-      "published_at": "2026-08-11T13:00:25Z",
-      "summary": "NVIDIA 发布 Nemotron 3.5 Lightning，一款可定制的开源 30B 混合专家（MoE）模型，专为常驻智能体设计。相比同类开源模型，其 token 生成速度最高提升 4 倍，任务完成时间缩短 30%。该模型采用开放权重，支持用户微调以匹配特定任务，并可在 RTX PC、DGX Spark 及 Jetson 等设备上运行。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsoolxde07isrop2eb5rrtvq",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "strong:开源模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -404,11 +348,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1124,
-      "kept_count": 2,
+      "fetched_count": 1125,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 504,
-      "checked_at": "2026-08-12T09:38:42.369715Z"
+      "latency_ms": 476,
+      "checked_at": "2026-08-12T14:54:12.877067Z"
     },
     {
       "source_id": "openai-skills",
@@ -419,8 +363,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 408,
-      "checked_at": "2026-08-12T09:38:42.778432Z"
+      "latency_ms": 213,
+      "checked_at": "2026-08-12T14:54:13.090728Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -431,8 +375,8 @@
       "fetched_count": 254,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 372,
-      "checked_at": "2026-08-12T09:38:43.153946Z"
+      "latency_ms": 123,
+      "checked_at": "2026-08-12T14:54:13.218104Z"
     },
     {
       "source_id": "google-deepmind",
@@ -443,8 +387,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 396,
-      "checked_at": "2026-08-12T09:38:43.551881Z"
+      "latency_ms": 232,
+      "checked_at": "2026-08-12T14:54:13.451817Z"
     },
     {
       "source_id": "google-ai",
@@ -455,8 +399,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 229,
-      "checked_at": "2026-08-12T09:38:43.781276Z"
+      "latency_ms": 171,
+      "checked_at": "2026-08-12T14:54:13.624047Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -467,8 +411,8 @@
       "fetched_count": 839,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 275,
-      "checked_at": "2026-08-12T09:38:44.065563Z"
+      "latency_ms": 281,
+      "checked_at": "2026-08-12T14:54:13.919126Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -479,8 +423,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 172,
-      "checked_at": "2026-08-12T09:38:44.237911Z"
+      "latency_ms": 143,
+      "checked_at": "2026-08-12T14:54:14.062700Z"
     },
     {
       "source_id": "github-changelog",
@@ -491,8 +435,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-08-12T09:38:44.265292Z"
+      "latency_ms": 31,
+      "checked_at": "2026-08-12T14:54:14.095151Z"
     },
     {
       "source_id": "aihot",
@@ -501,10 +445,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 3856,
-      "checked_at": "2026-08-12T09:38:48.123022Z"
+      "latency_ms": 735,
+      "checked_at": "2026-08-12T14:54:14.832139Z"
     }
   ],
   "control_notes": {
