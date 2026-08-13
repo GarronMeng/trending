@@ -1,21 +1,29 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-12T14:54:14.842725Z",
+  "generated_at": "2026-08-13T01:18:22.565481Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 6,
   "groups": {
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI News",
           1
+        ],
+        [
+          "GitHub AI & ML",
+          1
         ]
       ],
       "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
         [
           "openai",
           1
@@ -33,88 +41,68 @@
           1
         ],
         [
-          "official_ai",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 6,
-      "top_sources": [
-        [
-          "AI Hot",
-          6
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          6
-        ],
-        [
-          "chatgpt",
-          4
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "gemini",
-          2
-        ],
-        [
-          "codex",
-          2
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "推理模型",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "deepmind",
+          "copilot",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 4,
+      "count": 1,
       "top_sources": [
         [
           "GitHub Changelog",
-          4
+          1
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          8
+          2
         ],
         [
-          "workflow",
+          "openai",
+          1
+        ],
+        [
+          "agent",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 3,
+      "top_sources": [
+        [
+          "AI Hot",
+          3
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          3
+        ],
+        [
+          "智能体",
           2
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "llm",
+          1
         ],
         [
           "mcp",
@@ -146,140 +134,79 @@
       "is_ai_related": true
     },
     {
-      "id": "c3415164b85f38c4ac65f44218719be62e149509",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "研究人员发现可读取ChatGPT等模型加密推理过程的API漏洞",
-      "url": "https://aihot.virxact.com/items/cmsoydypn029yro3yvsi036au",
-      "published_at": "2026-08-11T17:38:49Z",
-      "summary": "Alexander Panfilov团队发现OpenAI、Anthropic、Google等主要AI提供商API存在漏洞，可读取推理模型的加密思考过程。扫描约7000条公开会话发现62个API密钥、33个邮箱和33个密码。通过越狱，Anthropic的Haiku 4.5可逐字转写Opus 4.8的原始推理；解码10000条推理轨迹的API成本约720美元。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsoydypn029yro3yvsi036au",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:chatgpt",
-        "strong:推理模型",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a2fe5b909e2785ae03a80207ec0ab0e98c158bc3",
+      "id": "fad9f09e7b2d00c37d2d0a0d61b6771f679b9a8a",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Copilot memory and Ollama in GitHub Copilot for JetBrains",
-      "url": "https://github.blog/changelog/2026-08-11-copilot-memory-and-ollama-in-github-copilot-for-jetbrains",
-      "published_at": "2026-08-11T20:15:55Z",
-      "summary": "This update brings persistent memory, local model access, and more enterprise controls to GitHub Copilot for JetBrains. It also improves everyday chat workflows and resolves reliability issues across MCP servers,… The post Copilot memory and Ollama in GitHub Copilot for JetBrains appeared first on The GitHub Blog .",
-      "relevance_score": 6,
+      "title": "Agent Plugins 1.0 in VS Code, Copilot CLI, and the Copilot app",
+      "url": "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app",
+      "published_at": "2026-08-12T18:39:11Z",
+      "summary": "You can now build a plugin once and use it across all compatible agent clients. We published Agent Plugins 1.0 on August 6 with AWS, Anysphere, Microsoft, OpenAI, and Vercel.… The post Agent Plugins 1.0 in VS Code, Copilot CLI, and the Copilot app appeared first on The GitHub Blog .",
+      "relevance_score": 7,
       "relevance_reasons": [
-        "strong:mcp",
-        "weak:workflow",
+        "strong:openai",
+        "strong:agent",
         "weak:copilot",
         "source:copilot"
       ],
       "is_ai_related": true
     },
     {
-      "id": "bad027d3ec4d077a68cba88bcf547b856c42b38e",
+      "id": "ff086111eb41f078eb198510c1df5ad3d2351799",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "ChatGPT 与 Gemini 双双突破 10 亿用户",
-      "url": "https://aihot.virxact.com/items/cmsp2lgxo03xjrortthctedzu",
-      "published_at": "2026-08-11T19:41:42Z",
-      "summary": "OpenAI 与 Google 的聊天机器人均跨过 10 亿用户门槛。OpenAI 在 8 月 6 日的博文中披露 ChatGPT 月活用户超 10 亿，Google CEO 皮查伊则宣布 Gemini 月活达 10 亿，成为其史上增长最快的产品。OpenAI 称 ChatGPT 在 7 月周活用户已达 10 亿，而 Gemini 在 2 月月活为 7.5 亿，增长势头更猛。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsp2lgxo03xjrortthctedzu",
+      "title": "AutoGPT 如何用 AGENTS.md 和技能门控管理 AI 生成的拉取请求",
+      "url": "https://aihot.virxact.com/items/cmsqgeo2e02cvroxvpnycl2zi",
+      "published_at": "2026-08-12T18:00:08Z",
+      "summary": "AutoGPT 维护者发现，AI 智能体不会主动阅读文档，因此将指令放在 AGENTS.md 和技能文件中，并置于代码目录旁。他们通过强制 PR 模板、测试计划、CI 覆盖率门槛和 CLA 签名等门控机制，将智能体提交的 PR 从\"不可用\"转变为\"可用但不符合路线图\"。其中 CLA 签名因需浏览器和 OAuth 流程，被用作区分人类与智能体的\"人类探测器\"。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsqgeo2e02cvroxvpnycl2zi",
       "relevance_score": 5,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:gemini",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "964d601169d4e7fd8ddc89397cea6849720eda3d",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Upcoming deprecation of MAI-Code-1-Flash",
-      "url": "https://github.blog/changelog/2026-08-11-upcoming-deprecation-of-mai-code-1-flash",
-      "published_at": "2026-08-11T18:50:42Z",
-      "summary": "With the launch of MAI-Code-1.1-Flash, we will deprecate MAI-Code-1-Flash across all GitHub Copilot experiences on September 10, 2026: Model Deprecation date Suggested alternative MAI-Code-1-Flash 9-10-2026 MAI-Code-1.1-Flash Please update your workflows… The post Upcoming deprecation of MAI-Code-1-Flash appeared first on The GitHub Blog .",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "weak:workflow",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5ee60834c384f33535b4215ae65bbc4cd34c3c54",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "ChatGPT 桌面端支持导入其他智能体工作数据",
-      "url": "https://aihot.virxact.com/items/cmsp0j1ph027prortm21absbh",
-      "published_at": "2026-08-11T18:20:44Z",
-      "summary": "你现在可以将其他智能体的工作内容与 ChatGPT Work 和 Codex 保持同步。 可导入项目、聊天记录、技能和插件，查看导入历史，并可在设置中选择开启自动更新。 现已在 ChatGPT 桌面应用中提供。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsp0j1ph027prortm21absbh",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:codex",
+        "strong:agent",
+        "strong:agents",
         "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "405d9f848e59730f977bd4deddd934dc7bc76aed",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
+      "id": "9cc9ac5f0e619edf5ee3ae19ab782d4ab8d9739c",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
       "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Enterprise Server 3.22 release candidate",
-      "url": "https://github.blog/changelog/2026-08-11-github-enterprise-server-3-22-release-candidate",
-      "published_at": "2026-08-11T20:26:26Z",
-      "summary": "GitHub Enterprise Server (GHES) 3.22 is now available and introduces new capabilities across the platform. Here are a few highlights in the 3.22 release: Administrators can configure Copilot CLI to… The post GitHub Enterprise Server 3.22 release candidate appeared first on The GitHub Blog .",
-      "relevance_score": 3,
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "Write your first prompt with the GitHub Copilot app",
+      "url": "https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app",
+      "published_at": "2026-08-12T19:00:00Z",
+      "summary": "Learn how to write your first prompt in the GitHub Copilot app, choose the right context and model, and start your first task with confidence. The post Write your first prompt with the GitHub Copilot app appeared first on The GitHub Blog .",
+      "relevance_score": 2,
       "relevance_reasons": [
         "weak:copilot",
-        "source:copilot"
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "8d7e8a6e08356fabe97e1b77b326ee910968a165",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "MAI-Code-1.1-Flash available in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-08-11-mai-code-1-1-flash-available-in-github-copilot",
-      "published_at": "2026-08-11T18:13:56Z",
-      "summary": "MAI-Code-1.1-Flash, Microsoft’s latest small-tier coding model, is now rolling out in GitHub Copilot. Building on MAI-Code-1-Flash, it adds native vision support for image understanding and delivers improvements across coding quality,… The post MAI-Code-1.1-Flash available in GitHub Copilot appeared first on The GitHub Blog .",
+      "id": "a0b838b39b878bf1a2510dfca256057d6c5c60f3",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "空货架还是丢钥匙？Google 研究：Recall 是参数化事实性的瓶颈",
+      "url": "https://aihot.virxact.com/items/cmsqe6mat01bsroli3hw71nz7",
+      "published_at": "2026-08-12T17:57:36Z",
+      "summary": "Google Research 提出知识画像框架，发现前沿 LLM（如 Gemini3、GPT-5）的事实编码接近饱和，但回忆（recall）能力不足，多数事实错误源于\"丢钥匙\"而非\"空货架\"。该框架将事实分为编码失败、回忆失败等五类画像，并配套推出 WikiProfile 基准，含 2，150 条维基百科事实，每条配 10 个问题，用于分别探测编码、回忆与识别能力。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsqe6mat01bsroli3hw71nz7",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:gemini",
+        "strong:llm",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -301,44 +228,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "bbc5278ad3fa63f9367d0717a3dd03d572153321",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "零基础用户半天上手AI的12步实操流程",
-      "url": "https://aihot.virxact.com/items/cmspc30un0e4xrorts1kax9zg",
-      "published_at": "2026-08-12T00:08:00Z",
-      "summary": "文章给出一套零基础用户半天上手AI的12步实操流程：准备内存不低于16G的电脑，订阅ChatGPT并安装Codex或使用WorkBuddy，用语音输入法以【背景、痛点、需求】框架向AI交代任务，经苏格拉底提问澄清需求后投喂文件让AI直接完成，最后沉淀为可复用Skill。文中建议Codex选GPT-5.6 Sol最高模型，WorkBuddy选Kimi K3。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmspc30un0e4xrorts1kax9zg",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "73496e7a5432f8b6851f69a44e7c0b83e5a35240",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "AMIE 研究医疗 AI 系统首次展示实时临床视频问诊能力",
-      "url": "https://aihot.virxact.com/items/cmsoxbh180a00rohdooafsmzp",
-      "published_at": "2026-08-11T17:00:00Z",
-      "summary": "Google Research 与 Google DeepMind 推进医疗 AI 系统 AMIE，实现实时临床视频问诊，首次在此场景展示专家级 AI 能力。该系统基于 Gemini 和 Project Astra 构建，可解读视觉与听觉线索、引导虚拟体格检查并实时诊断推理。随机研究中，临床评估者对 AMIE 的病史采集、诊断准确性等核心能力给予好评，患者演员也更偏好视频体验。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsoxbh180a00rohdooafsmzp",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:deepmind",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -348,11 +237,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1125,
+      "fetched_count": 1126,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 476,
-      "checked_at": "2026-08-12T14:54:12.877067Z"
+      "latency_ms": 411,
+      "checked_at": "2026-08-13T01:18:20.498541Z"
     },
     {
       "source_id": "openai-skills",
@@ -363,8 +252,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 213,
-      "checked_at": "2026-08-12T14:54:13.090728Z"
+      "latency_ms": 191,
+      "checked_at": "2026-08-13T01:18:20.690239Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -375,8 +264,8 @@
       "fetched_count": 254,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 123,
-      "checked_at": "2026-08-12T14:54:13.218104Z"
+      "latency_ms": 97,
+      "checked_at": "2026-08-13T01:18:20.790944Z"
     },
     {
       "source_id": "google-deepmind",
@@ -387,8 +276,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 232,
-      "checked_at": "2026-08-12T14:54:13.451817Z"
+      "latency_ms": 326,
+      "checked_at": "2026-08-13T01:18:21.119274Z"
     },
     {
       "source_id": "google-ai",
@@ -399,8 +288,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 171,
-      "checked_at": "2026-08-12T14:54:13.624047Z"
+      "latency_ms": 137,
+      "checked_at": "2026-08-13T01:18:21.256683Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -411,8 +300,8 @@
       "fetched_count": 839,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 281,
-      "checked_at": "2026-08-12T14:54:13.919126Z"
+      "latency_ms": 217,
+      "checked_at": "2026-08-13T01:18:21.486016Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -421,10 +310,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 143,
-      "checked_at": "2026-08-12T14:54:14.062700Z"
+      "latency_ms": 105,
+      "checked_at": "2026-08-13T01:18:21.592287Z"
     },
     {
       "source_id": "github-changelog",
@@ -433,10 +322,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-08-12T14:54:14.095151Z"
+      "latency_ms": 25,
+      "checked_at": "2026-08-13T01:18:21.617910Z"
     },
     {
       "source_id": "aihot",
@@ -445,10 +334,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 735,
-      "checked_at": "2026-08-12T14:54:14.832139Z"
+      "latency_ms": 939,
+      "checked_at": "2026-08-13T01:18:22.557975Z"
     }
   ],
   "control_notes": {
