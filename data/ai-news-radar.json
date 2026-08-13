@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-13T09:39:08.379798Z",
+  "generated_at": "2026-08-13T14:54:50.123406Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 8,
   "groups": {
     "developer": {
       "group": "developer",
@@ -32,28 +32,40 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          4
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
+          6
         ],
         [
           "智能体",
-          3
+          4
         ],
         [
           "agent",
-          1
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
         ],
         [
           "agents",
+          1
+        ],
+        [
+          "tool",
           1
         ],
         [
@@ -69,7 +81,7 @@
           1
         ],
         [
-          "mcp",
+          "开发者",
           1
         ]
       ]
@@ -137,6 +149,27 @@
       "is_ai_related": true
     },
     {
+      "id": "6f792db5c8208ff6ad456717bc99827837921d60",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "DeepSeek-V4-Pro 正式版上线，Agent 能力大幅增强",
+      "url": "https://aihot.virxact.com/items/cmsrfaw5c0xo2roz2s8b4p2sv",
+      "published_at": "2026-08-13T11:16:42Z",
+      "summary": "DeepSeek-V4-Pro 正式版已在 APP、网页端和 API 同步上线，模型名设为 deepseek-v4-pro 即可使用。其 Agent 能力显著提升，HLE （wo/w tools） 达 42.7/60.0，Terminal Bench 2.1 为 87.9。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsrfaw5c0xo2roz2s8b4p2sv",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:api",
+        "weak:tool",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "9cc9ac5f0e619edf5ee3ae19ab782d4ab8d9739c",
       "source_id": "github-ai-ml",
       "source_name": "GitHub AI & ML",
@@ -151,6 +184,26 @@
       "relevance_reasons": [
         "weak:copilot",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "988f0e683abb5ab5a82fe767df476f669021f782",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Qwen3.8-2.4T-A95B 开源，硅基流动即日上线",
+      "url": "https://aihot.virxact.com/items/cmsrlvwfp05gdro46mbfqtsgm",
+      "published_at": "2026-08-13T14:04:55Z",
+      "summary": "阿里开源 Qwen3.8-2.4T-A95B，硅基流动已提供 Day-0 支持。该模型拥有 2.4T 参数、95B 激活参数，主打自主编码、深度研究与端到端智能体执行。API 定价为输入 $2.00/百万 token，输出 $6.00/百万 token，缓存输入 $0.25/百万 token。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsrlvwfp05gdro46mbfqtsgm",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -193,20 +246,20 @@
       "is_ai_related": true
     },
     {
-      "id": "8622dd44a0f26066d5f64a6d23ffb815ff0c035e",
+      "id": "b84023665be672f0bd4a153618f2e33cdd98ab0d",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Meta 开源 Muse Glimmer 登陆 OpenRouter",
-      "url": "https://aihot.virxact.com/items/cmsq1hwsb02norobuzbw8cdcc",
-      "published_at": "2026-08-12T12:00:18Z",
-      "summary": "Meta AI 超级智能实验室的首个开放权重模型 Muse Glimmer 已在 OpenRouter 上线！ 这是一款 30B 密集文本+图像模型，采用 Apache 2.0 许可证，旨在成为可靠的本地智能体，MCP Atlas 得分 75.5，SWE-Bench Pro 得分 51.2。 https://openrouter.ai/meta/muse-glimmer-30b 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsq1hwsb02norobuzbw8cdcc",
-      "relevance_score": 3,
+      "title": "DeepSeek Harness v0.1 开发者预览版发布",
+      "url": "https://aihot.virxact.com/items/cmsrjqqfg02z0ro469zple5jl",
+      "published_at": "2026-08-13T13:02:03Z",
+      "summary": "DeepSeek Harness v0.1 现已推出开发者预览版，并以 MIT 许可证开源。该智能体框架基于 Cordis 元框架构建，核心设计为\"一切皆插件\"，模型、工具、技能、会话、沙箱、文件系统、循环、编排及 UI 均可自由组合、替换和扩展。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsrjqqfg02z0ro469zple5jl",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:mcp",
         "strong:智能体",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -222,8 +275,8 @@
       "fetched_count": 1126,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 428,
-      "checked_at": "2026-08-13T09:39:06.019066Z"
+      "latency_ms": 347,
+      "checked_at": "2026-08-13T14:54:47.780146Z"
     },
     {
       "source_id": "openai-skills",
@@ -234,8 +287,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 210,
-      "checked_at": "2026-08-13T09:39:06.229440Z"
+      "latency_ms": 359,
+      "checked_at": "2026-08-13T14:54:48.140120Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -246,8 +299,8 @@
       "fetched_count": 254,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 237,
-      "checked_at": "2026-08-13T09:39:06.470236Z"
+      "latency_ms": 86,
+      "checked_at": "2026-08-13T14:54:48.228781Z"
     },
     {
       "source_id": "google-deepmind",
@@ -258,8 +311,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 338,
-      "checked_at": "2026-08-13T09:39:06.810619Z"
+      "latency_ms": 297,
+      "checked_at": "2026-08-13T14:54:48.526947Z"
     },
     {
       "source_id": "google-ai",
@@ -270,8 +323,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 204,
-      "checked_at": "2026-08-13T09:39:07.015481Z"
+      "latency_ms": 244,
+      "checked_at": "2026-08-13T14:54:48.771916Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -282,8 +335,8 @@
       "fetched_count": 839,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 266,
-      "checked_at": "2026-08-13T09:39:07.293595Z"
+      "latency_ms": 261,
+      "checked_at": "2026-08-13T14:54:49.039469Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -294,8 +347,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 143,
-      "checked_at": "2026-08-13T09:39:07.437450Z"
+      "latency_ms": 119,
+      "checked_at": "2026-08-13T14:54:49.159318Z"
     },
     {
       "source_id": "github-changelog",
@@ -307,7 +360,7 @@
       "kept_count": 1,
       "error": null,
       "latency_ms": 22,
-      "checked_at": "2026-08-13T09:39:07.460352Z"
+      "checked_at": "2026-08-13T14:54:49.181921Z"
     },
     {
       "source_id": "aihot",
@@ -316,10 +369,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 909,
-      "checked_at": "2026-08-13T09:39:08.370392Z"
+      "latency_ms": 934,
+      "checked_at": "2026-08-13T14:54:50.117418Z"
     }
   ],
   "control_notes": {
