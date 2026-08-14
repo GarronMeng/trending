@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>11</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>12</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>5</b><span>官方源条目</span></div>
-        <div class="stat"><b>5</b><span>聚合源条目</span></div>
+        <div class="stat"><b>6</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-08-14T05:19:57.454498Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-08-14T07:56:38.104245Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -188,6 +188,19 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
+        <span>2026-08-14T04:55:56Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmssi38vn03o9rofffr0z8lyb" target="_blank" rel="noreferrer">DeepSeek V4 Pro 登陆硅基流动，1M 上下文</a></h3>
+      <p class='summary'>DeepSeek-V4-Pro-0813 正式上线硅基流动 SiliconFlow，提供 Day-0 支持，具备 1M 上下文窗口及低/高/最大三档推理强度，更侧重编码、工具调用与智能体工作流，仍保持 MIT 开源协议。定价为输入 $1.32/M、输出 $3.96/M、缓存命中 $0.44/M。同系列 DeepSeek-V4-Flash-0731 则面向追求速度与成本效益的日常生产场景。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmssi38vn03o9rofffr0z8lyb</p>
+      <div class="tags"><span>strong:智能体</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
         <span>2026-08-13T13:02:03Z</span>
         <strong>Score 2</strong>
       </div>
@@ -201,15 +214,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1129</td><td>3</td><td>397ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>186ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>254</td><td>0</td><td>95ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>1</td><td>176ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>114ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>841</td><td>1</td><td>210ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>96ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>24ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>5</td><td>990ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1129</td><td>3</td><td>414ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>273ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>254</td><td>0</td><td>133ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>1</td><td>347ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>180ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>841</td><td>1</td><td>278ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>193ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>34ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>6</td><td>1069ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
