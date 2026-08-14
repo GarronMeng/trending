@@ -1,19 +1,15 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-14T09:34:11.763630Z",
+  "generated_at": "2026-08-14T14:48:09.221216Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 5,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 2,
       "top_sources": [
-        [
-          "OpenAI News",
-          2
-        ],
         [
           "Hugging Face Blog",
           1
@@ -26,22 +22,6 @@
       "top_keywords": [
         [
           "official_ai",
-          4
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "agents",
-          2
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
           2
         ],
         [
@@ -49,64 +29,44 @@
           1
         ],
         [
-          "openai",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
           "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "gemini",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          6
+          3
         ]
       ],
       "top_keywords": [
         [
-          "aggregate_noise",
-          6
-        ],
-        [
           "智能体",
-          5
-        ],
-        [
-          "api",
           3
         ],
         [
-          "API",
+          "aggregate_noise",
           3
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "多模态",
+          1
         ],
         [
           "gemini",
@@ -117,19 +77,7 @@
           1
         ],
         [
-          "agent",
-          1
-        ],
-        [
-          "tool",
-          1
-        ],
-        [
           "工作流",
-          1
-        ],
-        [
-          "开发者",
           1
         ]
       ]
@@ -157,67 +105,6 @@
       "is_ai_related": true
     },
     {
-      "id": "49f202fd6e6cc3b191e9f9a49426fab0cc558b4f",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "The builder’s guide to GPT‑5.6",
-      "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
-      "published_at": "2026-08-13T11:00:00Z",
-      "summary": "Learn how startups use GPT-5.6 to build faster, more cost-efficient AI agents with smarter model selection and new Responses API capabilities.",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "weak:api",
-        "weak:API",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "f05d89861fd0498737cf15e40666d02dd8ed988e",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Gemini 3.7 Flash is now available in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-08-13-gemini-3-7-flash-is-now-available-in-github-copilot",
-      "published_at": "2026-08-13T14:00:53Z",
-      "summary": "Gemini 3.7 Flash, Google’s latest Flash model, is now rolling out in GitHub Copilot. From our early testing, the model has made improvements in web and app development and agentic… The post Gemini 3.7 Flash is now available in GitHub Copilot appeared first on The GitHub Blog .",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "59a9c27bf723deb7b8d3c0086977264f718886f8",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-      "url": "https://openai.com/index/previewing-ultrafast",
-      "published_at": "2026-08-13T10:00:00Z",
-      "summary": "Preview Ultrafast, a new OpenAI API service tier that runs GPT-5.6 Sol up to 14× faster. Powered by Cerebras, it delivers up to 750 output tokens per second.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:api",
-        "weak:API",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "e32b424955f91c2b36be683a524cfa1560f39492",
       "source_id": "google-deepmind",
       "source_name": "Google DeepMind",
@@ -232,6 +119,26 @@
       "relevance_reasons": [
         "strong:gemini",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "135059a62bcc7a5567ab9655d36be4d564f62d0b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
+      "url": "https://aihot.virxact.com/items/cmssv94cg0h4mroffsb9e7a88",
+      "published_at": "2026-08-14T11:25:29Z",
+      "summary": "小红书技术开源 dots3-note Preview，这是 dots3 系列最轻量模型，总参数 280B、激活参数 16B，支持 512K 上下文及文本、视觉、语音多模态理解，并针对复杂推理和长程 Agent 任务优化。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmssv94cg0h4mroffsb9e7a88",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -256,67 +163,6 @@
       "is_ai_related": true
     },
     {
-      "id": "6f792db5c8208ff6ad456717bc99827837921d60",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "DeepSeek-V4-Pro 正式版上线，Agent 能力大幅增强",
-      "url": "https://aihot.virxact.com/items/cmsrfaw5c0xo2roz2s8b4p2sv",
-      "published_at": "2026-08-13T11:16:42Z",
-      "summary": "DeepSeek-V4-Pro 正式版已在 APP、网页端和 API 同步上线，模型名设为 deepseek-v4-pro 即可使用。其 Agent 能力显著提升，HLE （wo/w tools） 达 42.7/60.0，Terminal Bench 2.1 为 87.9。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsrfaw5c0xo2roz2s8b4p2sv",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:api",
-        "weak:tool",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "988f0e683abb5ab5a82fe767df476f669021f782",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Qwen3.8-2.4T-A95B 开源，硅基流动即日上线",
-      "url": "https://aihot.virxact.com/items/cmsrlvwfp05gdro46mbfqtsgm",
-      "published_at": "2026-08-13T14:04:55Z",
-      "summary": "阿里开源 Qwen3.8-2.4T-A95B，硅基流动已提供 Day-0 支持。该模型拥有 2.4T 参数、95B 激活参数，主打自主编码、深度研究与端到端智能体执行。API 定价为输入 $2.00/百万 token，输出 $6.00/百万 token，缓存输入 $0.25/百万 token。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsrlvwfp05gdro46mbfqtsgm",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "26ecfb3ccff9619ec3227d176835efc2d9665581",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "GPT-5.6 构建者指南：如何以更低成本实现前沿智能体性能",
-      "url": "https://aihot.virxact.com/items/cmsruetoy027hrozeecu4ixrc",
-      "published_at": "2026-08-13T11:00:00Z",
-      "summary": "GPT-5.6 模型家族以更低成本实现前沿级智能体性能，并新增推理持久化、原生多智能体编排和程序化工具调用等 API 能力。在 ARC-AGI-3 上，启用保留推理和压缩后，Sol 得分从 13.3% 跃升至 38.3%，且输出 token 减少约 6 倍。Luna 在 BrowseComp 上以 84.04% 的得分追平 GPT-5.5（84.36%），成本从 $33.27 降至 $1.33。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsruetoy027hrozeecu4ixrc",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "2db4c64eaaae696d8cfd5b4b3411ea8ca1c58e08",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -334,25 +180,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "b84023665be672f0bd4a153618f2e33cdd98ab0d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "DeepSeek Harness v0.1 开发者预览版发布",
-      "url": "https://aihot.virxact.com/items/cmsrjqqfg02z0ro469zple5jl",
-      "published_at": "2026-08-13T13:02:03Z",
-      "summary": "DeepSeek Harness v0.1 现已推出开发者预览版，并以 MIT 许可证开源。该智能体框架基于 Cordis 元框架构建，核心设计为\"一切皆插件\"，模型、工具、技能、会话、沙箱、文件系统、循环、编排及 UI 均可自由组合、替换和扩展。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsrjqqfg02z0ro469zple5jl",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -363,10 +190,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1129,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 489,
-      "checked_at": "2026-08-14T09:34:09.580384Z"
+      "latency_ms": 526,
+      "checked_at": "2026-08-14T14:48:07.020572Z"
     },
     {
       "source_id": "openai-skills",
@@ -377,8 +204,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 290,
-      "checked_at": "2026-08-14T09:34:09.870758Z"
+      "latency_ms": 292,
+      "checked_at": "2026-08-14T14:48:07.313025Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -389,8 +216,8 @@
       "fetched_count": 254,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 114,
-      "checked_at": "2026-08-14T09:34:09.989624Z"
+      "latency_ms": 113,
+      "checked_at": "2026-08-14T14:48:07.430643Z"
     },
     {
       "source_id": "google-deepmind",
@@ -401,8 +228,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 343,
-      "checked_at": "2026-08-14T09:34:10.334495Z"
+      "latency_ms": 323,
+      "checked_at": "2026-08-14T14:48:07.755989Z"
     },
     {
       "source_id": "google-ai",
@@ -413,8 +240,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 203,
-      "checked_at": "2026-08-14T09:34:10.538275Z"
+      "latency_ms": 185,
+      "checked_at": "2026-08-14T14:48:07.941591Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -425,8 +252,8 @@
       "fetched_count": 841,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 342,
-      "checked_at": "2026-08-14T09:34:10.893787Z"
+      "latency_ms": 325,
+      "checked_at": "2026-08-14T14:48:08.280336Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -437,8 +264,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 134,
-      "checked_at": "2026-08-14T09:34:11.028794Z"
+      "latency_ms": 221,
+      "checked_at": "2026-08-14T14:48:08.502415Z"
     },
     {
       "source_id": "github-changelog",
@@ -447,10 +274,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 35,
-      "checked_at": "2026-08-14T09:34:11.064126Z"
+      "latency_ms": 28,
+      "checked_at": "2026-08-14T14:48:08.530733Z"
     },
     {
       "source_id": "aihot",
@@ -459,10 +286,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 690,
-      "checked_at": "2026-08-14T09:34:11.755620Z"
+      "latency_ms": 680,
+      "checked_at": "2026-08-14T14:48:09.212069Z"
     }
   ],
   "control_notes": {
