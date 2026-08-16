@@ -1,204 +1,12 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-15T14:19:20.183214Z",
+  "generated_at": "2026-08-16T00:52:42.890930Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
-  "groups": {
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "reasoning model",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub AI & ML",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "agent",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "official_ai",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 3,
-      "top_sources": [
-        [
-          "AI Hot",
-          3
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          3
-        ],
-        [
-          "anthropic",
-          2
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "deepmind",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "智能体",
-          1
-        ],
-        [
-          "openai",
-          1
-        ]
-      ]
-    }
-  },
-  "items": [
-    {
-      "id": "89c74c447b9a3506f9d97a2f02b0a8f3c86349ed",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Grok 4.6 is now available in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot",
-      "published_at": "2026-08-14T16:17:46Z",
-      "summary": "Grok 4.6, xAI’s latest reasoning model, is now rolling out in GitHub Copilot. It is designed for agentic coding and complex multi-step workflows. In our internal testing, Grok 4.6 showed… The post Grok 4.6 is now available in GitHub Copilot appeared first on The GitHub Blog .",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:reasoning model",
-        "weak:workflow",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "2c3b32b49d795a847890a81a175adcb82c289c03",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "How to bring your software delivery workflow into GitHub with agent apps",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps",
-      "published_at": "2026-08-14T16:00:00Z",
-      "summary": "See how four GitHub agent apps can help you scope, secure, roll out, and ship a feature across the SDLC–all without leaving GitHub. The post How to bring your software delivery workflow into GitHub with agent apps appeared first on The GitHub Blog .",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "feb743e54a912db286ed1b631879e825e8916ee2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude 文本水印机制如何运作",
-      "url": "https://aihot.virxact.com/items/cmstc3u8j02xhro0xf5o1ouas",
-      "published_at": "2026-08-14T19:22:48Z",
-      "summary": "未来 Claude 模型生成的文本将包含水印，用于判断文本由 Claude 撰写的可能性，这是 Anthropic 为遵守欧盟《AI 法案》而实施的变更。该方法基于 Google DeepMind 的 SynthID-Text 技术，对输出质量、创造力和可读性无实际影响，读者无法区分水印文本与普通文本，且不增加额外 token 或成本。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmstc3u8j02xhro0xf5o1ouas",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:deepmind",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a415a962c287588ea5d44b1e14bd5688d62047b4",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Gemini 3.7 Flash 全面上线 Pro 与 Ultra 用户",
-      "url": "https://aihot.virxact.com/items/cmst9yj3c05utrodz443l0odv",
-      "published_at": "2026-08-14T18:06:29Z",
-      "summary": "Gemini 3.7 Flash 现已向 Gemini 聊天中的 Pro 和 Ultra 用户开放。该模型更新提升了多步骤任务的推理与准确性，如智能整合数十个文件和邮件为一份主文档。同时，Gemini Spark 也已运行于 3.7 Flash，通过改进对 Google Workspace 应用的工具调用，让个人 AI 智能体更精准。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmst9yj3c05utrodz443l0odv",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "471c8baa05ca550785b5a12ff8d64e00e69fdbd0",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
-      "url": "https://aihot.virxact.com/items/cmst2gs6d02lmro06sb7as7av",
-      "published_at": "2026-08-14T14:27:14Z",
-      "summary": "🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmst2gs6d02lmro06sb7as7av",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    }
-  ],
+  "item_count": 0,
+  "groups": {},
+  "items": [],
   "source_health": [
     {
       "source_id": "openai-news",
@@ -209,8 +17,8 @@
       "fetched_count": 1129,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 434,
-      "checked_at": "2026-08-15T14:19:13.971581Z"
+      "latency_ms": 448,
+      "checked_at": "2026-08-16T00:52:39.329761Z"
     },
     {
       "source_id": "openai-skills",
@@ -221,8 +29,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 159,
-      "checked_at": "2026-08-15T14:19:14.130857Z"
+      "latency_ms": 294,
+      "checked_at": "2026-08-16T00:52:39.624428Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -233,8 +41,8 @@
       "fetched_count": 255,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 110,
-      "checked_at": "2026-08-15T14:19:14.244489Z"
+      "latency_ms": 134,
+      "checked_at": "2026-08-16T00:52:39.762433Z"
     },
     {
       "source_id": "google-deepmind",
@@ -245,8 +53,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 384,
-      "checked_at": "2026-08-15T14:19:14.630352Z"
+      "latency_ms": 345,
+      "checked_at": "2026-08-16T00:52:40.109662Z"
     },
     {
       "source_id": "google-ai",
@@ -257,8 +65,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 259,
-      "checked_at": "2026-08-15T14:19:14.890540Z"
+      "latency_ms": 185,
+      "checked_at": "2026-08-16T00:52:40.295208Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -269,8 +77,8 @@
       "fetched_count": 842,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 272,
-      "checked_at": "2026-08-15T14:19:15.174879Z"
+      "latency_ms": 278,
+      "checked_at": "2026-08-16T00:52:40.585527Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -279,10 +87,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 128,
-      "checked_at": "2026-08-15T14:19:15.303277Z"
+      "latency_ms": 180,
+      "checked_at": "2026-08-16T00:52:40.766239Z"
     },
     {
       "source_id": "github-changelog",
@@ -291,10 +99,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-08-15T14:19:15.334249Z"
+      "latency_ms": 34,
+      "checked_at": "2026-08-16T00:52:40.801194Z"
     },
     {
       "source_id": "aihot",
@@ -303,10 +111,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 4838,
-      "checked_at": "2026-08-15T14:19:20.173831Z"
+      "latency_ms": 2079,
+      "checked_at": "2026-08-16T00:52:42.880993Z"
     }
   ],
   "control_notes": {
