@@ -1,11 +1,31 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-17T07:31:09.584686Z",
+  "generated_at": "2026-08-17T09:07:00.630722Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 1,
+  "item_count": 2,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "Google AI Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "gemini",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
       "count": 1,
@@ -32,6 +52,24 @@
     }
   },
   "items": [
+    {
+      "id": "ab9133c221d6fe6ef9b30aec82e6a124d9cae8d8",
+      "source_id": "google-ai",
+      "source_name": "Google AI Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Get closer to the game with Gemini and Pixel",
+      "url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships",
+      "published_at": "2026-08-17T08:00:00Z",
+      "summary": "Low-angle view of a soccer player kicking a ball mid-air against a bright blue sky, with grass flying from their cleats.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "7ebe68127a65c9f4b58eac9890d92e61499d4369",
       "source_id": "aihot",
@@ -62,8 +100,8 @@
       "fetched_count": 1129,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 493,
-      "checked_at": "2026-08-17T07:31:06.534951Z"
+      "latency_ms": 483,
+      "checked_at": "2026-08-17T09:06:58.497774Z"
     },
     {
       "source_id": "openai-skills",
@@ -74,8 +112,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 397,
-      "checked_at": "2026-08-17T07:31:06.932408Z"
+      "latency_ms": 154,
+      "checked_at": "2026-08-17T09:06:58.652999Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -86,8 +124,8 @@
       "fetched_count": 255,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 148,
-      "checked_at": "2026-08-17T07:31:07.084479Z"
+      "latency_ms": 119,
+      "checked_at": "2026-08-17T09:06:58.776865Z"
     },
     {
       "source_id": "google-deepmind",
@@ -98,8 +136,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 313,
-      "checked_at": "2026-08-17T07:31:07.399367Z"
+      "latency_ms": 270,
+      "checked_at": "2026-08-17T09:06:59.048562Z"
     },
     {
       "source_id": "google-ai",
@@ -108,10 +146,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 234,
-      "checked_at": "2026-08-17T07:31:07.633719Z"
+      "latency_ms": 158,
+      "checked_at": "2026-08-17T09:06:59.207050Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -122,8 +160,8 @@
       "fetched_count": 842,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 324,
-      "checked_at": "2026-08-17T07:31:07.970049Z"
+      "latency_ms": 274,
+      "checked_at": "2026-08-17T09:06:59.494991Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -134,8 +172,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 321,
-      "checked_at": "2026-08-17T07:31:08.292059Z"
+      "latency_ms": 111,
+      "checked_at": "2026-08-17T09:06:59.606973Z"
     },
     {
       "source_id": "github-changelog",
@@ -146,8 +184,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 45,
-      "checked_at": "2026-08-17T07:31:08.337761Z"
+      "latency_ms": 31,
+      "checked_at": "2026-08-17T09:06:59.638318Z"
     },
     {
       "source_id": "aihot",
@@ -158,8 +196,8 @@
       "fetched_count": 50,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 1236,
-      "checked_at": "2026-08-17T07:31:09.575395Z"
+      "latency_ms": 982,
+      "checked_at": "2026-08-17T09:07:00.621934Z"
     }
   ],
   "control_notes": {
