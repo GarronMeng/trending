@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-18T07:13:36.911782Z",
+  "generated_at": "2026-08-18T09:01:53.577593Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,25 +8,25 @@
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          2
+          3
         ]
       ],
       "top_keywords": [
+        [
+          "aggregate_noise",
+          3
+        ],
         [
           "gemini",
           2
         ],
         [
-          "aggregate_noise",
-          2
-        ],
-        [
           "agent",
-          1
+          2
         ],
         [
           "llm",
@@ -37,6 +37,10 @@
           1
         ],
         [
+          "评测",
+          1
+        ],
+        [
           "copilot",
           1
         ]
@@ -44,22 +48,14 @@
     },
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "GitHub AI & ML",
           1
-        ],
-        [
-          "Google AI Blog",
-          1
         ]
       ],
       "top_keywords": [
-        [
-          "official_ai",
-          2
-        ],
         [
           "agent",
           1
@@ -69,7 +65,7 @@
           1
         ],
         [
-          "gemini",
+          "official_ai",
           1
         ]
       ]
@@ -117,20 +113,21 @@
       "is_ai_related": true
     },
     {
-      "id": "ab9133c221d6fe6ef9b30aec82e6a124d9cae8d8",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Get closer to the game with Gemini and Pixel",
-      "url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships",
-      "published_at": "2026-08-17T08:00:00Z",
-      "summary": "Low-angle view of a soccer player kicking a ball mid-air against a bright blue sky, with grass flying from their cleats.",
-      "relevance_score": 3,
+      "id": "5d957343a3fb62b96cd824a6f1c753137ca0ea65",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "设计 AI 评测：先求清晰，再谈可视化",
+      "url": "https://aihot.virxact.com/items/cmsycmgww0rkrroz0nfma0z05",
+      "published_at": "2026-08-18T07:00:00Z",
+      "summary": "本文演示如何用开源评测框架 Inspect AI 和 Harbor 评估 agent 技能，并借助 Google Sheets 和 Data Studio 进行可视化分析。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsycmgww0rkrroz0nfma0z05",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:gemini",
-        "source_prior:official_ai"
+        "strong:agent",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -164,8 +161,8 @@
       "fetched_count": 1132,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 540,
-      "checked_at": "2026-08-18T07:13:30.641335Z"
+      "latency_ms": 502,
+      "checked_at": "2026-08-18T09:01:50.873701Z"
     },
     {
       "source_id": "openai-skills",
@@ -176,8 +173,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 364,
-      "checked_at": "2026-08-18T07:13:31.005715Z"
+      "latency_ms": 363,
+      "checked_at": "2026-08-18T09:01:51.237554Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -188,8 +185,8 @@
       "fetched_count": 255,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 332,
-      "checked_at": "2026-08-18T07:13:31.341844Z"
+      "latency_ms": 116,
+      "checked_at": "2026-08-18T09:01:51.357526Z"
     },
     {
       "source_id": "google-deepmind",
@@ -200,8 +197,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 293,
-      "checked_at": "2026-08-18T07:13:31.636931Z"
+      "latency_ms": 328,
+      "checked_at": "2026-08-18T09:01:51.687623Z"
     },
     {
       "source_id": "google-ai",
@@ -210,10 +207,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 258,
-      "checked_at": "2026-08-18T07:13:31.895757Z"
+      "latency_ms": 200,
+      "checked_at": "2026-08-18T09:01:51.888562Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -224,8 +221,8 @@
       "fetched_count": 843,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 313,
-      "checked_at": "2026-08-18T07:13:32.222645Z"
+      "latency_ms": 355,
+      "checked_at": "2026-08-18T09:01:52.256996Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -236,8 +233,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 140,
-      "checked_at": "2026-08-18T07:13:32.363468Z"
+      "latency_ms": 155,
+      "checked_at": "2026-08-18T09:01:52.412371Z"
     },
     {
       "source_id": "github-changelog",
@@ -249,7 +246,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 37,
-      "checked_at": "2026-08-18T07:13:32.401231Z"
+      "checked_at": "2026-08-18T09:01:52.450228Z"
     },
     {
       "source_id": "aihot",
@@ -258,10 +255,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 4500,
-      "checked_at": "2026-08-18T07:13:36.902615Z"
+      "latency_ms": 1120,
+      "checked_at": "2026-08-18T09:01:53.571352Z"
     }
   ],
   "control_notes": {
