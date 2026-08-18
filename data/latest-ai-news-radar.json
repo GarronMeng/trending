@@ -1,24 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-18T09:01:53.577593Z",
+  "generated_at": "2026-08-18T14:30:30.226625Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 4,
+  "item_count": 7,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          3
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          3
+          4
         ],
         [
           "gemini",
@@ -37,6 +37,14 @@
           1
         ],
         [
+          "openai",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
           "评测",
           1
         ],
@@ -48,8 +56,12 @@
     },
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 3,
       "top_sources": [
+        [
+          "OpenAI News",
+          2
+        ],
         [
           "GitHub AI & ML",
           1
@@ -57,15 +69,23 @@
       ],
       "top_keywords": [
         [
+          "official_ai",
+          3
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
           "agent",
           1
         ],
         [
           "workflow",
-          1
-        ],
-        [
-          "official_ai",
           1
         ]
       ]
@@ -94,6 +114,42 @@
       "is_ai_related": true
     },
     {
+      "id": "b4e66c24f903bd352e92c0b6840e6fec04109d67",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Partnering with CodeAI to prepare the first AI generation",
+      "url": "https://openai.com/index/partnering-with-codeai",
+      "published_at": "2026-08-18T11:00:00Z",
+      "summary": "OpenAI and CodeAI are partnering to help students build AI literacy, think critically about AI, and develop the skills to use and shape it responsibly.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "35197194058d058b96630735800abc17632f23e2",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
+      "url": "https://openai.com/index/chatgpt-for-teens",
+      "published_at": "2026-08-18T11:00:00Z",
+      "summary": "ChatGPT for Teens helps teens learn, think critically, and use AI with confidence, with stronger built-in protections, healthy-use features, and additional controls for parents.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "1d2d1e2f25e9c3e57ea087bf62b0825db8f7522f",
       "source_id": "github-ai-ml",
       "source_name": "GitHub AI & ML",
@@ -109,6 +165,25 @@
         "strong:agent",
         "weak:workflow",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f14407ffe7e1cd2b054e65892bc22d0ad7809602",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 推出 ChatGPT for Teens：面向青少年的学习体验与更强安全保护",
+      "url": "https://aihot.virxact.com/items/cmsykcnkt0yh1roz0a9h404r5",
+      "published_at": "2026-08-18T11:00:00Z",
+      "summary": "OpenAI 发布 ChatGPT for Teens，为 13-17 岁用户自动启用，内置更强安全保护与家长控制。新增 Study Mode、负责任作业提醒、测验与学习可视化，以及可设定默认开启时段的 Study Hours，引导青少年分步解题而非直接给答案。OpenAI 同时宣布与 CodeAI 合作，帮助青少年理解、质疑并创造性地使用 AI。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsykcnkt0yh1roz0a9h404r5",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -158,11 +233,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1132,
-      "kept_count": 0,
+      "fetched_count": 1134,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 502,
-      "checked_at": "2026-08-18T09:01:50.873701Z"
+      "latency_ms": 545,
+      "checked_at": "2026-08-18T14:30:27.787918Z"
     },
     {
       "source_id": "openai-skills",
@@ -173,8 +248,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 363,
-      "checked_at": "2026-08-18T09:01:51.237554Z"
+      "latency_ms": 277,
+      "checked_at": "2026-08-18T14:30:28.065646Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -185,8 +260,8 @@
       "fetched_count": 255,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 116,
-      "checked_at": "2026-08-18T09:01:51.357526Z"
+      "latency_ms": 130,
+      "checked_at": "2026-08-18T14:30:28.199967Z"
     },
     {
       "source_id": "google-deepmind",
@@ -197,8 +272,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 328,
-      "checked_at": "2026-08-18T09:01:51.687623Z"
+      "latency_ms": 381,
+      "checked_at": "2026-08-18T14:30:28.583043Z"
     },
     {
       "source_id": "google-ai",
@@ -209,8 +284,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 200,
-      "checked_at": "2026-08-18T09:01:51.888562Z"
+      "latency_ms": 192,
+      "checked_at": "2026-08-18T14:30:28.776246Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -218,11 +293,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 843,
+      "fetched_count": 844,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 355,
-      "checked_at": "2026-08-18T09:01:52.256996Z"
+      "latency_ms": 382,
+      "checked_at": "2026-08-18T14:30:29.171692Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -233,8 +308,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 155,
-      "checked_at": "2026-08-18T09:01:52.412371Z"
+      "latency_ms": 240,
+      "checked_at": "2026-08-18T14:30:29.412314Z"
     },
     {
       "source_id": "github-changelog",
@@ -245,8 +320,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 37,
-      "checked_at": "2026-08-18T09:01:52.450228Z"
+      "latency_ms": 63,
+      "checked_at": "2026-08-18T14:30:29.475509Z"
     },
     {
       "source_id": "aihot",
@@ -255,10 +330,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 1120,
-      "checked_at": "2026-08-18T09:01:53.571352Z"
+      "latency_ms": 741,
+      "checked_at": "2026-08-18T14:30:30.218071Z"
     }
   ],
   "control_notes": {

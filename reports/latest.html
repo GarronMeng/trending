@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>4</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>3</b><span>聚合源条目</span></div>
+        <div class="stat"><b>7</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>3</b><span>官方源条目</span></div>
+        <div class="stat"><b>4</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-08-18T09:01:53.580336Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-08-18T14:30:30.227785Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -69,6 +69,32 @@
 
     <article class="card">
       <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-08-18T11:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://openai.com/index/partnering-with-codeai" target="_blank" rel="noreferrer">Partnering with CodeAI to prepare the first AI generation</a></h3>
+      <p class='summary'>OpenAI and CodeAI are partnering to help students build AI literacy, think critically about AI, and develop the skills to use and shape it responsibly.</p>
+      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-08-18T11:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://openai.com/index/chatgpt-for-teens" target="_blank" rel="noreferrer">Introducing ChatGPT for Teens: Built for learning, backed by protections</a></h3>
+      <p class='summary'>ChatGPT for Teens helps teens learn, think critically, and use AI with confidence, with stronger built-in protections, healthy-use features, and additional controls for parents.</p>
+      <div class="tags"><span>strong:chatgpt</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
         <span>GitHub AI &amp; ML</span>
         <span>official_rss</span>
         <span>2026-08-17T16:00:00Z</span>
@@ -77,6 +103,19 @@
       <h3><a href="https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient" target="_blank" rel="noreferrer">How canvases make agentic workflows visible, steerable, and cost-efficient</a></h3>
       <p class='summary'>Chat is great for intent, but agent work gets lost in the scroll. Here is how I use canvases with my agentic workflows—and why your workflow also deserves a canvas. The post How canvases make agentic workflows visible, steerable, and cost-efficient appeared first on The GitHub Blog .</p>
       <div class="tags"><span>strong:agent</span><span>weak:workflow</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-08-18T11:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmsykcnkt0yh1roz0a9h404r5" target="_blank" rel="noreferrer">OpenAI 推出 ChatGPT for Teens：面向青少年的学习体验与更强安全保护</a></h3>
+      <p class='summary'>OpenAI 发布 ChatGPT for Teens，为 13-17 岁用户自动启用，内置更强安全保护与家长控制。新增 Study Mode、负责任作业提醒、测验与学习可视化，以及可设定默认开启时段的 Study Hours，引导青少年分步解题而非直接给答案。OpenAI 同时宣布与 CodeAI 合作，帮助青少年理解、质疑并创造性地使用 AI。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsykcnkt0yh1roz0a9h404r5</p>
+      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -110,15 +149,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1132</td><td>0</td><td>502ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>363ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>255</td><td>0</td><td>116ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>328ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>200ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>843</td><td>0</td><td>355ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>155ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>37ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>3</td><td>1120ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1134</td><td>2</td><td>545ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>277ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>255</td><td>0</td><td>130ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>381ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>192ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>844</td><td>0</td><td>382ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>240ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>63ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>4</td><td>741ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
