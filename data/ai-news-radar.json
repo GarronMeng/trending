@@ -1,18 +1,22 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-17T14:24:25.928569Z",
+  "generated_at": "2026-08-18T00:49:04.551096Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 8,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "OpenAI News",
           3
+        ],
+        [
+          "GitHub AI & ML",
+          1
         ],
         [
           "Google AI Blog",
@@ -22,7 +26,7 @@
       "top_keywords": [
         [
           "official_ai",
-          4
+          5
         ],
         [
           "openai",
@@ -37,6 +41,14 @@
           1
         ],
         [
+          "agent",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
           "gemini",
           1
         ]
@@ -44,17 +56,33 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          2
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
+          3
+        ],
+        [
+          "gemini",
           2
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "智能体",
+          1
         ],
         [
           "openai",
@@ -73,15 +101,7 @@
           1
         ],
         [
-          "智能体",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
+          "copilot",
           1
         ]
       ]
@@ -109,6 +129,27 @@
       "is_ai_related": true
     },
     {
+      "id": "41d3121f9e8b58de2e60d333756bd89a548270b7",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "用 Google 的 Agent Development Kit 构建零信任 AI 智能体",
+      "url": "https://aihot.virxact.com/items/cmsxv0p3v0bntroz0227a6b3j",
+      "published_at": "2026-08-17T23:22:25Z",
+      "summary": "Google 开源了基于 ADK 和 Gemini 的零信任客服与退货智能体示例，演示如何防御提示注入等攻击。该架构在 LLM 上下文之外通过三层硬性安全机制保障：硬件支持的加密签名确保数据库写入不可抵赖、gVisor 沙箱隔离动态代码执行、确定性语义网关校验业务逻辑。系统提示词只是软约束，无法作为安全边界。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsxv0p3v0bntroz0227a6b3j",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "strong:llm",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "f175a6cca8efca2adc9e5e28f3caee9b209b3bbf",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -126,6 +167,25 @@
         "strong:codex",
         "strong:hugging face",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1d2d1e2f25e9c3e57ea087bf62b0825db8f7522f",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "How canvases make agentic workflows visible, steerable, and cost-efficient",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient",
+      "published_at": "2026-08-17T16:00:00Z",
+      "summary": "Chat is great for intent, but agent work gets lost in the scroll. Here is how I use canvases with my agentic workflows—and why your workflow also deserves a canvas. The post How canvases make agentic workflows visible, steerable, and cost-efficient appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:workflow",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -184,21 +244,20 @@
       "is_ai_related": true
     },
     {
-      "id": "cab1949bd9cb0b912424fee7d73dd97d616110ab",
+      "id": "ce7cb99dffd91de2a21855e377c709a0e4a3fc7c",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenRouter 推出 Activity 仪表盘与 Analytics API：按智能体、模型、请求追踪 AI 使用成本",
-      "url": "https://aihot.virxact.com/items/cmsx7ffrz049uromm6en3if02",
-      "published_at": "2026-08-17T00:00:00Z",
-      "summary": "OpenRouter 发布 Activity 仪表盘和 beta Analytics API，可按智能体、模型、请求维度查看支出、token 量、缓存命中率等指标，并支持下钻至单条请求日志。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsx7ffrz049uromm6en3if02",
-      "relevance_score": 3,
+      "title": "如何禁用或避免侵入式 AI：一份覆盖 Windows、Chrome、Edge、Firefox 及主流应用的实用指南",
+      "url": "https://aihot.virxact.com/items/cmsxkakju0300roz0zx6cvdeu",
+      "published_at": "2026-08-17T17:58:12Z",
+      "summary": "一份面向希望减少技术环境中侵入式 AI 的用户的操作指南，涵盖 Adobe Acrobat、Android/Gemini、Apple Intelligence、Chrome、Edge、Firefox、DuckDuckGo、Google Workspace、Slack、WhatsApp 及 Windows 11/Copilot 等平台。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsxkakju0300roz0zx6cvdeu",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
+        "strong:gemini",
+        "weak:copilot",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -214,8 +273,8 @@
       "fetched_count": 1132,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 519,
-      "checked_at": "2026-08-17T14:24:21.713332Z"
+      "latency_ms": 561,
+      "checked_at": "2026-08-18T00:49:01.835785Z"
     },
     {
       "source_id": "openai-skills",
@@ -226,8 +285,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 402,
-      "checked_at": "2026-08-17T14:24:22.115595Z"
+      "latency_ms": 335,
+      "checked_at": "2026-08-18T00:49:02.171848Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -238,8 +297,8 @@
       "fetched_count": 255,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 119,
-      "checked_at": "2026-08-17T14:24:22.239263Z"
+      "latency_ms": 417,
+      "checked_at": "2026-08-18T00:49:02.593207Z"
     },
     {
       "source_id": "google-deepmind",
@@ -250,8 +309,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 306,
-      "checked_at": "2026-08-17T14:24:22.547434Z"
+      "latency_ms": 283,
+      "checked_at": "2026-08-18T00:49:02.878648Z"
     },
     {
       "source_id": "google-ai",
@@ -262,8 +321,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 191,
-      "checked_at": "2026-08-17T14:24:22.739741Z"
+      "latency_ms": 258,
+      "checked_at": "2026-08-18T00:49:03.137505Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -271,11 +330,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 842,
+      "fetched_count": 843,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 315,
-      "checked_at": "2026-08-17T14:24:23.068535Z"
+      "latency_ms": 337,
+      "checked_at": "2026-08-18T00:49:03.488574Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -284,10 +343,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 157,
-      "checked_at": "2026-08-17T14:24:23.226240Z"
+      "latency_ms": 149,
+      "checked_at": "2026-08-18T00:49:03.638294Z"
     },
     {
       "source_id": "github-changelog",
@@ -299,7 +358,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 37,
-      "checked_at": "2026-08-17T14:24:23.263727Z"
+      "checked_at": "2026-08-18T00:49:03.675933Z"
     },
     {
       "source_id": "aihot",
@@ -308,10 +367,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 2655,
-      "checked_at": "2026-08-17T14:24:25.920467Z"
+      "latency_ms": 865,
+      "checked_at": "2026-08-18T00:49:04.542834Z"
     }
   ],
   "control_notes": {
