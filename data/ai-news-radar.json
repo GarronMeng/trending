@@ -1,83 +1,39 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-18T14:30:30.226625Z",
+  "generated_at": "2026-08-19T00:49:29.854860Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 14,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
-      "count": 4,
-      "top_sources": [
-        [
-          "AI Hot",
-          4
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          4
-        ],
-        [
-          "gemini",
-          2
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "llm",
-          1
-        ],
-        [
-          "智能体",
-          1
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "评测",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ]
-      ]
-    },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 6,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          5
         ],
         [
-          "GitHub AI & ML",
+          "Hugging Face Blog",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
+          6
         ],
         [
           "openai",
+          4
+        ],
+        [
+          "codex",
           1
         ],
         [
-          "chatgpt",
+          "tool",
           1
         ],
         [
@@ -85,7 +41,79 @@
           1
         ],
         [
-          "workflow",
+          "chatgpt",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 2,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          2
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "actions",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 6,
+      "top_sources": [
+        [
+          "AI Hot",
+          6
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          6
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "claude",
+          2
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "评测",
+          2
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "agent",
           1
         ]
       ]
@@ -93,23 +121,77 @@
   },
   "items": [
     {
-      "id": "41d3121f9e8b58de2e60d333756bd89a548270b7",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "用 Google 的 Agent Development Kit 构建零信任 AI 智能体",
-      "url": "https://aihot.virxact.com/items/cmsxv0p3v0bntroz0227a6b3j",
-      "published_at": "2026-08-17T23:22:25Z",
-      "summary": "Google 开源了基于 ADK 和 Gemini 的零信任客服与退货智能体示例，演示如何防御提示注入等攻击。该架构在 LLM 上下文之外通过三层硬性安全机制保障：硬件支持的加密签名确保数据库写入不可抵赖、gVisor 沙箱隔离动态代码执行、确定性语义网关校验业务逻辑。系统提示词只是软约束，无法作为安全边界。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsxv0p3v0bntroz0227a6b3j",
-      "relevance_score": 7,
+      "id": "14596c7497cbff2b8119fe3ad458fbdd39022e40",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
+      "url": "https://openai.com/index/asana",
+      "published_at": "2026-08-18T07:00:00Z",
+      "summary": "Asana used OpenAI Codex to replace an outdated testing system in two weeks, completing work expected to take five years for about $12K.",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:gemini",
+        "strong:openai",
+        "strong:codex",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4aac3fb8ef397b3979d8a308768646156cb482dc",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Strengthening democratic oversight in national security",
+      "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+      "published_at": "2026-08-18T19:00:00Z",
+      "summary": "OpenAI launches an initiative to strengthen democratic oversight of AI in national security, supporting government institutions with tools, training, and expertise.",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:tool",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d74e5c69df2f2391914d55807fb9c5f48bd55d23",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Enterprise managed settings in GitHub Copilot for JetBrains",
+      "url": "https://github.blog/changelog/2026-08-18-enterprise-managed-settings-in-github-copilot-for-jetbrains",
+      "published_at": "2026-08-18T23:33:07Z",
+      "summary": "GitHub Copilot for JetBrains now supports enterprise managed settings for plugin governance, MCP server access, OpenTelemetry, and permission modes. Administrators can now apply consistent controls for everyone on your enterprise’s… The post Enterprise managed settings in GitHub Copilot for JetBrains appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:mcp",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0a2c5f661de1da9801e45973d542c35bd79b9f9c",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How Much Memory Does Your Agent Actually Need?",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+      "published_at": "2026-08-18T18:09:38Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
         "strong:agent",
-        "strong:llm",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -124,6 +206,24 @@
       "url": "https://openai.com/index/partnering-with-codeai",
       "published_at": "2026-08-18T11:00:00Z",
       "summary": "OpenAI and CodeAI are partnering to help students build AI literacy, think critically about AI, and develop the skills to use and shape it responsibly.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6c05eb3aa369349eefc9b7695ff3f3e63ab573f8",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Pacing model development in an era of cyber-critical capabilities",
+      "url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+      "published_at": "2026-08-18T11:00:00Z",
+      "summary": "OpenAI is strengthening monitoring, alignment, and security for frontier AI models. See how new safeguards are guiding the pace of model development.",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
@@ -150,21 +250,58 @@
       "is_ai_related": true
     },
     {
-      "id": "1d2d1e2f25e9c3e57ea087bf62b0825db8f7522f",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "How canvases make agentic workflows visible, steerable, and cost-efficient",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient",
-      "published_at": "2026-08-17T16:00:00Z",
-      "summary": "Chat is great for intent, but agent work gets lost in the scroll. Here is how I use canvases with my agentic workflows—and why your workflow also deserves a canvas. The post How canvases make agentic workflows visible, steerable, and cost-efficient appeared first on The GitHub Blog .",
-      "relevance_score": 4,
+      "id": "f3c5003a95a719d30f28e469f2e53def0b812303",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Tag 如何担任 Anthropic CI/CD 故障的一线响应者",
+      "url": "https://aihot.virxact.com/items/cmsz1zjiy013pro3f1e0aafra",
+      "published_at": "2026-08-18T19:26:08Z",
+      "summary": "Anthropic 的 CI 工程师用 Claude Tag 构建了值班智能体，作为 CI/CD 故障的一线响应者。Claude 在事故发生后中位 14 分钟发布首份基于证据的分析，最快案例中 3 分钟内验证修复并确认错误率恢复基线。该方案通过 Slack 频道、Datadog 或 Grafana 工具访问及 GitHub 技能文件实现，Anthropic 已发布通用设置套件供其他团队部署。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsz1zjiy013pro3f1e0aafra",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:agent",
-        "weak:workflow",
-        "source_prior:official_ai"
+        "strong:anthropic",
+        "strong:claude",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b807779abc49f223cd4b392b0b32e29beaf15cb3",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude 如何加速蛋白质设计与分析化学研究",
+      "url": "https://aihot.virxact.com/items/cmsz8gh3n06e4rodpl8l2syek",
+      "published_at": "2026-08-18T22:27:16Z",
+      "summary": "Anthropic 公布两项实验：Claude（Mythos Preview 和 Opus 4.8）针对 15 个靶点设计蛋白质结合剂，成功 14 个，命中率达 22.6%-35.1%。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsz8gh3n06e4rodpl8l2syek",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "dedc7d5e99a50acfe24cbbb2204c31b5a601f887",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Credential revocation and deauthorization by token type",
+      "url": "https://github.blog/changelog/2026-08-18-credential-revocation-and-deauthorization-by-token-type",
+      "published_at": "2026-08-18T21:57:30Z",
+      "summary": "Building on our self-service credential revocation experiences for incident response, you can now take token-type and user-specific actions to deauthorize and revoke user credentials during a security incident. This gives… The post Credential revocation and deauthorization by token type appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -188,6 +325,44 @@
       "is_ai_related": true
     },
     {
+      "id": "92a582771e6a8177cab518dcd471191f90a57680",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 在\"关键网络能力\"时代放缓模型开发节奏",
+      "url": "https://aihot.virxact.com/items/cmsz0hbsg05l0ro204080cotv",
+      "published_at": "2026-08-18T11:00:00Z",
+      "summary": "OpenAI 因 OpenAI-Hugging Face 事件及即将推出的 Astra 模型可能达到《预备框架》下的\"关键网络安全能力\"阈值，暂时放缓了模型扩展速度，包括暂停最新部署模型的强化学习训练两周，并搁置最大规模前沿 RL 运行。公司已加强研究环境安全，要求对 Astra 及网络相关负载实施最严格防护，并扩展思维链监控，采用多阶段激活分类器检测机制。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsz0hbsg05l0ro204080cotv",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7fc9bb8b15ab8a9afda0fb628d1e0bbdc3cd8ac4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "智能体记忆并非越多越好：八款模型评测显示剂量需按能力校准",
+      "url": "https://aihot.virxact.com/items/cmsz1974l06hbro20gosn5d78",
+      "published_at": "2026-08-18T18:09:38Z",
+      "summary": "智能体记忆并非可随意开启的功能，而是需按模型能力校准的剂量。强模型适合注入完整指南集，DeepSeek-V3.2（671B MoE）任务完成率提升+9.5个百分点；较弱模型采用精选检索效果最佳，gpt-oss-120b（117B MoE）提升+16.1pp且仅增加+5% token。该方法无需更新权重或人工标注，通过从智能体过往轨迹中蒸馏指南并在推理时注入实现。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsz1974l06hbro20gosn5d78",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "5d957343a3fb62b96cd824a6f1c753137ca0ea65",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -205,25 +380,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "ce7cb99dffd91de2a21855e377c709a0e4a3fc7c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "如何禁用或避免侵入式 AI：一份覆盖 Windows、Chrome、Edge、Firefox 及主流应用的实用指南",
-      "url": "https://aihot.virxact.com/items/cmsxkakju0300roz0zx6cvdeu",
-      "published_at": "2026-08-17T17:58:12Z",
-      "summary": "一份面向希望减少技术环境中侵入式 AI 的用户的操作指南，涵盖 Adobe Acrobat、Android/Gemini、Apple Intelligence、Chrome、Edge、Firefox、DuckDuckGo、Google Workspace、Slack、WhatsApp 及 Windows 11/Copilot 等平台。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsxkakju0300roz0zx6cvdeu",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:gemini",
-        "weak:copilot",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -233,11 +389,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1134,
-      "kept_count": 2,
+      "fetched_count": 1138,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 545,
-      "checked_at": "2026-08-18T14:30:27.787918Z"
+      "latency_ms": 414,
+      "checked_at": "2026-08-19T00:49:27.454441Z"
     },
     {
       "source_id": "openai-skills",
@@ -248,8 +404,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 277,
-      "checked_at": "2026-08-18T14:30:28.065646Z"
+      "latency_ms": 253,
+      "checked_at": "2026-08-19T00:49:27.707970Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -260,8 +416,8 @@
       "fetched_count": 255,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 130,
-      "checked_at": "2026-08-18T14:30:28.199967Z"
+      "latency_ms": 103,
+      "checked_at": "2026-08-19T00:49:27.814699Z"
     },
     {
       "source_id": "google-deepmind",
@@ -272,8 +428,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 381,
-      "checked_at": "2026-08-18T14:30:28.583043Z"
+      "latency_ms": 389,
+      "checked_at": "2026-08-19T00:49:28.205456Z"
     },
     {
       "source_id": "google-ai",
@@ -284,8 +440,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 192,
-      "checked_at": "2026-08-18T14:30:28.776246Z"
+      "latency_ms": 241,
+      "checked_at": "2026-08-19T00:49:28.447403Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -294,10 +450,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 844,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 382,
-      "checked_at": "2026-08-18T14:30:29.171692Z"
+      "latency_ms": 293,
+      "checked_at": "2026-08-19T00:49:28.751038Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -306,10 +462,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 240,
-      "checked_at": "2026-08-18T14:30:29.412314Z"
+      "latency_ms": 119,
+      "checked_at": "2026-08-19T00:49:28.870654Z"
     },
     {
       "source_id": "github-changelog",
@@ -318,10 +474,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 63,
-      "checked_at": "2026-08-18T14:30:29.475509Z"
+      "latency_ms": 25,
+      "checked_at": "2026-08-19T00:49:28.896136Z"
     },
     {
       "source_id": "aihot",
@@ -330,10 +486,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 741,
-      "checked_at": "2026-08-18T14:30:30.218071Z"
+      "latency_ms": 949,
+      "checked_at": "2026-08-19T00:49:29.845946Z"
     }
   ],
   "control_notes": {

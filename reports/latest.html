@@ -43,27 +43,66 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>7</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>3</b><span>官方源条目</span></div>
-        <div class="stat"><b>4</b><span>聚合源条目</span></div>
+        <div class="stat"><b>14</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>6</b><span>官方源条目</span></div>
+        <div class="stat"><b>6</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-08-18T14:30:30.227785Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-08-19T00:49:29.856437Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-08-17T23:22:25Z</span>
-        <strong>Score 7</strong>
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-08-18T07:00:00Z</span>
+        <strong>Score 5</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmsxv0p3v0bntroz0227a6b3j" target="_blank" rel="noreferrer">用 Google 的 Agent Development Kit 构建零信任 AI 智能体</a></h3>
-      <p class='summary'>Google 开源了基于 ADK 和 Gemini 的零信任客服与退货智能体示例，演示如何防御提示注入等攻击。该架构在 LLM 上下文之外通过三层硬性安全机制保障：硬件支持的加密签名确保数据库写入不可抵赖、gVisor 沙箱隔离动态代码执行、确定性语义网关校验业务逻辑。系统提示词只是软约束，无法作为安全边界。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsxv0p3v0bntroz0227a6b3j</p>
-      <div class="tags"><span>strong:gemini</span><span>strong:agent</span><span>strong:llm</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://openai.com/index/asana" target="_blank" rel="noreferrer">Asana cleared 5 years of engineering work in 2 weeks with Codex</a></h3>
+      <p class='summary'>Asana used OpenAI Codex to replace an outdated testing system in two weeks, completing work expected to take five years for about $12K.</p>
+      <div class="tags"><span>strong:openai</span><span>strong:codex</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-08-18T19:00:00Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://openai.com/index/strengthening-democratic-oversight-in-national-security" target="_blank" rel="noreferrer">Strengthening democratic oversight in national security</a></h3>
+      <p class='summary'>OpenAI launches an initiative to strengthen democratic oversight of AI in national security, supporting government institutions with tools, training, and expertise.</p>
+      <div class="tags"><span>strong:openai</span><span>weak:tool</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-08-18T23:33:07Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-08-18-enterprise-managed-settings-in-github-copilot-for-jetbrains" target="_blank" rel="noreferrer">Enterprise managed settings in GitHub Copilot for JetBrains</a></h3>
+      <p class='summary'>GitHub Copilot for JetBrains now supports enterprise managed settings for plugin governance, MCP server access, OpenTelemetry, and permission modes. Administrators can now apply consistent controls for everyone on your enterprise’s… The post Enterprise managed settings in GitHub Copilot for JetBrains appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>strong:mcp</span><span>weak:copilot</span><span>source:copilot</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>Hugging Face Blog</span>
+        <span>official_rss</span>
+        <span>2026-08-18T18:09:38Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://huggingface.co/blog/ibm-research/altk-evolve-hmm" target="_blank" rel="noreferrer">How Much Memory Does Your Agent Actually Need?</a></h3>
+      
+      <div class="tags"><span>strong:agent</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -87,6 +126,19 @@
         <span>2026-08-18T11:00:00Z</span>
         <strong>Score 3</strong>
       </div>
+      <h3><a href="https://openai.com/index/pacing-model-development-cyber-capabilities" target="_blank" rel="noreferrer">Pacing model development in an era of cyber-critical capabilities</a></h3>
+      <p class='summary'>OpenAI is strengthening monitoring, alignment, and security for frontier AI models. See how new safeguards are guiding the pace of model development.</p>
+      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-08-18T11:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
       <h3><a href="https://openai.com/index/chatgpt-for-teens" target="_blank" rel="noreferrer">Introducing ChatGPT for Teens: Built for learning, backed by protections</a></h3>
       <p class='summary'>ChatGPT for Teens helps teens learn, think critically, and use AI with confidence, with stronger built-in protections, healthy-use features, and additional controls for parents.</p>
       <div class="tags"><span>strong:chatgpt</span><span>source_prior:official_ai</span></div>
@@ -95,14 +147,40 @@
 
     <article class="card">
       <div class="meta">
-        <span>GitHub AI &amp; ML</span>
-        <span>official_rss</span>
-        <span>2026-08-17T16:00:00Z</span>
-        <strong>Score 4</strong>
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-08-18T19:26:08Z</span>
+        <strong>Score 5</strong>
       </div>
-      <h3><a href="https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient" target="_blank" rel="noreferrer">How canvases make agentic workflows visible, steerable, and cost-efficient</a></h3>
-      <p class='summary'>Chat is great for intent, but agent work gets lost in the scroll. Here is how I use canvases with my agentic workflows—and why your workflow also deserves a canvas. The post How canvases make agentic workflows visible, steerable, and cost-efficient appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>strong:agent</span><span>weak:workflow</span><span>source_prior:official_ai</span></div>
+      <h3><a href="https://aihot.virxact.com/items/cmsz1zjiy013pro3f1e0aafra" target="_blank" rel="noreferrer">Claude Tag 如何担任 Anthropic CI/CD 故障的一线响应者</a></h3>
+      <p class='summary'>Anthropic 的 CI 工程师用 Claude Tag 构建了值班智能体，作为 CI/CD 故障的一线响应者。Claude 在事故发生后中位 14 分钟发布首份基于证据的分析，最快案例中 3 分钟内验证修复并确认错误率恢复基线。该方案通过 Slack 频道、Datadog 或 Grafana 工具访问及 GitHub 技能文件实现，Anthropic 已发布通用设置套件供其他团队部署。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsz1zjiy013pro3f1e0aafra</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-08-18T22:27:16Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmsz8gh3n06e4rodpl8l2syek" target="_blank" rel="noreferrer">Claude 如何加速蛋白质设计与分析化学研究</a></h3>
+      <p class='summary'>Anthropic 公布两项实验：Claude（Mythos Preview 和 Opus 4.8）针对 15 个靶点设计蛋白质结合剂，成功 14 个，命中率达 22.6%-35.1%。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsz8gh3n06e4rodpl8l2syek</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-08-18T21:57:30Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-08-18-credential-revocation-and-deauthorization-by-token-type" target="_blank" rel="noreferrer">Credential revocation and deauthorization by token type</a></h3>
+      <p class='summary'>Building on our self-service credential revocation experiences for incident response, you can now take token-type and user-specific actions to deauthorize and revoke user credentials during a security incident. This gives… The post Credential revocation and deauthorization by token type appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>source:actions</span></div>
     </article>
     
 
@@ -123,12 +201,12 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-08-18T07:00:00Z</span>
-        <strong>Score 2</strong>
+        <span>2026-08-18T11:00:00Z</span>
+        <strong>Score 3</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmsycmgww0rkrroz0nfma0z05" target="_blank" rel="noreferrer">设计 AI 评测：先求清晰，再谈可视化</a></h3>
-      <p class='summary'>本文演示如何用开源评测框架 Inspect AI 和 Harbor 评估 agent 技能，并借助 Google Sheets 和 Data Studio 进行可视化分析。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsycmgww0rkrroz0nfma0z05</p>
-      <div class="tags"><span>strong:agent</span><span>weak:评测</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://aihot.virxact.com/items/cmsz0hbsg05l0ro204080cotv" target="_blank" rel="noreferrer">OpenAI 在&quot;关键网络能力&quot;时代放缓模型开发节奏</a></h3>
+      <p class='summary'>OpenAI 因 OpenAI-Hugging Face 事件及即将推出的 Astra 模型可能达到《预备框架》下的&quot;关键网络安全能力&quot;阈值，暂时放缓了模型扩展速度，包括暂停最新部署模型的强化学习训练两周，并搁置最大规模前沿 RL 运行。公司已加强研究环境安全，要求对 Astra 及网络相关负载实施最严格防护，并扩展思维链监控，采用多阶段激活分类器检测机制。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsz0hbsg05l0ro204080cotv</p>
+      <div class="tags"><span>strong:openai</span><span>strong:hugging face</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -136,12 +214,25 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-08-17T17:58:12Z</span>
+        <span>2026-08-18T18:09:38Z</span>
         <strong>Score 2</strong>
       </div>
-      <h3><a href="https://aihot.virxact.com/items/cmsxkakju0300roz0zx6cvdeu" target="_blank" rel="noreferrer">如何禁用或避免侵入式 AI：一份覆盖 Windows、Chrome、Edge、Firefox 及主流应用的实用指南</a></h3>
-      <p class='summary'>一份面向希望减少技术环境中侵入式 AI 的用户的操作指南，涵盖 Adobe Acrobat、Android/Gemini、Apple Intelligence、Chrome、Edge、Firefox、DuckDuckGo、Google Workspace、Slack、WhatsApp 及 Windows 11/Copilot 等平台。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsxkakju0300roz0zx6cvdeu</p>
-      <div class="tags"><span>strong:gemini</span><span>weak:copilot</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://aihot.virxact.com/items/cmsz1974l06hbro20gosn5d78" target="_blank" rel="noreferrer">智能体记忆并非越多越好：八款模型评测显示剂量需按能力校准</a></h3>
+      <p class='summary'>智能体记忆并非可随意开启的功能，而是需按模型能力校准的剂量。强模型适合注入完整指南集，DeepSeek-V3.2（671B MoE）任务完成率提升+9.5个百分点；较弱模型采用精选检索效果最佳，gpt-oss-120b（117B MoE）提升+16.1pp且仅增加+5% token。该方法无需更新权重或人工标注，通过从智能体过往轨迹中蒸馏指南并在推理时注入实现。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsz1974l06hbro20gosn5d78</p>
+      <div class="tags"><span>strong:智能体</span><span>weak:评测</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-08-18T07:00:00Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmsycmgww0rkrroz0nfma0z05" target="_blank" rel="noreferrer">设计 AI 评测：先求清晰，再谈可视化</a></h3>
+      <p class='summary'>本文演示如何用开源评测框架 Inspect AI 和 Harbor 评估 agent 技能，并借助 Google Sheets 和 Data Studio 进行可视化分析。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmsycmgww0rkrroz0nfma0z05</p>
+      <div class="tags"><span>strong:agent</span><span>weak:评测</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     </div>
     </section>
@@ -149,15 +240,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1134</td><td>2</td><td>545ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>277ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>255</td><td>0</td><td>130ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>381ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>192ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>844</td><td>0</td><td>382ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>240ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>63ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>4</td><td>741ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1138</td><td>5</td><td>414ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>253ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>255</td><td>0</td><td>103ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>389ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>241ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>844</td><td>1</td><td>293ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>119ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>25ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>6</td><td>949ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
