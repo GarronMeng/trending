@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-20T09:04:27.529404Z",
+  "generated_at": "2026-08-20T14:33:17.722152Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 3,
+  "item_count": 5,
   "groups": {
     "official": {
       "group": "official",
@@ -38,6 +38,42 @@
         ],
         [
           "copilot",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 2,
+      "top_sources": [
+        [
+          "AI Hot",
+          2
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          2
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "自动化",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "智能体",
           1
         ]
       ]
@@ -81,6 +117,26 @@
       "is_ai_related": true
     },
     {
+      "id": "597ccf3edb225014c0bb62d9c1d4eb03004a41b7",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Code 初创公司指南：五大规则与创始人洞见",
+      "url": "https://aihot.virxact.com/items/cmt1k19bn06qgrokx1p75h1gv",
+      "published_at": "2026-08-20T13:26:53Z",
+      "summary": "Anthropic 发布面向初创公司的 Claude Code 使用指南，基于对十余家高增长公司的调研，总结出\"人人皆可交付、自动化繁琐工作、信任但验证、为重构而构建、原型-自用-产品化\"五大规则。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmt1k19bn06qgrokx1p75h1gv",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "00e50fd699f414aa799eb994ce2713c0f993ecd2",
       "source_id": "github-ai-ml",
       "source_name": "GitHub AI & ML",
@@ -95,6 +151,25 @@
       "relevance_reasons": [
         "weak:copilot",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8004ba565ba312fc037f769bb2e2a0e97a43c099",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
+      "url": "https://aihot.virxact.com/items/cmt1di48c04vuro1q95i06dby",
+      "published_at": "2026-08-20T09:45:51Z",
+      "summary": "阿里巴巴正式推出 Qwen-UI-Agent，一个以真实世界为中心的 GUI 智能体基座模型，覆盖移动端、电脑端、网页端及深度搜索（DeepSearch）环境。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmt1di48c04vuro1q95i06dby",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -126,8 +201,8 @@
       "fetched_count": 1141,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 516,
-      "checked_at": "2026-08-20T09:04:23.617877Z"
+      "latency_ms": 430,
+      "checked_at": "2026-08-20T14:33:15.626444Z"
     },
     {
       "source_id": "openai-skills",
@@ -138,8 +213,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 312,
-      "checked_at": "2026-08-20T09:04:23.930643Z"
+      "latency_ms": 155,
+      "checked_at": "2026-08-20T14:33:15.781949Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -150,8 +225,8 @@
       "fetched_count": 255,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 118,
-      "checked_at": "2026-08-20T09:04:24.053583Z"
+      "latency_ms": 98,
+      "checked_at": "2026-08-20T14:33:15.883652Z"
     },
     {
       "source_id": "google-deepmind",
@@ -162,8 +237,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 291,
-      "checked_at": "2026-08-20T09:04:24.346987Z"
+      "latency_ms": 307,
+      "checked_at": "2026-08-20T14:33:16.192515Z"
     },
     {
       "source_id": "google-ai",
@@ -174,8 +249,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 192,
-      "checked_at": "2026-08-20T09:04:24.539458Z"
+      "latency_ms": 201,
+      "checked_at": "2026-08-20T14:33:16.394834Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -183,11 +258,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 844,
+      "fetched_count": 845,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 279,
-      "checked_at": "2026-08-20T09:04:24.832734Z"
+      "latency_ms": 343,
+      "checked_at": "2026-08-20T14:33:16.750258Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -198,8 +273,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 344,
-      "checked_at": "2026-08-20T09:04:25.177904Z"
+      "latency_ms": 101,
+      "checked_at": "2026-08-20T14:33:16.851879Z"
     },
     {
       "source_id": "github-changelog",
@@ -210,8 +285,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-08-20T09:04:25.211053Z"
+      "latency_ms": 27,
+      "checked_at": "2026-08-20T14:33:16.880061Z"
     },
     {
       "source_id": "aihot",
@@ -219,11 +294,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 50,
-      "kept_count": 0,
+      "fetched_count": 46,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 2309,
-      "checked_at": "2026-08-20T09:04:27.521103Z"
+      "latency_ms": 823,
+      "checked_at": "2026-08-20T14:33:17.704384Z"
     }
   ],
   "control_notes": {
