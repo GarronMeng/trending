@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-21T09:06:06.973952Z",
+  "generated_at": "2026-08-21T14:31:59.467406Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,85 +8,93 @@
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          4
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
+          3
         ],
         [
           "anthropic",
-          3
+          2
         ],
         [
           "claude",
-          3
-        ],
-        [
-          "智能体",
           2
         ],
         [
           "api",
-          1
+          2
         ],
         [
           "API",
+          2
+        ],
+        [
+          "智能体",
           1
         ],
         [
-          "自动化",
-          1
-        ],
-        [
-          "agent",
+          "多模态",
           1
         ]
       ]
     },
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 3,
       "top_sources": [
         [
           "Hugging Face Blog",
+          2
+        ],
+        [
+          "Google DeepMind",
           1
         ]
       ],
       "top_keywords": [
         [
-          "inference",
+          "official_ai",
+          3
+        ],
+        [
+          "deepmind",
           1
         ],
         [
-          "official_ai",
+          "benchmark",
+          1
+        ],
+        [
+          "inference",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          1
         ]
       ],
       "top_keywords": [
         [
           "workflow",
-          2
+          1
         ],
         [
           "actions",
-          2
+          1
         ]
       ]
     }
@@ -111,6 +119,42 @@
         "weak:api",
         "weak:API",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e9170db87ee2901852763c8288d1ae7344e53710",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+      "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games",
+      "published_at": "2026-08-21T11:59:48Z",
+      "summary": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:deepmind",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "06fdb9400dd5c395e7d9c8ae28eedb11fdd8eb83",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Measuring benchmark optimization in speech recognition",
+      "url": "https://huggingface.co/blog/asr-benchmark-optimization",
+      "published_at": "2026-08-21T00:00:00Z",
+      "summary": null,
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:benchmark",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -151,39 +195,21 @@
       "is_ai_related": true
     },
     {
-      "id": "b1002055a73821d57e908613fe20390c957d152d",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Separate GitHub Actions path for GitHub Code Quality",
-      "url": "https://github.blog/changelog/2026-08-20-separate-github-actions-path-for-github-code-quality",
-      "published_at": "2026-08-20T14:29:27Z",
-      "summary": "A dedicated workflow path for code quality CodeQL actions workflows is now generally available. Your workflow run history and your Actions usage reports now tell GitHub Code Quality runs apart… The post Separate GitHub Actions path for GitHub Code Quality appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:workflow",
-        "source:actions"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "597ccf3edb225014c0bb62d9c1d4eb03004a41b7",
+      "id": "be6933f4a931321d229d7012bc9c06cfe089f891",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Claude Code 初创公司指南：五大规则与创始人洞见",
-      "url": "https://aihot.virxact.com/items/cmt1k19bn06qgrokx1p75h1gv",
-      "published_at": "2026-08-20T13:26:53Z",
-      "summary": "Anthropic 发布面向初创公司的 Claude Code 使用指南，基于对十余家高增长公司的调研，总结出\"人人皆可交付、自动化繁琐工作、信任但验证、为重构而构建、原型-自用-产品化\"五大规则。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmt1k19bn06qgrokx1p75h1gv",
-      "relevance_score": 4,
+      "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
+      "url": "https://aihot.virxact.com/items/cmt2qvfnj03zxro6tehwcikx4",
+      "published_at": "2026-08-21T09:26:04Z",
+      "summary": "DeepSeek 上线实验性多模态视觉理解模型 DeepSeek-V4-Flash-Vision-Exp，可通过设置 model='deepseek-v4-flash-vision-exp' 在 API 平台访问。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmt2qvfnj03zxro6tehwcikx4",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:自动化",
+        "strong:多模态",
+        "weak:api",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -206,25 +232,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "8004ba565ba312fc037f769bb2e2a0e97a43c099",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
-      "url": "https://aihot.virxact.com/items/cmt1di48c04vuro1q95i06dby",
-      "published_at": "2026-08-20T09:45:51Z",
-      "summary": "阿里巴巴正式推出 Qwen-UI-Agent，一个以真实世界为中心的 GUI 智能体基座模型，覆盖移动端、电脑端、网页端及深度搜索（DeepSearch）环境。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmt1di48c04vuro1q95i06dby",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -237,8 +244,8 @@
       "fetched_count": 1143,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 462,
-      "checked_at": "2026-08-21T09:06:04.815967Z"
+      "latency_ms": 543,
+      "checked_at": "2026-08-21T14:31:56.686115Z"
     },
     {
       "source_id": "openai-skills",
@@ -249,8 +256,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 199,
-      "checked_at": "2026-08-21T09:06:05.016056Z"
+      "latency_ms": 312,
+      "checked_at": "2026-08-21T14:31:56.998774Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -261,8 +268,8 @@
       "fetched_count": 255,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 109,
-      "checked_at": "2026-08-21T09:06:05.128711Z"
+      "latency_ms": 125,
+      "checked_at": "2026-08-21T14:31:57.128518Z"
     },
     {
       "source_id": "google-deepmind",
@@ -271,10 +278,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 325,
-      "checked_at": "2026-08-21T09:06:05.455734Z"
+      "latency_ms": 296,
+      "checked_at": "2026-08-21T14:31:57.427072Z"
     },
     {
       "source_id": "google-ai",
@@ -285,8 +292,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 119,
-      "checked_at": "2026-08-21T09:06:05.575305Z"
+      "latency_ms": 341,
+      "checked_at": "2026-08-21T14:31:57.768829Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -294,11 +301,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 845,
-      "kept_count": 1,
+      "fetched_count": 846,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-08-21T09:06:05.840910Z"
+      "latency_ms": 381,
+      "checked_at": "2026-08-21T14:31:58.163366Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -309,8 +316,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 155,
-      "checked_at": "2026-08-21T09:06:05.996695Z"
+      "latency_ms": 241,
+      "checked_at": "2026-08-21T14:31:58.404583Z"
     },
     {
       "source_id": "github-changelog",
@@ -319,10 +326,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-08-21T09:06:06.023345Z"
+      "latency_ms": 57,
+      "checked_at": "2026-08-21T14:31:58.462308Z"
     },
     {
       "source_id": "aihot",
@@ -330,11 +337,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 43,
-      "kept_count": 4,
+      "fetched_count": 45,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 942,
-      "checked_at": "2026-08-21T09:06:06.966342Z"
+      "latency_ms": 995,
+      "checked_at": "2026-08-21T14:31:59.458471Z"
     }
   ],
   "control_notes": {
