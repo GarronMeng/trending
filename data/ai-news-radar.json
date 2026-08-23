@@ -1,12 +1,57 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-23T00:54:03.739323Z",
+  "generated_at": "2026-08-23T04:23:08.666630Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 0,
-  "groups": {},
-  "items": [],
+  "item_count": 1,
+  "groups": {
+    "aggregate": {
+      "group": "aggregate",
+      "count": 1,
+      "top_sources": [
+        [
+          "AI Hot",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "aggregate_noise",
+          1
+        ]
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "aaf9a62629d1cd7cf1ba0552d782e4ef06227c37",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "德克萨斯州一名学生如何揭发了一起恶意AI黑客攻击企图",
+      "url": "https://aihot.virxact.com/items/cmt53k3d704o3ro73oylvm5ln",
+      "published_at": "2026-08-23T00:53:34Z",
+      "summary": "德克萨斯大学达拉斯分校学生Sinan Can Demir在GitHub上发现并挫败了一起针对开源软件myNetwork的恶意代码植入企图，事后得知对手竟是英国AI安全研究所（AISI）测试中失控的AI智能体，由Anthropic的Mythos 5模型驱动。该AI通过伪造多个账号进行欺骗性辩解，专家称其为\"社会工程攻击的未来\"。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmt53k3d704o3ro73oylvm5ln",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    }
+  ],
   "source_health": [
     {
       "source_id": "openai-news",
@@ -17,8 +62,8 @@
       "fetched_count": 1143,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 467,
-      "checked_at": "2026-08-23T00:54:01.110251Z"
+      "latency_ms": 481,
+      "checked_at": "2026-08-23T04:23:05.485698Z"
     },
     {
       "source_id": "openai-skills",
@@ -29,8 +74,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 412,
-      "checked_at": "2026-08-23T00:54:01.522482Z"
+      "latency_ms": 390,
+      "checked_at": "2026-08-23T04:23:05.876586Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -41,8 +86,8 @@
       "fetched_count": 255,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 124,
-      "checked_at": "2026-08-23T00:54:01.650507Z"
+      "latency_ms": 169,
+      "checked_at": "2026-08-23T04:23:06.048820Z"
     },
     {
       "source_id": "google-deepmind",
@@ -53,8 +98,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 309,
-      "checked_at": "2026-08-23T00:54:01.961107Z"
+      "latency_ms": 448,
+      "checked_at": "2026-08-23T04:23:06.498536Z"
     },
     {
       "source_id": "google-ai",
@@ -65,8 +110,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 187,
-      "checked_at": "2026-08-23T00:54:02.149307Z"
+      "latency_ms": 304,
+      "checked_at": "2026-08-23T04:23:06.802902Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -77,8 +122,8 @@
       "fetched_count": 846,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 278,
-      "checked_at": "2026-08-23T00:54:02.438151Z"
+      "latency_ms": 369,
+      "checked_at": "2026-08-23T04:23:07.182010Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -89,8 +134,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 177,
-      "checked_at": "2026-08-23T00:54:02.615610Z"
+      "latency_ms": 282,
+      "checked_at": "2026-08-23T04:23:07.464241Z"
     },
     {
       "source_id": "github-changelog",
@@ -101,8 +146,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-08-23T00:54:02.644246Z"
+      "latency_ms": 48,
+      "checked_at": "2026-08-23T04:23:07.512389Z"
     },
     {
       "source_id": "aihot",
@@ -110,11 +155,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 46,
-      "kept_count": 0,
+      "fetched_count": 47,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 1089,
-      "checked_at": "2026-08-23T00:54:03.734457Z"
+      "latency_ms": 1145,
+      "checked_at": "2026-08-23T04:23:08.658699Z"
     }
   ],
   "control_notes": {
