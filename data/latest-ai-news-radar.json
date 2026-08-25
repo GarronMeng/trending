@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-25T07:24:31.431794Z",
+  "generated_at": "2026-08-25T09:06:35.907319Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 4,
+  "item_count": 5,
   "groups": {
     "aggregate": {
       "group": "aggregate",
@@ -48,21 +48,25 @@
     },
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
-          "Hugging Face Blog",
-          1
+          "OpenAI News",
+          2
         ],
         [
-          "OpenAI News",
+          "Hugging Face Blog",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          2
+          3
+        ],
+        [
+          "openai",
+          1
         ],
         [
           "workflow",
@@ -94,6 +98,24 @@
         "strong:codex",
         "strong:llm",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fbb1ed4caf00b392ac63e4c1180ec9e00364b0ff",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Disrupting a new covert influence campaign from Russia",
+      "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+      "published_at": "2026-08-25T00:00:00Z",
+      "summary": "OpenAI banned Russia-origin accounts using AI to promote a fake Israel-based think tank and a “sovereignty” index praising Russia and criticizing the West.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -161,11 +183,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1144,
-      "kept_count": 1,
+      "fetched_count": 1145,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 447,
-      "checked_at": "2026-08-25T07:24:29.109468Z"
+      "latency_ms": 716,
+      "checked_at": "2026-08-25T09:06:33.610235Z"
     },
     {
       "source_id": "openai-skills",
@@ -176,8 +198,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 162,
-      "checked_at": "2026-08-25T07:24:29.272450Z"
+      "latency_ms": 233,
+      "checked_at": "2026-08-25T09:06:33.843534Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -188,8 +210,8 @@
       "fetched_count": 255,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 75,
-      "checked_at": "2026-08-25T07:24:29.350548Z"
+      "latency_ms": 113,
+      "checked_at": "2026-08-25T09:06:33.960542Z"
     },
     {
       "source_id": "google-deepmind",
@@ -200,8 +222,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 247,
-      "checked_at": "2026-08-25T07:24:29.598912Z"
+      "latency_ms": 232,
+      "checked_at": "2026-08-25T09:06:34.194422Z"
     },
     {
       "source_id": "google-ai",
@@ -212,8 +234,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 209,
-      "checked_at": "2026-08-25T07:24:29.808257Z"
+      "latency_ms": 145,
+      "checked_at": "2026-08-25T09:06:34.340449Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -224,8 +246,8 @@
       "fetched_count": 847,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 251,
-      "checked_at": "2026-08-25T07:24:30.068923Z"
+      "latency_ms": 283,
+      "checked_at": "2026-08-25T09:06:34.636541Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -236,8 +258,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 104,
-      "checked_at": "2026-08-25T07:24:30.173711Z"
+      "latency_ms": 127,
+      "checked_at": "2026-08-25T09:06:34.763945Z"
     },
     {
       "source_id": "github-changelog",
@@ -248,8 +270,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 17,
-      "checked_at": "2026-08-25T07:24:30.191756Z"
+      "latency_ms": 24,
+      "checked_at": "2026-08-25T09:06:34.788937Z"
     },
     {
       "source_id": "aihot",
@@ -260,8 +282,8 @@
       "fetched_count": 37,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 1231,
-      "checked_at": "2026-08-25T07:24:31.423900Z"
+      "latency_ms": 1109,
+      "checked_at": "2026-08-25T09:06:35.899173Z"
     }
   ],
   "control_notes": {
