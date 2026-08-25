@@ -1,12 +1,133 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-24T14:38:43.418990Z",
+  "generated_at": "2026-08-25T00:51:56.953476Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 0,
-  "groups": {},
-  "items": [],
+  "item_count": 3,
+  "groups": {
+    "aggregate": {
+      "group": "aggregate",
+      "count": 2,
+      "top_sources": [
+        [
+          "AI Hot",
+          2
+        ]
+      ],
+      "top_keywords": [
+        [
+          "openai",
+          2
+        ],
+        [
+          "aggregate_noise",
+          2
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "developer",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "7dddd93dd0fec64887c160337aab73101125f10e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 正为一切构建 AI 智能体，但用户会愿意交出控制权吗？",
+      "url": "https://aihot.virxact.com/items/cmt7e3m7h234gro73wwwhymb0",
+      "published_at": "2026-08-24T15:00:00Z",
+      "summary": "OpenAI 推出 ChatGPT Work，将 Codex 改造为面向非工程师的智能体产品，最低订阅档每月 20 美元即可使用，旨在让白领通过 LLM 自主完成多步骤工作。OpenAI 内部 6 月有 98% 员工使用 Codex，但组织订阅者仅 17%、个人订阅者不足 1%。公司正通过简化界面扩大采用，以支撑其巨额训练投入。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmt7e3m7h234gro73wwwhymb0",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "strong:llm",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9e9ce9ea78ed7ce3ee2c7a15ab1ee20868ebbda2",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
+      "url": "https://openai.com/index/gpt-5-6-in-kiro",
+      "published_at": "2026-08-24T12:00:00Z",
+      "summary": "GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:developer",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b75374f5c9926640bfea59224dd0a112af9c70e2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "GPT-5.6 登陆 Kiro，为开发者提升性价比",
+      "url": "https://aihot.virxact.com/items/cmt7nzq6i2c27ro73tqxagz44",
+      "published_at": "2026-08-24T12:00:00Z",
+      "summary": "GPT-5.6 模型家族现已登陆软件开发智能体 Kiro，包含 Sol、Terra 和 Luna 三款模型。在 Terminal-Bench 2.1 测试中，GPT-5.6 Terra 在 Kiro 内完成任务成本降低约 82%。该更新由 OpenAI 与 AWS 合作优化，旨在以更少迭代和更高 token 价值帮助开发者产出更高质量的代码。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmt7nzq6i2c27ro73tqxagz44",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    }
+  ],
   "source_health": [
     {
       "source_id": "openai-news",
@@ -14,11 +135,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1143,
-      "kept_count": 0,
+      "fetched_count": 1144,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 508,
-      "checked_at": "2026-08-24T14:38:41.101030Z"
+      "latency_ms": 486,
+      "checked_at": "2026-08-25T00:51:54.467969Z"
     },
     {
       "source_id": "openai-skills",
@@ -29,8 +150,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 335,
-      "checked_at": "2026-08-24T14:38:41.436784Z"
+      "latency_ms": 272,
+      "checked_at": "2026-08-25T00:51:54.740816Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -41,8 +162,8 @@
       "fetched_count": 255,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 111,
-      "checked_at": "2026-08-24T14:38:41.552586Z"
+      "latency_ms": 114,
+      "checked_at": "2026-08-25T00:51:54.859109Z"
     },
     {
       "source_id": "google-deepmind",
@@ -53,8 +174,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 281,
-      "checked_at": "2026-08-24T14:38:41.836030Z"
+      "latency_ms": 400,
+      "checked_at": "2026-08-25T00:51:55.260986Z"
     },
     {
       "source_id": "google-ai",
@@ -65,8 +186,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 214,
-      "checked_at": "2026-08-24T14:38:42.050841Z"
+      "latency_ms": 317,
+      "checked_at": "2026-08-25T00:51:55.578653Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -77,8 +198,8 @@
       "fetched_count": 846,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 315,
-      "checked_at": "2026-08-24T14:38:42.378621Z"
+      "latency_ms": 312,
+      "checked_at": "2026-08-25T00:51:55.903494Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -89,8 +210,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 148,
-      "checked_at": "2026-08-24T14:38:42.527438Z"
+      "latency_ms": 140,
+      "checked_at": "2026-08-25T00:51:56.043892Z"
     },
     {
       "source_id": "github-changelog",
@@ -101,8 +222,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-08-24T14:38:42.558173Z"
+      "latency_ms": 32,
+      "checked_at": "2026-08-25T00:51:56.076765Z"
     },
     {
       "source_id": "aihot",
@@ -110,11 +231,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 41,
-      "kept_count": 0,
+      "fetched_count": 37,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 854,
-      "checked_at": "2026-08-24T14:38:43.412972Z"
+      "latency_ms": 866,
+      "checked_at": "2026-08-25T00:51:56.944370Z"
     }
   ],
   "control_notes": {

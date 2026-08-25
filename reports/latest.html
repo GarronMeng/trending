@@ -43,31 +43,69 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>0</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>0</b><span>官方源条目</span></div>
-        <div class="stat"><b>0</b><span>聚合源条目</span></div>
+        <div class="stat"><b>3</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>1</b><span>官方源条目</span></div>
+        <div class="stat"><b>2</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-08-24T14:38:43.419630Z</p></div>
-      <div class="grid"><p>本轮没有抓到达到阈值的条目。</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-08-25T00:51:56.954531Z</p></div>
+      <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-08-24T15:00:00Z</span>
+        <strong>Score 7</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmt7e3m7h234gro73wwwhymb0" target="_blank" rel="noreferrer">OpenAI 正为一切构建 AI 智能体，但用户会愿意交出控制权吗？</a></h3>
+      <p class='summary'>OpenAI 推出 ChatGPT Work，将 Codex 改造为面向非工程师的智能体产品，最低订阅档每月 20 美元即可使用，旨在让白领通过 LLM 自主完成多步骤工作。OpenAI 内部 6 月有 98% 员工使用 Codex，但组织订阅者仅 17%、个人订阅者不足 1%。公司正通过简化界面扩大采用，以支撑其巨额训练投入。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmt7e3m7h234gro73wwwhymb0</p>
+      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>strong:codex</span><span>strong:llm</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-08-24T12:00:00Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://openai.com/index/gpt-5-6-in-kiro" target="_blank" rel="noreferrer">Advancing price-performance for developers with GPT‑5.6 in Kiro</a></h3>
+      <p class='summary'>GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.</p>
+      <div class="tags"><span>weak:developer</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-08-24T12:00:00Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://aihot.virxact.com/items/cmt7nzq6i2c27ro73tqxagz44" target="_blank" rel="noreferrer">GPT-5.6 登陆 Kiro，为开发者提升性价比</a></h3>
+      <p class='summary'>GPT-5.6 模型家族现已登陆软件开发智能体 Kiro，包含 Sol、Terra 和 Luna 三款模型。在 Terminal-Bench 2.1 测试中，GPT-5.6 Terra 在 Kiro 内完成任务成本降低约 82%。该更新由 OpenAI 与 AWS 合作优化，旨在以更少迭代和更高 token 价值帮助开发者产出更高质量的代码。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmt7nzq6i2c27ro73tqxagz44</p>
+      <div class="tags"><span>strong:openai</span><span>strong:智能体</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1143</td><td>0</td><td>508ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>335ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>255</td><td>0</td><td>111ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>281ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>214ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>846</td><td>0</td><td>315ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>148ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>30ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>41</td><td>0</td><td>854ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1144</td><td>1</td><td>486ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>272ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>255</td><td>0</td><td>114ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>400ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>317ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>846</td><td>0</td><td>312ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>140ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>32ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>37</td><td>2</td><td>866ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
