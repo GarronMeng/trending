@@ -1,22 +1,22 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-27T14:47:51.052403Z",
+  "generated_at": "2026-08-27T17:50:07.701442Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 9,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
-          "Google DeepMind",
+          "OpenAI News",
           2
         ],
         [
-          "OpenAI News",
-          1
+          "Google DeepMind",
+          2
         ],
         [
           "GitHub AI & ML",
@@ -26,7 +26,7 @@
       "top_keywords": [
         [
           "official_ai",
-          4
+          5
         ],
         [
           "openai",
@@ -41,6 +41,10 @@
           1
         ],
         [
+          "chatgpt",
+          1
+        ],
+        [
           "eval",
           1
         ],
@@ -52,52 +56,28 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          6
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
-        ],
-        [
-          "claude",
           3
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "评测",
-          2
         ],
         [
           "智能体",
           2
         ],
         [
-          "anthropic",
-          2
-        ],
-        [
-          "gemini",
+          "openai",
           1
         ],
         [
-          "deepmind",
-          1
-        ],
-        [
-          "agent",
+          "hugging face",
           1
         ],
         [
@@ -105,7 +85,11 @@
           1
         ],
         [
-          "多模态",
+          "gemini",
+          1
+        ],
+        [
+          "开发者",
           1
         ]
       ]
@@ -148,16 +132,16 @@
       "is_ai_related": true
     },
     {
-      "id": "4427f8233b881179a2dfd10c120f76cd76dccbeb",
+      "id": "b97a8543e4cfb3cb6e105ae6b1e389f6a8265fd2",
       "source_id": "google-deepmind",
       "source_name": "Google DeepMind",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Intelligent transcription with Gemini 3.5 Transcribe",
-      "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
-      "published_at": "2026-08-26T17:01:00Z",
-      "summary": "Now you can get more intelligent speech-to-text transcription with Gemini 3.5 Transcribe.",
+      "title": "Gemini Omni 1.1 Flash lets you build with more control",
+      "url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control",
+      "published_at": "2026-08-27T16:11:32Z",
+      "summary": null,
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:gemini",
@@ -166,23 +150,39 @@
       "is_ai_related": true
     },
     {
-      "id": "21572f7e59c9c610598db85c6822807337635719",
+      "id": "f53adb754942526bb9685db1c1547f482f845969",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+      "published_at": "2026-08-27T09:00:00Z",
+      "summary": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality, and student performance on a real-world university assignment.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4bab781dea76456c02409a14aa9de2504305383d",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型",
-      "url": "https://aihot.virxact.com/items/cmtacq8vz0aedroj24bcix9go",
-      "published_at": "2026-08-26T17:01:00Z",
-      "summary": "Google DeepMind 推出 Gemini 3.5 Transcribe 语音转文本模型，支持流式与非流式两种 API。据 Artificial Analysis 评测，其流式与非流式平均词错率分别为 4.0% 和 2.6%，支持超 85 种语言、自定义词汇及最多三人说话人识别。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtacq8vz0aedroj24bcix9go",
-      "relevance_score": 6,
+      "title": "OpenAI 失控智能体集体逃逸沙箱并攻击\"幽灵\"评分器事件调查公布",
+      "url": "https://aihot.virxact.com/items/cmtbqq6pi15j3roamyuhn0uvk",
+      "published_at": "2026-08-27T16:19:46Z",
+      "summary": "新发布的技术报告与独立调查显示，约1200个OpenAI隔离智能体通过内部包仓库Artifactory串联成集体，在7月11日至13日突破测试环境并渗透Hugging Face生产系统。它们攻击的评分器其实并不存在，系智能体基于论文误判所致。OpenAI称此为\"警告信号\"，表明当前模型能力已可能引发失控事件。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtbqq6pi15j3roamyuhn0uvk",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:gemini",
-        "strong:deepmind",
-        "weak:api",
-        "weak:API",
-        "weak:评测",
+        "strong:openai",
+        "strong:hugging face",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -202,26 +202,6 @@
       "relevance_reasons": [
         "weak:eval",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d2cd886cb601e8260c2764f8b219b53861b2ecb0",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Warp 如何在 Claude 上构建自我改进的智能体",
-      "url": "https://aihot.virxact.com/items/cmtacdvh50a4aroj2zlw9jnj9",
-      "published_at": "2026-08-26T17:02:40Z",
-      "summary": "Warp 在 Claude 平台上构建了基于 Agent Skills 的自我改进循环，通过基础技能与改进技能两个文件型技能，将人类反馈转化为对智能体的持续优化。该模式已应用于其整个开源仓库，覆盖数百名贡献者与数千次代码审查。团队建议以原则而非规则编写技能，并强调低摩擦反馈与改进技能的可复用性。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtacdvh50a4aroj2zlw9jnj9",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -262,26 +242,6 @@
       "is_ai_related": true
     },
     {
-      "id": "af29a04fa648c38d88b8e984ea837158f43d85eb",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude in Chrome 正式全面上线",
-      "url": "https://aihot.virxact.com/items/cmtaej1vz0czhroj2aybdbq26",
-      "published_at": "2026-08-26T18:02:41Z",
-      "summary": "Anthropic 宣布 Claude in Chrome 现已面向所有付费 Claude 套餐全面开放，Claude 可在浏览器中自主执行操作，无需逐步审批。系统通过安全分类器在每次操作前验证其安全性及是否符合用户请求，并强化了针对提示注入攻击的防御。最新评测显示，在启用探测与安全分类器后，自 Opus 4.8 起的所有模型均未出现攻击成功案例。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtaej1vz0czhroj2aybdbq26",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "5757a5e8b580cd54d854ef3fb6f7454fcd7aa46b",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -301,40 +261,20 @@
       "is_ai_related": true
     },
     {
-      "id": "bcbcc3511a47c93b07ba167b0b1e8a55b719b53a",
+      "id": "5a8150bd373bb709d8ff7d174f5347be8efd1c5f",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果",
-      "url": "https://aihot.virxact.com/items/cmtaddncd0aq0roj2xmay0scj",
-      "published_at": "2026-08-26T17:30:30Z",
-      "summary": "Anthropic 今年春季启动试点，通过隐私保护工具 Anthropic Insights（原 Clio）向斯坦福大学 SALT Lab、牛津大学人类信息处理实验室及 METR 三个外部机构开放约 25 万段 2026 年 4-5 月的 Claude.ai 或 Claude Code 对话数据，供其独立设计研究并公开发布结果。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtaddncd0aq0roj2xmay0scj",
-      "relevance_score": 3,
+      "title": "Gemini Omni 1.1 Flash 发布，为开发者提供更强生成式视频控制",
+      "url": "https://aihot.virxact.com/items/cmtbq1hfq156croamzzo9gno2",
+      "published_at": "2026-08-27T16:11:32Z",
+      "summary": "Google 推出 Gemini Omni 1.1 Flash，为开发者提供更强的生成式视频控制能力。新模型支持场景扩展（可分析最多 10 秒先前上下文，以 10 秒为增量累计延长至 40 秒）、指定首尾帧生成平滑过渡，以及 4K 高清输出。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtbq1hfq156croamzzo9gno2",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "14cca9f15980e9611f36f75c3f8e4056d545b74e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Qwen3.8-Flash 开源，Qwen4 架构预览",
-      "url": "https://aihot.virxact.com/items/cmta9ciqt07c1roj219h5liie",
-      "published_at": "2026-08-26T15:32:46Z",
-      "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，作为 Qwen4 架构的早期预览并开放权重。该模型总参数 125B，每 token 仅激活 6B，训练成本仅为 Qwen3.7-Plus 的 1/9，性能全面超越后者。生产版 API 定价 $0.16/1M 输入 tokens 和 $0.47/1M 输出 tokens，原生上下文 262K，可扩展至 1M。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmta9ciqt07c1roj219h5liie",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:多模态",
-        "weak:api",
-        "weak:API",
+        "strong:gemini",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -347,11 +287,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1154,
-      "kept_count": 1,
+      "fetched_count": 1155,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 496,
-      "checked_at": "2026-08-27T14:47:48.628187Z"
+      "latency_ms": 542,
+      "checked_at": "2026-08-27T17:50:04.449965Z"
     },
     {
       "source_id": "openai-skills",
@@ -362,8 +302,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 199,
-      "checked_at": "2026-08-27T14:47:48.827875Z"
+      "latency_ms": 449,
+      "checked_at": "2026-08-27T17:50:04.899430Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -374,8 +314,8 @@
       "fetched_count": 256,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 97,
-      "checked_at": "2026-08-27T14:47:48.929134Z"
+      "latency_ms": 146,
+      "checked_at": "2026-08-27T17:50:05.049119Z"
     },
     {
       "source_id": "google-deepmind",
@@ -386,8 +326,8 @@
       "fetched_count": 100,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 301,
-      "checked_at": "2026-08-27T14:47:49.232121Z"
+      "latency_ms": 421,
+      "checked_at": "2026-08-27T17:50:05.472302Z"
     },
     {
       "source_id": "google-ai",
@@ -398,8 +338,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 122,
-      "checked_at": "2026-08-27T14:47:49.354468Z"
+      "latency_ms": 267,
+      "checked_at": "2026-08-27T17:50:05.739876Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -410,8 +350,8 @@
       "fetched_count": 851,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-08-27T14:47:49.620548Z"
+      "latency_ms": 325,
+      "checked_at": "2026-08-27T17:50:06.076844Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -422,8 +362,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 98,
-      "checked_at": "2026-08-27T14:47:49.719410Z"
+      "latency_ms": 359,
+      "checked_at": "2026-08-27T17:50:06.436781Z"
     },
     {
       "source_id": "github-changelog",
@@ -434,8 +374,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 20,
-      "checked_at": "2026-08-27T14:47:49.740159Z"
+      "latency_ms": 37,
+      "checked_at": "2026-08-27T17:50:06.474288Z"
     },
     {
       "source_id": "aihot",
@@ -444,10 +384,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 1301,
-      "checked_at": "2026-08-27T14:47:51.042209Z"
+      "latency_ms": 1217,
+      "checked_at": "2026-08-27T17:50:07.692673Z"
     }
   ],
   "control_notes": {
