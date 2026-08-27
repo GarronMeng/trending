@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-27T19:11:08.456613Z",
+  "generated_at": "2026-08-27T23:34:56.952230Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,7 +8,7 @@
   "groups": {
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI News",
@@ -17,16 +17,12 @@
         [
           "Google DeepMind",
           2
-        ],
-        [
-          "GitHub AI & ML",
-          1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          5
+          4
         ],
         [
           "openai",
@@ -47,9 +43,33 @@
         [
           "eval",
           1
-        ],
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 2,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          2
+        ]
+      ],
+      "top_keywords": [
         [
           "copilot",
+          2
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "actions",
           1
         ]
       ]
@@ -93,22 +113,6 @@
           1
         ]
       ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
-        ]
-      ]
     }
   },
   "items": [
@@ -128,6 +132,25 @@
         "strong:openai",
         "weak:developer",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e486e4a5d17a9ce19a389dd5fb7a93d7a3483a02",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot code review: Resolution reasons and expanded capabilities",
+      "url": "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities",
+      "published_at": "2026-08-27T22:46:04Z",
+      "summary": "Copilot code review can now review two types of pull requests it didn’t cover before: Reviews requested automatically on pull requests authored by bots, including Copilot cloud agent Very large… The post Copilot code review: Resolution reasons and expanded capabilities appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -206,38 +229,20 @@
       "is_ai_related": true
     },
     {
-      "id": "86b4bc52edd7bea95acd39c840fbd9952d0032f4",
+      "id": "1ce572a3191facc240ae9ab98fc924c2bda82a59",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Global model policy generally available",
-      "url": "https://github.blog/changelog/2026-08-26-global-model-policy-generally-available",
-      "published_at": "2026-08-26T22:08:38Z",
-      "summary": "In July, we announced a default model policy for generally available GitHub Copilot models on Copilot Business and Copilot Enterprise plans. Starting today, we’re gradually rolling out enforcement of the… The post Global model policy generally available appeared first on The GitHub Blog .",
+      "title": "Actions retention will cover checks, workflow runs, and statuses",
+      "url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses",
+      "published_at": "2026-08-27T21:50:39Z",
+      "summary": "Starting October 1, 2026, checks, workflow runs, and statuses will be governed by the same Actions retention setting that already controls how long artifacts and logs are kept, with a… The post Actions retention will cover checks, workflow runs, and statuses appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "903d63869467f4d17e27681139521e49dee9ad83",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "GitHub Copilot app for Beginners: Automate Dependabot pull request triage",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage",
-      "published_at": "2026-08-26T20:12:53Z",
-      "summary": "Managing library updates can be tedious at times. Learn how the GitHub Copilot app can handle this type of repetitive task. The post GitHub Copilot app for Beginners: Automate Dependabot pull request triage appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source_prior:official_ai"
+        "weak:workflow",
+        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -290,8 +295,8 @@
       "fetched_count": 1155,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 502,
-      "checked_at": "2026-08-27T19:11:06.323190Z"
+      "latency_ms": 528,
+      "checked_at": "2026-08-27T23:34:54.268429Z"
     },
     {
       "source_id": "openai-skills",
@@ -302,8 +307,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 192,
-      "checked_at": "2026-08-27T19:11:06.515910Z"
+      "latency_ms": 263,
+      "checked_at": "2026-08-27T23:34:54.531783Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -311,11 +316,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 256,
+      "fetched_count": 258,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 115,
-      "checked_at": "2026-08-27T19:11:06.635436Z"
+      "latency_ms": 117,
+      "checked_at": "2026-08-27T23:34:54.652920Z"
     },
     {
       "source_id": "google-deepmind",
@@ -326,8 +331,8 @@
       "fetched_count": 100,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 303,
-      "checked_at": "2026-08-27T19:11:06.940473Z"
+      "latency_ms": 364,
+      "checked_at": "2026-08-27T23:34:55.019331Z"
     },
     {
       "source_id": "google-ai",
@@ -338,8 +343,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 194,
-      "checked_at": "2026-08-27T19:11:07.135270Z"
+      "latency_ms": 266,
+      "checked_at": "2026-08-27T23:34:55.285931Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -350,8 +355,8 @@
       "fetched_count": 851,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 285,
-      "checked_at": "2026-08-27T19:11:07.433224Z"
+      "latency_ms": 317,
+      "checked_at": "2026-08-27T23:34:55.615758Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -360,10 +365,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 103,
-      "checked_at": "2026-08-27T19:11:07.536812Z"
+      "latency_ms": 141,
+      "checked_at": "2026-08-27T23:34:55.757872Z"
     },
     {
       "source_id": "github-changelog",
@@ -372,10 +377,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 22,
-      "checked_at": "2026-08-27T19:11:07.559414Z"
+      "latency_ms": 31,
+      "checked_at": "2026-08-27T23:34:55.789317Z"
     },
     {
       "source_id": "aihot",
@@ -386,8 +391,8 @@
       "fetched_count": 50,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 888,
-      "checked_at": "2026-08-27T19:11:08.448337Z"
+      "latency_ms": 1152,
+      "checked_at": "2026-08-27T23:34:56.942575Z"
     }
   ],
   "control_notes": {
