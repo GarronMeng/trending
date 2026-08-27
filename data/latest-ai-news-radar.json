@@ -1,35 +1,35 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-26T14:41:09.279575Z",
+  "generated_at": "2026-08-27T06:32:15.037946Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 12,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI News",
+          2
+        ],
+        [
+          "Google DeepMind",
           1
         ],
         [
           "GitHub AI & ML",
-          1
-        ],
-        [
-          "Hugging Face Blog",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
+          4
         ],
         [
-          "llm",
+          "chatgpt",
           2
         ],
         [
@@ -37,11 +37,75 @@
           1
         ],
         [
-          "codex",
+          "tool",
           1
         ],
         [
-          "eval",
+          "gemini",
+          1
+        ],
+        [
+          "copilot",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 7,
+      "top_sources": [
+        [
+          "AI Hot",
+          7
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          7
+        ],
+        [
+          "claude",
+          5
+        ],
+        [
+          "api",
+          3
+        ],
+        [
+          "API",
+          3
+        ],
+        [
+          "评测",
+          2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "多模态",
+          2
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "deepmind",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "codex",
           1
         ]
       ]
@@ -59,159 +123,120 @@
         [
           "copilot",
           2
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "tool",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 3,
-      "top_sources": [
-        [
-          "AI Hot",
-          3
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          3
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "多模态",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "智能体",
-          1
-        ],
-        [
-          "工作流",
-          1
         ]
       ]
     }
   },
   "items": [
     {
-      "id": "21d1a6af3fb7bc6e1ef988ce8098b997ed45fad5",
+      "id": "0f8dac5514447deafac12d83863fcbce1c3cb8f2",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "How loveholidays is making everyone a builder with Codex",
-      "url": "https://openai.com/index/loveholidays",
-      "published_at": "2026-08-26T00:00:00Z",
-      "summary": "Discover how loveholidays uses OpenAI Codex to make software development accessible across the business, helping teams turn ideas into products faster.",
+      "title": "Learning never stops: How AI makes learning continuous",
+      "url": "https://openai.com/index/learning-never-stops",
+      "published_at": "2026-08-26T10:00:00Z",
+      "summary": "OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom.",
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:openai",
-        "strong:codex",
+        "strong:chatgpt",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "cc2e654d1221ff9df609686ec5cb79c9e554c52c",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Copilot app Customize tab is generally available",
-      "url": "https://github.blog/changelog/2026-08-25-github-copilot-app-customize-tab-is-generally-available",
-      "published_at": "2026-08-25T20:05:26Z",
-      "summary": "GitHub Copilot is more useful when it works with the tools, knowledge, and workflows your team already relies on. The new Customize tab in the GitHub Copilot app brings MCP… The post GitHub Copilot app Customize tab is generally available appeared first on The GitHub Blog .",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:mcp",
-        "weak:tool",
-        "weak:workflow",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c17694c420563c8270d3261554e0e5195d565526",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "How to evaluate LLMs before production",
-      "url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production",
-      "published_at": "2026-08-25T21:35:11Z",
-      "summary": "These are the lessons we learned evaluating LLMs for real-world secret scanning. The post How to evaluate LLMs before production appeared first on The GitHub Blog .",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:llm",
-        "weak:eval",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d0ac94ff583934f3e6c9859460a961085bf5c894",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "804f8962c961e239b9f998795212fdd83921c338",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Granite 4.2 LLMs: How They're Built",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
-      "published_at": "2026-08-25T15:14:14Z",
-      "summary": null,
-      "relevance_score": 3,
+      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+      "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+      "published_at": "2026-08-26T10:00:00Z",
+      "summary": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff.",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:llm",
+        "strong:chatgpt",
+        "weak:tool",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "d98b2d98ada6836c7fb20572a9bc9023d5f53912",
+      "id": "4427f8233b881179a2dfd10c120f76cd76dccbeb",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Intelligent transcription with Gemini 3.5 Transcribe",
+      "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+      "published_at": "2026-08-26T17:01:00Z",
+      "summary": "Now you can get more intelligent speech-to-text transcription with Gemini 3.5 Transcribe.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "21572f7e59c9c610598db85c6822807337635719",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "智谱开源 GLM-5.3-Flash 原生多模态模型，限时折扣价为 GLM-5.3 的 1/20",
-      "url": "https://aihot.virxact.com/items/cmta6rj5j03vxroj263nwkuxk",
-      "published_at": "2026-08-26T14:21:30Z",
-      "summary": "智谱上线并开源 GLM-5.3-Flash（320B-A18B），这是 GLM-5 系列首个原生多模态模型，总参数量 320B、激活参数仅 18B。该模型在 AA 综合智能指数取得 57 分，与 Claude Opus 4.8 持平，编程表现亦相当；定价为 GLM-5.3 的 1/10，限时折扣为 1/20，为 Opus 4.8 的 1/40。模型已接入 ZCode 等平台，并开放 API 调用。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmta6rj5j03vxroj263nwkuxk",
+      "title": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型",
+      "url": "https://aihot.virxact.com/items/cmtacq8vz0aedroj24bcix9go",
+      "published_at": "2026-08-26T17:01:00Z",
+      "summary": "Google DeepMind 推出 Gemini 3.5 Transcribe 语音转文本模型，支持流式与非流式两种 API。据 Artificial Analysis 评测，其流式与非流式平均词错率分别为 4.0% 和 2.6%，支持超 85 种语言、自定义词汇及最多三人说话人识别。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtacq8vz0aedroj24bcix9go",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:deepmind",
+        "weak:api",
+        "weak:API",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d2cd886cb601e8260c2764f8b219b53861b2ecb0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Warp 如何在 Claude 上构建自我改进的智能体",
+      "url": "https://aihot.virxact.com/items/cmtacdvh50a4aroj2zlw9jnj9",
+      "published_at": "2026-08-26T17:02:40Z",
+      "summary": "Warp 在 Claude 平台上构建了基于 Agent Skills 的自我改进循环，通过基础技能与改进技能两个文件型技能，将人类反馈转化为对智能体的持续优化。该模式已应用于其整个开源仓库，覆盖数百名贡献者与数千次代码审查。团队建议以原则而非规则编写技能，并强调低摩擦反馈与改进技能的可复用性。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtacdvh50a4aroj2zlw9jnj9",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "72fd1236482e5602c38057e078fb62292668b366",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+      "url": "https://aihot.virxact.com/items/cmta7bh1k04u6roj2e4pt7bob",
+      "published_at": "2026-08-26T14:11:33Z",
+      "summary": "智谱上线并开源 GLM-5.3-Flash（320B-A18B），这是 GLM-5 系列首个原生多模态模型，AA 综合智能指数 57 分，与 Claude Opus 4.8 持平。其定价为 GLM-5.3 的 1/10，限时折扣内为 Opus 4.8 的 1/40，并已接入 ZCode 等平台开放 API 调用。该模型采用稀疏注意力与线性注意力混合架构，推理服务已跑在国产芯片集群上。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmta7bh1k04u6roj2e4pt7bob",
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:claude",
@@ -223,39 +248,116 @@
       "is_ai_related": true
     },
     {
-      "id": "c6e4a2fb6fb127c6c3e38d766461951796659fd0",
+      "id": "36b7046c2c85845f7956f2fefef02fe589979f31",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Dylan Patel：Anthropic 与 OpenAI 到 2028 年将控制全球大部分算力",
-      "url": "https://aihot.virxact.com/items/cmt8vaqtw3r29ro73d67v03bc",
-      "published_at": "2026-08-25T15:32:57Z",
-      "summary": "在最新一期播客中，SemiAnalysis 创始人 Dylan Patel 与 Dwarkesh Patel 讨论实验室经济学，预计 Anthropic 和 OpenAI 到 2028 年将控制全球大部分可用 FLOPs，因其能更好变现算力并出价高于其他方。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmt8vaqtw3r29ro73d67v03bc",
-      "relevance_score": 3,
+      "title": "实测飞书和豆包合体后第1个Agent：豆包工作的8个使用技巧",
+      "url": "https://aihot.virxact.com/items/cmta7fyl104z5roj2ancsmx4g",
+      "published_at": "2026-08-26T08:27:00Z",
+      "summary": "豆包工作（豆包 Work）是当前企业接入Agent门槛最低的路径，但需用飞书账号登录才能解锁满血功能。实测可用手机远程控制最多7台设备、定时任务、自动读取本地skill、侧边栏直接编辑并同步飞书，且管理员看不到聊天记录。作者认为Work Agent是token消耗倍增器，飞书原生生态是豆包工作相比Claude Cowork、Codex Work的核心优势。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmta7fyl104z5roj2ancsmx4g",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
+        "strong:claude",
+        "strong:codex",
+        "strong:agent",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "85730c3623be2a98220cf272a107a18641c0aa66",
+      "id": "86b4bc52edd7bea95acd39c840fbd9952d0032f4",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Global model policy generally available",
+      "url": "https://github.blog/changelog/2026-08-26-global-model-policy-generally-available",
+      "published_at": "2026-08-26T22:08:38Z",
+      "summary": "In July, we announced a default model policy for generally available GitHub Copilot models on Copilot Business and Copilot Enterprise plans. Starting today, we’re gradually rolling out enforcement of the… The post Global model policy generally available appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "903d63869467f4d17e27681139521e49dee9ad83",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "GitHub Copilot app for Beginners: Automate Dependabot pull request triage",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage",
+      "published_at": "2026-08-26T20:12:53Z",
+      "summary": "Managing library updates can be tedious at times. Learn how the GitHub Copilot app can handle this type of repetitive task. The post GitHub Copilot app for Beginners: Automate Dependabot pull request triage appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "af29a04fa648c38d88b8e984ea837158f43d85eb",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenWorker 新版发布，内置网络安全智能体",
-      "url": "https://aihot.virxact.com/items/cmt90wf1p06j9roly5e34fmu3",
-      "published_at": "2026-08-25T18:16:02Z",
-      "summary": "Andrew Ng 旗下开源智能体 OpenWorker 发布新版，强化安全工作流。其 harness 完全开源，安全团队可审计无后门。新版内置代码漏洞扫描、依赖供应链注入检测和云安全配置检查三类网络安全智能体，并支持本地运行开源权重模型以保护敏感代码。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmt90wf1p06j9roly5e34fmu3",
-      "relevance_score": 2,
+      "title": "Claude in Chrome 正式全面上线",
+      "url": "https://aihot.virxact.com/items/cmtaej1vz0czhroj2aybdbq26",
+      "published_at": "2026-08-26T18:02:41Z",
+      "summary": "Anthropic 宣布 Claude in Chrome 现已面向所有付费 Claude 套餐全面开放，Claude 可在浏览器中自主执行操作，无需逐步审批。系统通过安全分类器在每次操作前验证其安全性及是否符合用户请求，并强化了针对提示注入攻击的防御。最新评测显示，在启用探测与安全分类器后，自 Opus 4.8 起的所有模型均未出现攻击成功案例。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtaej1vz0czhroj2aybdbq26",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:智能体",
-        "weak:工作流",
+        "strong:anthropic",
+        "strong:claude",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "bcbcc3511a47c93b07ba167b0b1e8a55b719b53a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果",
+      "url": "https://aihot.virxact.com/items/cmtaddncd0aq0roj2xmay0scj",
+      "published_at": "2026-08-26T17:30:30Z",
+      "summary": "Anthropic 今年春季启动试点，通过隐私保护工具 Anthropic Insights（原 Clio）向斯坦福大学 SALT Lab、牛津大学人类信息处理实验室及 METR 三个外部机构开放约 25 万段 2026 年 4-5 月的 Claude.ai 或 Claude Code 对话数据，供其独立设计研究并公开发布结果。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtaddncd0aq0roj2xmay0scj",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "14cca9f15980e9611f36f75c3f8e4056d545b74e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Qwen3.8-Flash 开源，Qwen4 架构预览",
+      "url": "https://aihot.virxact.com/items/cmta9ciqt07c1roj219h5liie",
+      "published_at": "2026-08-26T15:32:46Z",
+      "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，作为 Qwen4 架构的早期预览并开放权重。该模型总参数 125B，每 token 仅激活 6B，训练成本仅为 Qwen3.7-Plus 的 1/9，性能全面超越后者。生产版 API 定价 $0.16/1M 输入 tokens 和 $0.47/1M 输出 tokens，原生上下文 262K，可扩展至 1M。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmta9ciqt07c1roj219h5liie",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:多模态",
+        "weak:api",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -268,11 +370,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1149,
-      "kept_count": 1,
+      "fetched_count": 1153,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 589,
-      "checked_at": "2026-08-26T14:41:06.569839Z"
+      "latency_ms": 502,
+      "checked_at": "2026-08-27T06:32:12.443404Z"
     },
     {
       "source_id": "openai-skills",
@@ -283,8 +385,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 185,
-      "checked_at": "2026-08-26T14:41:06.755157Z"
+      "latency_ms": 280,
+      "checked_at": "2026-08-27T06:32:12.723774Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -295,8 +397,8 @@
       "fetched_count": 256,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 116,
-      "checked_at": "2026-08-26T14:41:06.875760Z"
+      "latency_ms": 114,
+      "checked_at": "2026-08-27T06:32:12.842383Z"
     },
     {
       "source_id": "google-deepmind",
@@ -305,10 +407,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 223,
-      "checked_at": "2026-08-26T14:41:07.100358Z"
+      "latency_ms": 415,
+      "checked_at": "2026-08-27T06:32:13.259744Z"
     },
     {
       "source_id": "google-ai",
@@ -319,8 +421,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 144,
-      "checked_at": "2026-08-26T14:41:07.245535Z"
+      "latency_ms": 265,
+      "checked_at": "2026-08-27T06:32:13.525229Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -329,10 +431,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 851,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-08-26T14:41:07.513241Z"
+      "latency_ms": 348,
+      "checked_at": "2026-08-27T06:32:13.886415Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -343,8 +445,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 111,
-      "checked_at": "2026-08-26T14:41:07.624901Z"
+      "latency_ms": 142,
+      "checked_at": "2026-08-27T06:32:14.028982Z"
     },
     {
       "source_id": "github-changelog",
@@ -355,8 +457,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-08-26T14:41:07.648913Z"
+      "latency_ms": 33,
+      "checked_at": "2026-08-27T06:32:14.062379Z"
     },
     {
       "source_id": "aihot",
@@ -364,11 +466,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 42,
-      "kept_count": 3,
+      "fetched_count": 50,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 1621,
-      "checked_at": "2026-08-26T14:41:09.271170Z"
+      "latency_ms": 964,
+      "checked_at": "2026-08-27T06:32:15.028048Z"
     }
   ],
   "control_notes": {
