@@ -1,21 +1,21 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-27T06:32:15.037946Z",
+  "generated_at": "2026-08-27T14:47:51.052403Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 11,
   "groups": {
     "official": {
       "group": "official",
       "count": 4,
       "top_sources": [
         [
-          "OpenAI News",
+          "Google DeepMind",
           2
         ],
         [
-          "Google DeepMind",
+          "OpenAI News",
           1
         ],
         [
@@ -29,19 +29,19 @@
           4
         ],
         [
-          "chatgpt",
-          2
-        ],
-        [
           "openai",
           1
         ],
         [
-          "tool",
+          "developer",
           1
         ],
         [
           "gemini",
+          1
+        ],
+        [
+          "eval",
           1
         ],
         [
@@ -52,40 +52,36 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          7
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          6
         ],
         [
           "claude",
-          5
+          3
         ],
         [
           "api",
-          3
+          2
         ],
         [
           "API",
-          3
+          2
         ],
         [
           "评测",
           2
         ],
         [
-          "agent",
-          2
-        ],
-        [
-          "多模态",
+          "智能体",
           2
         ],
         [
@@ -101,11 +97,15 @@
           1
         ],
         [
-          "智能体",
+          "agent",
           1
         ],
         [
-          "codex",
+          "大模型",
+          1
+        ],
+        [
+          "多模态",
           1
         ]
       ]
@@ -129,39 +129,20 @@
   },
   "items": [
     {
-      "id": "0f8dac5514447deafac12d83863fcbce1c3cb8f2",
+      "id": "7714ef0987b70287906e5c814a43416e3da8925f",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Learning never stops: How AI makes learning continuous",
-      "url": "https://openai.com/index/learning-never-stops",
-      "published_at": "2026-08-26T10:00:00Z",
-      "summary": "OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "804f8962c961e239b9f998795212fdd83921c338",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
-      "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
-      "published_at": "2026-08-26T10:00:00Z",
-      "summary": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff.",
+      "title": "Expanding OpenAI’s presence in Brazil",
+      "url": "https://openai.com/index/expanding-our-presence-in-brazil",
+      "published_at": "2026-08-27T03:00:00Z",
+      "summary": "OpenAI is expanding its presence in Brazil, deepening engagement with developers, businesses, and communities to support AI adoption across the country.",
       "relevance_score": 4,
       "relevance_reasons": [
-        "strong:chatgpt",
-        "weak:tool",
+        "strong:openai",
+        "weak:developer",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -207,6 +188,24 @@
       "is_ai_related": true
     },
     {
+      "id": "82848586e04a126c1591a51a0c6404154f447c60",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Piloting the world's first double-blind AI evaluations",
+      "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations",
+      "published_at": "2026-08-27T12:59:16Z",
+      "summary": "Piloting the world's first double-blind AI evaluations",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:eval",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "d2cd886cb601e8260c2764f8b219b53861b2ecb0",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -222,47 +221,6 @@
         "strong:claude",
         "strong:agent",
         "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "72fd1236482e5602c38057e078fb62292668b366",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
-      "url": "https://aihot.virxact.com/items/cmta7bh1k04u6roj2e4pt7bob",
-      "published_at": "2026-08-26T14:11:33Z",
-      "summary": "智谱上线并开源 GLM-5.3-Flash（320B-A18B），这是 GLM-5 系列首个原生多模态模型，AA 综合智能指数 57 分，与 Claude Opus 4.8 持平。其定价为 GLM-5.3 的 1/10，限时折扣内为 Opus 4.8 的 1/40，并已接入 ZCode 等平台开放 API 调用。该模型采用稀疏注意力与线性注意力混合架构，推理服务已跑在国产芯片集群上。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmta7bh1k04u6roj2e4pt7bob",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:多模态",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "36b7046c2c85845f7956f2fefef02fe589979f31",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "实测飞书和豆包合体后第1个Agent：豆包工作的8个使用技巧",
-      "url": "https://aihot.virxact.com/items/cmta7fyl104z5roj2ancsmx4g",
-      "published_at": "2026-08-26T08:27:00Z",
-      "summary": "豆包工作（豆包 Work）是当前企业接入Agent门槛最低的路径，但需用飞书账号登录才能解锁满血功能。实测可用手机远程控制最多7台设备、定时任务、自动读取本地skill、侧边栏直接编辑并同步飞书，且管理员看不到聊天记录。作者认为Work Agent是token消耗倍增器，飞书原生生态是豆包工作相比Claude Cowork、Codex Work的核心优势。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmta7fyl104z5roj2ancsmx4g",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:codex",
-        "strong:agent",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -324,6 +282,25 @@
       "is_ai_related": true
     },
     {
+      "id": "5757a5e8b580cd54d854ef3fb6f7454fcd7aa46b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "我国日均词元调用量突破 500 万亿，中国大模型稳居全球第一梯队",
+      "url": "https://aihot.virxact.com/items/cmtbbhr1c0r0jroamimh5nql2",
+      "published_at": "2026-08-27T09:05:46Z",
+      "summary": "截至 2026 年 6 月，我国日均词元调用量已突破 500 万亿，中国大模型在全球竞争中位居第一梯队。当前旗舰模型几乎以月为单位更新，竞争焦点转向智能体落地与生态建设，推理算力需求随之爆发。腾讯混元 3 正式版上线第一周，Token 调用量比上一代混元 2 增长 68 倍。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtbbhr1c0r0jroamimh5nql2",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:大模型",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "bcbcc3511a47c93b07ba167b0b1e8a55b719b53a",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -370,11 +347,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1153,
-      "kept_count": 2,
+      "fetched_count": 1154,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 502,
-      "checked_at": "2026-08-27T06:32:12.443404Z"
+      "latency_ms": 496,
+      "checked_at": "2026-08-27T14:47:48.628187Z"
     },
     {
       "source_id": "openai-skills",
@@ -385,8 +362,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 280,
-      "checked_at": "2026-08-27T06:32:12.723774Z"
+      "latency_ms": 199,
+      "checked_at": "2026-08-27T14:47:48.827875Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -397,8 +374,8 @@
       "fetched_count": 256,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 114,
-      "checked_at": "2026-08-27T06:32:12.842383Z"
+      "latency_ms": 97,
+      "checked_at": "2026-08-27T14:47:48.929134Z"
     },
     {
       "source_id": "google-deepmind",
@@ -407,10 +384,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 415,
-      "checked_at": "2026-08-27T06:32:13.259744Z"
+      "latency_ms": 301,
+      "checked_at": "2026-08-27T14:47:49.232121Z"
     },
     {
       "source_id": "google-ai",
@@ -421,8 +398,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 265,
-      "checked_at": "2026-08-27T06:32:13.525229Z"
+      "latency_ms": 122,
+      "checked_at": "2026-08-27T14:47:49.354468Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -433,8 +410,8 @@
       "fetched_count": 851,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 348,
-      "checked_at": "2026-08-27T06:32:13.886415Z"
+      "latency_ms": 253,
+      "checked_at": "2026-08-27T14:47:49.620548Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -445,8 +422,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 142,
-      "checked_at": "2026-08-27T06:32:14.028982Z"
+      "latency_ms": 98,
+      "checked_at": "2026-08-27T14:47:49.719410Z"
     },
     {
       "source_id": "github-changelog",
@@ -457,8 +434,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 33,
-      "checked_at": "2026-08-27T06:32:14.062379Z"
+      "latency_ms": 20,
+      "checked_at": "2026-08-27T14:47:49.740159Z"
     },
     {
       "source_id": "aihot",
@@ -467,10 +444,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 964,
-      "checked_at": "2026-08-27T06:32:15.028048Z"
+      "latency_ms": 1301,
+      "checked_at": "2026-08-27T14:47:51.042209Z"
     }
   ],
   "control_notes": {
