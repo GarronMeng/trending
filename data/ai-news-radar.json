@@ -1,11 +1,35 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-28T20:17:38.762428Z",
+  "generated_at": "2026-08-28T23:23:31.520850Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 9,
   "groups": {
+    "developer": {
+      "group": "developer",
+      "count": 3,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          3
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          6
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
       "count": 5,
@@ -33,15 +57,15 @@
           2
         ],
         [
-          "api",
+          "hugging face",
           2
+        ],
+        [
+          "api",
+          1
         ],
         [
           "API",
-          2
-        ],
-        [
-          "hugging face",
           1
         ],
         [
@@ -49,11 +73,11 @@
           1
         ],
         [
-          "gemini",
+          "工作流",
           1
         ],
         [
-          "工作流",
+          "评测",
           1
         ]
       ]
@@ -77,45 +101,29 @@
           1
         ]
       ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 4,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          4
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "actions",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ]
-      ]
     }
   },
   "items": [
+    {
+      "id": "30c2d43e5d0c9c38ec0e939b42d9ef49ec4a6b82",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot in Visual Studio — August update",
+      "url": "https://github.blog/changelog/2026-08-28-github-copilot-in-visual-studio-august-update-2",
+      "published_at": "2026-08-28T20:24:20Z",
+      "summary": "August 2026 brought more control over how GitHub Copilot reasons, which models you use, how teams share specialized agents, and when you ask for a code review. Highlights Here’s what’s… The post GitHub Copilot in Visual Studio — August update appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "1840238b0d743bffea06613ead1a42ec4287896b",
       "source_id": "aihot",
@@ -156,25 +164,6 @@
       "is_ai_related": true
     },
     {
-      "id": "e486e4a5d17a9ce19a389dd5fb7a93d7a3483a02",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot code review: Resolution reasons and expanded capabilities",
-      "url": "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities",
-      "published_at": "2026-08-27T22:46:04Z",
-      "summary": "Copilot code review can now review two types of pull requests it didn’t cover before: Reviews requested automatically on pull requests authored by bots, including Copilot cloud agent Very large… The post Copilot code review: Resolution reasons and expanded capabilities appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "ad58c19da01f711ea50d83ddf3aae9f56579d624",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -196,6 +185,24 @@
       "is_ai_related": true
     },
     {
+      "id": "4cbb693a7e5b14ba08d9eeacbcc46029c0f4e8b9",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot weekly releases — August 24",
+      "url": "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24",
+      "published_at": "2026-08-28T20:13:22Z",
+      "summary": "This week’s updates give you more control over how Copilot runs, from team sessions in Slack and Teams to customization across the app, CLI, and your IDE. GitHub Copilot in… The post GitHub Copilot weekly releases — August 24 appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "4c8f4333754891afc73faeb1f609fb3e660efa19",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -210,24 +217,6 @@
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1ce572a3191facc240ae9ab98fc924c2bda82a59",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Actions retention will cover checks, workflow runs, and statuses",
-      "url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses",
-      "published_at": "2026-08-27T21:50:39Z",
-      "summary": "Starting October 1, 2026, checks, workflow runs, and statuses will be governed by the same Actions retention setting that already controls how long artifacts and logs are kept, with a… The post Actions retention will cover checks, workflow runs, and statuses appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:workflow",
-        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -251,44 +240,6 @@
       "is_ai_related": true
     },
     {
-      "id": "0ccd85ec1225447c298e04c9745262c75368c2ee",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Gemini 3.5 Transcribe 发布：更精准的实时语音转写模型",
-      "url": "https://aihot.virxact.com/items/cmtc5i81401mlroosz6bsplf6",
-      "published_at": "2026-08-27T23:01:35Z",
-      "summary": "Google 推出 Gemini 3.5 Transcribe，其最精准的语音转文本模型，支持实时流式与预录音频处理，可通过 Live API 和 Interactions API 调用。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtc5i81401mlroosz6bsplf6",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1fd28f6e76a3e1b34bccdc7028e76742c48dca37",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Classroom deprecated",
-      "url": "https://github.blog/changelog/2026-08-27-github-classroom-deprecated",
-      "published_at": "2026-08-27T22:42:40Z",
-      "summary": "As of August 28, 2026, GitHub Classroom is now deprecated in favor of our selected partner solutions. The GitHub Classroom website, APIs, and related services have now been decommissioned. However,… The post GitHub Classroom deprecated appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:API"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "5a13d11f2c3d440b2cfea20a98faac623b960a8c",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -306,6 +257,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "589421bd27c1f43a130d3dda7a0cec60bc79d444",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Open ASR 排行榜新增首个全球南方语言：印地语与印度英语评测集",
+      "url": "https://aihot.virxact.com/items/cmtdgo8nh04rurobxlzwr101x",
+      "published_at": "2026-08-28T00:00:00Z",
+      "summary": "Voice Arena 与 Hugging Face 合作，为 Open ASR 排行榜引入 Monsoon en-IN 和 Monsoon hi-IN 两个评测集，覆盖印地语与印度英语，其中印地语是该排行榜多语言板块首个非欧洲语言。数据集含公开与私有分割，共 4，888 位说话人，并记录 12 项说话人属性，旨在暴露按地区、年龄、性别等维度分布不均的语音识别误差。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtdgo8nh04rurobxlzwr101x",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -318,8 +288,8 @@
       "fetched_count": 1156,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 531,
-      "checked_at": "2026-08-28T20:17:34.142633Z"
+      "latency_ms": 407,
+      "checked_at": "2026-08-28T23:23:29.003946Z"
     },
     {
       "source_id": "openai-skills",
@@ -330,8 +300,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 372,
-      "checked_at": "2026-08-28T20:17:34.515569Z"
+      "latency_ms": 170,
+      "checked_at": "2026-08-28T23:23:29.174453Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -342,8 +312,8 @@
       "fetched_count": 258,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 386,
-      "checked_at": "2026-08-28T20:17:34.906153Z"
+      "latency_ms": 96,
+      "checked_at": "2026-08-28T23:23:29.274531Z"
     },
     {
       "source_id": "google-deepmind",
@@ -354,8 +324,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 395,
-      "checked_at": "2026-08-28T20:17:35.303302Z"
+      "latency_ms": 233,
+      "checked_at": "2026-08-28T23:23:29.509608Z"
     },
     {
       "source_id": "google-ai",
@@ -366,8 +336,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 257,
-      "checked_at": "2026-08-28T20:17:35.560751Z"
+      "latency_ms": 125,
+      "checked_at": "2026-08-28T23:23:29.635754Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -375,11 +345,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 851,
+      "fetched_count": 852,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 356,
-      "checked_at": "2026-08-28T20:17:35.930204Z"
+      "latency_ms": 275,
+      "checked_at": "2026-08-28T23:23:29.922950Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -390,8 +360,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 230,
-      "checked_at": "2026-08-28T20:17:36.161227Z"
+      "latency_ms": 128,
+      "checked_at": "2026-08-28T23:23:30.051879Z"
     },
     {
       "source_id": "github-changelog",
@@ -400,10 +370,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-08-28T20:17:36.193170Z"
+      "latency_ms": 24,
+      "checked_at": "2026-08-28T23:23:30.076782Z"
     },
     {
       "source_id": "aihot",
@@ -414,8 +384,8 @@
       "fetched_count": 50,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 2558,
-      "checked_at": "2026-08-28T20:17:38.753142Z"
+      "latency_ms": 1434,
+      "checked_at": "2026-08-28T23:23:31.511942Z"
     }
   ],
   "control_notes": {
