@@ -1,51 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-27T23:34:56.952230Z",
+  "generated_at": "2026-08-28T08:22:36.670156Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
   "item_count": 9,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 4,
-      "top_sources": [
-        [
-          "OpenAI News",
-          2
-        ],
-        [
-          "Google DeepMind",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          4
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "developer",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "eval",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
       "count": 2,
@@ -74,22 +34,58 @@
         ]
       ]
     },
-    "aggregate": {
-      "group": "aggregate",
+    "official": {
+      "group": "official",
       "count": 3,
       "top_sources": [
         [
-          "AI Hot",
+          "Google DeepMind",
+          2
+        ],
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
           3
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "eval",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 4,
+      "top_sources": [
+        [
+          "AI Hot",
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          3
+          4
         ],
         [
           "智能体",
+          2
+        ],
+        [
+          "gemini",
           2
         ],
         [
@@ -101,11 +97,15 @@
           1
         ],
         [
-          "大模型",
+          "api",
           1
         ],
         [
-          "gemini",
+          "API",
+          1
+        ],
+        [
+          "大模型",
           1
         ],
         [
@@ -116,25 +116,6 @@
     }
   },
   "items": [
-    {
-      "id": "7714ef0987b70287906e5c814a43416e3da8925f",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Expanding OpenAI’s presence in Brazil",
-      "url": "https://openai.com/index/expanding-our-presence-in-brazil",
-      "published_at": "2026-08-27T03:00:00Z",
-      "summary": "OpenAI is expanding its presence in Brazil, deepening engagement with developers, businesses, and communities to support AI adoption across the country.",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:developer",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "e486e4a5d17a9ce19a389dd5fb7a93d7a3483a02",
       "source_id": "github-changelog",
@@ -247,6 +228,26 @@
       "is_ai_related": true
     },
     {
+      "id": "0ccd85ec1225447c298e04c9745262c75368c2ee",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gemini 3.5 Transcribe 发布：更精准的实时语音转写模型",
+      "url": "https://aihot.virxact.com/items/cmtc5i81401mlroosz6bsplf6",
+      "published_at": "2026-08-27T23:01:35Z",
+      "summary": "Google 推出 Gemini 3.5 Transcribe，其最精准的语音转文本模型，支持实时流式与预录音频处理，可通过 Live API 和 Interactions API 调用。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtc5i81401mlroosz6bsplf6",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "5757a5e8b580cd54d854ef3fb6f7454fcd7aa46b",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -293,10 +294,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1155,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 528,
-      "checked_at": "2026-08-27T23:34:54.268429Z"
+      "latency_ms": 488,
+      "checked_at": "2026-08-28T08:22:33.812674Z"
     },
     {
       "source_id": "openai-skills",
@@ -307,8 +308,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 263,
-      "checked_at": "2026-08-27T23:34:54.531783Z"
+      "latency_ms": 363,
+      "checked_at": "2026-08-28T08:22:34.176599Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -319,8 +320,8 @@
       "fetched_count": 258,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 117,
-      "checked_at": "2026-08-27T23:34:54.652920Z"
+      "latency_ms": 380,
+      "checked_at": "2026-08-28T08:22:34.560202Z"
     },
     {
       "source_id": "google-deepmind",
@@ -331,8 +332,8 @@
       "fetched_count": 100,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 364,
-      "checked_at": "2026-08-27T23:34:55.019331Z"
+      "latency_ms": 365,
+      "checked_at": "2026-08-28T08:22:34.926641Z"
     },
     {
       "source_id": "google-ai",
@@ -343,8 +344,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 266,
-      "checked_at": "2026-08-27T23:34:55.285931Z"
+      "latency_ms": 225,
+      "checked_at": "2026-08-28T08:22:35.152548Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -355,8 +356,8 @@
       "fetched_count": 851,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 317,
-      "checked_at": "2026-08-27T23:34:55.615758Z"
+      "latency_ms": 304,
+      "checked_at": "2026-08-28T08:22:35.465655Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -367,8 +368,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 141,
-      "checked_at": "2026-08-27T23:34:55.757872Z"
+      "latency_ms": 139,
+      "checked_at": "2026-08-28T08:22:35.605050Z"
     },
     {
       "source_id": "github-changelog",
@@ -379,8 +380,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-08-27T23:34:55.789317Z"
+      "latency_ms": 23,
+      "checked_at": "2026-08-28T08:22:35.629026Z"
     },
     {
       "source_id": "aihot",
@@ -389,10 +390,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 1152,
-      "checked_at": "2026-08-27T23:34:56.942575Z"
+      "latency_ms": 1035,
+      "checked_at": "2026-08-28T08:22:36.665015Z"
     }
   ],
   "control_notes": {
