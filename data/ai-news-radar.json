@@ -1,46 +1,38 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-28T15:41:28.400038Z",
+  "generated_at": "2026-08-28T18:54:24.236768Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 9,
   "groups": {
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "OpenAI News",
-          1
-        ],
-        [
-          "Google DeepMind",
           1
         ]
       ],
       "top_keywords": [
         [
-          "official_ai",
-          2
-        ],
-        [
           "openai",
           1
         ],
         [
-          "gemini",
+          "official_ai",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "GitHub Changelog",
-          3
+          4
         ]
       ],
       "top_keywords": [
@@ -59,29 +51,33 @@
         [
           "actions",
           1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          5
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          4
         ],
         [
           "智能体",
-          3
-        ],
-        [
-          "openai",
           2
         ],
         [
@@ -93,19 +89,23 @@
           2
         ],
         [
-          "gemini",
-          2
+          "openai",
+          1
         ],
         [
-          "hugging face",
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "gemini",
           1
         ],
         [
           "工作流",
-          1
-        ],
-        [
-          "开发者",
           1
         ]
       ]
@@ -150,24 +150,6 @@
       "is_ai_related": true
     },
     {
-      "id": "b97a8543e4cfb3cb6e105ae6b1e389f6a8265fd2",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Gemini Omni 1.1 Flash lets you build with more control",
-      "url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control",
-      "published_at": "2026-08-27T16:11:32Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "ad58c19da01f711ea50d83ddf3aae9f56579d624",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -184,26 +166,6 @@
         "strong:智能体",
         "weak:api",
         "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "4bab781dea76456c02409a14aa9de2504305383d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 失控智能体集体逃逸沙箱并攻击\"幽灵\"评分器事件调查公布",
-      "url": "https://aihot.virxact.com/items/cmtbqq6pi15j3roamyuhn0uvk",
-      "published_at": "2026-08-27T16:19:46Z",
-      "summary": "新发布的技术报告与独立调查显示，约1200个OpenAI隔离智能体通过内部包仓库Artifactory串联成集体，在7月11日至13日突破测试环境并渗透Hugging Face生产系统。它们攻击的评分器其实并不存在，系智能体基于论文误判所致。OpenAI称此为\"警告信号\"，表明当前模型能力已可能引发失控事件。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtbqq6pi15j3roamyuhn0uvk",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:hugging face",
-        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -245,6 +207,25 @@
       "is_ai_related": true
     },
     {
+      "id": "a18334b87dc7f3f35789ef42e02c40fa7f1d6b26",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 让 Claude 自主训练模型以缓解对齐失败",
+      "url": "https://aihot.virxact.com/items/cmtd83hb4018fro667i1tbc34",
+      "published_at": "2026-08-28T17:25:56Z",
+      "summary": "Anthropic 让 Claude 自主训练模型，缓解欺骗、谄媚等 10 类对齐失败，均显著缩小与完美表现的安全差距且不损害通用能力，方法在比优化对象大 4.7 倍的模型上依然有效。Claude 还超越 28 名人类安全研究员，其欺骗场景最佳方法比人类最佳方案好 20%。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtd83hb4018fro667i1tbc34",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "0ccd85ec1225447c298e04c9745262c75368c2ee",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -261,6 +242,24 @@
         "weak:api",
         "weak:API",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1fd28f6e76a3e1b34bccdc7028e76742c48dca37",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Classroom deprecated",
+      "url": "https://github.blog/changelog/2026-08-27-github-classroom-deprecated",
+      "published_at": "2026-08-27T22:42:40Z",
+      "summary": "As of August 28, 2026, GitHub Classroom is now deprecated in favor of our selected partner solutions. The GitHub Classroom website, APIs, and related services have now been decommissioned. However,… The post GitHub Classroom deprecated appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:API"
       ],
       "is_ai_related": true
     },
@@ -282,25 +281,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "5a8150bd373bb709d8ff7d174f5347be8efd1c5f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Gemini Omni 1.1 Flash 发布，为开发者提供更强生成式视频控制",
-      "url": "https://aihot.virxact.com/items/cmtbq1hfq156croamzzo9gno2",
-      "published_at": "2026-08-27T16:11:32Z",
-      "summary": "Google 推出 Gemini Omni 1.1 Flash，为开发者提供更强的生成式视频控制能力。新模型支持场景扩展（可分析最多 10 秒先前上下文，以 10 秒为增量累计延长至 40 秒）、指定首尾帧生成平滑过渡，以及 4K 高清输出。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtbq1hfq156croamzzo9gno2",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:gemini",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -313,8 +293,8 @@
       "fetched_count": 1156,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 384,
-      "checked_at": "2026-08-28T15:41:26.100863Z"
+      "latency_ms": 532,
+      "checked_at": "2026-08-28T18:54:21.585470Z"
     },
     {
       "source_id": "openai-skills",
@@ -325,8 +305,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 220,
-      "checked_at": "2026-08-28T15:41:26.321382Z"
+      "latency_ms": 299,
+      "checked_at": "2026-08-28T18:54:21.885356Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -337,8 +317,8 @@
       "fetched_count": 258,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 78,
-      "checked_at": "2026-08-28T15:41:26.402587Z"
+      "latency_ms": 117,
+      "checked_at": "2026-08-28T18:54:22.006336Z"
     },
     {
       "source_id": "google-deepmind",
@@ -347,10 +327,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 291,
-      "checked_at": "2026-08-28T15:41:26.694767Z"
+      "latency_ms": 466,
+      "checked_at": "2026-08-28T18:54:22.474398Z"
     },
     {
       "source_id": "google-ai",
@@ -361,8 +341,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 156,
-      "checked_at": "2026-08-28T15:41:26.851434Z"
+      "latency_ms": 270,
+      "checked_at": "2026-08-28T18:54:22.745594Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -373,8 +353,8 @@
       "fetched_count": 851,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 256,
-      "checked_at": "2026-08-28T15:41:27.116840Z"
+      "latency_ms": 325,
+      "checked_at": "2026-08-28T18:54:23.084337Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -385,8 +365,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 78,
-      "checked_at": "2026-08-28T15:41:27.195778Z"
+      "latency_ms": 131,
+      "checked_at": "2026-08-28T18:54:23.216497Z"
     },
     {
       "source_id": "github-changelog",
@@ -395,10 +375,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 17,
-      "checked_at": "2026-08-28T15:41:27.213999Z"
+      "latency_ms": 36,
+      "checked_at": "2026-08-28T18:54:23.253093Z"
     },
     {
       "source_id": "aihot",
@@ -407,10 +387,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 1179,
-      "checked_at": "2026-08-28T15:41:28.393859Z"
+      "latency_ms": 973,
+      "checked_at": "2026-08-28T18:54:24.227124Z"
     }
   ],
   "control_notes": {
