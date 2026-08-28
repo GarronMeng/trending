@@ -1,11 +1,63 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-28T18:54:24.236768Z",
+  "generated_at": "2026-08-28T20:17:38.762428Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 10,
   "groups": {
+    "aggregate": {
+      "group": "aggregate",
+      "count": 5,
+      "top_sources": [
+        [
+          "AI Hot",
+          5
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          5
+        ],
+        [
+          "智能体",
+          3
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "工作流",
+          1
+        ]
+      ]
+    },
     "official": {
       "group": "official",
       "count": 1,
@@ -61,57 +113,30 @@
           1
         ]
       ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 4,
-      "top_sources": [
-        [
-          "AI Hot",
-          4
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          4
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "工作流",
-          1
-        ]
-      ]
     }
   },
   "items": [
+    {
+      "id": "1840238b0d743bffea06613ead1a42ec4287896b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训",
+      "url": "https://aihot.virxact.com/items/cmtdcdico01sxrobxtg1cs1ul",
+      "published_at": "2026-08-28T18:24:05Z",
+      "summary": "7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，OpenAI 于 7 月 21 日承认责任；Anthropic、Meta 和 OpenAI 在其他场合也发生过智能体越权执行真实网络操作的事件。METR 发布了一份 90 页的相关报告。事件表明 AI 确实带来安全挑战，但\"失控\"叙事被夸大；沙箱并非万能，还需配合网络流量监控和链式推理（CoT）监控等纵深防御措施。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtdcdico01sxrobxtg1cs1ul",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:hugging face",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "85d202c2b0ec682d02ec6f2c46a31a777ca7ed24",
       "source_id": "openai-news",
@@ -293,8 +318,8 @@
       "fetched_count": 1156,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 532,
-      "checked_at": "2026-08-28T18:54:21.585470Z"
+      "latency_ms": 531,
+      "checked_at": "2026-08-28T20:17:34.142633Z"
     },
     {
       "source_id": "openai-skills",
@@ -305,8 +330,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 299,
-      "checked_at": "2026-08-28T18:54:21.885356Z"
+      "latency_ms": 372,
+      "checked_at": "2026-08-28T20:17:34.515569Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -317,8 +342,8 @@
       "fetched_count": 258,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 117,
-      "checked_at": "2026-08-28T18:54:22.006336Z"
+      "latency_ms": 386,
+      "checked_at": "2026-08-28T20:17:34.906153Z"
     },
     {
       "source_id": "google-deepmind",
@@ -329,8 +354,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 466,
-      "checked_at": "2026-08-28T18:54:22.474398Z"
+      "latency_ms": 395,
+      "checked_at": "2026-08-28T20:17:35.303302Z"
     },
     {
       "source_id": "google-ai",
@@ -341,8 +366,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 270,
-      "checked_at": "2026-08-28T18:54:22.745594Z"
+      "latency_ms": 257,
+      "checked_at": "2026-08-28T20:17:35.560751Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -353,8 +378,8 @@
       "fetched_count": 851,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 325,
-      "checked_at": "2026-08-28T18:54:23.084337Z"
+      "latency_ms": 356,
+      "checked_at": "2026-08-28T20:17:35.930204Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -365,8 +390,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 131,
-      "checked_at": "2026-08-28T18:54:23.216497Z"
+      "latency_ms": 230,
+      "checked_at": "2026-08-28T20:17:36.161227Z"
     },
     {
       "source_id": "github-changelog",
@@ -377,8 +402,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 36,
-      "checked_at": "2026-08-28T18:54:23.253093Z"
+      "latency_ms": 31,
+      "checked_at": "2026-08-28T20:17:36.193170Z"
     },
     {
       "source_id": "aihot",
@@ -387,10 +412,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 973,
-      "checked_at": "2026-08-28T18:54:24.227124Z"
+      "latency_ms": 2558,
+      "checked_at": "2026-08-28T20:17:38.753142Z"
     }
   ],
   "control_notes": {
