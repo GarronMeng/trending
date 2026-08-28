@@ -1,24 +1,52 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-28T08:22:36.670156Z",
+  "generated_at": "2026-08-28T15:41:28.400038Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 10,
   "groups": {
-    "developer": {
-      "group": "developer",
+    "official": {
+      "group": "official",
       "count": 2,
       "top_sources": [
         [
-          "GitHub Changelog",
+          "OpenAI News",
+          1
+        ],
+        [
+          "Google DeepMind",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
           2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 3,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          3
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          2
+          4
         ],
         [
           "agent",
@@ -34,78 +62,46 @@
         ]
       ]
     },
-    "official": {
-      "group": "official",
-      "count": 3,
-      "top_sources": [
-        [
-          "Google DeepMind",
-          2
-        ],
-        [
-          "OpenAI News",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          3
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "eval",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          4
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
+          5
         ],
         [
           "智能体",
+          3
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
           2
         ],
         [
           "gemini",
           2
-        ],
-        [
-          "openai",
-          1
         ],
         [
           "hugging face",
           1
         ],
         [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "大模型",
+          "工作流",
           1
         ],
         [
@@ -116,6 +112,24 @@
     }
   },
   "items": [
+    {
+      "id": "85d202c2b0ec682d02ec6f2c46a31a777ca7ed24",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Supporting Thailand’s next generation of AI startups",
+      "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
+      "published_at": "2026-08-28T02:00:00Z",
+      "summary": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "e486e4a5d17a9ce19a389dd5fb7a93d7a3483a02",
       "source_id": "github-changelog",
@@ -154,20 +168,23 @@
       "is_ai_related": true
     },
     {
-      "id": "f53adb754942526bb9685db1c1547f482f845969",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
-      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
-      "published_at": "2026-08-27T09:00:00Z",
-      "summary": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality, and student performance on a real-world university assignment.",
-      "relevance_score": 3,
+      "id": "ad58c19da01f711ea50d83ddf3aae9f56579d624",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
+      "url": "https://aihot.virxact.com/items/cmtcpvj9e04cpro645lmugnew",
+      "published_at": "2026-08-28T08:36:31Z",
+      "summary": "一套可运行的 Colab 笔记本，面向 AI 工程师与 FDE 技能栈，用原始 API 而非框架构建基于基础模型的系统，覆盖提示词、RAG、评估、智能体、微调与服务化。全部在免费 Groq API 上运行，无需信用卡；LoRA 微调和自托管服务提供概念讲解及可选的 Colab-GPU 附录。包含三个端到端案例研究，且全程兼容 OpenAI API，模式可直接迁移。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtcpvj9e04cpro645lmugnew",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:chatgpt",
-        "source_prior:official_ai"
+        "strong:openai",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -192,20 +209,20 @@
       "is_ai_related": true
     },
     {
-      "id": "82848586e04a126c1591a51a0c6404154f447c60",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
+      "id": "4c8f4333754891afc73faeb1f609fb3e660efa19",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Piloting the world's first double-blind AI evaluations",
-      "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations",
-      "published_at": "2026-08-27T12:59:16Z",
-      "summary": "Piloting the world's first double-blind AI evaluations",
-      "relevance_score": 2,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Upcoming changes to GitHub Copilot policies and billing",
+      "url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing",
+      "published_at": "2026-08-28T11:37:19Z",
+      "summary": "To provide a strong, consistent Copilot experience, we’re making three separate, upcoming changes to Copilot policies and billing. Please review the upcoming updates to understand what may impact you. Reopening… The post Upcoming changes to GitHub Copilot policies and billing appeared first on The GitHub Blog .",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "weak:eval",
-        "source_prior:official_ai"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -248,20 +265,20 @@
       "is_ai_related": true
     },
     {
-      "id": "5757a5e8b580cd54d854ef3fb6f7454fcd7aa46b",
+      "id": "5a13d11f2c3d440b2cfea20a98faac623b960a8c",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "我国日均词元调用量突破 500 万亿，中国大模型稳居全球第一梯队",
-      "url": "https://aihot.virxact.com/items/cmtbbhr1c0r0jroamimh5nql2",
-      "published_at": "2026-08-27T09:05:46Z",
-      "summary": "截至 2026 年 6 月，我国日均词元调用量已突破 500 万亿，中国大模型在全球竞争中位居第一梯队。当前旗舰模型几乎以月为单位更新，竞争焦点转向智能体落地与生态建设，推理算力需求随之爆发。腾讯混元 3 正式版上线第一周，Token 调用量比上一代混元 2 增长 68 倍。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtbbhr1c0r0jroamimh5nql2",
-      "relevance_score": 3,
+      "title": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
+      "url": "https://aihot.virxact.com/items/cmtcxdp3f07l3roq5uk6om1aw",
+      "published_at": "2026-08-28T12:04:47Z",
+      "summary": "斯坦福大学研究人员领衔发布 Terminal-Bench-Science 0.1，用来自生命、物理、地球、数学和工程科学的 70 个专家精选任务评估 AI 智能体的科研能力。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtcxdp3f07l3roq5uk6om1aw",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:大模型",
         "strong:智能体",
+        "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -293,11 +310,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1155,
+      "fetched_count": 1156,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 488,
-      "checked_at": "2026-08-28T08:22:33.812674Z"
+      "latency_ms": 384,
+      "checked_at": "2026-08-28T15:41:26.100863Z"
     },
     {
       "source_id": "openai-skills",
@@ -308,8 +325,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 363,
-      "checked_at": "2026-08-28T08:22:34.176599Z"
+      "latency_ms": 220,
+      "checked_at": "2026-08-28T15:41:26.321382Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -320,8 +337,8 @@
       "fetched_count": 258,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 380,
-      "checked_at": "2026-08-28T08:22:34.560202Z"
+      "latency_ms": 78,
+      "checked_at": "2026-08-28T15:41:26.402587Z"
     },
     {
       "source_id": "google-deepmind",
@@ -330,10 +347,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 365,
-      "checked_at": "2026-08-28T08:22:34.926641Z"
+      "latency_ms": 291,
+      "checked_at": "2026-08-28T15:41:26.694767Z"
     },
     {
       "source_id": "google-ai",
@@ -344,8 +361,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 225,
-      "checked_at": "2026-08-28T08:22:35.152548Z"
+      "latency_ms": 156,
+      "checked_at": "2026-08-28T15:41:26.851434Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -356,8 +373,8 @@
       "fetched_count": 851,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 304,
-      "checked_at": "2026-08-28T08:22:35.465655Z"
+      "latency_ms": 256,
+      "checked_at": "2026-08-28T15:41:27.116840Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -368,8 +385,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 139,
-      "checked_at": "2026-08-28T08:22:35.605050Z"
+      "latency_ms": 78,
+      "checked_at": "2026-08-28T15:41:27.195778Z"
     },
     {
       "source_id": "github-changelog",
@@ -378,10 +395,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-08-28T08:22:35.629026Z"
+      "latency_ms": 17,
+      "checked_at": "2026-08-28T15:41:27.213999Z"
     },
     {
       "source_id": "aihot",
@@ -390,10 +407,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 1035,
-      "checked_at": "2026-08-28T08:22:36.665015Z"
+      "latency_ms": 1179,
+      "checked_at": "2026-08-28T15:41:28.393859Z"
     }
   ],
   "control_notes": {
