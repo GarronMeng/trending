@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-29T05:03:33.783980Z",
+  "generated_at": "2026-08-29T10:26:41.419517Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 8,
   "groups": {
     "developer": {
       "group": "developer",
@@ -32,40 +32,32 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          6
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
-        ],
-        [
-          "openai",
-          4
+          5
         ],
         [
           "智能体",
           3
         ],
         [
+          "openai",
+          2
+        ],
+        [
           "anthropic",
           2
         ],
         [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "开发者",
+          "claude",
           2
         ],
         [
@@ -73,31 +65,23 @@
           1
         ],
         [
-          "claude",
+          "开源模型",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ],
+        [
+          "API",
           1
         ],
         [
           "工作流",
-          1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "openai",
-          1
-        ],
-        [
-          "official_ai",
           1
         ]
       ]
@@ -146,40 +130,21 @@
       "is_ai_related": true
     },
     {
-      "id": "67d40d78872a4a9289c5b3290b427f84f25a6c64",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Our decision on Cursor following its acquisition by SpaceX",
-      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
-      "published_at": "2026-08-28T06:00:00Z",
-      "summary": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ad58c19da01f711ea50d83ddf3aae9f56579d624",
+      "id": "8cc0e3fd6443e93292f81dbb42260d2d449c7ec8",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
-      "url": "https://aihot.virxact.com/items/cmtcpvj9e04cpro645lmugnew",
-      "published_at": "2026-08-28T08:36:31Z",
-      "summary": "一套可运行的 Colab 笔记本，面向 AI 工程师与 FDE 技能栈，用原始 API 而非框架构建基于基础模型的系统，覆盖提示词、RAG、评估、智能体、微调与服务化。全部在免费 Groq API 上运行，无需信用卡；LoRA 微调和自托管服务提供概念讲解及可选的 Colab-GPU 附录。包含三个端到端案例研究，且全程兼容 OpenAI API，模式可直接迁移。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtcpvj9e04cpro645lmugnew",
+      "title": "智谱开源 GLM-5.3 模型权重，主打智能体编程与网络防御",
+      "url": "https://aihot.virxact.com/items/cmtdxtxi809gyro2m2zykqzli",
+      "published_at": "2026-08-29T04:31:21Z",
+      "summary": "智谱宣布开源 GLM-5.3 模型权重，支持本地运行与个性化定制，擅长复杂编码、防御性网络安全及长程任务。该模型在 AA 综合智能指数中取得 60 分，与 Claude Fable 5、GPT-5.6 Sol 等闭源旗舰同级，并与 Kimi K3 并列开源模型第一。仅年营业额超 100 亿美元的机构将其作为外部模型服务提供时才需安全审查。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtdxtxi809gyro2m2zykqzli",
       "relevance_score": 5,
       "relevance_reasons": [
-        "strong:openai",
+        "strong:claude",
         "strong:智能体",
-        "weak:api",
-        "weak:API",
+        "strong:开源模型",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -278,25 +243,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "3f6f91778fd405228968ea9a59e400b21512bdc9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险",
-      "url": "https://aihot.virxact.com/items/cmtdqc5oj03wzro2mgyc5a49x",
-      "published_at": "2026-08-28T06:00:00Z",
-      "summary": "OpenAI 已通知 SpaceX，将终止向 Cursor 提供 OpenAI 模型的合同，拟定关停日期为 2026 年 11 月 12 日，并给予合同允许的最长通知期。OpenAI 称此举源于无法确信 SpaceX 会遵守服务条款，并援引马斯克旗下公司此前违反合同及 xAI 违反 OpenAI 服务条款的先例。OpenAI 表示将尽力支持受影响的开发者过渡。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtdqc5oj03wzro2mgyc5a49x",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -307,10 +253,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1157,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 508,
-      "checked_at": "2026-08-29T05:03:29.292353Z"
+      "latency_ms": 533,
+      "checked_at": "2026-08-29T10:26:38.413212Z"
     },
     {
       "source_id": "openai-skills",
@@ -321,8 +267,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 306,
-      "checked_at": "2026-08-29T05:03:29.598773Z"
+      "latency_ms": 225,
+      "checked_at": "2026-08-29T10:26:38.638498Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -333,8 +279,8 @@
       "fetched_count": 258,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 112,
-      "checked_at": "2026-08-29T05:03:29.715353Z"
+      "latency_ms": 151,
+      "checked_at": "2026-08-29T10:26:38.793532Z"
     },
     {
       "source_id": "google-deepmind",
@@ -345,8 +291,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 333,
-      "checked_at": "2026-08-29T05:03:30.050487Z"
+      "latency_ms": 320,
+      "checked_at": "2026-08-29T10:26:39.115816Z"
     },
     {
       "source_id": "google-ai",
@@ -357,8 +303,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 224,
-      "checked_at": "2026-08-29T05:03:30.275165Z"
+      "latency_ms": 221,
+      "checked_at": "2026-08-29T10:26:39.337467Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -369,8 +315,8 @@
       "fetched_count": 852,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 354,
-      "checked_at": "2026-08-29T05:03:30.642582Z"
+      "latency_ms": 365,
+      "checked_at": "2026-08-29T10:26:39.715231Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -381,8 +327,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 188,
-      "checked_at": "2026-08-29T05:03:30.831590Z"
+      "latency_ms": 179,
+      "checked_at": "2026-08-29T10:26:39.895114Z"
     },
     {
       "source_id": "github-changelog",
@@ -393,8 +339,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 37,
-      "checked_at": "2026-08-29T05:03:30.869569Z"
+      "latency_ms": 43,
+      "checked_at": "2026-08-29T10:26:39.939275Z"
     },
     {
       "source_id": "aihot",
@@ -403,10 +349,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 2903,
-      "checked_at": "2026-08-29T05:03:33.774369Z"
+      "latency_ms": 1471,
+      "checked_at": "2026-08-29T10:26:41.411667Z"
     }
   ],
   "control_notes": {
