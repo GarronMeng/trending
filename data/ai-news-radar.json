@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-28T23:23:31.520850Z",
+  "generated_at": "2026-08-29T05:03:33.783980Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 10,
   "groups": {
     "developer": {
       "group": "developer",
@@ -32,40 +32,44 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          5
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          6
+        ],
+        [
+          "openai",
+          4
         ],
         [
           "智能体",
           3
         ],
         [
-          "openai",
-          2
-        ],
-        [
           "anthropic",
           2
         ],
         [
-          "hugging face",
+          "api",
           2
         ],
         [
-          "api",
-          1
+          "API",
+          2
         ],
         [
-          "API",
+          "开发者",
+          2
+        ],
+        [
+          "hugging face",
           1
         ],
         [
@@ -74,10 +78,6 @@
         ],
         [
           "工作流",
-          1
-        ],
-        [
-          "评测",
           1
         ]
       ]
@@ -146,16 +146,16 @@
       "is_ai_related": true
     },
     {
-      "id": "85d202c2b0ec682d02ec6f2c46a31a777ca7ed24",
+      "id": "67d40d78872a4a9289c5b3290b427f84f25a6c64",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Supporting Thailand’s next generation of AI startups",
-      "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
-      "published_at": "2026-08-28T02:00:00Z",
-      "summary": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products.",
+      "title": "Our decision on Cursor following its acquisition by SpaceX",
+      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+      "published_at": "2026-08-28T06:00:00Z",
+      "summary": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
@@ -179,6 +179,27 @@
         "strong:openai",
         "strong:智能体",
         "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "85f6074afe3f02f0dd19c7eefa4cf53ff05696d8",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 终止与 Cursor 合作，11 月 12 日生效",
+      "url": "https://aihot.virxact.com/items/cmtdqqeiu046gro2maw35y3c4",
+      "published_at": "2026-08-29T01:47:44Z",
+      "summary": "OpenAI 因 SpaceX 收购 Cursor 后信任问题，决定终止向其提供模型访问，合作于 11 月 12 日结束。开发者仍可通过自有 OpenAI API 密钥及 IDE 扩展继续使用 GPT 模型。OpenAI 表示将继续支持广泛的工具生态与开源计划。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtdqqeiu046gro2maw35y3c4",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:api",
+        "weak:开发者",
         "weak:API",
         "source_penalty:aggregate_noise"
       ],
@@ -259,20 +280,20 @@
       "is_ai_related": true
     },
     {
-      "id": "589421bd27c1f43a130d3dda7a0cec60bc79d444",
+      "id": "3f6f91778fd405228968ea9a59e400b21512bdc9",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Open ASR 排行榜新增首个全球南方语言：印地语与印度英语评测集",
-      "url": "https://aihot.virxact.com/items/cmtdgo8nh04rurobxlzwr101x",
-      "published_at": "2026-08-28T00:00:00Z",
-      "summary": "Voice Arena 与 Hugging Face 合作，为 Open ASR 排行榜引入 Monsoon en-IN 和 Monsoon hi-IN 两个评测集，覆盖印地语与印度英语，其中印地语是该排行榜多语言板块首个非欧洲语言。数据集含公开与私有分割，共 4，888 位说话人，并记录 12 项说话人属性，旨在暴露按地区、年龄、性别等维度分布不均的语音识别误差。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtdgo8nh04rurobxlzwr101x",
+      "title": "OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险",
+      "url": "https://aihot.virxact.com/items/cmtdqc5oj03wzro2mgyc5a49x",
+      "published_at": "2026-08-28T06:00:00Z",
+      "summary": "OpenAI 已通知 SpaceX，将终止向 Cursor 提供 OpenAI 模型的合同，拟定关停日期为 2026 年 11 月 12 日，并给予合同允许的最长通知期。OpenAI 称此举源于无法确信 SpaceX 会遵守服务条款，并援引马斯克旗下公司此前违反合同及 xAI 违反 OpenAI 服务条款的先例。OpenAI 表示将尽力支持受影响的开发者过渡。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtdqc5oj03wzro2mgyc5a49x",
       "relevance_score": 2,
       "relevance_reasons": [
-        "strong:hugging face",
-        "weak:评测",
+        "strong:openai",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -285,11 +306,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1156,
+      "fetched_count": 1157,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 407,
-      "checked_at": "2026-08-28T23:23:29.003946Z"
+      "latency_ms": 508,
+      "checked_at": "2026-08-29T05:03:29.292353Z"
     },
     {
       "source_id": "openai-skills",
@@ -300,8 +321,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 170,
-      "checked_at": "2026-08-28T23:23:29.174453Z"
+      "latency_ms": 306,
+      "checked_at": "2026-08-29T05:03:29.598773Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -312,8 +333,8 @@
       "fetched_count": 258,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 96,
-      "checked_at": "2026-08-28T23:23:29.274531Z"
+      "latency_ms": 112,
+      "checked_at": "2026-08-29T05:03:29.715353Z"
     },
     {
       "source_id": "google-deepmind",
@@ -324,8 +345,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 233,
-      "checked_at": "2026-08-28T23:23:29.509608Z"
+      "latency_ms": 333,
+      "checked_at": "2026-08-29T05:03:30.050487Z"
     },
     {
       "source_id": "google-ai",
@@ -336,8 +357,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 125,
-      "checked_at": "2026-08-28T23:23:29.635754Z"
+      "latency_ms": 224,
+      "checked_at": "2026-08-29T05:03:30.275165Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -348,8 +369,8 @@
       "fetched_count": 852,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 275,
-      "checked_at": "2026-08-28T23:23:29.922950Z"
+      "latency_ms": 354,
+      "checked_at": "2026-08-29T05:03:30.642582Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -360,8 +381,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 128,
-      "checked_at": "2026-08-28T23:23:30.051879Z"
+      "latency_ms": 188,
+      "checked_at": "2026-08-29T05:03:30.831590Z"
     },
     {
       "source_id": "github-changelog",
@@ -372,8 +393,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-08-28T23:23:30.076782Z"
+      "latency_ms": 37,
+      "checked_at": "2026-08-29T05:03:30.869569Z"
     },
     {
       "source_id": "aihot",
@@ -382,10 +403,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 1434,
-      "checked_at": "2026-08-28T23:23:31.511942Z"
+      "latency_ms": 2903,
+      "checked_at": "2026-08-29T05:03:33.774369Z"
     }
   ],
   "control_notes": {
