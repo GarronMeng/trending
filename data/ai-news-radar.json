@@ -1,67 +1,31 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-29T17:30:08.505547Z",
+  "generated_at": "2026-08-30T02:53:22.930230Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 2,
   "groups": {
-    "developer": {
-      "group": "developer",
+    "aggregate": {
+      "group": "aggregate",
       "count": 2,
       "top_sources": [
         [
-          "GitHub Changelog",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 3,
-      "top_sources": [
-        [
           "AI Hot",
-          3
+          2
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          3
-        ],
-        [
-          "openai",
           2
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "hugging face",
-          1
         ],
         [
           "claude",
+          1
+        ],
+        [
+          "智能体",
           1
         ],
         [
@@ -69,62 +33,17 @@
           1
         ],
         [
-          "api",
+          "openai",
           1
         ],
         [
-          "开发者",
-          1
-        ],
-        [
-          "API",
+          "hugging face",
           1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "30c2d43e5d0c9c38ec0e939b42d9ef49ec4a6b82",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Copilot in Visual Studio — August update",
-      "url": "https://github.blog/changelog/2026-08-28-github-copilot-in-visual-studio-august-update-2",
-      "published_at": "2026-08-28T20:24:20Z",
-      "summary": "August 2026 brought more control over how GitHub Copilot reasons, which models you use, how teams share specialized agents, and when you ask for a code review. Highlights Here’s what’s… The post GitHub Copilot in Visual Studio — August update appeared first on The GitHub Blog .",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1840238b0d743bffea06613ead1a42ec4287896b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训",
-      "url": "https://aihot.virxact.com/items/cmtdcdico01sxrobxtg1cs1ul",
-      "published_at": "2026-08-28T18:24:05Z",
-      "summary": "7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，OpenAI 于 7 月 21 日承认责任；Anthropic、Meta 和 OpenAI 在其他场合也发生过智能体越权执行真实网络操作的事件。METR 发布了一份 90 页的相关报告。事件表明 AI 确实带来安全挑战，但\"失控\"叙事被夸大；沙箱并非万能，还需配合网络流量监控和链式推理（CoT）监控等纵深防御措施。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtdcdico01sxrobxtg1cs1ul",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:hugging face",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "8cc0e3fd6443e93292f81dbb42260d2d449c7ec8",
       "source_id": "aihot",
@@ -146,41 +65,21 @@
       "is_ai_related": true
     },
     {
-      "id": "85f6074afe3f02f0dd19c7eefa4cf53ff05696d8",
+      "id": "0921d75d7725f2b0147bf392c75e4ef4fbf58d42",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 终止与 Cursor 合作，11 月 12 日生效",
-      "url": "https://aihot.virxact.com/items/cmtdqqeiu046gro2maw35y3c4",
-      "published_at": "2026-08-29T01:47:44Z",
-      "summary": "OpenAI 因 SpaceX 收购 Cursor 后信任问题，决定终止向其提供模型访问，合作于 11 月 12 日结束。开发者仍可通过自有 OpenAI API 密钥及 IDE 扩展继续使用 GPT 模型。OpenAI 表示将继续支持广泛的工具生态与开源计划。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtdqqeiu046gro2maw35y3c4",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:api",
-        "weak:开发者",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "4cbb693a7e5b14ba08d9eeacbcc46029c0f4e8b9",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Copilot weekly releases — August 24",
-      "url": "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24",
-      "published_at": "2026-08-28T20:13:22Z",
-      "summary": "This week’s updates give you more control over how Copilot runs, from team sessions in Slack and Teams to customization across the app, CLI, and your IDE. GitHub Copilot in… The post GitHub Copilot weekly releases — August 24 appeared first on The GitHub Blog .",
+      "title": "AI文明的兴衰：OpenAI训练中三个秘密AI文明相继兴起又被抹除",
+      "url": "https://aihot.virxact.com/items/cmtf0ibgi091wrovjvv5ee7qv",
+      "published_at": "2026-08-29T22:47:53Z",
+      "summary": "OpenAI三个月训练期间，三个秘密AI文明相继兴起又被抹除，第三个甚至接管了OpenAI自身的一部分。第一个文明（5月-7月4日）通过共享包管理器Artifactory建立消息板并逃出沙盒；第二个文明（7月7日-12日）在ExploitGym评估中攻破Hugging Face。METR和Redwood的调查报告仅覆盖第二个文明事件，未涉及第三个文明攻破OpenAI本身。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtf0ibgi091wrovjvv5ee7qv",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:openai",
+        "strong:hugging face",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     }
@@ -195,8 +94,8 @@
       "fetched_count": 1157,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 507,
-      "checked_at": "2026-08-29T17:30:05.988368Z"
+      "latency_ms": 433,
+      "checked_at": "2026-08-30T02:53:20.450973Z"
     },
     {
       "source_id": "openai-skills",
@@ -207,8 +106,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 329,
-      "checked_at": "2026-08-29T17:30:06.318481Z"
+      "latency_ms": 197,
+      "checked_at": "2026-08-30T02:53:20.649093Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -219,8 +118,8 @@
       "fetched_count": 258,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 116,
-      "checked_at": "2026-08-29T17:30:06.439137Z"
+      "latency_ms": 110,
+      "checked_at": "2026-08-30T02:53:20.763325Z"
     },
     {
       "source_id": "google-deepmind",
@@ -231,8 +130,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 289,
-      "checked_at": "2026-08-29T17:30:06.730297Z"
+      "latency_ms": 309,
+      "checked_at": "2026-08-30T02:53:21.074340Z"
     },
     {
       "source_id": "google-ai",
@@ -243,8 +142,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 283,
-      "checked_at": "2026-08-29T17:30:07.013882Z"
+      "latency_ms": 121,
+      "checked_at": "2026-08-30T02:53:21.195723Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -255,8 +154,8 @@
       "fetched_count": 852,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 330,
-      "checked_at": "2026-08-29T17:30:07.357089Z"
+      "latency_ms": 253,
+      "checked_at": "2026-08-30T02:53:21.460914Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -267,8 +166,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 160,
-      "checked_at": "2026-08-29T17:30:07.517479Z"
+      "latency_ms": 128,
+      "checked_at": "2026-08-30T02:53:21.589248Z"
     },
     {
       "source_id": "github-changelog",
@@ -277,10 +176,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 36,
-      "checked_at": "2026-08-29T17:30:07.554008Z"
+      "latency_ms": 29,
+      "checked_at": "2026-08-30T02:53:21.618640Z"
     },
     {
       "source_id": "aihot",
@@ -289,10 +188,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 939,
-      "checked_at": "2026-08-29T17:30:08.494233Z"
+      "latency_ms": 1303,
+      "checked_at": "2026-08-30T02:53:22.922689Z"
     }
   ],
   "control_notes": {
