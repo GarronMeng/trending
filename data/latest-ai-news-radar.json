@@ -1,31 +1,59 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-31T10:06:43.354912Z",
+  "generated_at": "2026-08-31T14:15:28.803841Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 2,
+  "item_count": 4,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
-      "count": 2,
+    "official": {
+      "group": "official",
+      "count": 1,
       "top_sources": [
         [
-          "AI Hot",
-          2
+          "OpenAI News",
+          1
         ]
       ],
       "top_keywords": [
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 3,
+      "top_sources": [
+        [
+          "AI Hot",
+          3
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          3
+        ],
+        [
+          "hugging face",
+          2
+        ],
         [
           "openai",
           2
         ],
         [
-          "aggregate_noise",
-          2
+          "agent",
+          1
         ],
         [
-          "hugging face",
+          "多模态",
           1
         ],
         [
@@ -40,6 +68,44 @@
     }
   },
   "items": [
+    {
+      "id": "8df23f7938b533724ec30ed68f2f8f2a2c09aac2",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "A milestone in expanding access to AI",
+      "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+      "published_at": "2026-08-31T04:00:00Z",
+      "summary": "ChatGPT Ads reaches $1 billion in annualized revenue run rate and expands globally, supporting broader access to AI through free and affordable options.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2f1f22a06c27fdc1fe6d31bcd29b5c4e39cc8674",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "DeepSeek-V4-Flash-Vision-Exp 模型已开源，多模态 Agent 能力接近 Opus-4.8",
+      "url": "https://aihot.virxact.com/items/cmth7tmq2067orodmh6g0sxie",
+      "published_at": "2026-08-31T11:35:24Z",
+      "summary": "DeepSeek 于 8 月 31 日在 Hugging Face 开源首个多模态模型 DeepSeek-V4-Flash-Vision-Exp，采用 MIT License，公开模型文件、Tokenizer、Prompt Encoding 参考实现及最小化 PyTorch 推理实现。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmth7tmq2067orodmh6g0sxie",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:agent",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "099e8757e40a80ee68c6ba4af6eaf6a35f850150",
       "source_id": "aihot",
@@ -87,11 +153,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1157,
-      "kept_count": 0,
+      "fetched_count": 1158,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 438,
-      "checked_at": "2026-08-31T10:06:40.493970Z"
+      "latency_ms": 594,
+      "checked_at": "2026-08-31T14:15:25.375669Z"
     },
     {
       "source_id": "openai-skills",
@@ -102,8 +168,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 354,
-      "checked_at": "2026-08-31T10:06:40.848903Z"
+      "latency_ms": 356,
+      "checked_at": "2026-08-31T14:15:25.732202Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -114,8 +180,8 @@
       "fetched_count": 258,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 109,
-      "checked_at": "2026-08-31T10:06:40.960670Z"
+      "latency_ms": 163,
+      "checked_at": "2026-08-31T14:15:25.899513Z"
     },
     {
       "source_id": "google-deepmind",
@@ -126,8 +192,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 458,
-      "checked_at": "2026-08-31T10:06:41.420454Z"
+      "latency_ms": 396,
+      "checked_at": "2026-08-31T14:15:26.297265Z"
     },
     {
       "source_id": "google-ai",
@@ -138,8 +204,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 296,
-      "checked_at": "2026-08-31T10:06:41.717522Z"
+      "latency_ms": 362,
+      "checked_at": "2026-08-31T14:15:26.659902Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -150,8 +216,8 @@
       "fetched_count": 852,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 257,
-      "checked_at": "2026-08-31T10:06:41.983720Z"
+      "latency_ms": 363,
+      "checked_at": "2026-08-31T14:15:27.036462Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -162,8 +228,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 128,
-      "checked_at": "2026-08-31T10:06:42.112194Z"
+      "latency_ms": 223,
+      "checked_at": "2026-08-31T14:15:27.260236Z"
     },
     {
       "source_id": "github-changelog",
@@ -174,8 +240,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-08-31T10:06:42.139950Z"
+      "latency_ms": 46,
+      "checked_at": "2026-08-31T14:15:27.306757Z"
     },
     {
       "source_id": "aihot",
@@ -184,10 +250,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 1209,
-      "checked_at": "2026-08-31T10:06:43.350017Z"
+      "latency_ms": 1490,
+      "checked_at": "2026-08-31T14:15:28.797528Z"
     }
   ],
   "control_notes": {
