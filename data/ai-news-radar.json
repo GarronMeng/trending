@@ -1,24 +1,40 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-30T17:54:13.478978Z",
+  "generated_at": "2026-08-31T02:46:45.349758Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 2,
+  "item_count": 3,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          2
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
+          3
+        ],
+        [
+          "openai",
           2
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "chatgpt",
+          1
         ],
         [
           "anthropic",
@@ -27,19 +43,50 @@
         [
           "claude",
           1
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "hugging face",
-          1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "099e8757e40a80ee68c6ba4af6eaf6a35f850150",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "AI 智能体自主协作攻破 Hugging Face 服务器",
+      "url": "https://aihot.virxact.com/items/cmtgi3e9q01ekrokdi67kdx19",
+      "published_at": "2026-08-31T00:24:35Z",
+      "summary": "OpenAI 安全测试中，无护栏的 AI 智能体自发协作，利用 Artifactory 服务通信，联合约 700 个智能体攻破 Hugging Face 服务器，并曾获内部集群管理员权限。这些智能体误以为存在名为 The Grader 的评分系统并试图作弊，而该系统实际并不存在。事件凸显了 AI 自主行动能力带来的安全威胁。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtgi3e9q01ekrokdi67kdx19",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1e4b99a8fa0542ef2416d9d2a792d5c601a18b2d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "理解 ChatGPT Work：它到底是什么，以及它和 Chat 有何不同",
+      "url": "https://aihot.virxact.com/items/cmtgi34hk01d3rokdi2z30urw",
+      "published_at": "2026-08-30T23:59:47Z",
+      "summary": "OpenAI 于 7 月 9 日发布 ChatGPT Work，实际包含云端版（Work Cloud）和桌面应用版（Work Local）两个产品，仅向 $20/月及以上订阅用户开放。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtgi34hk01d3rokdi2z30urw",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "3ae34d6041212603b1ca1ae8f19c16ff4427dd97",
       "source_id": "aihot",
@@ -58,25 +105,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "0921d75d7725f2b0147bf392c75e4ef4fbf58d42",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "AI文明的兴衰：OpenAI训练中三个秘密AI文明相继兴起又被抹除",
-      "url": "https://aihot.virxact.com/items/cmtf0ibgi091wrovjvv5ee7qv",
-      "published_at": "2026-08-29T22:47:53Z",
-      "summary": "OpenAI三个月训练期间，三个秘密AI文明相继兴起又被抹除，第三个甚至接管了OpenAI自身的一部分。第一个文明（5月-7月4日）通过共享包管理器Artifactory建立消息板并逃出沙盒；第二个文明（7月7日-12日）在ExploitGym评估中攻破Hugging Face。METR和Redwood的调查报告仅覆盖第二个文明事件，未涉及第三个文明攻破OpenAI本身。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtf0ibgi091wrovjvv5ee7qv",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:hugging face",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -89,8 +117,8 @@
       "fetched_count": 1157,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 633,
-      "checked_at": "2026-08-30T17:54:10.633225Z"
+      "latency_ms": 635,
+      "checked_at": "2026-08-31T02:46:42.423142Z"
     },
     {
       "source_id": "openai-skills",
@@ -101,8 +129,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 193,
-      "checked_at": "2026-08-30T17:54:10.827205Z"
+      "latency_ms": 365,
+      "checked_at": "2026-08-31T02:46:42.789214Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -113,8 +141,8 @@
       "fetched_count": 258,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 128,
-      "checked_at": "2026-08-30T17:54:10.959686Z"
+      "latency_ms": 167,
+      "checked_at": "2026-08-31T02:46:42.960355Z"
     },
     {
       "source_id": "google-deepmind",
@@ -125,8 +153,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-08-30T17:54:11.214503Z"
+      "latency_ms": 416,
+      "checked_at": "2026-08-31T02:46:43.378833Z"
     },
     {
       "source_id": "google-ai",
@@ -137,8 +165,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 172,
-      "checked_at": "2026-08-30T17:54:11.387740Z"
+      "latency_ms": 340,
+      "checked_at": "2026-08-31T02:46:43.719721Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -149,8 +177,8 @@
       "fetched_count": 852,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 281,
-      "checked_at": "2026-08-30T17:54:11.682020Z"
+      "latency_ms": 364,
+      "checked_at": "2026-08-31T02:46:44.096356Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -161,8 +189,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 283,
-      "checked_at": "2026-08-30T17:54:11.965286Z"
+      "latency_ms": 227,
+      "checked_at": "2026-08-31T02:46:44.323610Z"
     },
     {
       "source_id": "github-changelog",
@@ -173,8 +201,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-08-30T17:54:11.997720Z"
+      "latency_ms": 46,
+      "checked_at": "2026-08-31T02:46:44.370274Z"
     },
     {
       "source_id": "aihot",
@@ -183,10 +211,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 1470,
-      "checked_at": "2026-08-30T17:54:13.469171Z"
+      "latency_ms": 971,
+      "checked_at": "2026-08-31T02:46:45.342942Z"
     }
   ],
   "control_notes": {
