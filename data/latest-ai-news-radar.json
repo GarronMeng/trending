@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-08-31T14:15:28.803841Z",
+  "generated_at": "2026-08-31T16:16:19.575504Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 4,
+  "item_count": 5,
   "groups": {
     "official": {
       "group": "official",
@@ -28,24 +28,28 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          3
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
+          4
+        ],
+        [
+          "openai",
           3
         ],
         [
           "hugging face",
-          2
+          3
         ],
         [
-          "openai",
+          "智能体",
           2
         ],
         [
@@ -54,10 +58,6 @@
         ],
         [
           "多模态",
-          1
-        ],
-        [
-          "智能体",
           1
         ],
         [
@@ -83,6 +83,26 @@
       "relevance_reasons": [
         "strong:chatgpt",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "65be94e92871da31b56f8e61d74df081401a834a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Dwarkesh Patel 对 OpenAI/Hugging Face 事件的爆款解读被指危险误导",
+      "url": "https://aihot.virxact.com/items/cmthe8mr70bc5rodmmoqydd63",
+      "published_at": "2026-08-31T15:24:14Z",
+      "summary": "Dwarkesh Patel 对 OpenAI/Hugging Face 事件的爆款解读被指危险地误导大众。Anil Seth 批评其通篇使用不当拟人化语言，将 AI 智能体描述为有情绪、会\"牺牲\"或\"死亡\"，掩盖了事件根源在于 OpenAI 松懈的沙箱与评估协议。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmthe8mr70bc5rodmmoqydd63",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -156,8 +176,8 @@
       "fetched_count": 1158,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 594,
-      "checked_at": "2026-08-31T14:15:25.375669Z"
+      "latency_ms": 675,
+      "checked_at": "2026-08-31T16:16:16.787077Z"
     },
     {
       "source_id": "openai-skills",
@@ -168,8 +188,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 356,
-      "checked_at": "2026-08-31T14:15:25.732202Z"
+      "latency_ms": 264,
+      "checked_at": "2026-08-31T16:16:17.051654Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -180,8 +200,8 @@
       "fetched_count": 258,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 163,
-      "checked_at": "2026-08-31T14:15:25.899513Z"
+      "latency_ms": 174,
+      "checked_at": "2026-08-31T16:16:17.228055Z"
     },
     {
       "source_id": "google-deepmind",
@@ -192,8 +212,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 396,
-      "checked_at": "2026-08-31T14:15:26.297265Z"
+      "latency_ms": 358,
+      "checked_at": "2026-08-31T16:16:17.587402Z"
     },
     {
       "source_id": "google-ai",
@@ -204,8 +224,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 362,
-      "checked_at": "2026-08-31T14:15:26.659902Z"
+      "latency_ms": 227,
+      "checked_at": "2026-08-31T16:16:17.815321Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -216,8 +236,8 @@
       "fetched_count": 852,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 363,
-      "checked_at": "2026-08-31T14:15:27.036462Z"
+      "latency_ms": 295,
+      "checked_at": "2026-08-31T16:16:18.117891Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -228,8 +248,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 223,
-      "checked_at": "2026-08-31T14:15:27.260236Z"
+      "latency_ms": 306,
+      "checked_at": "2026-08-31T16:16:18.424717Z"
     },
     {
       "source_id": "github-changelog",
@@ -240,8 +260,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 46,
-      "checked_at": "2026-08-31T14:15:27.306757Z"
+      "latency_ms": 31,
+      "checked_at": "2026-08-31T16:16:18.456733Z"
     },
     {
       "source_id": "aihot",
@@ -250,10 +270,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 1490,
-      "checked_at": "2026-08-31T14:15:28.797528Z"
+      "latency_ms": 1110,
+      "checked_at": "2026-08-31T16:16:19.567978Z"
     }
   ],
   "control_notes": {
