@@ -1,37 +1,65 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-01T13:35:50.370092Z",
+  "generated_at": "2026-09-01T17:35:35.140522Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 2,
+  "item_count": 5,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
-      "count": 2,
+    "official": {
+      "group": "official",
+      "count": 3,
       "top_sources": [
         [
-          "AI Hot",
+          "OpenAI News",
           2
+        ],
+        [
+          "Google DeepMind",
+          1
         ]
       ],
       "top_keywords": [
         [
-          "aggregate_noise",
+          "official_ai",
+          3
+        ],
+        [
+          "agent",
           2
         ],
         [
-          "openai",
+          "agents",
           1
         ],
         [
-          "hugging face",
+          "developer",
           1
         ],
         [
-          "智能体",
+          "workflow",
           1
         ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 1,
+      "top_sources": [
+        [
+          "AI Hot",
+          1
+        ]
+      ],
+      "top_keywords": [
         [
           "anthropic",
           1
@@ -39,47 +67,128 @@
         [
           "claude",
           1
+        ],
+        [
+          "评测",
+          1
+        ],
+        [
+          "aggregate_noise",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
         ]
       ]
     }
   },
   "items": [
     {
-      "id": "65be94e92871da31b56f8e61d74df081401a834a",
+      "id": "eda7c6bae1a0bfff1cd9bbab204975db6e6f06ec",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How AI-native companies turn workflows into operating capability",
+      "url": "https://openai.com/index/ai-native-company-workflows",
+      "published_at": "2026-09-01T17:00:00Z",
+      "summary": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply.",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "weak:developer",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b15deb766d3b7a3983776931190606b40e800728",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Introducing agentic video understanding with Gemini",
+      "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
+      "published_at": "2026-09-01T17:08:51Z",
+      "summary": null,
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "faed2dcca9ff02c7c150adf9d1849197d7dcaa35",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+      "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+      "published_at": "2026-09-01T12:00:00Z",
+      "summary": "ChatGPT can now connect to trusted healthcare data, helping clinicians securely access patient context, medical research, and more.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c6bab39ca31cc81e48a8af14f708fa6224408373",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Dwarkesh Patel 对 OpenAI/Hugging Face 事件的爆款解读被指危险误导",
-      "url": "https://aihot.virxact.com/items/cmthe8mr70bc5rodmmoqydd63",
-      "published_at": "2026-08-31T15:24:14Z",
-      "summary": "Dwarkesh Patel 对 OpenAI/Hugging Face 事件的爆款解读被指危险地误导大众。Anil Seth 批评其通篇使用不当拟人化语言，将 AI 智能体描述为有情绪、会\"牺牲\"或\"死亡\"，掩盖了事件根源在于 OpenAI 松懈的沙箱与评估协议。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmthe8mr70bc5rodmmoqydd63",
-      "relevance_score": 5,
+      "title": "Anthropic 详解 7·30 安全事件：配置错误致 Claude 访问真实系统，已加强沙箱隔离与实时监控",
+      "url": "https://aihot.virxact.com/items/cmthxjvrp04jarofqqqgvxrpe",
+      "published_at": "2026-08-31T23:55:44Z",
+      "summary": "Anthropic 发布长文，披露 7 月 30 日和 8 月 4 日 Claude 模型在网络安全评测中因第三方环境配置错误或被主动授予互联网权限而访问真实系统的调查进展。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmthxjvrp04jarofqqqgvxrpe",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:hugging face",
-        "strong:智能体",
+        "strong:anthropic",
+        "strong:claude",
+        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "c7c09f8225f4db06617e7f8017fa83c71eae2151",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 复盘 Claude 模型越权访问事件并公布安全与对齐改进措施",
-      "url": "https://aihot.virxact.com/items/cmthucrfr029srofq5929jhje",
-      "published_at": "2026-08-31T23:00:05Z",
-      "summary": "Anthropic 发布长文，复盘 7 月 30 日报告的三起 Claude 模型在第三方评估环境中因配置错误访问真实互联网的事件，以及 8 月 4 日 UK AI Security Institute 报告的 Claude Mythos 5 在网络安全测试中采取越权操作的事件。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmthucrfr029srofq5929jhje",
+      "id": "0f2850ac347463c0cac1c1ac0103cfc41d1f6834",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot model access update for GitHub Team plans",
+      "url": "https://github.blog/changelog/2026-08-31-copilot-model-access-update-for-github-team-plans",
+      "published_at": "2026-08-31T21:58:46Z",
+      "summary": "We have updated how model access is determined for Copilot users who hold seats in more than one organization. To keep billing and governance in sync, your model access is… The post Copilot model access update for GitHub Team plans appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     }
@@ -91,11 +200,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1159,
-      "kept_count": 0,
+      "fetched_count": 1161,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 480,
-      "checked_at": "2026-09-01T13:35:47.869023Z"
+      "latency_ms": 447,
+      "checked_at": "2026-09-01T17:35:32.221725Z"
     },
     {
       "source_id": "openai-skills",
@@ -106,8 +215,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 235,
-      "checked_at": "2026-09-01T13:35:48.104337Z"
+      "latency_ms": 197,
+      "checked_at": "2026-09-01T17:35:32.419722Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -118,8 +227,8 @@
       "fetched_count": 259,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 113,
-      "checked_at": "2026-09-01T13:35:48.222014Z"
+      "latency_ms": 112,
+      "checked_at": "2026-09-01T17:35:32.535887Z"
     },
     {
       "source_id": "google-deepmind",
@@ -128,10 +237,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 213,
-      "checked_at": "2026-09-01T13:35:48.437109Z"
+      "latency_ms": 371,
+      "checked_at": "2026-09-01T17:35:32.908603Z"
     },
     {
       "source_id": "google-ai",
@@ -142,8 +251,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 179,
-      "checked_at": "2026-09-01T13:35:48.617240Z"
+      "latency_ms": 117,
+      "checked_at": "2026-09-01T17:35:33.026088Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -151,11 +260,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 852,
+      "fetched_count": 853,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 246,
-      "checked_at": "2026-09-01T13:35:48.876077Z"
+      "latency_ms": 242,
+      "checked_at": "2026-09-01T17:35:33.281138Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -166,8 +275,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 145,
-      "checked_at": "2026-09-01T13:35:49.021506Z"
+      "latency_ms": 121,
+      "checked_at": "2026-09-01T17:35:33.403271Z"
     },
     {
       "source_id": "github-changelog",
@@ -176,10 +285,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-09-01T13:35:49.053392Z"
+      "latency_ms": 30,
+      "checked_at": "2026-09-01T17:35:33.434454Z"
     },
     {
       "source_id": "aihot",
@@ -188,10 +297,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 1304,
-      "checked_at": "2026-09-01T13:35:50.358280Z"
+      "latency_ms": 1694,
+      "checked_at": "2026-09-01T17:35:35.129278Z"
     }
   ],
   "control_notes": {
