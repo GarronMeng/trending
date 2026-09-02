@@ -1,31 +1,43 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-01T17:35:35.140522Z",
+  "generated_at": "2026-09-02T02:18:00.133422Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 12,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 6,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          3
         ],
         [
           "Google DeepMind",
+          1
+        ],
+        [
+          "Hugging Face Blog",
+          1
+        ],
+        [
+          "Google AI Blog",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
+          6
         ],
         [
           "agent",
+          2
+        ],
+        [
+          "gemini",
           2
         ],
         [
@@ -41,7 +53,15 @@
           1
         ],
         [
-          "gemini",
+          "llm",
+          1
+        ],
+        [
+          "benchmark",
+          1
+        ],
+        [
+          "openai",
           1
         ],
         [
@@ -50,16 +70,20 @@
         ]
       ]
     },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 1,
+    "developer": {
+      "group": "developer",
+      "count": 2,
       "top_sources": [
         [
-          "AI Hot",
-          1
+          "GitHub Changelog",
+          2
         ]
       ],
       "top_keywords": [
+        [
+          "copilot",
+          4
+        ],
         [
           "anthropic",
           1
@@ -67,30 +91,50 @@
         [
           "claude",
           1
-        ],
-        [
-          "评测",
-          1
-        ],
-        [
-          "aggregate_noise",
-          1
         ]
       ]
     },
-    "developer": {
-      "group": "developer",
-      "count": 1,
+    "aggregate": {
+      "group": "aggregate",
+      "count": 4,
       "top_sources": [
         [
-          "GitHub Changelog",
-          1
+          "AI Hot",
+          4
         ]
       ],
       "top_keywords": [
         [
-          "copilot",
+          "aggregate_noise",
+          4
+        ],
+        [
+          "claude",
+          3
+        ],
+        [
+          "anthropic",
           2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "评测",
+          2
+        ],
+        [
+          "工作流",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "deepmind",
+          1
         ]
       ]
     }
@@ -137,6 +181,102 @@
       "is_ai_related": true
     },
     {
+      "id": "2715dd428dfacbfea3884d5aa8bf4dfd5552da18",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Claude Fable 5.1 is generally available in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot",
+      "published_at": "2026-09-01T14:29:23Z",
+      "summary": "Claude Fable 5.1 from Anthropic is now available in GitHub Copilot. The latest model in Anthropic’s Mythos class, Claude Fable 5.1 is designed for long-horizon, autonomous coding and knowledge-work tasks.… The post Claude Fable 5.1 is generally available in GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4af6cbd1372d0b85984978c268448604a5546578",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
+      "url": "https://huggingface.co/blog/allenai/benchmirt",
+      "published_at": "2026-09-01T21:39:07Z",
+      "summary": null,
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:llm",
+        "weak:benchmark",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0f28c0f01a6c0057094e783b107470e350af8e23",
+      "source_id": "google-ai",
+      "source_name": "Google AI Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "The latest AI news we announced in August 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026",
+      "published_at": "2026-09-01T20:45:00Z",
+      "summary": "Transitioning cards: 1. Text \"Gemini 3.7 Flash\" next to the Gemini logo icon; 2. a photo of a pixel phone; 3. Google Gemini logo above the text \"Claim your student plan for 1 year at no cost\"",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ff00d647e68330931612f8f200160d4d69589f17",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Fable 5.1 上线 OpenRouter",
+      "url": "https://aihot.virxact.com/items/cmtj0fqfq001nroh9x8mg1s3z",
+      "published_at": "2026-09-01T18:29:00Z",
+      "summary": "Anthropic 的 Claude Fable 5.1 已上线 OpenRouter，官方称其为 Fable 5 工作负载的直接升级版本，提升最大的方向包括 agentic coding、长时间运行的工作流、视觉代码生成、金融和分析。使用入口：https://openrouter.ai/anthropic/claude-fable-5.1 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtj0fqfq001nroh9x8mg1s3z",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:agent",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c58fdfd65dbed3bfa2f09391a3e589211d93eac1",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Path to Astra: critical capabilities and frontier safeguards",
+      "url": "https://openai.com/index/path-to-astra",
+      "published_at": "2026-09-01T13:00:00Z",
+      "summary": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework, with stronger safeguards for release.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "faed2dcca9ff02c7c150adf9d1849197d7dcaa35",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -155,16 +295,36 @@
       "is_ai_related": true
     },
     {
-      "id": "c6bab39ca31cc81e48a8af14f708fa6224408373",
+      "id": "629884fa5622af5c2f8d939654a304a2232adbc5",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 详解 7·30 安全事件：配置错误致 Claude 访问真实系统，已加强沙箱隔离与实时监控",
-      "url": "https://aihot.virxact.com/items/cmthxjvrp04jarofqqqgvxrpe",
-      "published_at": "2026-08-31T23:55:44Z",
-      "summary": "Anthropic 发布长文，披露 7 月 30 日和 8 月 4 日 Claude 模型在网络安全评测中因第三方环境配置错误或被主动授予互联网权限而访问真实系统的调查进展。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmthxjvrp04jarofqqqgvxrpe",
+      "title": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能",
+      "url": "https://aihot.virxact.com/items/cmtiy0v6k01dproel63pg10os",
+      "published_at": "2026-09-01T17:08:51Z",
+      "summary": "Google DeepMind 为 Gemini 3.7 Flash、3.6 Flash 和 3.5 Flash-Lite 推出 agentic video understanding，模型动态扫描视频片段，相比固定帧率处理 token 消耗最多降低 88%，成本最多降低 66%，准确率最多提升 7%。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtiy0v6k01dproel63pg10os",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:deepmind",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fcb208ba605c8f31c523182f2f852d6821b8d0ab",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1，作者实测分享使用建议",
+      "url": "https://aihot.virxact.com/items/cmtjda2tv03llrobvuo5fi78q",
+      "published_at": "2026-09-02T00:30:11Z",
+      "summary": "Anthropic 宣布推出 Claude Fable 5.1 和 Claude Mythos 5.1，称其为编码和知识工作领域最先进的模型。作者 Thariq 表示花了很多时间深入研究，认为模型很好，长文评测后续发布；建议对需要较少验证或边缘用例较少的任务使用较低 effort，且切换 effort 不再破坏 prompt cache。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtjda2tv03llrobvuo5fi78q",
       "relevance_score": 4,
       "relevance_reasons": [
         "strong:anthropic",
@@ -175,20 +335,39 @@
       "is_ai_related": true
     },
     {
-      "id": "0f2850ac347463c0cac1c1ac0103cfc41d1f6834",
+      "id": "0953e766247b8ecb379278d907f285a99933dda3",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Copilot model access update for GitHub Team plans",
-      "url": "https://github.blog/changelog/2026-08-31-copilot-model-access-update-for-github-team-plans",
-      "published_at": "2026-08-31T21:58:46Z",
-      "summary": "We have updated how model access is determined for Copilot users who hold seats in more than one organization. To keep billing and governance in sync, your model access is… The post Copilot model access update for GitHub Team plans appeared first on The GitHub Blog .",
+      "title": "Copilot code review can now approve pull requests",
+      "url": "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests",
+      "published_at": "2026-09-01T19:25:57Z",
+      "summary": "Copilot now tells you when a pull request is ready to approve, and admins can authorize it to sign off on approval. The ability for Copilot to approve is off… The post Copilot code review can now approve pull requests appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ff64a33dfe1e5b4f9866162be0301485538c9106",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Fable 5.1 登顶 Artificial Analysis 智能指数，但每任务成本比 Fable 5 高 20%",
+      "url": "https://aihot.virxact.com/items/cmtj484a00592roh9jjdf5xkd",
+      "published_at": "2026-09-01T20:12:46Z",
+      "summary": "Artificial Analysis 评测 Claude Fable 5.1，其在 max effort 下得 66 分登顶 Artificial Analysis Intelligence Index。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtj484a00592roh9jjdf5xkd",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:claude",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     }
@@ -200,11 +379,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1161,
-      "kept_count": 2,
+      "fetched_count": 1163,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 447,
-      "checked_at": "2026-09-01T17:35:32.221725Z"
+      "latency_ms": 413,
+      "checked_at": "2026-09-02T02:17:55.876941Z"
     },
     {
       "source_id": "openai-skills",
@@ -215,8 +394,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 197,
-      "checked_at": "2026-09-01T17:35:32.419722Z"
+      "latency_ms": 351,
+      "checked_at": "2026-09-02T02:17:56.228298Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -224,11 +403,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 259,
+      "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 112,
-      "checked_at": "2026-09-01T17:35:32.535887Z"
+      "latency_ms": 189,
+      "checked_at": "2026-09-02T02:17:56.419695Z"
     },
     {
       "source_id": "google-deepmind",
@@ -239,8 +418,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 371,
-      "checked_at": "2026-09-01T17:35:32.908603Z"
+      "latency_ms": 515,
+      "checked_at": "2026-09-02T02:17:56.936100Z"
     },
     {
       "source_id": "google-ai",
@@ -249,10 +428,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 117,
-      "checked_at": "2026-09-01T17:35:33.026088Z"
+      "latency_ms": 230,
+      "checked_at": "2026-09-02T02:17:57.167129Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -260,11 +439,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 853,
-      "kept_count": 0,
+      "fetched_count": 854,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 242,
-      "checked_at": "2026-09-01T17:35:33.281138Z"
+      "latency_ms": 235,
+      "checked_at": "2026-09-02T02:17:57.409251Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -275,8 +454,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 121,
-      "checked_at": "2026-09-01T17:35:33.403271Z"
+      "latency_ms": 143,
+      "checked_at": "2026-09-02T02:17:57.552600Z"
     },
     {
       "source_id": "github-changelog",
@@ -285,10 +464,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-09-01T17:35:33.434454Z"
+      "latency_ms": 24,
+      "checked_at": "2026-09-02T02:17:57.577624Z"
     },
     {
       "source_id": "aihot",
@@ -297,10 +476,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 1,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 1694,
-      "checked_at": "2026-09-01T17:35:35.129278Z"
+      "latency_ms": 2546,
+      "checked_at": "2026-09-02T02:18:00.124840Z"
     }
   ],
   "control_notes": {
