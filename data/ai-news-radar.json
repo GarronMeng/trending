@@ -1,14 +1,14 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-03T11:30:25.558952Z",
+  "generated_at": "2026-09-03T12:55:18.168188Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 14,
+  "item_count": 16,
   "groups": {
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "GitHub AI & ML",
@@ -21,16 +21,12 @@
         [
           "Google DeepMind",
           1
-        ],
-        [
-          "OpenAI News",
-          1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          5
+          4
         ],
         [
           "agent",
@@ -53,10 +49,6 @@
           1
         ],
         [
-          "chatgpt",
-          1
-        ],
-        [
           "developer",
           1
         ]
@@ -64,25 +56,29 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 10,
       "top_sources": [
         [
           "AI Hot",
-          7
+          10
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          10
+        ],
+        [
+          "hugging face",
+          4
         ],
         [
           "agent",
-          3
+          4
         ],
         [
           "claude",
-          2
+          3
         ],
         [
           "agents",
@@ -101,6 +97,10 @@
           2
         ],
         [
+          "codex",
+          1
+        ],
+        [
           "anthropic",
           1
         ],
@@ -109,15 +109,7 @@
           1
         ],
         [
-          "hugging face",
-          1
-        ],
-        [
           "mcp",
-          1
-        ],
-        [
-          "gemini",
           1
         ]
       ]
@@ -160,6 +152,27 @@
         "strong:agent",
         "strong:agents",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "af2359bf9b64376d8cd56a5ea6cc6b417ccfe5aa",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Hugging Face 发布开源工具 funes，为编码智能体提供可本地持有的记忆层",
+      "url": "https://aihot.virxact.com/items/cmtlg0ht406hlrow5clznd0ld",
+      "published_at": "2026-09-03T00:00:00Z",
+      "summary": "Hugging Face 发布开源工具 funes，为 Claude Code、Codex、pi、Hermes 等编码智能体提供本地记忆层，把已有会话记录索引成 Lance 数据集，一条 funes add 命令即可让 Agent 自主召回原始出处（Agent、时间戳、会话、轮次）。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtlg0ht406hlrow5clznd0ld",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "strong:hugging face",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -217,24 +230,6 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:gemini",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "91d69c5015c524548074937907f42d87b275cc7e",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
-      "url": "https://openai.com/index/atv-big-air-tour",
-      "published_at": "2026-09-02T12:00:00Z",
-      "summary": "ATV Big Air Tour uses ChatGPT Work to speed up marketing, merchandising, and more. It even turned merchandise photos into an inventory website in 15 minutes.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -355,6 +350,25 @@
       "is_ai_related": true
     },
     {
+      "id": "d24e7a834de5e81e173d1594660d63c4d2dc3cc6",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "NVIDIA 宣布收购 Hugging Face，作者分析其对开源 AI 的影响",
+      "url": "https://aihot.virxact.com/items/cmtlijgcn0ac7row5vvdg1zeh",
+      "published_at": "2026-09-03T12:13:54Z",
+      "summary": "NVIDIA 宣布收购 Hugging Face，黄仁勋称开放模型能强化安全、加速创新与扩散并支持主权 AI，NVIDIA 将成为 Hugging Face 及开源模型未来的好归宿。作者分析认为，NVIDIA 不依赖单一模型获胜，其激励与开放生态高度一致，收购后 NVIDIA 承诺支持所有模型、云和加速器，可能大力强化开源 AI。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtlijgcn0ac7row5vvdg1zeh",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:开源模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "5ee6975ac581ebd929aca7ec2d183243af1c95db",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -393,6 +407,25 @@
       "is_ai_related": true
     },
     {
+      "id": "5d5873723d166914858bda362b0f8f04bdc520a9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "NVIDIA 宣布以 129.303 亿美元收购 Hugging Face",
+      "url": "https://aihot.virxact.com/items/cmtli5yd109u4row52i1xg9j4",
+      "published_at": "2026-09-03T11:59:49Z",
+      "summary": "NVIDIA 宣布已同意以 12，930，300，000 美元收购 Hugging Face，黄仁勋在官方博客公布了这一消息。Hugging Face 目前有超过 1800 万开发者，托管超过 300 万个模型、50 万个数据集和 100 万个应用，服务超过 20 万家企业。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtli5yd109u4row52i1xg9j4",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "04477f960510d687087b49d239b416fc8adf7bff",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -420,10 +453,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1164,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 378,
-      "checked_at": "2026-09-03T11:30:20.821800Z"
+      "latency_ms": 540,
+      "checked_at": "2026-09-03T12:55:16.303465Z"
     },
     {
       "source_id": "openai-skills",
@@ -434,8 +467,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 418,
-      "checked_at": "2026-09-03T11:30:21.240489Z"
+      "latency_ms": 204,
+      "checked_at": "2026-09-03T12:55:16.508584Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -446,8 +479,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 349,
-      "checked_at": "2026-09-03T11:30:21.592686Z"
+      "latency_ms": 110,
+      "checked_at": "2026-09-03T12:55:16.622601Z"
     },
     {
       "source_id": "google-deepmind",
@@ -458,8 +491,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 320,
-      "checked_at": "2026-09-03T11:30:21.913921Z"
+      "latency_ms": 266,
+      "checked_at": "2026-09-03T12:55:16.890663Z"
     },
     {
       "source_id": "google-ai",
@@ -470,8 +503,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 233,
-      "checked_at": "2026-09-03T11:30:22.148058Z"
+      "latency_ms": 131,
+      "checked_at": "2026-09-03T12:55:17.022258Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -479,11 +512,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 857,
+      "fetched_count": 858,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 243,
-      "checked_at": "2026-09-03T11:30:22.401110Z"
+      "latency_ms": 220,
+      "checked_at": "2026-09-03T12:55:17.255068Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -494,8 +527,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 432,
-      "checked_at": "2026-09-03T11:30:22.833873Z"
+      "latency_ms": 120,
+      "checked_at": "2026-09-03T12:55:17.376034Z"
     },
     {
       "source_id": "github-changelog",
@@ -506,8 +539,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-09-03T11:30:22.858136Z"
+      "latency_ms": 25,
+      "checked_at": "2026-09-03T12:55:17.402078Z"
     },
     {
       "source_id": "aihot",
@@ -516,10 +549,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 2693,
-      "checked_at": "2026-09-03T11:30:25.552526Z"
+      "latency_ms": 756,
+      "checked_at": "2026-09-03T12:55:18.159221Z"
     }
   ],
   "control_notes": {
