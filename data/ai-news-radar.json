@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-02T17:35:26.825105Z",
+  "generated_at": "2026-09-03T02:25:03.443526Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,32 +8,24 @@
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          8
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
-        ],
-        [
-          "claude",
-          3
+          6
         ],
         [
           "agent",
           3
         ],
         [
-          "llm",
-          3
-        ],
-        [
-          "anthropic",
+          "claude",
           2
         ],
         [
@@ -45,76 +37,92 @@
           2
         ],
         [
+          "llm",
+          2
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
           "mcp",
           1
         ],
         [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "openai",
+          "智能体",
           1
         ],
         [
           "gemini",
+          1
+        ],
+        [
+          "deepmind",
           1
         ]
       ]
     },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
-          "Hugging Face Blog",
-          1
+          "GitHub AI & ML",
+          2
         ],
         [
           "Google DeepMind",
           1
         ],
         [
-          "Google AI Blog",
+          "OpenAI News",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
+          4
         ],
         [
-          "gemini",
-          2
-        ],
-        [
-          "llm",
+          "ai coding",
           1
         ],
         [
-          "benchmark",
+          "copilot",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "developer",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          1
+          2
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          2
+          4
+        ],
+        [
+          "workflow",
+          1
         ]
       ]
     }
@@ -142,20 +150,20 @@
       "is_ai_related": true
     },
     {
-      "id": "4af6cbd1372d0b85984978c268448604a5546578",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "8be3c13abf8a4d6f7bd0b242f2ff400587d627c2",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
       "source_type": "official_rss",
       "source_group": "official",
-      "source_weight": 5,
-      "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
-      "url": "https://huggingface.co/blog/allenai/benchmirt",
-      "published_at": "2026-09-01T21:39:07Z",
-      "summary": null,
+      "source_weight": 4,
+      "title": "How we make AI coding more cost efficient without sacrificing task quality",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality",
+      "published_at": "2026-09-02T18:00:00Z",
+      "summary": "Why shorter outputs can cost more, and how GitHub Copilot reduces wasted work across the complete coding task. The post How we make AI coding more cost efficient without sacrificing task quality appeared first on The GitHub Blog .",
       "relevance_score": 4,
       "relevance_reasons": [
-        "strong:llm",
-        "weak:benchmark",
+        "strong:ai coding",
+        "weak:copilot",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -179,20 +187,39 @@
       "is_ai_related": true
     },
     {
-      "id": "0f28c0f01a6c0057094e783b107470e350af8e23",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
+      "id": "91d69c5015c524548074937907f42d87b275cc7e",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "The latest AI news we announced in August 2026",
-      "url": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026",
-      "published_at": "2026-09-01T20:45:00Z",
-      "summary": "Transitioning cards: 1. Text \"Gemini 3.7 Flash\" next to the Gemini logo icon; 2. a photo of a pixel phone; 3. Google Gemini logo above the text \"Claim your student plan for 1 year at no cost\"",
+      "title": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
+      "url": "https://openai.com/index/atv-big-air-tour",
+      "published_at": "2026-09-02T12:00:00Z",
+      "summary": "ATV Big Air Tour uses ChatGPT Work to speed up marketing, merchandising, and more. It even turned merchandise photos into an inventory website in 15 minutes.",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:gemini",
+        "strong:chatgpt",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a44b73509e64e027c06348df72ceeeafc0a16598",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Enterprise-managed settings support any default model",
+      "url": "https://github.blog/changelog/2026-09-02-enterprise-managed-settings-support-any-default-model",
+      "published_at": "2026-09-02T18:51:12Z",
+      "summary": "You can now set your preferred GitHub Copilot model as the default for new conversations through enterprise-managed settings. This lets you choose the default model that best fits your workflows.… The post Enterprise-managed settings support any default model appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "weak:workflow",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -217,60 +244,58 @@
       "is_ai_related": true
     },
     {
-      "id": "3055b99e4df75d9bce34619064319146145912b9",
+      "id": "b0c8ccbdfdb71a798a917b37220e8f1fc309d460",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Claude Fable 5.1 上线 Claude Code 与 Claude Platform，缓存读取降价 75%",
-      "url": "https://aihot.virxact.com/items/cmtj0fqet001lroh9hyk6rqu0",
-      "published_at": "2026-09-01T18:13:48Z",
-      "summary": "Claude Fable 5.1 现已上线 Claude Code 和 Claude Platform，定价与 Fable 5 相同，API 缓存读取便宜 75%。模型在长任务中能更久自主推进、更善于提示用户它已卡住，写作风格也更自然。Anthropic 同时发布了 Claude Fable 5.1 和 Claude Mythos 5.1，称其为编码与知识工作领域最先进的模型。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtj0fqet001lroh9hyk6rqu0",
-      "relevance_score": 5,
+      "title": "Meta Muse Spark 1.3 在 Artificial Analysis 编码智能体指数中与 Claude 组合对比评测结果公布",
+      "url": "https://aihot.virxact.com/items/cmtktzp3605o8roals1ci2tza",
+      "published_at": "2026-09-03T01:10:22Z",
+      "summary": "Artificial Analysis 编码智能体指数显示，Meta Muse Spark 1.3 （max） 在 Muse Code 下得 68 分，仅次于 Claude Code + Opus 5 （xhigh） 的 68 分。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtktzp3605o8roals1ci2tza",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:anthropic",
         "strong:claude",
-        "weak:api",
-        "weak:API",
+        "strong:智能体",
+        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "0953e766247b8ecb379278d907f285a99933dda3",
+      "id": "4879004129dfc7e50afe8ea710d896e5dd69829f",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!",
+      "url": "https://github.blog/ai-and-ml/decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-oh-my",
+      "published_at": "2026-09-02T21:00:00Z",
+      "summary": "From loop engineering to harnesses, squads, and open weights, the GitHub Podcast breaks down the AI terms showing up in developer conversations. The post Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my! appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:developer",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8962ca831bce17370297a2b6c61423e51f4c1968",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Copilot code review can now approve pull requests",
-      "url": "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests",
-      "published_at": "2026-09-01T19:25:57Z",
-      "summary": "Copilot now tells you when a pull request is ready to approve, and admins can authorize it to sign off on approval. The ability for Copilot to approve is off… The post Copilot code review can now approve pull requests appeared first on The GitHub Blog .",
+      "title": "Content exclusions generally available in Copilot app and CLI",
+      "url": "https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli",
+      "published_at": "2026-09-02T18:14:23Z",
+      "summary": "The GitHub Copilot app and Copilot CLI now respect content exclusion policies configured by enterprise, organization, and repository administrators. Copilot won’t use excluded files as context, helping you protect sensitive… The post Content exclusions generally available in Copilot app and CLI appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "aa2a398ed13321c14841558382cfd4088a0f1803",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "美国司法部在 OpenAI 与纽约时报版权诉讼中支持训练属于合理使用",
-      "url": "https://aihot.virxact.com/items/cmtkco7k001h9rog0wvgn98io",
-      "published_at": "2026-09-02T17:04:39Z",
-      "summary": "美国司法部提交立场声明，正式主张在版权文本上训练 LLM 通常构成合理使用，这是华盛顿首次介入 AI 训练版权诉讼潮，但该文件仅具咨询性、对法院无约束力。司法部区分了获取数据、训练和输出三个环节，认为训练用途不同于发表文章、不会替代原作；并警告一刀切的许可要求会抬高小公司门槛。法院仍需逐案裁定，但采纳该框架会把法律压力更多转向数据获取和具体输出环节。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtkco7k001h9rog0wvgn98io",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:llm",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -330,25 +355,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "ff64a33dfe1e5b4f9866162be0301485538c9106",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Fable 5.1 登顶 Artificial Analysis 智能指数，但每任务成本比 Fable 5 高 20%",
-      "url": "https://aihot.virxact.com/items/cmtj484a00592roh9jjdf5xkd",
-      "published_at": "2026-09-01T20:12:46Z",
-      "summary": "Artificial Analysis 评测 Claude Fable 5.1，其在 max effort 下得 66 分登顶 Artificial Analysis Intelligence Index。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtj484a00592roh9jjdf5xkd",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:claude",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -358,11 +364,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1163,
-      "kept_count": 0,
+      "fetched_count": 1164,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 382,
-      "checked_at": "2026-09-02T17:35:24.067877Z"
+      "latency_ms": 414,
+      "checked_at": "2026-09-03T02:25:00.626568Z"
     },
     {
       "source_id": "openai-skills",
@@ -373,8 +379,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-09-02T17:35:24.321827Z"
+      "latency_ms": 272,
+      "checked_at": "2026-09-03T02:25:00.899464Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -385,8 +391,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 104,
-      "checked_at": "2026-09-02T17:35:24.428423Z"
+      "latency_ms": 118,
+      "checked_at": "2026-09-03T02:25:01.021915Z"
     },
     {
       "source_id": "google-deepmind",
@@ -397,8 +403,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 430,
-      "checked_at": "2026-09-02T17:35:24.860012Z"
+      "latency_ms": 540,
+      "checked_at": "2026-09-03T02:25:01.564055Z"
     },
     {
       "source_id": "google-ai",
@@ -407,10 +413,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 199,
-      "checked_at": "2026-09-02T17:35:25.060073Z"
+      "latency_ms": 217,
+      "checked_at": "2026-09-03T02:25:01.781998Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -419,10 +425,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 855,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 226,
-      "checked_at": "2026-09-02T17:35:25.293975Z"
+      "latency_ms": 233,
+      "checked_at": "2026-09-03T02:25:02.028071Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -431,10 +437,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 184,
-      "checked_at": "2026-09-02T17:35:25.478878Z"
+      "latency_ms": 145,
+      "checked_at": "2026-09-03T02:25:02.173720Z"
     },
     {
       "source_id": "github-changelog",
@@ -443,10 +449,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 33,
-      "checked_at": "2026-09-02T17:35:25.512323Z"
+      "latency_ms": 21,
+      "checked_at": "2026-09-03T02:25:02.194974Z"
     },
     {
       "source_id": "aihot",
@@ -455,10 +461,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 1303,
-      "checked_at": "2026-09-02T17:35:26.816795Z"
+      "latency_ms": 1238,
+      "checked_at": "2026-09-03T02:25:03.434817Z"
     }
   ],
   "control_notes": {
