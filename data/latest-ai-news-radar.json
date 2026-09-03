@@ -1,32 +1,28 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-03T12:55:18.168188Z",
+  "generated_at": "2026-09-03T17:31:01.012460Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 9,
-  "item_count": 16,
+  "healthy_source_count": 8,
+  "item_count": 12,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
           "GitHub AI & ML",
-          2
-        ],
-        [
-          "Hugging Face Blog",
-          1
-        ],
-        [
-          "Google DeepMind",
-          1
+          3
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          4
+          3
+        ],
+        [
+          "copilot",
+          2
         ],
         [
           "agent",
@@ -41,14 +37,6 @@
           1
         ],
         [
-          "copilot",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
           "developer",
           1
         ]
@@ -56,32 +44,28 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 10,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          10
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          10
+          5
         ],
         [
           "hugging face",
-          4
-        ],
-        [
-          "agent",
-          4
-        ],
-        [
-          "claude",
           3
         ],
         [
-          "agents",
+          "claude",
+          2
+        ],
+        [
+          "agent",
           2
         ],
         [
@@ -89,11 +73,7 @@
           2
         ],
         [
-          "评测",
-          2
-        ],
-        [
-          "llm",
+          "开发者",
           2
         ],
         [
@@ -101,35 +81,35 @@
           1
         ],
         [
-          "anthropic",
-          1
-        ],
-        [
           "openai",
           1
         ],
         [
-          "mcp",
+          "评测",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 4,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          4
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          4
+          6
         ],
         [
           "workflow",
+          1
+        ],
+        [
+          "actions",
           1
         ]
       ]
@@ -137,20 +117,21 @@
   },
   "items": [
     {
-      "id": "217d50a9f30a5b69ffa0606bb4820a5a5dd4ca2a",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "5f3d88b30b9ee29eaecad0d85c3d27ebce452fae",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
       "source_type": "official_rss",
       "source_group": "official",
-      "source_weight": 5,
-      "title": "Give Your Coding Agents a Memory You Own",
-      "url": "https://huggingface.co/blog/funes",
-      "published_at": "2026-09-03T00:00:00Z",
-      "summary": null,
-      "relevance_score": 5,
+      "source_weight": 4,
+      "title": "GitHub Copilot app for Beginners: Run several agents at once",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once",
+      "published_at": "2026-09-03T16:00:00Z",
+      "summary": "Learn how to run parallel agents in the GitHub Copilot app, and experience the moment it stops feeling scary and starts feeling powerful. The post GitHub Copilot app for Beginners: Run several agents at once appeared first on The GitHub Blog .",
+      "relevance_score": 6,
       "relevance_reasons": [
         "strong:agent",
         "strong:agents",
+        "weak:copilot",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -177,27 +158,6 @@
       "is_ai_related": true
     },
     {
-      "id": "d3989f9442f57182b80145920c904cdb082825ab",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布电商 Agent 架构与生产实践指南，并开源 commerce-agents 参考实现",
-      "url": "https://aihot.virxact.com/items/cmtkcffah018zrog0zokk6s30",
-      "published_at": "2026-09-02T17:01:34Z",
-      "summary": "Anthropic 发布电商 Agent 构建指南，基于与零售、旅游、电信等团队的落地经验，核心架构是单个 Claude 在标准 Agent 循环中配合技能与工具，而非按领域拆分子智能体，并开源了 anthropics/commerce-agents 参考实现，含购物与商家 Agent。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtkcffah018zrog0zokk6s30",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:agent",
-        "strong:agents",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "8be3c13abf8a4d6f7bd0b242f2ff400587d627c2",
       "source_id": "github-ai-ml",
       "source_name": "GitHub AI & ML",
@@ -212,24 +172,6 @@
       "relevance_reasons": [
         "strong:ai coding",
         "weak:copilot",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "11390dcc4cb220a3e1b5fd0c37fcdfdcac17d303",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
-      "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber",
-      "published_at": "2026-09-02T16:18:31Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -274,22 +216,20 @@
       "is_ai_related": true
     },
     {
-      "id": "66e806b1d6d6dd2d2cbb718810949fcf77f2aeb3",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google 总结 AI Agents Challenge 中最强提交背后的 4 个工程模式",
-      "url": "https://aihot.virxact.com/items/cmtkbbn6q01j6roz54e8g5zec",
-      "published_at": "2026-09-02T16:29:43Z",
-      "summary": "Google 复盘 AI Agents Challenge 赛事，从各赛道头部提交中提炼出四个工程模式：双向 MCP、事件驱动并发、同标准回退和分层路由。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtkbbn6q01j6roz54e8g5zec",
-      "relevance_score": 5,
+      "id": "ea22c410d198db807e6054e555916228f189937e",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Reopening Copilot Business and Enterprise signups",
+      "url": "https://github.blog/changelog/2026-09-03-reopening-copilot-business-and-enterprise-signups",
+      "published_at": "2026-09-03T14:40:43Z",
+      "summary": "We’re gradually reopening sign-ups for Copilot Business and Copilot Enterprise customers paying by credit card or PayPal over the next couple of weeks. If you’ve been waiting to get started… The post Reopening Copilot Business and Enterprise signups appeared first on The GitHub Blog .",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "strong:mcp",
-        "source_penalty:aggregate_noise"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -350,58 +290,37 @@
       "is_ai_related": true
     },
     {
-      "id": "d24e7a834de5e81e173d1594660d63c4d2dc3cc6",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "NVIDIA 宣布收购 Hugging Face，作者分析其对开源 AI 的影响",
-      "url": "https://aihot.virxact.com/items/cmtlijgcn0ac7row5vvdg1zeh",
-      "published_at": "2026-09-03T12:13:54Z",
-      "summary": "NVIDIA 宣布收购 Hugging Face，黄仁勋称开放模型能强化安全、加速创新与扩散并支持主权 AI，NVIDIA 将成为 Hugging Face 及开源模型未来的好归宿。作者分析认为，NVIDIA 不依赖单一模型获胜，其激励与开放生态高度一致，收购后 NVIDIA 承诺支持所有模型、云和加速器，可能大力强化开源 AI。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtlijgcn0ac7row5vvdg1zeh",
-      "relevance_score": 3,
+      "id": "9f4d36bf498fa11a89226dc84e19e81fb8d68ffe",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "CodeQL 2.26.4 improves GitHub actions security detections",
+      "url": "https://github.blog/changelog/2026-09-03-codeql-2-26-4-improves-github-actions-security-detections",
+      "published_at": "2026-09-03T14:04:59Z",
+      "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.26.4, which adds support for Go 1.27,… The post CodeQL 2.26.4 improves GitHub actions security detections appeared first on The GitHub Blog .",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:hugging face",
-        "strong:开源模型",
-        "source_penalty:aggregate_noise"
+        "source:actions"
       ],
       "is_ai_related": true
     },
     {
-      "id": "5ee6975ac581ebd929aca7ec2d183243af1c95db",
+      "id": "160863a720add68b3473e515aae487276c0bffbf",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Google DeepMind 发布 Gemini 3.8 Flash 与 3.8 Flash Cyber 两款新模型",
-      "url": "https://aihot.virxact.com/items/cmtkbdbti01n8roz5k5kt1g98",
-      "published_at": "2026-09-02T16:18:31Z",
-      "summary": "Google DeepMind 发布 Gemini 3.8 Flash 与 3.8 Flash Cyber。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtkbdbti01n8roz5k5kt1g98",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:deepmind",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "998c1ebcaa484cc67c6ca6dbedb314ee83914ec8",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "什么是 harness 工程？Google 用 ADK 2.0 与 Antigravity SDK 演示自动修复编码循环",
-      "url": "https://aihot.virxact.com/items/cmtk9u4ga01hwrompqmqchjqj",
-      "published_at": "2026-09-02T15:28:05Z",
-      "summary": "Google 员工 Shir Meir Lador 介绍 harness 工程，即用确定性组件包裹 LLM，包括编排层、执行沙箱、状态持久化和验证工具，让 Agent 不需逐行人工审查即可安全生成代码。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtk9u4ga01hwrompqmqchjqj",
-      "relevance_score": 3,
+      "title": "Google Cloud 教你用 Cloud Run instances 以每月 $5.70 搭建常驻 Agent",
+      "url": "https://aihot.virxact.com/items/cmtlrfcid0jqzrow5cg1jvuny",
+      "published_at": "2026-09-03T15:54:57Z",
+      "summary": "Shir Meir Lador 在 Google AI 开发者博客介绍如何用 Cloud Run instances 以每月 $5.70（1 vCPU、1Gi 内存、共享 CPU）在云端 24/7 运行常驻 Agent。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtlrfcid0jqzrow5cg1jvuny",
+      "relevance_score": 2,
       "relevance_reasons": [
         "strong:agent",
-        "strong:llm",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -424,25 +343,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "04477f960510d687087b49d239b416fc8adf7bff",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google AI 团队分享如何为 LLM-as-a-Judge 评测编写可靠的评分标准",
-      "url": "https://aihot.virxact.com/items/cmtkbz92801nmrowy61g2fsob",
-      "published_at": "2026-09-02T16:35:00Z",
-      "summary": "Google AI 团队发布教程，讲解如何为 LLM-as-a-Judge 评测编写可靠的布尔式评分标准，指出模糊提示会导致评估不一致和浪费 token。文中给出四条经验：问题保持原子化且互不重叠、只让评判模型评估客观事实（可用 RFC 2119 术语如 MUST 表述）、只评 prompt 中明确要求的内容、用专家标注的 golden set 校准评判模型直至与人类评分一致。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtkbz92801nmrowy61g2fsob",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:llm",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -455,8 +355,8 @@
       "fetched_count": 1164,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 540,
-      "checked_at": "2026-09-03T12:55:16.303465Z"
+      "latency_ms": 420,
+      "checked_at": "2026-09-03T17:30:58.834671Z"
     },
     {
       "source_id": "openai-skills",
@@ -467,8 +367,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 204,
-      "checked_at": "2026-09-03T12:55:16.508584Z"
+      "latency_ms": 342,
+      "checked_at": "2026-09-03T17:30:59.177171Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -479,8 +379,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 110,
-      "checked_at": "2026-09-03T12:55:16.622601Z"
+      "latency_ms": 109,
+      "checked_at": "2026-09-03T17:30:59.288526Z"
     },
     {
       "source_id": "google-deepmind",
@@ -489,10 +389,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 266,
-      "checked_at": "2026-09-03T12:55:16.890663Z"
+      "latency_ms": 360,
+      "checked_at": "2026-09-03T17:30:59.649758Z"
     },
     {
       "source_id": "google-ai",
@@ -503,20 +403,20 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 131,
-      "checked_at": "2026-09-03T12:55:17.022258Z"
+      "latency_ms": 203,
+      "checked_at": "2026-09-03T17:30:59.853629Z"
     },
     {
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "enabled": true,
-      "ok": true,
-      "fetched_count": 858,
-      "kept_count": 1,
-      "error": null,
-      "latency_ms": 220,
-      "checked_at": "2026-09-03T12:55:17.255068Z"
+      "ok": false,
+      "fetched_count": 0,
+      "kept_count": 0,
+      "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+      "latency_ms": 55,
+      "checked_at": "2026-09-03T17:30:59.908719Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -525,10 +425,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 120,
-      "checked_at": "2026-09-03T12:55:17.376034Z"
+      "latency_ms": 178,
+      "checked_at": "2026-09-03T17:31:00.087756Z"
     },
     {
       "source_id": "github-changelog",
@@ -537,10 +437,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-09-03T12:55:17.402078Z"
+      "latency_ms": 30,
+      "checked_at": "2026-09-03T17:31:00.118294Z"
     },
     {
       "source_id": "aihot",
@@ -549,10 +449,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 10,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 756,
-      "checked_at": "2026-09-03T12:55:18.159221Z"
+      "latency_ms": 887,
+      "checked_at": "2026-09-03T17:31:01.006205Z"
     }
   ],
   "control_notes": {
