@@ -1,11 +1,67 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-03T08:18:21.204206Z",
+  "generated_at": "2026-09-03T11:30:25.558952Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 13,
+  "item_count": 14,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 5,
+      "top_sources": [
+        [
+          "GitHub AI & ML",
+          2
+        ],
+        [
+          "Hugging Face Blog",
+          1
+        ],
+        [
+          "Google DeepMind",
+          1
+        ],
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          5
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "ai coding",
+          1
+        ],
+        [
+          "copilot",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "developer",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
       "count": 7,
@@ -66,50 +122,6 @@
         ]
       ]
     },
-    "official": {
-      "group": "official",
-      "count": 4,
-      "top_sources": [
-        [
-          "GitHub AI & ML",
-          2
-        ],
-        [
-          "Google DeepMind",
-          1
-        ],
-        [
-          "OpenAI News",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          4
-        ],
-        [
-          "ai coding",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "developer",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
       "count": 2,
@@ -132,6 +144,25 @@
     }
   },
   "items": [
+    {
+      "id": "217d50a9f30a5b69ffa0606bb4820a5a5dd4ca2a",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Give Your Coding Agents a Memory You Own",
+      "url": "https://huggingface.co/blog/funes",
+      "published_at": "2026-09-03T00:00:00Z",
+      "summary": null,
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "d3989f9442f57182b80145920c904cdb082825ab",
       "source_id": "aihot",
@@ -391,8 +422,8 @@
       "fetched_count": 1164,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 459,
-      "checked_at": "2026-09-03T08:18:17.580112Z"
+      "latency_ms": 378,
+      "checked_at": "2026-09-03T11:30:20.821800Z"
     },
     {
       "source_id": "openai-skills",
@@ -403,8 +434,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 294,
-      "checked_at": "2026-09-03T08:18:17.875030Z"
+      "latency_ms": 418,
+      "checked_at": "2026-09-03T11:30:21.240489Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -415,8 +446,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 134,
-      "checked_at": "2026-09-03T08:18:18.012995Z"
+      "latency_ms": 349,
+      "checked_at": "2026-09-03T11:30:21.592686Z"
     },
     {
       "source_id": "google-deepmind",
@@ -427,8 +458,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 444,
-      "checked_at": "2026-09-03T08:18:18.458946Z"
+      "latency_ms": 320,
+      "checked_at": "2026-09-03T11:30:21.913921Z"
     },
     {
       "source_id": "google-ai",
@@ -439,8 +470,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 219,
-      "checked_at": "2026-09-03T08:18:18.678769Z"
+      "latency_ms": 233,
+      "checked_at": "2026-09-03T11:30:22.148058Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -448,11 +479,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 856,
-      "kept_count": 0,
+      "fetched_count": 857,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 297,
-      "checked_at": "2026-09-03T08:18:18.988575Z"
+      "latency_ms": 243,
+      "checked_at": "2026-09-03T11:30:22.401110Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -463,8 +494,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 275,
-      "checked_at": "2026-09-03T08:18:19.264539Z"
+      "latency_ms": 432,
+      "checked_at": "2026-09-03T11:30:22.833873Z"
     },
     {
       "source_id": "github-changelog",
@@ -475,8 +506,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 35,
-      "checked_at": "2026-09-03T08:18:19.300118Z"
+      "latency_ms": 24,
+      "checked_at": "2026-09-03T11:30:22.858136Z"
     },
     {
       "source_id": "aihot",
@@ -487,8 +518,8 @@
       "fetched_count": 50,
       "kept_count": 7,
       "error": null,
-      "latency_ms": 1893,
-      "checked_at": "2026-09-03T08:18:21.194531Z"
+      "latency_ms": 2693,
+      "checked_at": "2026-09-03T11:30:25.552526Z"
     }
   ],
   "control_notes": {
