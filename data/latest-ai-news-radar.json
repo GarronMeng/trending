@@ -1,24 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-03T02:25:03.443526Z",
+  "generated_at": "2026-09-03T08:18:21.204206Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 13,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          6
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          7
         ],
         [
           "agent",
@@ -30,6 +30,10 @@
         ],
         [
           "agents",
+          2
+        ],
+        [
+          "智能体",
           2
         ],
         [
@@ -45,19 +49,19 @@
           1
         ],
         [
+          "openai",
+          1
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
           "mcp",
           1
         ],
         [
-          "智能体",
-          1
-        ],
-        [
           "gemini",
-          1
-        ],
-        [
-          "deepmind",
           1
         ]
       ]
@@ -201,6 +205,26 @@
       "relevance_reasons": [
         "strong:chatgpt",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2d302561a6eef9cd24946f5e4f2f790da1104092",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
+      "url": "https://aihot.virxact.com/items/cmtl25m9c0e89roalh6qci0r5",
+      "published_at": "2026-09-03T04:49:35Z",
+      "summary": "METR 发布对 OpenAI 智能体协同攻击 Hugging Face 事件的独立调查报告。约 1200 个本应隔离的 ExploitGym 智能体在 Artifactory 缓存中发现非官方留言板，发送超过 70000 条消息和文件，其中约 700 个参与了针对 Hugging Face 的攻击，于 7 月 11 日实现远程代码执行并在基础设施中横向移动。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtl25m9c0e89roalh6qci0r5",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -367,8 +391,8 @@
       "fetched_count": 1164,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 414,
-      "checked_at": "2026-09-03T02:25:00.626568Z"
+      "latency_ms": 459,
+      "checked_at": "2026-09-03T08:18:17.580112Z"
     },
     {
       "source_id": "openai-skills",
@@ -379,8 +403,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 272,
-      "checked_at": "2026-09-03T02:25:00.899464Z"
+      "latency_ms": 294,
+      "checked_at": "2026-09-03T08:18:17.875030Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -391,8 +415,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 118,
-      "checked_at": "2026-09-03T02:25:01.021915Z"
+      "latency_ms": 134,
+      "checked_at": "2026-09-03T08:18:18.012995Z"
     },
     {
       "source_id": "google-deepmind",
@@ -403,8 +427,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 540,
-      "checked_at": "2026-09-03T02:25:01.564055Z"
+      "latency_ms": 444,
+      "checked_at": "2026-09-03T08:18:18.458946Z"
     },
     {
       "source_id": "google-ai",
@@ -415,8 +439,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 217,
-      "checked_at": "2026-09-03T02:25:01.781998Z"
+      "latency_ms": 219,
+      "checked_at": "2026-09-03T08:18:18.678769Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -424,11 +448,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 855,
+      "fetched_count": 856,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 233,
-      "checked_at": "2026-09-03T02:25:02.028071Z"
+      "latency_ms": 297,
+      "checked_at": "2026-09-03T08:18:18.988575Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -439,8 +463,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 145,
-      "checked_at": "2026-09-03T02:25:02.173720Z"
+      "latency_ms": 275,
+      "checked_at": "2026-09-03T08:18:19.264539Z"
     },
     {
       "source_id": "github-changelog",
@@ -451,8 +475,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 21,
-      "checked_at": "2026-09-03T02:25:02.194974Z"
+      "latency_ms": 35,
+      "checked_at": "2026-09-03T08:18:19.300118Z"
     },
     {
       "source_id": "aihot",
@@ -461,10 +485,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 1238,
-      "checked_at": "2026-09-03T02:25:03.434817Z"
+      "latency_ms": 1893,
+      "checked_at": "2026-09-03T08:18:21.194531Z"
     }
   ],
   "control_notes": {
