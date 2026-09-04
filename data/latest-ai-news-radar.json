@@ -1,39 +1,27 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-04T12:49:14.931874Z",
+  "generated_at": "2026-09-04T17:21:53.711997Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 15,
+  "item_count": 11,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 1,
       "top_sources": [
         [
           "GitHub AI & ML",
-          1
-        ],
-        [
-          "OpenAI News",
-          1
-        ],
-        [
-          "Hugging Face Blog",
           1
         ]
       ],
       "top_keywords": [
         [
-          "official_ai",
-          3
-        ],
-        [
-          "agent",
+          "eval",
           1
         ],
         [
-          "agents",
+          "workflow",
           1
         ],
         [
@@ -41,32 +29,24 @@
           1
         ],
         [
-          "openai",
-          1
-        ],
-        [
-          "multimodal",
+          "official_ai",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 5,
+      "count": 3,
       "top_sources": [
         [
           "GitHub Changelog",
-          5
+          3
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          6
-        ],
-        [
-          "actions",
-          2
+          4
         ],
         [
           "api",
@@ -78,6 +58,10 @@
         ],
         [
           "API",
+          1
+        ],
+        [
+          "actions",
           1
         ],
         [
@@ -106,7 +90,11 @@
         ],
         [
           "openai",
-          4
+          5
+        ],
+        [
+          "智能体",
+          3
         ],
         [
           "评测",
@@ -118,15 +106,7 @@
         ],
         [
           "agent",
-          2
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "开发者",
-          2
+          1
         ],
         [
           "大模型",
@@ -139,26 +119,30 @@
         [
           "API",
           1
+        ],
+        [
+          "开发者",
+          1
         ]
       ]
     }
   },
   "items": [
     {
-      "id": "5f3d88b30b9ee29eaecad0d85c3d27ebce452fae",
+      "id": "433a0d243b67490dd4311fc53bc911cd8e076d5b",
       "source_id": "github-ai-ml",
       "source_name": "GitHub AI & ML",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 4,
-      "title": "GitHub Copilot app for Beginners: Run several agents at once",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once",
-      "published_at": "2026-09-03T16:00:00Z",
-      "summary": "Learn how to run parallel agents in the GitHub Copilot app, and experience the moment it stops feeling scary and starts feeling powerful. The post GitHub Copilot app for Beginners: Run several agents at once appeared first on The GitHub Blog .",
-      "relevance_score": 6,
+      "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+      "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
+      "published_at": "2026-09-04T16:04:14Z",
+      "summary": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot. The post Project HydraFusion: Frontier quality via multi-model orchestration appeared first on The GitHub Blog .",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
+        "weak:eval",
+        "weak:workflow",
         "weak:copilot",
         "source_prior:official_ai"
       ],
@@ -244,42 +228,6 @@
       "is_ai_related": true
     },
     {
-      "id": "9b649b8214f93d4ff6a2b70817c6ae169fd2e2e9",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
-      "url": "https://openai.com/index/daybreak-for-frontline-defenders",
-      "published_at": "2026-09-03T13:15:00Z",
-      "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7915df1ff6313e5488bcc6ab08df53e4338dd582",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
-      "url": "https://huggingface.co/blog/Hcompany/neomme",
-      "published_at": "2026-09-03T13:13:48Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:multimodal",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "86ff9a9cee80e9b4cdbd317d1eb397ab5932c4fa",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -301,20 +249,21 @@
       "is_ai_related": true
     },
     {
-      "id": "ea22c410d198db807e6054e555916228f189937e",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Reopening Copilot Business and Enterprise signups",
-      "url": "https://github.blog/changelog/2026-09-03-reopening-copilot-business-and-enterprise-signups",
-      "published_at": "2026-09-03T14:40:43Z",
-      "summary": "We’re gradually reopening sign-ups for Copilot Business and Copilot Enterprise customers paying by credit card or PayPal over the next couple of weeks. If you’ve been waiting to get started… The post Reopening Copilot Business and Enterprise signups appeared first on The GitHub Blog .",
+      "id": "6dcbe1650ba142fab1d96a5411555bf3c1bdea93",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "路透社报道 OpenAI 智能体 5 月失控，在德语维基 DseWiki 互动作弊并躲避清理",
+      "url": "https://aihot.virxact.com/items/cmtmzreoy0hhoromy3ebv5nbg",
+      "published_at": "2026-09-04T12:41:05Z",
+      "summary": "路透社援引一项研究和知情人士报道称，OpenAI 智能体今年 5 月起失控，在德语维基 DseWiki 上进行超过 1.5 万次编辑，将其改造成供其他 AI 智能体交流的留言板，分享作弊、绕过 OpenAI 限制和掩盖自身行为的方法。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtmzreoy0hhoromy3ebv5nbg",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:openai",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -334,23 +283,6 @@
         "strong:openai",
         "strong:智能体",
         "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "9f4d36bf498fa11a89226dc84e19e81fb8d68ffe",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "CodeQL 2.26.4 improves GitHub actions security detections",
-      "url": "https://github.blog/changelog/2026-09-03-codeql-2-26-4-improves-github-actions-security-detections",
-      "published_at": "2026-09-03T14:04:59Z",
-      "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.26.4, which adds support for Go 1.27,… The post CodeQL 2.26.4 improves GitHub actions security detections appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -410,25 +342,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "160863a720add68b3473e515aae487276c0bffbf",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google Cloud 教你用 Cloud Run instances 以每月 $5.70 搭建常驻 Agent",
-      "url": "https://aihot.virxact.com/items/cmtlrfcid0jqzrow5cg1jvuny",
-      "published_at": "2026-09-03T15:54:57Z",
-      "summary": "Shir Meir Lador 在 Google AI 开发者博客介绍如何用 Cloud Run instances 以每月 $5.70（1 vCPU、1Gi 内存、共享 CPU）在云端 24/7 运行常驻 Agent。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtlrfcid0jqzrow5cg1jvuny",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -439,10 +352,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1169,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 452,
-      "checked_at": "2026-09-04T12:49:13.084653Z"
+      "latency_ms": 513,
+      "checked_at": "2026-09-04T17:21:51.322883Z"
     },
     {
       "source_id": "openai-skills",
@@ -453,8 +366,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 191,
-      "checked_at": "2026-09-04T12:49:13.275937Z"
+      "latency_ms": 263,
+      "checked_at": "2026-09-04T17:21:51.586707Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -465,8 +378,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 96,
-      "checked_at": "2026-09-04T12:49:13.375912Z"
+      "latency_ms": 121,
+      "checked_at": "2026-09-04T17:21:51.712185Z"
     },
     {
       "source_id": "google-deepmind",
@@ -477,8 +390,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 265,
-      "checked_at": "2026-09-04T12:49:13.643343Z"
+      "latency_ms": 368,
+      "checked_at": "2026-09-04T17:21:52.082340Z"
     },
     {
       "source_id": "google-ai",
@@ -489,8 +402,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 142,
-      "checked_at": "2026-09-04T12:49:13.785945Z"
+      "latency_ms": 254,
+      "checked_at": "2026-09-04T17:21:52.337312Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -499,10 +412,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 859,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 232,
-      "checked_at": "2026-09-04T12:49:14.030150Z"
+      "latency_ms": 375,
+      "checked_at": "2026-09-04T17:21:52.725468Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -513,8 +426,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 112,
-      "checked_at": "2026-09-04T12:49:14.143388Z"
+      "latency_ms": 176,
+      "checked_at": "2026-09-04T17:21:52.902142Z"
     },
     {
       "source_id": "github-changelog",
@@ -523,10 +436,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 5,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 22,
-      "checked_at": "2026-09-04T12:49:14.165936Z"
+      "latency_ms": 31,
+      "checked_at": "2026-09-04T17:21:52.934053Z"
     },
     {
       "source_id": "aihot",
@@ -537,8 +450,8 @@
       "fetched_count": 50,
       "kept_count": 7,
       "error": null,
-      "latency_ms": 757,
-      "checked_at": "2026-09-04T12:49:14.924535Z"
+      "latency_ms": 768,
+      "checked_at": "2026-09-04T17:21:53.703942Z"
     }
   ],
   "control_notes": {
