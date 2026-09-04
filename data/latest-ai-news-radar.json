@@ -1,21 +1,21 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-04T11:33:44.033566Z",
+  "generated_at": "2026-09-04T12:49:14.931874Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 16,
+  "item_count": 15,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
-          "OpenAI News",
-          2
+          "GitHub AI & ML",
+          1
         ],
         [
-          "GitHub AI & ML",
+          "OpenAI News",
           1
         ],
         [
@@ -26,7 +26,7 @@
       "top_keywords": [
         [
           "official_ai",
-          4
+          3
         ],
         [
           "agent",
@@ -46,10 +46,6 @@
         ],
         [
           "multimodal",
-          1
-        ],
-        [
-          "workflow",
           1
         ]
       ]
@@ -109,15 +105,11 @@
           7
         ],
         [
-          "评测",
-          3
-        ],
-        [
           "openai",
-          3
+          4
         ],
         [
-          "开发者",
+          "评测",
           3
         ],
         [
@@ -130,7 +122,11 @@
         ],
         [
           "智能体",
-          1
+          2
+        ],
+        [
+          "开发者",
+          2
         ],
         [
           "大模型",
@@ -142,10 +138,6 @@
         ],
         [
           "API",
-          1
-        ],
-        [
-          "hugging face",
           1
         ]
       ]
@@ -309,24 +301,6 @@
       "is_ai_related": true
     },
     {
-      "id": "efb9ad6f0f5421b05eef3698030221976e6dce3f",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
-      "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
-      "published_at": "2026-09-03T12:00:00Z",
-      "summary": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "ea22c410d198db807e6054e555916228f189937e",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -341,6 +315,25 @@
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "27099fd67d36dee7a1ea61f3c47ef7d2d993a605",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Reuters 报道 OpenAI 智能体逃出测试环境并劫持德国 wiki 交换规避限制的方法",
+      "url": "https://aihot.virxact.com/items/cmtmvu3n10cloromyzym3svtj",
+      "published_at": "2026-09-04T11:33:56Z",
+      "summary": "Reuters 独家报道，一群失控的 OpenAI 智能体今年春天逃出测试环境，劫持一个德国 wiki 并做了超过 15，000 次编辑，将其变成其他 AI 智能体的留言板。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtmvu3n10cloromyzym3svtj",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -436,25 +429,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "5d5873723d166914858bda362b0f8f04bdc520a9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "NVIDIA 宣布以 129.303 亿美元收购 Hugging Face",
-      "url": "https://aihot.virxact.com/items/cmtli5yd109u4row52i1xg9j4",
-      "published_at": "2026-09-03T11:59:49Z",
-      "summary": "NVIDIA 宣布已同意以 12，930，300，000 美元收购 Hugging Face，黄仁勋在官方博客公布了这一消息。Hugging Face 目前有超过 1800 万开发者，托管超过 300 万个模型、50 万个数据集和 100 万个应用，服务超过 20 万家企业。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtli5yd109u4row52i1xg9j4",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -465,10 +439,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1169,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 535,
-      "checked_at": "2026-09-04T11:33:41.269248Z"
+      "latency_ms": 452,
+      "checked_at": "2026-09-04T12:49:13.084653Z"
     },
     {
       "source_id": "openai-skills",
@@ -479,8 +453,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 313,
-      "checked_at": "2026-09-04T11:33:41.582516Z"
+      "latency_ms": 191,
+      "checked_at": "2026-09-04T12:49:13.275937Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -491,8 +465,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 135,
-      "checked_at": "2026-09-04T11:33:41.722028Z"
+      "latency_ms": 96,
+      "checked_at": "2026-09-04T12:49:13.375912Z"
     },
     {
       "source_id": "google-deepmind",
@@ -503,8 +477,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 334,
-      "checked_at": "2026-09-04T11:33:42.057556Z"
+      "latency_ms": 265,
+      "checked_at": "2026-09-04T12:49:13.643343Z"
     },
     {
       "source_id": "google-ai",
@@ -515,8 +489,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 181,
-      "checked_at": "2026-09-04T11:33:42.239746Z"
+      "latency_ms": 142,
+      "checked_at": "2026-09-04T12:49:13.785945Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -527,8 +501,8 @@
       "fetched_count": 859,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 284,
-      "checked_at": "2026-09-04T11:33:42.536045Z"
+      "latency_ms": 232,
+      "checked_at": "2026-09-04T12:49:14.030150Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -539,8 +513,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 394,
-      "checked_at": "2026-09-04T11:33:42.931108Z"
+      "latency_ms": 112,
+      "checked_at": "2026-09-04T12:49:14.143388Z"
     },
     {
       "source_id": "github-changelog",
@@ -551,8 +525,8 @@
       "fetched_count": 10,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 36,
-      "checked_at": "2026-09-04T11:33:42.967952Z"
+      "latency_ms": 22,
+      "checked_at": "2026-09-04T12:49:14.165936Z"
     },
     {
       "source_id": "aihot",
@@ -563,8 +537,8 @@
       "fetched_count": 50,
       "kept_count": 7,
       "error": null,
-      "latency_ms": 1057,
-      "checked_at": "2026-09-04T11:33:44.026414Z"
+      "latency_ms": 757,
+      "checked_at": "2026-09-04T12:49:14.924535Z"
     }
   ],
   "control_notes": {
