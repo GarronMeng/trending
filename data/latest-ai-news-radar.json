@@ -1,28 +1,32 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-03T17:31:01.012460Z",
+  "generated_at": "2026-09-04T02:19:54.249372Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 8,
-  "item_count": 12,
+  "healthy_source_count": 9,
+  "item_count": 25,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
+          "OpenAI News",
+          2
+        ],
+        [
           "GitHub AI & ML",
-          3
+          1
+        ],
+        [
+          "Hugging Face Blog",
+          1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
-        ],
-        [
-          "copilot",
-          2
+          4
         ],
         [
           "agent",
@@ -33,51 +37,7 @@
           1
         ],
         [
-          "ai coding",
-          1
-        ],
-        [
-          "developer",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 5,
-      "top_sources": [
-        [
-          "AI Hot",
-          5
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          5
-        ],
-        [
-          "hugging face",
-          3
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "开发者",
-          2
-        ],
-        [
-          "codex",
+          "copilot",
           1
         ],
         [
@@ -85,18 +45,82 @@
           1
         ],
         [
+          "multimodal",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 16,
+      "top_sources": [
+        [
+          "AI Hot",
+          16
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          16
+        ],
+        [
+          "openai",
+          9
+        ],
+        [
+          "开发者",
+          6
+        ],
+        [
+          "hugging face",
+          5
+        ],
+        [
+          "claude",
+          4
+        ],
+        [
+          "api",
+          4
+        ],
+        [
+          "API",
+          4
+        ],
+        [
+          "agent",
+          3
+        ],
+        [
           "评测",
+          3
+        ],
+        [
+          "chatgpt",
+          2
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "大模型",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "GitHub Changelog",
-          4
+          5
         ]
       ],
       "top_keywords": [
@@ -105,11 +129,27 @@
           6
         ],
         [
+          "actions",
+          2
+        ],
+        [
+          "api",
+          1
+        ],
+        [
           "workflow",
           1
         ],
         [
-          "actions",
+          "API",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "gemini",
           1
         ]
       ]
@@ -137,41 +177,198 @@
       "is_ai_related": true
     },
     {
-      "id": "af2359bf9b64376d8cd56a5ea6cc6b417ccfe5aa",
+      "id": "6986f51a16a8e7e018a8ac64311099b8147e423f",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Hugging Face 发布开源工具 funes，为编码智能体提供可本地持有的记忆层",
-      "url": "https://aihot.virxact.com/items/cmtlg0ht406hlrow5clznd0ld",
-      "published_at": "2026-09-03T00:00:00Z",
-      "summary": "Hugging Face 发布开源工具 funes，为 Claude Code、Codex、pi、Hermes 等编码智能体提供本地记忆层，把已有会话记录索引成 Lance 数据集，一条 funes add 命令即可让 Agent 自主召回原始出处（Agent、时间戳、会话、轮次）。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtlg0ht406hlrow5clznd0ld",
+      "title": "OpenAI 发布 GPT-6 Astra，ARC-AGI 3 得分 99.9%",
+      "url": "https://aihot.virxact.com/items/cmtlzasi70s61row5vze3ldjh",
+      "published_at": "2026-09-03T20:18:41Z",
+      "summary": "OpenAI 的 GPT-6 Astra 今日起向部分组织推出，随后面向 ChatGPT Plus、Pro、Business、Enterprise 用户开放，API 定价为每百万输入 $10、每百万输出 $50，与 Claude Fable 5/5.1 持平。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtlzasi70s61row5vze3ldjh",
       "relevance_score": 7,
       "relevance_reasons": [
+        "strong:openai",
         "strong:claude",
-        "strong:codex",
-        "strong:hugging face",
-        "strong:agent",
+        "strong:chatgpt",
+        "weak:api",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "8be3c13abf8a4d6f7bd0b242f2ff400587d627c2",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
+      "id": "f6679ba25bd7528f4817d9c39dcc38c22306026d",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Actions: Early September 2026 updates",
+      "url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates",
+      "published_at": "2026-09-03T20:30:53Z",
+      "summary": "GitHub Actions now includes three updates that give you clearer visibility and finer-grained control over your workflows. New REST API for runner version deprecations A new REST API returns when… The post GitHub Actions: Early September 2026 updates appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:workflow",
+        "weak:API",
+        "source:actions"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5bdc74c6c44d05f845ac6cd4e5101cf19d73b297",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Upcoming deprecation of selected GitHub Copilot models",
+      "url": "https://github.blog/changelog/2026-09-03-upcoming-deprecation-of-selected-github-copilot-models",
+      "published_at": "2026-09-03T19:40:14Z",
+      "summary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on October 2nd, 2026: Model Deprecation date… The post Upcoming deprecation of selected GitHub Copilot models appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "833693b8c40d958721d69e9d8f99c4356cbc811f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Artificial Analysis 评测 GPT-6 Astra：编码智能体追平 Fable 5 但价格涨至 2.5 倍",
+      "url": "https://aihot.virxact.com/items/cmtly53c50r9srow5ux7p8arw",
+      "published_at": "2026-09-03T19:31:13Z",
+      "summary": "Artificial Analysis 发布 GPT-6 Astra 评测，其 Coding Agent Index 得分 67，约等于 Claude Opus 5 和 Fable 5，且成本不到 Fable 5 的一半；token 效率比 GPT-5.6 Sol （max） 高约 70%。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtly53c50r9srow5ux7p8arw",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "strong:智能体",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "380b2753c57fbd81a475cc232aab356d2ed15f5e",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Gemini 3.8 Flash is now available in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-09-03-gemini-3-8-flash-is-now-available-in-github-copilot",
+      "published_at": "2026-09-03T18:50:38Z",
+      "summary": "Gemini 3.8 Flash, Google’s latest Flash model, is now available in GitHub Copilot. In our early testing, Gemini 3.8 Flash performed strongly on complex terminal-based coding tasks and demonstrated rigorous… The post Gemini 3.8 Flash is now available in GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:gemini",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9b649b8214f93d4ff6a2b70817c6ae169fd2e2e9",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
-      "source_weight": 4,
-      "title": "How we make AI coding more cost efficient without sacrificing task quality",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality",
-      "published_at": "2026-09-02T18:00:00Z",
-      "summary": "Why shorter outputs can cost more, and how GitHub Copilot reduces wasted work across the complete coding task. The post How we make AI coding more cost efficient without sacrificing task quality appeared first on The GitHub Blog .",
-      "relevance_score": 4,
+      "source_weight": 5,
+      "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
+      "url": "https://openai.com/index/daybreak-for-frontline-defenders",
+      "published_at": "2026-09-03T13:15:00Z",
+      "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:ai coding",
-        "weak:copilot",
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7915df1ff6313e5488bcc6ab08df53e4338dd582",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
+      "url": "https://huggingface.co/blog/Hcompany/neomme",
+      "published_at": "2026-09-03T13:13:48Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:multimodal",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "869c8e21cd16d81b1f65c713f53eccd778484a1b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布 GPT-6 Astra，主打电脑操作并触发网络安全 Critical 红线",
+      "url": "https://aihot.virxact.com/items/cmtma05f8017zro9fao7eonjg",
+      "published_at": "2026-09-04T01:16:52Z",
+      "summary": "OpenAI 于 9 月 3 日发布 GPT-6 Astra，API 模型名 gpt-6-astra，每百万输入 Token 10 美元、输出 50 美元，未来几天推送到 ChatGPT 各档订阅、API 和 AWS Bedrock。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtma05f8017zro9fao7eonjg",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "86ff9a9cee80e9b4cdbd317d1eb397ab5932c4fa",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布新模型 Astra，主打计算机与浏览器操作但因 opaque recurrence 引发争议",
+      "url": "https://aihot.virxact.com/items/cmtlu0vyd0nelrow5qppvereu",
+      "published_at": "2026-09-03T18:01:45Z",
+      "summary": "OpenAI 发布最新模型 Astra，称其为迄今最强大模型，主打计算机和浏览器操作，先面向 Daybreak 网络安全计划客户开放，随后一周内覆盖 Pro、Plus、Enterprise、Business 付费账户及 API。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtlu0vyd0nelrow5qppvereu",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:大模型",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "efb9ad6f0f5421b05eef3698030221976e6dce3f",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
+      "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
+      "published_at": "2026-09-03T12:00:00Z",
+      "summary": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:workflow",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -197,21 +394,22 @@
       "is_ai_related": true
     },
     {
-      "id": "a44b73509e64e027c06348df72ceeeafc0a16598",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Enterprise-managed settings support any default model",
-      "url": "https://github.blog/changelog/2026-09-02-enterprise-managed-settings-support-any-default-model",
-      "published_at": "2026-09-02T18:51:12Z",
-      "summary": "You can now set your preferred GitHub Copilot model as the default for new conversations through enterprise-managed settings. This lets you choose the default model that best fits your workflows.… The post Enterprise-managed settings support any default model appeared first on The GitHub Blog .",
+      "id": "89f6492f2b7265369ea6d598d50c6eb666dff93c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "NVIDIA 宣布收购 Hugging Face，Sundar Pichai 祝贺并称将强化开源模型生态",
+      "url": "https://aihot.virxact.com/items/cmtltwglp0m4hrow5i3eckkhn",
+      "published_at": "2026-09-03T17:47:27Z",
+      "summary": "NVIDIA 宣布收购 Hugging Face，黄仁勋称开源模型能强化安全与网络安全、加速创新与扩散，并让开发者、初创公司、大学、行业和国家都能构建和定制 AI。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtltwglp0m4hrow5i3eckkhn",
       "relevance_score": 4,
       "relevance_reasons": [
-        "weak:workflow",
-        "weak:copilot",
-        "source:copilot"
+        "strong:hugging face",
+        "strong:开源模型",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -234,58 +432,60 @@
       "is_ai_related": true
     },
     {
-      "id": "b0c8ccbdfdb71a798a917b37220e8f1fc309d460",
+      "id": "22169e5bbbd7f8ee77f7d638ece0a6ab09afc902",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Meta Muse Spark 1.3 在 Artificial Analysis 编码智能体指数中与 Claude 组合对比评测结果公布",
-      "url": "https://aihot.virxact.com/items/cmtktzp3605o8roals1ci2tza",
-      "published_at": "2026-09-03T01:10:22Z",
-      "summary": "Artificial Analysis 编码智能体指数显示，Meta Muse Spark 1.3 （max） 在 Muse Code 下得 68 分，仅次于 Claude Code + Opus 5 （xhigh） 的 68 分。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtktzp3605o8roals1ci2tza",
-      "relevance_score": 4,
+      "title": "OpenAI 发布 GPT-6 Astra，主打 Computer Use 与 Agent 对齐进展",
+      "url": "https://aihot.virxact.com/items/cmtlxtppp0qqprow5v4bb80ng",
+      "published_at": "2026-09-03T19:39:21Z",
+      "summary": "OpenAI 首席研究官 Mark Chen 宣布 GPT-6 Astra 发布，称其为团队多年预训练、强化学习和后训练工作的成果，是迄今能力最强、对齐最好的模型。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtlxtppp0qqprow5v4bb80ng",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:claude",
-        "strong:智能体",
-        "weak:评测",
+        "strong:openai",
+        "strong:agent",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "4879004129dfc7e50afe8ea710d896e5dd69829f",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!",
-      "url": "https://github.blog/ai-and-ml/decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-oh-my",
-      "published_at": "2026-09-02T21:00:00Z",
-      "summary": "From loop engineering to harnesses, squads, and open weights, the GitHub Podcast breaks down the AI terms showing up in developer conversations. The post Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my! appeared first on The GitHub Blog .",
-      "relevance_score": 2,
+      "id": "d235750ba5af39e074bbd35a0b2c2d81c9161ef3",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布 GPT-6 Astra，基准全面超越 Claude Fable 5.1",
+      "url": "https://aihot.virxact.com/items/cmtlwgygo0pnnrow5tbc0sok8",
+      "published_at": "2026-09-03T19:06:08Z",
+      "summary": "作者引用 OpenAI 官方基准称 GPT-6 Astra 以 99.9% 饱和 ARC-AGI-3，在 ExploitBench 得 100%，并在各项基准上全面超过此前保持 SOTA 两天的 Claude Fable 5.1，且价格更低。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtlwgygo0pnnrow5tbc0sok8",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "weak:developer",
-        "source_prior:official_ai"
+        "strong:openai",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "8962ca831bce17370297a2b6c61423e51f4c1968",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Content exclusions generally available in Copilot app and CLI",
-      "url": "https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli",
-      "published_at": "2026-09-02T18:14:23Z",
-      "summary": "The GitHub Copilot app and Copilot CLI now respect content exclusion policies configured by enterprise, organization, and repository administrators. Copilot won’t use excluded files as context, helping you protect sensitive… The post Content exclusions generally available in Copilot app and CLI appeared first on The GitHub Blog .",
+      "id": "49d2bb8e44c65ff67f1ad9aaed19d57572cf408e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布 GPT-6 Astra，先向受限网络安全客户开放",
+      "url": "https://aihot.virxact.com/items/cmtlwgyh00pnqrow5t4ajo0y7",
+      "published_at": "2026-09-03T18:56:38Z",
+      "summary": "OpenAI 发布 GPT-6 Astra，首先向经过审核的 Daybreak 网络安全客户开放，Plus、Pro、Business、Enterprise、API 和 AWS 将在未来数日内跟进。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtlwgyh00pnqrow5t4ajo0y7",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:openai",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -303,6 +503,101 @@
       "relevance_score": 2,
       "relevance_reasons": [
         "source:actions"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6fd0398201342d18276027608b235b27beccc70b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "NVIDIA 宣布收购 Hugging Face，黄仁勋称开放模型将受益于这桩联姻",
+      "url": "https://aihot.virxact.com/items/cmtm94nnt0197rohcgbt5e406",
+      "published_at": "2026-09-04T00:59:44Z",
+      "summary": "黄仁勋宣布 NVIDIA 将收购 Hugging Face，称开放模型能强化安全与网络安全、加速创新与扩散、支持主权 AI，让开发者、初创、大学和各国都能构建并定制 AI。他表示 NVIDIA 将成为 Hugging Face 及其社区和开放模型未来的好归宿，作者 Peter Steinberger 转发并评论这是绝佳组合。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtm94nnt0197rohcgbt5e406",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ecfa2ff4767bf5dead761ec2180ee7e319fc801f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "开发者用 Claude Fable 5 在 Claude Code 中将 1993 年 Amiga 游戏 Babylonian Twins 移植到 Godot",
+      "url": "https://aihot.virxact.com/items/cmtm7yl5s01dbrobnjyyupz0q",
+      "published_at": "2026-09-04T00:07:47Z",
+      "summary": "作者让 Claude Fable 5 在 Claude Code 中分三步移植其 1993 年 Amiga 游戏：34，000 行 C++ 一个晚上迁入 Godot 4，72，758 行无注释 68000 汇编先用 vasm 重建出与发售版字节一致的二进制再移植，并把 1993 原作作为第二启动项嵌入新游戏。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtm7yl5s01dbrobnjyyupz0q",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:claude",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e784f56b14d5fe6ac1ab5ec33e7ee1d7e38d50ce",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Greg Brockman 转发：GPT-6 Astra 在 ARC-AGI-3 达到 SOTA，基准趋于饱和",
+      "url": "https://aihot.virxact.com/items/cmtm2suk00171rooej14mutgj",
+      "published_at": "2026-09-03T21:46:00Z",
+      "summary": "Greg Brockman 转发 @arcprize 的评测称 OpenAI 的 GPT-6 Astra 在 ARC-AGI-3 上取得 SOTA，他称该基准已饱和。Astra 标准 harness 得分 63%，经新的 Provider Adapter harness 达 99%，在 96% 的 ARC-AGI-3 关卡上超越人类表现；排行榜图还显示更高推理层级通常成本更低，因为 Astra 用更少动作通关，减少模型调用和 token 数。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtm2suk00171rooej14mutgj",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "540b111cc27e850822e748540e441bf7271d4268",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Perplexity 宣布将接入 OpenAI GPT-6 Astra，称其在 WANDR 评测中居首",
+      "url": "https://aihot.virxact.com/items/cmtm1xhpk0unkrow52qftlbda",
+      "published_at": "2026-09-03T21:13:22Z",
+      "summary": "Perplexity CEO Aravind Srinivas 祝贺 OpenAI 发布 GPT-6 Astra，称其在宽度和深度研究任务上远超其他模型且更具成本效益，将很快向 Perplexity Computer 的 Pro 和 Max 用户开放。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtm1xhpk0unkrow52qftlbda",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8f417a570f76c5a2c697dfe14370f8e6c61b0e3d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "NVIDIA 宣布收购 Hugging Face，黄仁勋与纳德拉表态开放模型生态",
+      "url": "https://aihot.virxact.com/items/cmtlwa4r50pj3row543ys30bl",
+      "published_at": "2026-09-03T18:58:12Z",
+      "summary": "NVIDIA 宣布收购 Hugging Face，黄仁勋称开放模型能增强安全与网络安全、加速创新与扩散并支持主权，让开发者、初创公司、大学、行业和国家都能构建、定制并受益于 AI。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtlwa4r50pj3row543ys30bl",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -352,11 +647,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1164,
-      "kept_count": 0,
+      "fetched_count": 1169,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 420,
-      "checked_at": "2026-09-03T17:30:58.834671Z"
+      "latency_ms": 410,
+      "checked_at": "2026-09-04T02:19:52.248110Z"
     },
     {
       "source_id": "openai-skills",
@@ -367,8 +662,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 342,
-      "checked_at": "2026-09-03T17:30:59.177171Z"
+      "latency_ms": 177,
+      "checked_at": "2026-09-04T02:19:52.426214Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -379,8 +674,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 109,
-      "checked_at": "2026-09-03T17:30:59.288526Z"
+      "latency_ms": 101,
+      "checked_at": "2026-09-04T02:19:52.531777Z"
     },
     {
       "source_id": "google-deepmind",
@@ -391,8 +686,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 360,
-      "checked_at": "2026-09-03T17:30:59.649758Z"
+      "latency_ms": 368,
+      "checked_at": "2026-09-04T02:19:52.901486Z"
     },
     {
       "source_id": "google-ai",
@@ -403,20 +698,20 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 203,
-      "checked_at": "2026-09-03T17:30:59.853629Z"
+      "latency_ms": 169,
+      "checked_at": "2026-09-04T02:19:53.070863Z"
     },
     {
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "enabled": true,
-      "ok": false,
-      "fetched_count": 0,
-      "kept_count": 0,
-      "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-      "latency_ms": 55,
-      "checked_at": "2026-09-03T17:30:59.908719Z"
+      "ok": true,
+      "fetched_count": 859,
+      "kept_count": 1,
+      "error": null,
+      "latency_ms": 237,
+      "checked_at": "2026-09-04T02:19:53.320526Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -425,10 +720,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 178,
-      "checked_at": "2026-09-03T17:31:00.087756Z"
+      "latency_ms": 98,
+      "checked_at": "2026-09-04T02:19:53.418841Z"
     },
     {
       "source_id": "github-changelog",
@@ -437,10 +732,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-09-03T17:31:00.118294Z"
+      "latency_ms": 21,
+      "checked_at": "2026-09-04T02:19:53.440884Z"
     },
     {
       "source_id": "aihot",
@@ -449,10 +744,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 16,
       "error": null,
-      "latency_ms": 887,
-      "checked_at": "2026-09-03T17:31:01.006205Z"
+      "latency_ms": 797,
+      "checked_at": "2026-09-04T02:19:54.240422Z"
     }
   ],
   "control_notes": {
