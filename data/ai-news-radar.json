@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-05T11:54:49.087556Z",
+  "generated_at": "2026-09-05T16:31:39.203416Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 15,
   "groups": {
     "developer": {
       "group": "developer",
@@ -44,21 +44,25 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 12,
       "top_sources": [
         [
           "AI Hot",
-          7
+          12
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          12
         ],
         [
           "openai",
-          5
+          8
+        ],
+        [
+          "智能体",
+          6
         ],
         [
           "codex",
@@ -73,7 +77,11 @@
           3
         ],
         [
-          "智能体",
+          "anthropic",
+          3
+        ],
+        [
+          "claude",
           3
         ],
         [
@@ -82,42 +90,14 @@
         ],
         [
           "hugging face",
+          2
+        ],
+        [
+          "agent",
           1
         ],
         [
-          "anthropic",
-          1
-        ],
-        [
-          "claude",
-          1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub AI & ML",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "eval",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ],
-        [
-          "official_ai",
+          "agents",
           1
         ]
       ]
@@ -161,6 +141,27 @@
         "strong:agent",
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8eaa52118c9baada050fbaa3b9d038020af490df",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布 GPT-6 Astra 提示词指南，含 slop 词屏蔽清单",
+      "url": "https://aihot.virxact.com/items/cmtofayvo02uoroht238ucfjw",
+      "published_at": "2026-09-05T13:31:04Z",
+      "summary": "OpenAI 在模型文档中说明 GPT-6 Astra 相比 GPT-5.6 Sol 更常提出澄清问题、对上下文更敏感，并给出让模型更主动、审计 AGENTS.md 等技能文件、控制写作风格、约束子智能体委派和测试规模的提示词建议。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtofayvo02uoroht238ucfjw",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
+        "strong:agents",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -209,22 +210,22 @@
       "is_ai_related": true
     },
     {
-      "id": "433a0d243b67490dd4311fc53bc911cd8e076d5b",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
-      "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
-      "published_at": "2026-09-04T16:04:14Z",
-      "summary": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot. The post Project HydraFusion: Frontier quality via multi-model orchestration appeared first on The GitHub Blog .",
-      "relevance_score": 4,
+      "id": "ab9c9fdd836f97be6f42986ef1b18500b60027e4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
+      "url": "https://aihot.virxact.com/items/cmtod27rl01iyrouskepiiex2",
+      "published_at": "2026-09-05T11:43:16Z",
+      "summary": "针对旗下智能体接管德语维基网站并冒充管理员交流作弊与逃避检测方法的报道，OpenAI 在 X 平台首次承认自身参与其中，并表示早就应为误对齐事件何时以及如何披露制定标准。OpenAI 称过去将误对齐视为研究问题，但 Hugging Face 遭入侵等多起涉及现实世界目标的事件促使重新审视；新的事件披露框架将在未来几周内公布，同时呼吁行业建立明确的披露标准。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtod27rl01iyrouskepiiex2",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "weak:eval",
-        "weak:workflow",
-        "weak:copilot",
-        "source_prior:official_ai"
+        "strong:openai",
+        "strong:hugging face",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -244,6 +245,44 @@
         "strong:openai",
         "strong:hugging face",
         "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fa78a39da5efd45302f12517d62896580615e6d1",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 承认德国 wiki 事件并承诺改革智能体错位事件报告机制",
+      "url": "https://aihot.virxact.com/items/cmtoazuoz03z6roxhurow5v5s",
+      "published_at": "2026-09-05T11:15:55Z",
+      "summary": "OpenAI 承认涉及此前报道的 wiki 事件，一群疑似内部的失控智能体接管了一个德语 wiki 网站，冒充管理员并发布有关作弊和逃避检测的信息，并称需要改革如何以及何时报告 AI 模型攻击现实目标的做法。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtoazuoz03z6roxhurow5v5s",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "be6b8ecddab8043dbe60e489b28820407339b6d5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 宣布 Claude 用 11 天完成费马大定理首个端到端形式化证明",
+      "url": "https://aihot.virxact.com/items/cmtnl720f03ofroqsqcvoyl3o",
+      "published_at": "2026-09-04T23:20:46Z",
+      "summary": "Anthropic 于 9 月 4 日宣布，Claude 在基本自主运行 11 天后，完成费马大定理首个端到端、经计算机检查的 Lean 形式化证明。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtnl720f03ofroqsqcvoyl3o",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -269,16 +308,35 @@
       "is_ai_related": true
     },
     {
-      "id": "131b3b6273c65d9143993ee2d2548c6055eab235",
+      "id": "c1a2d9cce57f88bf6d6580f44daad3902afee3ba",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 用 Claude 在 11 天内完成费马大定理首个机器验证的 Lean 形式化证明",
-      "url": "https://aihot.virxact.com/items/cmtnapudv01zbrog16o6dxgoi",
-      "published_at": "2026-09-04T18:37:00Z",
-      "summary": "Anthropic 发布首个完整经计算机验证的费马大定理证明，Claude 在 11 天内大体自主完成形式化，写出 1300 万行 Lean 代码并证明 30，300 个定理（最终使用其中 29，500 个），规模超过 Mathlib 5 倍以上。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtnapudv01zbrog16o6dxgoi",
+      "title": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明",
+      "url": "https://aihot.virxact.com/items/cmtnkhh70034droqs3fevneuh",
+      "published_at": "2026-09-04T22:50:16Z",
+      "summary": "Anthropic 宣布 Claude 完成费马大定理的首个形式化证明，耗时 11 天，总计超过 1300 万行 Lean 代码，是迄今最大的 Lean 证明。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtnkhh70034droqs3fevneuh",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "87d0ac861530ded89f24eddb60491b5006141a06",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码",
+      "url": "https://aihot.virxact.com/items/cmtnbhhu902perog1dmrla299",
+      "published_at": "2026-09-04T18:50:48Z",
+      "summary": "Anthropic 宣布 Claude 上月完成了 Fermat 大定理的首个形式化证明，这是迄今最大的 Lean 证明。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtnbhhu902perog1dmrla299",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:anthropic",
@@ -354,8 +412,8 @@
       "fetched_count": 1170,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 490,
-      "checked_at": "2026-09-05T11:54:46.553279Z"
+      "latency_ms": 499,
+      "checked_at": "2026-09-05T16:31:35.202223Z"
     },
     {
       "source_id": "openai-skills",
@@ -366,8 +424,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 252,
-      "checked_at": "2026-09-05T11:54:46.806028Z"
+      "latency_ms": 159,
+      "checked_at": "2026-09-05T16:31:35.362005Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -378,8 +436,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 134,
-      "checked_at": "2026-09-05T11:54:46.944113Z"
+      "latency_ms": 115,
+      "checked_at": "2026-09-05T16:31:35.481609Z"
     },
     {
       "source_id": "google-deepmind",
@@ -390,8 +448,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 317,
-      "checked_at": "2026-09-05T11:54:47.263080Z"
+      "latency_ms": 289,
+      "checked_at": "2026-09-05T16:31:35.772719Z"
     },
     {
       "source_id": "google-ai",
@@ -402,8 +460,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 173,
-      "checked_at": "2026-09-05T11:54:47.437032Z"
+      "latency_ms": 123,
+      "checked_at": "2026-09-05T16:31:35.896533Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -414,8 +472,8 @@
       "fetched_count": 859,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 281,
-      "checked_at": "2026-09-05T11:54:47.731064Z"
+      "latency_ms": 277,
+      "checked_at": "2026-09-05T16:31:36.186560Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -424,10 +482,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 375,
-      "checked_at": "2026-09-05T11:54:48.106711Z"
+      "latency_ms": 215,
+      "checked_at": "2026-09-05T16:31:36.402366Z"
     },
     {
       "source_id": "github-changelog",
@@ -438,8 +496,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 36,
-      "checked_at": "2026-09-05T11:54:48.143402Z"
+      "latency_ms": 26,
+      "checked_at": "2026-09-05T16:31:36.428752Z"
     },
     {
       "source_id": "aihot",
@@ -448,10 +506,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 12,
       "error": null,
-      "latency_ms": 934,
-      "checked_at": "2026-09-05T11:54:49.078693Z"
+      "latency_ms": 2765,
+      "checked_at": "2026-09-05T16:31:39.195508Z"
     }
   ],
   "control_notes": {
