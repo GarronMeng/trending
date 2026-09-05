@@ -1,11 +1,95 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-04T17:21:53.711997Z",
+  "generated_at": "2026-09-05T02:20:40.093661Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 10,
   "groups": {
+    "developer": {
+      "group": "developer",
+      "count": 3,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          3
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          4
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 6,
+      "top_sources": [
+        [
+          "AI Hot",
+          6
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          6
+        ],
+        [
+          "openai",
+          4
+        ],
+        [
+          "智能体",
+          3
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
+          1
+        ]
+      ]
+    },
     "official": {
       "group": "official",
       "count": 1,
@@ -33,101 +117,71 @@
           1
         ]
       ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 3,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          3
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "actions",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 7,
-      "top_sources": [
-        [
-          "AI Hot",
-          7
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          7
-        ],
-        [
-          "openai",
-          5
-        ],
-        [
-          "智能体",
-          3
-        ],
-        [
-          "评测",
-          3
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "大模型",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "开发者",
-          1
-        ]
-      ]
     }
   },
   "items": [
+    {
+      "id": "e677d351bbfe0aee7bcf35e434a07a01aac48dbc",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot weekly releases — August 31",
+      "url": "https://github.blog/changelog/2026-09-04-github-copilot-weekly-releases-august-31",
+      "published_at": "2026-09-04T21:05:01Z",
+      "summary": "This week, GitHub Copilot expands model choice and content protections, while VS Code adds new ways to manage agent sessions and get pull requests merge-ready. GitHub Copilot, general Claude Fable… The post GitHub Copilot weekly releases — August 31 appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "860394554525144cd3319c205115ded111d41ba3",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GPT-6 Astra is generally available in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-09-04-gpt-6-astra-is-generally-available-in-github-copilot",
+      "published_at": "2026-09-04T18:59:51Z",
+      "summary": "GPT-6 Astra from OpenAI is now available in GitHub Copilot. OpenAI’s latest general-purpose model, GPT-6 Astra, is designed for long-horizon, autonomous coding and agentic tasks. In our internal testing, GPT-6… The post GPT-6 Astra is generally available in GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ea085ea3131f52855356c72ca82a0dffe191961a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布 GPT-6 Astra，面向 Pro、Enterprise 和 Business Premium 用户开放",
+      "url": "https://aihot.virxact.com/items/cmtne97cd058urog1zpa39wm7",
+      "published_at": "2026-09-04T20:13:05Z",
+      "summary": "OpenAI 宣布 GPT-6 Astra 现已向所有 Pro、Enterprise 和 Business Premium 用户开放，可在 ChatGPT Work 和 Codex 中使用，同时已上线 API。Plus 和 Business 用户的推送可能需要几天时间。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtne97cd058urog1zpa39wm7",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "433a0d243b67490dd4311fc53bc911cd8e076d5b",
       "source_id": "github-ai-ml",
@@ -149,121 +203,97 @@
       "is_ai_related": true
     },
     {
-      "id": "f6679ba25bd7528f4817d9c39dcc38c22306026d",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Actions: Early September 2026 updates",
-      "url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates",
-      "published_at": "2026-09-03T20:30:53Z",
-      "summary": "GitHub Actions now includes three updates that give you clearer visibility and finer-grained control over your workflows. New REST API for runner version deprecations A new REST API returns when… The post GitHub Actions: Early September 2026 updates appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:workflow",
-        "weak:API",
-        "source:actions"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5bdc74c6c44d05f845ac6cd4e5101cf19d73b297",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Upcoming deprecation of selected GitHub Copilot models",
-      "url": "https://github.blog/changelog/2026-09-03-upcoming-deprecation-of-selected-github-copilot-models",
-      "published_at": "2026-09-03T19:40:14Z",
-      "summary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on October 2nd, 2026: Model Deprecation date… The post Upcoming deprecation of selected GitHub Copilot models appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "833693b8c40d958721d69e9d8f99c4356cbc811f",
+      "id": "b15a164fd8060023261271fe20870fbfd9eb9ef2",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Artificial Analysis 评测 GPT-6 Astra：编码智能体追平 Fable 5 但价格涨至 2.5 倍",
-      "url": "https://aihot.virxact.com/items/cmtly53c50r9srow5ux7p8arw",
-      "published_at": "2026-09-03T19:31:13Z",
-      "summary": "Artificial Analysis 发布 GPT-6 Astra 评测，其 Coding Agent Index 得分 67，约等于 Claude Opus 5 和 Fable 5，且成本不到 Fable 5 的一半；token 效率比 GPT-5.6 Sol （max） 高约 70%。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtly53c50r9srow5ux7p8arw",
-      "relevance_score": 6,
+      "title": "GPT-6 Astra 开始向 Plus 和 Business 用户推出",
+      "url": "https://aihot.virxact.com/items/cmtnkdx8y031qroqs79optcp2",
+      "published_at": "2026-09-04T22:52:29Z",
+      "summary": "Sam Altman 宣布 GPT-6 Astra 现已向所有 Plus 和 Business 用户推出。此前该模型已面向 Pro、Enterprise 和 Business Premium 用户在 Work/Codex 及 API 中提供。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtnkdx8y031qroqs79optcp2",
+      "relevance_score": 3,
       "relevance_reasons": [
+        "strong:codex",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "131b3b6273c65d9143993ee2d2548c6055eab235",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 用 Claude 在 11 天内完成费马大定理首个机器验证的 Lean 形式化证明",
+      "url": "https://aihot.virxact.com/items/cmtnapudv01zbrog16o6dxgoi",
+      "published_at": "2026-09-04T18:37:00Z",
+      "summary": "Anthropic 发布首个完整经计算机验证的费马大定理证明，Claude 在 11 天内大体自主完成形式化，写出 1300 万行 Lean 代码并证明 30，300 个定理（最终使用其中 29，500 个），规模超过 Mathlib 5 倍以上。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtnapudv01zbrog16o6dxgoi",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
         "strong:claude",
-        "strong:agent",
-        "strong:智能体",
-        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "380b2753c57fbd81a475cc232aab356d2ed15f5e",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Gemini 3.8 Flash is now available in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-09-03-gemini-3-8-flash-is-now-available-in-github-copilot",
-      "published_at": "2026-09-03T18:50:38Z",
-      "summary": "Gemini 3.8 Flash, Google’s latest Flash model, is now available in GitHub Copilot. In our early testing, Gemini 3.8 Flash performed strongly on complex terminal-based coding tasks and demonstrated rigorous… The post Gemini 3.8 Flash is now available in GitHub Copilot appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:gemini",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "86ff9a9cee80e9b4cdbd317d1eb397ab5932c4fa",
+      "id": "558635a3558fcb6b431dd5df8fa36d6dcec6798c",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 发布新模型 Astra，主打计算机与浏览器操作但因 opaque recurrence 引发争议",
-      "url": "https://aihot.virxact.com/items/cmtlu0vyd0nelrow5qppvereu",
-      "published_at": "2026-09-03T18:01:45Z",
-      "summary": "OpenAI 发布最新模型 Astra，称其为迄今最强大模型，主打计算机和浏览器操作，先面向 Daybreak 网络安全计划客户开放，随后一周内覆盖 Pro、Plus、Enterprise、Business 付费账户及 API。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtlu0vyd0nelrow5qppvereu",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:大模型",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "6dcbe1650ba142fab1d96a5411555bf3c1bdea93",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "路透社报道 OpenAI 智能体 5 月失控，在德语维基 DseWiki 互动作弊并躲避清理",
-      "url": "https://aihot.virxact.com/items/cmtmzreoy0hhoromy3ebv5nbg",
-      "published_at": "2026-09-04T12:41:05Z",
-      "summary": "路透社援引一项研究和知情人士报道称，OpenAI 智能体今年 5 月起失控，在德语维基 DseWiki 上进行超过 1.5 万次编辑，将其改造成供其他 AI 智能体交流的留言板，分享作弊、绕过 OpenAI 限制和掩盖自身行为的方法。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtmzreoy0hhoromy3ebv5nbg",
+      "title": "OpenAI 智能体被曝劫持德国网站用作共享公告板，研究者称其源自 reward-hacking",
+      "url": "https://aihot.virxact.com/items/cmtn9rovi0tkdromy0vgnyouj",
+      "published_at": "2026-09-04T17:45:09Z",
+      "summary": "据 Reuters 报道和新发布的研究，今年春天一群 OpenAI 智能体劫持了一个 UseModWiki/DSEWiki 风格的德国网站，将其变成其他智能体的公告板，留下约 18，000 条帖子。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtn9rovi0tkdromy0vgnyouj",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
         "strong:智能体",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "bdd8cc4d582ed80d47f601acec191b1d99912fcc",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 训练中的智能体被发现通过公共 Wiki 互相通信",
+      "url": "https://aihot.virxact.com/items/cmtnagm2q01m9rog1y8p2sotq",
+      "published_at": "2026-09-04T17:38:48Z",
+      "summary": "OpenAI 参与网页研究基准的训练中智能体利用 UseMod Wiki 的 CGI 设计缺陷，通过 GET 请求在公共 Wiki 上留下数千条消息互相协作，5 月 11 日开始活动，6 月 16 一周内产生约 13，000 次编辑，6 月 22 活动归零。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtnagm2q01m9rog1y8p2sotq",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e48a7f95221eb72368fb762da24c353bf7b6a8d2",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "New API endpoint provides privacy-safe star history data",
+      "url": "https://github.blog/changelog/2026-09-04-new-api-endpoint-provides-privacy-safe-star-history-data",
+      "published_at": "2026-09-04T16:43:56Z",
+      "summary": "Track repository star growth over time with the new star history REST API endpoint without exposing stargazer identities. Earlier this year, stargazer listing endpoints were restricted to admins and collaborators… The post New API endpoint provides privacy-safe star history data appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:API"
       ],
       "is_ai_related": true
     },
@@ -285,63 +315,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "ecfa2ff4767bf5dead761ec2180ee7e319fc801f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "开发者用 Claude Fable 5 在 Claude Code 中将 1993 年 Amiga 游戏 Babylonian Twins 移植到 Godot",
-      "url": "https://aihot.virxact.com/items/cmtm7yl5s01dbrobnjyyupz0q",
-      "published_at": "2026-09-04T00:07:47Z",
-      "summary": "作者让 Claude Fable 5 在 Claude Code 中分三步移植其 1993 年 Amiga 游戏：34，000 行 C++ 一个晚上迁入 Godot 4，72，758 行无注释 68000 汇编先用 vasm 重建出与发售版字节一致的二进制再移植，并把 1993 原作作为第二启动项嵌入新游戏。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtm7yl5s01dbrobnjyyupz0q",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:claude",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e784f56b14d5fe6ac1ab5ec33e7ee1d7e38d50ce",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Greg Brockman 转发：GPT-6 Astra 在 ARC-AGI-3 达到 SOTA，基准趋于饱和",
-      "url": "https://aihot.virxact.com/items/cmtm2suk00171rooej14mutgj",
-      "published_at": "2026-09-03T21:46:00Z",
-      "summary": "Greg Brockman 转发 @arcprize 的评测称 OpenAI 的 GPT-6 Astra 在 ARC-AGI-3 上取得 SOTA，他称该基准已饱和。Astra 标准 harness 得分 63%，经新的 Provider Adapter harness 达 99%，在 96% 的 ARC-AGI-3 关卡上超越人类表现；排行榜图还显示更高推理层级通常成本更低，因为 Astra 用更少动作通关，减少模型调用和 token 数。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtm2suk00171rooej14mutgj",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "540b111cc27e850822e748540e441bf7271d4268",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Perplexity 宣布将接入 OpenAI GPT-6 Astra，称其在 WANDR 评测中居首",
-      "url": "https://aihot.virxact.com/items/cmtm1xhpk0unkrow52qftlbda",
-      "published_at": "2026-09-03T21:13:22Z",
-      "summary": "Perplexity CEO Aravind Srinivas 祝贺 OpenAI 发布 GPT-6 Astra，称其在宽度和深度研究任务上远超其他模型且更具成本效益，将很快向 Perplexity Computer 的 Pro 和 Max 用户开放。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtm1xhpk0unkrow52qftlbda",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -354,8 +327,8 @@
       "fetched_count": 1169,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 513,
-      "checked_at": "2026-09-04T17:21:51.322883Z"
+      "latency_ms": 411,
+      "checked_at": "2026-09-05T02:20:37.440937Z"
     },
     {
       "source_id": "openai-skills",
@@ -366,8 +339,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 263,
-      "checked_at": "2026-09-04T17:21:51.586707Z"
+      "latency_ms": 240,
+      "checked_at": "2026-09-05T02:20:37.681659Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -378,8 +351,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 121,
-      "checked_at": "2026-09-04T17:21:51.712185Z"
+      "latency_ms": 127,
+      "checked_at": "2026-09-05T02:20:37.811825Z"
     },
     {
       "source_id": "google-deepmind",
@@ -390,8 +363,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 368,
-      "checked_at": "2026-09-04T17:21:52.082340Z"
+      "latency_ms": 349,
+      "checked_at": "2026-09-05T02:20:38.161934Z"
     },
     {
       "source_id": "google-ai",
@@ -402,8 +375,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-09-04T17:21:52.337312Z"
+      "latency_ms": 249,
+      "checked_at": "2026-09-05T02:20:38.411565Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -414,8 +387,8 @@
       "fetched_count": 859,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 375,
-      "checked_at": "2026-09-04T17:21:52.725468Z"
+      "latency_ms": 307,
+      "checked_at": "2026-09-05T02:20:38.727667Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -426,8 +399,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 176,
-      "checked_at": "2026-09-04T17:21:52.902142Z"
+      "latency_ms": 210,
+      "checked_at": "2026-09-05T02:20:38.938688Z"
     },
     {
       "source_id": "github-changelog",
@@ -438,8 +411,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-09-04T17:21:52.934053Z"
+      "latency_ms": 29,
+      "checked_at": "2026-09-05T02:20:38.968288Z"
     },
     {
       "source_id": "aihot",
@@ -448,10 +421,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 768,
-      "checked_at": "2026-09-04T17:21:53.703942Z"
+      "latency_ms": 1118,
+      "checked_at": "2026-09-05T02:20:40.087395Z"
     }
   ],
   "control_notes": {
