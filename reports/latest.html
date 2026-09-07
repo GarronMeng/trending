@@ -43,27 +43,27 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>5</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>3</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>4</b><span>聚合源条目</span></div>
+        <div class="stat"><b>2</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-09-07T02:13:59.619702Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-09-07T08:39:01.969855Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
         <span>OpenAI News</span>
         <span>official_rss</span>
-        <span>2026-09-06T08:00:00Z</span>
-        <strong>Score 9</strong>
+        <span>2026-09-07T00:00:00Z</span>
+        <strong>Score 3</strong>
       </div>
-      <h3><a href="https://openai.com/index/research-acceleration-view-inside-openai" target="_blank" rel="noreferrer">Research acceleration: The view inside OpenAI</a></h3>
-      <p class='summary'>Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.</p>
-      <div class="tags"><span>strong:openai</span><span>strong:agent</span><span>strong:agents</span><span>weak:api</span><span>weak:API</span></div>
+      <h3><a href="https://openai.com/index/supporting-independent-journalism-in-ukraine" target="_blank" rel="noreferrer">Supporting independent journalism in Ukraine</a></h3>
+      <p class='summary'>OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.</p>
+      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -91,47 +91,21 @@
       <p class='summary'>OpenAI 发布长文《An Alien Mind》，回溯 2023 年 RLSlow 项目中确认推理模型可扩展训练的起点，并系统阐述目标对齐与价值对齐的区分。文章指出链式思维监控的效果正随着模型能力提升而逐步减弱，GPT-6 Astra 在对齐上显著优于 GPT-5.6 Sol；作者预期进展可能持续走向机器递归自我改进（RSI），呼吁自愿放缓扩展、建立第三方安全门槛并加强国际协调。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtq23v6k01aorotwh8xip8r1</p>
       <div class="tags"><span>strong:openai</span><span>strong:推理模型</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-09-06T08:00:00Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmtpzyon6019iroemu68v4s2v" target="_blank" rel="noreferrer">OpenAI 发布内部研究加速报告：已达成自动化研究实习生目标，推进 2028 年 3 月自动化 AI 研究员</a></h3>
-      <p class='summary'>OpenAI 发文披露自动化研究进展，宣布已达成去年秋天设定的今年 9 月拥有自动化研究实习生（可在人类指导下完成耗时数天的明确研究任务）的目标，并计划在 2028 年 3 月前造出自动化 AI 研究员。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtpzyon6019iroemu68v4s2v</p>
-      <div class="tags"><span>strong:openai</span><span>weak:自动化</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-09-06T06:46:16Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://aihot.virxact.com/items/cmtphtttc01pkroxxh8pinzq2" target="_blank" rel="noreferrer">Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化</a></h3>
-      <p class='summary'>据 Fortune 报道，OpenAI 自 9 月 3 日发布 GPT-6 Astra 公告以来多次修改评测基准数据：Astra 幻觉率曾从 4.2% 降至 2% 后又改回。 🔗 阅读原文 via AIHOT · https://aihot.virxact.com/items/cmtphtttc01pkroxxh8pinzq2</p>
-      <div class="tags"><span>strong:openai</span><span>weak:评测</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1172</td><td>1</td><td>434ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>379ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>260</td><td>0</td><td>114ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>379ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>241ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>859</td><td>0</td><td>291ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>220ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>27ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>4</td><td>942ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1173</td><td>1</td><td>447ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>210ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>260</td><td>0</td><td>115ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>210ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>143ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>859</td><td>0</td><td>278ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>172ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>26ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>2</td><td>854ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
