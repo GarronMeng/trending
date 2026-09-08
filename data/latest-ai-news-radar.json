@@ -1,12 +1,150 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-08T12:57:58.178950Z",
+  "generated_at": "2026-09-08T17:45:03.551201Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 0,
-  "groups": {},
-  "items": [],
+  "item_count": 4,
+  "groups": {
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "OpenAI News",
+          2
+        ]
+      ],
+      "top_keywords": [
+        [
+          "openai",
+          2
+        ],
+        [
+          "official_ai",
+          2
+        ],
+        [
+          "generative ai",
+          1
+        ],
+        [
+          "tool",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 2,
+      "top_sources": [
+        [
+          "AI Hot",
+          2
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
+          1
+        ]
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "cc12d9bcc2081685bbdb7bbd41e5dc7254ec44a9",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Funding grants for new research into AI and teen development",
+      "url": "https://openai.com/index/teen-development-research-grants",
+      "published_at": "2026-09-08T09:00:00Z",
+      "summary": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:generative ai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2cd6daccb8db4396ac7fd4859332a994a774e00a",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+      "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+      "published_at": "2026-09-08T00:00:00Z",
+      "summary": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:tool",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "552f0e5ab2ead01b98b74443ee7c8fd3e6918007",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Noam Brown 评 OpenAI 用智能体求解 Navier-Stokes 千禧年难题：成本会快速下降",
+      "url": "https://aihot.news/items/cmtsy52b401faro5wv9smnfmk",
+      "published_at": "2026-09-08T17:25:41Z",
+      "summary": "Noam Brown 就 OpenAI 宣布以智能体组合求解 Navier-Stokes 千禧年大奖难题发表看法，承认这次证明花费数百万美元，但认为成本会快速下降。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtsy52b401faro5wv9smnfmk",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c4a84be40c878d1704e194b6e9f6fef97e33bc47",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 讲解用 Claude Platform 降低成本并提升性能的三个方法",
+      "url": "https://aihot.news/items/cmtsxacbf04jkrob5fu5sp5ti",
+      "published_at": "2026-09-08T17:01:27Z",
+      "summary": "Anthropic 团队文章指出，优化 prompt cache 命中率、清除升级到前沿 Claude 模型后的提示词反模式、校准 effort 三个手段可在不牺牲性能的情况下降低成本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtsxacbf04jkrob5fu5sp5ti",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    }
+  ],
   "source_health": [
     {
       "source_id": "openai-news",
@@ -14,11 +152,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1173,
-      "kept_count": 0,
+      "fetched_count": 1176,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 565,
-      "checked_at": "2026-09-08T12:57:55.575109Z"
+      "latency_ms": 546,
+      "checked_at": "2026-09-08T17:45:00.337016Z"
     },
     {
       "source_id": "openai-skills",
@@ -29,8 +167,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 263,
-      "checked_at": "2026-09-08T12:57:55.839283Z"
+      "latency_ms": 382,
+      "checked_at": "2026-09-08T17:45:00.720179Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -41,8 +179,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 128,
-      "checked_at": "2026-09-08T12:57:55.971806Z"
+      "latency_ms": 444,
+      "checked_at": "2026-09-08T17:45:01.168712Z"
     },
     {
       "source_id": "google-deepmind",
@@ -53,8 +191,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 424,
-      "checked_at": "2026-09-08T12:57:56.397939Z"
+      "latency_ms": 333,
+      "checked_at": "2026-09-08T17:45:01.503774Z"
     },
     {
       "source_id": "google-ai",
@@ -65,8 +203,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 188,
-      "checked_at": "2026-09-08T12:57:56.587247Z"
+      "latency_ms": 252,
+      "checked_at": "2026-09-08T17:45:01.756495Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -74,11 +212,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 859,
+      "fetched_count": 860,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 373,
-      "checked_at": "2026-09-08T12:57:56.973535Z"
+      "latency_ms": 318,
+      "checked_at": "2026-09-08T17:45:02.087860Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -89,8 +227,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 326,
-      "checked_at": "2026-09-08T12:57:57.299813Z"
+      "latency_ms": 184,
+      "checked_at": "2026-09-08T17:45:02.273027Z"
     },
     {
       "source_id": "github-changelog",
@@ -101,8 +239,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 55,
-      "checked_at": "2026-09-08T12:57:57.355095Z"
+      "latency_ms": 33,
+      "checked_at": "2026-09-08T17:45:02.306490Z"
     },
     {
       "source_id": "aihot",
@@ -111,10 +249,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 0,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 813,
-      "checked_at": "2026-09-08T12:57:58.169778Z"
+      "latency_ms": 1235,
+      "checked_at": "2026-09-08T17:45:03.542918Z"
     }
   ],
   "control_notes": {
