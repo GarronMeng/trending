@@ -1,63 +1,35 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-09T08:23:40.615132Z",
+  "generated_at": "2026-09-09T11:41:19.648428Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
   "item_count": 16,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 3,
-      "top_sources": [
-        [
-          "OpenAI News",
-          3
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          3
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "generative ai",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 11,
       "top_sources": [
         [
           "AI Hot",
-          9
+          11
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
+          11
         ],
         [
           "openai",
-          8
+          10
         ],
         [
           "anthropic",
+          5
+        ],
+        [
+          "codex",
           3
         ],
         [
@@ -65,11 +37,19 @@
           3
         ],
         [
-          "chatgpt",
+          "claude",
           2
         ],
         [
-          "codex",
+          "hugging face",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "chatgpt",
           1
         ],
         [
@@ -79,9 +59,25 @@
         [
           "API",
           1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "codex",
+          1
         ],
         [
-          "claude",
+          "official_ai",
           1
         ]
       ]
@@ -109,21 +105,23 @@
   },
   "items": [
     {
-      "id": "cc12d9bcc2081685bbdb7bbd41e5dc7254ec44a9",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Funding grants for new research into AI and teen development",
-      "url": "https://openai.com/index/teen-development-research-grants",
-      "published_at": "2026-09-08T09:00:00Z",
-      "summary": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
-      "relevance_score": 5,
+      "id": "115fd9d49488fe7cefd7210eb0c8342649a81a81",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "纽约大学教授质疑OpenAI借助其研究抢先发布纳维-斯托克斯问题证明",
+      "url": "https://aihot.news/items/cmttxf8n90qovrofp2tiv0g2g",
+      "published_at": "2026-09-09T09:34:47Z",
+      "summary": "纽约大学教授Tristan Buckmaster与Anthropic数学家Levent Alpöge使用Codex和Claude在纳维-斯托克斯存在性与光滑性问题上取得初步进展，随后OpenAI公布了该千禧年大奖难题的完整证明，称其由一个尚未发布的新一代模型发现，研究始于9月1日，总计消耗3000亿个输出Token，按Astra价格计算约2250万美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmttxf8n90qovrofp2tiv0g2g",
+      "relevance_score": 7,
       "relevance_reasons": [
         "strong:openai",
-        "strong:generative ai",
-        "source_prior:official_ai"
+        "strong:anthropic",
+        "strong:claude",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -146,20 +144,42 @@
       "is_ai_related": true
     },
     {
-      "id": "48a64308bfabb0753c272fc26a39eaad0a52770e",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Introducing ChatGPT Images 2.5",
-      "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
-      "published_at": "2026-09-08T11:30:00Z",
-      "summary": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
-      "relevance_score": 3,
+      "id": "aa28e418f5b3ee2c6c1b264390e900733e9ad730",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 纳维-斯托克斯方程证明争议：Buckmaster 指控不当行为，各方回应引出开放科学之问",
+      "url": "https://aihot.news/items/cmttzipvw0sqlrofp63a8px22",
+      "published_at": "2026-09-09T10:27:37Z",
+      "summary": "数学家 Tristan Buckmaster 指控 OpenAI 施压、拒绝其合作者 Levent Alpöge（任职于 Anthropic）署名，且可能用两人上传到 Codex 的草稿训练模型，称其为绝对学术不端。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmttzipvw0sqlrofp63a8px22",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:chatgpt",
-        "source_prior:official_ai"
+        "strong:openai",
+        "strong:anthropic",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ec5fe25b351e011de555494af6a4f6b7f9b7fe67",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Thomas Wolf 认为 AI 数学尚未被解决，Navier-Stokes 结果更像反例搜索而非完整证明",
+      "url": "https://aihot.news/items/cmttwq6oy0pybrofphae4ykhb",
+      "published_at": "2026-09-09T09:17:53Z",
+      "summary": "Hugging Face 联创 Thomas Wolf 回应 OpenAI 用下一代模型（强于 GPT-6 Astra）的 agent 群组证明 Navier-Stokes 千禧年问题猜想为假的结果，称其令人印象深刻。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmttwq6oy0pybrofphae4ykhb",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -387,25 +407,6 @@
         "source:actions"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "91b982aca8c901372207b29c51c5a645705acac1",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 发布 ChatGPT Images 2.5 图像模型",
-      "url": "https://aihot.news/items/cmtt0pw2p018pro9owlhpi092",
-      "published_at": "2026-09-08T11:30:00Z",
-      "summary": "OpenAI 发布 ChatGPT Images 2.5 图像模型，生成延迟比 Images 2.0 降低最多 50%，细节、编辑精度、参考照片保真度和多轮编辑一致性均有提升。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtt0pw2p018pro9owlhpi092",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -416,10 +417,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1180,
-      "kept_count": 3,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 431,
-      "checked_at": "2026-09-09T08:23:38.571129Z"
+      "latency_ms": 449,
+      "checked_at": "2026-09-09T11:41:16.891907Z"
     },
     {
       "source_id": "openai-skills",
@@ -430,8 +431,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 279,
-      "checked_at": "2026-09-09T08:23:38.850388Z"
+      "latency_ms": 288,
+      "checked_at": "2026-09-09T11:41:17.180180Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -442,8 +443,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 75,
-      "checked_at": "2026-09-09T08:23:38.928185Z"
+      "latency_ms": 134,
+      "checked_at": "2026-09-09T11:41:17.318574Z"
     },
     {
       "source_id": "google-deepmind",
@@ -454,8 +455,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 271,
-      "checked_at": "2026-09-09T08:23:39.200643Z"
+      "latency_ms": 352,
+      "checked_at": "2026-09-09T11:41:17.672044Z"
     },
     {
       "source_id": "google-ai",
@@ -466,8 +467,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 229,
-      "checked_at": "2026-09-09T08:23:39.430668Z"
+      "latency_ms": 179,
+      "checked_at": "2026-09-09T11:41:17.852235Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -478,8 +479,8 @@
       "fetched_count": 860,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 204,
-      "checked_at": "2026-09-09T08:23:39.644040Z"
+      "latency_ms": 308,
+      "checked_at": "2026-09-09T11:41:18.172307Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -490,8 +491,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 214,
-      "checked_at": "2026-09-09T08:23:39.858696Z"
+      "latency_ms": 221,
+      "checked_at": "2026-09-09T11:41:18.394510Z"
     },
     {
       "source_id": "github-changelog",
@@ -502,8 +503,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 19,
-      "checked_at": "2026-09-09T08:23:39.878235Z"
+      "latency_ms": 34,
+      "checked_at": "2026-09-09T11:41:18.429429Z"
     },
     {
       "source_id": "aihot",
@@ -512,10 +513,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 9,
+      "kept_count": 11,
       "error": null,
-      "latency_ms": 728,
-      "checked_at": "2026-09-09T08:23:40.607401Z"
+      "latency_ms": 1208,
+      "checked_at": "2026-09-09T11:41:19.639519Z"
     }
   ],
   "control_notes": {
