@@ -1,44 +1,40 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-09T13:03:33.624351Z",
+  "generated_at": "2026-09-09T17:32:45.251791Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 16,
+  "item_count": 12,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 11,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          11
+          8
         ]
       ],
       "top_keywords": [
         [
-          "aggregate_noise",
-          11
+          "openai",
+          8
         ],
         [
-          "openai",
-          10
+          "aggregate_noise",
+          8
         ],
         [
           "anthropic",
-          5
+          3
         ],
         [
           "codex",
           3
         ],
         [
-          "智能体",
-          3
-        ],
-        [
           "claude",
-          2
+          1
         ],
         [
           "hugging face",
@@ -59,25 +55,13 @@
         [
           "API",
           1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
+        ],
         [
-          "OpenAI News",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "codex",
+          "智能体",
           1
         ],
         [
-          "official_ai",
+          "评测",
           1
         ]
       ]
@@ -97,7 +81,7 @@
           6
         ],
         [
-          "actions",
+          "agent",
           1
         ]
       ]
@@ -122,24 +106,6 @@
         "strong:claude",
         "strong:codex",
         "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "2cdcdb27678f1aa5481f9a74a405b9de69ad06b9",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
-      "url": "https://openai.com/index/codex-quantum-computing-experiments",
-      "published_at": "2026-09-08T17:00:00Z",
-      "summary": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:codex",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -258,6 +224,23 @@
       "is_ai_related": true
     },
     {
+      "id": "242d3feae7a43c179fa55fa649f534f29fa1a5b8",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Remediate Code Quality findings with agentic autofix",
+      "url": "https://github.blog/changelog/2026-09-09-remediate-code-quality-findings-with-agentic-autofix",
+      "published_at": "2026-09-09T12:21:01Z",
+      "summary": "Agentic autofix is now available to help you burn down findings in your code quality backlog. You can select up to 25 standard findings on a page and assign the… The post Remediate Code Quality findings with agentic autofix appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:agent"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "a907368eb9928a2bc316e032d11a39b148af0027",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -316,95 +299,21 @@
       "is_ai_related": true
     },
     {
-      "id": "5fbc396c1d922829972406dbbb61d6e9f82a6e41",
+      "id": "9c93a94e25f97af64b953384b44ddb78b456babc",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "NYU 数学家指控 OpenAI 在千禧年难题竞赛中不正当竞争，Bubeck 否认",
-      "url": "https://aihot.news/items/cmtsz2a0q02ciro5w7oz3a0ix",
-      "published_at": "2026-09-08T17:32:15Z",
-      "summary": "NYU 数学教授 Tristan Buckmaster 与 Anthropic 数学家 Levent Alpöge 公布针对 Navier-Stokes 存在与光滑性这一千禧年难题的三项证明初步结果，并称其研究进展信息被泄露给 OpenAI，对方随后用大量算力沿其独特路线追赶证明。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtsz2a0q02ciro5w7oz3a0ix",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "552f0e5ab2ead01b98b74443ee7c8fd3e6918007",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Noam Brown 评 OpenAI 用智能体求解 Navier-Stokes 千禧年难题：成本会快速下降",
-      "url": "https://aihot.news/items/cmtsy52b401faro5wv9smnfmk",
-      "published_at": "2026-09-08T17:25:41Z",
-      "summary": "Noam Brown 就 OpenAI 宣布以智能体组合求解 Navier-Stokes 千禧年大奖难题发表看法，承认这次证明花费数百万美元，但认为成本会快速下降。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtsy52b401faro5wv9smnfmk",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7fec3015452d587390181f9320f71f51ce466527",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 智能体团队宣布求解 Navier-Stokes 千禧年大奖难题并向独立证明者致贺",
-      "url": "https://aihot.news/items/cmtsynojw01xqro5wb8n7ysor",
-      "published_at": "2026-09-08T17:23:27Z",
-      "summary": "OpenAI 宣布由一组智能体使用一个能力显著超过 GPT-6 Astra 的下一代模型给出 Navier-Stokes 千禧年大奖难题的解，该问题关注三维光滑流体运动的描述是否会失效，已悬置约 90 年。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtsynojw01xqro5wb8n7ysor",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c4a84be40c878d1704e194b6e9f6fef97e33bc47",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 讲解用 Claude Platform 降低成本并提升性能的三个方法",
-      "url": "https://aihot.news/items/cmtsxacbf04jkrob5fu5sp5ti",
-      "published_at": "2026-09-08T17:01:27Z",
-      "summary": "Anthropic 团队文章指出，优化 prompt cache 命中率、清除升级到前沿 Claude 模型后的提示词反模式、校准 effort 三个手段可在不牺牲性能的情况下降低成本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtsxacbf04jkrob5fu5sp5ti",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "bddfe41f9c07306329d95812d6066c5af3bc49fd",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Automatic Dependabot access to GitHub-hosted registries",
-      "url": "https://github.blog/changelog/2026-09-08-automatic-dependabot-access-to-github-hosted-registries",
-      "published_at": "2026-09-08T16:46:05Z",
-      "summary": "Dependabot can now read from private GitHub Packages registries without a personal access token. If a package has granted your repository access through “Manage Actions access” in the package settings,… The post Automatic Dependabot access to GitHub-hosted registries appeared first on The GitHub Blog .",
+      "title": "GPT-6 Astra 发布后，Sebastian Raschka 解析 looped transformer 与隐藏推理链传闻",
+      "url": "https://aihot.news/items/cmtud99z117yurofph84r3cio",
+      "published_at": "2026-09-09T14:37:47Z",
+      "summary": "OpenAI 发布 GPT-6 Astra，作者评测认为其计算机使用和图像渲染能力尤为突出，ARC-AGI-3 达 99.9%，前代 GPT-5.6 Sol 仅 7.8%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtud99z117yurofph84r3cio",
       "relevance_score": 2,
       "relevance_reasons": [
-        "source:actions"
+        "strong:openai",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     }
@@ -417,10 +326,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1180,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 475,
-      "checked_at": "2026-09-09T13:03:27.299918Z"
+      "latency_ms": 558,
+      "checked_at": "2026-09-09T17:32:43.257100Z"
     },
     {
       "source_id": "openai-skills",
@@ -431,8 +340,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 250,
-      "checked_at": "2026-09-09T13:03:27.550167Z"
+      "latency_ms": 237,
+      "checked_at": "2026-09-09T17:32:43.495151Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -443,8 +352,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 201,
-      "checked_at": "2026-09-09T13:03:27.755523Z"
+      "latency_ms": 119,
+      "checked_at": "2026-09-09T17:32:43.618761Z"
     },
     {
       "source_id": "google-deepmind",
@@ -455,8 +364,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 323,
-      "checked_at": "2026-09-09T13:03:28.080808Z"
+      "latency_ms": 191,
+      "checked_at": "2026-09-09T17:32:43.811638Z"
     },
     {
       "source_id": "google-ai",
@@ -467,8 +376,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 227,
-      "checked_at": "2026-09-09T13:03:28.308233Z"
+      "latency_ms": 110,
+      "checked_at": "2026-09-09T17:32:43.923049Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -479,8 +388,8 @@
       "fetched_count": 860,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 237,
-      "checked_at": "2026-09-09T13:03:28.558080Z"
+      "latency_ms": 326,
+      "checked_at": "2026-09-09T17:32:44.261862Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -491,8 +400,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 320,
-      "checked_at": "2026-09-09T13:03:28.878553Z"
+      "latency_ms": 138,
+      "checked_at": "2026-09-09T17:32:44.400880Z"
     },
     {
       "source_id": "github-changelog",
@@ -503,8 +412,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-09-09T13:03:28.903154Z"
+      "latency_ms": 27,
+      "checked_at": "2026-09-09T17:32:44.428475Z"
     },
     {
       "source_id": "aihot",
@@ -513,10 +422,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 11,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 4710,
-      "checked_at": "2026-09-09T13:03:33.615288Z"
+      "latency_ms": 813,
+      "checked_at": "2026-09-09T17:32:45.243307Z"
     }
   ],
   "control_notes": {
