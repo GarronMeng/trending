@@ -1,71 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-10T08:25:37.373066Z",
+  "generated_at": "2026-09-10T11:38:46.624220Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 8,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
-      "count": 7,
-      "top_sources": [
-        [
-          "AI Hot",
-          7
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          7
-        ],
-        [
-          "openai",
-          5
-        ],
-        [
-          "anthropic",
-          3
-        ],
-        [
-          "评测",
-          3
-        ],
-        [
-          "codex",
-          2
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "人工智能",
-          1
-        ],
-        [
-          "hugging face",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "多模态",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
       "count": 2,
@@ -92,44 +32,78 @@
       "top_sources": [
         [
           "OpenAI News",
-          2
+          1
+        ],
+        [
+          "Hugging Face Blog",
+          1
         ]
       ],
       "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 4,
+      "top_sources": [
+        [
+          "AI Hot",
+          4
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          4
+        ],
+        [
+          "评测",
+          3
+        ],
         [
           "openai",
           2
         ],
         [
-          "official_ai",
+          "anthropic",
           2
+        ],
+        [
+          "人工智能",
+          1
+        ],
+        [
+          "多模态",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "claude",
+          1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "4ac674916452d5625faafe7a0b2a7305711b104b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 发布 GPT-6 Astra，面向专业工作场景",
-      "url": "https://aihot.news/items/cmtun5zb61iwvrofpczl5k33h",
-      "published_at": "2026-09-09T11:00:00Z",
-      "summary": "OpenAI 发布 GPT-6 Astra，已在 ChatGPT Work、Codex 和 API 提供，定价为每百万输入 token $10、输出 token $50。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtun5zb61iwvrofpczl5k33h",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:codex",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "fd1bcedd9691d0da0684ef5fa67ddd6866864721",
       "source_id": "github-changelog",
@@ -168,24 +142,6 @@
       "is_ai_related": true
     },
     {
-      "id": "976f8589a74beb200481d69d5028af5154c7fedd",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "GPT-6 Astra: The next generation in intelligence for work",
-      "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
-      "published_at": "2026-09-09T11:00:00Z",
-      "summary": "Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "975f21cbe253212e79d23689110409af5cb3658f",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -206,42 +162,20 @@
       "is_ai_related": true
     },
     {
-      "id": "aa28e418f5b3ee2c6c1b264390e900733e9ad730",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 纳维-斯托克斯方程证明争议：Buckmaster 指控不当行为，各方回应引出开放科学之问",
-      "url": "https://aihot.news/items/cmttzipvw0sqlrofp63a8px22",
-      "published_at": "2026-09-09T10:27:37Z",
-      "summary": "数学家 Tristan Buckmaster 指控 OpenAI 施压、拒绝其合作者 Levent Alpöge（任职于 Anthropic）署名，且可能用两人上传到 Codex 的草稿训练模型，称其为绝对学术不端。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmttzipvw0sqlrofp63a8px22",
-      "relevance_score": 5,
+      "id": "17bd29b1eedd74010bb92e11129e428e67863662",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+      "url": "https://huggingface.co/blog/gradio-workflow-1111",
+      "published_at": "2026-09-10T00:00:00Z",
+      "summary": null,
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ec5fe25b351e011de555494af6a4f6b7f9b7fe67",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Thomas Wolf 认为 AI 数学尚未被解决，Navier-Stokes 结果更像反例搜索而非完整证明",
-      "url": "https://aihot.news/items/cmttwq6oy0pybrofphae4ykhb",
-      "published_at": "2026-09-09T09:17:53Z",
-      "summary": "Hugging Face 联创 Thomas Wolf 回应 OpenAI 用下一代模型（强于 GPT-6 Astra）的 agent 群组证明 Navier-Stokes 千禧年问题猜想为假的结果，称其令人印象深刻。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmttwq6oy0pybrofphae4ykhb",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:hugging face",
-        "strong:agent",
-        "source_penalty:aggregate_noise"
+        "weak:workflow",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -331,10 +265,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1183,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 550,
-      "checked_at": "2026-09-10T08:25:34.269353Z"
+      "latency_ms": 480,
+      "checked_at": "2026-09-10T11:38:41.498901Z"
     },
     {
       "source_id": "openai-skills",
@@ -345,8 +279,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 354,
-      "checked_at": "2026-09-10T08:25:34.623927Z"
+      "latency_ms": 350,
+      "checked_at": "2026-09-10T11:38:41.849985Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -357,8 +291,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 423,
-      "checked_at": "2026-09-10T08:25:35.051358Z"
+      "latency_ms": 187,
+      "checked_at": "2026-09-10T11:38:42.041297Z"
     },
     {
       "source_id": "google-deepmind",
@@ -369,8 +303,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 380,
-      "checked_at": "2026-09-10T08:25:35.433094Z"
+      "latency_ms": 366,
+      "checked_at": "2026-09-10T11:38:42.408794Z"
     },
     {
       "source_id": "google-ai",
@@ -381,8 +315,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 255,
-      "checked_at": "2026-09-10T08:25:35.689167Z"
+      "latency_ms": 267,
+      "checked_at": "2026-09-10T11:38:42.676303Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -390,11 +324,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 860,
-      "kept_count": 0,
+      "fetched_count": 861,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 378,
-      "checked_at": "2026-09-10T08:25:36.080739Z"
+      "latency_ms": 320,
+      "checked_at": "2026-09-10T11:38:43.008157Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -405,8 +339,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 214,
-      "checked_at": "2026-09-10T08:25:36.295137Z"
+      "latency_ms": 368,
+      "checked_at": "2026-09-10T11:38:43.377004Z"
     },
     {
       "source_id": "github-changelog",
@@ -417,8 +351,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 33,
-      "checked_at": "2026-09-10T08:25:36.328604Z"
+      "latency_ms": 30,
+      "checked_at": "2026-09-10T11:38:43.407943Z"
     },
     {
       "source_id": "aihot",
@@ -427,10 +361,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 1035,
-      "checked_at": "2026-09-10T08:25:37.365205Z"
+      "latency_ms": 3204,
+      "checked_at": "2026-09-10T11:38:46.613573Z"
     }
   ],
   "control_notes": {
