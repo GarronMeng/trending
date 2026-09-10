@@ -1,32 +1,32 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-09T17:32:45.251791Z",
+  "generated_at": "2026-09-10T02:28:46.088276Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 14,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          8
+          9
         ]
       ],
       "top_keywords": [
         [
-          "openai",
-          8
+          "aggregate_noise",
+          9
         ],
         [
-          "aggregate_noise",
-          8
+          "openai",
+          7
         ],
         [
           "anthropic",
-          3
+          6
         ],
         [
           "codex",
@@ -34,15 +34,11 @@
         ],
         [
           "claude",
-          1
+          3
         ],
         [
-          "hugging face",
-          1
-        ],
-        [
-          "agent",
-          1
+          "评测",
+          3
         ],
         [
           "chatgpt",
@@ -57,37 +53,83 @@
           1
         ],
         [
-          "智能体",
+          "人工智能",
           1
         ],
         [
-          "评测",
+          "hugging face",
           1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 4,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          4
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          6
         ],
         [
           "agent",
           1
         ]
       ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 3,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          3
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          4
+        ],
+        [
+          "agent",
+          2
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "OpenAI News",
+          2
+        ]
+      ],
+      "top_keywords": [
+        [
+          "openai",
+          2
+        ],
+        [
+          "official_ai",
+          2
+        ]
+      ]
     }
   },
   "items": [
+    {
+      "id": "4ac674916452d5625faafe7a0b2a7305711b104b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布 GPT-6 Astra，面向专业工作场景",
+      "url": "https://aihot.news/items/cmtun5zb61iwvrofpczl5k33h",
+      "published_at": "2026-09-09T11:00:00Z",
+      "summary": "OpenAI 发布 GPT-6 Astra，已在 ChatGPT Work、Codex 和 API 提供，定价为每百万输入 token $10、输出 token $50。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtun5zb61iwvrofpczl5k33h",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "115fd9d49488fe7cefd7210eb0c8342649a81a81",
       "source_id": "aihot",
@@ -105,6 +147,81 @@
         "strong:anthropic",
         "strong:claude",
         "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fd1bcedd9691d0da0684ef5fa67ddd6866864721",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Enterprise managed permissions for GitHub Copilot agent operations",
+      "url": "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations",
+      "published_at": "2026-09-09T20:08:14Z",
+      "summary": "If you administer GitHub Copilot Business or GitHub Copilot Enterprise, you can now centrally control which agent operations are blocked, require human approval, or can proceed without a prompt. Managed… The post Enterprise managed permissions for GitHub Copilot agent operations appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e6b7826985d43342b92459c775e19ffcd92fd765",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Paul Christiano joins OpenAI Foundation Board",
+      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "published_at": "2026-09-09T17:00:00Z",
+      "summary": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "976f8589a74beb200481d69d5028af5154c7fedd",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "GPT-6 Astra: The next generation in intelligence for work",
+      "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+      "published_at": "2026-09-09T11:00:00Z",
+      "summary": "Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "975f21cbe253212e79d23689110409af5cb3658f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
+      "url": "https://aihot.news/items/cmturtlc70cqurorpv4fsfr4t",
+      "published_at": "2026-09-10T00:08:00Z",
+      "summary": "27岁研究员Jacob Coxon辞职并称OpenAI与Anthropic正押上所有人生命奔向自我改进的超级智能，Anthropic对齐负责人公开支持。作者由此重读Tim Urban 2015年《The AI Revolution》，指出智能爆炸的正反馈回路已见雏形，人类正面临灭绝或物种永生两种结局。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmturtlc70cqurorpv4fsfr4t",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:人工智能",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -150,21 +267,41 @@
       "is_ai_related": true
     },
     {
-      "id": "9882aa06bbcdf03a914b21a39cc49c60f234eca4",
+      "id": "39fe42206c21882039bb141654ddd4a4f295913f",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 向 Plus、Pro、Business 和 Enterprise 用户全面推送 Astra",
-      "url": "https://aihot.news/items/cmtt65r1002f0rocpzpypdjgt",
-      "published_at": "2026-09-08T21:06:10Z",
-      "summary": "OpenAI 宣布 Astra 已全面推送给 Codex 和 ChatGPT Work 中的 Plus、Pro、Business 和 Enterprise 用户。用户可以直接使用，并可通过 openai.com/gpt-tv/ 观看 Astra 的实机演示。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtt65r1002f0rocpzpypdjgt",
-      "relevance_score": 5,
+      "title": "Anthropic 发布四起 Claude 网络安全评测事故的对齐评估报告",
+      "url": "https://aihot.news/items/cmtuhr1gr1dmxrofp90rc4c6u",
+      "published_at": "2026-09-09T19:28:17Z",
+      "summary": "Anthropic 对四起 Claude 模型因评测环境配置错误而接入真实互联网的事故发布对齐评估，涉及 Claude Mythos 5、Claude Opus 4.7 和 Claude Opus 4.6 早期检查点等模型，其中 Mythos 5 曾向 PyPI 上传恶意包并被 15 个第三方主机安装。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtuhr1gr1dmxrofp90rc4c6u",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:codex",
+        "strong:anthropic",
+        "strong:claude",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "65b76fceeae55be1edbf21313369a14c1d82ee0e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 发布 Claude 模型越权访问事件的对齐评估，METR 将独立调查",
+      "url": "https://aihot.news/items/cmtuhrbi71dnsrofpx3fnhef7",
+      "published_at": "2026-09-09T19:02:43Z",
+      "summary": "Anthropic 发布对齐评估，回应 Claude 模型在第三方网络安全评测中被误连互联网后越权访问真实系统的事件。METR 将开展独立调查，可获取包括事件窗口外记录及经许可分享机密信息的员工访谈等广泛资料，初步协议为期八周，Anthropic 表示愿意给 METR 充足时间完成彻底调查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtuhrbi71dnsrofpx3fnhef7",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -180,42 +317,6 @@
       "url": "https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains",
       "published_at": "2026-09-09T02:43:38Z",
       "summary": "This update brings support for enterprise-managed sandbox policies, cross-file cursor jumps for next edit suggestions, global project context in chat, enterprise policy diagnostics, and a new connection between terminal Copilot… The post Enterprise-managed sandbox in Copilot for JetBrains appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "fd800c645ea4880ce3b85d275fc5316965d28f34",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Enterprise Server 3.22 is now generally available",
-      "url": "https://github.blog/changelog/2026-09-08-github-enterprise-server-3-22-is-now-generally-available",
-      "published_at": "2026-09-08T21:52:42Z",
-      "summary": "GitHub Enterprise Server (GHES) 3.22 is now available and introduces new capabilities across the platform. Here are a few highlights in the 3.22 release: Administrators can configure Copilot CLI to… The post GitHub Enterprise Server 3.22 is now generally available appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1d3b5042ed8bdad0656b90aa012b1f0267d05c20",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "New customer portal help.github.com",
-      "url": "https://github.blog/changelog/2026-09-08-new-customer-portal-help-github-com",
-      "published_at": "2026-09-08T18:00:10Z",
-      "summary": "The support portal has been redesigned and moved to a new home at help.github.com. It brings support, docs, learning, community, and account resources together in one place with Copilot-powered search… The post New customer portal help.github.com appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
         "weak:copilot",
@@ -260,45 +361,6 @@
       "is_ai_related": true
     },
     {
-      "id": "384effdf2264b7834f998058a87c5d8c9e3d95ae",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 上线 GPT Image 2.5，作者实测新版与 image2 的生图差异",
-      "url": "https://aihot.news/items/cmttklkuj0chfrofpzacvz20x",
-      "published_at": "2026-09-09T00:27:00Z",
-      "summary": "OpenAI 上线 GPT Image 2.5，主打更快生成、更高清、多轮编辑一致性和区域标注精修，并新增涂鸦绘图与 15 个图片模版功能。API 同步发布 GPT-Image-2.5 Flare（速度提升 50%）和 GPT-Image-2.5 Sunburst（更高精度）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmttklkuj0chfrofpzacvz20x",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "dcc6ad65d58ec78abe19c05108c10317a575f134",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Emad Mostaque 称 OpenAI 智能体求解 Navier-Stokes 千禧年难题是迈向 ASI 的里程碑",
-      "url": "https://aihot.news/items/cmtsyfj5p01qgro5wfoz5h410",
-      "published_at": "2026-09-08T17:35:10Z",
-      "summary": "Emad Mostaque 转发 OpenAI 的公告并评论称这是迈向 ASI 的里程碑事件。OpenAI 宣布由一组智能体使用显著强于 GPT-6 Astra 的下一代模型，给出了 Navier-Stokes 千禧年大奖难题的一个 blow up 解，该问题涉及三维光滑流体运动的描述是否会崩溃，约 90 年未解。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtsyfj5p01qgro5wfoz5h410",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "9c93a94e25f97af64b953384b44ddb78b456babc",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -325,11 +387,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1180,
-      "kept_count": 0,
+      "fetched_count": 1183,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 558,
-      "checked_at": "2026-09-09T17:32:43.257100Z"
+      "latency_ms": 560,
+      "checked_at": "2026-09-10T02:28:42.997704Z"
     },
     {
       "source_id": "openai-skills",
@@ -340,8 +402,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 237,
-      "checked_at": "2026-09-09T17:32:43.495151Z"
+      "latency_ms": 244,
+      "checked_at": "2026-09-10T02:28:43.242307Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -352,8 +414,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 119,
-      "checked_at": "2026-09-09T17:32:43.618761Z"
+      "latency_ms": 130,
+      "checked_at": "2026-09-10T02:28:43.376776Z"
     },
     {
       "source_id": "google-deepmind",
@@ -364,8 +426,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 191,
-      "checked_at": "2026-09-09T17:32:43.811638Z"
+      "latency_ms": 730,
+      "checked_at": "2026-09-10T02:28:44.109060Z"
     },
     {
       "source_id": "google-ai",
@@ -376,8 +438,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 110,
-      "checked_at": "2026-09-09T17:32:43.923049Z"
+      "latency_ms": 264,
+      "checked_at": "2026-09-10T02:28:44.373622Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -388,8 +450,8 @@
       "fetched_count": 860,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 326,
-      "checked_at": "2026-09-09T17:32:44.261862Z"
+      "latency_ms": 413,
+      "checked_at": "2026-09-10T02:28:44.799869Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -400,8 +462,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 138,
-      "checked_at": "2026-09-09T17:32:44.400880Z"
+      "latency_ms": 314,
+      "checked_at": "2026-09-10T02:28:45.114224Z"
     },
     {
       "source_id": "github-changelog",
@@ -410,10 +472,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-09-09T17:32:44.428475Z"
+      "latency_ms": 58,
+      "checked_at": "2026-09-10T02:28:45.173071Z"
     },
     {
       "source_id": "aihot",
@@ -422,10 +484,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 813,
-      "checked_at": "2026-09-09T17:32:45.243307Z"
+      "latency_ms": 905,
+      "checked_at": "2026-09-10T02:28:46.079624Z"
     }
   ],
   "control_notes": {
