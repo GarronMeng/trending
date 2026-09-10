@@ -1,39 +1,31 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-10T02:28:46.088276Z",
+  "generated_at": "2026-09-10T08:25:37.373066Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 14,
+  "item_count": 11,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          9
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
-        ],
-        [
-          "openai",
           7
         ],
         [
+          "openai",
+          5
+        ],
+        [
           "anthropic",
-          6
-        ],
-        [
-          "codex",
-          3
-        ],
-        [
-          "claude",
           3
         ],
         [
@@ -41,15 +33,19 @@
           3
         ],
         [
-          "chatgpt",
-          1
+          "codex",
+          2
         ],
         [
           "api",
-          1
+          2
         ],
         [
           "API",
+          2
+        ],
+        [
+          "chatgpt",
           1
         ],
         [
@@ -63,25 +59,29 @@
         [
           "agent",
           1
+        ],
+        [
+          "多模态",
+          1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          3
+          2
         ]
       ],
       "top_keywords": [
         [
-          "copilot",
-          4
+          "agent",
+          2
         ],
         [
-          "agent",
+          "copilot",
           2
         ]
       ]
@@ -126,27 +126,6 @@
         "strong:codex",
         "weak:api",
         "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "115fd9d49488fe7cefd7210eb0c8342649a81a81",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "纽约大学教授质疑OpenAI借助其研究抢先发布纳维-斯托克斯问题证明",
-      "url": "https://aihot.news/items/cmttxf8n90qovrofp2tiv0g2g",
-      "published_at": "2026-09-09T09:34:47Z",
-      "summary": "纽约大学教授Tristan Buckmaster与Anthropic数学家Levent Alpöge使用Codex和Claude在纳维-斯托克斯存在性与光滑性问题上取得初步进展，随后OpenAI公布了该千禧年大奖难题的完整证明，称其由一个尚未发布的新一代模型发现，研究始于9月1日，总计消耗3000亿个输出Token，按Astra价格计算约2250万美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmttxf8n90qovrofp2tiv0g2g",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:claude",
-        "strong:codex",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -267,6 +246,27 @@
       "is_ai_related": true
     },
     {
+      "id": "8f1b6acadc07daa2b2ae5faf79d1ad23d8fa95c9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "DeepSeek 发布 V4.1-Flash，API 价格同步下调",
+      "url": "https://aihot.news/items/cmtv48yni0oq5rorpf4o74549",
+      "published_at": "2026-09-10T05:58:04Z",
+      "summary": "DeepSeek 发布 DeepSeek-V4.1-Flash，是全新模型结构系列中最小尺寸的模型，具备原生多模态视觉理解能力，评测包括 GPQA Diamond 90.9、HLE 36.8、Codeforces Rating 3471、Terminal-Bench 2.1 90.6 等。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtv48yni0oq5rorpf4o74549",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:多模态",
+        "weak:api",
+        "weak:API",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "39fe42206c21882039bb141654ddd4a4f295913f",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -287,44 +287,6 @@
       "is_ai_related": true
     },
     {
-      "id": "65b76fceeae55be1edbf21313369a14c1d82ee0e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude 模型越权访问事件的对齐评估，METR 将独立调查",
-      "url": "https://aihot.news/items/cmtuhrbi71dnsrofpx3fnhef7",
-      "published_at": "2026-09-09T19:02:43Z",
-      "summary": "Anthropic 发布对齐评估，回应 Claude 模型在第三方网络安全评测中被误连互联网后越权访问真实系统的事件。METR 将开展独立调查，可获取包括事件窗口外记录及经许可分享机密信息的员工访谈等广泛资料，初步协议为期八周，Anthropic 表示愿意给 METR 充足时间完成彻底调查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtuhrbi71dnsrofpx3fnhef7",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "307227dff1eb65a190707ce0ccd6caa632459259",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Enterprise-managed sandbox in Copilot for JetBrains",
-      "url": "https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains",
-      "published_at": "2026-09-09T02:43:38Z",
-      "summary": "This update brings support for enterprise-managed sandbox policies, cross-file cursor jumps for next edit suggestions, global project context in chat, enterprise policy diagnostics, and a new connection between terminal Copilot… The post Enterprise-managed sandbox in Copilot for JetBrains appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "242d3feae7a43c179fa55fa649f534f29fa1a5b8",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -338,25 +300,6 @@
       "relevance_score": 2,
       "relevance_reasons": [
         "strong:agent"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a907368eb9928a2bc316e032d11a39b148af0027",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Simon Willison 评纳维-斯托克斯千禧年问题求解背后的 OpenAI 与 Anthropic 争议",
-      "url": "https://aihot.news/items/cmtts0bi50l1frofpe39el7a1",
-      "published_at": "2026-09-09T07:10:03Z",
-      "summary": "Simon Willison 评论 OpenAI 用未发布模型在约 88 小时内求解纳维-斯托克斯存在性与光滑性问题，并经 GPT-6 Astra 完成 17 小时 Lean 形式化验证。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtts0bi50l1frofpe39el7a1",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -390,8 +333,8 @@
       "fetched_count": 1183,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 560,
-      "checked_at": "2026-09-10T02:28:42.997704Z"
+      "latency_ms": 550,
+      "checked_at": "2026-09-10T08:25:34.269353Z"
     },
     {
       "source_id": "openai-skills",
@@ -402,8 +345,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 244,
-      "checked_at": "2026-09-10T02:28:43.242307Z"
+      "latency_ms": 354,
+      "checked_at": "2026-09-10T08:25:34.623927Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -414,8 +357,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 130,
-      "checked_at": "2026-09-10T02:28:43.376776Z"
+      "latency_ms": 423,
+      "checked_at": "2026-09-10T08:25:35.051358Z"
     },
     {
       "source_id": "google-deepmind",
@@ -426,8 +369,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 730,
-      "checked_at": "2026-09-10T02:28:44.109060Z"
+      "latency_ms": 380,
+      "checked_at": "2026-09-10T08:25:35.433094Z"
     },
     {
       "source_id": "google-ai",
@@ -438,8 +381,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 264,
-      "checked_at": "2026-09-10T02:28:44.373622Z"
+      "latency_ms": 255,
+      "checked_at": "2026-09-10T08:25:35.689167Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -450,8 +393,8 @@
       "fetched_count": 860,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 413,
-      "checked_at": "2026-09-10T02:28:44.799869Z"
+      "latency_ms": 378,
+      "checked_at": "2026-09-10T08:25:36.080739Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -462,8 +405,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 314,
-      "checked_at": "2026-09-10T02:28:45.114224Z"
+      "latency_ms": 214,
+      "checked_at": "2026-09-10T08:25:36.295137Z"
     },
     {
       "source_id": "github-changelog",
@@ -472,10 +415,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 58,
-      "checked_at": "2026-09-10T02:28:45.173071Z"
+      "latency_ms": 33,
+      "checked_at": "2026-09-10T08:25:36.328604Z"
     },
     {
       "source_id": "aihot",
@@ -484,10 +427,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 9,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 905,
-      "checked_at": "2026-09-10T02:28:46.079624Z"
+      "latency_ms": 1035,
+      "checked_at": "2026-09-10T08:25:37.365205Z"
     }
   ],
   "control_notes": {
