@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-10T11:38:46.624220Z",
+  "generated_at": "2026-09-10T13:00:10.827692Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,21 +8,21 @@
   "groups": {
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          1
         ]
       ],
       "top_keywords": [
         [
-          "agent",
+          "copilot",
           2
         ],
         [
-          "copilot",
-          2
+          "agent",
+          1
         ]
       ]
     },
@@ -56,17 +56,17 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          4
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
+          5
         ],
         [
           "评测",
@@ -98,6 +98,14 @@
         ],
         [
           "claude",
+          1
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "workflow",
           1
         ]
       ]
@@ -221,19 +229,21 @@
       "is_ai_related": true
     },
     {
-      "id": "242d3feae7a43c179fa55fa649f534f29fa1a5b8",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Remediate Code Quality findings with agentic autofix",
-      "url": "https://github.blog/changelog/2026-09-09-remediate-code-quality-findings-with-agentic-autofix",
-      "published_at": "2026-09-09T12:21:01Z",
-      "summary": "Agentic autofix is now available to help you burn down findings in your code quality backlog. You can select up to 25 standard findings on a page and assign the… The post Remediate Code Quality findings with agentic autofix appeared first on The GitHub Blog .",
+      "id": "9dfd13997b806b632ce555109fca27dfca41fc3b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能",
+      "url": "https://aihot.news/items/cmtvh5qcn05vfronbsu51vfic",
+      "published_at": "2026-09-10T00:00:00Z",
+      "summary": "Hugging Face 发布 Workflow1111，用 gr.Workflow 以 73 个节点、11 条媒体管线重建 AUTOMATIC1111 的大部分功能，覆盖文本生成图像、高清修复、图生图、prompt matrix、VLM 反推提示词、检测生成 inpaint 蒙版、ControlNet 式预处理器、背景移除、PNG Info 和图生视频。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtvh5qcn05vfronbsu51vfic",
       "relevance_score": 2,
       "relevance_reasons": [
-        "strong:agent"
+        "strong:hugging face",
+        "weak:workflow",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -267,8 +277,8 @@
       "fetched_count": 1183,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 480,
-      "checked_at": "2026-09-10T11:38:41.498901Z"
+      "latency_ms": 397,
+      "checked_at": "2026-09-10T13:00:08.526743Z"
     },
     {
       "source_id": "openai-skills",
@@ -279,8 +289,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 350,
-      "checked_at": "2026-09-10T11:38:41.849985Z"
+      "latency_ms": 277,
+      "checked_at": "2026-09-10T13:00:08.804288Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -291,8 +301,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 187,
-      "checked_at": "2026-09-10T11:38:42.041297Z"
+      "latency_ms": 112,
+      "checked_at": "2026-09-10T13:00:08.919193Z"
     },
     {
       "source_id": "google-deepmind",
@@ -303,8 +313,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 366,
-      "checked_at": "2026-09-10T11:38:42.408794Z"
+      "latency_ms": 331,
+      "checked_at": "2026-09-10T13:00:09.251197Z"
     },
     {
       "source_id": "google-ai",
@@ -315,8 +325,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 267,
-      "checked_at": "2026-09-10T11:38:42.676303Z"
+      "latency_ms": 181,
+      "checked_at": "2026-09-10T13:00:09.432721Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -327,8 +337,8 @@
       "fetched_count": 861,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 320,
-      "checked_at": "2026-09-10T11:38:43.008157Z"
+      "latency_ms": 287,
+      "checked_at": "2026-09-10T13:00:09.727566Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -339,8 +349,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 368,
-      "checked_at": "2026-09-10T11:38:43.377004Z"
+      "latency_ms": 189,
+      "checked_at": "2026-09-10T13:00:09.916962Z"
     },
     {
       "source_id": "github-changelog",
@@ -349,10 +359,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-09-10T11:38:43.407943Z"
+      "latency_ms": 23,
+      "checked_at": "2026-09-10T13:00:09.940601Z"
     },
     {
       "source_id": "aihot",
@@ -361,10 +371,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 3204,
-      "checked_at": "2026-09-10T11:38:46.613573Z"
+      "latency_ms": 878,
+      "checked_at": "2026-09-10T13:00:10.820188Z"
     }
   ],
   "control_notes": {
