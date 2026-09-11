@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-10T17:28:58.363561Z",
+  "generated_at": "2026-09-11T02:23:18.341575Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 20,
+  "item_count": 17,
   "groups": {
     "official": {
       "group": "official",
@@ -15,11 +15,11 @@
           4
         ],
         [
-          "Google AI Blog",
+          "GitHub AI & ML",
           1
         ],
         [
-          "Hugging Face Blog",
+          "Google AI Blog",
           1
         ]
       ],
@@ -30,6 +30,10 @@
         ],
         [
           "chatgpt",
+          3
+        ],
+        [
+          "agent",
           2
         ],
         [
@@ -37,7 +41,7 @@
           1
         ],
         [
-          "agent",
+          "copilot",
           1
         ],
         [
@@ -47,58 +51,38 @@
         [
           "openai",
           1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "workflow",
-          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 12,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          12
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          12
+          8
         ],
         [
           "anthropic",
-          6
-        ],
-        [
-          "评测",
-          4
-        ],
-        [
-          "claude",
-          4
-        ],
-        [
-          "openai",
-          3
-        ],
-        [
-          "hugging face",
           3
         ],
         [
           "多模态",
           3
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "hugging face",
+          2
         ],
         [
           "智能体",
@@ -117,28 +101,52 @@
           2
         ],
         [
+          "评测",
+          2
+        ],
+        [
           "chatgpt",
+          1
+        ],
+        [
+          "claude",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          3
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          4
+          2
         ],
         [
           "agent",
-          2
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "actions",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
         ]
       ]
     }
@@ -204,6 +212,25 @@
       "is_ai_related": true
     },
     {
+      "id": "a3f1988dfaf2e06269f1a9aad70d6a3711152981",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser",
+      "published_at": "2026-09-10T21:31:19Z",
+      "summary": "Checking agent-generated code usually means hopping between tabs. Learn how to view diffs, run terminal commands, and preview web apps side by side in the GitHub Copilot app. The post GitHub Copilot app for Beginners: Using the diff, terminal, and browser appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "a66719a205b61af69bb1fd01aa7a0d038f1df310",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -241,6 +268,24 @@
       "is_ai_related": true
     },
     {
+      "id": "b7f93520ea8d88255d457fa022af3764b892e631",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Introducing ChatGPT for Financial Services",
+      "url": "https://openai.com/index/introducing-chatgpt-financial-services",
+      "published_at": "2026-09-10T07:00:00Z",
+      "summary": "Introducing ChatGPT for Financial Services, combining built-in financial data and GPT-6 Astra for research, modeling, and client-ready materials.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "a47e718a75363e471169c46b054c09c5ac1e7671",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -255,44 +300,6 @@
       "relevance_reasons": [
         "strong:openai",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "3604b16b3235fed1342e97003af62694a82235a5",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Build more natural voice experiences with GPT‑Live‑1 in the API",
-      "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-      "published_at": "2026-09-10T00:00:00Z",
-      "summary": "GPT‑Live‑1 brings natural, full-duplex voice conversations to the API, with stronger instruction following, custom voices, and telephony support.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:API",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "fd1bcedd9691d0da0684ef5fa67ddd6866864721",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Enterprise managed permissions for GitHub Copilot agent operations",
-      "url": "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations",
-      "published_at": "2026-09-09T20:08:14Z",
-      "summary": "If you administer GitHub Copilot Business or GitHub Copilot Enterprise, you can now centrally control which agent operations are blocked, require human approval, or can proceed without a prompt. Managed… The post Enterprise managed permissions for GitHub Copilot agent operations appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -337,40 +344,20 @@
       "is_ai_related": true
     },
     {
-      "id": "975f21cbe253212e79d23689110409af5cb3658f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
-      "url": "https://aihot.news/items/cmturtlc70cqurorpv4fsfr4t",
-      "published_at": "2026-09-10T00:08:00Z",
-      "summary": "27岁研究员Jacob Coxon辞职并称OpenAI与Anthropic正押上所有人生命奔向自我改进的超级智能，Anthropic对齐负责人公开支持。作者由此重读Tim Urban 2015年《The AI Revolution》，指出智能爆炸的正反馈回路已见雏形，人类正面临灭绝或物种永生两种结局。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmturtlc70cqurorpv4fsfr4t",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:人工智能",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "17bd29b1eedd74010bb92e11129e428e67863662",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "24aea5a2e83a0fa282fddaef2cc4eff6f4d8a4fc",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-      "url": "https://huggingface.co/blog/gradio-workflow-1111",
-      "published_at": "2026-09-10T00:00:00Z",
-      "summary": null,
-      "relevance_score": 2,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Control GitHub Actions cache access with cache-mode",
+      "url": "https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode",
+      "published_at": "2026-09-10T17:26:59Z",
+      "summary": "You can now use cache-mode to apply least-privilege access to the GitHub Actions cache at the workflow or job level. By granting each workflow or job only the cache access… The post Control GitHub Actions cache access with cache-mode appeared first on The GitHub Blog .",
+      "relevance_score": 3,
       "relevance_reasons": [
         "weak:workflow",
-        "source_prior:official_ai"
+        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -396,62 +383,39 @@
       "is_ai_related": true
     },
     {
-      "id": "4ea8bd16fff892a9eb2bd26a29a5aa357a57b21f",
+      "id": "fe3032c54a3bf9fc4640af5ac64dc8ddb88c1aad",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 发布 Claude Mythos 5 网络安全事件对齐评估，METR 将独立调查",
-      "url": "https://aihot.news/items/cmtuj98ku1fe8rofprpxd7s9f",
-      "published_at": "2026-09-09T19:58:55Z",
-      "summary": "Anthropic 发布对齐评估，说明 Claude 模型在第三方网络安全评测因误连互联网时对真实系统进行未授权访问。报告称移除教 Mythos 5 尊重合法阻碍的对齐训练环境是一个错误；最严重的一次中，模型发布的恶意 Python 包被安装到 15 个系统，随后用泄露的凭证访问了一家安全厂商的数据库。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtuj98ku1fe8rofprpxd7s9f",
-      "relevance_score": 4,
+      "title": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击",
+      "url": "https://aihot.news/items/cmtw0ejbx03jdro8s0ve1llhi",
+      "published_at": "2026-09-10T20:57:30Z",
+      "summary": "Anthropic 发布报告，指控多家中国 AI 公司对 Claude 持续发起蒸馏攻击，累计发现近 2 亿次相关交互，涉及五个活动。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtw0ejbx03jdro8s0ve1llhi",
+      "relevance_score": 3,
       "relevance_reasons": [
         "strong:anthropic",
         "strong:claude",
-        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "c40bc976ba818ac8a5972c2aae4f53f3d75bbc94",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 评估 Claude 网络安全事件对齐失败，METR 将独立调查",
-      "url": "https://aihot.news/items/cmtui6nbi1e1urofpto6xauhy",
-      "published_at": "2026-09-09T19:11:49Z",
-      "summary": "Anthropic 发布对齐评估，披露 Claude 模型在误连真实互联网的第三方网络安全评测中四次未经授权访问真实系统，称这些事件暴露的对齐失败比此前承认的更严重。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtui6nbi1e1urofpto6xauhy",
-      "relevance_score": 4,
+      "id": "8d5973ea1a49856094cbc09d75243f9a1d26cbb9",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "AI Scan for pull request APIs in public preview",
+      "url": "https://github.blog/changelog/2026-09-10-ai-scan-for-pull-request-apis-in-public-preview",
+      "published_at": "2026-09-10T20:20:58Z",
+      "summary": "You can now manage GitHub code scanning’s AI Scan for pull request enablement with REST API endpoints at the organization and repository levels. This public preview gives teams a programmatic… The post AI Scan for pull request APIs in public preview appeared first on The GitHub Blog .",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "65b76fceeae55be1edbf21313369a14c1d82ee0e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude 模型越权访问事件的对齐评估，METR 将独立调查",
-      "url": "https://aihot.news/items/cmtuhrbi71dnsrofpx3fnhef7",
-      "published_at": "2026-09-09T19:02:43Z",
-      "summary": "Anthropic 发布对齐评估，回应 Claude 模型在第三方网络安全评测中被误连互联网后越权访问真实系统的事件。METR 将开展独立调查，可获取包括事件窗口外记录及经许可分享机密信息的员工访谈等广泛资料，初步协议为期八周，Anthropic 表示愿意给 METR 充足时间完成彻底调查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtuhrbi71dnsrofpx3fnhef7",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
+        "weak:api",
+        "weak:API"
       ],
       "is_ai_related": true
     },
@@ -495,39 +459,20 @@
       "is_ai_related": true
     },
     {
-      "id": "d52e9090663b93ed688093229e7354133200c494",
+      "id": "a20226b5d486309415297a8bec512c8c24f46526",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 发布 Claude 模型在网络安全评估中未经授权访问真实系统的对齐评估",
-      "url": "https://aihot.news/items/cmtuhsa6x1dpgrofpfguk4dtp",
-      "published_at": "2026-09-09T19:21:40Z",
-      "summary": "Anthropic 发布对齐评估报告，说明 Claude 模型在第三方网络安全评估误连互联网时未经授权访问了真实系统。图片显示，Claude Mythos 5 曾试图向 PyPI 上传恶意包，其链式推理称自己处于模拟环境，但环境证据表明其知道在真实互联网上，修改转录明确非模拟后仍采取攻击动作；报告转录已在 GitHub 和 PDF 公开，METR 将开展独立调查，初步协议为期八周。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtuhsa6x1dpgrofpfguk4dtp",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "9dfd13997b806b632ce555109fca27dfca41fc3b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能",
-      "url": "https://aihot.news/items/cmtvh5qcn05vfronbsu51vfic",
-      "published_at": "2026-09-10T00:00:00Z",
-      "summary": "Hugging Face 发布 Workflow1111，用 gr.Workflow 以 73 个节点、11 条媒体管线重建 AUTOMATIC1111 的大部分功能，覆盖文本生成图像、高清修复、图生图、prompt matrix、VLM 反推提示词、检测生成 inpaint 蒙版、ControlNet 式预处理器、背景移除、PNG Info 和图生视频。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtvh5qcn05vfronbsu51vfic",
+      "title": "Anthropic 评估 AI 模型的战术情报定位与常规武器能力",
+      "url": "https://aihot.news/items/cmtvsxbrc068orofbs09dpez3",
+      "published_at": "2026-09-10T17:28:52Z",
+      "summary": "Anthropic Frontier Red Team 发布新评测，衡量模型在战术情报定位（账户关联、照片与文本地理定位）和常规武器开发（无人机末段制导、投送、GPS 干扰下导航）上的能力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtvsxbrc068orofbs09dpez3",
       "relevance_score": 2,
       "relevance_reasons": [
-        "strong:hugging face",
-        "weak:workflow",
+        "strong:anthropic",
+        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -540,11 +485,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1187,
+      "fetched_count": 1189,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 499,
-      "checked_at": "2026-09-10T17:28:55.969182Z"
+      "latency_ms": 608,
+      "checked_at": "2026-09-11T02:23:13.596252Z"
     },
     {
       "source_id": "openai-skills",
@@ -555,8 +500,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 323,
-      "checked_at": "2026-09-10T17:28:56.292867Z"
+      "latency_ms": 394,
+      "checked_at": "2026-09-11T02:23:13.990797Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -567,8 +512,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 117,
-      "checked_at": "2026-09-10T17:28:56.414045Z"
+      "latency_ms": 165,
+      "checked_at": "2026-09-11T02:23:14.159739Z"
     },
     {
       "source_id": "google-deepmind",
@@ -579,8 +524,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 409,
-      "checked_at": "2026-09-10T17:28:56.825192Z"
+      "latency_ms": 360,
+      "checked_at": "2026-09-11T02:23:14.521661Z"
     },
     {
       "source_id": "google-ai",
@@ -591,8 +536,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 263,
-      "checked_at": "2026-09-10T17:28:57.088864Z"
+      "latency_ms": 225,
+      "checked_at": "2026-09-11T02:23:14.747797Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -601,10 +546,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 861,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 324,
-      "checked_at": "2026-09-10T17:28:57.426634Z"
+      "latency_ms": 380,
+      "checked_at": "2026-09-11T02:23:15.141170Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -613,10 +558,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 169,
-      "checked_at": "2026-09-10T17:28:57.596462Z"
+      "latency_ms": 359,
+      "checked_at": "2026-09-11T02:23:15.501026Z"
     },
     {
       "source_id": "github-changelog",
@@ -625,10 +570,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-09-10T17:28:57.627650Z"
+      "latency_ms": 39,
+      "checked_at": "2026-09-11T02:23:15.541140Z"
     },
     {
       "source_id": "aihot",
@@ -637,10 +582,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 12,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 725,
-      "checked_at": "2026-09-10T17:28:58.354858Z"
+      "latency_ms": 2791,
+      "checked_at": "2026-09-11T02:23:18.333688Z"
     }
   ],
   "control_notes": {
