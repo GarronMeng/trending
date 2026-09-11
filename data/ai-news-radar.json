@@ -1,99 +1,35 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-11T12:55:27.632044Z",
+  "generated_at": "2026-09-11T17:30:01.310951Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 13,
+  "item_count": 7,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI News",
-          2
-        ],
-        [
-          "GitHub AI & ML",
           1
         ],
         [
-          "Google AI Blog",
+          "GitHub AI & ML",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          4
-        ],
-        [
-          "chatgpt",
           2
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 6,
-      "top_sources": [
-        [
-          "AI Hot",
-          6
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          6
-        ],
-        [
-          "anthropic",
-          3
         ],
         [
           "openai",
-          2
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "hugging face",
           1
         ],
         [
           "chatgpt",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "多模态",
           1
         ],
         [
@@ -105,18 +41,22 @@
           1
         ],
         [
-          "llm",
+          "agent",
+          1
+        ],
+        [
+          "copilot",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          3
+          2
         ]
       ],
       "top_keywords": [
@@ -129,11 +69,7 @@
           1
         ],
         [
-          "workflow",
-          1
-        ],
-        [
-          "actions",
+          "automation",
           1
         ],
         [
@@ -142,6 +78,38 @@
         ],
         [
           "API",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 3,
+      "top_sources": [
+        [
+          "AI Hot",
+          3
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          3
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "claude",
+          2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "chatgpt",
           1
         ]
       ]
@@ -149,61 +117,43 @@
   },
   "items": [
     {
-      "id": "96116eaafb050d297ac041c7b2bb9d1cce08e8da",
+      "id": "a56e7e5aa2a5f6f6744dcc824136d29585bca241",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
-      "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
-      "published_at": "2026-09-10T16:00:00Z",
-      "summary": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:codex",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "2778bc27ed753040bb298686c56ade260be90fde",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Now everyone can put data to work",
-      "url": "https://openai.com/index/put-data-to-work",
-      "published_at": "2026-09-10T15:00:00Z",
-      "summary": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:agent",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8258dad94d3d2ed0693ca00f555d2036875e40d5",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Swarmchasers 追踪疑似 OpenAI 智能体，Anthropic 复查自身四起安全事件，而思维链可读性正受 GPT-6 Astra 冲击",
-      "url": "https://aihot.news/items/cmtvru9kd04x5rofbggyhsxae",
-      "published_at": "2026-09-10T16:33:44Z",
-      "summary": "独立调查者在 collusion.wiki 目录新增至 30 项服务，发现疑似 OpenAI 智能体利用维基、文本转储和 RubyGems 元数据协作的痕迹，OpenAI 称未发现类似 Hugging Face 入侵规模的严重事件。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtvru9kd04x5rofbggyhsxae",
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+      "published_at": "2026-09-11T10:00:00Z",
+      "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
       "relevance_score": 7,
       "relevance_reasons": [
         "strong:openai",
-        "strong:anthropic",
-        "strong:hugging face",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
+        "strong:chatgpt",
+        "weak:api",
+        "weak:API",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "97d5787f5cfaaa9135e77d10317d02aac7b5660f",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot weekly releases — September 7",
+      "url": "https://github.blog/changelog/2026-09-10-github-copilot-weekly-releases-september-7",
+      "published_at": "2026-09-10T22:55:07Z",
+      "summary": "This week, GitHub Copilot introduces Jira integration in Copilot app and adaptive model orchestration with Project HydraFusion in Copilot CLI. We also introduced new agent automation in Visual Studio Code… The post GitHub Copilot weekly releases — September 7 appeared first on The GitHub Blog .",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:automation",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -227,77 +177,40 @@
       "is_ai_related": true
     },
     {
-      "id": "a66719a205b61af69bb1fd01aa7a0d038f1df310",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "MAI-Code-1-Flash deprecated",
-      "url": "https://github.blog/changelog/2026-09-10-mai-code-1-flash-deprecated",
-      "published_at": "2026-09-10T16:54:01Z",
-      "summary": "We have deprecated MAI-Code-1-Flash across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) today, September 10, 2026. Model Deprecation date Suggested alternative… The post MAI-Code-1-Flash deprecated appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d360c1070bea8079cad20525b81a3d67f6783216",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "3 ways to prep for your next big race with Search",
-      "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips",
-      "published_at": "2026-09-10T16:00:00Z",
-      "summary": "Illustration on a blue background of technicolor runners with a magnifying glass and Gemini spark overlaid",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "57173349e1b788af3f13ceba2de52c64b413af91",
+      "id": "ed2a4ff7b5ae52129b21b5f5df6d6c93d55f37b6",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 在 ChatGPT Work 中推出 Data agent",
-      "url": "https://aihot.news/items/cmtvopug40gnbronbmfh6c077",
-      "published_at": "2026-09-10T15:00:00Z",
-      "summary": "OpenAI 在 ChatGPT Work 中推出新的 Data agent，用户用自然语言即可连接公司数据、分析变化并生成可分享的交互式仪表盘。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtvopug40gnbronbmfh6c077",
-      "relevance_score": 5,
+      "title": "Anthropic 威胁报告披露 Claude 被用于间谍软件、导弹与无人机研发，中国实验室大规模蒸馏提取数据",
+      "url": "https://aihot.news/items/cmtx0v3dg030mroedwvkdfyvw",
+      "published_at": "2026-09-11T13:50:28Z",
+      "summary": "Anthropic 发布威胁情报报告，记录 2025 年 12 月至 2026 年 8 月间 Claude 被滥用的七类行为。俄语间谍组织用 AI 代理自动改写恶意软件绕过杀软，也门一组织用 Claude Code 开发射程超 2000 公里的导弹软件，另有团队构建无人在环的自主 FPV 无人机蜂群。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtx0v3dg030mroedwvkdfyvw",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:agent",
+        "strong:anthropic",
+        "strong:claude",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "24aea5a2e83a0fa282fddaef2cc4eff6f4d8a4fc",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Control GitHub Actions cache access with cache-mode",
-      "url": "https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode",
-      "published_at": "2026-09-10T17:26:59Z",
-      "summary": "You can now use cache-mode to apply least-privilege access to the GitHub Actions cache at the workflow or job level. By granting each workflow or job only the cache access… The post Control GitHub Actions cache access with cache-mode appeared first on The GitHub Blog .",
+      "id": "4f77e1d426c5d05e7d898b3ff3b3e95f5239077d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 详解存储平台 Habitat 如何扩展支撑超 10 亿 ChatGPT 用户（上篇）",
+      "url": "https://aihot.news/items/cmtx7f9mi09psroed4b1w3nsv",
+      "published_at": "2026-09-11T10:00:00Z",
+      "summary": "OpenAI 发文（系列上篇）讲述其在线存储平台 Habitat 的演进：现每秒处理超 7000 万请求、服务每周超 10 亿用户、管理超 500PB 数据，覆盖近 40 个地区。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtx7f9mi09psroed4b1w3nsv",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:workflow",
-        "source:actions"
+        "strong:openai",
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -337,64 +250,6 @@
         "weak:API"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "951f32b7e364000d8d235ba6ac57c3402f9a8367",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周",
-      "url": "https://aihot.news/items/cmtvqbs1q03q9rofb98re4l3n",
-      "published_at": "2026-09-10T15:49:16Z",
-      "summary": "WorkBuddy 宣布 DeepSeek V4.1-Flash 已在其平台上线，免费试用两周。引用的 DeepSeek 公告称 V4.1-Flash 已登陆 DeepSeek API 并支持原生多模态。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtvqbs1q03q9rofb98re4l3n",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:多模态",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "aece2d677244dbd70b98cdad9d114a2ca59cbd16",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Shopify 宣布从 React Native 全面迁回 Swift 和 Kotlin 原生开发",
-      "url": "https://aihot.news/items/cmtvom4k90ghtronbwks6e67t",
-      "published_at": "2026-09-10T15:04:41Z",
-      "summary": "Shopify 宣布将全部移动应用从 React Native 迁回 Swift 和 Kotlin，判断是 LLM 智能体大幅降低了跨平台重复开发成本这一核心假设被改变。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtvom4k90ghtronbwks6e67t",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:llm",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a20226b5d486309415297a8bec512c8c24f46526",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 评估 AI 模型的战术情报定位与常规武器能力",
-      "url": "https://aihot.news/items/cmtvsxbrc068orofbs09dpez3",
-      "published_at": "2026-09-10T17:28:52Z",
-      "summary": "Anthropic Frontier Red Team 发布新评测，衡量模型在战术情报定位（账户关联、照片与文本地理定位）和常规武器开发（无人机末段制导、投送、GPS 干扰下导航）上的能力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtvsxbrc068orofbs09dpez3",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -404,11 +259,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1189,
-      "kept_count": 2,
+      "fetched_count": 1190,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 420,
-      "checked_at": "2026-09-11T12:55:24.766978Z"
+      "latency_ms": 434,
+      "checked_at": "2026-09-11T17:29:58.654225Z"
     },
     {
       "source_id": "openai-skills",
@@ -419,8 +274,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 370,
-      "checked_at": "2026-09-11T12:55:25.137235Z"
+      "latency_ms": 260,
+      "checked_at": "2026-09-11T17:29:58.914822Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -431,8 +286,8 @@
       "fetched_count": 257,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 224,
-      "checked_at": "2026-09-11T12:55:25.364332Z"
+      "latency_ms": 119,
+      "checked_at": "2026-09-11T17:29:59.036848Z"
     },
     {
       "source_id": "google-deepmind",
@@ -443,8 +298,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 381,
-      "checked_at": "2026-09-11T12:55:25.746525Z"
+      "latency_ms": 396,
+      "checked_at": "2026-09-11T17:29:59.433998Z"
     },
     {
       "source_id": "google-ai",
@@ -453,10 +308,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 233,
-      "checked_at": "2026-09-11T12:55:25.980119Z"
+      "latency_ms": 184,
+      "checked_at": "2026-09-11T17:29:59.618697Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -468,7 +323,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 283,
-      "checked_at": "2026-09-11T12:55:26.272881Z"
+      "checked_at": "2026-09-11T17:29:59.910897Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -479,8 +334,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 197,
-      "checked_at": "2026-09-11T12:55:26.470988Z"
+      "latency_ms": 199,
+      "checked_at": "2026-09-11T17:30:00.111107Z"
     },
     {
       "source_id": "github-changelog",
@@ -489,10 +344,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-09-11T12:55:26.494783Z"
+      "latency_ms": 25,
+      "checked_at": "2026-09-11T17:30:00.136881Z"
     },
     {
       "source_id": "aihot",
@@ -501,10 +356,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 1128,
-      "checked_at": "2026-09-11T12:55:27.624093Z"
+      "latency_ms": 1165,
+      "checked_at": "2026-09-11T17:30:01.302621Z"
     }
   ],
   "control_notes": {
