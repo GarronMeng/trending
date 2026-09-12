@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-12T02:30:52.582749Z",
+  "generated_at": "2026-09-12T08:08:55.425157Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 7,
   "groups": {
     "official": {
       "group": "official",
@@ -64,17 +64,17 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          3
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          3
+          4
         ],
         [
           "openai",
@@ -94,6 +94,14 @@
         ],
         [
           "chatgpt",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "自动化",
           1
         ]
       ]
@@ -215,6 +223,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "01cd8cfbda45e205c29014dcc2d0b67e2932df6a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Minitap 指控 Google Artemis 未署名使用其开源项目 mobile-use 代码",
+      "url": "https://aihot.news/items/cmtxvt03h068vrous6ilk8ds7",
+      "published_at": "2026-09-12T02:39:39Z",
+      "summary": "Minitap 团队发文指认 Google 的移动设备自动化项目 Artemis 大量复用了其开源项目 mobile-use 的代码，包括完全一致的 Hopper agent 提示词和示例，却未在 README 中署名；更早的包文件曾列出三位作者，8 月一次 force push 将其替换为另一作者。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtxvt03h068vrous6ilk8ds7",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -227,8 +254,8 @@
       "fetched_count": 1192,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 535,
-      "checked_at": "2026-09-12T02:30:50.069465Z"
+      "latency_ms": 387,
+      "checked_at": "2026-09-12T08:08:52.819217Z"
     },
     {
       "source_id": "openai-skills",
@@ -239,8 +266,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 335,
-      "checked_at": "2026-09-12T02:30:50.405200Z"
+      "latency_ms": 330,
+      "checked_at": "2026-09-12T08:08:53.150193Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -251,8 +278,8 @@
       "fetched_count": 257,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 116,
-      "checked_at": "2026-09-12T02:30:50.525475Z"
+      "latency_ms": 97,
+      "checked_at": "2026-09-12T08:08:53.250691Z"
     },
     {
       "source_id": "google-deepmind",
@@ -263,8 +290,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 423,
-      "checked_at": "2026-09-12T02:30:50.950836Z"
+      "latency_ms": 414,
+      "checked_at": "2026-09-12T08:08:53.666693Z"
     },
     {
       "source_id": "google-ai",
@@ -275,8 +302,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 300,
-      "checked_at": "2026-09-12T02:30:51.252114Z"
+      "latency_ms": 200,
+      "checked_at": "2026-09-12T08:08:53.867195Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -287,8 +314,8 @@
       "fetched_count": 861,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 332,
-      "checked_at": "2026-09-12T02:30:51.597497Z"
+      "latency_ms": 257,
+      "checked_at": "2026-09-12T08:08:54.133885Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -299,8 +326,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 185,
-      "checked_at": "2026-09-12T02:30:51.783216Z"
+      "latency_ms": 333,
+      "checked_at": "2026-09-12T08:08:54.467610Z"
     },
     {
       "source_id": "github-changelog",
@@ -311,8 +338,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 33,
-      "checked_at": "2026-09-12T02:30:51.817263Z"
+      "latency_ms": 24,
+      "checked_at": "2026-09-12T08:08:54.492670Z"
     },
     {
       "source_id": "aihot",
@@ -321,10 +348,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 755,
-      "checked_at": "2026-09-12T02:30:52.573469Z"
+      "latency_ms": 924,
+      "checked_at": "2026-09-12T08:08:55.417760Z"
     }
   ],
   "control_notes": {
