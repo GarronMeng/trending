@@ -1,43 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-12T08:08:55.425157Z",
+  "generated_at": "2026-09-12T11:04:11.036476Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 5,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "official_ai",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
       "count": 2,
@@ -64,21 +32,21 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          4
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
+          3
         ],
         [
           "openai",
-          2
+          1
         ],
         [
           "智能体",
@@ -93,10 +61,6 @@
           1
         ],
         [
-          "chatgpt",
-          1
-        ],
-        [
           "agent",
           1
         ],
@@ -108,27 +72,6 @@
     }
   },
   "items": [
-    {
-      "id": "a56e7e5aa2a5f6f6744dcc824136d29585bca241",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
-      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
-      "published_at": "2026-09-11T10:00:00Z",
-      "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "weak:api",
-        "weak:API",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "e3531918a275e37802c738ee610fe2751db3cc2c",
       "source_id": "github-changelog",
@@ -206,25 +149,6 @@
       "is_ai_related": true
     },
     {
-      "id": "4f77e1d426c5d05e7d898b3ff3b3e95f5239077d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 详解存储平台 Habitat 如何扩展支撑超 10 亿 ChatGPT 用户（上篇）",
-      "url": "https://aihot.news/items/cmtx7f9mi09psroed4b1w3nsv",
-      "published_at": "2026-09-11T10:00:00Z",
-      "summary": "OpenAI 发文（系列上篇）讲述其在线存储平台 Habitat 的演进：现每秒处理超 7000 万请求、服务每周超 10 亿用户、管理超 500PB 数据，覆盖近 40 个地区。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmtx7f9mi09psroed4b1w3nsv",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "01cd8cfbda45e205c29014dcc2d0b67e2932df6a",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -252,10 +176,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1192,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 387,
-      "checked_at": "2026-09-12T08:08:52.819217Z"
+      "latency_ms": 527,
+      "checked_at": "2026-09-12T11:04:07.712625Z"
     },
     {
       "source_id": "openai-skills",
@@ -266,8 +190,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 330,
-      "checked_at": "2026-09-12T08:08:53.150193Z"
+      "latency_ms": 328,
+      "checked_at": "2026-09-12T11:04:08.041720Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -278,8 +202,8 @@
       "fetched_count": 257,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 97,
-      "checked_at": "2026-09-12T08:08:53.250691Z"
+      "latency_ms": 172,
+      "checked_at": "2026-09-12T11:04:08.216849Z"
     },
     {
       "source_id": "google-deepmind",
@@ -290,8 +214,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 414,
-      "checked_at": "2026-09-12T08:08:53.666693Z"
+      "latency_ms": 356,
+      "checked_at": "2026-09-12T11:04:08.574259Z"
     },
     {
       "source_id": "google-ai",
@@ -302,8 +226,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 200,
-      "checked_at": "2026-09-12T08:08:53.867195Z"
+      "latency_ms": 247,
+      "checked_at": "2026-09-12T11:04:08.822424Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -314,8 +238,8 @@
       "fetched_count": 861,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 257,
-      "checked_at": "2026-09-12T08:08:54.133885Z"
+      "latency_ms": 302,
+      "checked_at": "2026-09-12T11:04:09.133334Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -326,8 +250,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 333,
-      "checked_at": "2026-09-12T08:08:54.467610Z"
+      "latency_ms": 514,
+      "checked_at": "2026-09-12T11:04:09.648352Z"
     },
     {
       "source_id": "github-changelog",
@@ -338,8 +262,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-09-12T08:08:54.492670Z"
+      "latency_ms": 30,
+      "checked_at": "2026-09-12T11:04:09.678618Z"
     },
     {
       "source_id": "aihot",
@@ -348,10 +272,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 924,
-      "checked_at": "2026-09-12T08:08:55.417760Z"
+      "latency_ms": 1349,
+      "checked_at": "2026-09-12T11:04:11.028583Z"
     }
   ],
   "control_notes": {
