@@ -1,11 +1,55 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-14T15:09:48.432186Z",
+  "generated_at": "2026-09-14T19:01:17.979351Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 1,
+  "item_count": 4,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ],
+        [
+          "Google AI Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "developer",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
       "count": 1,
@@ -32,6 +76,60 @@
     }
   },
   "items": [
+    {
+      "id": "49e808adc0f0b474ff6ca57985add64f86b2ae5c",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How Fyxer built an AI executive assistant people trust",
+      "url": "https://openai.com/index/fyxer",
+      "published_at": "2026-09-14T12:00:00Z",
+      "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "26feb907993ceab7697c86e75b3aa0b11c3af629",
+      "source_id": "google-ai",
+      "source_name": "Google AI Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "DevFest is back",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
+      "published_at": "2026-09-14T16:00:00Z",
+      "summary": "Animation of the text \"{DevFest} 2026 Join us! Google Developer Groups\" with a globe icon, asterisk icon, icon",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:developer",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e11c5212debeef67e35e6150f4d55168a67f9113",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Configure cost and quality in Copilot auto model selection",
+      "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
+      "published_at": "2026-09-14T16:05:27Z",
+      "summary": "GitHub Copilot auto model selection now offers three tiers: efficiency, balance, and intelligence. Choose the tier that reflects how you want auto to weigh cost, quality, and response time for… The post Configure cost and quality in Copilot auto model selection appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "801152fc1f87a75ccf97d36dc05aeed28583a441",
       "source_id": "aihot",
@@ -60,10 +158,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1193,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 609,
-      "checked_at": "2026-09-14T15:09:39.523509Z"
+      "latency_ms": 529,
+      "checked_at": "2026-09-14T19:01:15.350262Z"
     },
     {
       "source_id": "openai-skills",
@@ -74,8 +172,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 3847,
-      "checked_at": "2026-09-14T15:09:43.371679Z"
+      "latency_ms": 486,
+      "checked_at": "2026-09-14T19:01:15.836847Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -86,8 +184,8 @@
       "fetched_count": 257,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 164,
-      "checked_at": "2026-09-14T15:09:43.539528Z"
+      "latency_ms": 115,
+      "checked_at": "2026-09-14T19:01:15.956446Z"
     },
     {
       "source_id": "google-deepmind",
@@ -98,8 +196,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 392,
-      "checked_at": "2026-09-14T15:09:43.933376Z"
+      "latency_ms": 396,
+      "checked_at": "2026-09-14T19:01:16.354449Z"
     },
     {
       "source_id": "google-ai",
@@ -108,10 +206,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 252,
-      "checked_at": "2026-09-14T15:09:44.186015Z"
+      "latency_ms": 320,
+      "checked_at": "2026-09-14T19:01:16.675475Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -122,8 +220,8 @@
       "fetched_count": 862,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 364,
-      "checked_at": "2026-09-14T15:09:44.563462Z"
+      "latency_ms": 331,
+      "checked_at": "2026-09-14T19:01:17.019551Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -134,8 +232,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 247,
-      "checked_at": "2026-09-14T15:09:44.810898Z"
+      "latency_ms": 181,
+      "checked_at": "2026-09-14T19:01:17.201299Z"
     },
     {
       "source_id": "github-changelog",
@@ -144,10 +242,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 41,
-      "checked_at": "2026-09-14T15:09:44.852711Z"
+      "latency_ms": 32,
+      "checked_at": "2026-09-14T19:01:17.234024Z"
     },
     {
       "source_id": "aihot",
@@ -158,8 +256,8 @@
       "fetched_count": 50,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 3569,
-      "checked_at": "2026-09-14T15:09:48.423384Z"
+      "latency_ms": 734,
+      "checked_at": "2026-09-14T19:01:17.969327Z"
     }
   ],
   "control_notes": {
