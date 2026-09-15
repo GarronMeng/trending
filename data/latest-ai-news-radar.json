@@ -1,52 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-15T11:58:29.627353Z",
+  "generated_at": "2026-09-15T13:44:52.119219Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
   "item_count": 9,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ],
-        [
-          "Google AI Blog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          2
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "developer",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          6
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          7
         ],
         [
           "openai",
@@ -69,15 +41,39 @@
           2
         ],
         [
+          "agent",
+          2
+        ],
+        [
           "codex",
           1
         ],
         [
-          "agent",
+          "chatgpt",
           1
         ],
         [
           "评测",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "Google AI Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "developer",
+          1
+        ],
+        [
+          "official_ai",
           1
         ]
       ]
@@ -100,24 +96,6 @@
     }
   },
   "items": [
-    {
-      "id": "49e808adc0f0b474ff6ca57985add64f86b2ae5c",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How Fyxer built an AI executive assistant people trust",
-      "url": "https://openai.com/index/fyxer",
-      "published_at": "2026-09-14T12:00:00Z",
-      "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "8b8ff188ba8058b600efbb6c57379ae71052e950",
       "source_id": "aihot",
@@ -195,6 +173,44 @@
       "is_ai_related": true
     },
     {
+      "id": "00a8f34aceedf8f925fdc68c4ca164cc61f4ce03",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "404 Media 曝光 OpenAI 莉莉计划：人工审核 ChatGPT 聊天记录以优化模型",
+      "url": "https://aihot.news/items/cmu2n8sq10chlrovqbe47wj5t",
+      "published_at": "2026-09-15T11:48:13Z",
+      "summary": "404 Media 披露 OpenAI 内部代号为莉莉计划（Project Lily）的项目，由时薪超 50 美元的提示词审核员查看匿名化后的真实用户聊天记录，评判回复是否切题、是否存在 AI 式话术和谄媚口吻。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu2n8sq10chlrovqbe47wj5t",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "dbbbd7e4c1d2f5eb273089810c6e0a50e8e282d2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Trail of Bits 批评 1Password 的 AI 补丁基准存在误导，并发布两个补丁验证 Agent 技能",
+      "url": "https://aihot.news/items/cmu2lqodj08k0rovqocv9r3z3",
+      "published_at": "2026-09-15T11:00:00Z",
+      "summary": "Trail of Bits 发文批评 1Password 8月6日发布的 FLAWED 报告，称其 26% 的 AI 干净修复率受四项实验设计选择影响而失真，包括刻意指示智能体应用错误修复的提示词占 22% 数据、36% 的试验禁止编译测试，以及不同推理档位设置。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu2lqodj08k0rovqocv9r3z3",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "ff43563146d0d8fa979245a679bc932a572e4e74",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -233,25 +249,6 @@
       "is_ai_related": true
     },
     {
-      "id": "f3aa0b53b1bc26fa2f8be402f47b33c9fc0d5004",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
-      "url": "https://aihot.news/items/cmu1amg9d06bbro7zn6v1kszh",
-      "published_at": "2026-09-14T12:40:57Z",
-      "summary": "作者分析被指与 OpenAI 机器人相关的 GemStuffer 恶意 gem 代码，发现其利用 .yardopts 的 --load 加载脚本，在安装或 RubyDoc.info 处理 YARD 文档时执行任意代码，且 Docker 容器有网络访问权限可执行爬取。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu1amg9d06bbro7zn6v1kszh",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "4014861367d1ce655577be3f0a70a5a0b4b34506",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -279,10 +276,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1193,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 499,
-      "checked_at": "2026-09-15T11:58:27.084447Z"
+      "latency_ms": 515,
+      "checked_at": "2026-09-15T13:44:48.517092Z"
     },
     {
       "source_id": "openai-skills",
@@ -293,8 +290,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 284,
-      "checked_at": "2026-09-15T11:58:27.369586Z"
+      "latency_ms": 285,
+      "checked_at": "2026-09-15T13:44:48.802961Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -305,8 +302,8 @@
       "fetched_count": 257,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 112,
-      "checked_at": "2026-09-15T11:58:27.485745Z"
+      "latency_ms": 213,
+      "checked_at": "2026-09-15T13:44:49.020153Z"
     },
     {
       "source_id": "google-deepmind",
@@ -317,8 +314,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 342,
-      "checked_at": "2026-09-15T11:58:27.829707Z"
+      "latency_ms": 299,
+      "checked_at": "2026-09-15T13:44:49.321144Z"
     },
     {
       "source_id": "google-ai",
@@ -329,8 +326,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 245,
-      "checked_at": "2026-09-15T11:58:28.075420Z"
+      "latency_ms": 253,
+      "checked_at": "2026-09-15T13:44:49.575127Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -341,8 +338,8 @@
       "fetched_count": 862,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 311,
-      "checked_at": "2026-09-15T11:58:28.399606Z"
+      "latency_ms": 323,
+      "checked_at": "2026-09-15T13:44:49.911276Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -353,8 +350,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 182,
-      "checked_at": "2026-09-15T11:58:28.582676Z"
+      "latency_ms": 173,
+      "checked_at": "2026-09-15T13:44:50.084999Z"
     },
     {
       "source_id": "github-changelog",
@@ -365,8 +362,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-09-15T11:58:28.614396Z"
+      "latency_ms": 30,
+      "checked_at": "2026-09-15T13:44:50.115890Z"
     },
     {
       "source_id": "aihot",
@@ -375,10 +372,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 1003,
-      "checked_at": "2026-09-15T11:58:29.619367Z"
+      "latency_ms": 1994,
+      "checked_at": "2026-09-15T13:44:52.111024Z"
     }
   ],
   "control_notes": {
