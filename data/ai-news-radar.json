@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-15T13:44:52.119219Z",
+  "generated_at": "2026-09-15T17:55:38.239281Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -22,26 +22,18 @@
         ],
         [
           "openai",
-          3
-        ],
-        [
-          "anthropic",
-          2
-        ],
-        [
-          "claude",
-          2
+          4
         ],
         [
           "智能体",
+          3
+        ],
+        [
+          "chatgpt",
           2
         ],
         [
-          "开源模型",
-          2
-        ],
-        [
-          "agent",
+          "anthropic",
           2
         ],
         [
@@ -49,7 +41,23 @@
           1
         ],
         [
-          "chatgpt",
+          "gemini",
+          1
+        ],
+        [
+          "deepmind",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "工作流",
+          1
+        ],
+        [
+          "agent",
           1
         ],
         [
@@ -60,115 +68,128 @@
     },
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
-          "Google AI Blog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "developer",
+          "Google DeepMind",
           1
         ],
         [
-          "official_ai",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
+          "Hugging Face Blog",
           1
         ]
       ],
       "top_keywords": [
         [
-          "copilot",
+          "official_ai",
           2
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "agent",
+          1
         ]
       ]
     }
   },
   "items": [
     {
-      "id": "8b8ff188ba8058b600efbb6c57379ae71052e950",
+      "id": "9b3952bb6bb1eea19726f720112203340d6a794f",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力",
-      "url": "https://aihot.news/items/cmu1miqz1154mrocnhtw6icqw",
-      "published_at": "2026-09-14T19:15:56Z",
-      "summary": "Anthropic 工程师每季度交付的代码量是 2021-2025 年均值的 8 倍，其中 80% 由 Claude 编写，六个月内 CI 任务增长 25 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu1miqz1154mrocnhtw6icqw",
-      "relevance_score": 5,
+      "title": "Gergely Orosz 探访 OpenAI：Codex 驱动的智能体软件工厂",
+      "url": "https://aihot.news/items/cmu2utske02sjrowk2zs2agim",
+      "published_at": "2026-09-15T15:41:25Z",
+      "summary": "Gergely Orosz 实地探访 OpenAI 总部并访谈七位工程师与工程负责人，发现自约一月起 Codex 和 ChatGPT Work 已成为公司几乎所有工作的基础。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu2utske02sjrowk2zs2agim",
+      "relevance_score": 7,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
         "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "98748952164bd06eb54bb0a19ce8f52804284637",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文",
-      "url": "https://aihot.news/items/cmu1gt8gn097trocnxxvdhxli",
-      "published_at": "2026-09-14T16:32:25Z",
-      "summary": "硅基流动（SiliconFlow）宣布开源模型 Hy4 preview 上线其平台。该模型总参数 770B、每 token 激活 49B、支持 1M 上下文，采用 Apache 2.0 协议，面向编码、分析、研究和复杂实际工作。用户可将其接入 Claude Code、Codex、Cursor 等已有工具；图片显示定价为每 1M tokens 输入 $0.834、输出 $2.501、缓存 $0.042。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu1gt8gn097trocnxxvdhxli",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:codex",
-        "strong:开源模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "26feb907993ceab7697c86e75b3aa0b11c3af629",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
+      "id": "33ee93cd5f81152ae5881efb634c7181592f57b5",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "DevFest is back",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026",
-      "published_at": "2026-09-14T16:00:00Z",
-      "summary": "Animation of the text \"{DevFest} 2026 Join us! Google Developer Groups\" with a globe icon, asterisk icon, icon",
-      "relevance_score": 2,
+      "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking",
+      "published_at": "2026-09-15T17:05:57Z",
+      "summary": null,
+      "relevance_score": 3,
       "relevance_reasons": [
-        "weak:developer",
+        "strong:gemini",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "e11c5212debeef67e35e6150f4d55168a67f9113",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
+      "id": "4fdfb400eaf11e8eafd3a5fd1adefd8e0d265d03",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Configure cost and quality in Copilot auto model selection",
-      "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
-      "published_at": "2026-09-14T16:05:27Z",
-      "summary": "GitHub Copilot auto model selection now offers three tiers: efficiency, balance, and intelligence. Choose the tier that reflects how you want auto to weigh cost, quality, and response time for… The post Configure cost and quality in Copilot auto model selection appeared first on The GitHub Blog .",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Your Agent Aced the Task. Will It Do It Again?",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+      "published_at": "2026-09-15T16:00:44Z",
+      "summary": null,
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:agent",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "27a1b0dabb455511341af64615860d4455d5a57c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google DeepMind 发布 Gemini 3.8 Live 和 3.8 Live Extended Thinking",
+      "url": "https://aihot.news/items/cmu2xqfxz02zhroc1hxuzi6jm",
+      "published_at": "2026-09-15T17:05:57Z",
+      "summary": "Google DeepMind 发布 Gemini 3.8 Live 与 Gemini 3.8 Live Extended Thinking 两个近实时语音对话模型，主打语音智能体和复杂任务执行。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu2xqfxz02zhroc1hxuzi6jm",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:deepmind",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "774b28f737cc709191e3e47fd3ea98bf2a28ffbd",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude for Small Business 新增 43 个工作流和 27 个集成，并推出免费培训计划",
+      "url": "https://aihot.news/items/cmu2xv8tm0365roc1a401zg9y",
+      "published_at": "2026-09-15T17:21:21Z",
+      "summary": "Anthropic 为 Claude for Small Business 新增 43 个工作流和 27 个集成，覆盖 Shopify、Salesforce、Stripe、Gusto 等，该产品自 5 月上线以来安装量超过 90 万次。工作流默认处于审批模式，所有发送、发布或付款需用户确认；今秋将在 10 个美国城市举办免费工作坊，14 个集成伙伴从 9 月底到 11 月各举办一场免费网络研讨会。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu2xv8tm0365roc1a401zg9y",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -230,25 +251,6 @@
       "is_ai_related": true
     },
     {
-      "id": "232fb4cb05dda179425067ed30d5a833162cec79",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名",
-      "url": "https://aihot.news/items/cmu1jhejj0njbrocn5llfnktp",
-      "published_at": "2026-09-14T17:21:29Z",
-      "summary": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名，净提升 +4.87%，每任务中位成本 $0.07，重塑 Pareto 前沿。其成本比第 2 名 Hy4 preview 低 68%、成绩仅差 0.09 个百分点；总榜排名第 12，Confirmed Success 信号排名 第 4（+13.75%）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu1jhejj0njbrocn5llfnktp",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:开源模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "4014861367d1ce655577be3f0a70a5a0b4b34506",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -278,8 +280,8 @@
       "fetched_count": 1193,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 515,
-      "checked_at": "2026-09-15T13:44:48.517092Z"
+      "latency_ms": 444,
+      "checked_at": "2026-09-15T17:55:35.285655Z"
     },
     {
       "source_id": "openai-skills",
@@ -290,8 +292,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 285,
-      "checked_at": "2026-09-15T13:44:48.802961Z"
+      "latency_ms": 372,
+      "checked_at": "2026-09-15T17:55:35.658328Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -302,8 +304,8 @@
       "fetched_count": 257,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 213,
-      "checked_at": "2026-09-15T13:44:49.020153Z"
+      "latency_ms": 111,
+      "checked_at": "2026-09-15T17:55:35.772282Z"
     },
     {
       "source_id": "google-deepmind",
@@ -312,10 +314,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 299,
-      "checked_at": "2026-09-15T13:44:49.321144Z"
+      "latency_ms": 400,
+      "checked_at": "2026-09-15T17:55:36.173888Z"
     },
     {
       "source_id": "google-ai",
@@ -324,10 +326,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-09-15T13:44:49.575127Z"
+      "latency_ms": 304,
+      "checked_at": "2026-09-15T17:55:36.478302Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -336,10 +338,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 862,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 323,
-      "checked_at": "2026-09-15T13:44:49.911276Z"
+      "latency_ms": 301,
+      "checked_at": "2026-09-15T17:55:36.789835Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -350,8 +352,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 173,
-      "checked_at": "2026-09-15T13:44:50.084999Z"
+      "latency_ms": 183,
+      "checked_at": "2026-09-15T17:55:36.973771Z"
     },
     {
       "source_id": "github-changelog",
@@ -360,10 +362,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-09-15T13:44:50.115890Z"
+      "latency_ms": 29,
+      "checked_at": "2026-09-15T17:55:37.003580Z"
     },
     {
       "source_id": "aihot",
@@ -374,8 +376,8 @@
       "fetched_count": 50,
       "kept_count": 7,
       "error": null,
-      "latency_ms": 1994,
-      "checked_at": "2026-09-15T13:44:52.111024Z"
+      "latency_ms": 1226,
+      "checked_at": "2026-09-15T17:55:38.230946Z"
     }
   ],
   "control_notes": {
