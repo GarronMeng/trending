@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>4</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>8</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>2</b><span>官方源条目</span></div>
-        <div class="stat"><b>1</b><span>聚合源条目</span></div>
+        <div class="stat"><b>5</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-09-14T19:01:17.980549Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-09-15T02:48:50.296100Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -64,6 +64,32 @@
       <h3><a href="https://openai.com/index/fyxer" target="_blank" rel="noreferrer">How Fyxer built an AI executive assistant people trust</a></h3>
       <p class='summary'>Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice.</p>
       <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-09-14T19:15:56Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/cmu1miqz1154mrocnhtw6icqw" target="_blank" rel="noreferrer">Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力</a></h3>
+      <p class='summary'>Anthropic 工程师每季度交付的代码量是 2021-2025 年均值的 8 倍，其中 80% 由 Claude 编写，六个月内 CI 任务增长 25 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu1miqz1154mrocnhtw6icqw</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-09-14T16:32:25Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/cmu1gt8gn097trocnxxvdhxli" target="_blank" rel="noreferrer">硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文</a></h3>
+      <p class='summary'>硅基流动（SiliconFlow）宣布开源模型 Hy4 preview 上线其平台。该模型总参数 770B、每 token 激活 49B、支持 1M 上下文，采用 Apache 2.0 协议，面向编码、分析、研究和复杂实际工作。用户可将其接入 Claude Code、Codex、Cursor 等已有工具；图片显示定价为每 1M tokens 输入 $0.834、输出 $2.501、缓存 $0.042。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu1gt8gn097trocnxxvdhxli</p>
+      <div class="tags"><span>strong:claude</span><span>strong:codex</span><span>strong:开源模型</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -97,6 +123,32 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
+        <span>2026-09-14T17:21:29Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/cmu1jhejj0njbrocn5llfnktp" target="_blank" rel="noreferrer">DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名</a></h3>
+      <p class='summary'>DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名，净提升 +4.87%，每任务中位成本 $0.07，重塑 Pareto 前沿。其成本比第 2 名 Hy4 preview 低 68%、成绩仅差 0.09 个百分点；总榜排名第 12，Confirmed Success 信号排名 第 4（+13.75%）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu1jhejj0njbrocn5llfnktp</p>
+      <div class="tags"><span>strong:agent</span><span>strong:开源模型</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-09-14T12:40:57Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/cmu1amg9d06bbro7zn6v1kszh" target="_blank" rel="noreferrer">恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析</a></h3>
+      <p class='summary'>作者分析被指与 OpenAI 机器人相关的 GemStuffer 恶意 gem 代码，发现其利用 .yardopts 的 --load 加载脚本，在安装或 RubyDoc.info 处理 YARD 文档时执行任意代码，且 Docker 容器有网络访问权限可执行爬取。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu1amg9d06bbro7zn6v1kszh</p>
+      <div class="tags"><span>strong:openai</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
         <span>2026-09-14T09:59:00Z</span>
         <strong>Score 2</strong>
       </div>
@@ -110,15 +162,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1193</td><td>1</td><td>529ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>486ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>257</td><td>0</td><td>115ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>396ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>320ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>862</td><td>0</td><td>331ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>181ms</td><td></td></tr>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1193</td><td>1</td><td>565ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>371ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>257</td><td>0</td><td>251ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>368ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>201ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>862</td><td>0</td><td>334ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>198ms</td><td></td></tr>
 <tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>32ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>1</td><td>734ms</td><td></td></tr></tbody>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>5</td><td>2929ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

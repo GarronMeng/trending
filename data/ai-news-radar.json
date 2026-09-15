@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-14T19:01:17.979351Z",
+  "generated_at": "2026-09-15T02:48:50.294781Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 4,
+  "item_count": 8,
   "groups": {
     "official": {
       "group": "official",
@@ -34,6 +34,54 @@
         ]
       ]
     },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 5,
+      "top_sources": [
+        [
+          "AI Hot",
+          5
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          5
+        ],
+        [
+          "claude",
+          2
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "开源模型",
+          2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "评测",
+          1
+        ]
+      ]
+    },
     "developer": {
       "group": "developer",
       "count": 1,
@@ -47,30 +95,6 @@
         [
           "copilot",
           2
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 1,
-      "top_sources": [
-        [
-          "AI Hot",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "agent",
-          1
-        ],
-        [
-          "评测",
-          1
-        ],
-        [
-          "aggregate_noise",
-          1
         ]
       ]
     }
@@ -91,6 +115,46 @@
       "relevance_reasons": [
         "strong:openai",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8b8ff188ba8058b600efbb6c57379ae71052e950",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力",
+      "url": "https://aihot.news/items/cmu1miqz1154mrocnhtw6icqw",
+      "published_at": "2026-09-14T19:15:56Z",
+      "summary": "Anthropic 工程师每季度交付的代码量是 2021-2025 年均值的 8 倍，其中 80% 由 Claude 编写，六个月内 CI 任务增长 25 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu1miqz1154mrocnhtw6icqw",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "98748952164bd06eb54bb0a19ce8f52804284637",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文",
+      "url": "https://aihot.news/items/cmu1gt8gn097trocnxxvdhxli",
+      "published_at": "2026-09-14T16:32:25Z",
+      "summary": "硅基流动（SiliconFlow）宣布开源模型 Hy4 preview 上线其平台。该模型总参数 770B、每 token 激活 49B、支持 1M 上下文，采用 Apache 2.0 协议，面向编码、分析、研究和复杂实际工作。用户可将其接入 Claude Code、Codex、Cursor 等已有工具；图片显示定价为每 1M tokens 输入 $0.834、输出 $2.501、缓存 $0.042。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu1gt8gn097trocnxxvdhxli",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "strong:开源模型",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -131,6 +195,44 @@
       "is_ai_related": true
     },
     {
+      "id": "232fb4cb05dda179425067ed30d5a833162cec79",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名",
+      "url": "https://aihot.news/items/cmu1jhejj0njbrocn5llfnktp",
+      "published_at": "2026-09-14T17:21:29Z",
+      "summary": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名，净提升 +4.87%，每任务中位成本 $0.07，重塑 Pareto 前沿。其成本比第 2 名 Hy4 preview 低 68%、成绩仅差 0.09 个百分点；总榜排名第 12，Confirmed Success 信号排名 第 4（+13.75%）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu1jhejj0njbrocn5llfnktp",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:开源模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f3aa0b53b1bc26fa2f8be402f47b33c9fc0d5004",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+      "url": "https://aihot.news/items/cmu1amg9d06bbro7zn6v1kszh",
+      "published_at": "2026-09-14T12:40:57Z",
+      "summary": "作者分析被指与 OpenAI 机器人相关的 GemStuffer 恶意 gem 代码，发现其利用 .yardopts 的 --load 加载脚本，在安装或 RubyDoc.info 处理 YARD 文档时执行任意代码，且 Docker 容器有网络访问权限可执行爬取。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu1amg9d06bbro7zn6v1kszh",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "801152fc1f87a75ccf97d36dc05aeed28583a441",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -160,8 +262,8 @@
       "fetched_count": 1193,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 529,
-      "checked_at": "2026-09-14T19:01:15.350262Z"
+      "latency_ms": 565,
+      "checked_at": "2026-09-15T02:48:45.577378Z"
     },
     {
       "source_id": "openai-skills",
@@ -172,8 +274,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 486,
-      "checked_at": "2026-09-14T19:01:15.836847Z"
+      "latency_ms": 371,
+      "checked_at": "2026-09-15T02:48:45.949438Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -184,8 +286,8 @@
       "fetched_count": 257,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 115,
-      "checked_at": "2026-09-14T19:01:15.956446Z"
+      "latency_ms": 251,
+      "checked_at": "2026-09-15T02:48:46.205017Z"
     },
     {
       "source_id": "google-deepmind",
@@ -196,8 +298,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 396,
-      "checked_at": "2026-09-14T19:01:16.354449Z"
+      "latency_ms": 368,
+      "checked_at": "2026-09-15T02:48:46.575096Z"
     },
     {
       "source_id": "google-ai",
@@ -208,8 +310,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 320,
-      "checked_at": "2026-09-14T19:01:16.675475Z"
+      "latency_ms": 201,
+      "checked_at": "2026-09-15T02:48:46.776573Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -220,8 +322,8 @@
       "fetched_count": 862,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 331,
-      "checked_at": "2026-09-14T19:01:17.019551Z"
+      "latency_ms": 334,
+      "checked_at": "2026-09-15T02:48:47.124164Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -232,8 +334,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 181,
-      "checked_at": "2026-09-14T19:01:17.201299Z"
+      "latency_ms": 198,
+      "checked_at": "2026-09-15T02:48:47.323002Z"
     },
     {
       "source_id": "github-changelog",
@@ -245,7 +347,7 @@
       "kept_count": 1,
       "error": null,
       "latency_ms": 32,
-      "checked_at": "2026-09-14T19:01:17.234024Z"
+      "checked_at": "2026-09-15T02:48:47.355523Z"
     },
     {
       "source_id": "aihot",
@@ -254,10 +356,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 1,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 734,
-      "checked_at": "2026-09-14T19:01:17.969327Z"
+      "latency_ms": 2929,
+      "checked_at": "2026-09-15T02:48:50.286035Z"
     }
   ],
   "control_notes": {
