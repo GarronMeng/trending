@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-15T08:59:08.345759Z",
+  "generated_at": "2026-09-15T11:58:29.627353Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -49,6 +49,14 @@
           6
         ],
         [
+          "openai",
+          3
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
           "claude",
           2
         ],
@@ -61,23 +69,15 @@
           2
         ],
         [
-          "agent",
-          2
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "评测",
-          2
-        ],
-        [
-          "anthropic",
+          "codex",
           1
         ],
         [
-          "codex",
+          "agent",
+          1
+        ],
+        [
+          "评测",
           1
         ]
       ]
@@ -195,6 +195,25 @@
       "is_ai_related": true
     },
     {
+      "id": "ff43563146d0d8fa979245a679bc932a572e4e74",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 与 OpenAI 提议协调放缓前沿 AI 开发，Cohere CEO 等批评者质疑其真实动机",
+      "url": "https://aihot.news/items/cmu2gnngu032brovqo7pvrfx9",
+      "published_at": "2026-09-15T09:04:36Z",
+      "summary": "Anthropic CEO Dario Amodei 呼吁行业与政府协调放缓前沿 AI 开发，并寻求反垄断豁免，Sam Altman 与 Elon Musk 表示同意。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu2gnngu032brovqo7pvrfx9",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "232fb4cb05dda179425067ed30d5a833162cec79",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -250,25 +269,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "801152fc1f87a75ccf97d36dc05aeed28583a441",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "小红书 AllSpark 开源 Search Agent 模型 Iris，35B 与 397B 版本同量级成绩领先",
-      "url": "https://aihot.news/items/cmu12ocst0b6nro2nypi25zyq",
-      "published_at": "2026-09-14T09:59:00Z",
-      "summary": "小红书 AllSpark 团队发布并开源 Search Agent 模型 Iris，权重和评测代码已公开，数据与训练配方将陆续公布。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu12ocst0b6nro2nypi25zyq",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -281,8 +281,8 @@
       "fetched_count": 1193,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 517,
-      "checked_at": "2026-09-15T08:59:06.137748Z"
+      "latency_ms": 499,
+      "checked_at": "2026-09-15T11:58:27.084447Z"
     },
     {
       "source_id": "openai-skills",
@@ -293,8 +293,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-09-15T08:59:06.392703Z"
+      "latency_ms": 284,
+      "checked_at": "2026-09-15T11:58:27.369586Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -305,8 +305,8 @@
       "fetched_count": 257,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 115,
-      "checked_at": "2026-09-15T08:59:06.512101Z"
+      "latency_ms": 112,
+      "checked_at": "2026-09-15T11:58:27.485745Z"
     },
     {
       "source_id": "google-deepmind",
@@ -317,8 +317,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 317,
-      "checked_at": "2026-09-15T08:59:06.831140Z"
+      "latency_ms": 342,
+      "checked_at": "2026-09-15T11:58:27.829707Z"
     },
     {
       "source_id": "google-ai",
@@ -329,8 +329,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 266,
-      "checked_at": "2026-09-15T08:59:07.098169Z"
+      "latency_ms": 245,
+      "checked_at": "2026-09-15T11:58:28.075420Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -341,8 +341,8 @@
       "fetched_count": 862,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 333,
-      "checked_at": "2026-09-15T08:59:07.444752Z"
+      "latency_ms": 311,
+      "checked_at": "2026-09-15T11:58:28.399606Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -353,8 +353,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 199,
-      "checked_at": "2026-09-15T08:59:07.644605Z"
+      "latency_ms": 182,
+      "checked_at": "2026-09-15T11:58:28.582676Z"
     },
     {
       "source_id": "github-changelog",
@@ -365,8 +365,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-09-15T08:59:07.676946Z"
+      "latency_ms": 31,
+      "checked_at": "2026-09-15T11:58:28.614396Z"
     },
     {
       "source_id": "aihot",
@@ -377,8 +377,8 @@
       "fetched_count": 50,
       "kept_count": 6,
       "error": null,
-      "latency_ms": 658,
-      "checked_at": "2026-09-15T08:59:08.337037Z"
+      "latency_ms": 1003,
+      "checked_at": "2026-09-15T11:58:29.619367Z"
     }
   ],
   "control_notes": {
