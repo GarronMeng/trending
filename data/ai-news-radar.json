@@ -1,24 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-15T17:55:38.239281Z",
+  "generated_at": "2026-09-16T02:44:00.898257Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 11,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          7
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          8
         ],
         [
           "openai",
@@ -37,6 +37,14 @@
           2
         ],
         [
+          "claude",
+          2
+        ],
+        [
+          "评测",
+          2
+        ],
+        [
           "codex",
           1
         ],
@@ -49,19 +57,11 @@
           1
         ],
         [
-          "claude",
-          1
-        ],
-        [
           "工作流",
           1
         ],
         [
           "agent",
-          1
-        ],
-        [
-          "评测",
           1
         ]
       ]
@@ -91,6 +91,22 @@
         [
           "agent",
           1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
         ]
       ]
     }
@@ -174,6 +190,24 @@
       "is_ai_related": true
     },
     {
+      "id": "bb4f5d671988be59021807faf5750c687bb272eb",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot suggests custom properties definitions",
+      "url": "https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions",
+      "published_at": "2026-09-15T19:07:47Z",
+      "summary": "GitHub Copilot can now suggest allowed values when you create a custom property for repositories in your organization. This feature is in public preview for GitHub Copilot Business and Copilot… The post GitHub Copilot suggests custom properties definitions appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "774b28f737cc709191e3e47fd3ea98bf2a28ffbd",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -251,6 +285,25 @@
       "is_ai_related": true
     },
     {
+      "id": "ab75617a9d984283aa79a5cd64364cc25983b844",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Arena 更新 Image-to-WebDev 榜单：GPT-6 Astra 以 1733 分登顶",
+      "url": "https://aihot.news/items/cmu36fa060aaqrosaqk9opwh9",
+      "published_at": "2026-09-15T21:20:53Z",
+      "summary": "Arena 更新 Image-to-WebDev 排行榜，纳入四个新评测模型。GPT-6 Astra （Max） 以 1733 分居第一，领先 GPT-5.6 Sol （xHigh） 129 分；Claude Fable 5.1 （Max） 以 1710 分排第二，Muse Spark 1.3 （Max） 1645 分第四，GLM-5.3-Flash 1588 分第十。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu36fa060aaqrosaqk9opwh9",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:claude",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "4014861367d1ce655577be3f0a70a5a0b4b34506",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -280,8 +333,8 @@
       "fetched_count": 1193,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 444,
-      "checked_at": "2026-09-15T17:55:35.285655Z"
+      "latency_ms": 448,
+      "checked_at": "2026-09-16T02:43:58.529766Z"
     },
     {
       "source_id": "openai-skills",
@@ -292,8 +345,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 372,
-      "checked_at": "2026-09-15T17:55:35.658328Z"
+      "latency_ms": 195,
+      "checked_at": "2026-09-16T02:43:58.725601Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -304,8 +357,8 @@
       "fetched_count": 257,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 111,
-      "checked_at": "2026-09-15T17:55:35.772282Z"
+      "latency_ms": 110,
+      "checked_at": "2026-09-16T02:43:58.839823Z"
     },
     {
       "source_id": "google-deepmind",
@@ -316,8 +369,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 400,
-      "checked_at": "2026-09-15T17:55:36.173888Z"
+      "latency_ms": 220,
+      "checked_at": "2026-09-16T02:43:59.062021Z"
     },
     {
       "source_id": "google-ai",
@@ -328,8 +381,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 304,
-      "checked_at": "2026-09-15T17:55:36.478302Z"
+      "latency_ms": 160,
+      "checked_at": "2026-09-16T02:43:59.223346Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -340,8 +393,8 @@
       "fetched_count": 862,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 301,
-      "checked_at": "2026-09-15T17:55:36.789835Z"
+      "latency_ms": 294,
+      "checked_at": "2026-09-16T02:43:59.530258Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -352,8 +405,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 183,
-      "checked_at": "2026-09-15T17:55:36.973771Z"
+      "latency_ms": 156,
+      "checked_at": "2026-09-16T02:43:59.687420Z"
     },
     {
       "source_id": "github-changelog",
@@ -362,10 +415,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-09-15T17:55:37.003580Z"
+      "latency_ms": 24,
+      "checked_at": "2026-09-16T02:43:59.712334Z"
     },
     {
       "source_id": "aihot",
@@ -374,10 +427,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 1226,
-      "checked_at": "2026-09-15T17:55:38.230946Z"
+      "latency_ms": 1176,
+      "checked_at": "2026-09-16T02:44:00.889338Z"
     }
   ],
   "control_notes": {

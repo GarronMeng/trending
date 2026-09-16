@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>9</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>11</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>2</b><span>官方源条目</span></div>
-        <div class="stat"><b>7</b><span>聚合源条目</span></div>
+        <div class="stat"><b>8</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-09-15T17:55:38.240449Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-09-16T02:44:00.899761Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -103,6 +103,19 @@
       <h3><a href="https://aihot.news/items/cmu2xqfxz02zhroc1hxuzi6jm" target="_blank" rel="noreferrer">Google DeepMind 发布 Gemini 3.8 Live 和 3.8 Live Extended Thinking</a></h3>
       <p class='summary'>Google DeepMind 发布 Gemini 3.8 Live 与 Gemini 3.8 Live Extended Thinking 两个近实时语音对话模型，主打语音智能体和复杂任务执行。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu2xqfxz02zhroc1hxuzi6jm</p>
       <div class="tags"><span>strong:gemini</span><span>strong:deepmind</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-09-15T19:07:47Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions" target="_blank" rel="noreferrer">GitHub Copilot suggests custom properties definitions</a></h3>
+      <p class='summary'>GitHub Copilot can now suggest allowed values when you create a custom property for repositories in your organization. This feature is in public preview for GitHub Copilot Business and Copilot… The post GitHub Copilot suggests custom properties definitions appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
     
 
@@ -162,6 +175,19 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
+        <span>2026-09-15T21:20:53Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/cmu36fa060aaqrosaqk9opwh9" target="_blank" rel="noreferrer">Arena 更新 Image-to-WebDev 榜单：GPT-6 Astra 以 1733 分登顶</a></h3>
+      <p class='summary'>Arena 更新 Image-to-WebDev 排行榜，纳入四个新评测模型。GPT-6 Astra （Max） 以 1733 分居第一，领先 GPT-5.6 Sol （xHigh） 129 分；Claude Fable 5.1 （Max） 以 1710 分排第二，Muse Spark 1.3 （Max） 1645 分第四，GLM-5.3-Flash 1588 分第十。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu36fa060aaqrosaqk9opwh9</p>
+      <div class="tags"><span>strong:claude</span><span>weak:评测</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
         <span>2026-09-15T03:14:09Z</span>
         <strong>Score 2</strong>
       </div>
@@ -175,15 +201,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1193</td><td>0</td><td>444ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>372ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>257</td><td>0</td><td>111ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>1</td><td>400ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>304ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>862</td><td>1</td><td>301ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>183ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>29ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>7</td><td>1226ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1193</td><td>0</td><td>448ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>195ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>257</td><td>0</td><td>110ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>1</td><td>220ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>160ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>862</td><td>1</td><td>294ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>156ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>24ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>8</td><td>1176ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
