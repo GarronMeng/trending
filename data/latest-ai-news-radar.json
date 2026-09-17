@@ -1,67 +1,87 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-16T17:57:32.510718Z",
+  "generated_at": "2026-09-17T02:47:58.588184Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 12,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 6,
       "top_sources": [
         [
           "OpenAI News",
-          3
+          5
+        ],
+        [
+          "GitHub AI & ML",
+          1
         ]
       ],
       "top_keywords": [
         [
-          "openai",
-          3
+          "official_ai",
+          6
         ],
         [
-          "official_ai",
-          3
+          "openai",
+          4
         ],
         [
           "agent",
-          1
+          2
         ],
         [
           "agents",
-          1
+          2
+        ],
+        [
+          "chatgpt",
+          2
         ],
         [
           "tool",
           1
         ],
         [
-          "chatgpt",
+          "copilot",
+          1
+        ],
+        [
+          "codex",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          4
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
+          5
         ],
         [
-          "claude",
-          3
+          "chatgpt",
+          2
+        ],
+        [
+          "agent",
+          2
         ],
         [
           "anthropic",
+          2
+        ],
+        [
+          "claude",
           2
         ],
         [
@@ -69,19 +89,27 @@
           1
         ],
         [
-          "chatgpt",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
           "agents",
           1
         ],
         [
-          "评测",
+          "codex",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "工作流",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "copilot",
           1
         ]
       ]
@@ -126,6 +154,26 @@
       "is_ai_related": true
     },
     {
+      "id": "549091811e625bdcd53fc8c2f850867966917c0f",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "Migrating the GitHub Copilot runtime to Rust, using Copilot",
+      "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot",
+      "published_at": "2026-09-17T00:26:43Z",
+      "summary": "A rewrite this size wasn't affordable before agents. Here's what porting the Copilot agent runtime to 800,000 lines of production Rust actually took. The post Migrating the GitHub Copilot runtime to Rust, using Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "weak:copilot",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "29d8289f257fdf89210a26c062bb2b2ef802e3c8",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -140,6 +188,25 @@
       "relevance_reasons": [
         "strong:openai",
         "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "171fa5480510dd059c07a335136ea4dd02b58629",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How to connect AI usage to business value",
+      "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+      "published_at": "2026-09-16T12:00:00Z",
+      "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -166,6 +233,45 @@
       "is_ai_related": true
     },
     {
+      "id": "739baa33ba45e11b072735ca4c3e6cd95434506f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "用 MCP 插件让 GPT-6 Pro 分担 Codex 规划任务，节省 Pro 会员周额度",
+      "url": "https://aihot.news/items/cmu4s9jrn0683rokccdfqwbux",
+      "published_at": "2026-09-17T00:09:06Z",
+      "summary": "自媒体作者分享一套节省 Codex 额度的工作流：让 Codex 把自己的服务器封装成只读、最小权限、飞书 OAuth 鉴权的 MCP Server，作为插件供 ChatGPT 网页版的 GPT-6 Pro 调用，读取真实生产数据和 GitHub PR 记录做分析与规划。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu4s9jrn0683rokccdfqwbux",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "strong:mcp",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fa12c46747c2ec919c849034e06cec89d8dba604",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Our framework for reporting model misalignment",
+      "url": "https://openai.com/index/model-misalignment-reporting-framework",
+      "published_at": "2026-09-16T17:00:00Z",
+      "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "39badf7161e453385870105e7509fcd20d0e71c9",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -184,16 +290,36 @@
       "is_ai_related": true
     },
     {
-      "id": "bb4f5d671988be59021807faf5750c687bb272eb",
+      "id": "5b24f127ea4ddbad7de937ab4016e4c3bc7da4ee",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "GitHub 用 Copilot 智能体将 Copilot 运行时从 TypeScript 迁移到 83 万行 Rust",
+      "url": "https://aihot.news/items/cmu4tu41w07ufrokck6s0p0cp",
+      "published_at": "2026-09-17T00:26:43Z",
+      "summary": "GitHub 工程师 Stephen Toub 复盘用 Copilot 智能体在约 14.5 周内将 Copilot agent runtime 从 TypeScript/Node.js 全量重写为 832，378 行生产 Rust，AI 智能体完成大部分代码，共 128 个 PR 增量合入 main 并持续发布。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu4tu41w07ufrokck6s0p0cp",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "weak:copilot",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a7c8f9dce1fd2cb9255e9b34e1e1cc2137674617",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "GitHub Copilot suggests custom properties definitions",
-      "url": "https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions",
-      "published_at": "2026-09-15T19:07:47Z",
-      "summary": "GitHub Copilot can now suggest allowed values when you create a custom property for repositories in your organization. This feature is in public preview for GitHub Copilot Business and Copilot… The post GitHub Copilot suggests custom properties definitions appeared first on The GitHub Blog .",
+      "title": "Copilot budget increase requests are generally available",
+      "url": "https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available",
+      "published_at": "2026-09-16T20:17:18Z",
+      "summary": "Previously, when a member used all the Copilot AI credits available to them, they were blocked from Copilot features that consume credits. This release adds a flow for them to… The post Copilot budget increase requests are generally available appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
         "weak:copilot",
@@ -238,25 +364,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "ab75617a9d984283aa79a5cd64364cc25983b844",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Arena 更新 Image-to-WebDev 榜单：GPT-6 Astra 以 1733 分登顶",
-      "url": "https://aihot.news/items/cmu36fa060aaqrosaqk9opwh9",
-      "published_at": "2026-09-15T21:20:53Z",
-      "summary": "Arena 更新 Image-to-WebDev 排行榜，纳入四个新评测模型。GPT-6 Astra （Max） 以 1733 分居第一，领先 GPT-5.6 Sol （xHigh） 129 分；Claude Fable 5.1 （Max） 以 1710 分排第二，Muse Spark 1.3 （Max） 1645 分第四，GLM-5.3-Flash 1588 分第十。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu36fa060aaqrosaqk9opwh9",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:claude",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -266,11 +373,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1196,
-      "kept_count": 3,
+      "fetched_count": 1198,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 371,
-      "checked_at": "2026-09-16T17:57:29.359920Z"
+      "latency_ms": 625,
+      "checked_at": "2026-09-17T02:47:55.873669Z"
     },
     {
       "source_id": "openai-skills",
@@ -281,8 +388,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 357,
-      "checked_at": "2026-09-16T17:57:29.718076Z"
+      "latency_ms": 224,
+      "checked_at": "2026-09-17T02:47:56.098235Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -293,8 +400,8 @@
       "fetched_count": 257,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 225,
-      "checked_at": "2026-09-16T17:57:29.945873Z"
+      "latency_ms": 97,
+      "checked_at": "2026-09-17T02:47:56.198972Z"
     },
     {
       "source_id": "google-deepmind",
@@ -305,8 +412,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 379,
-      "checked_at": "2026-09-16T17:57:30.326306Z"
+      "latency_ms": 589,
+      "checked_at": "2026-09-17T02:47:56.789494Z"
     },
     {
       "source_id": "google-ai",
@@ -317,8 +424,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 315,
-      "checked_at": "2026-09-16T17:57:30.641892Z"
+      "latency_ms": 265,
+      "checked_at": "2026-09-17T02:47:57.055467Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -329,8 +436,8 @@
       "fetched_count": 862,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 231,
-      "checked_at": "2026-09-16T17:57:30.882547Z"
+      "latency_ms": 273,
+      "checked_at": "2026-09-17T02:47:57.340457Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -339,10 +446,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 344,
-      "checked_at": "2026-09-16T17:57:31.227350Z"
+      "latency_ms": 177,
+      "checked_at": "2026-09-17T02:47:57.518511Z"
     },
     {
       "source_id": "github-changelog",
@@ -353,8 +460,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-09-16T17:57:31.250711Z"
+      "latency_ms": 17,
+      "checked_at": "2026-09-17T02:47:57.536169Z"
     },
     {
       "source_id": "aihot",
@@ -363,10 +470,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 1251,
-      "checked_at": "2026-09-16T17:57:32.502837Z"
+      "latency_ms": 1042,
+      "checked_at": "2026-09-17T02:47:58.579394Z"
     }
   ],
   "control_notes": {
