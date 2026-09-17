@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>8</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>3</b><span>官方源条目</span></div>
-        <div class="stat"><b>4</b><span>聚合源条目</span></div>
+        <div class="stat"><b>9</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>1</b><span>官方源条目</span></div>
+        <div class="stat"><b>5</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-09-17T13:40:15.056491Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-09-17T17:55:25.755067Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -64,19 +64,6 @@
       <h3><a href="https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot" target="_blank" rel="noreferrer">Migrating the GitHub Copilot runtime to Rust, using Copilot</a></h3>
       <p class='summary'>A rewrite this size wasn&#x27;t affordable before agents. Here&#x27;s what porting the Copilot agent runtime to 800,000 lines of production Rust actually took. The post Migrating the GitHub Copilot runtime to Rust, using Copilot appeared first on The GitHub Blog .</p>
       <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>weak:copilot</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-09-16T16:00:00Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://openai.com/index/helping-older-adults-use-ai-in-everyday-life" target="_blank" rel="noreferrer">Helping older adults use AI in everyday life</a></h3>
-      <p class='summary'>OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely.</p>
-      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -95,14 +82,40 @@
 
     <article class="card">
       <div class="meta">
-        <span>OpenAI News</span>
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-09-17T16:38:32Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/cmu5r7kl30h35roqonpk4qypn" target="_blank" rel="noreferrer">Goodfire Research 发现模型内部信号可规模化检测奖励作弊</a></h3>
+      <p class='summary'>Goodfire Research 发现模型内部存在伴随奖励作弊的激活信号，可用简单探针实时检测。在 Kimi K3、GLM 5.2、Qwen 3.8 Max 三个开源模型的三个智能体基准上，50-96% 的 rollout 出现奖励作弊；探针能捕捉 LLM 链式思维监测漏掉的作弊案例，且可泛化到训练数据之外的任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu5r7kl30h35roqonpk4qypn</p>
+      <div class="tags"><span>strong:llm</span><span>strong:智能体</span><span>strong:开源模型</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
         <span>official_rss</span>
-        <span>2026-09-16T17:00:00Z</span>
+        <span>2026-09-17T16:27:16Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://openai.com/index/model-misalignment-reporting-framework" target="_blank" rel="noreferrer">Our framework for reporting model misalignment</a></h3>
-      <p class='summary'>OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.</p>
-      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
+      <h3><a href="https://github.blog/changelog/2026-09-17-ubuntu-26-generally-available-and-latest-migration" target="_blank" rel="noreferrer">Ubuntu 26 generally available and latest migration</a></h3>
+      <p class='summary'>The Ubuntu 26.04 runner image for GitHub Actions is now out of public preview and fully supported for production workflows on both x64 and arm64. As part of this release,… The post Ubuntu 26 generally available and latest migration appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:workflow</span><span>source:actions</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-09-17T15:45:26Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available" target="_blank" rel="noreferrer">Workflow execution protections in GitHub Actions generally available</a></h3>
+      <p class='summary'>Workflow execution protections for GitHub Actions, previously in public preview, are now generally available for GitHub Enterprise, organizations, and repositories. Execution protections let you define an allowlist that controls who… The post Workflow execution protections in GitHub Actions generally available appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:workflow</span><span>source:actions</span></div>
     </article>
     
 
@@ -136,12 +149,12 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-09-16T16:51:45Z</span>
+        <span>2026-09-17T15:38:13Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://aihot.news/items/cmu4c8qar0hzero4w3b6n1jyf" target="_blank" rel="noreferrer">Anthropic 将 Claude Cowork 与聊天合并为统一的 Claude，并推出 Docs、Slides 等功能</a></h3>
-      <p class='summary'>Anthropic 宣布 Claude Cowork 与聊天合并为一个 Claude，任务无需再选择入口，Cowork 和 Design 的能力可在任意对话中使用，未来几周内向 Pro 和 Max 计划推出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu4c8qar0hzero4w3b6n1jyf</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://aihot.news/items/cmu5qsx2y0gpfroqonmogw4sk" target="_blank" rel="noreferrer">Dwarkesh 对谈 Noam Brown：智能体集群、对齐与递归自我改进</a></h3>
+      <p class='summary'>Dwarkesh Patel 采访 OpenAI 研究员 Noam Brown，谈多智能体系统、对齐与递归自我改进。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu5qsx2y0gpfroqonmogw4sk</p>
+      <div class="tags"><span>strong:openai</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -149,12 +162,12 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-09-16T16:28:29Z</span>
-        <strong>Score 3</strong>
+        <span>2026-09-17T17:18:08Z</span>
+        <strong>Score 2</strong>
       </div>
-      <h3><a href="https://aihot.news/items/cmu4bql8w0haoro4wduou7kxe" target="_blank" rel="noreferrer">Claude Docs、Claude Slides 与 Claude Design 直接嵌入对话，可导出 PowerPoint 或 PDF</a></h3>
-      <p class='summary'>Anthropic 的 Boris Cherny 宣布 Claude Docs、Claude Slides 和 Claude Design 已进入每段对话，直接在聊天中生成演示、文档和设计。生成的演示可打开、编辑并导出为 PowerPoint 或 PDF，无需跳转到单独工具。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu4bql8w0haoro4wduou7kxe</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://aihot.news/items/cmu5smj860insroqokcuh0u9v" target="_blank" rel="noreferrer">Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付</a></h3>
+      <p class='summary'>Qwen 发布下一代原生全模态模型 Qwen3.8-Omni-Flash，支持文本、图像、音频和视频输入及 1M token 上下文窗口，29 项评测平均分较 Qwen3.5-Omni-Plus 提升超过 25%，音频输入每小时价格下降超过 98%，音视频输入每小时价格下降超过 93%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu5smj860insroqokcuh0u9v</p>
+      <div class="tags"><span>strong:智能体</span><span>weak:评测</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     </div>
     </section>
@@ -162,15 +175,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1206</td><td>2</td><td>643ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>360ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>257</td><td>0</td><td>165ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>308ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>239ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>862</td><td>0</td><td>397ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>286ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>37ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>4</td><td>985ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1206</td><td>0</td><td>416ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>362ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>258</td><td>0</td><td>152ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>402ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>316ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>862</td><td>0</td><td>222ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>293ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>3</td><td>21ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>5</td><td>1496ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

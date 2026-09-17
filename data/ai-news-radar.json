@@ -1,33 +1,21 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-17T13:40:15.055176Z",
+  "generated_at": "2026-09-17T17:55:25.752864Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 9,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 1,
       "top_sources": [
-        [
-          "OpenAI News",
-          2
-        ],
         [
           "GitHub AI & ML",
           1
         ]
       ],
       "top_keywords": [
-        [
-          "official_ai",
-          3
-        ],
-        [
-          "openai",
-          2
-        ],
         [
           "agent",
           1
@@ -41,32 +29,28 @@
           1
         ],
         [
-          "chatgpt",
+          "official_ai",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          4
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
+          5
+        ],
+        [
+          "智能体",
           4
-        ],
-        [
-          "anthropic",
-          2
-        ],
-        [
-          "claude",
-          2
         ],
         [
           "chatgpt",
@@ -85,29 +69,49 @@
           1
         ],
         [
+          "llm",
+          1
+        ],
+        [
+          "开源模型",
+          1
+        ],
+        [
           "agent",
           1
         ],
         [
-          "智能体",
+          "copilot",
           1
         ],
         [
-          "copilot",
+          "openai",
+          1
+        ],
+        [
+          "评测",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 1,
+      "count": 3,
       "top_sources": [
         [
           "GitHub Changelog",
-          1
+          3
         ]
       ],
       "top_keywords": [
+        [
+          "workflow",
+          2
+        ],
+        [
+          "actions",
+          2
+        ],
         [
           "copilot",
           2
@@ -137,25 +141,6 @@
       "is_ai_related": true
     },
     {
-      "id": "29d8289f257fdf89210a26c062bb2b2ef802e3c8",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Helping older adults use AI in everyday life",
-      "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
-      "published_at": "2026-09-16T16:00:00Z",
-      "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "739baa33ba45e11b072735ca4c3e6cd95434506f",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -177,20 +162,58 @@
       "is_ai_related": true
     },
     {
-      "id": "fa12c46747c2ec919c849034e06cec89d8dba604",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
+      "id": "380ad39a4a2856ba44003ea1231c0452c9b719cd",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Goodfire Research 发现模型内部信号可规模化检测奖励作弊",
+      "url": "https://aihot.news/items/cmu5r7kl30h35roqonpk4qypn",
+      "published_at": "2026-09-17T16:38:32Z",
+      "summary": "Goodfire Research 发现模型内部存在伴随奖励作弊的激活信号，可用简单探针实时检测。在 Kimi K3、GLM 5.2、Qwen 3.8 Max 三个开源模型的三个智能体基准上，50-96% 的 rollout 出现奖励作弊；探针能捕捉 LLM 链式思维监测漏掉的作弊案例，且可泛化到训练数据之外的任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu5r7kl30h35roqonpk4qypn",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:llm",
+        "strong:智能体",
+        "strong:开源模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "94fa6c68551e0224e6cd24a960f46e1b984a5afa",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Our framework for reporting model misalignment",
-      "url": "https://openai.com/index/model-misalignment-reporting-framework",
-      "published_at": "2026-09-16T17:00:00Z",
-      "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Ubuntu 26 generally available and latest migration",
+      "url": "https://github.blog/changelog/2026-09-17-ubuntu-26-generally-available-and-latest-migration",
+      "published_at": "2026-09-17T16:27:16Z",
+      "summary": "The Ubuntu 26.04 runner image for GitHub Actions is now out of public preview and fully supported for production workflows on both x64 and arm64. As part of this release,… The post Ubuntu 26 generally available and latest migration appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
+        "weak:workflow",
+        "source:actions"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8b45b037084877696b86a5774d497c882401d1f9",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Workflow execution protections in GitHub Actions generally available",
+      "url": "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available",
+      "published_at": "2026-09-17T15:45:26Z",
+      "summary": "Workflow execution protections for GitHub Actions, previously in public preview, are now generally available for GitHub Enterprise, organizations, and repositories. Execution protections let you define an allowlist that controls who… The post Workflow execution protections in GitHub Actions generally available appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:workflow",
+        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -233,39 +256,39 @@
       "is_ai_related": true
     },
     {
-      "id": "f04338a51d52a3ff3c9cd26f5fbc3ff39bac0f42",
+      "id": "bb0b024f74eff48cc2a89c845f1762ace598b652",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 将 Claude Cowork 与聊天合并为统一的 Claude，并推出 Docs、Slides 等功能",
-      "url": "https://aihot.news/items/cmu4c8qar0hzero4w3b6n1jyf",
-      "published_at": "2026-09-16T16:51:45Z",
-      "summary": "Anthropic 宣布 Claude Cowork 与聊天合并为一个 Claude，任务无需再选择入口，Cowork 和 Design 的能力可在任意对话中使用，未来几周内向 Pro 和 Max 计划推出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu4c8qar0hzero4w3b6n1jyf",
+      "title": "Dwarkesh 对谈 Noam Brown：智能体集群、对齐与递归自我改进",
+      "url": "https://aihot.news/items/cmu5qsx2y0gpfroqonmogw4sk",
+      "published_at": "2026-09-17T15:38:13Z",
+      "summary": "Dwarkesh Patel 采访 OpenAI 研究员 Noam Brown，谈多智能体系统、对齐与递归自我改进。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu5qsx2y0gpfroqonmogw4sk",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
+        "strong:openai",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "611d622895ce19d80da2ffbbeacd12cd5553261f",
+      "id": "efc622db1a22c3abbe7d709f5c85d6fd086786f7",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Claude Docs、Claude Slides 与 Claude Design 直接嵌入对话，可导出 PowerPoint 或 PDF",
-      "url": "https://aihot.news/items/cmu4bql8w0haoro4wduou7kxe",
-      "published_at": "2026-09-16T16:28:29Z",
-      "summary": "Anthropic 的 Boris Cherny 宣布 Claude Docs、Claude Slides 和 Claude Design 已进入每段对话，直接在聊天中生成演示、文档和设计。生成的演示可打开、编辑并导出为 PowerPoint 或 PDF，无需跳转到单独工具。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu4bql8w0haoro4wduou7kxe",
-      "relevance_score": 3,
+      "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付",
+      "url": "https://aihot.news/items/cmu5smj860insroqokcuh0u9v",
+      "published_at": "2026-09-17T17:18:08Z",
+      "summary": "Qwen 发布下一代原生全模态模型 Qwen3.8-Omni-Flash，支持文本、图像、音频和视频输入及 1M token 上下文窗口，29 项评测平均分较 Qwen3.5-Omni-Plus 提升超过 25%，音频输入每小时价格下降超过 98%，音视频输入每小时价格下降超过 93%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu5smj860insroqokcuh0u9v",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
+        "strong:智能体",
+        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -279,10 +302,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1206,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 643,
-      "checked_at": "2026-09-17T13:40:12.243524Z"
+      "latency_ms": 416,
+      "checked_at": "2026-09-17T17:55:22.447838Z"
     },
     {
       "source_id": "openai-skills",
@@ -293,8 +316,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 360,
-      "checked_at": "2026-09-17T13:40:12.604505Z"
+      "latency_ms": 362,
+      "checked_at": "2026-09-17T17:55:22.810394Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -302,11 +325,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 257,
+      "fetched_count": 258,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 165,
-      "checked_at": "2026-09-17T13:40:12.774107Z"
+      "latency_ms": 152,
+      "checked_at": "2026-09-17T17:55:22.966165Z"
     },
     {
       "source_id": "google-deepmind",
@@ -317,8 +340,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 308,
-      "checked_at": "2026-09-17T13:40:13.084454Z"
+      "latency_ms": 402,
+      "checked_at": "2026-09-17T17:55:23.369769Z"
     },
     {
       "source_id": "google-ai",
@@ -329,8 +352,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 239,
-      "checked_at": "2026-09-17T13:40:13.324583Z"
+      "latency_ms": 316,
+      "checked_at": "2026-09-17T17:55:23.686280Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -341,8 +364,8 @@
       "fetched_count": 862,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 397,
-      "checked_at": "2026-09-17T13:40:13.734571Z"
+      "latency_ms": 222,
+      "checked_at": "2026-09-17T17:55:23.918263Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -353,8 +376,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 286,
-      "checked_at": "2026-09-17T13:40:14.021369Z"
+      "latency_ms": 293,
+      "checked_at": "2026-09-17T17:55:24.212474Z"
     },
     {
       "source_id": "github-changelog",
@@ -363,10 +386,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 37,
-      "checked_at": "2026-09-17T13:40:14.059133Z"
+      "latency_ms": 21,
+      "checked_at": "2026-09-17T17:55:24.234000Z"
     },
     {
       "source_id": "aihot",
@@ -375,10 +398,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 985,
-      "checked_at": "2026-09-17T13:40:15.045796Z"
+      "latency_ms": 1496,
+      "checked_at": "2026-09-17T17:55:25.731426Z"
     }
   ],
   "control_notes": {
