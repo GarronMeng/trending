@@ -1,32 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-18T13:03:22.242272Z",
+  "generated_at": "2026-09-18T17:29:24.267862Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 16,
+  "item_count": 12,
   "groups": {
     "developer": {
       "group": "developer",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
           "GitHub Changelog",
-          4
+          3
         ]
       ],
       "top_keywords": [
         [
           "copilot",
           4
-        ],
-        [
-          "workflow",
-          2
-        ],
-        [
-          "actions",
-          2
         ],
         [
           "agent",
@@ -47,57 +39,81 @@
         [
           "api",
           1
+        ],
+        [
+          "automation",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub AI & ML",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "mcp",
+          1
+        ],
+        [
+          "official_ai",
+          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 12,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          12
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          12
+          8
         ],
         [
           "openai",
-          7
-        ],
-        [
-          "智能体",
-          5
-        ],
-        [
-          "anthropic",
-          4
+          6
         ],
         [
           "chatgpt",
           3
         ],
         [
-          "codex",
-          2
+          "智能体",
+          3
         ],
         [
-          "llm",
+          "anthropic",
           2
         ],
         [
           "claude",
-          2
-        ],
-        [
-          "开源模型",
           1
         ],
         [
-          "评测",
+          "codex",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "llm",
           1
         ]
       ]
@@ -128,6 +144,44 @@
       "is_ai_related": true
     },
     {
+      "id": "a52073720d983261e8cc06ed75645ab21e6dd769",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
+      "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp",
+      "published_at": "2026-09-18T15:00:00Z",
+      "summary": "We dive into these questions and other AI hot takes on the latest episode of the GitHub Podcast. The post Should you read the code, is RAG dead, and did Skills kill MCP? appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:mcp",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b866dafbe0d59dad33bf40d42eb8db4b9a77f988",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "研究团队用 Claude Opus 5 入侵 OpenAI，获 6500 美元漏洞赏金",
+      "url": "https://aihot.news/items/cmu71pa810n45rowkag436ea3",
+      "published_at": "2026-09-18T14:00:14Z",
+      "summary": "Hacktron AI 三人团队在 OpenAI 漏洞赏金计划中利用 Claude Opus 5 发现并串联两个严重漏洞，接管多个 OpenAI 员工 ChatGPT 账户，获 6500 美元奖金，OpenAI 表示已修复。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu71pa810n45rowkag436ea3",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:claude",
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "4abe812857b27e404a81f3e5bda88f4c9c0e8f48",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -143,46 +197,6 @@
         "strong:openai",
         "strong:chatgpt",
         "strong:codex",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ca95410e67db2df60707516484c1333b046e6b0f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
-      "url": "https://aihot.news/items/cmu6idvti04i9ro0fktczvi9g",
-      "published_at": "2026-09-18T04:45:46Z",
-      "summary": "Hacktron 团队披露 2026 年 7 月 25 日 chained libheif 堆缓冲区溢出与 OpenAI SSO 身份缺陷，攻破 community.openai.com 并接管多名员工 ChatGPT/Codex 账号，用员工 Codex 在 OpenAI 内部 monorepo 开出无害 PR 作为证明，全程不到 72 小时。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu6idvti04i9ro0fktczvi9g",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "380ad39a4a2856ba44003ea1231c0452c9b719cd",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Goodfire Research 发现模型内部信号可规模化检测奖励作弊",
-      "url": "https://aihot.news/items/cmu5r7kl30h35roqonpk4qypn",
-      "published_at": "2026-09-17T16:38:32Z",
-      "summary": "Goodfire Research 发现模型内部存在伴随奖励作弊的激活信号，可用简单探针实时检测。在 Kimi K3、GLM 5.2、Qwen 3.8 Max 三个开源模型的三个智能体基准上，50-96% 的 rollout 出现奖励作弊；探针能捕捉 LLM 链式思维监测漏掉的作弊案例，且可泛化到训练数据之外的任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu5r7kl30h35roqonpk4qypn",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:llm",
-        "strong:智能体",
-        "strong:开源模型",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -206,38 +220,39 @@
       "is_ai_related": true
     },
     {
-      "id": "94fa6c68551e0224e6cd24a960f46e1b984a5afa",
+      "id": "678238ffa25d2e32b0403c1b10844e480ef1cc15",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Ubuntu 26 generally available and latest migration",
-      "url": "https://github.blog/changelog/2026-09-17-ubuntu-26-generally-available-and-latest-migration",
-      "published_at": "2026-09-17T16:27:16Z",
-      "summary": "The Ubuntu 26.04 runner image for GitHub Actions is now out of public preview and fully supported for production workflows on both x64 and arm64. As part of this release,… The post Ubuntu 26 generally available and latest migration appeared first on The GitHub Blog .",
-      "relevance_score": 3,
+      "title": "Stage-only npm tokens for safer automation",
+      "url": "https://github.blog/changelog/2026-09-18-stage-only-npm-tokens-for-safer-automation",
+      "published_at": "2026-09-18T16:37:50Z",
+      "summary": "You can now select Read and write (stage only) when creating an npm granular access token. This lets your automated workflows stage package versions for review without giving the token… The post Stage-only npm tokens for safer automation appeared first on The GitHub Blog .",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "weak:workflow",
-        "source:actions"
+        "weak:automation",
+        "weak:workflow"
       ],
       "is_ai_related": true
     },
     {
-      "id": "8b45b037084877696b86a5774d497c882401d1f9",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Workflow execution protections in GitHub Actions generally available",
-      "url": "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available",
-      "published_at": "2026-09-17T15:45:26Z",
-      "summary": "Workflow execution protections for GitHub Actions, previously in public preview, are now generally available for GitHub Enterprise, organizations, and repositories. Execution protections let you define an allowlist that controls who… The post Workflow execution protections in GitHub Actions generally available appeared first on The GitHub Blog .",
+      "id": "289a5bc3ebe3c7109c1bd2f11a37f7c2cdae848e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gary Marcus：近期更该警惕的不是失控超级智能，而是智能体 AI 引发的规模化黑客攻击",
+      "url": "https://aihot.news/items/cmu77kvz00tf6rowk9kl5o4k0",
+      "published_at": "2026-09-18T16:29:57Z",
+      "summary": "Gary Marcus 撰文称，近期真正应担心的不是失控的超级智能，而是被放开的 agentic AI 造成互联网规模化的黑客攻击。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu77kvz00tf6rowk9kl5o4k0",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:workflow",
-        "source:actions"
+        "strong:agent",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -318,25 +333,6 @@
       "is_ai_related": true
     },
     {
-      "id": "92f7b59d128091bc7bd5db486063c5025737d209",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 用 Claude 优化 30 多个开源生物分子模型，平均提速约 4 倍并开源全部代码",
-      "url": "https://aihot.news/items/cmu5y1dkt069qroiqnnhxz778",
-      "published_at": "2026-09-17T19:49:41Z",
-      "summary": "Anthropic 发布研究，让 Claude 在不到四周内优化了 30 多个开源生物分子模型，平均提速约 4 倍，输出完全一致时约 2 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu5y1dkt069qroiqnnhxz778",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "5f1288814d15bacf62f09a12dae170fe39e137aa",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -354,63 +350,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "4930d576da72b06edce374c5b286263611293f62",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Code 重构 Projects：从文件夹变为可托管多线程的对话式项目",
-      "url": "https://aihot.news/items/cmu5tujnp0jvoroqoq64oqnjr",
-      "published_at": "2026-09-17T17:52:08Z",
-      "summary": "Anthropic 重构 Claude Code 的 Projects，用户设定目标后由 Claude 拆解任务、并行调度多个线程、审查输出并汇总结果，线程本质上是各自独立分支的 Claude Code 云端会话。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu5tujnp0jvoroqoq64oqnjr",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "bb0b024f74eff48cc2a89c845f1762ace598b652",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Dwarkesh 对谈 Noam Brown：智能体集群、对齐与递归自我改进",
-      "url": "https://aihot.news/items/cmu5qsx2y0gpfroqonmogw4sk",
-      "published_at": "2026-09-17T15:38:13Z",
-      "summary": "Dwarkesh Patel 采访 OpenAI 研究员 Noam Brown，谈多智能体系统、对齐与递归自我改进。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu5qsx2y0gpfroqonmogw4sk",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "efc622db1a22c3abbe7d709f5c85d6fd086786f7",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付",
-      "url": "https://aihot.news/items/cmu5smj860insroqokcuh0u9v",
-      "published_at": "2026-09-17T17:18:08Z",
-      "summary": "Qwen 发布下一代原生全模态模型 Qwen3.8-Omni-Flash，支持文本、图像、音频和视频输入及 1M token 上下文窗口，29 项评测平均分较 Qwen3.5-Omni-Plus 提升超过 25%，音频输入每小时价格下降超过 98%，音视频输入每小时价格下降超过 93%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu5smj860insroqokcuh0u9v",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -423,8 +362,8 @@
       "fetched_count": 1208,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 449,
-      "checked_at": "2026-09-18T13:03:20.150498Z"
+      "latency_ms": 505,
+      "checked_at": "2026-09-18T17:29:22.262442Z"
     },
     {
       "source_id": "openai-skills",
@@ -435,8 +374,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 240,
-      "checked_at": "2026-09-18T13:03:20.391558Z"
+      "latency_ms": 171,
+      "checked_at": "2026-09-18T17:29:22.434438Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -447,8 +386,8 @@
       "fetched_count": 258,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 110,
-      "checked_at": "2026-09-18T13:03:20.505196Z"
+      "latency_ms": 116,
+      "checked_at": "2026-09-18T17:29:22.554809Z"
     },
     {
       "source_id": "google-deepmind",
@@ -459,8 +398,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 210,
-      "checked_at": "2026-09-18T13:03:20.717141Z"
+      "latency_ms": 280,
+      "checked_at": "2026-09-18T17:29:22.837220Z"
     },
     {
       "source_id": "google-ai",
@@ -471,8 +410,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 162,
-      "checked_at": "2026-09-18T13:03:20.879658Z"
+      "latency_ms": 142,
+      "checked_at": "2026-09-18T17:29:22.980332Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -483,8 +422,8 @@
       "fetched_count": 862,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-09-18T13:03:21.145882Z"
+      "latency_ms": 268,
+      "checked_at": "2026-09-18T17:29:23.261848Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -493,10 +432,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 195,
-      "checked_at": "2026-09-18T13:03:21.341920Z"
+      "latency_ms": 192,
+      "checked_at": "2026-09-18T17:29:23.454628Z"
     },
     {
       "source_id": "github-changelog",
@@ -505,10 +444,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-09-18T13:03:21.367496Z"
+      "latency_ms": 24,
+      "checked_at": "2026-09-18T17:29:23.479188Z"
     },
     {
       "source_id": "aihot",
@@ -517,10 +456,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 12,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 863,
-      "checked_at": "2026-09-18T13:03:22.231779Z"
+      "latency_ms": 779,
+      "checked_at": "2026-09-18T17:29:24.260066Z"
     }
   ],
   "control_notes": {
