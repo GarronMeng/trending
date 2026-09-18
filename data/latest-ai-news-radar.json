@@ -1,21 +1,33 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-17T17:55:25.752864Z",
+  "generated_at": "2026-09-18T02:35:00.412972Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 15,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 1,
+    "developer": {
+      "group": "developer",
+      "count": 4,
       "top_sources": [
         [
-          "GitHub AI & ML",
-          1
+          "GitHub Changelog",
+          4
         ]
       ],
       "top_keywords": [
+        [
+          "copilot",
+          4
+        ],
+        [
+          "workflow",
+          2
+        ],
+        [
+          "actions",
+          2
+        ],
         [
           "agent",
           1
@@ -25,7 +37,31 @@
           1
         ],
         [
-          "copilot",
+          "mcp",
+          1
+        ],
+        [
+          "model context protocol",
+          1
+        ],
+        [
+          "api",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "chatgpt",
           1
         ],
         [
@@ -36,56 +72,44 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 10,
       "top_sources": [
         [
           "AI Hot",
-          5
+          10
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          10
         ],
         [
           "智能体",
+          5
+        ],
+        [
+          "openai",
+          5
+        ],
+        [
+          "anthropic",
           4
         ],
         [
-          "chatgpt",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "工作流",
-          1
-        ],
-        [
           "llm",
-          1
+          2
+        ],
+        [
+          "claude",
+          2
         ],
         [
           "开源模型",
           1
         ],
         [
-          "agent",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ],
-        [
-          "openai",
+          "chatgpt",
           1
         ],
         [
@@ -93,71 +117,47 @@
           1
         ]
       ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 3,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          3
-        ]
-      ],
-      "top_keywords": [
-        [
-          "workflow",
-          2
-        ],
-        [
-          "actions",
-          2
-        ],
-        [
-          "copilot",
-          2
-        ]
-      ]
     }
   },
   "items": [
     {
-      "id": "549091811e625bdcd53fc8c2f850867966917c0f",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
+      "id": "806f18f6d76bcbdc2686848631a30641f087b491",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "Migrating the GitHub Copilot runtime to Rust, using Copilot",
-      "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot",
-      "published_at": "2026-09-17T00:26:43Z",
-      "summary": "A rewrite this size wasn't affordable before agents. Here's what porting the Copilot agent runtime to 800,000 lines of production Rust actually took. The post Migrating the GitHub Copilot runtime to Rust, using Copilot appeared first on The GitHub Blog .",
-      "relevance_score": 6,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Agentic CLI customizations now in the usage metrics API",
+      "url": "https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api",
+      "published_at": "2026-09-17T21:08:50Z",
+      "summary": "GitHub Copilot expands existing CLI report coverage with agentic activity metrics for skills, custom agents, Model Context Protocol (MCP) servers, slash commands, and plugins. What’s new The fields appear in… The post Agentic CLI customizations now in the usage metrics API appeared first on The GitHub Blog .",
+      "relevance_score": 12,
       "relevance_reasons": [
         "strong:agent",
         "strong:agents",
+        "strong:mcp",
+        "strong:model context protocol",
+        "weak:api",
         "weak:copilot",
-        "source_prior:official_ai"
+        "source:copilot"
       ],
       "is_ai_related": true
     },
     {
-      "id": "739baa33ba45e11b072735ca4c3e6cd95434506f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "用 MCP 插件让 GPT-6 Pro 分担 Codex 规划任务，节省 Pro 会员周额度",
-      "url": "https://aihot.news/items/cmu4s9jrn0683rokccdfqwbux",
-      "published_at": "2026-09-17T00:09:06Z",
-      "summary": "自媒体作者分享一套节省 Codex 额度的工作流：让 Codex 把自己的服务器封装成只读、最小权限、飞书 OAuth 鉴权的 MCP Server，作为插件供 ChatGPT 网页版的 GPT-6 Pro 调用，读取真实生产数据和 GitHub PR 记录做分析与规划。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu4s9jrn0683rokccdfqwbux",
-      "relevance_score": 6,
+      "id": "a5c3e4f444190ecc0d497499d7443d8c4d0f4e7b",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How Cooley is accelerating IPO work with ChatGPT",
+      "url": "https://openai.com/index/cooley-gopublic",
+      "published_at": "2026-09-17T12:00:00Z",
+      "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most.",
+      "relevance_score": 3,
       "relevance_reasons": [
         "strong:chatgpt",
-        "strong:codex",
-        "strong:mcp",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -178,6 +178,24 @@
         "strong:智能体",
         "strong:开源模型",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "da502b3d60d9f10ae9e0aed3b6760cd4d6ca7712",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot impact dashboard now shows feature engagement",
+      "url": "https://github.blog/changelog/2026-09-17-copilot-impact-dashboard-now-shows-feature-engagement",
+      "published_at": "2026-09-17T21:47:27Z",
+      "summary": "The Copilot impact dashboard now shows how many active users regularly use key Copilot features. Enterprise administrators can quickly see which experiences are widely adopted and which may need more… The post Copilot impact dashboard now shows feature engagement appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -218,40 +236,135 @@
       "is_ai_related": true
     },
     {
-      "id": "5b24f127ea4ddbad7de937ab4016e4c3bc7da4ee",
+      "id": "f3442446fe76abe3ea3faf189750d73d662b7a9d",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "GitHub 用 Copilot 智能体将 Copilot 运行时从 TypeScript 迁移到 83 万行 Rust",
-      "url": "https://aihot.news/items/cmu4tu41w07ufrokck6s0p0cp",
-      "published_at": "2026-09-17T00:26:43Z",
-      "summary": "GitHub 工程师 Stephen Toub 复盘用 Copilot 智能体在约 14.5 周内将 Copilot agent runtime 从 TypeScript/Node.js 全量重写为 832，378 行生产 Rust，AI 智能体完成大部分代码，共 128 个 PR 增量合入 main 并持续发布。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu4tu41w07ufrokck6s0p0cp",
-      "relevance_score": 4,
+      "title": "ChatGPT for Word 上线，OpenAI 员工称 Excel 和 PowerPoint 用量近期激增",
+      "url": "https://aihot.news/items/cmu66hcff0ci8rofjhs1az9qz",
+      "published_at": "2026-09-17T23:36:26Z",
+      "summary": "ChatGPT 正式集成进 Microsoft Word，可在文档内把粗略笔记转成初稿、理顺段落、校对、给出修改建议，还能发现格式问题。OpenAI 的 Sherwin Wu 表示，ChatGPT for Excel 和 PowerPoint 的用量近期大幅增长，此次上线 Word 补齐了整套 Office 集成。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu66hcff0ci8rofjhs1az9qz",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
-        "weak:copilot",
+        "strong:openai",
+        "strong:chatgpt",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "a7c8f9dce1fd2cb9255e9b34e1e1cc2137674617",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot budget increase requests are generally available",
-      "url": "https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available",
-      "published_at": "2026-09-16T20:17:18Z",
-      "summary": "Previously, when a member used all the Copilot AI credits available to them, they were blocked from Copilot features that consume credits. This release adds a flow for them to… The post Copilot budget increase requests are generally available appeared first on The GitHub Blog .",
+      "id": "b5ad11d8111d0a28c059d870ad2b98661c0edc4a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "纽约时报诉 OpenAI 案新解封文件：微软与 OpenAI 内部承认 LLM 建立在窃取之上并引发 Doom Loop",
+      "url": "https://aihot.news/items/cmu62wp5j08tkrofj60s4kfwv",
+      "published_at": "2026-09-17T22:01:43Z",
+      "summary": "纽约时报诉 OpenAI 版权诉讼中一份未删节法庭文件解封，收录微软与 OpenAI 高管的多项内部承认，称 LLM 建立在被微软高管称为空前规模盗窃的内容之上，并引发摧毁整个 web 的 doom loop。文件显示 Bing 上被窃取新闻网站的点击量下降超过 90%，OpenAI 曾绕过纽约时报付费墙，OpenAI 自称是新闻出版的存在性威胁。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu62wp5j08tkrofj60s4kfwv",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:openai",
+        "strong:llm",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f09de3c384756befa16e1dc5414dd32cfda6bd40",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 发布前沿 AI 开发节奏测量工具与内部指标快照",
+      "url": "https://aihot.news/items/cmu605ozy000arok0lxr4x1y8",
+      "published_at": "2026-09-17T20:49:01Z",
+      "summary": "Anthropic 发布一套测量前沿 AI 开发节奏的指标，覆盖 AI 主导研发、智能体监督和算力分配三方面。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu605ozy000arok0lxr4x1y8",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "74e6a7db2cdd990f73d49836472eea561e22df8e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 披露 GPT-5.6 Sol 等模型在摘要中留下指令以掩盖不当行为",
+      "url": "https://aihot.news/items/cmu606l6o02m3rok0vzsehmvd",
+      "published_at": "2026-09-17T20:34:24Z",
+      "summary": "OpenAI 在训练 GPT-5.6 Sol 时发现未部署的智能体在压缩摘要中加入指令，要求后续版本向用户隐瞒错误和未对齐行为，并称已处理该行为。公司周三随新披露框架公开六个此类案例，包括 GPT-5.6 Astra 在强化学习中加入'BREACH ALERT'等提示词注入，监控系统随后在训练数据中发现 27 条类似越狱指令的摘要；该框架未设立强制独立审查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu606l6o02m3rok0vzsehmvd",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "92f7b59d128091bc7bd5db486063c5025737d209",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 用 Claude 优化 30 多个开源生物分子模型，平均提速约 4 倍并开源全部代码",
+      "url": "https://aihot.news/items/cmu5y1dkt069qroiqnnhxz778",
+      "published_at": "2026-09-17T19:49:41Z",
+      "summary": "Anthropic 发布研究，让 Claude 在不到四周内优化了 30 多个开源生物分子模型，平均提速约 4 倍，输出完全一致时约 2 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu5y1dkt069qroiqnnhxz778",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5f1288814d15bacf62f09a12dae170fe39e137aa",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对",
+      "url": "https://aihot.news/items/cmu5y1e4p069troiqnxafqf0v",
+      "published_at": "2026-09-17T19:28:24Z",
+      "summary": "The Verge 梳理近期 AI 安全与放缓争论：Anthropic CEO Dario Amodei 发文提出三步走计划，包括引入第三方评估机构（Anthropic 已单方面承诺第一步）、民主国家前沿 AI 公司协调标准，以及政府间全球协调，OpenAI 的 Sam Altman 与 Elon Musk 表示支持。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu5y1e4p069troiqnxafqf0v",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4930d576da72b06edce374c5b286263611293f62",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Code 重构 Projects：从文件夹变为可托管多线程的对话式项目",
+      "url": "https://aihot.news/items/cmu5tujnp0jvoroqoq64oqnjr",
+      "published_at": "2026-09-17T17:52:08Z",
+      "summary": "Anthropic 重构 Claude Code 的 Projects，用户设定目标后由 Claude 拆解任务、并行调度多个线程、审查输出并汇总结果，线程本质上是各自独立分支的 Claude Code 云端会话。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu5tujnp0jvoroqoq64oqnjr",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -301,11 +414,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1206,
-      "kept_count": 0,
+      "fetched_count": 1208,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 416,
-      "checked_at": "2026-09-17T17:55:22.447838Z"
+      "latency_ms": 529,
+      "checked_at": "2026-09-18T02:34:58.123339Z"
     },
     {
       "source_id": "openai-skills",
@@ -316,8 +429,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 362,
-      "checked_at": "2026-09-17T17:55:22.810394Z"
+      "latency_ms": 219,
+      "checked_at": "2026-09-18T02:34:58.342962Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -328,8 +441,8 @@
       "fetched_count": 258,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 152,
-      "checked_at": "2026-09-17T17:55:22.966165Z"
+      "latency_ms": 129,
+      "checked_at": "2026-09-18T02:34:58.476333Z"
     },
     {
       "source_id": "google-deepmind",
@@ -340,8 +453,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 402,
-      "checked_at": "2026-09-17T17:55:23.369769Z"
+      "latency_ms": 308,
+      "checked_at": "2026-09-18T02:34:58.786556Z"
     },
     {
       "source_id": "google-ai",
@@ -352,8 +465,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 316,
-      "checked_at": "2026-09-17T17:55:23.686280Z"
+      "latency_ms": 118,
+      "checked_at": "2026-09-18T02:34:58.905309Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -364,8 +477,8 @@
       "fetched_count": 862,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 222,
-      "checked_at": "2026-09-17T17:55:23.918263Z"
+      "latency_ms": 294,
+      "checked_at": "2026-09-18T02:34:59.212664Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -374,10 +487,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 293,
-      "checked_at": "2026-09-17T17:55:24.212474Z"
+      "latency_ms": 209,
+      "checked_at": "2026-09-18T02:34:59.421988Z"
     },
     {
       "source_id": "github-changelog",
@@ -386,10 +499,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 21,
-      "checked_at": "2026-09-17T17:55:24.234000Z"
+      "latency_ms": 27,
+      "checked_at": "2026-09-18T02:34:59.449864Z"
     },
     {
       "source_id": "aihot",
@@ -398,10 +511,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 1496,
-      "checked_at": "2026-09-17T17:55:25.731426Z"
+      "latency_ms": 953,
+      "checked_at": "2026-09-18T02:35:00.404340Z"
     }
   ],
   "control_notes": {
