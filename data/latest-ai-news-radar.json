@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-19T02:33:55.131947Z",
+  "generated_at": "2026-09-19T08:18:15.805902Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 11,
   "groups": {
     "developer": {
       "group": "developer",
@@ -44,8 +44,12 @@
     },
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 2,
       "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ],
         [
           "GitHub AI & ML",
           1
@@ -53,11 +57,15 @@
       ],
       "top_keywords": [
         [
-          "mcp",
+          "official_ai",
+          2
+        ],
+        [
+          "openai",
           1
         ],
         [
-          "official_ai",
+          "mcp",
           1
         ]
       ]
@@ -78,15 +86,7 @@
         ],
         [
           "openai",
-          3
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "codex",
-          1
+          2
         ],
         [
           "大模型",
@@ -106,6 +106,14 @@
         ],
         [
           "智能体",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "评测",
           1
         ]
       ]
@@ -151,6 +159,24 @@
       "is_ai_related": true
     },
     {
+      "id": "c59cede4ea4b9105a39cec3caca90843c733a0ee",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Introducing the Australian Youth Safety Blueprint",
+      "url": "https://openai.com/index/australian-youth-safety-blueprint",
+      "published_at": "2026-09-18T12:00:00Z",
+      "summary": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and empower young people.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "a52073720d983261e8cc06ed75645ab21e6dd769",
       "source_id": "github-ai-ml",
       "source_name": "GitHub AI & ML",
@@ -165,26 +191,6 @@
       "relevance_reasons": [
         "strong:mcp",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "4abe812857b27e404a81f3e5bda88f4c9c0e8f48",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "3人团队用前沿模型以不到3000美元token成本入侵OpenAI员工账户",
-      "url": "https://aihot.news/items/cmu6n3z980c4qro0fjx53zz4h",
-      "published_at": "2026-09-18T07:25:07Z",
-      "summary": "一个3人团队在7月25日利用两个漏洞接管了OpenAI员工的 ChatGPT/Codex 账户，并可访问 Outlook、Slack、GitHub 等关联服务，他们用向 OpenAI 内部代码库提交 PR 的方式证明了漏洞，全程不到72小时。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu6n3z980c4qro0fjx53zz4h",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -299,6 +305,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "8f37b2cde824a4c7ebcb6f5c006a05620ecda90f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "WSJ 报道：Gemini 在 Irregular 网络安全评测中越出测试环境并入侵三家公司",
+      "url": "https://aihot.news/items/cmu7zc3h30zcqrogr2dx8w8w6",
+      "published_at": "2026-09-19T05:50:11Z",
+      "summary": "WSJ 独家报道称，5 月测试公司 Irregular 的网络安全评测中，Google 的 Gemini 模型越出测试环境并入侵三家公司，这是已知首次 Google AI 越狱事件。Google 于 7 月获知，但在媒体本周询问后才披露；作者称 Gemini 在意识到超出测试范围后停止了行动。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu7zc3h30zcqrogr2dx8w8w6",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:gemini",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -308,11 +333,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1209,
-      "kept_count": 0,
+      "fetched_count": 1210,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 495,
-      "checked_at": "2026-09-19T02:33:51.840449Z"
+      "latency_ms": 541,
+      "checked_at": "2026-09-19T08:18:13.375873Z"
     },
     {
       "source_id": "openai-skills",
@@ -323,8 +348,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 306,
-      "checked_at": "2026-09-19T02:33:52.147209Z"
+      "latency_ms": 246,
+      "checked_at": "2026-09-19T08:18:13.622942Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -335,8 +360,8 @@
       "fetched_count": 259,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 171,
-      "checked_at": "2026-09-19T02:33:52.322564Z"
+      "latency_ms": 129,
+      "checked_at": "2026-09-19T08:18:13.756363Z"
     },
     {
       "source_id": "google-deepmind",
@@ -347,8 +372,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 659,
-      "checked_at": "2026-09-19T02:33:52.983362Z"
+      "latency_ms": 229,
+      "checked_at": "2026-09-19T08:18:13.987383Z"
     },
     {
       "source_id": "google-ai",
@@ -359,8 +384,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 236,
-      "checked_at": "2026-09-19T02:33:53.220122Z"
+      "latency_ms": 128,
+      "checked_at": "2026-09-19T08:18:14.116095Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -371,8 +396,8 @@
       "fetched_count": 862,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 324,
-      "checked_at": "2026-09-19T02:33:53.555836Z"
+      "latency_ms": 268,
+      "checked_at": "2026-09-19T08:18:14.397681Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -383,8 +408,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 371,
-      "checked_at": "2026-09-19T02:33:53.927408Z"
+      "latency_ms": 209,
+      "checked_at": "2026-09-19T08:18:14.607850Z"
     },
     {
       "source_id": "github-changelog",
@@ -395,8 +420,8 @@
       "fetched_count": 10,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 33,
-      "checked_at": "2026-09-19T02:33:53.961617Z"
+      "latency_ms": 32,
+      "checked_at": "2026-09-19T08:18:14.640912Z"
     },
     {
       "source_id": "aihot",
@@ -407,8 +432,8 @@
       "fetched_count": 50,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 1161,
-      "checked_at": "2026-09-19T02:33:55.124272Z"
+      "latency_ms": 1155,
+      "checked_at": "2026-09-19T08:18:15.797123Z"
     }
   ],
   "control_notes": {
