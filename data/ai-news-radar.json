@@ -1,39 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-19T17:00:03.030006Z",
+  "generated_at": "2026-09-20T02:45:34.203439Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 3,
   "groups": {
-    "developer": {
-      "group": "developer",
-      "count": 4,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          4
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          6
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
       "count": 3,
@@ -50,10 +22,10 @@
         ],
         [
           "openai",
-          2
+          1
         ],
         [
-          "大模型",
+          "chatgpt",
           1
         ],
         [
@@ -61,7 +33,11 @@
           1
         ],
         [
-          "anthropic",
+          "claude",
+          1
+        ],
+        [
+          "开源模型",
           1
         ],
         [
@@ -77,115 +53,41 @@
   },
   "items": [
     {
-      "id": "c0be633dc5b7f68a48ebbaef4617df2ed4b5305c",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Copilot weekly releases — September 14",
-      "url": "https://github.blog/changelog/2026-09-18-github-copilot-weekly-releases-september-14",
-      "published_at": "2026-09-18T19:21:22Z",
-      "summary": "This week, GitHub Copilot adds new model selection options, code review updates, and Sentry integration in the Copilot app. There are also updates for admins, plus new agent features in… The post GitHub Copilot weekly releases — September 14 appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b51e5bee8864fc178501b575c6fc2cec99fbb63d",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Upcoming deprecation of selected GitHub Copilot models in mid-October",
-      "url": "https://github.blog/changelog/2026-09-18-upcoming-deprecation-of-selected-github-copilot-models-in-mid-october",
-      "published_at": "2026-09-18T19:00:00Z",
-      "summary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on October 19th, 2026: Model Deprecation date… The post Upcoming deprecation of selected GitHub Copilot models in mid-October appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "fc13622bc6e065e9a321b10f4302034f543b3471",
+      "id": "d1dd5e58d85e42cdbc4b736d4d9b2019acd5719f",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "纽约时报版权诉讼披露：微软高管内部称训练 AI 是人类历史上最大规模劳动窃取",
-      "url": "https://aihot.news/items/cmu7l5wy60hj2rogr88fr2vkk",
-      "published_at": "2026-09-18T23:13:06Z",
-      "summary": "《纽约时报》在起诉微软和 OpenAI 的版权案中申请简易判决并提交新法律摘要，披露两家公司内部材料。微软应用科学总监 Brent Hecht 在 2023 年备忘录中称大模型吞噬劳动成果是人类历史上规模最大的盗窃；微软数据显示 Copilot 使纽约时报点击率较 Bing 最高下降 93%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu7l5wy60hj2rogr88fr2vkk",
+      "title": "纽约时报诉讼文件披露：微软高管称 AI 抓取是人类历史上最大规模的劳动力盗用",
+      "url": "https://aihot.news/items/cmu92ktj505lkrojrl223hicj",
+      "published_at": "2026-09-19T23:58:19Z",
+      "summary": "纽约时报在起诉 OpenAI 和微软的版权案中提交法律简报并申请即决判决，引用双方内部文件称 AI 抓取是\"人类历史上最大规模的劳动力盗用\"，OpenAI ChatGPT 负责人称其对出版商是\"生存威胁\"。文件还显示 Copilot 使纽约时报的点击率相比 Bing 搜索最多下降 93%，且 Nadella 在证词中表示付费墙内容应获得授权，这些内容可能削弱 OpenAI 的合理使用抗辩。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu92ktj505lkrojrl223hicj",
       "relevance_score": 4,
       "relevance_reasons": [
         "strong:openai",
-        "strong:大模型",
+        "strong:chatgpt",
         "weak:copilot",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "bb65946ae173d3ebd9b741b22b5c98f857956c07",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot code review: An improved review experience",
-      "url": "https://github.blog/changelog/2026-09-18-copilot-code-review-an-improved-review-experience",
-      "published_at": "2026-09-18T20:17:22Z",
-      "summary": "Copilot code review now gives you a clearer view of how a review changes over time, more intelligently auto-resolves its own suggestions, and generates useful commit messages when you accept… The post Copilot code review: An improved review experience appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "32a4be64af97affd03879a866a3d77c28f63ba38",
+      "id": "ab322aeffe40c0db56daaad6844c94665bc98d32",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 计划将 IPO 推迟至 11 月，估值约 2 万亿美元",
-      "url": "https://aihot.news/items/cmu7nb3bm0jugrogroyv3fm5h",
-      "published_at": "2026-09-19T00:07:04Z",
-      "summary": "据《华尔街日报》报道，Anthropic 计划将 IPO 推迟至 11 月，晚于投资者预期的 10 月，以留出时间展示第三季度财务数据。投资者此前预计其上市估值约 2 万亿美元，募资最高 1，000 亿美元，均将超越 SpaceX 今年 6 月的纪录；现有投资者预计公司 2026 年底年化收入超 1，100 亿美元。竞争对手 OpenAI 表示 2027 年前不上市，正处新一轮融资早期讨论阶段。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu7nb3bm0jugrogroyv3fm5h",
+      "title": "阶跃星辰发布旗舰模型 Step 5 Preview，10 月 15 日开源权重",
+      "url": "https://aihot.news/items/cmu96vqg8035srodqu63q13w4",
+      "published_at": "2026-09-20T02:00:00Z",
+      "summary": "阶跃星辰发布旗舰基座模型 Step 5 Preview，采用稀疏 MoE 架构，总参数量 600B、激活 27B，支持 100 万 Token 上下文和文本与视觉输入，在 Artificial Analysis Intelligence Index 得 44 分，居全球开源模型前三，单任务成本为 Claude Opus 5 的 1/8。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu96vqg8035srodqu63q13w4",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
+        "strong:claude",
+        "strong:开源模型",
         "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d05c80f5b165b3b99c3d0e332a68e977eb2334e8",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Manage the code coverage ruleset condition with the REST API",
-      "url": "https://github.blog/changelog/2026-09-18-manage-the-code-coverage-ruleset-condition-with-the-rest-api",
-      "published_at": "2026-09-18T19:23:49Z",
-      "summary": "You can now use the generally available REST API to manage the Restrict code coverage repository ruleset option, in addition to the existing UI support. This ruleset lets you enforce… The post Manage the code coverage ruleset condition with the REST API appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:API"
       ],
       "is_ai_related": true
     },
@@ -219,8 +121,8 @@
       "fetched_count": 1210,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 522,
-      "checked_at": "2026-09-19T17:00:00.160520Z"
+      "latency_ms": 602,
+      "checked_at": "2026-09-20T02:45:31.132715Z"
     },
     {
       "source_id": "openai-skills",
@@ -231,8 +133,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 351,
-      "checked_at": "2026-09-19T17:00:00.512521Z"
+      "latency_ms": 303,
+      "checked_at": "2026-09-20T02:45:31.435962Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -243,8 +145,8 @@
       "fetched_count": 259,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 147,
-      "checked_at": "2026-09-19T17:00:00.663834Z"
+      "latency_ms": 168,
+      "checked_at": "2026-09-20T02:45:31.607959Z"
     },
     {
       "source_id": "google-deepmind",
@@ -255,8 +157,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 445,
-      "checked_at": "2026-09-19T17:00:01.111232Z"
+      "latency_ms": 384,
+      "checked_at": "2026-09-20T02:45:31.993838Z"
     },
     {
       "source_id": "google-ai",
@@ -267,8 +169,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 286,
-      "checked_at": "2026-09-19T17:00:01.398116Z"
+      "latency_ms": 191,
+      "checked_at": "2026-09-20T02:45:32.186132Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -279,8 +181,8 @@
       "fetched_count": 862,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 317,
-      "checked_at": "2026-09-19T17:00:01.727254Z"
+      "latency_ms": 360,
+      "checked_at": "2026-09-20T02:45:32.559755Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -291,8 +193,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 402,
-      "checked_at": "2026-09-19T17:00:02.129554Z"
+      "latency_ms": 380,
+      "checked_at": "2026-09-20T02:45:32.940350Z"
     },
     {
       "source_id": "github-changelog",
@@ -301,10 +203,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 41,
-      "checked_at": "2026-09-19T17:00:02.171957Z"
+      "latency_ms": 42,
+      "checked_at": "2026-09-20T02:45:32.983399Z"
     },
     {
       "source_id": "aihot",
@@ -315,8 +217,8 @@
       "fetched_count": 50,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 847,
-      "checked_at": "2026-09-19T17:00:03.020175Z"
+      "latency_ms": 1211,
+      "checked_at": "2026-09-20T02:45:34.196067Z"
     }
   ],
   "control_notes": {
