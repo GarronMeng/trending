@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-20T17:17:21.875587Z",
+  "generated_at": "2026-09-21T02:42:51.085392Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -17,27 +17,23 @@
       ],
       "top_keywords": [
         [
+          "openai",
+          2
+        ],
+        [
           "aggregate_noise",
           2
         ],
         [
-          "openai",
+          "anthropic",
+          1
+        ],
+        [
+          "gemini",
           1
         ],
         [
           "chatgpt",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "开源模型",
           1
         ]
       ]
@@ -45,40 +41,40 @@
   },
   "items": [
     {
-      "id": "d1dd5e58d85e42cdbc4b736d4d9b2019acd5719f",
+      "id": "b5991e86d9b37fdf9d15d01bfd3eab4b823497a8",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "纽约时报诉讼文件披露：微软高管称 AI 抓取是人类历史上最大规模的劳动力盗用",
-      "url": "https://aihot.news/items/cmu92ktj505lkrojrl223hicj",
-      "published_at": "2026-09-19T23:58:19Z",
-      "summary": "纽约时报在起诉 OpenAI 和微软的版权案中提交法律简报并申请即决判决，引用双方内部文件称 AI 抓取是\"人类历史上最大规模的劳动力盗用\"，OpenAI ChatGPT 负责人称其对出版商是\"生存威胁\"。文件还显示 Copilot 使纽约时报的点击率相比 Bing 搜索最多下降 93%，且 Nadella 在证词中表示付费墙内容应获得授权，这些内容可能削弱 OpenAI 的合理使用抗辩。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu92ktj505lkrojrl223hicj",
-      "relevance_score": 4,
+      "title": "Google 确认 Gemini 在 Irregular 安全测试中访问 3 家真实公司系统，与 OpenAI、Anthropic、Meta 属同一评估事故",
+      "url": "https://aihot.news/items/cmuaajd3y08yjro5tqgc5u6up",
+      "published_at": "2026-09-20T20:20:56Z",
+      "summary": "Google 于 9 月 18 日确认，Gemini 模型在 5 月由第三方安全评估方 Irregular 组织的 capture-the-flag 测试中访问了 3 家真实公司的系统，起因是本应离线的测试环境因 bug 开放了互联网访问。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuaajd3y08yjro5tqgc5u6up",
+      "relevance_score": 5,
       "relevance_reasons": [
         "strong:openai",
-        "strong:chatgpt",
-        "weak:copilot",
+        "strong:anthropic",
+        "strong:gemini",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "ab322aeffe40c0db56daaad6844c94665bc98d32",
+      "id": "6ad55bc1fade226fb9ab0262173536766e547d39",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "阶跃星辰发布旗舰模型 Step 5 Preview，10 月 15 日开源权重",
-      "url": "https://aihot.news/items/cmu96vqg8035srodqu63q13w4",
-      "published_at": "2026-09-20T02:00:00Z",
-      "summary": "阶跃星辰发布旗舰基座模型 Step 5 Preview，采用稀疏 MoE 架构，总参数量 600B、激活 27B，支持 100 万 Token 上下文和文本与视觉输入，在 Artificial Analysis Intelligence Index 得 44 分，居全球开源模型前三，单任务成本为 Claude Opus 5 的 1/8。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmu96vqg8035srodqu63q13w4",
+      "title": "独立调查：ChatGPT 的 __obi 跨站 Cookie 可将站外浏览行为关联到 ChatGPT 账号",
+      "url": "https://aihot.news/items/cmua567e703tmro5t558lzx7o",
+      "published_at": "2026-09-20T18:05:38Z",
+      "summary": "作者通过自己手机上的流量捕获复现了 OpenAI 广告收集器机制：bzr.openai.com 在 .openai.com 域设置 __obi Cookie，绑定 ChatGPT 账号（或稳定的匿名主体），投放广告的商家站点加载 OpenAI 像素代码时会把 __obi 连同浏览和购买数据回传给 OpenAI。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmua567e703tmro5t558lzx7o",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:claude",
-        "strong:开源模型",
+        "strong:openai",
+        "strong:chatgpt",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -94,8 +90,8 @@
       "fetched_count": 1210,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 442,
-      "checked_at": "2026-09-20T17:17:19.300835Z"
+      "latency_ms": 521,
+      "checked_at": "2026-09-21T02:42:48.830686Z"
     },
     {
       "source_id": "openai-skills",
@@ -106,8 +102,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 282,
-      "checked_at": "2026-09-20T17:17:19.583742Z"
+      "latency_ms": 180,
+      "checked_at": "2026-09-21T02:42:49.011681Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -118,8 +114,8 @@
       "fetched_count": 259,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 120,
-      "checked_at": "2026-09-20T17:17:19.706678Z"
+      "latency_ms": 116,
+      "checked_at": "2026-09-21T02:42:49.131959Z"
     },
     {
       "source_id": "google-deepmind",
@@ -130,8 +126,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 355,
-      "checked_at": "2026-09-20T17:17:20.063733Z"
+      "latency_ms": 298,
+      "checked_at": "2026-09-21T02:42:49.431725Z"
     },
     {
       "source_id": "google-ai",
@@ -142,8 +138,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 215,
-      "checked_at": "2026-09-20T17:17:20.279170Z"
+      "latency_ms": 141,
+      "checked_at": "2026-09-21T02:42:49.573565Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -154,8 +150,8 @@
       "fetched_count": 862,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 267,
-      "checked_at": "2026-09-20T17:17:20.555701Z"
+      "latency_ms": 249,
+      "checked_at": "2026-09-21T02:42:49.835822Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -166,8 +162,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 296,
-      "checked_at": "2026-09-20T17:17:20.852374Z"
+      "latency_ms": 185,
+      "checked_at": "2026-09-21T02:42:50.021259Z"
     },
     {
       "source_id": "github-changelog",
@@ -178,8 +174,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 33,
-      "checked_at": "2026-09-20T17:17:20.886214Z"
+      "latency_ms": 26,
+      "checked_at": "2026-09-21T02:42:50.048265Z"
     },
     {
       "source_id": "aihot",
@@ -190,8 +186,8 @@
       "fetched_count": 50,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 980,
-      "checked_at": "2026-09-20T17:17:21.867350Z"
+      "latency_ms": 1028,
+      "checked_at": "2026-09-21T02:42:51.077338Z"
     }
   ],
   "control_notes": {
