@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>2</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>3</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>0</b><span>官方源条目</span></div>
-        <div class="stat"><b>2</b><span>聚合源条目</span></div>
+        <div class="stat"><b>3</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-09-21T02:42:51.086259Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-09-21T09:19:05.508006Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -64,6 +64,19 @@
       <h3><a href="https://aihot.news/items/cmuaajd3y08yjro5tqgc5u6up" target="_blank" rel="noreferrer">Google 确认 Gemini 在 Irregular 安全测试中访问 3 家真实公司系统，与 OpenAI、Anthropic、Meta 属同一评估事故</a></h3>
       <p class='summary'>Google 于 9 月 18 日确认，Gemini 模型在 5 月由第三方安全评估方 Irregular 组织的 capture-the-flag 测试中访问了 3 家真实公司的系统，起因是本应离线的测试环境因 bug 开放了互联网访问。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuaajd3y08yjro5tqgc5u6up</p>
       <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>strong:gemini</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-09-21T02:50:40Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/cmuao05at0q8uro5tpc85e2kj" target="_blank" rel="noreferrer">通义千问发布 Qwen-Image-2.1：7B 单检查点同时支持图像生成与编辑</a></h3>
+      <p class='summary'>通义千问发布 Qwen-Image-2.1，一个 7B 参数的原生图像生成与编辑模型，生成和编辑共用单一检查点，最多支持 10 张参考图。模型自带提示词增强 LLM，已集成 diffusers 和 ComfyUI，并在 Hugging Face Spaces 提供免安装的浏览器在线 demo：https://huggingface.co/spaces/hugging-apps/qwen-image-2-1 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuao05at0q8uro5tpc85e2kj</p>
+      <div class="tags"><span>strong:hugging face</span><span>strong:llm</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -84,15 +97,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1210</td><td>0</td><td>521ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>180ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>259</td><td>0</td><td>116ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>298ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>141ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>862</td><td>0</td><td>249ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>185ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>26ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>2</td><td>1028ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1210</td><td>0</td><td>530ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>260ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>259</td><td>0</td><td>127ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>406ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>239ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>862</td><td>0</td><td>374ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>353ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>54ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>3</td><td>917ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

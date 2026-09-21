@@ -1,27 +1,27 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-21T02:42:51.085392Z",
+  "generated_at": "2026-09-21T09:19:05.507076Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 2,
+  "item_count": 3,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          2
+          3
         ]
       ],
       "top_keywords": [
         [
-          "openai",
-          2
+          "aggregate_noise",
+          3
         ],
         [
-          "aggregate_noise",
+          "openai",
           2
         ],
         [
@@ -30,6 +30,14 @@
         ],
         [
           "gemini",
+          1
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "llm",
           1
         ],
         [
@@ -56,6 +64,25 @@
         "strong:openai",
         "strong:anthropic",
         "strong:gemini",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "caf18a85770489808c3a10c30b311064e22f7925",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "通义千问发布 Qwen-Image-2.1：7B 单检查点同时支持图像生成与编辑",
+      "url": "https://aihot.news/items/cmuao05at0q8uro5tpc85e2kj",
+      "published_at": "2026-09-21T02:50:40Z",
+      "summary": "通义千问发布 Qwen-Image-2.1，一个 7B 参数的原生图像生成与编辑模型，生成和编辑共用单一检查点，最多支持 10 张参考图。模型自带提示词增强 LLM，已集成 diffusers 和 ComfyUI，并在 Hugging Face Spaces 提供免安装的浏览器在线 demo：https://huggingface.co/spaces/hugging-apps/qwen-image-2-1 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuao05at0q8uro5tpc85e2kj",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:llm",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -90,8 +117,8 @@
       "fetched_count": 1210,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 521,
-      "checked_at": "2026-09-21T02:42:48.830686Z"
+      "latency_ms": 530,
+      "checked_at": "2026-09-21T09:19:02.744533Z"
     },
     {
       "source_id": "openai-skills",
@@ -102,8 +129,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 180,
-      "checked_at": "2026-09-21T02:42:49.011681Z"
+      "latency_ms": 260,
+      "checked_at": "2026-09-21T09:19:03.004967Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -114,8 +141,8 @@
       "fetched_count": 259,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 116,
-      "checked_at": "2026-09-21T02:42:49.131959Z"
+      "latency_ms": 127,
+      "checked_at": "2026-09-21T09:19:03.136256Z"
     },
     {
       "source_id": "google-deepmind",
@@ -126,8 +153,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 298,
-      "checked_at": "2026-09-21T02:42:49.431725Z"
+      "latency_ms": 406,
+      "checked_at": "2026-09-21T09:19:03.544165Z"
     },
     {
       "source_id": "google-ai",
@@ -138,8 +165,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 141,
-      "checked_at": "2026-09-21T02:42:49.573565Z"
+      "latency_ms": 239,
+      "checked_at": "2026-09-21T09:19:03.784067Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -150,8 +177,8 @@
       "fetched_count": 862,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 249,
-      "checked_at": "2026-09-21T02:42:49.835822Z"
+      "latency_ms": 374,
+      "checked_at": "2026-09-21T09:19:04.171433Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -162,8 +189,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 185,
-      "checked_at": "2026-09-21T02:42:50.021259Z"
+      "latency_ms": 353,
+      "checked_at": "2026-09-21T09:19:04.525641Z"
     },
     {
       "source_id": "github-changelog",
@@ -174,8 +201,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-09-21T02:42:50.048265Z"
+      "latency_ms": 54,
+      "checked_at": "2026-09-21T09:19:04.580721Z"
     },
     {
       "source_id": "aihot",
@@ -184,10 +211,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 1028,
-      "checked_at": "2026-09-21T02:42:51.077338Z"
+      "latency_ms": 917,
+      "checked_at": "2026-09-21T09:19:05.499400Z"
     }
   ],
   "control_notes": {
