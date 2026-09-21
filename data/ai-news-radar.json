@@ -1,11 +1,43 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-21T13:07:54.315516Z",
+  "generated_at": "2026-09-21T15:14:13.830222Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 3,
+  "item_count": 5,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ],
+        [
+          "Hugging Face Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "llm",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
       "count": 3,
@@ -48,6 +80,43 @@
     }
   },
   "items": [
+    {
+      "id": "7f27361963cb879f3eda62da03e291ce79315757",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How V7 gives AI agents institutional memory",
+      "url": "https://openai.com/index/v7",
+      "published_at": "2026-09-21T00:00:00Z",
+      "summary": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f4f37db95063a00e7b54b3e27a285a81a6abe460",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "published_at": "2026-09-21T13:44:34Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:llm",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "b5991e86d9b37fdf9d15d01bfd3eab4b823497a8",
       "source_id": "aihot",
@@ -114,11 +183,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1210,
-      "kept_count": 0,
+      "fetched_count": 1211,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 516,
-      "checked_at": "2026-09-21T13:07:50.144996Z"
+      "latency_ms": 605,
+      "checked_at": "2026-09-21T15:14:11.317526Z"
     },
     {
       "source_id": "openai-skills",
@@ -129,8 +198,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 176,
-      "checked_at": "2026-09-21T13:07:50.321459Z"
+      "latency_ms": 312,
+      "checked_at": "2026-09-21T15:14:11.630195Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -141,8 +210,8 @@
       "fetched_count": 259,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 116,
-      "checked_at": "2026-09-21T13:07:50.442024Z"
+      "latency_ms": 164,
+      "checked_at": "2026-09-21T15:14:11.798454Z"
     },
     {
       "source_id": "google-deepmind",
@@ -153,8 +222,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 315,
-      "checked_at": "2026-09-21T13:07:50.759383Z"
+      "latency_ms": 366,
+      "checked_at": "2026-09-21T15:14:12.166670Z"
     },
     {
       "source_id": "google-ai",
@@ -165,8 +234,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 265,
-      "checked_at": "2026-09-21T13:07:51.025145Z"
+      "latency_ms": 267,
+      "checked_at": "2026-09-21T15:14:12.434669Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -174,11 +243,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 862,
-      "kept_count": 0,
+      "fetched_count": 863,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 248,
-      "checked_at": "2026-09-21T13:07:51.285899Z"
+      "latency_ms": 360,
+      "checked_at": "2026-09-21T15:14:12.807889Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -189,8 +258,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 158,
-      "checked_at": "2026-09-21T13:07:51.444849Z"
+      "latency_ms": 478,
+      "checked_at": "2026-09-21T15:14:13.286445Z"
     },
     {
       "source_id": "github-changelog",
@@ -201,8 +270,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-09-21T13:07:51.472453Z"
+      "latency_ms": 42,
+      "checked_at": "2026-09-21T15:14:13.329584Z"
     },
     {
       "source_id": "aihot",
@@ -213,8 +282,8 @@
       "fetched_count": 50,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 2833,
-      "checked_at": "2026-09-21T13:07:54.306522Z"
+      "latency_ms": 491,
+      "checked_at": "2026-09-21T15:14:13.822309Z"
     }
   ],
   "control_notes": {
