@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-22T02:43:51.122067Z",
+  "generated_at": "2026-09-22T08:49:19.166801Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 11,
   "groups": {
     "developer": {
       "group": "developer",
@@ -40,11 +40,11 @@
       "top_sources": [
         [
           "OpenAI News",
-          4
+          3
         ],
         [
           "Hugging Face Blog",
-          1
+          2
         ]
       ],
       "top_keywords": [
@@ -54,14 +54,14 @@
         ],
         [
           "openai",
-          3
+          2
         ],
         [
           "eval",
           1
         ],
         [
-          "developer",
+          "hugging face",
           1
         ],
         [
@@ -76,17 +76,17 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          6
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          5
         ],
         [
           "openai",
@@ -109,10 +109,6 @@
           2
         ],
         [
-          "hugging face",
-          2
-        ],
-        [
           "anthropic",
           1
         ],
@@ -125,7 +121,7 @@
           1
         ],
         [
-          "llm",
+          "hugging face",
           1
         ]
       ]
@@ -173,20 +169,19 @@
       "is_ai_related": true
     },
     {
-      "id": "cb5f5ca77e40e5bf37631b4dd6efa6f0f0a9cdb1",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
+      "id": "1c18fbaecb5bdd319cf363a064ef395003db5d19",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Expanding OpenAI Academy with new learning paths",
-      "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
-      "published_at": "2026-09-21T07:00:00Z",
-      "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.",
-      "relevance_score": 4,
+      "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+      "url": "https://huggingface.co/blog/omlx",
+      "published_at": "2026-09-22T00:00:00Z",
+      "summary": null,
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "weak:developer",
+        "strong:hugging face",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -343,25 +338,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "caf18a85770489808c3a10c30b311064e22f7925",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "通义千问发布 Qwen-Image-2.1：7B 单检查点同时支持图像生成与编辑",
-      "url": "https://aihot.news/items/cmuao05at0q8uro5tpc85e2kj",
-      "published_at": "2026-09-21T02:50:40Z",
-      "summary": "通义千问发布 Qwen-Image-2.1，一个 7B 参数的原生图像生成与编辑模型，生成和编辑共用单一检查点，最多支持 10 张参考图。模型自带提示词增强 LLM，已集成 diffusers 和 ComfyUI，并在 Hugging Face Spaces 提供免安装的浏览器在线 demo：https://huggingface.co/spaces/hugging-apps/qwen-image-2-1 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuao05at0q8uro5tpc85e2kj",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "strong:llm",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -372,10 +348,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1215,
-      "kept_count": 4,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 331,
-      "checked_at": "2026-09-22T02:43:48.353627Z"
+      "latency_ms": 504,
+      "checked_at": "2026-09-22T08:49:17.368086Z"
     },
     {
       "source_id": "openai-skills",
@@ -386,8 +362,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 264,
-      "checked_at": "2026-09-22T02:43:48.618639Z"
+      "latency_ms": 164,
+      "checked_at": "2026-09-22T08:49:17.532496Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -398,8 +374,8 @@
       "fetched_count": 259,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 93,
-      "checked_at": "2026-09-22T02:43:48.713776Z"
+      "latency_ms": 81,
+      "checked_at": "2026-09-22T08:49:17.616799Z"
     },
     {
       "source_id": "google-deepmind",
@@ -410,8 +386,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 345,
-      "checked_at": "2026-09-22T02:43:49.060113Z"
+      "latency_ms": 264,
+      "checked_at": "2026-09-22T08:49:17.882443Z"
     },
     {
       "source_id": "google-ai",
@@ -422,8 +398,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 152,
-      "checked_at": "2026-09-22T02:43:49.213194Z"
+      "latency_ms": 103,
+      "checked_at": "2026-09-22T08:49:17.985775Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -431,11 +407,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 863,
-      "kept_count": 1,
+      "fetched_count": 864,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 225,
-      "checked_at": "2026-09-22T02:43:49.444918Z"
+      "latency_ms": 176,
+      "checked_at": "2026-09-22T08:49:18.171568Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -446,8 +422,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 148,
-      "checked_at": "2026-09-22T02:43:49.593734Z"
+      "latency_ms": 246,
+      "checked_at": "2026-09-22T08:49:18.418450Z"
     },
     {
       "source_id": "github-changelog",
@@ -458,8 +434,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 21,
-      "checked_at": "2026-09-22T02:43:49.615624Z"
+      "latency_ms": 19,
+      "checked_at": "2026-09-22T08:49:18.437915Z"
     },
     {
       "source_id": "aihot",
@@ -468,10 +444,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 1499,
-      "checked_at": "2026-09-22T02:43:51.115559Z"
+      "latency_ms": 720,
+      "checked_at": "2026-09-22T08:49:19.158887Z"
     }
   ],
   "control_notes": {
