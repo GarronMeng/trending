@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-21T19:02:39.789780Z",
+  "generated_at": "2026-09-22T02:43:51.122067Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 12,
   "groups": {
     "developer": {
       "group": "developer",
@@ -57,14 +57,6 @@
           3
         ],
         [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
           "eval",
           1
         ],
@@ -75,29 +67,29 @@
         [
           "llm",
           1
+        ],
+        [
+          "tool",
+          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          5
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          6
         ],
         [
           "openai",
-          2
-        ],
-        [
-          "anthropic",
           2
         ],
         [
@@ -109,15 +101,27 @@
           2
         ],
         [
+          "claude",
+          2
+        ],
+        [
+          "开源模型",
+          2
+        ],
+        [
           "hugging face",
           2
         ],
         [
-          "gemini",
+          "anthropic",
           1
         ],
         [
-          "开源模型",
+          "agent",
+          1
+        ],
+        [
+          "chatgpt",
           1
         ],
         [
@@ -146,25 +150,6 @@
         "weak:workflow",
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7f27361963cb879f3eda62da03e291ce79315757",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How V7 gives AI agents institutional memory",
-      "url": "https://openai.com/index/v7",
-      "published_at": "2026-09-21T00:00:00Z",
-      "summary": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -264,21 +249,78 @@
       "is_ai_related": true
     },
     {
-      "id": "b5991e86d9b37fdf9d15d01bfd3eab4b823497a8",
+      "id": "883a45cc02405406781d762563888726015f3fed",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Google 确认 Gemini 在 Irregular 安全测试中访问 3 家真实公司系统，与 OpenAI、Anthropic、Meta 属同一评估事故",
-      "url": "https://aihot.news/items/cmuaajd3y08yjro5tqgc5u6up",
-      "published_at": "2026-09-20T20:20:56Z",
-      "summary": "Google 于 9 月 18 日确认，Gemini 模型在 5 月由第三方安全评估方 Irregular 组织的 capture-the-flag 测试中访问了 3 家真实公司的系统，起因是本应离线的测试环境因 bug 开放了互联网访问。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuaajd3y08yjro5tqgc5u6up",
+      "title": "小米发布 MiMo-V2.6 Pro 与 Flash 全模态开源模型",
+      "url": "https://aihot.news/items/cmubqsb9l03vbrociqf22sr07",
+      "published_at": "2026-09-21T20:51:03Z",
+      "summary": "小米 MiMo 发布 MiMo-V2.6 Pro 与 Flash 两个全模态模型，通过规模化强化学习训练。Pro 在多数 Agent 基准上与 Claude Opus 5 和 GPT-5.6 Sol 表现相当，在 Artificial Analysis Intelligence Index 得分 46，为开源模型中最高；能力覆盖编码、computer use、3D 推理和创作。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmubqsb9l03vbrociqf22sr07",
       "relevance_score": 5,
       "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "strong:开源模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0361799508a3b52f71237a014c7a2bec772b34c7",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+      "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+      "published_at": "2026-09-21T12:00:00Z",
+      "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster.",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:tool",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "33b5f8541fe3268967179d38b31aa1bd5357ffbf",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Artificial Analysis 评测 Grok 4.7：智能体知识工作跻身前沿，编码代理得分升至 56",
+      "url": "https://aihot.news/items/cmubni6yr03ihro4v6pea4amm",
+      "published_at": "2026-09-21T19:41:25Z",
+      "summary": "Artificial Analysis 发布 Grok 4.7 评测，该模型在 Intelligence Index 得 46 分，较 Grok 4.6 高 2 分，AA-Briefcase 得 1657 Elo（+111），仅次于 Claude Opus 5 和 Claude Fable 5.1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmubni6yr03ihro4v6pea4amm",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:智能体",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2adfa348f3f467f22ad83546bf4279260841ae35",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "不列颠哥伦比亚省起诉 OpenAI，指其未在枪击案前将 flagged ChatGPT 活动转介警方",
+      "url": "https://aihot.news/items/cmubom7qi04k8ro4v1zoas2o7",
+      "published_at": "2026-09-21T20:11:34Z",
+      "summary": "不列颠哥伦比亚省在加州起诉 OpenAI，指 flagged 的 ChatGPT 活动本应在 2026 年 2 月 10 日 Tumbler Ridge 枪击案前通报警方，该案致 8 人死亡（含 5 名儿童和一名教育工作者）、27 人受伤。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmubom7qi04k8ro4v1zoas2o7",
+      "relevance_score": 3,
+      "relevance_reasons": [
         "strong:openai",
-        "strong:anthropic",
-        "strong:gemini",
+        "strong:chatgpt",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -320,25 +362,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "a9f0cc1660b824cb6d5bc087806c94c096193bb5",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Artificial Analysis 评测 Grok 4.7：智能指数得分 46，编码智能体指数升至 56",
-      "url": "https://aihot.news/items/cmubhf6n4106prolnfasuj0hw",
-      "published_at": "2026-09-21T16:38:05Z",
-      "summary": "Artificial Analysis 发布 Grok 4.7 评测，其在 Artificial Analysis Intelligence Index 得分 46，较 Grok 4.6 高 2 分，使 SpaceXAI 进入前四大 AI 实验室。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmubhf6n4106prolnfasuj0hw",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -348,11 +371,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1214,
+      "fetched_count": 1215,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 420,
-      "checked_at": "2026-09-21T19:02:37.567082Z"
+      "latency_ms": 331,
+      "checked_at": "2026-09-22T02:43:48.353627Z"
     },
     {
       "source_id": "openai-skills",
@@ -363,8 +386,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 366,
-      "checked_at": "2026-09-21T19:02:37.933961Z"
+      "latency_ms": 264,
+      "checked_at": "2026-09-22T02:43:48.618639Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -375,8 +398,8 @@
       "fetched_count": 259,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 97,
-      "checked_at": "2026-09-21T19:02:38.033960Z"
+      "latency_ms": 93,
+      "checked_at": "2026-09-22T02:43:48.713776Z"
     },
     {
       "source_id": "google-deepmind",
@@ -387,8 +410,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 319,
-      "checked_at": "2026-09-21T19:02:38.354588Z"
+      "latency_ms": 345,
+      "checked_at": "2026-09-22T02:43:49.060113Z"
     },
     {
       "source_id": "google-ai",
@@ -399,8 +422,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 193,
-      "checked_at": "2026-09-21T19:02:38.548743Z"
+      "latency_ms": 152,
+      "checked_at": "2026-09-22T02:43:49.213194Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -411,8 +434,8 @@
       "fetched_count": 863,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-09-21T19:02:38.811248Z"
+      "latency_ms": 225,
+      "checked_at": "2026-09-22T02:43:49.444918Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -423,8 +446,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 175,
-      "checked_at": "2026-09-21T19:02:38.986468Z"
+      "latency_ms": 148,
+      "checked_at": "2026-09-22T02:43:49.593734Z"
     },
     {
       "source_id": "github-changelog",
@@ -435,8 +458,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-09-21T19:02:39.012935Z"
+      "latency_ms": 21,
+      "checked_at": "2026-09-22T02:43:49.615624Z"
     },
     {
       "source_id": "aihot",
@@ -445,10 +468,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 768,
-      "checked_at": "2026-09-21T19:02:39.781739Z"
+      "latency_ms": 1499,
+      "checked_at": "2026-09-22T02:43:51.115559Z"
     }
   ],
   "control_notes": {
