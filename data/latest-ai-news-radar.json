@@ -1,40 +1,68 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-23T13:45:49.282060Z",
+  "generated_at": "2026-09-23T18:15:19.771714Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 25,
+  "item_count": 24,
   "groups": {
-    "developer": {
-      "group": "developer",
+    "official": {
+      "group": "official",
       "count": 5,
       "top_sources": [
         [
-          "GitHub Changelog",
+          "OpenAI News",
+          4
+        ],
+        [
+          "Google DeepMind",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
           5
+        ],
+        [
+          "openai",
+          4
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 4,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          4
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          10
+          8
         ],
         [
           "agent",
-          3
+          2
         ],
         [
           "tool",
           2
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "claude",
-          1
         ],
         [
           "agents",
@@ -43,53 +71,41 @@
         [
           "codex",
           1
-        ],
-        [
-          "openai",
-          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 18,
+      "count": 15,
       "top_sources": [
         [
           "AI Hot",
-          18
+          15
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          18
-        ],
-        [
-          "claude",
-          9
+          15
         ],
         [
           "openai",
-          9
-        ],
-        [
-          "anthropic",
-          7
+          10
         ],
         [
           "api",
-          5
-        ],
-        [
-          "API",
-          5
-        ],
-        [
-          "智能体",
           4
         ],
         [
-          "评测",
+          "API",
+          4
+        ],
+        [
+          "claude",
+          3
+        ],
+        [
+          "智能体",
           3
         ],
         [
@@ -97,7 +113,15 @@
           2
         ],
         [
+          "anthropic",
+          2
+        ],
+        [
           "chatgpt",
+          2
+        ],
+        [
+          "开源模型",
           1
         ],
         [
@@ -109,47 +133,26 @@
           1
         ]
       ]
-    },
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "OpenAI News",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "openai",
-          2
-        ],
-        [
-          "official_ai",
-          2
-        ]
-      ]
     }
   },
   "items": [
     {
-      "id": "12908d25b5b133d3e4c114e650cdeb9263b7b2dd",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
+      "id": "ee20807a20989eead82f4f128c6ae6587a933f87",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Claude Opus 5.5 is now available in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot",
-      "published_at": "2026-09-22T17:10:23Z",
-      "summary": "Claude Opus 5.5, Anthropic’s newest Opus model, is now available in GitHub Copilot. You can use it for agentic coding, long-running agentic tasks, and knowledge work. In early testing, Opus… The post Claude Opus 5.5 is now available in GitHub Copilot appeared first on The GitHub Blog .",
-      "relevance_score": 9,
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "url": "https://openai.com/index/ringg",
+      "published_at": "2026-09-24T12:00:00Z",
+      "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+      "relevance_score": 7,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
+        "strong:openai",
         "strong:agent",
-        "weak:copilot",
-        "source:copilot"
+        "strong:agents",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -196,24 +199,38 @@
       "is_ai_related": true
     },
     {
-      "id": "5a3dcdd9ac9e6282c6dba941144bfc4f6cabeaf3",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Opus 5.5 上架 Arena 的 Agent Arena 与 Battle Mode",
-      "url": "https://aihot.news/items/cmucz06v905eironivy08mtvk",
-      "published_at": "2026-09-22T17:48:17Z",
-      "summary": "Arena 宣布 Anthropic 的 Claude Opus 5.5 已进入 Agent Arena，用户可通过投票驱动排行榜。Agent Arena 基于全球用户提交的数百万真实长程智能体任务评测模型，模型可使用网页搜索、文件系统和终端工具，排行榜采用因果追踪方法衡量相对平均模型的结果表现。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmucz06v905eironivy08mtvk",
-      "relevance_score": 8,
+      "id": "da1b188e6ceb152125bdac3838d383393ae5b94e",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Two years of OpenAI Academy",
+      "url": "https://openai.com/index/two-years-of-openai-academy",
+      "published_at": "2026-09-23T16:00:00Z",
+      "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities.",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:agent",
-        "strong:智能体",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "aec9e5b4c16fded920f9dc45a539809eacad0b3a",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Gemini 3.8 text-to-speech says hello",
+      "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech",
+      "published_at": "2026-09-23T15:25:14Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -254,21 +271,22 @@
       "is_ai_related": true
     },
     {
-      "id": "9af2c00d23d922bcb085501b2201766340821741",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "OpenAI’s GPT-6 Sol and GPT-6 Luna now available",
-      "url": "https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available",
-      "published_at": "2026-09-22T17:00:14Z",
-      "summary": "OpenAI’s GPT-6 family is expanding in GitHub Copilot with two additional models: GPT-6 Sol, and GPT-6 Luna. Joining the previously released GPT-6 Astra, these new options let you select the… The post OpenAI’s GPT-6 Sol and GPT-6 Luna now available appeared first on The GitHub Blog .",
+      "id": "5dbcf7acfb04665563197fe9aebe66190d1337ab",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "小米发布 MiMo-V2.6 Pro 与 Flash 开源全模态模型，Pro 在多数 Agent 基准上对标 Claude Opus 5 和 GPT-5.6 Sol",
+      "url": "https://aihot.news/items/cmue9wuq00sqxrogh9805ahzr",
+      "published_at": "2026-09-23T15:20:38Z",
+      "summary": "小米发布开源全模态模型 MiMo-V2.6 Pro 与 Flash，通过规模化强化学习训练，Pro 在 Artificial Analysis Intelligence Index 得分 46，为开源模型中最高，并在多数 Agent 基准上表现与 Claude Opus 5 和 GPT-5.6 Sol 相当。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmue9wuq00sqxrogh9805ahzr",
       "relevance_score": 5,
       "relevance_reasons": [
-        "strong:openai",
-        "weak:copilot",
-        "source:copilot"
+        "strong:claude",
+        "strong:agent",
+        "strong:开源模型",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -313,22 +331,20 @@
       "is_ai_related": true
     },
     {
-      "id": "8e2aa701aec1edc6293830e004d22941339dc654",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Opus 5.5 上线 OpenRouter，智能体编码等能力领先 Opus 5",
-      "url": "https://aihot.news/items/cmucxgaki0sfkroed0n804wg5",
-      "published_at": "2026-09-22T16:44:34Z",
-      "summary": "Anthropic 的 Claude Opus 5.5 上线 OpenRouter，是 Claude 5.5 系列首个模型，在智能体编码、知识工作和计算机使用上领先 Opus 5 和 Fable 5.1。提供 1M 上下文窗口，定价为每百万输入 token $4、输出 $20，比 Opus 5 低 20%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmucxgaki0sfkroed0n804wg5",
-      "relevance_score": 5,
+      "id": "ecfdf5cc27714ee79b73f80457b3bd0003de5e6b",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Local sandboxing in the GitHub Copilot app",
+      "url": "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app",
+      "published_at": "2026-09-23T15:00:57Z",
+      "summary": "Local sandboxing helps reduce the potential impact of unintended commands by limiting access to files, network resources, and credentials on your machine. In the GitHub Copilot app, you configure it… The post Local sandboxing in the GitHub Copilot app appeared first on The GitHub Blog .",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -367,6 +383,44 @@
         "weak:api",
         "weak:开发者",
         "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "79ecdb5f24da5e7217444c57c688b62a12871996",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "ChatGPT Voice 升级：可调用邮件、日历、Slack 插件并由 GPT-6 Astra、Sol、Luna 驱动",
+      "url": "https://aihot.news/items/cmuedyzhy0482romm2rpjfis0",
+      "published_at": "2026-09-23T17:35:48Z",
+      "summary": "OpenAI 宣布 ChatGPT Voice 升级，可使用邮件、日历和 Slack 等插件，并由 GPT-6 Astra、Sol、Luna 驱动。语音现已支持 ChatGPT Work 的 web 和移动端，可在浏览器中仅通过说话创建 docs、decks、sites 和 spreadsheets 或处理复杂任务，当天起在全球最新版应用中推出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuedyzhy0482romm2rpjfis0",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8894785496020e6831d165023e7611608330482c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google DeepMind 发布 Gemini 3.8 Flash TTS 与 Flash-Lite TTS 语音生成模型",
+      "url": "https://aihot.news/items/cmuea8xrm0t1nroghhxj2y3eg",
+      "published_at": "2026-09-23T15:25:14Z",
+      "summary": "Google DeepMind 发布 Gemini 3.8 Flash TTS 和 Gemini 3.8 Flash-Lite TTS 两款文本转语音模型，支持用自然语言提示词从零设计声音、30 秒样本复刻声音，并提供逐行表演指导、长时音频生成和双说话人场景编排，覆盖 100 多种语言。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuea8xrm0t1nroghhxj2y3eg",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:deepmind",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -489,78 +543,39 @@
       "is_ai_related": true
     },
     {
-      "id": "08a5095f34dec0162ffa6e8b4e947836e40bd73b",
+      "id": "551d519f9932d4589933f5416ba596d623a69569",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50%",
-      "url": "https://aihot.news/items/cmud1y2ku039iro5ysl7pq6d3",
-      "published_at": "2026-09-22T18:00:00Z",
-      "summary": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，将 GPT-6 Astra 的训练方法用于更快更便宜的模型，API 价格较 GPT-5.6 促销价下调 50%（Sol 输入 $4→$2、输出 $20→$10；Luna 输入 $0.20→$0.10、输出 $1.20→$0.50，每百万 token）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmud1y2ku039iro5ysl7pq6d3",
-      "relevance_score": 3,
+      "title": "Antigravity SDK 支持本地模型，可完全离线运行智能体",
+      "url": "https://aihot.news/items/cmued0oy602x2rommk0l8lw6q",
+      "published_at": "2026-09-23T17:09:01Z",
+      "summary": "Google 宣布 Antigravity SDK 支持本地模型工作流，首发通过 Google AI Edge 的 LiteRT 支持 Gemma 4 26B A4B，可完全离线运行智能体，建议机器配备 >24GB VRAM 或统一内存。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmued0oy602x2rommk0l8lw6q",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "3b8b84710b98da8180a7be22deb16718394872c5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Artificial Analysis 评测：GPT-6 Sol 和 Luna 以约一半成本保持与 GPT-5.6 系列相近的 Intelligence Index 得分",
+      "url": "https://aihot.news/items/cmud9s4pn001groggnqsackao",
+      "published_at": "2026-09-22T22:38:23Z",
+      "summary": "Artificial Analysis 发文指出，GPT-6 Sol 和 Luna 在 Intelligence Index 中得分与各自前代相近，但 token 定价下降约 50%，将单任务成本减半。其图表展示了各代 OpenAI 模型在智能与单任务成本之间的权衡曲线。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmud9s4pn001groggnqsackao",
+      "relevance_score": 2,
       "relevance_reasons": [
         "strong:openai",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "cbacb6e99c878483b36ce169df4c41424c70ad56",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40%",
-      "url": "https://aihot.news/items/cmucwy58v0rskroedmv35n8ji",
-      "published_at": "2026-09-22T16:53:30Z",
-      "summary": "Anthropic 发布 Claude Opus 5.5，为 Claude 5.5 系列首个模型，在多数工作上达到 Fable 5.1 水平，典型负载成本较 Opus 5 低 40%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmucwy58v0rskroedmv35n8ji",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "bfe467f73641c9b826e0060d6c17c584725e58f6",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Boris Cherny 实测 Claude Opus 5.5：比 Fable 5.1 快且便宜 51%",
-      "url": "https://aihot.news/items/cmucxgajz0sfiroedxx6y9qyw",
-      "published_at": "2026-09-22T16:45:10Z",
-      "summary": "Anthropic 的 Boris Cherny 称 Claude Opus 5.5 近几周是他的日常主力模型。他让 Opus 5.5 和 Fable 5.1 各自把 HAProxy 从 C 移植到 Rust，两者都通过了几乎所有测试，但 Opus 5.5 用时 9.5 小时，快于 Fable 5.1 的 12 小时，成本低 51%。引用的官方介绍称 Opus 5.5 是 Claude 5.5 家族首个模型，多数任务达到 Fable 5.1 水平，运行成本比 Opus 5 低 40%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmucxgajz0sfiroedxx6y9qyw",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "537fdf270961e06f2baaab8c9a1e4637d6062f3b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列首个模型",
-      "url": "https://aihot.news/items/cmucwpqty0rj8roedzxz1496u",
-      "published_at": "2026-09-22T16:31:01Z",
-      "summary": "Anthropic 发布 Claude Opus 5.5，是 Claude 5.5 系列的首个模型。官方称其在多数任务上达到 Claude Fable 5.1 的水平，运行成本比 Opus 5 低 40%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmucwpqty0rj8roedzxz1496u",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
+        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -583,44 +598,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "e173d777ee0589e13615977eee3b3ee491cd0089",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Opus 5.5 登顶 Artificial Analysis 智能指数，得分 58",
-      "url": "https://aihot.news/items/cmucyny580521roni2aiyh9xj",
-      "published_at": "2026-09-22T17:41:36Z",
-      "summary": "Artificial Analysis 评测显示 Claude Opus 5.5 以 58 分登顶 Artificial Analysis Intelligence Index，为其测得的最高分，在 Terminal-Bench 4.0 上与 GPT-6 Astra 持平（59.6%）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmucyny580521roni2aiyh9xj",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:claude",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5bcd87a9667dc97bf54fe3c9500303aa2bc27d37",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Opus 5.5 登顶 Artificial Analysis Intelligence Index，并降价 20%",
-      "url": "https://aihot.news/items/cmucwv0h50ro5roedgmckw2j5",
-      "published_at": "2026-09-22T16:41:45Z",
-      "summary": "Artificial Analysis 评测显示 Claude Opus 5.5 以 58 分登顶 Artificial Analysis Intelligence Index，为其实测最高分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmucwv0h50ro5roedgmckw2j5",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:claude",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -630,11 +607,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1221,
-      "kept_count": 2,
+      "fetched_count": 1223,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 672,
-      "checked_at": "2026-09-23T13:45:46.604898Z"
+      "latency_ms": 545,
+      "checked_at": "2026-09-23T18:15:16.429099Z"
     },
     {
       "source_id": "openai-skills",
@@ -645,8 +622,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 361,
-      "checked_at": "2026-09-23T13:45:46.966452Z"
+      "latency_ms": 481,
+      "checked_at": "2026-09-23T18:15:16.910694Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -657,8 +634,8 @@
       "fetched_count": 259,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 163,
-      "checked_at": "2026-09-23T13:45:47.133554Z"
+      "latency_ms": 372,
+      "checked_at": "2026-09-23T18:15:17.286957Z"
     },
     {
       "source_id": "google-deepmind",
@@ -667,10 +644,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 263,
-      "checked_at": "2026-09-23T13:45:47.398102Z"
+      "latency_ms": 568,
+      "checked_at": "2026-09-23T18:15:17.857324Z"
     },
     {
       "source_id": "google-ai",
@@ -681,8 +658,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 269,
-      "checked_at": "2026-09-23T13:45:47.668391Z"
+      "latency_ms": 310,
+      "checked_at": "2026-09-23T18:15:18.168283Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -693,8 +670,8 @@
       "fetched_count": 867,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 359,
-      "checked_at": "2026-09-23T13:45:48.040889Z"
+      "latency_ms": 292,
+      "checked_at": "2026-09-23T18:15:18.472496Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -705,8 +682,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 282,
-      "checked_at": "2026-09-23T13:45:48.323675Z"
+      "latency_ms": 200,
+      "checked_at": "2026-09-23T18:15:18.673392Z"
     },
     {
       "source_id": "github-changelog",
@@ -715,10 +692,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 5,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 44,
-      "checked_at": "2026-09-23T13:45:48.368725Z"
+      "latency_ms": 30,
+      "checked_at": "2026-09-23T18:15:18.704382Z"
     },
     {
       "source_id": "aihot",
@@ -727,10 +704,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 18,
+      "kept_count": 15,
       "error": null,
-      "latency_ms": 903,
-      "checked_at": "2026-09-23T13:45:49.273798Z"
+      "latency_ms": 1058,
+      "checked_at": "2026-09-23T18:15:19.763941Z"
     }
   ],
   "control_notes": {
