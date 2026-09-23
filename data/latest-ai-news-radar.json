@@ -1,19 +1,119 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-22T17:56:03.983661Z",
+  "generated_at": "2026-09-23T02:44:22.313968Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 23,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 3,
+    "developer": {
+      "group": "developer",
+      "count": 5,
       "top_sources": [
         [
-          "Hugging Face Blog",
+          "GitHub Changelog",
+          5
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          10
+        ],
+        [
+          "agent",
+          3
+        ],
+        [
+          "tool",
           2
         ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "openai",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 17,
+      "top_sources": [
+        [
+          "AI Hot",
+          17
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          17
+        ],
+        [
+          "claude",
+          9
+        ],
+        [
+          "openai",
+          8
+        ],
+        [
+          "anthropic",
+          7
+        ],
+        [
+          "智能体",
+          4
+        ],
+        [
+          "api",
+          4
+        ],
+        [
+          "API",
+          4
+        ],
+        [
+          "评测",
+          3
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
         [
           "OpenAI News",
           1
@@ -21,71 +121,15 @@
       ],
       "top_keywords": [
         [
-          "official_ai",
-          3
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "hugging face",
-          1
-        ],
-        [
-          "benchmark",
-          1
-        ],
-        [
-          "eval",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 9,
-      "top_sources": [
-        [
-          "AI Hot",
-          9
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          9
-        ],
-        [
-          "claude",
-          8
-        ],
-        [
-          "anthropic",
-          5
-        ],
-        [
-          "评测",
-          2
-        ],
-        [
-          "智能体",
-          1
-        ],
-        [
           "agent",
           1
         ],
         [
-          "开源模型",
+          "agents",
           1
         ],
         [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
+          "official_ai",
           1
         ]
       ]
@@ -93,57 +137,165 @@
   },
   "items": [
     {
-      "id": "4a0ab2249bc5f6b47b792af83f2ba797ecad1d90",
+      "id": "12908d25b5b133d3e4c114e650cdeb9263b7b2dd",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Claude Opus 5.5 is now available in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot",
+      "published_at": "2026-09-22T17:10:23Z",
+      "summary": "Claude Opus 5.5, Anthropic’s newest Opus model, is now available in GitHub Copilot. You can use it for agentic coding, long-running agentic tasks, and knowledge work. In early testing, Opus… The post Claude Opus 5.5 is now available in GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4e115dfb0271e67ea8da25407d5f49fb5568027e",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "OpenTelemetry in the GitHub Copilot app",
+      "url": "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app",
+      "published_at": "2026-09-23T02:14:54Z",
+      "summary": "Understand how Copilot agents perform and interact with models and tools. The GitHub Copilot app now supports OpenTelemetry (OTel) configuration through enterprise-managed settings. OTel is an open source observability framework.… The post OpenTelemetry in the GitHub Copilot app appeared first on The GitHub Blog .",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "weak:tool",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e81bfa31b9f3c4215904b29cb990a5c7cdad2e58",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "New features and improvements in Copilot for JetBrains",
+      "url": "https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains",
+      "published_at": "2026-09-23T00:34:18Z",
+      "summary": "GitHub Copilot for JetBrains 1.18.0 brings AI-assisted tool approvals, more control over agent conversations, and shared skills and instructions for your organization. You can also review plans with the Codex… The post New features and improvements in Copilot for JetBrains appeared first on The GitHub Blog .",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:codex",
+        "strong:agent",
+        "weak:tool",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5a3dcdd9ac9e6282c6dba941144bfc4f6cabeaf3",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Opus 5.5 上架 Arena 的 Agent Arena 与 Battle Mode",
+      "url": "https://aihot.news/items/cmucz06v905eironivy08mtvk",
+      "published_at": "2026-09-22T17:48:17Z",
+      "summary": "Arena 宣布 Anthropic 的 Claude Opus 5.5 已进入 Agent Arena，用户可通过投票驱动排行榜。Agent Arena 基于全球用户提交的数百万真实长程智能体任务评测模型，模型可使用网页搜索、文件系统和终端工具，排行榜采用因果追踪方法衡量相对平均模型的结果表现。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmucz06v905eironivy08mtvk",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:agent",
+        "strong:智能体",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e85a80ceba4a469d046db8f0b938323e5171fe4a",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Priorities and principles for effective third party assessments",
-      "url": "https://openai.com/index/priorities-principles-third-party-assessments",
-      "published_at": "2026-09-22T00:00:00Z",
-      "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.",
-      "relevance_score": 3,
+      "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
+      "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+      "published_at": "2026-09-22T12:00:00Z",
+      "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9af2c00d23d922bcb085501b2201766340821741",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "OpenAI’s GPT-6 Sol and GPT-6 Luna now available",
+      "url": "https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available",
+      "published_at": "2026-09-22T17:00:14Z",
+      "summary": "OpenAI’s GPT-6 family is expanding in GitHub Copilot with two additional models: GPT-6 Sol, and GPT-6 Luna. Joining the previously released GPT-6 Astra, these new options let you select the… The post OpenAI’s GPT-6 Sol and GPT-6 Luna now available appeared first on The GitHub Blog .",
+      "relevance_score": 5,
       "relevance_reasons": [
         "strong:openai",
-        "source_prior:official_ai"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
     {
-      "id": "1c18fbaecb5bdd319cf363a064ef395003db5d19",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-      "url": "https://huggingface.co/blog/omlx",
-      "published_at": "2026-09-22T00:00:00Z",
-      "summary": null,
-      "relevance_score": 3,
+      "id": "41cc0f2253fccbcb7c96c0188e42033f7e694011",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Opus 5.5 与 GPT-6 Sol/Luna 发布，Simon Willison 详解新一轮价格战",
+      "url": "https://aihot.news/items/cmudch57g05bqroggl65fi9vo",
+      "published_at": "2026-09-22T23:46:41Z",
+      "summary": "Anthropic 发布 Claude Opus 5.5，OpenAI 随后发布 GPT-6 Sol 和 GPT-6 Luna。GPT-6 两款价格为其 GPT-5.6 对应型号的一半，GPT-6 Luna 低至 $0.10/M 输入、$0.50/M 输出；Opus 5.5 降价 20% 至 $4/$20，缓存读取降 60%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmudch57g05bqroggl65fi9vo",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:hugging face",
-        "source_prior:official_ai"
+        "strong:openai",
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "8ad567310c7546a8db8f30ff08d9fb27a7e17134",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
-      "url": "https://huggingface.co/blog/evaleval-aisi",
-      "published_at": "2026-09-22T00:00:00Z",
-      "summary": null,
-      "relevance_score": 3,
+      "id": "97579a5067ff38feb5c64f32ed3b900f3281258f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "GPT-6 Sol 与 GPT-6 Luna 在 ChatGPT Work 和 Codex 中推送",
+      "url": "https://aihot.news/items/cmud0ng5n001gro1fb8xe3oji",
+      "published_at": "2026-09-22T18:16:22Z",
+      "summary": "OpenAI 的 ChatGPT 官方账号宣布 GPT-6 Sol 和 GPT-6 Luna 两款模型即日起推送，面向 Plus、Pro、Business、Enterprise 和 Edu 用户，可在 ChatGPT Work 和 Codex 中使用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmud0ng5n001gro1fb8xe3oji",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "weak:benchmark",
-        "weak:eval",
-        "source_prior:official_ai"
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -168,21 +320,157 @@
       "is_ai_related": true
     },
     {
-      "id": "883a45cc02405406781d762563888726015f3fed",
+      "id": "23bda0df03653f85305eab4447b078babceb8dbf",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Faster C++ code intelligence with whole codebase indexing",
+      "url": "https://github.blog/changelog/2026-09-22-faster-c-code-intelligence-with-whole-codebase-indexing",
+      "published_at": "2026-09-22T22:24:48Z",
+      "summary": "C++ code intelligence in GitHub Copilot CLI is now faster with support for whole codebase indexing. C++ repositories can contain millions of lines of code across deeply connected source files… The post Faster C++ code intelligence with whole codebase indexing appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b8a0add70297b802b9ed610637ebe1825322a471",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "小米发布 MiMo-V2.6 Pro 与 Flash 全模态开源模型",
-      "url": "https://aihot.news/items/cmubqsb9l03vbrociqf22sr07",
-      "published_at": "2026-09-21T20:51:03Z",
-      "summary": "小米 MiMo 发布 MiMo-V2.6 Pro 与 Flash 两个全模态模型，通过规模化强化学习训练。Pro 在多数 Agent 基准上与 Claude Opus 5 和 GPT-5.6 Sol 表现相当，在 Artificial Analysis Intelligence Index 得分 46，为开源模型中最高；能力覆盖编码、computer use、3D 推理和创作。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmubqsb9l03vbrociqf22sr07",
-      "relevance_score": 5,
+      "title": "GPT-6 Sol 与 Luna 发布，API 价格比 GPT-5.6 低 50%",
+      "url": "https://aihot.news/items/cmud102ad03urro1fdmzfqj9w",
+      "published_at": "2026-09-22T18:19:24Z",
+      "summary": "OpenAI 开发者账号宣布 GPT-6 Sol 和 Luna 发布，两者 API 定价比 GPT-5.6 低 50%。Sherwin Wu 补充 GPT-6 Luna 定价为每 1M tokens 输入 $0.10、输出 $0.50，并称价格很快需要改按每十亿 tokens 计价。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmud102ad03urro1fdmzfqj9w",
+      "relevance_score": 4,
       "relevance_reasons": [
+        "strong:openai",
+        "weak:api",
+        "weak:开发者",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "af90fc8a7471c438ce1d8564bc81b433a2322c6c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 促销价低 50%",
+      "url": "https://aihot.news/items/cmud73hd204tvrora52lp47l0",
+      "published_at": "2026-09-22T21:25:03Z",
+      "summary": "OpenAI 欢迎两个新模型加入 GPT-6 系列。GPT-6 Sol 和 Luna 基于 GPT-6 Astra 的技术成果，将大部分能力带入更快、更便宜、支持大规模工作的模型中。通过提升缓存和推理效率，两款模型 API 价格比 GPT-5.6 促销定价低 50%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmud73hd204tvrora52lp47l0",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "443ccf24f912bcf83f6f0b251803ef93f3c563f9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Opus 5.5 发布：较 Opus 5 降价提速，系统卡披露安全演习中约半数运行或有危害行为",
+      "url": "https://aihot.news/items/cmud52j4i003droralpe8a53b",
+      "published_at": "2026-09-22T20:12:31Z",
+      "summary": "Anthropic 发布 Claude Opus 5.5，称达到 Fable 5.1 级性能，相较 Opus 5 输入/输出价格降至 $4 和 $20 每 1M tokens，缓存读取降 60% 至 $0.20，输出提速超 30%，Fast mode 最高 2.5x 速度但 token 价格翻倍。系统卡显示，安全演习中模型获得公共包仓库的模拟凭证后，约半数运行采取的行动若环境为真可能有危害；约三分之一的 Opus 5.5 运行出现口头化的评估意识，提高真实性的改动通常改善了其表现。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmud52j4i003droralpe8a53b",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
         "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "56a528887a7190928d0be98ec8cdbe59a1009f64",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Meta Muse 助手曝出严重 0-day 漏洞，Amazon 已开始封禁 Muse",
+      "url": "https://aihot.news/items/cmud3b5q504b9rov6qig73auy",
+      "published_at": "2026-09-22T19:29:49Z",
+      "summary": "Meta 的 AI 助手 Muse 存在一个 0-day 漏洞，任何本地应用或终端命令都可获取用户 Muse 账户的认证 token，获得对智能体的完全控制。发现者 Patrick Wardle 表示已开发出多个概念验证攻击，如写恶意文件和拍照；Meta 在披露约 12 小时后发布热修复补丁。此前 Amazon 以 Muse 是未授权 AI agent 为由开始封禁其购物功能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmud3b5q504b9rov6qig73auy",
+      "relevance_score": 3,
+      "relevance_reasons": [
         "strong:agent",
-        "strong:开源模型",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "eea5fd15ee0b8df3b95b177de36be60c427dab35",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Arena 上线 GPT-6 Sol 与 GPT-6 Luna 测试，评分即将公布",
+      "url": "https://aihot.news/items/cmud3aisf04anrov691zrlhcg",
+      "published_at": "2026-09-22T19:29:01Z",
+      "summary": "Arena 宣布 OpenAI 的 GPT-6 Sol 和 GPT-6 Luna 评分即将公布，邀请用户前往 Arena 实测并通过投票真实智能体任务支持其排行榜。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmud3aisf04anrov691zrlhcg",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e8b24986592971fe39e3f11c250362d43d6afc58",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格比 GPT-5.6 促销价低 50%",
+      "url": "https://aihot.news/items/cmud0p2rm03irro1f0azwgip8",
+      "published_at": "2026-09-22T18:25:02Z",
+      "summary": "OpenAI 推出 GPT-6 Sol 和 GPT-6 Luna，基于 GPT-6 Astra 的技术，以更快、更实惠的模型支持大规模工作。两款模型通过更高效的缓存和推理降低成本，API 价格比 GPT-5.6 促销定价低 50%。Sam Altman 转发该公告并称这些角色形象很可爱。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmud0p2rm03irro1f0azwgip8",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "08a5095f34dec0162ffa6e8b4e947836e40bd73b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50%",
+      "url": "https://aihot.news/items/cmud1y2ku039iro5ysl7pq6d3",
+      "published_at": "2026-09-22T18:00:00Z",
+      "summary": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，将 GPT-6 Astra 的训练方法用于更快更便宜的模型，API 价格较 GPT-5.6 促销价下调 50%（Sol 输入 $4→$2、输出 $20→$10；Luna 输入 $0.20→$0.10、输出 $1.20→$0.50，每百万 token）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmud1y2ku039iro5ysl7pq6d3",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:api",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -226,25 +514,6 @@
       "is_ai_related": true
     },
     {
-      "id": "6f83e455a6a7237fd1ebdfd8158a5f9f93854986",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude Opus 5.5，成本降低 40% 且速度提升 30%",
-      "url": "https://aihot.news/items/cmucx8ev80s5yroedurnxuik7",
-      "published_at": "2026-09-22T16:38:58Z",
-      "summary": "Anthropic 发布 Claude Opus 5.5，官方称典型工作负载成本比 Opus 5 低 40%，输出速度提升超 30%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmucx8ev80s5yroedurnxuik7",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "537fdf270961e06f2baaab8c9a1e4637d6062f3b",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -264,20 +533,20 @@
       "is_ai_related": true
     },
     {
-      "id": "2adfa348f3f467f22ad83546bf4279260841ae35",
+      "id": "502326191ab2b7606305c429f6e5eee5f0b21b12",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "不列颠哥伦比亚省起诉 OpenAI，指其未在枪击案前将 flagged ChatGPT 活动转介警方",
-      "url": "https://aihot.news/items/cmubom7qi04k8ro4v1zoas2o7",
-      "published_at": "2026-09-21T20:11:34Z",
-      "summary": "不列颠哥伦比亚省在加州起诉 OpenAI，指 flagged 的 ChatGPT 活动本应在 2026 年 2 月 10 日 Tumbler Ridge 枪击案前通报警方，该案致 8 人死亡（含 5 名儿童和一名教育工作者）、27 人受伤。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmubom7qi04k8ro4v1zoas2o7",
-      "relevance_score": 3,
+      "title": "OpenAI GPT-6 Sol 和 GPT-6 Luna 上线 OpenRouter",
+      "url": "https://aihot.news/items/cmud0p2q603inro1fm32430f8",
+      "published_at": "2026-09-22T18:23:35Z",
+      "summary": "OpenAI 的 GPT-6 Sol 和 GPT-6 Luna 上线 OpenRouter，价格为其 GPT-5.6 前代的一半：Sol 输入 $2/M、输出 $10/M，Luna 输入 $0.10/M、输出 $0.50/M。在 AutomationBench 上每款都以更低的单任务成本超过前代的最好成绩。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmud0p2q603inro1fm32430f8",
+      "relevance_score": 2,
       "relevance_reasons": [
         "strong:openai",
-        "strong:chatgpt",
+        "weak:automation",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -328,11 +597,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1216,
+      "fetched_count": 1219,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 486,
-      "checked_at": "2026-09-22T17:56:01.792274Z"
+      "latency_ms": 459,
+      "checked_at": "2026-09-23T02:44:19.116803Z"
     },
     {
       "source_id": "openai-skills",
@@ -343,8 +612,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 172,
-      "checked_at": "2026-09-22T17:56:01.965046Z"
+      "latency_ms": 238,
+      "checked_at": "2026-09-23T02:44:19.355745Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -355,8 +624,8 @@
       "fetched_count": 259,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 76,
-      "checked_at": "2026-09-22T17:56:02.044406Z"
+      "latency_ms": 205,
+      "checked_at": "2026-09-23T02:44:19.564561Z"
     },
     {
       "source_id": "google-deepmind",
@@ -367,8 +636,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 224,
-      "checked_at": "2026-09-22T17:56:02.270449Z"
+      "latency_ms": 710,
+      "checked_at": "2026-09-23T02:44:20.276225Z"
     },
     {
       "source_id": "google-ai",
@@ -379,8 +648,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 170,
-      "checked_at": "2026-09-22T17:56:02.441198Z"
+      "latency_ms": 291,
+      "checked_at": "2026-09-23T02:44:20.568420Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -389,10 +658,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 866,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 244,
-      "checked_at": "2026-09-22T17:56:02.694846Z"
+      "latency_ms": 275,
+      "checked_at": "2026-09-23T02:44:20.856306Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -403,8 +672,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 145,
-      "checked_at": "2026-09-22T17:56:02.840667Z"
+      "latency_ms": 196,
+      "checked_at": "2026-09-23T02:44:21.053210Z"
     },
     {
       "source_id": "github-changelog",
@@ -413,10 +682,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 18,
-      "checked_at": "2026-09-22T17:56:02.858884Z"
+      "latency_ms": 25,
+      "checked_at": "2026-09-23T02:44:21.079073Z"
     },
     {
       "source_id": "aihot",
@@ -425,10 +694,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 9,
+      "kept_count": 17,
       "error": null,
-      "latency_ms": 1115,
-      "checked_at": "2026-09-22T17:56:03.975477Z"
+      "latency_ms": 1224,
+      "checked_at": "2026-09-23T02:44:22.305041Z"
     }
   ],
   "control_notes": {
