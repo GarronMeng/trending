@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-24T08:46:32.560574Z",
+  "generated_at": "2026-09-24T12:03:33.295043Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 28,
+  "item_count": 26,
   "groups": {
     "official": {
       "group": "official",
-      "count": 8,
+      "count": 5,
       "top_sources": [
         [
           "OpenAI News",
-          5
+          2
         ],
         [
           "Google DeepMind",
@@ -30,30 +30,14 @@
       "top_keywords": [
         [
           "official_ai",
-          8
+          5
         ],
         [
           "openai",
-          4
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
+          2
         ],
         [
           "gemini",
-          1
-        ],
-        [
-          "benchmark",
-          1
-        ],
-        [
-          "eval",
           1
         ],
         [
@@ -68,17 +52,17 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 17,
+      "count": 18,
       "top_sources": [
         [
           "AI Hot",
-          17
+          18
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          17
+          18
         ],
         [
           "claude",
@@ -86,7 +70,7 @@
         ],
         [
           "智能体",
-          6
+          7
         ],
         [
           "anthropic",
@@ -94,7 +78,7 @@
         ],
         [
           "openai",
-          5
+          6
         ],
         [
           "agent",
@@ -149,26 +133,6 @@
   },
   "items": [
     {
-      "id": "ee20807a20989eead82f4f128c6ae6587a933f87",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-      "url": "https://openai.com/index/ringg",
-      "published_at": "2026-09-23T12:00:00Z",
-      "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:agent",
-        "strong:agents",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "da1b188e6ceb152125bdac3838d383393ae5b94e",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -218,43 +182,6 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d86a8beae4b366c755919098f993d908ec64c94f",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Sam Altman’s remarks at the United Nations Security Council",
-      "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
-      "published_at": "2026-09-23T12:00:00Z",
-      "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e85f9cd671a702ad3cf380fe156ae5195c169598",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Introducing MentalHealthBench",
-      "url": "https://openai.com/index/introducing-mentalhealthbench",
-      "published_at": "2026-09-23T10:00:00Z",
-      "summary": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:benchmark",
-        "weak:eval",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -448,6 +375,25 @@
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "94f1420382b71966f5ea0ea14196669383fb1220",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Thomas Wolf 转评 Transluce 披露：发布 3 万余条日志，称涉及 OpenAI 攻击澳大利亚政府及更早的智能体活动",
+      "url": "https://aihot.news/items/cmufcbvmu05wqroaga2mai2eu",
+      "published_at": "2026-09-24T09:32:14Z",
+      "summary": "Thomas Wolf 转发并评论 Transluce 的披露：Transluce 称 OpenAI 攻击澳大利亚政府并非孤立事件，发布超过 30，000 条日志，内容包括这次攻击活动及针对此前未知目标的尝试。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmufcbvmu05wqroaga2mai2eu",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -686,10 +632,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1229,
-      "kept_count": 5,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 559,
-      "checked_at": "2026-09-24T08:46:30.493193Z"
+      "latency_ms": 549,
+      "checked_at": "2026-09-24T12:03:31.067406Z"
     },
     {
       "source_id": "openai-skills",
@@ -700,8 +646,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 155,
-      "checked_at": "2026-09-24T08:46:30.649223Z"
+      "latency_ms": 634,
+      "checked_at": "2026-09-24T12:03:31.702274Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -712,8 +658,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 131,
-      "checked_at": "2026-09-24T08:46:30.784996Z"
+      "latency_ms": 113,
+      "checked_at": "2026-09-24T12:03:31.820023Z"
     },
     {
       "source_id": "google-deepmind",
@@ -724,8 +670,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 124,
-      "checked_at": "2026-09-24T08:46:30.911537Z"
+      "latency_ms": 135,
+      "checked_at": "2026-09-24T12:03:31.956859Z"
     },
     {
       "source_id": "google-ai",
@@ -736,8 +682,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 173,
-      "checked_at": "2026-09-24T08:46:31.085406Z"
+      "latency_ms": 152,
+      "checked_at": "2026-09-24T12:03:32.109778Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -748,8 +694,8 @@
       "fetched_count": 867,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 261,
-      "checked_at": "2026-09-24T08:46:31.359554Z"
+      "latency_ms": 317,
+      "checked_at": "2026-09-24T12:03:32.440326Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -760,8 +706,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 161,
-      "checked_at": "2026-09-24T08:46:31.521668Z"
+      "latency_ms": 178,
+      "checked_at": "2026-09-24T12:03:32.619518Z"
     },
     {
       "source_id": "github-changelog",
@@ -772,8 +718,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-09-24T08:46:31.549735Z"
+      "latency_ms": 26,
+      "checked_at": "2026-09-24T12:03:32.646764Z"
     },
     {
       "source_id": "aihot",
@@ -782,10 +728,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 17,
+      "kept_count": 18,
       "error": null,
-      "latency_ms": 1000,
-      "checked_at": "2026-09-24T08:46:32.551532Z"
+      "latency_ms": 638,
+      "checked_at": "2026-09-24T12:03:33.287216Z"
     }
   ],
   "control_notes": {
