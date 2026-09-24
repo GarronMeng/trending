@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-24T12:03:33.295043Z",
+  "generated_at": "2026-09-24T13:40:22.613115Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,11 +8,11 @@
   "groups": {
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          1
         ],
         [
           "Google DeepMind",
@@ -30,11 +30,11 @@
       "top_keywords": [
         [
           "official_ai",
-          5
+          4
         ],
         [
           "openai",
-          2
+          1
         ],
         [
           "gemini",
@@ -52,17 +52,17 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 18,
+      "count": 19,
       "top_sources": [
         [
           "AI Hot",
-          18
+          19
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          18
+          19
         ],
         [
           "claude",
@@ -73,11 +73,11 @@
           7
         ],
         [
-          "anthropic",
-          6
+          "openai",
+          7
         ],
         [
-          "openai",
+          "anthropic",
           6
         ],
         [
@@ -93,15 +93,15 @@
           2
         ],
         [
+          "hugging face",
+          2
+        ],
+        [
           "llm",
           1
         ],
         [
           "评测",
-          1
-        ],
-        [
-          "hugging face",
           1
         ],
         [
@@ -164,24 +164,6 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:gemini",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "2631471b0f7c6c9e4717d0564cb888d931fe283e",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "OpenAI extends cyber access to Ukraine for civilian defense",
-      "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-      "published_at": "2026-09-23T13:00:00Z",
-      "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -375,6 +357,25 @@
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f4f3cc59a978f09a42d5a745b0e649edc7ccb54d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gary Marcus 借 Jensen Huang 言论主张暂时关停 OpenAI",
+      "url": "https://aihot.news/items/cmufjyocz04u6ro6ohojge69s",
+      "published_at": "2026-09-24T12:27:50Z",
+      "summary": "Gary Marcus 引用 Jensen Huang 接受 Ezra Klein 访谈时的话，认为无法控制软件的公司应被关停，并据此主张暂时关停 OpenAI。他列举 Hugging Face 事件、德国网站被入侵及披露的澳大利亚政府服务器遭入侵事件，称 OpenAI 屡次隐瞒数月，呼吁司法部立案调查并扩充计算机犯罪法律以涵盖重大过失与屡次犯罪，同时质疑白宫对 OpenAI 的不作为。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmufjyocz04u6ro6ohojge69s",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -632,10 +633,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1229,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 549,
-      "checked_at": "2026-09-24T12:03:31.067406Z"
+      "latency_ms": 572,
+      "checked_at": "2026-09-24T13:40:20.432251Z"
     },
     {
       "source_id": "openai-skills",
@@ -646,8 +647,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 634,
-      "checked_at": "2026-09-24T12:03:31.702274Z"
+      "latency_ms": 250,
+      "checked_at": "2026-09-24T13:40:20.683339Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -658,8 +659,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 113,
-      "checked_at": "2026-09-24T12:03:31.820023Z"
+      "latency_ms": 118,
+      "checked_at": "2026-09-24T13:40:20.805868Z"
     },
     {
       "source_id": "google-deepmind",
@@ -670,8 +671,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 135,
-      "checked_at": "2026-09-24T12:03:31.956859Z"
+      "latency_ms": 372,
+      "checked_at": "2026-09-24T13:40:21.179656Z"
     },
     {
       "source_id": "google-ai",
@@ -682,8 +683,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 152,
-      "checked_at": "2026-09-24T12:03:32.109778Z"
+      "latency_ms": 115,
+      "checked_at": "2026-09-24T13:40:21.296011Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -694,8 +695,8 @@
       "fetched_count": 867,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 317,
-      "checked_at": "2026-09-24T12:03:32.440326Z"
+      "latency_ms": 284,
+      "checked_at": "2026-09-24T13:40:21.592994Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -706,8 +707,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 178,
-      "checked_at": "2026-09-24T12:03:32.619518Z"
+      "latency_ms": 152,
+      "checked_at": "2026-09-24T13:40:21.745681Z"
     },
     {
       "source_id": "github-changelog",
@@ -718,8 +719,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-09-24T12:03:32.646764Z"
+      "latency_ms": 27,
+      "checked_at": "2026-09-24T13:40:21.773725Z"
     },
     {
       "source_id": "aihot",
@@ -728,10 +729,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 18,
+      "kept_count": 19,
       "error": null,
-      "latency_ms": 638,
-      "checked_at": "2026-09-24T12:03:33.287216Z"
+      "latency_ms": 827,
+      "checked_at": "2026-09-24T13:40:22.602741Z"
     }
   ],
   "control_notes": {
