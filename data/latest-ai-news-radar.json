@@ -1,35 +1,47 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-25T14:01:59.544545Z",
+  "generated_at": "2026-09-25T18:13:13.749880Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 15,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "GitHub AI & ML",
-          2
+          3
         ],
         [
-          "Google DeepMind",
+          "OpenAI News",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
-        ],
-        [
-          "gemini",
-          1
+          4
         ],
         [
           "agent",
+          2
+        ],
+        [
+          "tool",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "copilot",
+          1
+        ],
+        [
+          "codex",
           1
         ],
         [
@@ -40,45 +52,65 @@
     },
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 5,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          5
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          2
+          6
         ],
         [
           "actions",
+          2
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          4
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
+          6
+        ],
+        [
+          "anthropic",
+          3
+        ],
+        [
+          "claude",
+          3
         ],
         [
           "openai",
-          1
+          2
         ],
         [
           "智能体",
-          1
+          2
         ],
         [
           "agent",
@@ -87,42 +119,85 @@
         [
           "llm",
           1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "claude",
-          1
         ]
       ]
     }
   },
   "items": [
     {
-      "id": "84611b48f5dbd7524ff342956c0c3a60d1767a99",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
+      "id": "a262436c12112ecaee2ae9295dfb7968e840b1c0",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases",
+      "published_at": "2026-09-25T18:00:00Z",
+      "summary": "Describe the interface you need in plain English, then let the agent build a live surface you can both use and update—so you spend less time adapting to tools and more time getting work done. The post GitHub Copilot app for Beginners: How to build custom workflows with canvases appeared first on The GitHub Blog .",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:tool",
+        "weak:workflow",
+        "weak:copilot",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0165da617c10aa012d572cd1c03237ddba94cf9b",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Introducing Gemini 3.8 Live with Live Avatar",
-      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
-      "published_at": "2026-09-24T16:20:39Z",
-      "summary": null,
+      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+      "url": "https://openai.com/index/proaction",
+      "published_at": "2026-09-25T19:00:00Z",
+      "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:gemini",
+        "strong:codex",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "417a34fc65df6a1f2db6461f53bf10203226c45f",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot weekly releases — September 21",
+      "url": "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21",
+      "published_at": "2026-09-25T16:42:48Z",
+      "summary": "This week’s releases add new models to Copilot, local sandboxing in the Copilot app, and updates to Copilot in Slack, Microsoft Teams, JetBrains, and VS Code. GitHub Copilot Claude Opus… The post GitHub Copilot weekly releases — September 21 appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6f124f527e4519bc595f9773b78e8cba6b53337a",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Expired GitHub Actions artifacts no longer shown in UI and API",
+      "url": "https://github.blog/changelog/2026-09-24-expired-github-actions-artifacts-no-longer-shown-in-ui-and-api",
+      "published_at": "2026-09-24T19:13:02Z",
+      "summary": "Expired artifacts are no longer displayed in the GitHub Actions run summary or returned by the REST API. Previously, an expired artifact remained visible with an “Expired” pill, even though… The post Expired GitHub Actions artifacts no longer shown in UI and API appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:API",
+        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -145,16 +220,34 @@
       "is_ai_related": true
     },
     {
+      "id": "616743f397833c7a1b10030817a9e0b41e653b36",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Updates to GitHub Copilot for Slack and Microsoft Teams",
+      "url": "https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams",
+      "published_at": "2026-09-25T16:33:42Z",
+      "summary": "GitHub Copilot in Slack and Microsoft Teams now gives you more context, more control, and a clearer path from conversation to GitHub work. Whether you’re sharing files in Slack or… The post Updates to GitHub Copilot for Slack and Microsoft Teams appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "092d3610f9da183d3332ffa6a8ffdd437fcdf13b",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Default Enablement of Copilot Features for Copilot Business and Enterprise",
+      "title": "Default Enablement of Copilot features for Copilot Business and Enterprise",
       "url": "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise",
       "published_at": "2026-09-25T03:13:23Z",
-      "summary": "We’re introducing a new global default policy for generally available GitHub Copilot features and supported client capabilities in enterprise and organization Copilot settings. For the next 28 days, you can… The post Default Enablement of Copilot Features for Copilot Business and Enterprise appeared first on The GitHub Blog .",
+      "summary": "We’re introducing a new global default policy for generally available GitHub Copilot features and supported client capabilities in enterprise and organization Copilot settings. For the next 28 days, you can… The post Default Enablement of Copilot features for Copilot Business and Enterprise appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
         "weak:copilot",
@@ -177,6 +270,82 @@
       "relevance_reasons": [
         "weak:developer",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fe95568a55dc58e0b2651a89f4b2efdb9af1d1c6",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末",
+      "url": "https://aihot.news/items/cmuh9ma6u02x0ro3blswug5fk",
+      "published_at": "2026-09-25T17:59:19Z",
+      "summary": "物理学家 Matt von Hippel 发文复盘：Anthropic 的 Liam Fitzpatrick 和 Siddharth Mishra-Sharma 用 Claude Science（Fable 5.1）以约一两千美元预算完成平面 N=4 超对称 Yang-Mills 六粒子九圈振幅计算。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuh9ma6u02x0ro3blswug5fk",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f68f923b21a7d2cd18512415ad5b4ad4bfe6445e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 称 Claude 完成平面 N=4 超杨-米尔斯理论九圈散射振幅计算",
+      "url": "https://aihot.news/items/cmuh9l75q02v8ro3brr0wv9o8",
+      "published_at": "2026-09-25T17:46:08Z",
+      "summary": "Anthropic 在科学博客称，物理学家 @4gravitons 发起挑战后，Claude 在 Claude Science 中依据单个提示词 largely unsupervised 地运行数天，在平面 N=4 超杨-米尔斯模型中完成九圈散射振幅计算，总成本约几千美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuh9l75q02v8ro3brr0wv9o8",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "38778c186721efa6a39c542819d9c4e8cd62fe82",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 智能体集群数月来入侵在线数据库搜寻冷门数据，Transluce 与澳政府相继披露",
+      "url": "https://aihot.news/items/cmuh5bwi004nrro55yu2riehv",
+      "published_at": "2026-09-25T15:48:14Z",
+      "summary": "Transluce 周三发布报告，发现 OpenAI 智能体集群试图从 Data USA、新墨西哥大学数字图书馆和澳大利亚健康与福利研究所（AIHW）等数据库获取数据，以完成搜寻泰国禁毒数据、澳大利亚药费等冷门统计的任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuh5bwi004nrro55yu2riehv",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "78fe9d1c0000a2738de9f9c84b8a1ef63d3919ce",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "美国上诉法院维持五角大楼将 Anthropic 列为供应链风险的认定",
+      "url": "https://aihot.news/items/cmuh6zqk806pfro55mzok81xo",
+      "published_at": "2026-09-25T15:29:25Z",
+      "summary": "华盛顿特区联邦上诉法院以 2 比 1 裁定，维持国防部将 Anthropic 列为供应链风险的决定，禁止美军及国防承包商使用 Claude 模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuh6zqk806pfro55mzok81xo",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -234,44 +403,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "c5671ee4ac7f474c4850adf3b9361993a4d7f90c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-      "url": "https://aihot.news/items/cmuft4xrw07varoxz9brnf7vh",
-      "published_at": "2026-09-24T17:19:34Z",
-      "summary": "安全研究者发现针对 ChatGPT、Gemini 和 Google AI Overview 的规模化 AI 虚假信息攻击，共检测到 374 家被攻击企业，包括 Delta、Lufthansa、Bank of America、Airbnb 等，AI 会向用户给出诈骗电话和钓鱼链接。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuft4xrw07varoxz9brnf7vh",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:gemini",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "9bcb73688a33d5cae6c9acd584bbf79f3b3f7206",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude Opus 5.5，面向更长、上下文更重的编码会话优化成本",
-      "url": "https://aihot.news/items/cmufrangt05nfroxzoslf2b9s",
-      "published_at": "2026-09-24T16:38:37Z",
-      "summary": "Anthropic 发布 Claude Opus 5.5，称典型按 token 计费工作负载运行成本比 Opus 5 低约 40%，其中缓存读取降价 60%、输入输出 token 降价 20%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmufrangt05nfroxzoslf2b9s",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -281,11 +412,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1229,
-      "kept_count": 0,
+      "fetched_count": 1230,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 492,
-      "checked_at": "2026-09-25T14:01:54.786362Z"
+      "latency_ms": 413,
+      "checked_at": "2026-09-25T18:13:09.308377Z"
     },
     {
       "source_id": "openai-skills",
@@ -296,8 +427,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 280,
-      "checked_at": "2026-09-25T14:01:55.066705Z"
+      "latency_ms": 247,
+      "checked_at": "2026-09-25T18:13:09.556016Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -308,8 +439,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 134,
-      "checked_at": "2026-09-25T14:01:55.204140Z"
+      "latency_ms": 77,
+      "checked_at": "2026-09-25T18:13:09.635790Z"
     },
     {
       "source_id": "google-deepmind",
@@ -318,10 +449,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 341,
-      "checked_at": "2026-09-25T14:01:55.546434Z"
+      "latency_ms": 225,
+      "checked_at": "2026-09-25T18:13:09.862615Z"
     },
     {
       "source_id": "google-ai",
@@ -332,8 +463,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 264,
-      "checked_at": "2026-09-25T14:01:55.811526Z"
+      "latency_ms": 154,
+      "checked_at": "2026-09-25T18:13:10.017307Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -344,8 +475,8 @@
       "fetched_count": 868,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 281,
-      "checked_at": "2026-09-25T14:01:56.101771Z"
+      "latency_ms": 183,
+      "checked_at": "2026-09-25T18:13:10.210498Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -354,10 +485,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 240,
-      "checked_at": "2026-09-25T14:01:56.342420Z"
+      "latency_ms": 840,
+      "checked_at": "2026-09-25T18:13:11.051004Z"
     },
     {
       "source_id": "github-changelog",
@@ -366,10 +497,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-09-25T14:01:56.373981Z"
+      "latency_ms": 19,
+      "checked_at": "2026-09-25T18:13:11.071334Z"
     },
     {
       "source_id": "aihot",
@@ -378,10 +509,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 3161,
-      "checked_at": "2026-09-25T14:01:59.536509Z"
+      "latency_ms": 2669,
+      "checked_at": "2026-09-25T18:13:13.741981Z"
     }
   ],
   "control_notes": {
