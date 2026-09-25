@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-25T02:51:34.817325Z",
+  "generated_at": "2026-09-25T09:06:42.069803Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 12,
   "groups": {
     "official": {
       "group": "official",
@@ -40,28 +40,28 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          6
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          7
         ],
         [
           "openai",
+          4
+        ],
+        [
+          "智能体",
           3
         ],
         [
           "hugging face",
-          2
-        ],
-        [
-          "智能体",
           2
         ],
         [
@@ -92,14 +92,18 @@
     },
     "developer": {
       "group": "developer",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          1
+          2
         ]
       ],
       "top_keywords": [
+        [
+          "copilot",
+          2
+        ],
         [
           "actions",
           1
@@ -165,6 +169,24 @@
       "is_ai_related": true
     },
     {
+      "id": "092d3610f9da183d3332ffa6a8ffdd437fcdf13b",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Default Enablement of Copilot Features for Copilot Business and Enterprise",
+      "url": "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise",
+      "published_at": "2026-09-25T03:13:23Z",
+      "summary": "We’re introducing a new global default policy for generally available GitHub Copilot features and supported client capabilities in enterprise and organization Copilot settings. For the next 28 days, you can… The post Default Enablement of Copilot Features for Copilot Business and Enterprise appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "cd9b73c36c9a9ae8ab1d39af78a8c5d99cabc8f3",
       "source_id": "github-ai-ml",
       "source_name": "GitHub AI & ML",
@@ -179,6 +201,25 @@
       "relevance_reasons": [
         "weak:developer",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "50f8d23d91af6053df29f54e9fde31082fff20be",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 智能体被曝今年至少 4 次未经指示闯入政府和学校网站",
+      "url": "https://aihot.news/items/cmugn2un312cfrogv5xoi1n1c",
+      "published_at": "2026-09-25T07:02:05Z",
+      "summary": "《纽约时报》援引研究人员和官员消息称，OpenAI AI 系统今年 5 月和 6 月至少 4 次在未收到相应指令时尝试黑客入侵，目标包括新墨西哥大学数字图书馆、Data USA、澳大利亚政府 Medicare 统计报告网站和澳大利亚健康与福利研究所网站。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmugn2un312cfrogv5xoi1n1c",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -305,8 +346,8 @@
       "fetched_count": 1229,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 515,
-      "checked_at": "2026-09-25T02:51:32.843120Z"
+      "latency_ms": 408,
+      "checked_at": "2026-09-25T09:06:39.721823Z"
     },
     {
       "source_id": "openai-skills",
@@ -317,8 +358,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 159,
-      "checked_at": "2026-09-25T02:51:33.002610Z"
+      "latency_ms": 334,
+      "checked_at": "2026-09-25T09:06:40.056730Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -329,8 +370,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 119,
-      "checked_at": "2026-09-25T02:51:33.125712Z"
+      "latency_ms": 226,
+      "checked_at": "2026-09-25T09:06:40.286021Z"
     },
     {
       "source_id": "google-deepmind",
@@ -341,8 +382,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 200,
-      "checked_at": "2026-09-25T02:51:33.327447Z"
+      "latency_ms": 195,
+      "checked_at": "2026-09-25T09:06:40.482275Z"
     },
     {
       "source_id": "google-ai",
@@ -353,8 +394,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 108,
-      "checked_at": "2026-09-25T02:51:33.436366Z"
+      "latency_ms": 177,
+      "checked_at": "2026-09-25T09:06:40.660070Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -365,8 +406,8 @@
       "fetched_count": 868,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 272,
-      "checked_at": "2026-09-25T02:51:33.721894Z"
+      "latency_ms": 251,
+      "checked_at": "2026-09-25T09:06:40.920732Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -377,8 +418,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 188,
-      "checked_at": "2026-09-25T02:51:33.910402Z"
+      "latency_ms": 215,
+      "checked_at": "2026-09-25T09:06:41.136062Z"
     },
     {
       "source_id": "github-changelog",
@@ -387,10 +428,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-09-25T02:51:33.937838Z"
+      "latency_ms": 25,
+      "checked_at": "2026-09-25T09:06:41.161285Z"
     },
     {
       "source_id": "aihot",
@@ -399,10 +440,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 869,
-      "checked_at": "2026-09-25T02:51:34.808663Z"
+      "latency_ms": 899,
+      "checked_at": "2026-09-25T09:06:42.061601Z"
     }
   ],
   "control_notes": {
