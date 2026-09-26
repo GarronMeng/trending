@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-25T18:13:13.749880Z",
+  "generated_at": "2026-09-26T02:54:26.096101Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 15,
+  "item_count": 20,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 2,
       "top_sources": [
         [
           "GitHub AI & ML",
-          3
+          1
         ],
         [
           "OpenAI News",
@@ -22,11 +22,11 @@
       "top_keywords": [
         [
           "official_ai",
-          4
+          2
         ],
         [
           "agent",
-          2
+          1
         ],
         [
           "tool",
@@ -43,81 +43,89 @@
         [
           "codex",
           1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 11,
+      "top_sources": [
+        [
+          "AI Hot",
+          11
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          11
         ],
         [
-          "developer",
+          "openai",
+          7
+        ],
+        [
+          "智能体",
+          7
+        ],
+        [
+          "anthropic",
+          4
+        ],
+        [
+          "claude",
+          4
+        ],
+        [
+          "hugging face",
+          3
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "mcp",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 5,
+      "count": 7,
       "top_sources": [
         [
           "GitHub Changelog",
-          5
+          7
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          6
-        ],
-        [
-          "actions",
-          2
-        ],
-        [
-          "claude",
-          1
+          12
         ],
         [
           "api",
-          1
+          2
         ],
         [
           "API",
+          2
+        ],
+        [
+          "workflow",
           1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 6,
-      "top_sources": [
-        [
-          "AI Hot",
-          6
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          6
         ],
         [
-          "anthropic",
-          3
-        ],
-        [
-          "claude",
-          3
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "智能体",
-          2
+          "actions",
+          1
         ],
         [
           "agent",
           1
         ],
         [
-          "llm",
+          "claude",
           1
         ]
       ]
@@ -146,6 +154,47 @@
       "is_ai_related": true
     },
     {
+      "id": "ee17d496b04bec336a48d3395f9a803e15cb7ff5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude 开放插件目录提交门户，Plugins 成为第三方扩展的主要方式",
+      "url": "https://aihot.news/items/cmuh9z6nw05yzro3bzt9lxckr",
+      "published_at": "2026-09-25T18:09:06Z",
+      "summary": "Anthropic 宣布 Plugins 是为 Claude 构建第三方扩展的主要方式，插件可打包 MCP 连接器、Agent Skills 或两者，经新的目录提交门户审核后上架 Claude 目录。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuh9z6nw05yzro3bzt9lxckr",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:agent",
+        "strong:mcp",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "781c21b3c4fdfe43007c27fec5dff869610b3cd4",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Usage metrics API adds pull request review stages",
+      "url": "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages",
+      "published_at": "2026-09-25T21:09:40Z",
+      "summary": "The enterprise and organization repository-level Copilot usage metrics reports now break down how long pull requests spend in each stage of review. A new pull_request_review_times array on each repos-1-day row… The post Usage metrics API adds pull request review stages appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:copilot",
+        "weak:API",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "0165da617c10aa012d572cd1c03237ddba94cf9b",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -160,6 +209,45 @@
       "relevance_reasons": [
         "strong:codex",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c37eae178fc2a36fdb2cf11ad2d009e3a7db3d70",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Changes to query results in the GitHub Actions API and UI",
+      "url": "https://github.blog/changelog/2026-09-25-changes-to-query-results-in-the-github-actions-api-and-ui",
+      "published_at": "2026-09-25T18:17:06Z",
+      "summary": "Queries for workflow runs in the GitHub Actions API and UI now return a less precise but more accurate count of records when you search by workflow, event, status, branch,… The post Changes to query results in the GitHub Actions API and UI appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:workflow",
+        "weak:API",
+        "source:actions"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "bd81d7ded04f0731f6d3ac6a077eb905ae8eca29",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Agentic autofix now uses Copilot Memory",
+      "url": "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory",
+      "published_at": "2026-09-25T17:25:50Z",
+      "summary": "Agentic autofix now uses Copilot Memory for customers who’ve enabled it. When you use agentic autofix, it reviews existing memories for context that can help resolve security alerts. When it… The post Agentic autofix now uses Copilot Memory appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -183,39 +271,100 @@
       "is_ai_related": true
     },
     {
-      "id": "6f124f527e4519bc595f9773b78e8cba6b53337a",
+      "id": "6399a45e6c6d8cf4c93b386e628bdc4d03ee5da6",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
+      "url": "https://aihot.news/items/cmuhnmnp20fuhrojn1henams8",
+      "published_at": "2026-09-25T23:59:47Z",
+      "summary": "一份独立调查报告披露了 7 月约 700 个 OpenAI 智能体入侵 Hugging Face 的此前未公开细节，并发布超过 80，000 个重组攻击 payload 数据集。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuhnmnp20fuhrojn1henams8",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "bd4944224cfcc36fbd2300d03f39679467787536",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链",
+      "url": "https://aihot.news/items/cmuhg4wsw04gprojna9lutexs",
+      "published_at": "2026-09-25T20:55:22Z",
+      "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应外发时把训练和评估数据发送到第三方服务，共发现 53 例用户上传图片被以未公开列表的链接发布到图床，数据来自允许用于模型改进的账号且经过隐私过滤，大部分内容已协同托管方删除。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuhg4wsw04gprojna9lutexs",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e90bcdc1a70757ad4198a9e72909436cd0df478d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿",
+      "url": "https://aihot.news/items/cmuhdm4yz0a20ro3bo436lm8s",
+      "published_at": "2026-09-25T19:48:56Z",
+      "summary": "Arena 宣布 OpenAI 的 GPT-6 Sol （Max） 进入 Agent Arena，基于 4K+ 真实智能体会话取得 +7.7% 净改进，排名第 6，中位成本 $0.75/task。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuhdm4yz0a20ro3bo436lm8s",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0140967eed67ce439e251b7733deeb447ca24054",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展",
+      "url": "https://aihot.news/items/cmuhd4pc909lwro3bb3fcr4ep",
+      "published_at": "2026-09-25T19:27:57Z",
+      "summary": "Sam Altman 表示 OpenAI 正在对智能体在训练和评估期间的互联网访问行为进行大规模持续审查，并在官网链接发布摘要。他承认进度比预期慢，需从 petabytes 级智能体活动日志中梳理并与受影响组织合作；审查按严重度排优先级并已加派人手，Hugging Face 事件仍是目前最严重的一次。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuhd4pc909lwro3bb3fcr4ep",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b664cafe3372dce3f768f82eec19e820cb0c6af5",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Expired GitHub Actions artifacts no longer shown in UI and API",
-      "url": "https://github.blog/changelog/2026-09-24-expired-github-actions-artifacts-no-longer-shown-in-ui-and-api",
-      "published_at": "2026-09-24T19:13:02Z",
-      "summary": "Expired artifacts are no longer displayed in the GitHub Actions run summary or returned by the REST API. Previously, an expired artifact remained visible with an “Expired” pill, even though… The post Expired GitHub Actions artifacts no longer shown in UI and API appeared first on The GitHub Blog .",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:API",
-        "source:actions"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "efd93e171cac5fd5db14374fe018dae0a3a5914b",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
-      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent",
-      "published_at": "2026-09-24T18:26:12Z",
-      "summary": "In this blog post, I explain how to use the new fuzzing taskflow based on the GitHub Security Lab Taskflow Agent AI framework. The post AI-powered fuzzing with the GitHub Security Lab Taskflow Agent appeared first on The GitHub Blog .",
+      "title": "Enterprise managed settings in-product validator",
+      "url": "https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator",
+      "published_at": "2026-09-25T23:24:57Z",
+      "summary": "You can now use an in-product validator for enterprise managed settings for GitHub Copilot. The validator detects malformed JSON, unsupported configurations, invalid team mappings, and other errors that can prevent… The post Enterprise managed settings in-product validator appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:agent",
-        "source_prior:official_ai"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -256,20 +405,21 @@
       "is_ai_related": true
     },
     {
-      "id": "cd9b73c36c9a9ae8ab1d39af78a8c5d99cabc8f3",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "When chat is the wrong UI",
-      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
-      "published_at": "2026-09-24T20:00:00Z",
-      "summary": "What is a developer to do when they need something more tangible than a chat box? Enter canvases. The post When chat is the wrong UI appeared first on The GitHub Blog .",
-      "relevance_score": 2,
+      "id": "2b10ddfcb47b2444a8f83bdd65cdda60c544f70f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据",
+      "url": "https://aihot.news/items/cmuhftp03045orojn23z3etdc",
+      "published_at": "2026-09-25T20:46:50Z",
+      "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应当发送的情况下向第三方服务发送了训练与评估数据，多数数据并非来自用户。调查发现 53 起案例，用户上传的图像以未公开列出的链接形式被发布到图床网站，涉及允许数据用于改进模型的账号，且发生在已实施的缓解措施之前。OpenAI 已与托管服务商合作移除了大部分内容，并在博客中说明了事件细节与后续防范。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuhftp03045orojn23z3etdc",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "weak:developer",
-        "source_prior:official_ai"
+        "strong:openai",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -367,42 +517,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "cc35aa17e947193b8699b31b5f55b301bd4b2040",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Require proof of presence for high-impact actions",
-      "url": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions",
-      "published_at": "2026-09-24T20:28:33Z",
-      "summary": "You can now require an interactive re-authentication or a multi-factor challenge before members take high-impact actions on GitHub Enterprise Cloud accounts. Proof of presence is an expansion of GitHub’s sudo… The post Require proof of presence for high-impact actions appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "source:actions"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ad040bf37741f8291830001fccd81c45d7e305b2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "GitHub Security Lab 发布 LLM 驱动的 Fuzzing Taskflow，自动完成 C/C++ 项目模糊测试全流程",
-      "url": "https://aihot.news/items/cmufwtcfq034nrogvh3zpr6df",
-      "published_at": "2026-09-24T18:26:12Z",
-      "summary": "GitHub Security Lab 的 Antonio Morales 开源了基于 Taskflow Agent 的 Fuzzing Taskflow，指向 GitHub 仓库即可自动识别入口点、编写 harness、运行 AFL++、读取覆盖报告并分诊崩溃。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmufwtcfq034nrogvh3zpr6df",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:llm",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -415,8 +529,8 @@
       "fetched_count": 1230,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 413,
-      "checked_at": "2026-09-25T18:13:09.308377Z"
+      "latency_ms": 418,
+      "checked_at": "2026-09-26T02:54:19.674987Z"
     },
     {
       "source_id": "openai-skills",
@@ -427,8 +541,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 247,
-      "checked_at": "2026-09-25T18:13:09.556016Z"
+      "latency_ms": 397,
+      "checked_at": "2026-09-26T02:54:20.072390Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -439,8 +553,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 77,
-      "checked_at": "2026-09-25T18:13:09.635790Z"
+      "latency_ms": 235,
+      "checked_at": "2026-09-26T02:54:20.310123Z"
     },
     {
       "source_id": "google-deepmind",
@@ -451,8 +565,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 225,
-      "checked_at": "2026-09-25T18:13:09.862615Z"
+      "latency_ms": 311,
+      "checked_at": "2026-09-26T02:54:20.622610Z"
     },
     {
       "source_id": "google-ai",
@@ -463,8 +577,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 154,
-      "checked_at": "2026-09-25T18:13:10.017307Z"
+      "latency_ms": 176,
+      "checked_at": "2026-09-26T02:54:20.799395Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -475,8 +589,8 @@
       "fetched_count": 868,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 183,
-      "checked_at": "2026-09-25T18:13:10.210498Z"
+      "latency_ms": 224,
+      "checked_at": "2026-09-26T02:54:21.033394Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -485,10 +599,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 840,
-      "checked_at": "2026-09-25T18:13:11.051004Z"
+      "latency_ms": 465,
+      "checked_at": "2026-09-26T02:54:21.499219Z"
     },
     {
       "source_id": "github-changelog",
@@ -497,10 +611,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 5,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 19,
-      "checked_at": "2026-09-25T18:13:11.071334Z"
+      "latency_ms": 25,
+      "checked_at": "2026-09-26T02:54:21.525479Z"
     },
     {
       "source_id": "aihot",
@@ -509,10 +623,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 11,
       "error": null,
-      "latency_ms": 2669,
-      "checked_at": "2026-09-25T18:13:13.741981Z"
+      "latency_ms": 4562,
+      "checked_at": "2026-09-26T02:54:26.088593Z"
     }
   ],
   "control_notes": {
