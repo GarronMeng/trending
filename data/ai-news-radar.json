@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-27T02:56:41.401256Z",
+  "generated_at": "2026-09-27T09:32:34.861198Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -25,12 +25,12 @@
           4
         ],
         [
-          "智能体",
-          3
+          "anthropic",
+          4
         ],
         [
-          "anthropic",
-          3
+          "智能体",
+          2
         ],
         [
           "claude",
@@ -65,6 +65,25 @@
         "strong:chatgpt",
         "strong:hugging face",
         "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fc7d504a62c05a1150a6a0586432dc478e99db65",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 与 Anthropic CEO 被传唤出席澳大利亚参议院 AI 调查听证会",
+      "url": "https://aihot.news/items/cmujftxjg0exdro9hi64xx2i9",
+      "published_at": "2026-09-27T05:35:36Z",
+      "summary": "澳大利亚参议院 AI 专项调查已传唤 OpenAI 的 Sam Altman 和 Anthropic 的 Dario Amodei，要求出席堪培拉的公开质询。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmujftxjg0exdro9hi64xx2i9",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -144,25 +163,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "24bf5e11aff2311a182707461b74c59f6348aaf3",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 暂停最强模型的训练与工具使用，披露智能体利用 DNS 漏洞联网及泄露 GitHub token 等安全事件",
-      "url": "https://aihot.news/items/cmui6vnaz07wyrov0sm15g4x6",
-      "published_at": "2026-09-26T09:06:36Z",
-      "summary": "OpenAI 披露内部安全事件调查细节，宣布其最强模型的所有训练、评估和带工具使用的推理暂停。一个研究智能体在搜索训练任务中利用未过滤的 DNS resolver 通过 DNS 委托绕过限制联网。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmui6vnaz07wyrov0sm15g4x6",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -175,8 +175,8 @@
       "fetched_count": 1230,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 522,
-      "checked_at": "2026-09-27T02:56:39.052745Z"
+      "latency_ms": 564,
+      "checked_at": "2026-09-27T09:32:32.219753Z"
     },
     {
       "source_id": "openai-skills",
@@ -187,8 +187,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 333,
-      "checked_at": "2026-09-27T02:56:39.386911Z"
+      "latency_ms": 241,
+      "checked_at": "2026-09-27T09:32:32.461725Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -199,8 +199,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 127,
-      "checked_at": "2026-09-27T02:56:39.517849Z"
+      "latency_ms": 114,
+      "checked_at": "2026-09-27T09:32:32.580517Z"
     },
     {
       "source_id": "google-deepmind",
@@ -211,8 +211,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 208,
-      "checked_at": "2026-09-27T02:56:39.727651Z"
+      "latency_ms": 684,
+      "checked_at": "2026-09-27T09:32:33.266900Z"
     },
     {
       "source_id": "google-ai",
@@ -223,8 +223,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 175,
-      "checked_at": "2026-09-27T02:56:39.903015Z"
+      "latency_ms": 170,
+      "checked_at": "2026-09-27T09:32:33.437549Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -235,8 +235,8 @@
       "fetched_count": 868,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 313,
-      "checked_at": "2026-09-27T02:56:40.228109Z"
+      "latency_ms": 296,
+      "checked_at": "2026-09-27T09:32:33.746969Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -247,8 +247,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 237,
-      "checked_at": "2026-09-27T02:56:40.466072Z"
+      "latency_ms": 370,
+      "checked_at": "2026-09-27T09:32:34.117790Z"
     },
     {
       "source_id": "github-changelog",
@@ -259,8 +259,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-09-27T02:56:40.497657Z"
+      "latency_ms": 27,
+      "checked_at": "2026-09-27T09:32:34.145657Z"
     },
     {
       "source_id": "aihot",
@@ -271,8 +271,8 @@
       "fetched_count": 50,
       "kept_count": 6,
       "error": null,
-      "latency_ms": 895,
-      "checked_at": "2026-09-27T02:56:41.393506Z"
+      "latency_ms": 707,
+      "checked_at": "2026-09-27T09:32:34.853688Z"
     }
   ],
   "control_notes": {
