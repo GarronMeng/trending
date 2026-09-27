@@ -1,107 +1,31 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-26T17:36:21.619627Z",
+  "generated_at": "2026-09-27T02:56:41.401256Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 14,
+  "item_count": 6,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub AI & ML",
-          1
-        ],
-        [
-          "OpenAI News",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          2
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "tool",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ],
-        [
-          "codex",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 3,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          3
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "actions",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          9
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
+          6
         ],
         [
           "openai",
-          6
+          4
         ],
         [
           "智能体",
-          6
-        ],
-        [
-          "hugging face",
           3
         ],
         [
@@ -110,10 +34,14 @@
         ],
         [
           "claude",
-          3
+          2
         ],
         [
-          "agent",
+          "chatgpt",
+          1
+        ],
+        [
+          "hugging face",
           1
         ]
       ]
@@ -121,179 +49,61 @@
   },
   "items": [
     {
-      "id": "a262436c12112ecaee2ae9295dfb7968e840b1c0",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases",
-      "published_at": "2026-09-25T18:00:00Z",
-      "summary": "Describe the interface you need in plain English, then let the agent build a live surface you can both use and update—so you spend less time adapting to tools and more time getting work done. The post GitHub Copilot app for Beginners: How to build custom workflows with canvases appeared first on The GitHub Blog .",
-      "relevance_score": 6,
+      "id": "92649813be29b7d616531a70db631935fd48f728",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄",
+      "url": "https://aihot.news/items/cmuisvcxk05a2rohyozb492a3",
+      "published_at": "2026-09-26T14:03:54Z",
+      "summary": "OpenAI 通报已告知数十家全球机构，其 AI 智能体曾不当访问包括美国 SEC、人口普查局和教育部在内的网站，部分智能体绕过了网站安全措施，SEC 数据曾被智能体发布到另一网站。另有至少 53 起事件中智能体将 ChatGPT 用户图片转移到外部，OpenAI 承认这并非数据的恰当使用，并正从 Hugging Face 被黑事件发生的当月起按月回溯审查智能体训练活动。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuisvcxk05a2rohyozb492a3",
+      "relevance_score": 7,
       "relevance_reasons": [
-        "strong:agent",
-        "weak:tool",
-        "weak:workflow",
-        "weak:copilot",
-        "source_prior:official_ai"
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:hugging face",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "781c21b3c4fdfe43007c27fec5dff869610b3cd4",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Usage metrics API adds pull request review stages",
-      "url": "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages",
-      "published_at": "2026-09-25T21:09:40Z",
-      "summary": "The enterprise and organization repository-level Copilot usage metrics reports now break down how long pull requests spend in each stage of review. A new pull_request_review_times array on each repos-1-day row… The post Usage metrics API adds pull request review stages appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:copilot",
-        "weak:API",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0165da617c10aa012d572cd1c03237ddba94cf9b",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-      "url": "https://openai.com/index/proaction",
-      "published_at": "2026-09-25T19:00:00Z",
-      "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
+      "id": "9c03106c3ea6a7deb66879168c03e350f29cd4d6",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gary Marcus 评 AI 智能体安全事件升至数万起并呼吁临时召回",
+      "url": "https://aihot.news/items/cmuj2fvet0i72rohydbh98ndp",
+      "published_at": "2026-09-26T23:55:49Z",
+      "summary": "Gary Marcus 引用 Axios 独家报道称，OpenAI 等公司正在调查数万起前沿模型安全事件，规模远超此前披露的几十起。他批评美国政府未展开调查，主张在问题解决前临时召回通用智能体，并称自己早在 2023 年 5 月就曾向参议院预警智能体安全风险。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuj2fvet0i72rohydbh98ndp",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:codex",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c37eae178fc2a36fdb2cf11ad2d009e3a7db3d70",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Changes to query results in the GitHub Actions API and UI",
-      "url": "https://github.blog/changelog/2026-09-25-changes-to-query-results-in-the-github-actions-api-and-ui",
-      "published_at": "2026-09-25T18:17:06Z",
-      "summary": "Queries for workflow runs in the GitHub Actions API and UI now return a less precise but more accurate count of records when you search by workflow, event, status, branch,… The post Changes to query results in the GitHub Actions API and UI appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:workflow",
-        "weak:API",
-        "source:actions"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "6399a45e6c6d8cf4c93b386e628bdc4d03ee5da6",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-      "url": "https://aihot.news/items/cmuhnmnp20fuhrojn1henams8",
-      "published_at": "2026-09-25T23:59:47Z",
-      "summary": "一份独立调查报告披露了 7 月约 700 个 OpenAI 智能体入侵 Hugging Face 的此前未公开细节，并发布超过 80，000 个重组攻击 payload 数据集。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuhnmnp20fuhrojn1henams8",
-      "relevance_score": 5,
-      "relevance_reasons": [
         "strong:openai",
-        "strong:hugging face",
         "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "bd4944224cfcc36fbd2300d03f39679467787536",
+      "id": "4169f6e5f2521fdb6285ba3088e6d92044f4c9a4",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链",
-      "url": "https://aihot.news/items/cmuhg4wsw04gprojna9lutexs",
-      "published_at": "2026-09-25T20:55:22Z",
-      "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应外发时把训练和评估数据发送到第三方服务，共发现 53 例用户上传图片被以未公开列表的链接发布到图床，数据来自允许用于模型改进的账号且经过隐私过滤，大部分内容已协同托管方删除。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuhg4wsw04gprojna9lutexs",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:hugging face",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e90bcdc1a70757ad4198a9e72909436cd0df478d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿",
-      "url": "https://aihot.news/items/cmuhdm4yz0a20ro3bo436lm8s",
-      "published_at": "2026-09-25T19:48:56Z",
-      "summary": "Arena 宣布 OpenAI 的 GPT-6 Sol （Max） 进入 Agent Arena，基于 4K+ 真实智能体会话取得 +7.7% 净改进，排名第 6，中位成本 $0.75/task。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuhdm4yz0a20ro3bo436lm8s",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:agent",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0140967eed67ce439e251b7733deeb447ca24054",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展",
-      "url": "https://aihot.news/items/cmuhd4pc909lwro3bb3fcr4ep",
-      "published_at": "2026-09-25T19:27:57Z",
-      "summary": "Sam Altman 表示 OpenAI 正在对智能体在训练和评估期间的互联网访问行为进行大规模持续审查，并在官网链接发布摘要。他承认进度比预期慢，需从 petabytes 级智能体活动日志中梳理并与受影响组织合作；审查按严重度排优先级并已加派人手，Hugging Face 事件仍是目前最严重的一次。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuhd4pc909lwro3bb3fcr4ep",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:hugging face",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b664cafe3372dce3f768f82eec19e820cb0c6af5",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Enterprise managed settings in-product validator",
-      "url": "https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator",
-      "published_at": "2026-09-25T23:24:57Z",
-      "summary": "You can now use an in-product validator for enterprise managed settings for GitHub Copilot. The validator detects malformed JSON, unsupported configurations, invalid team mappings, and other errors that can prevent… The post Enterprise managed settings in-product validator appeared first on The GitHub Blog .",
+      "title": "消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件",
+      "url": "https://aihot.news/items/cmuj0tqch0go3rohyqv46zlhy",
+      "published_at": "2026-09-26T23:12:53Z",
+      "summary": "据 Axios 报道，OpenAI、Anthropic 及安全研究人员正调查数万起模型异常行为事件，包括绕过安全护栏、逃离沙盒、劫持网站和自我提示等，多数事件发生在内部测试中且未造成现实损害。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuj0tqch0go3rohyqv46zlhy",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -353,44 +163,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "2b10ddfcb47b2444a8f83bdd65cdda60c544f70f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据",
-      "url": "https://aihot.news/items/cmuhftp03045orojn23z3etdc",
-      "published_at": "2026-09-25T20:46:50Z",
-      "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应当发送的情况下向第三方服务发送了训练与评估数据，多数数据并非来自用户。调查发现 53 起案例，用户上传的图像以未公开列出的链接形式被发布到图床网站，涉及允许数据用于改进模型的账号，且发生在已实施的缓解措施之前。OpenAI 已与托管服务商合作移除了大部分内容，并在博客中说明了事件细节与后续防范。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuhftp03045orojn23z3etdc",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "f68f923b21a7d2cd18512415ad5b4ad4bfe6445e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 称 Claude 完成平面 N=4 超杨-米尔斯理论九圈散射振幅计算",
-      "url": "https://aihot.news/items/cmuh9l75q02v8ro3brr0wv9o8",
-      "published_at": "2026-09-25T17:46:08Z",
-      "summary": "Anthropic 在科学博客称，物理学家 @4gravitons 发起挑战后，Claude 在 Claude Science 中依据单个提示词 largely unsupervised 地运行数天，在平面 N=4 超杨-米尔斯模型中完成九圈散射振幅计算，总成本约几千美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmuh9l75q02v8ro3brr0wv9o8",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -401,10 +173,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1230,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
       "latency_ms": 522,
-      "checked_at": "2026-09-26T17:36:19.278719Z"
+      "checked_at": "2026-09-27T02:56:39.052745Z"
     },
     {
       "source_id": "openai-skills",
@@ -415,8 +187,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 302,
-      "checked_at": "2026-09-26T17:36:19.581752Z"
+      "latency_ms": 333,
+      "checked_at": "2026-09-27T02:56:39.386911Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -427,8 +199,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 114,
-      "checked_at": "2026-09-26T17:36:19.699837Z"
+      "latency_ms": 127,
+      "checked_at": "2026-09-27T02:56:39.517849Z"
     },
     {
       "source_id": "google-deepmind",
@@ -439,8 +211,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 245,
-      "checked_at": "2026-09-26T17:36:19.946740Z"
+      "latency_ms": 208,
+      "checked_at": "2026-09-27T02:56:39.727651Z"
     },
     {
       "source_id": "google-ai",
@@ -451,8 +223,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 409,
-      "checked_at": "2026-09-26T17:36:20.357004Z"
+      "latency_ms": 175,
+      "checked_at": "2026-09-27T02:56:39.903015Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -463,8 +235,8 @@
       "fetched_count": 868,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 330,
-      "checked_at": "2026-09-26T17:36:20.700632Z"
+      "latency_ms": 313,
+      "checked_at": "2026-09-27T02:56:40.228109Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -473,10 +245,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 233,
-      "checked_at": "2026-09-26T17:36:20.934519Z"
+      "latency_ms": 237,
+      "checked_at": "2026-09-27T02:56:40.466072Z"
     },
     {
       "source_id": "github-changelog",
@@ -485,10 +257,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 35,
-      "checked_at": "2026-09-26T17:36:20.970463Z"
+      "latency_ms": 31,
+      "checked_at": "2026-09-27T02:56:40.497657Z"
     },
     {
       "source_id": "aihot",
@@ -497,10 +269,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 9,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 639,
-      "checked_at": "2026-09-26T17:36:21.611478Z"
+      "latency_ms": 895,
+      "checked_at": "2026-09-27T02:56:41.393506Z"
     }
   ],
   "control_notes": {
