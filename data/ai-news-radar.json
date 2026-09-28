@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-28T14:18:20.187285Z",
+  "generated_at": "2026-09-28T16:51:58.954834Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 4,
   "groups": {
     "official": {
       "group": "official",
@@ -32,48 +32,28 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          5
+          3
         ]
       ],
       "top_keywords": [
-        [
-          "aggregate_noise",
-          5
-        ],
         [
           "anthropic",
           3
         ],
         [
-          "智能体",
+          "aggregate_noise",
           3
         ],
         [
+          "智能体",
+          2
+        ],
+        [
           "claude",
-          2
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "自动化",
-          1
-        ],
-        [
-          "API",
           1
         ],
         [
@@ -104,29 +84,6 @@
         "strong:agent",
         "strong:agents",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "afdbda914e375a64036adad916058ad58e30a3d3",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "NVIDIA 发布开源运行时 OpenShell，为 AI Agent 提供权限管控与安全沙箱",
-      "url": "https://aihot.news/items/q5uxhmt17ywcspz44neanmel7",
-      "published_at": "2026-09-27T16:00:00Z",
-      "summary": "NVIDIA 推出开源项目 NVIDIA OpenShell 0.1.0，这是一个用于定义和执行 AI Agent 访问权限的运行时。它通过沙箱执行、受控服务访问、凭证管理和形式化策略分析，在 Agent 工作负载外部强制实施权限控制。OpenShell 支持 Codex、Claude Code 等框架，允许团队在不重写 Agent 的情况下限制 API 操作、保护凭证并审查权限变更。Cadence、Slack 和 Gecko Robotics 等组织已在芯片设计、企业自动化和物理 AI 等领域采用该技术。 🔗 阅读原文 via AIHOT · https://aihot.news/items/q5uxhmt17ywcspz44neanmel7",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:codex",
-        "strong:agent",
-        "weak:api",
-        "weak:自动化",
-        "weak:API",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -188,25 +145,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "b9e511a02c9fba9664a75f8f15238548e0fa62d4",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "NVIDIA 发布开源智能体安全平台，提供芯片级持续监控与隔离",
-      "url": "https://aihot.news/items/s5on5dsnixevj7j9lfjemhz3o",
-      "published_at": "2026-09-27T16:00:00Z",
-      "summary": "NVIDIA 推出 NVIDIA Open Agent Safety Platform，包含开源运行时 OpenShell、硬件层 Sentry 及 DOCA 技术。该平台旨在通过内核级隔离、零信任环境和带外（out-of-band）监控来防止 AI 智能体行为漂移和越权。OpenShell 将操作指令转化为可验证策略，BlueField DPU 在模型路径上提供实时策略执行与身份治理，确保即使主机不可信时也能独立保护系统。 🔗 阅读原文 via AIHOT · https://aihot.news/items/s5on5dsnixevj7j9lfjemhz3o",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -219,8 +157,8 @@
       "fetched_count": 1230,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 460,
-      "checked_at": "2026-09-28T14:18:17.396136Z"
+      "latency_ms": 331,
+      "checked_at": "2026-09-28T16:51:56.408218Z"
     },
     {
       "source_id": "openai-skills",
@@ -231,8 +169,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 392,
-      "checked_at": "2026-09-28T14:18:17.789246Z"
+      "latency_ms": 252,
+      "checked_at": "2026-09-28T16:51:56.660622Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -243,8 +181,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 125,
-      "checked_at": "2026-09-28T14:18:17.917420Z"
+      "latency_ms": 77,
+      "checked_at": "2026-09-28T16:51:56.740415Z"
     },
     {
       "source_id": "google-deepmind",
@@ -255,8 +193,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 196,
-      "checked_at": "2026-09-28T14:18:18.115321Z"
+      "latency_ms": 186,
+      "checked_at": "2026-09-28T16:51:56.927838Z"
     },
     {
       "source_id": "google-ai",
@@ -267,8 +205,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 280,
-      "checked_at": "2026-09-28T14:18:18.396407Z"
+      "latency_ms": 169,
+      "checked_at": "2026-09-28T16:51:57.097082Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -279,8 +217,8 @@
       "fetched_count": 869,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 288,
-      "checked_at": "2026-09-28T14:18:18.694544Z"
+      "latency_ms": 263,
+      "checked_at": "2026-09-28T16:51:57.366934Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -291,8 +229,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 243,
-      "checked_at": "2026-09-28T14:18:18.938233Z"
+      "latency_ms": 293,
+      "checked_at": "2026-09-28T16:51:57.660342Z"
     },
     {
       "source_id": "github-changelog",
@@ -303,8 +241,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 36,
-      "checked_at": "2026-09-28T14:18:18.974426Z"
+      "latency_ms": 42,
+      "checked_at": "2026-09-28T16:51:57.703369Z"
     },
     {
       "source_id": "aihot",
@@ -313,10 +251,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 1203,
-      "checked_at": "2026-09-28T14:18:20.178374Z"
+      "latency_ms": 1244,
+      "checked_at": "2026-09-28T16:51:58.948496Z"
     }
   ],
   "control_notes": {
