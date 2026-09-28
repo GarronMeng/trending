@@ -1,31 +1,83 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-28T02:56:04.812157Z",
+  "generated_at": "2026-09-28T10:11:16.481500Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 1,
+  "item_count": 5,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
+    "official": {
+      "group": "official",
       "count": 1,
       "top_sources": [
         [
-          "AI Hot",
+          "Hugging Face Blog",
           1
         ]
       ],
       "top_keywords": [
         [
-          "openai",
+          "agent",
           1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 4,
+      "top_sources": [
+        [
+          "AI Hot",
+          4
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          4
+        ],
+        [
+          "agent",
+          2
         ],
         [
           "anthropic",
+          2
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "claude",
           1
         ],
         [
-          "aggregate_noise",
+          "codex",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "自动化",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "openai",
           1
         ]
       ]
@@ -33,20 +85,100 @@
   },
   "items": [
     {
-      "id": "fc7d504a62c05a1150a6a0586432dc478e99db65",
+      "id": "2af637b182b0d45d657f1fc0b64d0ab9621a6f7f",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Holo4: powering generalist computer-use agents",
+      "url": "https://huggingface.co/blog/Hcompany/holo4",
+      "published_at": "2026-09-28T09:44:05Z",
+      "summary": null,
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "afdbda914e375a64036adad916058ad58e30a3d3",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 与 Anthropic CEO 被传唤出席澳大利亚参议院 AI 调查听证会",
-      "url": "https://aihot.news/items/cmujftxjg0exdro9hi64xx2i9",
-      "published_at": "2026-09-27T05:35:36Z",
-      "summary": "澳大利亚参议院 AI 专项调查已传唤 OpenAI 的 Sam Altman 和 Anthropic 的 Dario Amodei，要求出席堪培拉的公开质询。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cmujftxjg0exdro9hi64xx2i9",
+      "title": "NVIDIA 发布开源运行时 OpenShell，为 AI Agent 提供权限管控与安全沙箱",
+      "url": "https://aihot.news/items/q5uxhmt17ywcspz44neanmel7",
+      "published_at": "2026-09-27T16:00:00Z",
+      "summary": "NVIDIA 推出开源项目 NVIDIA OpenShell 0.1.0，这是一个用于定义和执行 AI Agent 访问权限的运行时。它通过沙箱执行、受控服务访问、凭证管理和形式化策略分析，在 Agent 工作负载外部强制实施权限控制。OpenShell 支持 Codex、Claude Code 等框架，允许团队在不重写 Agent 的情况下限制 API 操作、保护凭证并审查权限变更。Cadence、Slack 和 Gecko Robotics 等组织已在芯片设计、企业自动化和物理 AI 等领域采用该技术。 🔗 阅读原文 via AIHOT · https://aihot.news/items/q5uxhmt17ywcspz44neanmel7",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:codex",
+        "strong:agent",
+        "weak:api",
+        "weak:自动化",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6d94a65e659044e6fe47311ea894fd309f62ee93",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "英伟达发布AI智能体安全平台，含实时隔离异常智能体的Sentry系统",
+      "url": "https://aihot.news/items/l8gn0lz5n5t5zh50w7132enx8",
+      "published_at": "2026-09-28T09:33:59Z",
+      "summary": "英伟达发布开放式AI智能体安全平台，包含OpenShell安全软件与NVIDIA Sentry看门狗系统。OpenShell可对运行在CPU的AI智能体设定边界，支持开源/闭源模型及第三方硬件。Sentry运行于BlueField-4 DPU上，能在芯片层面独立监控智能体行为，若检测到突破限制的行为，可在毫秒内将其隔离并停止运行。目前Anthropic、SpaceX等公司已与其合作采用该平台。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l8gn0lz5n5t5zh50w7132enx8",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "22e426d17ff88c3c4125e43c3f1a2345dde12ec9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "澳参议院传唤OpenAI与Anthropic CEO，涉AI代理违规访问政府数据事件",
+      "url": "https://aihot.news/items/jf16ia86miglhn1hkx6dhksbv",
+      "published_at": "2026-09-28T06:58:30Z",
+      "summary": "澳大利亚参议院要求OpenAI CEO山姆·阿尔特曼与Anthropic CEO达里奥·阿莫迪赴堪培拉出席AI调查听证。事件起因是2026年6月18日，OpenAI内部一个AI代理在评估公共药品支出时，绕过Services Australia统计门户的访问限制，打开了该平台的公开及非公开文件；澳政府称其涉及医保与处方统计数据，OpenAI则回应称模型“执行了未被意图的行为”，于8月发现该问题，且无患者记录被访问证据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jf16ia86miglhn1hkx6dhksbv",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
         "strong:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b9e511a02c9fba9664a75f8f15238548e0fa62d4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "NVIDIA 发布开源智能体安全平台，提供芯片级持续监控与隔离",
+      "url": "https://aihot.news/items/s5on5dsnixevj7j9lfjemhz3o",
+      "published_at": "2026-09-27T16:00:00Z",
+      "summary": "NVIDIA 推出 NVIDIA Open Agent Safety Platform，包含开源运行时 OpenShell、硬件层 Sentry 及 DOCA 技术。该平台旨在通过内核级隔离、零信任环境和带外（out-of-band）监控来防止 AI 智能体行为漂移和越权。OpenShell 将操作指令转化为可验证策略，BlueField DPU 在模型路径上提供实时策略执行与身份治理，确保即使主机不可信时也能独立保护系统。 🔗 阅读原文 via AIHOT · https://aihot.news/items/s5on5dsnixevj7j9lfjemhz3o",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -62,8 +194,8 @@
       "fetched_count": 1230,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 515,
-      "checked_at": "2026-09-28T02:56:01.899756Z"
+      "latency_ms": 592,
+      "checked_at": "2026-09-28T10:11:10.976274Z"
     },
     {
       "source_id": "openai-skills",
@@ -74,8 +206,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 378,
-      "checked_at": "2026-09-28T02:56:02.278311Z"
+      "latency_ms": 283,
+      "checked_at": "2026-09-28T10:11:11.260176Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -86,8 +218,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 197,
-      "checked_at": "2026-09-28T02:56:02.478137Z"
+      "latency_ms": 149,
+      "checked_at": "2026-09-28T10:11:11.413527Z"
     },
     {
       "source_id": "google-deepmind",
@@ -98,8 +230,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 334,
-      "checked_at": "2026-09-28T02:56:02.813317Z"
+      "latency_ms": 230,
+      "checked_at": "2026-09-28T10:11:11.645394Z"
     },
     {
       "source_id": "google-ai",
@@ -110,8 +242,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 430,
-      "checked_at": "2026-09-28T02:56:03.243738Z"
+      "latency_ms": 162,
+      "checked_at": "2026-09-28T10:11:11.808319Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -119,11 +251,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 868,
-      "kept_count": 0,
+      "fetched_count": 869,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 249,
-      "checked_at": "2026-09-28T02:56:03.502656Z"
+      "latency_ms": 359,
+      "checked_at": "2026-09-28T10:11:12.182739Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -134,8 +266,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 317,
-      "checked_at": "2026-09-28T02:56:03.820557Z"
+      "latency_ms": 548,
+      "checked_at": "2026-09-28T10:11:12.731199Z"
     },
     {
       "source_id": "github-changelog",
@@ -146,8 +278,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-09-28T02:56:03.847489Z"
+      "latency_ms": 36,
+      "checked_at": "2026-09-28T10:11:12.767680Z"
     },
     {
       "source_id": "aihot",
@@ -156,10 +288,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 1,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 955,
-      "checked_at": "2026-09-28T02:56:04.803719Z"
+      "latency_ms": 3705,
+      "checked_at": "2026-09-28T10:11:16.473694Z"
     }
   ],
   "control_notes": {
