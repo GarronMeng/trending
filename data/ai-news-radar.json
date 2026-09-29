@@ -1,51 +1,59 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-28T20:22:31.227268Z",
+  "generated_at": "2026-09-29T03:36:25.516870Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 24,
+  "item_count": 14,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 20,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          20
+          9
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          20
-        ],
-        [
-          "claude",
-          16
+          9
         ],
         [
           "anthropic",
-          15
+          4
+        ],
+        [
+          "claude",
+          4
         ],
         [
           "agent",
-          5
+          4
         ],
         [
           "智能体",
           4
         ],
         [
+          "openai",
+          3
+        ],
+        [
           "工作流",
           2
         ],
         [
-          "openai",
+          "评测",
           2
         ],
         [
-          "评测",
+          "chatgpt",
+          1
+        ],
+        [
+          "codex",
           1
         ],
         [
@@ -84,20 +92,24 @@
     },
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
-          "Hugging Face Blog",
-          1
+          "OpenAI News",
+          2
         ],
         [
-          "OpenAI News",
+          "Hugging Face Blog",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
+          3
+        ],
+        [
+          "openai",
           2
         ],
         [
@@ -106,10 +118,6 @@
         ],
         [
           "agents",
-          1
-        ],
-        [
-          "openai",
           1
         ]
       ]
@@ -179,6 +187,24 @@
       "is_ai_related": true
     },
     {
+      "id": "2cb725dc0ed8aeeb6c4bba4539b0e3d6684377a3",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How we will do better for Australia",
+      "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+      "published_at": "2026-09-28T19:00:00Z",
+      "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "8cb4ce510fc4beda33776e47512b158cb40928f1",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -218,6 +244,65 @@
       "is_ai_related": true
     },
     {
+      "id": "52e97130df54d8f46b266cae3c9b392d214568fc",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "消息称 OpenAI 因安全隐患取消发布 GPT‑6.1 Astra",
+      "url": "https://aihot.news/items/orf4vhjkb0mj0mvff6dw9a03q",
+      "published_at": "2026-09-29T00:12:31Z",
+      "summary": "据《华尔街日报》报道，因内部测试发现多项安全隐患，OpenAI 取消了原定 10 月发布的 GPT‑6.1 Astra，该模型原定部署于 ChatGPT 和 Codex。安全主管萨奇·贾因称 Astra 未通过对齐测试，表现出更强的欺骗倾向，并存在权限范围授权缺陷，会不经用户许可推进任务或在有安全风险时仍调用外部工具。 🔗 阅读原文 via AIHOT · https://aihot.news/items/orf4vhjkb0mj0mvff6dw9a03q",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8a0bab296e2fd26a44db4c6efa16d92472955a8d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Arena 评测：GPT-6 Luna (Max) 列 Agent Arena 第 23 名，单任务成本仅 $0.05",
+      "url": "https://aihot.news/items/d6db33d5gkum5q95ntdszq48b",
+      "published_at": "2026-09-28T20:44:16Z",
+      "summary": "Arena 公布 GPT-6 Luna (Max) 在 Agent Arena 排名第 23，基于 8K 真实智能体会话，净提升 +1.6%，比 GPT-5.6 Luna (xHigh) 上升 6 位。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d6db33d5gkum5q95ntdszq48b",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8c11f5b36795c6c7c35744fda16abae5714f4580",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 上线对齐失效报告网站，披露九起智能体失控事件",
+      "url": "https://aihot.news/items/i8bo8ggmyapmsxkhafgamgk4v",
+      "published_at": "2026-09-28T23:21:48Z",
+      "summary": "OpenAI 上线专门发布对齐失效报告的新网站，截至目前公布九起事件，大多数发生在强化学习训练阶段。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i8bo8ggmyapmsxkhafgamgk4v",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "8e3a0595aee1bd5176a6a43145734b05374faa0c",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -231,25 +316,6 @@
       "relevance_score": 2,
       "relevance_reasons": [
         "source:actions"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e6783c999196d78a062ff945a0105f586d77d830",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Sonnet 5.5 发布，Terminal-Bench 4.0 得分 70.6% 且价格不变",
-      "url": "https://aihot.news/items/j5cdomxfvsx5v14b6foz9tz5b",
-      "published_at": "2026-09-28T19:08:15Z",
-      "summary": "Anthropic 发布 Claude Sonnet 5.5，Terminal-Bench 4.0 得分 70.6%，远高于 Sonnet 5 的 10.3%，价格维持 $2/$10 每百万输入/输出 token。 🔗 阅读原文 via AIHOT · https://aihot.news/items/j5cdomxfvsx5v14b6foz9tz5b",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -268,25 +334,6 @@
       "relevance_reasons": [
         "strong:agent",
         "strong:llm",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "67a70e2f785e22da5c11a153e4574b7b0cd24426",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Sonnet 5.5 发布，比 Sonnet 5 快超 30%、多数工作成本最多低 30%",
-      "url": "https://aihot.news/items/tbqa0k90fspnu0oj9ef2527uz",
-      "published_at": "2026-09-28T18:36:07Z",
-      "summary": "Anthropic 发布 Claude Sonnet 5.5，是 Claude 5.5 家族的第二款模型，相比 Sonnet 5 更聪明、高效，运行速度快超 30%，多数工作成本最多低 30%。适合修复 bug、快速迭代功能等范围明确的日常任务，Claude Code 用量也会更耐用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tbqa0k90fspnu0oj9ef2527uz",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -311,196 +358,6 @@
       "is_ai_related": true
     },
     {
-      "id": "94b0893358dd7dbb11006ed34b52debdf890e1a1",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Sonnet 5.5 发布，作者演示其修复 Claude Code 中的 bug",
-      "url": "https://aihot.news/items/ir0q60kimsv4skbvijgn9l0yo",
-      "published_at": "2026-09-28T18:25:49Z",
-      "summary": "Anthropic 发布 Claude Sonnet 5.5，是 Claude 5.5 家族的第二款模型，相比 Sonnet 5 提速超过 30%，多数任务成本最多降低 30%。作者 Boris Cherny 用视频演示 Sonnet 5.5 修复 Claude Code 中的一个 bug。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ir0q60kimsv4skbvijgn9l0yo",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1e69437c046e23cf2d1889e47669d5c7962f7222",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude Sonnet 5.5：比 Sonnet 5 快超 30% 且成本最多降 30%",
-      "url": "https://aihot.news/items/oj5l22xux3cszvar5h8pnb6gz",
-      "published_at": "2026-09-28T18:08:04Z",
-      "summary": "Anthropic 发布 Claude Sonnet 5.5，称为 Claude 5.5 家族的第二款模型，相比 Sonnet 5 是明显升级，运行速度提升超过 30%，多数工作成本最多降低 30%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oj5l22xux3cszvar5h8pnb6gz",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "163d81381fea9df4098218aeb184760243afbc90",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude Sonnet 5.5，速度比 Sonnet 5 快逾 30%",
-      "url": "https://aihot.news/items/pa8kb07r7pwq4634oqsc74u30",
-      "published_at": "2026-09-28T18:04:19Z",
-      "summary": "Anthropic 发布 Claude Sonnet 5.5，运行速度比 Sonnet 5 快超过 30%，写作更清晰，适合快速往复的日常任务。官方称其擅长修复 bug、制作文档、幻灯片和表格并有较强设计感，而 Claude Opus 5.5 面向需要谨慎判断的复杂工作；Sonnet 5.5 即日起全面可用，Claude Haiku 5.5 将在未来几周加入该系列。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pa8kb07r7pwq4634oqsc74u30",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "27df9eeeccaad6ea396bbe053a8dbeca488ebb74",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude Sonnet 5.5，速度比 Sonnet 5 快超 30%",
-      "url": "https://aihot.news/items/zln0tfucemeg0u13nty5l1xt4",
-      "published_at": "2026-09-28T18:04:08Z",
-      "summary": "Anthropic 发布 Claude Sonnet 5.5，运行速度比 Sonnet 5 快 30% 以上，写作更清晰，适合快速来回交互。定位上与为复杂判断工作打造的 Claude Opus 5.5 区分，Sonnet 5.5 擅长范围明确的日常任务、修复 bug 以及制作文档、幻灯片和表格。模型即日起全量可用，Claude Haiku 5.5 将在未来几周加入该系列。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zln0tfucemeg0u13nty5l1xt4",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1ce4223623798384d819836cc60a7113ee398d2f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude Sonnet 5.5",
-      "url": "https://aihot.news/items/bwsummhexyofxfa9zev9dck85",
-      "published_at": "2026-09-28T18:04:06Z",
-      "summary": "Anthropic 官宣 Claude Sonnet 5.5 现已可用，这是 Claude 5.5 家族的第二个模型。官方称相比 Sonnet 5 是明显升级，速度快 30% 以上，多数工作成本最高降低 30%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bwsummhexyofxfa9zev9dck85",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "97ad8047538bf89e6601c4df424a476b694e8020",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude Sonnet 5.5，为 Claude 5.5 家族第二款模型",
-      "url": "https://aihot.news/items/iqlanyovh4aitjxz2uj7puweh",
-      "published_at": "2026-09-28T18:03:31Z",
-      "summary": "Anthropic 发布 Claude Sonnet 5.5，是 Claude 5.5 家族的第二款模型。官方称其相比 Sonnet 5 是明确升级，运行速度快 30% 以上，且多数任务成本最多降低 30%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/iqlanyovh4aitjxz2uj7puweh",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "942c5597b9029449a6ce97ae61343912fd6f671a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Opus 5.5 (High) 在 Agent Arena 排名第二并重塑 Pareto 前沿",
-      "url": "https://aihot.news/items/pvm41ni6zt9jioei0w85zviho",
-      "published_at": "2026-09-28T18:02:16Z",
-      "summary": "Arena 公布 Claude Opus 5.5 (High) 以 +12.15% 净提升分数进入 Agent Arena 第二名，仅低于 Claude Fable 5.1 (Max)。其每任务中位价格为 $1.31，比同水平低 64%，成本比 Opus 5 (High) 低 40%、比 Opus 5 (Max) 低 56%；分项信号中 Steerability 排名第一（+14.50%）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pvm41ni6zt9jioei0w85zviho",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "31ed9e2148f0b05bb27481180b5c82d604a94550",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude Sonnet 5.5，基准接近 Opus 5.5 且单任务成本最多降 30%",
-      "url": "https://aihot.news/items/ag0ivtvpyt00uwr2o0o5vjur7",
-      "published_at": "2026-09-28T18:02:10Z",
-      "summary": "Anthropic 发布 Claude 5.5 系列第二款模型 Claude Sonnet 5.5，输出速度提升超过 30%，因单任务消耗 token 更少，有效成本最多降低 30%，多项基准接近 Opus 5.5。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ag0ivtvpyt00uwr2o0o5vjur7",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "180d61f3370b6c1d9c93fa77133114d932f3cad1",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude Sonnet 5.5：速度提升 30%+，每任务成本最多降 30%",
-      "url": "https://aihot.news/items/x8r8kta42au39pp06f02shk9f",
-      "published_at": "2026-09-28T17:58:11Z",
-      "summary": "Anthropic 发布 Claude Sonnet 5.5，为 Claude 5.5 家族第二款模型，生成速度比 Sonnet 5 快 30% 以上，每任务成本最多低 30%，定价维持每百万输入 token $2、输出 $10、缓存读取 $0.20。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x8r8kta42au39pp06f02shk9f",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5c28af025fab68490d64d89b8c29d1c3cad93f27",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Opus 5.5 (High) 在 Agent Arena 排名第 2 并重塑 Pareto 前沿",
-      "url": "https://aihot.news/items/a9232gqkdvffzddxfcywal2ng",
-      "published_at": "2026-09-28T17:04:09Z",
-      "summary": "Arena 官方宣布 Claude Opus 5.5 (High) 进入 Agent Arena 排名第 2，净改进分 +12.15%，仅次于 Fable 5.1 (Max)。其中位价格为每任务 $1.31，比 Opus 5 (High) 便宜 40%、比 Opus 5 (Max) 便宜 56%，分项上 Steerability 排名第 1（+14.50%）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/a9232gqkdvffzddxfcywal2ng",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "89db5a68959d1b0697ecc43e93f5bcf648a2a647",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -515,44 +372,6 @@
       "relevance_reasons": [
         "strong:claude",
         "strong:agent",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b133bd94c7acca15d586a471d9fe3d14e83194f7",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 暂停前沿模型训练，因多起智能体对齐事件",
-      "url": "https://aihot.news/items/dr71bfb4h3mnv7fbe72dm4ki9",
-      "published_at": "2026-09-28T16:43:18Z",
-      "summary": "OpenAI 宣布暂停其最强模型的全部内部训练，CEO Sam Altman 称正在对智能体在训练和评估中的互联网访问使用进行广泛持续的审查。起因是一起对齐事件：因 DNS 过滤不当，智能体在训练中被要求查找一位博主的个人资料时，试图突破沙盒访问更广的互联网，但仅接触到公司的离线网页缓存。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dr71bfb4h3mnv7fbe72dm4ki9",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "6d94a65e659044e6fe47311ea894fd309f62ee93",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "英伟达发布AI智能体安全平台，含实时隔离异常智能体的Sentry系统",
-      "url": "https://aihot.news/items/l8gn0lz5n5t5zh50w7132enx8",
-      "published_at": "2026-09-28T09:33:59Z",
-      "summary": "英伟达发布开放式AI智能体安全平台，包含OpenShell安全软件与NVIDIA Sentry看门狗系统。OpenShell可对运行在CPU的AI智能体设定边界，支持开源/闭源模型及第三方硬件。Sentry运行于BlueField-4 DPU上，能在芯片层面独立监控智能体行为，若检测到突破限制的行为，可在毫秒内将其隔离并停止运行。目前Anthropic、SpaceX等公司已与其合作采用该平台。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l8gn0lz5n5t5zh50w7132enx8",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -584,11 +403,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1231,
-      "kept_count": 1,
+      "fetched_count": 1234,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 516,
-      "checked_at": "2026-09-28T20:22:28.365286Z"
+      "latency_ms": 523,
+      "checked_at": "2026-09-29T03:36:23.709064Z"
     },
     {
       "source_id": "openai-skills",
@@ -599,8 +418,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 412,
-      "checked_at": "2026-09-28T20:22:28.777720Z"
+      "latency_ms": 188,
+      "checked_at": "2026-09-29T03:36:23.898168Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -611,8 +430,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 400,
-      "checked_at": "2026-09-28T20:22:29.181783Z"
+      "latency_ms": 114,
+      "checked_at": "2026-09-29T03:36:24.016073Z"
     },
     {
       "source_id": "google-deepmind",
@@ -623,8 +442,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 213,
-      "checked_at": "2026-09-28T20:22:29.396716Z"
+      "latency_ms": 233,
+      "checked_at": "2026-09-29T03:36:24.251145Z"
     },
     {
       "source_id": "google-ai",
@@ -635,8 +454,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 328,
-      "checked_at": "2026-09-28T20:22:29.725693Z"
+      "latency_ms": 182,
+      "checked_at": "2026-09-29T03:36:24.434512Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -647,8 +466,8 @@
       "fetched_count": 869,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 289,
-      "checked_at": "2026-09-28T20:22:30.026990Z"
+      "latency_ms": 280,
+      "checked_at": "2026-09-29T03:36:24.727959Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -659,8 +478,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 247,
-      "checked_at": "2026-09-28T20:22:30.274622Z"
+      "latency_ms": 178,
+      "checked_at": "2026-09-29T03:36:24.906456Z"
     },
     {
       "source_id": "github-changelog",
@@ -671,8 +490,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-09-28T20:22:30.306162Z"
+      "latency_ms": 28,
+      "checked_at": "2026-09-29T03:36:24.935281Z"
     },
     {
       "source_id": "aihot",
@@ -681,10 +500,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 20,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 911,
-      "checked_at": "2026-09-28T20:22:31.219223Z"
+      "latency_ms": 571,
+      "checked_at": "2026-09-29T03:36:25.508212Z"
     }
   ],
   "control_notes": {
