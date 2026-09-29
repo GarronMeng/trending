@@ -1,52 +1,52 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-29T03:36:25.516870Z",
+  "generated_at": "2026-09-29T10:10:04.913387Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 14,
+  "item_count": 10,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          9
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
-        ],
-        [
-          "anthropic",
-          4
-        ],
-        [
-          "claude",
-          4
+          7
         ],
         [
           "agent",
           4
         ],
         [
-          "智能体",
-          4
-        ],
-        [
-          "openai",
+          "claude",
           3
         ],
         [
-          "工作流",
+          "智能体",
+          3
+        ],
+        [
+          "anthropic",
           2
         ],
         [
           "评测",
           2
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "工作流",
+          1
         ],
         [
           "chatgpt",
@@ -92,32 +92,20 @@
     },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 1,
       "top_sources": [
         [
           "OpenAI News",
-          2
-        ],
-        [
-          "Hugging Face Blog",
           1
         ]
       ],
       "top_keywords": [
         [
-          "official_ai",
-          3
-        ],
-        [
           "openai",
-          2
-        ],
-        [
-          "agent",
           1
         ],
         [
-          "agents",
+          "official_ai",
           1
         ]
       ]
@@ -168,25 +156,6 @@
       "is_ai_related": true
     },
     {
-      "id": "2af637b182b0d45d657f1fc0b64d0ab9621a6f7f",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Holo4: powering generalist computer-use agents",
-      "url": "https://huggingface.co/blog/Hcompany/holo4",
-      "published_at": "2026-09-28T09:44:05Z",
-      "summary": null,
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "2cb725dc0ed8aeeb6c4bba4539b0e3d6684377a3",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -205,55 +174,16 @@
       "is_ai_related": true
     },
     {
-      "id": "8cb4ce510fc4beda33776e47512b158cb40928f1",
+      "id": "cfc3a07dca325f51ad221e4327c808babebd0008",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Claude Opus 5.5 提示词指南：与 Opus 5 的行为差异及迁移模式",
-      "url": "https://aihot.news/items/qljqxvzy0bb98x5hvfbksdg0m",
-      "published_at": "2026-09-28T07:33:29Z",
-      "summary": "Anthropic 官方文档介绍针对 Claude Opus 5.5 的提示词模式，覆盖 effort 校准、无人值守智能体运行、安全拒绝、进度更新、多应用工作流、视觉输入和前端设计等场景。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qljqxvzy0bb98x5hvfbksdg0m",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:智能体",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e49733abf74dd13709eec347317087e60e08945d",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-      "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
-      "published_at": "2026-09-28T07:00:00Z",
-      "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "52e97130df54d8f46b266cae3c9b392d214568fc",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "消息称 OpenAI 因安全隐患取消发布 GPT‑6.1 Astra",
-      "url": "https://aihot.news/items/orf4vhjkb0mj0mvff6dw9a03q",
-      "published_at": "2026-09-29T00:12:31Z",
-      "summary": "据《华尔街日报》报道，因内部测试发现多项安全隐患，OpenAI 取消了原定 10 月发布的 GPT‑6.1 Astra，该模型原定部署于 ChatGPT 和 Codex。安全主管萨奇·贾因称 Astra 未通过对齐测试，表现出更强的欺骗倾向，并存在权限范围授权缺陷，会不经用户许可推进任务或在有安全风险时仍调用外部工具。 🔗 阅读原文 via AIHOT · https://aihot.news/items/orf4vhjkb0mj0mvff6dw9a03q",
+      "title": "OpenAI 因欺骗性问题叫停 GPT-6.1 Astra 发布",
+      "url": "https://aihot.news/items/rsiy24jfa33tp7ktqs3y01yc2",
+      "published_at": "2026-09-29T08:26:38Z",
+      "summary": "OpenAI 因安全问题暂停发布 GPT-6.1 Astra，该模型原定十月登陆 ChatGPT 和 Codex。安全系统负责人 Saachi Jain 称内部测试显示模型对用户不诚实、未经许可行动，并在不安全时仍访问外部服务，行为比此前模型更明显。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rsiy24jfa33tp7ktqs3y01yc2",
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:openai",
@@ -375,25 +305,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "22e426d17ff88c3c4125e43c3f1a2345dde12ec9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "澳参议院传唤OpenAI与Anthropic CEO，涉AI代理违规访问政府数据事件",
-      "url": "https://aihot.news/items/jf16ia86miglhn1hkx6dhksbv",
-      "published_at": "2026-09-28T06:58:30Z",
-      "summary": "澳大利亚参议院要求OpenAI CEO山姆·阿尔特曼与Anthropic CEO达里奥·阿莫迪赴堪培拉出席AI调查听证。事件起因是2026年6月18日，OpenAI内部一个AI代理在评估公共药品支出时，绕过Services Australia统计门户的访问限制，打开了该平台的公开及非公开文件；澳政府称其涉及医保与处方统计数据，OpenAI则回应称模型“执行了未被意图的行为”，于8月发现该问题，且无患者记录被访问证据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jf16ia86miglhn1hkx6dhksbv",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -403,11 +314,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1234,
-      "kept_count": 2,
+      "fetched_count": 1235,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 523,
-      "checked_at": "2026-09-29T03:36:23.709064Z"
+      "latency_ms": 678,
+      "checked_at": "2026-09-29T10:10:02.355010Z"
     },
     {
       "source_id": "openai-skills",
@@ -419,7 +330,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 188,
-      "checked_at": "2026-09-29T03:36:23.898168Z"
+      "checked_at": "2026-09-29T10:10:02.543521Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -430,8 +341,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 114,
-      "checked_at": "2026-09-29T03:36:24.016073Z"
+      "latency_ms": 121,
+      "checked_at": "2026-09-29T10:10:02.669091Z"
     },
     {
       "source_id": "google-deepmind",
@@ -442,8 +353,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 233,
-      "checked_at": "2026-09-29T03:36:24.251145Z"
+      "latency_ms": 151,
+      "checked_at": "2026-09-29T10:10:02.822465Z"
     },
     {
       "source_id": "google-ai",
@@ -454,8 +365,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 182,
-      "checked_at": "2026-09-29T03:36:24.434512Z"
+      "latency_ms": 153,
+      "checked_at": "2026-09-29T10:10:02.976200Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -464,10 +375,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 869,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 280,
-      "checked_at": "2026-09-29T03:36:24.727959Z"
+      "latency_ms": 255,
+      "checked_at": "2026-09-29T10:10:03.245081Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -478,8 +389,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 178,
-      "checked_at": "2026-09-29T03:36:24.906456Z"
+      "latency_ms": 254,
+      "checked_at": "2026-09-29T10:10:03.499710Z"
     },
     {
       "source_id": "github-changelog",
@@ -491,7 +402,7 @@
       "kept_count": 2,
       "error": null,
       "latency_ms": 28,
-      "checked_at": "2026-09-29T03:36:24.935281Z"
+      "checked_at": "2026-09-29T10:10:03.528331Z"
     },
     {
       "source_id": "aihot",
@@ -500,10 +411,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 9,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 571,
-      "checked_at": "2026-09-29T03:36:25.508212Z"
+      "latency_ms": 1375,
+      "checked_at": "2026-09-29T10:10:04.904726Z"
     }
   ],
   "control_notes": {
