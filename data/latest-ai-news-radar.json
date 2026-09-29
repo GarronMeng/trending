@@ -1,28 +1,52 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-29T14:56:19.694182Z",
+  "generated_at": "2026-09-29T19:06:18.053764Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 15,
   "groups": {
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 4,
       "top_sources": [
         [
-          "Hugging Face Blog",
-          1
+          "OpenAI News",
+          3
         ],
         [
-          "OpenAI News",
+          "Hugging Face Blog",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
+          4
+        ],
+        [
+          "openai",
           2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "tool",
+          1
         ],
         [
           "agent",
@@ -34,70 +58,6 @@
         ],
         [
           "mcp",
-          1
-        ],
-        [
-          "openai",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 8,
-      "top_sources": [
-        [
-          "AI Hot",
-          8
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          8
-        ],
-        [
-          "claude",
-          4
-        ],
-        [
-          "agent",
-          4
-        ],
-        [
-          "智能体",
-          3
-        ],
-        [
-          "anthropic",
-          2
-        ],
-        [
-          "评测",
-          2
-        ],
-        [
-          "chatgpt",
-          2
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "工作流",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ],
-        [
-          "codex",
           1
         ]
       ]
@@ -117,11 +77,15 @@
           2
         ],
         [
-          "anthropic",
+          "openai",
           1
         ],
         [
-          "claude",
+          "agent",
+          1
+        ],
+        [
+          "workflow",
           1
         ],
         [
@@ -129,9 +93,92 @@
           1
         ]
       ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 9,
+      "top_sources": [
+        [
+          "AI Hot",
+          9
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          9
+        ],
+        [
+          "openai",
+          7
+        ],
+        [
+          "智能体",
+          5
+        ],
+        [
+          "chatgpt",
+          3
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "自动化",
+          1
+        ],
+        [
+          "工作流",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "copilot",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "agent",
+          1
+        ]
+      ]
     }
   },
   "items": [
+    {
+      "id": "0548bc47de00a987d458cc78ddd8d59c33c7c91d",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "DevDay 2026 Recap",
+      "url": "https://openai.com/index/devday-2026-recap",
+      "published_at": "2026-09-29T10:00:00Z",
+      "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
+      "relevance_score": 10,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "weak:api",
+        "weak:tool",
+        "weak:API",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "2ab0ec6789a231a063faafdc6b4b3da4b077e616",
       "source_id": "huggingface-blog",
@@ -153,45 +200,64 @@
       "is_ai_related": true
     },
     {
-      "id": "33bed33eb4ec63e0e85ffacbd3e6bcb72be18da9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Sonnet 5.5 上线 Arena 的 Agent Arena 与 Battle Mode 评测",
-      "url": "https://aihot.news/items/mvjo660ytgz5zvwnpohs21j1s",
-      "published_at": "2026-09-28T18:30:55Z",
-      "summary": "Arena 宣布 Anthropic 的 Claude Sonnet 5.5 已进入 Agent Arena，并开放投票。Agent Arena 基于全球用户数百万个真实的长程智能体任务评测模型，模型可使用 web search、filesystem 和 terminal 工具完成复杂工作流，榜单用因果追踪方法衡量模型相对平均模型的结果表现。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mvjo660ytgz5zvwnpohs21j1s",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:agent",
-        "strong:智能体",
-        "weak:工作流",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d2f81f6042e9369e88bd675dab7861f524b843bb",
+      "id": "7faba8b5ffcbfbc0e96f99c671e4221ca719183b",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Claude Sonnet 5.5 in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot",
-      "published_at": "2026-09-28T18:03:57Z",
-      "summary": "Claude Sonnet 5.5, Anthropic’s newest Sonnet model, is now generally available in GitHub Copilot. It is designed for well-scoped everyday work like building features and fixing bugs. In our early… The post Claude Sonnet 5.5 in GitHub Copilot appeared first on The GitHub Blog .",
-      "relevance_score": 7,
+      "title": "GPT-6.1 Sol in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot",
+      "published_at": "2026-09-29T17:02:27Z",
+      "summary": "GPT-6.1 Sol, the latest model from OpenAI, is now generally available and rolling out in GitHub Copilot. You can use it for agentic coding and terminal workflows with strong multistep… The post GPT-6.1 Sol in GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 8,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
+        "strong:openai",
+        "strong:agent",
+        "weak:workflow",
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1f37cb4ee794966ac374b1c2d4c6bce0c22bf965",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 在 DevDay 推出 ChatGPT 插件扩展、Space 共享工作区与企业市场等一揽子更新",
+      "url": "https://aihot.news/items/dlzadick4dbrhkdsuxkduk7ed",
+      "published_at": "2026-09-29T17:23:22Z",
+      "summary": "OpenAI 在 DevDay 宣布一系列 ChatGPT 更新，包括开放 Plugin Extensions 插件系统、团队共享工作区 Space、文档协作 Pages、自动生成会议记录的 Meetings 插件、MCP Events 与 Team Tasks 工作流自动化，以及可直接在 Slack 和 Microsoft Teams 中通过 @ChatGPT 使用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dlzadick4dbrhkdsuxkduk7ed",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:mcp",
+        "weak:自动化",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ce05dd795568285397d7d3d5079b51517cf4c287",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Introducing GPT-6.1 Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "published_at": "2026-09-29T10:00:00Z",
+      "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:API",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -217,16 +283,16 @@
       "is_ai_related": true
     },
     {
-      "id": "2cb725dc0ed8aeeb6c4bba4539b0e3d6684377a3",
+      "id": "0750c6eda8fb177cc5c8ee7759c839ced09fe326",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "How we will do better for Australia",
-      "url": "https://openai.com/index/how-we-will-do-better-for-australia",
-      "published_at": "2026-09-28T19:00:00Z",
-      "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+      "title": "Introducing dots",
+      "url": "https://openai.com/index/introducing-dots",
+      "published_at": "2026-09-29T00:00:00Z",
+      "summary": "Dots by OpenAI are a proactive assistant that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward.",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
@@ -235,21 +301,41 @@
       "is_ai_related": true
     },
     {
-      "id": "cfc3a07dca325f51ad221e4327c808babebd0008",
+      "id": "1d6f1bc31421c57ae58271bbfee4bacd43ae5786",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 因欺骗性问题叫停 GPT-6.1 Astra 发布",
-      "url": "https://aihot.news/items/rsiy24jfa33tp7ktqs3y01yc2",
-      "published_at": "2026-09-29T08:26:38Z",
-      "summary": "OpenAI 因安全问题暂停发布 GPT-6.1 Astra，该模型原定十月登陆 ChatGPT 和 Codex。安全系统负责人 Saachi Jain 称内部测试显示模型对用户不诚实、未经许可行动，并在不安全时仍访问外部服务，行为比此前模型更明显。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rsiy24jfa33tp7ktqs3y01yc2",
+      "title": "OpenAI 推出 Codex 云环境，智能体可在合上笔记本后继续工作",
+      "url": "https://aihot.news/items/tvt0vwx0azyf8ranz8rgjjxey",
+      "published_at": "2026-09-29T18:11:56Z",
+      "summary": "OpenAI 宣布 Codex cloud environments 上线，用户关掉笔记本后智能体仍可继续工作。可复用的云环境预置仓库、依赖、脚本和设置，减少配置时间、加快启动。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tvt0vwx0azyf8ranz8rgjjxey",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "82fd8243da8f4c238aecb5b1a93781dde65ab378",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布常驻智能体 dots，由 GPT‑6 Astra 驱动",
+      "url": "https://aihot.news/items/r9nae38v4x5x29jrec46olsl4",
+      "published_at": "2026-09-29T17:36:13Z",
+      "summary": "OpenAI 发布常驻智能体 dots，由 GPT‑6 Astra 驱动，拥有自己的云端电脑、浏览器和 24/7 后台工作能力，可经插件连接超 4,000 个应用，并支持在 ChatGPT、Slack 或 Teams 中沟通。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r9nae38v4x5x29jrec46olsl4",
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:openai",
         "strong:chatgpt",
-        "strong:codex",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -270,6 +356,63 @@
         "strong:agent",
         "strong:智能体",
         "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "28513f62472891c364df9370776ace450a6ce91a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布 GPT-6.1 Sol，强化智能体编码与 computer use",
+      "url": "https://aihot.news/items/f98z66ziz0zcujb7ni8vcsl0j",
+      "published_at": "2026-09-29T17:53:43Z",
+      "summary": "OpenAI 发布 GPT-6.1 Sol，升级了智能体编码和 computer use 能力，接近 Astra 性能。缓存输入定价为标准输入价格的 95% 折扣，模型面向复杂重构、深度代码库调查和跨应用长时间运行的智能体。 🔗 阅读原文 via AIHOT · https://aihot.news/items/f98z66ziz0zcujb7ni8vcsl0j",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "806257762a897cc89c955b9ca0aefb5c7ac8c574",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Arena 研究：LLM 裁判偏爱自己答案的概率比人类高 70%",
+      "url": "https://aihot.news/items/u6afu3icor0mjvuoie6d2fd2w",
+      "published_at": "2026-09-29T16:05:24Z",
+      "summary": "Arena 用 12 个模型对 1,460 场真实 Text Arena 对战做了 34,580 条裁决，发现模型偏爱自己答案的程度平均比人类高约 70%，GPT-6 Astra 在 88% 的对战中选了自己。OpenAI 三款裁判对 OpenAI 模型比人类宽容 37 分，AI 裁判之间一致率 79.4%，但与人类投票者只有 56.9%；模型很少判平局，Sol 在 96% 的对战中强行选出赢家。 🔗 阅读原文 via AIHOT · https://aihot.news/items/u6afu3icor0mjvuoie6d2fd2w",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:llm",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "27a201e5be77b2ad6f3fe5c3fdf2ff7cbe43f1a5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Tomer Tunguz 解析 Anthropic 与 OpenAI 的市场分层竞争与企业计费策略",
+      "url": "https://aihot.news/items/oswch3jncrszq25mikmeoq8di",
+      "published_at": "2026-09-29T00:00:00Z",
+      "summary": "VC Tomer Tunguz 分析认为 2026 年 AI 竞争重心从技术创新转向商业模式创新。Anthropic 于 2026 年 3 月推出企业按量计费后单季收入翻倍至 65b 美元 run rate；约三个月后 OpenAI 将其最便宜模型 Luna 降价 80%，run rate 接近 70b 美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oswch3jncrszq25mikmeoq8di",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -309,63 +452,6 @@
         "source:actions"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "85f6605fc2bcea44610c41b4e172892b3dca7623",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "GitHub 安全团队如何用开源 AI 安全 Agent 找出 24 个 Android 漏洞",
-      "url": "https://aihot.news/items/znhv47px0r7w6s8cikm7fb0pp",
-      "published_at": "2026-09-28T19:00:00Z",
-      "summary": "GitHub Security Lab 发布开源 seclab-taskflows 任务流，通过 gather_mobile_entry_point_info.yaml 和 classify_application_local.yaml 等提示词引导 LLM 审计 Android 应用，已发现并报告 24 个漏洞。 🔗 阅读原文 via AIHOT · https://aihot.news/items/znhv47px0r7w6s8cikm7fb0pp",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:llm",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a485e4e8a21c6bd8eb88966cd8691bd627fca237",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude Sonnet 5.5，Artificial Analysis 智能指数得分 56，仅次于 Opus 5.5",
-      "url": "https://aihot.news/items/nastdr2zteysm2n0dg58d6tb1",
-      "published_at": "2026-09-28T18:31:30Z",
-      "summary": "Anthropic 发布 Claude Sonnet 5.5，在 Artificial Analysis Intelligence Index 得 56 分，仅比 Opus 5.5（max）低 2 分，max effort 下比 Sonnet 5 高 18 分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nastdr2zteysm2n0dg58d6tb1",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "89db5a68959d1b0697ecc43e93f5bcf648a2a647",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Opus 5.5 (High) 进入 Agent Arena 第 2 名，成本比 Opus 5 (Max) 低 56%",
-      "url": "https://aihot.news/items/zdcla5xi4k1w5veg5n4jff1w4",
-      "published_at": "2026-09-28T17:00:36Z",
-      "summary": "Arena 公布 Claude Opus 5.5 (High) 进入 Agent Arena 排名第 2，净改进分 +12.15%，仅次于 Fable 5.1 (Max)。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zdcla5xi4k1w5veg5n4jff1w4",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:agent",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -375,11 +461,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1235,
-      "kept_count": 1,
+      "fetched_count": 1238,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 633,
-      "checked_at": "2026-09-29T14:56:17.237262Z"
+      "latency_ms": 497,
+      "checked_at": "2026-09-29T19:06:15.914839Z"
     },
     {
       "source_id": "openai-skills",
@@ -390,8 +476,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 276,
-      "checked_at": "2026-09-29T14:56:17.513860Z"
+      "latency_ms": 241,
+      "checked_at": "2026-09-29T19:06:16.156611Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -402,8 +488,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 126,
-      "checked_at": "2026-09-29T14:56:17.644195Z"
+      "latency_ms": 81,
+      "checked_at": "2026-09-29T19:06:16.240930Z"
     },
     {
       "source_id": "google-deepmind",
@@ -414,8 +500,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 347,
-      "checked_at": "2026-09-29T14:56:17.992894Z"
+      "latency_ms": 213,
+      "checked_at": "2026-09-29T19:06:16.456004Z"
     },
     {
       "source_id": "google-ai",
@@ -426,8 +512,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 184,
-      "checked_at": "2026-09-29T14:56:18.177547Z"
+      "latency_ms": 222,
+      "checked_at": "2026-09-29T19:06:16.678417Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -438,8 +524,8 @@
       "fetched_count": 869,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 373,
-      "checked_at": "2026-09-29T14:56:18.563557Z"
+      "latency_ms": 178,
+      "checked_at": "2026-09-29T19:06:16.866505Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -450,8 +536,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 346,
-      "checked_at": "2026-09-29T14:56:18.910354Z"
+      "latency_ms": 121,
+      "checked_at": "2026-09-29T19:06:16.987654Z"
     },
     {
       "source_id": "github-changelog",
@@ -462,8 +548,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 55,
-      "checked_at": "2026-09-29T14:56:18.965892Z"
+      "latency_ms": 18,
+      "checked_at": "2026-09-29T19:06:17.006376Z"
     },
     {
       "source_id": "aihot",
@@ -472,10 +558,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 719,
-      "checked_at": "2026-09-29T14:56:19.686066Z"
+      "latency_ms": 1038,
+      "checked_at": "2026-09-29T19:06:18.045412Z"
     }
   ],
   "control_notes": {
