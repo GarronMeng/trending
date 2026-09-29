@@ -1,32 +1,68 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-29T10:10:04.913387Z",
+  "generated_at": "2026-09-29T13:12:05.436898Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 12,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "Hugging Face Blog",
+          1
+        ],
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "openai",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          7
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          8
+        ],
+        [
+          "claude",
+          4
         ],
         [
           "agent",
           4
-        ],
-        [
-          "claude",
-          3
         ],
         [
           "智能体",
@@ -41,6 +77,10 @@
           2
         ],
         [
+          "chatgpt",
+          2
+        ],
+        [
           "openai",
           2
         ],
@@ -49,15 +89,15 @@
           1
         ],
         [
-          "chatgpt",
+          "gemini",
+          1
+        ],
+        [
+          "copilot",
           1
         ],
         [
           "codex",
-          1
-        ],
-        [
-          "llm",
           1
         ]
       ]
@@ -89,29 +129,29 @@
           1
         ]
       ]
-    },
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "openai",
-          1
-        ],
-        [
-          "official_ai",
-          1
-        ]
-      ]
     }
   },
   "items": [
+    {
+      "id": "2ab0ec6789a231a063faafdc6b4b3da4b077e616",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "published_at": "2026-09-29T13:07:00Z",
+      "summary": null,
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "strong:mcp",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "33bed33eb4ec63e0e85ffacbd3e6bcb72be18da9",
       "source_id": "aihot",
@@ -152,6 +192,27 @@
         "strong:claude",
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4153be35a4f7b6176985e4a97f14a2301f3e652e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "IMDEA Networks 论文：九款对话式 AI 服务向第三方泄露对话标题、提示词与截图",
+      "url": "https://aihot.news/items/k8sujz02e95ov1206fwycu9ci",
+      "published_at": "2026-09-29T09:03:41Z",
+      "summary": "IMDEA Networks 等机构对 ChatGPT、Claude、Grok、DeepSeek、Gemini、Perplexity、Copilot、Mistral 和 Meta AI 九款对话式 AI 服务做了系统性隐私分析。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k8sujz02e95ov1206fwycu9ci",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:chatgpt",
+        "strong:gemini",
+        "weak:copilot",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -317,8 +378,8 @@
       "fetched_count": 1235,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 678,
-      "checked_at": "2026-09-29T10:10:02.355010Z"
+      "latency_ms": 538,
+      "checked_at": "2026-09-29T13:12:02.901902Z"
     },
     {
       "source_id": "openai-skills",
@@ -329,8 +390,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 188,
-      "checked_at": "2026-09-29T10:10:02.543521Z"
+      "latency_ms": 388,
+      "checked_at": "2026-09-29T13:12:03.291006Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -341,8 +402,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 121,
-      "checked_at": "2026-09-29T10:10:02.669091Z"
+      "latency_ms": 111,
+      "checked_at": "2026-09-29T13:12:03.405505Z"
     },
     {
       "source_id": "google-deepmind",
@@ -353,8 +414,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 151,
-      "checked_at": "2026-09-29T10:10:02.822465Z"
+      "latency_ms": 330,
+      "checked_at": "2026-09-29T13:12:03.736770Z"
     },
     {
       "source_id": "google-ai",
@@ -365,8 +426,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 153,
-      "checked_at": "2026-09-29T10:10:02.976200Z"
+      "latency_ms": 174,
+      "checked_at": "2026-09-29T13:12:03.911947Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -375,10 +436,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 869,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 255,
-      "checked_at": "2026-09-29T10:10:03.245081Z"
+      "latency_ms": 254,
+      "checked_at": "2026-09-29T13:12:04.175229Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -389,8 +450,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-09-29T10:10:03.499710Z"
+      "latency_ms": 170,
+      "checked_at": "2026-09-29T13:12:04.346070Z"
     },
     {
       "source_id": "github-changelog",
@@ -401,8 +462,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-09-29T10:10:03.528331Z"
+      "latency_ms": 26,
+      "checked_at": "2026-09-29T13:12:04.372780Z"
     },
     {
       "source_id": "aihot",
@@ -411,10 +472,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 1375,
-      "checked_at": "2026-09-29T10:10:04.904726Z"
+      "latency_ms": 1055,
+      "checked_at": "2026-09-29T13:12:05.428954Z"
     }
   ],
   "control_notes": {
