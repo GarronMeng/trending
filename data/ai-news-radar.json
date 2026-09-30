@@ -1,53 +1,21 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-30T03:22:39.737042Z",
+  "generated_at": "2026-09-30T10:01:06.537153Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 19,
+  "item_count": 14,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 1,
       "top_sources": [
-        [
-          "OpenAI News",
-          2
-        ],
         [
           "Hugging Face Blog",
           1
         ]
       ],
       "top_keywords": [
-        [
-          "official_ai",
-          3
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "tool",
-          1
-        ],
         [
           "agent",
           1
@@ -59,54 +27,58 @@
         [
           "mcp",
           1
+        ],
+        [
+          "official_ai",
+          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 15,
+      "count": 12,
       "top_sources": [
         [
           "AI Hot",
-          15
+          12
         ]
       ],
       "top_keywords": [
         [
-          "aggregate_noise",
-          15
+          "openai",
+          12
         ],
         [
-          "openai",
-          14
+          "aggregate_noise",
+          12
         ],
         [
           "chatgpt",
-          6
+          5
         ],
         [
           "agent",
-          5
-        ],
-        [
-          "智能体",
-          5
+          4
         ],
         [
           "codex",
           3
         ],
         [
-          "api",
+          "智能体",
           3
+        ],
+        [
+          "api",
+          2
         ],
         [
           "API",
-          3
+          2
         ],
         [
           "工作流",
-          3
+          2
         ],
         [
           "评测",
@@ -152,29 +124,6 @@
     }
   },
   "items": [
-    {
-      "id": "0548bc47de00a987d458cc78ddd8d59c33c7c91d",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "DevDay 2026 Recap",
-      "url": "https://openai.com/index/devday-2026-recap",
-      "published_at": "2026-09-29T10:00:00Z",
-      "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
-      "relevance_score": 10,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:codex",
-        "weak:api",
-        "weak:tool",
-        "weak:API",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "2ab0ec6789a231a063faafdc6b4b3da4b077e616",
       "source_id": "huggingface-blog",
@@ -261,29 +210,6 @@
       "is_ai_related": true
     },
     {
-      "id": "af39020e10cb28b7fcf9b11a644e652efc1dce1a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 发布 GPT-6.1 Sol，主打智能体编码与跨应用工作流",
-      "url": "https://aihot.news/items/jicijbyw83wnt5qj2uuxkbw1k",
-      "published_at": "2026-09-29T23:13:56Z",
-      "summary": "OpenAI 发布 GPT-6.1 Sol，称其在编码、computer use 和跨应用工作流中表现强劲，价格低于 GPT-6 Astra。引用内容提到其面向复杂重构、深度代码库调查和长时间运行的智能体，缓存输入享有较标准输入定价 95% 的折扣，并附文档链接 https://developers.openai.com/api/docs/models/gpt-6.1-sol。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jicijbyw83wnt5qj2uuxkbw1k",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "weak:api",
-        "weak:developer",
-        "weak:工作流",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "a4d5871e458114c2044772b3d143fd9ab85ec30b",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -349,46 +275,6 @@
       "is_ai_related": true
     },
     {
-      "id": "ce05dd795568285397d7d3d5079b51517cf4c287",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Introducing GPT-6.1 Sol",
-      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
-      "published_at": "2026-09-29T10:00:00Z",
-      "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:API",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "4153be35a4f7b6176985e4a97f14a2301f3e652e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "IMDEA Networks 论文：九款对话式 AI 服务向第三方泄露对话标题、提示词与截图",
-      "url": "https://aihot.news/items/k8sujz02e95ov1206fwycu9ci",
-      "published_at": "2026-09-29T09:03:41Z",
-      "summary": "IMDEA Networks 等机构对 ChatGPT、Claude、Grok、DeepSeek、Gemini、Perplexity、Copilot、Mistral 和 Meta AI 九款对话式 AI 服务做了系统性隐私分析。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k8sujz02e95ov1206fwycu9ci",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:chatgpt",
-        "strong:gemini",
-        "weak:copilot",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "b3fd66d7e210e508a3b71c2dba738c27ed7ffa44",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -425,26 +311,6 @@
         "strong:agent",
         "weak:api",
         "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "3a5272908ad2a099fcd977a7699a55d9b7356807",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新",
-      "url": "https://aihot.news/items/phuhohutcf75ktuyyfdzwug8z",
-      "published_at": "2026-09-29T10:00:00Z",
-      "summary": "OpenAI 在 DevDay 2026 上宣布超过 20 项公告，包括发布 GPT-6.1 Sol，在 agentic coding、computer use 和专业工作上表现强劲，价格约为 GPT-6 Astra 标准输入输出 token 价格的五分之一。 🔗 阅读原文 via AIHOT · https://aihot.news/items/phuhohutcf75ktuyyfdzwug8z",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:agent",
-        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -554,10 +420,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1238,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 563,
-      "checked_at": "2026-09-30T03:22:37.442938Z"
+      "latency_ms": 531,
+      "checked_at": "2026-09-30T10:01:02.442997Z"
     },
     {
       "source_id": "openai-skills",
@@ -568,8 +434,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 221,
-      "checked_at": "2026-09-30T03:22:37.664906Z"
+      "latency_ms": 307,
+      "checked_at": "2026-09-30T10:01:02.750449Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -580,8 +446,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 127,
-      "checked_at": "2026-09-30T03:22:37.796167Z"
+      "latency_ms": 112,
+      "checked_at": "2026-09-30T10:01:02.866828Z"
     },
     {
       "source_id": "google-deepmind",
@@ -592,8 +458,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 237,
-      "checked_at": "2026-09-30T03:22:38.035017Z"
+      "latency_ms": 177,
+      "checked_at": "2026-09-30T10:01:03.046279Z"
     },
     {
       "source_id": "google-ai",
@@ -604,8 +470,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 217,
-      "checked_at": "2026-09-30T03:22:38.252938Z"
+      "latency_ms": 280,
+      "checked_at": "2026-09-30T10:01:03.326874Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -616,8 +482,8 @@
       "fetched_count": 869,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 385,
-      "checked_at": "2026-09-30T03:22:38.651628Z"
+      "latency_ms": 315,
+      "checked_at": "2026-09-30T10:01:03.655871Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -628,8 +494,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 357,
-      "checked_at": "2026-09-30T03:22:39.008908Z"
+      "latency_ms": 198,
+      "checked_at": "2026-09-30T10:01:03.854444Z"
     },
     {
       "source_id": "github-changelog",
@@ -640,8 +506,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 51,
-      "checked_at": "2026-09-30T03:22:39.060975Z"
+      "latency_ms": 29,
+      "checked_at": "2026-09-30T10:01:03.884332Z"
     },
     {
       "source_id": "aihot",
@@ -650,10 +516,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 15,
+      "kept_count": 12,
       "error": null,
-      "latency_ms": 666,
-      "checked_at": "2026-09-30T03:22:39.729134Z"
+      "latency_ms": 2642,
+      "checked_at": "2026-09-30T10:01:06.528871Z"
     }
   ],
   "control_notes": {
