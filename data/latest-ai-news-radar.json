@@ -1,39 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-30T12:52:34.274838Z",
+  "generated_at": "2026-09-30T15:03:47.281466Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
   "item_count": 14,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "Hugging Face Blog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "official_ai",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
       "count": 12,
@@ -121,29 +93,29 @@
           1
         ]
       ]
+    },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "Hugging Face Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "eval",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
     }
   },
   "items": [
-    {
-      "id": "2ab0ec6789a231a063faafdc6b4b3da4b077e616",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
-      "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
-      "published_at": "2026-09-29T13:07:00Z",
-      "summary": null,
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "strong:mcp",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "8e6dd9c66b9efdacb5a69b23572879ed73791776",
       "source_id": "aihot",
@@ -271,6 +243,24 @@
         "strong:codex",
         "weak:开发者",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d95d3e4dd5cf5d376909c028913c2049c0e83659",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+      "url": "https://huggingface.co/blog/open-tts-leaderboard",
+      "published_at": "2026-09-30T00:00:00Z",
+      "summary": null,
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:eval",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -422,8 +412,8 @@
       "fetched_count": 1238,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 406,
-      "checked_at": "2026-09-30T12:52:31.591622Z"
+      "latency_ms": 461,
+      "checked_at": "2026-09-30T15:03:43.832514Z"
     },
     {
       "source_id": "openai-skills",
@@ -434,8 +424,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 389,
-      "checked_at": "2026-09-30T12:52:31.981149Z"
+      "latency_ms": 573,
+      "checked_at": "2026-09-30T15:03:44.405756Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -446,8 +436,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 121,
-      "checked_at": "2026-09-30T12:52:32.104990Z"
+      "latency_ms": 110,
+      "checked_at": "2026-09-30T15:03:44.520031Z"
     },
     {
       "source_id": "google-deepmind",
@@ -458,8 +448,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 372,
-      "checked_at": "2026-09-30T12:52:32.478727Z"
+      "latency_ms": 424,
+      "checked_at": "2026-09-30T15:03:44.946344Z"
     },
     {
       "source_id": "google-ai",
@@ -470,8 +460,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 237,
-      "checked_at": "2026-09-30T12:52:32.716340Z"
+      "latency_ms": 130,
+      "checked_at": "2026-09-30T15:03:45.077444Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -479,11 +469,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 869,
+      "fetched_count": 870,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-09-30T12:52:32.978376Z"
+      "latency_ms": 248,
+      "checked_at": "2026-09-30T15:03:45.338378Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -494,8 +484,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 187,
-      "checked_at": "2026-09-30T12:52:33.166486Z"
+      "latency_ms": 179,
+      "checked_at": "2026-09-30T15:03:45.517801Z"
     },
     {
       "source_id": "github-changelog",
@@ -506,8 +496,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 22,
-      "checked_at": "2026-09-30T12:52:33.189384Z"
+      "latency_ms": 24,
+      "checked_at": "2026-09-30T15:03:45.542918Z"
     },
     {
       "source_id": "aihot",
@@ -518,8 +508,8 @@
       "fetched_count": 50,
       "kept_count": 12,
       "error": null,
-      "latency_ms": 1076,
-      "checked_at": "2026-09-30T12:52:34.267319Z"
+      "latency_ms": 1727,
+      "checked_at": "2026-09-30T15:03:47.272214Z"
     }
   ],
   "control_notes": {
