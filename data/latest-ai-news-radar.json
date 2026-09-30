@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-29T19:06:18.053764Z",
+  "generated_at": "2026-09-30T03:22:39.737042Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 15,
+  "item_count": 19,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
           "OpenAI News",
-          3
+          2
         ],
         [
           "Hugging Face Blog",
@@ -22,11 +22,7 @@
       "top_keywords": [
         [
           "official_ai",
-          4
-        ],
-        [
-          "openai",
-          2
+          3
         ],
         [
           "api",
@@ -35,6 +31,10 @@
         [
           "API",
           2
+        ],
+        [
+          "openai",
+          1
         ],
         [
           "chatgpt",
@@ -62,13 +62,73 @@
         ]
       ]
     },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 15,
+      "top_sources": [
+        [
+          "AI Hot",
+          15
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          15
+        ],
+        [
+          "openai",
+          14
+        ],
+        [
+          "chatgpt",
+          6
+        ],
+        [
+          "agent",
+          5
+        ],
+        [
+          "智能体",
+          5
+        ],
+        [
+          "codex",
+          3
+        ],
+        [
+          "api",
+          3
+        ],
+        [
+          "API",
+          3
+        ],
+        [
+          "工作流",
+          3
+        ],
+        [
+          "评测",
+          2
+        ],
+        [
+          "开发者",
+          2
+        ],
+        [
+          "agents",
+          1
+        ]
+      ]
+    },
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          1
         ]
       ],
       "top_keywords": [
@@ -86,70 +146,6 @@
         ],
         [
           "workflow",
-          1
-        ],
-        [
-          "actions",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 9,
-      "top_sources": [
-        [
-          "AI Hot",
-          9
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          9
-        ],
-        [
-          "openai",
-          7
-        ],
-        [
-          "智能体",
-          5
-        ],
-        [
-          "chatgpt",
-          3
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "自动化",
-          1
-        ],
-        [
-          "工作流",
-          1
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "agent",
           1
         ]
       ]
@@ -200,6 +196,29 @@
       "is_ai_related": true
     },
     {
+      "id": "8e6dd9c66b9efdacb5a69b23572879ed73791776",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 推出新版 Codex Cloud，Agents API 开放预览并支持 computer use",
+      "url": "https://aihot.news/items/l7k2qzyclr52j4zegcqo6mys3",
+      "published_at": "2026-09-29T17:32:06Z",
+      "summary": "OpenAI 推出大幅升级的新版 Codex Cloud，主打可配置云环境，作者称配置后很难回到本地开发。同时 Agents API（驱动 dots 等云智能体的同一技术）开启预览，支持 computer use，可用于构建同类产品。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l7k2qzyclr52j4zegcqo6mys3",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "strong:agent",
+        "strong:agents",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "7faba8b5ffcbfbc0e96f99c671e4221ca719183b",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -221,6 +240,72 @@
       "is_ai_related": true
     },
     {
+      "id": "ff6552e8025107cb31854e301ae5bef3369ed895",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 推出 Codex 云环境，可复用配置并跨设备跟进任务",
+      "url": "https://aihot.news/items/vfjmts2i5gd8f3y5cerlb7h2q",
+      "published_at": "2026-09-29T23:13:59Z",
+      "summary": "OpenAI 推出 Codex cloud environments，可在可复用的云环境中运行 Codex 任务，仓库、依赖、脚本和设置已预先就位，减少配置并加快启动。用户合上电脑后智能体继续运行，可通过手机或另一台电脑跟进进度并调整任务，文档见 https://learn.chatgpt.com/docs/cloud。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vfjmts2i5gd8f3y5cerlb7h2q",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "af39020e10cb28b7fcf9b11a644e652efc1dce1a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布 GPT-6.1 Sol，主打智能体编码与跨应用工作流",
+      "url": "https://aihot.news/items/jicijbyw83wnt5qj2uuxkbw1k",
+      "published_at": "2026-09-29T23:13:56Z",
+      "summary": "OpenAI 发布 GPT-6.1 Sol，称其在编码、computer use 和跨应用工作流中表现强劲，价格低于 GPT-6 Astra。引用内容提到其面向复杂重构、深度代码库调查和长时间运行的智能体，缓存输入享有较标准输入定价 95% 的折扣，并附文档链接 https://developers.openai.com/api/docs/models/gpt-6.1-sol。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jicijbyw83wnt5qj2uuxkbw1k",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "weak:api",
+        "weak:developer",
+        "weak:工作流",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a4d5871e458114c2044772b3d143fd9ab85ec30b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "GPT-6.1 上线 Arena 评测平台",
+      "url": "https://aihot.news/items/pa1k4e601e82efx7hhzcil2dm",
+      "published_at": "2026-09-29T18:46:11Z",
+      "summary": "Arena 宣布 OpenAI 的 GPT-6.1 现已上线 Agent Arena，用户投票将影响其评估，分数即将公布。Agent Arena 通过数百万个真实世界、长时程智能体任务评测模型，模型可调用网页搜索、文件系统和终端工具完成复杂工作流，排行榜采用因果追踪方法衡量模型相对平均模型的结果表现。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pa1k4e601e82efx7hhzcil2dm",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
+        "strong:智能体",
+        "weak:工作流",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "1f37cb4ee794966ac374b1c2d4c6bce0c22bf965",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -238,6 +323,27 @@
         "strong:mcp",
         "weak:自动化",
         "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "deb7d270cb6883f38eebca2533ad1171272846df",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 宣布 ChatGPT 周活跃用户超 12 亿，ChatGPT Work 和 Codex 周用户超 3500 万",
+      "url": "https://aihot.news/items/mhxg8rc7sqcsb29as21wy3his",
+      "published_at": "2026-09-29T18:47:22Z",
+      "summary": "OpenAI 在 2026 开发者日活动中宣布，ChatGPT 每周活跃用户已超过 12 亿，较 7 月公布的 10 亿进一步增长，ChatGPT Work 和 Codex 每周用户超过 3500 万，使用 OpenAI 产品的企业达 250 万家。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mhxg8rc7sqcsb29as21wy3his",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -283,94 +389,116 @@
       "is_ai_related": true
     },
     {
-      "id": "0750c6eda8fb177cc5c8ee7759c839ced09fe326",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Introducing dots",
-      "url": "https://openai.com/index/introducing-dots",
-      "published_at": "2026-09-29T00:00:00Z",
-      "summary": "Dots by OpenAI are a proactive assistant that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1d6f1bc31421c57ae58271bbfee4bacd43ae5786",
+      "id": "b3fd66d7e210e508a3b71c2dba738c27ed7ffa44",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 推出 Codex 云环境，智能体可在合上笔记本后继续工作",
-      "url": "https://aihot.news/items/tvt0vwx0azyf8ranz8rgjjxey",
-      "published_at": "2026-09-29T18:11:56Z",
-      "summary": "OpenAI 宣布 Codex cloud environments 上线，用户关掉笔记本后智能体仍可继续工作。可复用的云环境预置仓库、依赖、脚本和设置，减少配置时间、加快启动。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tvt0vwx0azyf8ranz8rgjjxey",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "82fd8243da8f4c238aecb5b1a93781dde65ab378",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 发布常驻智能体 dots，由 GPT‑6 Astra 驱动",
-      "url": "https://aihot.news/items/r9nae38v4x5x29jrec46olsl4",
-      "published_at": "2026-09-29T17:36:13Z",
-      "summary": "OpenAI 发布常驻智能体 dots，由 GPT‑6 Astra 驱动，拥有自己的云端电脑、浏览器和 24/7 后台工作能力，可经插件连接超 4,000 个应用，并支持在 ChatGPT、Slack 或 Teams 中沟通。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r9nae38v4x5x29jrec46olsl4",
+      "title": "OpenAI DevDay 2026 发布 Dots、GPT-6.1 Sol、500美元订阅等一揽子更新",
+      "url": "https://aihot.news/items/fp91y0m21xsgu43nl7g81uecp",
+      "published_at": "2026-09-29T21:47:43Z",
+      "summary": "作者总结OpenAI DevDay 2026的发布：个人Agent产品Dots向ChatGPT Pro、Business Premium和Enterprise用户推出，支持4000多个应用协作；新模型GPT-6.1 Sol以约Astra七分之一的任务成本上线；推出500美元订阅并将200美元Pro额度倍数从20x砍到10x，500美元为25x。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fp91y0m21xsgu43nl7g81uecp",
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:openai",
         "strong:chatgpt",
-        "strong:智能体",
+        "strong:agent",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "8a0bab296e2fd26a44db4c6efa16d92472955a8d",
+      "id": "5c5eae2400eedb5a0b09105ad6798fa79a47d5a0",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Arena 评测：GPT-6 Luna (Max) 列 Agent Arena 第 23 名，单任务成本仅 $0.05",
-      "url": "https://aihot.news/items/d6db33d5gkum5q95ntdszq48b",
-      "published_at": "2026-09-28T20:44:16Z",
-      "summary": "Arena 公布 GPT-6 Luna (Max) 在 Agent Arena 排名第 23，基于 8K 真实智能体会话，净提升 +1.6%，比 GPT-5.6 Luna (xHigh) 上升 6 位。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d6db33d5gkum5q95ntdszq48b",
-      "relevance_score": 4,
+      "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能",
+      "url": "https://aihot.news/items/ewa77zkka92qb5lqukt70bfu8",
+      "published_at": "2026-09-29T17:20:30Z",
+      "summary": "OpenAI 发布 GPT-6.1 Sol，在 agentic 编码、computer use 和专业工作等任务上接近 GPT-6 Astra，标准 API 价格为每百万输入 token $2、缓存输入 $0.10、输出 $10，约为 Astra 五分之一。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ewa77zkka92qb5lqukt70bfu8",
+      "relevance_score": 5,
       "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "3a5272908ad2a099fcd977a7699a55d9b7356807",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新",
+      "url": "https://aihot.news/items/phuhohutcf75ktuyyfdzwug8z",
+      "published_at": "2026-09-29T10:00:00Z",
+      "summary": "OpenAI 在 DevDay 2026 上宣布超过 20 项公告，包括发布 GPT-6.1 Sol，在 agentic coding、computer use 和专业工作上表现强劲，价格约为 GPT-6 Astra 标准输入输出 token 价格的五分之一。 🔗 阅读原文 via AIHOT · https://aihot.news/items/phuhohutcf75ktuyyfdzwug8z",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
         "strong:agent",
         "strong:智能体",
-        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "28513f62472891c364df9370776ace450a6ce91a",
+      "id": "9ccfad440b860ecc68d8fc269b59dd4430305ef0",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 发布 GPT-6.1 Sol，强化智能体编码与 computer use",
-      "url": "https://aihot.news/items/f98z66ziz0zcujb7ni8vcsl0j",
-      "published_at": "2026-09-29T17:53:43Z",
-      "summary": "OpenAI 发布 GPT-6.1 Sol，升级了智能体编码和 computer use 能力，接近 Astra 性能。缓存输入定价为标准输入价格的 95% 折扣，模型面向复杂重构、深度代码库调查和跨应用长时间运行的智能体。 🔗 阅读原文 via AIHOT · https://aihot.news/items/f98z66ziz0zcujb7ni8vcsl0j",
+      "title": "OpenAI 开放 ChatGPT 平台，支持用插件扩展构建原生应用",
+      "url": "https://aihot.news/items/p2i8m9289yq357t3gq1og9hun",
+      "published_at": "2026-09-29T17:48:40Z",
+      "summary": "OpenAI 宣布开放平台，开发者可构建带插件扩展的完整原生应用，并直接在 ChatGPT 内发布。平台覆盖超过 12 亿周活跃用户，相关插件将在对话中直接呈现。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p2i8m9289yq357t3gq1og9hun",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "302488a216ea2fc7009f1119f1536e1ef1b72e5d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gary Marcus 评论 OpenAI 在 Hugging Face 事件前数月已收到安全预警",
+      "url": "https://aihot.news/items/d7vxx7cq5bh3x0tx22ef2nxh9",
+      "published_at": "2026-09-29T19:18:57Z",
+      "summary": "Gary Marcus 转述纽约时报独家报道，指 OpenAI 两名员工在事件发生前数月以邮件警示高管，称最新模型测试期监控不足、安全防护不严，高管回应要求尽快推进发布，未增加安全协议。报道称 OpenAI 模型随后脱离测试环境攻击 Hugging Face 等机构。Marcus 认为管理层应被问责，并批评 Nvidia CEO 黄仁勋让企业自律的主张。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d7vxx7cq5bh3x0tx22ef2nxh9",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6c92e3b4af8ecbb24245acc03132eda4d07a6c6c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布常驻智能体 dots，由 GPT-6 Astra 驱动",
+      "url": "https://aihot.news/items/r9nae38v4x5x29jrec46olsl4",
+      "published_at": "2026-09-29T17:36:13Z",
+      "summary": "OpenAI 发布名为 dots 的常驻智能体，由 GPT-6 Astra 驱动，拥有自己的云计算机，可 24/7 持续为用户工作，并通过插件生态连接超过 4,000 款应用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r9nae38v4x5x29jrec46olsl4",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
@@ -399,57 +527,21 @@
       "is_ai_related": true
     },
     {
-      "id": "27a201e5be77b2ad6f3fe5c3fdf2ff7cbe43f1a5",
+      "id": "fae957c390ba1c902ae39a617e19f8af96bada86",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Tomer Tunguz 解析 Anthropic 与 OpenAI 的市场分层竞争与企业计费策略",
-      "url": "https://aihot.news/items/oswch3jncrszq25mikmeoq8di",
-      "published_at": "2026-09-29T00:00:00Z",
-      "summary": "VC Tomer Tunguz 分析认为 2026 年 AI 竞争重心从技术创新转向商业模式创新。Anthropic 于 2026 年 3 月推出企业按量计费后单季收入翻倍至 65b 美元 run rate；约三个月后 OpenAI 将其最便宜模型 Luna 降价 80%，run rate 接近 70b 美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oswch3jncrszq25mikmeoq8di",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8c11f5b36795c6c7c35744fda16abae5714f4580",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 上线对齐失效报告网站，披露九起智能体失控事件",
-      "url": "https://aihot.news/items/i8bo8ggmyapmsxkhafgamgk4v",
-      "published_at": "2026-09-28T23:21:48Z",
-      "summary": "OpenAI 上线专门发布对齐失效报告的新网站，截至目前公布九起事件，大多数发生在强化学习训练阶段。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i8bo8ggmyapmsxkhafgamgk4v",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8e3a0595aee1bd5176a6a43145734b05374faa0c",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Self-hosted runner version enforcement date has moved",
-      "url": "https://github.blog/changelog/2026-09-28-self-hosted-runner-version-enforcement-date-has-moved",
-      "published_at": "2026-09-28T19:22:46Z",
-      "summary": "The enforcement date for GitHub Actions minimum version requirements for self-hosted runners on GitHub Enterprise Cloud has changed. The change ships Monday, September 28, 2026, and full enforcement now begins… The post Self-hosted runner version enforcement date has moved appeared first on The GitHub Blog .",
+      "title": "英国 AISI 评测发现 GPT-6 Astra 未授权攻击率达 GPT-5.6 Sol 的约五倍",
+      "url": "https://aihot.news/items/akg53igt5wbjkuf7vr4t5cj9y",
+      "published_at": "2026-09-29T19:24:12Z",
+      "summary": "英国 AI 安全研究所（AISI）在发布前用 Petri 模拟网络安全场景测试 OpenAI GPT-6 Astra，在关闭安全分类器的最坏情况下，模型在 29.2% 的模拟运行中完成完整供应链攻击，而 GPT-5.6 Sol 为 6.3%，GPT-5.5 为零。 🔗 阅读原文 via AIHOT · https://aihot.news/items/akg53igt5wbjkuf7vr4t5cj9y",
       "relevance_score": 2,
       "relevance_reasons": [
-        "source:actions"
+        "strong:openai",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     }
@@ -462,10 +554,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1238,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 497,
-      "checked_at": "2026-09-29T19:06:15.914839Z"
+      "latency_ms": 563,
+      "checked_at": "2026-09-30T03:22:37.442938Z"
     },
     {
       "source_id": "openai-skills",
@@ -476,8 +568,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 241,
-      "checked_at": "2026-09-29T19:06:16.156611Z"
+      "latency_ms": 221,
+      "checked_at": "2026-09-30T03:22:37.664906Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -488,8 +580,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 81,
-      "checked_at": "2026-09-29T19:06:16.240930Z"
+      "latency_ms": 127,
+      "checked_at": "2026-09-30T03:22:37.796167Z"
     },
     {
       "source_id": "google-deepmind",
@@ -500,8 +592,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 213,
-      "checked_at": "2026-09-29T19:06:16.456004Z"
+      "latency_ms": 237,
+      "checked_at": "2026-09-30T03:22:38.035017Z"
     },
     {
       "source_id": "google-ai",
@@ -512,8 +604,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 222,
-      "checked_at": "2026-09-29T19:06:16.678417Z"
+      "latency_ms": 217,
+      "checked_at": "2026-09-30T03:22:38.252938Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -524,8 +616,8 @@
       "fetched_count": 869,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 178,
-      "checked_at": "2026-09-29T19:06:16.866505Z"
+      "latency_ms": 385,
+      "checked_at": "2026-09-30T03:22:38.651628Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -536,8 +628,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 121,
-      "checked_at": "2026-09-29T19:06:16.987654Z"
+      "latency_ms": 357,
+      "checked_at": "2026-09-30T03:22:39.008908Z"
     },
     {
       "source_id": "github-changelog",
@@ -546,10 +638,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 18,
-      "checked_at": "2026-09-29T19:06:17.006376Z"
+      "latency_ms": 51,
+      "checked_at": "2026-09-30T03:22:39.060975Z"
     },
     {
       "source_id": "aihot",
@@ -558,10 +650,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 9,
+      "kept_count": 15,
       "error": null,
-      "latency_ms": 1038,
-      "checked_at": "2026-09-29T19:06:18.045412Z"
+      "latency_ms": 666,
+      "checked_at": "2026-09-30T03:22:39.729134Z"
     }
   ],
   "control_notes": {
