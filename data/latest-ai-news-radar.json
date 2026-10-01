@@ -1,15 +1,19 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-01T15:33:36.776612Z",
+  "generated_at": "2026-10-01T19:16:02.006598Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 12,
   "groups": {
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 2,
       "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ],
         [
           "Google DeepMind",
           1
@@ -17,22 +21,66 @@
       ],
       "top_keywords": [
         [
-          "gemini",
+          "official_ai",
+          2
+        ],
+        [
+          "openai",
           1
         ],
         [
-          "official_ai",
+          "chatgpt",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 3,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          3
+        ]
+      ],
+      "top_keywords": [
+        [
+          "actions",
+          2
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          7
+          6
         ],
         [
           "Anthropic News via Olshansk RSS",
@@ -42,26 +90,26 @@
       "top_keywords": [
         [
           "aggregate_noise",
-          8
-        ],
-        [
-          "openai",
-          3
+          7
         ],
         [
           "claude",
-          2
+          3
         ],
         [
           "gemini",
           2
         ],
         [
-          "deepmind",
-          1
+          "开发者",
+          2
         ],
         [
-          "开发者",
+          "llm",
+          2
+        ],
+        [
+          "deepmind",
           1
         ],
         [
@@ -73,49 +121,42 @@
           1
         ],
         [
-          "agent",
-          1
-        ],
-        [
           "智能体",
           1
         ],
         [
-          "anthropic",
+          "agent",
           1
         ],
         [
-          "llm",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "actions",
+          "eval",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "6e3c30ce0c85fc95e628f3b56ceee635372f57cc",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How Albertsons Companies is reimagining retail from the inside out",
+      "url": "https://openai.com/index/albertsons-reimagining-retail",
+      "published_at": "2026-10-01T16:00:00Z",
+      "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "weak:api",
+        "weak:API",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "b7c819aeda3fcb244bca94e2e1bbc5220b4dc76d",
       "source_id": "google-deepmind",
@@ -131,6 +172,24 @@
       "relevance_reasons": [
         "strong:gemini",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5bd4dd97dc0db24da8733e7fbbf16d9ed8167142",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Actions retention now covers checks, runs, and statuses",
+      "url": "https://github.blog/changelog/2026-10-01-actions-retention-now-covers-checks-runs-and-statuses",
+      "published_at": "2026-10-01T17:59:54Z",
+      "summary": "As previously announced, checks, workflow runs, and statuses are now governed by the same GitHub Actions retention setting that controls how long artifacts and logs are kept. These records are… The post Actions retention now covers checks, runs, and statuses appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:workflow",
+        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -228,6 +287,25 @@
       "is_ai_related": true
     },
     {
+      "id": "e129ecc9746e884ddf2063276ac85c3f53ebe3f5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "英国 AISI 加强安全措施后恢复大部分危险能力评估",
+      "url": "https://aihot.news/items/o2r7vlmpw9bg1k7rxb3ot6wzv",
+      "published_at": "2026-09-30T23:00:00Z",
+      "summary": "英国 AI Security Institute 宣布完成第一阶段安全加固工作，恢复大部分此前因智能体在 cyber 评估中越权接触真实系统而暂停的高危评估。措施包括禁用智能体评估的互联网访问、用 LLM 同步监控智能体的消息、工具调用和 CoT 以拦截可疑行为、改造评估设计并引入 NCSC 指导下的内部治理流程，还通过静态分析、动态分析和受控逃逸试验用 AI 测试自身安全。 🔗 阅读原文 via AIHOT · https://aihot.news/items/o2r7vlmpw9bg1k7rxb3ot6wzv",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:llm",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "3a3a43cf3200e96ff2e276a323eda585be088231",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -247,39 +325,20 @@
       "is_ai_related": true
     },
     {
-      "id": "76db140861ff6493885cd36f7503ebe3c754dba4",
+      "id": "52a6a14a223a8d69b60f3b242374551782290f3e",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Trump 推动二十余家科技公司签署自愿性 AI 安全协议",
-      "url": "https://aihot.news/items/huhcnz3mwim553m2t8c0jhh4b",
-      "published_at": "2026-09-30T18:47:01Z",
-      "summary": "约二十余家科技公司签署白宫超级智能协议，承诺实施独立安全审计、定期会商并制定共同安全标准，涵盖网络安全、生物安全和化学威胁等风险。协议无法律约束力，Trump 称其具有道德约束力。文章指出 OpenAI 近期多起事故源于今年 5 至 7 月开发中的一个未发布模型，其安全委员会有效性受到特拉华和加州总检察长调查，FTC 也就 AI 智能体潜在消费者损害发起调查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/huhcnz3mwim553m2t8c0jhh4b",
-      "relevance_score": 3,
+      "title": "Claude Code mods 入门教程：从零构建 Token Weather 上下文窗口预报插件",
+      "url": "https://aihot.news/items/sbvvdrkyjbtob4gp4iwwtyar1",
+      "published_at": "2026-10-01T12:00:00Z",
+      "summary": "这篇 Claude Code 官方开发者教程介绍 mods，即以 hooks 形式运行在插件内的 JavaScript 或 TypeScript 模块，可以观察、重写或拒绝事件，甚至绘制自定义 UI，需 Claude Code 2.1.287 或更高版本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sbvvdrkyjbtob4gp4iwwtyar1",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "fece89e462149ce842bb56063026417f2d305adf",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "FTC 以消费者保护为由对 OpenAI、Anthropic 等 AI 实验室启动全面调查",
-      "url": "https://aihot.news/items/nhob7mih29e0owj7ay28t7fvw",
-      "published_at": "2026-09-30T16:20:04Z",
-      "summary": "FTC 正以潜在消费者保护违规为由调查 OpenAI、Anthropic 等头部 AI 实验室，主席 Andrew Ferguson 计划通过具法律约束力的 Civil Investigative Demands 强制调取文件并质询高管，命令将在数周内发出，METR 也在审查范围之列。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nhob7mih29e0owj7ay28t7fvw",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
+        "strong:claude",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -302,25 +361,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "8e94f49ffc52d96b3ecff398e62aaa7882a4396b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "GPT-6.1 Sol (Max) 以 1759 分登上 Code Arena: WebDev 第 3 名",
-      "url": "https://aihot.news/items/t1wnqaj3xyl90ilvgy4poyc45",
-      "published_at": "2026-09-30T18:42:04Z",
-      "summary": "Arena 评测榜单显示，OpenAI 的 GPT-6.1 Sol (Max) 以 1759 分位列 Code Arena: WebDev 第 3 名，混合价格为 $8/MToken。相比 GPT-6 Sol (Max) 同价提升 70 分，排名上升 4 位，且在 Consumer Product 等所有类目均有提升。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t1wnqaj3xyl90ilvgy4poyc45",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -330,11 +370,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1240,
-      "kept_count": 0,
+      "fetched_count": 1242,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 561,
-      "checked_at": "2026-10-01T15:33:33.000848Z"
+      "latency_ms": 546,
+      "checked_at": "2026-10-01T19:15:59.347620Z"
     },
     {
       "source_id": "openai-skills",
@@ -345,8 +385,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 299,
-      "checked_at": "2026-10-01T15:33:33.301000Z"
+      "latency_ms": 434,
+      "checked_at": "2026-10-01T19:15:59.782469Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -357,8 +397,8 @@
       "fetched_count": 261,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 148,
-      "checked_at": "2026-10-01T15:33:33.453640Z"
+      "latency_ms": 98,
+      "checked_at": "2026-10-01T19:15:59.883702Z"
     },
     {
       "source_id": "google-deepmind",
@@ -369,8 +409,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 265,
-      "checked_at": "2026-10-01T15:33:33.721000Z"
+      "latency_ms": 164,
+      "checked_at": "2026-10-01T19:16:00.049375Z"
     },
     {
       "source_id": "google-ai",
@@ -381,8 +421,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 188,
-      "checked_at": "2026-10-01T15:33:33.909646Z"
+      "latency_ms": 209,
+      "checked_at": "2026-10-01T19:16:00.258773Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -393,8 +433,8 @@
       "fetched_count": 871,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 311,
-      "checked_at": "2026-10-01T15:33:34.233562Z"
+      "latency_ms": 244,
+      "checked_at": "2026-10-01T19:16:00.512526Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -405,8 +445,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 197,
-      "checked_at": "2026-10-01T15:33:34.431249Z"
+      "latency_ms": 188,
+      "checked_at": "2026-10-01T19:16:00.701054Z"
     },
     {
       "source_id": "github-changelog",
@@ -415,10 +455,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 21,
-      "checked_at": "2026-10-01T15:33:34.453263Z"
+      "latency_ms": 20,
+      "checked_at": "2026-10-01T19:16:00.722307Z"
     },
     {
       "source_id": "aihot",
@@ -427,10 +467,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 2314,
-      "checked_at": "2026-10-01T15:33:36.768392Z"
+      "latency_ms": 1276,
+      "checked_at": "2026-10-01T19:16:01.999193Z"
     }
   ],
   "control_notes": {
