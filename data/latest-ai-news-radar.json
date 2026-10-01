@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-01T13:42:55.169091Z",
+  "generated_at": "2026-10-01T15:33:36.776612Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -28,11 +28,11 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          8
+          7
         ],
         [
           "Anthropic News via Olshansk RSS",
@@ -42,22 +42,14 @@
       "top_keywords": [
         [
           "aggregate_noise",
-          9
-        ],
-        [
-          "claude",
-          3
+          8
         ],
         [
           "openai",
           3
         ],
         [
-          "anthropic",
-          2
-        ],
-        [
-          "agent",
+          "claude",
           2
         ],
         [
@@ -81,7 +73,15 @@
           1
         ],
         [
+          "agent",
+          1
+        ],
+        [
           "智能体",
+          1
+        ],
+        [
+          "anthropic",
           1
         ],
         [
@@ -92,17 +92,25 @@
     },
     "developer": {
       "group": "developer",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          1
+          2
         ]
       ],
       "top_keywords": [
         [
-          "copilot",
-          2
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "actions",
+          1
         ]
       ]
     }
@@ -123,26 +131,6 @@
       "relevance_reasons": [
         "strong:gemini",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "db06c1d23455540e5131ffb70f2e41fc0ce12d48",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Arena 开放限时测试 Claude Sonnet 5.5，Direct Mode 可用 48 小时",
-      "url": "https://aihot.news/items/d3byj8l8prs0dpe0j1ontvd96",
-      "published_at": "2026-09-30T14:58:15Z",
-      "summary": "Arena 宣布在 Direct Mode 限时开放 Anthropic 的 Claude Sonnet 5.5（High），截止 10 月 2 日上午 8 点（太平洋时间），之后仍可在 Battle 和 Agent Mode 使用。引用内容称 Claude Sonnet 5.5 是 Claude 5.5 系列第二款模型，比 Sonnet 5 快 30% 以上，多数工作成本最高降低 30%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d3byj8l8prs0dpe0j1ontvd96",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:agent",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -186,20 +174,37 @@
       "is_ai_related": true
     },
     {
-      "id": "162423696ea9b0bc4f7f89070c9a19471c420884",
+      "id": "920b6830ccb7886ecc859525a958e8db16ab99d6",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "HydraFusion in VS Code and the GitHub Copilot app",
-      "url": "https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app",
-      "published_at": "2026-09-30T14:31:19Z",
-      "summary": "The HydraFusion research preview is now available in Visual Studio Code and the GitHub Copilot app, expanding beyond Copilot CLI. HydraFusion appears in the model picker, but rather than being… The post HydraFusion in VS Code and the GitHub Copilot app appeared first on The GitHub Blog .",
-      "relevance_score": 3,
+      "title": "GitHub async merge API generally available",
+      "url": "https://github.blog/changelog/2026-10-01-github-async-merge-api-generally-available",
+      "published_at": "2026-10-01T14:00:51Z",
+      "summary": "You can now use the generally available GitHub async merge API to merge individual or stacked pull requests, add pull requests to a merge queue, or merge pull requests directly.… The post GitHub async merge API generally available appeared first on The GitHub Blog .",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "weak:api",
+        "weak:API"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e8b4b391a7571d3a793d2b909323b1ba61caf86b",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Actions Runner Controller release 0.15.0",
+      "url": "https://github.blog/changelog/2026-10-01-actions-runner-controller-release-0-15-0",
+      "published_at": "2026-10-01T13:01:31Z",
+      "summary": "GitHub Actions Runner Controller 0.15.0 includes reliability, scalability, and observability improvements for runner scale sets. These updates help you operate larger runner fleets with fewer disruptions during upgrades and Kubernetes… The post Actions Runner Controller release 0.15.0 appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -328,8 +333,8 @@
       "fetched_count": 1240,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 423,
-      "checked_at": "2026-10-01T13:42:51.492084Z"
+      "latency_ms": 561,
+      "checked_at": "2026-10-01T15:33:33.000848Z"
     },
     {
       "source_id": "openai-skills",
@@ -340,8 +345,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 295,
-      "checked_at": "2026-10-01T13:42:51.787482Z"
+      "latency_ms": 299,
+      "checked_at": "2026-10-01T15:33:33.301000Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -352,8 +357,8 @@
       "fetched_count": 261,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 182,
-      "checked_at": "2026-10-01T13:42:51.971491Z"
+      "latency_ms": 148,
+      "checked_at": "2026-10-01T15:33:33.453640Z"
     },
     {
       "source_id": "google-deepmind",
@@ -364,8 +369,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 234,
-      "checked_at": "2026-10-01T13:42:52.207181Z"
+      "latency_ms": 265,
+      "checked_at": "2026-10-01T15:33:33.721000Z"
     },
     {
       "source_id": "google-ai",
@@ -376,8 +381,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 217,
-      "checked_at": "2026-10-01T13:42:52.425064Z"
+      "latency_ms": 188,
+      "checked_at": "2026-10-01T15:33:33.909646Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -385,11 +390,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 870,
+      "fetched_count": 871,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 308,
-      "checked_at": "2026-10-01T13:42:52.740071Z"
+      "latency_ms": 311,
+      "checked_at": "2026-10-01T15:33:34.233562Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -400,8 +405,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 160,
-      "checked_at": "2026-10-01T13:42:52.901047Z"
+      "latency_ms": 197,
+      "checked_at": "2026-10-01T15:33:34.431249Z"
     },
     {
       "source_id": "github-changelog",
@@ -410,10 +415,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 19,
-      "checked_at": "2026-10-01T13:42:52.920676Z"
+      "latency_ms": 21,
+      "checked_at": "2026-10-01T15:33:34.453263Z"
     },
     {
       "source_id": "aihot",
@@ -422,10 +427,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 2241,
-      "checked_at": "2026-10-01T13:42:55.162593Z"
+      "latency_ms": 2314,
+      "checked_at": "2026-10-01T15:33:36.768392Z"
     }
   ],
   "control_notes": {
