@@ -1,52 +1,60 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-01T03:28:39.114195Z",
+  "generated_at": "2026-10-01T10:28:45.065885Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 13,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
-          "OpenAI News",
-          2
+          "Google DeepMind",
+          1
         ],
         [
-          "Google DeepMind",
+          "OpenAI News",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
-        ],
-        [
-          "openai",
           2
         ],
         [
           "gemini",
+          1
+        ],
+        [
+          "openai",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 10,
       "top_sources": [
         [
           "AI Hot",
-          8
+          9
+        ],
+        [
+          "Anthropic News via Olshansk RSS",
+          1
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          10
+        ],
+        [
+          "claude",
+          3
         ],
         [
           "agent",
@@ -69,10 +77,6 @@
           2
         ],
         [
-          "claude",
-          1
-        ],
-        [
           "agents",
           1
         ],
@@ -85,11 +89,11 @@
           1
         ],
         [
-          "llm",
+          "chatgpt",
           1
         ],
         [
-          "eval",
+          "mcp",
           1
         ]
       ]
@@ -149,24 +153,6 @@
       "is_ai_related": true
     },
     {
-      "id": "2dc9928d8675357195dfaf23a9bce004b76c62a8",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Helping small businesses put AI to work",
-      "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
-      "published_at": "2026-09-30T10:00:00Z",
-      "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "db06c1d23455540e5131ffb70f2e41fc0ce12d48",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -207,6 +193,25 @@
       "is_ai_related": true
     },
     {
+      "id": "2474e2fa6b569f346fbf5cf854278524673e8bfc",
+      "source_id": "anthropic-news-unofficial",
+      "source_name": "Anthropic News via Olshansk RSS",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 3,
+      "title": "Barclays scales Claude to upgrade operations and improve client experience",
+      "url": "https://www.anthropic.com/news/barclays-scales-claude",
+      "published_at": "2026-10-01T00:00:00Z",
+      "summary": "Barclays scales Claude to upgrade operations and improve client experience",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "source:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "ee6210d22de2bb87ca9f0aafd7132318a59e8d90",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -241,6 +246,25 @@
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7b3b906a527311fee780fd07e209762dcfa8bc94",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "ChatGPT 现可直接构建并部署 MCP 服务器",
+      "url": "https://aihot.news/items/ed0fkjtzo2sbnpzqlara60ghs",
+      "published_at": "2026-10-01T04:44:34Z",
+      "summary": "ChatGPT Sites 现在可以托管 MCP 服务器，用户可直接在 ChatGPT 中构建并部署 MCP 服务器，还能将其转为插件并安装到 web、移动端和桌面端。作者补充，可限制访问权限给指定的人，也可向全世界公开分享。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ed0fkjtzo2sbnpzqlara60ghs",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:mcp",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -348,10 +372,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1240,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 465,
-      "checked_at": "2026-10-01T03:28:36.311094Z"
+      "latency_ms": 418,
+      "checked_at": "2026-10-01T10:28:42.619683Z"
     },
     {
       "source_id": "openai-skills",
@@ -362,8 +386,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 241,
-      "checked_at": "2026-10-01T03:28:36.553066Z"
+      "latency_ms": 326,
+      "checked_at": "2026-10-01T10:28:42.946749Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -371,11 +395,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 260,
-      "kept_count": 0,
+      "fetched_count": 261,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 95,
-      "checked_at": "2026-10-01T03:28:36.652093Z"
+      "latency_ms": 98,
+      "checked_at": "2026-10-01T10:28:43.047852Z"
     },
     {
       "source_id": "google-deepmind",
@@ -386,8 +410,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 464,
-      "checked_at": "2026-10-01T03:28:37.118004Z"
+      "latency_ms": 247,
+      "checked_at": "2026-10-01T10:28:43.296691Z"
     },
     {
       "source_id": "google-ai",
@@ -398,8 +422,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 159,
-      "checked_at": "2026-10-01T03:28:37.278260Z"
+      "latency_ms": 190,
+      "checked_at": "2026-10-01T10:28:43.487799Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -410,8 +434,8 @@
       "fetched_count": 870,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 260,
-      "checked_at": "2026-10-01T03:28:37.551323Z"
+      "latency_ms": 242,
+      "checked_at": "2026-10-01T10:28:43.737601Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -422,8 +446,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 215,
-      "checked_at": "2026-10-01T03:28:37.767265Z"
+      "latency_ms": 160,
+      "checked_at": "2026-10-01T10:28:43.898032Z"
     },
     {
       "source_id": "github-changelog",
@@ -434,8 +458,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-10-01T03:28:37.791452Z"
+      "latency_ms": 22,
+      "checked_at": "2026-10-01T10:28:43.920485Z"
     },
     {
       "source_id": "aihot",
@@ -444,10 +468,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 1312,
-      "checked_at": "2026-10-01T03:28:39.105125Z"
+      "latency_ms": 1136,
+      "checked_at": "2026-10-01T10:28:45.057906Z"
     }
   ],
   "control_notes": {
