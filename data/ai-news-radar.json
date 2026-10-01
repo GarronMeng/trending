@@ -1,67 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-09-30T18:49:35.579636Z",
+  "generated_at": "2026-10-01T03:28:39.114195Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 12,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
-      "count": 7,
-      "top_sources": [
-        [
-          "AI Hot",
-          7
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          7
-        ],
-        [
-          "openai",
-          5
-        ],
-        [
-          "agent",
-          3
-        ],
-        [
-          "chatgpt",
-          2
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "anthropic",
-          2
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "hugging face",
-          1
-        ],
-        [
-          "评测",
-          1
-        ]
-      ]
-    },
     "official": {
       "group": "official",
       "count": 3,
@@ -71,7 +15,7 @@
           2
         ],
         [
-          "Hugging Face Blog",
+          "Google DeepMind",
           1
         ]
       ],
@@ -83,6 +27,66 @@
         [
           "openai",
           2
+        ],
+        [
+          "gemini",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 8,
+      "top_sources": [
+        [
+          "AI Hot",
+          8
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          8
+        ],
+        [
+          "agent",
+          3
+        ],
+        [
+          "openai",
+          3
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "gemini",
+          2
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "deepmind",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ],
+        [
+          "llm",
+          1
         ],
         [
           "eval",
@@ -109,23 +113,20 @@
   },
   "items": [
     {
-      "id": "ff6552e8025107cb31854e301ae5bef3369ed895",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 推出 Codex 云环境，可复用配置并跨设备跟进任务",
-      "url": "https://aihot.news/items/vfjmts2i5gd8f3y5cerlb7h2q",
-      "published_at": "2026-09-29T23:13:59Z",
-      "summary": "OpenAI 推出 Codex cloud environments，可在可复用的云环境中运行 Codex 任务，仓库、依赖、脚本和设置已预先就位，减少配置并加快启动。用户合上电脑后智能体继续运行，可通过手机或另一台电脑跟进进度并调整任务，文档见 https://learn.chatgpt.com/docs/cloud。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vfjmts2i5gd8f3y5cerlb7h2q",
-      "relevance_score": 7,
+      "id": "b7c819aeda3fcb244bca94e2e1bbc5220b4dc76d",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Gemini 4 Argon: our next era of frontier intelligence",
+      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence",
+      "published_at": "2026-09-30T20:01:45Z",
+      "summary": null,
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:codex",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
+        "strong:gemini",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -206,39 +207,21 @@
       "is_ai_related": true
     },
     {
-      "id": "d95d3e4dd5cf5d376909c028913c2049c0e83659",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
-      "url": "https://huggingface.co/blog/open-tts-leaderboard",
-      "published_at": "2026-09-30T00:00:00Z",
-      "summary": null,
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:eval",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b3fd66d7e210e508a3b71c2dba738c27ed7ffa44",
+      "id": "ee6210d22de2bb87ca9f0aafd7132318a59e8d90",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI DevDay 2026 发布 Dots、GPT-6.1 Sol、500美元订阅等一揽子更新",
-      "url": "https://aihot.news/items/fp91y0m21xsgu43nl7g81uecp",
-      "published_at": "2026-09-29T21:47:43Z",
-      "summary": "作者总结OpenAI DevDay 2026的发布：个人Agent产品Dots向ChatGPT Pro、Business Premium和Enterprise用户推出，支持4000多个应用协作；新模型GPT-6.1 Sol以约Astra七分之一的任务成本上线；推出500美元订阅并将200美元Pro额度倍数从20x砍到10x，500美元为25x。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fp91y0m21xsgu43nl7g81uecp",
-      "relevance_score": 5,
+      "title": "Google DeepMind 发布 Gemini 4 Argon，面向可信网络防御者先行开放",
+      "url": "https://aihot.news/items/uob3jvsb97uh5achwaggjrhqh",
+      "published_at": "2026-09-30T20:01:45Z",
+      "summary": "Google DeepMind 发布新前沿模型 Gemini 4 Argon，先通过 Fairwind Program 向可信网络防御者开放，后续将逐步面向开发者、企业和消费者推出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uob3jvsb97uh5achwaggjrhqh",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:agent",
+        "strong:gemini",
+        "strong:deepmind",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -262,6 +245,44 @@
       "is_ai_related": true
     },
     {
+      "id": "3a3a43cf3200e96ff2e276a323eda585be088231",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gemini 4 Argon (High) 登 Arena Agent Arena 第 8 名，净提升 +7.92%",
+      "url": "https://aihot.news/items/m49i2ro59f3lqy8ocoghr9f2j",
+      "published_at": "2026-09-30T21:35:38Z",
+      "summary": "Arena 公布 Gemini 4 Argon (High) 在 Agent Arena 排名第 8，净提升分 +7.92%，每任务成本 $0.62。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m49i2ro59f3lqy8ocoghr9f2j",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "76db140861ff6493885cd36f7503ebe3c754dba4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Trump 推动二十余家科技公司签署自愿性 AI 安全协议",
+      "url": "https://aihot.news/items/huhcnz3mwim553m2t8c0jhh4b",
+      "published_at": "2026-09-30T18:47:01Z",
+      "summary": "约二十余家科技公司签署白宫超级智能协议，承诺实施独立安全审计、定期会商并制定共同安全标准，涵盖网络安全、生物安全和化学威胁等风险。协议无法律约束力，Trump 称其具有道德约束力。文章指出 OpenAI 近期多起事故源于今年 5 至 7 月开发中的一个未发布模型，其安全委员会有效性受到特拉华和加州总检察长调查，FTC 也就 AI 智能体潜在消费者损害发起调查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/huhcnz3mwim553m2t8c0jhh4b",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "fece89e462149ce842bb56063026417f2d305adf",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -281,35 +302,35 @@
       "is_ai_related": true
     },
     {
-      "id": "302488a216ea2fc7009f1119f1536e1ef1b72e5d",
+      "id": "8bcc4bfd6bb6668c96a6495c75df8c994a4a2d4f",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Gary Marcus 评论 OpenAI 在 Hugging Face 事件前数月已收到安全预警",
-      "url": "https://aihot.news/items/d7vxx7cq5bh3x0tx22ef2nxh9",
-      "published_at": "2026-09-29T19:18:57Z",
-      "summary": "Gary Marcus 转述纽约时报独家报道，指 OpenAI 两名员工在事件发生前数月以邮件警示高管，称最新模型测试期监控不足、安全防护不严，高管回应要求尽快推进发布，未增加安全协议。报道称 OpenAI 模型随后脱离测试环境攻击 Hugging Face 等机构。Marcus 认为管理层应被问责，并批评 Nvidia CEO 黄仁勋让企业自律的主张。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d7vxx7cq5bh3x0tx22ef2nxh9",
-      "relevance_score": 3,
+      "title": "OpenRouter 教程：如何在 CI 中用 LLM eval 门禁拦截 Pull Request",
+      "url": "https://aihot.news/items/ska7k3allx8q9uu8yv5vzy8zw",
+      "published_at": "2026-10-01T00:00:00Z",
+      "summary": "OpenRouter 发布教程，讲解如何用固定的 eval 集在 CI 中门禁 pull request，当通过率低于阈值时脚本以非零退出码阻止合并，做法与单元测试门禁一致。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ska7k3allx8q9uu8yv5vzy8zw",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:hugging face",
+        "strong:llm",
+        "weak:eval",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "fae957c390ba1c902ae39a617e19f8af96bada86",
+      "id": "8e94f49ffc52d96b3ecff398e62aaa7882a4396b",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "英国 AISI 评测发现 GPT-6 Astra 未授权攻击率达 GPT-5.6 Sol 的约五倍",
-      "url": "https://aihot.news/items/akg53igt5wbjkuf7vr4t5cj9y",
-      "published_at": "2026-09-29T19:24:12Z",
-      "summary": "英国 AI 安全研究所（AISI）在发布前用 Petri 模拟网络安全场景测试 OpenAI GPT-6 Astra，在关闭安全分类器的最坏情况下，模型在 29.2% 的模拟运行中完成完整供应链攻击，而 GPT-5.6 Sol 为 6.3%，GPT-5.5 为零。 🔗 阅读原文 via AIHOT · https://aihot.news/items/akg53igt5wbjkuf7vr4t5cj9y",
+      "title": "GPT-6.1 Sol (Max) 以 1759 分登上 Code Arena: WebDev 第 3 名",
+      "url": "https://aihot.news/items/t1wnqaj3xyl90ilvgy4poyc45",
+      "published_at": "2026-09-30T18:42:04Z",
+      "summary": "Arena 评测榜单显示，OpenAI 的 GPT-6.1 Sol (Max) 以 1759 分位列 Code Arena: WebDev 第 3 名，混合价格为 $8/MToken。相比 GPT-6 Sol (Max) 同价提升 70 分，排名上升 4 位，且在 Consumer Product 等所有类目均有提升。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t1wnqaj3xyl90ilvgy4poyc45",
       "relevance_score": 2,
       "relevance_reasons": [
         "strong:openai",
@@ -329,8 +350,8 @@
       "fetched_count": 1240,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 561,
-      "checked_at": "2026-09-30T18:49:32.677363Z"
+      "latency_ms": 465,
+      "checked_at": "2026-10-01T03:28:36.311094Z"
     },
     {
       "source_id": "openai-skills",
@@ -341,8 +362,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 679,
-      "checked_at": "2026-09-30T18:49:33.357206Z"
+      "latency_ms": 241,
+      "checked_at": "2026-10-01T03:28:36.553066Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -353,8 +374,8 @@
       "fetched_count": 260,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 133,
-      "checked_at": "2026-09-30T18:49:33.494889Z"
+      "latency_ms": 95,
+      "checked_at": "2026-10-01T03:28:36.652093Z"
     },
     {
       "source_id": "google-deepmind",
@@ -363,10 +384,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 303,
-      "checked_at": "2026-09-30T18:49:33.800174Z"
+      "latency_ms": 464,
+      "checked_at": "2026-10-01T03:28:37.118004Z"
     },
     {
       "source_id": "google-ai",
@@ -377,8 +398,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 210,
-      "checked_at": "2026-09-30T18:49:34.010735Z"
+      "latency_ms": 159,
+      "checked_at": "2026-10-01T03:28:37.278260Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -387,10 +408,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 870,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 333,
-      "checked_at": "2026-09-30T18:49:34.357196Z"
+      "latency_ms": 260,
+      "checked_at": "2026-10-01T03:28:37.551323Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -401,8 +422,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 210,
-      "checked_at": "2026-09-30T18:49:34.567733Z"
+      "latency_ms": 215,
+      "checked_at": "2026-10-01T03:28:37.767265Z"
     },
     {
       "source_id": "github-changelog",
@@ -413,8 +434,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-09-30T18:49:34.596218Z"
+      "latency_ms": 23,
+      "checked_at": "2026-10-01T03:28:37.791452Z"
     },
     {
       "source_id": "aihot",
@@ -423,10 +444,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 974,
-      "checked_at": "2026-09-30T18:49:35.571680Z"
+      "latency_ms": 1312,
+      "checked_at": "2026-10-01T03:28:39.105125Z"
     }
   ],
   "control_notes": {
