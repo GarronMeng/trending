@@ -1,46 +1,38 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-01T10:28:45.065885Z",
+  "generated_at": "2026-10-01T13:42:55.169091Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 13,
+  "item_count": 11,
   "groups": {
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "Google DeepMind",
-          1
-        ],
-        [
-          "OpenAI News",
           1
         ]
       ],
       "top_keywords": [
         [
-          "official_ai",
-          2
-        ],
-        [
           "gemini",
           1
         ],
         [
-          "openai",
+          "official_ai",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 10,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          9
+          8
         ],
         [
           "Anthropic News via Olshansk RSS",
@@ -50,14 +42,10 @@
       "top_keywords": [
         [
           "aggregate_noise",
-          10
+          9
         ],
         [
           "claude",
-          3
-        ],
-        [
-          "agent",
           3
         ],
         [
@@ -69,16 +57,12 @@
           2
         ],
         [
-          "智能体",
+          "agent",
           2
         ],
         [
           "gemini",
           2
-        ],
-        [
-          "agents",
-          1
         ],
         [
           "deepmind",
@@ -94,6 +78,14 @@
         ],
         [
           "mcp",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "llm",
           1
         ]
       ]
@@ -135,24 +127,6 @@
       "is_ai_related": true
     },
     {
-      "id": "5f840518c63aff14b176c54bc916789bcea00796",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Disrupting a coordinated model-distillation campaign",
-      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-      "published_at": "2026-09-30T10:30:00Z",
-      "summary": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "db06c1d23455540e5131ffb70f2e41fc0ce12d48",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -168,26 +142,6 @@
         "strong:anthropic",
         "strong:claude",
         "strong:agent",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ab1951e239da4de50833432a13a54eea80a14d74",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "ElevenLabs 完成 3 亿美元员工股份回购，估值升至 220 亿美元",
-      "url": "https://aihot.news/items/fkaymng16iu4hg5x53jpq7o8p",
-      "published_at": "2026-09-30T12:00:00Z",
-      "summary": "ElevenLabs 完成 3 亿美元员工 tender offer，估值达 220 亿美元，是 2026 年 2 月 Series D 估值的两倍，由 Wellington 和 T. Rowe Price 领投。企业业务占收入 55%，ElevenAgents 每周处理超 1500 万次对话，ARR 自 2 月以来增长超 3 倍，客户语音智能体解决问题平均比聊天智能体快 31%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fkaymng16iu4hg5x53jpq7o8p",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -372,10 +326,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1240,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 418,
-      "checked_at": "2026-10-01T10:28:42.619683Z"
+      "latency_ms": 423,
+      "checked_at": "2026-10-01T13:42:51.492084Z"
     },
     {
       "source_id": "openai-skills",
@@ -386,8 +340,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 326,
-      "checked_at": "2026-10-01T10:28:42.946749Z"
+      "latency_ms": 295,
+      "checked_at": "2026-10-01T13:42:51.787482Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -398,8 +352,8 @@
       "fetched_count": 261,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 98,
-      "checked_at": "2026-10-01T10:28:43.047852Z"
+      "latency_ms": 182,
+      "checked_at": "2026-10-01T13:42:51.971491Z"
     },
     {
       "source_id": "google-deepmind",
@@ -410,8 +364,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 247,
-      "checked_at": "2026-10-01T10:28:43.296691Z"
+      "latency_ms": 234,
+      "checked_at": "2026-10-01T13:42:52.207181Z"
     },
     {
       "source_id": "google-ai",
@@ -422,8 +376,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 190,
-      "checked_at": "2026-10-01T10:28:43.487799Z"
+      "latency_ms": 217,
+      "checked_at": "2026-10-01T13:42:52.425064Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -434,8 +388,8 @@
       "fetched_count": 870,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 242,
-      "checked_at": "2026-10-01T10:28:43.737601Z"
+      "latency_ms": 308,
+      "checked_at": "2026-10-01T13:42:52.740071Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -447,7 +401,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 160,
-      "checked_at": "2026-10-01T10:28:43.898032Z"
+      "checked_at": "2026-10-01T13:42:52.901047Z"
     },
     {
       "source_id": "github-changelog",
@@ -458,8 +412,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 22,
-      "checked_at": "2026-10-01T10:28:43.920485Z"
+      "latency_ms": 19,
+      "checked_at": "2026-10-01T13:42:52.920676Z"
     },
     {
       "source_id": "aihot",
@@ -468,10 +422,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 9,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 1136,
-      "checked_at": "2026-10-01T10:28:45.057906Z"
+      "latency_ms": 2241,
+      "checked_at": "2026-10-01T13:42:55.162593Z"
     }
   ],
   "control_notes": {
