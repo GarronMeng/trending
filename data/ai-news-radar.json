@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-02T12:59:36.288922Z",
+  "generated_at": "2026-10-02T14:51:21.614311Z",
   "window_hours": 24,
   "source_count": 9,
-  "healthy_source_count": 8,
-  "item_count": 7,
+  "healthy_source_count": 9,
+  "item_count": 11,
   "groups": {
     "official": {
       "group": "official",
@@ -52,21 +52,17 @@
     },
     "developer": {
       "group": "developer",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "GitHub Changelog",
-          5
+          4
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          6
-        ],
-        [
-          "workflow",
-          2
+          4
         ],
         [
           "actions",
@@ -82,6 +78,70 @@
         ],
         [
           "automation",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 5,
+      "top_sources": [
+        [
+          "AI Hot",
+          5
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          5
+        ],
+        [
+          "openai",
+          3
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "gemini",
           1
         ]
       ]
@@ -150,21 +210,85 @@
       "is_ai_related": true
     },
     {
-      "id": "b24c17c815d9eafa26ea7d6d5ea2dd267022f7c8",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Dynamic workflows in Copilot CLI and the Copilot app",
-      "url": "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app",
-      "published_at": "2026-10-01T16:30:10Z",
-      "summary": "Dynamic workflows are now available in Copilot CLI, the GitHub Copilot app, and the GitHub Copilot SDK. These let you define an orchestration in code to get the reliability and… The post Dynamic workflows in Copilot CLI and the Copilot app appeared first on The GitHub Blog .",
-      "relevance_score": 4,
+      "id": "8bcc368a384baaf2096e498d04525a613c0b97d4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "NVIDIA 介绍 Blackwell GPU 如何加速 OpenAI GPT-6 Astra Ultrafast",
+      "url": "https://aihot.news/items/rp0ocer4fughonyd9ddfr3r8i",
+      "published_at": "2026-10-01T23:44:13Z",
+      "summary": "GPT-6 Astra Ultrafast 现已在 OpenAI API 及符合条件的 ChatGPT Work 和 Codex 用户中可用，运行在 NVIDIA Blackwell GPU 上。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rp0ocer4fughonyd9ddfr3r8i",
+      "relevance_score": 7,
       "relevance_reasons": [
-        "weak:workflow",
-        "weak:copilot",
-        "source:copilot"
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1cd95310a49e5e8d03d17c722a05338aecee7e4f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "加州检察长向 OpenAI 发出传票，调查 AI 智能体网络安全风险",
+      "url": "https://aihot.news/items/iw7ix94rgvhp2jgamykh261gl",
+      "published_at": "2026-10-02T00:06:15Z",
+      "summary": "据路透社报道，加州总检察长邦塔向 OpenAI 发出调查传票，要求其就 AI 模型涉及的网络安全事件和风险提供更多信息。调查背景是今年早些时候 OpenAI 的 AI 智能体入侵 Hugging Face 并获取部分基础设施访问权限；邦塔警告开发者若不能确保模型不发动或协助网络攻击，可能面临法律追责。 🔗 阅读原文 via AIHOT · https://aihot.news/items/iw7ix94rgvhp2jgamykh261gl",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "strong:智能体",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "19af0e7527381229f05ba1ba91b5ccb56a633d0a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Artificial Analysis：Claude Sonnet 5.5、GPT-6.1 Sol 与 Gemini 4 Argon 登顶 Coding Agent Index 榜单但成本差异大",
+      "url": "https://aihot.news/items/jhshh53c18f71tkzk44izbs25",
+      "published_at": "2026-10-02T00:17:12Z",
+      "summary": "Artificial Analysis 发布 Coding Agent Index 榜单，Claude Sonnet 5.5 (max) 在 Claude Code 以 68 分居首，但每任务成本最高达 $14.19。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jhshh53c18f71tkzk44izbs25",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:gemini",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9832ce22c7c7952603260f8a528e6f90ec0fe844",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "MiMo-V2.6-Pro 和 MiMo-V2.6-Flash 登陆 Agent Arena，分列开源模型第5和第9",
+      "url": "https://aihot.news/items/fe4cigybkf7nhdwb0il9ggrns",
+      "published_at": "2026-10-01T18:57:58Z",
+      "summary": "Arena 宣布 Xiaomi MiMo-V2.6-Pro 和 MiMo-V2.6-Flash 登陆 Agent Arena。Pro 在 8.1K+ 真实智能体会话中净提升 +3.17%，列开源模型第5，较 MiMo-V2.5-Pro（第13，-7.23%）提升9个名次；其 Confirmed Success 得分 +7.35%，列开源模型第2。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fe4cigybkf7nhdwb0il9ggrns",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "strong:开源模型",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -205,6 +329,25 @@
       "is_ai_related": true
     },
     {
+      "id": "d1707793aacd8e2c9dcab50bb8fbed3fc628a4e3",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管",
+      "url": "https://aihot.news/items/nab0yosxdtyh7sbvoo0usb1iq",
+      "published_at": "2026-10-02T07:23:13Z",
+      "summary": "Bloomberg 报道，Anthropic 已邀请机构投资者在其可能估值近 2 万亿美元的 IPO 前质询高管。10 月 14 日的会议之后，最早 11 月 9 日当周启动正式路演，感恩节前上市；按 SEC 规则需在 10 月下旬公布 S-1 文件。OpenAI 则相反，以安全担忧为由排除 2026 年上市，正以约 1.4 万亿美元估值私下寻求至少 300 亿美元融资。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nab0yosxdtyh7sbvoo0usb1iq",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "d3a9ebfb8b9a5d09e123348ce0f39107d975af8d",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -232,8 +375,8 @@
       "fetched_count": 1243,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 610,
-      "checked_at": "2026-10-02T12:58:40.240504Z"
+      "latency_ms": 525,
+      "checked_at": "2026-10-02T14:51:17.616062Z"
     },
     {
       "source_id": "openai-skills",
@@ -244,8 +387,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 4477,
-      "checked_at": "2026-10-02T12:58:44.717758Z"
+      "latency_ms": 600,
+      "checked_at": "2026-10-02T14:51:18.216806Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -256,8 +399,8 @@
       "fetched_count": 261,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 129,
-      "checked_at": "2026-10-02T12:58:44.851685Z"
+      "latency_ms": 114,
+      "checked_at": "2026-10-02T14:51:18.335247Z"
     },
     {
       "source_id": "google-deepmind",
@@ -268,8 +411,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 205,
-      "checked_at": "2026-10-02T12:58:45.058697Z"
+      "latency_ms": 241,
+      "checked_at": "2026-10-02T14:51:18.577946Z"
     },
     {
       "source_id": "google-ai",
@@ -280,8 +423,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 179,
-      "checked_at": "2026-10-02T12:58:45.239005Z"
+      "latency_ms": 161,
+      "checked_at": "2026-10-02T14:51:18.739626Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -292,8 +435,8 @@
       "fetched_count": 872,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 330,
-      "checked_at": "2026-10-02T12:58:45.582858Z"
+      "latency_ms": 274,
+      "checked_at": "2026-10-02T14:51:19.027363Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -304,8 +447,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 189,
-      "checked_at": "2026-10-02T12:58:45.772916Z"
+      "latency_ms": 182,
+      "checked_at": "2026-10-02T14:51:19.209694Z"
     },
     {
       "source_id": "github-changelog",
@@ -314,22 +457,22 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 5,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-10-02T12:58:45.800406Z"
+      "latency_ms": 21,
+      "checked_at": "2026-10-02T14:51:19.231456Z"
     },
     {
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "enabled": true,
-      "ok": false,
-      "fetched_count": 0,
-      "kept_count": 0,
-      "error": "HTTPSConnectionPool(host='aihot.virxact.com', port=443): Max retries exceeded with url: /feed.xml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fcbfef320f0>, 'Connection to aihot.virxact.com timed out. (connect timeout=25)'))",
-      "latency_ms": 50488,
-      "checked_at": "2026-10-02T12:59:36.288688Z"
+      "ok": true,
+      "fetched_count": 50,
+      "kept_count": 5,
+      "error": null,
+      "latency_ms": 2373,
+      "checked_at": "2026-10-02T14:51:21.605568Z"
     }
   ],
   "control_notes": {
