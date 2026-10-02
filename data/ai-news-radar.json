@@ -1,21 +1,29 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-02T03:28:47.067603Z",
+  "generated_at": "2026-10-02T10:04:17.473335Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 13,
   "groups": {
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI News",
           1
+        ],
+        [
+          "Hugging Face Blog",
+          1
         ]
       ],
       "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
         [
           "openai",
           1
@@ -33,7 +41,11 @@
           1
         ],
         [
-          "official_ai",
+          "agent",
+          1
+        ],
+        [
+          "agents",
           1
         ]
       ]
@@ -90,11 +102,7 @@
         ],
         [
           "openai",
-          2
-        ],
-        [
-          "chatgpt",
-          2
+          3
         ],
         [
           "智能体",
@@ -111,6 +119,10 @@
         [
           "agent",
           2
+        ],
+        [
+          "chatgpt",
+          1
         ],
         [
           "codex",
@@ -153,6 +165,25 @@
         "strong:chatgpt",
         "weak:api",
         "weak:API",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5a5f7cf22d93fd6182543cc35f8175694469f446",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+      "published_at": "2026-10-02T04:01:31Z",
+      "summary": null,
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -317,6 +348,25 @@
       "is_ai_related": true
     },
     {
+      "id": "d1707793aacd8e2c9dcab50bb8fbed3fc628a4e3",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管",
+      "url": "https://aihot.news/items/nab0yosxdtyh7sbvoo0usb1iq",
+      "published_at": "2026-10-02T07:23:13Z",
+      "summary": "Bloomberg 报道，Anthropic 已邀请机构投资者在其可能估值近 2 万亿美元的 IPO 前质询高管。10 月 14 日的会议之后，最早 11 月 9 日当周启动正式路演，感恩节前上市；按 SEC 规则需在 10 月下旬公布 S-1 文件。OpenAI 则相反，以安全担忧为由排除 2026 年上市，正以约 1.4 万亿美元估值私下寻求至少 300 亿美元融资。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nab0yosxdtyh7sbvoo0usb1iq",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "d3a9ebfb8b9a5d09e123348ce0f39107d975af8d",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -330,25 +380,6 @@
       "relevance_score": 2,
       "relevance_reasons": [
         "source:actions"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7b3b906a527311fee780fd07e209762dcfa8bc94",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "ChatGPT 现可直接构建并部署 MCP 服务器",
-      "url": "https://aihot.news/items/ed0fkjtzo2sbnpzqlara60ghs",
-      "published_at": "2026-10-01T04:44:34Z",
-      "summary": "ChatGPT Sites 现在可以托管 MCP 服务器，用户可直接在 ChatGPT 中构建并部署 MCP 服务器，还能将其转为插件并安装到 web、移动端和桌面端。作者补充，可限制访问权限给指定的人，也可向全世界公开分享。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ed0fkjtzo2sbnpzqlara60ghs",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:mcp",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -382,8 +413,8 @@
       "fetched_count": 1243,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 554,
-      "checked_at": "2026-10-02T03:28:44.388108Z"
+      "latency_ms": 604,
+      "checked_at": "2026-10-02T10:04:14.400548Z"
     },
     {
       "source_id": "openai-skills",
@@ -394,8 +425,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 190,
-      "checked_at": "2026-10-02T03:28:44.578749Z"
+      "latency_ms": 344,
+      "checked_at": "2026-10-02T10:04:14.745597Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -406,8 +437,8 @@
       "fetched_count": 261,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 132,
-      "checked_at": "2026-10-02T03:28:44.717520Z"
+      "latency_ms": 149,
+      "checked_at": "2026-10-02T10:04:14.899296Z"
     },
     {
       "source_id": "google-deepmind",
@@ -418,8 +449,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 178,
-      "checked_at": "2026-10-02T03:28:44.897978Z"
+      "latency_ms": 658,
+      "checked_at": "2026-10-02T10:04:15.559280Z"
     },
     {
       "source_id": "google-ai",
@@ -430,8 +461,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 150,
-      "checked_at": "2026-10-02T03:28:45.049208Z"
+      "latency_ms": 222,
+      "checked_at": "2026-10-02T10:04:15.782013Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -439,11 +470,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 871,
-      "kept_count": 0,
+      "fetched_count": 872,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 345,
-      "checked_at": "2026-10-02T03:28:45.408085Z"
+      "latency_ms": 306,
+      "checked_at": "2026-10-02T10:04:16.102615Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -454,8 +485,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 161,
-      "checked_at": "2026-10-02T03:28:45.570133Z"
+      "latency_ms": 263,
+      "checked_at": "2026-10-02T10:04:16.366271Z"
     },
     {
       "source_id": "github-changelog",
@@ -466,8 +497,8 @@
       "fetched_count": 10,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 22,
-      "checked_at": "2026-10-02T03:28:45.593715Z"
+      "latency_ms": 23,
+      "checked_at": "2026-10-02T10:04:16.390175Z"
     },
     {
       "source_id": "aihot",
@@ -478,8 +509,8 @@
       "fetched_count": 50,
       "kept_count": 6,
       "error": null,
-      "latency_ms": 1463,
-      "checked_at": "2026-10-02T03:28:47.058828Z"
+      "latency_ms": 1073,
+      "checked_at": "2026-10-02T10:04:17.464336Z"
     }
   ],
   "control_notes": {
