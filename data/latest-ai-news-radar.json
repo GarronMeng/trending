@@ -1,64 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-03T13:35:08.895219Z",
+  "generated_at": "2026-10-03T17:45:20.283693Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 8,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub AI & ML",
-          1
-        ],
-        [
-          "OpenAI News",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "workflow",
-          2
-        ],
-        [
-          "official_ai",
-          2
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "developer",
-          1
-        ],
-        [
-          "tool",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          5
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          6
         ],
         [
           "claude",
@@ -69,15 +29,15 @@
           2
         ],
         [
+          "评测",
+          2
+        ],
+        [
           "openai",
           2
         ],
         [
           "anthropic",
-          1
-        ],
-        [
-          "评测",
           1
         ],
         [
@@ -90,6 +50,10 @@
         ],
         [
           "llm",
+          1
+        ],
+        [
+          "chatgpt",
           1
         ],
         [
@@ -132,27 +96,6 @@
     }
   },
   "items": [
-    {
-      "id": "2499c54aacf9e54e8bfb190e948744e9ad0c86cb",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "AI is changing developer work. Here are three skills to strengthen.",
-      "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
-      "published_at": "2026-10-02T15:00:00Z",
-      "summary": "Learn to direct AI agents, critically review their output, and keep technical judgment at the center of your workflow. The post AI is changing developer work. Here are three skills to strengthen. appeared first on The GitHub Blog .",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "weak:developer",
-        "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "321bef308df57486c3b1333d55efd5c11d62bd33",
       "source_id": "aihot",
@@ -210,25 +153,6 @@
         "strong:agent",
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "09bd1bb89265846476f440bb0b4645d10744364b",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "A model guide for the GPT-6 family",
-      "url": "https://openai.com/index/practical-guide-building-gpt-6",
-      "published_at": "2026-10-02T16:15:00Z",
-      "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:tool",
-        "weak:workflow",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -291,6 +215,25 @@
       "is_ai_related": true
     },
     {
+      "id": "5540a52458ec9657c066b167fc7ae8a300322a58",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300",
+      "url": "https://aihot.news/items/eu8pag1qg6pf93gn9k1ql0m0z",
+      "published_at": "2026-10-03T15:50:46Z",
+      "summary": "LMSYS 团队发布 Vicuna-13B，通过约 70K ShareGPT 用户共享对话微调 LLaMA，训练成本约 $300，代码、权重和在线 demo 以非商业许可公开。GPT-4 作为评审的初步评估显示其达到 ChatGPT/Bard 90% 以上质量，在 45% 问题上不逊于 ChatGPT；团队同时提出基于 GPT-4 的自动评测框架，并说明其尚非严谨方法。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eu8pag1qg6pf93gn9k1ql0m0z",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "69d800fc934658956c4804cd2c95103b4fe49c16",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -318,10 +261,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1245,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 524,
-      "checked_at": "2026-10-03T13:35:06.829293Z"
+      "latency_ms": 538,
+      "checked_at": "2026-10-03T17:45:18.217217Z"
     },
     {
       "source_id": "openai-skills",
@@ -332,8 +275,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 185,
-      "checked_at": "2026-10-03T13:35:07.014723Z"
+      "latency_ms": 205,
+      "checked_at": "2026-10-03T17:45:18.423142Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -344,8 +287,8 @@
       "fetched_count": 262,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 118,
-      "checked_at": "2026-10-03T13:35:07.137458Z"
+      "latency_ms": 131,
+      "checked_at": "2026-10-03T17:45:18.558775Z"
     },
     {
       "source_id": "google-deepmind",
@@ -356,8 +299,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 178,
-      "checked_at": "2026-10-03T13:35:07.317716Z"
+      "latency_ms": 119,
+      "checked_at": "2026-10-03T17:45:18.679593Z"
     },
     {
       "source_id": "google-ai",
@@ -368,8 +311,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 152,
-      "checked_at": "2026-10-03T13:35:07.470288Z"
+      "latency_ms": 162,
+      "checked_at": "2026-10-03T17:45:18.842693Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -380,8 +323,8 @@
       "fetched_count": 872,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 252,
-      "checked_at": "2026-10-03T13:35:07.735576Z"
+      "latency_ms": 296,
+      "checked_at": "2026-10-03T17:45:19.151821Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -390,10 +333,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 188,
-      "checked_at": "2026-10-03T13:35:07.924428Z"
+      "latency_ms": 206,
+      "checked_at": "2026-10-03T17:45:19.358372Z"
     },
     {
       "source_id": "github-changelog",
@@ -404,8 +347,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-10-03T13:35:07.949395Z"
+      "latency_ms": 26,
+      "checked_at": "2026-10-03T17:45:19.385736Z"
     },
     {
       "source_id": "aihot",
@@ -414,10 +357,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 5,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 936,
-      "checked_at": "2026-10-03T13:35:08.887062Z"
+      "latency_ms": 888,
+      "checked_at": "2026-10-03T17:45:20.275544Z"
     }
   ],
   "control_notes": {
