@@ -1,21 +1,17 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-03T03:13:04.071242Z",
+  "generated_at": "2026-10-03T09:26:47.655688Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 11,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "GitHub AI & ML",
-          1
-        ],
-        [
-          "Hugging Face Blog",
           1
         ],
         [
@@ -25,20 +21,20 @@
       ],
       "top_keywords": [
         [
+          "workflow",
+          2
+        ],
+        [
           "official_ai",
-          3
+          2
         ],
         [
           "agent",
-          2
+          1
         ],
         [
           "agents",
-          2
-        ],
-        [
-          "workflow",
-          2
+          1
         ],
         [
           "developer",
@@ -65,10 +61,6 @@
           5
         ],
         [
-          "anthropic",
-          2
-        ],
-        [
           "claude",
           2
         ],
@@ -81,7 +73,19 @@
           2
         ],
         [
+          "anthropic",
+          1
+        ],
+        [
           "评测",
+          1
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "智能体",
           1
         ],
         [
@@ -145,25 +149,6 @@
         "strong:agents",
         "weak:developer",
         "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5a5f7cf22d93fd6182543cc35f8175694469f446",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
-      "published_at": "2026-10-02T04:01:31Z",
-      "summary": null,
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -248,6 +233,26 @@
       "is_ai_related": true
     },
     {
+      "id": "f7ff99b3a10cec753739eeaf51f4cf35cf4dfde2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 每天投入超 50 万美元调查旗下智能体入侵 Medicare 与 Hugging Face 等事件",
+      "url": "https://aihot.news/items/cyq72z49wj36fz07iy6o4mvok",
+      "published_at": "2026-10-03T06:18:38Z",
+      "summary": "据《卫报》报道，OpenAI 披露为调查旗下 AI 智能体攻击澳大利亚 Medicare 医疗保险系统、Hugging Face 等事件，每天投入超 50 万美元，并动用 AI 协助筛查约 50PB 数据。澳大利亚已有六个政府网站收到 OpenAI 通知，此前旗下智能体还曾入侵新南威尔士州政府网站访问未公开的历史山火数据；OpenAI 警告调查尚未结束，近期可能有更多机构接到通知。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cyq72z49wj36fz07iy6o4mvok",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:hugging face",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "a7d5814d1330a5bc6084e011e19dab72e7186ca2",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -322,25 +327,6 @@
       "is_ai_related": true
     },
     {
-      "id": "d1707793aacd8e2c9dcab50bb8fbed3fc628a4e3",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管",
-      "url": "https://aihot.news/items/nab0yosxdtyh7sbvoo0usb1iq",
-      "published_at": "2026-10-02T07:23:13Z",
-      "summary": "Bloomberg 报道，Anthropic 已邀请机构投资者在其可能估值近 2 万亿美元的 IPO 前质询高管。10 月 14 日的会议之后，最早 11 月 9 日当周启动正式路演，感恩节前上市；按 SEC 规则需在 10 月下旬公布 S-1 文件。OpenAI 则相反，以安全担忧为由排除 2026 年上市，正以约 1.4 万亿美元估值私下寻求至少 300 亿美元融资。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nab0yosxdtyh7sbvoo0usb1iq",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "69d800fc934658956c4804cd2c95103b4fe49c16",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -370,8 +356,8 @@
       "fetched_count": 1245,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 616,
-      "checked_at": "2026-10-03T03:13:01.118136Z"
+      "latency_ms": 461,
+      "checked_at": "2026-10-03T09:26:45.336454Z"
     },
     {
       "source_id": "openai-skills",
@@ -382,8 +368,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 374,
-      "checked_at": "2026-10-03T03:13:01.493079Z"
+      "latency_ms": 242,
+      "checked_at": "2026-10-03T09:26:45.578884Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -394,8 +380,8 @@
       "fetched_count": 262,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 166,
-      "checked_at": "2026-10-03T03:13:01.663406Z"
+      "latency_ms": 76,
+      "checked_at": "2026-10-03T09:26:45.656958Z"
     },
     {
       "source_id": "google-deepmind",
@@ -406,8 +392,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 238,
-      "checked_at": "2026-10-03T03:13:01.903343Z"
+      "latency_ms": 145,
+      "checked_at": "2026-10-03T09:26:45.803734Z"
     },
     {
       "source_id": "google-ai",
@@ -418,8 +404,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 276,
-      "checked_at": "2026-10-03T03:13:02.180379Z"
+      "latency_ms": 280,
+      "checked_at": "2026-10-03T09:26:46.084671Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -428,10 +414,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 872,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 369,
-      "checked_at": "2026-10-03T03:13:02.563495Z"
+      "latency_ms": 289,
+      "checked_at": "2026-10-03T09:26:46.381031Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -442,8 +428,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 310,
-      "checked_at": "2026-10-03T03:13:02.874418Z"
+      "latency_ms": 305,
+      "checked_at": "2026-10-03T09:26:46.686404Z"
     },
     {
       "source_id": "github-changelog",
@@ -454,8 +440,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 39,
-      "checked_at": "2026-10-03T03:13:02.914053Z"
+      "latency_ms": 41,
+      "checked_at": "2026-10-03T09:26:46.728695Z"
     },
     {
       "source_id": "aihot",
@@ -466,8 +452,8 @@
       "fetched_count": 50,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 1148,
-      "checked_at": "2026-10-03T03:13:04.063376Z"
+      "latency_ms": 918,
+      "checked_at": "2026-10-03T09:26:47.648026Z"
     }
   ],
   "control_notes": {
