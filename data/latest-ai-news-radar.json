@@ -1,31 +1,51 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-03T17:45:20.283693Z",
+  "generated_at": "2026-10-04T03:41:44.440107Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 4,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "Hugging Face Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "agent",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          6
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          3
         ],
         [
-          "claude",
+          "hugging face",
           2
         ],
         [
-          "agent",
+          "智能体",
           2
         ],
         [
@@ -33,63 +53,15 @@
           2
         ],
         [
+          "工作流",
+          1
+        ],
+        [
           "openai",
-          2
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "hugging face",
-          1
-        ],
-        [
-          "智能体",
-          1
-        ],
-        [
-          "llm",
           1
         ],
         [
           "chatgpt",
-          1
-        ],
-        [
-          "开源模型",
-          1
-        ],
-        [
-          "inference",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "agent",
           1
         ]
       ]
@@ -97,62 +69,41 @@
   },
   "items": [
     {
-      "id": "321bef308df57486c3b1333d55efd5c11d62bd33",
+      "id": "f16354ff095fb94fc3589d791632eda7c091d53e",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "The Agent Said It Was Done. The Database Disagreed.",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "published_at": "2026-10-03T22:56:48Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "545b587b91f704bc1e5b3414d84457ad4c2b82e2",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Arena 评测：Claude Sonnet 5.5 登顶 Agent Arena 第 3 名但未入 Pareto 前沿",
-      "url": "https://aihot.news/items/fkxn0msd8ty9lmxchq77chupc",
-      "published_at": "2026-10-02T19:33:51Z",
-      "summary": "Arena 发布 Agent Arena 最新榜单，Anthropic 的 Claude Sonnet 5.5 以 +12.5% 净提升得分排名第 3，单任务中位成本 $2.74，比排名第 2 的 Claude Opus 5.5（$1.58）高约 73%，且 Opus 5.5 得分更高，因此 Sonnet 5.5 未进入 Agent Arena 的 Pareto 前沿。据引用内容，Sonnet 5.5 在 Chat 类目以 +15.6% 排名第 1，Anthropic 模型包揽 Agent Arena 前三名。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fkxn0msd8ty9lmxchq77chupc",
-      "relevance_score": 6,
+      "title": "Microsoft ThinkingBox 在 Hugging Face 上发布，以数据库终态和 20 次重复评测智能体",
+      "url": "https://aihot.news/items/gqh4yclcjmaci6uhur56580uh",
+      "published_at": "2026-10-03T22:56:48Z",
+      "summary": "Microsoft 与 Hugging Face 发布 ThinkingBox 智能体沙箱与 ThinkingBox-Bench 基准，覆盖 507 个有状态业务工作流、每任务运行 20 次，以终局数据库状态和副作用作可执行判定，现可通过 OpenEnv 在 Hugging Face 上运行。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gqh4yclcjmaci6uhur56580uh",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:agent",
+        "strong:hugging face",
+        "strong:智能体",
+        "weak:工作流",
         "weak:评测",
         "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "fe2dbc515a992ed9717f399fd4e83a244e8a80d1",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot code review: API support and new default effort level",
-      "url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
-      "published_at": "2026-10-02T19:13:50Z",
-      "summary": "You can now request a GitHub Copilot code review through the REST and GraphQL APIs and set the review effort level for each request. Balanced is also now the default… The post Copilot code review: API support and new default effort level appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:copilot",
-        "weak:API",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "3aef7bff54f7ba5f33647a26491d636e8f9c8e9b",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Selected models in GitHub Copilot deprecated",
-      "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
-      "published_at": "2026-10-02T18:24:19Z",
-      "summary": "As of today, October 2, 2026, we have deprecated the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Model… The post Selected models in GitHub Copilot deprecated appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -177,44 +128,6 @@
       "is_ai_related": true
     },
     {
-      "id": "a7d5814d1330a5bc6084e011e19dab72e7186ca2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Baseten 工程师实测：LLM 生成的推理引擎比 vLLM 快最多 90%",
-      "url": "https://aihot.news/items/uwm1ml1igd8k2u81g14uf8pc3",
-      "published_at": "2026-10-02T21:09:34Z",
-      "summary": "Baseten 工程师参考 MetaInfer 论文，让 Claude Code（Fable 5）为 Qwen-3.6-35B-A3B（NVFP4，单张 B200）自动构建推理引擎 VibeQwen，单流解码比 vLLM 0.25.1 快 90%，首 token 从 28ms 降至 12ms，并发 32 时吞吐高 71%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uwm1ml1igd8k2u81g14uf8pc3",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:llm",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ebd5e836f797a97c43c741df654c5fbad1cdfc5f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "GPT-6.1 Sol (Max) 进入 Agent Arena 第 5 名，以更低成本逼近前列模型",
-      "url": "https://aihot.news/items/bzodztryi4kvwm4kz9mrwb6nn",
-      "published_at": "2026-10-02T19:48:16Z",
-      "summary": "Arena 宣布 OpenAI 的 GPT-6.1 Sol (Max) 在 Agent Arena 排名第 5（+11.23%），中位任务成本 $0.56，并重塑了 Pareto 前沿。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bzodztryi4kvwm4kz9mrwb6nn",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:agent",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "5540a52458ec9657c066b167fc7ae8a300322a58",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -232,25 +145,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "69d800fc934658956c4804cd2c95103b4fe49c16",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Prime Intellect 发布推理平台 Prime Inference，已上线 GLM-5.3 端点",
-      "url": "https://aihot.news/items/e54qt77e1upo9oqowk38fply1",
-      "published_at": "2026-10-02T20:37:23Z",
-      "summary": "Prime Intellect 发布推理平台 Prime Inference，提供 serverless 端点与预留容量，跨数据中心服务前沿开源模型，内部每天处理近一万亿 token。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e54qt77e1upo9oqowk38fply1",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:开源模型",
-        "weak:inference",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -263,8 +157,8 @@
       "fetched_count": 1245,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 538,
-      "checked_at": "2026-10-03T17:45:18.217217Z"
+      "latency_ms": 454,
+      "checked_at": "2026-10-04T03:41:41.684542Z"
     },
     {
       "source_id": "openai-skills",
@@ -275,8 +169,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 205,
-      "checked_at": "2026-10-03T17:45:18.423142Z"
+      "latency_ms": 360,
+      "checked_at": "2026-10-04T03:41:42.044903Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -287,8 +181,8 @@
       "fetched_count": 262,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 131,
-      "checked_at": "2026-10-03T17:45:18.558775Z"
+      "latency_ms": 336,
+      "checked_at": "2026-10-04T03:41:42.384616Z"
     },
     {
       "source_id": "google-deepmind",
@@ -299,8 +193,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 119,
-      "checked_at": "2026-10-03T17:45:18.679593Z"
+      "latency_ms": 237,
+      "checked_at": "2026-10-04T03:41:42.622874Z"
     },
     {
       "source_id": "google-ai",
@@ -311,8 +205,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 162,
-      "checked_at": "2026-10-03T17:45:18.842693Z"
+      "latency_ms": 248,
+      "checked_at": "2026-10-04T03:41:42.871902Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -320,11 +214,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 872,
-      "kept_count": 0,
+      "fetched_count": 873,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 296,
-      "checked_at": "2026-10-03T17:45:19.151821Z"
+      "latency_ms": 252,
+      "checked_at": "2026-10-04T03:41:43.133628Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -335,8 +229,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 206,
-      "checked_at": "2026-10-03T17:45:19.358372Z"
+      "latency_ms": 201,
+      "checked_at": "2026-10-04T03:41:43.335098Z"
     },
     {
       "source_id": "github-changelog",
@@ -345,10 +239,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-10-03T17:45:19.385736Z"
+      "latency_ms": 25,
+      "checked_at": "2026-10-04T03:41:43.360358Z"
     },
     {
       "source_id": "aihot",
@@ -357,10 +251,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 6,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 888,
-      "checked_at": "2026-10-03T17:45:20.275544Z"
+      "latency_ms": 1071,
+      "checked_at": "2026-10-04T03:41:44.432799Z"
     }
   ],
   "control_notes": {
