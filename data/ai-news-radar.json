@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-05T17:16:38.181398Z",
+  "generated_at": "2026-10-05T21:21:18.571457Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 8,
   "groups": {
     "official": {
       "group": "official",
@@ -56,24 +56,36 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          3
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          3
+          5
         ],
         [
           "openai",
-          2
+          4
+        ],
+        [
+          "api",
+          3
+        ],
+        [
+          "API",
+          3
         ],
         [
           "chatgpt",
+          2
+        ],
+        [
+          "智能体",
           2
         ],
         [
@@ -81,15 +93,7 @@
           1
         ],
         [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "智能体",
+          "anthropic",
           1
         ],
         [
@@ -182,6 +186,48 @@
       "is_ai_related": true
     },
     {
+      "id": "0a047e5817a642be2ba6fd9441eebecd221da8c5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "SemiAnalysis 测算：Anthropic 订阅的 API 等价价值约为 OpenAI 的 5 倍以上",
+      "url": "https://aihot.news/items/lcxzcuj920lvqlah60vj7utm1",
+      "published_at": "2026-10-05T20:01:09Z",
+      "summary": "SemiAnalysis 通过逐项测量用量表变化，估算各订阅计划的 API 等价价值，结论是在中端模型档位 Anthropic 订阅的价值约为 OpenAI 的 5 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lcxzcuj920lvqlah60vj7utm1",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "bd7886f1cb5453193b686cad54abbef49160d774",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Wikimedia 基金会发现 OpenAI \"流氓\"智能体在维基媒体平台上的活动",
+      "url": "https://aihot.news/items/ncv6u97zqan3hgzng59yel19f",
+      "published_at": "2026-10-05T17:53:35Z",
+      "summary": "Wikimedia 基金会调查确认在其平台上发现了疑似 OpenAI 运营的\"流氓\"智能体活动，包括未获批的沙盒区域编辑、试图利用公共记事工具 Etherpad 作为代理抓取数据，以及数百万次 API 请求和页面爬取，未发现系统被用于智能体间协调或数据被入侵的证据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ncv6u97zqan3hgzng59yel19f",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "f6ca85e2bd9509d09592da64ac95f7d6e3ce25aa",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -230,8 +276,8 @@
       "fetched_count": 1247,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 577,
-      "checked_at": "2026-10-05T17:16:35.239651Z"
+      "latency_ms": 537,
+      "checked_at": "2026-10-05T21:21:16.337038Z"
     },
     {
       "source_id": "openai-skills",
@@ -242,8 +288,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 279,
-      "checked_at": "2026-10-05T17:16:35.519310Z"
+      "latency_ms": 199,
+      "checked_at": "2026-10-05T21:21:16.536743Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -254,8 +300,8 @@
       "fetched_count": 265,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 184,
-      "checked_at": "2026-10-05T17:16:35.707663Z"
+      "latency_ms": 119,
+      "checked_at": "2026-10-05T21:21:16.660220Z"
     },
     {
       "source_id": "google-deepmind",
@@ -266,8 +312,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 257,
-      "checked_at": "2026-10-05T17:16:35.966348Z"
+      "latency_ms": 87,
+      "checked_at": "2026-10-05T21:21:16.749259Z"
     },
     {
       "source_id": "google-ai",
@@ -278,8 +324,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 362,
-      "checked_at": "2026-10-05T17:16:36.329598Z"
+      "latency_ms": 112,
+      "checked_at": "2026-10-05T21:21:16.862160Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -291,7 +337,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 321,
-      "checked_at": "2026-10-05T17:16:36.664573Z"
+      "checked_at": "2026-10-05T21:21:17.196559Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -302,8 +348,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 251,
-      "checked_at": "2026-10-05T17:16:36.916157Z"
+      "latency_ms": 195,
+      "checked_at": "2026-10-05T21:21:17.392448Z"
     },
     {
       "source_id": "github-changelog",
@@ -314,8 +360,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-10-05T17:16:36.947232Z"
+      "latency_ms": 21,
+      "checked_at": "2026-10-05T21:21:17.414358Z"
     },
     {
       "source_id": "aihot",
@@ -324,10 +370,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 3,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 1224,
-      "checked_at": "2026-10-05T17:16:38.172481Z"
+      "latency_ms": 1146,
+      "checked_at": "2026-10-05T21:21:18.562417Z"
     }
   ],
   "control_notes": {
