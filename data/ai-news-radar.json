@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-05T10:52:41.793189Z",
+  "generated_at": "2026-10-05T15:06:20.228745Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 1,
+  "item_count": 2,
   "groups": {
     "official": {
       "group": "official",
@@ -33,6 +33,30 @@
           1
         ]
       ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 1,
+      "top_sources": [
+        [
+          "AI Hot",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "openai",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "aggregate_noise",
+          1
+        ]
+      ]
     }
   },
   "items": [
@@ -55,6 +79,25 @@
         "source_prior:official_ai"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "f6ca85e2bd9509d09592da64ac95f7d6e3ce25aa",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 在 ChatGPT 推出全新视觉广告格式并扩展广告测量工具",
+      "url": "https://aihot.news/items/e63lz9ky7ebdxjea930dh3o5y",
+      "published_at": "2026-10-05T10:00:00Z",
+      "summary": "OpenAI 宣布在 ChatGPT 推出新的视觉广告格式，本月起在美国于图像生成场景中测试，广告将明确标注且不影响 ChatGPT 的回答。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e63lz9ky7ebdxjea930dh3o5y",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -67,8 +110,8 @@
       "fetched_count": 1246,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 539,
-      "checked_at": "2026-10-05T10:52:39.058167Z"
+      "latency_ms": 545,
+      "checked_at": "2026-10-05T15:06:17.990284Z"
     },
     {
       "source_id": "openai-skills",
@@ -79,8 +122,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 358,
-      "checked_at": "2026-10-05T10:52:39.416629Z"
+      "latency_ms": 247,
+      "checked_at": "2026-10-05T15:06:18.237630Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -91,8 +134,8 @@
       "fetched_count": 265,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 151,
-      "checked_at": "2026-10-05T10:52:39.571047Z"
+      "latency_ms": 122,
+      "checked_at": "2026-10-05T15:06:18.363659Z"
     },
     {
       "source_id": "google-deepmind",
@@ -103,8 +146,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 285,
-      "checked_at": "2026-10-05T10:52:39.857503Z"
+      "latency_ms": 155,
+      "checked_at": "2026-10-05T15:06:18.520771Z"
     },
     {
       "source_id": "google-ai",
@@ -115,8 +158,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 301,
-      "checked_at": "2026-10-05T10:52:40.159504Z"
+      "latency_ms": 169,
+      "checked_at": "2026-10-05T15:06:18.690777Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -124,11 +167,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 873,
+      "fetched_count": 874,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 339,
-      "checked_at": "2026-10-05T10:52:40.509410Z"
+      "latency_ms": 314,
+      "checked_at": "2026-10-05T15:06:19.018955Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -139,8 +182,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 282,
-      "checked_at": "2026-10-05T10:52:40.792093Z"
+      "latency_ms": 183,
+      "checked_at": "2026-10-05T15:06:19.202200Z"
     },
     {
       "source_id": "github-changelog",
@@ -151,8 +194,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 36,
-      "checked_at": "2026-10-05T10:52:40.828313Z"
+      "latency_ms": 23,
+      "checked_at": "2026-10-05T15:06:19.225759Z"
     },
     {
       "source_id": "aihot",
@@ -161,10 +204,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 955,
-      "checked_at": "2026-10-05T10:52:41.784815Z"
+      "latency_ms": 992,
+      "checked_at": "2026-10-05T15:06:20.219413Z"
     }
   ],
   "control_notes": {
