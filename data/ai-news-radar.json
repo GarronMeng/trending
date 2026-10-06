@@ -1,14 +1,14 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-06T13:29:57.343068Z",
+  "generated_at": "2026-10-06T15:21:23.351496Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 8,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "GitHub AI & ML",
@@ -17,16 +17,12 @@
         [
           "Hugging Face Blog",
           1
-        ],
-        [
-          "OpenAI News",
-          1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
+          2
         ],
         [
           "agent",
@@ -47,10 +43,6 @@
         [
           "llm",
           1
-        ],
-        [
-          "openai",
-          1
         ]
       ]
     },
@@ -69,23 +61,11 @@
           6
         ],
         [
-          "api",
-          4
-        ],
-        [
-          "API",
-          4
-        ],
-        [
-          "openai",
-          3
+          "claude",
+          2
         ],
         [
           "chatgpt",
-          3
-        ],
-        [
-          "claude",
           2
         ],
         [
@@ -93,8 +73,20 @@
           2
         ],
         [
-          "codex",
-          1
+          "openai",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "agent",
+          2
         ],
         [
           "anthropic",
@@ -106,6 +98,10 @@
         ],
         [
           "多模态",
+          1
+        ],
+        [
+          "评测",
           1
         ]
       ]
@@ -134,28 +130,6 @@
       "is_ai_related": true
     },
     {
-      "id": "152f3f38db6631e00b2fa01541d8f4a89928dda0",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 公布 EU AI Act 下的文本溯源方案，推出 textGrain 文本水印",
-      "url": "https://aihot.news/items/xx5mgdemrqmqw5zw410sbawcz",
-      "published_at": "2026-10-05T15:00:00Z",
-      "summary": "OpenAI 公布应对 EU AI Act 的文本水印方案，发布在模型词选择中加入不可见统计信号的 textGrain 技术，API 客户即日起可对部分模型选择性开启水印，未来数周将在欧盟地区为 ChatGPT 和 Codex 输出添加隐形水印，检测器暂只向获批的研究者和专家机构开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xx5mgdemrqmqw5zw410sbawcz",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:codex",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "914d098a7e0cee90f48a8a175fdfc765821a7455",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
@@ -169,24 +143,6 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:llm",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e6be4fab8d4001cdc36ac8dec55565adcd8384eb",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Our approach to EU text provenance rules",
-      "url": "https://openai.com/index/eu-text-provenance",
-      "published_at": "2026-10-05T15:00:00Z",
-      "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -274,21 +230,40 @@
       "is_ai_related": true
     },
     {
-      "id": "7db2a5ee22c863442e2439677c41b8e942b5a734",
+      "id": "dc2b2d1d16456308cc34fc60c559ec594d153843",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Mistral 发布 Mistral Large 4，1T 参数原生多模态，月底开放权重",
-      "url": "https://aihot.news/items/rdx6jno8oilxcl2c34r0rllox",
-      "published_at": "2026-10-06T13:06:16Z",
-      "summary": "Mistral AI 发布 Mistral Large 4（别名 Le Chonk），1T 参数、49B 激活，原生多模态。官方称其为美欧开放权重模型中聚合基准最佳，在网络防御、制造和金融等关键工作负载达到 SOTA，视觉 grounding 上超越闭源前沿模型；现可通过 API 使用，开放权重计划于 10 月底发布。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rdx6jno8oilxcl2c34r0rllox",
-      "relevance_score": 3,
+      "title": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测",
+      "url": "https://aihot.news/items/gyfo8loe7gfo6fmgt762027fp",
+      "published_at": "2026-10-06T14:21:52Z",
+      "summary": "Arena 宣布 Mistral 的 Mistral Large 4 现已进入 Agent Arena，用户可前往测试投票，分数稍后公布。该模型为 1T 参数、49B 激活的原生多模态开放权重模型，也已在 Code Arena 的 WebDev、Text 和 Vision 中可用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gyfo8loe7gfo6fmgt762027fp",
+      "relevance_score": 4,
       "relevance_reasons": [
+        "strong:agent",
         "strong:多模态",
-        "weak:api",
-        "weak:API",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "717cd6d400fb26dd1e401fa9959b94633fbe3956",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Vercel COO 讲解如何用 Agent 自动化 Inbound 销售",
+      "url": "https://aihot.news/items/clggowmf6nncm154a78nnizft",
+      "published_at": "2026-10-06T00:00:00Z",
+      "summary": "Vercel COO Jeanne DeWitt Grosser 在 Tom Tunguz 的 Office Hours 节目中讲解团队如何搭建运行销售漏斗顶端的 Agent。 🔗 阅读原文 via AIHOT · https://aihot.news/items/clggowmf6nncm154a78nnizft",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:自动化",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -302,10 +277,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1247,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 370,
-      "checked_at": "2026-10-06T13:29:52.232896Z"
+      "latency_ms": 547,
+      "checked_at": "2026-10-06T15:21:20.328985Z"
     },
     {
       "source_id": "openai-skills",
@@ -316,8 +291,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 214,
-      "checked_at": "2026-10-06T13:29:52.447232Z"
+      "latency_ms": 210,
+      "checked_at": "2026-10-06T15:21:20.539515Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -328,8 +303,8 @@
       "fetched_count": 265,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 78,
-      "checked_at": "2026-10-06T13:29:52.528858Z"
+      "latency_ms": 129,
+      "checked_at": "2026-10-06T15:21:20.673085Z"
     },
     {
       "source_id": "google-deepmind",
@@ -340,8 +315,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 180,
-      "checked_at": "2026-10-06T13:29:52.710047Z"
+      "latency_ms": 357,
+      "checked_at": "2026-10-06T15:21:21.032059Z"
     },
     {
       "source_id": "google-ai",
@@ -352,8 +327,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 236,
-      "checked_at": "2026-10-06T13:29:52.946797Z"
+      "latency_ms": 194,
+      "checked_at": "2026-10-06T15:21:21.226723Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -364,8 +339,8 @@
       "fetched_count": 875,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 221,
-      "checked_at": "2026-10-06T13:29:53.178413Z"
+      "latency_ms": 385,
+      "checked_at": "2026-10-06T15:21:21.624923Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -376,8 +351,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 404,
-      "checked_at": "2026-10-06T13:29:53.582797Z"
+      "latency_ms": 439,
+      "checked_at": "2026-10-06T15:21:22.065040Z"
     },
     {
       "source_id": "github-changelog",
@@ -388,8 +363,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 197,
-      "checked_at": "2026-10-06T13:29:53.780218Z"
+      "latency_ms": 52,
+      "checked_at": "2026-10-06T15:21:22.117731Z"
     },
     {
       "source_id": "aihot",
@@ -400,8 +375,8 @@
       "fetched_count": 51,
       "kept_count": 6,
       "error": null,
-      "latency_ms": 3553,
-      "checked_at": "2026-10-06T13:29:57.334897Z"
+      "latency_ms": 1224,
+      "checked_at": "2026-10-06T15:21:23.343480Z"
     }
   ],
   "control_notes": {
