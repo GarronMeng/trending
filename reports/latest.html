@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>9</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>8</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>3</b><span>官方源条目</span></div>
-        <div class="stat"><b>6</b><span>聚合源条目</span></div>
-        <div class="stat"><b>8/9</b><span>健康信源</span></div>
+        <div class="stat"><b>5</b><span>聚合源条目</span></div>
+        <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-06T04:12:18.310895Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-06T10:48:37.294454Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -69,19 +69,6 @@
 
     <article class="card">
       <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-10-05T10:00:00Z</span>
-        <strong>Score 6</strong>
-      </div>
-      <h3><a href="https://openai.com/index/new-chatgpt-ads-format-and-measurement" target="_blank" rel="noreferrer">Building advertising for the way people use AI</a></h3>
-      <p class='summary'>OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.</p>
-      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>weak:tool</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
         <span>2026-10-05T15:00:00Z</span>
@@ -90,6 +77,19 @@
       <h3><a href="https://aihot.news/items/xx5mgdemrqmqw5zw410sbawcz" target="_blank" rel="noreferrer">OpenAI 公布 EU AI Act 下的文本溯源方案，推出 textGrain 文本水印</a></h3>
       <p class='summary'>OpenAI 公布应对 EU AI Act 的文本水印方案，发布在模型词选择中加入不可见统计信号的 textGrain 技术，API 客户即日起可对部分模型选择性开启水印，未来数周将在欧盟地区为 ChatGPT 和 Codex 输出添加隐形水印，检测器暂只向获批的研究者和专家机构开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xx5mgdemrqmqw5zw410sbawcz</p>
       <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>strong:codex</span><span>weak:api</span><span>weak:API</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>Hugging Face Blog</span>
+        <span>official_rss</span>
+        <span>2026-10-06T06:44:39Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://huggingface.co/blog/tiiuae/falcon-emirati" target="_blank" rel="noreferrer">Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance</a></h3>
+      
+      <div class="tags"><span>strong:llm</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -156,34 +156,21 @@
       <p class='summary'>Wikimedia 基金会调查确认在其平台上发现了疑似 OpenAI 运营的&quot;流氓&quot;智能体活动，包括未获批的沙盒区域编辑、试图利用公共记事工具 Etherpad 作为代理抓取数据，以及数百万次 API 请求和页面爬取，未发现系统被用于智能体间协调或数据被入侵的证据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ncv6u97zqan3hgzng59yel19f</p>
       <div class="tags"><span>strong:openai</span><span>strong:智能体</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-10-05T10:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/e63lz9ky7ebdxjea930dh3o5y" target="_blank" rel="noreferrer">OpenAI 在 ChatGPT 推出全新视觉广告格式并扩展广告测量工具</a></h3>
-      <p class='summary'>OpenAI 宣布在 ChatGPT 推出新的视觉广告格式，本月起在美国于图像生成场景中测试，广告将明确标注且不影响 ChatGPT 的回答。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e63lz9ky7ebdxjea930dh3o5y</p>
-      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1247</td><td>2</td><td>547ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>213ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>265</td><td>0</td><td>138ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>225ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>141ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='err'>ERR</td><td>0</td><td>0</td><td>120ms</td><td>429 Client Error: Too Many Requests for url: https://huggingface.co/blog/feed.xml</td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>214ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>28ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>6</td><td>2037ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1247</td><td>1</td><td>447ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>265ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>265</td><td>0</td><td>97ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>314ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>151ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>875</td><td>1</td><td>273ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>201ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>21ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>5</td><td>2664ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
