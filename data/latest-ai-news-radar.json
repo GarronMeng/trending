@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-06T15:21:23.351496Z",
+  "generated_at": "2026-10-06T19:18:07.989075Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 10,
   "groups": {
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
-          "GitHub AI & ML",
-          1
+          "OpenAI News",
+          2
         ],
         [
           "Hugging Face Blog",
@@ -22,6 +22,10 @@
       "top_keywords": [
         [
           "official_ai",
+          3
+        ],
+        [
+          "openai",
           2
         ],
         [
@@ -33,11 +37,11 @@
           1
         ],
         [
-          "benchmark",
+          "eval",
           1
         ],
         [
-          "eval",
+          "workflow",
           1
         ],
         [
@@ -48,17 +52,21 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          6
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          7
+        ],
+        [
+          "agent",
+          3
         ],
         [
           "claude",
@@ -73,35 +81,31 @@
           2
         ],
         [
+          "多模态",
+          2
+        ],
+        [
           "openai",
-          2
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "agent",
-          2
+          1
         ],
         [
           "anthropic",
           1
         ],
         [
-          "智能体",
+          "api",
           1
         ],
         [
-          "多模态",
+          "API",
           1
         ],
         [
           "评测",
+          1
+        ],
+        [
+          "智能体",
           1
         ]
       ]
@@ -109,22 +113,41 @@
   },
   "items": [
     {
-      "id": "4ea0f42ca82f8ccb9ae16c930e62a704d2daa191",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
+      "id": "4f2e81f69c144a06978698a7144b650677ffe874",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
-      "source_weight": 4,
-      "title": "ReviewBench: An open benchmark for AI code review",
-      "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review",
-      "published_at": "2026-10-05T15:59:40Z",
-      "summary": "We’re launching ReviewBench, a benchmark for code review agents built on representative GitHub pull requests, multi-source ground truth, calibrated evaluation, and production-aligned metrics. The post ReviewBench: An open benchmark for AI code review appeared first on The GitHub Blog .",
-      "relevance_score": 7,
+      "source_weight": 5,
+      "title": "Advancing computer use with Ironclad",
+      "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+      "published_at": "2026-10-06T10:00:00Z",
+      "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
+      "relevance_score": 9,
       "relevance_reasons": [
+        "strong:openai",
         "strong:agent",
         "strong:agents",
-        "weak:benchmark",
         "weak:eval",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5a15d639b45cc33c3fa1d7e960376b0a784a58da",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+      "url": "https://openai.com/index/atlassian-partnership",
+      "published_at": "2026-10-06T16:00:00Z",
+      "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -209,27 +232,6 @@
       "is_ai_related": true
     },
     {
-      "id": "bd7886f1cb5453193b686cad54abbef49160d774",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Wikimedia 基金会发现 OpenAI \"流氓\"智能体在维基媒体平台上的活动",
-      "url": "https://aihot.news/items/ncv6u97zqan3hgzng59yel19f",
-      "published_at": "2026-10-05T17:53:35Z",
-      "summary": "Wikimedia 基金会调查确认在其平台上发现了疑似 OpenAI 运营的\"流氓\"智能体活动，包括未获批的沙盒区域编辑、试图利用公共记事工具 Etherpad 作为代理抓取数据，以及数百万次 API 请求和页面爬取，未发现系统被用于智能体间协调或数据被入侵的证据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ncv6u97zqan3hgzng59yel19f",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "dc2b2d1d16456308cc34fc60c559ec594d153843",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -245,6 +247,44 @@
         "strong:agent",
         "strong:多模态",
         "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e5ef951356e3dffa408f660a3f7d8007f30b84fe",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Sierra 与 Meta 联合多家企业发布 Personal Agent Protocol 开放协议",
+      "url": "https://aihot.news/items/ktjti7hbm1gor33jpoc6ghili",
+      "published_at": "2026-10-06T17:32:00Z",
+      "summary": "Sierra 与 Meta 联合 Genesys、Instinct、Rocket、Shopify、Stripe、Walmart 等伙伴宣布开发 Personal Agent Protocol，一个定义个人 AI 智能体如何与企业交互的开放标准，任何人都可实现。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ktjti7hbm1gor33jpoc6ghili",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f06118a6c253b6a1333e68fb21f0c62cb3aaeb8c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google DeepMind 发布多模态嵌入模型 EmbeddingGemma 2",
+      "url": "https://aihot.news/items/arlkhdtjzshqi1qdyowqvtwyy",
+      "published_at": "2026-10-06T00:00:00Z",
+      "summary": "Google DeepMind 于 10 月 6 日发布开放权重的多模态嵌入模型 EmbeddingGemma 2，将文本、图像、视频帧和音频映射到统一向量空间，参数量 740M。 🔗 阅读原文 via AIHOT · https://aihot.news/items/arlkhdtjzshqi1qdyowqvtwyy",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:deepmind",
+        "strong:多模态",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -276,11 +316,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1247,
-      "kept_count": 0,
+      "fetched_count": 1249,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 547,
-      "checked_at": "2026-10-06T15:21:20.328985Z"
+      "latency_ms": 538,
+      "checked_at": "2026-10-06T19:18:04.239394Z"
     },
     {
       "source_id": "openai-skills",
@@ -291,8 +331,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 210,
-      "checked_at": "2026-10-06T15:21:20.539515Z"
+      "latency_ms": 312,
+      "checked_at": "2026-10-06T19:18:04.551805Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -303,8 +343,8 @@
       "fetched_count": 265,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 129,
-      "checked_at": "2026-10-06T15:21:20.673085Z"
+      "latency_ms": 119,
+      "checked_at": "2026-10-06T19:18:04.675087Z"
     },
     {
       "source_id": "google-deepmind",
@@ -315,8 +355,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 357,
-      "checked_at": "2026-10-06T15:21:21.032059Z"
+      "latency_ms": 260,
+      "checked_at": "2026-10-06T19:18:04.937628Z"
     },
     {
       "source_id": "google-ai",
@@ -327,8 +367,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 194,
-      "checked_at": "2026-10-06T15:21:21.226723Z"
+      "latency_ms": 262,
+      "checked_at": "2026-10-06T19:18:05.200352Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -339,8 +379,8 @@
       "fetched_count": 875,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 385,
-      "checked_at": "2026-10-06T15:21:21.624923Z"
+      "latency_ms": 321,
+      "checked_at": "2026-10-06T19:18:05.535120Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -349,10 +389,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 439,
-      "checked_at": "2026-10-06T15:21:22.065040Z"
+      "latency_ms": 231,
+      "checked_at": "2026-10-06T19:18:05.767128Z"
     },
     {
       "source_id": "github-changelog",
@@ -363,8 +403,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 52,
-      "checked_at": "2026-10-06T15:21:22.117731Z"
+      "latency_ms": 29,
+      "checked_at": "2026-10-06T19:18:05.796946Z"
     },
     {
       "source_id": "aihot",
@@ -373,10 +413,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 6,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 1224,
-      "checked_at": "2026-10-06T15:21:23.343480Z"
+      "latency_ms": 2182,
+      "checked_at": "2026-10-06T19:18:07.980986Z"
     }
   ],
   "control_notes": {
