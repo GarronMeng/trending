@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>8</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>9</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>3</b><span>官方源条目</span></div>
-        <div class="stat"><b>5</b><span>聚合源条目</span></div>
-        <div class="stat"><b>9/9</b><span>健康信源</span></div>
+        <div class="stat"><b>6</b><span>聚合源条目</span></div>
+        <div class="stat"><b>8/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-05T21:21:18.572700Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-06T04:12:18.310895Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -110,6 +110,32 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
+        <span>2026-10-06T02:31:56Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/tfuj58rvo46hvh8l2nzcbpf7n" target="_blank" rel="noreferrer">卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元</a></h3>
+      <p class='summary'>作者解读 A16Z 第七版《Top 100 消费级 AI 应用》和 90 多页的《市场状况 II》报告，指出反常识数据。美国近一半人用过 AI 但只有 25% 每天在用，截至 2026 年 8 月仅 4.5% 有 ChatGPT、Gemini 或 Claude 个人付费订阅；付费用户中头部 1% 月均消费 903 美元、贡献 19.5% 的全部消费。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tfuj58rvo46hvh8l2nzcbpf7n</p>
+      <div class="tags"><span>strong:claude</span><span>strong:chatgpt</span><span>strong:gemini</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-10-06T00:18:00Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/wiip2ye21b67quiydxlnqmeyc" target="_blank" rel="noreferrer">卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众</a></h3>
+      <p class='summary'>作者解读A16Z第七版《Top 100 消费级 AI 应用》和90多页的《市场状况 II》报告，指出美国近一半人用过AI但仅25%每天使用，ChatGPT、Gemini或Claude个人付费订阅率仅4.5%，标普500公司只有2%长期追踪AI价值指标。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wiip2ye21b67quiydxlnqmeyc</p>
+      <div class="tags"><span>strong:claude</span><span>strong:chatgpt</span><span>strong:gemini</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
         <span>2026-10-05T20:01:09Z</span>
         <strong>Score 5</strong>
       </div>
@@ -143,34 +169,21 @@
       <p class='summary'>OpenAI 宣布在 ChatGPT 推出新的视觉广告格式，本月起在美国于图像生成场景中测试，广告将明确标注且不影响 ChatGPT 的回答。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e63lz9ky7ebdxjea930dh3o5y</p>
       <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-10-05T00:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/ef2o8x2jh4m8n7ggsq5bc5eag" target="_blank" rel="noreferrer">Together AI 推出 Together Link，一键在现有编码智能体中接入开源模型并降费超 50%</a></h3>
-      <p class='summary'>Together AI 发布 Together Link，把团队已用的编码智能体工具连接到 Together AI 上的开源模型，宣称可节省超过 50% 支出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ef2o8x2jh4m8n7ggsq5bc5eag</p>
-      <div class="tags"><span>strong:智能体</span><span>strong:开源模型</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1247</td><td>2</td><td>537ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>199ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>265</td><td>0</td><td>119ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>87ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>112ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>874</td><td>0</td><td>321ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>195ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>21ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>5</td><td>1146ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1247</td><td>2</td><td>547ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>213ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>265</td><td>0</td><td>138ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>225ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>141ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='err'>ERR</td><td>0</td><td>0</td><td>120ms</td><td>429 Client Error: Too Many Requests for url: https://huggingface.co/blog/feed.xml</td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>214ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>28ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>6</td><td>2037ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
