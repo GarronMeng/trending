@@ -43,8 +43,8 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>12</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>6</b><span>官方源条目</span></div>
+        <div class="stat"><b>10</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>4</b><span>官方源条目</span></div>
         <div class="stat"><b>5</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
@@ -52,21 +52,8 @@
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-07T03:39:08.529259Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-07T10:35:56.771466Z</p></div>
       <div class="grid">
-    <article class="card">
-      <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-10-06T10:00:00Z</span>
-        <strong>Score 9</strong>
-      </div>
-      <h3><a href="https://openai.com/index/advancing-computer-use-with-ironclad" target="_blank" rel="noreferrer">Advancing computer use with Ironclad</a></h3>
-      <p class='summary'>Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.</p>
-      <div class="tags"><span>strong:openai</span><span>strong:agent</span><span>strong:agents</span><span>weak:eval</span><span>weak:workflow</span></div>
-    </article>
-    
-
     <article class="card">
       <div class="meta">
         <span>OpenAI News</span>
@@ -129,19 +116,6 @@
       <h3><a href="https://openai.com/index/sharing-ai-progress-in-mathematics" target="_blank" rel="noreferrer">Sharing AI progress in mathematics</a></h3>
       <p class='summary'>OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.</p>
       <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>Hugging Face Blog</span>
-        <span>official_rss</span>
-        <span>2026-10-06T06:44:39Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://huggingface.co/blog/tiiuae/falcon-emirati" target="_blank" rel="noreferrer">Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance</a></h3>
-      
-      <div class="tags"><span>strong:llm</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -214,15 +188,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1251</td><td>4</td><td>345ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>260ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>266</td><td>0</td><td>91ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>1</td><td>596ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>256ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>875</td><td>1</td><td>203ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>196ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>24ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>5</td><td>1533ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1251</td><td>3</td><td>367ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>247ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>266</td><td>0</td><td>84ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>1</td><td>135ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>108ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>875</td><td>0</td><td>211ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>156ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>20ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>5</td><td>8679ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
