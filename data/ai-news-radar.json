@@ -1,115 +1,143 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-07T15:40:39.659661Z",
+  "generated_at": "2026-10-07T19:43:32.515217Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 22,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
-      "count": 5,
-      "top_sources": [
-        [
-          "AI Hot",
-          5
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          5
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "开源模型",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "deepmind",
-          1
-        ],
-        [
-          "多模态",
-          1
-        ],
-        [
-          "agent",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
-        ],
-        [
-          "agent",
-          1
-        ]
-      ]
-    },
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 6,
       "top_sources": [
+        [
+          "OpenAI News",
+          3
+        ],
+        [
+          "Hugging Face Blog",
+          1
+        ],
         [
           "Google DeepMind",
           1
         ],
         [
-          "OpenAI News",
+          "GitHub AI & ML",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          2
+          6
+        ],
+        [
+          "chatgpt",
+          3
         ],
         [
           "multimodal",
+          2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "tool",
+          1
+        ],
+        [
+          "developer",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 4,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          4
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          6
+        ],
+        [
+          "agent",
+          3
+        ],
+        [
+          "developer",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 12,
+      "top_sources": [
+        [
+          "AI Hot",
+          12
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          12
+        ],
+        [
+          "claude",
+          5
+        ],
+        [
+          "anthropic",
+          4
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "chatgpt",
+          2
+        ],
+        [
+          "多模态",
+          2
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "agents",
           1
         ],
         [
           "openai",
+          1
+        ],
+        [
+          "hugging face",
           1
         ]
       ]
@@ -117,24 +145,95 @@
   },
   "items": [
     {
-      "id": "d6a6d075abcf6c67106be135f941e09982196ab4",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "LlamaIndex 发布 OpenDocRouter：一个 API 统一调用多种文档解析模型",
-      "url": "https://aihot.news/items/hye210jt0h75h9t4dgf4rveow",
-      "published_at": "2026-10-06T16:00:00Z",
-      "summary": "LlamaIndex 推出 OpenDocRouter 平台，通过统一 API 将文档（PDF、PNG、JPEG 或 URL）解析为 markdown，接入 Claude Opus 5.5、Gemini 3 Flash、GPT-6 Luna 等 5 个前沿模型和 MinerU2.5-Pro、PaddleOCR-VL-1.6 等 5 个开源模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hye210jt0h75h9t4dgf4rveow",
-      "relevance_score": 7,
+      "id": "5ec176addf1fa8d5edb5bf4c341bd0f1d6f60acf",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+      "url": "https://openai.com/index/radisson",
+      "published_at": "2026-10-07T07:00:00Z",
+      "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:claude",
-        "strong:gemini",
-        "strong:开源模型",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
+        "strong:openai",
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b88b1f6aec619fc1561c0d25f9601dda9172fa65",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Local sandboxing for GitHub Copilot now generally available",
+      "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+      "published_at": "2026-10-07T15:46:17Z",
+      "summary": "Local sandboxing for GitHub Copilot is now generally available in GitHub Copilot CLI, the GitHub Copilot app, and VS Code sessions using Agent Host. Local sandboxes give developers a secure… The post Local sandboxing for GitHub Copilot now generally available appeared first on The GitHub Blog .",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:developer",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "83ce1d71a2494599049b66021b3d1520e0c1d0bd",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Multimodal open d1 decision models for the edge",
+      "url": "https://huggingface.co/blog/LiquidAI/open-d1",
+      "published_at": "2026-10-07T16:54:33Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:multimodal",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5eba3013670e7a2ceda844ff3d97021d7ae1400e",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Helping teens learn, plan, and shape the future of AI",
+      "url": "https://openai.com/index/teens-learn-and-plan",
+      "published_at": "2026-10-07T12:00:00Z",
+      "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ab4ead7e2f252952747c9d5299c1bc42f6e342c6",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "GPT-6 and Intelligent UI for everyone",
+      "url": "https://openai.com/index/gpt-6-for-everyone",
+      "published_at": "2026-10-07T00:00:00Z",
+      "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -176,20 +275,213 @@
       "is_ai_related": true
     },
     {
-      "id": "5a15d639b45cc33c3fa1d7e960376b0a784a58da",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
+      "id": "820cca60c18f4504925da7679d57439a8d6958bf",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Code v2.1.293 发布：新增 Claude Haiku 5.5 并修复大量问题",
+      "url": "https://aihot.news/items/vd2lvzvjz4tujiqupl30ifq3k",
+      "published_at": "2026-10-07T18:10:20Z",
+      "summary": "Claude Code 发布 v2.1.293，新增 Claude Haiku 5.5（claude-haiku-5-5）作为 Anthropic API 默认 Haiku 模型，支持 1M 上下文，价格为 $0.10/$0.50 每百万 token（超 100K 提示为 $0.50/$2.50）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vd2lvzvjz4tujiqupl30ifq3k",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b61badd9a1c181600755672f68731dd939448ed2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 为 Claude Max 和 Team 套餐推出月度 Platform API 额度",
+      "url": "https://aihot.news/items/ponkn6n046yorr5pg1yv3yjm5",
+      "published_at": "2026-10-07T18:08:53Z",
+      "summary": "Anthropic 正在为 Claude Max 和 Team 套餐推出月度 Claude Platform API 额度：Max 5x 为 $100，Max 20x 为 $200，Team 最多 $500 且可共享。额度适用于任何模型，包括 Haiku 5.5，可在自己的代码或第三方 harness 中使用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ponkn6n046yorr5pg1yv3yjm5",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "414ffc02447b636cf2acaab2ae402046e98bdc41",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
       "source_type": "official_rss",
       "source_group": "official",
-      "source_weight": 5,
-      "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
-      "url": "https://openai.com/index/atlassian-partnership",
-      "published_at": "2026-10-06T16:00:00Z",
-      "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
+      "source_weight": 4,
+      "title": "Secret protection must scale with software",
+      "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software",
+      "published_at": "2026-10-07T17:45:34Z",
+      "summary": "Developers aren’t becoming more careless; they’re being outpaced. The tools that let developers create more software should also take on more of the work of protecting it. The post Secret protection must scale with software appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:tool",
+        "weak:developer",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d05e74276d2bedfac68384868a5a324f2e42cf43",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Discover local models in GitHub Copilot CLI",
+      "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
+      "published_at": "2026-10-07T15:46:13Z",
+      "summary": "GitHub Copilot CLI makes it easier to choose a local model without leaving your existing workflow. Starting in CLI version 1.0.94-0, use /model to discover supported models from a running… The post Discover local models in GitHub Copilot CLI appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "weak:workflow",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "deff433df1cfdc46cb2c1ce0812f2d48812ecdd9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 发布 Claude Haiku 5.5，Artificial Analysis 智能指数得分 43",
+      "url": "https://aihot.news/items/r8dupnljjbgk9r9lio9w0o6u6",
+      "published_at": "2026-10-07T19:12:16Z",
+      "summary": "Anthropic 发布 Claude Haiku 5.5，在 Artificial Analysis 智能指数得 43 分，较上一代 Haiku 一年内提升 26 分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r8dupnljjbgk9r9lio9w0o6u6",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "534205300c79be123d577197416fac960dd62a3e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "LangChain 重构 Deep Agents 的 Skills 支持，新增工具绑定、固定技能与线程内重载",
+      "url": "https://aihot.news/items/m3vyz2bex4i58vffqfx586u3h",
+      "published_at": "2026-10-07T18:49:50Z",
+      "summary": "LangChain 重构 Deep Agents 的 Skills 支持，针对企业技能库增至数千个技能的场景推出三项更新：工具可绑定到技能、仅在该技能被读取时加载，用户可通过 /meeting-prep 之类的显式请求固定技能以在首次模型调用前加载，长线程可通过将 skills_metadata 设为 None 重载新增或变更的技能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m3vyz2bex4i58vffqfx586u3h",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a1c31880e700001eb7e8a7a8d1d04b76378d8e5d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 将 Claude Sonnet 5.5 缓存读取价格减半至每百万 token $0.10",
+      "url": "https://aihot.news/items/zn6imszjo14gki6kr2uyydknp",
+      "published_at": "2026-10-07T18:01:21Z",
+      "summary": "Anthropic 宣布将 Claude Sonnet 5.5 的缓存读取价格减半，降至每百万 token $0.10。官方称这使 Sonnet 5.5 在多数长期运行任务上的运行成本降低约 20%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zn6imszjo14gki6kr2uyydknp",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0faa050db28cc496ccb4adbb5dcb0c955b0fc8e7",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 向全部 ChatGPT 用户推出 GPT-6 与 Intelligent UI",
+      "url": "https://aihot.news/items/uir31g728myjry383z17txvrw",
+      "published_at": "2026-10-07T18:00:58Z",
+      "summary": "OpenAI 发布面向更广泛用户的 GPT-6，并随 GPT-6 在 ChatGPT 中引入 Intelligent UI，可生成图形、按钮、表单、图表和可交互组件来回答问题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uir31g728myjry383z17txvrw",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
-        "source_prior:official_ai"
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9fc799eb43f6f9a5c2c9b64c3910661af63521aa",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Perplexity 开源 pplx-embed-v2-late 多模态 late-interaction 嵌入模型（9B 与 0.6B）",
+      "url": "https://aihot.news/items/lfy2ww68p9lgpxxhu5jssflwf",
+      "published_at": "2026-10-07T16:33:02Z",
+      "summary": "Perplexity 开源 pplx-embed-v2-late，两个针对文本和图像的 late-interaction 多向量嵌入模型，大小为 9B 和 0.6B，共享同一嵌入空间，权重已在 Hugging Face 提供。9B 可用于索引多模态数据，0.6B 可在设备端查询，无需 OCR 即可检索 PDF 页面；模型在 MADQA 得分 92.4%，BrowseComp+ 得分 64%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lfy2ww68p9lgpxxhu5jssflwf",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "23235417757891f797772daa3c0ceba1f0448d67",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Purpose-built model for leaked secret detection",
+      "url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection",
+      "published_at": "2026-10-07T16:13:56Z",
+      "summary": "Secret protection should keep pace with the way you build software, whether you write code yourself or work with an AI agent. With our new purpose-built model, we’re bringing context-aware… The post Purpose-built model for leaked secret detection appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:agent"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "daa266404983f43755a0ae57e75f0604cda3ac11",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Microsoft Research Asia 开源 Agent Lightning v1.0：3,500 行代码的真实 harness 智能体 RL 训练框架",
+      "url": "https://aihot.news/items/t9wypjd9cbb42ttuq7vrpp07l",
+      "published_at": "2026-10-07T16:00:00Z",
+      "summary": "Microsoft Research Asia 提出 Harnessed Agentic RL 训练范式并开源重建的 Agent Lightning v1.0，让部署时使用的同一 agent harness 直接参与强化学习，无需在训练框架内重写 agent。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t9wypjd9cbb42ttuq7vrpp07l",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -232,20 +524,20 @@
       "is_ai_related": true
     },
     {
-      "id": "e5ef951356e3dffa408f660a3f7d8007f30b84fe",
+      "id": "106a29c98c682aa19e64e4b37b7a3589cda12836",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Sierra 与 Meta 联合多家企业发布 Personal Agent Protocol 开放协议",
-      "url": "https://aihot.news/items/ktjti7hbm1gor33jpoc6ghili",
-      "published_at": "2026-10-06T17:32:00Z",
-      "summary": "Sierra 与 Meta 联合 Genesys、Instinct、Rocket、Shopify、Stripe、Walmart 等伙伴宣布开发 Personal Agent Protocol，一个定义个人 AI 智能体如何与企业交互的开放标准，任何人都可实现。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ktjti7hbm1gor33jpoc6ghili",
-      "relevance_score": 3,
+      "title": "Cursor 公布 Claude Haiku 5.5 定价并下调 Claude Sonnet 5.5 缓存读取价格",
+      "url": "https://aihot.news/items/vk1sotxx6v25hhgn55mwgv4nv",
+      "published_at": "2026-10-07T18:14:03Z",
+      "summary": "Cursor 公布 Claude Haiku 5.5 定价为每 M 输入 token $0.10、输出 token $0.50，输入超过 100k token 时为 $0.50/M 和 $2.50/M。Claude Sonnet 5.5 缓存读取价格也从 $0.20/M 降至 $0.10/M，用户可在 cursor.com/evals 上通过 CursorBench 对比 Haiku 5.5 的表现。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vk1sotxx6v25hhgn55mwgv4nv",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
+        "strong:claude",
+        "weak:eval",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -277,11 +569,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1251,
-      "kept_count": 1,
+      "fetched_count": 1254,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 541,
-      "checked_at": "2026-10-07T15:40:31.208240Z"
+      "latency_ms": 488,
+      "checked_at": "2026-10-07T19:43:29.116143Z"
     },
     {
       "source_id": "openai-skills",
@@ -292,8 +584,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 307,
-      "checked_at": "2026-10-07T15:40:31.515875Z"
+      "latency_ms": 323,
+      "checked_at": "2026-10-07T19:43:29.439503Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -304,8 +596,8 @@
       "fetched_count": 266,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 123,
-      "checked_at": "2026-10-07T15:40:31.643030Z"
+      "latency_ms": 140,
+      "checked_at": "2026-10-07T19:43:29.582644Z"
     },
     {
       "source_id": "google-deepmind",
@@ -316,8 +608,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 427,
-      "checked_at": "2026-10-07T15:40:32.072590Z"
+      "latency_ms": 349,
+      "checked_at": "2026-10-07T19:43:29.932978Z"
     },
     {
       "source_id": "google-ai",
@@ -328,8 +620,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 214,
-      "checked_at": "2026-10-07T15:40:32.287620Z"
+      "latency_ms": 227,
+      "checked_at": "2026-10-07T19:43:30.161283Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -338,10 +630,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 874,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 350,
-      "checked_at": "2026-10-07T15:40:32.651524Z"
+      "latency_ms": 286,
+      "checked_at": "2026-10-07T19:43:30.457798Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -350,10 +642,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 259,
-      "checked_at": "2026-10-07T15:40:32.911474Z"
+      "latency_ms": 250,
+      "checked_at": "2026-10-07T19:43:30.708367Z"
     },
     {
       "source_id": "github-changelog",
@@ -362,10 +654,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 37,
-      "checked_at": "2026-10-07T15:40:32.948895Z"
+      "latency_ms": 32,
+      "checked_at": "2026-10-07T19:43:30.741026Z"
     },
     {
       "source_id": "aihot",
@@ -374,10 +666,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 5,
+      "kept_count": 12,
       "error": null,
-      "latency_ms": 6699,
-      "checked_at": "2026-10-07T15:40:39.649967Z"
+      "latency_ms": 1764,
+      "checked_at": "2026-10-07T19:43:32.506587Z"
     }
   ],
   "control_notes": {
