@@ -1,11 +1,71 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-07T13:42:14.367661Z",
+  "generated_at": "2026-10-07T15:40:39.659661Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
   "item_count": 8,
   "groups": {
+    "aggregate": {
+      "group": "aggregate",
+      "count": 5,
+      "top_sources": [
+        [
+          "AI Hot",
+          5
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          5
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "开源模型",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "deepmind",
+          1
+        ],
+        [
+          "多模态",
+          1
+        ],
+        [
+          "agent",
+          1
+        ]
+      ]
+    },
     "developer": {
       "group": "developer",
       "count": 1,
@@ -53,57 +113,31 @@
           1
         ]
       ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 5,
-      "top_sources": [
-        [
-          "AI Hot",
-          5
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          5
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "多模态",
-          2
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "评测",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "deepmind",
-          1
-        ],
-        [
-          "开发者",
-          1
-        ]
-      ]
     }
   },
   "items": [
+    {
+      "id": "d6a6d075abcf6c67106be135f941e09982196ab4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "LlamaIndex 发布 OpenDocRouter：一个 API 统一调用多种文档解析模型",
+      "url": "https://aihot.news/items/hye210jt0h75h9t4dgf4rveow",
+      "published_at": "2026-10-06T16:00:00Z",
+      "summary": "LlamaIndex 推出 OpenDocRouter 平台，通过统一 API 将文档（PDF、PNG、JPEG 或 URL）解析为 markdown，接入 Claude Opus 5.5、Gemini 3 Flash、GPT-6 Luna 等 5 个前沿模型和 MinerU2.5-Pro、PaddleOCR-VL-1.6 等 5 个开源模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hye210jt0h75h9t4dgf4rveow",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:gemini",
+        "strong:开源模型",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "43ed239d6f112a1537b1b6921f7ea081ce7cef49",
       "source_id": "github-changelog",
@@ -156,26 +190,6 @@
       "relevance_reasons": [
         "strong:openai",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "dc2b2d1d16456308cc34fc60c559ec594d153843",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测",
-      "url": "https://aihot.news/items/gyfo8loe7gfo6fmgt762027fp",
-      "published_at": "2026-10-06T14:21:52Z",
-      "summary": "Arena 宣布 Mistral 的 Mistral Large 4 现已进入 Agent Arena，用户可前往测试投票，分数稍后公布。该模型为 1T 参数、49B 激活的原生多模态开放权重模型，也已在 Code Arena 的 WebDev、Text 和 Vision 中可用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gyfo8loe7gfo6fmgt762027fp",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:多模态",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -266,8 +280,8 @@
       "fetched_count": 1251,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 624,
-      "checked_at": "2026-10-07T13:42:06.584837Z"
+      "latency_ms": 541,
+      "checked_at": "2026-10-07T15:40:31.208240Z"
     },
     {
       "source_id": "openai-skills",
@@ -278,8 +292,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 422,
-      "checked_at": "2026-10-07T13:42:07.007054Z"
+      "latency_ms": 307,
+      "checked_at": "2026-10-07T15:40:31.515875Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -290,8 +304,8 @@
       "fetched_count": 266,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 191,
-      "checked_at": "2026-10-07T13:42:07.201857Z"
+      "latency_ms": 123,
+      "checked_at": "2026-10-07T15:40:31.643030Z"
     },
     {
       "source_id": "google-deepmind",
@@ -302,8 +316,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 206,
-      "checked_at": "2026-10-07T13:42:07.409477Z"
+      "latency_ms": 427,
+      "checked_at": "2026-10-07T15:40:32.072590Z"
     },
     {
       "source_id": "google-ai",
@@ -314,8 +328,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 177,
-      "checked_at": "2026-10-07T13:42:07.587230Z"
+      "latency_ms": 214,
+      "checked_at": "2026-10-07T15:40:32.287620Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -326,8 +340,8 @@
       "fetched_count": 874,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 278,
-      "checked_at": "2026-10-07T13:42:07.876216Z"
+      "latency_ms": 350,
+      "checked_at": "2026-10-07T15:40:32.651524Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -338,8 +352,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 287,
-      "checked_at": "2026-10-07T13:42:08.164123Z"
+      "latency_ms": 259,
+      "checked_at": "2026-10-07T15:40:32.911474Z"
     },
     {
       "source_id": "github-changelog",
@@ -350,8 +364,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-10-07T13:42:08.194563Z"
+      "latency_ms": 37,
+      "checked_at": "2026-10-07T15:40:32.948895Z"
     },
     {
       "source_id": "aihot",
@@ -362,8 +376,8 @@
       "fetched_count": 51,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 6163,
-      "checked_at": "2026-10-07T13:42:14.359330Z"
+      "latency_ms": 6699,
+      "checked_at": "2026-10-07T15:40:39.649967Z"
     }
   ],
   "control_notes": {
