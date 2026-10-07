@@ -1,47 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-07T10:35:56.769876Z",
+  "generated_at": "2026-10-07T13:42:14.367661Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 8,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 4,
-      "top_sources": [
-        [
-          "OpenAI News",
-          3
-        ],
-        [
-          "Google DeepMind",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          4
-        ],
-        [
-          "openai",
-          3
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "multimodal",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
       "count": 1,
@@ -58,6 +22,34 @@
         ],
         [
           "agent",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "Google DeepMind",
+          1
+        ],
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
+        [
+          "multimodal",
+          1
+        ],
+        [
+          "openai",
           1
         ]
       ]
@@ -113,26 +105,6 @@
   },
   "items": [
     {
-      "id": "873d58f67846faf8e7845f710494cb0ab264ed39",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How Jump Trading is scaling quant research with ChatGPT",
-      "url": "https://openai.com/index/jump-trading",
-      "published_at": "2026-10-06T12:00:00Z",
-      "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "43ed239d6f112a1537b1b6921f7ea081ce7cef49",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -180,24 +152,6 @@
       "url": "https://openai.com/index/atlassian-partnership",
       "published_at": "2026-10-06T16:00:00Z",
       "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0bf34b08ba17ca8f0c7965884dce8ddce32efdfc",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Sharing AI progress in mathematics",
-      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
-      "published_at": "2026-10-06T12:00:00Z",
-      "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
@@ -310,10 +264,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1251,
-      "kept_count": 3,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 367,
-      "checked_at": "2026-10-07T10:35:47.100053Z"
+      "latency_ms": 624,
+      "checked_at": "2026-10-07T13:42:06.584837Z"
     },
     {
       "source_id": "openai-skills",
@@ -324,8 +278,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 247,
-      "checked_at": "2026-10-07T10:35:47.347595Z"
+      "latency_ms": 422,
+      "checked_at": "2026-10-07T13:42:07.007054Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -336,8 +290,8 @@
       "fetched_count": 266,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 84,
-      "checked_at": "2026-10-07T10:35:47.434976Z"
+      "latency_ms": 191,
+      "checked_at": "2026-10-07T13:42:07.201857Z"
     },
     {
       "source_id": "google-deepmind",
@@ -348,8 +302,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 135,
-      "checked_at": "2026-10-07T10:35:47.572126Z"
+      "latency_ms": 206,
+      "checked_at": "2026-10-07T13:42:07.409477Z"
     },
     {
       "source_id": "google-ai",
@@ -360,8 +314,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 108,
-      "checked_at": "2026-10-07T10:35:47.680759Z"
+      "latency_ms": 177,
+      "checked_at": "2026-10-07T13:42:07.587230Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -369,11 +323,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 875,
+      "fetched_count": 874,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 211,
-      "checked_at": "2026-10-07T10:35:47.902716Z"
+      "latency_ms": 278,
+      "checked_at": "2026-10-07T13:42:07.876216Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -384,8 +338,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 156,
-      "checked_at": "2026-10-07T10:35:48.059306Z"
+      "latency_ms": 287,
+      "checked_at": "2026-10-07T13:42:08.164123Z"
     },
     {
       "source_id": "github-changelog",
@@ -396,8 +350,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 20,
-      "checked_at": "2026-10-07T10:35:48.080395Z"
+      "latency_ms": 30,
+      "checked_at": "2026-10-07T13:42:08.194563Z"
     },
     {
       "source_id": "aihot",
@@ -408,8 +362,8 @@
       "fetched_count": 51,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 8679,
-      "checked_at": "2026-10-07T10:35:56.760452Z"
+      "latency_ms": 6163,
+      "checked_at": "2026-10-07T13:42:14.359330Z"
     }
   ],
   "control_notes": {
