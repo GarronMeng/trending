@@ -1,18 +1,22 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-06T19:18:07.989075Z",
+  "generated_at": "2026-10-07T03:39:08.528394Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 12,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 6,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          4
+        ],
+        [
+          "Google DeepMind",
+          1
         ],
         [
           "Hugging Face Blog",
@@ -22,10 +26,14 @@
       "top_keywords": [
         [
           "official_ai",
-          3
+          6
         ],
         [
           "openai",
+          4
+        ],
+        [
+          "workflow",
           2
         ],
         [
@@ -41,7 +49,11 @@
           1
         ],
         [
-          "workflow",
+          "chatgpt",
+          1
+        ],
+        [
+          "multimodal",
           1
         ],
         [
@@ -50,34 +62,42 @@
         ]
       ]
     },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
+        ],
+        [
+          "agent",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          7
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          5
         ],
         [
           "agent",
-          3
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
-          "chatgpt",
-          2
-        ],
-        [
-          "gemini",
           2
         ],
         [
@@ -85,27 +105,27 @@
           2
         ],
         [
-          "openai",
-          1
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
+          "智能体",
+          2
         ],
         [
           "评测",
           1
         ],
         [
-          "智能体",
+          "chatgpt",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "deepmind",
+          1
+        ],
+        [
+          "开发者",
           1
         ]
       ]
@@ -135,6 +155,63 @@
       "is_ai_related": true
     },
     {
+      "id": "873d58f67846faf8e7845f710494cb0ab264ed39",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How Jump Trading is scaling quant research with ChatGPT",
+      "url": "https://openai.com/index/jump-trading",
+      "published_at": "2026-10-06T12:00:00Z",
+      "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "43ed239d6f112a1537b1b6921f7ea081ce7cef49",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Update your IDE to restore agent activity in Copilot usage metrics",
+      "url": "https://github.blog/changelog/2026-10-06-update-your-ide-to-restore-agent-activity-in-copilot-usage-metrics",
+      "published_at": "2026-10-06T23:43:00Z",
+      "summary": "If your Copilot usage metrics have shown agent activity or agent lines of code falling while Copilot usage kept growing, we’ve found the cause, and a fix is rolling out… The post Update your IDE to restore agent activity in Copilot usage metrics appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e2bb7782e7ff304381feb2de0e07dccb1aa94591",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
+      "published_at": "2026-10-06T19:57:04Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:multimodal",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "5a15d639b45cc33c3fa1d7e960376b0a784a58da",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -145,6 +222,24 @@
       "url": "https://openai.com/index/atlassian-partnership",
       "published_at": "2026-10-06T16:00:00Z",
       "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0bf34b08ba17ca8f0c7965884dce8ddce32efdfc",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Sharing AI progress in mathematics",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "published_at": "2026-10-06T12:00:00Z",
+      "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
@@ -171,67 +266,6 @@
       "is_ai_related": true
     },
     {
-      "id": "1d49614b70a15729561ec3e2e5e19ed39d08163d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
-      "url": "https://aihot.news/items/tfuj58rvo46hvh8l2nzcbpf7n",
-      "published_at": "2026-10-06T02:31:56Z",
-      "summary": "作者解读 A16Z 第七版《Top 100 消费级 AI 应用》和 90 多页的《市场状况 II》报告，指出反常识数据。美国近一半人用过 AI 但只有 25% 每天在用，截至 2026 年 8 月仅 4.5% 有 ChatGPT、Gemini 或 Claude 个人付费订阅；付费用户中头部 1% 月均消费 903 美元、贡献 19.5% 的全部消费。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tfuj58rvo46hvh8l2nzcbpf7n",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:chatgpt",
-        "strong:gemini",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "bb88d6682073e67a1a12383be9a05c808ac00599",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
-      "url": "https://aihot.news/items/wiip2ye21b67quiydxlnqmeyc",
-      "published_at": "2026-10-06T00:18:00Z",
-      "summary": "作者解读A16Z第七版《Top 100 消费级 AI 应用》和90多页的《市场状况 II》报告，指出美国近一半人用过AI但仅25%每天使用，ChatGPT、Gemini或Claude个人付费订阅率仅4.5%，标普500公司只有2%长期追踪AI价值指标。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wiip2ye21b67quiydxlnqmeyc",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:chatgpt",
-        "strong:gemini",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0a047e5817a642be2ba6fd9441eebecd221da8c5",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "SemiAnalysis 测算：Anthropic 订阅的 API 等价价值约为 OpenAI 的 5 倍以上",
-      "url": "https://aihot.news/items/lcxzcuj920lvqlah60vj7utm1",
-      "published_at": "2026-10-05T20:01:09Z",
-      "summary": "SemiAnalysis 通过逐项测量用量表变化，估算各订阅计划的 API 等价价值，结论是在中端模型档位 Anthropic 订阅的价值约为 OpenAI 的 5 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lcxzcuj920lvqlah60vj7utm1",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "dc2b2d1d16456308cc34fc60c559ec594d153843",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -247,6 +281,44 @@
         "strong:agent",
         "strong:多模态",
         "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7df5949582be3cd83b3d2f7697a2aa394bd29510",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "ChatGPT 推出 Meetings 插件，可自动记会议纪要并跟进待办",
+      "url": "https://aihot.news/items/qhhq4hxjw53ywfzwwgyn2uoak",
+      "published_at": "2026-10-06T20:47:11Z",
+      "summary": "ChatGPT 发布 Meetings 插件，可替用户记会议笔记，并基于 ChatGPT 对用户和既往工作的了解，在 ChatGPT Space 保存个性化摘要和后续步骤。笔记可私密保存或与团队共享，还能让 ChatGPT 更新项目计划或起草跟进内容。目前以 beta 形式面向 Pro 和 Business 用户开放，可在 macOS 桌面应用的插件目录搜索 Meetings 使用，Enterprise 版即将推出。作者 Tibo 补充称，可放心畅谈并将积累的上下文载入 codex 来完成任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qhhq4hxjw53ywfzwwgyn2uoak",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a75732c5f81cfcdb890e643e7c1f367b054d6d4a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google DeepMind 发布开源轻量多模态嵌入模型 EmbeddingGemma 2",
+      "url": "https://aihot.news/items/g1k2ragppm8j4apj75qu1k4ug",
+      "published_at": "2026-10-06T19:57:04Z",
+      "summary": "Google DeepMind 发布 EmbeddingGemma 2，基于 Gemma 4 架构，以 Apache 2.0 许可开源，将文本、代码、图像、视频和音频映射到统一嵌入空间。 🔗 阅读原文 via AIHOT · https://aihot.news/items/g1k2ragppm8j4apj75qu1k4ug",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:deepmind",
+        "strong:多模态",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -271,39 +343,20 @@
       "is_ai_related": true
     },
     {
-      "id": "f06118a6c253b6a1333e68fb21f0c62cb3aaeb8c",
+      "id": "0aa6589fb86c10e7216bbafe00dce5cfbe3b70f2",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Google DeepMind 发布多模态嵌入模型 EmbeddingGemma 2",
-      "url": "https://aihot.news/items/arlkhdtjzshqi1qdyowqvtwyy",
-      "published_at": "2026-10-06T00:00:00Z",
-      "summary": "Google DeepMind 于 10 月 6 日发布开放权重的多模态嵌入模型 EmbeddingGemma 2，将文本、图像、视频帧和音频映射到统一向量空间，参数量 740M。 🔗 阅读原文 via AIHOT · https://aihot.news/items/arlkhdtjzshqi1qdyowqvtwyy",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:deepmind",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "717cd6d400fb26dd1e401fa9959b94633fbe3956",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Vercel COO 讲解如何用 Agent 自动化 Inbound 销售",
-      "url": "https://aihot.news/items/clggowmf6nncm154a78nnizft",
-      "published_at": "2026-10-06T00:00:00Z",
-      "summary": "Vercel COO Jeanne DeWitt Grosser 在 Tom Tunguz 的 Office Hours 节目中讲解团队如何搭建运行销售漏斗顶端的 Agent。 🔗 阅读原文 via AIHOT · https://aihot.news/items/clggowmf6nncm154a78nnizft",
+      "title": "GitHub 重建 Git 基础设施，应对智能体规模开发",
+      "url": "https://aihot.news/items/iq15z1msend1ocusxt2phyms7",
+      "published_at": "2026-10-06T20:57:56Z",
+      "summary": "GitHub 宣布重建 Git 基础设施，以支持智能体规模开发带来的高并发读写负载。2026 年 8 月 GitHub 月度 Git 事件量达 473.3 billion（一年翻倍以上），9 月智能体和开发者产生 7.38 billion commits（超一年前五倍），pushes 同比增长 4.9 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/iq15z1msend1ocusxt2phyms7",
       "relevance_score": 2,
       "relevance_reasons": [
-        "strong:agent",
-        "weak:自动化",
+        "strong:智能体",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -316,11 +369,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1249,
-      "kept_count": 2,
+      "fetched_count": 1251,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 538,
-      "checked_at": "2026-10-06T19:18:04.239394Z"
+      "latency_ms": 345,
+      "checked_at": "2026-10-07T03:39:05.347429Z"
     },
     {
       "source_id": "openai-skills",
@@ -331,8 +384,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 312,
-      "checked_at": "2026-10-06T19:18:04.551805Z"
+      "latency_ms": 260,
+      "checked_at": "2026-10-07T03:39:05.608133Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -340,11 +393,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 265,
+      "fetched_count": 266,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 119,
-      "checked_at": "2026-10-06T19:18:04.675087Z"
+      "latency_ms": 91,
+      "checked_at": "2026-10-07T03:39:05.701611Z"
     },
     {
       "source_id": "google-deepmind",
@@ -353,10 +406,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 260,
-      "checked_at": "2026-10-06T19:18:04.937628Z"
+      "latency_ms": 596,
+      "checked_at": "2026-10-07T03:39:06.299339Z"
     },
     {
       "source_id": "google-ai",
@@ -367,8 +420,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 262,
-      "checked_at": "2026-10-06T19:18:05.200352Z"
+      "latency_ms": 256,
+      "checked_at": "2026-10-07T03:39:06.555637Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -379,8 +432,8 @@
       "fetched_count": 875,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 321,
-      "checked_at": "2026-10-06T19:18:05.535120Z"
+      "latency_ms": 203,
+      "checked_at": "2026-10-07T03:39:06.765451Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -391,8 +444,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 231,
-      "checked_at": "2026-10-06T19:18:05.767128Z"
+      "latency_ms": 196,
+      "checked_at": "2026-10-07T03:39:06.962155Z"
     },
     {
       "source_id": "github-changelog",
@@ -401,10 +454,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-10-06T19:18:05.796946Z"
+      "latency_ms": 24,
+      "checked_at": "2026-10-07T03:39:06.987350Z"
     },
     {
       "source_id": "aihot",
@@ -413,10 +466,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 7,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 2182,
-      "checked_at": "2026-10-06T19:18:07.980986Z"
+      "latency_ms": 1533,
+      "checked_at": "2026-10-07T03:39:08.521494Z"
     }
   ],
   "control_notes": {
