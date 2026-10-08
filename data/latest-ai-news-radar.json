@@ -1,59 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-07T19:43:32.515217Z",
+  "generated_at": "2026-10-08T03:53:21.323448Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 22,
+  "item_count": 17,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 6,
-      "top_sources": [
-        [
-          "OpenAI News",
-          3
-        ],
-        [
-          "Hugging Face Blog",
-          1
-        ],
-        [
-          "Google DeepMind",
-          1
-        ],
-        [
-          "GitHub AI & ML",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          6
-        ],
-        [
-          "chatgpt",
-          3
-        ],
-        [
-          "multimodal",
-          2
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "tool",
-          1
-        ],
-        [
-          "developer",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
       "count": 4,
@@ -73,6 +25,18 @@
           3
         ],
         [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
           "developer",
           1
         ],
@@ -82,34 +46,82 @@
         ]
       ]
     },
+    "official": {
+      "group": "official",
+      "count": 4,
+      "top_sources": [
+        [
+          "OpenAI News",
+          2
+        ],
+        [
+          "Hugging Face Blog",
+          1
+        ],
+        [
+          "GitHub AI & ML",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          4
+        ],
+        [
+          "chatgpt",
+          2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "multimodal",
+          1
+        ],
+        [
+          "tool",
+          1
+        ],
+        [
+          "developer",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
-      "count": 12,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          12
+          9
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          12
+          9
         ],
         [
           "claude",
-          5
-        ],
-        [
-          "anthropic",
           4
         ],
         [
+          "anthropic",
+          3
+        ],
+        [
           "api",
-          2
+          3
         ],
         [
           "API",
+          3
+        ],
+        [
+          "openai",
           2
         ],
         [
@@ -117,33 +129,51 @@
           2
         ],
         [
-          "chatgpt",
-          2
-        ],
-        [
-          "多模态",
-          2
-        ],
-        [
-          "智能体",
-          2
+          "开发者",
+          1
         ],
         [
           "agents",
           1
         ],
         [
-          "openai",
+          "chatgpt",
           1
         ],
         [
           "hugging face",
+          1
+        ],
+        [
+          "多模态",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "31b927bd414ca1cfd8915e10acdf4345527a713e",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Claude Haiku 5.5 in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+      "published_at": "2026-10-07T20:12:18Z",
+      "summary": "Claude Haiku 5.5, Anthropic’s newest lightweight model, is now generally available in GitHub Copilot. It is designed for fast, high-volume work like subagents, quick edits, and terminal tasks. In early… The post Claude Haiku 5.5 in GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 11,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:agent",
+        "strong:agents",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "5ec176addf1fa8d5edb5bf4c341bd0f1d6f60acf",
       "source_id": "openai-news",
@@ -215,61 +245,6 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:chatgpt",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ab4ead7e2f252952747c9d5299c1bc42f6e342c6",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "GPT-6 and Intelligent UI for everyone",
-      "url": "https://openai.com/index/gpt-6-for-everyone",
-      "published_at": "2026-10-07T00:00:00Z",
-      "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "43ed239d6f112a1537b1b6921f7ea081ce7cef49",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Update your IDE to restore agent activity in Copilot usage metrics",
-      "url": "https://github.blog/changelog/2026-10-06-update-your-ide-to-restore-agent-activity-in-copilot-usage-metrics",
-      "published_at": "2026-10-06T23:43:00Z",
-      "summary": "If your Copilot usage metrics have shown agent activity or agent lines of code falling while Copilot usage kept growing, we’ve found the cause, and a fix is rolling out… The post Update your IDE to restore agent activity in Copilot usage metrics appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e2bb7782e7ff304381feb2de0e07dccb1aa94591",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
-      "published_at": "2026-10-06T19:57:04Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:multimodal",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -355,20 +330,22 @@
       "is_ai_related": true
     },
     {
-      "id": "deff433df1cfdc46cb2c1ce0812f2d48812ecdd9",
+      "id": "3df72608126541c8ea9bb493ecc4398597b7d7d4",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 发布 Claude Haiku 5.5，Artificial Analysis 智能指数得分 43",
-      "url": "https://aihot.news/items/r8dupnljjbgk9r9lio9w0o6u6",
-      "published_at": "2026-10-07T19:12:16Z",
-      "summary": "Anthropic 发布 Claude Haiku 5.5，在 Artificial Analysis 智能指数得 43 分，较上一代 Haiku 一年内提升 26 分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r8dupnljjbgk9r9lio9w0o6u6",
-      "relevance_score": 3,
+      "title": "GPT-6 Luna Decisions 上架 OpenRouter",
+      "url": "https://aihot.news/items/x40bi9csoomsdaflejehop22y",
+      "published_at": "2026-10-07T20:21:00Z",
+      "summary": "OpenRouter 宣布 GPT-6 Luna Decisions 上线。OpenAI 的 Decisions API 可让应用选择合适的模型、工具或动作，支持发送文本、JSON 或图片并返回带概率的类型化答案。定价为输入 $0.10/M、输出免费，上下文 1M；引用 OpenAI 开发者账号称其决策速度比通过 Responses API 的 GPT-6 Luna 最快 10 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x40bi9csoomsdaflejehop22y",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
+        "strong:openai",
+        "weak:api",
+        "weak:开发者",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -486,44 +463,6 @@
       "is_ai_related": true
     },
     {
-      "id": "7df5949582be3cd83b3d2f7697a2aa394bd29510",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "ChatGPT 推出 Meetings 插件，可自动记会议纪要并跟进待办",
-      "url": "https://aihot.news/items/qhhq4hxjw53ywfzwwgyn2uoak",
-      "published_at": "2026-10-06T20:47:11Z",
-      "summary": "ChatGPT 发布 Meetings 插件，可替用户记会议笔记，并基于 ChatGPT 对用户和既往工作的了解，在 ChatGPT Space 保存个性化摘要和后续步骤。笔记可私密保存或与团队共享，还能让 ChatGPT 更新项目计划或起草跟进内容。目前以 beta 形式面向 Pro 和 Business 用户开放，可在 macOS 桌面应用的插件目录搜索 Meetings 使用，Enterprise 版即将推出。作者 Tibo 补充称，可放心畅谈并将积累的上下文载入 codex 来完成任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qhhq4hxjw53ywfzwwgyn2uoak",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a75732c5f81cfcdb890e643e7c1f367b054d6d4a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google DeepMind 发布开源轻量多模态嵌入模型 EmbeddingGemma 2",
-      "url": "https://aihot.news/items/g1k2ragppm8j4apj75qu1k4ug",
-      "published_at": "2026-10-06T19:57:04Z",
-      "summary": "Google DeepMind 发布 EmbeddingGemma 2，基于 Gemma 4 架构，以 Apache 2.0 许可开源，将文本、代码、图像、视频和音频映射到统一嵌入空间。 🔗 阅读原文 via AIHOT · https://aihot.news/items/g1k2ragppm8j4apj75qu1k4ug",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:deepmind",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "106a29c98c682aa19e64e4b37b7a3589cda12836",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -541,25 +480,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "0aa6589fb86c10e7216bbafe00dce5cfbe3b70f2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "GitHub 重建 Git 基础设施，应对智能体规模开发",
-      "url": "https://aihot.news/items/iq15z1msend1ocusxt2phyms7",
-      "published_at": "2026-10-06T20:57:56Z",
-      "summary": "GitHub 宣布重建 Git 基础设施，以支持智能体规模开发带来的高并发读写负载。2026 年 8 月 GitHub 月度 Git 事件量达 473.3 billion（一年翻倍以上），9 月智能体和开发者产生 7.38 billion commits（超一年前五倍），pushes 同比增长 4.9 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/iq15z1msend1ocusxt2phyms7",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -569,11 +489,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1254,
-      "kept_count": 3,
+      "fetched_count": 1255,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 488,
-      "checked_at": "2026-10-07T19:43:29.116143Z"
+      "latency_ms": 318,
+      "checked_at": "2026-10-08T03:53:14.242166Z"
     },
     {
       "source_id": "openai-skills",
@@ -584,8 +504,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 323,
-      "checked_at": "2026-10-07T19:43:29.439503Z"
+      "latency_ms": 281,
+      "checked_at": "2026-10-08T03:53:14.523438Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -596,8 +516,8 @@
       "fetched_count": 266,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 140,
-      "checked_at": "2026-10-07T19:43:29.582644Z"
+      "latency_ms": 93,
+      "checked_at": "2026-10-08T03:53:14.618604Z"
     },
     {
       "source_id": "google-deepmind",
@@ -606,10 +526,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 349,
-      "checked_at": "2026-10-07T19:43:29.932978Z"
+      "latency_ms": 319,
+      "checked_at": "2026-10-08T03:53:14.938970Z"
     },
     {
       "source_id": "google-ai",
@@ -620,8 +540,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 227,
-      "checked_at": "2026-10-07T19:43:30.161283Z"
+      "latency_ms": 149,
+      "checked_at": "2026-10-08T03:53:15.088367Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -632,8 +552,8 @@
       "fetched_count": 874,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 286,
-      "checked_at": "2026-10-07T19:43:30.457798Z"
+      "latency_ms": 237,
+      "checked_at": "2026-10-08T03:53:15.332230Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -644,8 +564,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 250,
-      "checked_at": "2026-10-07T19:43:30.708367Z"
+      "latency_ms": 204,
+      "checked_at": "2026-10-08T03:53:15.537070Z"
     },
     {
       "source_id": "github-changelog",
@@ -656,8 +576,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-10-07T19:43:30.741026Z"
+      "latency_ms": 23,
+      "checked_at": "2026-10-08T03:53:15.560558Z"
     },
     {
       "source_id": "aihot",
@@ -666,10 +586,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 12,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 1764,
-      "checked_at": "2026-10-07T19:43:32.506587Z"
+      "latency_ms": 5755,
+      "checked_at": "2026-10-08T03:53:21.316702Z"
     }
   ],
   "control_notes": {
