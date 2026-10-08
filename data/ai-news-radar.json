@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-08T10:57:12.117964Z",
+  "generated_at": "2026-10-08T13:50:33.596952Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -48,14 +48,10 @@
     },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "Hugging Face Blog",
-          1
-        ],
-        [
-          "OpenAI News",
           1
         ],
         [
@@ -66,14 +62,10 @@
       "top_keywords": [
         [
           "official_ai",
-          3
+          2
         ],
         [
           "multimodal",
-          1
-        ],
-        [
-          "chatgpt",
           1
         ],
         [
@@ -88,17 +80,17 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 10,
+      "count": 11,
       "top_sources": [
         [
           "AI Hot",
-          10
+          11
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          10
+          11
         ],
         [
           "claude",
@@ -117,15 +109,19 @@
           3
         ],
         [
+          "agent",
+          3
+        ],
+        [
           "openai",
           2
         ],
         [
-          "chatgpt",
+          "智能体",
           2
         ],
         [
-          "agent",
+          "chatgpt",
           2
         ],
         [
@@ -138,10 +134,6 @@
         ],
         [
           "agents",
-          1
-        ],
-        [
-          "hugging face",
           1
         ]
       ]
@@ -204,24 +196,6 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:multimodal",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5eba3013670e7a2ceda844ff3d97021d7ae1400e",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Helping teens learn, plan, and shape the future of AI",
-      "url": "https://openai.com/index/teens-learn-and-plan",
-      "published_at": "2026-10-07T12:00:00Z",
-      "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -323,6 +297,25 @@
         "weak:api",
         "weak:开发者",
         "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ff3450aa4837bd821a00bc351b89cd998b5a68bb",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体",
+      "url": "https://aihot.news/items/cal34hameqt3bh6d52vaqt58v",
+      "published_at": "2026-10-08T13:01:01Z",
+      "summary": "Zenity Labs 研究人员披露名为 AgentCorruption 的漏洞链，只需对一个公开的 Amazon Bedrock AgentCore 智能体发送一条提示词，即可通过元数据服务 169.254.169.254 窃取其 AWS 凭据，进而控制同账户同区域内的所有 AgentCore 智能体，读取私人对话、源代码和存储的凭据，还能篡改长期记忆。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cal34hameqt3bh6d52vaqt58v",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -486,10 +479,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1255,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 525,
-      "checked_at": "2026-10-08T10:57:08.300823Z"
+      "latency_ms": 435,
+      "checked_at": "2026-10-08T13:50:29.918938Z"
     },
     {
       "source_id": "openai-skills",
@@ -500,8 +493,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 348,
-      "checked_at": "2026-10-08T10:57:08.649519Z"
+      "latency_ms": 368,
+      "checked_at": "2026-10-08T13:50:30.287919Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -512,8 +505,8 @@
       "fetched_count": 266,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 146,
-      "checked_at": "2026-10-08T10:57:08.800033Z"
+      "latency_ms": 105,
+      "checked_at": "2026-10-08T13:50:30.395124Z"
     },
     {
       "source_id": "google-deepmind",
@@ -524,8 +517,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 222,
-      "checked_at": "2026-10-08T10:57:09.024057Z"
+      "latency_ms": 359,
+      "checked_at": "2026-10-08T13:50:30.755520Z"
     },
     {
       "source_id": "google-ai",
@@ -536,8 +529,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 248,
-      "checked_at": "2026-10-08T10:57:09.273225Z"
+      "latency_ms": 192,
+      "checked_at": "2026-10-08T13:50:30.948391Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -548,8 +541,8 @@
       "fetched_count": 874,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 340,
-      "checked_at": "2026-10-08T10:57:09.625602Z"
+      "latency_ms": 201,
+      "checked_at": "2026-10-08T13:50:31.155907Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -560,8 +553,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 356,
-      "checked_at": "2026-10-08T10:57:09.982602Z"
+      "latency_ms": 201,
+      "checked_at": "2026-10-08T13:50:31.357478Z"
     },
     {
       "source_id": "github-changelog",
@@ -572,8 +565,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 43,
-      "checked_at": "2026-10-08T10:57:10.026622Z"
+      "latency_ms": 23,
+      "checked_at": "2026-10-08T13:50:31.380731Z"
     },
     {
       "source_id": "aihot",
@@ -582,10 +575,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 10,
+      "kept_count": 11,
       "error": null,
-      "latency_ms": 2081,
-      "checked_at": "2026-10-08T10:57:12.109010Z"
+      "latency_ms": 2210,
+      "checked_at": "2026-10-08T13:50:33.591491Z"
     }
   ],
   "control_notes": {
