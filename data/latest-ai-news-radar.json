@@ -1,28 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-08T15:45:55.408363Z",
+  "generated_at": "2026-10-08T19:39:26.412881Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 18,
+  "item_count": 14,
   "groups": {
     "developer": {
       "group": "developer",
-      "count": 4,
+      "count": 1,
       "top_sources": [
         [
           "GitHub Changelog",
-          4
+          1
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          6
-        ],
-        [
-          "agent",
-          3
+          2
         ],
         [
           "anthropic",
@@ -33,15 +29,11 @@
           1
         ],
         [
+          "agent",
+          1
+        ],
+        [
           "agents",
-          1
-        ],
-        [
-          "developer",
-          1
-        ],
-        [
-          "workflow",
           1
         ]
       ]
@@ -52,15 +44,7 @@
       "top_sources": [
         [
           "OpenAI News",
-          1
-        ],
-        [
-          "Hugging Face Blog",
-          1
-        ],
-        [
-          "GitHub AI & ML",
-          1
+          3
         ]
       ],
       "top_keywords": [
@@ -70,70 +54,10 @@
         ],
         [
           "openai",
-          1
-        ],
-        [
-          "multimodal",
-          1
-        ],
-        [
-          "tool",
-          1
-        ],
-        [
-          "developer",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 11,
-      "top_sources": [
-        [
-          "AI Hot",
-          11
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          11
-        ],
-        [
-          "claude",
-          4
-        ],
-        [
-          "anthropic",
-          3
-        ],
-        [
-          "api",
-          3
-        ],
-        [
-          "API",
-          3
-        ],
-        [
-          "agent",
-          3
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "智能体",
           2
         ],
         [
           "chatgpt",
-          2
-        ],
-        [
-          "开发者",
           1
         ],
         [
@@ -141,7 +65,67 @@
           1
         ],
         [
+          "workflow",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 10,
+      "top_sources": [
+        [
+          "AI Hot",
+          10
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          10
+        ],
+        [
+          "agent",
+          4
+        ],
+        [
+          "claude",
+          3
+        ],
+        [
+          "智能体",
+          3
+        ],
+        [
+          "openai",
+          3
+        ],
+        [
+          "chatgpt",
+          3
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
           "agents",
+          2
+        ],
+        [
+          "自动化",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ],
+        [
+          "API",
           1
         ]
       ]
@@ -171,22 +155,62 @@
       "is_ai_related": true
     },
     {
-      "id": "b88b1f6aec619fc1561c0d25f9601dda9172fa65",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
+      "id": "17ecd0eab85aea764b51d08f0c1dce47d88b2613",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Local sandboxing for GitHub Copilot now generally available",
-      "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
-      "published_at": "2026-10-07T15:46:17Z",
-      "summary": "Local sandboxing for GitHub Copilot is now generally available in GitHub Copilot CLI, the GitHub Copilot app, and VS Code sessions using Agent Host. Local sandboxes give developers a secure… The post Local sandboxing for GitHub Copilot now generally available appeared first on The GitHub Blog .",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+      "url": "https://openai.com/index/oracle",
+      "published_at": "2026-10-08T16:00:00Z",
+      "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
       "relevance_score": 6,
       "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4f2fcbe916f3964c1ee3d721298867c165eda553",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 用 Claude Managed Agents 构建定时智能体自动化的实践指南",
+      "url": "https://aihot.news/items/gq8yjkqlcdbpy0l5uc8ch2sj8",
+      "published_at": "2026-10-08T12:00:00Z",
+      "summary": "Anthropic 发布基于 Claude Managed Agents（beta）的每日简报参考实现，按计划读取 Slack 和 GitHub 来源并向 Slack 发布简报。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gq8yjkqlcdbpy0l5uc8ch2sj8",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
         "strong:agent",
-        "weak:developer",
-        "weak:copilot",
-        "source:copilot"
+        "strong:agents",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "539974ce81afe6561b7c18ceceb8c81af98f1649",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "url": "https://openai.com/index/pollo-ai",
+      "published_at": "2026-10-08T12:00:00Z",
+      "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -209,100 +233,22 @@
       "is_ai_related": true
     },
     {
-      "id": "83ce1d71a2494599049b66021b3d1520e0c1d0bd",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Multimodal open d1 decision models for the edge",
-      "url": "https://huggingface.co/blog/LiquidAI/open-d1",
-      "published_at": "2026-10-07T16:54:33Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:multimodal",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "820cca60c18f4504925da7679d57439a8d6958bf",
+      "id": "4ea5376085ec704b56d5f38c848166a29b8daa16",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Claude Code v2.1.293 发布：新增 Claude Haiku 5.5 并修复大量问题",
-      "url": "https://aihot.news/items/vd2lvzvjz4tujiqupl30ifq3k",
-      "published_at": "2026-10-07T18:10:20Z",
-      "summary": "Claude Code 发布 v2.1.293，新增 Claude Haiku 5.5（claude-haiku-5-5）作为 Anthropic API 默认 Haiku 模型，支持 1M 上下文，价格为 $0.10/$0.50 每百万 token（超 100K 提示为 $0.50/$2.50）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vd2lvzvjz4tujiqupl30ifq3k",
+      "title": "LangChain 用 Stripe Link 和 Managed Deep Agents 构建可支付的智能体 Restock",
+      "url": "https://aihot.news/items/l846t7ycr11aqcasu45nowosp",
+      "published_at": "2026-10-08T16:21:08Z",
+      "summary": "LangChain 发布示例项目 Restock，一个在 Slack 上通过 Managed Deep Agents 运行的办公用品购买智能体，演示智能体如何安全完成支付。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l846t7ycr11aqcasu45nowosp",
       "relevance_score": 5,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:api",
-        "weak:API",
+        "strong:agent",
+        "strong:agents",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b61badd9a1c181600755672f68731dd939448ed2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 为 Claude Max 和 Team 套餐推出月度 Platform API 额度",
-      "url": "https://aihot.news/items/ponkn6n046yorr5pg1yv3yjm5",
-      "published_at": "2026-10-07T18:08:53Z",
-      "summary": "Anthropic 正在为 Claude Max 和 Team 套餐推出月度 Claude Platform API 额度：Max 5x 为 $100，Max 20x 为 $200，Team 最多 $500 且可共享。额度适用于任何模型，包括 Haiku 5.5，可在自己的代码或第三方 harness 中使用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ponkn6n046yorr5pg1yv3yjm5",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "414ffc02447b636cf2acaab2ae402046e98bdc41",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "Secret protection must scale with software",
-      "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software",
-      "published_at": "2026-10-07T17:45:34Z",
-      "summary": "Developers aren’t becoming more careless; they’re being outpaced. The tools that let developers create more software should also take on more of the work of protecting it. The post Secret protection must scale with software appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:tool",
-        "weak:developer",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d05e74276d2bedfac68384868a5a324f2e42cf43",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Discover local models in GitHub Copilot CLI",
-      "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
-      "published_at": "2026-10-07T15:46:13Z",
-      "summary": "GitHub Copilot CLI makes it easier to choose a local model without leaving your existing workflow. Starting in CLI version 1.0.94-0, use /model to discover supported models from a running… The post Discover local models in GitHub Copilot CLI appeared first on The GitHub Blog .",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "weak:workflow",
-        "weak:copilot",
-        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -366,54 +312,16 @@
       "is_ai_related": true
     },
     {
-      "id": "534205300c79be123d577197416fac960dd62a3e",
+      "id": "89072867a2948792e0babe43ecde0bbe595c8176",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "LangChain 重构 Deep Agents 的 Skills 支持，新增工具绑定、固定技能与线程内重载",
-      "url": "https://aihot.news/items/m3vyz2bex4i58vffqfx586u3h",
-      "published_at": "2026-10-07T18:49:50Z",
-      "summary": "LangChain 重构 Deep Agents 的 Skills 支持，针对企业技能库增至数千个技能的场景推出三项更新：工具可绑定到技能、仅在该技能被读取时加载，用户可通过 /meeting-prep 之类的显式请求固定技能以在首次模型调用前加载，长线程可通过将 skills_metadata 设为 None 重载新增或变更的技能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m3vyz2bex4i58vffqfx586u3h",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a1c31880e700001eb7e8a7a8d1d04b76378d8e5d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 将 Claude Sonnet 5.5 缓存读取价格减半至每百万 token $0.10",
-      "url": "https://aihot.news/items/zn6imszjo14gki6kr2uyydknp",
-      "published_at": "2026-10-07T18:01:21Z",
-      "summary": "Anthropic 宣布将 Claude Sonnet 5.5 的缓存读取价格减半，降至每百万 token $0.10。官方称这使 Sonnet 5.5 在多数长期运行任务上的运行成本降低约 20%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zn6imszjo14gki6kr2uyydknp",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0faa050db28cc496ccb4adbb5dcb0c955b0fc8e7",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 向全部 ChatGPT 用户推出 GPT-6 与 Intelligent UI",
-      "url": "https://aihot.news/items/uir31g728myjry383z17txvrw",
-      "published_at": "2026-10-07T18:00:58Z",
-      "summary": "OpenAI 发布面向更广泛用户的 GPT-6，并随 GPT-6 在 ChatGPT 中引入 Intelligent UI，可生成图形、按钮、表单、图表和可交互组件来回答问题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uir31g728myjry383z17txvrw",
+      "title": "OpenAI 在 GitHub 发布 openai/math 仓库，722 份数学手稿引发数学界震荡",
+      "url": "https://aihot.news/items/e9brxl1crqxmo66s80z8vrf0n",
+      "published_at": "2026-10-08T00:36:00Z",
+      "summary": "OpenAI 于10月7日在 GitHub 发布 openai/math 仓库，收录其未公开内部模型产出的722份数学手稿，归为372个成果组，覆盖数论、代数几何、偏微分方程等方向，每个结果平均花费约3小时 ChatGPT Pro 级别思考算力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e9brxl1crqxmo66s80z8vrf0n",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
@@ -423,52 +331,35 @@
       "is_ai_related": true
     },
     {
-      "id": "9fc799eb43f6f9a5c2c9b64c3910661af63521aa",
+      "id": "ab15c80e505780f604252801dd9468843e4872c7",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Perplexity 开源 pplx-embed-v2-late 多模态 late-interaction 嵌入模型（9B 与 0.6B）",
-      "url": "https://aihot.news/items/lfy2ww68p9lgpxxhu5jssflwf",
-      "published_at": "2026-10-07T16:33:02Z",
-      "summary": "Perplexity 开源 pplx-embed-v2-late，两个针对文本和图像的 late-interaction 多向量嵌入模型，大小为 9B 和 0.6B，共享同一嵌入空间，权重已在 Hugging Face 提供。9B 可用于索引多模态数据，0.6B 可在设备端查询，无需 OCR 即可检索 PDF 页面；模型在 MADQA 得分 92.4%，BrowseComp+ 得分 64%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lfy2ww68p9lgpxxhu5jssflwf",
+      "title": "OpenAI 封禁俄罗斯与伊朗两个利用 ChatGPT 开展虚假前臆影响行动的账号集群",
+      "url": "https://aihot.news/items/b33i6chgxghls2v7bng0wr0nr",
+      "published_at": "2026-10-08T00:00:00Z",
+      "summary": "OpenAI 封禁了两个隐蔽影响行动，俄罗斯来源的 Dark Clark 通过假 persona Mia Clark 控制拉美智库 Social Research Center，评分达 Category 5，是报告以来首个 Category 5；伊朗来源的 Bogus Bylines 用 7 个假记者身份在全球十几家中小媒体投放近 100 篇长文，评分 Category 4。 🔗 阅读原文 via AIHOT · https://aihot.news/items/b33i6chgxghls2v7bng0wr0nr",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:hugging face",
-        "strong:多模态",
+        "strong:openai",
+        "strong:chatgpt",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "23235417757891f797772daa3c0ceba1f0448d67",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Purpose-built model for leaked secret detection",
-      "url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection",
-      "published_at": "2026-10-07T16:13:56Z",
-      "summary": "Secret protection should keep pace with the way you build software, whether you write code yourself or work with an AI agent. With our new purpose-built model, we’re bringing context-aware… The post Purpose-built model for leaked secret detection appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:agent"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "daa266404983f43755a0ae57e75f0604cda3ac11",
+      "id": "3cca9f48f1ce474c02d87c8aad8b00b3f7207d57",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Microsoft Research Asia 开源 Agent Lightning v1.0：3,500 行代码的真实 harness 智能体 RL 训练框架",
-      "url": "https://aihot.news/items/t9wypjd9cbb42ttuq7vrpp07l",
-      "published_at": "2026-10-07T16:00:00Z",
-      "summary": "Microsoft Research Asia 提出 Harnessed Agentic RL 训练范式并开源重建的 Agent Lightning v1.0，让部署时使用的同一 agent harness 直接参与强化学习，无需在训练框架内重写 agent。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t9wypjd9cbb42ttuq7vrpp07l",
+      "title": "Google 开源 AQuA 环境质量智能体，自动诊断生产环境中的 Agent 故障",
+      "url": "https://aihot.news/items/col84h6b3pdq383v6iuju3a9v",
+      "published_at": "2026-10-08T00:00:00Z",
+      "summary": "Google 发布并开源 AQuA（Ambient Quality Agent），在 Google Cloud 项目中定时从 Cloud Trace、Cloud Logging 或 BigQuery 抽取生产会话，经抽样、评审、聚类、验证、跟踪五阶段流水线诊断 Agent 失败。 🔗 阅读原文 via AIHOT · https://aihot.news/items/col84h6b3pdq383v6iuju3a9v",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:agent",
@@ -478,20 +369,39 @@
       "is_ai_related": true
     },
     {
-      "id": "106a29c98c682aa19e64e4b37b7a3589cda12836",
+      "id": "c6b9969272d7dfee960f9d3f207c7ba1a6346ef8",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Cursor 公布 Claude Haiku 5.5 定价并下调 Claude Sonnet 5.5 缓存读取价格",
-      "url": "https://aihot.news/items/vk1sotxx6v25hhgn55mwgv4nv",
-      "published_at": "2026-10-07T18:14:03Z",
-      "summary": "Cursor 公布 Claude Haiku 5.5 定价为每 M 输入 token $0.10、输出 token $0.50，输入超过 100k token 时为 $0.50/M 和 $2.50/M。Claude Sonnet 5.5 缓存读取价格也从 $0.20/M 降至 $0.10/M，用户可在 cursor.com/evals 上通过 CursorBench 对比 Haiku 5.5 的表现。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vk1sotxx6v25hhgn55mwgv4nv",
+      "title": "Claude 推出 Dashboards 实时仪表盘与 Motion 动画讲解功能",
+      "url": "https://aihot.news/items/winsvtlfubhjfi0wnone83j5c",
+      "published_at": "2026-10-08T00:00:00Z",
+      "summary": "Anthropic 发布 Claude Dashboards 和 Claude Motion 两项 beta 功能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/winsvtlfubhjfi0wnone83j5c",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "da8aef1d2ec719dea5e542a2043c66801e6fb205",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude 九月回顾：Chat 与 Cowork 合一，Claude 5.5 系列模型上线",
+      "url": "https://aihot.news/items/g0wo2aksqgzw87bywxaeo631z",
+      "published_at": "2026-10-08T15:53:13Z",
+      "summary": "Claude 发布九月更新回顾，Chat 与 Cowork 合并为一个 Claude，工作流可在云端运行，合上笔记本后继续进行。Claude Docs 支持团队与 Claude 在同一文档中协作编辑，新推出的 Claude 5.5 系列提供 Opus 5.5 处理重任务、Sonnet 5.5 用于快速修改，并可通过 /slides、/docs、/designs 直接生成对应格式。 🔗 阅读原文 via AIHOT · https://aihot.news/items/g0wo2aksqgzw87bywxaeo631z",
       "relevance_score": 2,
       "relevance_reasons": [
         "strong:claude",
-        "weak:eval",
+        "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -504,11 +414,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1255,
-      "kept_count": 1,
+      "fetched_count": 1257,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 561,
-      "checked_at": "2026-10-08T15:45:51.931696Z"
+      "latency_ms": 386,
+      "checked_at": "2026-10-08T19:39:19.906382Z"
     },
     {
       "source_id": "openai-skills",
@@ -519,8 +429,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 259,
-      "checked_at": "2026-10-08T15:45:52.191077Z"
+      "latency_ms": 303,
+      "checked_at": "2026-10-08T19:39:20.209640Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -528,11 +438,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 267,
+      "fetched_count": 268,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 172,
-      "checked_at": "2026-10-08T15:45:52.367588Z"
+      "latency_ms": 102,
+      "checked_at": "2026-10-08T19:39:20.313952Z"
     },
     {
       "source_id": "google-deepmind",
@@ -543,8 +453,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 271,
-      "checked_at": "2026-10-08T15:45:52.640407Z"
+      "latency_ms": 757,
+      "checked_at": "2026-10-08T19:39:21.072216Z"
     },
     {
       "source_id": "google-ai",
@@ -555,8 +465,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 277,
-      "checked_at": "2026-10-08T15:45:52.918264Z"
+      "latency_ms": 276,
+      "checked_at": "2026-10-08T19:39:21.348535Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -565,10 +475,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 875,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 343,
-      "checked_at": "2026-10-08T15:45:53.274898Z"
+      "latency_ms": 228,
+      "checked_at": "2026-10-08T19:39:21.584050Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -577,10 +487,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 392,
-      "checked_at": "2026-10-08T15:45:53.667782Z"
+      "latency_ms": 3783,
+      "checked_at": "2026-10-08T19:39:25.367857Z"
     },
     {
       "source_id": "github-changelog",
@@ -589,10 +499,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 37,
-      "checked_at": "2026-10-08T15:45:53.705692Z"
+      "latency_ms": 27,
+      "checked_at": "2026-10-08T19:39:25.395311Z"
     },
     {
       "source_id": "aihot",
@@ -601,10 +511,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 11,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 1692,
-      "checked_at": "2026-10-08T15:45:55.399156Z"
+      "latency_ms": 1009,
+      "checked_at": "2026-10-08T19:39:26.405883Z"
     }
   ],
   "control_notes": {
