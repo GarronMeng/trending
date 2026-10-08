@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-08T03:53:21.323448Z",
+  "generated_at": "2026-10-08T10:57:12.117964Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -48,14 +48,14 @@
     },
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
-          "OpenAI News",
-          2
+          "Hugging Face Blog",
+          1
         ],
         [
-          "Hugging Face Blog",
+          "OpenAI News",
           1
         ],
         [
@@ -66,18 +66,14 @@
       "top_keywords": [
         [
           "official_ai",
-          4
-        ],
-        [
-          "chatgpt",
-          2
-        ],
-        [
-          "openai",
-          1
+          3
         ],
         [
           "multimodal",
+          1
+        ],
+        [
+          "chatgpt",
           1
         ],
         [
@@ -92,17 +88,17 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 10,
       "top_sources": [
         [
           "AI Hot",
-          9
+          10
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
+          10
         ],
         [
           "claude",
@@ -125,6 +121,10 @@
           2
         ],
         [
+          "chatgpt",
+          2
+        ],
+        [
           "agent",
           2
         ],
@@ -133,19 +133,15 @@
           1
         ],
         [
+          "codex",
+          1
+        ],
+        [
           "agents",
           1
         ],
         [
-          "chatgpt",
-          1
-        ],
-        [
           "hugging face",
-          1
-        ],
-        [
-          "多模态",
           1
         ]
       ]
@@ -171,25 +167,6 @@
         "strong:agents",
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5ec176addf1fa8d5edb5bf4c341bd0f1d6f60acf",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
-      "url": "https://openai.com/index/radisson",
-      "published_at": "2026-10-07T07:00:00Z",
-      "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -351,6 +328,25 @@
       "is_ai_related": true
     },
     {
+      "id": "12f9919260149a031cfaa13bf94f9fb640b42940",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账",
+      "url": "https://aihot.news/items/zdgw2hhfjitur1qmeuminh3lm",
+      "published_at": "2026-10-08T03:44:55Z",
+      "summary": "作者确认 banked reset 已到账所有账户，并转引 Day 3 动态称 Codex 与 ChatGPT Work 合计活跃用户达到 4000 万新高，其中提到 GPT-6 已在 Chat 中上线。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zdgw2hhfjitur1qmeuminh3lm",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "534205300c79be123d577197416fac960dd62a3e",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -490,10 +486,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1255,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 318,
-      "checked_at": "2026-10-08T03:53:14.242166Z"
+      "latency_ms": 525,
+      "checked_at": "2026-10-08T10:57:08.300823Z"
     },
     {
       "source_id": "openai-skills",
@@ -504,8 +500,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 281,
-      "checked_at": "2026-10-08T03:53:14.523438Z"
+      "latency_ms": 348,
+      "checked_at": "2026-10-08T10:57:08.649519Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -516,8 +512,8 @@
       "fetched_count": 266,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 93,
-      "checked_at": "2026-10-08T03:53:14.618604Z"
+      "latency_ms": 146,
+      "checked_at": "2026-10-08T10:57:08.800033Z"
     },
     {
       "source_id": "google-deepmind",
@@ -528,8 +524,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 319,
-      "checked_at": "2026-10-08T03:53:14.938970Z"
+      "latency_ms": 222,
+      "checked_at": "2026-10-08T10:57:09.024057Z"
     },
     {
       "source_id": "google-ai",
@@ -540,8 +536,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 149,
-      "checked_at": "2026-10-08T03:53:15.088367Z"
+      "latency_ms": 248,
+      "checked_at": "2026-10-08T10:57:09.273225Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -552,8 +548,8 @@
       "fetched_count": 874,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 237,
-      "checked_at": "2026-10-08T03:53:15.332230Z"
+      "latency_ms": 340,
+      "checked_at": "2026-10-08T10:57:09.625602Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -564,8 +560,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 204,
-      "checked_at": "2026-10-08T03:53:15.537070Z"
+      "latency_ms": 356,
+      "checked_at": "2026-10-08T10:57:09.982602Z"
     },
     {
       "source_id": "github-changelog",
@@ -576,8 +572,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-10-08T03:53:15.560558Z"
+      "latency_ms": 43,
+      "checked_at": "2026-10-08T10:57:10.026622Z"
     },
     {
       "source_id": "aihot",
@@ -586,10 +582,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 9,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 5755,
-      "checked_at": "2026-10-08T03:53:21.316702Z"
+      "latency_ms": 2081,
+      "checked_at": "2026-10-08T10:57:12.109010Z"
     }
   ],
   "control_notes": {
