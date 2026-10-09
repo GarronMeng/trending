@@ -1,31 +1,23 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-09T10:55:47.258947Z",
+  "generated_at": "2026-10-09T13:35:28.584337Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 8,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI News",
-          4
+          2
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          4
-        ],
-        [
-          "codex",
-          2
-        ],
-        [
-          "openai",
           2
         ],
         [
@@ -33,35 +25,35 @@
           1
         ],
         [
+          "codex",
+          1
+        ],
+        [
           "workflow",
+          1
+        ],
+        [
+          "openai",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          7
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          6
         ],
         [
           "agent",
-          4
-        ],
-        [
-          "anthropic",
-          3
-        ],
-        [
-          "claude",
           3
         ],
         [
@@ -69,11 +61,15 @@
           3
         ],
         [
-          "agents",
+          "anthropic",
           2
         ],
         [
-          "自动化",
+          "claude",
+          2
+        ],
+        [
+          "agents",
           1
         ],
         [
@@ -113,28 +109,6 @@
       "is_ai_related": true
     },
     {
-      "id": "4f2fcbe916f3964c1ee3d721298867c165eda553",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 用 Claude Managed Agents 构建定时智能体自动化的实践指南",
-      "url": "https://aihot.news/items/gq8yjkqlcdbpy0l5uc8ch2sj8",
-      "published_at": "2026-10-08T12:00:00Z",
-      "summary": "Anthropic 发布基于 Claude Managed Agents（beta）的每日简报参考实现，按计划读取 Slack 和 GitHub 来源并向 Slack 发布简报。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gq8yjkqlcdbpy0l5uc8ch2sj8",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:agent",
-        "strong:agents",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "9b9ea6133af9056150a0154520d2f328628a847c",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -148,42 +122,6 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "539974ce81afe6561b7c18ceceb8c81af98f1649",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
-      "url": "https://openai.com/index/pollo-ai",
-      "published_at": "2026-10-08T12:00:00Z",
-      "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1a48e5142d957c7e36a842c72fe8eeadfd5e5438",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "LegalOn halves Codex costs while maintaining development speed",
-      "url": "https://openai.com/index/legalon-halves-codex-costs",
-      "published_at": "2026-10-08T12:00:00Z",
-      "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:codex",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -313,10 +251,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1259,
-      "kept_count": 4,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 374,
-      "checked_at": "2026-10-09T10:55:42.066990Z"
+      "latency_ms": 557,
+      "checked_at": "2026-10-09T13:35:24.668604Z"
     },
     {
       "source_id": "openai-skills",
@@ -327,8 +265,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 275,
-      "checked_at": "2026-10-09T10:55:42.342447Z"
+      "latency_ms": 409,
+      "checked_at": "2026-10-09T13:35:25.078390Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -339,8 +277,8 @@
       "fetched_count": 269,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 110,
-      "checked_at": "2026-10-09T10:55:42.454541Z"
+      "latency_ms": 152,
+      "checked_at": "2026-10-09T13:35:25.234615Z"
     },
     {
       "source_id": "google-deepmind",
@@ -351,8 +289,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 302,
-      "checked_at": "2026-10-09T10:55:42.757752Z"
+      "latency_ms": 213,
+      "checked_at": "2026-10-09T13:35:25.449157Z"
     },
     {
       "source_id": "google-ai",
@@ -363,8 +301,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 176,
-      "checked_at": "2026-10-09T10:55:42.934483Z"
+      "latency_ms": 260,
+      "checked_at": "2026-10-09T13:35:25.709577Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -375,8 +313,8 @@
       "fetched_count": 876,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 234,
-      "checked_at": "2026-10-09T10:55:43.175298Z"
+      "latency_ms": 318,
+      "checked_at": "2026-10-09T13:35:26.040487Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -387,8 +325,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 200,
-      "checked_at": "2026-10-09T10:55:43.375642Z"
+      "latency_ms": 532,
+      "checked_at": "2026-10-09T13:35:26.573138Z"
     },
     {
       "source_id": "github-changelog",
@@ -399,8 +337,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 22,
-      "checked_at": "2026-10-09T10:55:43.398450Z"
+      "latency_ms": 41,
+      "checked_at": "2026-10-09T13:35:26.615327Z"
     },
     {
       "source_id": "aihot",
@@ -409,10 +347,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 7,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 3852,
-      "checked_at": "2026-10-09T10:55:47.251679Z"
+      "latency_ms": 1958,
+      "checked_at": "2026-10-09T13:35:28.574884Z"
     }
   ],
   "control_notes": {
