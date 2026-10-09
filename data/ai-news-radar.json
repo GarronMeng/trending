@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-09T15:26:36.647484Z",
+  "generated_at": "2026-10-09T19:15:01.257914Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 7,
   "groups": {
     "official": {
       "group": "official",
@@ -21,15 +21,11 @@
           2
         ],
         [
-          "chatgpt",
-          1
-        ],
-        [
           "codex",
           1
         ],
         [
-          "workflow",
+          "agent",
           1
         ],
         [
@@ -40,48 +36,40 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          6
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
-        ],
-        [
-          "agent",
-          3
-        ],
-        [
-          "智能体",
-          3
+          5
         ],
         [
           "anthropic",
+          3
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "智能体",
           2
         ],
         [
           "claude",
-          2
-        ],
-        [
-          "agents",
           1
         ],
         [
           "评测",
-          1
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "工作流",
           1
         ]
       ]
@@ -89,21 +77,20 @@
   },
   "items": [
     {
-      "id": "17ecd0eab85aea764b51d08f0c1dce47d88b2613",
+      "id": "5f0ad195c613bc1dc1e94346f044c8fc10fa8234",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
-      "url": "https://openai.com/index/oracle",
-      "published_at": "2026-10-08T16:00:00Z",
-      "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
-      "relevance_score": 6,
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "url": "https://openai.com/index/asana-browser-agent",
+      "published_at": "2026-10-09T07:00:00Z",
+      "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:chatgpt",
         "strong:codex",
-        "weak:workflow",
+        "strong:agent",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -127,26 +114,6 @@
       "is_ai_related": true
     },
     {
-      "id": "4ea5376085ec704b56d5f38c848166a29b8daa16",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "LangChain 用 Stripe Link 和 Managed Deep Agents 构建可支付的智能体 Restock",
-      "url": "https://aihot.news/items/l846t7ycr11aqcasu45nowosp",
-      "published_at": "2026-10-08T16:21:08Z",
-      "summary": "LangChain 发布示例项目 Restock，一个在 Slack 上通过 Managed Deep Agents 运行的办公用品购买智能体，演示智能体如何安全完成支付。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l846t7ycr11aqcasu45nowosp",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "cee02d3df4a1d305b4ed0feece902d429c760fb9",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -162,6 +129,25 @@
         "strong:anthropic",
         "strong:claude",
         "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c19dd0fe9e955956c235b5a1c23e1040016bdd19",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 年化收入约 500 亿美元并寻求 300 亿美元新融资",
+      "url": "https://aihot.news/items/auy2exatk0u5kr1c1ydmaajws",
+      "published_at": "2026-10-09T17:20:34Z",
+      "summary": "OpenAI 9 月底年化收入率约 500 亿美元，此前近 700 亿美元的数字源于与 Anthropic 不同的合作方销售入账方式，两者均符合美国 GAAP。公司正洽谈至少 300 亿美元新融资，目标投前估值 1.4 万亿美元，企业业务推动 Q3 总收入增长 77%，FT 报告发布后芯片股曾下跌数个百分点。 🔗 阅读原文 via AIHOT · https://aihot.news/items/auy2exatk0u5kr1c1ydmaajws",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -222,25 +208,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "da8aef1d2ec719dea5e542a2043c66801e6fb205",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude 九月回顾：Chat 与 Cowork 合一，Claude 5.5 系列模型上线",
-      "url": "https://aihot.news/items/g0wo2aksqgzw87bywxaeo631z",
-      "published_at": "2026-10-08T15:53:13Z",
-      "summary": "Claude 发布九月更新回顾，Chat 与 Cowork 合并为一个 Claude，工作流可在云端运行，合上笔记本后继续进行。Claude Docs 支持团队与 Claude 在同一文档中协作编辑，新推出的 Claude 5.5 系列提供 Opus 5.5 处理重任务、Sonnet 5.5 用于快速修改，并可通过 /slides、/docs、/designs 直接生成对应格式。 🔗 阅读原文 via AIHOT · https://aihot.news/items/g0wo2aksqgzw87bywxaeo631z",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:claude",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -250,11 +217,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1259,
+      "fetched_count": 1287,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 579,
-      "checked_at": "2026-10-09T15:26:30.687102Z"
+      "latency_ms": 569,
+      "checked_at": "2026-10-09T19:14:57.009653Z"
     },
     {
       "source_id": "openai-skills",
@@ -265,8 +232,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 305,
-      "checked_at": "2026-10-09T15:26:30.992392Z"
+      "latency_ms": 211,
+      "checked_at": "2026-10-09T19:14:57.221668Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -277,8 +244,8 @@
       "fetched_count": 269,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 186,
-      "checked_at": "2026-10-09T15:26:31.182843Z"
+      "latency_ms": 134,
+      "checked_at": "2026-10-09T19:14:57.359983Z"
     },
     {
       "source_id": "google-deepmind",
@@ -289,8 +256,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 306,
-      "checked_at": "2026-10-09T15:26:31.490569Z"
+      "latency_ms": 347,
+      "checked_at": "2026-10-09T19:14:57.709208Z"
     },
     {
       "source_id": "google-ai",
@@ -301,8 +268,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 332,
-      "checked_at": "2026-10-09T15:26:31.823015Z"
+      "latency_ms": 279,
+      "checked_at": "2026-10-09T19:14:57.989385Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -313,8 +280,8 @@
       "fetched_count": 876,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 339,
-      "checked_at": "2026-10-09T15:26:32.175174Z"
+      "latency_ms": 257,
+      "checked_at": "2026-10-09T19:14:58.259552Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -325,8 +292,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 255,
-      "checked_at": "2026-10-09T15:26:32.431360Z"
+      "latency_ms": 200,
+      "checked_at": "2026-10-09T19:14:58.460218Z"
     },
     {
       "source_id": "github-changelog",
@@ -337,8 +304,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 33,
-      "checked_at": "2026-10-09T15:26:32.465313Z"
+      "latency_ms": 28,
+      "checked_at": "2026-10-09T19:14:58.488585Z"
     },
     {
       "source_id": "aihot",
@@ -347,10 +314,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 6,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 4173,
-      "checked_at": "2026-10-09T15:26:36.639824Z"
+      "latency_ms": 2758,
+      "checked_at": "2026-10-09T19:15:01.248593Z"
     }
   ],
   "control_notes": {
