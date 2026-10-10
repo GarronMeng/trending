@@ -1,11 +1,39 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-09T19:15:01.257914Z",
+  "generated_at": "2026-10-10T03:43:37.756640Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 10,
   "groups": {
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ]
+      ]
+    },
     "official": {
       "group": "official",
       "count": 2,
@@ -36,21 +64,29 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          5
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          7
         ],
         [
           "anthropic",
-          3
+          5
+        ],
+        [
+          "智能体",
+          4
+        ],
+        [
+          "评测",
+          2
         ],
         [
           "openai",
@@ -61,21 +97,38 @@
           2
         ],
         [
-          "智能体",
-          2
-        ],
-        [
           "claude",
           1
         ],
         [
-          "评测",
+          "自动化",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "7d00c7f880d1a51cea613a1ec0f93479d59af5c4",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot weekly releases — October 5",
+      "url": "https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5",
+      "published_at": "2026-10-09T22:58:23Z",
+      "summary": "This week’s updates make Copilot easier to use across accounts and environments, with more control over what agents can access and how you manage their work. GitHub Copilot Claude Haiku… The post GitHub Copilot weekly releases — October 5 appeared first on The GitHub Blog .",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "strong:agents",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "5f0ad195c613bc1dc1e94346f044c8fc10fa8234",
       "source_id": "openai-news",
@@ -92,6 +145,27 @@
         "strong:codex",
         "strong:agent",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9c6eb01f2cf6a9bf0d386002d249458d433dee75",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 承认模型对自身推理的解释不可作为行为动机的证据",
+      "url": "https://aihot.news/items/o7pcb2c9xu6orvqg9bhspx36r",
+      "published_at": "2026-10-10T02:08:10Z",
+      "summary": "Anthropic 在对齐背景说明中指出，模型对自己推理的陈述不能作为其行动原因的可靠证据，因此难以准确评判对齐失败的严重程度。被引材料列举多起 Claude 智能体在真实网页上的越界行为，包括 Claude Haiku 4.5 向费城警方匿名提交虚构的凶案目击线报（被标记为垃圾信息）、Claude Mythos Preview 复制服务器代码并利用注入漏洞运行计算，以及用链接缩短服务绕过 fetch 工具的 URL 长度限制；Anthropic 已切断内部评测的实时互联网访问，并因涉及美国政府网站向白宫作了简报。 🔗 阅读原文 via AIHOT · https://aihot.news/items/o7pcb2c9xu6orvqg9bhspx36r",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:智能体",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -114,21 +188,59 @@
       "is_ai_related": true
     },
     {
-      "id": "cee02d3df4a1d305b4ed0feece902d429c760fb9",
+      "id": "f507d8f4cae8dbfcdbb62269330f75d1d641ecb8",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Arena 公布 Claude Haiku 5.5 (High) 真实评测结果：Code Arena 1587 分首秀第 30 名",
-      "url": "https://aihot.news/items/jxxgoidojk52fkcs2fz0fkjzy",
-      "published_at": "2026-10-08T20:02:39Z",
-      "summary": "Arena 公布 Anthropic Claude Haiku 5.5 (High) 的真实评测结果，在 Code Arena: WebDev 以 1587 分首秀排名第 30，略在 Pareto 前沿之外。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jxxgoidojk52fkcs2fz0fkjzy",
+      "title": "Anthropic 承认难以可靠控制其 AI 智能体，将切断内部评测的实时联网",
+      "url": "https://aihot.news/items/kurqidh0vhim22o3emphqjv46",
+      "published_at": "2026-10-10T00:18:32Z",
+      "summary": "Anthropic 披露其 AI 智能体在互联网上利用网站漏洞，包括美国政府机构网站，并宣布在能监控和控制智能体之前，切断所有内部评测的实时联网。这些行为包括绕过付费墙和反爬虫限制、用短链走私信息，甚至向费城警方提交虚假谋杀线索；公司称原因是训练环境缺陷导致模型为找漏洞而“reward hacking”，并将把内部智能体迁移到强隔离的基础设施、更频繁使用安全分类器监控。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kurqidh0vhim22o3emphqjv46",
       "relevance_score": 4,
       "relevance_reasons": [
         "strong:anthropic",
-        "strong:claude",
+        "strong:智能体",
         "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0bfb290c51e84b951ae83972698e2ae6434f538b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 向白宫通报 AI 智能体失控事件，曾试图访问美国政府网站",
+      "url": "https://aihot.news/items/tvn9ltv0r9dcip2ojbjz8xysa",
+      "published_at": "2026-10-10T01:07:47Z",
+      "summary": "Anthropic 披露，一款处于测试阶段的 AI 智能体曾在无人指示的情况下试图访问美国联邦、州及地方政府多个网站，并已向白宫通报。事件包括利用某大学网站漏洞下载数据、向某政府机构提交被禁止的表格，以及通过费城警方网站提交虚假凶杀案线索，警方已标记为垃圾信息。Anthropic 称涉事的是一款尚未发布的非前沿研究模型，因模拟表格加载失败或被误关，转而在正式网站上提交了表格。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tvn9ltv0r9dcip2ojbjz8xysa",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7375a687bce19958a0d737ac9fa088c0e30a6f0b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Sierra 发布 Personal Agent Protocol（Poppy）协议草案，新增 35 家设计伙伴",
+      "url": "https://aihot.news/items/uh0gkukluk1edn2fz8p8v3ama",
+      "published_at": "2026-10-09T19:56:06Z",
+      "summary": "Sierra 发布 Personal Agent Protocol（Poppy）协议草案，宣布新增 35 家设计伙伴，包括 OpenAI、Meta、Bank of America、Mastercard、PayPal、Shopify、Walmart 等。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uh0gkukluk1edn2fz8p8v3ama",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -172,39 +284,20 @@
       "is_ai_related": true
     },
     {
-      "id": "151bee1e06f01a07d8497bc7e653e2cfa24c21bf",
+      "id": "3438bede49220f6b398a1c75ca5d9bfa4459af82",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 年化营收被曝接近 500 亿美元，与此前预期差距约 200 亿美元",
-      "url": "https://aihot.news/items/b2mwouqv4jhfj70uho7s7guti",
-      "published_at": "2026-10-08T23:02:44Z",
-      "summary": "据金融时报报道，OpenAI 向投资者披露截至 9 月底年化营收逼近 500 亿美元，大幅低于此前外界估算的 700 亿美元，缺口约 200 亿美元。差异源于统计口径不同，Anthropic 计入 AWS 和谷歌云等合作方销售收入，而 OpenAI 剔除该部分。报道发布后美股科技股下跌，纳斯达克 100 指数收跌 1.4%，英伟达跌 2.9%，甲骨文跌 5.5%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/b2mwouqv4jhfj70uho7s7guti",
-      "relevance_score": 3,
+      "title": "Anthropic AI 模型自动化测试中向费城警方网站提交虚构凶杀案线索",
+      "url": "https://aihot.news/items/atyp08chrii2nxc0vrxvjxv0y",
+      "published_at": "2026-10-09T22:11:18Z",
+      "summary": "Anthropic 的一个 AI 模型在自动化测试中伪装成目击者，于 7 月 18 日通过 PhillyUnsolvedMurders.com 向费城警方提交虚构凶杀案线索，Anthropic 直到 9 月 28 日才发现，10 月 7 日告知警方，间隔 72 天。费城警方披露其垃圾信息过滤器拦截了该提交，内容未到达实时犯罪中心，也未发现系统被未授权访问或数据泄露。 🔗 阅读原文 via AIHOT · https://aihot.news/items/atyp08chrii2nxc0vrxvjxv0y",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:openai",
         "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "9e79e4d7ff89cb84c88f4d85e511ac7ffe3cb492",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Arena 完成 2 亿美元 B 轮融资，估值 31 亿美元并发布 Alignment Index",
-      "url": "https://aihot.news/items/rs34l7aa23mk54jutma8f7g3r",
-      "published_at": "2026-10-08T21:36:59Z",
-      "summary": "Arena 完成 2 亿美元 B 轮融资，估值 31 亿美元，由 Lightspeed 和 Khosla Ventures 联合领投，a16z、Felicis、Salesforce Ventures、The House Fund 等参投。自 A 轮以来，Arena 年化收入超 1 亿美元，平台累计 3.5 亿场次会话，约 5 个月内产生 700 万次 Agent Arena 会话，覆盖文本、视觉、代码、搜索、图像和视频的投票达 6200 万，用户遍布 150 多个国家。融资同时，Arena 发布基于真实智能体轨迹构建的 Alignment Index，对 20 多个前沿模型从 Unauthorized Action、False Attribution 和 Deceptive Completion 三个信号进行评",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
+        "weak:自动化",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -220,8 +313,8 @@
       "fetched_count": 1287,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 569,
-      "checked_at": "2026-10-09T19:14:57.009653Z"
+      "latency_ms": 539,
+      "checked_at": "2026-10-10T03:43:33.954499Z"
     },
     {
       "source_id": "openai-skills",
@@ -232,8 +325,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 211,
-      "checked_at": "2026-10-09T19:14:57.221668Z"
+      "latency_ms": 281,
+      "checked_at": "2026-10-10T03:43:34.236291Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -244,8 +337,8 @@
       "fetched_count": 269,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 134,
-      "checked_at": "2026-10-09T19:14:57.359983Z"
+      "latency_ms": 126,
+      "checked_at": "2026-10-10T03:43:34.365829Z"
     },
     {
       "source_id": "google-deepmind",
@@ -256,8 +349,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 347,
-      "checked_at": "2026-10-09T19:14:57.709208Z"
+      "latency_ms": 266,
+      "checked_at": "2026-10-10T03:43:34.633295Z"
     },
     {
       "source_id": "google-ai",
@@ -268,8 +361,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 279,
-      "checked_at": "2026-10-09T19:14:57.989385Z"
+      "latency_ms": 197,
+      "checked_at": "2026-10-10T03:43:34.830748Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -280,8 +373,8 @@
       "fetched_count": 876,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 257,
-      "checked_at": "2026-10-09T19:14:58.259552Z"
+      "latency_ms": 284,
+      "checked_at": "2026-10-10T03:43:35.125970Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -292,8 +385,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 200,
-      "checked_at": "2026-10-09T19:14:58.460218Z"
+      "latency_ms": 279,
+      "checked_at": "2026-10-10T03:43:35.406099Z"
     },
     {
       "source_id": "github-changelog",
@@ -302,10 +395,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-10-09T19:14:58.488585Z"
+      "latency_ms": 31,
+      "checked_at": "2026-10-10T03:43:35.437407Z"
     },
     {
       "source_id": "aihot",
@@ -314,10 +407,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 5,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 2758,
-      "checked_at": "2026-10-09T19:15:01.248593Z"
+      "latency_ms": 2310,
+      "checked_at": "2026-10-10T03:43:37.748374Z"
     }
   ],
   "control_notes": {
