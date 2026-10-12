@@ -1,11 +1,43 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-12T15:52:17.335624Z",
+  "generated_at": "2026-10-12T18:05:39.517455Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 4,
+  "item_count": 6,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub AI & ML",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "copilot",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
       "count": 4,
@@ -17,29 +49,116 @@
       ],
       "top_keywords": [
         [
-          "claude",
+          "aggregate_noise",
           4
         ],
         [
-          "aggregate_noise",
-          4
+          "claude",
+          3
         ],
         [
           "开发者",
           2
         ],
         [
-          "mcp",
+          "智能体",
           1
         ],
         [
-          "智能体",
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "95b817daf24e75ef84aeba4f2be66d0aba6137c0",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+      "published_at": "2026-10-12T17:43:59Z",
+      "summary": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright. The post GitHub Copilot app for Beginners: How to teach Copilot about your codebase appeared first on The GitHub Blog .",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "strong:mcp",
+        "weak:copilot",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "02bb11f51656f8111b30f63174e44338fdbd987e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Meta 发布 Muse Wonder 与 Muse Wonder Full 智能体模型",
+      "url": "https://aihot.news/items/cvd92y8um4bchrk0rrug5d0fv",
+      "published_at": "2026-10-12T17:33:59Z",
+      "summary": "Meta 发布 Muse Wonder 系列模型，称其在个人与专业智能体任务上达到 SOTA。Muse Wonder 通过 Meta Model API 和 Muse Code 提供，Muse Wonder Full 面向 Muse Code 订阅用户，后续将接入 Muse。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cvd92y8um4bchrk0rrug5d0fv",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "3d3ef4d01b017ce53f18344a0f181aaaff8c4ad9",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Push attribution for commits in limited public preview",
+      "url": "https://github.blog/changelog/2026-10-12-push-attribution-public-preview",
+      "published_at": "2026-10-12T16:30:11Z",
+      "summary": "GitHub now durably records the authenticated user who pushed each commit and surfaces that pusher identity in the UI and API alongside the existing author and committer fields. Commit author… The post Push attribution for commits in limited public preview appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:API"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "b25d6dd2c69054f0d9729f4298c894994b37e634",
       "source_id": "aihot",
@@ -55,25 +174,6 @@
       "relevance_reasons": [
         "strong:claude",
         "strong:mcp",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "37745bc2ecd338757b377ab448efd156cf5e83e7",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "如何只用自己拥有的文件约束编码智能体",
-      "url": "https://aihot.news/items/twhuaks920iaqd2y7frq8bgbw",
-      "published_at": "2026-10-11T16:00:00Z",
-      "summary": "Tessl 博客文章介绍用四个可拥有的文件杠杆约束编码智能体：CLAUDE.md 指令、.claude/rules/ 路径级规则、.claude/ 下的能力配置和 .claude/hooks/ 钩子。 🔗 阅读原文 via AIHOT · https://aihot.news/items/twhuaks920iaqd2y7frq8bgbw",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -127,8 +227,8 @@
       "fetched_count": 1287,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 576,
-      "checked_at": "2026-10-12T15:52:13.637305Z"
+      "latency_ms": 477,
+      "checked_at": "2026-10-12T18:05:35.912949Z"
     },
     {
       "source_id": "openai-skills",
@@ -139,8 +239,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 176,
-      "checked_at": "2026-10-12T15:52:13.814171Z"
+      "latency_ms": 263,
+      "checked_at": "2026-10-12T18:05:36.176353Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -151,8 +251,8 @@
       "fetched_count": 269,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 142,
-      "checked_at": "2026-10-12T15:52:13.961265Z"
+      "latency_ms": 129,
+      "checked_at": "2026-10-12T18:05:36.309998Z"
     },
     {
       "source_id": "google-deepmind",
@@ -163,8 +263,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 133,
-      "checked_at": "2026-10-12T15:52:14.096187Z"
+      "latency_ms": 271,
+      "checked_at": "2026-10-12T18:05:36.583213Z"
     },
     {
       "source_id": "google-ai",
@@ -175,8 +275,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 170,
-      "checked_at": "2026-10-12T15:52:14.267235Z"
+      "latency_ms": 245,
+      "checked_at": "2026-10-12T18:05:36.829395Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -187,8 +287,8 @@
       "fetched_count": 876,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 429,
-      "checked_at": "2026-10-12T15:52:14.710279Z"
+      "latency_ms": 265,
+      "checked_at": "2026-10-12T18:05:37.107425Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -197,10 +297,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 207,
-      "checked_at": "2026-10-12T15:52:14.918066Z"
+      "latency_ms": 223,
+      "checked_at": "2026-10-12T18:05:37.331410Z"
     },
     {
       "source_id": "github-changelog",
@@ -209,10 +309,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-10-12T15:52:14.949746Z"
+      "latency_ms": 26,
+      "checked_at": "2026-10-12T18:05:37.357996Z"
     },
     {
       "source_id": "aihot",
@@ -223,8 +323,8 @@
       "fetched_count": 51,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 2375,
-      "checked_at": "2026-10-12T15:52:17.326095Z"
+      "latency_ms": 2149,
+      "checked_at": "2026-10-12T18:05:39.508072Z"
     }
   ],
   "control_notes": {
