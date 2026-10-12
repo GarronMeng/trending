@@ -1,37 +1,79 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-12T03:39:18.967668Z",
+  "generated_at": "2026-10-12T11:21:05.629000Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 1,
+  "item_count": 3,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 1,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          1
+          3
         ]
       ],
       "top_keywords": [
         [
           "claude",
-          1
-        ],
-        [
-          "开发者",
-          1
+          3
         ],
         [
           "aggregate_noise",
+          3
+        ],
+        [
+          "开发者",
+          2
+        ],
+        [
+          "mcp",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "b25d6dd2c69054f0d9729f4298c894994b37e634",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "用 Claude Opus 5.5、Blender、Unreal Engine 和 Meshy 构建游戏的七步教程",
+      "url": "https://aihot.news/items/svvvhr5j2nnywgdw29pso7o49",
+      "published_at": "2026-10-12T07:44:47Z",
+      "summary": "一篇教程介绍用 Claude Opus 5.5 配合 Claude Code、Blender、Unreal Engine 5 和 Meshy 构建游戏的方法。核心思路是给每个工具分配单一职责：通过 MCP 连接 Blender 和 Meshy，由 Meshy 生成道具和角色、Blender 清理和放置、Unreal 负责光照物理和游戏本身、Opus 在一个对话里调度三者。流程为先让 Opus 头脑风暴 5 个游戏点子再展开，告知 GPU 以便压满画面性能，首个完整构建约花 4 小时和约 19% 的每周 Max plan 用量，之后因素材复用会快很多。 🔗 阅读原文 via AIHOT · https://aihot.news/items/svvvhr5j2nnywgdw29pso7o49",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:mcp",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "407c603fe53610535930c2e14002d81496e20745",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "从Brandon Thomas用Claude Opus 5.5开源重写Adobe全家桶看AI逆向一切趋势",
+      "url": "https://aihot.news/items/hvxwaxeyj6i82xv44ef4ce6fz",
+      "published_at": "2026-10-12T04:29:53Z",
+      "summary": "数字生命卡兹克撰文分析AI驱动逆向工程热潮：开发者Brandon Thomas因不满Adobe订阅规则，用Claude Opus 5.5以Rust逆向重写了Photoshop、Illustrator等7款软件的开源替代品PhotoCraft、VectorCraft等，不到10天单PS项目获4.6万Star。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hvxwaxeyj6i82xv44ef4ce6fz",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:claude",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "cb6ec83fc09f08acd89729cf79f503815989143c",
       "source_id": "aihot",
@@ -62,8 +104,8 @@
       "fetched_count": 1287,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 507,
-      "checked_at": "2026-10-12T03:39:14.711686Z"
+      "latency_ms": 577,
+      "checked_at": "2026-10-12T11:21:01.411600Z"
     },
     {
       "source_id": "openai-skills",
@@ -74,8 +116,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 280,
-      "checked_at": "2026-10-12T03:39:14.992401Z"
+      "latency_ms": 168,
+      "checked_at": "2026-10-12T11:21:01.580674Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -86,8 +128,8 @@
       "fetched_count": 269,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 156,
-      "checked_at": "2026-10-12T03:39:15.152116Z"
+      "latency_ms": 129,
+      "checked_at": "2026-10-12T11:21:01.714578Z"
     },
     {
       "source_id": "google-deepmind",
@@ -98,8 +140,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 458,
-      "checked_at": "2026-10-12T03:39:15.611543Z"
+      "latency_ms": 191,
+      "checked_at": "2026-10-12T11:21:01.907578Z"
     },
     {
       "source_id": "google-ai",
@@ -110,8 +152,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 281,
-      "checked_at": "2026-10-12T03:39:15.893495Z"
+      "latency_ms": 295,
+      "checked_at": "2026-10-12T11:21:02.203586Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -122,8 +164,8 @@
       "fetched_count": 876,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 320,
-      "checked_at": "2026-10-12T03:39:16.223663Z"
+      "latency_ms": 275,
+      "checked_at": "2026-10-12T11:21:02.491975Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -134,8 +176,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 280,
-      "checked_at": "2026-10-12T03:39:16.504710Z"
+      "latency_ms": 213,
+      "checked_at": "2026-10-12T11:21:02.705403Z"
     },
     {
       "source_id": "github-changelog",
@@ -147,7 +189,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 31,
-      "checked_at": "2026-10-12T03:39:16.536803Z"
+      "checked_at": "2026-10-12T11:21:02.737214Z"
     },
     {
       "source_id": "aihot",
@@ -156,10 +198,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 1,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 2422,
-      "checked_at": "2026-10-12T03:39:18.959613Z"
+      "latency_ms": 2882,
+      "checked_at": "2026-10-12T11:21:05.620165Z"
     }
   ],
   "control_notes": {
