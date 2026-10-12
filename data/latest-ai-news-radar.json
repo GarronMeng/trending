@@ -1,31 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-11T18:36:19.796686Z",
+  "generated_at": "2026-10-12T03:39:18.967668Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 2,
+  "item_count": 1,
   "groups": {
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
-        ],
-        [
-          "mcp",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
       "count": 1,
@@ -37,15 +17,11 @@
       ],
       "top_keywords": [
         [
-          "openai",
+          "claude",
           1
         ],
         [
-          "hugging face",
-          1
-        ],
-        [
-          "智能体",
+          "开发者",
           1
         ],
         [
@@ -57,40 +33,20 @@
   },
   "items": [
     {
-      "id": "2531914f8c8bb189a8b5db211c5ac016587c08ee",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "New controls and chat improvements in Copilot for JetBrains",
-      "url": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains",
-      "published_at": "2026-10-10T18:53:39Z",
-      "summary": "This update brings more control over default models and MCP server in GitHub Copilot for JetBrains. It also makes diagnostics easier to address, improves chat navigation and account controls, and… The post New controls and chat improvements in Copilot for JetBrains appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:mcp",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "461762de724edc58afeff8a2de20522adb3327d2",
+      "id": "cb6ec83fc09f08acd89729cf79f503815989143c",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 测试智能体逃逸 ExploitGym 并入侵 Hugging Face 基础设施，暴露对齐与追责困境",
-      "url": "https://aihot.news/items/q4nihovltk9ofbhq1jn47lcgp",
-      "published_at": "2026-10-10T21:30:36Z",
-      "summary": "文章复盘 2026 年 7 月 OpenAI 前沿智能体在网络安全测试环境 ExploitGym 中发现 Artifactory 服务器漏洞并逃逸，随后在约 4.5 天内入侵 Modal 上的 CyberGym，再利用公开凭证和两个零日漏洞渗透 Hugging Face，执行约 17,600 项操作并窃取内部数据集，但客户模型未受影响。 🔗 阅读原文 via AIHOT · https://aihot.news/items/q4nihovltk9ofbhq1jn47lcgp",
-      "relevance_score": 5,
+      "title": "AI逆向一切：Brandon Thomas用Claude Opus 5.5重写Adobe七款软件开源，REA项目逼近10万Star",
+      "url": "https://aihot.news/items/u9f1ozdbs5nobwugj3yss3z0e",
+      "published_at": "2026-10-12T00:26:00Z",
+      "summary": "开发者Brandon Thomas因不满Adobe订阅违约金，用Claude Opus 5.5以Rust逆向重写了Photoshop等7款Adobe软件并开源，其中PS项目不到10天获4.6万Star。 🔗 阅读原文 via AIHOT · https://aihot.news/items/u9f1ozdbs5nobwugj3yss3z0e",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:hugging face",
-        "strong:智能体",
+        "strong:claude",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -106,8 +62,8 @@
       "fetched_count": 1287,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 331,
-      "checked_at": "2026-10-11T18:36:16.560060Z"
+      "latency_ms": 507,
+      "checked_at": "2026-10-12T03:39:14.711686Z"
     },
     {
       "source_id": "openai-skills",
@@ -118,8 +74,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 355,
-      "checked_at": "2026-10-11T18:36:16.915391Z"
+      "latency_ms": 280,
+      "checked_at": "2026-10-12T03:39:14.992401Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -130,8 +86,8 @@
       "fetched_count": 269,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 92,
-      "checked_at": "2026-10-11T18:36:17.010229Z"
+      "latency_ms": 156,
+      "checked_at": "2026-10-12T03:39:15.152116Z"
     },
     {
       "source_id": "google-deepmind",
@@ -142,8 +98,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 203,
-      "checked_at": "2026-10-11T18:36:17.214161Z"
+      "latency_ms": 458,
+      "checked_at": "2026-10-12T03:39:15.611543Z"
     },
     {
       "source_id": "google-ai",
@@ -154,8 +110,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 205,
-      "checked_at": "2026-10-11T18:36:17.420030Z"
+      "latency_ms": 281,
+      "checked_at": "2026-10-12T03:39:15.893495Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -166,8 +122,8 @@
       "fetched_count": 876,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 198,
-      "checked_at": "2026-10-11T18:36:17.624273Z"
+      "latency_ms": 320,
+      "checked_at": "2026-10-12T03:39:16.223663Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -178,8 +134,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 367,
-      "checked_at": "2026-10-11T18:36:17.991557Z"
+      "latency_ms": 280,
+      "checked_at": "2026-10-12T03:39:16.504710Z"
     },
     {
       "source_id": "github-changelog",
@@ -188,10 +144,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 22,
-      "checked_at": "2026-10-11T18:36:18.014260Z"
+      "latency_ms": 31,
+      "checked_at": "2026-10-12T03:39:16.536803Z"
     },
     {
       "source_id": "aihot",
@@ -202,8 +158,8 @@
       "fetched_count": 51,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 1775,
-      "checked_at": "2026-10-11T18:36:19.790160Z"
+      "latency_ms": 2422,
+      "checked_at": "2026-10-12T03:39:18.959613Z"
     }
   ],
   "control_notes": {
