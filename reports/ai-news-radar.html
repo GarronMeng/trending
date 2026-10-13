@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>7</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>4</b><span>聚合源条目</span></div>
+        <div class="stat"><b>11</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>4</b><span>官方源条目</span></div>
+        <div class="stat"><b>5</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-13T14:27:43.390654Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-13T16:12:30.982827Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -64,6 +64,58 @@
       <h3><a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase" target="_blank" rel="noreferrer">GitHub Copilot app for Beginners: How to teach Copilot about your codebase</a></h3>
       <p class='summary'>Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright. The post GitHub Copilot app for Beginners: How to teach Copilot about your codebase appeared first on The GitHub Blog .</p>
       <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>strong:mcp</span><span>weak:copilot</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>Google DeepMind</span>
+        <span>official_rss</span>
+        <span>2026-10-13T16:01:58Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://deepmind.google/blog/gemini-4-argon-for-robotics" target="_blank" rel="noreferrer">Gemini 4 Argon for Robotics</a></h3>
+      
+      <div class="tags"><span>strong:gemini</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>Google DeepMind</span>
+        <span>official_rss</span>
+        <span>2026-10-13T16:01:52Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://deepmind.google/blog/introducing-gemini-4-argon" target="_blank" rel="noreferrer">Gemini 4 Argon: Built to solve your hardest problems</a></h3>
+      
+      <div class="tags"><span>strong:gemini</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>Google AI Blog</span>
+        <span>official_rss</span>
+        <span>2026-10-13T16:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon" target="_blank" rel="noreferrer">Gemini 4 Argon: Built to solve your hardest problems</a></h3>
+      <p class='summary'>TBD</p>
+      <div class="tags"><span>strong:gemini</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-10-13T00:00:00Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/ig00yzs3ye486mbnen8lenwdb" target="_blank" rel="noreferrer">Gemini 4 Argon (gemini-4-argon) 正式发布 GA</a></h3>
+      <p class='summary'>Google 发布 Gemini 4 Argon（gemini-4-argon）并正式进入 GA 阶段，定位为其最强模型，面向复杂编码、智能体、数学和科学任务。API 变化、定价与迁移指引见 What&#x27;s new in Gemini 4 Argon 文档。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ig00yzs3ye486mbnen8lenwdb</p>
+      <div class="tags"><span>strong:gemini</span><span>strong:智能体</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -149,15 +201,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1287</td><td>0</td><td>616ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>321ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>269</td><td>0</td><td>136ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>379ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>178ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>876</td><td>0</td><td>384ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>436ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>55ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>4</td><td>3941ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1287</td><td>0</td><td>412ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>198ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>269</td><td>0</td><td>78ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>2</td><td>420ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>155ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>876</td><td>0</td><td>197ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>152ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>19ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>5</td><td>2056ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

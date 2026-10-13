@@ -1,21 +1,37 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-13T14:27:43.389130Z",
+  "generated_at": "2026-10-13T16:12:30.981678Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 11,
   "groups": {
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 4,
       "top_sources": [
         [
+          "Google DeepMind",
+          2
+        ],
+        [
           "GitHub AI & ML",
+          1
+        ],
+        [
+          "Google AI Blog",
           1
         ]
       ],
       "top_keywords": [
+        [
+          "official_ai",
+          4
+        ],
+        [
+          "gemini",
+          3
+        ],
         [
           "agent",
           1
@@ -31,9 +47,61 @@
         [
           "copilot",
           1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 5,
+      "top_sources": [
+        [
+          "AI Hot",
+          5
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          5
         ],
         [
-          "official_ai",
+          "智能体",
+          2
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "claude",
+          2
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "大模型",
+          1
+        ],
+        [
+          "多模态",
           1
         ]
       ]
@@ -65,50 +133,6 @@
           1
         ]
       ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 4,
-      "top_sources": [
-        [
-          "AI Hot",
-          4
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          4
-        ],
-        [
-          "anthropic",
-          2
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
-          "开发者",
-          1
-        ],
-        [
-          "llm",
-          1
-        ],
-        [
-          "智能体",
-          1
-        ],
-        [
-          "大模型",
-          1
-        ],
-        [
-          "多模态",
-          1
-        ]
-      ]
     }
   },
   "items": [
@@ -130,6 +154,81 @@
         "strong:mcp",
         "weak:copilot",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "56a4d273b2144ec6f09e55ce83dfff5276b22644",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Gemini 4 Argon for Robotics",
+      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
+      "published_at": "2026-10-13T16:01:58Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "011825ce0d71f87740ea4f5206373616f8f3adf4",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-argon",
+      "published_at": "2026-10-13T16:01:52Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "934fa56aaefeeb27a3d16aa9654df039dd12d112",
+      "source_id": "google-ai",
+      "source_name": "Google AI Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon",
+      "published_at": "2026-10-13T16:00:00Z",
+      "summary": "TBD",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7b86d0bbb85ed571075c836e7920a642ebc68349",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gemini 4 Argon (gemini-4-argon) 正式发布 GA",
+      "url": "https://aihot.news/items/ig00yzs3ye486mbnen8lenwdb",
+      "published_at": "2026-10-13T00:00:00Z",
+      "summary": "Google 发布 Gemini 4 Argon（gemini-4-argon）并正式进入 GA 阶段，定位为其最强模型，面向复杂编码、智能体、数学和科学任务。API 变化、定价与迁移指引见 What's new in Gemini 4 Argon 文档。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ig00yzs3ye486mbnen8lenwdb",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -258,8 +357,8 @@
       "fetched_count": 1287,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 616,
-      "checked_at": "2026-10-13T14:27:37.523822Z"
+      "latency_ms": 412,
+      "checked_at": "2026-10-13T16:12:27.677385Z"
     },
     {
       "source_id": "openai-skills",
@@ -270,8 +369,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 321,
-      "checked_at": "2026-10-13T14:27:37.846034Z"
+      "latency_ms": 198,
+      "checked_at": "2026-10-13T16:12:27.875943Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -282,8 +381,8 @@
       "fetched_count": 269,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 136,
-      "checked_at": "2026-10-13T14:27:37.986143Z"
+      "latency_ms": 78,
+      "checked_at": "2026-10-13T16:12:27.957255Z"
     },
     {
       "source_id": "google-deepmind",
@@ -292,10 +391,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 379,
-      "checked_at": "2026-10-13T14:27:38.367717Z"
+      "latency_ms": 420,
+      "checked_at": "2026-10-13T16:12:28.379318Z"
     },
     {
       "source_id": "google-ai",
@@ -304,10 +403,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 178,
-      "checked_at": "2026-10-13T14:27:38.546937Z"
+      "latency_ms": 155,
+      "checked_at": "2026-10-13T16:12:28.535441Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -318,8 +417,8 @@
       "fetched_count": 876,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 384,
-      "checked_at": "2026-10-13T14:27:38.944878Z"
+      "latency_ms": 197,
+      "checked_at": "2026-10-13T16:12:28.742732Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -330,8 +429,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 436,
-      "checked_at": "2026-10-13T14:27:39.381975Z"
+      "latency_ms": 152,
+      "checked_at": "2026-10-13T16:12:28.895790Z"
     },
     {
       "source_id": "github-changelog",
@@ -342,8 +441,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 55,
-      "checked_at": "2026-10-13T14:27:39.438248Z"
+      "latency_ms": 19,
+      "checked_at": "2026-10-13T16:12:28.915898Z"
     },
     {
       "source_id": "aihot",
@@ -352,10 +451,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 4,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 3941,
-      "checked_at": "2026-10-13T14:27:43.380294Z"
+      "latency_ms": 2056,
+      "checked_at": "2026-10-13T16:12:30.973086Z"
     }
   ],
   "control_notes": {
