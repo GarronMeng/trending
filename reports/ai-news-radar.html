@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>6</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>7</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>3</b><span>聚合源条目</span></div>
+        <div class="stat"><b>4</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-13T11:09:46.692473Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-13T14:27:43.390654Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -90,6 +90,19 @@
       <h3><a href="https://aihot.news/items/kcwro19vl7dr5jgcjgec7mive" target="_blank" rel="noreferrer">Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期</a></h3>
       <p class='summary'>据 Bloomberg 报道，Epic Games 在与迪士尼 15 亿美元合作项目中转向 AI 先行开发，由 Anthropic 的 Claude 等模型编写全部代码并指导全部美术，人类开发者负责管理和引导生成内容。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kcwro19vl7dr5jgcjgec7mive</p>
       <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-10-13T11:56:53Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/uljn62mk9ujyya1xg51hc6dp8" target="_blank" rel="noreferrer">LangChain 发布 langchain-scaledown 集成，用 ScaleDown 约束解码模型管理长时智能体上下文</a></h3>
+      <p class='summary'>LangChain 发布 langchain-scaledown 集成，并在 LangSmith LLM Gateway 中支持 ScaleDown 的约束解码模型（CDM），用于降低长时智能体上下文管理的成本和延迟。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uljn62mk9ujyya1xg51hc6dp8</p>
+      <div class="tags"><span>strong:llm</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -136,15 +149,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1287</td><td>0</td><td>619ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>318ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>269</td><td>0</td><td>155ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>217ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>192ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>876</td><td>0</td><td>378ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>2591ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>36ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>3</td><td>5198ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1287</td><td>0</td><td>616ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>321ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>269</td><td>0</td><td>136ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>379ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>178ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>876</td><td>0</td><td>384ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>436ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>55ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>4</td><td>3941ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
