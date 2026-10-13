@@ -1,21 +1,53 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-13T16:12:30.981678Z",
+  "generated_at": "2026-10-13T20:04:36.419341Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 17,
   "groups": {
-    "official": {
-      "group": "official",
+    "developer": {
+      "group": "developer",
       "count": 4,
       "top_sources": [
         [
-          "Google DeepMind",
-          2
+          "GitHub Changelog",
+          4
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          6
         ],
         [
-          "GitHub AI & ML",
+          "gemini",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "tool",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 5,
+      "top_sources": [
+        [
+          "Google DeepMind",
+          3
+        ],
+        [
+          "Hugging Face Blog",
           1
         ],
         [
@@ -26,11 +58,11 @@
       "top_keywords": [
         [
           "official_ai",
-          4
+          5
         ],
         [
           "gemini",
-          3
+          4
         ],
         [
           "agent",
@@ -39,33 +71,37 @@
         [
           "agents",
           1
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "copilot",
-          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          5
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          8
         ],
         [
-          "智能体",
+          "gemini",
+          3
+        ],
+        [
+          "deepmind",
+          2
+        ],
+        [
+          "推理模型",
+          2
+        ],
+        [
+          "开发者",
           2
         ],
         [
@@ -77,7 +113,11 @@
           2
         ],
         [
-          "gemini",
+          "智能体",
+          2
+        ],
+        [
+          "automation",
           1
         ],
         [
@@ -86,50 +126,10 @@
         ],
         [
           "API",
-          1
-        ],
-        [
-          "开发者",
           1
         ],
         [
           "llm",
-          1
-        ],
-        [
-          "大模型",
-          1
-        ],
-        [
-          "多模态",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
-        ],
-        [
-          "tool",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
           1
         ]
       ]
@@ -137,22 +137,58 @@
   },
   "items": [
     {
-      "id": "95b817daf24e75ef84aeba4f2be66d0aba6137c0",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
+      "id": "bc8e9c4216745a4d99325f728f694ead03cfbf7d",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Gemini 4 Argon in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot",
+      "published_at": "2026-10-13T18:39:56Z",
+      "summary": "Gemini 4 Argon, Google’s newest frontier model, is now generally available in GitHub Copilot. It is designed for complex coding, agentic, and reasoning tasks. In early testing, Gemini 4 Argon… The post Gemini 4 Argon in GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "07b7a1dd86a5ec26b976a8820f9b174214966dcf",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "source_group": "official",
-      "source_weight": 4,
-      "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
-      "published_at": "2026-10-12T17:43:59Z",
-      "summary": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright. The post GitHub Copilot app for Beginners: How to teach Copilot about your codebase appeared first on The GitHub Blog .",
-      "relevance_score": 8,
+      "source_weight": 5,
+      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "published_at": "2026-10-13T17:05:48Z",
+      "summary": null,
+      "relevance_score": 5,
       "relevance_reasons": [
         "strong:agent",
         "strong:agents",
-        "strong:mcp",
-        "weak:copilot",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7eae76842499e1686a48becd97f2c3d278796f4f",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Developing Gemini 4 Argon responsibly and safely",
+      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
+      "published_at": "2026-10-13T19:43:07Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -212,22 +248,21 @@
       "is_ai_related": true
     },
     {
-      "id": "7b86d0bbb85ed571075c836e7920a642ebc68349",
+      "id": "787b578c19a3eae22a3e269bef9f095f148a3cda",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Gemini 4 Argon (gemini-4-argon) 正式发布 GA",
-      "url": "https://aihot.news/items/ig00yzs3ye486mbnen8lenwdb",
-      "published_at": "2026-10-13T00:00:00Z",
-      "summary": "Google 发布 Gemini 4 Argon（gemini-4-argon）并正式进入 GA 阶段，定位为其最强模型，面向复杂编码、智能体、数学和科学任务。API 变化、定价与迁移指引见 What's new in Gemini 4 Argon 文档。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ig00yzs3ye486mbnen8lenwdb",
+      "title": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87%",
+      "url": "https://aihot.news/items/op2q1wocmlbuvauflpfdb7u0f",
+      "published_at": "2026-10-13T16:01:58Z",
+      "summary": "Google DeepMind 发布 Gemini 4 Argon，定位为通用物理推理模型，在 Embodied Reasoning（ERQA）基准上以纯推理得分 87%，超过其他前沿模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/op2q1wocmlbuvauflpfdb7u0f",
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:gemini",
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
+        "strong:deepmind",
+        "strong:推理模型",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -252,6 +287,65 @@
       "is_ai_related": true
     },
     {
+      "id": "9d500b05a59677456170b07328e3304cbfaa05af",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google DeepMind 的 Gemini 4 Argon 上线 OpenRouter",
+      "url": "https://aihot.news/items/d4oyzg3qte4pt0ywsonolctwf",
+      "published_at": "2026-10-13T16:26:15Z",
+      "summary": "Gemini 4 Argon 已上线 OpenRouter，可通过 Google AI Studio 和 Google Cloud 调用。该模型在 AutomationBench 拿到 51.3%、LVBench 拿到 91.7%，并以 68% 并列 CWE-bench v1 第一； introductory 定价为输入 $2/M、输出 $10/M。试用入口：https://openrouter.ai/google/gemini-4-argon 🔗 阅读原文 via AIHOT · https://aihot.news/items/d4oyzg3qte4pt0ywsonolctwf",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:deepmind",
+        "weak:automation",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6574b9008249d03832937e6a6871f1b98994c07f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google 发布 Gemini 4 Argon：面向复杂工程与科研任务的前沿模型",
+      "url": "https://aihot.news/items/smxxtw5ca2c9jscojk4ppe5hf",
+      "published_at": "2026-10-13T16:00:00Z",
+      "summary": "Google 发布 Gemini 4 Argon，面向开发者、企业、科学家和消费者全球开放，可经 Gemini API、AI Studio、Google Antigravity。 🔗 阅读原文 via AIHOT · https://aihot.news/items/smxxtw5ca2c9jscojk4ppe5hf",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:gemini",
+        "weak:api",
+        "weak:开发者",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b75c6f5380e4c704e4a53c8ba2563b421655827e",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Enterprise managed settings enforcement updates",
+      "url": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+      "published_at": "2026-10-13T15:20:10Z",
+      "summary": "Enterprise administrators can now require supported GitHub Copilot clients to retrieve current server-managed settings at startup instead of relying on a cached policy. We are also adding minimum client version… The post Enterprise managed settings enforcement updates appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "931f22f784a6344c1cef60151ad10c85470b5922",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -268,6 +362,23 @@
         "strong:claude",
         "weak:开发者",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0c0abe99e148fb41f0aa6b1aa21ba83d995cdd94",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Secret scanning blocks Anthropic keys by default, adds Salesforce",
+      "url": "https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce",
+      "published_at": "2026-10-13T16:12:36Z",
+      "summary": "Secret scanning now detects new secret types from Salesforce, Anthropic, and Cloudsmith, with the new Anthropic secret types blocked with push protection by default. New secret scanning partner Salesforce is… The post Secret scanning blocks Anthropic keys by default, adds Salesforce appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:anthropic"
       ],
       "is_ai_related": true
     },
@@ -310,39 +421,40 @@
       "is_ai_related": true
     },
     {
-      "id": "92c882a7a4e82f607fd6a8b396de6ea79d5707b7",
+      "id": "2618e9a87ce9273373dfd41a3f8881b3caad6e40",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 的 Claude 向费城警方误提交虚假凶案线索",
-      "url": "https://aihot.news/items/figd7mthwgisg8imtkrs0tn5z",
-      "published_at": "2026-10-12T18:21:36Z",
-      "summary": "Anthropic 确认，Claude Haiku 4.5 在内部测试中于 7 月 18 日向费城警方悬案线索网站误提交了虚假凶案线索，该线索因进入垃圾邮件文件夹未被人审阅。 🔗 阅读原文 via AIHOT · https://aihot.news/items/figd7mthwgisg8imtkrs0tn5z",
+      "title": "Liquid AI 发布 LFM2.5-24B-A2B 端侧推理模型",
+      "url": "https://aihot.news/items/j0hjfg7ioz2gs0s8msqnafpjj",
+      "published_at": "2026-10-13T00:00:00Z",
+      "summary": "Liquid AI 发布开源权重模型 LFM2.5-24B-A2B，总参数 24B、每 token 激活 2B，定位端侧快速智能体。 🔗 阅读原文 via AIHOT · https://aihot.news/items/j0hjfg7ioz2gs0s8msqnafpjj",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
+        "strong:智能体",
+        "strong:推理模型",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "3d3ef4d01b017ce53f18344a0f181aaaff8c4ad9",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Push attribution for commits in limited public preview",
-      "url": "https://github.blog/changelog/2026-10-12-push-attribution-public-preview",
-      "published_at": "2026-10-12T16:30:11Z",
-      "summary": "GitHub now durably records the authenticated user who pushed each commit and surfaces that pusher identity in the UI and API alongside the existing author and committer fields. Commit author… The post Push attribution for commits in limited public preview appeared first on The GitHub Blog .",
-      "relevance_score": 2,
+      "id": "a6bde8e8defee81cd926fb2ef61621b2a6697799",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 自研版本控制系统 Scion，五个月完成 monorepo 从 git 迁移",
+      "url": "https://aihot.news/items/fpyjwv3o9zwxc9zs7j1bmnw8i",
+      "published_at": "2026-10-13T00:00:00Z",
+      "summary": "Anthropic 发布工程复盘，因 Claude 使日均合并代码量从 2026 年 5 月约 2,500 增至 9 月超 30,000，五个月内自研版本控制系统 Scion 并完全替代 git，同时推出代码评审工具 Antique。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fpyjwv3o9zwxc9zs7j1bmnw8i",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "weak:api",
-        "weak:API"
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     }
@@ -354,11 +466,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1287,
+      "fetched_count": 1288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 412,
-      "checked_at": "2026-10-13T16:12:27.677385Z"
+      "latency_ms": 370,
+      "checked_at": "2026-10-13T20:04:32.845091Z"
     },
     {
       "source_id": "openai-skills",
@@ -369,8 +481,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 198,
-      "checked_at": "2026-10-13T16:12:27.875943Z"
+      "latency_ms": 269,
+      "checked_at": "2026-10-13T20:04:33.115150Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -381,8 +493,8 @@
       "fetched_count": 269,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 78,
-      "checked_at": "2026-10-13T16:12:27.957255Z"
+      "latency_ms": 77,
+      "checked_at": "2026-10-13T20:04:33.195154Z"
     },
     {
       "source_id": "google-deepmind",
@@ -391,10 +503,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 420,
-      "checked_at": "2026-10-13T16:12:28.379318Z"
+      "latency_ms": 503,
+      "checked_at": "2026-10-13T20:04:33.700328Z"
     },
     {
       "source_id": "google-ai",
@@ -405,8 +517,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 155,
-      "checked_at": "2026-10-13T16:12:28.535441Z"
+      "latency_ms": 186,
+      "checked_at": "2026-10-13T20:04:33.887520Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -415,10 +527,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 876,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 197,
-      "checked_at": "2026-10-13T16:12:28.742732Z"
+      "latency_ms": 244,
+      "checked_at": "2026-10-13T20:04:34.141672Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -427,10 +539,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 152,
-      "checked_at": "2026-10-13T16:12:28.895790Z"
+      "latency_ms": 254,
+      "checked_at": "2026-10-13T20:04:34.396745Z"
     },
     {
       "source_id": "github-changelog",
@@ -439,10 +551,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 19,
-      "checked_at": "2026-10-13T16:12:28.915898Z"
+      "latency_ms": 25,
+      "checked_at": "2026-10-13T20:04:34.422253Z"
     },
     {
       "source_id": "aihot",
@@ -451,10 +563,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 5,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 2056,
-      "checked_at": "2026-10-13T16:12:30.973086Z"
+      "latency_ms": 1988,
+      "checked_at": "2026-10-13T20:04:36.411293Z"
     }
   ],
   "control_notes": {
