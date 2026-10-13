@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-12T21:58:03.101466Z",
+  "generated_at": "2026-10-13T04:52:46.831233Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 6,
   "groups": {
     "official": {
       "group": "official",
@@ -38,26 +38,50 @@
         ]
       ]
     },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 6,
+    "developer": {
+      "group": "developer",
+      "count": 2,
       "top_sources": [
         [
-          "AI Hot",
-          6
+          "GitHub Changelog",
+          2
         ]
       ],
       "top_keywords": [
         [
-          "aggregate_noise",
-          6
+          "copilot",
+          2
         ],
+        [
+          "tool",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 3,
+      "top_sources": [
+        [
+          "AI Hot",
+          3
+        ]
+      ],
+      "top_keywords": [
         [
           "claude",
-          5
+          3
         ],
         [
-          "开发者",
+          "aggregate_noise",
           3
         ],
         [
@@ -65,39 +89,11 @@
           2
         ],
         [
-          "智能体",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
+          "开发者",
           1
         ],
         [
           "mcp",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
           1
         ]
       ]
@@ -122,6 +118,25 @@
         "strong:mcp",
         "weak:copilot",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "77b36193c9b26daa7f713f6a7ed878a575583211",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Client telemetry user attribution and configurable capture",
+      "url": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+      "published_at": "2026-10-12T22:38:00Z",
+      "summary": "Enterprise administrators can now use telemetry in managed settings to attribute GitHub Copilot activity to a user without collecting their prompts, responses, or tool content. The telemetry.capture.identity setting adds three… The post Client telemetry user attribution and configurable capture appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "weak:tool",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -165,26 +180,6 @@
       "is_ai_related": true
     },
     {
-      "id": "0c95207ddfd1cac14d69917b4da62a9f74d1a994",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Meta 发布 Muse Wonder 与 Muse Wonder Full 模型，主打个人与专业智能体能力",
-      "url": "https://aihot.news/items/cvd92y8um4bchrk0rrug5d0fv",
-      "published_at": "2026-10-12T17:33:59Z",
-      "summary": "Meta 发布 Muse Wonder 系列模型，称其在个人与专业智能体任务上达到 SOTA 性能。Muse Wonder 现已通过 Meta Model API 和 Muse Code 提供，Muse Wonder Full 面向 Muse Code 订阅者开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cvd92y8um4bchrk0rrug5d0fv",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "3d3ef4d01b017ce53f18344a0f181aaaff8c4ad9",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -220,44 +215,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "407c603fe53610535930c2e14002d81496e20745",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "从Brandon Thomas用Claude Opus 5.5开源重写Adobe全家桶看AI逆向一切趋势",
-      "url": "https://aihot.news/items/hvxwaxeyj6i82xv44ef4ce6fz",
-      "published_at": "2026-10-12T04:29:53Z",
-      "summary": "数字生命卡兹克撰文分析AI驱动逆向工程热潮：开发者Brandon Thomas因不满Adobe订阅规则，用Claude Opus 5.5以Rust逆向重写了Photoshop、Illustrator等7款软件的开源替代品PhotoCraft、VectorCraft等，不到10天单PS项目获4.6万Star。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hvxwaxeyj6i82xv44ef4ce6fz",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:claude",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "cb6ec83fc09f08acd89729cf79f503815989143c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "AI逆向一切：Brandon Thomas用Claude Opus 5.5重写Adobe七款软件开源，REA项目逼近10万Star",
-      "url": "https://aihot.news/items/u9f1ozdbs5nobwugj3yss3z0e",
-      "published_at": "2026-10-12T00:26:00Z",
-      "summary": "开发者Brandon Thomas因不满Adobe订阅违约金，用Claude Opus 5.5以Rust逆向重写了Photoshop等7款Adobe软件并开源，其中PS项目不到10天获4.6万Star。 🔗 阅读原文 via AIHOT · https://aihot.news/items/u9f1ozdbs5nobwugj3yss3z0e",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:claude",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -270,8 +227,8 @@
       "fetched_count": 1287,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 562,
-      "checked_at": "2026-10-12T21:57:59.252442Z"
+      "latency_ms": 583,
+      "checked_at": "2026-10-13T04:52:43.181239Z"
     },
     {
       "source_id": "openai-skills",
@@ -282,8 +239,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 329,
-      "checked_at": "2026-10-12T21:57:59.582529Z"
+      "latency_ms": 402,
+      "checked_at": "2026-10-13T04:52:43.584069Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -294,8 +251,8 @@
       "fetched_count": 269,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 123,
-      "checked_at": "2026-10-12T21:57:59.710297Z"
+      "latency_ms": 151,
+      "checked_at": "2026-10-13T04:52:43.739237Z"
     },
     {
       "source_id": "google-deepmind",
@@ -306,8 +263,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 91,
-      "checked_at": "2026-10-12T21:57:59.803150Z"
+      "latency_ms": 273,
+      "checked_at": "2026-10-13T04:52:44.014564Z"
     },
     {
       "source_id": "google-ai",
@@ -318,8 +275,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 184,
-      "checked_at": "2026-10-12T21:57:59.987599Z"
+      "latency_ms": 236,
+      "checked_at": "2026-10-13T04:52:44.251882Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -330,8 +287,8 @@
       "fetched_count": 876,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 364,
-      "checked_at": "2026-10-12T21:58:00.365775Z"
+      "latency_ms": 356,
+      "checked_at": "2026-10-13T04:52:44.620513Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -342,8 +299,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 217,
-      "checked_at": "2026-10-12T21:58:00.583308Z"
+      "latency_ms": 523,
+      "checked_at": "2026-10-13T04:52:45.144332Z"
     },
     {
       "source_id": "github-changelog",
@@ -352,10 +309,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-10-12T21:58:00.613220Z"
+      "latency_ms": 201,
+      "checked_at": "2026-10-13T04:52:45.345820Z"
     },
     {
       "source_id": "aihot",
@@ -364,10 +321,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 6,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 2479,
-      "checked_at": "2026-10-12T21:58:03.093401Z"
+      "latency_ms": 1475,
+      "checked_at": "2026-10-13T04:52:46.822130Z"
     }
   ],
   "control_notes": {
