@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-14T02:59:58.003412Z",
+  "generated_at": "2026-10-14T09:02:49.630204Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 16,
+  "item_count": 17,
   "groups": {
     "developer": {
       "group": "developer",
@@ -71,30 +71,34 @@
         [
           "deepmind",
           1
-        ],
-        [
-          "tool",
-          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
           7
+        ],
+        [
+          "Anthropic News via Olshansk RSS",
+          1
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          8
         ],
         [
           "gemini",
           4
+        ],
+        [
+          "anthropic",
+          2
         ],
         [
           "claude",
@@ -130,10 +134,6 @@
         ],
         [
           "大模型",
-          1
-        ],
-        [
-          "多模态",
           1
         ]
       ]
@@ -180,20 +180,19 @@
       "is_ai_related": true
     },
     {
-      "id": "51007570814d5a6066d1628abcf5548243727065",
+      "id": "36e82901e8525ca72463d8317aac89772601d73d",
       "source_id": "google-deepmind",
       "source_name": "Google DeepMind",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Google DeepMind and Singapore Government announce new AI tool to protect citizens against scams",
+      "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
       "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi",
       "published_at": "2026-10-14T02:00:14Z",
       "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
-      "relevance_score": 4,
+      "relevance_score": 3,
       "relevance_reasons": [
         "strong:deepmind",
-        "weak:tool",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -267,6 +266,25 @@
       "relevance_reasons": [
         "strong:gemini",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f9ac9b0440b03b83b071c01f7f603e1f4598b4e7",
+      "source_id": "anthropic-news-unofficial",
+      "source_name": "Anthropic News via Olshansk RSS",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 3,
+      "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+      "url": "https://www.anthropic.com/news/singapore-office-opening",
+      "published_at": "2026-10-14T00:00:00Z",
+      "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "source:anthropic",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -452,8 +470,8 @@
       "fetched_count": 1288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 565,
-      "checked_at": "2026-10-14T02:59:51.569189Z"
+      "latency_ms": 478,
+      "checked_at": "2026-10-14T09:02:42.768102Z"
     },
     {
       "source_id": "openai-skills",
@@ -464,8 +482,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 273,
-      "checked_at": "2026-10-14T02:59:51.842425Z"
+      "latency_ms": 3376,
+      "checked_at": "2026-10-14T09:02:46.144921Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -473,11 +491,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 269,
-      "kept_count": 0,
+      "fetched_count": 270,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 122,
-      "checked_at": "2026-10-14T02:59:51.968715Z"
+      "latency_ms": 78,
+      "checked_at": "2026-10-14T09:02:46.226173Z"
     },
     {
       "source_id": "google-deepmind",
@@ -488,8 +506,8 @@
       "fetched_count": 100,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 446,
-      "checked_at": "2026-10-14T02:59:52.416471Z"
+      "latency_ms": 145,
+      "checked_at": "2026-10-14T09:02:46.373217Z"
     },
     {
       "source_id": "google-ai",
@@ -500,8 +518,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 262,
-      "checked_at": "2026-10-14T02:59:52.678935Z"
+      "latency_ms": 292,
+      "checked_at": "2026-10-14T09:02:46.665869Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -512,8 +530,8 @@
       "fetched_count": 876,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 345,
-      "checked_at": "2026-10-14T02:59:53.037352Z"
+      "latency_ms": 245,
+      "checked_at": "2026-10-14T09:02:46.920919Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -524,8 +542,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 308,
-      "checked_at": "2026-10-14T02:59:53.345901Z"
+      "latency_ms": 252,
+      "checked_at": "2026-10-14T09:02:47.173901Z"
     },
     {
       "source_id": "github-changelog",
@@ -536,8 +554,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 34,
-      "checked_at": "2026-10-14T02:59:53.380788Z"
+      "latency_ms": 25,
+      "checked_at": "2026-10-14T09:02:47.200079Z"
     },
     {
       "source_id": "aihot",
@@ -548,8 +566,8 @@
       "fetched_count": 51,
       "kept_count": 7,
       "error": null,
-      "latency_ms": 4612,
-      "checked_at": "2026-10-14T02:59:57.994472Z"
+      "latency_ms": 2421,
+      "checked_at": "2026-10-14T09:02:49.622014Z"
     }
   ],
   "control_notes": {
