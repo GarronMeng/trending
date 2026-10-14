@@ -1,90 +1,98 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-14T13:54:30.906409Z",
+  "generated_at": "2026-10-14T18:18:04.703104Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 16,
+  "item_count": 15,
   "groups": {
-    "developer": {
-      "group": "developer",
-      "count": 3,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          3
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "anthropic",
-          1
-        ]
-      ]
-    },
     "official": {
       "group": "official",
-      "count": 7,
+      "count": 6,
       "top_sources": [
         [
-          "Google DeepMind",
+          "OpenAI News",
           4
         ],
         [
-          "Hugging Face Blog",
-          1
-        ],
-        [
-          "OpenAI News",
-          1
-        ],
-        [
-          "Google AI Blog",
-          1
+          "Google DeepMind",
+          2
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          7
-        ],
-        [
-          "gemini",
-          4
+          6
         ],
         [
           "agent",
+          3
+        ],
+        [
+          "openai",
           2
         ],
         [
           "agents",
+          2
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "codex",
           1
         ],
         [
           "deepmind",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 2,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          2
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "actions",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          5
+          6
         ],
         [
           "Anthropic News via Olshansk RSS",
@@ -94,11 +102,11 @@
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          7
         ],
         [
           "gemini",
-          4
+          3
         ],
         [
           "anthropic",
@@ -109,23 +117,23 @@
           2
         ],
         [
-          "deepmind",
+          "openai",
           1
         ],
         [
-          "automation",
+          "chatgpt",
           1
         ],
         [
-          "api",
+          "agent",
           1
         ],
         [
-          "开发者",
+          "agents",
           1
         ],
         [
-          "API",
+          "评测",
           1
         ],
         [
@@ -140,6 +148,47 @@
     }
   },
   "items": [
+    {
+      "id": "2331f54bbb3bf03718c82a4672ae8c30750f1eee",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "url": "https://openai.com/index/amp-beyond-coding",
+      "published_at": "2026-10-14T12:00:00Z",
+      "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a192e85b06eb8df84e2214fb28ddb7c596176427",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+      "url": "https://openai.com/index/third-moment-research",
+      "published_at": "2026-10-14T07:00:00Z",
+      "summary": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:codex",
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "bc8e9c4216745a4d99325f728f694ead03cfbf7d",
       "source_id": "github-changelog",
@@ -161,20 +210,19 @@
       "is_ai_related": true
     },
     {
-      "id": "07b7a1dd86a5ec26b976a8820f9b174214966dcf",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "0d8303ef5787036e6438f62e8cc96409a10aa9a3",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
-      "published_at": "2026-10-13T17:05:48Z",
-      "summary": null,
-      "relevance_score": 5,
+      "title": "SentinelOne cuts malware analysis from weeks to hours",
+      "url": "https://openai.com/index/sentinelone",
+      "published_at": "2026-10-14T12:00:00Z",
+      "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
+        "strong:openai",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -234,56 +282,20 @@
       "is_ai_related": true
     },
     {
-      "id": "56a4d273b2144ec6f09e55ce83dfff5276b22644",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
+      "id": "4f23c3c0b9851b8278baa39884153c5379a6f09e",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Gemini 4 Argon for Robotics",
-      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
-      "published_at": "2026-10-13T16:01:58Z",
-      "summary": null,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Actions workflow lockfiles in public preview",
+      "url": "https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview",
+      "published_at": "2026-10-14T13:49:15Z",
+      "summary": "GitHub Actions workflow dependency lockfiles are now in public preview for GitHub Enterprise Cloud and GitHub Enterprise Cloud with data residency. Tags and branches can move after you review a… The post GitHub Actions workflow lockfiles in public preview appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:gemini",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "011825ce0d71f87740ea4f5206373616f8f3adf4",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Gemini 4 Argon: Built to solve your hardest problems",
-      "url": "https://deepmind.google/blog/introducing-gemini-4-argon",
-      "published_at": "2026-10-13T16:01:52Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "934fa56aaefeeb27a3d16aa9654df039dd12d112",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Gemini 4 Argon: Built to solve your hardest problems",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon",
-      "published_at": "2026-10-13T16:00:00Z",
-      "summary": "TBD",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "source_prior:official_ai"
+        "weak:workflow",
+        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -307,61 +319,40 @@
       "is_ai_related": true
     },
     {
-      "id": "9d500b05a59677456170b07328e3304cbfaa05af",
+      "id": "bccac08a6605e32247c7664c5ed8f98e7d76791b",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Google DeepMind 的 Gemini 4 Argon 上线 OpenRouter",
-      "url": "https://aihot.news/items/d4oyzg3qte4pt0ywsonolctwf",
-      "published_at": "2026-10-13T16:26:15Z",
-      "summary": "Gemini 4 Argon 已上线 OpenRouter，可通过 Google AI Studio 和 Google Cloud 调用。该模型在 AutomationBench 拿到 51.3%、LVBench 拿到 91.7%，并以 68% 并列 CWE-bench v1 第一； introductory 定价为输入 $2/M、输出 $10/M。试用入口：https://openrouter.ai/google/gemini-4-argon 🔗 阅读原文 via AIHOT · https://aihot.news/items/d4oyzg3qte4pt0ywsonolctwf",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:deepmind",
-        "weak:automation",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "6574b9008249d03832937e6a6871f1b98994c07f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google 发布 Gemini 4 Argon：面向复杂工程与科研任务的前沿模型",
-      "url": "https://aihot.news/items/smxxtw5ca2c9jscojk4ppe5hf",
-      "published_at": "2026-10-13T16:00:00Z",
-      "summary": "Google 发布 Gemini 4 Argon，面向开发者、企业、科学家和消费者全球开放，可经 Gemini API、AI Studio、Google Antigravity。 🔗 阅读原文 via AIHOT · https://aihot.news/items/smxxtw5ca2c9jscojk4ppe5hf",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:gemini",
-        "weak:api",
-        "weak:开发者",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b75c6f5380e4c704e4a53c8ba2563b421655827e",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Enterprise managed settings enforcement updates",
-      "url": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
-      "published_at": "2026-10-13T15:20:10Z",
-      "summary": "Enterprise administrators can now require supported GitHub Copilot clients to retrieve current server-managed settings at startup instead of relying on a cached policy. We are also adding minimum client version… The post Enterprise managed settings enforcement updates appeared first on The GitHub Blog .",
+      "title": "OpenAI 在 DevDay 推出 ChatGPT Space 团队协作功能",
+      "url": "https://aihot.news/items/yhc47nz5ldukuh72exdy38fxe",
+      "published_at": "2026-10-14T17:37:41Z",
+      "summary": "OpenAI 在 DevDay 上推出 ChatGPT Space，供团队与 AI 协作完成工作。用户可与他人和 ChatGPT 共同创建活文档，把杂乱对话整理成计划，邀请队友编辑或评论，@ChatGPT 或你的 dot 修改内容；还可让 ChatGPT 根据已连接工具自动更新页面。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yhc47nz5ldukuh72exdy38fxe",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:openai",
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6dd12a0e20e713dfecfeec35a3d90c6e1e89563a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "LangChain 详解 Deep Agents 的上下文工程：如何记住信息而不塞满上下文窗口",
+      "url": "https://aihot.news/items/za03v9avbq4fpb2y5b1ql1t27",
+      "published_at": "2026-10-14T17:00:00Z",
+      "summary": "LangChain 发布博客，介绍其开源 Agent 框架 Deep Agents 如何用 middleware 做上下文工程，应对长任务中的 context rot。 🔗 阅读原文 via AIHOT · https://aihot.news/items/za03v9avbq4fpb2y5b1ql1t27",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -404,19 +395,21 @@
       "is_ai_related": true
     },
     {
-      "id": "0c0abe99e148fb41f0aa6b1aa21ba83d995cdd94",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Secret scanning blocks Anthropic keys by default, adds Salesforce",
-      "url": "https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce",
-      "published_at": "2026-10-13T16:12:36Z",
-      "summary": "Secret scanning now detects new secret types from Salesforce, Anthropic, and Cloudsmith, with the new Anthropic secret types blocked with push protection by default. New secret scanning partner Salesforce is… The post Secret scanning blocks Anthropic keys by default, adds Salesforce appeared first on The GitHub Blog .",
+      "id": "f47c752e00156b394f27c6ef522bee3bb743c9c2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Artificial Analysis 评测：Grok Voice 3.0 以 86.9 分登顶语音到语音模型榜",
+      "url": "https://aihot.news/items/loovm0yfvzmgzmv1yp1mm3up4",
+      "published_at": "2026-10-14T17:26:20Z",
+      "summary": "Grok Voice 3.0 在 Artificial Analysis Speech to Speech Index 以 86.9 分首秀登顶，领先 GPT-Live-1（Astra, medium）的 83.2 和 Gemini 3.8 Live Extended Thinking（High）的 82.6，较 Grok Voice 2.0 提升 5.6 分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/loovm0yfvzmgzmv1yp1mm3up4",
       "relevance_score": 2,
       "relevance_reasons": [
-        "strong:anthropic"
+        "strong:gemini",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -447,11 +440,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1289,
-      "kept_count": 1,
+      "fetched_count": 1292,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 593,
-      "checked_at": "2026-10-14T13:54:25.062817Z"
+      "latency_ms": 1181,
+      "checked_at": "2026-10-14T18:17:58.498407Z"
     },
     {
       "source_id": "openai-skills",
@@ -462,8 +455,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 220,
-      "checked_at": "2026-10-14T13:54:25.283657Z"
+      "latency_ms": 402,
+      "checked_at": "2026-10-14T18:17:58.901094Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -474,8 +467,8 @@
       "fetched_count": 270,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 137,
-      "checked_at": "2026-10-14T13:54:25.425491Z"
+      "latency_ms": 421,
+      "checked_at": "2026-10-14T18:17:59.329719Z"
     },
     {
       "source_id": "google-deepmind",
@@ -484,10 +477,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 4,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 336,
-      "checked_at": "2026-10-14T13:54:25.763915Z"
+      "latency_ms": 420,
+      "checked_at": "2026-10-14T18:17:59.753206Z"
     },
     {
       "source_id": "google-ai",
@@ -496,10 +489,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 291,
-      "checked_at": "2026-10-14T13:54:26.055867Z"
+      "latency_ms": 487,
+      "checked_at": "2026-10-14T18:18:00.241441Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -508,10 +501,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 876,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 439,
-      "checked_at": "2026-10-14T13:54:26.508344Z"
+      "latency_ms": 821,
+      "checked_at": "2026-10-14T18:18:01.092898Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -522,8 +515,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 530,
-      "checked_at": "2026-10-14T13:54:27.038825Z"
+      "latency_ms": 845,
+      "checked_at": "2026-10-14T18:18:01.938489Z"
     },
     {
       "source_id": "github-changelog",
@@ -532,10 +525,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 57,
-      "checked_at": "2026-10-14T13:54:27.096537Z"
+      "latency_ms": 79,
+      "checked_at": "2026-10-14T18:18:02.018344Z"
     },
     {
       "source_id": "aihot",
@@ -544,10 +537,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 5,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 3799,
-      "checked_at": "2026-10-14T13:54:30.897127Z"
+      "latency_ms": 2670,
+      "checked_at": "2026-10-14T18:18:04.690594Z"
     }
   ],
   "control_notes": {
