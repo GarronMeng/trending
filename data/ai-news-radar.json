@@ -1,24 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-13T20:04:36.419341Z",
+  "generated_at": "2026-10-14T02:59:58.003412Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 17,
+  "item_count": 16,
   "groups": {
     "developer": {
       "group": "developer",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
           "GitHub Changelog",
-          4
+          3
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          6
+          4
         ],
         [
           "gemini",
@@ -29,10 +29,6 @@
           1
         ],
         [
-          "tool",
-          1
-        ],
-        [
           "anthropic",
           1
         ]
@@ -40,11 +36,11 @@
     },
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 6,
       "top_sources": [
         [
           "Google DeepMind",
-          3
+          4
         ],
         [
           "Hugging Face Blog",
@@ -58,7 +54,7 @@
       "top_keywords": [
         [
           "official_ai",
-          5
+          6
         ],
         [
           "gemini",
@@ -71,50 +67,42 @@
         [
           "agents",
           1
+        ],
+        [
+          "deepmind",
+          1
+        ],
+        [
+          "tool",
+          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          8
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          7
         ],
         [
           "gemini",
-          3
-        ],
-        [
-          "deepmind",
-          2
-        ],
-        [
-          "推理模型",
-          2
-        ],
-        [
-          "开发者",
-          2
-        ],
-        [
-          "anthropic",
-          2
+          4
         ],
         [
           "claude",
           2
         ],
         [
-          "智能体",
-          2
+          "deepmind",
+          1
         ],
         [
           "automation",
@@ -125,11 +113,27 @@
           1
         ],
         [
+          "开发者",
+          1
+        ],
+        [
           "API",
           1
         ],
         [
           "llm",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "大模型",
+          1
+        ],
+        [
+          "多模态",
           1
         ]
       ]
@@ -171,6 +175,25 @@
       "relevance_reasons": [
         "strong:agent",
         "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "51007570814d5a6066d1628abcf5548243727065",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Google DeepMind and Singapore Government announce new AI tool to protect citizens against scams",
+      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi",
+      "published_at": "2026-10-14T02:00:14Z",
+      "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:deepmind",
+        "weak:tool",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -248,45 +271,6 @@
       "is_ai_related": true
     },
     {
-      "id": "787b578c19a3eae22a3e269bef9f095f148a3cda",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87%",
-      "url": "https://aihot.news/items/op2q1wocmlbuvauflpfdb7u0f",
-      "published_at": "2026-10-13T16:01:58Z",
-      "summary": "Google DeepMind 发布 Gemini 4 Argon，定位为通用物理推理模型，在 Embodied Reasoning（ERQA）基准上以纯推理得分 87%，超过其他前沿模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/op2q1wocmlbuvauflpfdb7u0f",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:deepmind",
-        "strong:推理模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "77b36193c9b26daa7f713f6a7ed878a575583211",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Client telemetry user attribution and configurable capture",
-      "url": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
-      "published_at": "2026-10-12T22:38:00Z",
-      "summary": "Enterprise administrators can now use telemetry in managed settings to attribute GitHub Copilot activity to a user without collecting their prompts, responses, or tool content. The telemetry.capture.identity setting adds three… The post Client telemetry user attribution and configurable capture appeared first on The GitHub Blog .",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "weak:tool",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "9d500b05a59677456170b07328e3304cbfaa05af",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -346,21 +330,39 @@
       "is_ai_related": true
     },
     {
-      "id": "931f22f784a6344c1cef60151ad10c85470b5922",
+      "id": "4fb59dff8e52a996f774b3c301a34498aaae9987",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期",
-      "url": "https://aihot.news/items/kcwro19vl7dr5jgcjgec7mive",
-      "published_at": "2026-10-12T20:59:50Z",
-      "summary": "据 Bloomberg 报道，Epic Games 在与迪士尼 15 亿美元合作项目中转向 AI 先行开发，由 Anthropic 的 Claude 等模型编写全部代码并指导全部美术，人类开发者负责管理和引导生成内容。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kcwro19vl7dr5jgcjgec7mive",
-      "relevance_score": 4,
+      "title": "Gemini 4 Argon 全面开放，作者实测后认为难以撼动 Claude Opus 5.5 和 GPT-6 Astra",
+      "url": "https://aihot.news/items/e8516i4snh2ut9d6zedoc9jsv",
+      "published_at": "2026-10-14T01:02:59Z",
+      "summary": "Google 于10月14日全面开放 Gemini 4 Argon，作者实测后认为其很难冲击 Claude Opus 5.5 和 GPT-6 Astra 的地位。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e8516i4snh2ut9d6zedoc9jsv",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
         "strong:claude",
-        "weak:开发者",
+        "strong:gemini",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "02ef89d2f4489de5f393a8ffc89934f6cf220ee4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "实测Gemini 4 Argon：知识工作强劲但体验糟糕，卡兹克称难撼Claude Opus 5.5与GPT-6 Astra",
+      "url": "https://aihot.news/items/oxaap1c1cvxi9ngybxks1gngi",
+      "published_at": "2026-10-13T22:56:51Z",
+      "summary": "Gemini 4 Argon于10月13日全面开放，Pro会员可在Gemini APP使用，Antigravity需100刀Ultra会员。作者实测认为其知识类专业能力强，Vals Index综合第一（68.9）且单次成本仅15.68美元，但CUA-bench仅4.83%排倒数第二；前端效果不及GPT-6 Astra，额度消耗快，中文写作味道重，整体体验糟糕，不建议订阅Ultra。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oxaap1c1cvxi9ngybxks1gngi",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:gemini",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -421,39 +423,20 @@
       "is_ai_related": true
     },
     {
-      "id": "2618e9a87ce9273373dfd41a3f8881b3caad6e40",
+      "id": "b32bfb14d2235df9ab2bc0d12b79a4c2c9e70f7a",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Liquid AI 发布 LFM2.5-24B-A2B 端侧推理模型",
-      "url": "https://aihot.news/items/j0hjfg7ioz2gs0s8msqnafpjj",
-      "published_at": "2026-10-13T00:00:00Z",
-      "summary": "Liquid AI 发布开源权重模型 LFM2.5-24B-A2B，总参数 24B、每 token 激活 2B，定位端侧快速智能体。 🔗 阅读原文 via AIHOT · https://aihot.news/items/j0hjfg7ioz2gs0s8msqnafpjj",
-      "relevance_score": 3,
+      "title": "Visual Studio Copilot 与 SSMS 远程代码执行漏洞（CVE-2026-103572）技术分析",
+      "url": "https://aihot.news/items/o8h7g7pscq0qrlenoadabbb96",
+      "published_at": "2026-10-13T22:00:40Z",
+      "summary": "Johann Rehberger 披露 Visual Studio Copilot 与 SQL Server Management Studio 中的远程代码执行漏洞 CVE-2026-103572，根因是利用文件名末尾多加一个点绕过路径校验，写入 .mcp. 或 settings.VisualStudio. 等受保护配置文件，实现任意命令执行。 🔗 阅读原文 via AIHOT · https://aihot.news/items/o8h7g7pscq0qrlenoadabbb96",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:智能体",
-        "strong:推理模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a6bde8e8defee81cd926fb2ef61621b2a6697799",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 自研版本控制系统 Scion，五个月完成 monorepo 从 git 迁移",
-      "url": "https://aihot.news/items/fpyjwv3o9zwxc9zs7j1bmnw8i",
-      "published_at": "2026-10-13T00:00:00Z",
-      "summary": "Anthropic 发布工程复盘，因 Claude 使日均合并代码量从 2026 年 5 月约 2,500 增至 9 月超 30,000，五个月内自研版本控制系统 Scion 并完全替代 git，同时推出代码评审工具 Antique。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fpyjwv3o9zwxc9zs7j1bmnw8i",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
+        "strong:mcp",
+        "weak:copilot",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -469,8 +452,8 @@
       "fetched_count": 1288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 370,
-      "checked_at": "2026-10-13T20:04:32.845091Z"
+      "latency_ms": 565,
+      "checked_at": "2026-10-14T02:59:51.569189Z"
     },
     {
       "source_id": "openai-skills",
@@ -481,8 +464,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 269,
-      "checked_at": "2026-10-13T20:04:33.115150Z"
+      "latency_ms": 273,
+      "checked_at": "2026-10-14T02:59:51.842425Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -493,8 +476,8 @@
       "fetched_count": 269,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 77,
-      "checked_at": "2026-10-13T20:04:33.195154Z"
+      "latency_ms": 122,
+      "checked_at": "2026-10-14T02:59:51.968715Z"
     },
     {
       "source_id": "google-deepmind",
@@ -503,10 +486,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 3,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 503,
-      "checked_at": "2026-10-13T20:04:33.700328Z"
+      "latency_ms": 446,
+      "checked_at": "2026-10-14T02:59:52.416471Z"
     },
     {
       "source_id": "google-ai",
@@ -517,8 +500,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 186,
-      "checked_at": "2026-10-13T20:04:33.887520Z"
+      "latency_ms": 262,
+      "checked_at": "2026-10-14T02:59:52.678935Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -529,8 +512,8 @@
       "fetched_count": 876,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 244,
-      "checked_at": "2026-10-13T20:04:34.141672Z"
+      "latency_ms": 345,
+      "checked_at": "2026-10-14T02:59:53.037352Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -541,8 +524,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-10-13T20:04:34.396745Z"
+      "latency_ms": 308,
+      "checked_at": "2026-10-14T02:59:53.345901Z"
     },
     {
       "source_id": "github-changelog",
@@ -551,10 +534,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-10-13T20:04:34.422253Z"
+      "latency_ms": 34,
+      "checked_at": "2026-10-14T02:59:53.380788Z"
     },
     {
       "source_id": "aihot",
@@ -563,10 +546,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 8,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 1988,
-      "checked_at": "2026-10-13T20:04:36.411293Z"
+      "latency_ms": 4612,
+      "checked_at": "2026-10-14T02:59:57.994472Z"
     }
   ],
   "control_notes": {
