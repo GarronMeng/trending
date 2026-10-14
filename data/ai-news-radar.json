@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-14T09:02:49.630204Z",
+  "generated_at": "2026-10-14T12:13:06.740692Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 17,
+  "item_count": 16,
   "groups": {
     "developer": {
       "group": "developer",
@@ -36,7 +36,7 @@
     },
     "official": {
       "group": "official",
-      "count": 6,
+      "count": 7,
       "top_sources": [
         [
           "Google DeepMind",
@@ -47,6 +47,10 @@
           1
         ],
         [
+          "OpenAI News",
+          1
+        ],
+        [
           "Google AI Blog",
           1
         ]
@@ -54,7 +58,7 @@
       "top_keywords": [
         [
           "official_ai",
-          6
+          7
         ],
         [
           "gemini",
@@ -62,7 +66,7 @@
         ],
         [
           "agent",
-          1
+          2
         ],
         [
           "agents",
@@ -76,11 +80,11 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          7
+          5
         ],
         [
           "Anthropic News via Olshansk RSS",
@@ -90,7 +94,7 @@
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          6
         ],
         [
           "gemini",
@@ -125,15 +129,11 @@
           1
         ],
         [
-          "llm",
+          "mcp",
           1
         ],
         [
-          "智能体",
-          1
-        ],
-        [
-          "大模型",
+          "copilot",
           1
         ]
       ]
@@ -193,6 +193,24 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:deepmind",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "334753a5dff821c25bd17c8b69792a0bb5f310c0",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "The EU’s next chapter in AI is agentic",
+      "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+      "published_at": "2026-10-14T00:00:00Z",
+      "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -403,44 +421,6 @@
       "is_ai_related": true
     },
     {
-      "id": "936e660f35b47b79e48f4ea6d4cbb71e72bedde9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "LangChain 发布 langchain-scaledown 集成，用 ScaleDown 约束解码模型管理长时智能体上下文",
-      "url": "https://aihot.news/items/uljn62mk9ujyya1xg51hc6dp8",
-      "published_at": "2026-10-13T11:56:53Z",
-      "summary": "LangChain 发布 langchain-scaledown 集成，并在 LangSmith LLM Gateway 中支持 ScaleDown 的约束解码模型（CDM），用于降低长时智能体上下文管理的成本和延迟。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uljn62mk9ujyya1xg51hc6dp8",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:llm",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "05ccc03df1827679c617c14591d42ba348425231",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "面壁智能开源 MiniCPM-V 4.7，35B-A3B MoE 模型 3GB 内存端侧流畅运行",
-      "url": "https://aihot.news/items/fidy0y9chlgs0puyn96qkmj1b",
-      "published_at": "2026-10-13T10:29:21Z",
-      "summary": "面壁智能联合 OpenBMB 社区于10月13日发布并开源 MiniCPM-V 4.7，包含 35B-A3B 和 1B 两个版本，称其为全球首个可在端侧无损流畅运行的开源 MoE 多模态大模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fidy0y9chlgs0puyn96qkmj1b",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:大模型",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "b32bfb14d2235df9ab2bc0d12b79a4c2c9e70f7a",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -467,11 +447,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1288,
-      "kept_count": 0,
+      "fetched_count": 1289,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 478,
-      "checked_at": "2026-10-14T09:02:42.768102Z"
+      "latency_ms": 515,
+      "checked_at": "2026-10-14T12:13:02.147247Z"
     },
     {
       "source_id": "openai-skills",
@@ -482,8 +462,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 3376,
-      "checked_at": "2026-10-14T09:02:46.144921Z"
+      "latency_ms": 1696,
+      "checked_at": "2026-10-14T12:13:03.843996Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -494,8 +474,8 @@
       "fetched_count": 270,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 78,
-      "checked_at": "2026-10-14T09:02:46.226173Z"
+      "latency_ms": 99,
+      "checked_at": "2026-10-14T12:13:03.947601Z"
     },
     {
       "source_id": "google-deepmind",
@@ -506,8 +486,8 @@
       "fetched_count": 100,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 145,
-      "checked_at": "2026-10-14T09:02:46.373217Z"
+      "latency_ms": 172,
+      "checked_at": "2026-10-14T12:13:04.121409Z"
     },
     {
       "source_id": "google-ai",
@@ -518,8 +498,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 292,
-      "checked_at": "2026-10-14T09:02:46.665869Z"
+      "latency_ms": 239,
+      "checked_at": "2026-10-14T12:13:04.361692Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -530,8 +510,8 @@
       "fetched_count": 876,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 245,
-      "checked_at": "2026-10-14T09:02:46.920919Z"
+      "latency_ms": 252,
+      "checked_at": "2026-10-14T12:13:04.626141Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -542,8 +522,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 252,
-      "checked_at": "2026-10-14T09:02:47.173901Z"
+      "latency_ms": 360,
+      "checked_at": "2026-10-14T12:13:04.986885Z"
     },
     {
       "source_id": "github-changelog",
@@ -554,8 +534,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-10-14T09:02:47.200079Z"
+      "latency_ms": 24,
+      "checked_at": "2026-10-14T12:13:05.011542Z"
     },
     {
       "source_id": "aihot",
@@ -564,10 +544,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 7,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 2421,
-      "checked_at": "2026-10-14T09:02:49.622014Z"
+      "latency_ms": 1718,
+      "checked_at": "2026-10-14T12:13:06.731057Z"
     }
   ],
   "control_notes": {
