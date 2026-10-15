@@ -1,67 +1,35 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-15T11:53:34.854643Z",
+  "generated_at": "2026-10-15T13:35:02.826324Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 9,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "OpenAI News",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "openai",
-          2
-        ],
-        [
-          "official_ai",
-          2
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          6
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          7
         ],
         [
           "openai",
           3
         ],
         [
-          "评测",
-          2
+          "agent",
+          3
         ],
         [
-          "agent",
+          "评测",
           2
         ],
         [
@@ -124,45 +92,6 @@
     }
   },
   "items": [
-    {
-      "id": "2331f54bbb3bf03718c82a4672ae8c30750f1eee",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Amp puts AI agents to work beyond code with OpenAI models",
-      "url": "https://openai.com/index/amp-beyond-coding",
-      "published_at": "2026-10-14T12:00:00Z",
-      "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:agent",
-        "strong:agents",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0d8303ef5787036e6438f62e8cc96409a10aa9a3",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "SentinelOne cuts malware analysis from weeks to hours",
-      "url": "https://openai.com/index/sentinelone",
-      "published_at": "2026-10-14T12:00:00Z",
-      "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "8c43c6d91bf84a51b47dcecdddf3035293dd761a",
       "source_id": "aihot",
@@ -317,6 +246,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "d3508e4341fea2458b2c3376456373c64bc24d19",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Tessl Verifiers 正式发布，用仓库内纯文本规则检查每次 Agent 代码变更",
+      "url": "https://aihot.news/items/virsb1x13670yw25mr9fyxqtt",
+      "published_at": "2026-10-14T16:00:00Z",
+      "summary": "Tessl 发布 Verifiers，规则以 JSON 文件形式存放在仓库中，每次代码变更时由 LLM judge 逐条给出 pass 或 fail，可像 lint 或测试一样在本地、pre-commit 或 CI 中使用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/virsb1x13670yw25mr9fyxqtt",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:llm",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -327,10 +275,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1293,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 431,
-      "checked_at": "2026-10-15T11:53:31.028484Z"
+      "latency_ms": 392,
+      "checked_at": "2026-10-15T13:34:59.458272Z"
     },
     {
       "source_id": "openai-skills",
@@ -341,8 +289,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-10-15T11:53:31.283501Z"
+      "latency_ms": 312,
+      "checked_at": "2026-10-15T13:34:59.771166Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -353,8 +301,8 @@
       "fetched_count": 271,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 121,
-      "checked_at": "2026-10-15T11:53:31.407924Z"
+      "latency_ms": 111,
+      "checked_at": "2026-10-15T13:34:59.885263Z"
     },
     {
       "source_id": "google-deepmind",
@@ -365,8 +313,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 218,
-      "checked_at": "2026-10-15T11:53:31.627408Z"
+      "latency_ms": 165,
+      "checked_at": "2026-10-15T13:35:00.051670Z"
     },
     {
       "source_id": "google-ai",
@@ -377,8 +325,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 202,
-      "checked_at": "2026-10-15T11:53:31.829837Z"
+      "latency_ms": 218,
+      "checked_at": "2026-10-15T13:35:00.269990Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -386,11 +334,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 876,
+      "fetched_count": 877,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 275,
-      "checked_at": "2026-10-15T11:53:32.113894Z"
+      "latency_ms": 217,
+      "checked_at": "2026-10-15T13:35:00.494538Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -401,8 +349,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 248,
-      "checked_at": "2026-10-15T11:53:32.362516Z"
+      "latency_ms": 297,
+      "checked_at": "2026-10-15T13:35:00.792449Z"
     },
     {
       "source_id": "github-changelog",
@@ -413,8 +361,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-10-15T11:53:32.389474Z"
+      "latency_ms": 48,
+      "checked_at": "2026-10-15T13:35:00.841720Z"
     },
     {
       "source_id": "aihot",
@@ -423,10 +371,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 6,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 2456,
-      "checked_at": "2026-10-15T11:53:34.846476Z"
+      "latency_ms": 1975,
+      "checked_at": "2026-10-15T13:35:02.818268Z"
     }
   ],
   "control_notes": {

@@ -43,43 +43,17 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>10</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>2</b><span>官方源条目</span></div>
-        <div class="stat"><b>6</b><span>聚合源条目</span></div>
+        <div class="stat"><b>9</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>0</b><span>官方源条目</span></div>
+        <div class="stat"><b>7</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-15T11:53:34.856721Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-15T13:35:02.827640Z</p></div>
       <div class="grid">
-    <article class="card">
-      <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-10-14T12:00:00Z</span>
-        <strong>Score 9</strong>
-      </div>
-      <h3><a href="https://openai.com/index/amp-beyond-coding" target="_blank" rel="noreferrer">Amp puts AI agents to work beyond code with OpenAI models</a></h3>
-      <p class='summary'>See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.</p>
-      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>strong:agent</span><span>strong:agents</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-10-14T12:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://openai.com/index/sentinelone" target="_blank" rel="noreferrer">SentinelOne cuts malware analysis from weeks to hours</a></h3>
-      <p class='summary'>With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.</p>
-      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
     <article class="card">
       <div class="meta">
         <span>AI Hot</span>
@@ -182,21 +156,34 @@
       <p class='summary'>LangChain 发布博客，介绍其开源 Agent 框架 Deep Agents 如何用 middleware 做上下文工程，应对长任务中的 context rot。 🔗 阅读原文 via AIHOT · https://aihot.news/items/za03v9avbq4fpb2y5b1ql1t27</p>
       <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>source_penalty:aggregate_noise</span></div>
     </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-10-14T16:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/virsb1x13670yw25mr9fyxqtt" target="_blank" rel="noreferrer">Tessl Verifiers 正式发布，用仓库内纯文本规则检查每次 Agent 代码变更</a></h3>
+      <p class='summary'>Tessl 发布 Verifiers，规则以 JSON 文件形式存放在仓库中，每次代码变更时由 LLM judge 逐条给出 pass 或 fail，可像 lint 或测试一样在本地、pre-commit 或 CI 中使用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/virsb1x13670yw25mr9fyxqtt</p>
+      <div class="tags"><span>strong:agent</span><span>strong:llm</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1293</td><td>2</td><td>431ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>254ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>271</td><td>0</td><td>121ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>218ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>202ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>876</td><td>0</td><td>275ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>248ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>26ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>6</td><td>2456ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1293</td><td>0</td><td>392ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>312ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>271</td><td>0</td><td>111ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>165ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>218ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>877</td><td>0</td><td>217ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>297ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>48ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>7</td><td>1975ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
