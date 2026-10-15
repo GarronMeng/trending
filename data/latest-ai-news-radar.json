@@ -1,24 +1,48 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-15T13:35:02.826324Z",
+  "generated_at": "2026-10-15T18:00:37.343189Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 15,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "Hugging Face Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "multimodal",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 12,
       "top_sources": [
         [
           "AI Hot",
-          7
+          12
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          12
+        ],
+        [
+          "评测",
+          4
         ],
         [
           "openai",
@@ -29,7 +53,23 @@
           3
         ],
         [
-          "评测",
+          "智能体",
+          3
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "开发者",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "gemini",
           2
         ],
         [
@@ -37,31 +77,11 @@
           2
         ],
         [
-          "anthropic",
-          1
+          "developer",
+          2
         ],
         [
-          "人工智能",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "智能体",
-          1
-        ],
-        [
-          "agents",
+          "mcp",
           1
         ]
       ]
@@ -77,21 +97,65 @@
       ],
       "top_keywords": [
         [
-          "workflow",
-          2
-        ],
-        [
           "copilot",
           2
         ],
         [
-          "actions",
+          "workflow",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "developer",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "b4450baea87c71774446dafc1424a3f547bff159",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+      "url": "https://huggingface.co/blog/meta-muse-spark-open",
+      "published_at": "2026-10-15T00:00:00Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:multimodal",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a4c0cecc8f6c2ef1a0199fe113ad03579cb28456",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "可灵 Kling 4.0 正式全量开放，新增 MCP 和 CLI 接入",
+      "url": "https://aihot.news/items/uoqzntmcb5v0io1g6obac7amu",
+      "published_at": "2026-10-15T15:00:03Z",
+      "summary": "可灵（Kling AI）宣布 Kling 4.0 正式全量开放，用户可通过 kling.ai 全新创作界面使用，并新增 MCP 和 CLI 接入以融入视频创作工作流。即将推出 4K 和 1080p 的 10-bit HDR 视频输出，以及面向企业客户和开发者的 API 访问。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uoqzntmcb5v0io1g6obac7amu",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:mcp",
+        "weak:api",
+        "weak:开发者",
+        "weak:工作流",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "8c43c6d91bf84a51b47dcecdddf3035293dd761a",
       "source_id": "aihot",
@@ -128,6 +192,64 @@
         "weak:workflow",
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4fd0c51ea5692e198455d00f61967f9f93d3f1c5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gemini 4 Argon 在 ARC-AGI (Verified) 评测中公布：ARC-AGI-3 得分 97.5%",
+      "url": "https://aihot.news/items/cvpbhz4ao2wr6pxpthix2z15c",
+      "published_at": "2026-10-15T16:22:30Z",
+      "summary": "ARC Prize 公布 Gemini 4 Argon 在 ARC-AGI (Verified) 的评测成绩。ARC-AGI-3 上，provider adapter harness 得分 97.5%、成本 $4.8K，标准 harness 得分 49.8%、成本 $5.8K；ARC-AGI-2 得分 91.3%、$0.32/task；ARC-AGI-1 得分 98.5%、$0.16/task。Google DeepMind 是第二家在 ARC-AGI-3 上得分超过 95% 的前沿 AI 实验室。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cvpbhz4ao2wr6pxpthix2z15c",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:deepmind",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ab1b35b96841e808f1f283b40b4a454b83b9e16b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "StepFun 展示 Step 5 Preview 在 NVIDIA GB300 上的推理性能",
+      "url": "https://aihot.news/items/l3g1uzem751ki1oxckrxa1b3e",
+      "published_at": "2026-10-15T14:01:07Z",
+      "summary": "StepFun 表示 Step 5 Preview 在 NVIDIA GB300 上推理表现出色，并期待看到开发者用它构建的应用。其转发的 NVIDIA 内容称该模型是 StepFun 最大的开源权重发布，600B MoE 架构，可处理最长 24 小时的 Agent 任务，在 GB300 上用 NVFP4 达到近 8K tokens/sec/GPU，提供 NVFP4 checkpoint（https://huggingface.co/stepfun-ai/Step-5-Preview-NVFP4），并支持 SGLang、vLLM、NeMo Automodel 后训练和 NVIDIA NIM 一键部署。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l3g1uzem751",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:llm",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "aa40e8bf3768192b52dd79cc62c695abe1aa76be",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Agentic autofix for code scanning alerts general availability",
+      "url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+      "published_at": "2026-10-15T13:49:20Z",
+      "summary": "Agentic autofix for code scanning alerts is now generally available. It remediates alerts by working across your codebase the way a developer would: it explores relevant files, proposes a fix,… The post Agentic autofix for code scanning alerts general availability appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:developer"
       ],
       "is_ai_related": true
     },
@@ -173,20 +295,21 @@
       "is_ai_related": true
     },
     {
-      "id": "4f23c3c0b9851b8278baa39884153c5379a6f09e",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Actions workflow lockfiles in public preview",
-      "url": "https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview",
-      "published_at": "2026-10-14T13:49:15Z",
-      "summary": "GitHub Actions workflow dependency lockfiles are now in public preview for GitHub Enterprise Cloud, GitHub Enterprise Cloud with data residency, Team, and Free plans. Tags and branches can move after… The post GitHub Actions workflow lockfiles in public preview appeared first on The GitHub Blog .",
+      "id": "26c037d2e5264088fd29b258a4c2e4f6df32c589",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Step 5 Preview 上线 FeatherlessAI，官方转发开放权重模型部署信息",
+      "url": "https://aihot.news/items/mimehokpfhvz10dk3pdz131ky",
+      "published_at": "2026-10-15T15:30:00Z",
+      "summary": "阶跃星辰转发 FeatherlessAI 的消息，Step 5 Preview 已上线该平台，以 FP8 精度提供服务。该开放权重模型为 600B 稀疏 MoE 架构、每 token 激活 27B，面向长程智能体工作，在软件工程和专业知识工作（尤其金融）上有前沿级表现，按 Artificial Analysis 数据其每任务成本约为 Claude Opus 5.5 的 1/6，智能水平与 Kimi K3 相当。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mimehokpfhvz10dk3pdz131ky",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:workflow",
-        "source:actions"
+        "strong:claude",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -205,6 +328,45 @@
       "relevance_reasons": [
         "strong:openai",
         "strong:chatgpt",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5a259d65d422d5f6da1ec8aaeb266a559ab44c9b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Meta 发布开源权重多模态 MoE 模型 Muse Spark Open，总参数约 816B",
+      "url": "https://aihot.news/items/lw0bwrzaoeyln84j861dr4ijk",
+      "published_at": "2026-10-15T00:00:00Z",
+      "summary": "Hugging Face 团队介绍 Meta 的开源权重模型 Muse Spark Open：这是一个 MoE 架构的多模态模型，总参数约 816B、每 token 激活约 42B，支持文本、图像、音频和视频输入，上下文窗口最高 1M token，提供 BF16（约 1.5 TB）和面向 NVIDIA Blackwell 的 NVFP4 两种 checkpoint。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lw0bwrzaoeyln84j861dr4ijk",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "df4e1dbf7faff8acf88438fca80977e6278fcc59",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google 工程师讲解如何系统评测 AI 智能体，告别 vibe check",
+      "url": "https://aihot.news/items/ojpe4mr67tjbrt5atyi6hyapl",
+      "published_at": "2026-10-15T00:00:00Z",
+      "summary": "Google Developers Blog 发布智能体评测实践指南，指出仅靠终端跑几个提示词的 vibe check 无法发现智能体重试循环、工具参数幻觉等隐性失败。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ojpe4mr67tjbrt5atyi6hyapl",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:developer",
+        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -229,39 +391,20 @@
       "is_ai_related": true
     },
     {
-      "id": "6dd12a0e20e713dfecfeec35a3d90c6e1e89563a",
+      "id": "95e437a5533a23c08185033a31514dfb5c546c3a",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "LangChain 详解 Deep Agents 的上下文工程：如何记住信息而不塞满上下文窗口",
-      "url": "https://aihot.news/items/za03v9avbq4fpb2y5b1ql1t27",
-      "published_at": "2026-10-14T17:00:00Z",
-      "summary": "LangChain 发布博客，介绍其开源 Agent 框架 Deep Agents 如何用 middleware 做上下文工程，应对长任务中的 context rot。 🔗 阅读原文 via AIHOT · https://aihot.news/items/za03v9avbq4fpb2y5b1ql1t27",
-      "relevance_score": 3,
+      "title": "Google 介绍 google/adk-recipes 仓库的三层结构与 Agent Platform 集成",
+      "url": "https://aihot.news/items/i0rgqwqwxspm5dl3314cc3ewt",
+      "published_at": "2026-10-15T00:00:00Z",
+      "summary": "Google Developers Blog 介绍 google/adk-recipes 仓库，它是 google/adk-samples 的重构后继版本，以 core/、plugins/、contrib/ 三层作为 Agent Platform 各入口的单一内容来源。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i0rgqwqwxspm5dl3314cc3ewt",
+      "relevance_score": 2,
       "relevance_reasons": [
         "strong:agent",
-        "strong:agents",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d3508e4341fea2458b2c3376456373c64bc24d19",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Tessl Verifiers 正式发布，用仓库内纯文本规则检查每次 Agent 代码变更",
-      "url": "https://aihot.news/items/virsb1x13670yw25mr9fyxqtt",
-      "published_at": "2026-10-14T16:00:00Z",
-      "summary": "Tessl 发布 Verifiers，规则以 JSON 文件形式存放在仓库中，每次代码变更时由 LLM judge 逐条给出 pass 或 fail，可像 lint 或测试一样在本地、pre-commit 或 CI 中使用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/virsb1x13670yw25mr9fyxqtt",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:llm",
+        "weak:developer",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -274,11 +417,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1293,
+      "fetched_count": 1294,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 392,
-      "checked_at": "2026-10-15T13:34:59.458272Z"
+      "latency_ms": 622,
+      "checked_at": "2026-10-15T18:00:34.333247Z"
     },
     {
       "source_id": "openai-skills",
@@ -289,8 +432,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 312,
-      "checked_at": "2026-10-15T13:34:59.771166Z"
+      "latency_ms": 197,
+      "checked_at": "2026-10-15T18:00:34.530665Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -298,11 +441,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 271,
+      "fetched_count": 272,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 111,
-      "checked_at": "2026-10-15T13:34:59.885263Z"
+      "latency_ms": 126,
+      "checked_at": "2026-10-15T18:00:34.661518Z"
     },
     {
       "source_id": "google-deepmind",
@@ -313,8 +456,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 165,
-      "checked_at": "2026-10-15T13:35:00.051670Z"
+      "latency_ms": 278,
+      "checked_at": "2026-10-15T18:00:34.942062Z"
     },
     {
       "source_id": "google-ai",
@@ -325,8 +468,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 218,
-      "checked_at": "2026-10-15T13:35:00.269990Z"
+      "latency_ms": 199,
+      "checked_at": "2026-10-15T18:00:35.141836Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -334,11 +477,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 877,
-      "kept_count": 0,
+      "fetched_count": 879,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 217,
-      "checked_at": "2026-10-15T13:35:00.494538Z"
+      "latency_ms": 283,
+      "checked_at": "2026-10-15T18:00:35.438899Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -349,8 +492,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 297,
-      "checked_at": "2026-10-15T13:35:00.792449Z"
+      "latency_ms": 224,
+      "checked_at": "2026-10-15T18:00:35.663991Z"
     },
     {
       "source_id": "github-changelog",
@@ -361,8 +504,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 48,
-      "checked_at": "2026-10-15T13:35:00.841720Z"
+      "latency_ms": 30,
+      "checked_at": "2026-10-15T18:00:35.694665Z"
     },
     {
       "source_id": "aihot",
@@ -371,10 +514,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 7,
+      "kept_count": 12,
       "error": null,
-      "latency_ms": 1975,
-      "checked_at": "2026-10-15T13:35:02.818268Z"
+      "latency_ms": 1638,
+      "checked_at": "2026-10-15T18:00:37.334410Z"
     }
   ],
   "control_notes": {
