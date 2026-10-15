@@ -1,35 +1,27 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-15T02:39:40.686620Z",
+  "generated_at": "2026-10-15T08:36:19.514128Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 10,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI News",
-          4
+          2
         ]
       ],
       "top_keywords": [
         [
-          "official_ai",
-          4
-        ],
-        [
           "openai",
-          3
-        ],
-        [
-          "agent",
           2
         ],
         [
-          "agents",
+          "official_ai",
           2
         ],
         [
@@ -37,7 +29,11 @@
           1
         ],
         [
-          "codex",
+          "agent",
+          1
+        ],
+        [
+          "agents",
           1
         ]
       ]
@@ -69,6 +65,10 @@
           2
         ],
         [
+          "chatgpt",
+          2
+        ],
+        [
           "anthropic",
           1
         ],
@@ -90,10 +90,6 @@
         ],
         [
           "智能体",
-          1
-        ],
-        [
-          "chatgpt",
           1
         ],
         [
@@ -150,26 +146,6 @@
       "is_ai_related": true
     },
     {
-      "id": "a192e85b06eb8df84e2214fb28ddb7c596176427",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
-      "url": "https://openai.com/index/third-moment-research",
-      "published_at": "2026-10-14T07:00:00Z",
-      "summary": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:codex",
-        "strong:agent",
-        "strong:agents",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "0d8303ef5787036e6438f62e8cc96409a10aa9a3",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -180,24 +156,6 @@
       "url": "https://openai.com/index/sentinelone",
       "published_at": "2026-10-14T12:00:00Z",
       "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ea24ab84f95684ef0262568ab10ea37095a2c193",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How Block is building AI-powered security with OpenAI technology",
-      "url": "https://openai.com/index/block-ai-powered-security",
-      "published_at": "2026-10-14T07:00:00Z",
-      "summary": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
@@ -304,6 +262,25 @@
       "is_ai_related": true
     },
     {
+      "id": "147df4e5897441191a06efaf0e3393ffc51509f5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "八州总检察长起诉 OpenAI 指控 ChatGPT 诱导青少年自伤",
+      "url": "https://aihot.news/items/trizfjs72gs1tbggnxydmvfvm",
+      "published_at": "2026-10-15T00:52:13Z",
+      "summary": "八个州的总检察长周三分别在州法院起诉 OpenAI，指控 ChatGPT 强化用户妄想、提供危险医疗建议并协助策划暴力行为。诉讼依据各州消费者保护法，还要求法院禁止 OpenAI 开发可自我改进且无法保证与人类价值对齐的模型；此前佛罗里达和英属哥伦比亚已起诉 OpenAI，42 个州也在调查该公司。 🔗 阅读原文 via AIHOT · https://aihot.news/items/trizfjs72gs1tbggnxydmvfvm",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "64244098fb446f31f922875d57a42e4512f1fc62",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -340,25 +317,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "e30dab3da4bdb44e3e9402553e4c458d453c3aa9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 团队分享如何用 GPT-6 系列模型维护大型代码库",
-      "url": "https://aihot.news/items/wn2lwzshkg8gt2sbjuj1qxd8y",
-      "published_at": "2026-10-14T07:00:00Z",
-      "summary": "OpenAI Core Experimentation 团队发文介绍用 GPT-6 Astra 和 GPT-6.1 Sol 配合 Codex 做代码维护，包括清理无用代码和陈旧实验、修复 flaky 测试等。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wn2lwzshkg8gt2sbjuj1qxd8y",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -369,10 +327,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1293,
-      "kept_count": 4,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 579,
-      "checked_at": "2026-10-15T02:39:34.648231Z"
+      "latency_ms": 467,
+      "checked_at": "2026-10-15T08:36:16.632581Z"
     },
     {
       "source_id": "openai-skills",
@@ -383,8 +341,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 210,
-      "checked_at": "2026-10-15T02:39:34.858688Z"
+      "latency_ms": 237,
+      "checked_at": "2026-10-15T08:36:16.870318Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -395,8 +353,8 @@
       "fetched_count": 271,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 136,
-      "checked_at": "2026-10-15T02:39:34.998940Z"
+      "latency_ms": 108,
+      "checked_at": "2026-10-15T08:36:16.982338Z"
     },
     {
       "source_id": "google-deepmind",
@@ -407,8 +365,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 179,
-      "checked_at": "2026-10-15T02:39:35.179758Z"
+      "latency_ms": 633,
+      "checked_at": "2026-10-15T08:36:17.617009Z"
     },
     {
       "source_id": "google-ai",
@@ -419,8 +377,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 160,
-      "checked_at": "2026-10-15T02:39:35.340332Z"
+      "latency_ms": 155,
+      "checked_at": "2026-10-15T08:36:17.772493Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -431,8 +389,8 @@
       "fetched_count": 876,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 479,
-      "checked_at": "2026-10-15T02:39:35.832522Z"
+      "latency_ms": 225,
+      "checked_at": "2026-10-15T08:36:18.010113Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -443,8 +401,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 282,
-      "checked_at": "2026-10-15T02:39:36.115170Z"
+      "latency_ms": 465,
+      "checked_at": "2026-10-15T08:36:18.475789Z"
     },
     {
       "source_id": "github-changelog",
@@ -455,8 +413,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-10-15T02:39:36.147638Z"
+      "latency_ms": 25,
+      "checked_at": "2026-10-15T08:36:18.501342Z"
     },
     {
       "source_id": "aihot",
@@ -467,8 +425,8 @@
       "fetched_count": 51,
       "kept_count": 6,
       "error": null,
-      "latency_ms": 4530,
-      "checked_at": "2026-10-15T02:39:40.678800Z"
+      "latency_ms": 1002,
+      "checked_at": "2026-10-15T08:36:19.504981Z"
     }
   ],
   "control_notes": {
