@@ -1,27 +1,27 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-16T02:35:29.984777Z",
+  "generated_at": "2026-10-16T08:31:08.746648Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 13,
   "groups": {
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          3
         ]
       ],
       "top_keywords": [
         [
-          "agent",
-          2
+          "copilot",
+          4
         ],
         [
-          "copilot",
+          "agent",
           2
         ],
         [
@@ -32,17 +32,21 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          8
+          9
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          9
+        ],
+        [
+          "claude",
+          4
         ],
         [
           "智能体",
@@ -53,8 +57,12 @@
           3
         ],
         [
-          "claude",
-          3
+          "gemini",
+          2
+        ],
+        [
+          "评测",
+          2
         ],
         [
           "agent",
@@ -73,15 +81,7 @@
           1
         ],
         [
-          "gemini",
-          1
-        ],
-        [
           "deepmind",
-          1
-        ],
-        [
-          "评测",
           1
         ],
         [
@@ -167,6 +167,44 @@
       "relevance_reasons": [
         "weak:tool",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8e1b73a0ca578280aed7b6d489fc6471e7556aa7",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
+      "url": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
+      "published_at": "2026-10-16T02:16:35Z",
+      "summary": "Multi-repo support in Slack and Microsoft Teams GitHub Copilot in Slack and Microsoft Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigating… The post Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fbb375574b0a95d801735c12d15113ecab4f0a8c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "PromptArmor 研究称开放权重模型遭间接提示词注入攻击的易感率高 88%",
+      "url": "https://aihot.news/items/y1c13l53cd5u3wg565qu60q4d",
+      "published_at": "2026-10-16T00:00:00Z",
+      "summary": "PromptArmor 在 9800 次试验的评测中发现，开放权重模型（DeepSeek、Kimi、GLM、Qwen）对真实世界间接提示词注入攻击链的易感率为 26.7%，闭源模型（GPT、Claude、Gemini）为 14.2%，开放权重模型易感率高 88%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y1c13l53cd5u3wg565qu60q4d",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:gemini",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -334,8 +372,8 @@
       "fetched_count": 1296,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 561,
-      "checked_at": "2026-10-16T02:35:25.235815Z"
+      "latency_ms": 496,
+      "checked_at": "2026-10-16T08:31:05.290084Z"
     },
     {
       "source_id": "openai-skills",
@@ -346,8 +384,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 429,
-      "checked_at": "2026-10-16T02:35:25.665271Z"
+      "latency_ms": 286,
+      "checked_at": "2026-10-16T08:31:05.576939Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -358,8 +396,8 @@
       "fetched_count": 272,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 397,
-      "checked_at": "2026-10-16T02:35:26.065871Z"
+      "latency_ms": 103,
+      "checked_at": "2026-10-16T08:31:05.683200Z"
     },
     {
       "source_id": "google-deepmind",
@@ -370,8 +408,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 191,
-      "checked_at": "2026-10-16T02:35:26.258654Z"
+      "latency_ms": 217,
+      "checked_at": "2026-10-16T08:31:05.901929Z"
     },
     {
       "source_id": "google-ai",
@@ -382,8 +420,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 225,
-      "checked_at": "2026-10-16T02:35:26.484345Z"
+      "latency_ms": 175,
+      "checked_at": "2026-10-16T08:31:06.077924Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -394,8 +432,8 @@
       "fetched_count": 879,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 306,
-      "checked_at": "2026-10-16T02:35:26.801830Z"
+      "latency_ms": 240,
+      "checked_at": "2026-10-16T08:31:06.328854Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -406,8 +444,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 318,
-      "checked_at": "2026-10-16T02:35:27.120997Z"
+      "latency_ms": 446,
+      "checked_at": "2026-10-16T08:31:06.775093Z"
     },
     {
       "source_id": "github-changelog",
@@ -416,10 +454,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-10-16T02:35:27.152242Z"
+      "latency_ms": 24,
+      "checked_at": "2026-10-16T08:31:06.799914Z"
     },
     {
       "source_id": "aihot",
@@ -428,10 +466,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 8,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 2823,
-      "checked_at": "2026-10-16T02:35:29.977314Z"
+      "latency_ms": 1936,
+      "checked_at": "2026-10-16T08:31:08.738167Z"
     }
   ],
   "control_notes": {
