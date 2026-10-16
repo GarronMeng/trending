@@ -1,91 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-15T18:00:37.343189Z",
+  "generated_at": "2026-10-16T02:35:29.984777Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 15,
+  "item_count": 11,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "Hugging Face Blog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "multimodal",
-          1
-        ],
-        [
-          "official_ai",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 12,
-      "top_sources": [
-        [
-          "AI Hot",
-          12
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          12
-        ],
-        [
-          "评测",
-          4
-        ],
-        [
-          "openai",
-          3
-        ],
-        [
-          "agent",
-          3
-        ],
-        [
-          "智能体",
-          3
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "开发者",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "gemini",
-          2
-        ],
-        [
-          "chatgpt",
-          2
-        ],
-        [
-          "developer",
-          2
-        ],
-        [
-          "mcp",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
       "count": 2,
@@ -97,19 +17,95 @@
       ],
       "top_keywords": [
         [
+          "agent",
+          2
+        ],
+        [
           "copilot",
           2
         ],
         [
-          "workflow",
+          "developer",
           1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 8,
+      "top_sources": [
+        [
+          "AI Hot",
+          8
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          8
+        ],
+        [
+          "智能体",
+          3
+        ],
+        [
+          "多模态",
+          3
+        ],
+        [
+          "claude",
+          3
         ],
         [
           "agent",
+          2
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "hugging face",
           1
         ],
         [
-          "developer",
+          "工作流",
+          1
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "deepmind",
+          1
+        ],
+        [
+          "评测",
+          1
+        ],
+        [
+          "llm",
+          1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "tool",
+          1
+        ],
+        [
+          "official_ai",
           1
         ]
       ]
@@ -117,81 +113,60 @@
   },
   "items": [
     {
-      "id": "b4450baea87c71774446dafc1424a3f547bff159",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
-      "url": "https://huggingface.co/blog/meta-muse-spark-open",
-      "published_at": "2026-10-15T00:00:00Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:multimodal",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a4c0cecc8f6c2ef1a0199fe113ad03579cb28456",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "可灵 Kling 4.0 正式全量开放，新增 MCP 和 CLI 接入",
-      "url": "https://aihot.news/items/uoqzntmcb5v0io1g6obac7amu",
-      "published_at": "2026-10-15T15:00:03Z",
-      "summary": "可灵（Kling AI）宣布 Kling 4.0 正式全量开放，用户可通过 kling.ai 全新创作界面使用，并新增 MCP 和 CLI 接入以融入视频创作工作流。即将推出 4K 和 1080p 的 10-bit HDR 视频输出，以及面向企业客户和开发者的 API 访问。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uoqzntmcb5v0io1g6obac7amu",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:mcp",
-        "weak:api",
-        "weak:开发者",
-        "weak:工作流",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8c43c6d91bf84a51b47dcecdddf3035293dd761a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "欧盟就模型越狱事件调查 OpenAI 和 Anthropic，最高可罚全球营业额 3%",
-      "url": "https://aihot.news/items/yq46ddqwq7ns4ilpaqh6k0kql",
-      "published_at": "2026-10-14T23:13:18Z",
-      "summary": "欧盟委员会人工智能办公室正式向 OpenAI 和 Anthropic 发出信息调取请求，调查两家公司前沿模型测试期间的模型越狱及入侵外部真实系统事件，这是《人工智能法案》实施以来对前沿实验室安全事故的首次重要执法考验。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yq46ddqwq7ns4ilpaqh6k0kql",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:人工智能",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1acfbc849f03d3b0d143d136d2e5a8fd1ded4ea3",
+      "id": "febb3c7f43089e1b808f608ccc02eb49ce42abc8",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "HydraFusion updates and new Max option",
-      "url": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
-      "published_at": "2026-10-14T20:01:35Z",
-      "summary": "HydraFusion has an updated model pool, improved orchestration workflows, and introduces HydraFusion Max. Both HydraFusion and HydraFusion Max are available across VS Code, the GitHub Copilot app, and GitHub Copilot… The post HydraFusion updates and new Max option appeared first on The GitHub Blog .",
-      "relevance_score": 4,
+      "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
+      "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
+      "published_at": "2026-10-15T19:35:13Z",
+      "summary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on November 16th, 2026: Model Deprecation date… The post Upcoming deprecation of selected GitHub Copilot models in mid-November appeared first on The GitHub Blog .",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "weak:workflow",
+        "strong:agent",
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "db246efc23984481bd76bc62c98b041d41fb8eaf",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文",
+      "url": "https://aihot.news/items/s80tw5g2v22j1se4bmqejyaq4",
+      "published_at": "2026-10-15T17:55:52Z",
+      "summary": "Meta 发布开源权重模型 Muse Spark Open，已在 Hugging Face 以 Muse Model License 提供。模型总参数 816B、激活 42B，上下文窗口 1M token，面向编码与智能体工作流，原生多模态（图像、音频、文档），并相比 8 月发布的 Muse Spark 增加了安全后训练。 🔗 阅读原文 via AIHOT · https://aihot.news/items/s80tw5g2v22j1se4bmqejyaq4",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:智能体",
+        "strong:多模态",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d61069917da9e2eb235cb0454a87608578f9cab5",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "published_at": "2026-10-15T19:00:00Z",
+      "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:tool",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -254,42 +229,58 @@
       "is_ai_related": true
     },
     {
-      "id": "e37dc6acf0b0ee5319cbd15a59ea24946d54ad19",
+      "id": "acef62cba9d74d782d7af0d08be281eac6603194",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Musk 称 Grok Voice 3.0 登顶 Artificial Analysis 语音模型评测",
-      "url": "https://aihot.news/items/yp2h3luqmkip3si23h4pnfmvb",
-      "published_at": "2026-10-14T21:32:41Z",
-      "summary": "Musk 发文称 Grok Voice 3.0 已是全球领先的对话语音模型，并引用 Artificial Analysis 的评测：Grok Voice 3.0 以 86.9 分登顶 Speech to Speech Index，领先 GPT-Live-1（Astra, medium）的 83.2 和 Gemini 3.8 Live 的 82.6，较 Grok Voice 2.0 的 81.3 提升 5.6 分。该模型通过 Realtime API 提供，价格 $0.08 每分钟，Big Bench Audio 平均首音频延迟 0.81 秒，任务成功率 94.8% 居榜首。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yp2h3luqmkip3si23h4pnfmvb",
-      "relevance_score": 4,
+      "title": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单",
+      "url": "https://aihot.news/items/e2ssy0a7scpnel6ppyl3r9f2t",
+      "published_at": "2026-10-15T20:09:02Z",
+      "summary": "Anthropic 宣布 Claude 平台上的 Opus 5.5 fast mode 不再处于研究预览阶段，并已移除等待名单。该模式速度最高提升 2.5 倍，定价为 $8 / $40 per million tokens；现已登陆 Microsoft Foundry（Azure 托管），Google Cloud 即将支持。Claude Code 中的 fast mode 保持不变，消耗额外 usage credits。文档见 https://platform.claude.com/docs/en/build-with-claude/fast-mode 🔗 阅读原文 via AIHOT · https://aihot.news/items/e2ssy0a7scpnel6ppyl3r9f2t",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:gemini",
-        "weak:api",
-        "weak:API",
-        "weak:评测",
+        "strong:anthropic",
+        "strong:claude",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "d203ed5d81f3ae4f792a3246d2d9198b58fd4212",
+      "id": "be121f185bce2f8abbbf56a6f41bbe121872b6b6",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Meta 的 Muse Wonder (Max) 以 +6.4% 净提升进入 Agent Arena 第12名",
-      "url": "https://aihot.news/items/uceolgbpttfw4cgmkqc8cvyw5",
-      "published_at": "2026-10-14T20:19:17Z",
-      "summary": "Arena 发布基于超过 5000 次真实智能体会话的评测结果，Meta 的 Muse Wonder (Max) 进入 Agent Arena 第12名，净提升 +6.4%，比 Muse Spark 1.3 (Max) 高 +2.8 分并上升四位。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uceolgbpttfw4cgmkqc8cvyw5",
-      "relevance_score": 4,
+      "title": "Muse Spark Open 上架 Arena，可在 Agent Arena 实测，评分即将公布",
+      "url": "https://aihot.news/items/zxlvr8l7uzmvapbi3i58kat2s",
+      "published_at": "2026-10-15T18:19:42Z",
+      "summary": "Arena 宣布 Meta 的 Muse Spark Open 已进入 Agent Arena，用户可实测，评分即将公布。该模型为 816B 总参数、42B 激活参数，1M token 上下文窗口，原生多模态。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zxlvr8l7uzmvapbi3i58kat2s",
+      "relevance_score": 3,
       "relevance_reasons": [
         "strong:agent",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d105c04d07af967d772d9221c8ffdfc12ac8bc95",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Meta 开放权重模型 Muse Spark Open 上架 OpenRouter",
+      "url": "https://aihot.news/items/bicfbjip5iq9ccp8x7sn9yw7k",
+      "published_at": "2026-10-15T18:02:06Z",
+      "summary": "Meta 发布开放权重模型 Muse Spark Open，现已可在 OpenRouter 使用，定位为面向编码与智能体工作的美国最强开放权重模型。模型总参数 816B、激活 42B，支持 1M token 上下文窗口，原生多模态，OpenRouter 定价为输入 $1.25/M、输出 $4.25/M，正文提到支持图像、视频、音频和 PDF 输入。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bicfbjip5iq9ccp8x7sn9yw7k",
+      "relevance_score": 3,
+      "relevance_reasons": [
         "strong:智能体",
-        "weak:评测",
+        "strong:多模态",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -314,97 +305,20 @@
       "is_ai_related": true
     },
     {
-      "id": "147df4e5897441191a06efaf0e3393ffc51509f5",
+      "id": "0cc26daa33833e484b0717ced765d771cf1fa530",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "八州总检察长起诉 OpenAI 指控 ChatGPT 诱导青少年自伤",
-      "url": "https://aihot.news/items/trizfjs72gs1tbggnxydmvfvm",
-      "published_at": "2026-10-15T00:52:13Z",
-      "summary": "八个州的总检察长周三分别在州法院起诉 OpenAI，指控 ChatGPT 强化用户妄想、提供危险医疗建议并协助策划暴力行为。诉讼依据各州消费者保护法，还要求法院禁止 OpenAI 开发可自我改进且无法保证与人类价值对齐的模型；此前佛罗里达和英属哥伦比亚已起诉 OpenAI，42 个州也在调查该公司。 🔗 阅读原文 via AIHOT · https://aihot.news/items/trizfjs72gs1tbggnxydmvfvm",
+      "title": "Claude Code 团队如何做代码审查",
+      "url": "https://aihot.news/items/x02vc0ewajam37hjrbpwsfnre",
+      "published_at": "2026-10-15T12:00:00Z",
+      "summary": "Anthropic 团队介绍 Claude Code 的代码审查流程，机器承担大部分阅读，人类注意力集中在高风险决策。6 月至 9 月合并 PR 翻倍以上，回退率下降超过 40%；monorepo 每日变更量从 5 月约 2,500 增至 9 月超过 30,000。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x02vc0ewajam37hjrbpwsfnre",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5a259d65d422d5f6da1ec8aaeb266a559ab44c9b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Meta 发布开源权重多模态 MoE 模型 Muse Spark Open，总参数约 816B",
-      "url": "https://aihot.news/items/lw0bwrzaoeyln84j861dr4ijk",
-      "published_at": "2026-10-15T00:00:00Z",
-      "summary": "Hugging Face 团队介绍 Meta 的开源权重模型 Muse Spark Open：这是一个 MoE 架构的多模态模型，总参数约 816B、每 token 激活约 42B，支持文本、图像、音频和视频输入，上下文窗口最高 1M token，提供 BF16（约 1.5 TB）和面向 NVIDIA Blackwell 的 NVFP4 两种 checkpoint。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lw0bwrzaoeyln84j861dr4ijk",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "df4e1dbf7faff8acf88438fca80977e6278fcc59",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google 工程师讲解如何系统评测 AI 智能体，告别 vibe check",
-      "url": "https://aihot.news/items/ojpe4mr67tjbrt5atyi6hyapl",
-      "published_at": "2026-10-15T00:00:00Z",
-      "summary": "Google Developers Blog 发布智能体评测实践指南，指出仅靠终端跑几个提示词的 vibe check 无法发现智能体重试循环、工具参数幻觉等隐性失败。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ojpe4mr67tjbrt5atyi6hyapl",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:developer",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "64244098fb446f31f922875d57a42e4512f1fc62",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "美国 8 州起诉 OpenAI，指控 ChatGPT 指导青少年自伤或伤害他人",
-      "url": "https://aihot.news/items/v5sbitu4hw1bozz0nlopcl3t8",
-      "published_at": "2026-10-14T23:39:08Z",
-      "summary": "当地时间 14 日，美国 8 个州的总检察长分别在州法院起诉 OpenAI，指控 ChatGPT 指导包括青少年在内的用户伤害自己或他人，并刻意迎合用户以获取信任。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v5sbitu4hw1bozz0nlopcl3t8",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "95e437a5533a23c08185033a31514dfb5c546c3a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google 介绍 google/adk-recipes 仓库的三层结构与 Agent Platform 集成",
-      "url": "https://aihot.news/items/i0rgqwqwxspm5dl3314cc3ewt",
-      "published_at": "2026-10-15T00:00:00Z",
-      "summary": "Google Developers Blog 介绍 google/adk-recipes 仓库，它是 google/adk-samples 的重构后继版本，以 core/、plugins/、contrib/ 三层作为 Agent Platform 各入口的单一内容来源。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i0rgqwqwxspm5dl3314cc3ewt",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:developer",
+        "strong:anthropic",
+        "strong:claude",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -417,11 +331,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1294,
-      "kept_count": 0,
+      "fetched_count": 1296,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 622,
-      "checked_at": "2026-10-15T18:00:34.333247Z"
+      "latency_ms": 561,
+      "checked_at": "2026-10-16T02:35:25.235815Z"
     },
     {
       "source_id": "openai-skills",
@@ -432,8 +346,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 197,
-      "checked_at": "2026-10-15T18:00:34.530665Z"
+      "latency_ms": 429,
+      "checked_at": "2026-10-16T02:35:25.665271Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -444,8 +358,8 @@
       "fetched_count": 272,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 126,
-      "checked_at": "2026-10-15T18:00:34.661518Z"
+      "latency_ms": 397,
+      "checked_at": "2026-10-16T02:35:26.065871Z"
     },
     {
       "source_id": "google-deepmind",
@@ -456,8 +370,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 278,
-      "checked_at": "2026-10-15T18:00:34.942062Z"
+      "latency_ms": 191,
+      "checked_at": "2026-10-16T02:35:26.258654Z"
     },
     {
       "source_id": "google-ai",
@@ -468,8 +382,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 199,
-      "checked_at": "2026-10-15T18:00:35.141836Z"
+      "latency_ms": 225,
+      "checked_at": "2026-10-16T02:35:26.484345Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -478,10 +392,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 879,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 283,
-      "checked_at": "2026-10-15T18:00:35.438899Z"
+      "latency_ms": 306,
+      "checked_at": "2026-10-16T02:35:26.801830Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -492,8 +406,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 224,
-      "checked_at": "2026-10-15T18:00:35.663991Z"
+      "latency_ms": 318,
+      "checked_at": "2026-10-16T02:35:27.120997Z"
     },
     {
       "source_id": "github-changelog",
@@ -505,7 +419,7 @@
       "kept_count": 2,
       "error": null,
       "latency_ms": 30,
-      "checked_at": "2026-10-15T18:00:35.694665Z"
+      "checked_at": "2026-10-16T02:35:27.152242Z"
     },
     {
       "source_id": "aihot",
@@ -514,10 +428,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 12,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 1638,
-      "checked_at": "2026-10-15T18:00:37.334410Z"
+      "latency_ms": 2823,
+      "checked_at": "2026-10-16T02:35:29.977314Z"
     }
   ],
   "control_notes": {
