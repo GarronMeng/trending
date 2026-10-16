@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-16T13:23:57.573611Z",
+  "generated_at": "2026-10-16T17:47:56.726435Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 13,
+  "item_count": 9,
   "groups": {
     "developer": {
       "group": "developer",
@@ -22,70 +22,62 @@
         ],
         [
           "agent",
-          2
+          1
         ],
         [
-          "developer",
+          "actions",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          9
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
-        ],
-        [
-          "智能体",
-          4
+          5
         ],
         [
           "多模态",
           3
         ],
         [
+          "智能体",
+          2
+        ],
+        [
           "claude",
-          3
+          2
         ],
         [
           "hugging face",
-          2
-        ],
-        [
-          "gemini",
-          2
-        ],
-        [
-          "评测",
-          2
-        ],
-        [
-          "agent",
-          2
+          1
         ],
         [
           "工作流",
           1
         ],
         [
-          "开源模型",
+          "gemini",
           1
         ],
         [
-          "deepmind",
+          "评测",
           1
         ],
         [
-          "llm",
+          "anthropic",
+          1
+        ],
+        [
+          "agent",
           1
         ]
       ]
@@ -153,26 +145,6 @@
       "is_ai_related": true
     },
     {
-      "id": "5089ef269d3db1a451dc70667feed35cc6a0f216",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Reflection 发布开源 MoE 模型 Beam 501B，Hugging Face 提供部署与微调指南",
-      "url": "https://aihot.news/items/irntp3cd87w793ni4hc0ezesc",
-      "published_at": "2026-10-16T00:00:00Z",
-      "summary": "Reflection 首个开源模型 Beam（reflectionai/Beam-1.0-501B-A23B）上线 Hugging Face，是 501B 参数、每 token 激活 23B 的 MoE 模型，支持 1M token 上下文，采用 Apache 2.0 许可，主打编码和智能体场景。 🔗 阅读原文 via AIHOT · https://aihot.news/items/irntp3cd87w793ni4hc0ezesc",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "strong:智能体",
-        "strong:开源模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "d61069917da9e2eb235cb0454a87608578f9cab5",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -191,16 +163,16 @@
       "is_ai_related": true
     },
     {
-      "id": "8e1b73a0ca578280aed7b6d489fc6471e7556aa7",
+      "id": "bd040f8fd076119d615b82be20b23823b8f41b67",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
+      "title": "Multi-repo support and other improvements for GitHub in Slack and Teams",
       "url": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
       "published_at": "2026-10-16T02:16:35Z",
-      "summary": "Multi-repo support in Slack and Microsoft Teams GitHub Copilot in Slack and Microsoft Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigating… The post Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams appeared first on The GitHub Blog .",
+      "summary": "Multi-repo support in Slack and Teams GitHub Copilot in Slack and Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigating issues, or… The post Multi-repo support and other improvements for GitHub in Slack and Teams appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
         "weak:copilot",
@@ -229,60 +201,19 @@
       "is_ai_related": true
     },
     {
-      "id": "4fd0c51ea5692e198455d00f61967f9f93d3f1c5",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Gemini 4 Argon 在 ARC-AGI (Verified) 评测中公布：ARC-AGI-3 得分 97.5%",
-      "url": "https://aihot.news/items/cvpbhz4ao2wr6pxpthix2z15c",
-      "published_at": "2026-10-15T16:22:30Z",
-      "summary": "ARC Prize 公布 Gemini 4 Argon 在 ARC-AGI (Verified) 的评测成绩。ARC-AGI-3 上，provider adapter harness 得分 97.5%、成本 $4.8K，标准 harness 得分 49.8%、成本 $5.8K；ARC-AGI-2 得分 91.3%、$0.32/task；ARC-AGI-1 得分 98.5%、$0.16/task。Google DeepMind 是第二家在 ARC-AGI-3 上得分超过 95% 的前沿 AI 实验室。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cvpbhz4ao2wr6pxpthix2z15c",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:deepmind",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ab1b35b96841e808f1f283b40b4a454b83b9e16b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "StepFun 展示 Step 5 Preview 在 NVIDIA GB300 上的推理性能",
-      "url": "https://aihot.news/items/l3g1uzem751ki1oxckrxa1b3e",
-      "published_at": "2026-10-15T14:01:07Z",
-      "summary": "StepFun 表示 Step 5 Preview 在 NVIDIA GB300 上推理表现出色，并期待看到开发者用它构建的应用。其转发的 NVIDIA 内容称该模型是 StepFun 最大的开源权重发布，600B MoE 架构，可处理最长 24 小时的 Agent 任务，在 GB300 上用 NVFP4 达到近 8K tokens/sec/GPU，提供 NVFP4 checkpoint（https://huggingface.co/stepfun-ai/Step-5-Preview-NVFP4），并支持 SGLang、vLLM、NeMo Automodel 后训练和 NVIDIA NIM 一键部署。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l3g1uzem751",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:llm",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "aa40e8bf3768192b52dd79cc62c695abe1aa76be",
+      "id": "db5b566ec8d13cc1944e5f52805865167c5538da",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Agentic autofix for code scanning alerts general availability",
-      "url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
-      "published_at": "2026-10-15T13:49:20Z",
-      "summary": "Agentic autofix for code scanning alerts is now generally available. It remediates alerts by working across your codebase the way a developer would: it explores relevant files, proposes a fix,… The post Agentic autofix for code scanning alerts general availability appeared first on The GitHub Blog .",
-      "relevance_score": 3,
+      "title": "Xcode 27 runner image generally available",
+      "url": "https://github.blog/changelog/2026-10-15-xcode-27-runner-image-generally-available",
+      "published_at": "2026-10-16T04:36:30Z",
+      "summary": "You can now use the generally available Xcode 27 runner image to build and test your Apple applications in GitHub Actions. Previously in public preview, this GitHub-hosted image runs on… The post Xcode 27 runner image generally available appeared first on The GitHub Blog .",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:agent",
-        "weak:developer"
+        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -342,25 +273,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "26c037d2e5264088fd29b258a4c2e4f6df32c589",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Step 5 Preview 上线 FeatherlessAI，官方转发开放权重模型部署信息",
-      "url": "https://aihot.news/items/mimehokpfhvz10dk3pdz131ky",
-      "published_at": "2026-10-15T15:30:00Z",
-      "summary": "阶跃星辰转发 FeatherlessAI 的消息，Step 5 Preview 已上线该平台，以 FP8 精度提供服务。该开放权重模型为 600B 稀疏 MoE 架构、每 token 激活 27B，面向长程智能体工作，在软件工程和专业知识工作（尤其金融）上有前沿级表现，按 Artificial Analysis 数据其每任务成本约为 Claude Opus 5.5 的 1/6，智能水平与 Kimi K3 相当。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mimehokpfhvz10dk3pdz131ky",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -373,8 +285,8 @@
       "fetched_count": 1296,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 587,
-      "checked_at": "2026-10-16T13:23:52.780253Z"
+      "latency_ms": 430,
+      "checked_at": "2026-10-16T17:47:52.684096Z"
     },
     {
       "source_id": "openai-skills",
@@ -385,8 +297,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 211,
-      "checked_at": "2026-10-16T13:23:52.991939Z"
+      "latency_ms": 442,
+      "checked_at": "2026-10-16T17:47:53.126343Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -397,8 +309,8 @@
       "fetched_count": 272,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 148,
-      "checked_at": "2026-10-16T13:23:53.144119Z"
+      "latency_ms": 94,
+      "checked_at": "2026-10-16T17:47:53.222919Z"
     },
     {
       "source_id": "google-deepmind",
@@ -409,8 +321,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 247,
-      "checked_at": "2026-10-16T13:23:53.392841Z"
+      "latency_ms": 294,
+      "checked_at": "2026-10-16T17:47:53.518020Z"
     },
     {
       "source_id": "google-ai",
@@ -421,8 +333,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 222,
-      "checked_at": "2026-10-16T13:23:53.616004Z"
+      "latency_ms": 219,
+      "checked_at": "2026-10-16T17:47:53.737248Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -433,8 +345,8 @@
       "fetched_count": 880,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 329,
-      "checked_at": "2026-10-16T13:23:53.959204Z"
+      "latency_ms": 206,
+      "checked_at": "2026-10-16T17:47:53.950224Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -445,8 +357,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 278,
-      "checked_at": "2026-10-16T13:23:54.237728Z"
+      "latency_ms": 346,
+      "checked_at": "2026-10-16T17:47:54.296962Z"
     },
     {
       "source_id": "github-changelog",
@@ -457,8 +369,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-10-16T13:23:54.270999Z"
+      "latency_ms": 22,
+      "checked_at": "2026-10-16T17:47:54.320193Z"
     },
     {
       "source_id": "aihot",
@@ -467,10 +379,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 9,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 3291,
-      "checked_at": "2026-10-16T13:23:57.564237Z"
+      "latency_ms": 2398,
+      "checked_at": "2026-10-16T17:47:56.719440Z"
     }
   ],
   "control_notes": {
