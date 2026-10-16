@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-16T11:44:42.499589Z",
+  "generated_at": "2026-10-16T13:23:57.573611Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -45,16 +45,20 @@
           9
         ],
         [
-          "claude",
-          4
-        ],
-        [
           "智能体",
-          3
+          4
         ],
         [
           "多模态",
           3
+        ],
+        [
+          "claude",
+          3
+        ],
+        [
+          "hugging face",
+          2
         ],
         [
           "gemini",
@@ -69,15 +73,11 @@
           2
         ],
         [
-          "anthropic",
-          2
-        ],
-        [
-          "hugging face",
+          "工作流",
           1
         ],
         [
-          "工作流",
+          "开源模型",
           1
         ],
         [
@@ -148,6 +148,26 @@
         "strong:智能体",
         "strong:多模态",
         "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5089ef269d3db1a451dc70667feed35cc6a0f216",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Reflection 发布开源 MoE 模型 Beam 501B，Hugging Face 提供部署与微调指南",
+      "url": "https://aihot.news/items/irntp3cd87w793ni4hc0ezesc",
+      "published_at": "2026-10-16T00:00:00Z",
+      "summary": "Reflection 首个开源模型 Beam（reflectionai/Beam-1.0-501B-A23B）上线 Hugging Face，是 501B 参数、每 token 激活 23B 的 MoE 模型，支持 1M token 上下文，采用 Apache 2.0 许可，主打编码和智能体场景。 🔗 阅读原文 via AIHOT · https://aihot.news/items/irntp3cd87w793ni4hc0ezesc",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:智能体",
+        "strong:开源模型",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -341,25 +361,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "0cc26daa33833e484b0717ced765d771cf1fa530",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Code 团队如何做代码审查",
-      "url": "https://aihot.news/items/x02vc0ewajam37hjrbpwsfnre",
-      "published_at": "2026-10-15T12:00:00Z",
-      "summary": "Anthropic 团队介绍 Claude Code 的代码审查流程，机器承担大部分阅读，人类注意力集中在高风险决策。6 月至 9 月合并 PR 翻倍以上，回退率下降超过 40%；monorepo 每日变更量从 5 月约 2,500 增至 9 月超过 30,000。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x02vc0ewajam37hjrbpwsfnre",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -372,8 +373,8 @@
       "fetched_count": 1296,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 550,
-      "checked_at": "2026-10-16T11:44:37.711977Z"
+      "latency_ms": 587,
+      "checked_at": "2026-10-16T13:23:52.780253Z"
     },
     {
       "source_id": "openai-skills",
@@ -384,8 +385,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 309,
-      "checked_at": "2026-10-16T11:44:38.021527Z"
+      "latency_ms": 211,
+      "checked_at": "2026-10-16T13:23:52.991939Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -396,8 +397,8 @@
       "fetched_count": 272,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 130,
-      "checked_at": "2026-10-16T11:44:38.155524Z"
+      "latency_ms": 148,
+      "checked_at": "2026-10-16T13:23:53.144119Z"
     },
     {
       "source_id": "google-deepmind",
@@ -408,8 +409,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 345,
-      "checked_at": "2026-10-16T11:44:38.502834Z"
+      "latency_ms": 247,
+      "checked_at": "2026-10-16T13:23:53.392841Z"
     },
     {
       "source_id": "google-ai",
@@ -420,8 +421,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 288,
-      "checked_at": "2026-10-16T11:44:38.791649Z"
+      "latency_ms": 222,
+      "checked_at": "2026-10-16T13:23:53.616004Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -429,11 +430,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 879,
+      "fetched_count": 880,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 307,
-      "checked_at": "2026-10-16T11:44:39.110033Z"
+      "latency_ms": 329,
+      "checked_at": "2026-10-16T13:23:53.959204Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -444,8 +445,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 351,
-      "checked_at": "2026-10-16T11:44:39.461505Z"
+      "latency_ms": 278,
+      "checked_at": "2026-10-16T13:23:54.237728Z"
     },
     {
       "source_id": "github-changelog",
@@ -456,8 +457,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 33,
-      "checked_at": "2026-10-16T11:44:39.495555Z"
+      "latency_ms": 32,
+      "checked_at": "2026-10-16T13:23:54.270999Z"
     },
     {
       "source_id": "aihot",
@@ -468,8 +469,8 @@
       "fetched_count": 51,
       "kept_count": 9,
       "error": null,
-      "latency_ms": 2993,
-      "checked_at": "2026-10-16T11:44:42.490827Z"
+      "latency_ms": 3291,
+      "checked_at": "2026-10-16T13:23:57.564237Z"
     }
   ],
   "control_notes": {
