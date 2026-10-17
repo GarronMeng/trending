@@ -1,87 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-16T17:47:56.726435Z",
+  "generated_at": "2026-10-17T02:27:52.179279Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 3,
   "groups": {
-    "developer": {
-      "group": "developer",
-      "count": 3,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          3
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "actions",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 5,
-      "top_sources": [
-        [
-          "AI Hot",
-          5
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          5
-        ],
-        [
-          "多模态",
-          3
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
-          "hugging face",
-          1
-        ],
-        [
-          "工作流",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "评测",
-          1
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "agent",
-          1
-        ]
-      ]
-    },
     "official": {
       "group": "official",
       "count": 1,
@@ -93,7 +17,7 @@
       ],
       "top_keywords": [
         [
-          "tool",
+          "generative ai",
           1
         ],
         [
@@ -101,101 +25,82 @@
           1
         ]
       ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 1,
+      "top_sources": [
+        [
+          "AI Hot",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "aggregate_noise",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "actions",
+          1
+        ]
+      ]
     }
   },
   "items": [
     {
-      "id": "febb3c7f43089e1b808f608ccc02eb49ce42abc8",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
-      "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
-      "published_at": "2026-10-15T19:35:13Z",
-      "summary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on November 16th, 2026: Model Deprecation date… The post Upcoming deprecation of selected GitHub Copilot models in mid-November appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "db246efc23984481bd76bc62c98b041d41fb8eaf",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文",
-      "url": "https://aihot.news/items/s80tw5g2v22j1se4bmqejyaq4",
-      "published_at": "2026-10-15T17:55:52Z",
-      "summary": "Meta 发布开源权重模型 Muse Spark Open，已在 Hugging Face 以 Muse Model License 提供。模型总参数 816B、激活 42B，上下文窗口 1M token，面向编码与智能体工作流，原生多模态（图像、音频、文档），并相比 8 月发布的 Muse Spark 增加了安全后训练。 🔗 阅读原文 via AIHOT · https://aihot.news/items/s80tw5g2v22j1se4bmqejyaq4",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "strong:智能体",
-        "strong:多模态",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d61069917da9e2eb235cb0454a87608578f9cab5",
+      "id": "a23f7cf08d4b2e638a522a193b17a031a7700655",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Bringing GPT-Rosalind to academic research labs",
-      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
-      "published_at": "2026-10-15T19:00:00Z",
-      "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
-      "relevance_score": 2,
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "url": "https://openai.com/index/itau-generative-ai",
+      "published_at": "2026-10-16T19:00:00Z",
+      "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "weak:tool",
+        "strong:generative ai",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "bd040f8fd076119d615b82be20b23823b8f41b67",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Multi-repo support and other improvements for GitHub in Slack and Teams",
-      "url": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
-      "published_at": "2026-10-16T02:16:35Z",
-      "summary": "Multi-repo support in Slack and Teams GitHub Copilot in Slack and Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigating issues, or… The post Multi-repo support and other improvements for GitHub in Slack and Teams appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "fbb375574b0a95d801735c12d15113ecab4f0a8c",
+      "id": "dabc710132efda13bd8b9575efbcc92e909fea32",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "PromptArmor 研究称开放权重模型遭间接提示词注入攻击的易感率高 88%",
-      "url": "https://aihot.news/items/y1c13l53cd5u3wg565qu60q4d",
-      "published_at": "2026-10-16T00:00:00Z",
-      "summary": "PromptArmor 在 9800 次试验的评测中发现，开放权重模型（DeepSeek、Kimi、GLM、Qwen）对真实世界间接提示词注入攻击链的易感率为 26.7%，闭源模型（GPT、Claude、Gemini）为 14.2%，开放权重模型易感率高 88%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y1c13l53cd5u3wg565qu60q4d",
-      "relevance_score": 4,
+      "title": "Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审",
+      "url": "https://aihot.news/items/p4mq9t7wyzlxritu15i6d8dtv",
+      "published_at": "2026-10-17T01:52:43Z",
+      "summary": "作者解读 Anthropic 关于 Claude Code 代码评审重构的博客：Claude 写了约 90% 的代码，2026 年 6 月到 9 月合并 PR 翻倍以上而 revert 率下降超 40%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p4mq9t7wyzlxritu15i6d8dtv",
+      "relevance_score": 3,
       "relevance_reasons": [
+        "strong:anthropic",
         "strong:claude",
-        "strong:gemini",
-        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -216,63 +121,6 @@
         "source:actions"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "acef62cba9d74d782d7af0d08be281eac6603194",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单",
-      "url": "https://aihot.news/items/e2ssy0a7scpnel6ppyl3r9f2t",
-      "published_at": "2026-10-15T20:09:02Z",
-      "summary": "Anthropic 宣布 Claude 平台上的 Opus 5.5 fast mode 不再处于研究预览阶段，并已移除等待名单。该模式速度最高提升 2.5 倍，定价为 $8 / $40 per million tokens；现已登陆 Microsoft Foundry（Azure 托管），Google Cloud 即将支持。Claude Code 中的 fast mode 保持不变，消耗额外 usage credits。文档见 https://platform.claude.com/docs/en/build-with-claude/fast-mode 🔗 阅读原文 via AIHOT · https://aihot.news/items/e2ssy0a7scpnel6ppyl3r9f2t",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "be121f185bce2f8abbbf56a6f41bbe121872b6b6",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Muse Spark Open 上架 Arena，可在 Agent Arena 实测，评分即将公布",
-      "url": "https://aihot.news/items/zxlvr8l7uzmvapbi3i58kat2s",
-      "published_at": "2026-10-15T18:19:42Z",
-      "summary": "Arena 宣布 Meta 的 Muse Spark Open 已进入 Agent Arena，用户可实测，评分即将公布。该模型为 816B 总参数、42B 激活参数，1M token 上下文窗口，原生多模态。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zxlvr8l7uzmvapbi3i58kat2s",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d105c04d07af967d772d9221c8ffdfc12ac8bc95",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Meta 开放权重模型 Muse Spark Open 上架 OpenRouter",
-      "url": "https://aihot.news/items/bicfbjip5iq9ccp8x7sn9yw7k",
-      "published_at": "2026-10-15T18:02:06Z",
-      "summary": "Meta 发布开放权重模型 Muse Spark Open，现已可在 OpenRouter 使用，定位为面向编码与智能体工作的美国最强开放权重模型。模型总参数 816B、激活 42B，支持 1M token 上下文窗口，原生多模态，OpenRouter 定价为输入 $1.25/M、输出 $4.25/M，正文提到支持图像、视频、音频和 PDF 输入。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bicfbjip5iq9ccp8x7sn9yw7k",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -282,11 +130,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1296,
+      "fetched_count": 1298,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 430,
-      "checked_at": "2026-10-16T17:47:52.684096Z"
+      "latency_ms": 379,
+      "checked_at": "2026-10-17T02:27:49.793954Z"
     },
     {
       "source_id": "openai-skills",
@@ -297,8 +145,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 442,
-      "checked_at": "2026-10-16T17:47:53.126343Z"
+      "latency_ms": 266,
+      "checked_at": "2026-10-17T02:27:50.060317Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -309,8 +157,8 @@
       "fetched_count": 272,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 94,
-      "checked_at": "2026-10-16T17:47:53.222919Z"
+      "latency_ms": 78,
+      "checked_at": "2026-10-17T02:27:50.141493Z"
     },
     {
       "source_id": "google-deepmind",
@@ -321,8 +169,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 294,
-      "checked_at": "2026-10-16T17:47:53.518020Z"
+      "latency_ms": 215,
+      "checked_at": "2026-10-17T02:27:50.358281Z"
     },
     {
       "source_id": "google-ai",
@@ -333,8 +181,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 219,
-      "checked_at": "2026-10-16T17:47:53.737248Z"
+      "latency_ms": 267,
+      "checked_at": "2026-10-17T02:27:50.625687Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -345,8 +193,8 @@
       "fetched_count": 880,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 206,
-      "checked_at": "2026-10-16T17:47:53.950224Z"
+      "latency_ms": 258,
+      "checked_at": "2026-10-17T02:27:50.893964Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -357,8 +205,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 346,
-      "checked_at": "2026-10-16T17:47:54.296962Z"
+      "latency_ms": 260,
+      "checked_at": "2026-10-17T02:27:51.154377Z"
     },
     {
       "source_id": "github-changelog",
@@ -367,10 +215,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 22,
-      "checked_at": "2026-10-16T17:47:54.320193Z"
+      "latency_ms": 25,
+      "checked_at": "2026-10-17T02:27:51.179926Z"
     },
     {
       "source_id": "aihot",
@@ -379,10 +227,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 5,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 2398,
-      "checked_at": "2026-10-16T17:47:56.719440Z"
+      "latency_ms": 987,
+      "checked_at": "2026-10-17T02:27:52.168391Z"
     }
   ],
   "control_notes": {
