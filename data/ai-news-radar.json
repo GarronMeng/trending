@@ -1,27 +1,51 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-19T15:46:40.817441Z",
+  "generated_at": "2026-10-19T19:38:35.823957Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 2,
+  "item_count": 4,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
-      "count": 2,
+    "official": {
+      "group": "official",
+      "count": 1,
       "top_sources": [
         [
-          "AI Hot",
-          2
+          "GitHub AI & ML",
+          1
         ]
       ],
       "top_keywords": [
         [
-          "工作流",
-          2
+          "agent",
+          1
         ],
         [
+          "copilot",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 3,
+      "top_sources": [
+        [
+          "AI Hot",
+          3
+        ]
+      ],
+      "top_keywords": [
+        [
           "aggregate_noise",
+          3
+        ],
+        [
+          "工作流",
           2
         ],
         [
@@ -41,6 +65,18 @@
           1
         ],
         [
+          "agent",
+          1
+        ],
+        [
+          "开源模型",
+          1
+        ],
+        [
+          "tool",
+          1
+        ],
+        [
           "智能体",
           1
         ]
@@ -48,6 +84,25 @@
     }
   },
   "items": [
+    {
+      "id": "e07e037ad521bb1fdb0bc68e6b9f563feb14c0c5",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "How to continue a GitHub Copilot app session in VS Code",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code",
+      "published_at": "2026-10-19T18:47:22Z",
+      "summary": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context. The post How to continue a GitHub Copilot app session in VS Code appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "64d20d634bbdd49941e8809d407f56767fb56444",
       "source_id": "aihot",
@@ -66,6 +121,26 @@
         "weak:api",
         "weak:工作流",
         "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "75701dda22f9e52a62aa1311a2bc7b54a0e76d33",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "DeepSeek-V4.1-Flash-20261017 (Max) 登顶 Agent Arena 开源模型第一",
+      "url": "https://aihot.news/items/h6okcjroca6s95iemyh7dhpcm",
+      "published_at": "2026-10-19T18:18:50Z",
+      "summary": "Arena 宣布 DeepSeek-V4.1-Flash-20261017 (Max) 成为 Agent Arena 第一开源模型，总排名第 11，基于超 7.5K 真实会话净提升 +5.1%。其中位任务成本 $0.20，约为 GPT-6.1 Sol 提升幅度的 37%、成本的 27%；Confirmed Success 提升 +11.5%，且无 Tool Hallucination 问题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/h6okcjroca6s95iemyh7dhpcm",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:开源模型",
+        "weak:tool",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -100,8 +175,8 @@
       "fetched_count": 1299,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 630,
-      "checked_at": "2026-10-19T15:46:34.190732Z"
+      "latency_ms": 612,
+      "checked_at": "2026-10-19T19:38:31.464582Z"
     },
     {
       "source_id": "openai-skills",
@@ -112,8 +187,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 274,
-      "checked_at": "2026-10-19T15:46:34.465599Z"
+      "latency_ms": 420,
+      "checked_at": "2026-10-19T19:38:31.885279Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -124,8 +199,8 @@
       "fetched_count": 273,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 161,
-      "checked_at": "2026-10-19T15:46:34.631374Z"
+      "latency_ms": 379,
+      "checked_at": "2026-10-19T19:38:32.268546Z"
     },
     {
       "source_id": "google-deepmind",
@@ -136,8 +211,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 270,
-      "checked_at": "2026-10-19T15:46:34.903381Z"
+      "latency_ms": 337,
+      "checked_at": "2026-10-19T19:38:32.607349Z"
     },
     {
       "source_id": "google-ai",
@@ -148,8 +223,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 219,
-      "checked_at": "2026-10-19T15:46:35.123655Z"
+      "latency_ms": 201,
+      "checked_at": "2026-10-19T19:38:32.808889Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -157,11 +232,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 881,
+      "fetched_count": 882,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 304,
-      "checked_at": "2026-10-19T15:46:35.441830Z"
+      "latency_ms": 331,
+      "checked_at": "2026-10-19T19:38:33.153755Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -170,10 +245,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 330,
-      "checked_at": "2026-10-19T15:46:35.773013Z"
+      "latency_ms": 331,
+      "checked_at": "2026-10-19T19:38:33.485139Z"
     },
     {
       "source_id": "github-changelog",
@@ -184,8 +259,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-10-19T15:46:35.804725Z"
+      "latency_ms": 35,
+      "checked_at": "2026-10-19T19:38:33.521007Z"
     },
     {
       "source_id": "aihot",
@@ -194,10 +269,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 5003,
-      "checked_at": "2026-10-19T15:46:40.809051Z"
+      "latency_ms": 2293,
+      "checked_at": "2026-10-19T19:38:35.815399Z"
     }
   ],
   "control_notes": {
