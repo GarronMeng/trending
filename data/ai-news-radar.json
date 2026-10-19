@@ -1,12 +1,72 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-19T09:19:31.649427Z",
+  "generated_at": "2026-10-19T13:46:55.150252Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 0,
-  "groups": {},
-  "items": [],
+  "item_count": 1,
+  "groups": {
+    "aggregate": {
+      "group": "aggregate",
+      "count": 1,
+      "top_sources": [
+        [
+          "AI Hot",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "openai",
+          1
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "工作流",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "aggregate_noise",
+          1
+        ]
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "64d20d634bbdd49941e8809d407f56767fb56444",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "n8n 教程：在 NVIDIA DGX Spark 上离线运行全套 AI 工作流",
+      "url": "https://aihot.news/items/ezjbo6ic6xfvpyxyghjekaude",
+      "published_at": "2026-10-19T13:22:17Z",
+      "summary": "n8n 博客发布教程，讲解如何在一台 NVIDIA DGX Spark（128GB 统一内存）上部署七个本地模型，通过 LiteLLM 单一 OpenAI 兼容端点驱动 n8n 工作流，全程不调用云 API。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ezjbo6ic6xfvpyxyghjekaude",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:llm",
+        "weak:api",
+        "weak:工作流",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    }
+  ],
   "source_health": [
     {
       "source_id": "openai-news",
@@ -17,8 +77,8 @@
       "fetched_count": 1299,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 626,
-      "checked_at": "2026-10-19T09:19:22.943692Z"
+      "latency_ms": 576,
+      "checked_at": "2026-10-19T13:46:47.471398Z"
     },
     {
       "source_id": "openai-skills",
@@ -29,8 +89,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 347,
-      "checked_at": "2026-10-19T09:19:23.291323Z"
+      "latency_ms": 238,
+      "checked_at": "2026-10-19T13:46:47.709994Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -41,8 +101,8 @@
       "fetched_count": 273,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 150,
-      "checked_at": "2026-10-19T09:19:23.446492Z"
+      "latency_ms": 124,
+      "checked_at": "2026-10-19T13:46:47.839014Z"
     },
     {
       "source_id": "google-deepmind",
@@ -53,8 +113,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 357,
-      "checked_at": "2026-10-19T09:19:23.805172Z"
+      "latency_ms": 327,
+      "checked_at": "2026-10-19T13:46:48.168574Z"
     },
     {
       "source_id": "google-ai",
@@ -65,8 +125,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 158,
-      "checked_at": "2026-10-19T09:19:23.964383Z"
+      "latency_ms": 142,
+      "checked_at": "2026-10-19T13:46:48.311674Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -77,8 +137,8 @@
       "fetched_count": 881,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 349,
-      "checked_at": "2026-10-19T09:19:24.327394Z"
+      "latency_ms": 260,
+      "checked_at": "2026-10-19T13:46:48.585182Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -89,8 +149,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 3719,
-      "checked_at": "2026-10-19T09:19:28.047202Z"
+      "latency_ms": 245,
+      "checked_at": "2026-10-19T13:46:48.830893Z"
     },
     {
       "source_id": "github-changelog",
@@ -101,8 +161,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-10-19T09:19:28.079906Z"
+      "latency_ms": 25,
+      "checked_at": "2026-10-19T13:46:48.856258Z"
     },
     {
       "source_id": "aihot",
@@ -111,10 +171,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 3561,
-      "checked_at": "2026-10-19T09:19:31.641952Z"
+      "latency_ms": 6284,
+      "checked_at": "2026-10-19T13:46:55.141770Z"
     }
   ],
   "control_notes": {
