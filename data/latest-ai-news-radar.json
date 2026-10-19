@@ -1,21 +1,29 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-19T13:46:55.150252Z",
+  "generated_at": "2026-10-19T15:46:40.817441Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 1,
+  "item_count": 2,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "AI Hot",
-          1
+          2
         ]
       ],
       "top_keywords": [
+        [
+          "工作流",
+          2
+        ],
+        [
+          "aggregate_noise",
+          2
+        ],
         [
           "openai",
           1
@@ -29,15 +37,11 @@
           1
         ],
         [
-          "工作流",
-          1
-        ],
-        [
           "API",
           1
         ],
         [
-          "aggregate_noise",
+          "智能体",
           1
         ]
       ]
@@ -65,6 +69,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "b0d964aaca32e5a747a892a532a1dc929bf67cf4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Meta 详解 Thin Orchestrator 模式：让路由少干活提升 AI 智能体可靠性",
+      "url": "https://aihot.news/items/qh6pvehounuylklti7i0zl124",
+      "published_at": "2026-10-19T15:30:37Z",
+      "summary": "Meta 工程团队介绍其数据管道智能体采用的瘦编排器（thin orchestrator）模式：一个约 1300 行的编排器只负责路由和可靠性检查，将 20+ 工作流分派给 14 个上下文隔离的专项子智能体，自身不做任何领域推理。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qh6pvehounuylklti7i0zl124",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -77,8 +100,8 @@
       "fetched_count": 1299,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 576,
-      "checked_at": "2026-10-19T13:46:47.471398Z"
+      "latency_ms": 630,
+      "checked_at": "2026-10-19T15:46:34.190732Z"
     },
     {
       "source_id": "openai-skills",
@@ -89,8 +112,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 238,
-      "checked_at": "2026-10-19T13:46:47.709994Z"
+      "latency_ms": 274,
+      "checked_at": "2026-10-19T15:46:34.465599Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -101,8 +124,8 @@
       "fetched_count": 273,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 124,
-      "checked_at": "2026-10-19T13:46:47.839014Z"
+      "latency_ms": 161,
+      "checked_at": "2026-10-19T15:46:34.631374Z"
     },
     {
       "source_id": "google-deepmind",
@@ -113,8 +136,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 327,
-      "checked_at": "2026-10-19T13:46:48.168574Z"
+      "latency_ms": 270,
+      "checked_at": "2026-10-19T15:46:34.903381Z"
     },
     {
       "source_id": "google-ai",
@@ -125,8 +148,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 142,
-      "checked_at": "2026-10-19T13:46:48.311674Z"
+      "latency_ms": 219,
+      "checked_at": "2026-10-19T15:46:35.123655Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -137,8 +160,8 @@
       "fetched_count": 881,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 260,
-      "checked_at": "2026-10-19T13:46:48.585182Z"
+      "latency_ms": 304,
+      "checked_at": "2026-10-19T15:46:35.441830Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -149,8 +172,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 245,
-      "checked_at": "2026-10-19T13:46:48.830893Z"
+      "latency_ms": 330,
+      "checked_at": "2026-10-19T15:46:35.773013Z"
     },
     {
       "source_id": "github-changelog",
@@ -161,8 +184,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-10-19T13:46:48.856258Z"
+      "latency_ms": 31,
+      "checked_at": "2026-10-19T15:46:35.804725Z"
     },
     {
       "source_id": "aihot",
@@ -171,10 +194,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 6284,
-      "checked_at": "2026-10-19T13:46:55.141770Z"
+      "latency_ms": 5003,
+      "checked_at": "2026-10-19T15:46:40.809051Z"
     }
   ],
   "control_notes": {
