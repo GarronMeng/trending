@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-20T02:53:34.051030Z",
+  "generated_at": "2026-10-20T08:53:24.689023Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 10,
   "groups": {
     "official": {
       "group": "official",
@@ -76,21 +76,21 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          5
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          6
         ],
         [
           "openai",
-          3
+          4
         ],
         [
           "工作流",
@@ -118,6 +118,10 @@
         ],
         [
           "tool",
+          1
+        ],
+        [
+          "anthropic",
           1
         ],
         [
@@ -253,6 +257,25 @@
       "is_ai_related": true
     },
     {
+      "id": "133db0ec10b68e2f308ad1d7773e0a922be6fecc",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "路透：OpenAI 拟在 Anthropic 上市前加速融资约 300 亿美元，估值超 1.4 万亿美元",
+      "url": "https://aihot.news/items/srgsfi8edabzrwgg6vjtgw3ya",
+      "published_at": "2026-10-20T08:06:25Z",
+      "summary": "据 Reuters 报道，OpenAI 正赶在 Anthropic 上市前洽谈融资约 300 亿美元，估值超 1.4 万亿美元，比 3 月的 8520 亿美元至少高 64%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/srgsfi8edabzrwgg6vjtgw3ya",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "870aa4009e3904093ec21aeb8fc230c2170cb1d3",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -320,8 +343,8 @@
       "fetched_count": 1300,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 384,
-      "checked_at": "2026-10-20T02:53:30.771353Z"
+      "latency_ms": 599,
+      "checked_at": "2026-10-20T08:53:22.470784Z"
     },
     {
       "source_id": "openai-skills",
@@ -332,8 +355,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 274,
-      "checked_at": "2026-10-20T02:53:31.046231Z"
+      "latency_ms": 238,
+      "checked_at": "2026-10-20T08:53:22.709923Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -344,8 +367,8 @@
       "fetched_count": 273,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 105,
-      "checked_at": "2026-10-20T02:53:31.153614Z"
+      "latency_ms": 126,
+      "checked_at": "2026-10-20T08:53:22.840222Z"
     },
     {
       "source_id": "google-deepmind",
@@ -356,8 +379,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 436,
-      "checked_at": "2026-10-20T02:53:31.590962Z"
+      "latency_ms": 103,
+      "checked_at": "2026-10-20T08:53:22.945375Z"
     },
     {
       "source_id": "google-ai",
@@ -368,8 +391,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 181,
-      "checked_at": "2026-10-20T02:53:31.772763Z"
+      "latency_ms": 123,
+      "checked_at": "2026-10-20T08:53:23.069392Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -380,8 +403,8 @@
       "fetched_count": 882,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 257,
-      "checked_at": "2026-10-20T02:53:32.039320Z"
+      "latency_ms": 263,
+      "checked_at": "2026-10-20T08:53:23.345699Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -392,8 +415,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 292,
-      "checked_at": "2026-10-20T02:53:32.331815Z"
+      "latency_ms": 230,
+      "checked_at": "2026-10-20T08:53:23.576500Z"
     },
     {
       "source_id": "github-changelog",
@@ -404,8 +427,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-10-20T02:53:32.360288Z"
+      "latency_ms": 24,
+      "checked_at": "2026-10-20T08:53:23.601519Z"
     },
     {
       "source_id": "aihot",
@@ -414,10 +437,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 5,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 1682,
-      "checked_at": "2026-10-20T02:53:34.043683Z"
+      "latency_ms": 1078,
+      "checked_at": "2026-10-20T08:53:24.680907Z"
     }
   ],
   "control_notes": {
