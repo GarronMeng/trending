@@ -43,30 +43,17 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>10</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>2</b><span>官方源条目</span></div>
-        <div class="stat"><b>6</b><span>聚合源条目</span></div>
+        <div class="stat"><b>7</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>1</b><span>官方源条目</span></div>
+        <div class="stat"><b>4</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-20T11:56:21.289102Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-20T13:44:23.652330Z</p></div>
       <div class="grid">
-    <article class="card">
-      <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-10-19T12:00:00Z</span>
-        <strong>Score 6</strong>
-      </div>
-      <h3><a href="https://openai.com/index/low-resource-programming-languages" target="_blank" rel="noreferrer">Advancing coding in low‑resource programming languages</a></h3>
-      <p class='summary'>Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration.</p>
-      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>weak:eval</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
     <article class="card">
       <div class="meta">
         <span>GitHub Changelog</span>
@@ -103,19 +90,6 @@
       <h3><a href="https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code" target="_blank" rel="noreferrer">How to continue a GitHub Copilot app session in VS Code</a></h3>
       <p class='summary'>Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context. The post How to continue a GitHub Copilot app session in VS Code appeared first on The GitHub Blog .</p>
       <div class="tags"><span>strong:agent</span><span>weak:copilot</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-10-19T13:22:17Z</span>
-        <strong>Score 6</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/ezjbo6ic6xfvpyxyghjekaude" target="_blank" rel="noreferrer">n8n 教程：在 NVIDIA DGX Spark 上离线运行全套 AI 工作流</a></h3>
-      <p class='summary'>n8n 博客发布教程，讲解如何在一台 NVIDIA DGX Spark（128GB 统一内存）上部署七个本地模型，通过 LiteLLM 单一 OpenAI 兼容端点驱动 n8n 工作流，全程不调用云 API。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ezjbo6ic6xfvpyxyghjekaude</p>
-      <div class="tags"><span>strong:openai</span><span>strong:llm</span><span>weak:api</span><span>weak:工作流</span><span>weak:API</span></div>
     </article>
     
 
@@ -169,34 +143,21 @@
       <p class='summary'>Meta 工程团队介绍其数据管道智能体采用的瘦编排器（thin orchestrator）模式：一个约 1300 行的编排器只负责路由和可靠性检查，将 20+ 工作流分派给 14 个上下文隔离的专项子智能体，自身不做任何领域推理。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qh6pvehounuylklti7i0zl124</p>
       <div class="tags"><span>strong:智能体</span><span>weak:工作流</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-10-19T12:00:00Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/tzuiybo7a45sm87wj4rec2mvo" target="_blank" rel="noreferrer">OpenAI 发布 GPT-6 系列模型，提升 COBOL 等低资源编程语言编码能力</a></h3>
-      <p class='summary'>OpenAI 宣布最新模型在 COBOL、Fortran、Visual Basic 等低资源编程语言上能力显著提升，并推出两项自建评测。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tzuiybo7a45sm87wj4rec2mvo</p>
-      <div class="tags"><span>strong:openai</span><span>weak:评测</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1300</td><td>1</td><td>552ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>329ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>273</td><td>0</td><td>119ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>172ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>212ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>883</td><td>0</td><td>349ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>487ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>31ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>6</td><td>720ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1300</td><td>0</td><td>598ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>197ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>273</td><td>0</td><td>121ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>202ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>224ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>884</td><td>0</td><td>280ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>223ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>23ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>4</td><td>1655ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

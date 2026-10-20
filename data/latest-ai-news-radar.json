@@ -1,51 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-20T11:56:21.287534Z",
+  "generated_at": "2026-10-20T13:44:23.650941Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 7,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ],
-        [
-          "GitHub AI & ML",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          2
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "eval",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "copilot",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
       "count": 2,
@@ -74,43 +34,51 @@
         ]
       ]
     },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub AI & ML",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "agent",
+          1
+        ],
+        [
+          "copilot",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          6
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
-        ],
-        [
-          "openai",
           4
-        ],
-        [
-          "工作流",
-          2
         ],
         [
           "agent",
           2
         ],
         [
-          "llm",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
+          "openai",
+          2
         ],
         [
           "开源模型",
@@ -129,33 +97,13 @@
           1
         ],
         [
-          "评测",
+          "工作流",
           1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "1494fdd12d7399521d3ffaa10ca08a98e585ed73",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Advancing coding in low‑resource programming languages",
-      "url": "https://openai.com/index/low-resource-programming-languages",
-      "published_at": "2026-10-19T12:00:00Z",
-      "summary": "Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration.",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "weak:eval",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "ac36b891b7b2f62f08b46fd70f1a1e7eea413219",
       "source_id": "github-changelog",
@@ -211,28 +159,6 @@
         "strong:agent",
         "weak:copilot",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "64d20d634bbdd49941e8809d407f56767fb56444",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "n8n 教程：在 NVIDIA DGX Spark 上离线运行全套 AI 工作流",
-      "url": "https://aihot.news/items/ezjbo6ic6xfvpyxyghjekaude",
-      "published_at": "2026-10-19T13:22:17Z",
-      "summary": "n8n 博客发布教程，讲解如何在一台 NVIDIA DGX Spark（128GB 统一内存）上部署七个本地模型，通过 LiteLLM 单一 OpenAI 兼容端点驱动 n8n 工作流，全程不调用云 API。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ezjbo6ic6xfvpyxyghjekaude",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:llm",
-        "weak:api",
-        "weak:工作流",
-        "weak:API",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -312,25 +238,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "6885cf48a42d8dca7d122521279be1444037bde2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 发布 GPT-6 系列模型，提升 COBOL 等低资源编程语言编码能力",
-      "url": "https://aihot.news/items/tzuiybo7a45sm87wj4rec2mvo",
-      "published_at": "2026-10-19T12:00:00Z",
-      "summary": "OpenAI 宣布最新模型在 COBOL、Fortran、Visual Basic 等低资源编程语言上能力显著提升，并推出两项自建评测。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tzuiybo7a45sm87wj4rec2mvo",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -341,10 +248,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1300,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 552,
-      "checked_at": "2026-10-20T11:56:18.834386Z"
+      "latency_ms": 598,
+      "checked_at": "2026-10-20T13:44:20.691816Z"
     },
     {
       "source_id": "openai-skills",
@@ -355,8 +262,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 329,
-      "checked_at": "2026-10-20T11:56:19.164439Z"
+      "latency_ms": 197,
+      "checked_at": "2026-10-20T13:44:20.889968Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -367,8 +274,8 @@
       "fetched_count": 273,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 119,
-      "checked_at": "2026-10-20T11:56:19.287776Z"
+      "latency_ms": 121,
+      "checked_at": "2026-10-20T13:44:21.015939Z"
     },
     {
       "source_id": "google-deepmind",
@@ -379,8 +286,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 172,
-      "checked_at": "2026-10-20T11:56:19.461992Z"
+      "latency_ms": 202,
+      "checked_at": "2026-10-20T13:44:21.219684Z"
     },
     {
       "source_id": "google-ai",
@@ -391,8 +298,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 212,
-      "checked_at": "2026-10-20T11:56:19.674797Z"
+      "latency_ms": 224,
+      "checked_at": "2026-10-20T13:44:21.444546Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -400,11 +307,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 883,
+      "fetched_count": 884,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 349,
-      "checked_at": "2026-10-20T11:56:20.037692Z"
+      "latency_ms": 280,
+      "checked_at": "2026-10-20T13:44:21.738217Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -415,8 +322,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 487,
-      "checked_at": "2026-10-20T11:56:20.525279Z"
+      "latency_ms": 223,
+      "checked_at": "2026-10-20T13:44:21.961831Z"
     },
     {
       "source_id": "github-changelog",
@@ -427,8 +334,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-10-20T11:56:20.557046Z"
+      "latency_ms": 23,
+      "checked_at": "2026-10-20T13:44:21.985530Z"
     },
     {
       "source_id": "aihot",
@@ -437,10 +344,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 6,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 720,
-      "checked_at": "2026-10-20T11:56:21.278711Z"
+      "latency_ms": 1655,
+      "checked_at": "2026-10-20T13:44:23.642666Z"
     }
   ],
   "control_notes": {
