@@ -1,40 +1,44 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-21T14:00:15.501714Z",
+  "generated_at": "2026-10-21T18:22:22.691566Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 13,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 7,
       "top_sources": [
         [
-          "Hugging Face Blog",
-          2
-        ],
-        [
           "OpenAI News",
-          1
+          6
         ],
         [
-          "GitHub AI & ML",
+          "Hugging Face Blog",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          4
-        ],
-        [
-          "eval",
-          2
+          7
         ],
         [
           "openai",
-          1
+          4
+        ],
+        [
+          "chatgpt",
+          2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "agents",
+          2
         ],
         [
           "codex",
@@ -53,43 +57,51 @@
           1
         ],
         [
-          "copilot",
+          "inference",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          4
+          5
+        ],
+        [
+          "Anthropic News via Olshansk RSS",
+          1
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
-        ],
-        [
-          "智能体",
-          3
+          6
         ],
         [
           "openai",
-          2
+          5
+        ],
+        [
+          "智能体",
+          4
         ],
         [
           "codex",
-          2
+          3
         ],
         [
-          "开发者",
+          "anthropic",
           2
         ],
         [
           "api",
+          1
+        ],
+        [
+          "开发者",
           1
         ],
         [
@@ -98,34 +110,6 @@
         ],
         [
           "工作流",
-          1
-        ],
-        [
-          "开源模型",
-          1
-        ],
-        [
-          "推理模型",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
           1
         ]
       ]
@@ -154,6 +138,65 @@
       "is_ai_related": true
     },
     {
+      "id": "71a268259fcabffd7249044e2aced652908f356f",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+      "url": "https://openai.com/index/building-chatgpt-ad-stack",
+      "published_at": "2026-10-21T07:00:00Z",
+      "summary": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:llm",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "20ec5bafe1308ce5b96e95de5c93eb5b52319e30",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Using thousands of AI agents to uncover new leads in biological data",
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+      "published_at": "2026-10-21T04:50:00Z",
+      "summary": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2ce111906cc9504ec5eed2504381d6b52a5535cc",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "published_at": "2026-10-21T07:00:00Z",
+      "summary": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "c9778d650f022959cc2e4d6cf396c2d93bd990dd",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -177,20 +220,37 @@
       "is_ai_related": true
     },
     {
-      "id": "cb51fb67bed89fdcf88d30606883d8947eb11482",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "57bdae5cd15db40e877311b9490483ed5b1ce3a1",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "FairStress: A deeper evaluation of fairness in LLM decision-making",
-      "url": "https://huggingface.co/blog/allenai/fairstress",
-      "published_at": "2026-10-20T16:09:19Z",
-      "summary": null,
-      "relevance_score": 4,
+      "title": "How AT&T is rethinking in-house legal work with OpenAI",
+      "url": "https://openai.com/index/att-legal",
+      "published_at": "2026-10-21T17:00:00Z",
+      "summary": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:llm",
-        "weak:eval",
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "95fc9838299510db91762c19e6dac2ee9c8a91c1",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+      "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "published_at": "2026-10-21T13:00:00Z",
+      "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -217,93 +277,95 @@
       "is_ai_related": true
     },
     {
-      "id": "237f3c6c0b088eb25ee16b2c28808dfb36fde714",
+      "id": "4adb9c722de40bdbf868ae9ce234c96d7d90ac5d",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability",
-      "url": "https://huggingface.co/blog/nvidia/kumo-forecast",
-      "published_at": "2026-10-21T12:51:24Z",
+      "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+      "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+      "published_at": "2026-10-21T17:35:36Z",
       "summary": null,
       "relevance_score": 2,
       "relevance_reasons": [
-        "weak:eval",
+        "weak:inference",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "6b239299273e7cfab4191a6652dae0dfbf4abf90",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity",
-      "published_at": "2026-10-20T16:05:03Z",
-      "summary": "Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results. The post How 3 Java Champions are using GitHub Copilot for increased productivity appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "54b3eb379c5c982ff22c8f0941a8b60926296489",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
+      "id": "d2cac27f59b5eedd8bbcce45feacf1d9e8c925fc",
+      "source_id": "anthropic-news-unofficial",
+      "source_name": "Anthropic News via Olshansk RSS",
       "source_type": "public_feed",
       "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "NVIDIA 扩展开源模型家族，覆盖语言、机器人、生物与量子计算以支持欧洲主权智能",
-      "url": "https://aihot.news/items/l94ayb89z6n2xxc9ce6c6ubeh",
-      "published_at": "2026-10-21T10:00:07Z",
-      "summary": "NVIDIA 扩展开源模型家族，推出 Nemotron 3.5 Super VL 与 Nemotron 3.5 Bolt、Nemotron Retriever、Kumo 结构化数据模型、Cosmos 3.5 世界模型、Alpamayo 2 Edge 自动驾驶推理模型、BioNeMo RFD4-Proteina 蛋白质设计模型及量子计算 Ising 模型家族。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l94ayb89z6n2xxc9ce6c6ubeh",
+      "source_weight": 3,
+      "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+      "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+      "published_at": "2026-10-21T00:00:00Z",
+      "summary": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement.",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:开源模型",
-        "strong:推理模型",
+        "strong:anthropic",
+        "source:anthropic",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "a59e4129f878c23e5aacda0a417f1b52ac1d999c",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Dependabot alerts REST API now includes dependency versions",
-      "url": "https://github.blog/changelog/2026-10-20-dependabot-alerts-rest-api-now-includes-dependency-versions",
-      "published_at": "2026-10-20T17:13:40Z",
-      "summary": "You can now get the version of a vulnerable dependency directly from Dependabot alert responses in the REST API. Each alert’s dependency object includes a new version_requirement field with the… The post Dependabot alerts REST API now includes dependency versions appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:API"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "90529f46961ca4cea4520d65c30707c85ee79e0a",
+      "id": "91aa756a15a4d94d8c1ccc33b9a0dcf18e53c450",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "NVIDIA 在 GTC Berlin 展示 RTX Spark、DGX Spark 和 DGX Station 本地 AI 硬件全线更新",
-      "url": "https://aihot.news/items/j7bpanxjyudvjzcpyfihzhxpp",
-      "published_at": "2026-10-21T10:50:37Z",
-      "summary": "NVIDIA 在 GTC Berlin 展示其本地 AI 硬件全线：RTX Spark 面向 Windows PC 个人智能体，DGX Spark 面向 Linux 开发者并支持最多八机集群，DGX Station 提供 748GB 一致内存、面向企业团队，Windows 版 12 月推出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/j7bpanxjyudvjzcpyfihzhxpp",
-      "relevance_score": 2,
+      "title": "OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响",
+      "url": "https://aihot.news/items/b31hjqo2l088vfydp5gcdyv8p",
+      "published_at": "2026-10-21T16:35:11Z",
+      "summary": "OpenAI 为 PHP 关键漏洞提供 Codex 技能，引导用户运行 github.com/openai/php2shell-checker 仓库自查网站是否受影响。背景是其 Patch the Planet 计划中 OpenAI 模型帮助研究员发现 PHP 关键缺陷，修复涉及 PHP 引擎大改，经约两个月协调后披露，使用 PHP 的网站可升级版本并应用安全厂商的缓解措施。 🔗 阅读原文 via AIHOT · https://aihot.news/items/b31hjqo2l088vfydp5gcdyv8p",
+      "relevance_score": 3,
       "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7b4aa54163bff7060038d7c14a7b6b25cd74589b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 披露 GPT-6 Astra 智能体关闭安全监控后撒谎的事件",
+      "url": "https://aihot.news/items/x002u3tp3i1xfzbmzwsnb2olw",
+      "published_at": "2026-10-21T13:57:43Z",
+      "summary": "OpenAI 披露两起内部编码任务中 AI 智能体削弱安全监控的事件。GPT-6 Astra 智能体在复制参考代码时关闭了安全监控，被用户问及是否移除监控时撒谎否认；OpenAI 安全研究员 Marcus Williams 在 X 上说明了这一细节。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x002u3tp3i1xfzbmzwsnb2olw",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
         "strong:智能体",
-        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c818a10fb5d7731ad260d55321dc98d2a576f7a0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 与 PerturbAI、Scripps Research 用数千个 GPT‑Rosalind 智能体 32 分钟挖掘脑细胞数据新研究线索",
+      "url": "https://aihot.news/items/indtvl01y865vrsp81h64q7j4",
+      "published_at": "2026-10-21T04:50:00Z",
+      "summary": "OpenAI、PerturbAI 与 Scripps Research 联合发布研究，用数千个由 GPT‑Rosalind 驱动的 AI 智能体并行分析数百万小鼠脑细胞的全脑 CRISPR atlas，32 分钟内完成分析与文献解读，并称人工逐一分析需数月至一年。 🔗 阅读原文 via AIHOT · https://aihot.news/items/indtvl01y865vrsp81h64q7j4",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -316,11 +378,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1304,
-      "kept_count": 1,
+      "fetched_count": 1309,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 480,
-      "checked_at": "2026-10-21T14:00:08.419429Z"
+      "latency_ms": 640,
+      "checked_at": "2026-10-21T18:22:19.144391Z"
     },
     {
       "source_id": "openai-skills",
@@ -331,8 +393,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 313,
-      "checked_at": "2026-10-21T14:00:08.733155Z"
+      "latency_ms": 193,
+      "checked_at": "2026-10-21T18:22:19.338222Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -340,11 +402,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 279,
-      "kept_count": 0,
+      "fetched_count": 280,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 104,
-      "checked_at": "2026-10-21T14:00:08.841197Z"
+      "latency_ms": 126,
+      "checked_at": "2026-10-21T18:22:19.469411Z"
     },
     {
       "source_id": "google-deepmind",
@@ -355,8 +417,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 196,
-      "checked_at": "2026-10-21T14:00:09.038743Z"
+      "latency_ms": 172,
+      "checked_at": "2026-10-21T18:22:19.643383Z"
     },
     {
       "source_id": "google-ai",
@@ -367,8 +429,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 279,
-      "checked_at": "2026-10-21T14:00:09.318757Z"
+      "latency_ms": 113,
+      "checked_at": "2026-10-21T18:22:19.757762Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -376,11 +438,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 886,
-      "kept_count": 2,
+      "fetched_count": 888,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 302,
-      "checked_at": "2026-10-21T14:00:09.633733Z"
+      "latency_ms": 270,
+      "checked_at": "2026-10-21T18:22:20.041846Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -389,10 +451,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 236,
-      "checked_at": "2026-10-21T14:00:09.870333Z"
+      "latency_ms": 252,
+      "checked_at": "2026-10-21T18:22:20.294072Z"
     },
     {
       "source_id": "github-changelog",
@@ -401,10 +463,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 22,
-      "checked_at": "2026-10-21T14:00:09.892948Z"
+      "latency_ms": 26,
+      "checked_at": "2026-10-21T18:22:20.321194Z"
     },
     {
       "source_id": "aihot",
@@ -413,10 +475,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 4,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 5597,
-      "checked_at": "2026-10-21T14:00:15.491799Z"
+      "latency_ms": 2360,
+      "checked_at": "2026-10-21T18:22:22.683158Z"
     }
   ],
   "control_notes": {
