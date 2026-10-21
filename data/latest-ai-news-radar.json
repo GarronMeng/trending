@@ -1,95 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-20T18:20:22.114021Z",
+  "generated_at": "2026-10-21T02:47:50.246078Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 8,
   "groups": {
-    "developer": {
-      "group": "developer",
-      "count": 3,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          3
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 6,
-      "top_sources": [
-        [
-          "Hugging Face Blog",
-          2
-        ],
-        [
-          "OpenAI News",
-          2
-        ],
-        [
-          "GitHub AI & ML",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          6
-        ],
-        [
-          "copilot",
-          2
-        ],
-        [
-          "llm",
-          1
-        ],
-        [
-          "eval",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "hugging face",
-          1
-        ],
-        [
-          "agent",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
       "count": 3,
@@ -109,11 +25,27 @@
           2
         ],
         [
-          "anthropic",
+          "codex",
           1
         ],
         [
-          "agent",
+          "智能体",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "anthropic",
           1
         ],
         [
@@ -125,27 +57,97 @@
           1
         ]
       ]
+    },
+    "official": {
+      "group": "official",
+      "count": 4,
+      "top_sources": [
+        [
+          "OpenAI News",
+          2
+        ],
+        [
+          "Hugging Face Blog",
+          1
+        ],
+        [
+          "GitHub AI & ML",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          4
+        ],
+        [
+          "eval",
+          2
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "copilot",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ]
+      ]
     }
   },
   "items": [
     {
-      "id": "ac36b891b7b2f62f08b46fd70f1a1e7eea413219",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Copilot model policy API for enterprise, orgs, and teams",
-      "url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
-      "published_at": "2026-10-19T21:32:18Z",
-      "summary": "You can now use the REST API to retrieve and update Copilot model policies for enterprises, enterprise teams, agent apps, and organizations. What’s new GET and PATCH endpoints are now… The post Copilot model policy API for enterprise, orgs, and teams appeared first on The GitHub Blog .",
-      "relevance_score": 7,
+      "id": "c9778d650f022959cc2e4d6cf396c2d93bd990dd",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI API 支持 12 小时 prompt 缓存，Codex 与 Work 用户缓存永久保留",
+      "url": "https://aihot.news/items/gf3h1rt1vsjw3dnw4hxlie3fv",
+      "published_at": "2026-10-21T01:10:02Z",
+      "summary": "OpenAI 开发者账号宣布 API 现已可选 12 小时 prompt 缓存，持续运行的智能体可在请求间隔数小时的情况下继续以更低的缓存输入费率复用指令、工具和上下文。Tibo 补充称，Codex 与 Work 中已登录用户的缓存会永久保留，返回旧对话或数小时后恢复会话保证命中缓存，且无额外惩罚。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gf3h1rt1vsjw3dnw4hxlie3fv",
+      "relevance_score": 8,
       "relevance_reasons": [
-        "strong:agent",
+        "strong:openai",
+        "strong:codex",
+        "strong:智能体",
         "weak:api",
-        "weak:copilot",
+        "weak:开发者",
         "weak:API",
-        "source:copilot"
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -188,75 +190,20 @@
       "is_ai_related": true
     },
     {
-      "id": "b3c5ea6979e1fde132c9185df9b608eb7d05f0cc",
+      "id": "404d91affa4da2c98046e14fee8f993d695b8fe2",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "OpenAI acquires Orchestra Bio",
-      "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
-      "published_at": "2026-10-20T00:00:00Z",
-      "summary": "OpenAI is acquiring Orchestra Bio to bring AI-powered operations to life sciences R&D, helping biopharma teams accelerate drug development and advance new treatments.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "37ff7a356b11a3d941e35971c84dc1046eab8bdf",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
-      "url": "https://huggingface.co/blog/hf-torchtpu",
-      "published_at": "2026-10-20T00:00:00Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b2d0b06a515b310de8297fc8c679f195f7610df0",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Copilot models deprecated on October 19, 2026",
-      "url": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026",
-      "published_at": "2026-10-19T21:27:10Z",
-      "summary": "As of today, October 19, 2026, we have deprecated the following models across most GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). These… The post GitHub Copilot models deprecated on October 19, 2026 appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e07e037ad521bb1fdb0bc68e6b9f563feb14c0c5",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "How to continue a GitHub Copilot app session in VS Code",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code",
-      "published_at": "2026-10-19T18:47:22Z",
-      "summary": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context. The post How to continue a GitHub Copilot app session in VS Code appeared first on The GitHub Blog .",
+      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "url": "https://openai.com/index/terminal-x",
+      "published_at": "2026-10-20T07:00:00Z",
+      "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
       "relevance_score": 4,
       "relevance_reasons": [
         "strong:agent",
-        "weak:copilot",
+        "weak:eval",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -317,25 +264,6 @@
       "is_ai_related": true
     },
     {
-      "id": "870aa4009e3904093ec21aeb8fc230c2170cb1d3",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "FBI 称前 OpenAI 工程师涉嫌窃密，手机中发现 Saudi Gov Docs 文件夹",
-      "url": "https://aihot.news/items/b80bl8763pqoqq8hdio0ew6t1",
-      "published_at": "2026-10-19T20:21:53Z",
-      "summary": "美国法院批准羁押被指控在 OpenAI 会议室安装窃听器的前工程师 Abdulrahman Alfozan。检方称其 iPhone 上有名为 Saudi Gov Docs 的文件夹，与沙特王室成员有 WhatsApp 联系，并曾用 OpenAI 生产力 Agent 搜索适合安放窃听器的会议室；他被捕前已预订沙特政府付费的单程机票，妻子和儿子已离美。 🔗 阅读原文 via AIHOT · https://aihot.news/items/b80bl8763pqoqq8hdio0ew6t1",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:agent",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "e7d99977eec0c6ef87f2dfe3f5d323080e5db247",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -362,11 +290,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1302,
+      "fetched_count": 1303,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 602,
-      "checked_at": "2026-10-20T18:20:19.989081Z"
+      "latency_ms": 567,
+      "checked_at": "2026-10-21T02:47:44.494430Z"
     },
     {
       "source_id": "openai-skills",
@@ -377,8 +305,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 248,
-      "checked_at": "2026-10-20T18:20:20.237550Z"
+      "latency_ms": 191,
+      "checked_at": "2026-10-21T02:47:44.686133Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -389,8 +317,8 @@
       "fetched_count": 279,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 126,
-      "checked_at": "2026-10-20T18:20:20.368851Z"
+      "latency_ms": 131,
+      "checked_at": "2026-10-21T02:47:44.821726Z"
     },
     {
       "source_id": "google-deepmind",
@@ -401,8 +329,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 151,
-      "checked_at": "2026-10-20T18:20:20.522174Z"
+      "latency_ms": 206,
+      "checked_at": "2026-10-21T02:47:45.029600Z"
     },
     {
       "source_id": "google-ai",
@@ -413,8 +341,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 159,
-      "checked_at": "2026-10-20T18:20:20.681963Z"
+      "latency_ms": 210,
+      "checked_at": "2026-10-21T02:47:45.240039Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -423,10 +351,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 886,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 264,
-      "checked_at": "2026-10-20T18:20:20.960209Z"
+      "latency_ms": 269,
+      "checked_at": "2026-10-21T02:47:45.522931Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -435,10 +363,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 240,
-      "checked_at": "2026-10-20T18:20:21.200848Z"
+      "latency_ms": 266,
+      "checked_at": "2026-10-21T02:47:45.789772Z"
     },
     {
       "source_id": "github-changelog",
@@ -447,10 +375,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 1,
       "error": null,
       "latency_ms": 24,
-      "checked_at": "2026-10-20T18:20:21.226040Z"
+      "checked_at": "2026-10-21T02:47:45.815031Z"
     },
     {
       "source_id": "aihot",
@@ -461,8 +389,8 @@
       "fetched_count": 51,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 876,
-      "checked_at": "2026-10-20T18:20:22.103605Z"
+      "latency_ms": 4420,
+      "checked_at": "2026-10-21T02:47:50.236337Z"
     }
   ],
   "control_notes": {
