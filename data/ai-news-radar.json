@@ -1,28 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-21T02:47:50.246078Z",
+  "generated_at": "2026-10-21T08:54:02.765639Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 5,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 1,
       "top_sources": [
         [
           "AI Hot",
-          3
+          1
         ]
       ],
       "top_keywords": [
         [
-          "aggregate_noise",
-          3
-        ],
-        [
           "openai",
-          2
+          1
         ],
         [
           "codex",
@@ -45,29 +41,21 @@
           1
         ],
         [
-          "anthropic",
-          1
-        ],
-        [
-          "llm",
-          1
-        ],
-        [
-          "eval",
+          "aggregate_noise",
           1
         ]
       ]
     },
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
-          "OpenAI News",
-          2
+          "Hugging Face Blog",
+          1
         ],
         [
-          "Hugging Face Blog",
+          "OpenAI News",
           1
         ],
         [
@@ -78,14 +66,14 @@
       "top_keywords": [
         [
           "official_ai",
-          4
-        ],
-        [
-          "eval",
-          2
+          3
         ],
         [
           "llm",
+          1
+        ],
+        [
+          "eval",
           1
         ],
         [
@@ -94,10 +82,6 @@
         ],
         [
           "workflow",
-          1
-        ],
-        [
-          "agent",
           1
         ],
         [
@@ -190,25 +174,6 @@
       "is_ai_related": true
     },
     {
-      "id": "404d91affa4da2c98046e14fee8f993d695b8fe2",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
-      "url": "https://openai.com/index/terminal-x",
-      "published_at": "2026-10-20T07:00:00Z",
-      "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:eval",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "6b239299273e7cfab4191a6652dae0dfbf4abf90",
       "source_id": "github-ai-ml",
       "source_name": "GitHub AI & ML",
@@ -243,44 +208,6 @@
         "weak:API"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "133db0ec10b68e2f308ad1d7773e0a922be6fecc",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "路透：OpenAI 拟在 Anthropic 上市前加速融资约 300 亿美元，估值超 1.4 万亿美元",
-      "url": "https://aihot.news/items/srgsfi8edabzrwgg6vjtgw3ya",
-      "published_at": "2026-10-20T08:06:25Z",
-      "summary": "据 Reuters 报道，OpenAI 正赶在 Anthropic 上市前洽谈融资约 300 亿美元，估值超 1.4 万亿美元，比 3 月的 8520 亿美元至少高 64%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/srgsfi8edabzrwgg6vjtgw3ya",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e7d99977eec0c6ef87f2dfe3f5d323080e5db247",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Ai2 发布 FairStress 基准：测量 LLM 决策中被隐藏的公平性不对称",
-      "url": "https://aihot.news/items/cszm6fv1o99q04dbffzx8qqio",
-      "published_at": "2026-10-20T08:00:00Z",
-      "summary": "Ai2 发布 FairStress 基准，通过 300 个两候选决策场景和对抗前缀，测量 LLM 在面对说服性论据时改变决策的难易是否因候选人所属人口群体而不同，全部组合超过 1300 万测试用例，并已开放下载、集成进 Olmo-eval。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cszm6fv1o99q04dbffzx8qqio",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:llm",
-        "weak:eval",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -291,10 +218,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1303,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 567,
-      "checked_at": "2026-10-21T02:47:44.494430Z"
+      "latency_ms": 618,
+      "checked_at": "2026-10-21T08:53:59.060016Z"
     },
     {
       "source_id": "openai-skills",
@@ -305,8 +232,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 191,
-      "checked_at": "2026-10-21T02:47:44.686133Z"
+      "latency_ms": 406,
+      "checked_at": "2026-10-21T08:53:59.466880Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -317,8 +244,8 @@
       "fetched_count": 279,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 131,
-      "checked_at": "2026-10-21T02:47:44.821726Z"
+      "latency_ms": 213,
+      "checked_at": "2026-10-21T08:53:59.684725Z"
     },
     {
       "source_id": "google-deepmind",
@@ -329,8 +256,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 206,
-      "checked_at": "2026-10-21T02:47:45.029600Z"
+      "latency_ms": 255,
+      "checked_at": "2026-10-21T08:53:59.941925Z"
     },
     {
       "source_id": "google-ai",
@@ -341,8 +268,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 210,
-      "checked_at": "2026-10-21T02:47:45.240039Z"
+      "latency_ms": 248,
+      "checked_at": "2026-10-21T08:54:00.190381Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -353,8 +280,8 @@
       "fetched_count": 886,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 269,
-      "checked_at": "2026-10-21T02:47:45.522931Z"
+      "latency_ms": 339,
+      "checked_at": "2026-10-21T08:54:00.543776Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -365,8 +292,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 266,
-      "checked_at": "2026-10-21T02:47:45.789772Z"
+      "latency_ms": 329,
+      "checked_at": "2026-10-21T08:54:00.873336Z"
     },
     {
       "source_id": "github-changelog",
@@ -377,8 +304,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-10-21T02:47:45.815031Z"
+      "latency_ms": 34,
+      "checked_at": "2026-10-21T08:54:00.908465Z"
     },
     {
       "source_id": "aihot",
@@ -387,10 +314,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 3,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 4420,
-      "checked_at": "2026-10-21T02:47:50.236337Z"
+      "latency_ms": 1847,
+      "checked_at": "2026-10-21T08:54:02.756974Z"
     }
   ],
   "control_notes": {
