@@ -1,21 +1,33 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-21T08:54:02.765639Z",
+  "generated_at": "2026-10-21T12:09:56.770829Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 6,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 1,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          1
+          3
         ]
       ],
       "top_keywords": [
+        [
+          "aggregate_noise",
+          3
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "开发者",
+          2
+        ],
         [
           "openai",
           1
@@ -25,15 +37,7 @@
           1
         ],
         [
-          "智能体",
-          1
-        ],
-        [
           "api",
-          1
-        ],
-        [
-          "开发者",
           1
         ],
         [
@@ -41,21 +45,21 @@
           1
         ],
         [
-          "aggregate_noise",
+          "开源模型",
+          1
+        ],
+        [
+          "推理模型",
           1
         ]
       ]
     },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "Hugging Face Blog",
-          1
-        ],
-        [
-          "OpenAI News",
           1
         ],
         [
@@ -66,7 +70,7 @@
       "top_keywords": [
         [
           "official_ai",
-          3
+          2
         ],
         [
           "llm",
@@ -74,14 +78,6 @@
         ],
         [
           "eval",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "workflow",
           1
         ],
         [
@@ -155,25 +151,6 @@
       "is_ai_related": true
     },
     {
-      "id": "60aec5c5e9c12c05d51e9135289674b88ce534f7",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
-      "url": "https://openai.com/index/ted-taylor-restaurant",
-      "published_at": "2026-10-20T10:00:00Z",
-      "summary": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow.",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "6b239299273e7cfab4191a6652dae0dfbf4abf90",
       "source_id": "github-ai-ml",
       "source_name": "GitHub AI & ML",
@@ -188,6 +165,25 @@
       "relevance_reasons": [
         "weak:copilot",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "54b3eb379c5c982ff22c8f0941a8b60926296489",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "NVIDIA 扩展开源模型家族，覆盖语言、机器人、生物与量子计算以支持欧洲主权智能",
+      "url": "https://aihot.news/items/l94ayb89z6n2xxc9ce6c6ubeh",
+      "published_at": "2026-10-21T10:00:07Z",
+      "summary": "NVIDIA 扩展开源模型家族，推出 Nemotron 3.5 Super VL 与 Nemotron 3.5 Bolt、Nemotron Retriever、Kumo 结构化数据模型、Cosmos 3.5 世界模型、Alpamayo 2 Edge 自动驾驶推理模型、BioNeMo RFD4-Proteina 蛋白质设计模型及量子计算 Ising 模型家族。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l94ayb89z6n2xxc9ce6c6ubeh",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:开源模型",
+        "strong:推理模型",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -208,6 +204,25 @@
         "weak:API"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "90529f46961ca4cea4520d65c30707c85ee79e0a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "NVIDIA 在 GTC Berlin 展示 RTX Spark、DGX Spark 和 DGX Station 本地 AI 硬件全线更新",
+      "url": "https://aihot.news/items/j7bpanxjyudvjzcpyfihzhxpp",
+      "published_at": "2026-10-21T10:50:37Z",
+      "summary": "NVIDIA 在 GTC Berlin 展示其本地 AI 硬件全线：RTX Spark 面向 Windows PC 个人智能体，DGX Spark 面向 Linux 开发者并支持最多八机集群，DGX Station 提供 748GB 一致内存、面向企业团队，Windows 版 12 月推出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/j7bpanxjyudvjzcpyfihzhxpp",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -218,10 +233,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1303,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 618,
-      "checked_at": "2026-10-21T08:53:59.060016Z"
+      "latency_ms": 393,
+      "checked_at": "2026-10-21T12:09:52.194193Z"
     },
     {
       "source_id": "openai-skills",
@@ -232,8 +247,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 406,
-      "checked_at": "2026-10-21T08:53:59.466880Z"
+      "latency_ms": 229,
+      "checked_at": "2026-10-21T12:09:52.423537Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -244,8 +259,8 @@
       "fetched_count": 279,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 213,
-      "checked_at": "2026-10-21T08:53:59.684725Z"
+      "latency_ms": 86,
+      "checked_at": "2026-10-21T12:09:52.511859Z"
     },
     {
       "source_id": "google-deepmind",
@@ -256,8 +271,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 255,
-      "checked_at": "2026-10-21T08:53:59.941925Z"
+      "latency_ms": 393,
+      "checked_at": "2026-10-21T12:09:52.905861Z"
     },
     {
       "source_id": "google-ai",
@@ -268,8 +283,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 248,
-      "checked_at": "2026-10-21T08:54:00.190381Z"
+      "latency_ms": 206,
+      "checked_at": "2026-10-21T12:09:53.112963Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -280,8 +295,8 @@
       "fetched_count": 886,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 339,
-      "checked_at": "2026-10-21T08:54:00.543776Z"
+      "latency_ms": 254,
+      "checked_at": "2026-10-21T12:09:53.374596Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -292,8 +307,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 329,
-      "checked_at": "2026-10-21T08:54:00.873336Z"
+      "latency_ms": 406,
+      "checked_at": "2026-10-21T12:09:53.781106Z"
     },
     {
       "source_id": "github-changelog",
@@ -304,8 +319,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 34,
-      "checked_at": "2026-10-21T08:54:00.908465Z"
+      "latency_ms": 43,
+      "checked_at": "2026-10-21T12:09:53.824598Z"
     },
     {
       "source_id": "aihot",
@@ -314,10 +329,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 1,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 1847,
-      "checked_at": "2026-10-21T08:54:02.756974Z"
+      "latency_ms": 2936,
+      "checked_at": "2026-10-21T12:09:56.762013Z"
     }
   ],
   "control_notes": {
