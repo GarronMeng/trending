@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-21T18:22:22.691566Z",
+  "generated_at": "2026-10-22T02:46:30.326622Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 13,
+  "item_count": 12,
   "groups": {
     "official": {
       "group": "official",
-      "count": 7,
+      "count": 8,
       "top_sources": [
         [
           "OpenAI News",
-          6
+          7
         ],
         [
           "Hugging Face Blog",
@@ -22,11 +22,11 @@
       "top_keywords": [
         [
           "official_ai",
-          7
+          8
         ],
         [
           "openai",
-          4
+          5
         ],
         [
           "chatgpt",
@@ -64,49 +64,29 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          5
-        ],
-        [
-          "Anthropic News via Olshansk RSS",
-          1
+          4
         ]
       ],
       "top_keywords": [
         [
-          "aggregate_noise",
-          6
-        ],
-        [
           "openai",
-          5
-        ],
-        [
-          "智能体",
           4
         ],
         [
-          "codex",
+          "aggregate_noise",
+          4
+        ],
+        [
+          "智能体",
           3
         ],
         [
-          "anthropic",
+          "codex",
           2
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "开发者",
-          1
-        ],
-        [
-          "API",
-          1
         ],
         [
           "工作流",
@@ -197,25 +177,20 @@
       "is_ai_related": true
     },
     {
-      "id": "c9778d650f022959cc2e4d6cf396c2d93bd990dd",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI API 支持 12 小时 prompt 缓存，Codex 与 Work 用户缓存永久保留",
-      "url": "https://aihot.news/items/gf3h1rt1vsjw3dnw4hxlie3fv",
-      "published_at": "2026-10-21T01:10:02Z",
-      "summary": "OpenAI 开发者账号宣布 API 现已可选 12 小时 prompt 缓存，持续运行的智能体可在请求间隔数小时的情况下继续以更低的缓存输入费率复用指令、工具和上下文。Tibo 补充称，Codex 与 Work 中已登录用户的缓存会永久保留，返回旧对话或数小时后恢复会话保证命中缓存，且无额外惩罚。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gf3h1rt1vsjw3dnw4hxlie3fv",
-      "relevance_score": 8,
+      "id": "1d297896791a9aec6865ead6920e68e05a697bfc",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Broad access through consistent standards",
+      "url": "https://openai.com/index/broad-access-through-consistent-standards",
+      "published_at": "2026-10-21T21:00:00Z",
+      "summary": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.",
+      "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
-        "strong:codex",
-        "strong:智能体",
-        "weak:api",
-        "weak:开发者",
-        "weak:API",
-        "source_penalty:aggregate_noise"
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -295,25 +270,6 @@
       "is_ai_related": true
     },
     {
-      "id": "d2cac27f59b5eedd8bbcce45feacf1d9e8c925fc",
-      "source_id": "anthropic-news-unofficial",
-      "source_name": "Anthropic News via Olshansk RSS",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 3,
-      "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-      "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-      "published_at": "2026-10-21T00:00:00Z",
-      "summary": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "source:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "91aa756a15a4d94d8c1ccc33b9a0dcf18e53c450",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -378,11 +334,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1309,
-      "kept_count": 6,
+      "fetched_count": 1312,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 640,
-      "checked_at": "2026-10-21T18:22:19.144391Z"
+      "latency_ms": 413,
+      "checked_at": "2026-10-22T02:46:27.832653Z"
     },
     {
       "source_id": "openai-skills",
@@ -393,8 +349,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 193,
-      "checked_at": "2026-10-21T18:22:19.338222Z"
+      "latency_ms": 302,
+      "checked_at": "2026-10-22T02:46:28.135119Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -403,10 +359,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 280,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 126,
-      "checked_at": "2026-10-21T18:22:19.469411Z"
+      "latency_ms": 124,
+      "checked_at": "2026-10-22T02:46:28.262360Z"
     },
     {
       "source_id": "google-deepmind",
@@ -417,8 +373,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 172,
-      "checked_at": "2026-10-21T18:22:19.643383Z"
+      "latency_ms": 205,
+      "checked_at": "2026-10-22T02:46:28.468727Z"
     },
     {
       "source_id": "google-ai",
@@ -429,8 +385,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 113,
-      "checked_at": "2026-10-21T18:22:19.757762Z"
+      "latency_ms": 322,
+      "checked_at": "2026-10-22T02:46:28.791475Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -441,8 +397,8 @@
       "fetched_count": 888,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 270,
-      "checked_at": "2026-10-21T18:22:20.041846Z"
+      "latency_ms": 224,
+      "checked_at": "2026-10-22T02:46:29.022834Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -453,8 +409,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 252,
-      "checked_at": "2026-10-21T18:22:20.294072Z"
+      "latency_ms": 280,
+      "checked_at": "2026-10-22T02:46:29.303847Z"
     },
     {
       "source_id": "github-changelog",
@@ -465,8 +421,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-10-21T18:22:20.321194Z"
+      "latency_ms": 23,
+      "checked_at": "2026-10-22T02:46:29.327171Z"
     },
     {
       "source_id": "aihot",
@@ -475,10 +431,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 5,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 2360,
-      "checked_at": "2026-10-21T18:22:22.683158Z"
+      "latency_ms": 990,
+      "checked_at": "2026-10-22T02:46:30.318619Z"
     }
   ],
   "control_notes": {
