@@ -43,17 +43,43 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>5</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>4</b><span>官方源条目</span></div>
-        <div class="stat"><b>1</b><span>聚合源条目</span></div>
+        <div class="stat"><b>7</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>3</b><span>官方源条目</span></div>
+        <div class="stat"><b>3</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-22T13:58:45.248980Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-22T18:16:42.610732Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-10-22T00:00:00Z</span>
+        <strong>Score 6</strong>
+      </div>
+      <h3><a href="https://openai.com/index/uber-chatgpt-work-rollout" target="_blank" rel="noreferrer">Uber brings ChatGPT Work to all employees with OpenAI</a></h3>
+      <p class='summary'>Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows.</p>
+      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>weak:workflow</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-10-22T16:28:24Z</span>
+        <strong>Score 6</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard" target="_blank" rel="noreferrer">Industry comparisons in the Copilot impact dashboard</a></h3>
+      <p class='summary'>The Copilot impact dashboard now includes an “Industry comparison” section. Enterprises, and organizations that aren’t owned by an enterprise, can compare their Copilot agentic adoption and leverage with aggregated benchmarks… The post Industry comparisons in the Copilot impact dashboard appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>strong:agent</span><span>weak:benchmark</span><span>weak:copilot</span><span>source:copilot</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>OpenAI News</span>
@@ -82,27 +108,14 @@
 
     <article class="card">
       <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-10-21T17:00:00Z</span>
-        <strong>Score 3</strong>
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-10-22T00:00:00Z</span>
+        <strong>Score 5</strong>
       </div>
-      <h3><a href="https://openai.com/index/att-legal" target="_blank" rel="noreferrer">How AT&amp;T is rethinking in-house legal work with OpenAI</a></h3>
-      <p class='summary'>AT&amp;T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.</p>
-      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>Hugging Face Blog</span>
-        <span>official_rss</span>
-        <span>2026-10-21T17:35:36Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization" target="_blank" rel="noreferrer">How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications</a></h3>
-      
-      <div class="tags"><span>weak:inference</span><span>source_prior:official_ai</span></div>
+      <h3><a href="https://aihot.news/items/rtbm48num2azmqgrrzy2ep7il" target="_blank" rel="noreferrer">Anthropic 指南：何时把子智能体合并进主 Agent 循环</a></h3>
+      <p class='summary'>Anthropic Applied AI 团队发布指南，讲解何时把 orchestrator 下的路由器、规划器和领域子智能体合并进单个主 Agent 循环。文中对比显示，带 skills 的单智能体在质量上常优于一提示全包和子智能体设计，且成本和延迟更低，一家客户改用单循环后运行时间约快 2x。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rtbm48num2azmqgrrzy2ep7il</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -110,12 +123,25 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-10-21T16:35:11Z</span>
+        <span>2026-10-22T15:53:55Z</span>
         <strong>Score 3</strong>
       </div>
-      <h3><a href="https://aihot.news/items/b31hjqo2l088vfydp5gcdyv8p" target="_blank" rel="noreferrer">OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响</a></h3>
-      <p class='summary'>OpenAI 为 PHP 关键漏洞提供 Codex 技能，引导用户运行 github.com/openai/php2shell-checker 仓库自查网站是否受影响。背景是其 Patch the Planet 计划中 OpenAI 模型帮助研究员发现 PHP 关键缺陷，修复涉及 PHP 引擎大改，经约两个月协调后披露，使用 PHP 的网站可升级版本并应用安全厂商的缓解措施。 🔗 阅读原文 via AIHOT · https://aihot.news/items/b31hjqo2l088vfydp5gcdyv8p</p>
-      <div class="tags"><span>strong:openai</span><span>strong:codex</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://aihot.news/items/shd9gpw42uwoxqtenpzhy1je4" target="_blank" rel="noreferrer">Anthropic 股权表内幕：风投迟到多年，如今无人持股超 2%</a></h3>
+      <p class='summary'>Newcomer 长文复盘 Anthropic 从 OpenAI 出走团队到即将 IPO 的股权演变。据投资人文件和多位知情人士，多年来风投因公司治理结构和安全优先路线而观望，目前没有任何风投机构持股超过 2%，Anthropic 曾向投资人明确将单一投资人持股控制在该水平以避免话语权集中。 🔗 阅读原文 via AIHOT · https://aihot.news/items/shd9gpw42uwoxqtenpzhy1je4</p>
+      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-10-22T15:32:17Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/fcw2s1pdclkgm5kmg2qwginp7" target="_blank" rel="noreferrer">METR 与 Redwood Research 红队测试 OpenAI 内部智能体监控系统，发现多个漏洞</a></h3>
+      <p class='summary'>METR 与 Redwood Research 各派一名员工，于 7 月 21 日至 8 月 11 日对 OpenAI 内部失准监测系统开展三周高权限试点压力测试，产出 61 页内部报告。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fcw2s1pdclkgm5kmg2qwginp7</p>
+      <div class="tags"><span>strong:openai</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     </div>
     </section>
@@ -123,15 +149,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1313</td><td>3</td><td>470ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>271ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>280</td><td>0</td><td>103ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>331ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>231ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>888</td><td>1</td><td>354ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>245ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>22ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>1</td><td>3299ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1314</td><td>3</td><td>499ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>373ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>280</td><td>0</td><td>104ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>605ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>197ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>888</td><td>0</td><td>254ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>269ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>25ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>3</td><td>2410ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

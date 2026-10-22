@@ -1,65 +1,137 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-22T13:58:45.247944Z",
+  "generated_at": "2026-10-22T18:16:42.609351Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 7,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
           "OpenAI News",
           3
-        ],
-        [
-          "Hugging Face Blog",
-          1
         ]
       ],
       "top_keywords": [
-        [
-          "official_ai",
-          4
-        ],
         [
           "openai",
           3
         ],
         [
-          "inference",
+          "official_ai",
+          3
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "benchmark",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 1,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          1
+          3
         ]
       ],
       "top_keywords": [
         [
-          "openai",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
           "aggregate_noise",
+          3
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "agent",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "54dabebc3f64ba018d87e99a23b310772601731f",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+      "url": "https://openai.com/index/uber-chatgpt-work-rollout",
+      "published_at": "2026-10-22T00:00:00Z",
+      "summary": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows.",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c084eaa62d40b2eef9e027f2989af17011f62243",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Industry comparisons in the Copilot impact dashboard",
+      "url": "https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard",
+      "published_at": "2026-10-22T16:28:24Z",
+      "summary": "The Copilot impact dashboard now includes an “Industry comparison” section. Enterprises, and organizations that aren’t owned by an enterprise, can compare their Copilot agentic adoption and leverage with aggregated benchmarks… The post Industry comparisons in the Copilot impact dashboard appeared first on The GitHub Blog .",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:benchmark",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "b5d63328eac2b00a9ce2213a69b5ae9d3b4bc4cf",
       "source_id": "openai-news",
@@ -97,56 +169,59 @@
       "is_ai_related": true
     },
     {
-      "id": "57bdae5cd15db40e877311b9490483ed5b1ce3a1",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How AT&T is rethinking in-house legal work with OpenAI",
-      "url": "https://openai.com/index/att-legal",
-      "published_at": "2026-10-21T17:00:00Z",
-      "summary": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "4adb9c722de40bdbf868ae9ce234c96d7d90ac5d",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
-      "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
-      "published_at": "2026-10-21T17:35:36Z",
-      "summary": null,
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:inference",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "91aa756a15a4d94d8c1ccc33b9a0dcf18e53c450",
+      "id": "5c51ada576951af8b72cbd3999963fc0bfef4246",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响",
-      "url": "https://aihot.news/items/b31hjqo2l088vfydp5gcdyv8p",
-      "published_at": "2026-10-21T16:35:11Z",
-      "summary": "OpenAI 为 PHP 关键漏洞提供 Codex 技能，引导用户运行 github.com/openai/php2shell-checker 仓库自查网站是否受影响。背景是其 Patch the Planet 计划中 OpenAI 模型帮助研究员发现 PHP 关键缺陷，修复涉及 PHP 引擎大改，经约两个月协调后披露，使用 PHP 的网站可升级版本并应用安全厂商的缓解措施。 🔗 阅读原文 via AIHOT · https://aihot.news/items/b31hjqo2l088vfydp5gcdyv8p",
+      "title": "Anthropic 指南：何时把子智能体合并进主 Agent 循环",
+      "url": "https://aihot.news/items/rtbm48num2azmqgrrzy2ep7il",
+      "published_at": "2026-10-22T00:00:00Z",
+      "summary": "Anthropic Applied AI 团队发布指南，讲解何时把 orchestrator 下的路由器、规划器和领域子智能体合并进单个主 Agent 循环。文中对比显示，带 skills 的单智能体在质量上常优于一提示全包和子智能体设计，且成本和延迟更低，一家客户改用单循环后运行时间约快 2x。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rtbm48num2azmqgrrzy2ep7il",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:agent",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "454e05ab687211e83ecee84c4c38499d02a84eaf",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 股权表内幕：风投迟到多年，如今无人持股超 2%",
+      "url": "https://aihot.news/items/shd9gpw42uwoxqtenpzhy1je4",
+      "published_at": "2026-10-22T15:53:55Z",
+      "summary": "Newcomer 长文复盘 Anthropic 从 OpenAI 出走团队到即将 IPO 的股权演变。据投资人文件和多位知情人士，多年来风投因公司治理结构和安全优先路线而观望，目前没有任何风投机构持股超过 2%，Anthropic 曾向投资人明确将单一投资人持股控制在该水平以避免话语权集中。 🔗 阅读原文 via AIHOT · https://aihot.news/items/shd9gpw42uwoxqtenpzhy1je4",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
-        "strong:codex",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "daaae226e8f41a7e665796c741e32ded62be5ce2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "METR 与 Redwood Research 红队测试 OpenAI 内部智能体监控系统，发现多个漏洞",
+      "url": "https://aihot.news/items/fcw2s1pdclkgm5kmg2qwginp7",
+      "published_at": "2026-10-22T15:32:17Z",
+      "summary": "METR 与 Redwood Research 各派一名员工，于 7 月 21 日至 8 月 11 日对 OpenAI 内部失准监测系统开展三周高权限试点压力测试，产出 61 页内部报告。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fcw2s1pdclkgm5kmg2qwginp7",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -159,11 +234,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1313,
+      "fetched_count": 1314,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 470,
-      "checked_at": "2026-10-22T13:58:40.359601Z"
+      "latency_ms": 499,
+      "checked_at": "2026-10-22T18:16:38.346103Z"
     },
     {
       "source_id": "openai-skills",
@@ -174,8 +249,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 271,
-      "checked_at": "2026-10-22T13:58:40.630980Z"
+      "latency_ms": 373,
+      "checked_at": "2026-10-22T18:16:38.719807Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -186,8 +261,8 @@
       "fetched_count": 280,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 103,
-      "checked_at": "2026-10-22T13:58:40.738655Z"
+      "latency_ms": 104,
+      "checked_at": "2026-10-22T18:16:38.826861Z"
     },
     {
       "source_id": "google-deepmind",
@@ -198,8 +273,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 331,
-      "checked_at": "2026-10-22T13:58:41.071575Z"
+      "latency_ms": 605,
+      "checked_at": "2026-10-22T18:16:39.433226Z"
     },
     {
       "source_id": "google-ai",
@@ -210,8 +285,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 231,
-      "checked_at": "2026-10-22T13:58:41.303406Z"
+      "latency_ms": 197,
+      "checked_at": "2026-10-22T18:16:39.630524Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -220,10 +295,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 888,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 354,
-      "checked_at": "2026-10-22T13:58:41.670641Z"
+      "latency_ms": 254,
+      "checked_at": "2026-10-22T18:16:39.894540Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -234,8 +309,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 245,
-      "checked_at": "2026-10-22T13:58:41.916192Z"
+      "latency_ms": 269,
+      "checked_at": "2026-10-22T18:16:40.164163Z"
     },
     {
       "source_id": "github-changelog",
@@ -244,10 +319,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 22,
-      "checked_at": "2026-10-22T13:58:41.938828Z"
+      "latency_ms": 25,
+      "checked_at": "2026-10-22T18:16:40.189712Z"
     },
     {
       "source_id": "aihot",
@@ -256,10 +331,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 1,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 3299,
-      "checked_at": "2026-10-22T13:58:45.239127Z"
+      "latency_ms": 2410,
+      "checked_at": "2026-10-22T18:16:42.601230Z"
     }
   ],
   "control_notes": {
