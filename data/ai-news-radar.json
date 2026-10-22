@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-22T08:56:23.352159Z",
+  "generated_at": "2026-10-22T12:13:51.227761Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 6,
   "groups": {
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI News",
-          4
+          3
         ],
         [
           "Hugging Face Blog",
@@ -22,23 +22,11 @@
       "top_keywords": [
         [
           "official_ai",
-          5
+          4
         ],
         [
           "openai",
-          3
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "workflow",
-          1
+          2
         ],
         [
           "chatgpt",
@@ -52,59 +40,34 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "AI Hot",
-          3
+          2
         ]
       ],
       "top_keywords": [
         [
           "openai",
-          3
+          2
         ],
         [
           "aggregate_noise",
-          3
+          2
         ],
         [
           "codex",
-          2
+          1
         ],
         [
           "智能体",
-          2
-        ],
-        [
-          "工作流",
           1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "905a09cf19da95fb5fd329faea8593bfe2761a3b",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "OpenAI models are coming to Google Cloud",
-      "url": "https://openai.com/index/openai-models-google-cloud",
-      "published_at": "2026-10-21T12:00:00Z",
-      "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "strong:gemini",
-        "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "1d297896791a9aec6865ead6920e68e05a697bfc",
       "source_id": "openai-news",
@@ -156,27 +119,6 @@
       "relevance_reasons": [
         "strong:chatgpt",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "fbb9de9547a5141a83fa96d3cbe37f143277812d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden",
-      "url": "https://aihot.news/items/bm4bwid4hdnitbtz7pr6gtd0r",
-      "published_at": "2026-10-21T12:00:00Z",
-      "summary": "OpenAI 与 Google Cloud 达成合作，将把 OpenAI 前沿模型和 Codex 智能体工作流引入 Google Cloud 的 Model Garden，客户可通过 Google Cloud Marketplace 购买，并可用 GCP 消费承诺抵扣。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bm4bwid4hdnitbtz7pr6gtd0r",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "strong:智能体",
-        "weak:工作流",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -245,10 +187,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1312,
-      "kept_count": 4,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 553,
-      "checked_at": "2026-10-22T08:56:19.491990Z"
+      "latency_ms": 487,
+      "checked_at": "2026-10-22T12:13:46.140212Z"
     },
     {
       "source_id": "openai-skills",
@@ -259,8 +201,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 187,
-      "checked_at": "2026-10-22T08:56:19.679249Z"
+      "latency_ms": 379,
+      "checked_at": "2026-10-22T12:13:46.520391Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -271,8 +213,8 @@
       "fetched_count": 280,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 140,
-      "checked_at": "2026-10-22T08:56:19.823496Z"
+      "latency_ms": 119,
+      "checked_at": "2026-10-22T12:13:46.643291Z"
     },
     {
       "source_id": "google-deepmind",
@@ -283,8 +225,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 193,
-      "checked_at": "2026-10-22T08:56:20.018306Z"
+      "latency_ms": 223,
+      "checked_at": "2026-10-22T12:13:46.868405Z"
     },
     {
       "source_id": "google-ai",
@@ -295,8 +237,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 259,
-      "checked_at": "2026-10-22T08:56:20.277691Z"
+      "latency_ms": 319,
+      "checked_at": "2026-10-22T12:13:47.187749Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -307,8 +249,8 @@
       "fetched_count": 888,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 259,
-      "checked_at": "2026-10-22T08:56:20.550360Z"
+      "latency_ms": 286,
+      "checked_at": "2026-10-22T12:13:47.484405Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -319,8 +261,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-10-22T08:56:20.804136Z"
+      "latency_ms": 529,
+      "checked_at": "2026-10-22T12:13:48.013937Z"
     },
     {
       "source_id": "github-changelog",
@@ -332,7 +274,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 25,
-      "checked_at": "2026-10-22T08:56:20.829982Z"
+      "checked_at": "2026-10-22T12:13:48.040051Z"
     },
     {
       "source_id": "aihot",
@@ -341,10 +283,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 2512,
-      "checked_at": "2026-10-22T08:56:23.344139Z"
+      "latency_ms": 3178,
+      "checked_at": "2026-10-22T12:13:51.219709Z"
     }
   ],
   "control_notes": {
