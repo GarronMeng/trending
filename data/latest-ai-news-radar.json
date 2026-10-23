@@ -1,91 +1,135 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-22T18:16:42.609351Z",
+  "generated_at": "2026-10-23T02:50:18.799998Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 12,
   "groups": {
+    "developer": {
+      "group": "developer",
+      "count": 5,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          5
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          8
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "model context protocol",
+          1
+        ],
+        [
+          "benchmark",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "actions",
+          1
+        ]
+      ]
+    },
     "official": {
       "group": "official",
       "count": 3,
       "top_sources": [
         [
           "OpenAI News",
-          3
+          2
+        ],
+        [
+          "Hugging Face Blog",
+          1
         ]
       ],
       "top_keywords": [
-        [
-          "openai",
-          3
-        ],
         [
           "official_ai",
           3
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
         ],
         [
           "agent",
           1
         ],
         [
-          "benchmark",
+          "agents",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "openai",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          3
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          3
+          4
         ],
         [
-          "anthropic",
-          2
+          "openai",
+          3
         ],
         [
           "智能体",
           2
         ],
         [
-          "openai",
-          2
+          "agent",
+          1
         ],
         [
-          "agent",
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "anthropic",
           1
         ]
       ]
@@ -93,21 +137,43 @@
   },
   "items": [
     {
-      "id": "54dabebc3f64ba018d87e99a23b310772601731f",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
+      "id": "f1d8e3f70fca0de430316793543fe56d1ac44d51",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Custom skills, agents, and MCP servers in usage metrics API",
+      "url": "https://github.blog/changelog/2026-10-22-custom-skills-agents-and-mcp-servers-in-usage-metrics-api",
+      "published_at": "2026-10-22T22:19:17Z",
+      "summary": "Copilot usage metrics now show the names of the skills, custom agents, Model Context Protocol (MCP) servers, slash commands, and plugins that your organization creates, instead of grouping them under… The post Custom skills, agents, and MCP servers in usage metrics API appeared first on The GitHub Blog .",
+      "relevance_score": 12,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "strong:mcp",
+        "strong:model context protocol",
+        "weak:api",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a16eece608ba7ae14acb0f8b1aabd19bd54075dd",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Uber brings ChatGPT Work to all employees with OpenAI",
-      "url": "https://openai.com/index/uber-chatgpt-work-rollout",
-      "published_at": "2026-10-22T00:00:00Z",
-      "summary": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows.",
-      "relevance_score": 6,
+      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "published_at": "2026-10-22T22:24:34Z",
+      "summary": null,
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "weak:workflow",
+        "strong:agent",
+        "strong:agents",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -133,6 +199,25 @@
       "is_ai_related": true
     },
     {
+      "id": "f966825978c8c030f587798c1baeeeeca0621a79",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Build more responsive apps with the Decisions API",
+      "url": "https://openai.com/index/decisions-api",
+      "published_at": "2026-10-22T19:00:00Z",
+      "summary": "Fast, focused, low-cost decisions for any application.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:API",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "b5d63328eac2b00a9ce2213a69b5ae9d3b4bc4cf",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -151,39 +236,95 @@
       "is_ai_related": true
     },
     {
-      "id": "1d297896791a9aec6865ead6920e68e05a697bfc",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
+      "id": "c8ec2b08719e87e48793179ce6031053ec8caf4b",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Broad access through consistent standards",
-      "url": "https://openai.com/index/broad-access-through-consistent-standards",
-      "published_at": "2026-10-21T21:00:00Z",
-      "summary": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.",
-      "relevance_score": 3,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Meta API endpoints updated for Actions blob storage",
+      "url": "https://github.blog/changelog/2026-10-22-meta-api-endpoints-updated-for-actions-blob-storage",
+      "published_at": "2026-10-22T18:14:16Z",
+      "summary": "We’re adding blob storage endpoints for GitHub Actions on github.com as part of our ongoing work to improve capacity and reliability. The meta API now includes these new endpoints. If… The post Meta API endpoints updated for Actions blob storage appeared first on The GitHub Blog .",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
+        "weak:api",
+        "weak:API",
+        "source:actions"
       ],
       "is_ai_related": true
     },
     {
-      "id": "5c51ada576951af8b72cbd3999963fc0bfef4246",
+      "id": "75667b38deae53ac1d898c40b3c185ccdc5ac4cf",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot in Visual Studio — September update",
+      "url": "https://github.blog/changelog/2026-10-22-github-copilot-in-visual-studio-september-update-2",
+      "published_at": "2026-10-23T00:17:51Z",
+      "summary": "September 2026 brought deeper visibility into your work: explore pull requests without leaving chat, bring the AI model your team trusts, and fix vulnerable packages the moment Visual Studio flags… The post GitHub Copilot in Visual Studio — September update appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "3cd14552767ebd8051da7505790f9b262d05c615",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Global default for Copilot features generally available",
+      "url": "https://github.blog/changelog/2026-10-22-global-default-for-copilot-features-generally-available",
+      "published_at": "2026-10-22T20:44:28Z",
+      "summary": "In September, we announced a global default policy for generally available GitHub Copilot features and supported client capabilities on Copilot Business and Copilot Enterprise plans. Starting today, we’re gradually rolling… The post Global default for Copilot features generally available appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ce913c909e0adcfc43d48f15f87943de88a98901",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 指南：何时把子智能体合并进主 Agent 循环",
-      "url": "https://aihot.news/items/rtbm48num2azmqgrrzy2ep7il",
-      "published_at": "2026-10-22T00:00:00Z",
-      "summary": "Anthropic Applied AI 团队发布指南，讲解何时把 orchestrator 下的路由器、规划器和领域子智能体合并进单个主 Agent 循环。文中对比显示，带 skills 的单智能体在质量上常优于一提示全包和子智能体设计，且成本和延迟更低，一家客户改用单循环后运行时间约快 2x。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rtbm48num2azmqgrrzy2ep7il",
-      "relevance_score": 5,
+      "title": "Replit 发布 Monitoring Agent，为应用提供可自动修复并部署的值班智能体",
+      "url": "https://aihot.news/items/h1d0qu9nsy86fmfqns5f3pkjb",
+      "published_at": "2026-10-22T20:24:13Z",
+      "summary": "Replit 发布 Monitoring Agent，为应用提供相当于自主值班工程师的监控智能体。它可以读取生产日志和指标调查错误、变慢和部署失败，在启用 autofix 后验证修复并邮件汇报，启用 auto-publish 后可自动部署修复。该能力建立在早前上线的 App Monitoring 之上，用户可在应用的 Publishing 设置中开启。 🔗 阅读原文 via AIHOT · https://aihot.news/items/h1d0qu9nsy86fmfqns5f3pkjb",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
         "strong:agent",
         "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "48d9d36cdd7fbb7ce3a149fe2b9df08bedf36ffd",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 正式发布 Decisions API，面向低延迟低成本小决策",
+      "url": "https://aihot.news/items/xffhf8h0e0r145getmi9k1zgs",
+      "published_at": "2026-10-22T19:00:00Z",
+      "summary": "OpenAI 宣布基于 GPT-6 Luna 的 Decisions API 正式可用，用于分类、路由、评分等有界答案问题，速度最高比通过 Responses API 使用 GPT-6 Luna 快 10x。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xffhf8h0e0r145getmi9k1zgs",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:api",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -234,11 +375,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1314,
-      "kept_count": 3,
+      "fetched_count": 1315,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 499,
-      "checked_at": "2026-10-22T18:16:38.346103Z"
+      "latency_ms": 611,
+      "checked_at": "2026-10-23T02:50:14.717336Z"
     },
     {
       "source_id": "openai-skills",
@@ -249,8 +390,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 373,
-      "checked_at": "2026-10-22T18:16:38.719807Z"
+      "latency_ms": 196,
+      "checked_at": "2026-10-23T02:50:14.913998Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -258,11 +399,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 280,
+      "fetched_count": 282,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 104,
-      "checked_at": "2026-10-22T18:16:38.826861Z"
+      "latency_ms": 133,
+      "checked_at": "2026-10-23T02:50:15.051985Z"
     },
     {
       "source_id": "google-deepmind",
@@ -273,8 +414,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 605,
-      "checked_at": "2026-10-22T18:16:39.433226Z"
+      "latency_ms": 398,
+      "checked_at": "2026-10-23T02:50:15.452108Z"
     },
     {
       "source_id": "google-ai",
@@ -285,8 +426,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 197,
-      "checked_at": "2026-10-22T18:16:39.630524Z"
+      "latency_ms": 234,
+      "checked_at": "2026-10-23T02:50:15.687085Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -294,11 +435,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 888,
-      "kept_count": 0,
+      "fetched_count": 889,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-10-22T18:16:39.894540Z"
+      "latency_ms": 276,
+      "checked_at": "2026-10-23T02:50:15.977988Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -309,8 +450,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 269,
-      "checked_at": "2026-10-22T18:16:40.164163Z"
+      "latency_ms": 249,
+      "checked_at": "2026-10-23T02:50:16.227543Z"
     },
     {
       "source_id": "github-changelog",
@@ -319,10 +460,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-10-22T18:16:40.189712Z"
+      "latency_ms": 28,
+      "checked_at": "2026-10-23T02:50:16.256141Z"
     },
     {
       "source_id": "aihot",
@@ -331,10 +472,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 3,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 2410,
-      "checked_at": "2026-10-22T18:16:42.601230Z"
+      "latency_ms": 2531,
+      "checked_at": "2026-10-23T02:50:18.789258Z"
     }
   ],
   "control_notes": {
