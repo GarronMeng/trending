@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>12</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>3</b><span>官方源条目</span></div>
-        <div class="stat"><b>4</b><span>聚合源条目</span></div>
+        <div class="stat"><b>11</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>4</b><span>官方源条目</span></div>
+        <div class="stat"><b>2</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-23T13:40:49.889724Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-23T18:05:07.749461Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -69,6 +69,19 @@
 
     <article class="card">
       <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-10-23T17:00:00Z</span>
+        <strong>Score 7</strong>
+      </div>
+      <h3><a href="https://openai.com/index/scaling-storage-one-billion-users-part-two" target="_blank" rel="noreferrer">Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)</a></h3>
+      <p class='summary'>Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.</p>
+      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>weak:api</span><span>weak:API</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
         <span>Hugging Face Blog</span>
         <span>official_rss</span>
         <span>2026-10-22T22:24:34Z</span>
@@ -77,19 +90,6 @@
       <h3><a href="https://huggingface.co/blog/microsoft/thinkingbox-training" target="_blank" rel="noreferrer">Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox</a></h3>
       
       <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-10-22T16:28:24Z</span>
-        <strong>Score 6</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard" target="_blank" rel="noreferrer">Industry comparisons in the Copilot impact dashboard</a></h3>
-      <p class='summary'>The Copilot impact dashboard now includes an “Industry comparison” section. Enterprises, and organizations that aren’t owned by an enterprise, can compare their Copilot agentic adoption and leverage with aggregated benchmarks… The post Industry comparisons in the Copilot impact dashboard appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>strong:agent</span><span>weak:benchmark</span><span>weak:copilot</span><span>source:copilot</span></div>
     </article>
     
 
@@ -129,6 +129,19 @@
       <h3><a href="https://github.blog/changelog/2026-10-22-meta-api-endpoints-updated-for-actions-blob-storage" target="_blank" rel="noreferrer">Meta API endpoints updated for Actions blob storage</a></h3>
       <p class='summary'>We’re adding blob storage endpoints for GitHub Actions on github.com as part of our ongoing work to improve capacity and reliability. The meta API now includes these new endpoints. If… The post Meta API endpoints updated for Actions blob storage appeared first on The GitHub Blog .</p>
       <div class="tags"><span>weak:api</span><span>weak:API</span><span>source:actions</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-10-23T15:03:30Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://github.blog/changelog/2026-10-23-enterprise-installations-for-github-apps-generally-available" target="_blank" rel="noreferrer">Enterprise installations for GitHub Apps generally available</a></h3>
+      <p class='summary'>Installing GitHub Apps on your enterprise is now generally available. You can replace classic PATs with GitHub Apps in more of your enterprise and organization automation with the expanded API… The post Enterprise installations for GitHub Apps generally available appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>weak:api</span><span>weak:automation</span><span>weak:API</span></div>
     </article>
     
 
@@ -182,47 +195,21 @@
       <p class='summary'>OpenAI 宣布基于 GPT-6 Luna 的 Decisions API 正式可用，用于分类、路由、评分等有界答案问题，速度最高比通过 Responses API 使用 GPT-6 Luna 快 10x。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xffhf8h0e0r145getmi9k1zgs</p>
       <div class="tags"><span>strong:openai</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-10-22T15:53:55Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/shd9gpw42uwoxqtenpzhy1je4" target="_blank" rel="noreferrer">Anthropic 股权表内幕：风投迟到多年，如今无人持股超 2%</a></h3>
-      <p class='summary'>Newcomer 长文复盘 Anthropic 从 OpenAI 出走团队到即将 IPO 的股权演变。据投资人文件和多位知情人士，多年来风投因公司治理结构和安全优先路线而观望，目前没有任何风投机构持股超过 2%，Anthropic 曾向投资人明确将单一投资人持股控制在该水平以避免话语权集中。 🔗 阅读原文 via AIHOT · https://aihot.news/items/shd9gpw42uwoxqtenpzhy1je4</p>
-      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-10-22T15:32:17Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/fcw2s1pdclkgm5kmg2qwginp7" target="_blank" rel="noreferrer">METR 与 Redwood Research 红队测试 OpenAI 内部智能体监控系统，发现多个漏洞</a></h3>
-      <p class='summary'>METR 与 Redwood Research 各派一名员工，于 7 月 21 日至 8 月 11 日对 OpenAI 内部失准监测系统开展三周高权限试点压力测试，产出 61 页内部报告。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fcw2s1pdclkgm5kmg2qwginp7</p>
-      <div class="tags"><span>strong:openai</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1316</td><td>2</td><td>622ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>294ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>282</td><td>0</td><td>171ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>342ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>240ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>890</td><td>1</td><td>350ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>406ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>5</td><td>41ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>4</td><td>2886ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1317</td><td>3</td><td>455ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>386ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>282</td><td>0</td><td>160ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>182ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>416ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>890</td><td>1</td><td>261ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>550ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>5</td><td>27ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>2</td><td>1357ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

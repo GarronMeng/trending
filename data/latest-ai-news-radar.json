@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-23T13:40:49.888007Z",
+  "generated_at": "2026-10-23T18:05:07.745072Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 11,
   "groups": {
     "developer": {
       "group": "developer",
@@ -18,15 +18,19 @@
       "top_keywords": [
         [
           "copilot",
-          8
-        ],
-        [
-          "agent",
-          2
+          6
         ],
         [
           "api",
+          3
+        ],
+        [
+          "API",
           2
+        ],
+        [
+          "agent",
+          1
         ],
         [
           "agents",
@@ -41,26 +45,22 @@
           1
         ],
         [
-          "benchmark",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
           "actions",
+          1
+        ],
+        [
+          "automation",
           1
         ]
       ]
     },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          3
         ],
         [
           "Hugging Face Blog",
@@ -70,7 +70,23 @@
       "top_keywords": [
         [
           "official_ai",
-          3
+          4
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "chatgpt",
+          1
         ],
         [
           "agent",
@@ -79,41 +95,21 @@
         [
           "agents",
           1
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 2,
       "top_sources": [
         [
           "AI Hot",
-          4
+          2
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
-        ],
-        [
-          "openai",
-          3
-        ],
-        [
-          "智能体",
           2
         ],
         [
@@ -121,15 +117,19 @@
           1
         ],
         [
+          "智能体",
+          1
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
           "api",
           1
         ],
         [
           "API",
-          1
-        ],
-        [
-          "anthropic",
           1
         ]
       ]
@@ -160,6 +160,27 @@
       "is_ai_related": true
     },
     {
+      "id": "3c2f2829e642d664ed50655d482b71902c4f1f35",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "published_at": "2026-10-23T17:00:00Z",
+      "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "weak:api",
+        "weak:API",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "a16eece608ba7ae14acb0f8b1aabd19bd54075dd",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
@@ -175,26 +196,6 @@
         "strong:agent",
         "strong:agents",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c084eaa62d40b2eef9e027f2989af17011f62243",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Industry comparisons in the Copilot impact dashboard",
-      "url": "https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard",
-      "published_at": "2026-10-22T16:28:24Z",
-      "summary": "The Copilot impact dashboard now includes an “Industry comparison” section. Enterprises, and organizations that aren’t owned by an enterprise, can compare their Copilot agentic adoption and leverage with aggregated benchmarks… The post Industry comparisons in the Copilot impact dashboard appeared first on The GitHub Blog .",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:benchmark",
-        "weak:copilot",
-        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -251,6 +252,25 @@
         "weak:api",
         "weak:API",
         "source:actions"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "3f5e643b9ef11f8cf97743ff908c4d981fbd56c0",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Enterprise installations for GitHub Apps generally available",
+      "url": "https://github.blog/changelog/2026-10-23-enterprise-installations-for-github-apps-generally-available",
+      "published_at": "2026-10-23T15:03:30Z",
+      "summary": "Installing GitHub Apps on your enterprise is now generally available. You can replace classic PATs with GitHub Apps in more of your enterprise and organization automation with the expanded API… The post Enterprise installations for GitHub Apps generally available appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:automation",
+        "weak:API"
       ],
       "is_ai_related": true
     },
@@ -328,44 +348,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "454e05ab687211e83ecee84c4c38499d02a84eaf",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 股权表内幕：风投迟到多年，如今无人持股超 2%",
-      "url": "https://aihot.news/items/shd9gpw42uwoxqtenpzhy1je4",
-      "published_at": "2026-10-22T15:53:55Z",
-      "summary": "Newcomer 长文复盘 Anthropic 从 OpenAI 出走团队到即将 IPO 的股权演变。据投资人文件和多位知情人士，多年来风投因公司治理结构和安全优先路线而观望，目前没有任何风投机构持股超过 2%，Anthropic 曾向投资人明确将单一投资人持股控制在该水平以避免话语权集中。 🔗 阅读原文 via AIHOT · https://aihot.news/items/shd9gpw42uwoxqtenpzhy1je4",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "daaae226e8f41a7e665796c741e32ded62be5ce2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "METR 与 Redwood Research 红队测试 OpenAI 内部智能体监控系统，发现多个漏洞",
-      "url": "https://aihot.news/items/fcw2s1pdclkgm5kmg2qwginp7",
-      "published_at": "2026-10-22T15:32:17Z",
-      "summary": "METR 与 Redwood Research 各派一名员工，于 7 月 21 日至 8 月 11 日对 OpenAI 内部失准监测系统开展三周高权限试点压力测试，产出 61 页内部报告。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fcw2s1pdclkgm5kmg2qwginp7",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -375,11 +357,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1316,
-      "kept_count": 2,
+      "fetched_count": 1317,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 622,
-      "checked_at": "2026-10-23T13:40:45.123390Z"
+      "latency_ms": 455,
+      "checked_at": "2026-10-23T18:05:04.380415Z"
     },
     {
       "source_id": "openai-skills",
@@ -390,8 +372,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 294,
-      "checked_at": "2026-10-23T13:40:45.418518Z"
+      "latency_ms": 386,
+      "checked_at": "2026-10-23T18:05:04.766852Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -402,8 +384,8 @@
       "fetched_count": 282,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 171,
-      "checked_at": "2026-10-23T13:40:45.594125Z"
+      "latency_ms": 160,
+      "checked_at": "2026-10-23T18:05:04.930755Z"
     },
     {
       "source_id": "google-deepmind",
@@ -414,8 +396,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 342,
-      "checked_at": "2026-10-23T13:40:45.938646Z"
+      "latency_ms": 182,
+      "checked_at": "2026-10-23T18:05:05.114306Z"
     },
     {
       "source_id": "google-ai",
@@ -426,8 +408,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 240,
-      "checked_at": "2026-10-23T13:40:46.179146Z"
+      "latency_ms": 416,
+      "checked_at": "2026-10-23T18:05:05.530709Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -438,8 +420,8 @@
       "fetched_count": 890,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 350,
-      "checked_at": "2026-10-23T13:40:46.543847Z"
+      "latency_ms": 261,
+      "checked_at": "2026-10-23T18:05:05.801493Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -450,8 +432,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 406,
-      "checked_at": "2026-10-23T13:40:46.950711Z"
+      "latency_ms": 550,
+      "checked_at": "2026-10-23T18:05:06.352044Z"
     },
     {
       "source_id": "github-changelog",
@@ -462,8 +444,8 @@
       "fetched_count": 10,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 41,
-      "checked_at": "2026-10-23T13:40:46.992520Z"
+      "latency_ms": 27,
+      "checked_at": "2026-10-23T18:05:06.379676Z"
     },
     {
       "source_id": "aihot",
@@ -472,10 +454,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 4,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 2886,
-      "checked_at": "2026-10-23T13:40:49.879790Z"
+      "latency_ms": 1357,
+      "checked_at": "2026-10-23T18:05:07.737638Z"
     }
   ],
   "control_notes": {
