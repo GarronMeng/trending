@@ -1,28 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-24T08:25:18.594995Z",
+  "generated_at": "2026-10-24T11:23:27.988798Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 6,
   "groups": {
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          1
         ]
       ],
       "top_keywords": [
         [
           "openai",
-          2
-        ],
-        [
-          "official_ai",
-          2
+          1
         ],
         [
           "chatgpt",
@@ -37,7 +33,7 @@
           1
         ],
         [
-          "eval",
+          "official_ai",
           1
         ]
       ]
@@ -80,28 +76,24 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "AI Hot",
-          2
+          1
         ]
       ],
       "top_keywords": [
         [
           "智能体",
-          2
-        ],
-        [
-          "aggregate_noise",
-          2
+          1
         ],
         [
           "多模态",
           1
         ],
         [
-          "openai",
+          "aggregate_noise",
           1
         ]
       ]
@@ -148,25 +140,6 @@
         "weak:copilot",
         "weak:API",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "27fe875b15798d89ca0aefc2662a77ce21137bb5",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Securing our frontier model training environment",
-      "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
-      "published_at": "2026-10-23T10:00:00Z",
-      "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:eval",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -243,25 +216,6 @@
         "weak:API"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "f503149ba296d5814eb8c27d0f8d8776a22285e9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 详解前沿模型训练环境的安全加固与红队测试",
-      "url": "https://aihot.news/items/ss1c1fu81134agwcw2ae90gai",
-      "published_at": "2026-10-23T10:00:00Z",
-      "summary": "OpenAI 介绍其前沿模型训练与评估环境的安全加固措施，包括训练期间不接入互联网、构建离线缓存网页世界、以纵深防御多层隔离，并用最强模型（含即将推出的 GPT‑6 Astra Cyber）组成智能体团队进行高算力红队测试。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ss1c1fu81134agwcw2ae90gai",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -272,10 +226,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1318,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 551,
-      "checked_at": "2026-10-24T08:25:14.293776Z"
+      "latency_ms": 552,
+      "checked_at": "2026-10-24T11:23:25.242107Z"
     },
     {
       "source_id": "openai-skills",
@@ -286,8 +240,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 254,
-      "checked_at": "2026-10-24T08:25:14.548989Z"
+      "latency_ms": 271,
+      "checked_at": "2026-10-24T11:23:25.513868Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -299,7 +253,7 @@
       "kept_count": 0,
       "error": null,
       "latency_ms": 125,
-      "checked_at": "2026-10-24T08:25:14.678596Z"
+      "checked_at": "2026-10-24T11:23:25.643521Z"
     },
     {
       "source_id": "google-deepmind",
@@ -310,8 +264,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 230,
-      "checked_at": "2026-10-24T08:25:14.910734Z"
+      "latency_ms": 179,
+      "checked_at": "2026-10-24T11:23:25.824551Z"
     },
     {
       "source_id": "google-ai",
@@ -322,8 +276,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 238,
-      "checked_at": "2026-10-24T08:25:15.149285Z"
+      "latency_ms": 219,
+      "checked_at": "2026-10-24T11:23:26.044090Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -334,8 +288,8 @@
       "fetched_count": 890,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 329,
-      "checked_at": "2026-10-24T08:25:15.492321Z"
+      "latency_ms": 333,
+      "checked_at": "2026-10-24T11:23:26.391799Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -346,8 +300,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 305,
-      "checked_at": "2026-10-24T08:25:15.797913Z"
+      "latency_ms": 297,
+      "checked_at": "2026-10-24T11:23:26.689710Z"
     },
     {
       "source_id": "github-changelog",
@@ -358,8 +312,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 37,
-      "checked_at": "2026-10-24T08:25:15.836124Z"
+      "latency_ms": 38,
+      "checked_at": "2026-10-24T11:23:26.729170Z"
     },
     {
       "source_id": "aihot",
@@ -368,10 +322,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 2749,
-      "checked_at": "2026-10-24T08:25:18.586931Z"
+      "latency_ms": 1250,
+      "checked_at": "2026-10-24T11:23:27.980605Z"
     }
   ],
   "control_notes": {
