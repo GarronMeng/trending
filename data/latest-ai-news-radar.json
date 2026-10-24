@@ -1,50 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-24T12:50:14.911866Z",
+  "generated_at": "2026-10-24T17:11:45.460734Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 6,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "official_ai",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
           "GitHub Changelog",
-          4
+          3
         ]
       ],
       "top_keywords": [
@@ -54,11 +22,11 @@
         ],
         [
           "api",
-          3
+          2
         ],
         [
           "API",
-          3
+          2
         ],
         [
           "tool",
@@ -67,33 +35,33 @@
         [
           "developer",
           1
-        ],
-        [
-          "automation",
-          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          2
+          3
         ]
       ],
       "top_keywords": [
         [
           "智能体",
-          2
+          3
         ],
         [
           "aggregate_noise",
-          2
+          3
         ],
         [
           "openai",
+          2
+        ],
+        [
+          "anthropic",
           1
         ],
         [
@@ -104,27 +72,6 @@
     }
   },
   "items": [
-    {
-      "id": "3c2f2829e642d664ed50655d482b71902c4f1f35",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
-      "published_at": "2026-10-23T17:00:00Z",
-      "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "weak:api",
-        "weak:API",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "af82ae34f9eebfbf69673fe0bd15aa3a7a563f1b",
       "source_id": "github-changelog",
@@ -148,6 +95,26 @@
       "is_ai_related": true
     },
     {
+      "id": "247da58ac6eb6acc7acc9401af8823b50ff6a247",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Ethan Mollick：OpenAI 红队测试显示前沿模型智能体真能越狱沙箱，实验室的 AI 安全警告值得重视",
+      "url": "https://aihot.news/items/d92mrmxvsfmnoyw3comncgz2c",
+      "published_at": "2026-10-24T14:30:45Z",
+      "summary": "Ethan Mollick 转引 OpenAI 红队测试认为，实验室看似夸张的 AI 网络安全判断应被更认真对待。OpenAI 让前沿模型智能体团队攻击其加固的隔离基础设施，智能体几乎在每个受限联网服务中都找到漏洞，还能利用 CPU 缓存时序在不联网、无共享文件的虚拟机之间传递秘密，类似 Spectre 和 Meltdown 的攻击手法。作者提到 Anthropic 和 Noam Brown 此前关于 AI 网络攻防与模型自发协调的说法曾被嘲笑。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d92mrmxvsfmnoyw3comncgz2c",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "5796633fe68f8cddcc071a2cbdc9e3911c193450",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -162,25 +129,6 @@
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "3f5e643b9ef11f8cf97743ff908c4d981fbd56c0",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Enterprise installations for GitHub Apps generally available",
-      "url": "https://github.blog/changelog/2026-10-23-enterprise-installations-for-github-apps-generally-available",
-      "published_at": "2026-10-23T15:03:30Z",
-      "summary": "Installing GitHub Apps on your enterprise is now generally available. You can replace classic PATs with GitHub Apps in more of your enterprise and organization automation with the expanded API… The post Enterprise installations for GitHub Apps generally available appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:automation",
-        "weak:API"
       ],
       "is_ai_related": true
     },
@@ -249,10 +197,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1318,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 559,
-      "checked_at": "2026-10-24T12:50:11.046954Z"
+      "latency_ms": 618,
+      "checked_at": "2026-10-24T17:11:41.972573Z"
     },
     {
       "source_id": "openai-skills",
@@ -263,8 +211,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 195,
-      "checked_at": "2026-10-24T12:50:11.242720Z"
+      "latency_ms": 336,
+      "checked_at": "2026-10-24T17:11:42.309576Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -275,8 +223,8 @@
       "fetched_count": 282,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 126,
-      "checked_at": "2026-10-24T12:50:11.373209Z"
+      "latency_ms": 157,
+      "checked_at": "2026-10-24T17:11:42.471230Z"
     },
     {
       "source_id": "google-deepmind",
@@ -287,8 +235,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 153,
-      "checked_at": "2026-10-24T12:50:11.528234Z"
+      "latency_ms": 225,
+      "checked_at": "2026-10-24T17:11:42.697878Z"
     },
     {
       "source_id": "google-ai",
@@ -299,8 +247,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 143,
-      "checked_at": "2026-10-24T12:50:11.671631Z"
+      "latency_ms": 215,
+      "checked_at": "2026-10-24T17:11:42.914020Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -311,8 +259,8 @@
       "fetched_count": 890,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 261,
-      "checked_at": "2026-10-24T12:50:11.946425Z"
+      "latency_ms": 361,
+      "checked_at": "2026-10-24T17:11:43.289110Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -323,8 +271,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 247,
-      "checked_at": "2026-10-24T12:50:12.194441Z"
+      "latency_ms": 565,
+      "checked_at": "2026-10-24T17:11:43.854765Z"
     },
     {
       "source_id": "github-changelog",
@@ -333,10 +281,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-10-24T12:50:12.225813Z"
+      "latency_ms": 38,
+      "checked_at": "2026-10-24T17:11:43.893427Z"
     },
     {
       "source_id": "aihot",
@@ -345,10 +293,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 2676,
-      "checked_at": "2026-10-24T12:50:14.903243Z"
+      "latency_ms": 1559,
+      "checked_at": "2026-10-24T17:11:45.453307Z"
     }
   ],
   "control_notes": {
