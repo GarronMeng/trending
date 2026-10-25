@@ -1,99 +1,41 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-24T17:11:45.460734Z",
+  "generated_at": "2026-10-25T02:38:14.408789Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 2,
   "groups": {
-    "developer": {
-      "group": "developer",
-      "count": 3,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          3
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "tool",
-          1
-        ],
-        [
-          "developer",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "AI Hot",
-          3
+          2
         ]
       ],
       "top_keywords": [
-        [
-          "智能体",
-          3
-        ],
-        [
-          "aggregate_noise",
-          3
-        ],
         [
           "openai",
           2
         ],
         [
-          "anthropic",
-          1
+          "智能体",
+          2
         ],
         [
-          "多模态",
+          "aggregate_noise",
+          2
+        ],
+        [
+          "anthropic",
           1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "af82ae34f9eebfbf69673fe0bd15aa3a7a563f1b",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Usage metrics API adds usage from tools like OpenCode",
-      "url": "https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode",
-      "published_at": "2026-10-23T23:42:03Z",
-      "summary": "The Copilot usage metrics API now reports model usage from more of the tools your developers use with Copilot, including tools like OpenCode that weren’t previously captured in your reports.… The post Usage metrics API adds usage from tools like OpenCode appeared first on The GitHub Blog .",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:tool",
-        "weak:developer",
-        "weak:copilot",
-        "weak:API",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "247da58ac6eb6acc7acc9401af8823b50ff6a247",
       "source_id": "aihot",
@@ -115,24 +57,6 @@
       "is_ai_related": true
     },
     {
-      "id": "5796633fe68f8cddcc071a2cbdc9e3911c193450",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Turn notifications into code with GitHub Copilot in Teams",
-      "url": "https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams",
-      "published_at": "2026-10-23T21:29:58Z",
-      "summary": "The new GitHub app in Teams brings notifications and Copilot together, helping teams turn issues into fixes and ship code faster without leaving the conversation. Get notified in channels, group… The post Turn notifications into code with GitHub Copilot in Teams appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "b1ca02c25b547552a07be5af06305ab522b5dabc",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -150,43 +74,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "67769f919a6cde352b2721278e7d97035ee0bad8",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "月之暗面 Kimi K3.1 Pro 上线 OpenRouter，1M 上下文多模态开源权重模型",
-      "url": "https://aihot.news/items/g725ujk3cq0gquz6g2nlozeu4",
-      "published_at": "2026-10-23T18:31:22Z",
-      "summary": "OpenRouter 宣布月之暗面的 Kimi K3.1 Pro 上线，定位为基于 Kimi K3 后训练、面向长程编码和智能体任务的 1M 上下文多模态开源权重模型。定价为 $2/M input tokens、$10/M output tokens，可在 OpenRouter 直接试用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/g725ujk3cq0gquz6g2nlozeu4",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:智能体",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "dda56972c7de9cedd31783d03fcbd30e64dfb9de",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Public monitoring adds triage, validity, API, and webhooks",
-      "url": "https://github.blog/changelog/2026-10-23-public-monitoring-adds-triage-validity-api-and-webhooks",
-      "published_at": "2026-10-23T17:17:58Z",
-      "summary": "Public monitoring now includes alert management capabilities like automatic validity checks to help you triage and remediate leaked secrets at scale. Alert management with dismissals, timelines, and filtering Always-on validity… The post Public monitoring adds triage, validity, API, and webhooks appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:API"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -199,8 +86,8 @@
       "fetched_count": 1318,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 618,
-      "checked_at": "2026-10-24T17:11:41.972573Z"
+      "latency_ms": 500,
+      "checked_at": "2026-10-25T02:38:10.501065Z"
     },
     {
       "source_id": "openai-skills",
@@ -211,8 +98,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 336,
-      "checked_at": "2026-10-24T17:11:42.309576Z"
+      "latency_ms": 243,
+      "checked_at": "2026-10-25T02:38:10.744935Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -223,8 +110,8 @@
       "fetched_count": 282,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 157,
-      "checked_at": "2026-10-24T17:11:42.471230Z"
+      "latency_ms": 105,
+      "checked_at": "2026-10-25T02:38:10.854547Z"
     },
     {
       "source_id": "google-deepmind",
@@ -235,8 +122,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 225,
-      "checked_at": "2026-10-24T17:11:42.697878Z"
+      "latency_ms": 380,
+      "checked_at": "2026-10-25T02:38:11.236440Z"
     },
     {
       "source_id": "google-ai",
@@ -247,8 +134,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 215,
-      "checked_at": "2026-10-24T17:11:42.914020Z"
+      "latency_ms": 273,
+      "checked_at": "2026-10-25T02:38:11.510432Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -259,8 +146,8 @@
       "fetched_count": 890,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 361,
-      "checked_at": "2026-10-24T17:11:43.289110Z"
+      "latency_ms": 270,
+      "checked_at": "2026-10-25T02:38:11.793492Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -271,8 +158,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 565,
-      "checked_at": "2026-10-24T17:11:43.854765Z"
+      "latency_ms": 579,
+      "checked_at": "2026-10-25T02:38:12.373396Z"
     },
     {
       "source_id": "github-changelog",
@@ -281,10 +168,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 38,
-      "checked_at": "2026-10-24T17:11:43.893427Z"
+      "latency_ms": 32,
+      "checked_at": "2026-10-25T02:38:12.405722Z"
     },
     {
       "source_id": "aihot",
@@ -293,10 +180,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 1559,
-      "checked_at": "2026-10-24T17:11:45.453307Z"
+      "latency_ms": 1991,
+      "checked_at": "2026-10-25T02:38:14.398401Z"
     }
   ],
   "control_notes": {
