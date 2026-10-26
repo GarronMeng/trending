@@ -1,21 +1,33 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-26T09:23:12.938627Z",
+  "generated_at": "2026-10-26T13:25:42.701034Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 1,
+  "item_count": 2,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "AI Hot",
-          1
+          2
         ]
       ],
       "top_keywords": [
+        [
+          "aggregate_noise",
+          2
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "大模型",
+          1
+        ],
         [
           "claude",
           1
@@ -23,15 +35,30 @@
         [
           "codex",
           1
-        ],
-        [
-          "aggregate_noise",
-          1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "8d7ac46fd20c4a387d1486dbefb906fb9fcaa878",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 计划今日 9AM EST 提交 S-1 IPO 申请文件",
+      "url": "https://aihot.news/items/a1ntnonrqyeglwofchegsod88",
+      "published_at": "2026-10-26T12:31:31Z",
+      "summary": "据 Bloomberg 报道，Anthropic 计划周一上午 9 点（美东时间）公开提交 S-1 IPO 申请，此次上市规模可能创纪录。公司预计最快在 11 月 9 日当周开始正式路演，并期望 IPO 规模达到或超过 SpaceX。作者还猜测 Anthropic 可能会伴随一次大模型发布。 🔗 阅读原文 via AIHOT · https://aihot.news/items/a1ntnonrqyeglwofchegsod88",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:大模型",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "70c45f82a5ede5b0fa8b1020cd12e8a225d47c70",
       "source_id": "aihot",
@@ -62,8 +89,8 @@
       "fetched_count": 1318,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 640,
-      "checked_at": "2026-10-26T09:23:08.905529Z"
+      "latency_ms": 600,
+      "checked_at": "2026-10-26T13:25:37.906991Z"
     },
     {
       "source_id": "openai-skills",
@@ -74,8 +101,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 394,
-      "checked_at": "2026-10-26T09:23:09.300570Z"
+      "latency_ms": 273,
+      "checked_at": "2026-10-26T13:25:38.180938Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -86,8 +113,8 @@
       "fetched_count": 282,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 124,
-      "checked_at": "2026-10-26T09:23:09.429254Z"
+      "latency_ms": 312,
+      "checked_at": "2026-10-26T13:25:38.497466Z"
     },
     {
       "source_id": "google-deepmind",
@@ -98,8 +125,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 191,
-      "checked_at": "2026-10-26T09:23:09.622130Z"
+      "latency_ms": 227,
+      "checked_at": "2026-10-26T13:25:38.726842Z"
     },
     {
       "source_id": "google-ai",
@@ -110,8 +137,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 259,
-      "checked_at": "2026-10-26T09:23:09.882446Z"
+      "latency_ms": 285,
+      "checked_at": "2026-10-26T13:25:39.013096Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -122,8 +149,8 @@
       "fetched_count": 890,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 316,
-      "checked_at": "2026-10-26T09:23:10.212341Z"
+      "latency_ms": 342,
+      "checked_at": "2026-10-26T13:25:39.369631Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -134,8 +161,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 289,
-      "checked_at": "2026-10-26T09:23:10.502421Z"
+      "latency_ms": 595,
+      "checked_at": "2026-10-26T13:25:39.965072Z"
     },
     {
       "source_id": "github-changelog",
@@ -146,8 +173,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 37,
-      "checked_at": "2026-10-26T09:23:10.539922Z"
+      "latency_ms": 39,
+      "checked_at": "2026-10-26T13:25:40.005046Z"
     },
     {
       "source_id": "aihot",
@@ -156,10 +183,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 2389,
-      "checked_at": "2026-10-26T09:23:12.930077Z"
+      "latency_ms": 2684,
+      "checked_at": "2026-10-26T13:25:42.689983Z"
     }
   ],
   "control_notes": {
