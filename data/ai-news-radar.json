@@ -1,38 +1,74 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-26T15:20:48.526562Z",
+  "generated_at": "2026-10-26T19:44:09.660462Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 13,
   "groups": {
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 3,
       "top_sources": [
         [
           "OpenAI News",
-          1
+          3
         ]
       ],
       "top_keywords": [
         [
           "openai",
-          1
+          3
         ],
         [
           "official_ai",
+          3
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "agent",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          5
+          8
         ],
         [
           "Anthropic News via Olshansk RSS",
@@ -42,11 +78,15 @@
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          9
         ],
         [
           "anthropic",
           4
+        ],
+        [
+          "openai",
+          2
         ],
         [
           "hugging face",
@@ -57,29 +97,96 @@
           2
         ],
         [
-          "开源模型",
-          1
-        ],
-        [
-          "大模型",
-          1
-        ],
-        [
           "claude",
-          1
-        ],
-        [
-          "codex",
-          1
+          2
         ],
         [
           "评测",
+          2
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "automation",
+          1
+        ],
+        [
+          "自动化",
+          1
+        ],
+        [
+          "api",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "4aa689c1cee6baae33a81be641fc9cfe2f8c5ad1",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+      "url": "https://openai.com/index/openai-cut-incident-investigation",
+      "published_at": "2026-10-26T07:00:00Z",
+      "summary": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows.",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "89698b9bd8fe366285233c1dc387d46308dab25a",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GPT-6.1 Terra in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot",
+      "published_at": "2026-10-26T19:15:53Z",
+      "summary": "GPT-6.1 Terra, OpenAI’s newest model, is now generally available in GitHub Copilot. It is designed for everyday agentic coding and terminal work at a lower cost than GPT-6.1 Sol. In… The post GPT-6.1 Terra in GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b9e8f60050ed5c49235cfe1525043159d3666ba0",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "ChatGPT’s expanding world of work",
+      "url": "https://openai.com/index/chatgpt-expanding-world-of-work",
+      "published_at": "2026-10-26T10:00:00Z",
+      "summary": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "56fed60d7a2d81f3531b4710805342da2ec80142",
       "source_id": "openai-news",
@@ -95,6 +202,26 @@
       "relevance_reasons": [
         "strong:openai",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "e5380cd513a2bd8bd6059ae80a70a96bbd5edd59",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI GPT-6.1 Terra 上线 OpenRouter，定价 $1/M input、$5/M output",
+      "url": "https://aihot.news/items/yims6bdgwsy052wrmjytgak8p",
+      "published_at": "2026-10-26T18:49:39Z",
+      "summary": "OpenRouter 宣布 OpenAI 的 GPT-6.1 Terra 上线。该模型在 Agents' Last Exam 上与 GPT-6 Astra 得分相当，每 token 价格约为其十分之一，平均完成任务速度比 Astra 和 GPT-6.1 Sol 快 3 倍以上。定价 $1/M input、$5/M output，上下文 1.05M，链接 https://openrouter.ai/openai/gpt-6.1-terra 。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yims6bdgwsy052wrmjytgak8p",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
+        "strong:agents",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -119,6 +246,27 @@
       "is_ai_related": true
     },
     {
+      "id": "8484e021d0e81795c90db3dd6c1bbfb6b21cf2bb",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Epoch AI 用内部工作任务评测前沿模型：Claude Fable 5.1 与 GPT-6 Astra 平均只得 65%",
+      "url": "https://aihot.news/items/dgly2r4fwb6y80t3im8yqqvt1",
+      "published_at": "2026-10-26T16:33:24Z",
+      "summary": "Epoch AI 发布 Epoch Automation Reports，把机构内部的图表设计、研究规划等真实任务按人类员工评估标准测试 AI，领先的 Claude Fable 5.1 和 GPT-6 Astra 平均得分 65%，未达到 100% 的可自动化门槛。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dgly2r4fwb6y80t3im8yqqvt1",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:claude",
+        "weak:automation",
+        "weak:自动化",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "52943e4121a7bc4d486206150febffeab6d99e10",
       "source_id": "anthropic-news-unofficial",
       "source_name": "Anthropic News via Olshansk RSS",
@@ -133,6 +281,26 @@
       "relevance_reasons": [
         "strong:anthropic",
         "source:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d56ca819286929398b8dca0ed86d5e37ff58a7f6",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布 GPT-6.1 Terra，主打电脑操作与写作能力",
+      "url": "https://aihot.news/items/xmpu9lo3lbzld3tqsyrcy5e2v",
+      "published_at": "2026-10-26T19:24:11Z",
+      "summary": "作者宣布 GPT-6.1 Terra 回归，称这是其首个在写作、个性和细致理解请求上显著更好的模型。该模型擅长电脑操作，可理解屏幕内容并跨应用执行操作，在 API 和订阅中提供的用量是 6.1 Sol 的 2 倍，价格更低。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xmpu9lo3lbzld3tqsyrcy5e2v",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:api",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -221,11 +389,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1319,
-      "kept_count": 1,
+      "fetched_count": 1322,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 491,
-      "checked_at": "2026-10-26T15:20:46.177220Z"
+      "latency_ms": 591,
+      "checked_at": "2026-10-26T19:44:05.852193Z"
     },
     {
       "source_id": "openai-skills",
@@ -236,8 +404,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 276,
-      "checked_at": "2026-10-26T15:20:46.453884Z"
+      "latency_ms": 329,
+      "checked_at": "2026-10-26T19:44:06.182084Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -248,8 +416,8 @@
       "fetched_count": 283,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 119,
-      "checked_at": "2026-10-26T15:20:46.577430Z"
+      "latency_ms": 152,
+      "checked_at": "2026-10-26T19:44:06.338597Z"
     },
     {
       "source_id": "google-deepmind",
@@ -260,8 +428,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 171,
-      "checked_at": "2026-10-26T15:20:46.750218Z"
+      "latency_ms": 350,
+      "checked_at": "2026-10-26T19:44:06.690354Z"
     },
     {
       "source_id": "google-ai",
@@ -272,8 +440,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 159,
-      "checked_at": "2026-10-26T15:20:46.910227Z"
+      "latency_ms": 402,
+      "checked_at": "2026-10-26T19:44:07.093052Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -284,8 +452,8 @@
       "fetched_count": 890,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 251,
-      "checked_at": "2026-10-26T15:20:47.173574Z"
+      "latency_ms": 339,
+      "checked_at": "2026-10-26T19:44:07.445047Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -296,8 +464,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 265,
-      "checked_at": "2026-10-26T15:20:47.438898Z"
+      "latency_ms": 564,
+      "checked_at": "2026-10-26T19:44:08.009698Z"
     },
     {
       "source_id": "github-changelog",
@@ -306,10 +474,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-10-26T15:20:47.470010Z"
+      "latency_ms": 43,
+      "checked_at": "2026-10-26T19:44:08.053692Z"
     },
     {
       "source_id": "aihot",
@@ -318,10 +486,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 5,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 1046,
-      "checked_at": "2026-10-26T15:20:48.517596Z"
+      "latency_ms": 1597,
+      "checked_at": "2026-10-26T19:44:09.652071Z"
     }
   ],
   "control_notes": {
