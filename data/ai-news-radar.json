@@ -1,56 +1,64 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-26T19:44:09.660462Z",
+  "generated_at": "2026-10-27T03:11:31.206865Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 13,
+  "item_count": 15,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 6,
       "top_sources": [
         [
           "OpenAI News",
-          3
+          6
         ]
       ],
       "top_keywords": [
         [
-          "openai",
-          3
+          "official_ai",
+          6
         ],
         [
-          "official_ai",
-          3
+          "openai",
+          4
         ],
         [
           "codex",
-          1
+          2
         ],
         [
           "workflow",
-          1
+          2
         ],
         [
           "chatgpt",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "developer",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          1
+          2
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          2
+          4
         ],
         [
           "openai",
@@ -64,28 +72,24 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          8
-        ],
-        [
-          "Anthropic News via Olshansk RSS",
-          1
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
-        ],
-        [
-          "anthropic",
-          4
+          7
         ],
         [
           "openai",
+          2
+        ],
+        [
+          "anthropic",
           2
         ],
         [
@@ -93,15 +97,7 @@
           2
         ],
         [
-          "智能体",
-          2
-        ],
-        [
           "claude",
-          2
-        ],
-        [
-          "评测",
           2
         ],
         [
@@ -113,11 +109,19 @@
           1
         ],
         [
+          "智能体",
+          1
+        ],
+        [
           "automation",
           1
         ],
         [
           "自动化",
+          1
+        ],
+        [
+          "评测",
           1
         ],
         [
@@ -188,6 +192,62 @@
       "is_ai_related": true
     },
     {
+      "id": "42f4ed36bfaf79bc8bec0f3c7145a1a8abded143",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+      "url": "https://openai.com/index/greptile-code-review-codex-astra",
+      "published_at": "2026-10-26T22:00:00Z",
+      "summary": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:codex",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "29d412d1c7385f9c18d0541b8c1e4b6730720c48",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "published_at": "2026-10-26T13:45:00Z",
+      "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:developer",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "874caadb1939e29566415bd5443b4891525fbb4d",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Working with academic communities to build scientific understanding",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+      "published_at": "2026-10-26T14:30:00Z",
+      "summary": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "56fed60d7a2d81f3531b4710805342da2ec80142",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -246,6 +306,24 @@
       "is_ai_related": true
     },
     {
+      "id": "abafa8b58728cdab7054905ed29c8de1e84b64fd",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot assisted permissions generally available",
+      "url": "https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available",
+      "published_at": "2026-10-26T22:31:30Z",
+      "summary": "Assisted permissions are now generally available in GitHub Copilot CLI, GitHub Copilot app, and Visual Studio Code. When Copilot requests permission to run a command, access a file system path,… The post GitHub Copilot assisted permissions generally available appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "8484e021d0e81795c90db3dd6c1bbfb6b21cf2bb",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -262,25 +340,6 @@
         "weak:automation",
         "weak:自动化",
         "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "52943e4121a7bc4d486206150febffeab6d99e10",
-      "source_id": "anthropic-news-unofficial",
-      "source_name": "Anthropic News via Olshansk RSS",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 3,
-      "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-      "url": "https://www.anthropic.com/news/s1-sec",
-      "published_at": "2026-10-26T00:00:00Z",
-      "summary": "Anthropic files S-1 with the SEC for proposed initial public offering",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "source:anthropic",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -361,25 +420,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "dd9bee4b61e77371768d751f5486fa8816af6996",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "AISI 发布 ReproBAIT 评测：AI 编码智能体可低成本复现部分生物 AI 工具",
-      "url": "https://aihot.news/items/w5optivkpl1pchxn85qaknu3d",
-      "published_at": "2026-10-25T23:00:00Z",
-      "summary": "英国 AI Security Institute 与 SecureBio 合作推出 ReproBAIT 评测，测试 AI 编码智能体能否依据论文等公开信息和训练数据复现生物 AI 工具（BAITs）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w5optivkpl1pchxn85qaknu3d",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:智能体",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -389,11 +429,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1322,
-      "kept_count": 3,
+      "fetched_count": 1325,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 591,
-      "checked_at": "2026-10-26T19:44:05.852193Z"
+      "latency_ms": 420,
+      "checked_at": "2026-10-27T03:11:28.326915Z"
     },
     {
       "source_id": "openai-skills",
@@ -404,8 +444,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 329,
-      "checked_at": "2026-10-26T19:44:06.182084Z"
+      "latency_ms": 377,
+      "checked_at": "2026-10-27T03:11:28.704449Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -414,10 +454,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 283,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 152,
-      "checked_at": "2026-10-26T19:44:06.338597Z"
+      "latency_ms": 84,
+      "checked_at": "2026-10-27T03:11:28.792010Z"
     },
     {
       "source_id": "google-deepmind",
@@ -428,8 +468,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 350,
-      "checked_at": "2026-10-26T19:44:06.690354Z"
+      "latency_ms": 248,
+      "checked_at": "2026-10-27T03:11:29.041121Z"
     },
     {
       "source_id": "google-ai",
@@ -440,8 +480,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 402,
-      "checked_at": "2026-10-26T19:44:07.093052Z"
+      "latency_ms": 227,
+      "checked_at": "2026-10-27T03:11:29.268456Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -452,8 +492,8 @@
       "fetched_count": 890,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 339,
-      "checked_at": "2026-10-26T19:44:07.445047Z"
+      "latency_ms": 233,
+      "checked_at": "2026-10-27T03:11:29.511282Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -464,8 +504,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 564,
-      "checked_at": "2026-10-26T19:44:08.009698Z"
+      "latency_ms": 260,
+      "checked_at": "2026-10-27T03:11:29.772319Z"
     },
     {
       "source_id": "github-changelog",
@@ -474,10 +514,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 43,
-      "checked_at": "2026-10-26T19:44:08.053692Z"
+      "latency_ms": 29,
+      "checked_at": "2026-10-27T03:11:29.802135Z"
     },
     {
       "source_id": "aihot",
@@ -486,10 +526,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 8,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 1597,
-      "checked_at": "2026-10-26T19:44:09.652071Z"
+      "latency_ms": 1395,
+      "checked_at": "2026-10-27T03:11:31.198869Z"
     }
   ],
   "control_notes": {
