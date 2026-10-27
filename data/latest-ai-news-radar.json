@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-27T12:31:56.874803Z",
+  "generated_at": "2026-10-27T14:46:32.652649Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 6,
   "groups": {
     "developer": {
       "group": "developer",
@@ -32,18 +32,14 @@
     },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 1,
       "top_sources": [
         [
           "OpenAI News",
-          3
+          1
         ]
       ],
       "top_keywords": [
-        [
-          "official_ai",
-          3
-        ],
         [
           "codex",
           1
@@ -53,39 +49,27 @@
           1
         ],
         [
-          "agent",
-          1
-        ],
-        [
-          "developer",
-          1
-        ],
-        [
-          "openai",
+          "official_ai",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          5
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          3
         ],
         [
           "openai",
-          2
-        ],
-        [
-          "hugging face",
           2
         ],
         [
@@ -94,14 +78,6 @@
         ],
         [
           "agents",
-          1
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "智能体",
           1
         ],
         [
@@ -122,6 +98,10 @@
         ],
         [
           "api",
+          1
+        ],
+        [
+          "API",
           1
         ]
       ]
@@ -168,43 +148,6 @@
       "is_ai_related": true
     },
     {
-      "id": "29d412d1c7385f9c18d0541b8c1e4b6730720c48",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
-      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
-      "published_at": "2026-10-26T13:45:00Z",
-      "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:developer",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "874caadb1939e29566415bd5443b4891525fbb4d",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Working with academic communities to build scientific understanding",
-      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
-      "published_at": "2026-10-26T14:30:00Z",
-      "summary": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "e5380cd513a2bd8bd6059ae80a70a96bbd5edd59",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -220,26 +163,6 @@
         "strong:openai",
         "strong:agent",
         "strong:agents",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "abc8368d47011e5ac144a389e5baf6dc61126ee5",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Hugging Face CEO 转评前 DOGE 研究人员用 AI 智能体渗透 Anthropic 系统事件",
-      "url": "https://aihot.news/items/oq7hr7grajldk8bmtv95e180v",
-      "published_at": "2026-10-26T13:39:40Z",
-      "summary": "Hugging Face CEO Clément Delangue 转引《华盛顿邮报》独家报道并评论称，认为把 AI 集中在封闭大门后就是安全的想法需要更新认知。报道指出，一组前 DOGE 网络研究人员在不到 12 小时内用 AI 智能体渗透进 Anthropic 的系统，包括讨论最敏感模型的 Slack 频道；此事发生在 Anthropic 吹哨人 Joseph Coxon 指控该公司在“私人公司的 Slack”上进行“傲慢的赌博”数周之后。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oq7hr7grajldk8bmtv95e180v",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:hugging face",
-        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -302,25 +225,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "a4077a87df9abcf516876d1f36dea52ffe9ab095",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Unsloth 发布 MiniMax-M3.1-Flash 量化 GGUF，2-bit 版可在 150GB 内存本地运行",
-      "url": "https://aihot.news/items/pkw262qrrom8w7qv6lq7nquxh",
-      "published_at": "2026-10-26T14:45:21Z",
-      "summary": "Unsloth 发布 MiniMax-M3.1-Flash 的量化 GGUF，2-bit 版在缩小 45% 体积的同时保留 91.5% top 1 精度，可在 150GB 内存上本地运行，1-bit 版约 89.9%，4-bit UD-Q4_K_XL 达 98.0%。作者称其为同尺寸最强开源模型之一，并给出 Hugging Face 权重链接与本地运行指南。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pkw262qrrom8w7qv6lq7nquxh",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "strong:开源模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -331,10 +235,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1325,
-      "kept_count": 3,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 587,
-      "checked_at": "2026-10-27T12:31:52.486662Z"
+      "latency_ms": 595,
+      "checked_at": "2026-10-27T14:46:27.688675Z"
     },
     {
       "source_id": "openai-skills",
@@ -345,8 +249,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 272,
-      "checked_at": "2026-10-27T12:31:52.759695Z"
+      "latency_ms": 224,
+      "checked_at": "2026-10-27T14:46:27.913875Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -357,8 +261,8 @@
       "fetched_count": 283,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 145,
-      "checked_at": "2026-10-27T12:31:52.909822Z"
+      "latency_ms": 140,
+      "checked_at": "2026-10-27T14:46:28.058633Z"
     },
     {
       "source_id": "google-deepmind",
@@ -369,8 +273,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 377,
-      "checked_at": "2026-10-27T12:31:53.289189Z"
+      "latency_ms": 264,
+      "checked_at": "2026-10-27T14:46:28.324736Z"
     },
     {
       "source_id": "google-ai",
@@ -381,8 +285,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-10-27T12:31:53.543265Z"
+      "latency_ms": 456,
+      "checked_at": "2026-10-27T14:46:28.781722Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -393,8 +297,8 @@
       "fetched_count": 890,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 393,
-      "checked_at": "2026-10-27T12:31:53.950682Z"
+      "latency_ms": 395,
+      "checked_at": "2026-10-27T14:46:29.190356Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -405,8 +309,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 503,
-      "checked_at": "2026-10-27T12:31:54.454843Z"
+      "latency_ms": 512,
+      "checked_at": "2026-10-27T14:46:29.703031Z"
     },
     {
       "source_id": "github-changelog",
@@ -417,8 +321,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 64,
-      "checked_at": "2026-10-27T12:31:54.519921Z"
+      "latency_ms": 63,
+      "checked_at": "2026-10-27T14:46:29.766780Z"
     },
     {
       "source_id": "aihot",
@@ -427,10 +331,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 5,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 2345,
-      "checked_at": "2026-10-27T12:31:56.866401Z"
+      "latency_ms": 2876,
+      "checked_at": "2026-10-27T14:46:32.644408Z"
     }
   ],
   "control_notes": {
