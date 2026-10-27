@@ -1,11 +1,63 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-27T14:46:32.652649Z",
+  "generated_at": "2026-10-27T19:12:52.658440Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 10,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 4,
+      "top_sources": [
+        [
+          "OpenAI News",
+          2
+        ],
+        [
+          "Hugging Face Blog",
+          2
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          4
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "multimodal",
+          1
+        ],
+        [
+          "llm",
+          1
+        ]
+      ]
+    },
     "developer": {
       "group": "developer",
       "count": 2,
@@ -30,43 +82,19 @@
         ]
       ]
     },
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "codex",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "official_ai",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          3
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          3
+          4
         ],
         [
           "openai",
@@ -81,11 +109,11 @@
           1
         ],
         [
-          "claude",
+          "llm",
           1
         ],
         [
-          "automation",
+          "benchmark",
           1
         ],
         [
@@ -93,7 +121,7 @@
           1
         ],
         [
-          "评测",
+          "chatgpt",
           1
         ],
         [
@@ -108,6 +136,27 @@
     }
   },
   "items": [
+    {
+      "id": "2d730a4edb05705a9f9398b860ea94e7495ecae8",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+      "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+      "published_at": "2026-10-27T07:00:00Z",
+      "summary": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "89698b9bd8fe366285233c1dc387d46308dab25a",
       "source_id": "github-changelog",
@@ -148,22 +197,38 @@
       "is_ai_related": true
     },
     {
-      "id": "e5380cd513a2bd8bd6059ae80a70a96bbd5edd59",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI GPT-6.1 Terra 上线 OpenRouter，定价 $1/M input、$5/M output",
-      "url": "https://aihot.news/items/yims6bdgwsy052wrmjytgak8p",
-      "published_at": "2026-10-26T18:49:39Z",
-      "summary": "OpenRouter 宣布 OpenAI 的 GPT-6.1 Terra 上线。该模型在 Agents' Last Exam 上与 GPT-6 Astra 得分相当，每 token 价格约为其十分之一，平均完成任务速度比 Astra 和 GPT-6.1 Sol 快 3 倍以上。定价 $1/M input、$5/M output，上下文 1.05M，链接 https://openrouter.ai/openai/gpt-6.1-terra 。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yims6bdgwsy052wrmjytgak8p",
-      "relevance_score": 5,
+      "id": "7c4cc086b8e4c9aad77ee4680ac4c2068dc786ee",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Build specialized multimodal models with LFM3",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "published_at": "2026-10-27T17:16:52Z",
+      "summary": null,
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:agent",
-        "strong:agents",
-        "source_penalty:aggregate_noise"
+        "strong:multimodal",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9c6c2d8ebaf8d0de93f00bab8eebf4e4c1f2ff2f",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Can we trust LLMs to judge whether a research idea is novel?",
+      "url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "published_at": "2026-10-27T16:12:42Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:llm",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -186,22 +251,59 @@
       "is_ai_related": true
     },
     {
-      "id": "8484e021d0e81795c90db3dd6c1bbfb6b21cf2bb",
+      "id": "982c3ab6e8e8c08d6813ae5023848e486a467194",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Epoch AI 用内部工作任务评测前沿模型：Claude Fable 5.1 与 GPT-6 Astra 平均只得 65%",
-      "url": "https://aihot.news/items/dgly2r4fwb6y80t3im8yqqvt1",
-      "published_at": "2026-10-26T16:33:24Z",
-      "summary": "Epoch AI 发布 Epoch Automation Reports，把机构内部的图表设计、研究规划等真实任务按人类员工评估标准测试 AI，领先的 Claude Fable 5.1 和 GPT-6 Astra 平均得分 65%，未达到 100% 的可自动化门槛。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dgly2r4fwb6y80t3im8yqqvt1",
-      "relevance_score": 4,
+      "title": "Replit Cloud Agents 开放企业代码库贡献，非技术人员可直接提交经测试的 PR",
+      "url": "https://aihot.news/items/qoz4pwew5rsp1idirgbhtpj9d",
+      "published_at": "2026-10-27T15:30:00Z",
+      "summary": "Replit 推出 Cloud Agents，面向 Pro 与 Enterprise 客户开放，让设计、客服等非工程人员用自然语言向公司核心代码库提交经测试的 pull request。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qoz4pwew5rsp1idirgbhtpj9d",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:claude",
-        "weak:automation",
+        "strong:agent",
+        "strong:agents",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7df1053655a7e87931a8a45021c2a5b80c859b2d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Ai2 发布 Old Ideas, Novel Problems 研究与 benchmark，揭示 LLM 新颖性裁判不稳定",
+      "url": "https://aihot.news/items/p92a4pkxkheznj9nmt50o08l6",
+      "published_at": "2026-10-27T08:00:00Z",
+      "summary": "Ai2 发布研究 Old Ideas, Novel Problems、配套 benchmark、数据、代码和自动化流水线，测试 LLM 作为研究想法新颖性裁判的可靠性。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p92a4pkxkheznj9nmt50o08l6",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:llm",
+        "weak:benchmark",
         "weak:自动化",
-        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a9c7710c0f2e333a93e041affec69bd0250fbbe2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 扩大与 Oracle 合作，将 Oracle 应用与数据接入 ChatGPT",
+      "url": "https://aihot.news/items/zbp5qzehshqnvgimabeu27cb1",
+      "published_at": "2026-10-27T07:00:00Z",
+      "summary": "OpenAI 宣布扩大与 Oracle 的合作，将 Oracle 应用和数据接入 ChatGPT，并用 OpenAI 模型驱动 Oracle 新产品。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zbp5qzehshqnvgimabeu27cb1",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -234,11 +336,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1325,
-      "kept_count": 1,
+      "fetched_count": 1327,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 595,
-      "checked_at": "2026-10-27T14:46:27.688675Z"
+      "latency_ms": 596,
+      "checked_at": "2026-10-27T19:12:46.017793Z"
     },
     {
       "source_id": "openai-skills",
@@ -249,8 +351,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 224,
-      "checked_at": "2026-10-27T14:46:27.913875Z"
+      "latency_ms": 233,
+      "checked_at": "2026-10-27T19:12:46.251356Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -261,8 +363,8 @@
       "fetched_count": 283,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 140,
-      "checked_at": "2026-10-27T14:46:28.058633Z"
+      "latency_ms": 169,
+      "checked_at": "2026-10-27T19:12:46.424856Z"
     },
     {
       "source_id": "google-deepmind",
@@ -273,8 +375,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 264,
-      "checked_at": "2026-10-27T14:46:28.324736Z"
+      "latency_ms": 88,
+      "checked_at": "2026-10-27T19:12:46.514944Z"
     },
     {
       "source_id": "google-ai",
@@ -285,8 +387,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 456,
-      "checked_at": "2026-10-27T14:46:28.781722Z"
+      "latency_ms": 168,
+      "checked_at": "2026-10-27T19:12:46.684008Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -294,11 +396,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 890,
-      "kept_count": 0,
+      "fetched_count": 891,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 395,
-      "checked_at": "2026-10-27T14:46:29.190356Z"
+      "latency_ms": 336,
+      "checked_at": "2026-10-27T19:12:47.033572Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -309,8 +411,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 512,
-      "checked_at": "2026-10-27T14:46:29.703031Z"
+      "latency_ms": 4601,
+      "checked_at": "2026-10-27T19:12:51.634989Z"
     },
     {
       "source_id": "github-changelog",
@@ -321,8 +423,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 63,
-      "checked_at": "2026-10-27T14:46:29.766780Z"
+      "latency_ms": 156,
+      "checked_at": "2026-10-27T19:12:51.792222Z"
     },
     {
       "source_id": "aihot",
@@ -331,10 +433,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 3,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 2876,
-      "checked_at": "2026-10-27T14:46:32.644408Z"
+      "latency_ms": 855,
+      "checked_at": "2026-10-27T19:12:52.648800Z"
     }
   ],
   "control_notes": {

@@ -43,17 +43,30 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>6</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>3</b><span>聚合源条目</span></div>
+        <div class="stat"><b>10</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>4</b><span>官方源条目</span></div>
+        <div class="stat"><b>4</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-27T14:46:32.653766Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-27T19:12:52.659847Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-10-27T07:00:00Z</span>
+        <strong>Score 9</strong>
+      </div>
+      <h3><a href="https://openai.com/index/oracle-apps-in-chatgpt" target="_blank" rel="noreferrer">OpenAI expands partnership with Oracle to bring its apps to ChatGPT</a></h3>
+      <p class='summary'>OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.</p>
+      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>strong:agent</span><span>strong:agents</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>GitHub Changelog</span>
@@ -82,14 +95,27 @@
 
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-10-26T18:49:39Z</span>
-        <strong>Score 5</strong>
+        <span>Hugging Face Blog</span>
+        <span>official_rss</span>
+        <span>2026-10-27T17:16:52Z</span>
+        <strong>Score 3</strong>
       </div>
-      <h3><a href="https://aihot.news/items/yims6bdgwsy052wrmjytgak8p" target="_blank" rel="noreferrer">OpenAI GPT-6.1 Terra 上线 OpenRouter，定价 $1/M input、$5/M output</a></h3>
-      <p class='summary'>OpenRouter 宣布 OpenAI 的 GPT-6.1 Terra 上线。该模型在 Agents&#x27; Last Exam 上与 GPT-6 Astra 得分相当，每 token 价格约为其十分之一，平均完成任务速度比 Astra 和 GPT-6.1 Sol 快 3 倍以上。定价 $1/M input、$5/M output，上下文 1.05M，链接 https://openrouter.ai/openai/gpt-6.1-terra 。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yims6bdgwsy052wrmjytgak8p</p>
-      <div class="tags"><span>strong:openai</span><span>strong:agent</span><span>strong:agents</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://huggingface.co/blog/LiquidAI/lfm3" target="_blank" rel="noreferrer">Build specialized multimodal models with LFM3</a></h3>
+      
+      <div class="tags"><span>strong:multimodal</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>Hugging Face Blog</span>
+        <span>official_rss</span>
+        <span>2026-10-27T16:12:42Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://huggingface.co/blog/allenai/novelty-bench" target="_blank" rel="noreferrer">Can we trust LLMs to judge whether a research idea is novel?</a></h3>
+      
+      <div class="tags"><span>strong:llm</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -110,12 +136,38 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-10-26T16:33:24Z</span>
-        <strong>Score 4</strong>
+        <span>2026-10-27T15:30:00Z</span>
+        <strong>Score 3</strong>
       </div>
-      <h3><a href="https://aihot.news/items/dgly2r4fwb6y80t3im8yqqvt1" target="_blank" rel="noreferrer">Epoch AI 用内部工作任务评测前沿模型：Claude Fable 5.1 与 GPT-6 Astra 平均只得 65%</a></h3>
-      <p class='summary'>Epoch AI 发布 Epoch Automation Reports，把机构内部的图表设计、研究规划等真实任务按人类员工评估标准测试 AI，领先的 Claude Fable 5.1 和 GPT-6 Astra 平均得分 65%，未达到 100% 的可自动化门槛。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dgly2r4fwb6y80t3im8yqqvt1</p>
-      <div class="tags"><span>strong:claude</span><span>weak:automation</span><span>weak:自动化</span><span>weak:评测</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://aihot.news/items/qoz4pwew5rsp1idirgbhtpj9d" target="_blank" rel="noreferrer">Replit Cloud Agents 开放企业代码库贡献，非技术人员可直接提交经测试的 PR</a></h3>
+      <p class='summary'>Replit 推出 Cloud Agents，面向 Pro 与 Enterprise 客户开放，让设计、客服等非工程人员用自然语言向公司核心代码库提交经测试的 pull request。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qoz4pwew5rsp1idirgbhtpj9d</p>
+      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-10-27T08:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/p92a4pkxkheznj9nmt50o08l6" target="_blank" rel="noreferrer">Ai2 发布 Old Ideas, Novel Problems 研究与 benchmark，揭示 LLM 新颖性裁判不稳定</a></h3>
+      <p class='summary'>Ai2 发布研究 Old Ideas, Novel Problems、配套 benchmark、数据、代码和自动化流水线，测试 LLM 作为研究想法新颖性裁判的可靠性。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p92a4pkxkheznj9nmt50o08l6</p>
+      <div class="tags"><span>strong:llm</span><span>weak:benchmark</span><span>weak:自动化</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-10-27T07:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/zbp5qzehshqnvgimabeu27cb1" target="_blank" rel="noreferrer">OpenAI 扩大与 Oracle 合作，将 Oracle 应用与数据接入 ChatGPT</a></h3>
+      <p class='summary'>OpenAI 宣布扩大与 Oracle 的合作，将 Oracle 应用和数据接入 ChatGPT，并用 OpenAI 模型驱动 Oracle 新产品。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zbp5qzehshqnvgimabeu27cb1</p>
+      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -136,15 +188,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1325</td><td>1</td><td>595ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>224ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>283</td><td>0</td><td>140ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>264ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>456ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>890</td><td>0</td><td>395ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>512ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>63ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>3</td><td>2876ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1327</td><td>2</td><td>596ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>233ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>283</td><td>0</td><td>169ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>88ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>168ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>891</td><td>2</td><td>336ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>4601ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>156ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>4</td><td>855ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
