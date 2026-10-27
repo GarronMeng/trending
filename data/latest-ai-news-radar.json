@@ -1,51 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-27T03:11:31.206865Z",
+  "generated_at": "2026-10-27T09:21:56.850364Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 15,
+  "item_count": 12,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 6,
-      "top_sources": [
-        [
-          "OpenAI News",
-          6
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          6
-        ],
-        [
-          "openai",
-          4
-        ],
-        [
-          "codex",
-          2
-        ],
-        [
-          "workflow",
-          2
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "developer",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
       "count": 2,
@@ -70,19 +30,59 @@
         ]
       ]
     },
+    "official": {
+      "group": "official",
+      "count": 4,
+      "top_sources": [
+        [
+          "OpenAI News",
+          4
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          4
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "developer",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          7
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          6
         ],
         [
           "openai",
@@ -97,10 +97,6 @@
           2
         ],
         [
-          "claude",
-          2
-        ],
-        [
           "agent",
           1
         ],
@@ -110,6 +106,10 @@
         ],
         [
           "智能体",
+          1
+        ],
+        [
+          "claude",
           1
         ],
         [
@@ -132,26 +132,6 @@
     }
   },
   "items": [
-    {
-      "id": "4aa689c1cee6baae33a81be641fc9cfe2f8c5ad1",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
-      "url": "https://openai.com/index/openai-cut-incident-investigation",
-      "published_at": "2026-10-26T07:00:00Z",
-      "summary": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows.",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "89698b9bd8fe366285233c1dc387d46308dab25a",
       "source_id": "github-changelog",
@@ -240,24 +220,6 @@
       "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
       "published_at": "2026-10-26T14:30:00Z",
       "summary": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "56fed60d7a2d81f3531b4710805342da2ec80142",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How Fanatics and OpenAI streamline the fan experience",
-      "url": "https://openai.com/index/fanatics-streamline-fan-experience",
-      "published_at": "2026-10-26T07:00:00Z",
-      "summary": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement.",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
@@ -401,25 +363,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "70c45f82a5ede5b0fa8b1020cd12e8a225d47c70",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "卡兹克手把手演示用 Codex 和 Claude 逆向改造现实硬件设备",
-      "url": "https://aihot.news/items/o1r046h1yurwlvv536eergn57",
-      "published_at": "2026-10-26T04:48:25Z",
-      "summary": "数字生命卡兹克分享用 AI 逆向改造现实设备的实操教程，以公司 4 台会议室电视为例，通过 Codex 开启 ADB 调试连接电视，清理开机广告、重做简洁桌面和粒子动态屏保，并复刻到其余 3 台。 🔗 阅读原文 via AIHOT · https://aihot.news/items/o1r046h1yurwlvv536eergn57",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -430,10 +373,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1325,
-      "kept_count": 6,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 420,
-      "checked_at": "2026-10-27T03:11:28.326915Z"
+      "latency_ms": 640,
+      "checked_at": "2026-10-27T09:21:54.179683Z"
     },
     {
       "source_id": "openai-skills",
@@ -444,8 +387,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 377,
-      "checked_at": "2026-10-27T03:11:28.704449Z"
+      "latency_ms": 350,
+      "checked_at": "2026-10-27T09:21:54.530194Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -456,8 +399,8 @@
       "fetched_count": 283,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 84,
-      "checked_at": "2026-10-27T03:11:28.792010Z"
+      "latency_ms": 185,
+      "checked_at": "2026-10-27T09:21:54.719901Z"
     },
     {
       "source_id": "google-deepmind",
@@ -468,8 +411,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 248,
-      "checked_at": "2026-10-27T03:11:29.041121Z"
+      "latency_ms": 209,
+      "checked_at": "2026-10-27T09:21:54.931487Z"
     },
     {
       "source_id": "google-ai",
@@ -480,8 +423,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 227,
-      "checked_at": "2026-10-27T03:11:29.268456Z"
+      "latency_ms": 266,
+      "checked_at": "2026-10-27T09:21:55.198347Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -492,8 +435,8 @@
       "fetched_count": 890,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 233,
-      "checked_at": "2026-10-27T03:11:29.511282Z"
+      "latency_ms": 320,
+      "checked_at": "2026-10-27T09:21:55.532216Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -504,8 +447,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 260,
-      "checked_at": "2026-10-27T03:11:29.772319Z"
+      "latency_ms": 315,
+      "checked_at": "2026-10-27T09:21:55.848363Z"
     },
     {
       "source_id": "github-changelog",
@@ -516,8 +459,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-10-27T03:11:29.802135Z"
+      "latency_ms": 39,
+      "checked_at": "2026-10-27T09:21:55.887928Z"
     },
     {
       "source_id": "aihot",
@@ -526,10 +469,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 7,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 1395,
-      "checked_at": "2026-10-27T03:11:31.198869Z"
+      "latency_ms": 951,
+      "checked_at": "2026-10-27T09:21:56.840755Z"
     }
   ],
   "control_notes": {
