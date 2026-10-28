@@ -1,39 +1,47 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-28T10:02:32.447494Z",
+  "generated_at": "2026-10-28T13:20:28.695746Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 7,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
-          "Hugging Face Blog",
+          "OpenAI News",
           2
         ],
         [
-          "OpenAI News",
-          1
+          "Hugging Face Blog",
+          2
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
+          4
         ],
         [
           "openai",
-          1
+          2
         ],
         [
           "codex",
-          1
+          2
         ],
         [
           "agent",
+          2
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "workflow",
           1
         ],
         [
@@ -76,14 +84,26 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "AI Hot",
-          1
+          2
         ]
       ],
       "top_keywords": [
+        [
+          "aggregate_noise",
+          2
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
         [
           "agent",
           1
@@ -91,15 +111,33 @@
         [
           "agents",
           1
-        ],
-        [
-          "aggregate_noise",
-          1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "a38b85cd6e2f1d802889c824bcacdbb81afa7ce7",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Legora is building the agentic operating system for legal work",
+      "url": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
+      "published_at": "2026-10-28T09:30:00Z",
+      "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
+      "relevance_score": 10,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "strong:agent",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "120bf881921da0dcf772ed9f5bd1cc9efd495951",
       "source_id": "openai-news",
@@ -178,6 +216,25 @@
       "is_ai_related": true
     },
     {
+      "id": "38c861b540840c7d90c67e6e42df0065faa62e08",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Cathedral 用 AI 智能体侵入 Anthropic 内部系统，双方对事件范围说法不一",
+      "url": "https://aihot.news/items/klkmnzle2z7p5y6cl477ce7sg",
+      "published_at": "2026-10-28T10:56:24Z",
+      "summary": "网络安全初创公司 Cathedral 通过第三方业务软件渗入 Anthropic 内部系统，称其 AI 智能体在不到十二小时内接触到会议记录、薪资数据和 Slack 消息，并借漏洞赏金计划披露问题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/klkmnzle2z7p5y6cl477ce7sg",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "982c3ab6e8e8c08d6813ae5023848e486a467194",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -204,11 +261,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1331,
-      "kept_count": 1,
+      "fetched_count": 1332,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 384,
-      "checked_at": "2026-10-28T10:02:29.822176Z"
+      "latency_ms": 644,
+      "checked_at": "2026-10-28T13:20:20.701635Z"
     },
     {
       "source_id": "openai-skills",
@@ -219,8 +276,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 491,
-      "checked_at": "2026-10-28T10:02:30.314174Z"
+      "latency_ms": 404,
+      "checked_at": "2026-10-28T13:20:21.106577Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -231,8 +288,8 @@
       "fetched_count": 285,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 110,
-      "checked_at": "2026-10-28T10:02:30.427251Z"
+      "latency_ms": 194,
+      "checked_at": "2026-10-28T13:20:21.305428Z"
     },
     {
       "source_id": "google-deepmind",
@@ -243,8 +300,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 225,
-      "checked_at": "2026-10-28T10:02:30.653884Z"
+      "latency_ms": 148,
+      "checked_at": "2026-10-28T13:20:21.455590Z"
     },
     {
       "source_id": "google-ai",
@@ -255,8 +312,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 238,
-      "checked_at": "2026-10-28T10:02:30.892120Z"
+      "latency_ms": 223,
+      "checked_at": "2026-10-28T13:20:21.679743Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -267,8 +324,8 @@
       "fetched_count": 891,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 279,
-      "checked_at": "2026-10-28T10:02:31.178395Z"
+      "latency_ms": 465,
+      "checked_at": "2026-10-28T13:20:22.158644Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -279,8 +336,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 276,
-      "checked_at": "2026-10-28T10:02:31.455051Z"
+      "latency_ms": 291,
+      "checked_at": "2026-10-28T13:20:22.450802Z"
     },
     {
       "source_id": "github-changelog",
@@ -291,8 +348,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-10-28T10:02:31.482982Z"
+      "latency_ms": 38,
+      "checked_at": "2026-10-28T13:20:22.489913Z"
     },
     {
       "source_id": "aihot",
@@ -301,10 +358,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 956,
-      "checked_at": "2026-10-28T10:02:32.440441Z"
+      "latency_ms": 6197,
+      "checked_at": "2026-10-28T13:20:28.688073Z"
     }
   ],
   "control_notes": {
