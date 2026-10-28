@@ -1,28 +1,28 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-28T15:16:42.047293Z",
+  "generated_at": "2026-10-28T19:19:15.036240Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 20,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
-          "Hugging Face Blog",
-          2
+          "OpenAI News",
+          1
         ],
         [
-          "OpenAI News",
+          "Google DeepMind",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
+          2
         ],
         [
           "openai",
@@ -45,67 +45,107 @@
           1
         ],
         [
-          "multimodal",
-          1
-        ],
-        [
-          "llm",
+          "gemini",
           1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 1,
+      "count": 10,
       "top_sources": [
         [
           "GitHub Changelog",
-          1
+          10
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          2
+          16
         ],
         [
           "agent",
-          1
+          3
         ],
         [
           "agents",
+          2
+        ],
+        [
+          "tool",
+          2
+        ],
+        [
+          "workflow",
+          2
+        ],
+        [
+          "automation",
+          1
+        ],
+        [
+          "reasoning model",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          2
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          2
-        ],
-        [
-          "anthropic",
-          1
+          8
         ],
         [
           "智能体",
-          1
+          4
+        ],
+        [
+          "开发者",
+          3
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "claude",
+          2
         ],
         [
           "agent",
+          2
+        ],
+        [
+          "copilot",
+          2
+        ],
+        [
+          "gemini",
           1
         ],
         [
-          "agents",
+          "deepmind",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "自动化",
           1
         ]
       ]
@@ -113,14 +153,14 @@
   },
   "items": [
     {
-      "id": "a38b85cd6e2f1d802889c824bcacdbb81afa7ce7",
+      "id": "6028803885019d30d4113769d2550baec723a4ae",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
       "title": "Legora is building the agentic operating system for legal work",
-      "url": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
+      "url": "https://openai.com/index/legora",
       "published_at": "2026-10-28T09:30:00Z",
       "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
       "relevance_score": 10,
@@ -135,16 +175,16 @@
       "is_ai_related": true
     },
     {
-      "id": "731c338026a162bd0fcd26ce73feb85361709be6",
+      "id": "87cb0415e926301843235a3168304138434bc964",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "GitHub Copilot supports server-to-server authentication",
-      "url": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
-      "published_at": "2026-10-27T21:36:55Z",
-      "summary": "GitHub Copilot now supports server-to-server authentication for GitHub Apps installed on organizations, available in public preview. Services and agents built with the GitHub Copilot SDK can now make requests on… The post GitHub Copilot supports server-to-server authentication appeared first on The GitHub Blog .",
+      "title": "GitHub Copilot in VS Code, Universe releases",
+      "url": "https://github.blog/changelog/2026-10-28-github-copilot-in-vs-code-universe-releases",
+      "published_at": "2026-10-28T15:33:00Z",
+      "summary": "This year, we focused on giving you more choice in how you work with GitHub Copilot in Visual Studio Code: which models you use, where your agents run, and how… The post GitHub Copilot in VS Code, Universe releases appeared first on The GitHub Blog .",
       "relevance_score": 7,
       "relevance_reasons": [
         "strong:agent",
@@ -155,38 +195,247 @@
       "is_ai_related": true
     },
     {
-      "id": "7c4cc086b8e4c9aad77ee4680ac4c2068dc786ee",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "1ce69465717fb90e36b8a212662970fd72396074",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Build shared workflows for your team with Copilot Automations",
+      "url": "https://github.blog/changelog/2026-10-28-build-shared-workflows-for-your-team-with-copilot-automations",
+      "published_at": "2026-10-28T15:35:00Z",
+      "summary": "Shared Copilot Automations are rolling out, enabling teams to build and maintain AI-powered workflows together. With Copilot Automations, you can combine prompts, triggers, and tools to design workflows around the… The post Build shared workflows for your team with Copilot Automations appeared first on The GitHub Blog .",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "weak:tool",
+        "weak:automation",
+        "weak:workflow",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d90a0ed1189207a77b4c2ae0274fc5753f729e6c",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Generate and edit images directly in Copilot",
+      "url": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+      "published_at": "2026-10-28T15:30:55Z",
+      "summary": "You can now generate and edit images using natural language in GitHub Copilot. When you ask for an image, your selected reasoning model calls a dedicated image-generation tool powered by… The post Generate and edit images directly in Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:reasoning model",
+        "weak:tool",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c42b6f9e71acbb7aca0581a231a346f18f7a0b4f",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Build specialized multimodal models with LFM3",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
-      "published_at": "2026-10-27T17:16:52Z",
+      "title": "Gemini 4 Carbon: Our next frontier model",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model",
+      "published_at": "2026-10-28T17:00:58Z",
       "summary": null,
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:multimodal",
+        "strong:gemini",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "9c6c2d8ebaf8d0de93f00bab8eebf4e4c1f2ff2f",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "b380382ce50bb4dbd845885a92df625de0760e9c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
+      "url": "https://aihot.news/items/fjeloaahylonpc0pv5tduusud",
+      "published_at": "2026-10-28T17:00:58Z",
+      "summary": "Google DeepMind 发布 Gemini 4 Carbon，定位为最强前沿模型，主打网络安全与长程智能体能力，在 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0% 取得领先，并以 59 分登顶 Artificial Analysis Intelligence Index v5.0。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fjeloaahylonpc0pv5tduusud",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:deepmind",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4e1b4dff5790bc58a4d7a71d950d48bef66a53ae",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Can we trust LLMs to judge whether a research idea is novel?",
-      "url": "https://huggingface.co/blog/allenai/novelty-bench",
-      "published_at": "2026-10-27T16:12:42Z",
-      "summary": null,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub intelligence puts your code, context, and history to work",
+      "url": "https://github.blog/changelog/2026-10-28-github-intelligence-puts-your-code-context-and-history-to-work",
+      "published_at": "2026-10-28T15:40:00Z",
+      "summary": "Agents should understand more than your codebase—they should understand how your team works. Your preferences, repository conventions, skills, and custom instructions guide how changes should be made, while code in… The post GitHub intelligence puts your code, context, and history to work appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "983655bd259a4c1ea9b18250d2de784489d0f4b2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "犹他州 10 个州政府部门 34 名开发者试点使用 Claude Code",
+      "url": "https://aihot.news/items/fbxzb7x7fzbjn0dmf367ywxrm",
+      "published_at": "2026-10-28T17:09:54Z",
+      "summary": "Boris Cherny 介绍犹他州向 10 个州政府部门的 34 名开发者提供了 Claude Code。试点显示 80% 的开发者在 30 分钟内搭好可用环境，71% 的开发者在为期四周的试点结束前报告节省了 20 小时以上时间。该推文引用了 Anthropic 与 GSA 合作将 Claude 以 40% 折扣提供给联邦及各级政府的公告作为背景。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fbxzb7x7fzbjn0dmf367ywxrm",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "3deaa56339ae6951667334f5277a0705e49ec98e",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Route and orchestrate models with GitHub Copilot Fusion",
+      "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+      "published_at": "2026-10-28T16:00:00Z",
+      "summary": "GitHub Copilot Fusion is generally available. Instead of picking a model for each task, choose Copilot Fusion and let Copilot intelligently route and orchestrate which models it uses for you.… The post Route and orchestrate models with GitHub Copilot Fusion appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:llm",
-        "source_prior:official_ai"
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "92fd0bd85aab1bf66bd012a06f609ca301b1b635",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot app, Universe releases",
+      "url": "https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases",
+      "published_at": "2026-10-28T15:55:00Z",
+      "summary": "Work doesn’t always fit in a single repository or session. A feature can span several repositories. A launch plan can pull in specs, designs, and assets without touching a repository… The post GitHub Copilot app, Universe releases appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "307aff89b74b634e0e34602f08de405d6904f063",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Enterprise now includes access to GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+      "published_at": "2026-10-28T15:50:00Z",
+      "summary": "Enterprises working with a GitHub or Microsoft account team can now get Copilot included with GitHub Enterprise for every licensed user. Previously, you had to manage two things: how many… The post GitHub Enterprise now includes access to GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7195b4115ebdbc2bfb14f7d31bf00f57f8394887",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Security extension for the GitHub Copilot app",
+      "url": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+      "published_at": "2026-10-28T15:45:00Z",
+      "summary": "You can now work through your repository’s GitHub code scanning alerts without leaving the GitHub Copilot app. The new GitHub security extension, now in public preview, lets you find the… The post Security extension for the GitHub Copilot app appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "706e84f243f8b453ab954345d41171dbce538bdb",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot Fusion now supports selection of local models",
+      "url": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+      "published_at": "2026-10-28T15:30:42Z",
+      "summary": "Today we are shipping intelligent routing for local models into experimental preview. GitHub Copilot Fusion can now choose between supported on-device models and cloud models, enabling intelligent local model routing… The post GitHub Copilot Fusion now supports selection of local models appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f35d639e28ebfdee6fdc63ca8473bfafa0264a36",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Agentic Workflows generally available",
+      "url": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+      "published_at": "2026-10-28T15:30:15Z",
+      "summary": "GitHub Agentic Workflows, an open source project from GitHub Next, is now generally available. With agentic workflows, you can automate reasoning-based tasks like issue triage, CI failure analysis, documentation updates,… The post GitHub Agentic Workflows generally available appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:workflow"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "fef102adec1a45cac055e1c89120d6609603453c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Microsoft 通过 Foundry 开放 Copilot harness，支持多模型 Agent 开发",
+      "url": "https://aihot.news/items/tdp7qmrh74fdfarxbi4jaoc6v",
+      "published_at": "2026-10-28T16:51:35Z",
+      "summary": "Microsoft 宣布将 GitHub 团队打造的 Copilot harness 通过 Microsoft Foundry 向开发者和企业开放，该 harness 已驱动 Copilot Code、Copilot Studio、GitHub Copilot app 和 CLI 等产品。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tdp7qmrh74fdfarxbi4jaoc6v",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -210,20 +459,78 @@
       "is_ai_related": true
     },
     {
-      "id": "982c3ab6e8e8c08d6813ae5023848e486a467194",
+      "id": "085c924bb6385106aef74dc7d56e9d0875593de9",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Replit Cloud Agents 开放企业代码库贡献，非技术人员可直接提交经测试的 PR",
-      "url": "https://aihot.news/items/qoz4pwew5rsp1idirgbhtpj9d",
-      "published_at": "2026-10-27T15:30:00Z",
-      "summary": "Replit 推出 Cloud Agents，面向 Pro 与 Enterprise 客户开放，让设计、客服等非工程人员用自然语言向公司核心代码库提交经测试的 pull request。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qoz4pwew5rsp1idirgbhtpj9d",
+      "title": "Claude Code 触发用量上限后如何用 OpenRouter 继续编码",
+      "url": "https://aihot.news/items/wgss1ksoafvu62x799sdfs0fo",
+      "published_at": "2026-10-28T00:00:00Z",
+      "summary": "OpenRouter 介绍 Claude Code 触发用量上限时改用 OpenRouter API key 继续编码的方法：设置三个环境变量或用 Ori Harness 的 ori claude 命令，即可按 token 付费使用同样的 Claude 模型，没有五小时和每周限制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wgss1ksoafvu62x799sdfs0fo",
       "relevance_score": 3,
       "relevance_reasons": [
+        "strong:claude",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "62a06a57f8224ea1812e2cc8eff16abab20e3790",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "GitHub Universe 2026 发布 GitHub Copilot app、Copilot Fusion 等智能体产品",
+      "url": "https://aihot.news/items/xonc43xgcx39303i40k8022rl",
+      "published_at": "2026-10-28T16:09:28Z",
+      "summary": "GitHub 在 GitHub Universe 2026 上提出把 GitHub 打造为完整软件交付系统的愿景，并发布多项产品：GitHub Copilot app 面向智能体交付。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xonc43xgcx39303i40k8022rl",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:copilot",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "adb1e230eb3d402a3579bb78ac46b3d1512babff",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "GitHub Octoverse 2026：开发活动创新高，超 40% 的 PR 由智能体起草",
+      "url": "https://aihot.news/items/s3m3uzabqoxxed9ae50b73qvc",
+      "published_at": "2026-10-28T16:07:40Z",
+      "summary": "GitHub 发布 2026 年度 Octoverse 报告：过去 12 个月开发者推送代码 179 亿次，超过 2024 和 2025 年之和，合并 PR 达 13 亿次。 🔗 阅读原文 via AIHOT · https://aihot.news/items/s3m3uzabqoxxed9ae50b73qvc",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d5fb98b87a8ab170d114a37f19b399128f0f68f4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "a16z 调研 100 位 CISO：AI 如何改写 2027 年安全议程",
+      "url": "https://aihot.news/items/ja57b43t7h52wid2g4zu6vw2t",
+      "published_at": "2026-10-28T16:00:31Z",
+      "summary": "a16z 发布对 100 名千人员以上企业 CISO 的调研，87% 预期 2027 年安全支出增长，主要受 AI 威胁和自身 AI 部署扩大攻击面驱动。2027 年最受关注的七项安全举措全部与 AI 相关，其中 SOC 自动化获最多首选票，内部 AI agent 安全、SOC 自动化和进攻性安全升幅最大，但 AI SOC 工具生产环境使用率仅 18%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ja57b43t7h52wid2g4zu6vw2t",
+      "relevance_score": 2,
+      "relevance_reasons": [
         "strong:agent",
-        "strong:agents",
+        "weak:自动化",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -236,11 +543,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1332,
+      "fetched_count": 1333,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 439,
-      "checked_at": "2026-10-28T15:16:38.638163Z"
+      "latency_ms": 435,
+      "checked_at": "2026-10-28T19:19:11.783752Z"
     },
     {
       "source_id": "openai-skills",
@@ -251,8 +558,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 283,
-      "checked_at": "2026-10-28T15:16:38.921554Z"
+      "latency_ms": 394,
+      "checked_at": "2026-10-28T19:19:12.178432Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -263,8 +570,8 @@
       "fetched_count": 285,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 113,
-      "checked_at": "2026-10-28T15:16:39.036969Z"
+      "latency_ms": 149,
+      "checked_at": "2026-10-28T19:19:12.330570Z"
     },
     {
       "source_id": "google-deepmind",
@@ -273,10 +580,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 391,
-      "checked_at": "2026-10-28T15:16:39.429312Z"
+      "latency_ms": 568,
+      "checked_at": "2026-10-28T19:19:12.899910Z"
     },
     {
       "source_id": "google-ai",
@@ -287,8 +594,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 222,
-      "checked_at": "2026-10-28T15:16:39.652042Z"
+      "latency_ms": 321,
+      "checked_at": "2026-10-28T19:19:13.221232Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -297,10 +604,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 891,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 242,
-      "checked_at": "2026-10-28T15:16:39.901470Z"
+      "latency_ms": 239,
+      "checked_at": "2026-10-28T19:19:13.470888Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -311,8 +618,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 318,
-      "checked_at": "2026-10-28T15:16:40.219969Z"
+      "latency_ms": 287,
+      "checked_at": "2026-10-28T19:19:13.758195Z"
     },
     {
       "source_id": "github-changelog",
@@ -321,10 +628,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-10-28T15:16:40.252315Z"
+      "latency_ms": 31,
+      "checked_at": "2026-10-28T19:19:13.789839Z"
     },
     {
       "source_id": "aihot",
@@ -333,10 +640,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 2,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 1786,
-      "checked_at": "2026-10-28T15:16:42.039348Z"
+      "latency_ms": 1237,
+      "checked_at": "2026-10-28T19:19:15.028092Z"
     }
   ],
   "control_notes": {
