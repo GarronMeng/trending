@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-27T19:12:52.658440Z",
+  "generated_at": "2026-10-28T03:25:40.028160Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 8,
   "groups": {
     "official": {
       "group": "official",
@@ -26,14 +26,14 @@
         ],
         [
           "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
+          2
         ],
         [
           "agent",
+          2
+        ],
+        [
+          "chatgpt",
           1
         ],
         [
@@ -45,7 +45,7 @@
           1
         ],
         [
-          "workflow",
+          "benchmark",
           1
         ],
         [
@@ -60,45 +60,41 @@
     },
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          1
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          4
-        ],
-        [
-          "openai",
-          1
+          2
         ],
         [
           "agent",
+          1
+        ],
+        [
+          "agents",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          4
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
-        ],
-        [
-          "openai",
-          2
+          3
         ],
         [
           "agent",
@@ -121,15 +117,11 @@
           1
         ],
         [
+          "openai",
+          1
+        ],
+        [
           "chatgpt",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
           1
         ]
       ]
@@ -158,41 +150,43 @@
       "is_ai_related": true
     },
     {
-      "id": "89698b9bd8fe366285233c1dc387d46308dab25a",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GPT-6.1 Terra in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot",
-      "published_at": "2026-10-26T19:15:53Z",
-      "summary": "GPT-6.1 Terra, OpenAI’s newest model, is now generally available in GitHub Copilot. It is designed for everyday agentic coding and terminal work at a lower cost than GPT-6.1 Sol. In… The post GPT-6.1 Terra in GitHub Copilot appeared first on The GitHub Blog .",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "42f4ed36bfaf79bc8bec0f3c7145a1a8abded143",
+      "id": "120bf881921da0dcf772ed9f5bd1cc9efd495951",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
-      "url": "https://openai.com/index/greptile-code-review-codex-astra",
-      "published_at": "2026-10-26T22:00:00Z",
-      "summary": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
-      "relevance_score": 4,
+      "title": "Retell uses OpenAI models to help power 100M monthly calls",
+      "url": "https://openai.com/index/retell-ai",
+      "published_at": "2026-10-27T15:00:00Z",
+      "summary": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
+      "relevance_score": 8,
       "relevance_reasons": [
+        "strong:openai",
         "strong:codex",
-        "weak:workflow",
+        "strong:agent",
+        "weak:benchmark",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "731c338026a162bd0fcd26ce73feb85361709be6",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot supports server-to-server authentication",
+      "url": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+      "published_at": "2026-10-27T21:36:55Z",
+      "summary": "GitHub Copilot now supports server-to-server authentication for GitHub Apps installed on organizations, available in public preview. Services and agents built with the GitHub Copilot SDK can now make requests on… The post GitHub Copilot supports server-to-server authentication appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -229,24 +223,6 @@
       "relevance_reasons": [
         "strong:llm",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "abafa8b58728cdab7054905ed29c8de1e84b64fd",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Copilot assisted permissions generally available",
-      "url": "https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available",
-      "published_at": "2026-10-26T22:31:30Z",
-      "summary": "Assisted permissions are now generally available in GitHub Copilot CLI, GitHub Copilot app, and Visual Studio Code. When Copilot requests permission to run a command, access a file system path,… The post GitHub Copilot assisted permissions generally available appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -307,26 +283,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "d56ca819286929398b8dca0ed86d5e37ff58a7f6",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 发布 GPT-6.1 Terra，主打电脑操作与写作能力",
-      "url": "https://aihot.news/items/xmpu9lo3lbzld3tqsyrcy5e2v",
-      "published_at": "2026-10-26T19:24:11Z",
-      "summary": "作者宣布 GPT-6.1 Terra 回归，称这是其首个在写作、个性和细致理解请求上显著更好的模型。该模型擅长电脑操作，可理解屏幕内容并跨应用执行操作，在 API 和订阅中提供的用量是 6.1 Sol 的 2 倍，价格更低。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xmpu9lo3lbzld3tqsyrcy5e2v",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -336,11 +292,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1327,
+      "fetched_count": 1331,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 596,
-      "checked_at": "2026-10-27T19:12:46.017793Z"
+      "latency_ms": 446,
+      "checked_at": "2026-10-28T03:25:35.863019Z"
     },
     {
       "source_id": "openai-skills",
@@ -351,8 +307,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 233,
-      "checked_at": "2026-10-27T19:12:46.251356Z"
+      "latency_ms": 359,
+      "checked_at": "2026-10-28T03:25:36.222983Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -360,11 +316,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 283,
+      "fetched_count": 285,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 169,
-      "checked_at": "2026-10-27T19:12:46.424856Z"
+      "latency_ms": 182,
+      "checked_at": "2026-10-28T03:25:36.408516Z"
     },
     {
       "source_id": "google-deepmind",
@@ -375,8 +331,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 88,
-      "checked_at": "2026-10-27T19:12:46.514944Z"
+      "latency_ms": 202,
+      "checked_at": "2026-10-28T03:25:36.611822Z"
     },
     {
       "source_id": "google-ai",
@@ -387,8 +343,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 168,
-      "checked_at": "2026-10-27T19:12:46.684008Z"
+      "latency_ms": 199,
+      "checked_at": "2026-10-28T03:25:36.811550Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -399,8 +355,8 @@
       "fetched_count": 891,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 336,
-      "checked_at": "2026-10-27T19:12:47.033572Z"
+      "latency_ms": 242,
+      "checked_at": "2026-10-28T03:25:37.063565Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -411,8 +367,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 4601,
-      "checked_at": "2026-10-27T19:12:51.634989Z"
+      "latency_ms": 246,
+      "checked_at": "2026-10-28T03:25:37.310306Z"
     },
     {
       "source_id": "github-changelog",
@@ -421,10 +377,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 156,
-      "checked_at": "2026-10-27T19:12:51.792222Z"
+      "latency_ms": 29,
+      "checked_at": "2026-10-28T03:25:37.340037Z"
     },
     {
       "source_id": "aihot",
@@ -433,10 +389,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 4,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 855,
-      "checked_at": "2026-10-27T19:12:52.648800Z"
+      "latency_ms": 2679,
+      "checked_at": "2026-10-28T03:25:40.020492Z"
     }
   ],
   "control_notes": {
