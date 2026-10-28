@@ -43,30 +43,17 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>8</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>4</b><span>官方源条目</span></div>
-        <div class="stat"><b>3</b><span>聚合源条目</span></div>
+        <div class="stat"><b>5</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>3</b><span>官方源条目</span></div>
+        <div class="stat"><b>1</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-28T03:25:40.029502Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-10-28T10:02:32.448233Z</p></div>
       <div class="grid">
-    <article class="card">
-      <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-10-27T07:00:00Z</span>
-        <strong>Score 9</strong>
-      </div>
-      <h3><a href="https://openai.com/index/oracle-apps-in-chatgpt" target="_blank" rel="noreferrer">OpenAI expands partnership with Oracle to bring its apps to ChatGPT</a></h3>
-      <p class='summary'>OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.</p>
-      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>strong:agent</span><span>strong:agents</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
     <article class="card">
       <div class="meta">
         <span>OpenAI News</span>
@@ -130,47 +117,21 @@
       <p class='summary'>Replit 推出 Cloud Agents，面向 Pro 与 Enterprise 客户开放，让设计、客服等非工程人员用自然语言向公司核心代码库提交经测试的 pull request。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qoz4pwew5rsp1idirgbhtpj9d</p>
       <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-10-27T08:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/p92a4pkxkheznj9nmt50o08l6" target="_blank" rel="noreferrer">Ai2 发布 Old Ideas, Novel Problems 研究与 benchmark，揭示 LLM 新颖性裁判不稳定</a></h3>
-      <p class='summary'>Ai2 发布研究 Old Ideas, Novel Problems、配套 benchmark、数据、代码和自动化流水线，测试 LLM 作为研究想法新颖性裁判的可靠性。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p92a4pkxkheznj9nmt50o08l6</p>
-      <div class="tags"><span>strong:llm</span><span>weak:benchmark</span><span>weak:自动化</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-10-27T07:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/zbp5qzehshqnvgimabeu27cb1" target="_blank" rel="noreferrer">OpenAI 扩大与 Oracle 合作，将 Oracle 应用与数据接入 ChatGPT</a></h3>
-      <p class='summary'>OpenAI 宣布扩大与 Oracle 的合作，将 Oracle 应用和数据接入 ChatGPT，并用 OpenAI 模型驱动 Oracle 新产品。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zbp5qzehshqnvgimabeu27cb1</p>
-      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1331</td><td>2</td><td>446ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>359ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>285</td><td>0</td><td>182ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>202ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>199ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>891</td><td>2</td><td>242ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>246ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>29ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>3</td><td>2679ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1331</td><td>1</td><td>384ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>491ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>285</td><td>0</td><td>110ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>225ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>238ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>891</td><td>2</td><td>279ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>276ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>27ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>51</td><td>1</td><td>956ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

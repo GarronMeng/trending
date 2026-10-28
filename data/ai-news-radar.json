@@ -1,47 +1,39 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-28T03:25:40.028160Z",
+  "generated_at": "2026-10-28T10:02:32.447494Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 5,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 3,
       "top_sources": [
-        [
-          "OpenAI News",
-          2
-        ],
         [
           "Hugging Face Blog",
           2
+        ],
+        [
+          "OpenAI News",
+          1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          4
+          3
         ],
         [
           "openai",
-          2
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "agents",
           1
         ],
         [
           "codex",
+          1
+        ],
+        [
+          "agent",
           1
         ],
         [
@@ -84,18 +76,14 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 1,
       "top_sources": [
         [
           "AI Hot",
-          3
+          1
         ]
       ],
       "top_keywords": [
-        [
-          "aggregate_noise",
-          3
-        ],
         [
           "agent",
           1
@@ -105,50 +93,13 @@
           1
         ],
         [
-          "llm",
-          1
-        ],
-        [
-          "benchmark",
-          1
-        ],
-        [
-          "自动化",
-          1
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
+          "aggregate_noise",
           1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "2d730a4edb05705a9f9398b860ea94e7495ecae8",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
-      "url": "https://openai.com/index/oracle-apps-in-chatgpt",
-      "published_at": "2026-10-27T07:00:00Z",
-      "summary": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:agent",
-        "strong:agents",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "120bf881921da0dcf772ed9f5bd1cc9efd495951",
       "source_id": "openai-news",
@@ -244,45 +195,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "7df1053655a7e87931a8a45021c2a5b80c859b2d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Ai2 发布 Old Ideas, Novel Problems 研究与 benchmark，揭示 LLM 新颖性裁判不稳定",
-      "url": "https://aihot.news/items/p92a4pkxkheznj9nmt50o08l6",
-      "published_at": "2026-10-27T08:00:00Z",
-      "summary": "Ai2 发布研究 Old Ideas, Novel Problems、配套 benchmark、数据、代码和自动化流水线，测试 LLM 作为研究想法新颖性裁判的可靠性。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p92a4pkxkheznj9nmt50o08l6",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:llm",
-        "weak:benchmark",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a9c7710c0f2e333a93e041affec69bd0250fbbe2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 扩大与 Oracle 合作，将 Oracle 应用与数据接入 ChatGPT",
-      "url": "https://aihot.news/items/zbp5qzehshqnvgimabeu27cb1",
-      "published_at": "2026-10-27T07:00:00Z",
-      "summary": "OpenAI 宣布扩大与 Oracle 的合作，将 Oracle 应用和数据接入 ChatGPT，并用 OpenAI 模型驱动 Oracle 新产品。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zbp5qzehshqnvgimabeu27cb1",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -293,10 +205,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1331,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 446,
-      "checked_at": "2026-10-28T03:25:35.863019Z"
+      "latency_ms": 384,
+      "checked_at": "2026-10-28T10:02:29.822176Z"
     },
     {
       "source_id": "openai-skills",
@@ -307,8 +219,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 359,
-      "checked_at": "2026-10-28T03:25:36.222983Z"
+      "latency_ms": 491,
+      "checked_at": "2026-10-28T10:02:30.314174Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -319,8 +231,8 @@
       "fetched_count": 285,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 182,
-      "checked_at": "2026-10-28T03:25:36.408516Z"
+      "latency_ms": 110,
+      "checked_at": "2026-10-28T10:02:30.427251Z"
     },
     {
       "source_id": "google-deepmind",
@@ -331,8 +243,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 202,
-      "checked_at": "2026-10-28T03:25:36.611822Z"
+      "latency_ms": 225,
+      "checked_at": "2026-10-28T10:02:30.653884Z"
     },
     {
       "source_id": "google-ai",
@@ -343,8 +255,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 199,
-      "checked_at": "2026-10-28T03:25:36.811550Z"
+      "latency_ms": 238,
+      "checked_at": "2026-10-28T10:02:30.892120Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -355,8 +267,8 @@
       "fetched_count": 891,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 242,
-      "checked_at": "2026-10-28T03:25:37.063565Z"
+      "latency_ms": 279,
+      "checked_at": "2026-10-28T10:02:31.178395Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -367,8 +279,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 246,
-      "checked_at": "2026-10-28T03:25:37.310306Z"
+      "latency_ms": 276,
+      "checked_at": "2026-10-28T10:02:31.455051Z"
     },
     {
       "source_id": "github-changelog",
@@ -379,8 +291,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-10-28T03:25:37.340037Z"
+      "latency_ms": 27,
+      "checked_at": "2026-10-28T10:02:31.482982Z"
     },
     {
       "source_id": "aihot",
@@ -389,10 +301,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 3,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 2679,
-      "checked_at": "2026-10-28T03:25:40.020492Z"
+      "latency_ms": 956,
+      "checked_at": "2026-10-28T10:02:32.440441Z"
     }
   ],
   "control_notes": {
