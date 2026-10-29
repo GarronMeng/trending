@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-28T19:19:15.036240Z",
+  "generated_at": "2026-10-29T03:48:06.100890Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 20,
+  "item_count": 21,
   "groups": {
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "OpenAI News",
-          1
+          2
         ],
         [
           "Google DeepMind",
@@ -22,27 +22,27 @@
       "top_keywords": [
         [
           "official_ai",
-          2
+          3
         ],
         [
           "openai",
-          1
+          2
         ],
         [
           "chatgpt",
-          1
+          2
         ],
         [
           "codex",
-          1
+          2
         ],
         [
           "agent",
-          1
+          2
         ],
         [
           "workflow",
-          1
+          2
         ],
         [
           "gemini",
@@ -109,12 +109,12 @@
           4
         ],
         [
-          "开发者",
+          "anthropic",
           3
         ],
         [
-          "anthropic",
-          2
+          "开发者",
+          3
         ],
         [
           "claude",
@@ -137,14 +137,6 @@
           1
         ],
         [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
           "自动化",
           1
         ]
@@ -152,6 +144,28 @@
     }
   },
   "items": [
+    {
+      "id": "c03a50a37194e947c14ac11b1cae4f5c0e6ea951",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+      "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "published_at": "2026-10-28T13:15:00Z",
+      "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
+      "relevance_score": 10,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "strong:agent",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "6028803885019d30d4113769d2550baec723a4ae",
       "source_id": "openai-news",
@@ -420,6 +434,25 @@
       "is_ai_related": true
     },
     {
+      "id": "95656fb6b92a9a5b959dabcba93b2c52894fa7b0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 报告：Claude 研究模型在 Chrome、Safari、Android、Windows、Linux 发现漏洞并串联 5 条攻击链",
+      "url": "https://aihot.news/items/jpt1eeuj2p1mgrxbufuv3ntdn",
+      "published_at": "2026-10-28T22:35:25Z",
+      "summary": "Anthropic 于 10 月 27 日发布研究报告，称一个未公开的内部 Claude 研究模型在 Chrome、Safari、Android、Windows 和 Linux 中发现漏洞，串联出 5 条可实际运行的攻击链，相关漏洞已按协调披露流程报告并修复。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jpt1eeuj2p1mgrxbufuv3ntdn",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "fef102adec1a45cac055e1c89120d6609603453c",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -454,26 +487,6 @@
       "relevance_reasons": [
         "strong:anthropic",
         "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "085c924bb6385106aef74dc7d56e9d0875593de9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Code 触发用量上限后如何用 OpenRouter 继续编码",
-      "url": "https://aihot.news/items/wgss1ksoafvu62x799sdfs0fo",
-      "published_at": "2026-10-28T00:00:00Z",
-      "summary": "OpenRouter 介绍 Claude Code 触发用量上限时改用 OpenRouter API key 继续编码的方法：设置三个环境变量或用 Ori Harness 的 ori claude 命令，即可按 token 付费使用同样的 Claude 模型，没有五小时和每周限制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wgss1ksoafvu62x799sdfs0fo",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "weak:api",
-        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -543,11 +556,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1333,
-      "kept_count": 1,
+      "fetched_count": 1334,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 435,
-      "checked_at": "2026-10-28T19:19:11.783752Z"
+      "latency_ms": 590,
+      "checked_at": "2026-10-29T03:48:03.689358Z"
     },
     {
       "source_id": "openai-skills",
@@ -558,8 +571,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 394,
-      "checked_at": "2026-10-28T19:19:12.178432Z"
+      "latency_ms": 221,
+      "checked_at": "2026-10-29T03:48:03.911388Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -567,11 +580,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 285,
+      "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 149,
-      "checked_at": "2026-10-28T19:19:12.330570Z"
+      "latency_ms": 133,
+      "checked_at": "2026-10-29T03:48:04.049418Z"
     },
     {
       "source_id": "google-deepmind",
@@ -582,8 +595,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 568,
-      "checked_at": "2026-10-28T19:19:12.899910Z"
+      "latency_ms": 331,
+      "checked_at": "2026-10-29T03:48:04.382605Z"
     },
     {
       "source_id": "google-ai",
@@ -594,8 +607,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 321,
-      "checked_at": "2026-10-28T19:19:13.221232Z"
+      "latency_ms": 169,
+      "checked_at": "2026-10-29T03:48:04.552405Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -606,8 +619,8 @@
       "fetched_count": 891,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 239,
-      "checked_at": "2026-10-28T19:19:13.470888Z"
+      "latency_ms": 288,
+      "checked_at": "2026-10-29T03:48:04.854382Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -618,8 +631,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 287,
-      "checked_at": "2026-10-28T19:19:13.758195Z"
+      "latency_ms": 239,
+      "checked_at": "2026-10-29T03:48:05.094044Z"
     },
     {
       "source_id": "github-changelog",
@@ -630,8 +643,8 @@
       "fetched_count": 10,
       "kept_count": 10,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-10-28T19:19:13.789839Z"
+      "latency_ms": 37,
+      "checked_at": "2026-10-29T03:48:05.132042Z"
     },
     {
       "source_id": "aihot",
@@ -642,8 +655,8 @@
       "fetched_count": 51,
       "kept_count": 8,
       "error": null,
-      "latency_ms": 1237,
-      "checked_at": "2026-10-28T19:19:15.028092Z"
+      "latency_ms": 960,
+      "checked_at": "2026-10-29T03:48:06.093583Z"
     }
   ],
   "control_notes": {
