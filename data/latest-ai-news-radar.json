@@ -1,55 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-29T10:26:45.497003Z",
+  "generated_at": "2026-10-29T13:29:48.642340Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 20,
+  "item_count": 18,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 2,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ],
-        [
-          "Google DeepMind",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          2
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
       "count": 10,
@@ -90,31 +46,51 @@
         ]
       ]
     },
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "Google DeepMind",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "gemini",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          8
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          7
         ],
         [
           "智能体",
-          4
-        ],
-        [
-          "anthropic",
           3
         ],
         [
           "开发者",
           3
+        ],
+        [
+          "anthropic",
+          2
         ],
         [
           "claude",
@@ -144,28 +120,6 @@
     }
   },
   "items": [
-    {
-      "id": "c03a50a37194e947c14ac11b1cae4f5c0e6ea951",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
-      "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
-      "published_at": "2026-10-28T13:15:00Z",
-      "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
-      "relevance_score": 10,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:codex",
-        "strong:agent",
-        "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "87cb0415e926301843235a3168304138434bc964",
       "source_id": "github-changelog",
@@ -451,25 +405,6 @@
       "is_ai_related": true
     },
     {
-      "id": "38c861b540840c7d90c67e6e42df0065faa62e08",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Cathedral 用 AI 智能体侵入 Anthropic 内部系统，双方对事件范围说法不一",
-      "url": "https://aihot.news/items/klkmnzle2z7p5y6cl477ce7sg",
-      "published_at": "2026-10-28T10:56:24Z",
-      "summary": "网络安全初创公司 Cathedral 通过第三方业务软件渗入 Anthropic 内部系统，称其 AI 智能体在不到十二小时内接触到会议记录、薪资数据和 Slack 消息，并借漏洞赏金计划披露问题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/klkmnzle2z7p5y6cl477ce7sg",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "62a06a57f8224ea1812e2cc8eff16abab20e3790",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -535,10 +470,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1334,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 620,
-      "checked_at": "2026-10-29T10:26:39.079563Z"
+      "latency_ms": 615,
+      "checked_at": "2026-10-29T13:29:44.679361Z"
     },
     {
       "source_id": "openai-skills",
@@ -549,8 +484,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 251,
-      "checked_at": "2026-10-29T10:26:39.331584Z"
+      "latency_ms": 592,
+      "checked_at": "2026-10-29T13:29:45.272341Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -561,8 +496,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 126,
-      "checked_at": "2026-10-29T10:26:39.461850Z"
+      "latency_ms": 131,
+      "checked_at": "2026-10-29T13:29:45.408015Z"
     },
     {
       "source_id": "google-deepmind",
@@ -573,8 +508,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 199,
-      "checked_at": "2026-10-29T10:26:39.663144Z"
+      "latency_ms": 218,
+      "checked_at": "2026-10-29T13:29:45.628003Z"
     },
     {
       "source_id": "google-ai",
@@ -585,8 +520,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 296,
-      "checked_at": "2026-10-29T10:26:39.960032Z"
+      "latency_ms": 112,
+      "checked_at": "2026-10-29T13:29:45.740589Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -594,11 +529,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 891,
+      "fetched_count": 892,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 329,
-      "checked_at": "2026-10-29T10:26:40.302673Z"
+      "latency_ms": 258,
+      "checked_at": "2026-10-29T13:29:46.012753Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -609,8 +544,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 516,
-      "checked_at": "2026-10-29T10:26:40.819266Z"
+      "latency_ms": 280,
+      "checked_at": "2026-10-29T13:29:46.293673Z"
     },
     {
       "source_id": "github-changelog",
@@ -621,8 +556,8 @@
       "fetched_count": 10,
       "kept_count": 10,
       "error": null,
-      "latency_ms": 41,
-      "checked_at": "2026-10-29T10:26:40.861762Z"
+      "latency_ms": 36,
+      "checked_at": "2026-10-29T13:29:46.330703Z"
     },
     {
       "source_id": "aihot",
@@ -631,10 +566,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 8,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 4626,
-      "checked_at": "2026-10-29T10:26:45.489048Z"
+      "latency_ms": 2299,
+      "checked_at": "2026-10-29T13:29:48.631908Z"
     }
   ],
   "control_notes": {
