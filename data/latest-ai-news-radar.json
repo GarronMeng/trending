@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-29T13:29:48.642340Z",
+  "generated_at": "2026-10-29T15:21:54.608548Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 18,
+  "item_count": 21,
   "groups": {
     "developer": {
       "group": "developer",
@@ -48,8 +48,12 @@
     },
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 2,
       "top_sources": [
+        [
+          "Hugging Face Blog",
+          1
+        ],
         [
           "Google DeepMind",
           1
@@ -57,28 +61,32 @@
       ],
       "top_keywords": [
         [
-          "gemini",
+          "official_ai",
+          2
+        ],
+        [
+          "hugging face",
           1
         ],
         [
-          "official_ai",
+          "gemini",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          7
+          9
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          9
         ],
         [
           "智能体",
@@ -94,6 +102,10 @@
         ],
         [
           "claude",
+          2
+        ],
+        [
+          "多模态",
           2
         ],
         [
@@ -113,7 +125,11 @@
           1
         ],
         [
-          "自动化",
+          "llm",
+          1
+        ],
+        [
+          "hugging face",
           1
         ]
       ]
@@ -178,6 +194,24 @@
         "weak:tool",
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "394803660f836d5e7c7f5de733249380ae52f6c2",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
+      "url": "https://huggingface.co/blog/mistral-large4",
+      "published_at": "2026-10-29T00:00:00Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -366,6 +400,44 @@
       "is_ai_related": true
     },
     {
+      "id": "9ca41cc7f97c7dfc4d18bb27dd9305b38550d93d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "vLLM 发布 Mistral Large 4 Day 0 支持",
+      "url": "https://aihot.news/items/x6x8nkxn5mqc55umit3clj1tf",
+      "published_at": "2026-10-29T00:00:00Z",
+      "summary": "vLLM 团队宣布对 Mistral 新旗舰模型 Mistral Large 4 提供 Day 0 支持，该模型为 1T 参数、每 token 激活 49B 的原生多模态 MoE 模型，采用 MLA 稀疏注意力加 DSA top-k 索引器、跨层 KV 共享、NoPE、SSMax 和 LeRoPE 等新架构，并内置 DSpark 推测解码草稿器与 Pixtral 视觉编码器。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x6x8nkxn5mqc55umit3clj1tf",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:llm",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "26377ca4ed6fe8854a50d84aca53758b4835818b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Mistral Large 4（Le Chonk）登陆 Hugging Face：1T 参数 MoE 多模态开源权重模型",
+      "url": "https://aihot.news/items/upsd8u37hkkquohy3w3sjvszi",
+      "published_at": "2026-10-29T00:00:00Z",
+      "summary": "Hugging Face 发布 Mistral Large 4（Le Chonk）的上线博客，模型为多模态多语言 MoE 架构，总参数约 1T、激活 49B、上下文窗口 1M token。 🔗 阅读原文 via AIHOT · https://aihot.news/items/upsd8u37hkkquohy3w3sjvszi",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "95656fb6b92a9a5b959dabcba93b2c52894fa7b0",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -472,8 +544,8 @@
       "fetched_count": 1334,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 615,
-      "checked_at": "2026-10-29T13:29:44.679361Z"
+      "latency_ms": 647,
+      "checked_at": "2026-10-29T15:21:50.433328Z"
     },
     {
       "source_id": "openai-skills",
@@ -484,8 +556,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 592,
-      "checked_at": "2026-10-29T13:29:45.272341Z"
+      "latency_ms": 213,
+      "checked_at": "2026-10-29T15:21:50.646791Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -496,8 +568,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 131,
-      "checked_at": "2026-10-29T13:29:45.408015Z"
+      "latency_ms": 134,
+      "checked_at": "2026-10-29T15:21:50.785500Z"
     },
     {
       "source_id": "google-deepmind",
@@ -509,7 +581,7 @@
       "kept_count": 1,
       "error": null,
       "latency_ms": 218,
-      "checked_at": "2026-10-29T13:29:45.628003Z"
+      "checked_at": "2026-10-29T15:21:51.005661Z"
     },
     {
       "source_id": "google-ai",
@@ -520,8 +592,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 112,
-      "checked_at": "2026-10-29T13:29:45.740589Z"
+      "latency_ms": 189,
+      "checked_at": "2026-10-29T15:21:51.195777Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -529,11 +601,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 892,
-      "kept_count": 0,
+      "fetched_count": 894,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 258,
-      "checked_at": "2026-10-29T13:29:46.012753Z"
+      "latency_ms": 276,
+      "checked_at": "2026-10-29T15:21:51.486172Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -544,8 +616,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 280,
-      "checked_at": "2026-10-29T13:29:46.293673Z"
+      "latency_ms": 260,
+      "checked_at": "2026-10-29T15:21:51.746578Z"
     },
     {
       "source_id": "github-changelog",
@@ -556,8 +628,8 @@
       "fetched_count": 10,
       "kept_count": 10,
       "error": null,
-      "latency_ms": 36,
-      "checked_at": "2026-10-29T13:29:46.330703Z"
+      "latency_ms": 34,
+      "checked_at": "2026-10-29T15:21:51.782123Z"
     },
     {
       "source_id": "aihot",
@@ -566,10 +638,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 7,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 2299,
-      "checked_at": "2026-10-29T13:29:48.631908Z"
+      "latency_ms": 2816,
+      "checked_at": "2026-10-29T15:21:54.600294Z"
     }
   ],
   "control_notes": {
