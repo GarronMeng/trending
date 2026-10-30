@@ -1,71 +1,55 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-30T03:51:12.538472Z",
+  "generated_at": "2026-10-30T10:28:50.522060Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 7,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 1,
       "top_sources": [
         [
           "OpenAI News",
-          3
+          1
         ]
       ],
       "top_keywords": [
         [
           "openai",
-          3
+          1
         ],
         [
           "official_ai",
-          3
-        ],
-        [
-          "agent",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          4
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
-        ],
-        [
-          "智能体",
-          2
+          5
         ],
         [
           "claude",
-          2
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "自动化",
-          1
+          4
         ],
         [
           "anthropic",
+          3
+        ],
+        [
+          "智能体",
           1
         ],
         [
@@ -101,25 +85,6 @@
   },
   "items": [
     {
-      "id": "0e9a236b063373aefe74eeffd9ad09198da3cec0",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How we detect frontier model misalignment",
-      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
-      "published_at": "2026-10-29T09:00:00Z",
-      "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:agent",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "6aeb72f55b0f896618a5ae2a341dd49b6614202f",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -138,41 +103,21 @@
       "is_ai_related": true
     },
     {
-      "id": "47604e2bd250943f156f09cace44b101117502af",
+      "id": "c22050aaf55499c4dbedef7e0b0e7041ba18f0cb",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenAI 详解如何检测前沿模型失准行为",
-      "url": "https://aihot.news/items/ck2bk0ns12i2hkg4ae0eoeabv",
-      "published_at": "2026-10-29T09:00:00Z",
-      "summary": "OpenAI 发布长文，详解其针对前沿模型失准行为的多层监测系统，包括激活探针、基于模型的审查、调查智能体和自动化调查四层架构，并对 GPT‑6 Astra 及以上模型的全部 RL 运行、评估和内部 Codex 流量进行监测。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ck2bk0ns12i2hkg4ae0eoeabv",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "strong:智能体",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "76821a83eb818396807942e450ce5f2bda395c5a",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How Ropes & Gray is developing AI for transactional diligence",
-      "url": "https://openai.com/index/ropes-gray-ai-diligence",
-      "published_at": "2026-10-29T07:00:00Z",
-      "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.",
+      "title": "Cursor 披露 Claude Code VS Code 扩展被植入恶意软件事件，最多影响 5000 用户",
+      "url": "https://aihot.news/items/iu7xvjx1c2c5wqrpn0rwfxcb5",
+      "published_at": "2026-10-30T07:46:39Z",
+      "summary": "Cursor 发现通过其 IDE 扩展市场分发的 Claude Code VS Code 扩展被修改并植入恶意软件，最多影响 5000 用户，恶意版本并非 Anthropic 开发。Cursor 已于当日下午下线扩展市场，与相关提供方合作清除恶意软件并确认无进一步风险后重新上线，建议受影响用户参考博客说明排查，并升级到 Claude Code for VS Code 2.1.314。 🔗 阅读原文 via AIHOT · https://aihot.news/items/iu7xvjx1c2c5wqrpn0rwfxcb5",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -233,6 +178,25 @@
       "is_ai_related": true
     },
     {
+      "id": "d223abf5fc38c81c355b45486083dec03ee66e29",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Cursor 扩展市场发现恶意版 Anthropic.claude-code 2.1.313，最多 4100 名用户受影响",
+      "url": "https://aihot.news/items/pg7avew3q9ekdp3ydzhiuh9y4",
+      "published_at": "2026-10-29T12:00:00Z",
+      "summary": "Cursor 官方披露，其 VS Code 扩展市场中的 Anthropic.claude-code 2.1.313 为恶意篡改版本，并非 Anthropic 开发，在 10 月 29 日 2:27am PT 至 1:35pm PT 期间上架，最多影响 4100 名用户。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pg7avew3q9ekdp3ydzhiuh9y4",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "09e89b153edfc1283599363f76590502de09e261",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -260,10 +224,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1337,
-      "kept_count": 3,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 465,
-      "checked_at": "2026-10-30T03:51:09.571210Z"
+      "latency_ms": 584,
+      "checked_at": "2026-10-30T10:28:48.392811Z"
     },
     {
       "source_id": "openai-skills",
@@ -274,8 +238,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 374,
-      "checked_at": "2026-10-30T03:51:09.946324Z"
+      "latency_ms": 229,
+      "checked_at": "2026-10-30T10:28:48.622474Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -286,8 +250,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 188,
-      "checked_at": "2026-10-30T03:51:10.137520Z"
+      "latency_ms": 132,
+      "checked_at": "2026-10-30T10:28:48.758910Z"
     },
     {
       "source_id": "google-deepmind",
@@ -298,8 +262,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 367,
-      "checked_at": "2026-10-30T03:51:10.505691Z"
+      "latency_ms": 98,
+      "checked_at": "2026-10-30T10:28:48.858569Z"
     },
     {
       "source_id": "google-ai",
@@ -310,8 +274,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 213,
-      "checked_at": "2026-10-30T03:51:10.719843Z"
+      "latency_ms": 113,
+      "checked_at": "2026-10-30T10:28:48.972443Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -322,8 +286,8 @@
       "fetched_count": 894,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-10-30T03:51:10.983121Z"
+      "latency_ms": 267,
+      "checked_at": "2026-10-30T10:28:49.253616Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -334,8 +298,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 387,
-      "checked_at": "2026-10-30T03:51:11.371093Z"
+      "latency_ms": 230,
+      "checked_at": "2026-10-30T10:28:49.484187Z"
     },
     {
       "source_id": "github-changelog",
@@ -346,8 +310,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-10-30T03:51:11.400711Z"
+      "latency_ms": 31,
+      "checked_at": "2026-10-30T10:28:49.516049Z"
     },
     {
       "source_id": "aihot",
@@ -356,10 +320,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 4,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 1129,
-      "checked_at": "2026-10-30T03:51:12.530955Z"
+      "latency_ms": 996,
+      "checked_at": "2026-10-30T10:28:50.513345Z"
     }
   ],
   "control_notes": {
