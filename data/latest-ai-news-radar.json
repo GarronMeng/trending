@@ -1,52 +1,56 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-30T15:09:34.695262Z",
+  "generated_at": "2026-10-30T18:58:50.305840Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 7,
   "groups": {
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI News",
-          1
+          2
         ]
       ],
       "top_keywords": [
         [
           "openai",
-          1
+          2
         ],
         [
           "official_ai",
+          2
+        ],
+        [
+          "chatgpt",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          4
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
+          5
         ],
         [
           "claude",
-          2
+          3
         ],
         [
           "anthropic",
-          1
+          2
         ],
         [
           "智能体",
@@ -73,44 +77,62 @@
           1
         ]
       ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ]
-      ]
     }
   },
   "items": [
     {
-      "id": "6aeb72f55b0f896618a5ae2a341dd49b6614202f",
+      "id": "32b35d27cc269f96136cc00f337c8ca8df38fcdd",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "An updated Model Spec for more capable and beneficial AI",
-      "url": "https://openai.com/index/updated-model-spec",
-      "published_at": "2026-10-29T17:00:00Z",
-      "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
+      "title": "Community safety report and new protections for teens",
+      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "published_at": "2026-10-30T09:00:00Z",
+      "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "672c99fc9158cdfd24d5bd0de93c5f227f18b9d6",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Making it easier for websites to express AI training preferences",
+      "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "published_at": "2026-10-30T09:30:00Z",
+      "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "bcfd2caf2df98ef462f21654c46fbe556f917156",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 将 Claude Max 套餐更名为 Max 与 Ultra，Ultra 认证账号取消 5 小时限制",
+      "url": "https://aihot.news/items/pd3dehdyyhzkyrjsw4b6bmcyj",
+      "published_at": "2026-10-30T17:42:26Z",
+      "summary": "Anthropic 将 Claude 订阅套餐更名：Max 5x 改为 Max，Max 20x 改为 Ultra，价格不变（Max 100 美元/月、Ultra 200 美元/月）。即日起多数老订阅者的认证 Ultra 账号取消 5 小时限制，新账号保留临时限制以防欺诈滥用，周限额不变。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pd3dehdyyhzkyrjsw4b6bmcyj",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -173,24 +195,6 @@
       "is_ai_related": true
     },
     {
-      "id": "a1797015df88191357df961b45cbafc7311a07c8",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Webhook IP ranges added to the Meta API",
-      "url": "https://github.blog/changelog/2026-10-29-webhook-ip-ranges-added-to-the-meta-api",
-      "published_at": "2026-10-29T17:14:38Z",
-      "summary": "We’re adding IP ranges for GitHub webhook deliveries on github.com. The Meta API now includes these additional ranges in the hooks field. If you maintain a static network allowlist for… The post Webhook IP ranges added to the Meta API appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:API"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "09e89b153edfc1283599363f76590502de09e261",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -217,11 +221,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1337,
-      "kept_count": 1,
+      "fetched_count": 1340,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 569,
-      "checked_at": "2026-10-30T15:09:29.504546Z"
+      "latency_ms": 479,
+      "checked_at": "2026-10-30T18:58:46.113215Z"
     },
     {
       "source_id": "openai-skills",
@@ -232,8 +236,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 303,
-      "checked_at": "2026-10-30T15:09:29.808248Z"
+      "latency_ms": 392,
+      "checked_at": "2026-10-30T18:58:46.506041Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -244,8 +248,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 149,
-      "checked_at": "2026-10-30T15:09:29.961469Z"
+      "latency_ms": 104,
+      "checked_at": "2026-10-30T18:58:46.613604Z"
     },
     {
       "source_id": "google-deepmind",
@@ -256,8 +260,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 215,
-      "checked_at": "2026-10-30T15:09:30.178013Z"
+      "latency_ms": 323,
+      "checked_at": "2026-10-30T18:58:46.938492Z"
     },
     {
       "source_id": "google-ai",
@@ -268,8 +272,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 159,
-      "checked_at": "2026-10-30T15:09:30.337742Z"
+      "latency_ms": 253,
+      "checked_at": "2026-10-30T18:58:47.191758Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -280,8 +284,8 @@
       "fetched_count": 894,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 316,
-      "checked_at": "2026-10-30T15:09:30.665430Z"
+      "latency_ms": 262,
+      "checked_at": "2026-10-30T18:58:47.464215Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -292,8 +296,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 336,
-      "checked_at": "2026-10-30T15:09:31.002458Z"
+      "latency_ms": 252,
+      "checked_at": "2026-10-30T18:58:47.717277Z"
     },
     {
       "source_id": "github-changelog",
@@ -302,10 +306,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 40,
-      "checked_at": "2026-10-30T15:09:31.043312Z"
+      "latency_ms": 30,
+      "checked_at": "2026-10-30T18:58:47.748027Z"
     },
     {
       "source_id": "aihot",
@@ -314,10 +318,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 4,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 3642,
-      "checked_at": "2026-10-30T15:09:34.686375Z"
+      "latency_ms": 2548,
+      "checked_at": "2026-10-30T18:58:50.297486Z"
     }
   ],
   "control_notes": {
