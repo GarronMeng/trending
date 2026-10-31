@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-30T18:58:50.305840Z",
+  "generated_at": "2026-10-31T03:34:51.532764Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 5,
   "groups": {
     "official": {
       "group": "official",
@@ -32,20 +32,16 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          5
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
-        ],
-        [
-          "claude",
           3
         ],
         [
@@ -53,27 +49,15 @@
           2
         ],
         [
-          "智能体",
-          1
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
+          "claude",
+          2
         ],
         [
           "agent",
           1
         ],
         [
-          "评测",
+          "开发者",
           1
         ]
       ]
@@ -156,59 +140,20 @@
       "is_ai_related": true
     },
     {
-      "id": "95b51c693a12d88f91d79e184ea50712fa6b8e42",
+      "id": "35151e7ad142cde6562feac42b2482461db5f3c9",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个",
-      "url": "https://aihot.news/items/gzcwy89nkjreenv5eu1qaysdi",
-      "published_at": "2026-10-30T00:00:00Z",
-      "summary": "OpenRouter 实测 Claude Opus 5.5、Sonnet 5.5 与 Haiku 5.5 三档模型，建议默认用 Sonnet 5.5，高频与子智能体任务用 Haiku 5.5，长且容错成本高的任务用 Opus 5.5。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gzcwy89nkjreenv5eu1qaysdi",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a67ab7a347bcb7b2772f3ca72b7d6cffd6c73c7a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Gemini API 的 Computer Use 工具正式开放（GA）",
-      "url": "https://aihot.news/items/qit1hgequ8pknedqqvuei5wfh",
-      "published_at": "2026-10-30T00:00:00Z",
-      "summary": "Google 于 10 月 30 日宣布 Gemini API 的 Computer Use 工具正式可用（GA），覆盖 Interactions 和 GenerateContent 两套 API。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qit1hgequ8pknedqqvuei5wfh",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "09e89b153edfc1283599363f76590502de09e261",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Figma 讲解如何训练专用画布编辑模型",
-      "url": "https://aihot.news/items/z9kqlhsgiz11fvlk3aodm6seg",
-      "published_at": "2026-10-29T21:00:00Z",
-      "summary": "Figma 介绍其为 agent 自研 Figma 编辑模型的训练方法，先用超过 25 万条合成样本做 SFT，让早期 Llama 3.3 70B 在编辑任务上接近当时顶级模型，后转向 RL 并结合确定性校验器与视觉评委做评测。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9kqlhsgiz11fvlk3aodm6seg",
+      "title": "Wiz 报告“黑色十月”：九个 AI 开发者平台接连披露安全事件",
+      "url": "https://aihot.news/items/la0qb77ds4znf2r7ub14a3bqz",
+      "published_at": "2026-10-30T22:51:44Z",
+      "summary": "Wiz 研究团队梳理 10 月内至少九个 AI 开发者平台披露的安全事件，包括 Fireworks AI、Lightning AI、Railway、Warp、OpenCode 等，多起报告指向凭据窃取、agent swarm 攻击和以“蒸馏”为目的的窃取。 🔗 阅读原文 via AIHOT · https://aihot.news/items/la0qb77ds4znf2r7ub14a3bqz",
       "relevance_score": 2,
       "relevance_reasons": [
         "strong:agent",
-        "weak:评测",
+        "weak:开发者",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -221,11 +166,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1340,
+      "fetched_count": 1341,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 479,
-      "checked_at": "2026-10-30T18:58:46.113215Z"
+      "latency_ms": 526,
+      "checked_at": "2026-10-31T03:34:48.959094Z"
     },
     {
       "source_id": "openai-skills",
@@ -236,8 +181,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 392,
-      "checked_at": "2026-10-30T18:58:46.506041Z"
+      "latency_ms": 395,
+      "checked_at": "2026-10-31T03:34:49.354842Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -248,8 +193,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 104,
-      "checked_at": "2026-10-30T18:58:46.613604Z"
+      "latency_ms": 135,
+      "checked_at": "2026-10-31T03:34:49.494071Z"
     },
     {
       "source_id": "google-deepmind",
@@ -260,8 +205,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 323,
-      "checked_at": "2026-10-30T18:58:46.938492Z"
+      "latency_ms": 142,
+      "checked_at": "2026-10-31T03:34:49.638141Z"
     },
     {
       "source_id": "google-ai",
@@ -272,8 +217,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-10-30T18:58:47.191758Z"
+      "latency_ms": 250,
+      "checked_at": "2026-10-31T03:34:49.889084Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -284,8 +229,8 @@
       "fetched_count": 894,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 262,
-      "checked_at": "2026-10-30T18:58:47.464215Z"
+      "latency_ms": 291,
+      "checked_at": "2026-10-31T03:34:50.192052Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -296,8 +241,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 252,
-      "checked_at": "2026-10-30T18:58:47.717277Z"
+      "latency_ms": 280,
+      "checked_at": "2026-10-31T03:34:50.472562Z"
     },
     {
       "source_id": "github-changelog",
@@ -308,8 +253,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-10-30T18:58:47.748027Z"
+      "latency_ms": 33,
+      "checked_at": "2026-10-31T03:34:50.506532Z"
     },
     {
       "source_id": "aihot",
@@ -318,10 +263,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 5,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 2548,
-      "checked_at": "2026-10-30T18:58:50.297486Z"
+      "latency_ms": 1017,
+      "checked_at": "2026-10-31T03:34:51.525381Z"
     }
   ],
   "control_notes": {
