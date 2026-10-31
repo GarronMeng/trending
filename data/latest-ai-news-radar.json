@@ -1,56 +1,32 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-10-31T03:34:51.532764Z",
+  "generated_at": "2026-10-31T09:58:23.214877Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 2,
   "groups": {
-    "official": {
-      "group": "official",
+    "aggregate": {
+      "group": "aggregate",
       "count": 2,
       "top_sources": [
         [
-          "OpenAI News",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "openai",
-          2
-        ],
-        [
-          "official_ai",
-          2
-        ],
-        [
-          "chatgpt",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 3,
-      "top_sources": [
-        [
           "AI Hot",
-          3
+          2
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          3
+          2
         ],
         [
           "anthropic",
-          2
+          1
         ],
         [
           "claude",
-          2
+          1
         ],
         [
           "agent",
@@ -65,43 +41,6 @@
   },
   "items": [
     {
-      "id": "32b35d27cc269f96136cc00f337c8ca8df38fcdd",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Community safety report and new protections for teens",
-      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
-      "published_at": "2026-10-30T09:00:00Z",
-      "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "672c99fc9158cdfd24d5bd0de93c5f227f18b9d6",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Making it easier for websites to express AI training preferences",
-      "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
-      "published_at": "2026-10-30T09:30:00Z",
-      "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "bcfd2caf2df98ef462f21654c46fbe556f917156",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -112,25 +51,6 @@
       "url": "https://aihot.news/items/pd3dehdyyhzkyrjsw4b6bmcyj",
       "published_at": "2026-10-30T17:42:26Z",
       "summary": "Anthropic 将 Claude 订阅套餐更名：Max 5x 改为 Max，Max 20x 改为 Ultra，价格不变（Max 100 美元/月、Ultra 200 美元/月）。即日起多数老订阅者的认证 Ultra 账号取消 5 小时限制，新账号保留临时限制以防欺诈滥用，周限额不变。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pd3dehdyyhzkyrjsw4b6bmcyj",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c22050aaf55499c4dbedef7e0b0e7041ba18f0cb",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Cursor 披露 Claude Code VS Code 扩展被植入恶意软件事件，最多影响 5000 用户",
-      "url": "https://aihot.news/items/iu7xvjx1c2c5wqrpn0rwfxcb5",
-      "published_at": "2026-10-30T07:46:39Z",
-      "summary": "Cursor 发现通过其 IDE 扩展市场分发的 Claude Code VS Code 扩展被修改并植入恶意软件，最多影响 5000 用户，恶意版本并非 Anthropic 开发。Cursor 已于当日下午下线扩展市场，与相关提供方合作清除恶意软件并确认无进一步风险后重新上线，建议受影响用户参考博客说明排查，并升级到 Claude Code for VS Code 2.1.314。 🔗 阅读原文 via AIHOT · https://aihot.news/items/iu7xvjx1c2c5wqrpn0rwfxcb5",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:anthropic",
@@ -167,10 +87,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1341,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 526,
-      "checked_at": "2026-10-31T03:34:48.959094Z"
+      "latency_ms": 404,
+      "checked_at": "2026-10-31T09:58:14.009122Z"
     },
     {
       "source_id": "openai-skills",
@@ -181,8 +101,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 395,
-      "checked_at": "2026-10-31T03:34:49.354842Z"
+      "latency_ms": 360,
+      "checked_at": "2026-10-31T09:58:14.369788Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -193,8 +113,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 135,
-      "checked_at": "2026-10-31T03:34:49.494071Z"
+      "latency_ms": 84,
+      "checked_at": "2026-10-31T09:58:14.456972Z"
     },
     {
       "source_id": "google-deepmind",
@@ -205,8 +125,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 142,
-      "checked_at": "2026-10-31T03:34:49.638141Z"
+      "latency_ms": 223,
+      "checked_at": "2026-10-31T09:58:14.681917Z"
     },
     {
       "source_id": "google-ai",
@@ -217,8 +137,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 250,
-      "checked_at": "2026-10-31T03:34:49.889084Z"
+      "latency_ms": 247,
+      "checked_at": "2026-10-31T09:58:14.929645Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -229,8 +149,8 @@
       "fetched_count": 894,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 291,
-      "checked_at": "2026-10-31T03:34:50.192052Z"
+      "latency_ms": 231,
+      "checked_at": "2026-10-31T09:58:15.170844Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -241,8 +161,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 280,
-      "checked_at": "2026-10-31T03:34:50.472562Z"
+      "latency_ms": 407,
+      "checked_at": "2026-10-31T09:58:15.578136Z"
     },
     {
       "source_id": "github-changelog",
@@ -253,8 +173,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 33,
-      "checked_at": "2026-10-31T03:34:50.506532Z"
+      "latency_ms": 28,
+      "checked_at": "2026-10-31T09:58:15.607067Z"
     },
     {
       "source_id": "aihot",
@@ -263,10 +183,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 51,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 1017,
-      "checked_at": "2026-10-31T03:34:51.525381Z"
+      "latency_ms": 7599,
+      "checked_at": "2026-10-31T09:58:23.207471Z"
     }
   ],
   "control_notes": {
