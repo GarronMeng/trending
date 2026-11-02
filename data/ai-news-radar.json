@@ -1,27 +1,51 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-02T16:25:17.800837Z",
+  "generated_at": "2026-11-02T18:39:17.529747Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 3,
+  "item_count": 5,
   "groups": {
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI News",
-          1
+          2
         ]
       ],
       "top_keywords": [
+        [
+          "official_ai",
+          2
+        ],
         [
           "openai",
           1
         ],
         [
-          "official_ai",
+          "benchmark",
+          1
+        ],
+        [
+          "eval",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "actions",
           1
         ]
       ]
@@ -75,6 +99,42 @@
       "is_ai_related": true
     },
     {
+      "id": "c10c9949788f885fd1c13306d128b8e3680dfcb7",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "LifeVal",
+      "url": "https://openai.com/index/lifeval",
+      "published_at": "2026-11-02T09:00:00Z",
+      "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:benchmark",
+        "weak:eval",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f6fc6f16e901efa2534b4dfa5df230d4ca28334f",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "pull_request_target blocked by default December 2",
+      "url": "https://github.blog/changelog/2026-11-02-pull_request_target-blocked-by-default-december-2",
+      "published_at": "2026-11-02T15:14:46Z",
+      "summary": "Starting December 2, 2026, GitHub Actions will block pull_request_target events by default in all public repositories, unless an applicable Actions event policy explicitly allows them. Enforcement was previously scheduled for… The post pull_request_target blocked by default December 2 appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "source:actions"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "5a293532ef3135f6cf29ec0d9a5769597069c77b",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -121,11 +181,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1342,
-      "kept_count": 1,
+      "fetched_count": 1343,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 397,
-      "checked_at": "2026-11-02T16:25:12.163464Z"
+      "latency_ms": 581,
+      "checked_at": "2026-11-02T18:39:12.882814Z"
     },
     {
       "source_id": "openai-skills",
@@ -136,8 +196,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 418,
-      "checked_at": "2026-11-02T16:25:12.582065Z"
+      "latency_ms": 344,
+      "checked_at": "2026-11-02T18:39:13.227901Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -148,8 +208,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 149,
-      "checked_at": "2026-11-02T16:25:12.734171Z"
+      "latency_ms": 167,
+      "checked_at": "2026-11-02T18:39:13.399893Z"
     },
     {
       "source_id": "google-deepmind",
@@ -160,8 +220,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 160,
-      "checked_at": "2026-11-02T16:25:12.895707Z"
+      "latency_ms": 243,
+      "checked_at": "2026-11-02T18:39:13.644612Z"
     },
     {
       "source_id": "google-ai",
@@ -172,8 +232,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 230,
-      "checked_at": "2026-11-02T16:25:13.126157Z"
+      "latency_ms": 217,
+      "checked_at": "2026-11-02T18:39:13.862505Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -184,8 +244,8 @@
       "fetched_count": 894,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 219,
-      "checked_at": "2026-11-02T16:25:13.352356Z"
+      "latency_ms": 284,
+      "checked_at": "2026-11-02T18:39:14.159233Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -196,8 +256,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 209,
-      "checked_at": "2026-11-02T16:25:13.562323Z"
+      "latency_ms": 277,
+      "checked_at": "2026-11-02T18:39:14.436466Z"
     },
     {
       "source_id": "github-changelog",
@@ -206,10 +266,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-11-02T16:25:13.587044Z"
+      "latency_ms": 35,
+      "checked_at": "2026-11-02T18:39:14.472625Z"
     },
     {
       "source_id": "aihot",
@@ -220,8 +280,8 @@
       "fetched_count": 50,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 4204,
-      "checked_at": "2026-11-02T16:25:17.792442Z"
+      "latency_ms": 3046,
+      "checked_at": "2026-11-02T18:39:17.519914Z"
     }
   ],
   "control_notes": {
