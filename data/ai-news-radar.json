@@ -1,37 +1,61 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-02T03:46:17.343479Z",
+  "generated_at": "2026-11-02T11:42:33.454272Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 1,
+  "item_count": 2,
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "AI Hot",
-          1
+          2
         ]
       ],
       "top_keywords": [
         [
           "agent",
-          1
+          2
         ],
         [
           "自动化",
-          1
+          2
         ],
         [
           "aggregate_noise",
+          2
+        ],
+        [
+          "工作流",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "5a293532ef3135f6cf29ec0d9a5769597069c77b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "腾讯混元发布 Hyra 2.0：让通用 agent 研发可复用的科学工具与模型",
+      "url": "https://aihot.news/items/l37ydaic43icz85huclc2io6c",
+      "published_at": "2026-11-02T10:06:28Z",
+      "summary": "腾讯混元发布 Hyra 2.0，将自动化科研重点从直接解题转向由 agent 研发和升级科学模型、工作流与软件工具。系统采用 Overall、Mission、Worker 三层分工，接入企业微信、计算平台和代码仓库的实际研发环境，成果已公开在 GitHub 仓库。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l37ydaic43icz85huclc2io6c",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:自动化",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "d7d6a24130d705874ce546560961aa095af42d50",
       "source_id": "aihot",
@@ -62,8 +86,8 @@
       "fetched_count": 1341,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 584,
-      "checked_at": "2026-11-02T03:46:14.492621Z"
+      "latency_ms": 617,
+      "checked_at": "2026-11-02T11:42:30.696534Z"
     },
     {
       "source_id": "openai-skills",
@@ -74,8 +98,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 188,
-      "checked_at": "2026-11-02T03:46:14.681783Z"
+      "latency_ms": 200,
+      "checked_at": "2026-11-02T11:42:30.897066Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -86,8 +110,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 128,
-      "checked_at": "2026-11-02T03:46:14.814966Z"
+      "latency_ms": 134,
+      "checked_at": "2026-11-02T11:42:31.036148Z"
     },
     {
       "source_id": "google-deepmind",
@@ -98,8 +122,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 155,
-      "checked_at": "2026-11-02T03:46:14.971869Z"
+      "latency_ms": 188,
+      "checked_at": "2026-11-02T11:42:31.226156Z"
     },
     {
       "source_id": "google-ai",
@@ -110,8 +134,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 141,
-      "checked_at": "2026-11-02T03:46:15.113382Z"
+      "latency_ms": 156,
+      "checked_at": "2026-11-02T11:42:31.382737Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -122,8 +146,8 @@
       "fetched_count": 894,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 273,
-      "checked_at": "2026-11-02T03:46:15.400764Z"
+      "latency_ms": 270,
+      "checked_at": "2026-11-02T11:42:31.667078Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -134,8 +158,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-11-02T03:46:15.654171Z"
+      "latency_ms": 265,
+      "checked_at": "2026-11-02T11:42:31.932492Z"
     },
     {
       "source_id": "github-changelog",
@@ -146,8 +170,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-11-02T03:46:15.686271Z"
+      "latency_ms": 32,
+      "checked_at": "2026-11-02T11:42:31.964990Z"
     },
     {
       "source_id": "aihot",
@@ -156,10 +180,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 1647,
-      "checked_at": "2026-11-02T03:46:17.334492Z"
+      "latency_ms": 1478,
+      "checked_at": "2026-11-02T11:42:33.443975Z"
     }
   ],
   "control_notes": {
