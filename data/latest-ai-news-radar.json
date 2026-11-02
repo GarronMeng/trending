@@ -1,24 +1,32 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-02T18:39:17.529747Z",
+  "generated_at": "2026-11-02T22:35:10.440985Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 8,
   "groups": {
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          3
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          2
+          3
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "developer",
+          1
         ],
         [
           "openai",
@@ -30,6 +38,54 @@
         ],
         [
           "eval",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 4,
+      "top_sources": [
+        [
+          "AI Hot",
+          4
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          4
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "自动化",
+          2
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "推理模型",
+          1
+        ],
+        [
+          "工作流",
           1
         ]
       ]
@@ -49,37 +105,28 @@
           1
         ]
       ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 2,
-      "top_sources": [
-        [
-          "AI Hot",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "agent",
-          2
-        ],
-        [
-          "自动化",
-          2
-        ],
-        [
-          "aggregate_noise",
-          2
-        ],
-        [
-          "工作流",
-          1
-        ]
-      ]
     }
   },
   "items": [
+    {
+      "id": "c9b0c9efc8cb1ff73e8c15f3f6352a0f7cc71a76",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Qodo builds context into AI code review with Codex",
+      "url": "https://openai.com/index/qodo-codex-plugin",
+      "published_at": "2026-11-02T00:00:00Z",
+      "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:codex",
+        "weak:developer",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "b7c797aa169bd954f5e39003be2abd94486942c5",
       "source_id": "openai-news",
@@ -114,6 +161,45 @@
         "weak:benchmark",
         "weak:eval",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7d73ef1166163506311ac8addb261091a3a61b5c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Platform 推出 message threads 公测，降低长会话智能体延迟",
+      "url": "https://aihot.news/items/sg5u3u91kw42j1grtyp3ny65n",
+      "published_at": "2026-11-02T00:00:00Z",
+      "summary": "Anthropic 在 Claude Platform 推出 message threads 公测，智能体每轮只需发送新增消息而无需重发全部对话历史，从而缩短首 token 时间。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sg5u3u91kw42j1grtyp3ny65n",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "18e6cd3a470e26ac4c99d96c23d9f88beb435d3f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 训练并部署激活分类器作为前沿模型安全监控层",
+      "url": "https://aihot.news/items/wlmiqh13694tqabyvu6nzvlrs",
+      "published_at": "2026-11-02T20:00:00Z",
+      "summary": "OpenAI 自 GPT-5.6 起在其最强模型的内部和外部流量上部署激活分类器（probes），利用模型内部激活逐 token 实时评分，可在生成中途阻断违规回复和工具调用并交由推理模型复审。实验显示 probes 比更大的文本分类器对测试的越狱攻击更鲁棒，准确率随模型能力提升，且在后训练各检查点间迁移良好，但需为新基础模型重新训练，且只能检测可显式训练的已知违规类型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wlmiqh13694tqabyvu6nzvlrs",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:推理模型",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -181,11 +267,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1343,
-      "kept_count": 2,
+      "fetched_count": 1344,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 581,
-      "checked_at": "2026-11-02T18:39:12.882814Z"
+      "latency_ms": 383,
+      "checked_at": "2026-11-02T22:35:08.351327Z"
     },
     {
       "source_id": "openai-skills",
@@ -196,8 +282,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 344,
-      "checked_at": "2026-11-02T18:39:13.227901Z"
+      "latency_ms": 267,
+      "checked_at": "2026-11-02T22:35:08.619255Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -208,8 +294,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 167,
-      "checked_at": "2026-11-02T18:39:13.399893Z"
+      "latency_ms": 86,
+      "checked_at": "2026-11-02T22:35:08.708829Z"
     },
     {
       "source_id": "google-deepmind",
@@ -220,8 +306,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 243,
-      "checked_at": "2026-11-02T18:39:13.644612Z"
+      "latency_ms": 75,
+      "checked_at": "2026-11-02T22:35:08.785359Z"
     },
     {
       "source_id": "google-ai",
@@ -232,8 +318,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 217,
-      "checked_at": "2026-11-02T18:39:13.862505Z"
+      "latency_ms": 154,
+      "checked_at": "2026-11-02T22:35:08.940577Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -244,8 +330,8 @@
       "fetched_count": 894,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 284,
-      "checked_at": "2026-11-02T18:39:14.159233Z"
+      "latency_ms": 163,
+      "checked_at": "2026-11-02T22:35:09.112610Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -256,8 +342,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 277,
-      "checked_at": "2026-11-02T18:39:14.436466Z"
+      "latency_ms": 149,
+      "checked_at": "2026-11-02T22:35:09.262394Z"
     },
     {
       "source_id": "github-changelog",
@@ -268,8 +354,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 35,
-      "checked_at": "2026-11-02T18:39:14.472625Z"
+      "latency_ms": 20,
+      "checked_at": "2026-11-02T22:35:09.282841Z"
     },
     {
       "source_id": "aihot",
@@ -278,10 +364,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 3046,
-      "checked_at": "2026-11-02T18:39:17.519914Z"
+      "latency_ms": 1149,
+      "checked_at": "2026-11-02T22:35:10.432785Z"
     }
   ],
   "control_notes": {
