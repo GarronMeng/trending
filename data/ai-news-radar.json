@@ -1,11 +1,31 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-02T11:42:33.454272Z",
+  "generated_at": "2026-11-02T16:25:17.800837Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 2,
+  "item_count": 3,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "openai",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
       "count": 2,
@@ -36,6 +56,24 @@
     }
   },
   "items": [
+    {
+      "id": "b7c797aa169bd954f5e39003be2abd94486942c5",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Introducing the Grid Protectors Program",
+      "url": "https://openai.com/index/grid-protectors-program",
+      "published_at": "2026-11-02T15:00:00Z",
+      "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "5a293532ef3135f6cf29ec0d9a5769597069c77b",
       "source_id": "aihot",
@@ -83,11 +121,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1341,
-      "kept_count": 0,
+      "fetched_count": 1342,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 617,
-      "checked_at": "2026-11-02T11:42:30.696534Z"
+      "latency_ms": 397,
+      "checked_at": "2026-11-02T16:25:12.163464Z"
     },
     {
       "source_id": "openai-skills",
@@ -98,8 +136,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 200,
-      "checked_at": "2026-11-02T11:42:30.897066Z"
+      "latency_ms": 418,
+      "checked_at": "2026-11-02T16:25:12.582065Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -110,8 +148,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 134,
-      "checked_at": "2026-11-02T11:42:31.036148Z"
+      "latency_ms": 149,
+      "checked_at": "2026-11-02T16:25:12.734171Z"
     },
     {
       "source_id": "google-deepmind",
@@ -122,8 +160,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 188,
-      "checked_at": "2026-11-02T11:42:31.226156Z"
+      "latency_ms": 160,
+      "checked_at": "2026-11-02T16:25:12.895707Z"
     },
     {
       "source_id": "google-ai",
@@ -134,8 +172,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 156,
-      "checked_at": "2026-11-02T11:42:31.382737Z"
+      "latency_ms": 230,
+      "checked_at": "2026-11-02T16:25:13.126157Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -146,8 +184,8 @@
       "fetched_count": 894,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 270,
-      "checked_at": "2026-11-02T11:42:31.667078Z"
+      "latency_ms": 219,
+      "checked_at": "2026-11-02T16:25:13.352356Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -158,8 +196,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 265,
-      "checked_at": "2026-11-02T11:42:31.932492Z"
+      "latency_ms": 209,
+      "checked_at": "2026-11-02T16:25:13.562323Z"
     },
     {
       "source_id": "github-changelog",
@@ -170,8 +208,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 32,
-      "checked_at": "2026-11-02T11:42:31.964990Z"
+      "latency_ms": 24,
+      "checked_at": "2026-11-02T16:25:13.587044Z"
     },
     {
       "source_id": "aihot",
@@ -182,8 +220,8 @@
       "fetched_count": 50,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 1478,
-      "checked_at": "2026-11-02T11:42:33.443975Z"
+      "latency_ms": 4204,
+      "checked_at": "2026-11-02T16:25:17.792442Z"
     }
   ],
   "control_notes": {
