@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-03T04:50:32.696796Z",
+  "generated_at": "2026-11-03T11:23:17.941462Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 9,
   "groups": {
     "official": {
       "group": "official",
@@ -17,40 +17,44 @@
       ],
       "top_keywords": [
         [
+          "openai",
+          5
+        ],
+        [
           "official_ai",
           5
         ],
         [
-          "openai",
-          4
-        ],
-        [
           "codex",
-          1
+          2
         ],
         [
-          "benchmark",
-          1
-        ],
-        [
-          "eval",
+          "chatgpt",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          2
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          2
+          3
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "codex",
+          1
         ],
         [
           "openai",
@@ -62,10 +66,6 @@
         ],
         [
           "agent",
-          1
-        ],
-        [
-          "自动化",
           1
         ],
         [
@@ -92,6 +92,26 @@
     }
   },
   "items": [
+    {
+      "id": "bd32e6abfe5c8e4dd7e8c2acff8c00f316bf3f2e",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Heimstaden is changing residential real estate management with AI",
+      "url": "https://openai.com/index/heimstaden",
+      "published_at": "2026-11-03T08:00:00Z",
+      "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "b34e2e6101421162562f51aaee3c84c10ee8d8a6",
       "source_id": "openai-news",
@@ -166,21 +186,21 @@
       "is_ai_related": true
     },
     {
-      "id": "c10c9949788f885fd1c13306d128b8e3680dfcb7",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "LifeVal",
-      "url": "https://openai.com/index/lifeval",
-      "published_at": "2026-11-02T09:00:00Z",
-      "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
+      "id": "4ea7c252c9c7577996a8648b77281e390bd84de4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Revolut 将约 2000 名工程师迁移到自托管 GLM 编码",
+      "url": "https://aihot.news/items/op93lgz2xx0ck3znfm724ebfu",
+      "published_at": "2026-11-02T22:11:24Z",
+      "summary": "据 Revolut AI 运营负责人 David Abitbol，公司把约 2000 名工程师迁到自托管 GLM 做编码，将 Claude Code 和 Codex 列为例外。 🔗 阅读原文 via AIHOT · https://aihot.news/items/op93lgz2xx0ck3znfm724ebfu",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:benchmark",
-        "weak:eval",
-        "source_prior:official_ai"
+        "strong:claude",
+        "strong:codex",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -221,20 +241,19 @@
       "is_ai_related": true
     },
     {
-      "id": "5a293532ef3135f6cf29ec0d9a5769597069c77b",
+      "id": "e3f9909322d2501805ae9542f8c52d80c8a80abe",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "腾讯混元发布 Hyra 2.0：让通用 agent 研发可复用的科学工具与模型",
-      "url": "https://aihot.news/items/l37ydaic43icz85huclc2io6c",
-      "published_at": "2026-11-02T10:06:28Z",
-      "summary": "腾讯混元发布 Hyra 2.0，将自动化科研重点从直接解题转向由 agent 研发和升级科学模型、工作流与软件工具。系统采用 Overall、Mission、Worker 三层分工，接入企业微信、计算平台和代码仓库的实际研发环境，成果已公开在 GitHub 仓库。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l37ydaic43icz85huclc2io6c",
-      "relevance_score": 3,
+      "title": "Addy Osmani 谈 Agent 时代如何保持批判性思维",
+      "url": "https://aihot.news/items/uinaiwkzg4u2exkfgv4oha9p7",
+      "published_at": "2026-11-03T07:01:29Z",
+      "summary": "Addy Osmani 发文探讨在大量使用 Agent 工作流后如何保持批判性思维。他提出认知卸载、拖延、认知投降三段光谱，认为模型越强、输出越流畅，人越容易在不知不觉中放弃独立判断；并给出具体做法，包括提问前先写假设、把验证标准前置为可执行测试、要求 Agent 列出它替你做的决策与假设、用测验收尾而不是读摘要，以及定期手写代码做校准练习。他强调可以卸载工作和审计，但不能卸载责任。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uinaiwkzg4u2exkfgv4oha9p7",
+      "relevance_score": 2,
       "relevance_reasons": [
         "strong:agent",
-        "weak:自动化",
         "weak:工作流",
         "source_penalty:aggregate_noise"
       ],
@@ -248,11 +267,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1348,
+      "fetched_count": 1349,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 380,
-      "checked_at": "2026-11-03T04:50:26.802539Z"
+      "latency_ms": 656,
+      "checked_at": "2026-11-03T11:23:14.804284Z"
     },
     {
       "source_id": "openai-skills",
@@ -263,8 +282,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 304,
-      "checked_at": "2026-11-03T04:50:27.107082Z"
+      "latency_ms": 203,
+      "checked_at": "2026-11-03T11:23:15.007759Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -275,8 +294,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 99,
-      "checked_at": "2026-11-03T04:50:27.208559Z"
+      "latency_ms": 135,
+      "checked_at": "2026-11-03T11:23:15.147531Z"
     },
     {
       "source_id": "google-deepmind",
@@ -287,8 +306,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 187,
-      "checked_at": "2026-11-03T04:50:27.397192Z"
+      "latency_ms": 122,
+      "checked_at": "2026-11-03T11:23:15.271990Z"
     },
     {
       "source_id": "google-ai",
@@ -299,8 +318,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 196,
-      "checked_at": "2026-11-03T04:50:27.594326Z"
+      "latency_ms": 117,
+      "checked_at": "2026-11-03T11:23:15.390070Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -308,11 +327,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 894,
+      "fetched_count": 895,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 228,
-      "checked_at": "2026-11-03T04:50:27.829409Z"
+      "latency_ms": 344,
+      "checked_at": "2026-11-03T11:23:15.748092Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -323,8 +342,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-11-03T04:50:28.083137Z"
+      "latency_ms": 249,
+      "checked_at": "2026-11-03T11:23:15.998312Z"
     },
     {
       "source_id": "github-changelog",
@@ -335,8 +354,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-11-03T04:50:28.114321Z"
+      "latency_ms": 34,
+      "checked_at": "2026-11-03T11:23:16.032864Z"
     },
     {
       "source_id": "aihot",
@@ -345,10 +364,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 4574,
-      "checked_at": "2026-11-03T04:50:32.689373Z"
+      "latency_ms": 1897,
+      "checked_at": "2026-11-03T11:23:17.931511Z"
     }
   ],
   "control_notes": {
