@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-03T14:31:30.953835Z",
+  "generated_at": "2026-11-03T16:24:17.308227Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,28 +8,68 @@
   "groups": {
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI News",
-          5
+          3
+        ],
+        [
+          "Hugging Face Blog",
+          1
         ]
       ],
       "top_keywords": [
         [
-          "openai",
-          5
-        ],
-        [
           "official_ai",
-          5
+          4
         ],
         [
-          "codex",
-          2
+          "openai",
+          3
         ],
         [
           "chatgpt",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 2,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          2
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
           1
         ]
       ]
@@ -73,22 +113,6 @@
           1
         ]
       ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "actions",
-          1
-        ]
-      ]
     }
   },
   "items": [
@@ -113,21 +137,40 @@
       "is_ai_related": true
     },
     {
-      "id": "b34e2e6101421162562f51aaee3c84c10ee8d8a6",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
+      "id": "6e1e2e537f86aeb827c910a2a55fcc3d0412d023",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Scaling Git at OpenAI",
-      "url": "https://openai.com/index/scaling-git-at-openai",
-      "published_at": "2026-11-02T15:30:00Z",
-      "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
+      "title": "Same Model, Different Harness: CUGA, Hermes, and Deep Agents — When to Pick CUGA?",
+      "url": "https://huggingface.co/blog/ibm-research/cuga-harness",
+      "published_at": "2026-11-03T15:57:39Z",
+      "summary": null,
       "relevance_score": 5,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
+        "strong:agent",
+        "strong:agents",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1be30cc01b8fca13e21f60dddce1d1a1f284e368",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot is now available in JetBrains Air",
+      "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
+      "published_at": "2026-11-03T15:11:46Z",
+      "summary": "You can now delegate coding tasks, guide execution, and review results with GitHub Copilot in JetBrains Air. The integration uses the Agent Client Protocol (ACP) and supports tasks in your… The post GitHub Copilot is now available in JetBrains Air appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -168,20 +211,20 @@
       "is_ai_related": true
     },
     {
-      "id": "b7c797aa169bd954f5e39003be2abd94486942c5",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
+      "id": "7a3698628e4e50a96ebde6814cf258b3a6dc210b",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Introducing the Grid Protectors Program",
-      "url": "https://openai.com/index/grid-protectors-program",
-      "published_at": "2026-11-02T15:00:00Z",
-      "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
-      "relevance_score": 3,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Look up a resource’s cost center with the GitHub REST API",
+      "url": "https://github.blog/changelog/2026-11-03-look-up-a-resources-cost-center-with-the-github-rest-api",
+      "published_at": "2026-11-03T15:27:13Z",
+      "summary": "You can now use the GitHub REST API to find which cost center a user, organization, repository, or enterprise team belongs to. Previously, you had to list every cost center… The post Look up a resource’s cost center with the GitHub REST API appeared first on The GitHub Blog .",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
+        "weak:api",
+        "weak:API"
       ],
       "is_ai_related": true
     },
@@ -224,23 +267,6 @@
       "is_ai_related": true
     },
     {
-      "id": "f6fc6f16e901efa2534b4dfa5df230d4ca28334f",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "pull_request_target blocked by default December 2",
-      "url": "https://github.blog/changelog/2026-11-02-pull_request_target-blocked-by-default-december-2",
-      "published_at": "2026-11-02T15:14:46Z",
-      "summary": "Starting December 2, 2026, GitHub Actions will block pull_request_target events by default in all public repositories, unless an applicable Actions event policy explicitly allows them. Enforcement was previously scheduled for… The post pull_request_target blocked by default December 2 appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "source:actions"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "e3f9909322d2501805ae9542f8c52d80c8a80abe",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -268,10 +294,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1349,
-      "kept_count": 5,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 412,
-      "checked_at": "2026-11-03T14:31:25.115453Z"
+      "latency_ms": 576,
+      "checked_at": "2026-11-03T16:24:13.043653Z"
     },
     {
       "source_id": "openai-skills",
@@ -282,8 +308,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 429,
-      "checked_at": "2026-11-03T14:31:25.545348Z"
+      "latency_ms": 209,
+      "checked_at": "2026-11-03T16:24:13.252971Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -294,8 +320,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 90,
-      "checked_at": "2026-11-03T14:31:25.639142Z"
+      "latency_ms": 124,
+      "checked_at": "2026-11-03T16:24:13.381888Z"
     },
     {
       "source_id": "google-deepmind",
@@ -306,8 +332,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 164,
-      "checked_at": "2026-11-03T14:31:25.804962Z"
+      "latency_ms": 182,
+      "checked_at": "2026-11-03T16:24:13.566004Z"
     },
     {
       "source_id": "google-ai",
@@ -318,8 +344,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 200,
-      "checked_at": "2026-11-03T14:31:26.006193Z"
+      "latency_ms": 151,
+      "checked_at": "2026-11-03T16:24:13.718166Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -328,10 +354,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 895,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 219,
-      "checked_at": "2026-11-03T14:31:26.234733Z"
+      "latency_ms": 246,
+      "checked_at": "2026-11-03T16:24:13.977643Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -342,8 +368,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 424,
-      "checked_at": "2026-11-03T14:31:26.659319Z"
+      "latency_ms": 207,
+      "checked_at": "2026-11-03T16:24:14.185229Z"
     },
     {
       "source_id": "github-changelog",
@@ -352,10 +378,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-11-03T14:31:26.685617Z"
+      "latency_ms": 27,
+      "checked_at": "2026-11-03T16:24:14.213216Z"
     },
     {
       "source_id": "aihot",
@@ -366,8 +392,8 @@
       "fetched_count": 50,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 4260,
-      "checked_at": "2026-11-03T14:31:30.946525Z"
+      "latency_ms": 3086,
+      "checked_at": "2026-11-03T16:24:17.300556Z"
     }
   ],
   "control_notes": {
