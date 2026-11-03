@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-02T22:35:10.440985Z",
+  "generated_at": "2026-11-03T04:50:32.696796Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,28 +8,24 @@
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 5,
       "top_sources": [
         [
           "OpenAI News",
-          3
+          5
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "developer",
-          1
+          5
         ],
         [
           "openai",
+          4
+        ],
+        [
+          "codex",
           1
         ],
         [
@@ -44,37 +40,17 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 2,
       "top_sources": [
         [
           "AI Hot",
-          4
+          2
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
-        ],
-        [
-          "agent",
           2
-        ],
-        [
-          "自动化",
-          2
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "智能体",
-          1
         ],
         [
           "openai",
@@ -82,6 +58,14 @@
         ],
         [
           "推理模型",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "自动化",
           1
         ],
         [
@@ -109,20 +93,56 @@
   },
   "items": [
     {
-      "id": "c9b0c9efc8cb1ff73e8c15f3f6352a0f7cc71a76",
+      "id": "b34e2e6101421162562f51aaee3c84c10ee8d8a6",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Qodo builds context into AI code review with Codex",
-      "url": "https://openai.com/index/qodo-codex-plugin",
-      "published_at": "2026-11-02T00:00:00Z",
-      "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
-      "relevance_score": 4,
+      "title": "Scaling Git at OpenAI",
+      "url": "https://openai.com/index/scaling-git-at-openai",
+      "published_at": "2026-11-02T15:30:00Z",
+      "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
+      "relevance_score": 5,
       "relevance_reasons": [
+        "strong:openai",
         "strong:codex",
-        "weak:developer",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8e596870397c96622b739bab7085803100d1fe2d",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Rewarding defenders with bigger bug bounties",
+      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "published_at": "2026-11-02T18:00:00Z",
+      "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "96bc7f65b514dfc1d069a92e291e3a6ce388f71a",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Preparing our next security sprint to harden OpenAI",
+      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "published_at": "2026-11-02T18:00:00Z",
+      "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -161,26 +181,6 @@
         "weak:benchmark",
         "weak:eval",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7d73ef1166163506311ac8addb261091a3a61b5c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Platform 推出 message threads 公测，降低长会话智能体延迟",
-      "url": "https://aihot.news/items/sg5u3u91kw42j1grtyp3ny65n",
-      "published_at": "2026-11-02T00:00:00Z",
-      "summary": "Anthropic 在 Claude Platform 推出 message threads 公测，智能体每轮只需发送新增消息而无需重发全部对话历史，从而缩短首 token 时间。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sg5u3u91kw42j1grtyp3ny65n",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -239,25 +239,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "d7d6a24130d705874ce546560961aa095af42d50",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "数字生命卡兹克分享折腾一年的Agent自动化系统架构",
-      "url": "https://aihot.news/items/dzwfvd9xp6v4qaj6olxezpier",
-      "published_at": "2026-11-02T00:19:00Z",
-      "summary": "自媒体作者卡兹克分享自己搭建近一年的Agent自动化系统，核心是把任务起点从人身上移开，由事件触发Agent工作。系统分为自动化中台、Agent执行、CI中台和飞书决策四层：中台用rules.json统一管理事件触发和Agent调度，本地MacMini跑Agent任务，自建CI中台完成审查、检查、合并、发布、核实五步，只在删数据、花钱、改方向等关键决策时通过飞书卡片找作者拍板。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dzwfvd9xp6v4qaj6olxezpier",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -267,11 +248,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1344,
-      "kept_count": 3,
+      "fetched_count": 1348,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 383,
-      "checked_at": "2026-11-02T22:35:08.351327Z"
+      "latency_ms": 380,
+      "checked_at": "2026-11-03T04:50:26.802539Z"
     },
     {
       "source_id": "openai-skills",
@@ -282,8 +263,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 267,
-      "checked_at": "2026-11-02T22:35:08.619255Z"
+      "latency_ms": 304,
+      "checked_at": "2026-11-03T04:50:27.107082Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -294,8 +275,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 86,
-      "checked_at": "2026-11-02T22:35:08.708829Z"
+      "latency_ms": 99,
+      "checked_at": "2026-11-03T04:50:27.208559Z"
     },
     {
       "source_id": "google-deepmind",
@@ -306,8 +287,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 75,
-      "checked_at": "2026-11-02T22:35:08.785359Z"
+      "latency_ms": 187,
+      "checked_at": "2026-11-03T04:50:27.397192Z"
     },
     {
       "source_id": "google-ai",
@@ -318,8 +299,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 154,
-      "checked_at": "2026-11-02T22:35:08.940577Z"
+      "latency_ms": 196,
+      "checked_at": "2026-11-03T04:50:27.594326Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -330,8 +311,8 @@
       "fetched_count": 894,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 163,
-      "checked_at": "2026-11-02T22:35:09.112610Z"
+      "latency_ms": 228,
+      "checked_at": "2026-11-03T04:50:27.829409Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -342,8 +323,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 149,
-      "checked_at": "2026-11-02T22:35:09.262394Z"
+      "latency_ms": 253,
+      "checked_at": "2026-11-03T04:50:28.083137Z"
     },
     {
       "source_id": "github-changelog",
@@ -354,8 +335,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 20,
-      "checked_at": "2026-11-02T22:35:09.282841Z"
+      "latency_ms": 31,
+      "checked_at": "2026-11-03T04:50:28.114321Z"
     },
     {
       "source_id": "aihot",
@@ -364,10 +345,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 1149,
-      "checked_at": "2026-11-02T22:35:10.432785Z"
+      "latency_ms": 4574,
+      "checked_at": "2026-11-03T04:50:32.689373Z"
     }
   ],
   "control_notes": {
