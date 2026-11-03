@@ -1,28 +1,28 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-03T16:24:17.308227Z",
+  "generated_at": "2026-11-03T20:24:47.104554Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 12,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "OpenAI News",
-          3
+          4
         ],
         [
-          "Hugging Face Blog",
+          "Google DeepMind",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          4
+          5
         ],
         [
           "openai",
@@ -30,18 +30,18 @@
         ],
         [
           "chatgpt",
-          1
+          2
         ],
         [
           "codex",
-          1
+          2
+        ],
+        [
+          "workflow",
+          2
         ],
         [
           "agent",
-          1
-        ],
-        [
-          "agents",
           1
         ]
       ]
@@ -76,40 +76,52 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          3
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          3
+          5
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "评测",
+          1
+        ],
+        [
+          "anthropic",
+          1
         ],
         [
           "claude",
           1
         ],
         [
-          "codex",
-          1
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "推理模型",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
           "工作流",
+          1
+        ],
+        [
+          "开发者",
           1
         ]
       ]
@@ -137,20 +149,40 @@
       "is_ai_related": true
     },
     {
-      "id": "6e1e2e537f86aeb827c910a2a55fcc3d0412d023",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "a23160d60e0211d0532482419f96255b4a469e75",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Same Model, Different Harness: CUGA, Hermes, and Deep Agents — When to Pick CUGA?",
-      "url": "https://huggingface.co/blog/ibm-research/cuga-harness",
-      "published_at": "2026-11-03T15:57:39Z",
-      "summary": null,
-      "relevance_score": 5,
+      "title": "Accelerating engineering for the physical world",
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "published_at": "2026-11-03T12:00:00Z",
+      "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "08053bb2626826fc4bac675128935bf5e27fb242",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Agentic cheminformatics with Google Antigravity",
+      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity",
+      "published_at": "2026-11-03T17:01:49Z",
+      "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+      "relevance_score": 4,
       "relevance_reasons": [
         "strong:agent",
-        "strong:agents",
+        "weak:workflow",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -175,16 +207,16 @@
       "is_ai_related": true
     },
     {
-      "id": "8e596870397c96622b739bab7085803100d1fe2d",
+      "id": "5ac6b01cd78790bacab2be0d3abd7b19bc43100a",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Rewarding defenders with bigger bug bounties",
-      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-      "published_at": "2026-11-02T18:00:00Z",
-      "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
+      "title": "How Cisco defends at machine speed with OpenAI",
+      "url": "https://openai.com/index/cisco-cyber",
+      "published_at": "2026-11-03T08:00:00Z",
+      "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
@@ -193,20 +225,60 @@
       "is_ai_related": true
     },
     {
-      "id": "96bc7f65b514dfc1d069a92e291e3a6ce388f71a",
+      "id": "8f950f41f453ccf4b6350a4d207cd92ec96161dc",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 研究：智能体安全评测与生产行为存在差距，评测目标误判是关键因素",
+      "url": "https://aihot.news/items/fvf2qsdi4s11bz1denqd5rzff",
+      "published_at": "2026-11-03T08:00:00Z",
+      "summary": "OpenAI Alignment 团队对比六个模型在 Respecting Warnings 安全评测与匹配的 Codex 生产决策上的表现，发现评测成功率普遍低于生产，差距为 10.2 至 37.4 个百分点。模型普遍口头表现出评测意识（评测中一般性意识率 57.0%–83.7%），但仅告知 🔗 阅读原文 via AIHOT · https://aihot.news/items/fvf2qsdi4s11bz1denqd5rzff",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "strong:智能体",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6b28cfb2adc56338ecde6c71d8a42d8424ffac7e",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Preparing our next security sprint to harden OpenAI",
-      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-      "published_at": "2026-11-02T18:00:00Z",
-      "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+      "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+      "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+      "published_at": "2026-11-03T00:00:00Z",
+      "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c83b313db5a61ab8ef1b533a3c190200b14f1048",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Ed Zitron 解析 OpenAI 1.25 万亿美元估值融资与 Anthropic S-1/A 中的万亿级算力承诺",
+      "url": "https://aihot.news/items/zv5dl1agqwo6tkmhdamy17lt5",
+      "published_at": "2026-11-03T17:16:20Z",
+      "summary": "Ed Zitron 撰文认为 AI 行业资金正在枯竭。OpenAI 上周以 1.25 万亿美元估值融资 110 亿美元，低于此前计划的 300 亿美元、1.4 万亿美元估值；据 The Information，其 Q1 2026 成本收入与研发支出合计 121 亿美元，截至 3 月底持有逾 730 亿美元现金及有价证券。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zv5dl1agqwo6tkmhdamy17lt5",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -248,25 +320,6 @@
       "is_ai_related": true
     },
     {
-      "id": "18e6cd3a470e26ac4c99d96c23d9f88beb435d3f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 训练并部署激活分类器作为前沿模型安全监控层",
-      "url": "https://aihot.news/items/wlmiqh13694tqabyvu6nzvlrs",
-      "published_at": "2026-11-02T20:00:00Z",
-      "summary": "OpenAI 自 GPT-5.6 起在其最强模型的内部和外部流量上部署激活分类器（probes），利用模型内部激活逐 token 实时评分，可在生成中途阻断违规回复和工具调用并交由推理模型复审。实验显示 probes 比更大的文本分类器对测试的越狱攻击更鲁棒，准确率随模型能力提升，且在后训练各检查点间迁移良好，但需为新基础模型重新训练，且只能检测可显式训练的已知违规类型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wlmiqh13694tqabyvu6nzvlrs",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:推理模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "e3f9909322d2501805ae9542f8c52d80c8a80abe",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -284,6 +337,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "7b12c9d2f916855e2b3167a6ac1aac8c3f70c058",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenHands 与 Snowflake 推出基于现有 agent harness 的模型后训练方案",
+      "url": "https://aihot.news/items/recqqiy27l866jfbhjk0cusqh",
+      "published_at": "2026-11-03T00:00:00Z",
+      "summary": "OpenHands 与 Snowflake AI Research 合作，让开发者无需在独立 RL 框架中重建 harness，即可用现有 OpenHands Agent SDK 配置和 Harbor 格式任务对开源权重模型做 RL 后训练，训练由 Snowflake Cortex Training 提供 GPU 支持。 🔗 阅读原文 via AIHOT · https://aihot.news/items/recqqiy27l866jfbhjk0cusqh",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -293,11 +365,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1349,
-      "kept_count": 3,
+      "fetched_count": 1352,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 576,
-      "checked_at": "2026-11-03T16:24:13.043653Z"
+      "latency_ms": 418,
+      "checked_at": "2026-11-03T20:24:41.876188Z"
     },
     {
       "source_id": "openai-skills",
@@ -308,8 +380,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 209,
-      "checked_at": "2026-11-03T16:24:13.252971Z"
+      "latency_ms": 365,
+      "checked_at": "2026-11-03T20:24:42.241739Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -320,8 +392,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 124,
-      "checked_at": "2026-11-03T16:24:13.381888Z"
+      "latency_ms": 138,
+      "checked_at": "2026-11-03T20:24:42.383165Z"
     },
     {
       "source_id": "google-deepmind",
@@ -330,10 +402,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 182,
-      "checked_at": "2026-11-03T16:24:13.566004Z"
+      "latency_ms": 252,
+      "checked_at": "2026-11-03T20:24:42.637182Z"
     },
     {
       "source_id": "google-ai",
@@ -344,8 +416,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 151,
-      "checked_at": "2026-11-03T16:24:13.718166Z"
+      "latency_ms": 316,
+      "checked_at": "2026-11-03T20:24:42.953769Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -353,11 +425,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 895,
-      "kept_count": 1,
+      "fetched_count": 896,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 246,
-      "checked_at": "2026-11-03T16:24:13.977643Z"
+      "latency_ms": 243,
+      "checked_at": "2026-11-03T20:24:43.206137Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -368,8 +440,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 207,
-      "checked_at": "2026-11-03T16:24:14.185229Z"
+      "latency_ms": 329,
+      "checked_at": "2026-11-03T20:24:43.536239Z"
     },
     {
       "source_id": "github-changelog",
@@ -380,8 +452,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-11-03T16:24:14.213216Z"
+      "latency_ms": 26,
+      "checked_at": "2026-11-03T20:24:43.562674Z"
     },
     {
       "source_id": "aihot",
@@ -390,10 +462,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 3086,
-      "checked_at": "2026-11-03T16:24:17.300556Z"
+      "latency_ms": 3533,
+      "checked_at": "2026-11-03T20:24:47.096739Z"
     }
   ],
   "control_notes": {
