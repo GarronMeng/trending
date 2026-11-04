@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-03T20:24:47.104554Z",
+  "generated_at": "2026-11-04T04:16:40.986301Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,11 +8,11 @@
   "groups": {
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI News",
-          4
+          3
         ],
         [
           "Google DeepMind",
@@ -22,11 +22,11 @@
       "top_keywords": [
         [
           "official_ai",
-          5
+          4
         ],
         [
           "openai",
-          3
+          2
         ],
         [
           "chatgpt",
@@ -48,57 +48,57 @@
     },
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 4,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          4
         ]
       ],
       "top_keywords": [
         [
           "copilot",
+          4
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
           2
         ],
         [
           "agent",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
+          2
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          5
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          4
         ],
         [
           "openai",
           2
         ],
         [
-          "codex",
+          "agent",
           2
         ],
         [
-          "agent",
-          2
+          "codex",
+          1
         ],
         [
           "智能体",
@@ -113,15 +113,11 @@
           1
         ],
         [
-          "claude",
+          "自动化",
           1
         ],
         [
           "工作流",
-          1
-        ],
-        [
-          "开发者",
           1
         ]
       ]
@@ -188,6 +184,26 @@
       "is_ai_related": true
     },
     {
+      "id": "cc8f8efafe1f62b9f66894868bb2c57f1b75609c",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "BYOK and enterprise custom models in the Copilot usage API",
+      "url": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
+      "published_at": "2026-11-04T00:32:19Z",
+      "summary": "The Copilot usage metrics API now shows bring your own key (BYOK) usage across GitHub Copilot, so you can separate it from Copilot-hosted model usage. Reports cover two kinds of… The post BYOK and enterprise custom models in the Copilot usage API appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:copilot",
+        "weak:API",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "1be30cc01b8fca13e21f60dddce1d1a1f284e368",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -246,20 +262,19 @@
       "is_ai_related": true
     },
     {
-      "id": "6b28cfb2adc56338ecde6c71d8a42d8424ffac7e",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
+      "id": "ac3574ee5f75802406a19c485fdffefd668bbf63",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
-      "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
-      "published_at": "2026-11-03T00:00:00Z",
-      "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
-      "relevance_score": 3,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Dependabot version updates support Agent Package Manager",
+      "url": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+      "published_at": "2026-11-03T20:24:07Z",
+      "summary": "You can now keep your AI agent skills, prompts, and instructions up to date with Dependabot version updates for Agent Package Manager (APM). Dependabot opens pull requests to update supported… The post Dependabot version updates support Agent Package Manager appeared first on The GitHub Blog .",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
+        "strong:agent"
       ],
       "is_ai_related": true
     },
@@ -301,20 +316,20 @@
       "is_ai_related": true
     },
     {
-      "id": "4ea7c252c9c7577996a8648b77281e390bd84de4",
+      "id": "7331c664dbb392d2ba1c2e1839962195da7e911d",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Revolut 将约 2000 名工程师迁移到自托管 GLM 编码",
-      "url": "https://aihot.news/items/op93lgz2xx0ck3znfm724ebfu",
-      "published_at": "2026-11-02T22:11:24Z",
-      "summary": "据 Revolut AI 运营负责人 David Abitbol，公司把约 2000 名工程师迁到自托管 GLM 做编码，将 Claude Code 和 Codex 列为例外。 🔗 阅读原文 via AIHOT · https://aihot.news/items/op93lgz2xx0ck3znfm724ebfu",
-      "relevance_score": 3,
+      "title": "卡兹克开源折腾一年的 Agent 自动化系统 Agent-Autoloop",
+      "url": "https://aihot.news/items/y0cgwl79wbih8c50svgmit93j",
+      "published_at": "2026-11-04T00:19:00Z",
+      "summary": "作者开源其打磨一年的 Agent 自动化系统 Agent-Autoloop，地址为 https://github.com/KKKKhazix/agent-autoloop。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y0cgwl79wbih8c50svgmit93j",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:claude",
-        "strong:codex",
+        "strong:agent",
+        "weak:自动化",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -337,25 +352,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "7b12c9d2f916855e2b3167a6ac1aac8c3f70c058",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenHands 与 Snowflake 推出基于现有 agent harness 的模型后训练方案",
-      "url": "https://aihot.news/items/recqqiy27l866jfbhjk0cusqh",
-      "published_at": "2026-11-03T00:00:00Z",
-      "summary": "OpenHands 与 Snowflake AI Research 合作，让开发者无需在独立 RL 框架中重建 harness，即可用现有 OpenHands Agent SDK 配置和 Harbor 格式任务对开源权重模型做 RL 后训练，训练由 Snowflake Cortex Training 提供 GPU 支持。 🔗 阅读原文 via AIHOT · https://aihot.news/items/recqqiy27l866jfbhjk0cusqh",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -365,11 +361,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1352,
-      "kept_count": 4,
+      "fetched_count": 1354,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 418,
-      "checked_at": "2026-11-03T20:24:41.876188Z"
+      "latency_ms": 371,
+      "checked_at": "2026-11-04T04:16:31.633058Z"
     },
     {
       "source_id": "openai-skills",
@@ -380,8 +376,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 365,
-      "checked_at": "2026-11-03T20:24:42.241739Z"
+      "latency_ms": 297,
+      "checked_at": "2026-11-04T04:16:31.931061Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -392,8 +388,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 138,
-      "checked_at": "2026-11-03T20:24:42.383165Z"
+      "latency_ms": 103,
+      "checked_at": "2026-11-04T04:16:32.036789Z"
     },
     {
       "source_id": "google-deepmind",
@@ -404,8 +400,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 252,
-      "checked_at": "2026-11-03T20:24:42.637182Z"
+      "latency_ms": 446,
+      "checked_at": "2026-11-04T04:16:32.483702Z"
     },
     {
       "source_id": "google-ai",
@@ -416,8 +412,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 316,
-      "checked_at": "2026-11-03T20:24:42.953769Z"
+      "latency_ms": 279,
+      "checked_at": "2026-11-04T04:16:32.762975Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -428,8 +424,8 @@
       "fetched_count": 896,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 243,
-      "checked_at": "2026-11-03T20:24:43.206137Z"
+      "latency_ms": 222,
+      "checked_at": "2026-11-04T04:16:32.991784Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -440,8 +436,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 329,
-      "checked_at": "2026-11-03T20:24:43.536239Z"
+      "latency_ms": 318,
+      "checked_at": "2026-11-04T04:16:33.310582Z"
     },
     {
       "source_id": "github-changelog",
@@ -450,10 +446,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-11-03T20:24:43.562674Z"
+      "latency_ms": 28,
+      "checked_at": "2026-11-04T04:16:33.339201Z"
     },
     {
       "source_id": "aihot",
@@ -462,10 +458,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 3533,
-      "checked_at": "2026-11-03T20:24:47.096739Z"
+      "latency_ms": 7640,
+      "checked_at": "2026-11-04T04:16:40.979761Z"
     }
   ],
   "control_notes": {
