@@ -1,29 +1,21 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-04T16:27:50.039963Z",
+  "generated_at": "2026-11-04T20:39:38.887175Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 8,
   "groups": {
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "OpenAI News",
           1
-        ],
-        [
-          "Google DeepMind",
-          1
         ]
       ],
       "top_keywords": [
-        [
-          "official_ai",
-          2
-        ],
         [
           "openai",
           1
@@ -37,11 +29,7 @@
           1
         ],
         [
-          "agent",
-          1
-        ],
-        [
-          "workflow",
+          "official_ai",
           1
         ]
       ]
@@ -58,7 +46,7 @@
       "top_keywords": [
         [
           "copilot",
-          2
+          4
         ],
         [
           "api",
@@ -69,7 +57,7 @@
           1
         ],
         [
-          "agent",
+          "workflow",
           1
         ]
       ]
@@ -90,14 +78,18 @@
         ],
         [
           "openai",
-          3
-        ],
-        [
-          "codex",
-          1
+          2
         ],
         [
           "开发者",
+          2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "codex",
           1
         ],
         [
@@ -114,14 +106,6 @@
         ],
         [
           "智能体",
-          1
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "agent",
           1
         ],
         [
@@ -153,25 +137,6 @@
       "is_ai_related": true
     },
     {
-      "id": "08053bb2626826fc4bac675128935bf5e27fb242",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Agentic cheminformatics with Google Antigravity",
-      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity",
-      "published_at": "2026-11-03T17:01:49Z",
-      "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "cc8f8efafe1f62b9f66894868bb2c57f1b75609c",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -187,6 +152,25 @@
         "weak:api",
         "weak:copilot",
         "weak:API",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "48e2cdef9779994d61b70f9744e7c5f79ceed1e4",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot is now available in Xcode’s coding assistant",
+      "url": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant",
+      "published_at": "2026-11-04T19:10:40Z",
+      "summary": "You can now work with GitHub Copilot directly in Xcode’s built-in coding assistant, bringing Copilot into your native Xcode workflow. The integration is now in public preview, available starting with… The post GitHub Copilot is now available in Xcode’s coding assistant appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "weak:workflow",
+        "weak:copilot",
         "source:copilot"
       ],
       "is_ai_related": true
@@ -251,42 +235,6 @@
       "is_ai_related": true
     },
     {
-      "id": "ac3574ee5f75802406a19c485fdffefd668bbf63",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Dependabot version updates support Agent Package Manager",
-      "url": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
-      "published_at": "2026-11-03T20:24:07Z",
-      "summary": "You can now keep your AI agent skills, prompts, and instructions up to date with Dependabot version updates for Agent Package Manager (APM). Dependabot opens pull requests to update supported… The post Dependabot version updates support Agent Package Manager appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:agent"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c83b313db5a61ab8ef1b533a3c190200b14f1048",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Ed Zitron 解析 OpenAI 1.25 万亿美元估值融资与 Anthropic S-1/A 中的万亿级算力承诺",
-      "url": "https://aihot.news/items/zv5dl1agqwo6tkmhdamy17lt5",
-      "published_at": "2026-11-03T17:16:20Z",
-      "summary": "Ed Zitron 撰文认为 AI 行业资金正在枯竭。OpenAI 上周以 1.25 万亿美元估值融资 110 亿美元，低于此前计划的 300 亿美元、1.4 万亿美元估值；据 The Information，其 Q1 2026 成本收入与研发支出合计 121 亿美元，截至 3 月底持有逾 730 亿美元现金及有价证券。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zv5dl1agqwo6tkmhdamy17lt5",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "7331c664dbb392d2ba1c2e1839962195da7e911d",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -304,6 +252,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "ad8e7c19554b3f7d73fd633862159ec0973e6994",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Factory 收购 HumanLayer，并将开源其平台",
+      "url": "https://aihot.news/items/cc4sa2q738kbc1y9hj6agvta7",
+      "published_at": "2026-11-04T00:00:00Z",
+      "summary": "Factory 宣布收购 HumanLayer，联合创始人 Dex Horthy 和 Kyle Mistele 加入，共同构建面向企业和开发者的自主进化软件。HumanLayer 团队自 2025 年初深度使用编码 Agent，曾提出 Agent swarms 和 Research/Plan/Implement 框架。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cc4sa2q738kbc1y9hj6agvta7",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -316,8 +283,8 @@
       "fetched_count": 1356,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 627,
-      "checked_at": "2026-11-04T16:27:46.819393Z"
+      "latency_ms": 369,
+      "checked_at": "2026-11-04T20:39:34.305376Z"
     },
     {
       "source_id": "openai-skills",
@@ -328,8 +295,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 262,
-      "checked_at": "2026-11-04T16:27:47.081917Z"
+      "latency_ms": 270,
+      "checked_at": "2026-11-04T20:39:34.575601Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -340,8 +307,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 150,
-      "checked_at": "2026-11-04T16:27:47.237482Z"
+      "latency_ms": 102,
+      "checked_at": "2026-11-04T20:39:34.680183Z"
     },
     {
       "source_id": "google-deepmind",
@@ -350,10 +317,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 209,
-      "checked_at": "2026-11-04T16:27:47.448346Z"
+      "latency_ms": 400,
+      "checked_at": "2026-11-04T20:39:35.081469Z"
     },
     {
       "source_id": "google-ai",
@@ -364,8 +331,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 323,
-      "checked_at": "2026-11-04T16:27:47.771728Z"
+      "latency_ms": 250,
+      "checked_at": "2026-11-04T20:39:35.332074Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -373,11 +340,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 896,
+      "fetched_count": 897,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 335,
-      "checked_at": "2026-11-04T16:27:48.120559Z"
+      "latency_ms": 219,
+      "checked_at": "2026-11-04T20:39:35.558338Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -388,8 +355,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 350,
-      "checked_at": "2026-11-04T16:27:48.471068Z"
+      "latency_ms": 235,
+      "checked_at": "2026-11-04T20:39:35.794336Z"
     },
     {
       "source_id": "github-changelog",
@@ -400,8 +367,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 37,
-      "checked_at": "2026-11-04T16:27:48.508436Z"
+      "latency_ms": 29,
+      "checked_at": "2026-11-04T20:39:35.824274Z"
     },
     {
       "source_id": "aihot",
@@ -412,8 +379,8 @@
       "fetched_count": 50,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 1523,
-      "checked_at": "2026-11-04T16:27:50.032393Z"
+      "latency_ms": 3055,
+      "checked_at": "2026-11-04T20:39:38.880662Z"
     }
   ],
   "control_notes": {
