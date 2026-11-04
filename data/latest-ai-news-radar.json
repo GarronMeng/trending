@@ -1,15 +1,19 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-04T14:46:03.542052Z",
+  "generated_at": "2026-11-04T16:27:50.039963Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 9,
   "groups": {
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 2,
       "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ],
         [
           "Google DeepMind",
           1
@@ -17,64 +21,96 @@
       ],
       "top_keywords": [
         [
+          "official_ai",
+          2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "tool",
+          1
+        ],
+        [
           "agent",
           1
         ],
         [
           "workflow",
           1
-        ],
-        [
-          "official_ai",
-          1
         ]
       ]
     },
     "developer": {
       "group": "developer",
-      "count": 4,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          4
+          2
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          4
+          2
         ],
         [
           "api",
-          2
+          1
         ],
         [
           "API",
-          2
+          1
         ],
         [
           "agent",
-          2
+          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          3
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          3
+          5
         ],
         [
           "openai",
-          2
+          3
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
         ],
         [
           "智能体",
@@ -96,6 +132,26 @@
     }
   },
   "items": [
+    {
+      "id": "3af2a326106601ef6bdbc5c37eaf58b45ba9d544",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+      "url": "https://openai.com/index/openai-to-acquire-pierre",
+      "published_at": "2026-11-04T14:30:00Z",
+      "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "weak:tool",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "08053bb2626826fc4bac675128935bf5e27fb242",
       "source_id": "google-deepmind",
@@ -136,21 +192,42 @@
       "is_ai_related": true
     },
     {
-      "id": "1be30cc01b8fca13e21f60dddce1d1a1f284e368",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Copilot is now available in JetBrains Air",
-      "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
-      "published_at": "2026-11-03T15:11:46Z",
-      "summary": "You can now delegate coding tasks, guide execution, and review results with GitHub Copilot in JetBrains Air. The integration uses the Agent Client Protocol (ACP) and supports tasks in your… The post GitHub Copilot is now available in JetBrains Air appeared first on The GitHub Blog .",
-      "relevance_score": 5,
+      "id": "c4dfaf44c2b6fcc5bea2a3de08c9564d75bebf79",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 宣布收购 Code Storage 背后公司 Pierre",
+      "url": "https://aihot.news/items/c39s97tylya5njp0nro6dwvbx",
+      "published_at": "2026-11-04T14:30:00Z",
+      "summary": "OpenAI 宣布收购 Pierre Computer Company，即 Code Storage 及多款开源开发者工具背后的公司。其 Trees 和 Diffs 库已被用于 Codex 应用的文件浏览与代码变更审阅；交割后 Pierre 的开源项目将继续开源，Code Storage 客户可继续使用，功能将逐步并入 Codex，交割尚待监管批准。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c39s97tylya5njp0nro6dwvbx",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
+        "strong:openai",
+        "strong:codex",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9ca8b6ae5210c9582e117ded7b6a7a78123c56ab",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "可灵 Kling 4.0 Flash 全面开放，支持官网、API、MCP 和 Adobe 插件接入",
+      "url": "https://aihot.news/items/dh8lnoo1i3xiq7a12azrnmmwf",
+      "published_at": "2026-11-04T15:00:00Z",
+      "summary": "可灵AI 宣布 Kling 4.0 Flash 现已向所有用户全面开放，可通过 Kling AI 官网和 API 使用。同时支持通过 MCP、CLI 及 AI 插件接入，创作者还可在 Adobe Photoshop、Premiere Pro 和 After Effects 中通过可灵插件调用该模型，体验入口为 klingai.com。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dh8lnoo1i3xiq7a12azrnmmwf",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:mcp",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -210,24 +287,6 @@
       "is_ai_related": true
     },
     {
-      "id": "7a3698628e4e50a96ebde6814cf258b3a6dc210b",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Look up a resource’s cost center with the GitHub REST API",
-      "url": "https://github.blog/changelog/2026-11-03-look-up-a-resources-cost-center-with-the-github-rest-api",
-      "published_at": "2026-11-03T15:27:13Z",
-      "summary": "You can now use the GitHub REST API to find which cost center a user, organization, repository, or enterprise team belongs to. Previously, you had to list every cost center… The post Look up a resource’s cost center with the GitHub REST API appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:API"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "7331c664dbb392d2ba1c2e1839962195da7e911d",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -254,11 +313,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1354,
-      "kept_count": 0,
+      "fetched_count": 1356,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 402,
-      "checked_at": "2026-11-04T14:45:59.011219Z"
+      "latency_ms": 627,
+      "checked_at": "2026-11-04T16:27:46.819393Z"
     },
     {
       "source_id": "openai-skills",
@@ -269,8 +328,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 278,
-      "checked_at": "2026-11-04T14:45:59.290144Z"
+      "latency_ms": 262,
+      "checked_at": "2026-11-04T16:27:47.081917Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -281,8 +340,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 72,
-      "checked_at": "2026-11-04T14:45:59.365143Z"
+      "latency_ms": 150,
+      "checked_at": "2026-11-04T16:27:47.237482Z"
     },
     {
       "source_id": "google-deepmind",
@@ -293,8 +352,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 242,
-      "checked_at": "2026-11-04T14:45:59.608328Z"
+      "latency_ms": 209,
+      "checked_at": "2026-11-04T16:27:47.448346Z"
     },
     {
       "source_id": "google-ai",
@@ -305,8 +364,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 262,
-      "checked_at": "2026-11-04T14:45:59.870621Z"
+      "latency_ms": 323,
+      "checked_at": "2026-11-04T16:27:47.771728Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -317,8 +376,8 @@
       "fetched_count": 896,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 172,
-      "checked_at": "2026-11-04T14:46:00.052364Z"
+      "latency_ms": 335,
+      "checked_at": "2026-11-04T16:27:48.120559Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -329,8 +388,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 185,
-      "checked_at": "2026-11-04T14:46:00.237615Z"
+      "latency_ms": 350,
+      "checked_at": "2026-11-04T16:27:48.471068Z"
     },
     {
       "source_id": "github-changelog",
@@ -339,10 +398,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 18,
-      "checked_at": "2026-11-04T14:46:00.256240Z"
+      "latency_ms": 37,
+      "checked_at": "2026-11-04T16:27:48.508436Z"
     },
     {
       "source_id": "aihot",
@@ -351,10 +410,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 3277,
-      "checked_at": "2026-11-04T14:46:03.534568Z"
+      "latency_ms": 1523,
+      "checked_at": "2026-11-04T16:27:50.032393Z"
     }
   ],
   "control_notes": {
