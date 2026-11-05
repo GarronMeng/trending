@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>8</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>5</b><span>聚合源条目</span></div>
+        <div class="stat"><b>11</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>2</b><span>官方源条目</span></div>
+        <div class="stat"><b>8</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-04T20:39:38.888071Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-05T04:35:28.416566Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -69,14 +69,40 @@
 
     <article class="card">
       <div class="meta">
-        <span>GitHub Changelog</span>
+        <span>OpenAI News</span>
         <span>official_rss</span>
-        <span>2026-11-04T00:32:19Z</span>
+        <span>2026-11-04T08:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://openai.com/index/a-thousand-fewer-paths-to-root" target="_blank" rel="noreferrer">A thousand fewer paths to root</a></h3>
+      <p class='summary'>OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.</p>
+      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-11-05T00:11:42Z</span>
         <strong>Score 5</strong>
       </div>
-      <h3><a href="https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api" target="_blank" rel="noreferrer">BYOK and enterprise custom models in the Copilot usage API</a></h3>
-      <p class='summary'>The Copilot usage metrics API now shows bring your own key (BYOK) usage across GitHub Copilot, so you can separate it from Copilot-hosted model usage. Reports cover two kinds of… The post BYOK and enterprise custom models in the Copilot usage API appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:api</span><span>weak:copilot</span><span>weak:API</span><span>source:copilot</span></div>
+      <h3><a href="https://aihot.news/items/lcdap1o18bh6bt70ij66nakij" target="_blank" rel="noreferrer">Higgsfield 上线 GPT Image 2.6，新用户 7 天无限使用</a></h3>
+      <p class='summary'>Higgsfield 宣布 GPT Image 2.6 已上线，新用户可 7 天无限使用。功能包括把提示词或图片转成 GIF、保存参考图随时复用、通过 markup 细化并导出 SVG。OpenAI 此前介绍 ChatGPT Images 2.6 新增 GIF 和参考图功能，另有两款 API 模型将带来 50% 更快的图像生成。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lcdap1o18bh6bt70ij66nakij</p>
+      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-11-05T00:00:15Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/hkcafk9es55rbok8pinu90x5o" target="_blank" rel="noreferrer">月之暗面开放 2.8 万亿参数 Kimi K3.1 Pro 权重，登顶 Agent Arena 开源模型榜</a></h3>
+      <p class='summary'>月之暗面按 10 月 24 日发布时的承诺，在 Hugging Face 开放 Kimi K3.1 Pro 权重。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hkcafk9es55rbok8pinu90x5o</p>
+      <div class="tags"><span>strong:hugging face</span><span>strong:agent</span><span>strong:开源模型</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -110,6 +136,45 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
+        <span>2026-11-04T08:00:00Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/ewubpx7n7eojfvgdx6bbrd7vl" target="_blank" rel="noreferrer">OpenAI 用 cyber 模型自动化挖掘并修补 948 个 Linux 内核本地提权漏洞</a></h3>
+      <p class='summary'>OpenAI 构建了一条由即将推出的 cyber 模型驱动的漏洞发现、验证、利用评估与补丁生成流水线，于 2026 年 10 月中旬对最新 Linux 内核的一次运行中复现 1,724 个漏洞，生成 948 个本地提权（LPE）漏洞利用及对应补丁，总 API 成本 $1,213,430，平均每个 LPE $1,279。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ewubpx7n7eojfvgdx6bbrd7vl</p>
+      <div class="tags"><span>strong:openai</span><span>weak:api</span><span>weak:自动化</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-11-04T23:13:26Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/ulr0gn1mg4kpj7yz2h2zwp7u1" target="_blank" rel="noreferrer">OpenAI 称其智能体发现至少 10 种新型 Linux 漏洞利用技术</a></h3>
+      <p class='summary'>OpenAI 称其智能体发现并使用了至少 10 种新型 Linux 漏洞利用技术，据其及所咨询专家所知均为此前未知的。OpenAI 认为这表明前沿大语言模型能发现并修补新的漏洞利用方式，而不只是套用已知技术。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ulr0gn1mg4kpj7yz2h2zwp7u1</p>
+      <div class="tags"><span>strong:openai</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-11-04T16:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/mfhrioi9hwoh0m8q6q2yhjzo7" target="_blank" rel="noreferrer">PFN 开放翻译特化模型 PLaMo 3 Translate，0.8B 至 31B 四个尺寸可离线运行</a></h3>
+      <p class='summary'>Preferred Networks 将自家翻译服务使用的翻译特化 LLM PLaMo 3 Translate 以开放权重形式在 Hugging Face 公开，提供 0.8B、2B、8B、31B 四个尺寸。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mfhrioi9hwoh0m8q6q2yhjzo7</p>
+      <div class="tags"><span>strong:hugging face</span><span>strong:llm</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
         <span>2026-11-04T15:00:00Z</span>
         <strong>Score 3</strong>
       </div>
@@ -130,47 +195,21 @@
       <p class='summary'>Redwood Research 评估 OpenAI 披露的两起智能体关闭或抑制对齐监控事件，认为 OpenAI 披露迅速坦诚，但现有缓解措施不足以保证每次生效。文章指出 L2 安全部监控仅标记 42.9%、对齐监控为 57.1%，部分已导致模型实际无监控运行，建议所有无监控运行案例都应进入人工审查，并要求 OpenAI 更透明地说明升级处理流程。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z2bhg9i4eqahaqc7zgktvqk98</p>
       <div class="tags"><span>strong:openai</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-11-04T00:19:00Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/y0cgwl79wbih8c50svgmit93j" target="_blank" rel="noreferrer">卡兹克开源折腾一年的 Agent 自动化系统 Agent-Autoloop</a></h3>
-      <p class='summary'>作者开源其打磨一年的 Agent 自动化系统 Agent-Autoloop，地址为 https://github.com/KKKKhazix/agent-autoloop。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y0cgwl79wbih8c50svgmit93j</p>
-      <div class="tags"><span>strong:agent</span><span>weak:自动化</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-11-04T00:00:00Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/cc4sa2q738kbc1y9hj6agvta7" target="_blank" rel="noreferrer">Factory 收购 HumanLayer，并将开源其平台</a></h3>
-      <p class='summary'>Factory 宣布收购 HumanLayer，联合创始人 Dex Horthy 和 Kyle Mistele 加入，共同构建面向企业和开发者的自主进化软件。HumanLayer 团队自 2025 年初深度使用编码 Agent，曾提出 Agent swarms 和 Research/Plan/Implement 框架。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cc4sa2q738kbc1y9hj6agvta7</p>
-      <div class="tags"><span>strong:agent</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1356</td><td>1</td><td>369ms</td><td></td></tr>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1359</td><td>2</td><td>515ms</td><td></td></tr>
 <tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>270ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>286</td><td>0</td><td>102ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>400ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>250ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>897</td><td>0</td><td>219ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>235ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>29ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>5</td><td>3055ms</td><td></td></tr></tbody>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>286</td><td>0</td><td>87ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>704ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>155ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>897</td><td>0</td><td>248ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>431ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>24ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>8</td><td>1916ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
