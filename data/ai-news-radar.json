@@ -1,17 +1,25 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-05T16:37:58.179197Z",
+  "generated_at": "2026-11-05T20:55:51.206770Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 13,
   "groups": {
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 5,
       "top_sources": [
         [
           "OpenAI News",
+          2
+        ],
+        [
+          "Google DeepMind",
+          1
+        ],
+        [
+          "Google AI Blog",
           1
         ],
         [
@@ -22,10 +30,22 @@
       "top_keywords": [
         [
           "official_ai",
-          2
+          5
         ],
         [
           "openai",
+          2
+        ],
+        [
+          "gemini",
+          2
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
           1
         ],
         [
@@ -36,32 +56,36 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          4
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
+          7
         ],
         [
           "openai",
+          3
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "开源模型",
           2
         ],
         [
           "chatgpt",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
           1
         ],
         [
@@ -73,7 +97,11 @@
           1
         ],
         [
-          "开源模型",
+          "anthropic",
+          1
+        ],
+        [
+          "gemini",
           1
         ],
         [
@@ -81,11 +109,7 @@
           1
         ],
         [
-          "claude",
-          1
-        ],
-        [
-          "评测",
+          "eval",
           1
         ]
       ]
@@ -101,17 +125,73 @@
       ],
       "top_keywords": [
         [
-          "copilot",
-          2
+          "api",
+          1
         ],
         [
-          "workflow",
+          "API",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "414149e5b1f7b6b375bde5ee3ef18c0199afc94d",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber",
+      "published_at": "2026-11-05T09:00:00Z",
+      "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f24f4d7c768a0a4556bac167265102c878790c24",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips",
+      "published_at": "2026-11-05T17:05:16Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "3049655b27b7da2c1c5558c882fa79137f5b72b0",
+      "source_id": "google-ai",
+      "source_name": "Google AI Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
+      "published_at": "2026-11-05T17:00:00Z",
+      "summary": "Text \"Gemini Introducing Gemini Omni 1.2 Flash\" surroudned by images of a beehive, animals in conversation, a squid, and a woman walking down a street",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "82eb79deb3a3ddd18e06f087e7e7b80a2afda848",
       "source_id": "openai-news",
@@ -190,21 +270,59 @@
       "is_ai_related": true
     },
     {
-      "id": "48e2cdef9779994d61b70f9744e7c5f79ceed1e4",
+      "id": "db0dbfa687dcf3161eea771dc75a1f14e4f77d35",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "美国中期选举蓝潮冲击 AI 行业，44 项数据中心暂停提案中 43 项通过",
+      "url": "https://aihot.news/items/vkfrtci1ufbtbydsqersys6lx",
+      "published_at": "2026-11-05T17:51:52Z",
+      "summary": "美国中期选举民主党拿下参众两院，多场竞选以问责 AI 公司为主题，行业面临监管、数据中心建设放缓等前景。44 项地方数据中心暂停提案中 43 项通过，NBC 民调显示 76% 选民反对在社区建数据中心；专家称共和党禁止州级 AI 限制的尝试可能终结，OpenAI 和 Anthropic 未置评，据华尔街日报报道 CEO 们在私下讨论算力容量受限问题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vkfrtci1ufbtbydsqersys6lx",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "93e2476cb5d9fa7a4119aff58fdecf2839ecdced",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google 发布 Gemini Omni 1.2 Flash：15 秒视频生成，降价 30% 至 $0.07/秒",
+      "url": "https://aihot.news/items/yjwroxww17lcg4ntcu9ruo105",
+      "published_at": "2026-11-05T17:00:00Z",
+      "summary": "Google 发布 Gemini Omni 1.2 Flash，在 Gemini API 和 Gemini for business 全面开放。新模型原生支持最长 15 秒视频生成（此前为 10 秒），支持多轮对话编辑和更强的参考图一致性，价格较 1.1 下降 30% 至 720p 视频 $0.07/秒。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yjwroxww17lcg4ntcu9ruo105",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d587dc390b36d0e53b429eab69b80a8597c8a9ce",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "GitHub Copilot is now available in Xcode’s coding assistant",
-      "url": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant",
-      "published_at": "2026-11-04T19:10:40Z",
-      "summary": "You can now work with GitHub Copilot directly in Xcode’s built-in coding assistant, bringing Copilot into your native Xcode workflow. The integration is now in public preview, available starting with… The post GitHub Copilot is now available in Xcode’s coding assistant appeared first on The GitHub Blog .",
-      "relevance_score": 4,
+      "title": "Secret scanning upgrades detectors, adds SpaceX as partner",
+      "url": "https://github.blog/changelog/2026-11-05-secret-scanning-upgrades-detectors-adds-spacex-as-partner",
+      "published_at": "2026-11-05T15:48:50Z",
+      "summary": "This update expands secret scanning’s detection coverage: New partner: SpaceX is now a secret scanning partner. New detector: GitHub now detects starlink_public_api_v2_secret. Upgraded detectors: Alibaba, AWS, Google, OpenVSX, Pydantic Services,… The post Secret scanning upgrades detectors, adds SpaceX as partner appeared first on The GitHub Blog .",
+      "relevance_score": 2,
       "relevance_reasons": [
-        "weak:workflow",
-        "weak:copilot",
-        "source:copilot"
+        "weak:api",
+        "weak:API"
       ],
       "is_ai_related": true
     },
@@ -223,6 +341,25 @@
       "relevance_reasons": [
         "strong:openai",
         "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f1b360df8e3c6c0c4c70cf523ef67411622ce45a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Reflection 详解开源模型 Beam 的安全训练与评估方法",
+      "url": "https://aihot.news/items/mpv0jfejdzdm2336jgtyj9tde",
+      "published_at": "2026-11-05T17:00:00Z",
+      "summary": "Reflection 发布博文，讲解其开源权重模型 Beam 的安全训练与评估方法，并推出开源安全研究计划 Project Iris。Beam 在 Iris Safety Evaluations 对话任务中拒绝 89% 的有害请求，为所测开源权重模型中最高，同时遵守 82% 的安全相关无害请求；安全对齐教师模型从 100B 增至 501B 参数后，过度拒绝相对下降 48.7%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mpv0jfejdzdm2336jgtyj9tde",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:开源模型",
+        "weak:eval",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -254,11 +391,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1360,
-      "kept_count": 1,
+      "fetched_count": 1361,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 565,
-      "checked_at": "2026-11-05T16:37:52.727951Z"
+      "latency_ms": 393,
+      "checked_at": "2026-11-05T20:55:46.508279Z"
     },
     {
       "source_id": "openai-skills",
@@ -269,8 +406,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 284,
-      "checked_at": "2026-11-05T16:37:53.012470Z"
+      "latency_ms": 286,
+      "checked_at": "2026-11-05T20:55:46.795125Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -281,8 +418,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 109,
-      "checked_at": "2026-11-05T16:37:53.125768Z"
+      "latency_ms": 81,
+      "checked_at": "2026-11-05T20:55:46.878269Z"
     },
     {
       "source_id": "google-deepmind",
@@ -291,10 +428,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 542,
-      "checked_at": "2026-11-05T16:37:53.669978Z"
+      "latency_ms": 197,
+      "checked_at": "2026-11-05T20:55:47.076481Z"
     },
     {
       "source_id": "google-ai",
@@ -303,10 +440,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 278,
-      "checked_at": "2026-11-05T16:37:53.948824Z"
+      "latency_ms": 333,
+      "checked_at": "2026-11-05T20:55:47.410225Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -317,8 +454,8 @@
       "fetched_count": 898,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 326,
-      "checked_at": "2026-11-05T16:37:54.288848Z"
+      "latency_ms": 234,
+      "checked_at": "2026-11-05T20:55:47.651072Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -329,8 +466,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 288,
-      "checked_at": "2026-11-05T16:37:54.577475Z"
+      "latency_ms": 183,
+      "checked_at": "2026-11-05T20:55:47.834232Z"
     },
     {
       "source_id": "github-changelog",
@@ -341,8 +478,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 36,
-      "checked_at": "2026-11-05T16:37:54.613886Z"
+      "latency_ms": 25,
+      "checked_at": "2026-11-05T20:55:47.859739Z"
     },
     {
       "source_id": "aihot",
@@ -351,10 +488,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 3556,
-      "checked_at": "2026-11-05T16:37:58.170925Z"
+      "latency_ms": 3339,
+      "checked_at": "2026-11-05T20:55:51.200096Z"
     }
   ],
   "control_notes": {
