@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-05T11:35:27.367532Z",
+  "generated_at": "2026-11-05T14:51:12.031764Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 9,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          1
         ],
         [
           "Hugging Face Blog",
@@ -22,18 +22,10 @@
       "top_keywords": [
         [
           "official_ai",
-          3
-        ],
-        [
-          "openai",
           2
         ],
         [
-          "codex",
-          1
-        ],
-        [
-          "tool",
+          "openai",
           1
         ],
         [
@@ -44,21 +36,21 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          7
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          6
         ],
         [
           "openai",
-          3
+          2
         ],
         [
           "api",
@@ -85,19 +77,19 @@
           1
         ],
         [
-          "codex",
-          1
-        ],
-        [
-          "开发者",
-          1
-        ],
-        [
           "智能体",
           1
         ],
         [
           "llm",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "claude",
           1
         ]
       ]
@@ -124,26 +116,6 @@
     }
   },
   "items": [
-    {
-      "id": "3af2a326106601ef6bdbc5c37eaf58b45ba9d544",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "OpenAI to acquire Pierre Computer Company, Inc.",
-      "url": "https://openai.com/index/openai-to-acquire-pierre",
-      "published_at": "2026-11-04T14:30:00Z",
-      "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "weak:tool",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "82eb79deb3a3ddd18e06f087e7e7b80a2afda848",
       "source_id": "openai-news",
@@ -241,26 +213,6 @@
       "is_ai_related": true
     },
     {
-      "id": "c4dfaf44c2b6fcc5bea2a3de08c9564d75bebf79",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 宣布收购 Code Storage 背后公司 Pierre",
-      "url": "https://aihot.news/items/c39s97tylya5njp0nro6dwvbx",
-      "published_at": "2026-11-04T14:30:00Z",
-      "summary": "OpenAI 宣布收购 Pierre Computer Company，即 Code Storage 及多款开源开发者工具背后的公司。其 Trees 和 Diffs 库已被用于 Codex 应用的文件浏览与代码变更审阅；交割后 Pierre 的开源项目将继续开源，Code Storage 客户可继续使用，功能将逐步并入 Codex，交割尚待监管批准。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c39s97tylya5njp0nro6dwvbx",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "8ebc330b08852325e99c0108d7e7e1b3d0365fc2",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -346,10 +298,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1360,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 535,
-      "checked_at": "2026-11-05T11:35:20.472614Z"
+      "latency_ms": 384,
+      "checked_at": "2026-11-05T14:51:06.006243Z"
     },
     {
       "source_id": "openai-skills",
@@ -360,8 +312,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 392,
-      "checked_at": "2026-11-05T11:35:20.864966Z"
+      "latency_ms": 972,
+      "checked_at": "2026-11-05T14:51:06.979047Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -372,8 +324,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 350,
-      "checked_at": "2026-11-05T11:35:21.218671Z"
+      "latency_ms": 74,
+      "checked_at": "2026-11-05T14:51:07.056542Z"
     },
     {
       "source_id": "google-deepmind",
@@ -384,8 +336,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 195,
-      "checked_at": "2026-11-05T11:35:21.415535Z"
+      "latency_ms": 341,
+      "checked_at": "2026-11-05T14:51:07.398807Z"
     },
     {
       "source_id": "google-ai",
@@ -396,8 +348,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 212,
-      "checked_at": "2026-11-05T11:35:21.628038Z"
+      "latency_ms": 215,
+      "checked_at": "2026-11-05T14:51:07.615040Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -408,8 +360,8 @@
       "fetched_count": 898,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 271,
-      "checked_at": "2026-11-05T11:35:21.910541Z"
+      "latency_ms": 183,
+      "checked_at": "2026-11-05T14:51:07.807764Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -420,8 +372,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 248,
-      "checked_at": "2026-11-05T11:35:22.159219Z"
+      "latency_ms": 198,
+      "checked_at": "2026-11-05T14:51:08.006235Z"
     },
     {
       "source_id": "github-changelog",
@@ -432,8 +384,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-11-05T11:35:22.189626Z"
+      "latency_ms": 19,
+      "checked_at": "2026-11-05T14:51:08.025968Z"
     },
     {
       "source_id": "aihot",
@@ -442,10 +394,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 5170,
-      "checked_at": "2026-11-05T11:35:27.360976Z"
+      "latency_ms": 3997,
+      "checked_at": "2026-11-05T14:51:12.024352Z"
     }
   ],
   "control_notes": {
