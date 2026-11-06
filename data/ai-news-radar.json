@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-05T20:55:51.206770Z",
+  "generated_at": "2026-11-06T04:33:57.240802Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 13,
+  "item_count": 14,
   "groups": {
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 6,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          4
         ],
         [
           "Google DeepMind",
@@ -21,19 +21,27 @@
         [
           "Google AI Blog",
           1
-        ],
-        [
-          "Hugging Face Blog",
-          1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          5
+          6
         ],
         [
           "openai",
+          2
+        ],
+        [
+          "chatgpt",
+          2
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "tool",
           2
         ],
         [
@@ -47,30 +55,50 @@
         [
           "agents",
           1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 3,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          3
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          4
         ],
         [
-          "benchmark",
-          1
+          "api",
+          3
+        ],
+        [
+          "API",
+          3
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          7
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          5
         ],
         [
           "openai",
-          3
+          2
         ],
         [
           "api",
@@ -81,19 +109,7 @@
           2
         ],
         [
-          "开源模型",
-          2
-        ],
-        [
           "chatgpt",
-          1
-        ],
-        [
-          "hugging face",
-          1
-        ],
-        [
-          "agent",
           1
         ],
         [
@@ -105,37 +121,46 @@
           1
         ],
         [
-          "智能体",
+          "开源模型",
           1
         ],
         [
           "eval",
           1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
+        ],
         [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "api",
+          "claude",
           1
         ],
         [
-          "API",
+          "评测",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "356e73554a2d1b0ab80746e8cea35d1fc9828fad",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Merge builds product and business tools with OpenAI technology",
+      "url": "https://openai.com/index/merge-builds-with-openai",
+      "published_at": "2026-11-05T08:00:00Z",
+      "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:codex",
+        "weak:tool",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "414149e5b1f7b6b375bde5ee3ef18c0199afc94d",
       "source_id": "openai-news",
@@ -153,6 +178,65 @@
         "strong:agent",
         "strong:agents",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6a2a272f54dde45d82dcda7daf070c88e0f6c573",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Cult.fit builds operational muscle with Codex",
+      "url": "https://openai.com/index/cultfit-builds-with-codex",
+      "published_at": "2026-11-05T20:00:00Z",
+      "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:codex",
+        "weak:tool",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "3a11754052ed438801d05ca5711556de783c7ac7",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Usage metrics API adds code review details and addressed rate",
+      "url": "https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate",
+      "published_at": "2026-11-06T00:19:07Z",
+      "summary": "The enterprise and organization repository-level Copilot usage metrics reports now show what happens to Copilot code review feedback. A new copilot_code_review object on each repos-1-day row reports how many Copilot-reviewed… The post Usage metrics API adds code review details and addressed rate appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:copilot",
+        "weak:API",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8262f1ed9809ff346c79eb1bed59e16e9bc9d89d",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Usage metrics API flags telemetry and version gaps",
+      "url": "https://github.blog/changelog/2026-11-05-usage-metrics-api-flags-telemetry-and-version-gaps",
+      "published_at": "2026-11-06T00:08:31Z",
+      "summary": "The Copilot usage metrics API now shows which users are missing client telemetry or are running IDE or extension versions below the usage metrics minimums. New per-user fields appear in… The post Usage metrics API flags telemetry and version gaps appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:copilot",
+        "weak:API",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -193,34 +277,34 @@
       "is_ai_related": true
     },
     {
-      "id": "82eb79deb3a3ddd18e06f087e7e7b80a2afda848",
+      "id": "e30a0b52bdc9e94d65eb3bb96e116e9e80655395",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Setting a new standard for responsible AI infrastructure",
-      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
-      "published_at": "2026-11-05T02:00:00Z",
-      "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
+      "title": "Australian universities are creating AI-native graduates",
+      "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+      "published_at": "2026-11-05T17:00:00Z",
+      "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
+        "strong:chatgpt",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
     {
-      "id": "a074ed2c6aedad0b3685796ef706a79d469ccf45",
+      "id": "f60c3623f5406981060e8c92d7810c36b66d4718",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Higgsfield 上线 GPT Image 2.6，新用户 7 天无限使用",
-      "url": "https://aihot.news/items/lcdap1o18bh6bt70ij66nakij",
-      "published_at": "2026-11-05T00:11:42Z",
-      "summary": "Higgsfield 宣布 GPT Image 2.6 已上线，新用户可 7 天无限使用。功能包括把提示词或图片转成 GIF、保存参考图随时复用、通过 markup 细化并导出 SVG。OpenAI 此前介绍 ChatGPT Images 2.6 新增 GIF 和参考图功能，另有两款 API 模型将带来 50% 更快的图像生成。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lcdap1o18bh6bt70ij66nakij",
+      "title": "OpenAI：ChatGPT 与 API 每周生成图像超 40 亿张，8 周前为 30 亿",
+      "url": "https://aihot.news/items/z16tksw5l40w2edrohnozslkl",
+      "published_at": "2026-11-05T22:24:51Z",
+      "summary": "OpenAI 相关负责人称，目前 ChatGPT 与 API 每周生成的图像超过 40 亿张，高于仅 8 周前的每周超 30 亿张。其转发的 @OpenAI 内容还提到 ChatGPT Images 2.6 新增 GIF 与参考图支持，API 将迎来两个图像生成速度提升 50% 的新模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z16tksw5l40w2edrohnozslkl",
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:openai",
@@ -228,44 +312,6 @@
         "weak:api",
         "weak:API",
         "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "2b50e87fd4a08598099b28befbaac3037c4d1c37",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "月之暗面开放 2.8 万亿参数 Kimi K3.1 Pro 权重，登顶 Agent Arena 开源模型榜",
-      "url": "https://aihot.news/items/hkcafk9es55rbok8pinu90x5o",
-      "published_at": "2026-11-05T00:00:15Z",
-      "summary": "月之暗面按 10 月 24 日发布时的承诺，在 Hugging Face 开放 Kimi K3.1 Pro 权重。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hkcafk9es55rbok8pinu90x5o",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "strong:agent",
-        "strong:开源模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "bf74e576212620144a9013e3ff3ede4d4d862501",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
-      "url": "https://huggingface.co/blog/phonon-tts",
-      "published_at": "2026-11-05T00:00:00Z",
-      "summary": null,
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:benchmark",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -327,25 +373,6 @@
       "is_ai_related": true
     },
     {
-      "id": "8ebc330b08852325e99c0108d7e7e1b3d0365fc2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 称其智能体发现至少 10 种新型 Linux 漏洞利用技术",
-      "url": "https://aihot.news/items/ulr0gn1mg4kpj7yz2h2zwp7u1",
-      "published_at": "2026-11-04T23:13:26Z",
-      "summary": "OpenAI 称其智能体发现并使用了至少 10 种新型 Linux 漏洞利用技术，据其及所咨询专家所知均为此前未知的。OpenAI 认为这表明前沿大语言模型能发现并修补新的漏洞利用方式，而不只是套用已知技术。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ulr0gn1mg4kpj7yz2h2zwp7u1",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "f1b360df8e3c6c0c4c70cf523ef67411622ce45a",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -391,11 +418,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1361,
-      "kept_count": 2,
+      "fetched_count": 1366,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 393,
-      "checked_at": "2026-11-05T20:55:46.508279Z"
+      "latency_ms": 589,
+      "checked_at": "2026-11-06T04:33:52.738000Z"
     },
     {
       "source_id": "openai-skills",
@@ -406,8 +433,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 286,
-      "checked_at": "2026-11-05T20:55:46.795125Z"
+      "latency_ms": 664,
+      "checked_at": "2026-11-06T04:33:53.402376Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -418,8 +445,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 81,
-      "checked_at": "2026-11-05T20:55:46.878269Z"
+      "latency_ms": 116,
+      "checked_at": "2026-11-06T04:33:53.522633Z"
     },
     {
       "source_id": "google-deepmind",
@@ -430,8 +457,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 197,
-      "checked_at": "2026-11-05T20:55:47.076481Z"
+      "latency_ms": 200,
+      "checked_at": "2026-11-06T04:33:53.724346Z"
     },
     {
       "source_id": "google-ai",
@@ -442,8 +469,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 333,
-      "checked_at": "2026-11-05T20:55:47.410225Z"
+      "latency_ms": 266,
+      "checked_at": "2026-11-06T04:33:53.991506Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -452,10 +479,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 898,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 234,
-      "checked_at": "2026-11-05T20:55:47.651072Z"
+      "latency_ms": 303,
+      "checked_at": "2026-11-06T04:33:54.307891Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -466,8 +493,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 183,
-      "checked_at": "2026-11-05T20:55:47.834232Z"
+      "latency_ms": 286,
+      "checked_at": "2026-11-06T04:33:54.594291Z"
     },
     {
       "source_id": "github-changelog",
@@ -476,10 +503,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-11-05T20:55:47.859739Z"
+      "latency_ms": 41,
+      "checked_at": "2026-11-06T04:33:54.635912Z"
     },
     {
       "source_id": "aihot",
@@ -488,10 +515,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 3339,
-      "checked_at": "2026-11-05T20:55:51.200096Z"
+      "latency_ms": 2595,
+      "checked_at": "2026-11-06T04:33:57.232135Z"
     }
   ],
   "control_notes": {
