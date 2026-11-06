@@ -1,26 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-06T16:05:31.145563Z",
+  "generated_at": "2026-11-06T20:13:56.222430Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 6,
   "groups": {
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 3,
       "top_sources": [
         [
           "OpenAI News",
           2
-        ],
-        [
-          "Google DeepMind",
-          1
-        ],
-        [
-          "Google AI Blog",
-          1
         ],
         [
           "Hugging Face Blog",
@@ -30,22 +22,22 @@
       "top_keywords": [
         [
           "official_ai",
-          5
+          3
         ],
         [
-          "gemini",
+          "openai",
           2
         ],
         [
-          "codex",
+          "agent",
           1
         ],
         [
-          "tool",
+          "agents",
           1
         ],
         [
-          "chatgpt",
+          "benchmark",
           1
         ],
         [
@@ -80,48 +72,32 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 1,
       "top_sources": [
         [
           "AI Hot",
-          4
+          1
         ]
       ],
       "top_keywords": [
         [
-          "aggregate_noise",
-          4
-        ],
-        [
           "openai",
-          2
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
+          1
         ],
         [
           "chatgpt",
           1
         ],
         [
-          "anthropic",
+          "api",
           1
         ],
         [
-          "gemini",
+          "API",
           1
         ],
         [
-          "开源模型",
-          1
-        ],
-        [
-          "eval",
+          "aggregate_noise",
           1
         ]
       ]
@@ -129,20 +105,40 @@
   },
   "items": [
     {
-      "id": "6a2a272f54dde45d82dcda7daf070c88e0f6c573",
+      "id": "daed52ae2bbb671ffa1c32ac5e79a9e407190db2",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Cult.fit builds operational muscle with Codex",
-      "url": "https://openai.com/index/cultfit-builds-with-codex",
-      "published_at": "2026-11-05T20:00:00Z",
-      "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
-      "relevance_score": 4,
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "published_at": "2026-11-06T00:00:00Z",
+      "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+      "relevance_score": 8,
       "relevance_reasons": [
-        "strong:codex",
-        "weak:tool",
+        "strong:openai",
+        "strong:agent",
+        "strong:agents",
+        "weak:benchmark",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7296eef68e0854a0e080b50e6835a28caf3c68a9",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "url": "https://openai.com/index/partnering-with-hacktron",
+      "published_at": "2026-11-06T08:00:00Z",
+      "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -188,60 +184,6 @@
       "is_ai_related": true
     },
     {
-      "id": "f24f4d7c768a0a4556bac167265102c878790c24",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips",
-      "published_at": "2026-11-05T17:05:16Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "3049655b27b7da2c1c5558c882fa79137f5b72b0",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
-      "published_at": "2026-11-05T17:00:00Z",
-      "summary": "Text \"Gemini Introducing Gemini Omni 1.2 Flash\" surroudned by images of a beehive, animals in conversation, a squid, and a woman walking down a street",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e30a0b52bdc9e94d65eb3bb96e116e9e80655395",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Australian universities are creating AI-native graduates",
-      "url": "https://openai.com/index/australian-universities-ai-native-graduates",
-      "published_at": "2026-11-05T17:00:00Z",
-      "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "a4c33817ce7db8e59c4c7c3cb6d7b45e7768f913",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
@@ -279,64 +221,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "db0dbfa687dcf3161eea771dc75a1f14e4f77d35",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "美国中期选举蓝潮冲击 AI 行业，44 项数据中心暂停提案中 43 项通过",
-      "url": "https://aihot.news/items/vkfrtci1ufbtbydsqersys6lx",
-      "published_at": "2026-11-05T17:51:52Z",
-      "summary": "美国中期选举民主党拿下参众两院，多场竞选以问责 AI 公司为主题，行业面临监管、数据中心建设放缓等前景。44 项地方数据中心暂停提案中 43 项通过，NBC 民调显示 76% 选民反对在社区建数据中心；专家称共和党禁止州级 AI 限制的尝试可能终结，OpenAI 和 Anthropic 未置评，据华尔街日报报道 CEO 们在私下讨论算力容量受限问题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vkfrtci1ufbtbydsqersys6lx",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "93e2476cb5d9fa7a4119aff58fdecf2839ecdced",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google 发布 Gemini Omni 1.2 Flash：15 秒视频生成，降价 30% 至 $0.07/秒",
-      "url": "https://aihot.news/items/yjwroxww17lcg4ntcu9ruo105",
-      "published_at": "2026-11-05T17:00:00Z",
-      "summary": "Google 发布 Gemini Omni 1.2 Flash，在 Gemini API 和 Gemini for business 全面开放。新模型原生支持最长 15 秒视频生成（此前为 10 秒），支持多轮对话编辑和更强的参考图一致性，价格较 1.1 下降 30% 至 720p 视频 $0.07/秒。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yjwroxww17lcg4ntcu9ruo105",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "f1b360df8e3c6c0c4c70cf523ef67411622ce45a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Reflection 详解开源模型 Beam 的安全训练与评估方法",
-      "url": "https://aihot.news/items/mpv0jfejdzdm2336jgtyj9tde",
-      "published_at": "2026-11-05T17:00:00Z",
-      "summary": "Reflection 发布博文，讲解其开源权重模型 Beam 的安全训练与评估方法，并推出开源安全研究计划 Project Iris。Beam 在 Iris Safety Evaluations 对话任务中拒绝 89% 的有害请求，为所测开源权重模型中最高，同时遵守 82% 的安全相关无害请求；安全对齐教师模型从 100B 增至 501B 参数后，过度拒绝相对下降 48.7%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mpv0jfejdzdm2336jgtyj9tde",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:开源模型",
-        "weak:eval",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -346,11 +230,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1366,
+      "fetched_count": 1368,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 470,
-      "checked_at": "2026-11-06T16:05:21.562799Z"
+      "latency_ms": 580,
+      "checked_at": "2026-11-06T20:13:52.931124Z"
     },
     {
       "source_id": "openai-skills",
@@ -361,8 +245,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 252,
-      "checked_at": "2026-11-06T16:05:21.815868Z"
+      "latency_ms": 266,
+      "checked_at": "2026-11-06T20:13:53.198244Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -373,8 +257,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 136,
-      "checked_at": "2026-11-06T16:05:21.956146Z"
+      "latency_ms": 107,
+      "checked_at": "2026-11-06T20:13:53.310118Z"
     },
     {
       "source_id": "google-deepmind",
@@ -383,10 +267,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 151,
-      "checked_at": "2026-11-06T16:05:22.109001Z"
+      "latency_ms": 285,
+      "checked_at": "2026-11-06T20:13:53.596654Z"
     },
     {
       "source_id": "google-ai",
@@ -395,10 +279,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 202,
-      "checked_at": "2026-11-06T16:05:22.311576Z"
+      "latency_ms": 264,
+      "checked_at": "2026-11-06T20:13:53.861981Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -409,8 +293,8 @@
       "fetched_count": 899,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 398,
-      "checked_at": "2026-11-06T16:05:22.721786Z"
+      "latency_ms": 326,
+      "checked_at": "2026-11-06T20:13:54.201742Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -421,8 +305,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 404,
-      "checked_at": "2026-11-06T16:05:23.126020Z"
+      "latency_ms": 257,
+      "checked_at": "2026-11-06T20:13:54.459430Z"
     },
     {
       "source_id": "github-changelog",
@@ -433,8 +317,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-11-06T16:05:23.154623Z"
+      "latency_ms": 38,
+      "checked_at": "2026-11-06T20:13:54.498003Z"
     },
     {
       "source_id": "aihot",
@@ -443,10 +327,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 7983,
-      "checked_at": "2026-11-06T16:05:31.138620Z"
+      "latency_ms": 1715,
+      "checked_at": "2026-11-06T20:13:56.214702Z"
     }
   ],
   "control_notes": {

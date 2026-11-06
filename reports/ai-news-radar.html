@@ -43,27 +43,40 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>11</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>5</b><span>官方源条目</span></div>
-        <div class="stat"><b>4</b><span>聚合源条目</span></div>
+        <div class="stat"><b>6</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>3</b><span>官方源条目</span></div>
+        <div class="stat"><b>1</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-06T16:05:31.146883Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-06T20:13:56.223486Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
         <span>OpenAI News</span>
         <span>official_rss</span>
-        <span>2026-11-05T20:00:00Z</span>
-        <strong>Score 4</strong>
+        <span>2026-11-06T00:00:00Z</span>
+        <strong>Score 8</strong>
       </div>
-      <h3><a href="https://openai.com/index/cultfit-builds-with-codex" target="_blank" rel="noreferrer">Cult.fit builds operational muscle with Codex</a></h3>
-      <p class='summary'>Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.</p>
-      <div class="tags"><span>strong:codex</span><span>weak:tool</span><span>source_prior:official_ai</span></div>
+      <h3><a href="https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science" target="_blank" rel="noreferrer">Measuring how AI agents handle everyday wet-lab science</a></h3>
+      <p class='summary'>OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.</p>
+      <div class="tags"><span>strong:openai</span><span>strong:agent</span><span>strong:agents</span><span>weak:benchmark</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-11-06T08:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://openai.com/index/partnering-with-hacktron" target="_blank" rel="noreferrer">Partnering with Hacktron to find vulnerabilities in OpenAI’s systems</a></h3>
+      <p class='summary'>OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.</p>
+      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -95,45 +108,6 @@
 
     <article class="card">
       <div class="meta">
-        <span>Google DeepMind</span>
-        <span>official_rss</span>
-        <span>2026-11-05T17:05:16Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips" target="_blank" rel="noreferrer">Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips</a></h3>
-      
-      <div class="tags"><span>strong:gemini</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>Google AI Blog</span>
-        <span>official_rss</span>
-        <span>2026-11-05T17:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash" target="_blank" rel="noreferrer">Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips</a></h3>
-      <p class='summary'>Text &quot;Gemini Introducing Gemini Omni 1.2 Flash&quot; surroudned by images of a beehive, animals in conversation, a squid, and a woman walking down a street</p>
-      <div class="tags"><span>strong:gemini</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-11-05T17:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://openai.com/index/australian-universities-ai-native-graduates" target="_blank" rel="noreferrer">Australian universities are creating AI-native graduates</a></h3>
-      <p class='summary'>Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.</p>
-      <div class="tags"><span>strong:chatgpt</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
         <span>Hugging Face Blog</span>
         <span>official_rss</span>
         <span>2026-11-06T14:00:48Z</span>
@@ -156,60 +130,21 @@
       <p class='summary'>OpenAI 相关负责人称，目前 ChatGPT 与 API 每周生成的图像超过 40 亿张，高于仅 8 周前的每周超 30 亿张。其转发的 @OpenAI 内容还提到 ChatGPT Images 2.6 新增 GIF 与参考图支持，API 将迎来两个图像生成速度提升 50% 的新模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z16tksw5l40w2edrohnozslkl</p>
       <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-11-05T17:51:52Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/vkfrtci1ufbtbydsqersys6lx" target="_blank" rel="noreferrer">美国中期选举蓝潮冲击 AI 行业，44 项数据中心暂停提案中 43 项通过</a></h3>
-      <p class='summary'>美国中期选举民主党拿下参众两院，多场竞选以问责 AI 公司为主题，行业面临监管、数据中心建设放缓等前景。44 项地方数据中心暂停提案中 43 项通过，NBC 民调显示 76% 选民反对在社区建数据中心；专家称共和党禁止州级 AI 限制的尝试可能终结，OpenAI 和 Anthropic 未置评，据华尔街日报报道 CEO 们在私下讨论算力容量受限问题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vkfrtci1ufbtbydsqersys6lx</p>
-      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-11-05T17:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/yjwroxww17lcg4ntcu9ruo105" target="_blank" rel="noreferrer">Google 发布 Gemini Omni 1.2 Flash：15 秒视频生成，降价 30% 至 $0.07/秒</a></h3>
-      <p class='summary'>Google 发布 Gemini Omni 1.2 Flash，在 Gemini API 和 Gemini for business 全面开放。新模型原生支持最长 15 秒视频生成（此前为 10 秒），支持多轮对话编辑和更强的参考图一致性，价格较 1.1 下降 30% 至 720p 视频 $0.07/秒。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yjwroxww17lcg4ntcu9ruo105</p>
-      <div class="tags"><span>strong:gemini</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-11-05T17:00:00Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/mpv0jfejdzdm2336jgtyj9tde" target="_blank" rel="noreferrer">Reflection 详解开源模型 Beam 的安全训练与评估方法</a></h3>
-      <p class='summary'>Reflection 发布博文，讲解其开源权重模型 Beam 的安全训练与评估方法，并推出开源安全研究计划 Project Iris。Beam 在 Iris Safety Evaluations 对话任务中拒绝 89% 的有害请求，为所测开源权重模型中最高，同时遵守 82% 的安全相关无害请求；安全对齐教师模型从 100B 增至 501B 参数后，过度拒绝相对下降 48.7%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mpv0jfejdzdm2336jgtyj9tde</p>
-      <div class="tags"><span>strong:开源模型</span><span>weak:eval</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1366</td><td>2</td><td>470ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>252ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>286</td><td>0</td><td>136ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>1</td><td>151ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>202ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>899</td><td>1</td><td>398ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>404ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>28ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>4</td><td>7983ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1368</td><td>2</td><td>580ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>266ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>286</td><td>0</td><td>107ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>285ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>264ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>899</td><td>1</td><td>326ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>257ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>38ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>1</td><td>1715ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
