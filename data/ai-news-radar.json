@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-06T04:33:57.240802Z",
+  "generated_at": "2026-11-06T11:33:40.128783Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 14,
+  "item_count": 11,
   "groups": {
     "official": {
       "group": "official",
-      "count": 6,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI News",
-          4
+          2
         ],
         [
           "Google DeepMind",
@@ -26,34 +26,22 @@
       "top_keywords": [
         [
           "official_ai",
-          6
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "chatgpt",
-          2
-        ],
-        [
-          "codex",
-          2
-        ],
-        [
-          "tool",
-          2
+          4
         ],
         [
           "gemini",
           2
         ],
         [
-          "agent",
+          "codex",
           1
         ],
         [
-          "agents",
+          "tool",
+          1
+        ],
+        [
+          "chatgpt",
           1
         ]
       ]
@@ -84,17 +72,17 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          5
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          4
         ],
         [
           "openai",
@@ -127,60 +115,11 @@
         [
           "eval",
           1
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "评测",
-          1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "356e73554a2d1b0ab80746e8cea35d1fc9828fad",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Merge builds product and business tools with OpenAI technology",
-      "url": "https://openai.com/index/merge-builds-with-openai",
-      "published_at": "2026-11-05T08:00:00Z",
-      "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:codex",
-        "weak:tool",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "414149e5b1f7b6b375bde5ee3ef18c0199afc94d",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-      "url": "https://openai.com/index/introducing-gpt-6-cyber",
-      "published_at": "2026-11-05T09:00:00Z",
-      "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:agent",
-        "strong:agents",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "6a2a272f54dde45d82dcda7daf070c88e0f6c573",
       "source_id": "openai-news",
@@ -390,25 +329,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "ef7d68e0500284cc87e82bcd07c865638df18105",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "腾讯混元感谢 Artificial Analysis 对 Hy4 的评测，模型获 Intelligence Index v5 35 分",
-      "url": "https://aihot.news/items/fj4zi12biz0b62ckhzg5awcxx",
-      "published_at": "2026-11-05T10:23:42Z",
-      "summary": "腾讯混元转发并感谢 Artificial Analysis 对其最新模型 Hy4 的评测。Hy4 在 Artificial Analysis Intelligence Index v5 得 35 分，与中国实验室模型中仅次于 Kimi K3.1 Pro（46 分），与 Grok 4.7 (xhigh) 持平，比 Claude Haiku 5.5 (max) 低 1 分。评测要点：FrontierCode 2.0 得 31%，为中国实验室模型最高；AA-Omniscience v1.1 达 50% 但幻觉率高达 89%；定价 $0.834/$2.501 per 1M input/output tokens，支持 1M token 上下文窗口和文本加图像输入。 🔗 阅读原文 via AIHOT · https://",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:claude",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -419,10 +339,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1366,
-      "kept_count": 4,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 589,
-      "checked_at": "2026-11-06T04:33:52.738000Z"
+      "latency_ms": 588,
+      "checked_at": "2026-11-06T11:33:35.276338Z"
     },
     {
       "source_id": "openai-skills",
@@ -433,8 +353,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 664,
-      "checked_at": "2026-11-06T04:33:53.402376Z"
+      "latency_ms": 185,
+      "checked_at": "2026-11-06T11:33:35.462086Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -445,8 +365,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 116,
-      "checked_at": "2026-11-06T04:33:53.522633Z"
+      "latency_ms": 112,
+      "checked_at": "2026-11-06T11:33:35.579043Z"
     },
     {
       "source_id": "google-deepmind",
@@ -457,8 +377,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 200,
-      "checked_at": "2026-11-06T04:33:53.724346Z"
+      "latency_ms": 124,
+      "checked_at": "2026-11-06T11:33:35.705086Z"
     },
     {
       "source_id": "google-ai",
@@ -469,8 +389,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 266,
-      "checked_at": "2026-11-06T04:33:53.991506Z"
+      "latency_ms": 215,
+      "checked_at": "2026-11-06T11:33:35.920803Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -478,11 +398,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 898,
+      "fetched_count": 899,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 303,
-      "checked_at": "2026-11-06T04:33:54.307891Z"
+      "latency_ms": 260,
+      "checked_at": "2026-11-06T11:33:36.194581Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -493,8 +413,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 286,
-      "checked_at": "2026-11-06T04:33:54.594291Z"
+      "latency_ms": 229,
+      "checked_at": "2026-11-06T11:33:36.424261Z"
     },
     {
       "source_id": "github-changelog",
@@ -505,8 +425,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 41,
-      "checked_at": "2026-11-06T04:33:54.635912Z"
+      "latency_ms": 32,
+      "checked_at": "2026-11-06T11:33:36.457098Z"
     },
     {
       "source_id": "aihot",
@@ -515,10 +435,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 2595,
-      "checked_at": "2026-11-06T04:33:57.232135Z"
+      "latency_ms": 3662,
+      "checked_at": "2026-11-06T11:33:40.120931Z"
     }
   ],
   "control_notes": {
