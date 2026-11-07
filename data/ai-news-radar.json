@@ -1,18 +1,54 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-06T20:13:56.222430Z",
+  "generated_at": "2026-11-07T03:59:23.484204Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
   "item_count": 6,
   "groups": {
+    "developer": {
+      "group": "developer",
+      "count": 3,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          3
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          6
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ]
+      ]
+    },
     "official": {
       "group": "official",
       "count": 3,
       "top_sources": [
         [
+          "GitHub AI & ML",
+          1
+        ],
+        [
           "OpenAI News",
-          2
+          1
         ],
         [
           "Hugging Face Blog",
@@ -25,19 +61,19 @@
           3
         ],
         [
-          "openai",
-          2
-        ],
-        [
           "agent",
           1
         ],
         [
-          "agents",
+          "developer",
           1
         ],
         [
-          "benchmark",
+          "copilot",
+          1
+        ],
+        [
+          "openai",
           1
         ],
         [
@@ -45,83 +81,85 @@
           1
         ]
       ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 1,
-      "top_sources": [
-        [
-          "AI Hot",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "aggregate_noise",
-          1
-        ]
-      ]
     }
   },
   "items": [
     {
-      "id": "daed52ae2bbb671ffa1c32ac5e79a9e407190db2",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
+      "id": "9dcdb37217c294a037ec8e5eba637ba9ba920cdc",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Measuring how AI agents handle everyday wet-lab science",
-      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
-      "published_at": "2026-11-06T00:00:00Z",
-      "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
-      "relevance_score": 8,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot impact dashboard adds chat and VS Code agent usage",
+      "url": "https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage",
+      "published_at": "2026-11-06T22:17:28Z",
+      "summary": "The Agent adoption chart in the Copilot impact dashboard now includes Copilot Chat and the VS Code Agents window, so you can see engagement across nine Copilot experiences. The adoption… The post Copilot impact dashboard adds chat and VS Code agent usage appeared first on The GitHub Blog .",
+      "relevance_score": 7,
       "relevance_reasons": [
-        "strong:openai",
         "strong:agent",
         "strong:agents",
-        "weak:benchmark",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2d7b157a56eb55771d8bb45b1280488f5dfa60b6",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "Beyond code generation: A developer’s guide to agentic engineering",
+      "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering",
+      "published_at": "2026-11-06T22:15:59Z",
+      "summary": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment. The post Beyond code generation: A developer’s guide to agentic engineering appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:developer",
+        "weak:copilot",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "eaf3ba9f410b92a804116fca3ec67963bc7e0306",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot code review: API management and review overview updates",
+      "url": "https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates",
+      "published_at": "2026-11-07T00:27:19Z",
+      "summary": "You can now manage GitHub Copilot code review settings through the REST and GraphQL APIs, from enterprise policy down to individual repositories. Copilot’s review overview comment is now more compact,… The post Copilot code review: API management and review overview updates appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:copilot",
+        "weak:API",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2160d65659dd4489a8c9017f9c77fb6ddf3781d9",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot weekly releases — November 2",
+      "url": "https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2",
+      "published_at": "2026-11-06T21:00:26Z",
+      "summary": "This week, Copilot comes to JetBrains Air and Xcode’s coding assistant, with updates to help you manage pull requests, settings, and agent sessions. GitHub Copilot app Set up Agent Merge… The post GitHub Copilot weekly releases — November 2 appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -144,46 +182,6 @@
       "is_ai_related": true
     },
     {
-      "id": "3a11754052ed438801d05ca5711556de783c7ac7",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Usage metrics API adds code review details and addressed rate",
-      "url": "https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate",
-      "published_at": "2026-11-06T00:19:07Z",
-      "summary": "The enterprise and organization repository-level Copilot usage metrics reports now show what happens to Copilot code review feedback. A new copilot_code_review object on each repos-1-day row reports how many Copilot-reviewed… The post Usage metrics API adds code review details and addressed rate appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:copilot",
-        "weak:API",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8262f1ed9809ff346c79eb1bed59e16e9bc9d89d",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Usage metrics API flags telemetry and version gaps",
-      "url": "https://github.blog/changelog/2026-11-05-usage-metrics-api-flags-telemetry-and-version-gaps",
-      "published_at": "2026-11-06T00:08:31Z",
-      "summary": "The Copilot usage metrics API now shows which users are missing client telemetry or are running IDE or extension versions below the usage metrics minimums. New per-user fields appear in… The post Usage metrics API flags telemetry and version gaps appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:copilot",
-        "weak:API",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "a4c33817ce7db8e59c4c7c3cb6d7b45e7768f913",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
@@ -200,27 +198,6 @@
         "source_prior:official_ai"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "f60c3623f5406981060e8c92d7810c36b66d4718",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI：ChatGPT 与 API 每周生成图像超 40 亿张，8 周前为 30 亿",
-      "url": "https://aihot.news/items/z16tksw5l40w2edrohnozslkl",
-      "published_at": "2026-11-05T22:24:51Z",
-      "summary": "OpenAI 相关负责人称，目前 ChatGPT 与 API 每周生成的图像超过 40 亿张，高于仅 8 周前的每周超 30 亿张。其转发的 @OpenAI 内容还提到 ChatGPT Images 2.6 新增 GIF 与参考图支持，API 将迎来两个图像生成速度提升 50% 的新模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z16tksw5l40w2edrohnozslkl",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -231,10 +208,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1368,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 580,
-      "checked_at": "2026-11-06T20:13:52.931124Z"
+      "latency_ms": 623,
+      "checked_at": "2026-11-07T03:59:16.700193Z"
     },
     {
       "source_id": "openai-skills",
@@ -245,8 +222,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 266,
-      "checked_at": "2026-11-06T20:13:53.198244Z"
+      "latency_ms": 280,
+      "checked_at": "2026-11-07T03:59:16.980812Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -257,8 +234,8 @@
       "fetched_count": 286,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 107,
-      "checked_at": "2026-11-06T20:13:53.310118Z"
+      "latency_ms": 57,
+      "checked_at": "2026-11-07T03:59:17.039890Z"
     },
     {
       "source_id": "google-deepmind",
@@ -269,8 +246,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 285,
-      "checked_at": "2026-11-06T20:13:53.596654Z"
+      "latency_ms": 119,
+      "checked_at": "2026-11-07T03:59:17.159940Z"
     },
     {
       "source_id": "google-ai",
@@ -281,8 +258,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 264,
-      "checked_at": "2026-11-06T20:13:53.861981Z"
+      "latency_ms": 87,
+      "checked_at": "2026-11-07T03:59:17.247549Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -293,8 +270,8 @@
       "fetched_count": 899,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 326,
-      "checked_at": "2026-11-06T20:13:54.201742Z"
+      "latency_ms": 206,
+      "checked_at": "2026-11-07T03:59:17.461248Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -303,10 +280,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 257,
-      "checked_at": "2026-11-06T20:13:54.459430Z"
+      "latency_ms": 186,
+      "checked_at": "2026-11-07T03:59:17.648172Z"
     },
     {
       "source_id": "github-changelog",
@@ -315,10 +292,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 38,
-      "checked_at": "2026-11-06T20:13:54.498003Z"
+      "latency_ms": 19,
+      "checked_at": "2026-11-07T03:59:17.668293Z"
     },
     {
       "source_id": "aihot",
@@ -327,10 +304,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 1715,
-      "checked_at": "2026-11-06T20:13:56.214702Z"
+      "latency_ms": 5808,
+      "checked_at": "2026-11-07T03:59:23.477251Z"
     }
   ],
   "control_notes": {
