@@ -1,12 +1,350 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-09T18:59:01.420093Z",
+  "generated_at": "2026-11-09T23:16:03.499227Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 0,
-  "groups": {},
-  "items": [],
+  "item_count": 11,
+  "groups": {
+    "official": {
+      "group": "official",
+      "count": 4,
+      "top_sources": [
+        [
+          "OpenAI News",
+          4
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          4
+        ],
+        [
+          "openai",
+          3
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 2,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          2
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "actions",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 5,
+      "top_sources": [
+        [
+          "AI Hot",
+          4
+        ],
+        [
+          "Anthropic News via Olshansk RSS",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "claude",
+          6
+        ],
+        [
+          "aggregate_noise",
+          5
+        ],
+        [
+          "anthropic",
+          4
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "评测",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ]
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "af23e6d90d3315f58709bb4ad6ad73808cc9b123",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "CodeRabbit scales agentic software development and ships 20x more",
+      "url": "https://openai.com/index/coderabbit-codex-daybreak",
+      "published_at": "2026-11-09T08:00:00Z",
+      "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "strong:agent",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "319a7180730aabd84bb615839ea35200aa0c3e94",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Claude Fable 5.2 in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-11-09-claude-fable-5-5-in-github-copilot",
+      "published_at": "2026-11-09T16:46:43Z",
+      "summary": "Claude Fable 5.2, Anthropic’s newest Fable model, is now generally available in GitHub Copilot. You can use it for complex, multistep coding tasks across large codebases. In early testing, Fable… The post Claude Fable 5.2 in GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2347123f342676b1a9878b00e14f814873847188",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+      "url": "https://openai.com/index/control-room",
+      "published_at": "2026-11-09T13:00:00Z",
+      "summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:api",
+        "weak:API",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9f99e91fb8d42dfec4f0a4dbe339568b882797cd",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Kuken Industries searches 70 years of drawings in minutes",
+      "url": "https://openai.com/index/kuken",
+      "published_at": "2026-11-09T08:00:00Z",
+      "summary": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:api",
+        "weak:API",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "285773be53c8709ccb4f34f281cc32ef91f2fbad",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Artificial Analysis 评测 Claude Fable 5.2：以 65 分登顶 Intelligence Index v5",
+      "url": "https://aihot.news/items/m23i0fgxrk1t2gqysu6mqv82s",
+      "published_at": "2026-11-09T19:45:12Z",
+      "summary": "Artificial Analysis 评测 Anthropic 发布的 Claude Fable 5.2，其在 Artificial Analysis Intelligence Index v5 以 65 分登顶，领先 Gemini 4 Carbon（60）和 Claude Opus 5.5（59）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m23i0fgxrk1t2gqysu6mqv82s",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:gemini",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f51b59138dc1254b1fe2d4fcdc6eefcad43f3f47",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "ChatGPT Enterprise now available in AWS Marketplace",
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+      "published_at": "2026-11-09T19:00:00Z",
+      "summary": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5700dca6a9ce6505e29c4aa396f67fb5e7414d71",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Fable 5.2 上线 Higgsfield，开放 3 天免费试用",
+      "url": "https://aihot.news/items/ugn21ui1m8kftffpe2c95qlkx",
+      "published_at": "2026-11-09T20:06:53Z",
+      "summary": "Higgsfield 宣布 Claude Fable 5.2 已在 Higgsfield MCP 上线，提供 3 天免费不限量使用全部顶级视频和图像模型。作者称该 Anthropic 新模型擅长 3D 建模、视觉推理、computer use 和编码；引用内容提到 Claude Fable 5.2 与 Claude Mythos 5.2 在编码、推理和视觉方面有提升。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ugn21ui1m8kftffpe2c95qlkx",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:mcp",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "30da5febc73196aba3d9710ed5d42d3cbcbcdaec",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 用 1000 个 Claude Fable 5.2 智能体在沙箱内复现费马大定理形式化证明",
+      "url": "https://aihot.news/items/y0m3p1gin2dlfm4ns7gsrkvr8",
+      "published_at": "2026-11-09T12:00:00Z",
+      "summary": "Anthropic 的玩具实验中，1000 个运行 Claude Fable 5.2 早期版本的智能体在无 Prove2Me 平台和研究者指导的情况下复现了费马大定理的形式化证明，耗时 28.7 小时，输出 token 仅为原 9 月形式化的三分之一，证明长度为七分之一。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y0m3p1gin2dlfm4ns7gsrkvr8",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "bb1a137155d8f60f82867ce8ecf9f5af8279b807",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 指南：Claude 开发该选 Haiku 5.5、Sonnet 5.5、Opus 5.5 还是 Fable 5.2",
+      "url": "https://aihot.news/items/ykrvgcox3whsx6tst5qesbf62",
+      "published_at": "2026-11-09T12:00:00Z",
+      "summary": "Anthropic 开发者博客发文指导开发者如何在 Haiku 5.5、Sonnet 5.5、Opus 5.5 和 Fable 5.2 之间选型，建议多数编码和知识工作从 Opus 5.5 的 medium effort 起步，其 token 价格是 Fable 5.2 的一半。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ykrvgcox3whsx6tst5qesbf62",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f1f5eaec8edadff9fe9a24d9e15dff7782019b75",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Secret scanning detects secrets in GitHub Actions workflow logs",
+      "url": "https://github.blog/changelog/2026-11-09-secret-scanning-detects-secrets-in-github-actions-workflow-logs",
+      "published_at": "2026-11-09T09:01:37Z",
+      "summary": "GitHub secret scanning now detects secrets in GitHub Actions workflow logs, in addition to issues, wikis, discussions, and pull requests. Actions workflow log scanning is available in public preview. How… The post Secret scanning detects secrets in GitHub Actions workflow logs appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:workflow",
+        "source:actions"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d4e876717e46cbade8175c61e806b9a8431e7b23",
+      "source_id": "anthropic-news-unofficial",
+      "source_name": "Anthropic News via Olshansk RSS",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 3,
+      "title": "Introducing Claude Fable 5.2 and Claude Mythos 5.2",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "published_at": "2026-11-09T00:00:00Z",
+      "summary": "Our most capable models for daunting technical work, Claude Fable 5.2 and Claude Mythos 5.2 set a new bar in coding, finance, and the sciences.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:claude",
+        "source:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    }
+  ],
   "source_health": [
     {
       "source_id": "openai-news",
@@ -14,11 +352,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1368,
-      "kept_count": 0,
+      "fetched_count": 1372,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 658,
-      "checked_at": "2026-11-09T18:58:51.962438Z"
+      "latency_ms": 426,
+      "checked_at": "2026-11-09T23:16:00.106975Z"
     },
     {
       "source_id": "openai-skills",
@@ -29,8 +367,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 353,
-      "checked_at": "2026-11-09T18:58:52.316099Z"
+      "latency_ms": 393,
+      "checked_at": "2026-11-09T23:16:00.500705Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -38,11 +376,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 286,
-      "kept_count": 0,
+      "fetched_count": 287,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 162,
-      "checked_at": "2026-11-09T18:58:52.482632Z"
+      "latency_ms": 98,
+      "checked_at": "2026-11-09T23:16:00.602690Z"
     },
     {
       "source_id": "google-deepmind",
@@ -53,8 +391,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 207,
-      "checked_at": "2026-11-09T18:58:52.692021Z"
+      "latency_ms": 178,
+      "checked_at": "2026-11-09T23:16:00.782479Z"
     },
     {
       "source_id": "google-ai",
@@ -65,8 +403,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 224,
-      "checked_at": "2026-11-09T18:58:52.916971Z"
+      "latency_ms": 299,
+      "checked_at": "2026-11-09T23:16:01.082009Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -77,8 +415,8 @@
       "fetched_count": 900,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 358,
-      "checked_at": "2026-11-09T18:58:53.287987Z"
+      "latency_ms": 237,
+      "checked_at": "2026-11-09T23:16:01.328886Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -89,8 +427,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 590,
-      "checked_at": "2026-11-09T18:58:53.878958Z"
+      "latency_ms": 243,
+      "checked_at": "2026-11-09T23:16:01.572290Z"
     },
     {
       "source_id": "github-changelog",
@@ -99,10 +437,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 52,
-      "checked_at": "2026-11-09T18:58:53.931220Z"
+      "latency_ms": 32,
+      "checked_at": "2026-11-09T23:16:01.604739Z"
     },
     {
       "source_id": "aihot",
@@ -111,10 +449,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 0,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 7480,
-      "checked_at": "2026-11-09T18:59:01.412617Z"
+      "latency_ms": 1886,
+      "checked_at": "2026-11-09T23:16:03.492157Z"
     }
   ],
   "control_notes": {
