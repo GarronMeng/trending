@@ -1,11 +1,71 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-10T11:49:43.288933Z",
+  "generated_at": "2026-11-10T15:06:52.766873Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 14,
+  "item_count": 19,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 8,
+      "top_sources": [
+        [
+          "OpenAI News",
+          3
+        ],
+        [
+          "Google DeepMind",
+          2
+        ],
+        [
+          "Google AI Blog",
+          2
+        ],
+        [
+          "Hugging Face Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          8
+        ],
+        [
+          "gemini",
+          3
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "chatgpt",
+          2
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "tool",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "hugging face",
+          1
+        ]
+      ]
+    },
     "developer": {
       "group": "developer",
       "count": 1,
@@ -30,38 +90,6 @@
         ]
       ]
     },
-    "official": {
-      "group": "official",
-      "count": 3,
-      "top_sources": [
-        [
-          "OpenAI News",
-          3
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          3
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
       "count": 10,
@@ -82,14 +110,18 @@
         ],
         [
           "anthropic",
-          9
+          8
         ],
         [
           "claude",
-          7
+          5
         ],
         [
           "智能体",
+          2
+        ],
+        [
+          "agent",
           2
         ],
         [
@@ -105,10 +137,6 @@
           1
         ],
         [
-          "开发者",
-          1
-        ],
-        [
           "api",
           1
         ],
@@ -121,13 +149,51 @@
           1
         ],
         [
-          "agent",
+          "开发者",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "a98c2c6f577a885f4aa8be1b2fe1ba6887bd8d12",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code",
+      "published_at": "2026-11-10T12:02:28Z",
+      "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5299adfa7051084439fee07d2b217822ec213bb0",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Helping caregivers use AI in everyday life",
+      "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+      "published_at": "2026-11-10T12:00:00Z",
+      "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "828180870635a55fa01659c3c09bf9b40c1c880f",
       "source_id": "github-changelog",
@@ -149,21 +215,39 @@
       "is_ai_related": true
     },
     {
-      "id": "2347123f342676b1a9878b00e14f814873847188",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
+      "id": "8420007ee9e04c9161b760ee3e024bbd4a6d992d",
+      "source_id": "google-ai",
+      "source_name": "Google AI Blog",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
-      "url": "https://openai.com/index/control-room",
-      "published_at": "2026-11-09T13:00:00Z",
-      "summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
-      "relevance_score": 5,
+      "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+      "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration",
+      "published_at": "2026-11-10T14:00:00Z",
+      "summary": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership.",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:openai",
-        "weak:api",
-        "weak:API",
+        "strong:gemini",
+        "weak:tool",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "85b15755835780fa5e42c184359e6c46409fe0b1",
+      "source_id": "google-ai",
+      "source_name": "Google AI Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Google Cloud launches Gemini for healthcare.",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare",
+      "published_at": "2026-11-10T13:00:00Z",
+      "summary": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works.",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:gemini",
+        "weak:workflow",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -178,10 +262,46 @@
       "title": "Closing the AI guidance gap in education",
       "url": "https://openai.com/index/closing-ai-guidance-gap-education",
       "published_at": "2026-11-10T09:00:00Z",
-      "summary": "Lessons from OpenAI’s EMEA education partnerships and new ThinkYoung research. Supporting teachers, AI literacy and independent learning.",
+      "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "eb411faec9e98d0aa9119706c09abaa59310c6a0",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Decision Models in Hugging Face",
+      "url": "https://huggingface.co/blog/decision",
+      "published_at": "2026-11-10T00:00:00Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "612912fdae0f2fd8ac4a95087d14fed908f81a25",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence",
+      "published_at": "2026-11-09T19:51:47Z",
+      "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -246,26 +366,6 @@
       "is_ai_related": true
     },
     {
-      "id": "30da5febc73196aba3d9710ed5d42d3cbcbcdaec",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 用 1000 个 Claude Fable 5.2 智能体在沙箱内复现费马大定理形式化证明",
-      "url": "https://aihot.news/items/y0m3p1gin2dlfm4ns7gsrkvr8",
-      "published_at": "2026-11-09T12:00:00Z",
-      "summary": "Anthropic 的玩具实验中，1000 个运行 Claude Fable 5.2 早期版本的智能体在无 Prove2Me 平台和研究者指导的情况下复现了费马大定理的形式化证明，耗时 28.7 小时，输出 token 仅为原 9 月形式化的三分之一，证明长度为七分之一。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y0m3p1gin2dlfm4ns7gsrkvr8",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "023032172191b6534339871f14d22041828ebab4",
       "source_id": "anthropic-news-unofficial",
       "source_name": "Anthropic News via Olshansk RSS",
@@ -285,21 +385,20 @@
       "is_ai_related": true
     },
     {
-      "id": "bb1a137155d8f60f82867ce8ecf9f5af8279b807",
+      "id": "fcc72e305f9fcad43c9764dc8196ada315dc9ba8",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Anthropic 指南：Claude 开发该选 Haiku 5.5、Sonnet 5.5、Opus 5.5 还是 Fable 5.2",
-      "url": "https://aihot.news/items/ykrvgcox3whsx6tst5qesbf62",
-      "published_at": "2026-11-09T12:00:00Z",
-      "summary": "Anthropic 开发者博客发文指导开发者如何在 Haiku 5.5、Sonnet 5.5、Opus 5.5 和 Fable 5.2 之间选型，建议多数编码和知识工作从 Opus 5.5 的 medium effort 起步，其 token 价格是 Fable 5.2 的一半。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ykrvgcox3whsx6tst5qesbf62",
-      "relevance_score": 4,
+      "title": "Anthropic Fable 5.2 在 Remote Labor Index 上以 41.3% 领跑真实自由职业任务",
+      "url": "https://aihot.news/items/oesqqhekbr8e1bekkcitpguqh",
+      "published_at": "2026-11-10T14:07:47Z",
+      "summary": "The Decoder 报道，Anthropic 新模型 Fable 5.2 在 Scale Labs 和 Center for AI Safety 的 Remote Labor Index 基准上以 41.3% 排名第一，该测试衡量 AI 智能体能否把真实自由职业项目做到让付费客户接受的质量。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oesqqhekbr8e1bekkcitpguqh",
+      "relevance_score": 3,
       "relevance_reasons": [
         "strong:anthropic",
-        "strong:claude",
-        "weak:开发者",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -399,6 +498,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "d86b688a94456a174e16419d8058370e793aca03",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Lovable 介绍平台安全机制：自动扫描、一键修复与深度扫描功能",
+      "url": "https://aihot.news/items/gbyp35reiyczetrirpyzycssq",
+      "published_at": "2026-11-10T14:00:00Z",
+      "summary": "Lovable 发布安全功能说明，介绍平台如何帮助无技术背景的开发者构建安全应用。平台默认提供安全登录、密钥加密和构建时扫描，所有账户包括免费账户均可用；每次发布前会检查代码、应用逻辑、数据库 schema 和行级安全策略，发现的问题可通过 Fix 按钮由 agent 自动修复，也可开启 Auto-fix 自动解决，最常见问题是数据访问规则过于开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gbyp35reiyczetrirpyzycssq",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:开发者",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -408,11 +526,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1373,
+      "fetched_count": 1374,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 504,
-      "checked_at": "2026-11-10T11:49:35.169008Z"
+      "latency_ms": 505,
+      "checked_at": "2026-11-10T15:06:48.588448Z"
     },
     {
       "source_id": "openai-skills",
@@ -423,8 +541,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 227,
-      "checked_at": "2026-11-10T11:49:35.396370Z"
+      "latency_ms": 371,
+      "checked_at": "2026-11-10T15:06:48.960098Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -435,8 +553,8 @@
       "fetched_count": 288,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 136,
-      "checked_at": "2026-11-10T11:49:35.536404Z"
+      "latency_ms": 100,
+      "checked_at": "2026-11-10T15:06:49.064486Z"
     },
     {
       "source_id": "google-deepmind",
@@ -445,10 +563,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 181,
-      "checked_at": "2026-11-10T11:49:35.719306Z"
+      "latency_ms": 731,
+      "checked_at": "2026-11-10T15:06:49.797765Z"
     },
     {
       "source_id": "google-ai",
@@ -457,10 +575,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 0,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 202,
-      "checked_at": "2026-11-10T11:49:35.922433Z"
+      "latency_ms": 443,
+      "checked_at": "2026-11-10T15:06:50.241836Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -468,11 +586,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 900,
-      "kept_count": 0,
+      "fetched_count": 901,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 256,
-      "checked_at": "2026-11-10T11:49:36.190515Z"
+      "latency_ms": 244,
+      "checked_at": "2026-11-10T15:06:50.499729Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -483,8 +601,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 199,
-      "checked_at": "2026-11-10T11:49:36.390650Z"
+      "latency_ms": 253,
+      "checked_at": "2026-11-10T15:06:50.753420Z"
     },
     {
       "source_id": "github-changelog",
@@ -495,8 +613,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 41,
-      "checked_at": "2026-11-10T11:49:36.432123Z"
+      "latency_ms": 32,
+      "checked_at": "2026-11-10T15:06:50.786100Z"
     },
     {
       "source_id": "aihot",
@@ -507,8 +625,8 @@
       "fetched_count": 50,
       "kept_count": 9,
       "error": null,
-      "latency_ms": 6849,
-      "checked_at": "2026-11-10T11:49:43.282146Z"
+      "latency_ms": 1970,
+      "checked_at": "2026-11-10T15:06:52.757619Z"
     }
   ],
   "control_notes": {

@@ -43,8 +43,8 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>14</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>3</b><span>官方源条目</span></div>
+        <div class="stat"><b>19</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>8</b><span>官方源条目</span></div>
         <div class="stat"><b>10</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
@@ -52,8 +52,34 @@
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-10T11:49:43.290339Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-10T15:06:52.768704Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>Google DeepMind</span>
+        <span>official_rss</span>
+        <span>2026-11-10T12:02:28Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://deepmind.google/blog/introducing-alphaproof-code" target="_blank" rel="noreferrer">Introducing AlphaProof Code: a breakthrough in verifying complex software at depth</a></h3>
+      <p class='summary'>AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.</p>
+      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-11-10T12:00:00Z</span>
+        <strong>Score 5</strong>
+      </div>
+      <h3><a href="https://openai.com/index/helping-caregivers-use-ai-in-everyday-life" target="_blank" rel="noreferrer">Helping caregivers use AI in everyday life</a></h3>
+      <p class='summary'>OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.</p>
+      <div class="tags"><span>strong:openai</span><span>strong:chatgpt</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>GitHub Changelog</span>
@@ -69,14 +95,27 @@
 
     <article class="card">
       <div class="meta">
-        <span>OpenAI News</span>
+        <span>Google AI Blog</span>
         <span>official_rss</span>
-        <span>2026-11-09T13:00:00Z</span>
-        <strong>Score 5</strong>
+        <span>2026-11-10T14:00:00Z</span>
+        <strong>Score 4</strong>
       </div>
-      <h3><a href="https://openai.com/index/control-room" target="_blank" rel="noreferrer">Control Room: A central system to track and stop model workloads across our research infrastructure</a></h3>
-      <p class='summary'>Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.</p>
-      <div class="tags"><span>strong:openai</span><span>weak:api</span><span>weak:API</span><span>source_prior:official_ai</span></div>
+      <h3><a href="https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration" target="_blank" rel="noreferrer">We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.</a></h3>
+      <p class='summary'>Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership.</p>
+      <div class="tags"><span>strong:gemini</span><span>weak:tool</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>Google AI Blog</span>
+        <span>official_rss</span>
+        <span>2026-11-10T13:00:00Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare" target="_blank" rel="noreferrer">Google Cloud launches Gemini for healthcare.</a></h3>
+      <p class='summary'>Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works.</p>
+      <div class="tags"><span>strong:gemini</span><span>weak:workflow</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -88,8 +127,34 @@
         <strong>Score 3</strong>
       </div>
       <h3><a href="https://openai.com/index/closing-ai-guidance-gap-education" target="_blank" rel="noreferrer">Closing the AI guidance gap in education</a></h3>
-      <p class='summary'>Lessons from OpenAI’s EMEA education partnerships and new ThinkYoung research. Supporting teachers, AI literacy and independent learning.</p>
+      <p class='summary'>New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.</p>
       <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>Hugging Face Blog</span>
+        <span>official_rss</span>
+        <span>2026-11-10T00:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://huggingface.co/blog/decision" target="_blank" rel="noreferrer">Decision Models in Hugging Face</a></h3>
+      
+      <div class="tags"><span>strong:hugging face</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>Google DeepMind</span>
+        <span>official_rss</span>
+        <span>2026-11-09T19:51:47Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence" target="_blank" rel="noreferrer">Gemini Robotics 2.5 accelerates real-world general dexterity</a></h3>
+      <p class='summary'>Our most capable vision-language-action model enhances robot dexterity, reliability, and safety</p>
+      <div class="tags"><span>strong:gemini</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -134,19 +199,6 @@
 
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-11-09T12:00:00Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/y0m3p1gin2dlfm4ns7gsrkvr8" target="_blank" rel="noreferrer">Anthropic 用 1000 个 Claude Fable 5.2 智能体在沙箱内复现费马大定理形式化证明</a></h3>
-      <p class='summary'>Anthropic 的玩具实验中，1000 个运行 Claude Fable 5.2 早期版本的智能体在无 Prove2Me 平台和研究者指导的情况下复现了费马大定理的形式化证明，耗时 28.7 小时，输出 token 仅为原 9 月形式化的三分之一，证明长度为七分之一。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y0m3p1gin2dlfm4ns7gsrkvr8</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
         <span>Anthropic News via Olshansk RSS</span>
         <span>public_feed</span>
         <span>2026-11-10T00:00:00Z</span>
@@ -162,12 +214,12 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-11-09T12:00:00Z</span>
-        <strong>Score 4</strong>
+        <span>2026-11-10T14:07:47Z</span>
+        <strong>Score 3</strong>
       </div>
-      <h3><a href="https://aihot.news/items/ykrvgcox3whsx6tst5qesbf62" target="_blank" rel="noreferrer">Anthropic 指南：Claude 开发该选 Haiku 5.5、Sonnet 5.5、Opus 5.5 还是 Fable 5.2</a></h3>
-      <p class='summary'>Anthropic 开发者博客发文指导开发者如何在 Haiku 5.5、Sonnet 5.5、Opus 5.5 和 Fable 5.2 之间选型，建议多数编码和知识工作从 Opus 5.5 的 medium effort 起步，其 token 价格是 Fable 5.2 的一半。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ykrvgcox3whsx6tst5qesbf62</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://aihot.news/items/oesqqhekbr8e1bekkcitpguqh" target="_blank" rel="noreferrer">Anthropic Fable 5.2 在 Remote Labor Index 上以 41.3% 领跑真实自由职业任务</a></h3>
+      <p class='summary'>The Decoder 报道，Anthropic 新模型 Fable 5.2 在 Scale Labs 和 Center for AI Safety 的 Remote Labor Index 基准上以 41.3% 排名第一，该测试衡量 AI 智能体能否把真实自由职业项目做到让付费客户接受的质量。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oesqqhekbr8e1bekkcitpguqh</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -234,21 +286,34 @@
       <p class='summary'>Figma 官方介绍了在其画布上使用 Figma agent 的六种方法，覆盖从设计初期探索到交付前细节的各个阶段。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lko5m98q1kk1dlcjihvk527w8</p>
       <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
     </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-11-10T14:00:00Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/gbyp35reiyczetrirpyzycssq" target="_blank" rel="noreferrer">Lovable 介绍平台安全机制：自动扫描、一键修复与深度扫描功能</a></h3>
+      <p class='summary'>Lovable 发布安全功能说明，介绍平台如何帮助无技术背景的开发者构建安全应用。平台默认提供安全登录、密钥加密和构建时扫描，所有账户包括免费账户均可用；每次发布前会检查代码、应用逻辑、数据库 schema 和行级安全策略，发现的问题可通过 Fix 按钮由 agent 自动修复，也可开启 Auto-fix 自动解决，最常见问题是数据访问规则过于开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gbyp35reiyczetrirpyzycssq</p>
+      <div class="tags"><span>strong:agent</span><span>weak:开发者</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1373</td><td>3</td><td>504ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>227ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>288</td><td>1</td><td>136ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>181ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>202ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>900</td><td>0</td><td>256ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>199ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>41ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>9</td><td>6849ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1374</td><td>3</td><td>505ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>371ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>288</td><td>1</td><td>100ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>2</td><td>731ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>2</td><td>443ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>901</td><td>1</td><td>244ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>253ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>32ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>9</td><td>1970ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
