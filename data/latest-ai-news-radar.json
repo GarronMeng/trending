@@ -1,58 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-10T05:30:36.583617Z",
+  "generated_at": "2026-11-10T11:49:43.288933Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
   "item_count": 14,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 4,
-      "top_sources": [
-        [
-          "OpenAI News",
-          4
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          4
-        ],
-        [
-          "openai",
-          3
-        ],
-        [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "GitHub Changelog",
-          2
+          1
         ]
       ],
       "top_keywords": [
@@ -67,38 +27,66 @@
         [
           "claude",
           1
+        ]
+      ]
+    },
+    "official": {
+      "group": "official",
+      "count": 3,
+      "top_sources": [
+        [
+          "OpenAI News",
+          3
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          3
         ],
         [
-          "workflow",
+          "openai",
+          2
+        ],
+        [
+          "api",
           1
         ],
         [
-          "actions",
+          "API",
+          1
+        ],
+        [
+          "chatgpt",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 10,
       "top_sources": [
         [
           "AI Hot",
-          8
+          9
+        ],
+        [
+          "Anthropic News via Olshansk RSS",
+          1
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          10
         ],
         [
           "anthropic",
-          7
+          9
         ],
         [
           "claude",
-          6
+          7
         ],
         [
           "智能体",
@@ -121,6 +109,14 @@
           1
         ],
         [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
           "openai",
           1
         ],
@@ -132,26 +128,6 @@
     }
   },
   "items": [
-    {
-      "id": "af23e6d90d3315f58709bb4ad6ad73808cc9b123",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "CodeRabbit scales agentic software development and ships 20x more",
-      "url": "https://openai.com/index/coderabbit-codex-daybreak",
-      "published_at": "2026-11-09T08:00:00Z",
-      "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "strong:agent",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "828180870635a55fa01659c3c09bf9b40c1c880f",
       "source_id": "github-changelog",
@@ -193,21 +169,19 @@
       "is_ai_related": true
     },
     {
-      "id": "9f99e91fb8d42dfec4f0a4dbe339568b882797cd",
+      "id": "fb666c33aa61cabf89bfbce7c67c72258215db21",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Kuken Industries searches 70 years of drawings in minutes",
-      "url": "https://openai.com/index/kuken",
-      "published_at": "2026-11-09T08:00:00Z",
-      "summary": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
-      "relevance_score": 5,
+      "title": "Closing the AI guidance gap in education",
+      "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+      "published_at": "2026-11-10T09:00:00Z",
+      "summary": "Lessons from OpenAI’s EMEA education partnerships and new ThinkYoung research. Supporting teachers, AI literacy and independent learning.",
+      "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
-        "weak:api",
-        "weak:API",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -292,6 +266,25 @@
       "is_ai_related": true
     },
     {
+      "id": "023032172191b6534339871f14d22041828ebab4",
+      "source_id": "anthropic-news-unofficial",
+      "source_name": "Anthropic News via Olshansk RSS",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 3,
+      "title": "Anthropic launches roadshow for proposed initial public offering",
+      "url": "https://www.anthropic.com/news/roadshow-launch",
+      "published_at": "2026-11-10T00:00:00Z",
+      "summary": "Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "source:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "bb1a137155d8f60f82867ce8ecf9f5af8279b807",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -312,20 +305,22 @@
       "is_ai_related": true
     },
     {
-      "id": "f1f5eaec8edadff9fe9a24d9e15dff7782019b75",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Secret scanning detects secrets in GitHub Actions workflow logs",
-      "url": "https://github.blog/changelog/2026-11-09-secret-scanning-detects-secrets-in-github-actions-workflow-logs",
-      "published_at": "2026-11-09T09:01:37Z",
-      "summary": "GitHub secret scanning now detects secrets in GitHub Actions workflow logs, in addition to issues, wikis, discussions, and pull requests. Actions workflow log scanning is available in public preview. How… The post Secret scanning detects secrets in GitHub Actions workflow logs appeared first on The GitHub Blog .",
+      "id": "ade6b30c992b492e4f99f9e7271f1fedbf4c6ce5",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Code 被曝把密码写进项目文件，GitHub 上发现 2539 个真实凭据，官方正在修复",
+      "url": "https://aihot.news/items/efkizvqpiynq97lm5cx6fmd43",
+      "published_at": "2026-11-10T08:45:01Z",
+      "summary": "Ars Technica 报道，安全公司 Apiiro 发现超过 10 万份 Claude Code 本地设置文件被上传至公开仓库，共识别出 1,994 个代码库中的 2,539 个真实凭据，涉及 63 个组织，包括 Azure 数据库密码、Square 生产令牌和 SSH root 登录信息。 🔗 阅读原文 via AIHOT · https://aihot.news/items/efkizvqpiynq97lm5cx6fmd43",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:workflow",
-        "source:actions"
+        "strong:claude",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -413,11 +408,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1372,
-      "kept_count": 4,
+      "fetched_count": 1373,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 528,
-      "checked_at": "2026-11-10T05:30:30.782730Z"
+      "latency_ms": 504,
+      "checked_at": "2026-11-10T11:49:35.169008Z"
     },
     {
       "source_id": "openai-skills",
@@ -428,8 +423,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 268,
-      "checked_at": "2026-11-10T05:30:31.051687Z"
+      "latency_ms": 227,
+      "checked_at": "2026-11-10T11:49:35.396370Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -437,11 +432,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 287,
-      "kept_count": 0,
+      "fetched_count": 288,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 110,
-      "checked_at": "2026-11-10T05:30:31.165188Z"
+      "latency_ms": 136,
+      "checked_at": "2026-11-10T11:49:35.536404Z"
     },
     {
       "source_id": "google-deepmind",
@@ -452,8 +447,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 393,
-      "checked_at": "2026-11-10T05:30:31.559532Z"
+      "latency_ms": 181,
+      "checked_at": "2026-11-10T11:49:35.719306Z"
     },
     {
       "source_id": "google-ai",
@@ -464,8 +459,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 283,
-      "checked_at": "2026-11-10T05:30:31.843393Z"
+      "latency_ms": 202,
+      "checked_at": "2026-11-10T11:49:35.922433Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -476,8 +471,8 @@
       "fetched_count": 900,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 337,
-      "checked_at": "2026-11-10T05:30:32.191374Z"
+      "latency_ms": 256,
+      "checked_at": "2026-11-10T11:49:36.190515Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -488,8 +483,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 467,
-      "checked_at": "2026-11-10T05:30:32.659033Z"
+      "latency_ms": 199,
+      "checked_at": "2026-11-10T11:49:36.390650Z"
     },
     {
       "source_id": "github-changelog",
@@ -498,10 +493,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 63,
-      "checked_at": "2026-11-10T05:30:32.723206Z"
+      "latency_ms": 41,
+      "checked_at": "2026-11-10T11:49:36.432123Z"
     },
     {
       "source_id": "aihot",
@@ -510,10 +505,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 3852,
-      "checked_at": "2026-11-10T05:30:36.576337Z"
+      "latency_ms": 6849,
+      "checked_at": "2026-11-10T11:49:43.282146Z"
     }
   ],
   "control_notes": {
