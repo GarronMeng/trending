@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-11T04:01:32.425894Z",
+  "generated_at": "2026-11-11T11:28:32.620274Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 24,
+  "item_count": 22,
   "groups": {
     "developer": {
       "group": "developer",
@@ -40,12 +40,8 @@
     },
     "official": {
       "group": "official",
-      "count": 9,
+      "count": 8,
       "top_sources": [
-        [
-          "OpenAI News",
-          4
-        ],
         [
           "Google AI Blog",
           3
@@ -53,31 +49,39 @@
         [
           "Google DeepMind",
           2
+        ],
+        [
+          "OpenAI News",
+          2
+        ],
+        [
+          "Hugging Face Blog",
+          1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          9
+          8
         ],
         [
           "gemini",
           4
         ],
         [
-          "openai",
-          3
+          "agent",
+          2
         ],
         [
           "chatgpt",
           2
         ],
         [
-          "agent",
+          "agents",
           1
         ],
         [
-          "agents",
+          "openai",
           1
         ],
         [
@@ -92,28 +96,28 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 12,
+      "count": 11,
       "top_sources": [
         [
           "AI Hot",
-          12
+          11
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          12
+          11
         ],
         [
           "智能体",
           4
         ],
         [
-          "claude",
-          4
+          "gemini",
+          3
         ],
         [
-          "gemini",
+          "agent",
           3
         ],
         [
@@ -133,11 +137,7 @@
           2
         ],
         [
-          "agent",
-          2
-        ],
-        [
-          "anthropic",
+          "claude",
           2
         ],
         [
@@ -146,6 +146,10 @@
         ],
         [
           "大模型",
+          1
+        ],
+        [
+          "benchmark",
           1
         ]
       ]
@@ -271,6 +275,42 @@
       "is_ai_related": true
     },
     {
+      "id": "2bec437dddbaf66f99a6e5232be27befaf29f037",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "ChatGPT Plus for veterans and servicemembers",
+      "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+      "published_at": "2026-11-11T08:00:00Z",
+      "summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b582b6234275b4f4ea8956d28e65d48e07a5602b",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+      "url": "https://huggingface.co/blog/qvac/botpsy",
+      "published_at": "2026-11-11T05:01:16Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "5f5a7e34e5c3000944f648abb7b990e43116864d",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -362,60 +402,6 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:gemini",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "3a39d519b93067033164cf77d6321c7be8aebc5f",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Introducing Businesses in ChatGPT",
-      "url": "https://openai.com/index/introducing-businesses-chatgpt",
-      "published_at": "2026-11-10T10:00:00Z",
-      "summary": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "fb666c33aa61cabf89bfbce7c67c72258215db21",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Closing the AI guidance gap in education",
-      "url": "https://openai.com/index/closing-ai-guidance-gap-education",
-      "published_at": "2026-11-10T09:00:00Z",
-      "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "1321a0a859abc45b7283e1000867655f59aaa31d",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Work at the Frontier: AI’s effect on freelance work",
-      "url": "https://openai.com/index/ai-effect-on-freelance-work",
-      "published_at": "2026-11-10T07:00:00Z",
-      "summary": "New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -518,6 +504,26 @@
       "is_ai_related": true
     },
     {
+      "id": "46f62d067c02cc31d2b92bb8ce57a557b8b74b3f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "百度发布 ERNIE 5.5 Flash Preview，权重将于 11 月 25 日前开源",
+      "url": "https://aihot.news/items/qd3f4j2hd0t98tqf28iv7pu2j",
+      "published_at": "2026-11-10T16:00:00Z",
+      "summary": "百度发布 ERNIE 5.5 Flash Preview，是基于此前 Base 模型的首个后训练版本，总参数 280B、激活参数 14B，支持 1M 上下文。模型 API 已在千帆平台上线，权重将于 11 月 25 日前开源；官方展示了游戏开发、3D 建模、知识工作、视频创作等 Agent 场景成果，并称该版本为后训练中间版本，正式版仍将持续优化。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qd3f4j2hd0t98tqf28iv7pu2j",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "7e28adc039ab0ac75e169512b4f4094a5be77e70",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -556,45 +562,6 @@
       "is_ai_related": true
     },
     {
-      "id": "ade6b30c992b492e4f99f9e7271f1fedbf4c6ce5",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Code 被曝把密码写进项目文件，GitHub 上发现 2539 个真实凭据，官方正在修复",
-      "url": "https://aihot.news/items/efkizvqpiynq97lm5cx6fmd43",
-      "published_at": "2026-11-10T08:45:01Z",
-      "summary": "Ars Technica 报道，安全公司 Apiiro 发现超过 10 万份 Claude Code 本地设置文件被上传至公开仓库，共识别出 1,994 个代码库中的 2,539 个真实凭据，涉及 63 个组织，包括 Azure 数据库密码、Square 生产令牌和 SSH root 登录信息。 🔗 阅读原文 via AIHOT · https://aihot.news/items/efkizvqpiynq97lm5cx6fmd43",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7dee645cab5e6175cf95c9779c5cd43e86250410",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 员工推荐用一条提示词让 Claude Code 全面审查项目",
-      "url": "https://aihot.news/items/lwbznpwnu3d7avukt0arjc2go",
-      "published_at": "2026-11-10T04:17:59Z",
-      "summary": "作者转发 Anthropic 的 Alex Albert 分享的提示词：对每个项目运行同一条指令，让 Claude 通读整个项目，找出损坏、不一致、低效或不再需要的内容，确定的问题直接修复，其余列出供人工审查。作者补充可用 /doctor prompt-audit 和 /skill-doctor 优化上下文文件并清理不必要的技能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lwbznpwnu3d7avukt0arjc2go",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "d86b688a94456a174e16419d8058370e793aca03",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -621,11 +588,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1377,
-      "kept_count": 4,
+      "fetched_count": 1380,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 611,
-      "checked_at": "2026-11-11T04:01:27.002554Z"
+      "latency_ms": 608,
+      "checked_at": "2026-11-11T11:28:28.092566Z"
     },
     {
       "source_id": "openai-skills",
@@ -636,8 +603,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 203,
-      "checked_at": "2026-11-11T04:01:27.206209Z"
+      "latency_ms": 175,
+      "checked_at": "2026-11-11T11:28:28.268262Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -648,8 +615,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 137,
-      "checked_at": "2026-11-11T04:01:27.347940Z"
+      "latency_ms": 113,
+      "checked_at": "2026-11-11T11:28:28.385875Z"
     },
     {
       "source_id": "google-deepmind",
@@ -660,8 +627,8 @@
       "fetched_count": 100,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 359,
-      "checked_at": "2026-11-11T04:01:27.709170Z"
+      "latency_ms": 128,
+      "checked_at": "2026-11-11T11:28:28.516434Z"
     },
     {
       "source_id": "google-ai",
@@ -672,8 +639,8 @@
       "fetched_count": 20,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 304,
-      "checked_at": "2026-11-11T04:01:28.014448Z"
+      "latency_ms": 297,
+      "checked_at": "2026-11-11T11:28:28.814352Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -681,11 +648,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 902,
-      "kept_count": 0,
+      "fetched_count": 903,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 393,
-      "checked_at": "2026-11-11T04:01:28.420920Z"
+      "latency_ms": 244,
+      "checked_at": "2026-11-11T11:28:29.071893Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -696,8 +663,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 495,
-      "checked_at": "2026-11-11T04:01:28.916439Z"
+      "latency_ms": 229,
+      "checked_at": "2026-11-11T11:28:29.301582Z"
     },
     {
       "source_id": "github-changelog",
@@ -708,8 +675,8 @@
       "fetched_count": 10,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 57,
-      "checked_at": "2026-11-11T04:01:28.974668Z"
+      "latency_ms": 29,
+      "checked_at": "2026-11-11T11:28:29.331988Z"
     },
     {
       "source_id": "aihot",
@@ -718,10 +685,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 12,
+      "kept_count": 11,
       "error": null,
-      "latency_ms": 3441,
-      "checked_at": "2026-11-11T04:01:32.417904Z"
+      "latency_ms": 3276,
+      "checked_at": "2026-11-11T11:28:32.610466Z"
     }
   ],
   "control_notes": {
