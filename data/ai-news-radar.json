@@ -1,31 +1,39 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-11T16:26:22.626411Z",
+  "generated_at": "2026-11-11T21:02:50.222583Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 10,
   "groups": {
-    "developer": {
-      "group": "developer",
-      "count": 3,
+    "official": {
+      "group": "official",
+      "count": 4,
       "top_sources": [
         [
-          "GitHub Changelog",
-          3
+          "OpenAI News",
+          2
+        ],
+        [
+          "Google AI Blog",
+          1
+        ],
+        [
+          "Hugging Face Blog",
+          1
         ]
       ],
       "top_keywords": [
         [
-          "copilot",
-          6
-        ],
-        [
-          "agent",
-          2
+          "official_ai",
+          4
         ],
         [
           "gemini",
+          1
+        ],
+        [
+          "multimodal",
           1
         ],
         [
@@ -35,30 +43,6 @@
         [
           "API",
           1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 3,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ],
-        [
-          "Hugging Face Blog",
-          1
-        ],
-        [
-          "Google AI Blog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          3
         ],
         [
           "chatgpt",
@@ -69,39 +53,51 @@
           1
         ],
         [
-          "gemini",
+          "eval",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          6
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
-          "agent",
-          2
+          5
         ],
         [
           "openai",
           2
         ],
         [
+          "anthropic",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "claude",
+          2
+        ],
+        [
           "gemini",
+          2
+        ],
+        [
+          "智能体",
           1
         ],
         [
@@ -113,23 +109,35 @@
           1
         ],
         [
-          "智能体",
-          1
-        ],
-        [
-          "anthropic",
+          "多模态",
           1
         ],
         [
           "mcp",
           1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          2
         ],
         [
-          "llm",
+          "api",
           1
         ],
         [
-          "chatgpt",
+          "API",
           1
         ]
       ]
@@ -137,22 +145,45 @@
   },
   "items": [
     {
-      "id": "2dd47059d1bb061754289b5c6434b908cbc7a273",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
+      "id": "a7369ee37804b23c21c412c29d33f104f93db9ec",
+      "source_id": "google-ai",
+      "source_name": "Google AI Blog",
       "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Gemini 4 Carbon in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot",
-      "published_at": "2026-11-10T19:26:51Z",
-      "summary": "Gemini 4 Carbon, Google’s latest model, is now generally available in GitHub Copilot. It is designed for complex coding, agentic, and reasoning tasks, with a focus on secure code generation… The post Gemini 4 Carbon in GitHub Copilot appeared first on The GitHub Blog .",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api",
+      "published_at": "2026-11-11T18:00:00Z",
+      "summary": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
       "relevance_score": 7,
       "relevance_reasons": [
         "strong:gemini",
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
+        "strong:multimodal",
+        "weak:api",
+        "weak:API",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "55af614df52202831741c9017524d1e99d3452e9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 发布 MAMUBench：单一智能体协调在四类环境中均胜过每个用户各自的智能体团队",
+      "url": "https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp",
+      "published_at": "2026-11-11T00:00:00Z",
+      "summary": "Anthropic Fellows Program 团队构建四个多用户多智能体模拟环境（共享 API token 预算、诊所日历、团体订餐或旅行预订、合并队列），测试 Anthropic、OpenAI 和 Alibaba 的前沿模型，并发布其中三个环境作为基准 MAMUBench。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -234,58 +265,41 @@
       "is_ai_related": true
     },
     {
-      "id": "d4c16ade65f2a749bfa3eef54f8db8c7eff4057b",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Gemini Intelligence: New features, on more devices",
-      "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices",
-      "published_at": "2026-11-10T19:00:00Z",
-      "summary": "A man speaks into a phone. Text on the screen reads 'Gemini Intelligence'",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "889e6a2687904fecd19774cad66bd7c00a05c05a",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "C++ language server now auto-configures MSBuild builds",
-      "url": "https://github.blog/changelog/2026-11-10-c-language-server-now-auto-configures-msbuild-builds",
-      "published_at": "2026-11-10T17:04:10Z",
-      "summary": "The Microsoft C++ Language Server for GitHub Copilot CLI now bundles its MSBuild compile commands extractor and invokes it automatically. An agent no longer needs to discover and run a… The post C++ language server now auto-configures MSBuild builds appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "f1914a58f6316f93432db883d8ae776f815d6bc3",
+      "id": "34eae019f0faad58fdb38f40ab029bf2b0dfe5de",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "a16z 提出 B2A 经济：AI 智能体正成为互联网主要用户与流量来源",
-      "url": "https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k",
-      "published_at": "2026-11-11T15:02:38Z",
-      "summary": "a16z 发布分析文章，提出 B2A（Business to Agent）经济概念，认为 AI 智能体已构成互联网主要流量，并将替用户决定购买与订阅。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k",
-      "relevance_score": 3,
+      "title": "Google 发布 Gemini Decisions API 与 Gemini Decision 1 模型，专注快速多模态封闭式决策",
+      "url": "https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw",
+      "published_at": "2026-11-11T18:00:00Z",
+      "summary": "Google 推出 Gemini Decisions API，由新模型 Gemini Decision 1 驱动，可在 150-250ms 端到端延迟内对文本、图像、音频、视频和 PDF（最多 256K tokens）一次性评估最多 1000 个是/否、多选和评分题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
+        "strong:gemini",
+        "strong:多模态",
+        "weak:api",
+        "weak:API",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "244bac67367077ae6b4c089ae69e6d385a1e5dc6",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+      "url": "https://openai.com/index/jiostar-vijay-seshadri",
+      "published_at": "2026-11-11T00:00:00Z",
+      "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:eval",
+        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -326,44 +340,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "88e7cb181a3055f5b298210d850dba21105d9de1",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Microsoft Research 揭示 Lazarus 权重空间后门技术，通过重编程休眠神经元攻击 AI Agent",
-      "url": "https://aihot.news/items/womexcn3n0ijhbehvhbsxxm4f",
-      "published_at": "2026-11-10T20:52:56Z",
-      "summary": "Microsoft Research 发布对 Lazarus 后门技术的研究，重编程 LLM 中少于 10 个休眠神经元即可在没有训练的情况下给基于该模型的 Agent 安装后门。 🔗 阅读原文 via AIHOT · https://aihot.news/items/womexcn3n0ijhbehvhbsxxm4f",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:llm",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "785480e4fa9ac50d77aa2e987c71e97d22438d6c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 开放 ChatGPT Business 计划登录 Notion、v0 等第三方工具",
-      "url": "https://aihot.news/items/y4pcrys3ewo3xnx1j45mbpbfy",
-      "published_at": "2026-11-10T17:50:49Z",
-      "summary": "OpenAI 宣布 ChatGPT Business 计划现可在 Notion、v0、ampcode、kilocode、Warp、NousResearch 的 Hermes、openclaw、opencode 等第三方工具中使用，通过 Sign in with ChatGPT 连接即可开始。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y4pcrys3ewo3xnx1j45mbpbfy",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -373,11 +349,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1380,
-      "kept_count": 1,
+      "fetched_count": 1381,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 341,
-      "checked_at": "2026-11-11T16:26:18.988697Z"
+      "latency_ms": 582,
+      "checked_at": "2026-11-11T21:02:46.352759Z"
     },
     {
       "source_id": "openai-skills",
@@ -388,8 +364,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 202,
-      "checked_at": "2026-11-11T16:26:19.190849Z"
+      "latency_ms": 201,
+      "checked_at": "2026-11-11T21:02:46.554240Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -400,8 +376,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 76,
-      "checked_at": "2026-11-11T16:26:19.269063Z"
+      "latency_ms": 110,
+      "checked_at": "2026-11-11T21:02:46.668445Z"
     },
     {
       "source_id": "google-deepmind",
@@ -412,8 +388,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 712,
-      "checked_at": "2026-11-11T16:26:19.982182Z"
+      "latency_ms": 102,
+      "checked_at": "2026-11-11T21:02:46.772451Z"
     },
     {
       "source_id": "google-ai",
@@ -424,8 +400,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 226,
-      "checked_at": "2026-11-11T16:26:20.208794Z"
+      "latency_ms": 230,
+      "checked_at": "2026-11-11T21:02:47.003049Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -436,8 +412,8 @@
       "fetched_count": 904,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 281,
-      "checked_at": "2026-11-11T16:26:20.497565Z"
+      "latency_ms": 265,
+      "checked_at": "2026-11-11T21:02:47.281294Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -448,8 +424,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 617,
-      "checked_at": "2026-11-11T16:26:21.115639Z"
+      "latency_ms": 230,
+      "checked_at": "2026-11-11T21:02:47.511604Z"
     },
     {
       "source_id": "github-changelog",
@@ -458,10 +434,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 45,
-      "checked_at": "2026-11-11T16:26:21.161355Z"
+      "latency_ms": 26,
+      "checked_at": "2026-11-11T21:02:47.538678Z"
     },
     {
       "source_id": "aihot",
@@ -470,10 +446,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 1457,
-      "checked_at": "2026-11-11T16:26:22.619838Z"
+      "latency_ms": 2674,
+      "checked_at": "2026-11-11T21:02:50.213953Z"
     }
   ],
   "control_notes": {
