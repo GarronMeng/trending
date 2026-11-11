@@ -1,14 +1,46 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-10T20:41:58.311566Z",
+  "generated_at": "2026-11-11T04:01:32.425894Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 28,
+  "item_count": 24,
   "groups": {
+    "developer": {
+      "group": "developer",
+      "count": 3,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          3
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          6
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ]
+      ]
+    },
     "official": {
       "group": "official",
-      "count": 11,
+      "count": 9,
       "top_sources": [
         [
           "OpenAI News",
@@ -21,16 +53,12 @@
         [
           "Google DeepMind",
           2
-        ],
-        [
-          "Hugging Face Blog",
-          2
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          11
+          9
         ],
         [
           "gemini",
@@ -42,10 +70,6 @@
         ],
         [
           "chatgpt",
-          2
-        ],
-        [
-          "hugging face",
           2
         ],
         [
@@ -66,59 +90,31 @@
         ]
       ]
     },
-    "developer": {
-      "group": "developer",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          4
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "gemini",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 15,
+      "count": 12,
       "top_sources": [
         [
           "AI Hot",
-          14
-        ],
-        [
-          "Anthropic News via Olshansk RSS",
-          1
+          12
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          15
-        ],
-        [
-          "anthropic",
-          8
+          12
         ],
         [
           "智能体",
-          5
+          4
         ],
         [
           "claude",
-          5
+          4
+        ],
+        [
+          "gemini",
+          3
         ],
         [
           "api",
@@ -129,10 +125,6 @@
           3
         ],
         [
-          "gemini",
-          2
-        ],
-        [
           "deepmind",
           2
         ],
@@ -141,21 +133,45 @@
           2
         ],
         [
-          "openai",
-          2
-        ],
-        [
           "agent",
           2
         ],
         [
+          "anthropic",
+          2
+        ],
+        [
           "工作流",
+          1
+        ],
+        [
+          "大模型",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "2dd47059d1bb061754289b5c6434b908cbc7a273",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Gemini 4 Carbon in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot",
+      "published_at": "2026-11-10T19:26:51Z",
+      "summary": "Gemini 4 Carbon, Google’s latest model, is now generally available in GitHub Copilot. It is designed for complex coding, agentic, and reasoning tasks, with a focus on secure code generation… The post Gemini 4 Carbon in GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "a98c2c6f577a885f4aa8be1b2fe1ba6887bd8d12",
       "source_id": "google-deepmind",
@@ -191,26 +207,6 @@
         "strong:openai",
         "strong:chatgpt",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e41e66b1929cc08881f6ac42bbfe91b82b8d2784",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Gemini 4 Carbon in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-11-09-gemini-4-carbon-in-github-copilot",
-      "published_at": "2026-11-10T02:26:51Z",
-      "summary": "Gemini 4 Carbon, Google’s latest model, is now generally available in GitHub Copilot. It is designed for complex coding, agentic, and reasoning tasks, with a focus on secure code generation… The post Gemini 4 Carbon in GitHub Copilot appeared first on The GitHub Blog .",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:agent",
-        "weak:copilot",
-        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -271,6 +267,47 @@
         "strong:gemini",
         "weak:workflow",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5f5a7e34e5c3000944f648abb7b990e43116864d",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub App support for Enterprise Copilot seat management",
+      "url": "https://github.blog/changelog/2026-11-10-github-app-support-for-enterprise-copilot-seat-management",
+      "published_at": "2026-11-11T00:10:31Z",
+      "summary": "Enterprise GitHub Apps can now call the enterprise-level Copilot seat management APIs to control which users and enterprise teams are assigned Copilot seats. The Copilot seat management APIs are accessible… The post GitHub App support for Enterprise Copilot seat management appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:copilot",
+        "weak:API",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5728cf655afefdcae6087de62d9efeb257a3200d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Fable 5.2 实测观察：大模型正用代码吞噬审美与创作",
+      "url": "https://aihot.news/items/uditkv6u7rrzmtj1nx7pxbgjj",
+      "published_at": "2026-11-10T23:56:00Z",
+      "summary": "作者实测 Claude Fable 5.2 与 Gemini 4 Carbon 并对比后认为，Fable 5.2 的突出差异在于审美，这是无法用 Benchmark 评估但可直观感受的东西。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uditkv6u7rrzmtj1nx7pxbgjj",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:gemini",
+        "strong:大模型",
+        "weak:benchmark",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -384,56 +421,39 @@
       "is_ai_related": true
     },
     {
-      "id": "1ea6d71cf9f0c83cf530730db49ee4dcaac816de",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Pay for Hugging Face Hub with your Google Cloud Account",
-      "url": "https://huggingface.co/blog/hub-gcp-marketplace",
-      "published_at": "2026-11-10T00:00:00Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "eb411faec9e98d0aa9119706c09abaa59310c6a0",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Decision Models in Hugging Face",
-      "url": "https://huggingface.co/blog/decision",
-      "published_at": "2026-11-10T00:00:00Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "023032172191b6534339871f14d22041828ebab4",
-      "source_id": "anthropic-news-unofficial",
-      "source_name": "Anthropic News via Olshansk RSS",
+      "id": "fc86a1f86ebb933f22d163dbf329f1eb68c474da",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
-      "source_weight": 3,
-      "title": "Anthropic launches roadshow for proposed initial public offering",
-      "url": "https://www.anthropic.com/news/roadshow-launch",
-      "published_at": "2026-11-10T00:00:00Z",
-      "summary": "Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.",
+      "source_weight": 2,
+      "title": "OpenRouter 实测 MCP vs CLI vs Skills 的上下文 token 成本",
+      "url": "https://aihot.news/items/wkpj021rmg6sgthgj9zwevei4",
+      "published_at": "2026-11-11T00:00:00Z",
+      "summary": "OpenRouter 实测同一 GitHub 任务下 MCP、CLI 与 skill 的 token 成本：在 Claude Sonnet 5.5 上 CLI 用 1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wkpj021rmg6sgthgj9zwevei4",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
-        "source:anthropic",
+        "strong:claude",
+        "strong:mcp",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "88e7cb181a3055f5b298210d850dba21105d9de1",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Microsoft Research 揭示 Lazarus 权重空间后门技术，通过重编程休眠神经元攻击 AI Agent",
+      "url": "https://aihot.news/items/womexcn3n0ijhbehvhbsxxm4f",
+      "published_at": "2026-11-10T20:52:56Z",
+      "summary": "Microsoft Research 发布对 Lazarus 后门技术的研究，重编程 LLM 中少于 10 个休眠神经元即可在没有训练的情况下给基于该模型的 Agent 安装后门。 🔗 阅读原文 via AIHOT · https://aihot.news/items/womexcn3n0ijhbehvhbsxxm4f",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:llm",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -575,101 +595,6 @@
       "is_ai_related": true
     },
     {
-      "id": "6d0cb6e8b7cd1e42e820449414d8915ef931f599",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "据报道 Anthropic 推进 IPO，计划下周四或周五挂牌",
-      "url": "https://aihot.news/items/d4f8o2c9r7r8b7fsdqnpev3eu",
-      "published_at": "2026-11-10T01:27:12Z",
-      "summary": "据 The Wall Street Journal 报道，Anthropic 将在本周设定估值区间，计划下周四或周五开始交易。部分机构投资者正推动估值低于上周讨论的 1.5 万亿美元目标，该数字已低于几个月前传闻的 2 万亿美元。报道还提到其主要竞争对手 OpenAI 上周融资 110 亿美元后估值约为 1.25 万亿美元，低于其最初寻求的 200 亿美元融资规模。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d4f8o2c9r7r8b7fsdqnpev3eu",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "75c7e5054a367ff0dbe33d2dfc6de0190c6259e5",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude 升级交互式连接器，应用可在对话旁全屏打开并由 Claude 直接操作",
-      "url": "https://aihot.news/items/s7ny0oaxr6q9e5677fmb2hqpf",
-      "published_at": "2026-11-10T00:00:00Z",
-      "summary": "Anthropic 宣布交互式连接器升级，在支持的连接器中可将工具在对话旁打开或全屏展开，Claude 能直接修改你正在使用的页面、行或文件，改动实时呈现并需像连接器操作一样批准。 🔗 阅读原文 via AIHOT · https://aihot.news/items/s7ny0oaxr6q9e5677fmb2hqpf",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d75ff547d1fa7a80ca30a3fba9f23791b5aaa2b9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude Whiteboards 和 Claude Sheets，Claude Dashboards 转正为 Claude Data",
-      "url": "https://aihot.news/items/c1fodrvts3po1pprz70weooju",
-      "published_at": "2026-11-10T00:00:00Z",
-      "summary": "Anthropic 推出 Claude Whiteboards 和 Claude Sheets 测试版，Claude Dashboards 正式可用并更名为 Claude Data，三款产品面向所有付费计划开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c1fodrvts3po1pprz70weooju",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "558d71d25b1e7c96ec171c2c4cca164bb4b2a5ed",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "实测 Claude Fable 5.2：一次直出视频与 3D 网页，审美与细节表现突出",
-      "url": "https://aihot.news/items/po2cdt1whxfqyfew3e81l8mb0",
-      "published_at": "2026-11-09T23:21:03Z",
-      "summary": "Anthropic 凌晨正式发布 Claude Fable 5.2，作者第一时间实测视频动效、Three.js 3D 场景和苹果静安店 3D 网页等 10 个任务，全部一次直出，未发现生成视频中的事实错误。 🔗 阅读原文 via AIHOT · https://aihot.news/items/po2cdt1whxfqyfew3e81l8mb0",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "56e27522ac74e1000ec1212f2794fb0f02ac481f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Figma 官方讲解画布智能体的 6 种实用方法",
-      "url": "https://aihot.news/items/lko5m98q1kk1dlcjihvk527w8",
-      "published_at": "2026-11-09T21:46:00Z",
-      "summary": "Figma 官方介绍了在其画布上使用 Figma agent 的六种方法，覆盖从设计初期探索到交付前细节的各个阶段。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lko5m98q1kk1dlcjihvk527w8",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "d86b688a94456a174e16419d8058370e793aca03",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -696,11 +621,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1376,
+      "fetched_count": 1377,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 373,
-      "checked_at": "2026-11-10T20:41:53.463431Z"
+      "latency_ms": 611,
+      "checked_at": "2026-11-11T04:01:27.002554Z"
     },
     {
       "source_id": "openai-skills",
@@ -711,8 +636,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 313,
-      "checked_at": "2026-11-10T20:41:53.777360Z"
+      "latency_ms": 203,
+      "checked_at": "2026-11-11T04:01:27.206209Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -721,10 +646,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 288,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 165,
-      "checked_at": "2026-11-10T20:41:53.945298Z"
+      "latency_ms": 137,
+      "checked_at": "2026-11-11T04:01:27.347940Z"
     },
     {
       "source_id": "google-deepmind",
@@ -735,8 +660,8 @@
       "fetched_count": 100,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 294,
-      "checked_at": "2026-11-10T20:41:54.241028Z"
+      "latency_ms": 359,
+      "checked_at": "2026-11-11T04:01:27.709170Z"
     },
     {
       "source_id": "google-ai",
@@ -747,8 +672,8 @@
       "fetched_count": 20,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 375,
-      "checked_at": "2026-11-10T20:41:54.617024Z"
+      "latency_ms": 304,
+      "checked_at": "2026-11-11T04:01:28.014448Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -757,10 +682,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 902,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 239,
-      "checked_at": "2026-11-10T20:41:54.863157Z"
+      "latency_ms": 393,
+      "checked_at": "2026-11-11T04:01:28.420920Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -771,8 +696,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 296,
-      "checked_at": "2026-11-10T20:41:55.159620Z"
+      "latency_ms": 495,
+      "checked_at": "2026-11-11T04:01:28.916439Z"
     },
     {
       "source_id": "github-changelog",
@@ -781,10 +706,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-11-10T20:41:55.190722Z"
+      "latency_ms": 57,
+      "checked_at": "2026-11-11T04:01:28.974668Z"
     },
     {
       "source_id": "aihot",
@@ -793,10 +718,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 14,
+      "kept_count": 12,
       "error": null,
-      "latency_ms": 3112,
-      "checked_at": "2026-11-10T20:41:58.304501Z"
+      "latency_ms": 3441,
+      "checked_at": "2026-11-11T04:01:32.417904Z"
     }
   ],
   "control_notes": {
