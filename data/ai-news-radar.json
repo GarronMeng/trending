@@ -1,32 +1,28 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-11T21:02:50.222583Z",
+  "generated_at": "2026-11-12T05:13:35.252168Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 5,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 2,
       "top_sources": [
-        [
-          "OpenAI News",
-          2
-        ],
         [
           "Google AI Blog",
           1
         ],
         [
-          "Hugging Face Blog",
+          "OpenAI News",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          4
+          2
         ],
         [
           "gemini",
@@ -47,38 +43,22 @@
         [
           "chatgpt",
           1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "eval",
-          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          5
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "anthropic",
-          2
+          3
         ],
         [
           "api",
@@ -89,23 +69,7 @@
           2
         ],
         [
-          "claude",
-          2
-        ],
-        [
           "gemini",
-          2
-        ],
-        [
-          "智能体",
-          1
-        ],
-        [
-          "大模型",
-          1
-        ],
-        [
-          "benchmark",
           1
         ],
         [
@@ -113,31 +77,15 @@
           1
         ],
         [
-          "mcp",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
-        ],
-        [
-          "api",
+          "agent",
           1
         ],
         [
-          "API",
+          "openai",
+          1
+        ],
+        [
+          "anthropic",
           1
         ]
       ]
@@ -166,28 +114,6 @@
       "is_ai_related": true
     },
     {
-      "id": "55af614df52202831741c9017524d1e99d3452e9",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 MAMUBench：单一智能体协调在四类环境中均胜过每个用户各自的智能体团队",
-      "url": "https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp",
-      "published_at": "2026-11-11T00:00:00Z",
-      "summary": "Anthropic Fellows Program 团队构建四个多用户多智能体模拟环境（共享 API token 预算、诊所日历、团体订餐或旅行预订、合并队列），测试 Anthropic、OpenAI 和 Alibaba 的前沿模型，并发布其中三个环境作为基准 MAMUBench。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "2bec437dddbaf66f99a6e5232be27befaf29f037",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -202,65 +128,6 @@
       "relevance_reasons": [
         "strong:chatgpt",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b582b6234275b4f4ea8956d28e65d48e07a5602b",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
-      "url": "https://huggingface.co/blog/qvac/botpsy",
-      "published_at": "2026-11-11T05:01:16Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5f5a7e34e5c3000944f648abb7b990e43116864d",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub App support for Enterprise Copilot seat management",
-      "url": "https://github.blog/changelog/2026-11-10-github-app-support-for-enterprise-copilot-seat-management",
-      "published_at": "2026-11-11T00:10:31Z",
-      "summary": "Enterprise GitHub Apps can now call the enterprise-level Copilot seat management APIs to control which users and enterprise teams are assigned Copilot seats. The Copilot seat management APIs are accessible… The post GitHub App support for Enterprise Copilot seat management appeared first on The GitHub Blog .",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:copilot",
-        "weak:API",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5728cf655afefdcae6087de62d9efeb257a3200d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Fable 5.2 实测观察：大模型正用代码吞噬审美与创作",
-      "url": "https://aihot.news/items/uditkv6u7rrzmtj1nx7pxbgjj",
-      "published_at": "2026-11-10T23:56:00Z",
-      "summary": "作者实测 Claude Fable 5.2 与 Gemini 4 Carbon 并对比后认为，Fable 5.2 的突出差异在于审美，这是无法用 Benchmark 评估但可直观感受的东西。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uditkv6u7rrzmtj1nx7pxbgjj",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:gemini",
-        "strong:大模型",
-        "weak:benchmark",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -286,20 +153,22 @@
       "is_ai_related": true
     },
     {
-      "id": "244bac67367077ae6b4c089ae69e6d385a1e5dc6",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
-      "url": "https://openai.com/index/jiostar-vijay-seshadri",
-      "published_at": "2026-11-11T00:00:00Z",
-      "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
-      "relevance_score": 2,
+      "id": "4aec82861dc56d4cec643f906d5196549856dca7",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenRouter 实测六模型并给出四层防护，解决 AI Agent 无限循环烧钱问题",
+      "url": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
+      "published_at": "2026-11-12T00:00:00Z",
+      "summary": "OpenRouter 发布教程，讲解 AI Agent 因工具反复失败而陷入无限循环的成因，并给出四层防护：doom-loop 检测、loopKey 参数归一化、stopWhen 步数与成本上限、API key 信用额度。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "weak:eval",
-        "source_prior:official_ai"
+        "strong:agent",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -321,25 +190,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "fc86a1f86ebb933f22d163dbf329f1eb68c474da",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenRouter 实测 MCP vs CLI vs Skills 的上下文 token 成本",
-      "url": "https://aihot.news/items/wkpj021rmg6sgthgj9zwevei4",
-      "published_at": "2026-11-11T00:00:00Z",
-      "summary": "OpenRouter 实测同一 GitHub 任务下 MCP、CLI 与 skill 的 token 成本：在 Claude Sonnet 5.5 上 CLI 用 1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wkpj021rmg6sgthgj9zwevei4",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:mcp",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -350,10 +200,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1381,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 582,
-      "checked_at": "2026-11-11T21:02:46.352759Z"
+      "latency_ms": 423,
+      "checked_at": "2026-11-12T05:13:30.608696Z"
     },
     {
       "source_id": "openai-skills",
@@ -364,8 +214,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 201,
-      "checked_at": "2026-11-11T21:02:46.554240Z"
+      "latency_ms": 360,
+      "checked_at": "2026-11-12T05:13:30.968923Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -376,8 +226,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 110,
-      "checked_at": "2026-11-11T21:02:46.668445Z"
+      "latency_ms": 92,
+      "checked_at": "2026-11-12T05:13:31.064866Z"
     },
     {
       "source_id": "google-deepmind",
@@ -388,8 +238,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 102,
-      "checked_at": "2026-11-11T21:02:46.772451Z"
+      "latency_ms": 134,
+      "checked_at": "2026-11-12T05:13:31.200788Z"
     },
     {
       "source_id": "google-ai",
@@ -400,8 +250,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 230,
-      "checked_at": "2026-11-11T21:02:47.003049Z"
+      "latency_ms": 223,
+      "checked_at": "2026-11-12T05:13:31.424321Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -410,10 +260,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 904,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 265,
-      "checked_at": "2026-11-11T21:02:47.281294Z"
+      "latency_ms": 223,
+      "checked_at": "2026-11-12T05:13:31.657051Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -424,8 +274,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 230,
-      "checked_at": "2026-11-11T21:02:47.511604Z"
+      "latency_ms": 509,
+      "checked_at": "2026-11-12T05:13:32.166873Z"
     },
     {
       "source_id": "github-changelog",
@@ -434,10 +284,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-11-11T21:02:47.538678Z"
+      "latency_ms": 25,
+      "checked_at": "2026-11-12T05:13:32.192028Z"
     },
     {
       "source_id": "aihot",
@@ -446,10 +296,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 2674,
-      "checked_at": "2026-11-11T21:02:50.213953Z"
+      "latency_ms": 3052,
+      "checked_at": "2026-11-12T05:13:35.244919Z"
     }
   ],
   "control_notes": {
