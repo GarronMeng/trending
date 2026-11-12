@@ -1,18 +1,26 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-12T16:57:17.277981Z",
+  "generated_at": "2026-11-12T21:17:31.462959Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 14,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 6,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          3
+        ],
+        [
+          "Hugging Face Blog",
+          1
+        ],
+        [
+          "Google DeepMind",
+          1
         ],
         [
           "Google AI Blog",
@@ -22,30 +30,30 @@
       "top_keywords": [
         [
           "official_ai",
-          3
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "multimodal",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
+          6
         ],
         [
           "openai",
+          2
+        ],
+        [
+          "gemini",
+          2
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
           1
         ],
         [
           "tool",
+          1
+        ],
+        [
+          "llm",
           1
         ],
         [
@@ -56,44 +64,76 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 7,
       "top_sources": [
         [
           "AI Hot",
-          3
+          7
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
+          7
+        ],
+        [
+          "gemini",
           3
         ],
         [
           "api",
-          2
+          3
         ],
         [
           "API",
+          3
+        ],
+        [
+          "claude",
+          3
+        ],
+        [
+          "deepmind",
           2
         ],
         [
-          "gemini",
+          "anthropic",
+          2
+        ],
+        [
+          "智能体",
           1
         ],
         [
-          "多模态",
+          "工作流",
+          1
+        ],
+        [
+          "开发者",
+          1
+        ],
+        [
+          "评测",
           1
         ],
         [
           "agent",
           1
-        ],
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
         [
-          "anthropic",
+          "GitHub Changelog",
           1
-        ],
+        ]
+      ],
+      "top_keywords": [
         [
-          "claude",
+          "actions",
           1
         ]
       ]
@@ -101,23 +141,45 @@
   },
   "items": [
     {
-      "id": "a7369ee37804b23c21c412c29d33f104f93db9ec",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
+      "id": "b4d1d89324bd50ce790805a666545bbd3df1a6e2",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api",
-      "published_at": "2026-11-11T18:00:00Z",
-      "summary": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "url": "https://openai.com/index/amplitude",
+      "published_at": "2026-11-12T20:00:00Z",
+      "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
       "relevance_score": 7,
       "relevance_reasons": [
-        "strong:gemini",
-        "strong:multimodal",
-        "weak:api",
-        "weak:API",
+        "strong:openai",
+        "strong:agent",
+        "strong:agents",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "349a6901e7061f0498781e6feaafd44d316bb4c3",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google DeepMind 发布 Gemini 4 Hydrogen",
+      "url": "https://aihot.news/items/uy1ayrrlqx1snqsv4lub7whsa",
+      "published_at": "2026-11-12T18:00:50Z",
+      "summary": "Google DeepMind 发布 Gemini 4 Hydrogen，定位快速执行日常编码与智能体工作流，面向 Gemini API、AI Studio、Gemini 应用、Google Search 等全层级开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uy1ayrrlqx1snqsv4lub7whsa",
+      "relevance_score": 8,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:deepmind",
+        "strong:智能体",
+        "weak:api",
+        "weak:工作流",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -141,6 +203,82 @@
       "is_ai_related": true
     },
     {
+      "id": "4c28ce21b02587faffcb2aac2c91b974e902a19f",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "published_at": "2026-11-12T19:07:35Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:llm",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0844eff497b01e49824cd120f5cd2ce62c80edd4",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google Gemini 开放推送，覆盖开发者、企业与普通用户渠道",
+      "url": "https://aihot.news/items/v26fsdyhbktgyuedmrx25p58y",
+      "published_at": "2026-11-12T18:02:37Z",
+      "summary": "Google DeepMind 宣布开始向各渠道推送：开发者可在 Google AI Studio、Android Studio 中用 Gemini API，付费 Google AI Pro 和 Ultra 订阅者可在 Google Antigravity 中使用；企业可通过 Gemini for business 和 Google Antigravity 部署；所有用户可在 Google Search 和 Gemini 应用模型下拉菜单中访问。详情见 https://goo.gle/4zDCs8N。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v26fsdyhbktgyuedmrx25p58y",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:deepmind",
+        "weak:api",
+        "weak:开发者",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b32f4f12964ab6534ca50eb38a4b36736970389d",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Introducing Gemini 4 Hydrogen",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen",
+      "published_at": "2026-11-12T18:00:50Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0419dbfe2debb68a7e0d0c058e05a441b96e0183",
+      "source_id": "google-ai",
+      "source_name": "Google AI Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade",
+      "published_at": "2026-11-12T18:00:00Z",
+      "summary": "Rotating carousel of cards with text \"Gemini 4 Hydrogen\" \"Now in Google Search\" and examples from the Google Search UI",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "902178ef1d52b7e04eb89e2669cda84440173abc",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -159,23 +297,39 @@
       "is_ai_related": true
     },
     {
-      "id": "34eae019f0faad58fdb38f40ab029bf2b0dfe5de",
+      "id": "7da85e7a710ea145594f4b12a5f1b9ebd70f2820",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Google 发布 Gemini Decisions API 与 Gemini Decision 1 模型，专注快速多模态封闭式决策",
-      "url": "https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw",
-      "published_at": "2026-11-11T18:00:00Z",
-      "summary": "Google 推出 Gemini Decisions API，由新模型 Gemini Decision 1 驱动，可在 150-250ms 端到端延迟内对文本、图像、音频、视频和 PDF（最多 256K tokens）一次性评估最多 1000 个是/否、多选和评分题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw",
-      "relevance_score": 5,
+      "title": "Artificial Analysis 评测 Gemini 4 Hydrogen：智能指数 54，接近 Sonnet 5.5 且成本约其 32%",
+      "url": "https://aihot.news/items/ajvxvhu8bh001pourbhhjl0ir",
+      "published_at": "2026-11-12T18:07:16Z",
+      "summary": "Artificial Analysis 评测 Google 新发布的 Gemini 4 Hydrogen：新增 xhigh 推理档在 Intelligence Index 得 54 分，比 Claude Sonnet 5.5 (max) 和 GPT-6.1 Sol (max) 低 1 分，每任务成本约为 Sonnet 的 32%，但约为 GPT-6.1 Sol 的 2.5 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ajvxvhu8bh001pourbhhjl0ir",
+      "relevance_score": 4,
       "relevance_reasons": [
+        "strong:claude",
         "strong:gemini",
-        "strong:多模态",
-        "weak:api",
-        "weak:API",
+        "weak:评测",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "5839e808fb9f26a3078be0c6235712ab5ee646f2",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Actions for ARM32 Linux & Windows retirement",
+      "url": "https://github.blog/changelog/2026-11-12-actions-for-arm32-linux-windows-retirement",
+      "published_at": "2026-11-12T20:59:36Z",
+      "summary": "GitHub Actions hosted runners will be ending support for ARM32 job execution on Windows and Linux by 8th Dec 2026. This follows our end of support for node20 where Node… The post Actions for ARM32 Linux & Windows retirement appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "source:actions"
       ],
       "is_ai_related": true
     },
@@ -200,6 +354,25 @@
       "is_ai_related": true
     },
     {
+      "id": "024a13f5818c2a42979ae717a469c936c2ddb48a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 推出 Claude Meetings，Claude 以参会者身份加入视频会议",
+      "url": "https://aihot.news/items/l36ne5q2gsdx6thyia7fi10kn",
+      "published_at": "2026-11-12T00:00:00Z",
+      "summary": "Anthropic 推出 Claude Meetings beta，Claude 可作为可见参会者加入视频通话，在会中回答提问、协作创建文档和白板，并生成笔记和行动项。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l36ne5q2gsdx6thyia7fi10kn",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "c33b00afaa3d45b009cad7e4b44d0b0aa2a0cdf0",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -217,6 +390,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "325d61148b4e5e30822085b43d9b8ed4c51a064b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 用自动化红队训练提升 GPT-6 Astra 和 Sol 在高风险领域的模糊鲁棒性",
+      "url": "https://aihot.news/items/yg97h3u5vthadivuv5po5f0aw",
+      "published_at": "2026-11-12T08:00:00Z",
+      "summary": "OpenAI 研究团队介绍如何用自动化红队提升模型在网络、生物等高风险双用途领域的模糊鲁棒性，通过扩大攻击者模型的测试时算力迭代搜索越狱，并要求攻击在多次重复测试中成功（worst@n），生成可靠的对抗训练数据用于 RL 训练。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yg97h3u5vthadivuv5po5f0aw",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -226,11 +418,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1383,
-      "kept_count": 2,
+      "fetched_count": 1384,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 376,
-      "checked_at": "2026-11-12T16:57:13.963342Z"
+      "latency_ms": 358,
+      "checked_at": "2026-11-12T21:17:26.250288Z"
     },
     {
       "source_id": "openai-skills",
@@ -241,8 +433,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 355,
-      "checked_at": "2026-11-12T16:57:14.319074Z"
+      "latency_ms": 196,
+      "checked_at": "2026-11-12T21:17:26.447098Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -253,8 +445,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 86,
-      "checked_at": "2026-11-12T16:57:14.407547Z"
+      "latency_ms": 78,
+      "checked_at": "2026-11-12T21:17:26.527307Z"
     },
     {
       "source_id": "google-deepmind",
@@ -263,10 +455,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 323,
-      "checked_at": "2026-11-12T16:57:14.731370Z"
+      "latency_ms": 351,
+      "checked_at": "2026-11-12T21:17:26.879140Z"
     },
     {
       "source_id": "google-ai",
@@ -278,7 +470,7 @@
       "kept_count": 1,
       "error": null,
       "latency_ms": 197,
-      "checked_at": "2026-11-12T16:57:14.929300Z"
+      "checked_at": "2026-11-12T21:17:27.076785Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -286,11 +478,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 905,
-      "kept_count": 0,
+      "fetched_count": 906,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 233,
-      "checked_at": "2026-11-12T16:57:15.169386Z"
+      "latency_ms": 303,
+      "checked_at": "2026-11-12T21:17:27.386556Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -301,8 +493,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 311,
-      "checked_at": "2026-11-12T16:57:15.481368Z"
+      "latency_ms": 394,
+      "checked_at": "2026-11-12T21:17:27.781213Z"
     },
     {
       "source_id": "github-changelog",
@@ -311,10 +503,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-11-12T16:57:15.508547Z"
+      "latency_ms": 46,
+      "checked_at": "2026-11-12T21:17:27.827890Z"
     },
     {
       "source_id": "aihot",
@@ -323,10 +515,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 1762,
-      "checked_at": "2026-11-12T16:57:17.271284Z"
+      "latency_ms": 3627,
+      "checked_at": "2026-11-12T21:17:31.456350Z"
     }
   ],
   "control_notes": {
