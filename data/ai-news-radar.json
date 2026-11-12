@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-12T15:29:52.612654Z",
+  "generated_at": "2026-11-12T16:57:17.277981Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 6,
   "groups": {
     "official": {
       "group": "official",
@@ -56,24 +56,24 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          2
+          3
         ]
       ],
       "top_keywords": [
+        [
+          "aggregate_noise",
+          3
+        ],
         [
           "api",
           2
         ],
         [
           "API",
-          2
-        ],
-        [
-          "aggregate_noise",
           2
         ],
         [
@@ -86,6 +86,14 @@
         ],
         [
           "agent",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
           1
         ]
       ]
@@ -190,6 +198,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "c33b00afaa3d45b009cad7e4b44d0b0aa2a0cdf0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 发布 Claude Tag 创业公司使用指南",
+      "url": "https://aihot.news/items/djhxmxr9hq0ekn8iwdqt5usih",
+      "published_at": "2026-11-12T00:00:00Z",
+      "summary": "Anthropic 发布 Claude Tag（beta）创业公司使用指南，基于对 Kikoff、NavigateAI、Orderful、Moritz 等 8 家高增长创业公司的访谈，总结了 on-call 分诊、Thread to PR、公司大脑、自助数据、例行报告五大场景及频道配置建议。 🔗 阅读原文 via AIHOT · https://aihot.news/items/djhxmxr9hq0ekn8iwdqt5usih",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -202,8 +229,8 @@
       "fetched_count": 1383,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 719,
-      "checked_at": "2026-11-12T15:29:45.982959Z"
+      "latency_ms": 376,
+      "checked_at": "2026-11-12T16:57:13.963342Z"
     },
     {
       "source_id": "openai-skills",
@@ -214,8 +241,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 199,
-      "checked_at": "2026-11-12T15:29:46.182224Z"
+      "latency_ms": 355,
+      "checked_at": "2026-11-12T16:57:14.319074Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -226,8 +253,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 109,
-      "checked_at": "2026-11-12T15:29:46.295809Z"
+      "latency_ms": 86,
+      "checked_at": "2026-11-12T16:57:14.407547Z"
     },
     {
       "source_id": "google-deepmind",
@@ -238,8 +265,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 106,
-      "checked_at": "2026-11-12T15:29:46.403424Z"
+      "latency_ms": 323,
+      "checked_at": "2026-11-12T16:57:14.731370Z"
     },
     {
       "source_id": "google-ai",
@@ -250,8 +277,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 120,
-      "checked_at": "2026-11-12T15:29:46.524038Z"
+      "latency_ms": 197,
+      "checked_at": "2026-11-12T16:57:14.929300Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -262,8 +289,8 @@
       "fetched_count": 905,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 242,
-      "checked_at": "2026-11-12T15:29:46.780245Z"
+      "latency_ms": 233,
+      "checked_at": "2026-11-12T16:57:15.169386Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -274,8 +301,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 199,
-      "checked_at": "2026-11-12T15:29:46.980147Z"
+      "latency_ms": 311,
+      "checked_at": "2026-11-12T16:57:15.481368Z"
     },
     {
       "source_id": "github-changelog",
@@ -286,8 +313,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 25,
-      "checked_at": "2026-11-12T15:29:47.006089Z"
+      "latency_ms": 27,
+      "checked_at": "2026-11-12T16:57:15.508547Z"
     },
     {
       "source_id": "aihot",
@@ -296,10 +323,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 5597,
-      "checked_at": "2026-11-12T15:29:52.604721Z"
+      "latency_ms": 1762,
+      "checked_at": "2026-11-12T16:57:17.271284Z"
     }
   ],
   "control_notes": {

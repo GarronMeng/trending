@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>5</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>6</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>3</b><span>官方源条目</span></div>
-        <div class="stat"><b>2</b><span>聚合源条目</span></div>
+        <div class="stat"><b>3</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-12T15:29:52.613723Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-12T16:57:17.278721Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -117,21 +117,34 @@
       <p class='summary'>OpenRouter 发布教程，讲解 AI Agent 因工具反复失败而陷入无限循环的成因，并给出四层防护：doom-loop 检测、loopKey 参数归一化、stopWhen 步数与成本上限、API key 信用额度。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde</p>
       <div class="tags"><span>strong:agent</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
     </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-11-12T00:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/djhxmxr9hq0ekn8iwdqt5usih" target="_blank" rel="noreferrer">Anthropic 发布 Claude Tag 创业公司使用指南</a></h3>
+      <p class='summary'>Anthropic 发布 Claude Tag（beta）创业公司使用指南，基于对 Kikoff、NavigateAI、Orderful、Moritz 等 8 家高增长创业公司的访谈，总结了 on-call 分诊、Thread to PR、公司大脑、自助数据、例行报告五大场景及频道配置建议。 🔗 阅读原文 via AIHOT · https://aihot.news/items/djhxmxr9hq0ekn8iwdqt5usih</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1383</td><td>2</td><td>719ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>199ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>288</td><td>0</td><td>109ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>106ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>120ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>905</td><td>0</td><td>242ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>199ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>25ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>2</td><td>5597ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1383</td><td>2</td><td>376ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>355ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>288</td><td>0</td><td>86ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>323ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>197ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>905</td><td>0</td><td>233ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>311ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>27ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>3</td><td>1762ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
