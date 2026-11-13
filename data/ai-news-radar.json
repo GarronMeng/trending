@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-13T04:29:34.803782Z",
+  "generated_at": "2026-11-13T11:37:21.421322Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 11,
   "groups": {
     "official": {
       "group": "official",
-      "count": 7,
+      "count": 6,
       "top_sources": [
         [
           "OpenAI News",
-          3
+          2
         ],
         [
           "GitHub AI & ML",
@@ -34,14 +34,10 @@
       "top_keywords": [
         [
           "official_ai",
-          7
+          6
         ],
         [
           "agent",
-          2
-        ],
-        [
-          "codex",
           2
         ],
         [
@@ -58,6 +54,10 @@
         ],
         [
           "chatgpt",
+          1
+        ],
+        [
+          "codex",
           1
         ],
         [
@@ -89,15 +89,15 @@
           3
         ],
         [
-          "deepmind",
-          2
-        ],
-        [
           "api",
-          2
+          3
         ],
         [
           "API",
+          3
+        ],
+        [
+          "deepmind",
           2
         ],
         [
@@ -121,11 +121,7 @@
           1
         ],
         [
-          "openai",
-          1
-        ],
-        [
-          "自动化",
+          "agent",
           1
         ]
       ]
@@ -306,24 +302,6 @@
       "is_ai_related": true
     },
     {
-      "id": "902178ef1d52b7e04eb89e2669cda84440173abc",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Holiday Extras is rethinking what it can build with Codex",
-      "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
-      "published_at": "2026-11-12T09:30:00Z",
-      "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:codex",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "7da85e7a710ea145594f4b12a5f1b9ebd70f2820",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -344,6 +322,26 @@
       "is_ai_related": true
     },
     {
+      "id": "fd7aa8d04a48c10961236ba15936ee8bd9c9b2a1",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "腾讯混元发布实时语音模型 Hy Realtime，新增工具调用与唱歌能力",
+      "url": "https://aihot.news/items/qp41q77z9ge5hsyrh9kra0c7k",
+      "published_at": "2026-11-13T08:32:39Z",
+      "summary": "腾讯混元发布全新实时语音模型 Hy Realtime，在语音理解、指令遵循、拟人化表达等基础能力外新增 Agentic 工具调用与唱歌能力，已在元宝语音通话、腾讯客服上线，近期将上线腾讯云提供 API 服务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qp41q77z9ge5hsyrh9kra0c7k",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "5839e808fb9f26a3078be0c6235712ab5ee646f2",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -359,25 +357,6 @@
         "source:actions"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "325d61148b4e5e30822085b43d9b8ed4c51a064b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 用自动化红队训练提升 GPT-6 Astra 和 Sol 在高风险领域的模糊鲁棒性",
-      "url": "https://aihot.news/items/yg97h3u5vthadivuv5po5f0aw",
-      "published_at": "2026-11-12T08:00:00Z",
-      "summary": "OpenAI 研究团队介绍如何用自动化红队提升模型在网络、生物等高风险双用途领域的模糊鲁棒性，通过扩大攻击者模型的测试时算力迭代搜索越狱，并要求攻击在多次重复测试中成功（worst@n），生成可靠的对抗训练数据用于 RL 训练。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yg97h3u5vthadivuv5po5f0aw",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:自动化",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -388,10 +367,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1385,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 593,
-      "checked_at": "2026-11-13T04:29:30.611766Z"
+      "latency_ms": 474,
+      "checked_at": "2026-11-13T11:37:11.926645Z"
     },
     {
       "source_id": "openai-skills",
@@ -402,8 +381,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 184,
-      "checked_at": "2026-11-13T04:29:30.796623Z"
+      "latency_ms": 367,
+      "checked_at": "2026-11-13T11:37:12.294324Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -414,8 +393,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 131,
-      "checked_at": "2026-11-13T04:29:30.931477Z"
+      "latency_ms": 87,
+      "checked_at": "2026-11-13T11:37:12.384398Z"
     },
     {
       "source_id": "google-deepmind",
@@ -426,8 +405,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 344,
-      "checked_at": "2026-11-13T04:29:31.277188Z"
+      "latency_ms": 144,
+      "checked_at": "2026-11-13T11:37:12.529825Z"
     },
     {
       "source_id": "google-ai",
@@ -438,8 +417,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 325,
-      "checked_at": "2026-11-13T04:29:31.602766Z"
+      "latency_ms": 363,
+      "checked_at": "2026-11-13T11:37:12.893415Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -450,8 +429,8 @@
       "fetched_count": 906,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 366,
-      "checked_at": "2026-11-13T04:29:31.978564Z"
+      "latency_ms": 286,
+      "checked_at": "2026-11-13T11:37:13.190054Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -462,8 +441,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 430,
-      "checked_at": "2026-11-13T04:29:32.409685Z"
+      "latency_ms": 470,
+      "checked_at": "2026-11-13T11:37:13.660948Z"
     },
     {
       "source_id": "github-changelog",
@@ -474,8 +453,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 45,
-      "checked_at": "2026-11-13T04:29:32.455236Z"
+      "latency_ms": 24,
+      "checked_at": "2026-11-13T11:37:13.685313Z"
     },
     {
       "source_id": "aihot",
@@ -486,8 +465,8 @@
       "fetched_count": 50,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 2340,
-      "checked_at": "2026-11-13T04:29:34.796324Z"
+      "latency_ms": 7727,
+      "checked_at": "2026-11-13T11:37:21.413802Z"
     }
   ],
   "control_notes": {
