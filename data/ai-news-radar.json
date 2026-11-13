@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-13T14:46:57.650039Z",
+  "generated_at": "2026-11-13T16:38:56.187837Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,11 +8,11 @@
   "groups": {
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 6,
       "top_sources": [
         [
           "OpenAI News",
-          1
+          2
         ],
         [
           "GitHub AI & ML",
@@ -34,10 +34,14 @@
       "top_keywords": [
         [
           "official_ai",
-          5
+          6
         ],
         [
           "agent",
+          3
+        ],
+        [
+          "agents",
           2
         ],
         [
@@ -45,11 +49,15 @@
           2
         ],
         [
-          "openai",
+          "chatgpt",
           1
         ],
         [
-          "agents",
+          "codex",
+          1
+        ],
+        [
+          "openai",
           1
         ],
         [
@@ -64,24 +72,16 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          5
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
-        ],
-        [
-          "api",
-          4
-        ],
-        [
-          "API",
           4
         ],
         [
@@ -89,11 +89,15 @@
           3
         ],
         [
-          "deepmind",
-          2
+          "api",
+          3
         ],
         [
-          "开发者",
+          "API",
+          3
+        ],
+        [
+          "deepmind",
           2
         ],
         [
@@ -102,6 +106,10 @@
         ],
         [
           "工作流",
+          1
+        ],
+        [
+          "开发者",
           1
         ],
         [
@@ -144,6 +152,27 @@
     }
   },
   "items": [
+    {
+      "id": "6c65d3cc4e8304a32476c43731cc93cdfe6e94a1",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Introducing ChatGPT Wallet",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "published_at": "2026-11-13T15:00:00Z",
+      "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "cbacedd2e811f0e5fa2fcfb9dbd66fa1923ba8fb",
       "source_id": "openai-news",
@@ -356,26 +385,6 @@
         "source:actions"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "8183b761b6fa29abea7540fbbad727baa6239638",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "DeepSeek 开放全家桶应用 API：联网搜索、文件输入、阅读链接等能力面向开发者",
-      "url": "https://aihot.news/items/nnbnoebf6mvo97usmwj5wziyl",
-      "published_at": "2026-11-12T16:00:00Z",
-      "summary": "DeepSeek 在 API 中开放此前 App 对话服务所用的能力，开发者开启对应参数即可使用，工具调用与上下文拼接由服务端完成。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nnbnoebf6mvo97usmwj5wziyl",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:api",
-        "weak:开发者",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -385,11 +394,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1385,
-      "kept_count": 1,
+      "fetched_count": 1386,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 560,
-      "checked_at": "2026-11-13T14:46:53.497181Z"
+      "latency_ms": 410,
+      "checked_at": "2026-11-13T16:38:49.007401Z"
     },
     {
       "source_id": "openai-skills",
@@ -400,8 +409,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 331,
-      "checked_at": "2026-11-13T14:46:53.829055Z"
+      "latency_ms": 376,
+      "checked_at": "2026-11-13T16:38:49.384243Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -412,8 +421,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 117,
-      "checked_at": "2026-11-13T14:46:53.949544Z"
+      "latency_ms": 90,
+      "checked_at": "2026-11-13T16:38:49.477638Z"
     },
     {
       "source_id": "google-deepmind",
@@ -424,8 +433,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 233,
-      "checked_at": "2026-11-13T14:46:54.184538Z"
+      "latency_ms": 213,
+      "checked_at": "2026-11-13T16:38:49.692185Z"
     },
     {
       "source_id": "google-ai",
@@ -436,8 +445,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 205,
-      "checked_at": "2026-11-13T14:46:54.390449Z"
+      "latency_ms": 244,
+      "checked_at": "2026-11-13T16:38:49.936942Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -448,8 +457,8 @@
       "fetched_count": 907,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 320,
-      "checked_at": "2026-11-13T14:46:54.721337Z"
+      "latency_ms": 245,
+      "checked_at": "2026-11-13T16:38:50.191965Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -460,8 +469,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 528,
-      "checked_at": "2026-11-13T14:46:55.249928Z"
+      "latency_ms": 223,
+      "checked_at": "2026-11-13T16:38:50.415647Z"
     },
     {
       "source_id": "github-changelog",
@@ -472,8 +481,8 @@
       "fetched_count": 10,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-11-13T14:46:55.279410Z"
+      "latency_ms": 22,
+      "checked_at": "2026-11-13T16:38:50.438556Z"
     },
     {
       "source_id": "aihot",
@@ -482,10 +491,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 2361,
-      "checked_at": "2026-11-13T14:46:57.642544Z"
+      "latency_ms": 5741,
+      "checked_at": "2026-11-13T16:38:56.180893Z"
     }
   ],
   "control_notes": {
