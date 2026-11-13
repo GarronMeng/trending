@@ -1,18 +1,22 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-12T21:17:31.462959Z",
+  "generated_at": "2026-11-13T04:29:34.803782Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 14,
+  "item_count": 12,
   "groups": {
     "official": {
       "group": "official",
-      "count": 6,
+      "count": 7,
       "top_sources": [
         [
           "OpenAI News",
           3
+        ],
+        [
+          "GitHub AI & ML",
+          1
         ],
         [
           "Hugging Face Blog",
@@ -30,10 +34,14 @@
       "top_keywords": [
         [
           "official_ai",
-          6
+          7
         ],
         [
-          "openai",
+          "agent",
+          2
+        ],
+        [
+          "codex",
           2
         ],
         [
@@ -41,11 +49,15 @@
           2
         ],
         [
-          "agent",
+          "openai",
           1
         ],
         [
           "agents",
+          1
+        ],
+        [
+          "chatgpt",
           1
         ],
         [
@@ -55,41 +67,25 @@
         [
           "llm",
           1
-        ],
-        [
-          "codex",
-          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          7
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
+          4
         ],
         [
           "gemini",
-          3
-        ],
-        [
-          "api",
-          3
-        ],
-        [
-          "API",
-          3
-        ],
-        [
-          "claude",
           3
         ],
         [
@@ -97,7 +93,11 @@
           2
         ],
         [
-          "anthropic",
+          "api",
+          2
+        ],
+        [
+          "API",
           2
         ],
         [
@@ -113,11 +113,19 @@
           1
         ],
         [
+          "claude",
+          1
+        ],
+        [
           "评测",
           1
         ],
         [
-          "agent",
+          "openai",
+          1
+        ],
+        [
+          "自动化",
           1
         ]
       ]
@@ -141,14 +149,14 @@
   },
   "items": [
     {
-      "id": "b4d1d89324bd50ce790805a666545bbd3df1a6e2",
+      "id": "cbacedd2e811f0e5fa2fcfb9dbd66fa1923ba8fb",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
       "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
-      "url": "https://openai.com/index/amplitude",
+      "url": "https://openai.com/business/customer-stories/amplitude",
       "published_at": "2026-11-12T20:00:00Z",
       "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
       "relevance_score": 7,
@@ -184,19 +192,38 @@
       "is_ai_related": true
     },
     {
-      "id": "1bfb1c3f3dc7a78a53e88476e2afbdb9286271bd",
+      "id": "c05a9d4bfd6a6801b4445f7b528ffbaf899eb20a",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Supporting research on AI and children’s safety",
-      "url": "https://openai.com/index/children-first-declaration",
-      "published_at": "2026-11-12T00:00:00Z",
-      "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
+      "title": "Gondola doubles revenue as its team builds more with Codex",
+      "url": "https://openai.com/business/customer-stories/gondola",
+      "published_at": "2026-11-12T12:00:00Z",
+      "summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ec5ca0f7b7c590961f75649cd0a0d36f79783ca6",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "Build once, run on any agent: A practical guide to agent skills",
+      "url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills",
+      "published_at": "2026-11-12T22:54:52Z",
+      "summary": "Agent skills capture repeatable engineering work in files teams can review and reuse, while tools, project context, and permissions remain specific to the host that runs them. The post Build once, run on any agent: A practical guide to agent skills appeared first on The GitHub Blog .",
       "relevance_score": 4,
       "relevance_reasons": [
-        "strong:openai",
+        "strong:agent",
         "weak:tool",
         "source_prior:official_ai"
       ],
@@ -334,64 +361,6 @@
       "is_ai_related": true
     },
     {
-      "id": "4aec82861dc56d4cec643f906d5196549856dca7",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenRouter 实测六模型并给出四层防护，解决 AI Agent 无限循环烧钱问题",
-      "url": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
-      "published_at": "2026-11-12T00:00:00Z",
-      "summary": "OpenRouter 发布教程，讲解 AI Agent 因工具反复失败而陷入无限循环的成因，并给出四层防护：doom-loop 检测、loopKey 参数归一化、stopWhen 步数与成本上限、API key 信用额度。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "024a13f5818c2a42979ae717a469c936c2ddb48a",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 推出 Claude Meetings，Claude 以参会者身份加入视频会议",
-      "url": "https://aihot.news/items/l36ne5q2gsdx6thyia7fi10kn",
-      "published_at": "2026-11-12T00:00:00Z",
-      "summary": "Anthropic 推出 Claude Meetings beta，Claude 可作为可见参会者加入视频通话，在会中回答提问、协作创建文档和白板，并生成笔记和行动项。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l36ne5q2gsdx6thyia7fi10kn",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c33b00afaa3d45b009cad7e4b44d0b0aa2a0cdf0",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Claude Tag 创业公司使用指南",
-      "url": "https://aihot.news/items/djhxmxr9hq0ekn8iwdqt5usih",
-      "published_at": "2026-11-12T00:00:00Z",
-      "summary": "Anthropic 发布 Claude Tag（beta）创业公司使用指南，基于对 Kikoff、NavigateAI、Orderful、Moritz 等 8 家高增长创业公司的访谈，总结了 on-call 分诊、Thread to PR、公司大脑、自助数据、例行报告五大场景及频道配置建议。 🔗 阅读原文 via AIHOT · https://aihot.news/items/djhxmxr9hq0ekn8iwdqt5usih",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "325d61148b4e5e30822085b43d9b8ed4c51a064b",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -418,11 +387,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1384,
+      "fetched_count": 1385,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 358,
-      "checked_at": "2026-11-12T21:17:26.250288Z"
+      "latency_ms": 593,
+      "checked_at": "2026-11-13T04:29:30.611766Z"
     },
     {
       "source_id": "openai-skills",
@@ -433,8 +402,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 196,
-      "checked_at": "2026-11-12T21:17:26.447098Z"
+      "latency_ms": 184,
+      "checked_at": "2026-11-13T04:29:30.796623Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -445,8 +414,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 78,
-      "checked_at": "2026-11-12T21:17:26.527307Z"
+      "latency_ms": 131,
+      "checked_at": "2026-11-13T04:29:30.931477Z"
     },
     {
       "source_id": "google-deepmind",
@@ -457,8 +426,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 351,
-      "checked_at": "2026-11-12T21:17:26.879140Z"
+      "latency_ms": 344,
+      "checked_at": "2026-11-13T04:29:31.277188Z"
     },
     {
       "source_id": "google-ai",
@@ -469,8 +438,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 197,
-      "checked_at": "2026-11-12T21:17:27.076785Z"
+      "latency_ms": 325,
+      "checked_at": "2026-11-13T04:29:31.602766Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -481,8 +450,8 @@
       "fetched_count": 906,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 303,
-      "checked_at": "2026-11-12T21:17:27.386556Z"
+      "latency_ms": 366,
+      "checked_at": "2026-11-13T04:29:31.978564Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -491,10 +460,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 394,
-      "checked_at": "2026-11-12T21:17:27.781213Z"
+      "latency_ms": 430,
+      "checked_at": "2026-11-13T04:29:32.409685Z"
     },
     {
       "source_id": "github-changelog",
@@ -505,8 +474,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 46,
-      "checked_at": "2026-11-12T21:17:27.827890Z"
+      "latency_ms": 45,
+      "checked_at": "2026-11-13T04:29:32.455236Z"
     },
     {
       "source_id": "aihot",
@@ -515,10 +484,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 3627,
-      "checked_at": "2026-11-12T21:17:31.456350Z"
+      "latency_ms": 2340,
+      "checked_at": "2026-11-13T04:29:34.796324Z"
     }
   ],
   "control_notes": {
