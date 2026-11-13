@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-13T16:38:56.187837Z",
+  "generated_at": "2026-11-13T20:45:22.951792Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,44 +8,24 @@
   "groups": {
     "official": {
       "group": "official",
-      "count": 6,
+      "count": 2,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          1
         ],
         [
           "GitHub AI & ML",
-          1
-        ],
-        [
-          "Hugging Face Blog",
-          1
-        ],
-        [
-          "Google DeepMind",
-          1
-        ],
-        [
-          "Google AI Blog",
           1
         ]
       ],
       "top_keywords": [
         [
-          "official_ai",
-          6
-        ],
-        [
           "agent",
-          3
-        ],
-        [
-          "agents",
           2
         ],
         [
-          "gemini",
+          "official_ai",
           2
         ],
         [
@@ -57,7 +37,35 @@
           1
         ],
         [
-          "openai",
+          "agents",
+          1
+        ],
+        [
+          "tool",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 4,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          4
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          4
+        ],
+        [
+          "gemini",
+          1
+        ],
+        [
+          "agent",
           1
         ],
         [
@@ -65,77 +73,9 @@
           1
         ],
         [
-          "llm",
-          1
-        ]
-      ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 4,
-      "top_sources": [
-        [
-          "AI Hot",
-          4
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          4
-        ],
-        [
-          "gemini",
-          3
-        ],
-        [
-          "api",
-          3
-        ],
-        [
-          "API",
-          3
-        ],
-        [
-          "deepmind",
-          2
-        ],
-        [
-          "智能体",
+          "workflow",
           1
         ],
-        [
-          "工作流",
-          1
-        ],
-        [
-          "开发者",
-          1
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "评测",
-          1
-        ],
-        [
-          "agent",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          2
-        ]
-      ],
-      "top_keywords": [
         [
           "api",
           1
@@ -146,6 +86,66 @@
         ],
         [
           "actions",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 6,
+      "top_sources": [
+        [
+          "AI Hot",
+          6
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          6
+        ],
+        [
+          "agent",
+          3
+        ],
+        [
+          "智能体",
+          3
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "开源模型",
           1
         ]
       ]
@@ -174,44 +174,66 @@
       "is_ai_related": true
     },
     {
-      "id": "cbacedd2e811f0e5fa2fcfb9dbd66fa1923ba8fb",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
+      "id": "da6a2cba0fd831fdace0c46c509bb874309d1b48",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
-      "url": "https://openai.com/business/customer-stories/amplitude",
-      "published_at": "2026-11-12T20:00:00Z",
-      "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
-      "relevance_score": 7,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Gemini 4 Hydrogen in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+      "published_at": "2026-11-13T18:23:48Z",
+      "summary": "Gemini 4 Hydrogen, Google’s latest Flash model, is now generally available in GitHub Copilot. It is designed for fast, efficient agentic coding, tool use, and multistep workflows, with improved instruction… The post Gemini 4 Hydrogen in GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 9,
       "relevance_reasons": [
-        "strong:openai",
+        "strong:gemini",
         "strong:agent",
-        "strong:agents",
-        "source_prior:official_ai"
+        "weak:tool",
+        "weak:workflow",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
     {
-      "id": "349a6901e7061f0498781e6feaafd44d316bb4c3",
+      "id": "4c5fab61978d791b876e5f9deb8c45481e8f4f59",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Google DeepMind 发布 Gemini 4 Hydrogen",
-      "url": "https://aihot.news/items/uy1ayrrlqx1snqsv4lub7whsa",
-      "published_at": "2026-11-12T18:00:50Z",
-      "summary": "Google DeepMind 发布 Gemini 4 Hydrogen，定位快速执行日常编码与智能体工作流，面向 Gemini API、AI Studio、Gemini 应用、Google Search 等全层级开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uy1ayrrlqx1snqsv4lub7whsa",
-      "relevance_score": 8,
+      "title": "Sierra 发布 Personal Agent Protocol（Poppy）v1.0",
+      "url": "https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr",
+      "published_at": "2026-11-13T17:00:00Z",
+      "summary": "Sierra 宣布 Personal Agent Protocol（Poppy）v1.0 正式可用，该协议定义个人智能体如何通过企业智能体、网站和 API 与公司交互，主要基于 MCP、OpenAPI、UCP 等现有标准构建，认证通过 OAuth 由客户控制权限。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr",
+      "relevance_score": 7,
       "relevance_reasons": [
-        "strong:gemini",
-        "strong:deepmind",
+        "strong:agent",
+        "strong:mcp",
         "strong:智能体",
         "weak:api",
-        "weak:工作流",
         "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "f343d9d87d0716eb49fa8e3245ac0d5036ed38ae",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 详解常驻智能体的五个核心架构原语",
+      "url": "https://aihot.news/items/ypeap2t8w4fqqfuvt7mw3wg79",
+      "published_at": "2026-11-13T00:00:00Z",
+      "summary": "Anthropic 发布博客，拆解常驻智能体（always-on agents）背后的架构。这类智能体有状态且可主动行动，其兴起得益于模型判断力提升和智能成本下降，例如长程编码任务上 Opus 5.5 每解决一个任务的成本比 Opus 5 低 78%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ypeap2t8w4fqqfuvt7mw3wg79",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:agent",
+        "strong:agents",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -236,97 +258,77 @@
       "is_ai_related": true
     },
     {
-      "id": "4c28ce21b02587faffcb2aac2c91b974e902a19f",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
-      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
-      "published_at": "2026-11-12T19:07:35Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:llm",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "0844eff497b01e49824cd120f5cd2ce62c80edd4",
+      "id": "bf359839a96f1fe643092841fc25c541d461d21c",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Google Gemini 开放推送，覆盖开发者、企业与普通用户渠道",
-      "url": "https://aihot.news/items/v26fsdyhbktgyuedmrx25p58y",
-      "published_at": "2026-11-12T18:02:37Z",
-      "summary": "Google DeepMind 宣布开始向各渠道推送：开发者可在 Google AI Studio、Android Studio 中用 Gemini API，付费 Google AI Pro 和 Ultra 订阅者可在 Google Antigravity 中使用；企业可通过 Gemini for business 和 Google Antigravity 部署；所有用户可在 Google Search 和 Gemini 应用模型下拉菜单中访问。详情见 https://goo.gle/4zDCs8N。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v26fsdyhbktgyuedmrx25p58y",
-      "relevance_score": 6,
+      "title": "ChatGPT 推出 ChatGPT Wallet，dot 可在用户批准下代为完成购买",
+      "url": "https://aihot.news/items/vot1htumxjgnb0i88rbq3zsuq",
+      "published_at": "2026-11-13T16:44:49Z",
+      "summary": "ChatGPT 官方账号宣布推出 ChatGPT Wallet，dot 可在用户批准下安全地代用户完成购买。智能体支付时不会接触用户的实际卡号信息，每笔购买都需要通过安全检查。该功能即日起在美国向 Pro 订阅用户的 dot 推出，详情见 https://openai.com/index/introducing-chatgpt-wallet/。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vot1htumxjgnb0i88rbq3zsuq",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:gemini",
-        "strong:deepmind",
-        "weak:api",
-        "weak:开发者",
-        "weak:API",
+        "strong:openai",
+        "strong:chatgpt",
+        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "b32f4f12964ab6534ca50eb38a4b36736970389d",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
+      "id": "c5dc819cbdce516b465edaf189e7827b00f195b3",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Introducing Gemini 4 Hydrogen",
-      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen",
-      "published_at": "2026-11-12T18:00:50Z",
-      "summary": null,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Enterprise Server support in the GitHub Copilot app",
+      "url": "https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app",
+      "published_at": "2026-11-13T18:27:13Z",
+      "summary": "You can now bring your work on GitHub Enterprise Server (GHES) into the GitHub Copilot app. Add your GHES account to work with remote repositories, issues, and pull requests. This… The post GitHub Enterprise Server support in the GitHub Copilot app appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:gemini",
-        "source_prior:official_ai"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
     {
-      "id": "0419dbfe2debb68a7e0d0c058e05a441b96e0183",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
-      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade",
-      "published_at": "2026-11-12T18:00:00Z",
-      "summary": "Rotating carousel of cards with text \"Gemini 4 Hydrogen\" \"Now in Google Search\" and examples from the Google Search UI",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "7da85e7a710ea145594f4b12a5f1b9ebd70f2820",
+      "id": "26f6dc17ab333ef8da460d07747477dc3740f059",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "Artificial Analysis 评测 Gemini 4 Hydrogen：智能指数 54，接近 Sonnet 5.5 且成本约其 32%",
-      "url": "https://aihot.news/items/ajvxvhu8bh001pourbhhjl0ir",
-      "published_at": "2026-11-12T18:07:16Z",
-      "summary": "Artificial Analysis 评测 Google 新发布的 Gemini 4 Hydrogen：新增 xhigh 推理档在 Intelligence Index 得 54 分，比 Claude Sonnet 5.5 (max) 和 GPT-6.1 Sol (max) 低 1 分，每任务成本约为 Sonnet 的 32%，但约为 GPT-6.1 Sol 的 2.5 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ajvxvhu8bh001pourbhhjl0ir",
-      "relevance_score": 4,
+      "title": "Claude Duet 向美国等待名单上的 Pro、Max 和 Ultra 订阅者发出全部邀请",
+      "url": "https://aihot.news/items/ajfypca37l5knyrnij49v5ofz",
+      "published_at": "2026-11-13T20:22:53Z",
+      "summary": "Anthropic 的 Claude Duet 更新：截至昨日在等待名单上的全部美国 Pro、Max 和 Ultra 订阅者均已收到邀请，等待名单入口为 https://claude.com/product/claude-duet。研究预览附带限额重置，Pro 为 3 次，Max 和 Ultra 为 1 次；官方计划很快向美国以外更多国家开放，并继续征集反馈。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ajfypca37l5knyrnij49v5ofz",
+      "relevance_score": 3,
       "relevance_reasons": [
+        "strong:anthropic",
         "strong:claude",
-        "strong:gemini",
-        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8d5214234dce179f6ecb60ff865e5446b74e3ca1",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "研究称中国最强 AI 模型由被禁运的 Nvidia Blackwell 芯片训练",
+      "url": "https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
+      "published_at": "2026-11-13T18:40:30Z",
+      "summary": "TechCrunch 报道，前 OpenAI 研究员 Will DePue 分析 DeepSeek、月之暗面、MiniMax 和蚂蚁集团开源模型权重后，称 Kimi K3 与 DeepSeek V4 等模型留有 Blackwell 芯片训练痕迹，而这些芯片被禁止出口到中国。 🔗 阅读原文 via AIHOT · https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:开源模型",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -395,10 +397,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1386,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 410,
-      "checked_at": "2026-11-13T16:38:49.007401Z"
+      "latency_ms": 578,
+      "checked_at": "2026-11-13T20:45:18.217567Z"
     },
     {
       "source_id": "openai-skills",
@@ -409,8 +411,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 376,
-      "checked_at": "2026-11-13T16:38:49.384243Z"
+      "latency_ms": 252,
+      "checked_at": "2026-11-13T20:45:18.470464Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -421,8 +423,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 90,
-      "checked_at": "2026-11-13T16:38:49.477638Z"
+      "latency_ms": 117,
+      "checked_at": "2026-11-13T20:45:18.592262Z"
     },
     {
       "source_id": "google-deepmind",
@@ -431,10 +433,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 213,
-      "checked_at": "2026-11-13T16:38:49.692185Z"
+      "latency_ms": 217,
+      "checked_at": "2026-11-13T20:45:18.811398Z"
     },
     {
       "source_id": "google-ai",
@@ -443,10 +445,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 244,
-      "checked_at": "2026-11-13T16:38:49.936942Z"
+      "latency_ms": 271,
+      "checked_at": "2026-11-13T20:45:19.083419Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -455,10 +457,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 907,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 245,
-      "checked_at": "2026-11-13T16:38:50.191965Z"
+      "latency_ms": 272,
+      "checked_at": "2026-11-13T20:45:19.369550Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -469,8 +471,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 223,
-      "checked_at": "2026-11-13T16:38:50.415647Z"
+      "latency_ms": 225,
+      "checked_at": "2026-11-13T20:45:19.595062Z"
     },
     {
       "source_id": "github-changelog",
@@ -479,10 +481,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 22,
-      "checked_at": "2026-11-13T16:38:50.438556Z"
+      "latency_ms": 23,
+      "checked_at": "2026-11-13T20:45:19.619377Z"
     },
     {
       "source_id": "aihot",
@@ -491,10 +493,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 5741,
-      "checked_at": "2026-11-13T16:38:56.180893Z"
+      "latency_ms": 3323,
+      "checked_at": "2026-11-13T20:45:22.943818Z"
     }
   ],
   "control_notes": {
