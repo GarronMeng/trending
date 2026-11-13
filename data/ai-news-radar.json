@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-13T11:37:21.421322Z",
+  "generated_at": "2026-11-13T14:46:57.650039Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 12,
   "groups": {
     "official": {
       "group": "official",
-      "count": 6,
+      "count": 5,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          1
         ],
         [
           "GitHub AI & ML",
@@ -34,7 +34,7 @@
       "top_keywords": [
         [
           "official_ai",
-          6
+          5
         ],
         [
           "agent",
@@ -53,14 +53,6 @@
           1
         ],
         [
-          "chatgpt",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
           "tool",
           1
         ],
@@ -72,16 +64,24 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          4
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
+          5
+        ],
+        [
+          "api",
+          4
+        ],
+        [
+          "API",
           4
         ],
         [
@@ -89,15 +89,11 @@
           3
         ],
         [
-          "api",
-          3
-        ],
-        [
-          "API",
-          3
-        ],
-        [
           "deepmind",
+          2
+        ],
+        [
+          "开发者",
           2
         ],
         [
@@ -106,10 +102,6 @@
         ],
         [
           "工作流",
-          1
-        ],
-        [
-          "开发者",
           1
         ],
         [
@@ -128,14 +120,22 @@
     },
     "developer": {
       "group": "developer",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "GitHub Changelog",
-          1
+          2
         ]
       ],
       "top_keywords": [
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
         [
           "actions",
           1
@@ -184,25 +184,6 @@
         "weak:工作流",
         "weak:API",
         "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c05a9d4bfd6a6801b4445f7b528ffbaf899eb20a",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Gondola doubles revenue as its team builds more with Codex",
-      "url": "https://openai.com/business/customer-stories/gondola",
-      "published_at": "2026-11-12T12:00:00Z",
-      "summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "strong:codex",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -322,6 +303,24 @@
       "is_ai_related": true
     },
     {
+      "id": "edb8fb0e85143304a4492872a9a4d25a22138ad3",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Manage AI Scan for repositories using the REST API",
+      "url": "https://github.blog/changelog/2026-11-13-manage-ai-scan-for-repositories-using-the-rest-api",
+      "published_at": "2026-11-13T12:22:41Z",
+      "summary": "You can now turn GitHub code scanning’s AI Scan for repositories on or off with the REST API at the organization and repository levels. This public preview adds a repository_scan… The post Manage AI Scan for repositories using the REST API appeared first on The GitHub Blog .",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:API"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "fd7aa8d04a48c10961236ba15936ee8bd9c9b2a1",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -357,6 +356,26 @@
         "source:actions"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "8183b761b6fa29abea7540fbbad727baa6239638",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "DeepSeek 开放全家桶应用 API：联网搜索、文件输入、阅读链接等能力面向开发者",
+      "url": "https://aihot.news/items/nnbnoebf6mvo97usmwj5wziyl",
+      "published_at": "2026-11-12T16:00:00Z",
+      "summary": "DeepSeek 在 API 中开放此前 App 对话服务所用的能力，开发者开启对应参数即可使用，工具调用与上下文拼接由服务端完成。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nnbnoebf6mvo97usmwj5wziyl",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:开发者",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -367,10 +386,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1385,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 474,
-      "checked_at": "2026-11-13T11:37:11.926645Z"
+      "latency_ms": 560,
+      "checked_at": "2026-11-13T14:46:53.497181Z"
     },
     {
       "source_id": "openai-skills",
@@ -381,8 +400,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 367,
-      "checked_at": "2026-11-13T11:37:12.294324Z"
+      "latency_ms": 331,
+      "checked_at": "2026-11-13T14:46:53.829055Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -393,8 +412,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 87,
-      "checked_at": "2026-11-13T11:37:12.384398Z"
+      "latency_ms": 117,
+      "checked_at": "2026-11-13T14:46:53.949544Z"
     },
     {
       "source_id": "google-deepmind",
@@ -405,8 +424,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 144,
-      "checked_at": "2026-11-13T11:37:12.529825Z"
+      "latency_ms": 233,
+      "checked_at": "2026-11-13T14:46:54.184538Z"
     },
     {
       "source_id": "google-ai",
@@ -417,8 +436,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 363,
-      "checked_at": "2026-11-13T11:37:12.893415Z"
+      "latency_ms": 205,
+      "checked_at": "2026-11-13T14:46:54.390449Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -426,11 +445,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 906,
+      "fetched_count": 907,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 286,
-      "checked_at": "2026-11-13T11:37:13.190054Z"
+      "latency_ms": 320,
+      "checked_at": "2026-11-13T14:46:54.721337Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -441,8 +460,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 470,
-      "checked_at": "2026-11-13T11:37:13.660948Z"
+      "latency_ms": 528,
+      "checked_at": "2026-11-13T14:46:55.249928Z"
     },
     {
       "source_id": "github-changelog",
@@ -451,10 +470,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-11-13T11:37:13.685313Z"
+      "latency_ms": 29,
+      "checked_at": "2026-11-13T14:46:55.279410Z"
     },
     {
       "source_id": "aihot",
@@ -463,10 +482,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 7727,
-      "checked_at": "2026-11-13T11:37:21.413802Z"
+      "latency_ms": 2361,
+      "checked_at": "2026-11-13T14:46:57.642544Z"
     }
   ],
   "control_notes": {
