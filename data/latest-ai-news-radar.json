@@ -1,85 +1,41 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-14T15:15:05.435009Z",
+  "generated_at": "2026-11-14T18:56:38.854096Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 2,
   "groups": {
     "developer": {
       "group": "developer",
-      "count": 3,
+      "count": 1,
       "top_sources": [
         [
           "GitHub Changelog",
-          3
+          1
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          6
-        ],
-        [
-          "agent",
           2
         ],
         [
-          "gemini",
-          1
-        ],
-        [
-          "tool",
-          1
-        ],
-        [
-          "workflow",
+          "agent",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 1,
       "top_sources": [
         [
           "AI Hot",
-          3
+          1
         ]
       ],
       "top_keywords": [
-        [
-          "aggregate_noise",
-          3
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
         [
           "anthropic",
           1
@@ -87,55 +43,15 @@
         [
           "claude",
           1
+        ],
+        [
+          "aggregate_noise",
+          1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "da6a2cba0fd831fdace0c46c509bb874309d1b48",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Gemini 4 Hydrogen in GitHub Copilot",
-      "url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
-      "published_at": "2026-11-13T18:23:48Z",
-      "summary": "Gemini 4 Hydrogen, Google’s latest Flash model, is now generally available in GitHub Copilot. It is designed for fast, efficient agentic coding, tool use, and multistep workflows, with improved instruction… The post Gemini 4 Hydrogen in GitHub Copilot appeared first on The GitHub Blog .",
-      "relevance_score": 9,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:agent",
-        "weak:tool",
-        "weak:workflow",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "4c5fab61978d791b876e5f9deb8c45481e8f4f59",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Sierra 发布 Personal Agent Protocol（Poppy）v1.0",
-      "url": "https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr",
-      "published_at": "2026-11-13T17:00:00Z",
-      "summary": "Sierra 宣布 Personal Agent Protocol（Poppy）v1.0 正式可用，该协议定义个人智能体如何通过企业智能体、网站和 API 与公司交互，主要基于 MCP、OpenAPI、UCP 等现有标准构建，认证通过 OAuth 由客户控制权限。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:mcp",
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "a023cec43f68d9ab686c0f2e034b8491db1b8a24",
       "source_id": "github-changelog",
@@ -150,44 +66,6 @@
       "relevance_score": 5,
       "relevance_reasons": [
         "strong:agent",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "bf359839a96f1fe643092841fc25c541d461d21c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "ChatGPT 推出 ChatGPT Wallet，dot 可在用户批准下代为完成购买",
-      "url": "https://aihot.news/items/vot1htumxjgnb0i88rbq3zsuq",
-      "published_at": "2026-11-13T16:44:49Z",
-      "summary": "ChatGPT 官方账号宣布推出 ChatGPT Wallet，dot 可在用户批准下安全地代用户完成购买。智能体支付时不会接触用户的实际卡号信息，每笔购买都需要通过安全检查。该功能即日起在美国向 Pro 订阅用户的 dot 推出，详情见 https://openai.com/index/introducing-chatgpt-wallet/。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vot1htumxjgnb0i88rbq3zsuq",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c5dc819cbdce516b465edaf189e7827b00f195b3",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "GitHub Enterprise Server support in the GitHub Copilot app",
-      "url": "https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app",
-      "published_at": "2026-11-13T18:27:13Z",
-      "summary": "You can now bring your work on GitHub Enterprise Server (GHES) into the GitHub Copilot app. Add your GHES account to work with remote repositories, issues, and pull requests. This… The post GitHub Enterprise Server support in the GitHub Copilot app appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
       ],
@@ -223,8 +101,8 @@
       "fetched_count": 1387,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 445,
-      "checked_at": "2026-11-14T15:15:01.853398Z"
+      "latency_ms": 340,
+      "checked_at": "2026-11-14T18:56:36.145213Z"
     },
     {
       "source_id": "openai-skills",
@@ -235,8 +113,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 379,
-      "checked_at": "2026-11-14T15:15:02.233030Z"
+      "latency_ms": 205,
+      "checked_at": "2026-11-14T18:56:36.351179Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -247,8 +125,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 103,
-      "checked_at": "2026-11-14T15:15:02.339335Z"
+      "latency_ms": 70,
+      "checked_at": "2026-11-14T18:56:36.424103Z"
     },
     {
       "source_id": "google-deepmind",
@@ -259,8 +137,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 240,
-      "checked_at": "2026-11-14T15:15:02.581152Z"
+      "latency_ms": 123,
+      "checked_at": "2026-11-14T18:56:36.548540Z"
     },
     {
       "source_id": "google-ai",
@@ -271,8 +149,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 299,
-      "checked_at": "2026-11-14T15:15:02.880647Z"
+      "latency_ms": 203,
+      "checked_at": "2026-11-14T18:56:36.752212Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -283,8 +161,8 @@
       "fetched_count": 907,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 272,
-      "checked_at": "2026-11-14T15:15:03.162365Z"
+      "latency_ms": 194,
+      "checked_at": "2026-11-14T18:56:36.953430Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -295,8 +173,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 239,
-      "checked_at": "2026-11-14T15:15:03.401764Z"
+      "latency_ms": 155,
+      "checked_at": "2026-11-14T18:56:37.108781Z"
     },
     {
       "source_id": "github-changelog",
@@ -305,10 +183,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-11-14T15:15:03.425888Z"
+      "latency_ms": 19,
+      "checked_at": "2026-11-14T18:56:37.128047Z"
     },
     {
       "source_id": "aihot",
@@ -317,10 +195,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 2001,
-      "checked_at": "2026-11-14T15:15:05.428078Z"
+      "latency_ms": 1719,
+      "checked_at": "2026-11-14T18:56:38.847807Z"
     }
   ],
   "control_notes": {
