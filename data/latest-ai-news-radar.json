@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-13T20:45:22.951792Z",
+  "generated_at": "2026-11-14T04:25:32.213256Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 12,
+  "item_count": 11,
   "groups": {
     "official": {
       "group": "official",
@@ -12,16 +12,16 @@
       "top_sources": [
         [
           "OpenAI News",
-          1
-        ],
-        [
-          "GitHub AI & ML",
-          1
+          2
         ]
       ],
       "top_keywords": [
         [
           "agent",
+          2
+        ],
+        [
+          "agents",
           2
         ],
         [
@@ -37,11 +37,7 @@
           1
         ],
         [
-          "agents",
-          1
-        ],
-        [
-          "tool",
+          "openai",
           1
         ]
       ]
@@ -58,14 +54,14 @@
       "top_keywords": [
         [
           "copilot",
-          4
-        ],
-        [
-          "gemini",
-          1
+          6
         ],
         [
           "agent",
+          2
+        ],
+        [
+          "gemini",
           1
         ],
         [
@@ -83,49 +79,41 @@
         [
           "API",
           1
-        ],
-        [
-          "actions",
-          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          6
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
+          5
         ],
         [
           "agent",
           3
         ],
         [
-          "智能体",
+          "api",
           3
         ],
         [
-          "api",
-          2
-        ],
-        [
           "API",
+          3
+        ],
+        [
+          "智能体",
           2
         ],
         [
-          "anthropic",
-          2
-        ],
-        [
-          "openai",
+          "claude",
           2
         ],
         [
@@ -133,7 +121,7 @@
           1
         ],
         [
-          "agents",
+          "openai",
           1
         ],
         [
@@ -141,11 +129,7 @@
           1
         ],
         [
-          "claude",
-          1
-        ],
-        [
-          "开源模型",
+          "anthropic",
           1
         ]
       ]
@@ -196,6 +180,26 @@
       "is_ai_related": true
     },
     {
+      "id": "e82b542f2233d9533628d81d61a16ad154c7ef0d",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "url": "https://openai.com/business/customer-stories/shield",
+      "published_at": "2026-11-13T08:00:00Z",
+      "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "4c5fab61978d791b876e5f9deb8c45481e8f4f59",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -218,42 +222,21 @@
       "is_ai_related": true
     },
     {
-      "id": "f343d9d87d0716eb49fa8e3245ac0d5036ed38ae",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 详解常驻智能体的五个核心架构原语",
-      "url": "https://aihot.news/items/ypeap2t8w4fqqfuvt7mw3wg79",
-      "published_at": "2026-11-13T00:00:00Z",
-      "summary": "Anthropic 发布博客，拆解常驻智能体（always-on agents）背后的架构。这类智能体有状态且可主动行动，其兴起得益于模型判断力提升和智能成本下降，例如长程编码任务上 Opus 5.5 每解决一个任务的成本比 Opus 5 低 78%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ypeap2t8w4fqqfuvt7mw3wg79",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:agent",
-        "strong:agents",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "ec5ca0f7b7c590961f75649cd0a0d36f79783ca6",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
+      "id": "a023cec43f68d9ab686c0f2e034b8491db1b8a24",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
       "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "Build once, run on any agent: A practical guide to agent skills",
-      "url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills",
-      "published_at": "2026-11-12T22:54:52Z",
-      "summary": "Agent skills capture repeatable engineering work in files teams can review and reuse, while tools, project context, and permissions remain specific to the host that runs them. The post Build once, run on any agent: A practical guide to agent skills appeared first on The GitHub Blog .",
-      "relevance_score": 4,
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Upcoming deprecation of selected GitHub Copilot models in December",
+      "url": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december",
+      "published_at": "2026-11-13T20:40:05Z",
+      "summary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on December 14, 2026: Model Deprecation date… The post Upcoming deprecation of selected GitHub Copilot models in December appeared first on The GitHub Blog .",
+      "relevance_score": 5,
       "relevance_reasons": [
         "strong:agent",
-        "weak:tool",
-        "source_prior:official_ai"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -273,6 +256,27 @@
         "strong:openai",
         "strong:chatgpt",
         "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "76272a252a2c4079473cbeaae5ae031e42d28451",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Cursor 披露安全事件调查结果，恶意 Claude Code 扩展波及最多 5000 用户",
+      "url": "https://aihot.news/items/e9o5h2c1o5f0xuh2bgqtc2w7k",
+      "published_at": "2026-11-13T12:00:00Z",
+      "summary": "Cursor 发布安全事件完整调查：攻击者利用 Fireworks 暴露的访问密钥读取用于模型训练的 coding agent trace，少于 0.01% 客户的 API 凭证暴露。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e9o5h2c1o5f0xuh2bgqtc2w7k",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "weak:api",
+        "weak:API",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -315,25 +319,6 @@
       "is_ai_related": true
     },
     {
-      "id": "8d5214234dce179f6ecb60ff865e5446b74e3ca1",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "研究称中国最强 AI 模型由被禁运的 Nvidia Blackwell 芯片训练",
-      "url": "https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
-      "published_at": "2026-11-13T18:40:30Z",
-      "summary": "TechCrunch 报道，前 OpenAI 研究员 Will DePue 分析 DeepSeek、月之暗面、MiniMax 和蚂蚁集团开源模型权重后，称 Kimi K3 与 DeepSeek V4 等模型留有 Blackwell 芯片训练痕迹，而这些芯片被禁止出口到中国。 🔗 阅读原文 via AIHOT · https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:开源模型",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "edb8fb0e85143304a4492872a9a4d25a22138ad3",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -370,23 +355,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "5839e808fb9f26a3078be0c6235712ab5ee646f2",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Actions for ARM32 Linux & Windows retirement",
-      "url": "https://github.blog/changelog/2026-11-12-actions-for-arm32-linux-windows-retirement",
-      "published_at": "2026-11-12T20:59:36Z",
-      "summary": "GitHub Actions hosted runners will be ending support for ARM32 job execution on Windows and Linux by 8th Dec 2026. This follows our end of support for node20 where Node… The post Actions for ARM32 Linux & Windows retirement appeared first on The GitHub Blog .",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "source:actions"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -396,11 +364,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1386,
-      "kept_count": 1,
+      "fetched_count": 1387,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 578,
-      "checked_at": "2026-11-13T20:45:18.217567Z"
+      "latency_ms": 605,
+      "checked_at": "2026-11-14T04:25:28.688858Z"
     },
     {
       "source_id": "openai-skills",
@@ -411,8 +379,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 252,
-      "checked_at": "2026-11-13T20:45:18.470464Z"
+      "latency_ms": 248,
+      "checked_at": "2026-11-14T04:25:28.937541Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -423,8 +391,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 117,
-      "checked_at": "2026-11-13T20:45:18.592262Z"
+      "latency_ms": 158,
+      "checked_at": "2026-11-14T04:25:29.103654Z"
     },
     {
       "source_id": "google-deepmind",
@@ -435,8 +403,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 217,
-      "checked_at": "2026-11-13T20:45:18.811398Z"
+      "latency_ms": 334,
+      "checked_at": "2026-11-14T04:25:29.439373Z"
     },
     {
       "source_id": "google-ai",
@@ -447,8 +415,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 271,
-      "checked_at": "2026-11-13T20:45:19.083419Z"
+      "latency_ms": 339,
+      "checked_at": "2026-11-14T04:25:29.778870Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -459,8 +427,8 @@
       "fetched_count": 907,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 272,
-      "checked_at": "2026-11-13T20:45:19.369550Z"
+      "latency_ms": 329,
+      "checked_at": "2026-11-14T04:25:30.121846Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -469,10 +437,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 225,
-      "checked_at": "2026-11-13T20:45:19.595062Z"
+      "latency_ms": 273,
+      "checked_at": "2026-11-14T04:25:30.395176Z"
     },
     {
       "source_id": "github-changelog",
@@ -483,8 +451,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-11-13T20:45:19.619377Z"
+      "latency_ms": 31,
+      "checked_at": "2026-11-14T04:25:30.427068Z"
     },
     {
       "source_id": "aihot",
@@ -493,10 +461,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 3323,
-      "checked_at": "2026-11-13T20:45:22.943818Z"
+      "latency_ms": 1776,
+      "checked_at": "2026-11-14T04:25:32.205160Z"
     }
   ],
   "control_notes": {
