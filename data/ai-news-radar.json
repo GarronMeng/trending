@@ -1,33 +1,21 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-14T04:25:32.213256Z",
+  "generated_at": "2026-11-14T10:58:52.231871Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 11,
+  "item_count": 9,
   "groups": {
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          1
         ]
       ],
       "top_keywords": [
-        [
-          "agent",
-          2
-        ],
-        [
-          "agents",
-          2
-        ],
-        [
-          "official_ai",
-          2
-        ],
         [
           "chatgpt",
           1
@@ -37,7 +25,15 @@
           1
         ],
         [
-          "openai",
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "official_ai",
           1
         ]
       ]
@@ -84,32 +80,32 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          5
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          4
         ],
         [
           "agent",
-          3
-        ],
-        [
-          "api",
-          3
-        ],
-        [
-          "API",
-          3
+          2
         ],
         [
           "智能体",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
           2
         ],
         [
@@ -176,26 +172,6 @@
         "weak:workflow",
         "weak:copilot",
         "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "e82b542f2233d9533628d81d61a16ad154c7ef0d",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
-      "url": "https://openai.com/business/customer-stories/shield",
-      "published_at": "2026-11-13T08:00:00Z",
-      "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:agent",
-        "strong:agents",
-        "source_prior:official_ai"
       ],
       "is_ai_related": true
     },
@@ -335,26 +311,6 @@
         "weak:API"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "fd7aa8d04a48c10961236ba15936ee8bd9c9b2a1",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "腾讯混元发布实时语音模型 Hy Realtime，新增工具调用与唱歌能力",
-      "url": "https://aihot.news/items/qp41q77z9ge5hsyrh9kra0c7k",
-      "published_at": "2026-11-13T08:32:39Z",
-      "summary": "腾讯混元发布全新实时语音模型 Hy Realtime，在语音理解、指令遵循、拟人化表达等基础能力外新增 Agentic 工具调用与唱歌能力，已在元宝语音通话、腾讯客服上线，近期将上线腾讯云提供 API 服务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qp41q77z9ge5hsyrh9kra0c7k",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -365,10 +321,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1387,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 605,
-      "checked_at": "2026-11-14T04:25:28.688858Z"
+      "latency_ms": 576,
+      "checked_at": "2026-11-14T10:58:47.937703Z"
     },
     {
       "source_id": "openai-skills",
@@ -379,8 +335,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 248,
-      "checked_at": "2026-11-14T04:25:28.937541Z"
+      "latency_ms": 182,
+      "checked_at": "2026-11-14T10:58:48.120521Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -391,8 +347,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 158,
-      "checked_at": "2026-11-14T04:25:29.103654Z"
+      "latency_ms": 122,
+      "checked_at": "2026-11-14T10:58:48.246744Z"
     },
     {
       "source_id": "google-deepmind",
@@ -403,8 +359,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 334,
-      "checked_at": "2026-11-14T04:25:29.439373Z"
+      "latency_ms": 281,
+      "checked_at": "2026-11-14T10:58:48.530174Z"
     },
     {
       "source_id": "google-ai",
@@ -415,8 +371,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 339,
-      "checked_at": "2026-11-14T04:25:29.778870Z"
+      "latency_ms": 133,
+      "checked_at": "2026-11-14T10:58:48.664496Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -427,8 +383,8 @@
       "fetched_count": 907,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 329,
-      "checked_at": "2026-11-14T04:25:30.121846Z"
+      "latency_ms": 284,
+      "checked_at": "2026-11-14T10:58:48.962412Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -439,8 +395,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 273,
-      "checked_at": "2026-11-14T04:25:30.395176Z"
+      "latency_ms": 469,
+      "checked_at": "2026-11-14T10:58:49.432114Z"
     },
     {
       "source_id": "github-changelog",
@@ -451,8 +407,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 31,
-      "checked_at": "2026-11-14T04:25:30.427068Z"
+      "latency_ms": 28,
+      "checked_at": "2026-11-14T10:58:49.460825Z"
     },
     {
       "source_id": "aihot",
@@ -461,10 +417,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 1776,
-      "checked_at": "2026-11-14T04:25:32.205160Z"
+      "latency_ms": 2762,
+      "checked_at": "2026-11-14T10:58:52.224097Z"
     }
   ],
   "control_notes": {
