@@ -1,48 +1,80 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-16T12:05:52.385104Z",
+  "generated_at": "2026-11-16T16:14:31.115249Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 10,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 5,
       "top_sources": [
         [
           "OpenAI News",
-          3
+          5
         ]
       ],
       "top_keywords": [
+        [
+          "official_ai",
+          5
+        ],
         [
           "openai",
           3
         ],
         [
-          "official_ai",
-          3
+          "chatgpt",
+          2
         ],
         [
-          "chatgpt",
-          1
+          "agent",
+          2
+        ],
+        [
+          "agents",
+          2
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          2
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
+          4
+        ],
+        [
+          "api",
+          3
+        ],
+        [
+          "API",
+          3
+        ],
+        [
+          "gemini",
           2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "deepmind",
+          1
+        ],
+        [
+          "智能体",
+          1
         ],
         [
           "openai",
@@ -53,25 +85,49 @@
           1
         ],
         [
-          "agent",
-          1
-        ],
-        [
           "多模态",
           1
-        ],
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
         [
-          "api",
+          "GitHub Changelog",
           1
-        ],
+        ]
+      ],
+      "top_keywords": [
         [
-          "API",
-          1
+          "copilot",
+          2
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "01767f986cfdd33b95311da9e9b5f8aaff3e7dd4",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "More ways to move care forward with ChatGPT for Healthcare",
+      "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+      "published_at": "2026-11-16T06:00:00Z",
+      "summary": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "e10f2ad3768975304fccf0a5cf91c42412b8815d",
       "source_id": "openai-news",
@@ -88,6 +144,47 @@
         "strong:openai",
         "strong:chatgpt",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "43d63df2c78554bd6558e699c8cc3fa57631f0c1",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Advancing computer-use agents for healthcare teams",
+      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+      "published_at": "2026-11-16T06:00:00Z",
+      "summary": null,
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9757a99352b427f32cc24f48ea98fadb699e8e4b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gemini 4 Hydrogen 与 Carbon 如何按工作负载选型",
+      "url": "https://aihot.news/items/zo7ubny2zjk4qoqjdoiec91b8",
+      "published_at": "2026-11-16T16:02:31Z",
+      "summary": "Google DeepMind 的 Philipp Schmid 讲解如何在工作负载中选择 Gemini 4 Hydrogen 与 Carbon：Carbon 适合硬架构设计、调试、科学证明和安全审计，intro 价 $2/$10 至 11 月 30 日；Hydrogen 适合日常编码、交互应用和工具调用智能体，价格 $1.50/$7.50 per 1M。两款都可用 Carbon 负责规划编排、Hydrogen 负责执行的搭配，共享 1M-token 统一上下文窗口、95% implicit caching 和相同 Interactions API schema。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zo7ubny2zjk4qoqjdoiec91b8",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:deepmind",
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -128,6 +225,27 @@
       "is_ai_related": true
     },
     {
+      "id": "4038b2ef4ce1e168530617193ed0488ad8bc4dc6",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google 发布 Gemini 4 Carbon 与 Hydrogen，并推出 Decisions API 和自托管 agent 沙箱",
+      "url": "https://aihot.news/items/n3qi466u1gbxj2i8q7g5snhr0",
+      "published_at": "2026-11-16T15:57:52Z",
+      "summary": "Google 发布 Gemini 4 Carbon（gemini-4-carbon，1M 共享 token 池，11 月 30 日前 $2.00/$10.00 每 1M tokens。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n3qi466u1gbxj2i8q7g5snhr0",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:agent",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "a2b7fcc766e07da7422c42eadc2909994908ba8d",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -144,6 +262,24 @@
         "strong:anthropic",
         "strong:agent",
         "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "8c89aed40f2cf07fc95cabf524db623b2587b14d",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Take GitHub Mobile with you on iPhone Duo",
+      "url": "https://github.blog/changelog/2026-11-16-take-github-mobile-with-you-on-iphone-duo",
+      "published_at": "2026-11-16T14:30:07Z",
+      "summary": "GitHub Mobile now supports iPhone Duo, with a layout that adapts when unfolded and vertical tabs to help you move between key areas like Copilot, Pull Requests, Issues, and Notifications.… The post Take GitHub Mobile with you on iPhone Duo appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -175,11 +311,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1391,
-      "kept_count": 3,
+      "fetched_count": 1393,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 370,
-      "checked_at": "2026-11-16T12:05:44.381389Z"
+      "latency_ms": 408,
+      "checked_at": "2026-11-16T16:14:28.309409Z"
     },
     {
       "source_id": "openai-skills",
@@ -190,8 +326,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 466,
-      "checked_at": "2026-11-16T12:05:44.848312Z"
+      "latency_ms": 220,
+      "checked_at": "2026-11-16T16:14:28.530008Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -202,8 +338,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 105,
-      "checked_at": "2026-11-16T12:05:44.956204Z"
+      "latency_ms": 84,
+      "checked_at": "2026-11-16T16:14:28.617395Z"
     },
     {
       "source_id": "google-deepmind",
@@ -214,8 +350,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 176,
-      "checked_at": "2026-11-16T12:05:45.133951Z"
+      "latency_ms": 183,
+      "checked_at": "2026-11-16T16:14:28.802135Z"
     },
     {
       "source_id": "google-ai",
@@ -226,8 +362,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 346,
-      "checked_at": "2026-11-16T12:05:45.480564Z"
+      "latency_ms": 146,
+      "checked_at": "2026-11-16T16:14:28.948464Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -238,8 +374,8 @@
       "fetched_count": 907,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 228,
-      "checked_at": "2026-11-16T12:05:45.716149Z"
+      "latency_ms": 201,
+      "checked_at": "2026-11-16T16:14:29.159542Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -250,8 +386,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 405,
-      "checked_at": "2026-11-16T12:05:46.121435Z"
+      "latency_ms": 188,
+      "checked_at": "2026-11-16T16:14:29.347706Z"
     },
     {
       "source_id": "github-changelog",
@@ -260,10 +396,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-11-16T12:05:46.148987Z"
+      "latency_ms": 20,
+      "checked_at": "2026-11-16T16:14:29.368779Z"
     },
     {
       "source_id": "aihot",
@@ -272,10 +408,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 6229,
-      "checked_at": "2026-11-16T12:05:52.378513Z"
+      "latency_ms": 1738,
+      "checked_at": "2026-11-16T16:14:31.107900Z"
     }
   ],
   "control_notes": {
