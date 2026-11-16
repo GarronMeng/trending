@@ -1,41 +1,49 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-16T04:09:38.875605Z",
+  "generated_at": "2026-11-16T12:05:52.385104Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 2,
+  "item_count": 5,
   "groups": {
     "official": {
       "group": "official",
-      "count": 1,
+      "count": 3,
       "top_sources": [
         [
           "OpenAI News",
-          1
+          3
         ]
       ],
       "top_keywords": [
         [
           "openai",
-          1
+          3
         ],
         [
           "official_ai",
+          3
+        ],
+        [
+          "chatgpt",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 1,
+      "count": 2,
       "top_sources": [
         [
           "AI Hot",
-          1
+          2
         ]
       ],
       "top_keywords": [
+        [
+          "aggregate_noise",
+          2
+        ],
         [
           "openai",
           1
@@ -49,13 +57,58 @@
           1
         ],
         [
-          "aggregate_noise",
+          "多模态",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "e10f2ad3768975304fccf0a5cf91c42412b8815d",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
+      "url": "https://openai.com/index/lvmh-media-division-partnership",
+      "published_at": "2026-11-16T09:00:00Z",
+      "summary": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "40edbcb7e83ce4cbdc4f11e7546acffca3c286da",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "The King’s Trust and OpenAI launch £1m partnership",
+      "url": "https://openai.com/index/the-kings-trust-and-openai",
+      "published_at": "2026-11-16T00:00:00Z",
+      "summary": "The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "98e8ef92bcf1161cf9d7b1156cc72b50ae687b1a",
       "source_id": "openai-news",
@@ -93,6 +146,26 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "0cbc282668e11dae6a764b709b23513f6f04067e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "腾讯混元发布 Hy4 flash：224B 总参数、1M 上下文的日常高性价比模型",
+      "url": "https://aihot.news/items/u36vxmxeopbsx4if4lap30899",
+      "published_at": "2026-11-16T04:29:37Z",
+      "summary": "腾讯混元推出 Hy4 flash，总参数 224B（含 64B Engram 参数）、激活 12B，支持多模态和 1M 上下文，API 价格大幅低于 Hy4（输入 0.5 元、输出 2 元每百万 tokens）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/u36vxmxeopbsx4if4lap30899",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:多模态",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -102,11 +175,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1389,
-      "kept_count": 1,
+      "fetched_count": 1391,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 608,
-      "checked_at": "2026-11-16T04:09:33.761057Z"
+      "latency_ms": 370,
+      "checked_at": "2026-11-16T12:05:44.381389Z"
     },
     {
       "source_id": "openai-skills",
@@ -117,8 +190,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 209,
-      "checked_at": "2026-11-16T04:09:33.971007Z"
+      "latency_ms": 466,
+      "checked_at": "2026-11-16T12:05:44.848312Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -129,8 +202,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 129,
-      "checked_at": "2026-11-16T04:09:34.104660Z"
+      "latency_ms": 105,
+      "checked_at": "2026-11-16T12:05:44.956204Z"
     },
     {
       "source_id": "google-deepmind",
@@ -141,8 +214,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 238,
-      "checked_at": "2026-11-16T04:09:34.344934Z"
+      "latency_ms": 176,
+      "checked_at": "2026-11-16T12:05:45.133951Z"
     },
     {
       "source_id": "google-ai",
@@ -153,8 +226,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 220,
-      "checked_at": "2026-11-16T04:09:34.566062Z"
+      "latency_ms": 346,
+      "checked_at": "2026-11-16T12:05:45.480564Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -165,8 +238,8 @@
       "fetched_count": 907,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 370,
-      "checked_at": "2026-11-16T04:09:34.948937Z"
+      "latency_ms": 228,
+      "checked_at": "2026-11-16T12:05:45.716149Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -177,8 +250,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 449,
-      "checked_at": "2026-11-16T04:09:35.398388Z"
+      "latency_ms": 405,
+      "checked_at": "2026-11-16T12:05:46.121435Z"
     },
     {
       "source_id": "github-changelog",
@@ -189,8 +262,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 51,
-      "checked_at": "2026-11-16T04:09:35.449830Z"
+      "latency_ms": 27,
+      "checked_at": "2026-11-16T12:05:46.148987Z"
     },
     {
       "source_id": "aihot",
@@ -199,10 +272,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 1,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 3417,
-      "checked_at": "2026-11-16T04:09:38.867934Z"
+      "latency_ms": 6229,
+      "checked_at": "2026-11-16T12:05:52.378513Z"
     }
   ],
   "control_notes": {
