@@ -1,12 +1,100 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-15T19:32:22.733568Z",
+  "generated_at": "2026-11-16T04:09:38.875605Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 0,
-  "groups": {},
-  "items": [],
+  "item_count": 2,
+  "groups": {
+    "official": {
+      "group": "official",
+      "count": 1,
+      "top_sources": [
+        [
+          "OpenAI News",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "openai",
+          1
+        ],
+        [
+          "official_ai",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 1,
+      "top_sources": [
+        [
+          "AI Hot",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "openai",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "aggregate_noise",
+          1
+        ]
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "98e8ef92bcf1161cf9d7b1156cc72b50ae687b1a",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Our new blog for science",
+      "url": "https://openai.com/index/our-new-blog-for-science",
+      "published_at": "2026-11-15T22:00:00Z",
+      "summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a2b7fcc766e07da7422c42eadc2909994908ba8d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Qwen4-Max 登顶 Agent Arena 中国模型榜首，Alibaba 排名升至总榜第14",
+      "url": "https://aihot.news/items/kzt8bjcin243qefkuiq49c2i6",
+      "published_at": "2026-11-16T02:21:45Z",
+      "summary": "Arena 榜单显示 Qwen4-Max 以 +7.5% 净提升在 Agent Arena 总排名第14，成为第一中国模型，使 Alibaba 成为排名第一的中国实验室、总榜第5，仅次于 Anthropic、Google、OpenAI 和 Meta。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kzt8bjcin243qefkuiq49c2i6",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    }
+  ],
   "source_health": [
     {
       "source_id": "openai-news",
@@ -14,11 +102,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1387,
-      "kept_count": 0,
+      "fetched_count": 1389,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 568,
-      "checked_at": "2026-11-15T19:32:18.355091Z"
+      "latency_ms": 608,
+      "checked_at": "2026-11-16T04:09:33.761057Z"
     },
     {
       "source_id": "openai-skills",
@@ -29,8 +117,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 252,
-      "checked_at": "2026-11-15T19:32:18.608328Z"
+      "latency_ms": 209,
+      "checked_at": "2026-11-16T04:09:33.971007Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -41,8 +129,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 115,
-      "checked_at": "2026-11-15T19:32:18.727557Z"
+      "latency_ms": 129,
+      "checked_at": "2026-11-16T04:09:34.104660Z"
     },
     {
       "source_id": "google-deepmind",
@@ -53,8 +141,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 337,
-      "checked_at": "2026-11-15T19:32:19.066867Z"
+      "latency_ms": 238,
+      "checked_at": "2026-11-16T04:09:34.344934Z"
     },
     {
       "source_id": "google-ai",
@@ -65,8 +153,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 316,
-      "checked_at": "2026-11-15T19:32:19.383627Z"
+      "latency_ms": 220,
+      "checked_at": "2026-11-16T04:09:34.566062Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -77,8 +165,8 @@
       "fetched_count": 907,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 319,
-      "checked_at": "2026-11-15T19:32:19.715870Z"
+      "latency_ms": 370,
+      "checked_at": "2026-11-16T04:09:34.948937Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -89,8 +177,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 597,
-      "checked_at": "2026-11-15T19:32:20.313793Z"
+      "latency_ms": 449,
+      "checked_at": "2026-11-16T04:09:35.398388Z"
     },
     {
       "source_id": "github-changelog",
@@ -101,8 +189,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-11-15T19:32:20.344413Z"
+      "latency_ms": 51,
+      "checked_at": "2026-11-16T04:09:35.449830Z"
     },
     {
       "source_id": "aihot",
@@ -111,10 +199,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 2380,
-      "checked_at": "2026-11-15T19:32:22.725680Z"
+      "latency_ms": 3417,
+      "checked_at": "2026-11-16T04:09:38.867934Z"
     }
   ],
   "control_notes": {
