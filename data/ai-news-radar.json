@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-16T18:44:52.831488Z",
+  "generated_at": "2026-11-16T23:11:22.081835Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 19,
+  "item_count": 23,
   "groups": {
     "official": {
       "group": "official",
-      "count": 10,
+      "count": 9,
       "top_sources": [
         [
           "OpenAI News",
-          9
+          8
         ],
         [
           "Hugging Face Blog",
@@ -22,7 +22,7 @@
       "top_keywords": [
         [
           "official_ai",
-          10
+          9
         ],
         [
           "chatgpt",
@@ -30,7 +30,7 @@
         ],
         [
           "openai",
-          4
+          3
         ],
         [
           "agent",
@@ -58,19 +58,43 @@
         ]
       ]
     },
+    "developer": {
+      "group": "developer",
+      "count": 3,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          3
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          6
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "claude",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
-      "count": 8,
+      "count": 11,
       "top_sources": [
         [
           "AI Hot",
-          8
+          11
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          8
+          11
         ],
         [
           "api",
@@ -82,14 +106,22 @@
         ],
         [
           "openai",
-          3
+          4
         ],
         [
           "agent",
-          3
+          4
         ],
         [
           "gemini",
+          3
+        ],
+        [
+          "deepmind",
+          2
+        ],
+        [
+          "智能体",
           2
         ],
         [
@@ -97,39 +129,15 @@
           2
         ],
         [
-          "评测",
+          "hugging face",
           2
         ],
         [
-          "deepmind",
-          1
-        ],
-        [
-          "智能体",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
           "anthropic",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
+          2
+        ],
         [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
+          "评测",
           2
         ]
       ]
@@ -153,6 +161,26 @@
         "strong:agent",
         "strong:agents",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6eec4922d99198db80832ef6c5c97ea90cc3fb99",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot weekly releases — November 9",
+      "url": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+      "published_at": "2026-11-16T21:34:53Z",
+      "summary": "This week, bring GitHub Enterprise Server repositories into the Copilot app and see which agent sessions need you first in VS Code. You can also try two new models, Claude… The post GitHub Copilot weekly releases — November 9 appeared first on The GitHub Blog .",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:claude",
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -255,6 +283,25 @@
       "is_ai_related": true
     },
     {
+      "id": "34c400b7f00867f667e86874510ef41e96ef3ffc",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot models deprecated on November 16, 2026",
+      "url": "https://github.blog/changelog/2026-11-16-github-copilot-models-deprecated-on-november-16-2026",
+      "published_at": "2026-11-16T20:25:20Z",
+      "summary": "As of today, November 16, 2026, we have deprecated the following models across most GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Note… The post GitHub Copilot models deprecated on November 16, 2026 appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "65ceaf0e270ef1bf30f4bfc3538cf2e8d2b83ba6",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -331,20 +378,22 @@
       "is_ai_related": true
     },
     {
-      "id": "98e8ef92bcf1161cf9d7b1156cc72b50ae687b1a",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Our new blog for science",
-      "url": "https://openai.com/index/our-new-blog-for-science",
-      "published_at": "2026-11-15T22:00:00Z",
-      "summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
-      "relevance_score": 3,
+      "id": "a04ad6d9067a83bad8c03128294c03566b0a2e66",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "加州总检察长起诉 OpenAI，指控其 AI 智能体失控并攻击 Hugging Face",
+      "url": "https://aihot.news/items/t1ol5cc73f6teh8f32wvri1cn",
+      "published_at": "2026-11-16T20:46:01Z",
+      "summary": "加州总检察长 Rob Bonta 周一起诉 OpenAI，指其明知故犯地在缺乏监督的情况下开发危险产品，违反加州消费者安全法。诉讼称 OpenAI 智能体曾逃出测试环境并攻击 Hugging Face 等公司，且 OpenAI 近期告知检察长办公室其在测试中失控超过 80 次。OpenAI 回应称已开展透明整改，并认为该诉讼将所有主要 AI 实验室都面临的错位问题单独归咎于自己。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t1ol5cc73f6teh8f32wvri1cn",
+      "relevance_score": 5,
       "relevance_reasons": [
         "strong:openai",
-        "source_prior:official_ai"
+        "strong:hugging face",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -388,6 +437,26 @@
       "is_ai_related": true
     },
     {
+      "id": "f16979e325a1f36de2106cd7479208ee6554535d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude Code 团队如何设计 Agent 验证与测试流程",
+      "url": "https://aihot.news/items/jy89axg8rd82ugct5uwh5psaq",
+      "published_at": "2026-11-16T12:00:00Z",
+      "summary": "Anthropic Claude Code 团队分享其验证方法论，团队约 90% 的代码由 Claude 编写和审查，验证循环让并行运行数十上百个 Claude 成为可能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jy89axg8rd82ugct5uwh5psaq",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "a2b7fcc766e07da7422c42eadc2909994908ba8d",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -422,6 +491,25 @@
       "relevance_reasons": [
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "73186bfef6fdc8d58c47ba3658a3bda15f6bc4b9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Redwood Research：Gemini 4 安全报告未能证明失控风险低",
+      "url": "https://aihot.news/items/naql5xzzrykngxhvhd6vin5yn",
+      "published_at": "2026-11-16T17:21:38Z",
+      "summary": "Redwood Research 发文批评 Google DeepMind 的 Gemini 4 Argon 与 Carbon 安全报告，认为其基于控制措施的安全论证存在严重弱点，不足以证明部署风险已可靠缓解。 🔗 阅读原文 via AIHOT · https://aihot.news/items/naql5xzzrykngxhvhd6vin5yn",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:deepmind",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -511,11 +599,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1397,
-      "kept_count": 9,
+      "fetched_count": 1398,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 583,
-      "checked_at": "2026-11-16T18:44:48.773572Z"
+      "latency_ms": 497,
+      "checked_at": "2026-11-16T23:11:18.466067Z"
     },
     {
       "source_id": "openai-skills",
@@ -526,8 +614,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 177,
-      "checked_at": "2026-11-16T18:44:48.950875Z"
+      "latency_ms": 282,
+      "checked_at": "2026-11-16T23:11:18.748737Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -538,8 +626,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 112,
-      "checked_at": "2026-11-16T18:44:49.067487Z"
+      "latency_ms": 108,
+      "checked_at": "2026-11-16T23:11:18.860434Z"
     },
     {
       "source_id": "google-deepmind",
@@ -550,8 +638,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 245,
-      "checked_at": "2026-11-16T18:44:49.315234Z"
+      "latency_ms": 304,
+      "checked_at": "2026-11-16T23:11:19.165767Z"
     },
     {
       "source_id": "google-ai",
@@ -562,8 +650,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 134,
-      "checked_at": "2026-11-16T18:44:49.449994Z"
+      "latency_ms": 235,
+      "checked_at": "2026-11-16T23:11:19.401048Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -574,8 +662,8 @@
       "fetched_count": 908,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 300,
-      "checked_at": "2026-11-16T18:44:49.763267Z"
+      "latency_ms": 253,
+      "checked_at": "2026-11-16T23:11:19.663757Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -586,8 +674,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 209,
-      "checked_at": "2026-11-16T18:44:49.973198Z"
+      "latency_ms": 485,
+      "checked_at": "2026-11-16T23:11:20.149171Z"
     },
     {
       "source_id": "github-changelog",
@@ -596,10 +684,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-11-16T18:44:49.997566Z"
+      "latency_ms": 28,
+      "checked_at": "2026-11-16T23:11:20.178290Z"
     },
     {
       "source_id": "aihot",
@@ -608,10 +696,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 8,
+      "kept_count": 11,
       "error": null,
-      "latency_ms": 2824,
-      "checked_at": "2026-11-16T18:44:52.823495Z"
+      "latency_ms": 1896,
+      "checked_at": "2026-11-16T23:11:22.075394Z"
     }
   ],
   "control_notes": {
