@@ -1,32 +1,36 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-16T16:14:31.115249Z",
+  "generated_at": "2026-11-16T18:44:52.831488Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 19,
   "groups": {
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 10,
       "top_sources": [
         [
           "OpenAI News",
-          5
+          9
+        ],
+        [
+          "Hugging Face Blog",
+          1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          5
-        ],
-        [
-          "openai",
-          3
+          10
         ],
         [
           "chatgpt",
-          2
+          4
+        ],
+        [
+          "openai",
+          4
         ],
         [
           "agent",
@@ -35,29 +39,53 @@
         [
           "agents",
           2
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "eval",
+          1
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "tool",
+          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          4
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
+          8
         ],
         [
           "api",
-          3
+          4
         ],
         [
           "API",
+          4
+        ],
+        [
+          "openai",
+          3
+        ],
+        [
+          "agent",
           3
         ],
         [
@@ -65,7 +93,11 @@
           2
         ],
         [
-          "agent",
+          "开发者",
+          2
+        ],
+        [
+          "评测",
           2
         ],
         [
@@ -77,15 +109,11 @@
           1
         ],
         [
-          "openai",
+          "chatgpt",
           1
         ],
         [
           "anthropic",
-          1
-        ],
-        [
-          "多模态",
           1
         ]
       ]
@@ -189,6 +217,84 @@
       "is_ai_related": true
     },
     {
+      "id": "623c2cff35559a7569e781f899900716f7513368",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Science at the Frontier: How scientists use ChatGPT",
+      "url": "https://openai.com/index/science-at-the-frontier",
+      "published_at": "2026-11-16T12:00:00Z",
+      "summary": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "902885678a1713d449e779a7522c88214a12ca20",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Our first phase of embedded assessments",
+      "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+      "published_at": "2026-11-16T08:00:00Z",
+      "summary": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:eval",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "65ceaf0e270ef1bf30f4bfc3538cf2e8d2b83ba6",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Broadening access to AI for scientists",
+      "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+      "published_at": "2026-11-16T17:00:00Z",
+      "summary": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "027e2d418c65bea454540e6e53bf761fab343dee",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布免费 CSAM 检测图像分类器并升级 ChatGPT 儿童安全干预",
+      "url": "https://aihot.news/items/cidgb5cgquwqxtiydrzykwc2p",
+      "published_at": "2026-11-16T17:00:00Z",
+      "summary": "OpenAI 发布可检测 CSAM（含 AI 生成内容）的图像分类器，通过 API 向审核机构免费开放，测试显示可将需复审图像减少 48%，fal 实测 72% 高置信标记确认为新型 CSAM。同时 ChatGPT 上线新警告，在用户尝试查找涉儿童性剥削内容时打断并暂停访问 24 小时，还发布了面向开发者的 CSAM 治理指南和执法调查支持工具。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cidgb5cgquwqxtiydrzykwc2p",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "weak:api",
+        "weak:开发者",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "40edbcb7e83ce4cbdc4f11e7546acffca3c286da",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -207,6 +313,24 @@
       "is_ai_related": true
     },
     {
+      "id": "a8a145e9c0c2d14947e2255d5a06683be2b93db5",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+      "url": "https://huggingface.co/blog/openrouter",
+      "published_at": "2026-11-16T00:00:00Z",
+      "summary": null,
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "98e8ef92bcf1161cf9d7b1156cc72b50ae687b1a",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -220,6 +344,24 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d591361670ec9ded3d73094996e236b63d7772f6",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Strengthening the fight against online child sexual abuse with new tools and support",
+      "url": "https://openai.com/index/strengthening-online-child-safety",
+      "published_at": "2026-11-16T17:00:00Z",
+      "summary": "New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:tool",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -284,6 +426,26 @@
       "is_ai_related": true
     },
     {
+      "id": "3f5270c33075aa0f65f13c6abdcf31608de9795d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 与 Apollo Research、METR、Transluce、Goodfire 签约启动首阶段嵌入式安全评估",
+      "url": "https://aihot.news/items/qaj2npptre8jgn8xanq9ic965",
+      "published_at": "2026-11-16T08:00:00Z",
+      "summary": "OpenAI 宣布与四家独立评估机构 Apollo Research、METR、Transluce 和 Goodfire 签署协议，启动首阶段嵌入式安全评估。评估专家将获得模型 checkpoint、源码、训练数据和监控系统等内部资源，分别评估模型暗中违背开发者意图的可能性、模型内部可解释性、最大 RL 训练运行的未对齐行为以及后训练对齐评测的质量覆盖。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qaj2npptre8jgn8xanq9ic965",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "weak:开发者",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "0cbc282668e11dae6a764b709b23513f6f04067e",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -302,6 +464,44 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "eb2298a17e62d2627e983d5266b35bfb8511f838",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Databricks 推出 AI Index：追踪企业级 AI 采用与 token 成本",
+      "url": "https://aihot.news/items/ctdbuq2r9l6dakhxrm4pmd8ru",
+      "published_at": "2026-11-16T17:00:00Z",
+      "summary": "Databricks 推出 AI Index，将 Unity Gateway 上 10,000+ 家企业的匿名用量数据与基于私有代码库的编码 Agent 评测结合，每周更新并首次公开其内部评测套件。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ctdbuq2r9l6dakhxrm4pmd8ru",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c965ffda249a8449af0d6d6f0e3d85eca1df382b",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Hugging Face Inference Providers 语言模型路由切换为 OpenRouter",
+      "url": "https://aihot.news/items/v9a6479l3xc0c2m5xsd9bzo9o",
+      "published_at": "2026-11-16T00:00:00Z",
+      "summary": "Hugging Face 与 OpenRouter 合作，将语言模型的 Inference Providers 从自有路由切换到 OpenRouter，按实时价格、速度和可靠性为每次请求挑选最佳 provider，失败时自动重试到其他 provider，代码无需更改。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v9a6479l3xc0c2m5xsd9bzo9o",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "weak:inference",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -311,11 +511,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1393,
-      "kept_count": 5,
+      "fetched_count": 1397,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 408,
-      "checked_at": "2026-11-16T16:14:28.309409Z"
+      "latency_ms": 583,
+      "checked_at": "2026-11-16T18:44:48.773572Z"
     },
     {
       "source_id": "openai-skills",
@@ -326,8 +526,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 220,
-      "checked_at": "2026-11-16T16:14:28.530008Z"
+      "latency_ms": 177,
+      "checked_at": "2026-11-16T18:44:48.950875Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -338,8 +538,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 84,
-      "checked_at": "2026-11-16T16:14:28.617395Z"
+      "latency_ms": 112,
+      "checked_at": "2026-11-16T18:44:49.067487Z"
     },
     {
       "source_id": "google-deepmind",
@@ -350,8 +550,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 183,
-      "checked_at": "2026-11-16T16:14:28.802135Z"
+      "latency_ms": 245,
+      "checked_at": "2026-11-16T18:44:49.315234Z"
     },
     {
       "source_id": "google-ai",
@@ -362,8 +562,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 146,
-      "checked_at": "2026-11-16T16:14:28.948464Z"
+      "latency_ms": 134,
+      "checked_at": "2026-11-16T18:44:49.449994Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -371,11 +571,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 907,
-      "kept_count": 0,
+      "fetched_count": 908,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 201,
-      "checked_at": "2026-11-16T16:14:29.159542Z"
+      "latency_ms": 300,
+      "checked_at": "2026-11-16T18:44:49.763267Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -386,8 +586,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 188,
-      "checked_at": "2026-11-16T16:14:29.347706Z"
+      "latency_ms": 209,
+      "checked_at": "2026-11-16T18:44:49.973198Z"
     },
     {
       "source_id": "github-changelog",
@@ -398,8 +598,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 20,
-      "checked_at": "2026-11-16T16:14:29.368779Z"
+      "latency_ms": 24,
+      "checked_at": "2026-11-16T18:44:49.997566Z"
     },
     {
       "source_id": "aihot",
@@ -408,10 +608,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 1738,
-      "checked_at": "2026-11-16T16:14:31.107900Z"
+      "latency_ms": 2824,
+      "checked_at": "2026-11-16T18:44:52.823495Z"
     }
   ],
   "control_notes": {
