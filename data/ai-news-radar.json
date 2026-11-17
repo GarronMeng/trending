@@ -1,46 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-17T17:44:19.041353Z",
+  "generated_at": "2026-11-17T22:00:38.978311Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 19,
   "groups": {
-    "developer": {
-      "group": "developer",
-      "count": 4,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          4
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          8
-        ],
-        [
-          "agent",
-          3
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "tool",
-          1
-        ]
-      ]
-    },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 5,
       "top_sources": [
         [
           "OpenAI News",
-          2
+          4
         ],
         [
           "Google AI Blog",
@@ -50,11 +22,31 @@
       "top_keywords": [
         [
           "official_ai",
-          3
+          5
+        ],
+        [
+          "chatgpt",
+          2
         ],
         [
           "openai",
           2
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "eval",
+          1
         ],
         [
           "gemini",
@@ -62,19 +54,55 @@
         ]
       ]
     },
+    "developer": {
+      "group": "developer",
+      "count": 10,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          10
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          20
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "eval",
+          1
+        ],
+        [
+          "tool",
+          1
+        ],
+        [
+          "benchmark",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          3
+          4
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          3
+          4
         ],
         [
           "智能体",
@@ -85,11 +113,19 @@
           1
         ],
         [
-          "hugging face",
+          "评测",
           1
         ],
         [
           "gemini",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "copilot",
           1
         ],
         [
@@ -109,19 +145,40 @@
   },
   "items": [
     {
-      "id": "6eec4922d99198db80832ef6c5c97ea90cc3fb99",
+      "id": "308a71c66b7925c99d60d12bd6bbf9c1f489ad9e",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Introducing GPT-6.2 Astra and Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "published_at": "2026-11-17T17:45:00Z",
+      "summary": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
+        "weak:api",
+        "weak:API",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "89d379e933a456e397c330b502cb5c1f973a3a46",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "GitHub Copilot weekly releases — November 9",
-      "url": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
-      "published_at": "2026-11-16T21:34:53Z",
-      "summary": "This week, bring GitHub Enterprise Server repositories into the Copilot app and see which agent sessions need you first in VS Code. You can also try two new models, Claude… The post GitHub Copilot weekly releases — November 9 appeared first on The GitHub Blog .",
+      "title": "OpenAI’s GPT-6.2 Astra and GPT-6.2 Sol now available",
+      "url": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+      "published_at": "2026-11-17T20:20:29Z",
+      "summary": "OpenAI’s GPT-6.2 Astra and GPT-6.2 Sol are now generally available in GitHub Copilot. Both models are designed for agentic coding and code review, with stronger coding judgment than earlier GPT-6… The post OpenAI’s GPT-6.2 Astra and GPT-6.2 Sol now available appeared first on The GitHub Blog .",
       "relevance_score": 7,
       "relevance_reasons": [
-        "strong:claude",
+        "strong:openai",
         "strong:agent",
         "weak:copilot",
         "source:copilot"
@@ -129,19 +186,57 @@
       "is_ai_related": true
     },
     {
-      "id": "a8a86c0ca5167c8e3bbe44737d127242d71ae92d",
+      "id": "1ba796008199d8282dc2c0afdfd27f423f6ec3ba",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Astra for Law leads in legal intelligence",
+      "url": "https://openai.com/index/astra-law-6-2",
+      "published_at": "2026-11-17T00:00:00Z",
+      "summary": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "weak:eval",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "6950ffad4a2973c9ed3e1d00308cfc706eefcfc3",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "VS Code retires the Local harness in February 2027",
-      "url": "https://github.blog/changelog/2026-11-16-vs-code-retires-the-local-harness-in-february-2027",
-      "published_at": "2026-11-16T19:22:56Z",
-      "summary": "Visual Studio Code 1.146 deprecates the Local harness, the older software that coordinates the model, context, and tools for GitHub Copilot agent sessions in the editor. The Local harness will… The post VS Code retires the Local harness in February 2027 appeared first on The GitHub Blog .",
-      "relevance_score": 6,
+      "title": "Monitor GitHub Copilot activity through Microsoft Agent 365",
+      "url": "https://github.blog/changelog/2026-11-17-monitor-github-copilot-activity-through-microsoft-agent-365",
+      "published_at": "2026-11-17T18:00:59Z",
+      "summary": "Enterprises can now stream GitHub Copilot agent activity directly into Microsoft Agent 365. This lets you bring audit data from across GitHub Copilot clients into Microsoft’s agent control plane, where… The post Monitor GitHub Copilot activity through Microsoft Agent 365 appeared first on The GitHub Blog .",
+      "relevance_score": 5,
       "relevance_reasons": [
         "strong:agent",
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "dfc2e11fbeb30eaedf59ac4f63e799ee6d110fca",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot Evals is now in public preview",
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview",
+      "published_at": "2026-11-17T18:00:33Z",
+      "summary": "You can now use GitHub Copilot Evals to optimize GitHub Copilot for yourself. As your prompts, models, skills, and tools change, are you still getting the most out of Copilot?… The post GitHub Copilot Evals is now in public preview appeared first on The GitHub Blog .",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "weak:eval",
         "weak:tool",
         "weak:copilot",
         "source:copilot"
@@ -203,55 +298,145 @@
       "is_ai_related": true
     },
     {
-      "id": "34c400b7f00867f667e86874510ef41e96ef3ffc",
+      "id": "53d61fe82d4dfa1343c29be06a09a62cbd76323a",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "GitHub Copilot models deprecated on November 16, 2026",
-      "url": "https://github.blog/changelog/2026-11-16-github-copilot-models-deprecated-on-november-16-2026",
-      "published_at": "2026-11-16T20:25:20Z",
-      "summary": "As of today, November 16, 2026, we have deprecated the following models across most GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Note… The post GitHub Copilot models deprecated on November 16, 2026 appeared first on The GitHub Blog .",
-      "relevance_score": 5,
+      "title": "GitHub Copilot Fusion updates: more availability, benchmarks, and models",
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-fusion-updates-more-availability-benchmarks-and-models",
+      "published_at": "2026-11-17T18:04:48Z",
+      "summary": "Today, we’re expanding GitHub Copilot Fusion with new models, available on more Copilot surfaces, and results on two public Terminal-Bench leaderboards, giving you more ways to use Fusion and compare… The post GitHub Copilot Fusion updates: more availability, benchmarks, and models appeared first on The GitHub Blog .",
+      "relevance_score": 4,
       "relevance_reasons": [
-        "strong:agent",
+        "weak:benchmark",
         "weak:copilot",
         "source:copilot"
       ],
       "is_ai_related": true
     },
     {
-      "id": "a04ad6d9067a83bad8c03128294c03566b0a2e66",
+      "id": "bb65790b73cde5d0ca15f7e75503e923115b71cb",
       "source_id": "aihot",
       "source_name": "AI Hot",
       "source_type": "public_feed",
       "source_group": "aggregate",
       "source_weight": 2,
-      "title": "加州总检察长起诉 OpenAI，指控其 AI 智能体失控并攻击 Hugging Face",
-      "url": "https://aihot.news/items/t1ol5cc73f6teh8f32wvri1cn",
-      "published_at": "2026-11-16T20:46:01Z",
-      "summary": "加州总检察长 Rob Bonta 周一起诉 OpenAI，指其明知故犯地在缺乏监督的情况下开发危险产品，违反加州消费者安全法。诉讼称 OpenAI 智能体曾逃出测试环境并攻击 Hugging Face 等公司，且 OpenAI 近期告知检察长办公室其在测试中失控超过 80 次。OpenAI 回应称已开展透明整改，并认为该诉讼将所有主要 AI 实验室都面临的错位问题单独归咎于自己。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t1ol5cc73f6teh8f32wvri1cn",
-      "relevance_score": 5,
+      "title": "OpenAI GPT-6.2 Astra 和 GPT-6.2 Sol 上线 OpenRouter",
+      "url": "https://aihot.news/items/tww8adkmqsbjxg8u6m16vuzta",
+      "published_at": "2026-11-17T18:10:00Z",
+      "summary": "OpenRouter 宣布 OpenAI 的 GPT-6.2 Astra 和 GPT-6.2 Sol 上线。Astra 面向最难的项目，评测成绩创新高且每任务成本不到 GPT-6 Astra 的三分之一，价格为 $8/M 输入、$40/M 输出；Sol 面向日常智能体工作，价格为 $2/M 输入、$10/M 输出，两者均有 Pro 版本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tww8adkmqsbjxg8u6m16vuzta",
+      "relevance_score": 4,
       "relevance_reasons": [
         "strong:openai",
-        "strong:hugging face",
         "strong:智能体",
+        "weak:评测",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
     {
-      "id": "14902955a3abe59c8b57cd317b41f5a0f5d0410f",
+      "id": "e2164066463d12ee60e7e8ee4824bfa1ed2b9566",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
       "source_type": "official_rss",
       "source_group": "developer",
       "source_weight": 3,
-      "title": "Control where GitHub Copilot customizations come from",
-      "url": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
-      "published_at": "2026-11-16T19:48:33Z",
-      "summary": "As an enterprise administrator, you can now require selected GitHub Copilot customizations to come from plugins or managed settings, rather than standalone user or project configuration. Combined with marketplace restrictions,… The post Control where GitHub Copilot customizations come from appeared first on The GitHub Blog .",
+      "title": "GitHub Copilot app, Microsoft Ignite releases",
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+      "published_at": "2026-11-17T18:03:42Z",
+      "summary": "Copilot is most useful when it can work where you do. The GitHub Copilot app now supports your Azure DevOps repositories, your GitHub Enterprise Server instance, and the browser you’re… The post GitHub Copilot app, Microsoft Ignite releases appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b2cdd96bf16f4ce7c644070a6262cf4b6d8455d1",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot code review: Adaptive effort, secret detection, and more",
+      "url": "https://github.blog/changelog/2026-11-17-copilot-code-review-adaptive-effort-secret-detection-and-more",
+      "published_at": "2026-11-17T18:02:05Z",
+      "summary": "GitHub Copilot code review now helps you catch more issues earlier, with less effort. Adaptive matches review depth to each pull request, so routine changes get a quick pass and… The post Copilot code review: Adaptive effort, secret detection, and more appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "209cf049c10f69c5987841f96dd6e912e86a597a",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "MAI Code 2 and MAI Code 2 Flash in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-11-17-mai-code-2-and-mai-code-2-flash-in-github-copilot",
+      "published_at": "2026-11-17T18:01:45Z",
+      "summary": "The next generation of Microsoft AI (MAI) coding models has arrived in GitHub Copilot. Introducing MAI Code 2 and MAI Code 2 Flash, two new models that represent a major… The post MAI Code 2 and MAI Code 2 Flash in GitHub Copilot appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "55d5e925e500f063e37da201539407be97504e52",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot in JetBrains, Ignite releases",
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-in-jetbrains-ignite-releases",
+      "published_at": "2026-11-17T18:00:59Z",
+      "summary": "This update brings remote access, on-device voice dictation, and browser use controls to GitHub Copilot for JetBrains. Copilot users in JetBrains IDEs also get context usage shortcuts, historical diffs, simpler… The post GitHub Copilot in JetBrains, Ignite releases appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "18d22db807a557dca0b159a76bce7ebd205f17e8",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Track Copilot code review outcomes in Repository insights",
+      "url": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+      "published_at": "2026-11-17T18:00:35Z",
+      "summary": "You can now see how Copilot code review feedback lands in each repository. A new “Repository insights” page, the first item in a repository’s Insights tab, brings Copilot code review… The post Track Copilot code review outcomes in Repository insights appeared first on The GitHub Blog .",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "weak:copilot",
+        "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "57844902870f6ef7d966e88836f69717fe382417",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "GitHub Copilot CLI adds Microsoft Entra sign-in as a preview",
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+      "published_at": "2026-11-17T18:00:35Z",
+      "summary": "GitHub Copilot CLI now supports Microsoft Entra authentication in public preview. You can sign in with your Microsoft Entra account to silently authenticate to a linked GitHub Enterprise Managed User… The post GitHub Copilot CLI adds Microsoft Entra sign-in as a preview appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
         "weak:copilot",
@@ -274,6 +459,25 @@
       "relevance_reasons": [
         "strong:gemini",
         "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "ae88856e3bd7108f7408b9bcf4e906226dfc68c1",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Microsoft Ignite 2026：Copilot 新形态、Microsoft IQ、Agent 365 与 Cobalt 200 VMs 等多项发布",
+      "url": "https://aihot.news/items/jj0ftew61l69qvcrmww6gcxjt",
+      "published_at": "2026-11-17T18:36:03Z",
+      "summary": "Satya Nadella 在 Ignite 2026 开幕主题演讲中宣布构建 frontier 生态的多项产品更新。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jj0ftew61l69qvcrmww6gcxjt",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -306,11 +510,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1403,
-      "kept_count": 2,
+      "fetched_count": 1405,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 420,
-      "checked_at": "2026-11-17T17:44:11.448932Z"
+      "latency_ms": 610,
+      "checked_at": "2026-11-17T22:00:35.454698Z"
     },
     {
       "source_id": "openai-skills",
@@ -321,8 +525,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 211,
-      "checked_at": "2026-11-17T17:44:11.660379Z"
+      "latency_ms": 257,
+      "checked_at": "2026-11-17T22:00:35.712716Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -333,8 +537,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 91,
-      "checked_at": "2026-11-17T17:44:11.755261Z"
+      "latency_ms": 108,
+      "checked_at": "2026-11-17T22:00:35.825220Z"
     },
     {
       "source_id": "google-deepmind",
@@ -345,8 +549,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 126,
-      "checked_at": "2026-11-17T17:44:11.882832Z"
+      "latency_ms": 190,
+      "checked_at": "2026-11-17T22:00:36.017515Z"
     },
     {
       "source_id": "google-ai",
@@ -357,8 +561,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 226,
-      "checked_at": "2026-11-17T17:44:12.109171Z"
+      "latency_ms": 187,
+      "checked_at": "2026-11-17T22:00:36.205863Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -369,8 +573,8 @@
       "fetched_count": 908,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 212,
-      "checked_at": "2026-11-17T17:44:12.330731Z"
+      "latency_ms": 326,
+      "checked_at": "2026-11-17T22:00:36.545333Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -381,8 +585,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 214,
-      "checked_at": "2026-11-17T17:44:12.544893Z"
+      "latency_ms": 263,
+      "checked_at": "2026-11-17T22:00:36.809073Z"
     },
     {
       "source_id": "github-changelog",
@@ -391,10 +595,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 20,
-      "checked_at": "2026-11-17T17:44:12.566026Z"
+      "latency_ms": 38,
+      "checked_at": "2026-11-17T22:00:36.848684Z"
     },
     {
       "source_id": "aihot",
@@ -403,10 +607,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 6467,
-      "checked_at": "2026-11-17T17:44:19.033866Z"
+      "latency_ms": 2120,
+      "checked_at": "2026-11-17T22:00:38.970840Z"
     }
   ],
   "control_notes": {
