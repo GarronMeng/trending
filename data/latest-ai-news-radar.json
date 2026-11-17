@@ -1,24 +1,24 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-17T12:30:46.299039Z",
+  "generated_at": "2026-11-17T16:20:52.882191Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 15,
+  "item_count": 14,
   "groups": {
     "developer": {
       "group": "developer",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "GitHub Changelog",
-          5
+          4
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          10
+          8
         ],
         [
           "agent",
@@ -34,83 +34,23 @@
         ]
       ]
     },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 7,
-      "top_sources": [
-        [
-          "AI Hot",
-          7
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          7
-        ],
-        [
-          "gemini",
-          4
-        ],
-        [
-          "智能体",
-          3
-        ],
-        [
-          "api",
-          3
-        ],
-        [
-          "API",
-          3
-        ],
-        [
-          "deepmind",
-          2
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "开发者",
-          1
-        ],
-        [
-          "hugging face",
-          1
-        ],
-        [
-          "评测",
-          1
-        ]
-      ]
-    },
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
           "OpenAI News",
-          3
+          4
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
+          4
         ],
         [
           "openai",
-          1
+          2
         ],
         [
           "chatgpt",
@@ -118,6 +58,66 @@
         ],
         [
           "tool",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 6,
+      "top_sources": [
+        [
+          "AI Hot",
+          6
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          6
+        ],
+        [
+          "openai",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "开发者",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "gemini",
+          2
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "deepmind",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "评测",
           1
         ]
       ]
@@ -165,28 +165,6 @@
       "is_ai_related": true
     },
     {
-      "id": "9757a99352b427f32cc24f48ea98fadb699e8e4b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Gemini 4 Hydrogen 与 Carbon 如何按工作负载选型",
-      "url": "https://aihot.news/items/zo7ubny2zjk4qoqjdoiec91b8",
-      "published_at": "2026-11-16T16:02:31Z",
-      "summary": "Google DeepMind 的 Philipp Schmid 讲解如何在工作负载中选择 Gemini 4 Hydrogen 与 Carbon：Carbon 适合硬架构设计、调试、科学证明和安全审计，intro 价 $2/$10 至 11 月 30 日；Hydrogen 适合日常编码、交互应用和工具调用智能体，价格 $1.50/$7.50 per 1M。两款都可用 Carbon 负责规划编排、Hydrogen 负责执行的搭配，共享 1M-token 统一上下文窗口、95% implicit caching 和相同 Interactions API schema。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zo7ubny2zjk4qoqjdoiec91b8",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:deepmind",
-        "strong:智能体",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "4eea6e8e95edf236cb66572f21ee623491c376f7",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
@@ -197,6 +175,24 @@
       "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
       "published_at": "2026-11-17T00:00:00Z",
       "summary": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "c8fb2fa8acb8df9eb9fe3931e2958bce1d8fa394",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Introducing OpenAI for Chile",
+      "url": "https://openai.com/index/introducing-openai-for-chile",
+      "published_at": "2026-11-17T00:00:00Z",
+      "summary": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:openai",
@@ -302,27 +298,6 @@
       "is_ai_related": true
     },
     {
-      "id": "4038b2ef4ce1e168530617193ed0488ad8bc4dc6",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google 发布 Gemini 4 Carbon 与 Hydrogen，并推出 Decisions API 和自托管 agent 沙箱",
-      "url": "https://aihot.news/items/n3qi466u1gbxj2i8q7g5snhr0",
-      "published_at": "2026-11-16T15:57:52Z",
-      "summary": "Google 发布 Gemini 4 Carbon（gemini-4-carbon，1M 共享 token 池，11 月 30 日前 $2.00/$10.00 每 1M tokens。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n3qi466u1gbxj2i8q7g5snhr0",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:agent",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "14902955a3abe59c8b57cd317b41f5a0f5d0410f",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -333,24 +308,6 @@
       "url": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
       "published_at": "2026-11-16T19:48:33Z",
       "summary": "As an enterprise administrator, you can now require selected GitHub Copilot customizations to come from plugins or managed settings, rather than standalone user or project configuration. Combined with marketplace restrictions,… The post Control where GitHub Copilot customizations come from appeared first on The GitHub Blog .",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8c89aed40f2cf07fc95cabf524db623b2587b14d",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Take GitHub Mobile with you on iPhone Duo",
-      "url": "https://github.blog/changelog/2026-11-16-take-github-mobile-with-you-on-iphone-duo",
-      "published_at": "2026-11-16T14:30:07Z",
-      "summary": "GitHub Mobile now supports iPhone Duo, with a layout that adapts when unfolded and vertical tabs to help you move between key areas like Copilot, Pull Requests, Issues, and Notifications.… The post Take GitHub Mobile with you on iPhone Duo appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
         "weak:copilot",
@@ -397,6 +354,26 @@
       "is_ai_related": true
     },
     {
+      "id": "934bba03e517d83c5a4f42337aca20c05c995375",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "可灵 AI 发布 Kling Image 4.0 图像模型并开放 API",
+      "url": "https://aihot.news/items/e871ammlz8gpx1oozsswidzt0",
+      "published_at": "2026-11-17T15:10:31Z",
+      "summary": "快手可灵 AI 发布新一代图像创作模型 Kling Image 4.0，现已全量上线并面向企业客户与开发者开放 API。模型采用「理解生成统一」架构，首次支持原生 8K 图像生成，内置 110+ 种预设影调风格和 70+ 种商用字体，支持最高 15000 tokens 文本输入、单图最多生成 2000 字，以及一次描述生成最多 10 张风格连贯的组图和电商详情页等超长画幅长图。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e871ammlz8gpx1oozsswidzt0",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:api",
+        "weak:开发者",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "eb2298a17e62d2627e983d5266b35bfb8511f838",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -423,11 +400,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1400,
-      "kept_count": 3,
+      "fetched_count": 1401,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 601,
-      "checked_at": "2026-11-17T12:30:40.961668Z"
+      "latency_ms": 592,
+      "checked_at": "2026-11-17T16:20:42.919309Z"
     },
     {
       "source_id": "openai-skills",
@@ -438,8 +415,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 188,
-      "checked_at": "2026-11-17T12:30:41.150154Z"
+      "latency_ms": 428,
+      "checked_at": "2026-11-17T16:20:43.348064Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -450,8 +427,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 123,
-      "checked_at": "2026-11-17T12:30:41.277771Z"
+      "latency_ms": 125,
+      "checked_at": "2026-11-17T16:20:43.477302Z"
     },
     {
       "source_id": "google-deepmind",
@@ -462,8 +439,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 213,
-      "checked_at": "2026-11-17T12:30:41.492700Z"
+      "latency_ms": 345,
+      "checked_at": "2026-11-17T16:20:43.824510Z"
     },
     {
       "source_id": "google-ai",
@@ -474,8 +451,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 246,
-      "checked_at": "2026-11-17T12:30:41.739357Z"
+      "latency_ms": 151,
+      "checked_at": "2026-11-17T16:20:43.976817Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -486,8 +463,8 @@
       "fetched_count": 908,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 384,
-      "checked_at": "2026-11-17T12:30:42.137031Z"
+      "latency_ms": 386,
+      "checked_at": "2026-11-17T16:20:44.376422Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -498,8 +475,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 488,
-      "checked_at": "2026-11-17T12:30:42.625656Z"
+      "latency_ms": 484,
+      "checked_at": "2026-11-17T16:20:44.860985Z"
     },
     {
       "source_id": "github-changelog",
@@ -508,10 +485,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 5,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 55,
-      "checked_at": "2026-11-17T12:30:42.681637Z"
+      "latency_ms": 52,
+      "checked_at": "2026-11-17T16:20:44.913728Z"
     },
     {
       "source_id": "aihot",
@@ -520,10 +497,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 3608,
-      "checked_at": "2026-11-17T12:30:46.290922Z"
+      "latency_ms": 7959,
+      "checked_at": "2026-11-17T16:20:52.874000Z"
     }
   ],
   "control_notes": {
