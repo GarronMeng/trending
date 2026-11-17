@@ -1,36 +1,28 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-16T23:11:22.081835Z",
+  "generated_at": "2026-11-17T05:57:40.115665Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 23,
+  "item_count": 20,
   "groups": {
     "official": {
       "group": "official",
-      "count": 9,
+      "count": 7,
       "top_sources": [
         [
           "OpenAI News",
-          8
-        ],
-        [
-          "Hugging Face Blog",
-          1
+          7
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          9
+          7
         ],
         [
           "chatgpt",
           4
-        ],
-        [
-          "openai",
-          3
         ],
         [
           "agent",
@@ -38,6 +30,10 @@
         ],
         [
           "agents",
+          2
+        ],
+        [
+          "openai",
           2
         ],
         [
@@ -49,7 +45,31 @@
           1
         ],
         [
-          "hugging face",
+          "tool",
+          1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 5,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          5
+        ]
+      ],
+      "top_keywords": [
+        [
+          "copilot",
+          10
+        ],
+        [
+          "agent",
+          3
+        ],
+        [
+          "claude",
           1
         ],
         [
@@ -58,62 +78,38 @@
         ]
       ]
     },
-    "developer": {
-      "group": "developer",
-      "count": 3,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          3
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          6
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "claude",
-          1
-        ]
-      ]
-    },
     "aggregate": {
       "group": "aggregate",
-      "count": 11,
+      "count": 8,
       "top_sources": [
         [
           "AI Hot",
-          11
+          8
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          11
-        ],
-        [
-          "api",
-          4
-        ],
-        [
-          "API",
-          4
-        ],
-        [
-          "openai",
-          4
-        ],
-        [
-          "agent",
-          4
+          8
         ],
         [
           "gemini",
+          3
+        ],
+        [
+          "api",
+          3
+        ],
+        [
+          "API",
+          3
+        ],
+        [
+          "openai",
+          3
+        ],
+        [
+          "agent",
           3
         ],
         [
@@ -129,16 +125,16 @@
           2
         ],
         [
-          "hugging face",
-          2
-        ],
-        [
-          "anthropic",
-          2
-        ],
-        [
           "评测",
           2
+        ],
+        [
+          "chatgpt",
+          1
+        ],
+        [
+          "hugging face",
+          1
         ]
       ]
     }
@@ -219,6 +215,26 @@
         "strong:agent",
         "strong:agents",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "a8a86c0ca5167c8e3bbe44737d127242d71ae92d",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "VS Code retires the Local harness in February 2027",
+      "url": "https://github.blog/changelog/2026-11-16-vs-code-retires-the-local-harness-in-february-2027",
+      "published_at": "2026-11-16T19:22:56Z",
+      "summary": "Visual Studio Code 1.146 deprecates the Local harness, the older software that coordinates the model, context, and tools for GitHub Copilot agent sessions in the editor. The Local harness will… The post VS Code retires the Local harness in February 2027 appeared first on The GitHub Blog .",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:tool",
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -342,42 +358,6 @@
       "is_ai_related": true
     },
     {
-      "id": "40edbcb7e83ce4cbdc4f11e7546acffca3c286da",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "The King’s Trust and OpenAI launch £1m partnership",
-      "url": "https://openai.com/index/the-kings-trust-and-openai",
-      "published_at": "2026-11-16T00:00:00Z",
-      "summary": "The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a8a145e9c0c2d14947e2255d5a06683be2b93db5",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
-      "url": "https://huggingface.co/blog/openrouter",
-      "published_at": "2026-11-16T00:00:00Z",
-      "summary": null,
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "a04ad6d9067a83bad8c03128294c03566b0a2e66",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -457,22 +437,20 @@
       "is_ai_related": true
     },
     {
-      "id": "a2b7fcc766e07da7422c42eadc2909994908ba8d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Qwen4-Max 登顶 Agent Arena 中国模型榜首，Alibaba 排名升至总榜第14",
-      "url": "https://aihot.news/items/kzt8bjcin243qefkuiq49c2i6",
-      "published_at": "2026-11-16T02:21:45Z",
-      "summary": "Arena 榜单显示 Qwen4-Max 以 +7.5% 净提升在 Agent Arena 总排名第14，成为第一中国模型，使 Alibaba 成为排名第一的中国实验室、总榜第5，仅次于 Anthropic、Google、OpenAI 和 Meta。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kzt8bjcin243qefkuiq49c2i6",
-      "relevance_score": 5,
+      "id": "14902955a3abe59c8b57cd317b41f5a0f5d0410f",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Control where GitHub Copilot customizations come from",
+      "url": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+      "published_at": "2026-11-16T19:48:33Z",
+      "summary": "As an enterprise administrator, you can now require selected GitHub Copilot customizations to come from plugins or managed settings, rather than standalone user or project configuration. Combined with marketplace restrictions,… The post Control where GitHub Copilot customizations come from appeared first on The GitHub Blog .",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "strong:agent",
-        "source_penalty:aggregate_noise"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     },
@@ -534,26 +512,6 @@
       "is_ai_related": true
     },
     {
-      "id": "0cbc282668e11dae6a764b709b23513f6f04067e",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "腾讯混元发布 Hy4 flash：224B 总参数、1M 上下文的日常高性价比模型",
-      "url": "https://aihot.news/items/u36vxmxeopbsx4if4lap30899",
-      "published_at": "2026-11-16T04:29:37Z",
-      "summary": "腾讯混元推出 Hy4 flash，总参数 224B（含 64B Engram 参数）、激活 12B，支持多模态和 1M 上下文，API 价格大幅低于 Hy4（输入 0.5 元、输出 2 元每百万 tokens）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/u36vxmxeopbsx4if4lap30899",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:多模态",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "eb2298a17e62d2627e983d5266b35bfb8511f838",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -571,25 +529,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "c965ffda249a8449af0d6d6f0e3d85eca1df382b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Hugging Face Inference Providers 语言模型路由切换为 OpenRouter",
-      "url": "https://aihot.news/items/v9a6479l3xc0c2m5xsd9bzo9o",
-      "published_at": "2026-11-16T00:00:00Z",
-      "summary": "Hugging Face 与 OpenRouter 合作，将语言模型的 Inference Providers 从自有路由切换到 OpenRouter，按实时价格、速度和可靠性为每次请求挑选最佳 provider，失败时自动重试到其他 provider，代码无需更改。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v9a6479l3xc0c2m5xsd9bzo9o",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "weak:inference",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -600,10 +539,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1398,
-      "kept_count": 8,
+      "kept_count": 7,
       "error": null,
-      "latency_ms": 497,
-      "checked_at": "2026-11-16T23:11:18.466067Z"
+      "latency_ms": 567,
+      "checked_at": "2026-11-17T05:57:35.399998Z"
     },
     {
       "source_id": "openai-skills",
@@ -614,8 +553,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 282,
-      "checked_at": "2026-11-16T23:11:18.748737Z"
+      "latency_ms": 176,
+      "checked_at": "2026-11-17T05:57:35.576563Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -626,8 +565,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 108,
-      "checked_at": "2026-11-16T23:11:18.860434Z"
+      "latency_ms": 112,
+      "checked_at": "2026-11-17T05:57:35.692731Z"
     },
     {
       "source_id": "google-deepmind",
@@ -638,8 +577,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 304,
-      "checked_at": "2026-11-16T23:11:19.165767Z"
+      "latency_ms": 123,
+      "checked_at": "2026-11-17T05:57:35.818186Z"
     },
     {
       "source_id": "google-ai",
@@ -650,8 +589,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 235,
-      "checked_at": "2026-11-16T23:11:19.401048Z"
+      "latency_ms": 170,
+      "checked_at": "2026-11-17T05:57:35.989257Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -660,10 +599,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 908,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-11-16T23:11:19.663757Z"
+      "latency_ms": 259,
+      "checked_at": "2026-11-17T05:57:36.262765Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -674,8 +613,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 485,
-      "checked_at": "2026-11-16T23:11:20.149171Z"
+      "latency_ms": 205,
+      "checked_at": "2026-11-17T05:57:36.468686Z"
     },
     {
       "source_id": "github-changelog",
@@ -684,10 +623,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 3,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 28,
-      "checked_at": "2026-11-16T23:11:20.178290Z"
+      "latency_ms": 23,
+      "checked_at": "2026-11-17T05:57:36.492672Z"
     },
     {
       "source_id": "aihot",
@@ -696,10 +635,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 11,
+      "kept_count": 8,
       "error": null,
-      "latency_ms": 1896,
-      "checked_at": "2026-11-16T23:11:22.075394Z"
+      "latency_ms": 3613,
+      "checked_at": "2026-11-17T05:57:40.107580Z"
     }
   ],
   "control_notes": {
