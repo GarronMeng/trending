@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-18T05:26:50.046900Z",
+  "generated_at": "2026-11-18T12:18:04.128639Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 22,
+  "item_count": 23,
   "groups": {
     "official": {
       "group": "official",
@@ -38,6 +38,10 @@
         ],
         [
           "API",
+          1
+        ],
+        [
+          "openai",
           1
         ],
         [
@@ -84,24 +88,32 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 9,
+      "count": 10,
       "top_sources": [
         [
           "AI Hot",
-          9
+          10
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          9
+          10
         ],
         [
           "openai",
+          5
+        ],
+        [
+          "api",
           3
         ],
         [
-          "智能体",
+          "API",
+          3
+        ],
+        [
+          "评测",
           3
         ],
         [
@@ -109,23 +121,19 @@
           2
         ],
         [
-          "api",
-          2
-        ],
-        [
-          "API",
-          2
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
-          "评测",
-          2
-        ],
-        [
           "codex",
+          2
+        ],
+        [
+          "多模态",
+          2
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "gemini",
           1
         ],
         [
@@ -133,11 +141,7 @@
           1
         ],
         [
-          "claude",
-          1
-        ],
-        [
-          "agents",
+          "hugging face",
           1
         ]
       ]
@@ -161,6 +165,25 @@
         "strong:codex",
         "weak:api",
         "weak:API",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d0c4ba19ac192c2749ef9195488d17833f70b644",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+      "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+      "published_at": "2026-11-18T00:00:00Z",
+      "summary": "Le Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT through summaries and excerpts, with links to original stories.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -203,27 +226,6 @@
         "strong:codex",
         "weak:api",
         "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d68e9eaba983ba1654361d081974339f5c4f24fe",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 工程师复盘用 chaos loop 强化 Claude Docs 上线：20 亿次请求仅 60 次服务器错误",
-      "url": "https://aihot.news/items/snkvsiff90slvj17hf9i5u4do",
-      "published_at": "2026-11-17T12:00:00Z",
-      "summary": "Anthropic 工程师 Vivek Nair 复盘 Claude Docs 9 月 16 日上线前的 chaos loop 实践：让 Claude Code 会话在镜像生产的 staging 集群上以每天超 100 万合成 docs 持续压测并修复故障，峰值时同时运行 30 个 sub-agents。 🔗 阅读原文 via AIHOT · https://aihot.news/items/snkvsiff90slvj17hf9i5u4do",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:agent",
-        "strong:agents",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -286,20 +288,23 @@
       "is_ai_related": true
     },
     {
-      "id": "9cce77253fcd02db513c4560bc174b1cb729b7c0",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Introducing ChatGPT for Sales",
-      "url": "https://openai.com/index/introducing-chatgpt-for-sales",
-      "published_at": "2026-11-17T08:00:00Z",
-      "summary": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
-      "relevance_score": 3,
+      "id": "2de6e637aa651129cacdbbd9dd30d7f896f2fab9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Gemini API 支持直传 Office 文件并新增多模态内容切片",
+      "url": "https://aihot.news/items/a48izcq1y2jqtjr66xjvwqkak",
+      "published_at": "2026-11-18T00:00:00Z",
+      "summary": "Gemini API 于 11 月 18 日更新，支持直接传入 Word、PowerPoint、Excel 等 Microsoft Office 和 OpenDocument 文件，并可在提示词和函数响应中切片文档、表格、视频和音频。可按页码区间、工作表标签、单元格范围、时间区间或内容层（如页面图片、提取文本、公式或视频转录）选取所需内容，只处理和支付需要的部分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/a48izcq1y2jqtjr66xjvwqkak",
+      "relevance_score": 5,
       "relevance_reasons": [
-        "strong:chatgpt",
-        "source_prior:official_ai"
+        "strong:gemini",
+        "strong:多模态",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -319,6 +324,26 @@
         "weak:benchmark",
         "weak:copilot",
         "source:copilot"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "4db3d68da637188318099c528c875c28f327a27c",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI Codex 团队成员解释 6.2 Sol/Astra 评测视频与现场反馈的差异",
+      "url": "https://aihot.news/items/sah26a5ofgvrxd76bgj9t77wf",
+      "published_at": "2026-11-18T05:47:21Z",
+      "summary": "Tibo 解释 6.2 Sol/Astra 上评测视频与现场人群反馈氛围不同的原因：部分人较早获得访问权限，而团队在过去 3-4 天做了大量改动，视频是上周制作的，之后大概率没有重新测试。他称这两个模型相比 GPT 前代有明显提升，但仍不完美，团队希望在后续迭代的品味和使用体验上改进，并表示欢迎反馈。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sah26a5ofgvrxd76bgj9t77wf",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:codex",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -451,6 +476,25 @@
       "is_ai_related": true
     },
     {
+      "id": "2f1ba4406f0ebc24cd57939ae5e1b35b569300b2",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 发布 GPT-6.2 Astra 和 Sol：更便宜但口碑分化，Anthropic 仍握最强模型",
+      "url": "https://aihot.news/items/oisr0dfay736le62g425urn8l",
+      "published_at": "2026-11-18T10:19:04Z",
+      "summary": "Latent Space 汇总 OpenAI 发布的 GPT-6.2 Astra 和 Sol：Artificial Analysis 测得 Sol 以约 15% 的单任务成本追平 9 月的 Astra，新 Astra 以 62 分位居 Intelligence Index 第二，仅次于 Fable 5.2 的 65 分，两者均为 1M 上下文、128K 输出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oisr0dfay736le62g425urn8l",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:anthropic",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "2b92efcd454558558df4979bc59af683d6ebc8e0",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -484,25 +528,6 @@
       "relevance_reasons": [
         "strong:openai",
         "strong:chatgpt",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "de3a9135697b86b97b2962581ed8530846c4ab93",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Trajectory Labs 实验：约 40 个 Gemini 4 Argon 智能体越权攻击 Epoch AI 真实网站并互相分享漏洞",
-      "url": "https://aihot.news/items/x9n4qsoim6h42fqjo1v12ailu",
-      "published_at": "2026-11-17T09:41:54Z",
-      "summary": "AI 安全研究公司 Trajectory Labs 在测试 Gemini 4 Argon 智能体时，约 40 个智能体在收到不可能完成的任务后越权探测 Epoch AI 真实网站，3 小时内发送 36411 次请求和 487 条消息，包括冒充员工、SQL 注入和绕过 CAPTCHA。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x9n4qsoim6h42fqjo1v12ailu",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -573,11 +598,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1406,
+      "fetched_count": 1407,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 395,
-      "checked_at": "2026-11-18T05:26:46.209344Z"
+      "latency_ms": 380,
+      "checked_at": "2026-11-18T12:18:02.541217Z"
     },
     {
       "source_id": "openai-skills",
@@ -588,8 +613,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 215,
-      "checked_at": "2026-11-18T05:26:46.424558Z"
+      "latency_ms": 165,
+      "checked_at": "2026-11-18T12:18:02.707090Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -600,8 +625,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 88,
-      "checked_at": "2026-11-18T05:26:46.516281Z"
+      "latency_ms": 77,
+      "checked_at": "2026-11-18T12:18:02.787244Z"
     },
     {
       "source_id": "google-deepmind",
@@ -612,8 +637,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 174,
-      "checked_at": "2026-11-18T05:26:46.692147Z"
+      "latency_ms": 91,
+      "checked_at": "2026-11-18T12:18:02.879894Z"
     },
     {
       "source_id": "google-ai",
@@ -624,8 +649,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 208,
-      "checked_at": "2026-11-18T05:26:46.900983Z"
+      "latency_ms": 74,
+      "checked_at": "2026-11-18T12:18:02.954298Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -636,8 +661,8 @@
       "fetched_count": 908,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 290,
-      "checked_at": "2026-11-18T05:26:47.200701Z"
+      "latency_ms": 157,
+      "checked_at": "2026-11-18T12:18:03.119893Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -648,8 +673,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 410,
-      "checked_at": "2026-11-18T05:26:47.610915Z"
+      "latency_ms": 125,
+      "checked_at": "2026-11-18T12:18:03.245381Z"
     },
     {
       "source_id": "github-changelog",
@@ -660,8 +685,8 @@
       "fetched_count": 10,
       "kept_count": 10,
       "error": null,
-      "latency_ms": 51,
-      "checked_at": "2026-11-18T05:26:47.662781Z"
+      "latency_ms": 21,
+      "checked_at": "2026-11-18T12:18:03.266950Z"
     },
     {
       "source_id": "aihot",
@@ -670,10 +695,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 9,
+      "kept_count": 10,
       "error": null,
-      "latency_ms": 2375,
-      "checked_at": "2026-11-18T05:26:50.039364Z"
+      "latency_ms": 854,
+      "checked_at": "2026-11-18T12:18:04.122176Z"
     }
   ],
   "control_notes": {
