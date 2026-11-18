@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-17T22:00:38.978311Z",
+  "generated_at": "2026-11-18T05:26:50.046900Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 19,
+  "item_count": 22,
   "groups": {
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 3,
       "top_sources": [
         [
           "OpenAI News",
-          4
+          2
         ],
         [
           "Google AI Blog",
@@ -22,14 +22,10 @@
       "top_keywords": [
         [
           "official_ai",
-          5
+          3
         ],
         [
           "chatgpt",
-          2
-        ],
-        [
-          "openai",
           2
         ],
         [
@@ -42,10 +38,6 @@
         ],
         [
           "API",
-          1
-        ],
-        [
-          "eval",
           1
         ],
         [
@@ -92,52 +84,60 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 9,
       "top_sources": [
         [
           "AI Hot",
-          4
+          9
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
-        ],
-        [
-          "智能体",
-          2
+          9
         ],
         [
           "openai",
-          1
+          3
         ],
         [
-          "评测",
-          1
+          "智能体",
+          3
         ],
         [
-          "gemini",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "copilot",
-          1
+          "chatgpt",
+          2
         ],
         [
           "api",
-          1
-        ],
-        [
-          "开发者",
-          1
+          2
         ],
         [
           "API",
+          2
+        ],
+        [
+          "agent",
+          2
+        ],
+        [
+          "评测",
+          2
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "agents",
           1
         ]
       ]
@@ -186,21 +186,45 @@
       "is_ai_related": true
     },
     {
-      "id": "1ba796008199d8282dc2c0afdfd27f423f6ec3ba",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Astra for Law leads in legal intelligence",
-      "url": "https://openai.com/index/astra-law-6-2",
-      "published_at": "2026-11-17T00:00:00Z",
-      "summary": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
-      "relevance_score": 4,
+      "id": "4c9b7862b333f48bee300c25a64d052ebce221e0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "深度实测GPT-6.2 Astra：极致省钱但偏科严重，沟通可读性依旧拉胯",
+      "url": "https://aihot.news/items/n125mhueen4ul4elntsa1kk1v",
+      "published_at": "2026-11-17T22:36:45Z",
+      "summary": "OpenAI 发布 GPT-6.2 Astra 与 Sol，已同步上线 ChatGPT、Codex 和 API。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n125mhueen4ul4elntsa1kk1v",
+      "relevance_score": 7,
       "relevance_reasons": [
+        "strong:openai",
         "strong:chatgpt",
-        "weak:eval",
-        "source_prior:official_ai"
+        "strong:codex",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "d68e9eaba983ba1654361d081974339f5c4f24fe",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 工程师复盘用 chaos loop 强化 Claude Docs 上线：20 亿次请求仅 60 次服务器错误",
+      "url": "https://aihot.news/items/snkvsiff90slvj17hf9i5u4do",
+      "published_at": "2026-11-17T12:00:00Z",
+      "summary": "Anthropic 工程师 Vivek Nair 复盘 Claude Docs 9 月 16 日上线前的 chaos loop 实践：让 Claude Code 会话在镜像生产的 staging 集群上以每天超 100 万合成 docs 持续压测并修复故障，峰值时同时运行 30 个 sub-agents。 🔗 阅读原文 via AIHOT · https://aihot.news/items/snkvsiff90slvj17hf9i5u4do",
+      "relevance_score": 7,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:agent",
+        "strong:agents",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -262,37 +286,19 @@
       "is_ai_related": true
     },
     {
-      "id": "4eea6e8e95edf236cb66572f21ee623491c376f7",
+      "id": "9cce77253fcd02db513c4560bc174b1cb729b7c0",
       "source_id": "openai-news",
       "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Strengthening NATO and allied cyber defenses with AI",
-      "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
-      "published_at": "2026-11-17T00:00:00Z",
-      "summary": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+      "title": "Introducing ChatGPT for Sales",
+      "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+      "published_at": "2026-11-17T08:00:00Z",
+      "summary": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "c8fb2fa8acb8df9eb9fe3931e2958bce1d8fa394",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Introducing OpenAI for Chile",
-      "url": "https://openai.com/index/introducing-openai-for-chile",
-      "published_at": "2026-11-17T00:00:00Z",
-      "summary": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
+        "strong:chatgpt",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -445,6 +451,44 @@
       "is_ai_related": true
     },
     {
+      "id": "2b92efcd454558558df4979bc59af683d6ebc8e0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "腾讯混元 Hy4 flash 开放权重，含 FP8 与 Base 版本",
+      "url": "https://aihot.news/items/ei7hom06r7wgtedvkl2eqbofp",
+      "published_at": "2026-11-18T04:39:34Z",
+      "summary": "腾讯混元宣布 Hy4 flash 开放权重，包含 Hy4 flash-FP8 和 Hy4 flash-Base 两个版本。模型为 224B 参数（激活 12B），支持 1M 上下文，原生多模态，定位高效日常生产力场景。模型以 Tencent Hy License 发布，可在 Hugging Face（huggingface.co/tencent/Hy4-flash）和 GitHub（github.com/Tencent-Hunyuan/Hy4-flash）获取，官方预告 Hy4 即将推出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ei7hom06r7wgtedvkl2eqbofp",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "797120df6bd673b449f1a974f457f178c9179485",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenClaw 的 Sign in with ChatGPT 结束测试，支持 ChatGPT Business 及 GPT-6.2 Astra 与 Sol",
+      "url": "https://aihot.news/items/fatxhu2tz1d0g2g8412axx3k5",
+      "published_at": "2026-11-17T21:49:52Z",
+      "summary": "OpenClaw 宣布 Sign in with ChatGPT 功能结束测试，用户可在 OpenClaw 中使用自己的 ChatGPT 套餐，包括 ChatGPT Business。作者还确认支持新模型 GPT-6.2 Astra 和 Sol。引用的 @OpenAIDevs 内容显示，ChatGPT Business 套餐现已可通过 Sign in with ChatGPT 用于 Notion、v0、OpenClaw 等多种工具。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fatxhu2tz1d0g2g8412axx3k5",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:chatgpt",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "de3a9135697b86b97b2962581ed8530846c4ab93",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -483,6 +527,25 @@
       "is_ai_related": true
     },
     {
+      "id": "e219e3b39cfe2ef5ff9f012535d99721472cc4ed",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，定价 $0.01 每音频分钟",
+      "url": "https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
+      "published_at": "2026-11-17T18:16:17Z",
+      "summary": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，起价 $0.01 每音频分钟，称在公开基准和内部评测中质量、速度和价格均优于 GPT Realtime 2.1，处于 Big Bench Audio 语音推理和 τ-Voice 智能体任务完成基准的性能价格 Pareto 前沿。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:评测",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "934bba03e517d83c5a4f42337aca20c05c995375",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -510,11 +573,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1405,
-      "kept_count": 4,
+      "fetched_count": 1406,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 610,
-      "checked_at": "2026-11-17T22:00:35.454698Z"
+      "latency_ms": 395,
+      "checked_at": "2026-11-18T05:26:46.209344Z"
     },
     {
       "source_id": "openai-skills",
@@ -525,8 +588,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 257,
-      "checked_at": "2026-11-17T22:00:35.712716Z"
+      "latency_ms": 215,
+      "checked_at": "2026-11-18T05:26:46.424558Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -537,8 +600,8 @@
       "fetched_count": 288,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 108,
-      "checked_at": "2026-11-17T22:00:35.825220Z"
+      "latency_ms": 88,
+      "checked_at": "2026-11-18T05:26:46.516281Z"
     },
     {
       "source_id": "google-deepmind",
@@ -549,8 +612,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 190,
-      "checked_at": "2026-11-17T22:00:36.017515Z"
+      "latency_ms": 174,
+      "checked_at": "2026-11-18T05:26:46.692147Z"
     },
     {
       "source_id": "google-ai",
@@ -561,8 +624,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 187,
-      "checked_at": "2026-11-17T22:00:36.205863Z"
+      "latency_ms": 208,
+      "checked_at": "2026-11-18T05:26:46.900983Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -573,8 +636,8 @@
       "fetched_count": 908,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 326,
-      "checked_at": "2026-11-17T22:00:36.545333Z"
+      "latency_ms": 290,
+      "checked_at": "2026-11-18T05:26:47.200701Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -585,8 +648,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 263,
-      "checked_at": "2026-11-17T22:00:36.809073Z"
+      "latency_ms": 410,
+      "checked_at": "2026-11-18T05:26:47.610915Z"
     },
     {
       "source_id": "github-changelog",
@@ -597,8 +660,8 @@
       "fetched_count": 10,
       "kept_count": 10,
       "error": null,
-      "latency_ms": 38,
-      "checked_at": "2026-11-17T22:00:36.848684Z"
+      "latency_ms": 51,
+      "checked_at": "2026-11-18T05:26:47.662781Z"
     },
     {
       "source_id": "aihot",
@@ -607,10 +670,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 9,
       "error": null,
-      "latency_ms": 2120,
-      "checked_at": "2026-11-17T22:00:38.970840Z"
+      "latency_ms": 2375,
+      "checked_at": "2026-11-18T05:26:50.039364Z"
     }
   ],
   "control_notes": {
