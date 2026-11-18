@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>22</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>3</b><span>官方源条目</span></div>
-        <div class="stat"><b>9</b><span>聚合源条目</span></div>
+        <div class="stat"><b>24</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>5</b><span>官方源条目</span></div>
+        <div class="stat"><b>10</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-18T15:53:28.899973Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-18T17:25:24.528405Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -108,6 +108,45 @@
 
     <article class="card">
       <div class="meta">
+        <span>Google AI Blog</span>
+        <span>official_rss</span>
+        <span>2026-11-18T17:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices" target="_blank" rel="noreferrer">The Gemini app is now available on lower-memory Android devices.</a></h3>
+      <p class='summary'>The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.</p>
+      <div class="tags"><span>strong:gemini</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-11-18T15:47:49Z</span>
+        <strong>Score 6</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/yf91syits6gqn8qvtksix0kdj" target="_blank" rel="noreferrer">Vals AI 评测：Anthropic、OpenAI 和 Google 模型易将医护人员与投降士兵标记为自杀式无人机目标</a></h3>
+      <p class='summary'>独立评测机构 Vals AI 测试八家厂商模型后发现，主流大模型几乎缺乏针对自主武器的防护，多数模型会把平民、救护车、医护人员、记者和投降士兵标记为军事目标，且没有任何请求被上游安全过滤器拦截。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yf91syits6gqn8qvtksix0kdj</p>
+      <div class="tags"><span>strong:openai</span><span>strong:anthropic</span><span>strong:大模型</span><span>weak:评测</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-11-18T00:00:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://openai.com/index/advancing-chip-design-with-our-models" target="_blank" rel="noreferrer">Advancing chip design with OpenAI models</a></h3>
+      <p class='summary'>OpenAI models optimized circuits used in Jalapeño silicon and improved RISC‑V core designs, showing progress in AI-assisted chip design with GPT‑6 Astra.</p>
+      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
         <span>GitHub Changelog</span>
         <span>official_rss</span>
         <span>2026-11-17T18:00:59Z</span>
@@ -121,27 +160,14 @@
 
     <article class="card">
       <div class="meta">
-        <span>GitHub Changelog</span>
+        <span>Hugging Face Blog</span>
         <span>official_rss</span>
-        <span>2026-11-17T18:00:33Z</span>
-        <strong>Score 5</strong>
+        <span>2026-11-18T00:00:00Z</span>
+        <strong>Score 2</strong>
       </div>
-      <h3><a href="https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview" target="_blank" rel="noreferrer">GitHub Copilot Evals is now in public preview</a></h3>
-      <p class='summary'>You can now use GitHub Copilot Evals to optimize GitHub Copilot for yourself. As your prompts, models, skills, and tools change, are you still getting the most out of Copilot?… The post GitHub Copilot Evals is now in public preview appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:eval</span><span>weak:tool</span><span>weak:copilot</span><span>source:copilot</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>Google AI Blog</span>
-        <span>official_rss</span>
-        <span>2026-11-17T17:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features" target="_blank" rel="noreferrer">Put Gemini to work for you</a></h3>
-      <p class='summary'>A user interface displaying the prompt &quot;What can I get done for you?&quot; above an input box containing placeholder text &quot;Describe a task&quot;.</p>
-      <div class="tags"><span>strong:gemini</span><span>source_prior:official_ai</span></div>
+      <h3><a href="https://huggingface.co/blog/moe-expert-streaming" target="_blank" rel="noreferrer">180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers</a></h3>
+      
+      <div class="tags"><span>weak:inference</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -344,15 +370,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1407</td><td>2</td><td>375ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>265ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>288</td><td>0</td><td>76ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>240ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>270ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>910</td><td>0</td><td>231ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>229ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>10</td><td>30ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>9</td><td>6074ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1408</td><td>3</td><td>428ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>193ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>288</td><td>0</td><td>88ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>91ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>224ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>911</td><td>1</td><td>212ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>213ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>9</td><td>26ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>10</td><td>1904ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
