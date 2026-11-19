@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-19T15:57:18.249748Z",
+  "generated_at": "2026-11-19T17:31:09.270466Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,17 +8,17 @@
   "groups": {
     "developer": {
       "group": "developer",
-      "count": 4,
+      "count": 3,
       "top_sources": [
         [
           "GitHub Changelog",
-          4
+          3
         ]
       ],
       "top_keywords": [
         [
           "copilot",
-          6
+          4
         ],
         [
           "agent",
@@ -44,41 +44,41 @@
     },
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "Google DeepMind",
-          1
-        ],
-        [
-          "Google AI Blog",
           1
         ]
       ],
       "top_keywords": [
         [
           "gemini",
-          2
+          1
         ],
         [
           "official_ai",
-          2
+          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 4,
       "top_sources": [
         [
           "AI Hot",
-          2
+          4
         ]
       ],
       "top_keywords": [
         [
+          "aggregate_noise",
+          4
+        ],
+        [
           "gemini",
-          2
+          3
         ],
         [
           "deepmind",
@@ -89,11 +89,23 @@
           2
         ],
         [
-          "aggregate_noise",
-          2
+          "工作流",
+          1
         ],
         [
-          "工作流",
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
           1
         ]
       ]
@@ -180,24 +192,6 @@
       "is_ai_related": true
     },
     {
-      "id": "d391ca6fa44efbd2f1167b317bdda436f7f8fcb6",
-      "source_id": "google-ai",
-      "source_name": "Google AI Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "The Gemini app is now available on lower-memory Android devices.",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices",
-      "published_at": "2026-11-18T17:00:00Z",
-      "summary": "The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:gemini",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "4a93c0c3fb73eae7fcc25f7401077577950312c2",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -236,20 +230,41 @@
       "is_ai_related": true
     },
     {
-      "id": "4d00c16e2d5425bf881f5d088737c1762f7531b6",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Customize GitHub Copilot for your team",
-      "url": "https://github.blog/changelog/2026-11-18-customize-github-copilot-for-your-team",
-      "published_at": "2026-11-18T16:00:13Z",
-      "summary": "You can now share the GitHub Copilot plugins your team relies on without asking every member to repeat the same setup. Team customizations are generally available for organization teams. Team… The post Customize GitHub Copilot for your team appeared first on The GitHub Blog .",
+      "id": "83a1d4584d85cfe76a163ac204cd214d73565c57",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google 在 Gemini API 与 AI Studio 上线 Genie 4 实时世界模型",
+      "url": "https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde",
+      "published_at": "2026-11-19T17:17:39Z",
+      "summary": "Philipp Schmid 宣布 Genie 4 正在 Gemini API 和 AI Studio 上推出，可从文本或图像生成 720p 24fps 的世界，并用 WASD、提示词和 48 kHz 立体声实时操控。可通过 WebRTC（浏览器加临时 token）或 WebSocket 串流，文档见 https://aistudio.google.com/docs/genie。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde",
       "relevance_score": 3,
       "relevance_reasons": [
-        "weak:copilot",
-        "source:copilot"
+        "strong:gemini",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "9f85f189e91892ad80d87afcf756985945f225d1",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic CEO Dario Amodei 就公司 IPO 发表声明",
+      "url": "https://aihot.news/items/bj8r4lnrbcoi5cl1asnyn6qt5",
+      "published_at": "2026-11-19T17:01:26Z",
+      "summary": "Anthropic CEO Dario Amodei 就公司 IPO 发表声明，称今天让公司财务地位更稳固，并强调不会向商业或政治压力低头，将放慢 AI 训练与部署节奏以确保安全和人类可控。声明以生物学背景和 Claude 在科研中的应用为例阐述使命，同时承认滥用、经济冲击和失控等风险，倡导行业「向顶部竞赛」。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bj8r4lnrbcoi5cl1asnyn6qt5",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     }
@@ -264,8 +279,8 @@
       "fetched_count": 1413,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 478,
-      "checked_at": "2026-11-19T15:57:16.303642Z"
+      "latency_ms": 594,
+      "checked_at": "2026-11-19T17:31:05.001633Z"
     },
     {
       "source_id": "openai-skills",
@@ -276,8 +291,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 202,
-      "checked_at": "2026-11-19T15:57:16.506395Z"
+      "latency_ms": 204,
+      "checked_at": "2026-11-19T17:31:05.206400Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -288,8 +303,8 @@
       "fetched_count": 289,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 70,
-      "checked_at": "2026-11-19T15:57:16.579021Z"
+      "latency_ms": 124,
+      "checked_at": "2026-11-19T17:31:05.334508Z"
     },
     {
       "source_id": "google-deepmind",
@@ -300,8 +315,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 177,
-      "checked_at": "2026-11-19T15:57:16.757835Z"
+      "latency_ms": 366,
+      "checked_at": "2026-11-19T17:31:05.702569Z"
     },
     {
       "source_id": "google-ai",
@@ -310,10 +325,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 129,
-      "checked_at": "2026-11-19T15:57:16.887553Z"
+      "latency_ms": 236,
+      "checked_at": "2026-11-19T17:31:05.939557Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -324,8 +339,8 @@
       "fetched_count": 913,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 328,
-      "checked_at": "2026-11-19T15:57:17.223998Z"
+      "latency_ms": 284,
+      "checked_at": "2026-11-19T17:31:06.237210Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -336,8 +351,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 141,
-      "checked_at": "2026-11-19T15:57:17.365813Z"
+      "latency_ms": 254,
+      "checked_at": "2026-11-19T17:31:06.491774Z"
     },
     {
       "source_id": "github-changelog",
@@ -346,10 +361,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 4,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 17,
-      "checked_at": "2026-11-19T15:57:17.383772Z"
+      "latency_ms": 31,
+      "checked_at": "2026-11-19T17:31:06.523698Z"
     },
     {
       "source_id": "aihot",
@@ -358,10 +373,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 858,
-      "checked_at": "2026-11-19T15:57:18.243354Z"
+      "latency_ms": 2737,
+      "checked_at": "2026-11-19T17:31:09.262896Z"
     }
   ],
   "control_notes": {
