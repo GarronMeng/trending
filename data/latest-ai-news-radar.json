@@ -1,59 +1,11 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-19T05:23:40.315807Z",
+  "generated_at": "2026-11-19T12:12:19.228422Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 18,
+  "item_count": 9,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 7,
-      "top_sources": [
-        [
-          "OpenAI News",
-          5
-        ],
-        [
-          "Google DeepMind",
-          1
-        ],
-        [
-          "Google AI Blog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "official_ai",
-          7
-        ],
-        [
-          "openai",
-          3
-        ],
-        [
-          "gemini",
-          2
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ]
-      ]
-    },
     "developer": {
       "group": "developer",
       "count": 4,
@@ -90,23 +42,43 @@
         ]
       ]
     },
+    "official": {
+      "group": "official",
+      "count": 2,
+      "top_sources": [
+        [
+          "Google DeepMind",
+          1
+        ],
+        [
+          "Google AI Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "gemini",
+          2
+        ],
+        [
+          "official_ai",
+          2
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
-      "count": 7,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          7
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          7
-        ],
-        [
-          "openai",
-          5
+          3
         ],
         [
           "gemini",
@@ -121,19 +93,15 @@
           2
         ],
         [
-          "anthropic",
-          2
-        ],
-        [
-          "评测",
-          2
-        ],
-        [
-          "codex",
-          2
-        ],
-        [
           "工作流",
+          1
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "anthropic",
           1
         ],
         [
@@ -141,33 +109,13 @@
           1
         ],
         [
-          "智能体",
+          "评测",
           1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "3c5f06a3b17d70e88bed169d4a587afacce32848",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Research acceleration: The jagged frontier",
-      "url": "https://openai.com/index/research-acceleration-jagged-frontier",
-      "published_at": "2026-11-18T08:00:00Z",
-      "summary": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
-      "relevance_score": 7,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:agent",
-        "strong:agents",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "af0080770613d28576e27aacd9363036a5089a4c",
       "source_id": "github-changelog",
@@ -287,78 +235,6 @@
       "is_ai_related": true
     },
     {
-      "id": "c8ff691e9e15ba051175e7307db93b28185af2ca",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "The Silent Consensus",
-      "url": "https://openai.com/index/the-silent-consensus",
-      "published_at": "2026-11-18T10:00:00Z",
-      "summary": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "f580bd680243daa049e340391f9253d8dc0d0b0f",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Inside the Codex sandbox",
-      "url": "https://openai.com/index/inside-the-codex-sandbox",
-      "published_at": "2026-11-18T08:00:00Z",
-      "summary": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:codex",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b09c5012c28c834c1c2a7944ec9bbe9c78a42db4",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
-      "url": "https://openai.com/business/customer-stories/sumitomo-life",
-      "published_at": "2026-11-18T08:00:00Z",
-      "summary": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:chatgpt",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "6b8e12c39041194769e78f109139414023f101de",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Managing frontier AI risk: From training to deployment",
-      "url": "https://openai.com/index/managing-frontier-ai-risk",
-      "published_at": "2026-11-18T06:00:00Z",
-      "summary": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "4a93c0c3fb73eae7fcc25f7401077577950312c2",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -413,83 +289,6 @@
         "source:copilot"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "4db3d68da637188318099c528c875c28f327a27c",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI Codex 团队成员解释 6.2 Sol/Astra 评测视频与现场反馈的差异",
-      "url": "https://aihot.news/items/sah26a5ofgvrxd76bgj9t77wf",
-      "published_at": "2026-11-18T05:47:21Z",
-      "summary": "Tibo 解释 6.2 Sol/Astra 上评测视频与现场人群反馈氛围不同的原因：部分人较早获得访问权限，而团队在过去 3-4 天做了大量改动，视频是上周制作的，之后大概率没有重新测试。他称这两个模型相比 GPT 前代有明显提升，但仍不完美，团队希望在后续迭代的品味和使用体验上改进，并表示欢迎反馈。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sah26a5ofgvrxd76bgj9t77wf",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "weak:评测",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "2f1ba4406f0ebc24cd57939ae5e1b35b569300b2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 发布 GPT-6.2 Astra 和 Sol：更便宜但口碑分化，Anthropic 仍握最强模型",
-      "url": "https://aihot.news/items/oisr0dfay736le62g425urn8l",
-      "published_at": "2026-11-18T10:19:04Z",
-      "summary": "Latent Space 汇总 OpenAI 发布的 GPT-6.2 Astra 和 Sol：Artificial Analysis 测得 Sol 以约 15% 的单任务成本追平 9 月的 Astra，新 Astra 以 62 分位居 Intelligence Index 第二，仅次于 Fable 5.2 的 65 分，两者均为 1M 上下文、128K 输出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oisr0dfay736le62g425urn8l",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "938131e13d4ddbc942cfb505d5521fa8b42ccb9f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 深入解析 Codex 沙箱的权限设计与三平台实现",
-      "url": "https://aihot.news/items/fn0p7buwy74nvduahsy10sp2f",
-      "published_at": "2026-11-18T08:00:00Z",
-      "summary": "OpenAI 发布长文，详解 Codex 沙箱如何在用户现有环境中以可控的文件系统和网络限制运行命令。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fn0p7buwy74nvduahsy10sp2f",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:codex",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "9c98163fb82e5b81f5f0175a05de5d072e3e24a2",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 发布研究加速报告：智能体完成近半数长时研究任务但进展参差",
-      "url": "https://aihot.news/items/v0rnw0gs7wqagl0k8xwblf421",
-      "published_at": "2026-11-18T08:00:00Z",
-      "summary": "OpenAI 发布第二份研究加速报告，基于内部测量介绍编码智能体如何改变 AI 研发周期。3 月到 10 月，估计需 2-4 小时的人工任务智能体自主成功率从 23% 升至 46%，4-8 小时任务从 13% 升至 35%；但任务间差异明显，监控训练成功率达 79%，而推理与服务栈编码仅 25%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v0rnw0gs7wqagl0k8xwblf421",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -500,10 +299,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1413,
-      "kept_count": 5,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 575,
-      "checked_at": "2026-11-19T05:23:36.206645Z"
+      "latency_ms": 577,
+      "checked_at": "2026-11-19T12:12:15.678097Z"
     },
     {
       "source_id": "openai-skills",
@@ -514,8 +313,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 171,
-      "checked_at": "2026-11-19T05:23:36.378845Z"
+      "latency_ms": 324,
+      "checked_at": "2026-11-19T12:12:16.002618Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -526,8 +325,8 @@
       "fetched_count": 289,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 111,
-      "checked_at": "2026-11-19T05:23:36.494770Z"
+      "latency_ms": 139,
+      "checked_at": "2026-11-19T12:12:16.146337Z"
     },
     {
       "source_id": "google-deepmind",
@@ -538,8 +337,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 134,
-      "checked_at": "2026-11-19T05:23:36.630671Z"
+      "latency_ms": 186,
+      "checked_at": "2026-11-19T12:12:16.333862Z"
     },
     {
       "source_id": "google-ai",
@@ -550,8 +349,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 187,
-      "checked_at": "2026-11-19T05:23:36.818526Z"
+      "latency_ms": 209,
+      "checked_at": "2026-11-19T12:12:16.543583Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -562,8 +361,8 @@
       "fetched_count": 913,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 273,
-      "checked_at": "2026-11-19T05:23:37.105533Z"
+      "latency_ms": 315,
+      "checked_at": "2026-11-19T12:12:16.871560Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -574,8 +373,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 203,
-      "checked_at": "2026-11-19T05:23:37.309359Z"
+      "latency_ms": 485,
+      "checked_at": "2026-11-19T12:12:17.357433Z"
     },
     {
       "source_id": "github-changelog",
@@ -586,8 +385,8 @@
       "fetched_count": 10,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 29,
-      "checked_at": "2026-11-19T05:23:37.339323Z"
+      "latency_ms": 41,
+      "checked_at": "2026-11-19T12:12:17.399824Z"
     },
     {
       "source_id": "aihot",
@@ -596,10 +395,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 7,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 2967,
-      "checked_at": "2026-11-19T05:23:40.307968Z"
+      "latency_ms": 1819,
+      "checked_at": "2026-11-19T12:12:19.219950Z"
     }
   ],
   "control_notes": {
