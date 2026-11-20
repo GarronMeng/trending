@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-20T12:13:45.193898Z",
+  "generated_at": "2026-11-20T15:40:30.287416Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 7,
   "groups": {
     "official": {
       "group": "official",
@@ -44,17 +44,25 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
           5
+        ],
+        [
+          "Anthropic News via Olshansk RSS",
+          1
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          6
+        ],
+        [
+          "anthropic",
+          4
         ],
         [
           "gemini",
@@ -66,10 +74,6 @@
         ],
         [
           "API",
-          2
-        ],
-        [
-          "anthropic",
           2
         ],
         [
@@ -145,6 +149,25 @@
         "weak:api",
         "weak:tool",
         "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "89ff3ff3babd59bf338bd1d7b9fa51ddf08c51e7",
+      "source_id": "anthropic-news-unofficial",
+      "source_name": "Anthropic News via Olshansk RSS",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 3,
+      "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
+      "url": "https://www.anthropic.com/news/ipo-close",
+      "published_at": "2026-11-20T00:00:00Z",
+      "summary": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public ",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "source:anthropic",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -237,8 +260,8 @@
       "fetched_count": 1418,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 514,
-      "checked_at": "2026-11-20T12:13:40.015485Z"
+      "latency_ms": 484,
+      "checked_at": "2026-11-20T15:40:18.341715Z"
     },
     {
       "source_id": "openai-skills",
@@ -249,8 +272,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 390,
-      "checked_at": "2026-11-20T12:13:40.406353Z"
+      "latency_ms": 261,
+      "checked_at": "2026-11-20T15:40:18.603475Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -258,11 +281,11 @@
       "source_type": "public_feed",
       "enabled": true,
       "ok": true,
-      "fetched_count": 289,
-      "kept_count": 0,
+      "fetched_count": 290,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 114,
-      "checked_at": "2026-11-20T12:13:40.524854Z"
+      "latency_ms": 107,
+      "checked_at": "2026-11-20T15:40:18.714172Z"
     },
     {
       "source_id": "google-deepmind",
@@ -273,8 +296,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 208,
-      "checked_at": "2026-11-20T12:13:40.734234Z"
+      "latency_ms": 524,
+      "checked_at": "2026-11-20T15:40:19.240237Z"
     },
     {
       "source_id": "google-ai",
@@ -285,8 +308,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 183,
-      "checked_at": "2026-11-20T12:13:40.917810Z"
+      "latency_ms": 144,
+      "checked_at": "2026-11-20T15:40:19.384902Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -294,11 +317,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 913,
+      "fetched_count": 914,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 298,
-      "checked_at": "2026-11-20T12:13:41.227700Z"
+      "latency_ms": 757,
+      "checked_at": "2026-11-20T15:40:20.153333Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -309,8 +332,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 250,
-      "checked_at": "2026-11-20T12:13:41.478539Z"
+      "latency_ms": 233,
+      "checked_at": "2026-11-20T15:40:20.387412Z"
     },
     {
       "source_id": "github-changelog",
@@ -321,8 +344,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-11-20T12:13:41.506695Z"
+      "latency_ms": 23,
+      "checked_at": "2026-11-20T15:40:20.411602Z"
     },
     {
       "source_id": "aihot",
@@ -333,8 +356,8 @@
       "fetched_count": 50,
       "kept_count": 5,
       "error": null,
-      "latency_ms": 3679,
-      "checked_at": "2026-11-20T12:13:45.187442Z"
+      "latency_ms": 9867,
+      "checked_at": "2026-11-20T15:40:30.280381Z"
     }
   ],
   "control_notes": {
