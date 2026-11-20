@@ -44,39 +44,52 @@
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
         <div class="stat"><b>7</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>1</b><span>官方源条目</span></div>
-        <div class="stat"><b>6</b><span>聚合源条目</span></div>
+        <div class="stat"><b>3</b><span>官方源条目</span></div>
+        <div class="stat"><b>4</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-20T17:05:11.079084Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-20T21:40:14.346780Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
-        <span>Google AI Blog</span>
+        <span>OpenAI News</span>
         <span>official_rss</span>
-        <span>2026-11-19T18:00:00Z</span>
-        <strong>Score 7</strong>
+        <span>2026-11-20T10:00:00Z</span>
+        <strong>Score 3</strong>
       </div>
-      <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval" target="_blank" rel="noreferrer">Introducing Tool Retrieval in the Gemini API</a></h3>
-      <p class='summary'>Gemini spark on a space background</p>
-      <div class="tags"><span>strong:gemini</span><span>weak:eval</span><span>weak:api</span><span>weak:tool</span><span>weak:API</span></div>
+      <h3><a href="https://openai.com/index/combatting-adversarial-distillation" target="_blank" rel="noreferrer">Combatting adversarial distillation</a></h3>
+      <p class='summary'>OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.</p>
+      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
     </article>
     
 
     <article class="card">
       <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-11-19T18:00:00Z</span>
-        <strong>Score 7</strong>
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-11-20T00:00:00Z</span>
+        <strong>Score 2</strong>
       </div>
-      <h3><a href="https://aihot.news/items/n3npoqbr48wu58cke5p3ox18l" target="_blank" rel="noreferrer">Google 在 Gemini API 推出 Tool Retrieval 预览</a></h3>
-      <p class='summary'>Google 在 Gemini API 的 Interactions API 中以预览形式推出 Tool Retrieval，让智能体按需加载工具参数 schema，而不是每次请求都发送完整工具库，以减少输入 token 并在工具数量扩大时保持选择准确。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n3npoqbr48wu58cke5p3ox18l</p>
-      <div class="tags"><span>strong:gemini</span><span>strong:智能体</span><span>weak:eval</span><span>weak:api</span><span>weak:tool</span></div>
+      <h3><a href="https://openai.com/business/customer-stories/hebbia" target="_blank" rel="noreferrer">Hebbia sees improvements in financial research with GPT-6 Astra</a></h3>
+      <p class='summary'>Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.</p>
+      <div class="tags"><span>weak:eval</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-11-20T00:00:00Z</span>
+        <strong>Score 2</strong>
+      </div>
+      <h3><a href="https://openai.com/index/introducing-medchembench" target="_blank" rel="noreferrer">Can AI help scientists identify promising drug candidates?</a></h3>
+      <p class='summary'>MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.</p>
+      <div class="tags"><span>weak:eval</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -90,6 +103,19 @@
       <h3><a href="https://www.anthropic.com/news/ipo-close" target="_blank" rel="noreferrer">Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement</a></h3>
       <p class='summary'>Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public </p>
       <div class="tags"><span>strong:anthropic</span><span>source:anthropic</span><span>source_penalty:aggregate_noise</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-11-20T19:32:08Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/hsbh8rxnbqfw9pzhqq5rw4ihe" target="_blank" rel="noreferrer">Anthropic 数学家 Levent Alpöge 宣称给出黎曼猜想的 Lean 可编译证明，同周还有纯人工证明出现</a></h3>
+      <p class='summary'>Anthropic 数学家 Levent Alpöge 宣称找到黎曼猜想的 Lean 可编译证明，并在文章中描述了与 Claude 一起完成论证的经历；黎曼猜想提出于 1859 年，是千禧年大奖难题之一，数学界在 Zulip 上讨论后多数人预期形式化结果成立。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hsbh8rxnbqfw9pzhqq5rw4ihe</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -117,47 +143,21 @@
       <p class='summary'>腾讯混元发布 Hy4 开放权重，定位原生多模态旗舰 MoE 模型，总参数 770B、激活 49B，支持 1M 上下文。同步发布含安全评估报告的 Hy4 System Card，并提供 GitHub、Hugging Face 权重与 GGUF 下载链接，团队将于本周五 8–10 AM PT 在 r/LocalLLaMA 举行 AMA。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx</p>
       <div class="tags"><span>strong:hugging face</span><span>strong:多模态</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-11-19T17:17:39Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde" target="_blank" rel="noreferrer">Google 在 Gemini API 与 AI Studio 上线 Genie 4 实时世界模型</a></h3>
-      <p class='summary'>Philipp Schmid 宣布 Genie 4 正在 Gemini API 和 AI Studio 上推出，可从文本或图像生成 720p 24fps 的世界，并用 WASD、提示词和 48 kHz 立体声实时操控。可通过 WebRTC（浏览器加临时 token）或 WebSocket 串流，文档见 https://aistudio.google.com/docs/genie。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde</p>
-      <div class="tags"><span>strong:gemini</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-11-19T20:13:16Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/lc38ozrwfur9ympu1l3meqcuq" target="_blank" rel="noreferrer">Karina Nguyen 发文祝贺投资人 Sol 庆祝 Anthropic IPO</a></h3>
-      <p class='summary'>Karina Nguyen 发文感谢投资人 Sol，回忆早期在办公室一起讨论模型评测和后训练难题的经历，并称赞他是唯一理解 scaling laws 的 VC。引用内容为 Sol 祝贺 Anthropic IPO 的推文，感谢 LP 及 GM 养老金、ICONIQ、Coatue、Lightspeed 等合作伙伴在增长投资最差时期押注 Anthropic。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lc38ozrwfur9ympu1l3meqcuq</p>
-      <div class="tags"><span>strong:anthropic</span><span>weak:评测</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1418</td><td>0</td><td>506ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>357ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>290</td><td>1</td><td>89ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>223ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>228ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>914</td><td>0</td><td>257ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>219ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>20ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>5</td><td>3214ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1421</td><td>3</td><td>366ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>269ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>290</td><td>1</td><td>91ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>175ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>196ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>915</td><td>0</td><td>240ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>237ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>22ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>3</td><td>2163ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
