@@ -1,45 +1,21 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-20T05:10:21.600421Z",
+  "generated_at": "2026-11-20T12:13:45.193898Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 6,
   "groups": {
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 1,
       "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ],
         [
           "Google AI Blog",
           1
         ]
       ],
       "top_keywords": [
-        [
-          "official_ai",
-          2
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "workflow",
-          1
-        ],
         [
           "gemini",
           1
@@ -59,26 +35,26 @@
         [
           "API",
           1
+        ],
+        [
+          "official_ai",
+          1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 6,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          6
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          6
-        ],
-        [
-          "智能体",
-          2
+          5
         ],
         [
           "gemini",
@@ -97,19 +73,7 @@
           2
         ],
         [
-          "openai",
-          1
-        ],
-        [
-          "chatgpt",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "workflow",
+          "智能体",
           1
         ],
         [
@@ -119,32 +83,27 @@
         [
           "tool",
           1
+        ],
+        [
+          "hugging face",
+          1
+        ],
+        [
+          "多模态",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "评测",
+          1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "8cce22629ab17be16fcab53677c7cfb241014894",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
-      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
-      "published_at": "2026-11-19T08:00:00Z",
-      "summary": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:codex",
-        "weak:workflow",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "5a22ad71f0fd2950d2b3a3918c3c4aa81cde86b1",
       "source_id": "google-ai",
@@ -164,28 +123,6 @@
         "weak:tool",
         "weak:API",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "db8f9b912e10c4f6eab725a81680b18c5768a84b",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "OpenAI 详解 Codex 驱动的 Performance Factory 如何自动保持 ChatGPT 高性能",
-      "url": "https://aihot.news/items/alwgjr29158n454prl9tjmmw1",
-      "published_at": "2026-11-19T08:00:00Z",
-      "summary": "OpenAI 官方详解其 Performance Factory 系统，用 Codex 智能体在云端自动排查并修复 ChatGPT 的性能回归。其中 Regression Workflow 在三个多月内跟踪超过 1700 次调查、定位超过 600 个根因，相当于每天约 17 次自动调查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/alwgjr29158n454prl9tjmmw1",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:chatgpt",
-        "strong:codex",
-        "strong:智能体",
-        "weak:workflow",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -298,10 +235,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1418,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 580,
-      "checked_at": "2026-11-20T05:10:16.865200Z"
+      "latency_ms": 514,
+      "checked_at": "2026-11-20T12:13:40.015485Z"
     },
     {
       "source_id": "openai-skills",
@@ -312,8 +249,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 236,
-      "checked_at": "2026-11-20T05:10:17.101826Z"
+      "latency_ms": 390,
+      "checked_at": "2026-11-20T12:13:40.406353Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -324,8 +261,8 @@
       "fetched_count": 289,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 109,
-      "checked_at": "2026-11-20T05:10:17.215751Z"
+      "latency_ms": 114,
+      "checked_at": "2026-11-20T12:13:40.524854Z"
     },
     {
       "source_id": "google-deepmind",
@@ -336,8 +273,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 155,
-      "checked_at": "2026-11-20T05:10:17.372804Z"
+      "latency_ms": 208,
+      "checked_at": "2026-11-20T12:13:40.734234Z"
     },
     {
       "source_id": "google-ai",
@@ -348,8 +285,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 137,
-      "checked_at": "2026-11-20T05:10:17.510692Z"
+      "latency_ms": 183,
+      "checked_at": "2026-11-20T12:13:40.917810Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -360,8 +297,8 @@
       "fetched_count": 913,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 290,
-      "checked_at": "2026-11-20T05:10:17.813647Z"
+      "latency_ms": 298,
+      "checked_at": "2026-11-20T12:13:41.227700Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -372,8 +309,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 253,
-      "checked_at": "2026-11-20T05:10:18.067836Z"
+      "latency_ms": 250,
+      "checked_at": "2026-11-20T12:13:41.478539Z"
     },
     {
       "source_id": "github-changelog",
@@ -384,8 +321,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 26,
-      "checked_at": "2026-11-20T05:10:18.094175Z"
+      "latency_ms": 27,
+      "checked_at": "2026-11-20T12:13:41.506695Z"
     },
     {
       "source_id": "aihot",
@@ -394,10 +331,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 6,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 3497,
-      "checked_at": "2026-11-20T05:10:21.592376Z"
+      "latency_ms": 3679,
+      "checked_at": "2026-11-20T12:13:45.187442Z"
     }
   ],
   "control_notes": {
