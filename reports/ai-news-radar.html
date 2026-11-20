@@ -43,16 +43,16 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>9</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>8</b><span>24h 高信号条目</span></div>
         <div class="stat"><b>2</b><span>官方源条目</span></div>
-        <div class="stat"><b>5</b><span>聚合源条目</span></div>
+        <div class="stat"><b>6</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-19T21:58:03.980891Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-20T05:10:21.601623Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -108,27 +108,14 @@
 
     <article class="card">
       <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-11-18T22:04:50Z</span>
-        <strong>Score 5</strong>
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-11-20T03:52:40Z</span>
+        <strong>Score 3</strong>
       </div>
-      <h3><a href="https://github.blog/changelog/2026-11-18-connect-supabase-box-calendly-and-more-to-copilot" target="_blank" rel="noreferrer">Connect Supabase, Box, Calendly, and more to Copilot</a></h3>
-      <p class='summary'>You can now connect eight more services to Copilot using GitHub-verified MCP servers, or connectors, available in public preview. They join more than 25 services you can already connect, like… The post Connect Supabase, Box, Calendly, and more to Copilot appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>strong:mcp</span><span>weak:copilot</span><span>source:copilot</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-11-19T00:00:13Z</span>
-        <strong>Score 4</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-11-18-wait-for-pull-request-events-with-github-cli" target="_blank" rel="noreferrer">Wait for pull request events with GitHub CLI</a></h3>
-      <p class='summary'>GitHub CLI now supports GitHub Event Streams. With gh v2.105.0, you and your agents can wait for a pull request to change with a single command instead of polling it… The post Wait for pull request events with GitHub CLI appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>strong:agent</span><span>strong:agents</span></div>
+      <h3><a href="https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx" target="_blank" rel="noreferrer">腾讯混元开放 Hy4 权重</a></h3>
+      <p class='summary'>腾讯混元发布 Hy4 开放权重，定位原生多模态旗舰 MoE 模型，总参数 770B、激活 49B，支持 1M 上下文。同步发布含安全评估报告的 Hy4 System Card，并提供 GitHub、Hugging Face 权重与 GGUF 下载链接，团队将于本周五 8–10 AM PT 在 r/LocalLLaMA 举行 AMA。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx</p>
+      <div class="tags"><span>strong:hugging face</span><span>strong:多模态</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -175,15 +162,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1414</td><td>1</td><td>440ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>365ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>289</td><td>0</td><td>93ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>161ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>142ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>913</td><td>0</td><td>260ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>225ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>2</td><td>24ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>5</td><td>1678ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1418</td><td>1</td><td>580ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>236ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>289</td><td>0</td><td>109ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>155ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>1</td><td>137ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>913</td><td>0</td><td>290ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>253ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>26ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>6</td><td>3497ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-19T21:58:03.979843Z",
+  "generated_at": "2026-11-20T05:10:21.600421Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 8,
   "groups": {
     "official": {
       "group": "official",
@@ -64,17 +64,17 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          5
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          6
         ],
         [
           "智能体",
@@ -118,34 +118,6 @@
         ],
         [
           "tool",
-          1
-        ]
-      ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 2,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          2
-        ]
-      ],
-      "top_keywords": [
-        [
-          "copilot",
-          2
-        ],
-        [
-          "mcp",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
           1
         ]
       ]
@@ -241,39 +213,21 @@
       "is_ai_related": true
     },
     {
-      "id": "d428df8a2a9e7c1a1935a88b750759a34bfe0993",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Connect Supabase, Box, Calendly, and more to Copilot",
-      "url": "https://github.blog/changelog/2026-11-18-connect-supabase-box-calendly-and-more-to-copilot",
-      "published_at": "2026-11-18T22:04:50Z",
-      "summary": "You can now connect eight more services to Copilot using GitHub-verified MCP servers, or connectors, available in public preview. They join more than 25 services you can already connect, like… The post Connect Supabase, Box, Calendly, and more to Copilot appeared first on The GitHub Blog .",
-      "relevance_score": 5,
+      "id": "67df9826481d8f12c64e5e4a20f417e893657754",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "腾讯混元开放 Hy4 权重",
+      "url": "https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx",
+      "published_at": "2026-11-20T03:52:40Z",
+      "summary": "腾讯混元发布 Hy4 开放权重，定位原生多模态旗舰 MoE 模型，总参数 770B、激活 49B，支持 1M 上下文。同步发布含安全评估报告的 Hy4 System Card，并提供 GitHub、Hugging Face 权重与 GGUF 下载链接，团队将于本周五 8–10 AM PT 在 r/LocalLLaMA 举行 AMA。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:mcp",
-        "weak:copilot",
-        "source:copilot"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "4a93c0c3fb73eae7fcc25f7401077577950312c2",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Wait for pull request events with GitHub CLI",
-      "url": "https://github.blog/changelog/2026-11-18-wait-for-pull-request-events-with-github-cli",
-      "published_at": "2026-11-19T00:00:13Z",
-      "summary": "GitHub CLI now supports GitHub Event Streams. With gh v2.105.0, you and your agents can wait for a pull request to change with a single command instead of polling it… The post Wait for pull request events with GitHub CLI appeared first on The GitHub Blog .",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents"
+        "strong:hugging face",
+        "strong:多模态",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -343,11 +297,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1414,
+      "fetched_count": 1418,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 440,
-      "checked_at": "2026-11-19T21:58:01.004726Z"
+      "latency_ms": 580,
+      "checked_at": "2026-11-20T05:10:16.865200Z"
     },
     {
       "source_id": "openai-skills",
@@ -358,8 +312,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 365,
-      "checked_at": "2026-11-19T21:58:01.370881Z"
+      "latency_ms": 236,
+      "checked_at": "2026-11-20T05:10:17.101826Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -370,8 +324,8 @@
       "fetched_count": 289,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 93,
-      "checked_at": "2026-11-19T21:58:01.467645Z"
+      "latency_ms": 109,
+      "checked_at": "2026-11-20T05:10:17.215751Z"
     },
     {
       "source_id": "google-deepmind",
@@ -382,8 +336,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 161,
-      "checked_at": "2026-11-19T21:58:01.629772Z"
+      "latency_ms": 155,
+      "checked_at": "2026-11-20T05:10:17.372804Z"
     },
     {
       "source_id": "google-ai",
@@ -394,8 +348,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 142,
-      "checked_at": "2026-11-19T21:58:01.772214Z"
+      "latency_ms": 137,
+      "checked_at": "2026-11-20T05:10:17.510692Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -406,8 +360,8 @@
       "fetched_count": 913,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 260,
-      "checked_at": "2026-11-19T21:58:02.042828Z"
+      "latency_ms": 290,
+      "checked_at": "2026-11-20T05:10:17.813647Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -418,8 +372,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 225,
-      "checked_at": "2026-11-19T21:58:02.268626Z"
+      "latency_ms": 253,
+      "checked_at": "2026-11-20T05:10:18.067836Z"
     },
     {
       "source_id": "github-changelog",
@@ -428,10 +382,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 2,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 24,
-      "checked_at": "2026-11-19T21:58:02.293110Z"
+      "latency_ms": 26,
+      "checked_at": "2026-11-20T05:10:18.094175Z"
     },
     {
       "source_id": "aihot",
@@ -440,10 +394,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 1678,
-      "checked_at": "2026-11-19T21:58:03.972645Z"
+      "latency_ms": 3497,
+      "checked_at": "2026-11-20T05:10:21.592376Z"
     }
   ],
   "control_notes": {
