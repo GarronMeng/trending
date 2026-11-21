@@ -43,17 +43,30 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>7</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>3</b><span>官方源条目</span></div>
-        <div class="stat"><b>4</b><span>聚合源条目</span></div>
+        <div class="stat"><b>3</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>1</b><span>官方源条目</span></div>
+        <div class="stat"><b>2</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-20T21:40:14.346780Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-21T05:03:05.440924Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>AI Hot</span>
+        <span>public_feed</span>
+        <span>2026-11-20T22:17:00Z</span>
+        <strong>Score 9</strong>
+      </div>
+      <h3><a href="https://aihot.news/items/w612ivonntodntv1ydkt2lqwh" target="_blank" rel="noreferrer">Figma 演示用 Specs 与 Figma agent 把上下文变成可实现的开发计划</a></h3>
+      <p class='summary'>Figma 在 Workflow lab 中演示一个完整工作流：工程师用 Specs 在画布上汇集 PRD、Hex 数据、FigJam 图、标注设计和组件说明，再让 Figma agent 生成供编码智能体使用的实现计划。文中还提到 Specs 与 code layers 已开放 beta、覆盖所有套餐，最后通过 Figma MCP 把计划链接交给 Codex 读取全部上下文并实现功能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w612ivonntodntv1ydkt2lqwh</p>
+      <div class="tags"><span>strong:codex</span><span>strong:agent</span><span>strong:mcp</span><span>strong:智能体</span><span>weak:workflow</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>OpenAI News</span>
@@ -69,58 +82,6 @@
 
     <article class="card">
       <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-11-20T00:00:00Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://openai.com/business/customer-stories/hebbia" target="_blank" rel="noreferrer">Hebbia sees improvements in financial research with GPT-6 Astra</a></h3>
-      <p class='summary'>Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.</p>
-      <div class="tags"><span>weak:eval</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>OpenAI News</span>
-        <span>official_rss</span>
-        <span>2026-11-20T00:00:00Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://openai.com/index/introducing-medchembench" target="_blank" rel="noreferrer">Can AI help scientists identify promising drug candidates?</a></h3>
-      <p class='summary'>MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.</p>
-      <div class="tags"><span>weak:eval</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>Anthropic News via Olshansk RSS</span>
-        <span>public_feed</span>
-        <span>2026-11-20T00:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://www.anthropic.com/news/ipo-close" target="_blank" rel="noreferrer">Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement</a></h3>
-      <p class='summary'>Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public </p>
-      <div class="tags"><span>strong:anthropic</span><span>source:anthropic</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-11-20T19:32:08Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/hsbh8rxnbqfw9pzhqq5rw4ihe" target="_blank" rel="noreferrer">Anthropic 数学家 Levent Alpöge 宣称给出黎曼猜想的 Lean 可编译证明，同周还有纯人工证明出现</a></h3>
-      <p class='summary'>Anthropic 数学家 Levent Alpöge 宣称找到黎曼猜想的 Lean 可编译证明，并在文章中描述了与 Claude 一起完成论证的经历；黎曼猜想提出于 1859 年，是千禧年大奖难题之一，数学界在 Zulip 上讨论后多数人预期形式化结果成立。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hsbh8rxnbqfw9pzhqq5rw4ihe</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
         <span>2026-11-20T16:54:55Z</span>
@@ -130,34 +91,21 @@
       <p class='summary'>Anthropic 数学家 Levent Alpöge 在个人网站宣布与 Claude 合作证明了黎曼猜想，没有论文，只放出 14 个压缩包共 175187 个 Lean 文件、1737 万行代码。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vu6fw8wmrs3xcln4u9gwzf1f4</p>
       <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-11-20T03:52:40Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx" target="_blank" rel="noreferrer">腾讯混元开放 Hy4 权重</a></h3>
-      <p class='summary'>腾讯混元发布 Hy4 开放权重，定位原生多模态旗舰 MoE 模型，总参数 770B、激活 49B，支持 1M 上下文。同步发布含安全评估报告的 Hy4 System Card，并提供 GitHub、Hugging Face 权重与 GGUF 下载链接，团队将于本周五 8–10 AM PT 在 r/LocalLLaMA 举行 AMA。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx</p>
-      <div class="tags"><span>strong:hugging face</span><span>strong:多模态</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1421</td><td>3</td><td>366ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>269ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>290</td><td>1</td><td>91ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>175ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>196ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>915</td><td>0</td><td>240ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>237ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>22ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>3</td><td>2163ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1421</td><td>1</td><td>414ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>300ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>290</td><td>0</td><td>119ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>204ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>193ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>915</td><td>0</td><td>251ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>290ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>27ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>2</td><td>2161ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

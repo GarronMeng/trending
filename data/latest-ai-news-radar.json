@@ -1,73 +1,104 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-20T21:40:14.346040Z",
+  "generated_at": "2026-11-21T05:03:05.440168Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 3,
   "groups": {
-    "official": {
-      "group": "official",
-      "count": 3,
+    "aggregate": {
+      "group": "aggregate",
+      "count": 2,
       "top_sources": [
         [
-          "OpenAI News",
-          3
+          "AI Hot",
+          2
         ]
       ],
       "top_keywords": [
         [
-          "official_ai",
-          3
-        ],
-        [
-          "eval",
+          "aggregate_noise",
           2
         ],
         [
-          "openai",
+          "codex",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "workflow",
+          1
+        ],
+        [
+          "工作流",
+          1
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
           1
         ]
       ]
     },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 4,
+    "official": {
+      "group": "official",
+      "count": 1,
       "top_sources": [
         [
-          "AI Hot",
-          3
-        ],
-        [
-          "Anthropic News via Olshansk RSS",
+          "OpenAI News",
           1
         ]
       ],
       "top_keywords": [
         [
-          "anthropic",
-          4
-        ],
-        [
-          "aggregate_noise",
-          4
-        ],
-        [
-          "claude",
-          2
-        ],
-        [
-          "hugging face",
+          "openai",
           1
         ],
         [
-          "多模态",
+          "official_ai",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "a7417126419debc22e97d29410c4c8ff1dd3c8bf",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Figma 演示用 Specs 与 Figma agent 把上下文变成可实现的开发计划",
+      "url": "https://aihot.news/items/w612ivonntodntv1ydkt2lqwh",
+      "published_at": "2026-11-20T22:17:00Z",
+      "summary": "Figma 在 Workflow lab 中演示一个完整工作流：工程师用 Specs 在画布上汇集 PRD、Hex 数据、FigJam 图、标注设计和组件说明，再让 Figma agent 生成供编码智能体使用的实现计划。文中还提到 Specs 与 code layers 已开放 beta、覆盖所有套餐，最后通过 Figma MCP 把计划链接交给 Codex 读取全部上下文并实现功能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w612ivonntodntv1ydkt2lqwh",
+      "relevance_score": 9,
+      "relevance_reasons": [
+        "strong:codex",
+        "strong:agent",
+        "strong:mcp",
+        "strong:智能体",
+        "weak:workflow",
+        "weak:工作流",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "78373124dc0ed640bde4a2e487c9cdd44c9c745a",
       "source_id": "openai-news",
@@ -83,80 +114,6 @@
       "relevance_reasons": [
         "strong:openai",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "616cb1cf160458c56189d59dbabf869b9c2e35b6",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
-      "url": "https://openai.com/business/customer-stories/hebbia",
-      "published_at": "2026-11-20T00:00:00Z",
-      "summary": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:eval",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "09cceecdcb1d9b85a4835c3ff47d37cc45c82d98",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Can AI help scientists identify promising drug candidates?",
-      "url": "https://openai.com/index/introducing-medchembench",
-      "published_at": "2026-11-20T00:00:00Z",
-      "summary": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:eval",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "89ff3ff3babd59bf338bd1d7b9fa51ddf08c51e7",
-      "source_id": "anthropic-news-unofficial",
-      "source_name": "Anthropic News via Olshansk RSS",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 3,
-      "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
-      "url": "https://www.anthropic.com/news/ipo-close",
-      "published_at": "2026-11-20T00:00:00Z",
-      "summary": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public ",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "source:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "29aed28024b4c3ddffae5158bb3622adba5aa523",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 数学家 Levent Alpöge 宣称给出黎曼猜想的 Lean 可编译证明，同周还有纯人工证明出现",
-      "url": "https://aihot.news/items/hsbh8rxnbqfw9pzhqq5rw4ihe",
-      "published_at": "2026-11-20T19:32:08Z",
-      "summary": "Anthropic 数学家 Levent Alpöge 宣称找到黎曼猜想的 Lean 可编译证明，并在文章中描述了与 Claude 一起完成论证的经历；黎曼猜想提出于 1859 年，是千禧年大奖难题之一，数学界在 Zulip 上讨论后多数人预期形式化结果成立。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hsbh8rxnbqfw9pzhqq5rw4ihe",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -178,25 +135,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "67df9826481d8f12c64e5e4a20f417e893657754",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "腾讯混元开放 Hy4 权重",
-      "url": "https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx",
-      "published_at": "2026-11-20T03:52:40Z",
-      "summary": "腾讯混元发布 Hy4 开放权重，定位原生多模态旗舰 MoE 模型，总参数 770B、激活 49B，支持 1M 上下文。同步发布含安全评估报告的 Hy4 System Card，并提供 GitHub、Hugging Face 权重与 GGUF 下载链接，团队将于本周五 8–10 AM PT 在 r/LocalLLaMA 举行 AMA。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:hugging face",
-        "strong:多模态",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -207,10 +145,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1421,
-      "kept_count": 3,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 366,
-      "checked_at": "2026-11-20T21:40:10.931765Z"
+      "latency_ms": 414,
+      "checked_at": "2026-11-21T05:03:01.873696Z"
     },
     {
       "source_id": "openai-skills",
@@ -221,8 +159,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 269,
-      "checked_at": "2026-11-20T21:40:11.201438Z"
+      "latency_ms": 300,
+      "checked_at": "2026-11-21T05:03:02.174226Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -231,10 +169,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 290,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 91,
-      "checked_at": "2026-11-20T21:40:11.295378Z"
+      "latency_ms": 119,
+      "checked_at": "2026-11-21T05:03:02.295646Z"
     },
     {
       "source_id": "google-deepmind",
@@ -245,8 +183,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 175,
-      "checked_at": "2026-11-20T21:40:11.471242Z"
+      "latency_ms": 204,
+      "checked_at": "2026-11-21T05:03:02.501079Z"
     },
     {
       "source_id": "google-ai",
@@ -257,8 +195,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 196,
-      "checked_at": "2026-11-20T21:40:11.668045Z"
+      "latency_ms": 193,
+      "checked_at": "2026-11-21T05:03:02.695144Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -269,8 +207,8 @@
       "fetched_count": 915,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 240,
-      "checked_at": "2026-11-20T21:40:11.914548Z"
+      "latency_ms": 251,
+      "checked_at": "2026-11-21T05:03:02.953710Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -281,8 +219,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 237,
-      "checked_at": "2026-11-20T21:40:12.152272Z"
+      "latency_ms": 290,
+      "checked_at": "2026-11-21T05:03:03.244028Z"
     },
     {
       "source_id": "github-changelog",
@@ -293,8 +231,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 22,
-      "checked_at": "2026-11-20T21:40:12.175377Z"
+      "latency_ms": 27,
+      "checked_at": "2026-11-21T05:03:03.272161Z"
     },
     {
       "source_id": "aihot",
@@ -303,10 +241,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 2163,
-      "checked_at": "2026-11-20T21:40:14.339742Z"
+      "latency_ms": 2161,
+      "checked_at": "2026-11-21T05:03:05.433811Z"
     }
   ],
   "control_notes": {
