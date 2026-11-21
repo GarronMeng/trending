@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-21T05:03:05.440168Z",
+  "generated_at": "2026-11-21T11:49:28.151877Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -8,16 +8,24 @@
   "groups": {
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          2
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
+          3
+        ],
+        [
+          "anthropic",
+          2
+        ],
+        [
+          "claude",
           2
         ],
         [
@@ -42,34 +50,6 @@
         ],
         [
           "工作流",
-          1
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "claude",
-          1
-        ]
-      ]
-    },
-    "official": {
-      "group": "official",
-      "count": 1,
-      "top_sources": [
-        [
-          "OpenAI News",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "openai",
-          1
-        ],
-        [
-          "official_ai",
           1
         ]
       ]
@@ -100,20 +80,21 @@
       "is_ai_related": true
     },
     {
-      "id": "78373124dc0ed640bde4a2e487c9cdd44c9c745a",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Combatting adversarial distillation",
-      "url": "https://openai.com/index/combatting-adversarial-distillation",
-      "published_at": "2026-11-20T10:00:00Z",
-      "summary": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
+      "id": "228bd219b2d77c13c6a1a6136e5b8297198b6ec0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 数学家称与 Claude 完成黎曼猜想证明，斯坦福数小时后发布纯人类竞争草稿",
+      "url": "https://aihot.news/items/tje8i8y21ttk7jjmqet5bpxuq",
+      "published_at": "2026-11-21T11:19:49Z",
+      "summary": "Anthropic 数学家 Levent Alpöge 周五宣布与 Claude 合作得到黎曼猜想及广义黎曼猜想的证明，证明以 Lean 语言分 14 个数据包发布，打印将超 25 万页。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tje8i8y21ttk7jjmqet5bpxuq",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:openai",
-        "source_prior:official_ai"
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -145,10 +126,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1421,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 414,
-      "checked_at": "2026-11-21T05:03:01.873696Z"
+      "latency_ms": 469,
+      "checked_at": "2026-11-21T11:49:23.418875Z"
     },
     {
       "source_id": "openai-skills",
@@ -159,8 +140,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 300,
-      "checked_at": "2026-11-21T05:03:02.174226Z"
+      "latency_ms": 270,
+      "checked_at": "2026-11-21T11:49:23.689757Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -171,8 +152,8 @@
       "fetched_count": 290,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 119,
-      "checked_at": "2026-11-21T05:03:02.295646Z"
+      "latency_ms": 107,
+      "checked_at": "2026-11-21T11:49:23.800287Z"
     },
     {
       "source_id": "google-deepmind",
@@ -183,8 +164,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 204,
-      "checked_at": "2026-11-21T05:03:02.501079Z"
+      "latency_ms": 207,
+      "checked_at": "2026-11-21T11:49:24.008474Z"
     },
     {
       "source_id": "google-ai",
@@ -195,8 +176,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 193,
-      "checked_at": "2026-11-21T05:03:02.695144Z"
+      "latency_ms": 165,
+      "checked_at": "2026-11-21T11:49:24.174114Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -207,8 +188,8 @@
       "fetched_count": 915,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 251,
-      "checked_at": "2026-11-21T05:03:02.953710Z"
+      "latency_ms": 260,
+      "checked_at": "2026-11-21T11:49:24.443942Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -219,8 +200,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 290,
-      "checked_at": "2026-11-21T05:03:03.244028Z"
+      "latency_ms": 279,
+      "checked_at": "2026-11-21T11:49:24.723671Z"
     },
     {
       "source_id": "github-changelog",
@@ -231,8 +212,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 27,
-      "checked_at": "2026-11-21T05:03:03.272161Z"
+      "latency_ms": 28,
+      "checked_at": "2026-11-21T11:49:24.752752Z"
     },
     {
       "source_id": "aihot",
@@ -241,10 +222,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 2161,
-      "checked_at": "2026-11-21T05:03:05.433811Z"
+      "latency_ms": 3391,
+      "checked_at": "2026-11-21T11:49:28.144690Z"
     }
   ],
   "control_notes": {
