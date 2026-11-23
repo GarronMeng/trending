@@ -1,24 +1,72 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-23T13:42:26.793514Z",
+  "generated_at": "2026-11-23T18:35:26.437571Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 2,
+  "item_count": 7,
   "groups": {
-    "aggregate": {
-      "group": "aggregate",
+    "official": {
+      "group": "official",
       "count": 2,
       "top_sources": [
         [
-          "AI Hot",
+          "Google DeepMind",
+          1
+        ],
+        [
+          "Hugging Face Blog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "agent",
           2
+        ],
+        [
+          "official_ai",
+          2
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "eval",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 5,
+      "top_sources": [
+        [
+          "AI Hot",
+          5
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
+          5
+        ],
+        [
+          "gemini",
           2
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "deepmind",
+          1
+        ],
+        [
+          "agent",
+          1
         ],
         [
           "anthropic",
@@ -37,13 +85,94 @@
           1
         ],
         [
-          "gemini",
+          "openai",
+          1
+        ],
+        [
+          "llm",
           1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "eb42e5c08b1a5d556b29fb8451ab6465900f7c32",
+      "source_id": "google-deepmind",
+      "source_name": "Google DeepMind",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Finding faster quantum algorithms with agents and formal verification",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification",
+      "published_at": "2026-11-23T16:59:40Z",
+      "summary": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "1619aa7e9248905790867be9c1c61a870f3139a0",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How to build and maintain an agentic evaluation",
+      "url": "https://huggingface.co/blog/agentic-evals",
+      "published_at": "2026-11-23T00:00:00Z",
+      "summary": null,
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:eval",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "de90bebfedca5b7df8085f60749a164c3f904b7d",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google DeepMind 用 Gemini 4 智能体团队与 Lean 形式化验证改进量子算法",
+      "url": "https://aihot.news/items/pjpgapf3mbvmy98cywxhwf07n",
+      "published_at": "2026-11-23T16:59:40Z",
+      "summary": "Google DeepMind 发布新论文，用多个 Gemini 4 智能体团队结合 Lean 形式化定理证明改进量子算法，生成经数学验证的高效量子电路，并在 GitHub 开源 Lean 库、问题规格和验证解法。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pjpgapf3mbvmy98cywxhwf07n",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:gemini",
+        "strong:deepmind",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0e190445afcd1bc1aa1e7fe2a12412b930ffd36f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "a16z 实测 11,307 次 Agent 购物流程，总结企业赢得 B2A 经济的五条方法",
+      "url": "https://aihot.news/items/qkxvs90ewfu3k430sdefndv56",
+      "published_at": "2026-11-23T15:04:27Z",
+      "summary": "a16z 联合 The Prompting Company 测试 Grok Bot、Muse、Instinct、Dots 等智能体在 1,270 条提示词、11,307 次完整运行中的购物表现，并比对 YipitData 消费数据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qkxvs90ewfu3k430sdefndv56",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "c4d5ba30f9defda8828314c50d30f51cbba5e1ba",
       "source_id": "aihot",
@@ -82,6 +211,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "d8399e2ff119a41e8b52c13d914768427e59a6fe",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "AISI 红队论文：攻击策略选择会让 LLM 监视器评估结果失真",
+      "url": "https://aihot.news/items/tl8v9gto8rd3e4x40xfbljj13",
+      "published_at": "2026-11-22T23:00:00Z",
+      "summary": "英国 AI Security Institute 发布论文，测试合成攻击生成方式对监视器评估的影响。评估一个 OpenAI 前生产监视器时，同一监视器对不同攻击策略的漏报率从 0.2%（基础提示）到 23%（转录编辑）不等，优化程度也会显著改变结果。作者指出合成转录只是真实有害行为代理，其代表性难以证明，仅凭监视器评估不足以保证部署安全，需辅以能力限制、人工在环和沙箱等分层防护。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tl8v9gto8rd3e4x40xfbljj13",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:llm",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -94,8 +242,8 @@
       "fetched_count": 1422,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 581,
-      "checked_at": "2026-11-23T13:42:22.087325Z"
+      "latency_ms": 728,
+      "checked_at": "2026-11-23T18:35:23.047220Z"
     },
     {
       "source_id": "openai-skills",
@@ -106,8 +254,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 236,
-      "checked_at": "2026-11-23T13:42:22.324251Z"
+      "latency_ms": 175,
+      "checked_at": "2026-11-23T18:35:23.222485Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -118,8 +266,8 @@
       "fetched_count": 290,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 116,
-      "checked_at": "2026-11-23T13:42:22.445208Z"
+      "latency_ms": 71,
+      "checked_at": "2026-11-23T18:35:23.296598Z"
     },
     {
       "source_id": "google-deepmind",
@@ -128,10 +276,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 179,
-      "checked_at": "2026-11-23T13:42:22.626186Z"
+      "latency_ms": 447,
+      "checked_at": "2026-11-23T18:35:23.744809Z"
     },
     {
       "source_id": "google-ai",
@@ -142,8 +290,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 112,
-      "checked_at": "2026-11-23T13:42:22.738704Z"
+      "latency_ms": 115,
+      "checked_at": "2026-11-23T18:35:23.860102Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -151,11 +299,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 915,
-      "kept_count": 0,
+      "fetched_count": 916,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 268,
-      "checked_at": "2026-11-23T13:42:23.020852Z"
+      "latency_ms": 184,
+      "checked_at": "2026-11-23T18:35:24.054544Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -166,8 +314,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 215,
-      "checked_at": "2026-11-23T13:42:23.236468Z"
+      "latency_ms": 164,
+      "checked_at": "2026-11-23T18:35:24.219546Z"
     },
     {
       "source_id": "github-changelog",
@@ -178,8 +326,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-11-23T13:42:23.260513Z"
+      "latency_ms": 16,
+      "checked_at": "2026-11-23T18:35:24.235820Z"
     },
     {
       "source_id": "aihot",
@@ -188,10 +336,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 3523,
-      "checked_at": "2026-11-23T13:42:26.785088Z"
+      "latency_ms": 2193,
+      "checked_at": "2026-11-23T18:35:26.429989Z"
     }
   ],
   "control_notes": {
