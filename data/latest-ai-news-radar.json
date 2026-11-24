@@ -1,21 +1,21 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-24T18:05:14.352746Z",
+  "generated_at": "2026-11-24T19:37:12.853539Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 10,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 5,
       "top_sources": [
         [
-          "Google AI Blog",
-          1
+          "OpenAI News",
+          3
         ],
         [
-          "OpenAI News",
+          "Google AI Blog",
           1
         ],
         [
@@ -26,10 +26,22 @@
       "top_keywords": [
         [
           "official_ai",
-          3
+          5
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "agents",
+          1
         ],
         [
           "gemini",
+          1
+        ],
+        [
+          "codex",
           1
         ],
         [
@@ -38,6 +50,58 @@
         ],
         [
           "workflow",
+          1
+        ]
+      ]
+    },
+    "aggregate": {
+      "group": "aggregate",
+      "count": 4,
+      "top_sources": [
+        [
+          "AI Hot",
+          4
+        ]
+      ],
+      "top_keywords": [
+        [
+          "aggregate_noise",
+          4
+        ],
+        [
+          "智能体",
+          2
+        ],
+        [
+          "anthropic",
+          1
+        ],
+        [
+          "claude",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "agent",
+          1
+        ],
+        [
+          "hugging face",
           1
         ]
       ]
@@ -61,49 +125,28 @@
           1
         ]
       ]
-    },
-    "aggregate": {
-      "group": "aggregate",
-      "count": 3,
-      "top_sources": [
-        [
-          "AI Hot",
-          3
-        ]
-      ],
-      "top_keywords": [
-        [
-          "aggregate_noise",
-          3
-        ],
-        [
-          "智能体",
-          2
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "hugging face",
-          1
-        ]
-      ]
     }
   },
   "items": [
+    {
+      "id": "a1712a86d3f21964e6358a9cc384315037036beb",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "How iFood scales coding agents across 15,000 repositories",
+      "url": "https://openai.com/business/customer-stories/ifood",
+      "published_at": "2026-11-24T00:00:00Z",
+      "summary": null,
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "8902ea23b36d03b11e360b1a13904af2cb90f1c1",
       "source_id": "google-ai",
@@ -118,6 +161,24 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:gemini",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "b59b57fdf67d52e0cf4eb966aa91f40edefd20a7",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Searching for distant planets with Astra",
+      "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+      "published_at": "2026-11-24T11:00:00Z",
+      "summary": "See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:codex",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -155,6 +216,26 @@
       "relevance_reasons": [
         "weak:workflow",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "7417fc40828b9a5d6b87582c402cab6e4942a76e",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 为 Claude 推出 Skills over MCP 公测及 Tasks、Elicitation 等更新",
+      "url": "https://aihot.news/items/kjd2qp2iuk9zxdfqj5qk2a8f9",
+      "published_at": "2026-11-24T00:00:00Z",
+      "summary": "Anthropic 宣布 Skills over MCP 在 Claude 与 Claude Code 进入公开测试，MCP 服务器可在工具之外发布技能，按需加载以降低上下文占用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kjd2qp2iuk9zxdfqj5qk2a8f9",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "strong:mcp",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -242,11 +323,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1425,
-      "kept_count": 1,
+      "fetched_count": 1428,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 414,
-      "checked_at": "2026-11-24T18:05:11.937454Z"
+      "latency_ms": 602,
+      "checked_at": "2026-11-24T19:37:08.826270Z"
     },
     {
       "source_id": "openai-skills",
@@ -257,8 +338,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 292,
-      "checked_at": "2026-11-24T18:05:12.229931Z"
+      "latency_ms": 274,
+      "checked_at": "2026-11-24T19:37:09.100734Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -269,8 +350,8 @@
       "fetched_count": 290,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 85,
-      "checked_at": "2026-11-24T18:05:12.317851Z"
+      "latency_ms": 121,
+      "checked_at": "2026-11-24T19:37:09.226749Z"
     },
     {
       "source_id": "google-deepmind",
@@ -281,8 +362,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 173,
-      "checked_at": "2026-11-24T18:05:12.492277Z"
+      "latency_ms": 201,
+      "checked_at": "2026-11-24T19:37:09.430074Z"
     },
     {
       "source_id": "google-ai",
@@ -293,8 +374,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 240,
-      "checked_at": "2026-11-24T18:05:12.732982Z"
+      "latency_ms": 163,
+      "checked_at": "2026-11-24T19:37:09.594016Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -305,8 +386,8 @@
       "fetched_count": 916,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 243,
-      "checked_at": "2026-11-24T18:05:12.984834Z"
+      "latency_ms": 376,
+      "checked_at": "2026-11-24T19:37:09.984154Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -317,8 +398,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 184,
-      "checked_at": "2026-11-24T18:05:13.169642Z"
+      "latency_ms": 488,
+      "checked_at": "2026-11-24T19:37:10.473036Z"
     },
     {
       "source_id": "github-changelog",
@@ -329,8 +410,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 73,
-      "checked_at": "2026-11-24T18:05:13.243715Z"
+      "latency_ms": 53,
+      "checked_at": "2026-11-24T19:37:10.526852Z"
     },
     {
       "source_id": "aihot",
@@ -339,10 +420,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 3,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 1102,
-      "checked_at": "2026-11-24T18:05:14.346745Z"
+      "latency_ms": 2317,
+      "checked_at": "2026-11-24T19:37:12.845741Z"
     }
   ],
   "control_notes": {
