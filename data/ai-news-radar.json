@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-24T19:37:12.853539Z",
+  "generated_at": "2026-11-24T23:22:41.596914Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 11,
   "groups": {
     "official": {
       "group": "official",
@@ -29,6 +29,10 @@
           5
         ],
         [
+          "codex",
+          2
+        ],
+        [
           "agent",
           1
         ],
@@ -37,15 +41,11 @@
           1
         ],
         [
+          "chatgpt",
+          1
+        ],
+        [
           "gemini",
-          1
-        ],
-        [
-          "codex",
-          1
-        ],
-        [
-          "openai",
           1
         ],
         [
@@ -56,29 +56,29 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 4,
+      "count": 6,
       "top_sources": [
         [
           "AI Hot",
-          4
+          6
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          4
+          6
+        ],
+        [
+          "anthropic",
+          3
+        ],
+        [
+          "claude",
+          3
         ],
         [
           "智能体",
           2
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "claude",
-          1
         ],
         [
           "mcp",
@@ -105,26 +105,6 @@
           1
         ]
       ]
-    },
-    "developer": {
-      "group": "developer",
-      "count": 1,
-      "top_sources": [
-        [
-          "GitHub Changelog",
-          1
-        ]
-      ],
-      "top_keywords": [
-        [
-          "agent",
-          1
-        ],
-        [
-          "agents",
-          1
-        ]
-      ]
     }
   },
   "items": [
@@ -143,6 +123,25 @@
       "relevance_reasons": [
         "strong:agent",
         "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "194d0b2c97cf09ae795853086369c4419ffbf3ee",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Clay helps sales teams win with Codex and ChatGPT",
+      "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+      "published_at": "2026-11-24T00:00:00Z",
+      "summary": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning.",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:chatgpt",
+        "strong:codex",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -179,24 +178,6 @@
       "relevance_score": 3,
       "relevance_reasons": [
         "strong:codex",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "5d91e190ebd31e044f93fd089a95105c9b668e68",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "OpenAI and Cisco introduce Shirudo",
-      "url": "https://openai.com/index/introducing-shirudo",
-      "published_at": "2026-11-23T21:20:00Z",
-      "summary": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -240,20 +221,21 @@
       "is_ai_related": true
     },
     {
-      "id": "51abe3f2f27e88d222f8494727d8e63fefb75425",
-      "source_id": "github-changelog",
-      "source_name": "GitHub Changelog",
-      "source_type": "official_rss",
-      "source_group": "developer",
-      "source_weight": 3,
-      "title": "Issue statuses and repository boards are in public preview",
-      "url": "https://github.blog/changelog/2026-11-23-issue-statuses-and-repository-boards-are-in-public-preview",
-      "published_at": "2026-11-23T20:37:11Z",
-      "summary": "Open or closed doesn’t always tell you where an issue stands. You can now use more specific statuses to give your team and agents shared context about what’s in flight… The post Issue statuses and repository boards are in public preview appeared first on The GitHub Blog .",
-      "relevance_score": 4,
+      "id": "c67520bf189098a714aeb1a5c5d8b7e0760c27f3",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 发布 Siren 评估：Claude 在弱沙盒中 21-32% 场景会越界访问",
+      "url": "https://aihot.news/items/gat7lwf755dyryyd45gvlesxz",
+      "published_at": "2026-11-24T21:32:51Z",
+      "summary": "Anthropic 发布新安全评估 Siren，让 Claude 在故意削弱的沙盒中执行日常任务，并把有用资源放在沙盒外。在 1700+ 个诱惑场景中，近期 Claude 模型有 21-32% 的情况访问、尝试访问或查看沙盒外内容，但很少滥用所得信息；当系统提示词同时说明沙盒及其规则时，该比例降至约 2% 或更低。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gat7lwf755dyryyd45gvlesxz",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:agents"
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -314,6 +296,25 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "032636db9078f85fca0f4f26426049dc7d055296",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Claude 推出 Install as app：artifacts 可安装为 Mac 和 Windows 桌面应用",
+      "url": "https://aihot.news/items/zcpto4b7qb8sr6v6n223kd2sx",
+      "published_at": "2026-11-24T00:00:00Z",
+      "summary": "Anthropic 在 Mac 和 Windows 版 Claude 中以 beta 形式推出 Install as app，artifacts 可创建、运行并分享为独立桌面应用，拥有自己的图标和窗口，底层 artifact 更新时应用自动同步。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zcpto4b7qb8sr6v6n223kd2sx",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -323,11 +324,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1428,
+      "fetched_count": 1430,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 602,
-      "checked_at": "2026-11-24T19:37:08.826270Z"
+      "latency_ms": 348,
+      "checked_at": "2026-11-24T23:22:37.000310Z"
     },
     {
       "source_id": "openai-skills",
@@ -338,8 +339,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 274,
-      "checked_at": "2026-11-24T19:37:09.100734Z"
+      "latency_ms": 230,
+      "checked_at": "2026-11-24T23:22:37.231051Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -350,8 +351,8 @@
       "fetched_count": 290,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 121,
-      "checked_at": "2026-11-24T19:37:09.226749Z"
+      "latency_ms": 75,
+      "checked_at": "2026-11-24T23:22:37.308896Z"
     },
     {
       "source_id": "google-deepmind",
@@ -362,8 +363,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 201,
-      "checked_at": "2026-11-24T19:37:09.430074Z"
+      "latency_ms": 303,
+      "checked_at": "2026-11-24T23:22:37.613150Z"
     },
     {
       "source_id": "google-ai",
@@ -374,8 +375,8 @@
       "fetched_count": 20,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 163,
-      "checked_at": "2026-11-24T19:37:09.594016Z"
+      "latency_ms": 197,
+      "checked_at": "2026-11-24T23:22:37.811027Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -386,8 +387,8 @@
       "fetched_count": 916,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 376,
-      "checked_at": "2026-11-24T19:37:09.984154Z"
+      "latency_ms": 289,
+      "checked_at": "2026-11-24T23:22:38.107883Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -398,8 +399,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 488,
-      "checked_at": "2026-11-24T19:37:10.473036Z"
+      "latency_ms": 390,
+      "checked_at": "2026-11-24T23:22:38.498471Z"
     },
     {
       "source_id": "github-changelog",
@@ -408,10 +409,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 53,
-      "checked_at": "2026-11-24T19:37:10.526852Z"
+      "latency_ms": 42,
+      "checked_at": "2026-11-24T23:22:38.541474Z"
     },
     {
       "source_id": "aihot",
@@ -420,10 +421,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 4,
+      "kept_count": 6,
       "error": null,
-      "latency_ms": 2317,
-      "checked_at": "2026-11-24T19:37:12.845741Z"
+      "latency_ms": 3047,
+      "checked_at": "2026-11-24T23:22:41.590072Z"
     }
   ],
   "control_notes": {
