@@ -43,17 +43,30 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>8</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>3</b><span>官方源条目</span></div>
-        <div class="stat"><b>5</b><span>聚合源条目</span></div>
+        <div class="stat"><b>7</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>4</b><span>官方源条目</span></div>
+        <div class="stat"><b>2</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-23T20:26:30.321068Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-24T01:28:17.596985Z</p></div>
       <div class="grid">
+    <article class="card">
+      <div class="meta">
+        <span>OpenAI News</span>
+        <span>official_rss</span>
+        <span>2026-11-23T08:00:00Z</span>
+        <strong>Score 6</strong>
+      </div>
+      <h3><a href="https://openai.com/business/customer-stories/richpanel-ai-customer-support" target="_blank" rel="noreferrer">Richpanel helps companies automate 50% of support in 30 days</a></h3>
+      <p class='summary'>Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.</p>
+      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>weak:tool</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
     <article class="card">
       <div class="meta">
         <span>Google DeepMind</span>
@@ -82,14 +95,27 @@
 
     <article class="card">
       <div class="meta">
-        <span>Hugging Face Blog</span>
+        <span>OpenAI News</span>
         <span>official_rss</span>
-        <span>2026-11-23T00:00:00Z</span>
+        <span>2026-11-23T21:20:00Z</span>
+        <strong>Score 3</strong>
+      </div>
+      <h3><a href="https://openai.com/index/introducing-shirudo" target="_blank" rel="noreferrer">OpenAI and Cisco introduce Shirudo</a></h3>
+      <p class='summary'>OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.</p>
+      <div class="tags"><span>strong:openai</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
+        <span>GitHub Changelog</span>
+        <span>official_rss</span>
+        <span>2026-11-23T20:37:11Z</span>
         <strong>Score 4</strong>
       </div>
-      <h3><a href="https://huggingface.co/blog/agentic-evals" target="_blank" rel="noreferrer">How to build and maintain an agentic evaluation</a></h3>
-      
-      <div class="tags"><span>strong:agent</span><span>weak:eval</span><span>source_prior:official_ai</span></div>
+      <h3><a href="https://github.blog/changelog/2026-11-23-issue-statuses-and-repository-boards-are-in-public-preview" target="_blank" rel="noreferrer">Issue statuses and repository boards are in public preview</a></h3>
+      <p class='summary'>Open or closed doesn’t always tell you where an issue stands. You can now use more specific statuses to give your team and agents shared context about what’s in flight… The post Issue statuses and repository boards are in public preview appeared first on The GitHub Blog .</p>
+      <div class="tags"><span>strong:agent</span><span>strong:agents</span></div>
     </article>
     
 
@@ -117,60 +143,21 @@
       <p class='summary'>a16z 联合 The Prompting Company 测试 Grok Bot、Muse、Instinct、Dots 等智能体在 1,270 条提示词、11,307 次完整运行中的购物表现，并比对 YipitData 消费数据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qkxvs90ewfu3k430sdefndv56</p>
       <div class="tags"><span>strong:agent</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-11-23T01:25:53Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/dus34samsjrld1qopq65v54uq" target="_blank" rel="noreferrer">Anthropic IPO 前三家机构如何重注押注</a></h3>
-      <p class='summary'>TechCrunch 报道 Notable Capital、GIC 和 Baillie Gifford 在 Anthropic IPO 前的重仓投资逻辑。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dus34samsjrld1qopq65v54uq</p>
-      <div class="tags"><span>strong:anthropic</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-11-22T23:56:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/hz782dpcwhurj6584rtd13eaf" target="_blank" rel="noreferrer">卡兹克分享 Claude、GPT、Gemini 三模型协同调度方法</a></h3>
-      <p class='summary'>自媒体作者卡兹克分享自己让 Claude、GPT 和 Gemini 协同工作的方法：把 Claude Opus 5.5 当总指挥负责沟通、拆解和验收，Gemini 4 Neon 当军师出方案和改界面文案，GPT 负责后端、算法、修 BUG 和代码审查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hz782dpcwhurj6584rtd13eaf</p>
-      <div class="tags"><span>strong:claude</span><span>strong:gemini</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-11-22T23:00:00Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/tl8v9gto8rd3e4x40xfbljj13" target="_blank" rel="noreferrer">AISI 红队论文：攻击策略选择会让 LLM 监视器评估结果失真</a></h3>
-      <p class='summary'>英国 AI Security Institute 发布论文，测试合成攻击生成方式对监视器评估的影响。评估一个 OpenAI 前生产监视器时，同一监视器对不同攻击策略的漏报率从 0.2%（基础提示）到 23%（转录编辑）不等，优化程度也会显著改变结果。作者指出合成转录只是真实有害行为代理，其代表性难以证明，仅凭监视器评估不足以保证部署安全，需辅以能力限制、人工在环和沙箱等分层防护。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tl8v9gto8rd3e4x40xfbljj13</p>
-      <div class="tags"><span>strong:openai</span><span>strong:llm</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1423</td><td>1</td><td>461ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>391ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>290</td><td>0</td><td>85ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>1</td><td>481ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>185ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>916</td><td>1</td><td>236ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>217ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>23ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>5</td><td>817ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1425</td><td>3</td><td>462ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>295ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>290</td><td>0</td><td>119ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>1</td><td>288ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>207ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>916</td><td>0</td><td>293ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>383ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>26ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>2</td><td>2217ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>

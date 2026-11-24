@@ -1,32 +1,28 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-23T20:26:30.320009Z",
+  "generated_at": "2026-11-24T01:28:17.596034Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 7,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 4,
       "top_sources": [
         [
-          "Google DeepMind",
-          1
-        ],
-        [
           "OpenAI News",
-          1
+          3
         ],
         [
-          "Hugging Face Blog",
+          "Google DeepMind",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          3
+          4
         ],
         [
           "agent",
@@ -34,43 +30,63 @@
         ],
         [
           "agents",
-          1
+          2
         ],
         [
           "openai",
+          2
+        ],
+        [
+          "tool",
           1
         ],
         [
           "workflow",
           1
+        ]
+      ]
+    },
+    "developer": {
+      "group": "developer",
+      "count": 1,
+      "top_sources": [
+        [
+          "GitHub Changelog",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "agent",
+          1
         ],
         [
-          "eval",
+          "agents",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 2,
       "top_sources": [
         [
           "AI Hot",
-          5
+          2
         ]
       ],
       "top_keywords": [
         [
+          "智能体",
+          2
+        ],
+        [
           "aggregate_noise",
-          5
+          2
         ],
         [
           "gemini",
-          2
-        ],
-        [
-          "智能体",
-          2
+          1
         ],
         [
           "deepmind",
@@ -79,35 +95,31 @@
         [
           "agent",
           1
-        ],
-        [
-          "anthropic",
-          1
-        ],
-        [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "claude",
-          1
-        ],
-        [
-          "openai",
-          1
-        ],
-        [
-          "llm",
-          1
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "2c594572ccbd70b0519cbd363eadeb50fda50e35",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Richpanel helps companies automate 50% of support in 30 days",
+      "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "published_at": "2026-11-23T08:00:00Z",
+      "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+      "relevance_score": 6,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "weak:tool",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "eb42e5c08b1a5d556b29fb8451ab6465900f7c32",
       "source_id": "google-deepmind",
@@ -147,21 +159,38 @@
       "is_ai_related": true
     },
     {
-      "id": "1619aa7e9248905790867be9c1c61a870f3139a0",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
+      "id": "5d91e190ebd31e044f93fd089a95105c9b668e68",
+      "source_id": "openai-news",
+      "source_name": "OpenAI News",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "How to build and maintain an agentic evaluation",
-      "url": "https://huggingface.co/blog/agentic-evals",
-      "published_at": "2026-11-23T00:00:00Z",
-      "summary": null,
+      "title": "OpenAI and Cisco introduce Shirudo",
+      "url": "https://openai.com/index/introducing-shirudo",
+      "published_at": "2026-11-23T21:20:00Z",
+      "summary": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "51abe3f2f27e88d222f8494727d8e63fefb75425",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Issue statuses and repository boards are in public preview",
+      "url": "https://github.blog/changelog/2026-11-23-issue-statuses-and-repository-boards-are-in-public-preview",
+      "published_at": "2026-11-23T20:37:11Z",
+      "summary": "Open or closed doesn’t always tell you where an issue stands. You can now use more specific statuses to give your team and agents shared context about what’s in flight… The post Issue statuses and repository boards are in public preview appeared first on The GitHub Blog .",
       "relevance_score": 4,
       "relevance_reasons": [
         "strong:agent",
-        "weak:eval",
-        "source_prior:official_ai"
+        "strong:agents"
       ],
       "is_ai_related": true
     },
@@ -203,64 +232,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "c4d5ba30f9defda8828314c50d30f51cbba5e1ba",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic IPO 前三家机构如何重注押注",
-      "url": "https://aihot.news/items/dus34samsjrld1qopq65v54uq",
-      "published_at": "2026-11-23T01:25:53Z",
-      "summary": "TechCrunch 报道 Notable Capital、GIC 和 Baillie Gifford 在 Anthropic IPO 前的重仓投资逻辑。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dus34samsjrld1qopq65v54uq",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "8cd679b42d4f1418a25de449eb02015f194f6ac3",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "卡兹克分享 Claude、GPT、Gemini 三模型协同调度方法",
-      "url": "https://aihot.news/items/hz782dpcwhurj6584rtd13eaf",
-      "published_at": "2026-11-22T23:56:00Z",
-      "summary": "自媒体作者卡兹克分享自己让 Claude、GPT 和 Gemini 协同工作的方法：把 Claude Opus 5.5 当总指挥负责沟通、拆解和验收，Gemini 4 Neon 当军师出方案和改界面文案，GPT 负责后端、算法、修 BUG 和代码审查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hz782dpcwhurj6584rtd13eaf",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:claude",
-        "strong:gemini",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "d8399e2ff119a41e8b52c13d914768427e59a6fe",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "AISI 红队论文：攻击策略选择会让 LLM 监视器评估结果失真",
-      "url": "https://aihot.news/items/tl8v9gto8rd3e4x40xfbljj13",
-      "published_at": "2026-11-22T23:00:00Z",
-      "summary": "英国 AI Security Institute 发布论文，测试合成攻击生成方式对监视器评估的影响。评估一个 OpenAI 前生产监视器时，同一监视器对不同攻击策略的漏报率从 0.2%（基础提示）到 23%（转录编辑）不等，优化程度也会显著改变结果。作者指出合成转录只是真实有害行为代理，其代表性难以证明，仅凭监视器评估不足以保证部署安全，需辅以能力限制、人工在环和沙箱等分层防护。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tl8v9gto8rd3e4x40xfbljj13",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:llm",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -270,11 +241,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 1423,
-      "kept_count": 1,
+      "fetched_count": 1425,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 461,
-      "checked_at": "2026-11-23T20:26:27.862241Z"
+      "latency_ms": 462,
+      "checked_at": "2026-11-24T01:28:13.742067Z"
     },
     {
       "source_id": "openai-skills",
@@ -285,8 +256,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 391,
-      "checked_at": "2026-11-23T20:26:28.254001Z"
+      "latency_ms": 295,
+      "checked_at": "2026-11-24T01:28:14.038232Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -297,8 +268,8 @@
       "fetched_count": 290,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 85,
-      "checked_at": "2026-11-23T20:26:28.342038Z"
+      "latency_ms": 119,
+      "checked_at": "2026-11-24T01:28:14.160467Z"
     },
     {
       "source_id": "google-deepmind",
@@ -309,8 +280,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 481,
-      "checked_at": "2026-11-23T20:26:28.824785Z"
+      "latency_ms": 288,
+      "checked_at": "2026-11-24T01:28:14.450390Z"
     },
     {
       "source_id": "google-ai",
@@ -321,8 +292,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 185,
-      "checked_at": "2026-11-23T20:26:29.010292Z"
+      "latency_ms": 207,
+      "checked_at": "2026-11-24T01:28:14.658467Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -331,10 +302,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 916,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 236,
-      "checked_at": "2026-11-23T20:26:29.254587Z"
+      "latency_ms": 293,
+      "checked_at": "2026-11-24T01:28:14.960581Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -345,8 +316,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 217,
-      "checked_at": "2026-11-23T20:26:29.472604Z"
+      "latency_ms": 383,
+      "checked_at": "2026-11-24T01:28:15.343950Z"
     },
     {
       "source_id": "github-changelog",
@@ -355,10 +326,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-11-23T20:26:29.496194Z"
+      "latency_ms": 26,
+      "checked_at": "2026-11-24T01:28:15.371233Z"
     },
     {
       "source_id": "aihot",
@@ -367,10 +338,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 2,
       "error": null,
-      "latency_ms": 817,
-      "checked_at": "2026-11-23T20:26:30.314159Z"
+      "latency_ms": 2217,
+      "checked_at": "2026-11-24T01:28:17.589697Z"
     }
   ],
   "control_notes": {
