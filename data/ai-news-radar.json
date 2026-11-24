@@ -1,47 +1,39 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-24T07:51:36.037724Z",
+  "generated_at": "2026-11-24T14:18:46.201466Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 8,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 2,
       "top_sources": [
         [
-          "OpenAI News",
-          3
+          "Google DeepMind",
+          1
         ],
         [
-          "Google DeepMind",
+          "OpenAI News",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          4
+          2
         ],
         [
           "agent",
-          2
-        ],
-        [
-          "agents",
-          2
-        ],
-        [
-          "openai",
-          2
-        ],
-        [
-          "tool",
           1
         ],
         [
-          "workflow",
+          "agents",
+          1
+        ],
+        [
+          "openai",
           1
         ]
       ]
@@ -68,20 +60,24 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 5,
       "top_sources": [
         [
           "AI Hot",
-          2
+          5
         ]
       ],
       "top_keywords": [
         [
-          "智能体",
-          2
+          "aggregate_noise",
+          5
         ],
         [
-          "aggregate_noise",
+          "智能体",
+          4
+        ],
+        [
+          "agent",
           2
         ],
         [
@@ -93,33 +89,25 @@
           1
         ],
         [
-          "agent",
+          "api",
+          1
+        ],
+        [
+          "API",
+          1
+        ],
+        [
+          "openai",
+          1
+        ],
+        [
+          "hugging face",
           1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "2c594572ccbd70b0519cbd363eadeb50fda50e35",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Richpanel helps companies automate 50% of support in 30 days",
-      "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
-      "published_at": "2026-11-23T08:00:00Z",
-      "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
-      "relevance_score": 6,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
-        "weak:tool",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "eb42e5c08b1a5d556b29fb8451ab6465900f7c32",
       "source_id": "google-deepmind",
@@ -135,25 +123,6 @@
       "relevance_reasons": [
         "strong:agent",
         "strong:agents",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "698f2111a35df89731307cb4661fd317a4b7dafc",
-      "source_id": "openai-news",
-      "source_name": "OpenAI News",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Connected intelligence for in-house legal",
-      "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
-      "published_at": "2026-11-23T08:00:00Z",
-      "summary": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:openai",
-        "weak:workflow",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -215,6 +184,64 @@
       "is_ai_related": true
     },
     {
+      "id": "1d2deb0351c75fc18f34d272658cb3817588b26a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Amazon 报告黑客用开源框架 Cairn 驱动 AI 智能体在约 11 分钟内自主发现并利用 0-day",
+      "url": "https://aihot.news/items/ygbhvp086wl672gfxuhfgl23x",
+      "published_at": "2026-11-24T12:30:05Z",
+      "summary": "Amazon 威胁情报报告称，黑客在开源 AI 渗透测试框架 Cairn 上运行的 AI 智能体，仅凭一句「获取 shell 权限」的指令，就自主发现并利用了一个开源医学影像 AI 应用中未修补的路径遍历 0-day，从映射 API 到任意写文件仅用约 11 分钟，随后写入 Python 反向 shell payload 并以 root 权限获得控制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ygbhvp086wl672gfxuhfgl23x",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:智能体",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "af854d842da770fa478cd38646dc448366e78d7f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenAI 与 Cisco 发布开源 Linux 运行时 Shirudo，让 Agent 无停机防御系统",
+      "url": "https://aihot.news/items/d41p6k2h48zm8u2kl5xdzqx5h",
+      "published_at": "2026-11-24T08:15:44Z",
+      "summary": "OpenAI 宣布与 Cisco 合作推出开源 Linux 运行时 Shirudo，让 Agent 编写动态 eBPF 控制来抵御漏洞利用，同时保持服务不中断，为防御方争取测试和部署补丁的时间。作者称这是迈向自适应自防御基础设施的第一步，目标是让防御者与 AI Agent 协作定位受影响系统、测试并共享 shield、在不干扰工作负载的情况下部署。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d41p6k2h48zm8u2kl5xdzqx5h",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:openai",
+        "strong:agent",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "0cb2c57360fc5afc62b0639e51e86bd5915f21c9",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "OpenClaw 联合多家机构发布真实任务基准 ShellBench，最强模型完成率约六成",
+      "url": "https://aihot.news/items/frmncgr2jcrvfm3t6jgabqhfh",
+      "published_at": "2026-11-24T00:00:00Z",
+      "summary": "OpenClaw 与 Hugging Face、Red Hat、UC Berkeley 等机构合作推出 ShellBench，基于超过 1000 万条匿名真实智能体交互构建 100 个日常任务，含 90 个 rubric 评分任务（721 项标准，其中 381 项安全标准）和 10 个代码测试任务，共 53,100 次评分运行。 🔗 阅读原文 via AIHOT · https://aihot.news/items/frmncgr2jcrvfm3t6jgabqhfh",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:hugging face",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "0e190445afcd1bc1aa1e7fe2a12412b930ffd36f",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -242,10 +269,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 1425,
-      "kept_count": 3,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 372,
-      "checked_at": "2026-11-24T07:51:32.514856Z"
+      "latency_ms": 593,
+      "checked_at": "2026-11-24T14:18:41.012038Z"
     },
     {
       "source_id": "openai-skills",
@@ -256,8 +283,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 325,
-      "checked_at": "2026-11-24T07:51:32.840979Z"
+      "latency_ms": 244,
+      "checked_at": "2026-11-24T14:18:41.256677Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -268,8 +295,8 @@
       "fetched_count": 290,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 87,
-      "checked_at": "2026-11-24T07:51:32.930589Z"
+      "latency_ms": 176,
+      "checked_at": "2026-11-24T14:18:41.437012Z"
     },
     {
       "source_id": "google-deepmind",
@@ -280,8 +307,8 @@
       "fetched_count": 100,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 192,
-      "checked_at": "2026-11-24T07:51:33.123472Z"
+      "latency_ms": 152,
+      "checked_at": "2026-11-24T14:18:41.590894Z"
     },
     {
       "source_id": "google-ai",
@@ -292,8 +319,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 183,
-      "checked_at": "2026-11-24T07:51:33.307505Z"
+      "latency_ms": 155,
+      "checked_at": "2026-11-24T14:18:41.746987Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -304,8 +331,8 @@
       "fetched_count": 916,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 216,
-      "checked_at": "2026-11-24T07:51:33.530673Z"
+      "latency_ms": 317,
+      "checked_at": "2026-11-24T14:18:42.077388Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -316,8 +343,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 360,
-      "checked_at": "2026-11-24T07:51:33.891637Z"
+      "latency_ms": 268,
+      "checked_at": "2026-11-24T14:18:42.345677Z"
     },
     {
       "source_id": "github-changelog",
@@ -328,8 +355,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-11-24T07:51:33.915838Z"
+      "latency_ms": 30,
+      "checked_at": "2026-11-24T14:18:42.375999Z"
     },
     {
       "source_id": "aihot",
@@ -338,10 +365,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 5,
       "error": null,
-      "latency_ms": 2114,
-      "checked_at": "2026-11-24T07:51:36.030876Z"
+      "latency_ms": 3816,
+      "checked_at": "2026-11-24T14:18:46.193753Z"
     }
   ],
   "control_notes": {
