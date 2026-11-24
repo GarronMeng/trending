@@ -1,39 +1,43 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-24T14:18:46.201466Z",
+  "generated_at": "2026-11-24T18:05:14.352746Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 8,
+  "item_count": 7,
   "groups": {
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
-          "Google DeepMind",
+          "Google AI Blog",
           1
         ],
         [
           "OpenAI News",
+          1
+        ],
+        [
+          "Hugging Face Blog",
           1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          2
+          3
         ],
         [
-          "agent",
-          1
-        ],
-        [
-          "agents",
+          "gemini",
           1
         ],
         [
           "openai",
+          1
+        ],
+        [
+          "workflow",
           1
         ]
       ]
@@ -60,33 +64,21 @@
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 5,
+      "count": 3,
       "top_sources": [
         [
           "AI Hot",
-          5
+          3
         ]
       ],
       "top_keywords": [
         [
           "aggregate_noise",
-          5
+          3
         ],
         [
           "智能体",
-          4
-        ],
-        [
-          "agent",
           2
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "deepmind",
-          1
         ],
         [
           "api",
@@ -101,6 +93,10 @@
           1
         ],
         [
+          "agent",
+          1
+        ],
+        [
           "hugging face",
           1
         ]
@@ -109,20 +105,19 @@
   },
   "items": [
     {
-      "id": "eb42e5c08b1a5d556b29fb8451ab6465900f7c32",
-      "source_id": "google-deepmind",
-      "source_name": "Google DeepMind",
+      "id": "8902ea23b36d03b11e360b1a13904af2cb90f1c1",
+      "source_id": "google-ai",
+      "source_name": "Google AI Blog",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "Finding faster quantum algorithms with agents and formal verification",
-      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification",
-      "published_at": "2026-11-23T16:59:40Z",
-      "summary": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
-      "relevance_score": 5,
+      "title": "How Gemini is changing the game for Golden State's organization and fans.",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state",
+      "published_at": "2026-11-24T16:00:00Z",
+      "summary": "Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.",
+      "relevance_score": 3,
       "relevance_reasons": [
-        "strong:agent",
-        "strong:agents",
+        "strong:gemini",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -146,6 +141,24 @@
       "is_ai_related": true
     },
     {
+      "id": "d84b9feff89841a01ab8fa1ec4d209613aa8b4c2",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
+      "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+      "published_at": "2026-11-24T16:34:13Z",
+      "summary": null,
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:workflow",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "51abe3f2f27e88d222f8494727d8e63fefb75425",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -160,26 +173,6 @@
       "relevance_reasons": [
         "strong:agent",
         "strong:agents"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "de90bebfedca5b7df8085f60749a164c3f904b7d",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google DeepMind 用 Gemini 4 智能体团队与 Lean 形式化验证改进量子算法",
-      "url": "https://aihot.news/items/pjpgapf3mbvmy98cywxhwf07n",
-      "published_at": "2026-11-23T16:59:40Z",
-      "summary": "Google DeepMind 发布新论文，用多个 Gemini 4 智能体团队结合 Lean 形式化定理证明改进量子算法，生成经数学验证的高效量子电路，并在 GitHub 开源 Lean 库、问题规格和验证解法。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pjpgapf3mbvmy98cywxhwf07n",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:deepmind",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -240,25 +233,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "0e190445afcd1bc1aa1e7fe2a12412b930ffd36f",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "a16z 实测 11,307 次 Agent 购物流程，总结企业赢得 B2A 经济的五条方法",
-      "url": "https://aihot.news/items/qkxvs90ewfu3k430sdefndv56",
-      "published_at": "2026-11-23T15:04:27Z",
-      "summary": "a16z 联合 The Prompting Company 测试 Grok Bot、Muse、Instinct、Dots 等智能体在 1,270 条提示词、11,307 次完整运行中的购物表现，并比对 YipitData 消费数据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qkxvs90ewfu3k430sdefndv56",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:智能体",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -271,8 +245,8 @@
       "fetched_count": 1425,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 593,
-      "checked_at": "2026-11-24T14:18:41.012038Z"
+      "latency_ms": 414,
+      "checked_at": "2026-11-24T18:05:11.937454Z"
     },
     {
       "source_id": "openai-skills",
@@ -283,8 +257,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 244,
-      "checked_at": "2026-11-24T14:18:41.256677Z"
+      "latency_ms": 292,
+      "checked_at": "2026-11-24T18:05:12.229931Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -295,8 +269,8 @@
       "fetched_count": 290,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 176,
-      "checked_at": "2026-11-24T14:18:41.437012Z"
+      "latency_ms": 85,
+      "checked_at": "2026-11-24T18:05:12.317851Z"
     },
     {
       "source_id": "google-deepmind",
@@ -305,10 +279,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 100,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 152,
-      "checked_at": "2026-11-24T14:18:41.590894Z"
+      "latency_ms": 173,
+      "checked_at": "2026-11-24T18:05:12.492277Z"
     },
     {
       "source_id": "google-ai",
@@ -317,10 +291,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 20,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 155,
-      "checked_at": "2026-11-24T14:18:41.746987Z"
+      "latency_ms": 240,
+      "checked_at": "2026-11-24T18:05:12.732982Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -329,10 +303,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 916,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 317,
-      "checked_at": "2026-11-24T14:18:42.077388Z"
+      "latency_ms": 243,
+      "checked_at": "2026-11-24T18:05:12.984834Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -343,8 +317,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 268,
-      "checked_at": "2026-11-24T14:18:42.345677Z"
+      "latency_ms": 184,
+      "checked_at": "2026-11-24T18:05:13.169642Z"
     },
     {
       "source_id": "github-changelog",
@@ -355,8 +329,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-11-24T14:18:42.375999Z"
+      "latency_ms": 73,
+      "checked_at": "2026-11-24T18:05:13.243715Z"
     },
     {
       "source_id": "aihot",
@@ -365,10 +339,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 5,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 3816,
-      "checked_at": "2026-11-24T14:18:46.193753Z"
+      "latency_ms": 1102,
+      "checked_at": "2026-11-24T18:05:14.346745Z"
     }
   ],
   "control_notes": {
