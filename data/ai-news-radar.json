@@ -1,10 +1,10 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-25T17:29:34.436961Z",
+  "generated_at": "2026-11-25T18:44:24.699224Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 6,
+  "item_count": 7,
   "groups": {
     "aggregate": {
       "group": "aggregate",
@@ -26,7 +26,7 @@
         ],
         [
           "claude",
-          2
+          3
         ],
         [
           "gemini",
@@ -49,31 +49,43 @@
           1
         ],
         [
-          "智能体",
+          "api",
           1
         ],
         [
-          "openai",
+          "API",
+          1
+        ],
+        [
+          "智能体",
           1
         ]
       ]
     },
     "official": {
       "group": "official",
-      "count": 2,
+      "count": 3,
       "top_sources": [
         [
           "Hugging Face Blog",
           2
+        ],
+        [
+          "GitHub AI & ML",
+          1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          2
+          3
         ],
         [
           "agent",
+          2
+        ],
+        [
+          "copilot",
           1
         ],
         [
@@ -107,6 +119,25 @@
       "is_ai_related": true
     },
     {
+      "id": "b49168e8248c4ab2d21f474b797126f86323e762",
+      "source_id": "github-ai-ml",
+      "source_name": "GitHub AI & ML",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 4,
+      "title": "How to choose the next safe step in application modernization",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization",
+      "published_at": "2026-11-25T15:00:00Z",
+      "summary": "Learn how to assess a legacy application, choose a bounded modernization step, and reuse the method with a GitHub Copilot agent skill. The post How to choose the next safe step in application modernization appeared first on The GitHub Blog .",
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:copilot",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "c5ee76714ef683a9356ae361f0dcd330c61a6a61",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
@@ -121,6 +152,27 @@
       "relevance_reasons": [
         "strong:agent",
         "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
+      "id": "2c8215e71e29361574a0c9757cffbd8eaa37f03a",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Anthropic 平台工程负责人 Katelyn Lesse 谈 2026 年如何用 Claude 构建软件",
+      "url": "https://aihot.news/items/rnanzlnaqxdr2icjqw0qwv9la",
+      "published_at": "2026-11-25T17:31:32Z",
+      "summary": "Pragmatic Engineer 发布对 Anthropic 平台工程负责人 Katelyn Lesse 的播客访谈，她团队负责 Claude API 及 Claude Code 和 Claude Desktop 的基础设施。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rnanzlnaqxdr2icjqw0qwv9la",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "strong:claude",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -180,25 +232,6 @@
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
-    },
-    {
-      "id": "99c24f611c5ac3fed2180a6cfe33ed627f87fc47",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Ed Zitron 分析 NVIDIA 董事会恢复黄仁勋 CEO 职位背后的行业流动性风险",
-      "url": "https://aihot.news/items/lb66i6g7eq01l6hx0rr8f7k9r",
-      "published_at": "2026-11-24T18:08:05Z",
-      "summary": "Ed Zitron 撰文分析 NVIDIA 董事会恢复黄仁勋 CEO 职位一事，认为此举是应对外部压力的符号性操作，并未解决 AI 行业面临的循环融资、流动性紧张及 OpenAI 亏损等根本问题。文章梳理了 NVIDIA 对 AI 行业的巨额资金支持、Anthropic 上市后表现及 OpenAI 的财务压力等证据，论证行业流动性风险并未消除。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lb66i6g7eq01l6hx0rr8f7k9r",
-      "relevance_score": 3,
-      "relevance_reasons": [
-        "strong:openai",
-        "strong:anthropic",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -211,8 +244,8 @@
       "fetched_count": 1430,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 389,
-      "checked_at": "2026-11-25T17:29:31.211075Z"
+      "latency_ms": 423,
+      "checked_at": "2026-11-25T18:44:21.161914Z"
     },
     {
       "source_id": "openai-skills",
@@ -223,8 +256,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 240,
-      "checked_at": "2026-11-25T17:29:31.451729Z"
+      "latency_ms": 294,
+      "checked_at": "2026-11-25T18:44:21.456365Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -235,8 +268,8 @@
       "fetched_count": 290,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 94,
-      "checked_at": "2026-11-25T17:29:31.548524Z"
+      "latency_ms": 110,
+      "checked_at": "2026-11-25T18:44:21.570055Z"
     },
     {
       "source_id": "google-deepmind",
@@ -247,8 +280,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 650,
-      "checked_at": "2026-11-25T17:29:32.199961Z"
+      "latency_ms": 198,
+      "checked_at": "2026-11-25T18:44:21.769539Z"
     },
     {
       "source_id": "google-ai",
@@ -259,8 +292,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 193,
-      "checked_at": "2026-11-25T17:29:32.393923Z"
+      "latency_ms": 343,
+      "checked_at": "2026-11-25T18:44:22.113700Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -271,8 +304,8 @@
       "fetched_count": 917,
       "kept_count": 2,
       "error": null,
-      "latency_ms": 262,
-      "checked_at": "2026-11-25T17:29:32.664824Z"
+      "latency_ms": 250,
+      "checked_at": "2026-11-25T18:44:22.373544Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -281,10 +314,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 225,
-      "checked_at": "2026-11-25T17:29:32.890749Z"
+      "latency_ms": 320,
+      "checked_at": "2026-11-25T18:44:22.694020Z"
     },
     {
       "source_id": "github-changelog",
@@ -295,8 +328,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-11-25T17:29:32.914694Z"
+      "latency_ms": 30,
+      "checked_at": "2026-11-25T18:44:22.724315Z"
     },
     {
       "source_id": "aihot",
@@ -307,8 +340,8 @@
       "fetched_count": 50,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 1515,
-      "checked_at": "2026-11-25T17:29:34.430986Z"
+      "latency_ms": 1966,
+      "checked_at": "2026-11-25T18:44:24.692077Z"
     }
   ],
   "control_notes": {
