@@ -1,11 +1,47 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-25T18:44:24.699224Z",
+  "generated_at": "2026-11-25T22:56:07.100977Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 7,
+  "item_count": 9,
   "groups": {
+    "official": {
+      "group": "official",
+      "count": 4,
+      "top_sources": [
+        [
+          "Hugging Face Blog",
+          3
+        ],
+        [
+          "GitHub AI & ML",
+          1
+        ]
+      ],
+      "top_keywords": [
+        [
+          "official_ai",
+          4
+        ],
+        [
+          "agent",
+          3
+        ],
+        [
+          "agents",
+          1
+        ],
+        [
+          "copilot",
+          1
+        ],
+        [
+          "inference",
+          1
+        ]
+      ]
+    },
     "aggregate": {
       "group": "aggregate",
       "count": 4,
@@ -21,27 +57,31 @@
           4
         ],
         [
+          "agent",
+          2
+        ],
+        [
+          "mcp",
+          2
+        ],
+        [
           "anthropic",
-          3
+          2
         ],
         [
           "claude",
-          3
+          2
+        ],
+        [
+          "智能体",
+          2
         ],
         [
           "gemini",
           1
         ],
         [
-          "agent",
-          1
-        ],
-        [
           "agents",
-          1
-        ],
-        [
-          "mcp",
           1
         ],
         [
@@ -55,47 +95,46 @@
         [
           "API",
           1
-        ],
-        [
-          "智能体",
-          1
         ]
       ]
     },
-    "official": {
-      "group": "official",
-      "count": 3,
+    "developer": {
+      "group": "developer",
+      "count": 1,
       "top_sources": [
         [
-          "Hugging Face Blog",
-          2
-        ],
-        [
-          "GitHub AI & ML",
+          "GitHub Changelog",
           1
         ]
       ],
       "top_keywords": [
         [
-          "official_ai",
-          3
-        ],
-        [
-          "agent",
-          2
-        ],
-        [
           "copilot",
-          1
-        ],
-        [
-          "inference",
-          1
+          2
         ]
       ]
     }
   },
   "items": [
+    {
+      "id": "f41cf87eb5fd16c92425a69a5f8d9368495d5947",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Where scientists draw the line on AI agents",
+      "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+      "published_at": "2026-11-25T18:52:55Z",
+      "summary": null,
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:agents",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
     {
       "id": "d74106e9c6fe8dc1ce6519019fd59965200ca3da",
       "source_id": "aihot",
@@ -177,6 +216,26 @@
       "is_ai_related": true
     },
     {
+      "id": "a5aecf15c5b47ef114b1df2198733d6cd470f7d3",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Pydantic AI 发布终端编码智能体 Pax 与 Harness beta，迈向 1.0",
+      "url": "https://aihot.news/items/i5qr52169dlque8rb2sl4i5jo",
+      "published_at": "2026-11-25T09:00:00Z",
+      "summary": "Pydantic AI 发布终端编码智能体 Pax（pydantic-ai-pax），基于 Harness SDK，全部功能以插件形式组织，可 /plugins 开关 coder、sandbox、mcp、Logfire 观测等，并支持 --agent 换成代码库里任意 Pydantic AI Agent。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i5qr52169dlque8rb2sl4i5jo",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:mcp",
+        "strong:智能体",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "59f707e46bc197bd35aa22a10789d1268dea5e28",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -215,21 +274,20 @@
       "is_ai_related": true
     },
     {
-      "id": "c67520bf189098a714aeb1a5c5d8b7e0760c27f3",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Anthropic 发布 Siren 评估：Claude 在弱沙盒中 21-32% 场景会越界访问",
-      "url": "https://aihot.news/items/gat7lwf755dyryyd45gvlesxz",
-      "published_at": "2026-11-24T21:32:51Z",
-      "summary": "Anthropic 发布新安全评估 Siren，让 Claude 在故意削弱的沙盒中执行日常任务，并把有用资源放在沙盒外。在 1700+ 个诱惑场景中，近期 Claude 模型有 21-32% 的情况访问、尝试访问或查看沙盒外内容，但很少滥用所得信息；当系统提示词同时说明沙盒及其规则时，该比例降至约 2% 或更低。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gat7lwf755dyryyd45gvlesxz",
+      "id": "ec84f3d65975e97b5e97a50e743eca24bf9ebc88",
+      "source_id": "github-changelog",
+      "source_name": "GitHub Changelog",
+      "source_type": "official_rss",
+      "source_group": "developer",
+      "source_weight": 3,
+      "title": "Copilot code review billing will default to the organization",
+      "url": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+      "published_at": "2026-11-25T22:18:03Z",
+      "summary": "If you haven’t chosen how to bill Copilot code review for members with a Copilot license, those reviews will be billed to your organization starting December 30, 2026. To keep… The post Copilot code review billing will default to the organization appeared first on The GitHub Blog .",
       "relevance_score": 3,
       "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "source_penalty:aggregate_noise"
+        "weak:copilot",
+        "source:copilot"
       ],
       "is_ai_related": true
     }
@@ -244,8 +302,8 @@
       "fetched_count": 1430,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 423,
-      "checked_at": "2026-11-25T18:44:21.161914Z"
+      "latency_ms": 471,
+      "checked_at": "2026-11-25T22:56:01.953448Z"
     },
     {
       "source_id": "openai-skills",
@@ -256,8 +314,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 294,
-      "checked_at": "2026-11-25T18:44:21.456365Z"
+      "latency_ms": 344,
+      "checked_at": "2026-11-25T22:56:02.297984Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -268,8 +326,8 @@
       "fetched_count": 290,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 110,
-      "checked_at": "2026-11-25T18:44:21.570055Z"
+      "latency_ms": 120,
+      "checked_at": "2026-11-25T22:56:02.422108Z"
     },
     {
       "source_id": "google-deepmind",
@@ -280,8 +338,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 198,
-      "checked_at": "2026-11-25T18:44:21.769539Z"
+      "latency_ms": 177,
+      "checked_at": "2026-11-25T22:56:02.600912Z"
     },
     {
       "source_id": "google-ai",
@@ -292,8 +350,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 343,
-      "checked_at": "2026-11-25T18:44:22.113700Z"
+      "latency_ms": 190,
+      "checked_at": "2026-11-25T22:56:02.791541Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -302,10 +360,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 917,
-      "kept_count": 2,
+      "kept_count": 3,
       "error": null,
-      "latency_ms": 250,
-      "checked_at": "2026-11-25T18:44:22.373544Z"
+      "latency_ms": 273,
+      "checked_at": "2026-11-25T22:56:03.074691Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -316,8 +374,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 320,
-      "checked_at": "2026-11-25T18:44:22.694020Z"
+      "latency_ms": 444,
+      "checked_at": "2026-11-25T22:56:03.519698Z"
     },
     {
       "source_id": "github-changelog",
@@ -326,10 +384,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 0,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 30,
-      "checked_at": "2026-11-25T18:44:22.724315Z"
+      "latency_ms": 34,
+      "checked_at": "2026-11-25T22:56:03.553968Z"
     },
     {
       "source_id": "aihot",
@@ -340,8 +398,8 @@
       "fetched_count": 50,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 1966,
-      "checked_at": "2026-11-25T18:44:24.692077Z"
+      "latency_ms": 3539,
+      "checked_at": "2026-11-25T22:56:07.093932Z"
     }
   ],
   "control_notes": {
