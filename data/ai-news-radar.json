@@ -1,6 +1,6 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-25T22:56:07.100977Z",
+  "generated_at": "2026-11-26T06:16:37.302001Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
@@ -57,23 +57,11 @@
           4
         ],
         [
-          "agent",
-          2
-        ],
-        [
-          "mcp",
-          2
-        ],
-        [
           "anthropic",
-          2
+          3
         ],
         [
           "claude",
-          2
-        ],
-        [
-          "智能体",
           2
         ],
         [
@@ -81,7 +69,15 @@
           1
         ],
         [
+          "agent",
+          1
+        ],
+        [
           "agents",
+          1
+        ],
+        [
+          "mcp",
           1
         ],
         [
@@ -94,6 +90,14 @@
         ],
         [
           "API",
+          1
+        ],
+        [
+          "智能体",
+          1
+        ],
+        [
+          "自动化",
           1
         ]
       ]
@@ -195,6 +199,24 @@
       "is_ai_related": true
     },
     {
+      "id": "02e74902f2425c6706b7bd678b514067f28a0013",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+      "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+      "published_at": "2026-11-26T05:05:36Z",
+      "summary": null,
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "weak:inference",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "2c8215e71e29361574a0c9757cffbd8eaa37f03a",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -211,26 +233,6 @@
         "strong:claude",
         "weak:api",
         "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "a5aecf15c5b47ef114b1df2198733d6cd470f7d3",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Pydantic AI 发布终端编码智能体 Pax 与 Harness beta，迈向 1.0",
-      "url": "https://aihot.news/items/i5qr52169dlque8rb2sl4i5jo",
-      "published_at": "2026-11-25T09:00:00Z",
-      "summary": "Pydantic AI 发布终端编码智能体 Pax（pydantic-ai-pax），基于 Harness SDK，全部功能以插件形式组织，可 /plugins 开关 coder、sandbox、mcp、Logfire 观测等，并支持 --agent 换成代码库里任意 Pydantic AI Agent。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i5qr52169dlque8rb2sl4i5jo",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:mcp",
-        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -256,24 +258,6 @@
       "is_ai_related": true
     },
     {
-      "id": "47086dab44630d819711ff7ed77e2a07616f216b",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
-      "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
-      "published_at": "2026-11-25T00:00:00Z",
-      "summary": null,
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:inference",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "ec84f3d65975e97b5e97a50e743eca24bf9ebc88",
       "source_id": "github-changelog",
       "source_name": "GitHub Changelog",
@@ -290,6 +274,25 @@
         "source:copilot"
       ],
       "is_ai_related": true
+    },
+    {
+      "id": "d9db1f958751ec4a07f2752a05ef9de6265386e0",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Dario Amodei 澄清不主张向 AI 交出人类自由意志",
+      "url": "https://aihot.news/items/e6gp31eup40d99unaon9umnpo",
+      "published_at": "2026-11-25T19:12:53Z",
+      "summary": "Anthropic 的 Dario Amodei 发长文否认其主张“向 AI 交出人类自由意志”，称其文章一贯主张 AI 须受合法民主程序治理。他区分了全球治理层面的交权与具体任务的自动化，后者持混合态度，包括对递归自我改进设限、警惕端到端部署带来的就业冲击，并称 Anthropic 曾拒绝让自家模型用于自主武器；文末批评部分 AI CEO 只喊“人类控制”等口号而无实质行动。Elon Musk 转发并评论 Interesting。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e6gp31eup40d99unaon9umnpo",
+      "relevance_score": 2,
+      "relevance_reasons": [
+        "strong:anthropic",
+        "weak:自动化",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
     }
   ],
   "source_health": [
@@ -302,8 +305,8 @@
       "fetched_count": 1430,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 471,
-      "checked_at": "2026-11-25T22:56:01.953448Z"
+      "latency_ms": 484,
+      "checked_at": "2026-11-26T06:16:29.145712Z"
     },
     {
       "source_id": "openai-skills",
@@ -314,8 +317,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 344,
-      "checked_at": "2026-11-25T22:56:02.297984Z"
+      "latency_ms": 365,
+      "checked_at": "2026-11-26T06:16:29.511813Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -326,8 +329,8 @@
       "fetched_count": 290,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 120,
-      "checked_at": "2026-11-25T22:56:02.422108Z"
+      "latency_ms": 145,
+      "checked_at": "2026-11-26T06:16:29.660448Z"
     },
     {
       "source_id": "google-deepmind",
@@ -338,8 +341,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 177,
-      "checked_at": "2026-11-25T22:56:02.600912Z"
+      "latency_ms": 87,
+      "checked_at": "2026-11-26T06:16:29.749447Z"
     },
     {
       "source_id": "google-ai",
@@ -350,8 +353,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 190,
-      "checked_at": "2026-11-25T22:56:02.791541Z"
+      "latency_ms": 140,
+      "checked_at": "2026-11-26T06:16:29.889726Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -362,8 +365,8 @@
       "fetched_count": 917,
       "kept_count": 3,
       "error": null,
-      "latency_ms": 273,
-      "checked_at": "2026-11-25T22:56:03.074691Z"
+      "latency_ms": 236,
+      "checked_at": "2026-11-26T06:16:30.136128Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -374,8 +377,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 444,
-      "checked_at": "2026-11-25T22:56:03.519698Z"
+      "latency_ms": 315,
+      "checked_at": "2026-11-26T06:16:30.452054Z"
     },
     {
       "source_id": "github-changelog",
@@ -386,8 +389,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 34,
-      "checked_at": "2026-11-25T22:56:03.553968Z"
+      "latency_ms": 23,
+      "checked_at": "2026-11-26T06:16:30.475557Z"
     },
     {
       "source_id": "aihot",
@@ -398,8 +401,8 @@
       "fetched_count": 50,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 3539,
-      "checked_at": "2026-11-25T22:56:07.093932Z"
+      "latency_ms": 6818,
+      "checked_at": "2026-11-26T06:16:37.294885Z"
     }
   ],
   "control_notes": {
