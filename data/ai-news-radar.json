@@ -1,32 +1,28 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-26T13:12:53.135294Z",
+  "generated_at": "2026-11-26T17:11:17.587972Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 10,
+  "item_count": 9,
   "groups": {
     "official": {
       "group": "official",
-      "count": 5,
+      "count": 4,
       "top_sources": [
         [
           "Hugging Face Blog",
           4
-        ],
-        [
-          "GitHub AI & ML",
-          1
         ]
       ],
       "top_keywords": [
         [
           "official_ai",
-          5
+          4
         ],
         [
           "agent",
-          3
+          2
         ],
         [
           "agents",
@@ -34,10 +30,6 @@
         ],
         [
           "eval",
-          1
-        ],
-        [
-          "copilot",
           1
         ],
         [
@@ -83,18 +75,6 @@
         [
           "anthropic",
           2
-        ],
-        [
-          "gemini",
-          1
-        ],
-        [
-          "agents",
-          1
-        ],
-        [
-          "开发者",
-          1
         ],
         [
           "claude",
@@ -144,28 +124,6 @@
       "is_ai_related": true
     },
     {
-      "id": "d74106e9c6fe8dc1ce6519019fd59965200ca3da",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "上下文漂移如何影响你的 AI Agent：470 项实验与一个免费的 MCP 解法",
-      "url": "https://aihot.news/items/br6usy3mxv1q0mzxhgf9y8qam",
-      "published_at": "2026-11-25T16:19:30Z",
-      "summary": "Google AI 开发者 Patrick Kelly 通过 470 个任务实测区分 context rot 与 context drift，在 Gemini 3.8 Flash 和 Gemini Pro 的沙盒中发现：模型在 73% 的运行中内部察觉文件冲突，但 0% 会主动告知用户，95%-100% 的情况下任务级 skill 文件会覆盖 AGENTS.md 的严格规则。 🔗 阅读原文 via AIHOT · https://aihot.news/items/br6usy3mxv1q0mzxhgf9y8qam",
-      "relevance_score": 8,
-      "relevance_reasons": [
-        "strong:gemini",
-        "strong:agent",
-        "strong:agents",
-        "strong:mcp",
-        "weak:开发者",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
       "id": "1518f53052d00f87ec215b636bd8027194877360",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
@@ -180,25 +138,6 @@
       "relevance_reasons": [
         "strong:agent",
         "weak:eval",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "b49168e8248c4ab2d21f474b797126f86323e762",
-      "source_id": "github-ai-ml",
-      "source_name": "GitHub AI & ML",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 4,
-      "title": "How to choose the next safe step in application modernization",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization",
-      "published_at": "2026-11-25T15:00:00Z",
-      "summary": "Learn how to assess a legacy application, choose a bounded modernization step, and reuse the method with a GitHub Copilot agent skill. The post How to choose the next safe step in application modernization appeared first on The GitHub Blog .",
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:copilot",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -300,6 +239,25 @@
       "is_ai_related": true
     },
     {
+      "id": "7a88c5568edc2106d67963c5b1ece58cb94e663f",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Philipp Schmid 撰文解释为何在 Skills 与 CLI 兴起后仍更看好 MCP",
+      "url": "https://aihot.news/items/jcdfpftbam647yhc210dbace9",
+      "published_at": "2026-11-26T13:30:28Z",
+      "summary": "Philipp Schmid 撰文解释为何在 Skills 和 CLI 流行后依然看好 MCP：Linear 和 Notion 的 agent 每周创建约 240 万条 issue 和页面，Atlassian 每天 MCP 工具调用超 500 万次，其中 44% 用户来自软件团队之外，Notion 报告 60 倍 MCP 流量增长。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jcdfpftbam647yhc210dbace9",
+      "relevance_score": 3,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:mcp",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "d9db1f958751ec4a07f2752a05ef9de6265386e0",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -329,8 +287,8 @@
       "fetched_count": 1430,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 494,
-      "checked_at": "2026-11-26T13:12:48.587817Z"
+      "latency_ms": 540,
+      "checked_at": "2026-11-26T17:11:14.159187Z"
     },
     {
       "source_id": "openai-skills",
@@ -341,8 +299,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 252,
-      "checked_at": "2026-11-26T13:12:48.840922Z"
+      "latency_ms": 192,
+      "checked_at": "2026-11-26T17:11:14.351493Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -353,8 +311,8 @@
       "fetched_count": 290,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 89,
-      "checked_at": "2026-11-26T13:12:48.934075Z"
+      "latency_ms": 84,
+      "checked_at": "2026-11-26T17:11:14.438915Z"
     },
     {
       "source_id": "google-deepmind",
@@ -365,8 +323,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 139,
-      "checked_at": "2026-11-26T13:12:49.074931Z"
+      "latency_ms": 177,
+      "checked_at": "2026-11-26T17:11:14.617556Z"
     },
     {
       "source_id": "google-ai",
@@ -377,8 +335,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 138,
-      "checked_at": "2026-11-26T13:12:49.213670Z"
+      "latency_ms": 190,
+      "checked_at": "2026-11-26T17:11:14.808509Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -389,8 +347,8 @@
       "fetched_count": 918,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 242,
-      "checked_at": "2026-11-26T13:12:49.468857Z"
+      "latency_ms": 294,
+      "checked_at": "2026-11-26T17:11:15.112994Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -399,10 +357,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 10,
-      "kept_count": 1,
+      "kept_count": 0,
       "error": null,
-      "latency_ms": 235,
-      "checked_at": "2026-11-26T13:12:49.704234Z"
+      "latency_ms": 414,
+      "checked_at": "2026-11-26T17:11:15.527729Z"
     },
     {
       "source_id": "github-changelog",
@@ -413,8 +371,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 22,
-      "checked_at": "2026-11-26T13:12:49.726508Z"
+      "latency_ms": 46,
+      "checked_at": "2026-11-26T17:11:15.574196Z"
     },
     {
       "source_id": "aihot",
@@ -425,8 +383,8 @@
       "fetched_count": 50,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 3399,
-      "checked_at": "2026-11-26T13:12:53.126762Z"
+      "latency_ms": 1991,
+      "checked_at": "2026-11-26T17:11:17.567215Z"
     }
   ],
   "control_notes": {
