@@ -1,18 +1,18 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-26T06:16:37.302001Z",
+  "generated_at": "2026-11-26T13:12:53.135294Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 9,
+  "item_count": 10,
   "groups": {
     "official": {
       "group": "official",
-      "count": 4,
+      "count": 5,
       "top_sources": [
         [
           "Hugging Face Blog",
-          3
+          4
         ],
         [
           "GitHub AI & ML",
@@ -22,7 +22,7 @@
       "top_keywords": [
         [
           "official_ai",
-          4
+          5
         ],
         [
           "agent",
@@ -33,7 +33,15 @@
           1
         ],
         [
+          "eval",
+          1
+        ],
+        [
           "copilot",
+          1
+        ],
+        [
+          "benchmark",
           1
         ],
         [
@@ -57,11 +65,23 @@
           4
         ],
         [
-          "anthropic",
-          3
+          "agent",
+          2
         ],
         [
-          "claude",
+          "mcp",
+          2
+        ],
+        [
+          "api",
+          2
+        ],
+        [
+          "API",
+          2
+        ],
+        [
+          "anthropic",
           2
         ],
         [
@@ -69,15 +89,7 @@
           1
         ],
         [
-          "agent",
-          1
-        ],
-        [
           "agents",
-          1
-        ],
-        [
-          "mcp",
           1
         ],
         [
@@ -85,15 +97,7 @@
           1
         ],
         [
-          "api",
-          1
-        ],
-        [
-          "API",
-          1
-        ],
-        [
-          "智能体",
+          "claude",
           1
         ],
         [
@@ -162,6 +166,25 @@
       "is_ai_related": true
     },
     {
+      "id": "1518f53052d00f87ec215b636bd8027194877360",
+      "source_id": "huggingface-blog",
+      "source_name": "Hugging Face Blog",
+      "source_type": "official_rss",
+      "source_group": "official",
+      "source_weight": 5,
+      "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+      "url": "https://huggingface.co/blog/training-swarms",
+      "published_at": "2026-11-26T00:00:00Z",
+      "summary": null,
+      "relevance_score": 4,
+      "relevance_reasons": [
+        "strong:agent",
+        "weak:eval",
+        "source_prior:official_ai"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "b49168e8248c4ab2d21f474b797126f86323e762",
       "source_id": "github-ai-ml",
       "source_name": "GitHub AI & ML",
@@ -181,19 +204,19 @@
       "is_ai_related": true
     },
     {
-      "id": "c5ee76714ef683a9356ae361f0dcd330c61a6a61",
+      "id": "1f9170de6389737959d692eb01e4e03f9ba93307",
       "source_id": "huggingface-blog",
       "source_name": "Hugging Face Blog",
       "source_type": "official_rss",
       "source_group": "official",
       "source_weight": 5,
-      "title": "An Indic Voice Agent with CUGA",
-      "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
-      "published_at": "2026-11-25T10:22:09Z",
+      "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+      "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+      "published_at": "2026-11-26T11:37:17Z",
       "summary": null,
-      "relevance_score": 3,
+      "relevance_score": 2,
       "relevance_reasons": [
-        "strong:agent",
+        "weak:benchmark",
         "source_prior:official_ai"
       ],
       "is_ai_related": true
@@ -217,6 +240,27 @@
       "is_ai_related": true
     },
     {
+      "id": "363acfd1e35f2c78d68e6e00b9b41f63bc9bda65",
+      "source_id": "aihot",
+      "source_name": "AI Hot",
+      "source_type": "public_feed",
+      "source_group": "aggregate",
+      "source_weight": 2,
+      "title": "Google 强制 AI Agent 走 Workspace MCP 服务器，Gmail 服务器不能发邮件",
+      "url": "https://aihot.news/items/vboh9u5yjfjgj1ha6rl804tkh",
+      "published_at": "2026-11-26T00:00:00Z",
+      "summary": "Google 于 11 月 24 日将八个 Workspace MCP 服务器正式开放，并在 API 条款中新增条款，要求自 2027 年 2 月 1 日起由 AI Agent 驱动的工具必须通过这些服务器访问 Gmail、Drive 等 Workspace 服务，直接调用 REST API 将按 Standard 级配额受限。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vboh9u5yjfjgj1ha6rl804tkh",
+      "relevance_score": 5,
+      "relevance_reasons": [
+        "strong:agent",
+        "strong:mcp",
+        "weak:api",
+        "weak:API",
+        "source_penalty:aggregate_noise"
+      ],
+      "is_ai_related": true
+    },
+    {
       "id": "2c8215e71e29361574a0c9757cffbd8eaa37f03a",
       "source_id": "aihot",
       "source_name": "AI Hot",
@@ -233,26 +277,6 @@
         "strong:claude",
         "weak:api",
         "weak:API",
-        "source_penalty:aggregate_noise"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "59f707e46bc197bd35aa22a10789d1268dea5e28",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Claude Code 团队发布实用指南讲解 Claude Ship 的 PR 审查与守护用法",
-      "url": "https://aihot.news/items/uyodjb16jngloilypsm1d3q0d",
-      "published_at": "2026-11-25T07:30:08Z",
-      "summary": "Anthropic Claude Code 团队刚推出 Claude Ship，包含三个智能体：Code Review（已全面开放）、PR Steward 和 Claude Approvals（beta），可审查 PR、处理失败 CI、合并冲突和审查意见，并按仓库策略文件批准常规改动。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uyodjb16jngloilypsm1d3q0d",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:anthropic",
-        "strong:claude",
-        "strong:智能体",
         "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
@@ -305,8 +329,8 @@
       "fetched_count": 1430,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 484,
-      "checked_at": "2026-11-26T06:16:29.145712Z"
+      "latency_ms": 494,
+      "checked_at": "2026-11-26T13:12:48.587817Z"
     },
     {
       "source_id": "openai-skills",
@@ -317,8 +341,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 365,
-      "checked_at": "2026-11-26T06:16:29.511813Z"
+      "latency_ms": 252,
+      "checked_at": "2026-11-26T13:12:48.840922Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -329,8 +353,8 @@
       "fetched_count": 290,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 145,
-      "checked_at": "2026-11-26T06:16:29.660448Z"
+      "latency_ms": 89,
+      "checked_at": "2026-11-26T13:12:48.934075Z"
     },
     {
       "source_id": "google-deepmind",
@@ -341,8 +365,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 87,
-      "checked_at": "2026-11-26T06:16:29.749447Z"
+      "latency_ms": 139,
+      "checked_at": "2026-11-26T13:12:49.074931Z"
     },
     {
       "source_id": "google-ai",
@@ -353,8 +377,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 140,
-      "checked_at": "2026-11-26T06:16:29.889726Z"
+      "latency_ms": 138,
+      "checked_at": "2026-11-26T13:12:49.213670Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -362,11 +386,11 @@
       "source_type": "official_rss",
       "enabled": true,
       "ok": true,
-      "fetched_count": 917,
-      "kept_count": 3,
+      "fetched_count": 918,
+      "kept_count": 4,
       "error": null,
-      "latency_ms": 236,
-      "checked_at": "2026-11-26T06:16:30.136128Z"
+      "latency_ms": 242,
+      "checked_at": "2026-11-26T13:12:49.468857Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -377,8 +401,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 315,
-      "checked_at": "2026-11-26T06:16:30.452054Z"
+      "latency_ms": 235,
+      "checked_at": "2026-11-26T13:12:49.704234Z"
     },
     {
       "source_id": "github-changelog",
@@ -389,8 +413,8 @@
       "fetched_count": 10,
       "kept_count": 1,
       "error": null,
-      "latency_ms": 23,
-      "checked_at": "2026-11-26T06:16:30.475557Z"
+      "latency_ms": 22,
+      "checked_at": "2026-11-26T13:12:49.726508Z"
     },
     {
       "source_id": "aihot",
@@ -401,8 +425,8 @@
       "fetched_count": 50,
       "kept_count": 4,
       "error": null,
-      "latency_ms": 6818,
-      "checked_at": "2026-11-26T06:16:37.294885Z"
+      "latency_ms": 3399,
+      "checked_at": "2026-11-26T13:12:53.126762Z"
     }
   ],
   "control_notes": {

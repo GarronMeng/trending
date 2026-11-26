@@ -43,8 +43,8 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>9</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>4</b><span>官方源条目</span></div>
+        <div class="stat"><b>10</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>5</b><span>官方源条目</span></div>
         <div class="stat"><b>4</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
@@ -52,7 +52,7 @@
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-26T06:16:37.303371Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-26T13:12:53.136759Z</p></div>
       <div class="grid">
     <article class="card">
       <div class="meta">
@@ -82,6 +82,19 @@
 
     <article class="card">
       <div class="meta">
+        <span>Hugging Face Blog</span>
+        <span>official_rss</span>
+        <span>2026-11-26T00:00:00Z</span>
+        <strong>Score 4</strong>
+      </div>
+      <h3><a href="https://huggingface.co/blog/training-swarms" target="_blank" rel="noreferrer">Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems</a></h3>
+      
+      <div class="tags"><span>strong:agent</span><span>weak:eval</span><span>source_prior:official_ai</span></div>
+    </article>
+    
+
+    <article class="card">
+      <div class="meta">
         <span>GitHub AI &amp; ML</span>
         <span>official_rss</span>
         <span>2026-11-25T15:00:00Z</span>
@@ -97,12 +110,12 @@
       <div class="meta">
         <span>Hugging Face Blog</span>
         <span>official_rss</span>
-        <span>2026-11-25T10:22:09Z</span>
-        <strong>Score 3</strong>
+        <span>2026-11-26T11:37:17Z</span>
+        <strong>Score 2</strong>
       </div>
-      <h3><a href="https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga" target="_blank" rel="noreferrer">An Indic Voice Agent with CUGA</a></h3>
+      <h3><a href="https://huggingface.co/blog/ggml-org/llamacpp-amd-bench" target="_blank" rel="noreferrer">Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon</a></h3>
       
-      <div class="tags"><span>strong:agent</span><span>source_prior:official_ai</span></div>
+      <div class="tags"><span>weak:benchmark</span><span>source_prior:official_ai</span></div>
     </article>
     
 
@@ -123,12 +136,12 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-11-25T17:31:32Z</span>
+        <span>2026-11-26T00:00:00Z</span>
         <strong>Score 5</strong>
       </div>
-      <h3><a href="https://aihot.news/items/rnanzlnaqxdr2icjqw0qwv9la" target="_blank" rel="noreferrer">Anthropic 平台工程负责人 Katelyn Lesse 谈 2026 年如何用 Claude 构建软件</a></h3>
-      <p class='summary'>Pragmatic Engineer 发布对 Anthropic 平台工程负责人 Katelyn Lesse 的播客访谈，她团队负责 Claude API 及 Claude Code 和 Claude Desktop 的基础设施。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rnanzlnaqxdr2icjqw0qwv9la</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://aihot.news/items/vboh9u5yjfjgj1ha6rl804tkh" target="_blank" rel="noreferrer">Google 强制 AI Agent 走 Workspace MCP 服务器，Gmail 服务器不能发邮件</a></h3>
+      <p class='summary'>Google 于 11 月 24 日将八个 Workspace MCP 服务器正式开放，并在 API 条款中新增条款，要求自 2027 年 2 月 1 日起由 AI Agent 驱动的工具必须通过这些服务器访问 Gmail、Drive 等 Workspace 服务，直接调用 REST API 将按 Standard 级配额受限。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vboh9u5yjfjgj1ha6rl804tkh</p>
+      <div class="tags"><span>strong:agent</span><span>strong:mcp</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -136,12 +149,12 @@
       <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
-        <span>2026-11-25T07:30:08Z</span>
+        <span>2026-11-25T17:31:32Z</span>
         <strong>Score 5</strong>
       </div>
-      <h3><a href="https://aihot.news/items/uyodjb16jngloilypsm1d3q0d" target="_blank" rel="noreferrer">Claude Code 团队发布实用指南讲解 Claude Ship 的 PR 审查与守护用法</a></h3>
-      <p class='summary'>Anthropic Claude Code 团队刚推出 Claude Ship，包含三个智能体：Code Review（已全面开放）、PR Steward 和 Claude Approvals（beta），可审查 PR、处理失败 CI、合并冲突和审查意见，并按仓库策略文件批准常规改动。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uyodjb16jngloilypsm1d3q0d</p>
-      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>strong:智能体</span><span>source_penalty:aggregate_noise</span></div>
+      <h3><a href="https://aihot.news/items/rnanzlnaqxdr2icjqw0qwv9la" target="_blank" rel="noreferrer">Anthropic 平台工程负责人 Katelyn Lesse 谈 2026 年如何用 Claude 构建软件</a></h3>
+      <p class='summary'>Pragmatic Engineer 发布对 Anthropic 平台工程负责人 Katelyn Lesse 的播客访谈，她团队负责 Claude API 及 Claude Code 和 Claude Desktop 的基础设施。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rnanzlnaqxdr2icjqw0qwv9la</p>
+      <div class="tags"><span>strong:anthropic</span><span>strong:claude</span><span>weak:api</span><span>weak:API</span><span>source_penalty:aggregate_noise</span></div>
     </article>
     
 
@@ -175,15 +188,15 @@
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1430</td><td>0</td><td>484ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>365ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>290</td><td>0</td><td>145ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>87ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>140ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>917</td><td>3</td><td>236ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>315ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>23ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>4</td><td>6818ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1430</td><td>0</td><td>494ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>252ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>290</td><td>0</td><td>89ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>139ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>138ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>918</td><td>4</td><td>242ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>235ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>22ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>4</td><td>3399ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
