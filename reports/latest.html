@@ -43,30 +43,17 @@
       <h1>Garron AI News Radar</h1>
       <p class="subtitle">基于 AI News Radar 逻辑重构：先判断信源，再抓取、归一化、去重、AI 强相关过滤、健康监测，最后输出静态 JSON 和 HTML。当前页面不依赖任何 LLM API Key。</p>
       <div class="stats">
-        <div class="stat"><b>8</b><span>24h 高信号条目</span></div>
-        <div class="stat"><b>4</b><span>官方源条目</span></div>
-        <div class="stat"><b>3</b><span>聚合源条目</span></div>
+        <div class="stat"><b>5</b><span>24h 高信号条目</span></div>
+        <div class="stat"><b>3</b><span>官方源条目</span></div>
+        <div class="stat"><b>2</b><span>聚合源条目</span></div>
         <div class="stat"><b>9/9</b><span>健康信源</span></div>
       </div>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-26T18:32:32.587493Z</p></div>
+      <div class="section-title"><h2>AI 强相关</h2><p>窗口：最近 24 小时；生成：2026-11-26T22:47:46.816538Z</p></div>
       <div class="grid">
-    <article class="card">
-      <div class="meta">
-        <span>Hugging Face Blog</span>
-        <span>official_rss</span>
-        <span>2026-11-25T18:52:55Z</span>
-        <strong>Score 5</strong>
-      </div>
-      <h3><a href="https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents" target="_blank" rel="noreferrer">Where scientists draw the line on AI agents</a></h3>
-      
-      <div class="tags"><span>strong:agent</span><span>strong:agents</span><span>source_prior:official_ai</span></div>
-    </article>
-    
-
     <article class="card">
       <div class="meta">
         <span>Hugging Face Blog</span>
@@ -121,19 +108,6 @@
 
     <article class="card">
       <div class="meta">
-        <span>GitHub Changelog</span>
-        <span>official_rss</span>
-        <span>2026-11-25T22:18:03Z</span>
-        <strong>Score 3</strong>
-      </div>
-      <h3><a href="https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization" target="_blank" rel="noreferrer">Copilot code review billing will default to the organization</a></h3>
-      <p class='summary'>If you haven’t chosen how to bill Copilot code review for members with a Copilot license, those reviews will be billed to your organization starting December 30, 2026. To keep… The post Copilot code review billing will default to the organization appeared first on The GitHub Blog .</p>
-      <div class="tags"><span>weak:copilot</span><span>source:copilot</span></div>
-    </article>
-    
-
-    <article class="card">
-      <div class="meta">
         <span>AI Hot</span>
         <span>public_feed</span>
         <span>2026-11-26T13:30:28Z</span>
@@ -143,34 +117,21 @@
       <p class='summary'>Philipp Schmid 撰文解释为何在 Skills 和 CLI 流行后依然看好 MCP：Linear 和 Notion 的 agent 每周创建约 240 万条 issue 和页面，Atlassian 每天 MCP 工具调用超 500 万次，其中 44% 用户来自软件团队之外，Notion 报告 60 倍 MCP 流量增长。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jcdfpftbam647yhc210dbace9</p>
       <div class="tags"><span>strong:agent</span><span>strong:mcp</span><span>source_penalty:aggregate_noise</span></div>
     </article>
-    
-
-    <article class="card">
-      <div class="meta">
-        <span>AI Hot</span>
-        <span>public_feed</span>
-        <span>2026-11-25T19:12:53Z</span>
-        <strong>Score 2</strong>
-      </div>
-      <h3><a href="https://aihot.news/items/e6gp31eup40d99unaon9umnpo" target="_blank" rel="noreferrer">Dario Amodei 澄清不主张向 AI 交出人类自由意志</a></h3>
-      <p class='summary'>Anthropic 的 Dario Amodei 发长文否认其主张“向 AI 交出人类自由意志”，称其文章一贯主张 AI 须受合法民主程序治理。他区分了全球治理层面的交权与具体任务的自动化，后者持混合态度，包括对递归自我改进设限、警惕端到端部署带来的就业冲击，并称 Anthropic 曾拒绝让自家模型用于自主武器；文末批评部分 AI CEO 只喊“人类控制”等口号而无实质行动。Elon Musk 转发并评论 Interesting。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e6gp31eup40d99unaon9umnpo</p>
-      <div class="tags"><span>strong:anthropic</span><span>weak:自动化</span><span>source_penalty:aggregate_noise</span></div>
-    </article>
     </div>
     </section>
     <section>
       <div class="section-title"><h2>信源健康状态</h2><p>用来决定下一轮要增删哪些源。</p></div>
       <table>
         <thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Fetched</th><th>Kept</th><th>Latency</th><th>Error</th></tr></thead>
-        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1430</td><td>0</td><td>334ms</td><td></td></tr>
-<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>179ms</td><td></td></tr>
-<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>290</td><td>0</td><td>72ms</td><td></td></tr>
-<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>176ms</td><td></td></tr>
-<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>160ms</td><td></td></tr>
-<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>918</td><td>4</td><td>201ms</td><td></td></tr>
-<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>303ms</td><td></td></tr>
-<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>1</td><td>18ms</td><td></td></tr>
-<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>3</td><td>1665ms</td><td></td></tr></tbody>
+        <tbody><tr><td>OpenAI News</td><td>official_rss</td><td class='ok'>OK</td><td>1430</td><td>0</td><td>353ms</td><td></td></tr>
+<tr><td>OpenAI Skills Commits</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>396ms</td><td></td></tr>
+<tr><td>Anthropic News via Olshansk RSS</td><td>public_feed</td><td class='ok'>OK</td><td>290</td><td>0</td><td>139ms</td><td></td></tr>
+<tr><td>Google DeepMind</td><td>official_rss</td><td class='ok'>OK</td><td>100</td><td>0</td><td>127ms</td><td></td></tr>
+<tr><td>Google AI Blog</td><td>official_rss</td><td class='ok'>OK</td><td>20</td><td>0</td><td>147ms</td><td></td></tr>
+<tr><td>Hugging Face Blog</td><td>official_rss</td><td class='ok'>OK</td><td>918</td><td>3</td><td>220ms</td><td></td></tr>
+<tr><td>GitHub AI &amp; ML</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>191ms</td><td></td></tr>
+<tr><td>GitHub Changelog</td><td>official_rss</td><td class='ok'>OK</td><td>10</td><td>0</td><td>20ms</td><td></td></tr>
+<tr><td>AI Hot</td><td>public_feed</td><td class='ok'>OK</td><td>50</td><td>2</td><td>2199ms</td><td></td></tr></tbody>
       </table>
     </section>
   </main>
