@@ -1,96 +1,57 @@
 {
   "schema_version": "garron-ai-news-radar-v1",
-  "generated_at": "2026-11-26T22:47:46.815810Z",
+  "generated_at": "2026-11-27T06:05:53.941899Z",
   "window_hours": 24,
   "source_count": 9,
   "healthy_source_count": 9,
-  "item_count": 5,
+  "item_count": 2,
   "groups": {
     "official": {
       "group": "official",
-      "count": 3,
+      "count": 1,
       "top_sources": [
         [
           "Hugging Face Blog",
-          3
+          1
         ]
       ],
       "top_keywords": [
-        [
-          "official_ai",
-          3
-        ],
-        [
-          "agent",
-          1
-        ],
-        [
-          "eval",
-          1
-        ],
         [
           "benchmark",
           1
         ],
         [
-          "inference",
+          "official_ai",
           1
         ]
       ]
     },
     "aggregate": {
       "group": "aggregate",
-      "count": 2,
+      "count": 1,
       "top_sources": [
         [
           "AI Hot",
-          2
+          1
         ]
       ],
       "top_keywords": [
         [
           "agent",
-          2
-        ],
-        [
-          "mcp",
-          2
-        ],
-        [
-          "aggregate_noise",
-          2
-        ],
-        [
-          "api",
           1
         ],
         [
-          "API",
+          "mcp",
+          1
+        ],
+        [
+          "aggregate_noise",
           1
         ]
       ]
     }
   },
   "items": [
-    {
-      "id": "1518f53052d00f87ec215b636bd8027194877360",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
-      "url": "https://huggingface.co/blog/training-swarms",
-      "published_at": "2026-11-26T00:00:00Z",
-      "summary": null,
-      "relevance_score": 4,
-      "relevance_reasons": [
-        "strong:agent",
-        "weak:eval",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
     {
       "id": "1f9170de6389737959d692eb01e4e03f9ba93307",
       "source_id": "huggingface-blog",
@@ -106,45 +67,6 @@
       "relevance_reasons": [
         "weak:benchmark",
         "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "02e74902f2425c6706b7bd678b514067f28a0013",
-      "source_id": "huggingface-blog",
-      "source_name": "Hugging Face Blog",
-      "source_type": "official_rss",
-      "source_group": "official",
-      "source_weight": 5,
-      "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
-      "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
-      "published_at": "2026-11-26T05:05:36Z",
-      "summary": null,
-      "relevance_score": 2,
-      "relevance_reasons": [
-        "weak:inference",
-        "source_prior:official_ai"
-      ],
-      "is_ai_related": true
-    },
-    {
-      "id": "363acfd1e35f2c78d68e6e00b9b41f63bc9bda65",
-      "source_id": "aihot",
-      "source_name": "AI Hot",
-      "source_type": "public_feed",
-      "source_group": "aggregate",
-      "source_weight": 2,
-      "title": "Google 强制 AI Agent 走 Workspace MCP 服务器，Gmail 服务器不能发邮件",
-      "url": "https://aihot.news/items/vboh9u5yjfjgj1ha6rl804tkh",
-      "published_at": "2026-11-26T00:00:00Z",
-      "summary": "Google 于 11 月 24 日将八个 Workspace MCP 服务器正式开放，并在 API 条款中新增条款，要求自 2027 年 2 月 1 日起由 AI Agent 驱动的工具必须通过这些服务器访问 Gmail、Drive 等 Workspace 服务，直接调用 REST API 将按 Standard 级配额受限。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vboh9u5yjfjgj1ha6rl804tkh",
-      "relevance_score": 5,
-      "relevance_reasons": [
-        "strong:agent",
-        "strong:mcp",
-        "weak:api",
-        "weak:API",
-        "source_penalty:aggregate_noise"
       ],
       "is_ai_related": true
     },
@@ -178,8 +100,8 @@
       "fetched_count": 1430,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 353,
-      "checked_at": "2026-11-26T22:47:43.355456Z"
+      "latency_ms": 593,
+      "checked_at": "2026-11-27T06:05:44.786733Z"
     },
     {
       "source_id": "openai-skills",
@@ -190,8 +112,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 396,
-      "checked_at": "2026-11-26T22:47:43.752225Z"
+      "latency_ms": 177,
+      "checked_at": "2026-11-27T06:05:44.964781Z"
     },
     {
       "source_id": "anthropic-news-unofficial",
@@ -202,8 +124,8 @@
       "fetched_count": 290,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 139,
-      "checked_at": "2026-11-26T22:47:43.893432Z"
+      "latency_ms": 127,
+      "checked_at": "2026-11-27T06:05:45.096481Z"
     },
     {
       "source_id": "google-deepmind",
@@ -214,8 +136,8 @@
       "fetched_count": 100,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 127,
-      "checked_at": "2026-11-26T22:47:44.021766Z"
+      "latency_ms": 216,
+      "checked_at": "2026-11-27T06:05:45.314098Z"
     },
     {
       "source_id": "google-ai",
@@ -226,8 +148,8 @@
       "fetched_count": 20,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 147,
-      "checked_at": "2026-11-26T22:47:44.169645Z"
+      "latency_ms": 224,
+      "checked_at": "2026-11-27T06:05:45.539167Z"
     },
     {
       "source_id": "huggingface-blog",
@@ -236,10 +158,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 918,
-      "kept_count": 3,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 220,
-      "checked_at": "2026-11-26T22:47:44.396954Z"
+      "latency_ms": 394,
+      "checked_at": "2026-11-27T06:05:45.947412Z"
     },
     {
       "source_id": "github-ai-ml",
@@ -250,8 +172,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 191,
-      "checked_at": "2026-11-26T22:47:44.588771Z"
+      "latency_ms": 495,
+      "checked_at": "2026-11-27T06:05:46.443016Z"
     },
     {
       "source_id": "github-changelog",
@@ -262,8 +184,8 @@
       "fetched_count": 10,
       "kept_count": 0,
       "error": null,
-      "latency_ms": 20,
-      "checked_at": "2026-11-26T22:47:44.609132Z"
+      "latency_ms": 52,
+      "checked_at": "2026-11-27T06:05:46.495885Z"
     },
     {
       "source_id": "aihot",
@@ -272,10 +194,10 @@
       "enabled": true,
       "ok": true,
       "fetched_count": 50,
-      "kept_count": 2,
+      "kept_count": 1,
       "error": null,
-      "latency_ms": 2199,
-      "checked_at": "2026-11-26T22:47:46.809132Z"
+      "latency_ms": 7437,
+      "checked_at": "2026-11-27T06:05:53.933997Z"
     }
   ],
   "control_notes": {
